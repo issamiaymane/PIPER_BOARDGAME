@@ -4,6 +4,7 @@
 /// <reference types="vite/client" />
 
 import { HANDLERS, CATEGORY_HANDLER_MAP } from '../data/handler-map';
+import { renderCard } from './card-browser-entry';
 
 // Types
 interface CardData {
@@ -249,61 +250,8 @@ function showRandomCard() {
     const card = getRandomCard(state.currentCategory);
     if (!card) return;
     state.currentCard = card;
-    renderCard(card);
+    renderCard(card, state.currentCategory, cardBody);
     cardModal.classList.remove('hidden');
-}
-
-function renderCard(card: CardData) {
-    const handler = CATEGORY_HANDLER_MAP[state.currentCategory] || 'single-answer';
-    const config = HANDLERS[handler as keyof typeof HANDLERS] || HANDLERS['single-answer'];
-
-    let html = `<div style="margin-bottom: 12px;">
-        <span style="background: ${config.color}; color: white; padding: 4px 12px; border-radius: 16px; font-size: 12px;">
-            ${config.icon} ${config.name}
-        </span>
-        <div style="margin-top: 4px; color: #666; font-size: 11px;">${escapeHtml(state.currentCategory)}</div>
-    </div>`;
-
-    if (card.title) html += `<div style="font-weight: bold; margin-bottom: 8px;">${escapeHtml(card.title)}</div>`;
-    if (card.question) html += `<div style="margin-bottom: 12px;">${card.question.replace(/_+/g, '______')}</div>`;
-    if (card.story) html += `<div style="background: #f9f9f9; padding: 10px; border-radius: 8px; margin-bottom: 12px; font-style: italic;">${escapeHtml(card.story)}</div>`;
-
-    if (card.images && Array.isArray(card.images)) {
-        html += '<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">';
-        card.images.forEach(img => {
-            const src = typeof img === 'string' ? img : img.image || '';
-            const label = typeof img === 'string' ? '' : img.label || '';
-            html += `<div style="text-align: center;">
-                <img src="${escapeHtml(src)}" style="max-width: 120px; max-height: 120px; border-radius: 8px;" onerror="this.src='../assets/images/default.png'">
-                ${label ? `<div style="font-size: 11px;">${escapeHtml(label)}</div>` : ''}
-            </div>`;
-        });
-        html += '</div>';
-    }
-
-    if (card.choices) {
-        html += '<div style="display: grid; gap: 6px;">';
-        ['A', 'B', 'C', 'D'].forEach((label, i) => {
-            if (card.choices![i]) {
-                html += `<button class="choice-btn" style="display: flex; align-items: center; gap: 8px; padding: 10px; background: #f5f5f5; border: 2px solid #ddd; border-radius: 8px; cursor: pointer; text-align: left;">
-                    <span style="background: ${config.color}; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px;">${label}</span>
-                    ${escapeHtml(card.choices![i])}
-                </button>`;
-            }
-        });
-        html += '</div>';
-    } else {
-        html += `<input type="text" placeholder="Type your answer..." style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 8px; font-size: 14px;">`;
-    }
-
-    cardBody.innerHTML = html;
-
-    cardBody.querySelectorAll('.choice-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            cardBody.querySelectorAll('.choice-btn').forEach(b => (b as HTMLElement).style.borderColor = '#ddd');
-            (btn as HTMLElement).style.borderColor = '#4CAF50';
-        });
-    });
 }
 
 function closeCard() {
