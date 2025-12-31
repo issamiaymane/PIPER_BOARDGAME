@@ -188,21 +188,14 @@ router.post(
       const studentId = parseInt(req.params.id);
       const { eval_data, service_type } = req.body;
 
-      console.log('🔍 CONFIRM EVAL ENDPOINT - Received body:', JSON.stringify(req.body, null, 2));
-      console.log('🔍 eval_data (structured):', JSON.stringify(eval_data, null, 2));
-      console.log('🔍 service_type:', service_type);
-
       // Transform structured format to plain values for database storage
       const plainEvalData = extractEvalDataValues(eval_data);
-      console.log('🔍 plainEvalData (extracted values):', JSON.stringify(plainEvalData, null, 2));
 
       // Build update data
       const updateData: UpdateChildRequest = { eval_data: plainEvalData };
       if (service_type) {
         updateData.problem_type = service_type;
       }
-
-      console.log('🔍 Calling updateStudent with:', JSON.stringify(updateData, null, 2));
 
       // Update student
       const updatedStudent = updateStudent(
@@ -214,8 +207,6 @@ router.post(
       if (!updatedStudent) {
         throw ApiError.notFound('Student not found');
       }
-
-      console.log('✅ Student updated successfully');
 
       res.json({
         success: true,

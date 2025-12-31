@@ -29,8 +29,6 @@ function createGoal(studentId: number, data: CreateGoalRequest & {
     now,
   };
 
-  console.log('🔍 createGoal - SQL params:', JSON.stringify(sqlParams, null, 2));
-
   const result = db
     .prepare(
       `INSERT INTO iep_goals (
@@ -55,7 +53,6 @@ function createGoal(studentId: number, data: CreateGoalRequest & {
     );
 
   const insertedId = result.lastInsertRowid as number;
-  console.log(`✅ createGoal - Inserted goal with ID: ${insertedId}`);
 
   return getGoalById(insertedId)!;
 }
@@ -86,13 +83,8 @@ export function createGoalsFromExtraction(
 ): IEPGoal[] {
   const createdGoals: IEPGoal[] = [];
 
-  console.log(`🔍 createGoalsFromExtraction - Processing ${goals.length} goals`);
-
   for (const goal of goals) {
-    console.log('🔍 Processing goal:', JSON.stringify(goal, null, 2));
-
     if (!goal.goal_description.value) {
-      console.log('⚠️ Skipping goal - no description');
       continue;
     }
 
@@ -120,14 +112,11 @@ export function createGoalsFromExtraction(
       boardgame_categories: goal.boardgame_categories?.value || undefined,
     };
 
-    console.log('🔍 Calling createGoal with:', JSON.stringify(goalData, null, 2));
-
     const created = createGoal(studentId, goalData);
 
     createdGoals.push(created);
   }
 
-  console.log(`✅ Created ${createdGoals.length} goals`);
   return createdGoals;
 }
 

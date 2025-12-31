@@ -204,8 +204,45 @@ body.theme-summer .modal-header {
     background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
 }
 
+body.theme-autumn .modal-header {
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+}
+
 body.theme-winter .modal-header {
     background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+}
+
+/* Theme-based Modal Header Arrows */
+body.theme-spring .modal-header::before {
+    border-right-color: var(--theme-primary-dark);
+}
+
+body.theme-spring .modal-header::after {
+    border-left-color: var(--theme-primary-dark);
+}
+
+body.theme-summer .modal-header::before {
+    border-right-color: var(--theme-primary-dark);
+}
+
+body.theme-summer .modal-header::after {
+    border-left-color: var(--theme-primary-dark);
+}
+
+body.theme-autumn .modal-header::before {
+    border-right-color: var(--theme-primary-dark);
+}
+
+body.theme-autumn .modal-header::after {
+    border-left-color: var(--theme-primary-dark);
+}
+
+body.theme-winter .modal-header::before {
+    border-right-color: var(--theme-primary-dark);
+}
+
+body.theme-winter .modal-header::after {
+    border-left-color: var(--theme-primary-dark);
 }
 
 /* Theme-based Buttons */
@@ -230,22 +267,6 @@ body.theme-winter .win-button {
     box-shadow: 0 8px 0 var(--theme-primary-dark), 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Theme-based Card Modal */
-body.theme-spring .card-content {
-    background: var(--theme-bg-light);
-}
-
-body.theme-summer .card-content {
-    background: var(--theme-bg-light);
-}
-
-body.theme-autumn .card-content {
-    background: var(--bg-warm);
-}
-
-body.theme-winter .card-content {
-    background: var(--theme-bg-light);
-}
 
 /* Theme-based Category Tabs */
 body.theme-spring .category-tab.active {
@@ -425,8 +446,8 @@ body.theme-winter .snowflake {
     position: relative;
     transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
     box-shadow:
-        0 0 0 10px #8B4513,
-        0 0 0 15px #654321,
+        0 0 0 10px var(--theme-primary-dark),
+        0 0 0 15px var(--theme-primary-dark),
         0 12px 30px rgba(0, 0, 0, 0.4);
     overflow: visible;
     background: conic-gradient(
@@ -613,7 +634,7 @@ body.theme-winter .snowflake {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 152, 0, 0.15);
+    background: rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -781,7 +802,7 @@ body.theme-winter .snowflake {
     background: var(--bg-target);
     margin: 15px 20px;
     border-radius: 12px;
-    border: 3px solid #D4C896;
+    border: 3px solid var(--theme-accent);
     box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1015,7 +1036,7 @@ body.theme-winter .snowflake {
 
 .card-content {
     pointer-events: auto;
-    background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg-warm-dark) 100%);
+    background: linear-gradient(180deg, var(--theme-bg) 0%, var(--theme-accent) 100%);
     border-radius: 30px;
     padding: 25px 30px 30px;
     max-width: 800px;
@@ -1023,7 +1044,7 @@ body.theme-winter .snowflake {
     max-height: 85vh;
     margin: 0 auto;
     box-shadow: var(--shadow-modal);
-    border: 6px solid var(--orange-primary);
+    border: 6px solid var(--theme-primary);
     position: relative;
     transform: scale(1);
     opacity: 1;
@@ -1041,7 +1062,8 @@ body.theme-winter .snowflake {
     transform: translateX(-50%);
     width: 60px;
     height: 6px;
-    background: rgba(255, 152, 0, 0.5);
+    background: var(--theme-primary);
+    opacity: 0.5;
     border-radius: 10px;
 }
 
@@ -1057,12 +1079,12 @@ body.theme-winter .snowflake {
 .card-category {
     font-family: var(--font-display);
     font-size: 28px;
-    color: var(--orange-dark);
+    color: var(--theme-primary-dark);
     text-shadow: 2px 2px 0 white;
-    background: linear-gradient(180deg, #FFF 0%, #FFE0B2 100%);
+    background: linear-gradient(180deg, #FFF 0%, var(--theme-bg-light) 100%);
     padding: 8px 30px;
     border-radius: 20px;
-    border: 3px solid var(--orange-primary);
+    border: 3px solid var(--theme-primary);
 }
 
 .card-close {
@@ -1103,17 +1125,17 @@ body.theme-winter .snowflake {
 }
 
 .card-body::-webkit-scrollbar-track {
-    background: rgba(255, 152, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
 
 .card-body::-webkit-scrollbar-thumb {
-    background: var(--orange-primary);
+    background: var(--theme-primary);
     border-radius: 10px;
 }
 
 .card-body::-webkit-scrollbar-thumb:hover {
-    background: var(--orange-dark);
+    background: var(--theme-primary-dark);
 }
 
 /* Card Tools */
@@ -1295,8 +1317,8 @@ body.theme-winter .snowflake {
 .win-title {
     font-family: var(--font-display);
     font-size: 56px;
-    color: var(--orange-dark);
-    text-shadow: 3px 3px 0 #FFE0B2, 5px 5px 0 rgba(0,0,0,0.1);
+    color: var(--theme-primary-dark);
+    text-shadow: 3px 3px 0 var(--theme-bg-light), 5px 5px 0 rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
 

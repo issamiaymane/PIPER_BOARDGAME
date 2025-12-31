@@ -47,4 +47,4 @@ WORKDIR /app/backend
 EXPOSE 10000
 
 # Start the application
-CMD ["node", "dist/api/server.js"]
+CMD ["node", "dist/index.js"]

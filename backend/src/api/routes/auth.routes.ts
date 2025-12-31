@@ -8,6 +8,7 @@ import { registerTherapist, loginTherapist, getTherapistById } from '../../servi
 import { authenticate } from '../middleware/auth.js';
 import { validate, registerSchema, loginSchema } from '../middleware/validate.js';
 import { ApiError } from '../middleware/errorHandler.js';
+import { authRateLimit } from '../middleware/rateLimit.js';
 
 const router = Router();
 
@@ -17,6 +18,7 @@ const router = Router();
  */
 router.post(
   '/register',
+  authRateLimit,
   validate(registerSchema),
   async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -38,6 +40,7 @@ router.post(
  */
 router.post(
   '/login',
+  authRateLimit,
   validate(loginSchema),
   async (req: Request, res: Response, next: NextFunction) => {
     try {

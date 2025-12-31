@@ -66,9 +66,21 @@ export const idParamSchema = z.object({
 // Auth Schemas
 // ============================================
 
+/**
+ * Strong password validation for therapist accounts
+ * Requires: 8+ chars, uppercase, lowercase, number, special char
+ */
+const therapistPasswordSchema = z
+  .string()
+  .min(8, 'Password must be at least 8 characters')
+  .regex(/[A-Z]/, 'Password must contain at least one uppercase letter')
+  .regex(/[a-z]/, 'Password must contain at least one lowercase letter')
+  .regex(/[0-9]/, 'Password must contain at least one number')
+  .regex(/[^A-Za-z0-9]/, 'Password must contain at least one special character');
+
 export const registerSchema = z.object({
   email: z.string().email('Invalid email address'),
-  password: z.string().min(8, 'Password must be at least 8 characters'),
+  password: therapistPasswordSchema,
   first_name: z.string().min(1, 'First name is required'),
   last_name: z.string().min(1, 'Last name is required'),
 });
@@ -82,9 +94,19 @@ export const loginSchema = z.object({
 // Student Schemas
 // ============================================
 
+/**
+ * Student password validation (simplified for children)
+ * Requires: 6+ chars, at least one letter and one number
+ */
+const studentPasswordSchema = z
+  .string()
+  .min(6, 'Password must be at least 6 characters')
+  .regex(/[A-Za-z]/, 'Password must contain at least one letter')
+  .regex(/[0-9]/, 'Password must contain at least one number');
+
 export const createStudentSchema = z.object({
   username: z.string().min(3, 'Username must be at least 3 characters'),
-  password: z.string().min(4, 'Password must be at least 4 characters'),
+  password: studentPasswordSchema,
   first_name: z.string().min(1, 'First name is required'),
   last_name: z.string().min(1, 'Last name is required'),
   date_of_birth: z.string().optional(),
