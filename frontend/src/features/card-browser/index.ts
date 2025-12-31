@@ -841,7 +841,7 @@ export function renderCard(card: CardData, category: string, container: HTMLElem
         <div class="preview-card" style="--handler-color: ${config.color}">
             <div class="preview-card-header">
                 <span class="preview-handler-badge">${config.icon} ${config.name}</span>
-                <span style="font-size: 0.75rem; color: #666; margin-left: 8px;">${escapeHtml(category)}</span>
+                <span style="font-size: 0.75rem; color: var(--color-text-medium); margin-left: 8px;">${escapeHtml(category)}</span>
             </div>
             <div class="preview-card-body">
                 ${bodyHtml}
@@ -925,7 +925,71 @@ function init() {
         if (e.key === 'ArrowRight') nextCard();
     });
 
+    initThemeSelector();
     renderSections();
+}
+
+// Theme switching
+function initThemeSelector(): void {
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeSelectorPanel = document.getElementById('themeSelectorPanel');
+    const themeButtons = document.querySelectorAll('.theme-btn');
+
+    let currentTheme = 'autumn';
+    document.body.classList.add('theme-autumn');
+
+    // Update theme decorations
+    function updateThemeDecorations(theme: string) {
+        const decorations: Record<string, string[]> = {
+            spring: ['🌸', '🌷'],
+            summer: ['☀️', '🌻'],
+            autumn: ['🍂', '🍁'],
+            winter: ['❄', '🌨️']
+        };
+
+        const decorationIcon = decorations[theme] || ['🍂', '🍁'];
+        const snowflakes = document.querySelectorAll('.snowflake');
+        snowflakes.forEach((flake, index) => {
+            flake.textContent = decorationIcon[index % 2];
+        });
+    }
+
+    // Initialize decorations
+    updateThemeDecorations(currentTheme);
+
+    // Toggle theme panel
+    themeToggleBtn?.addEventListener('click', () => {
+        themeSelectorPanel?.classList.toggle('hidden');
+    });
+
+    // Close panel when clicking outside
+    document.addEventListener('click', (e) => {
+        const target = e.target as HTMLElement;
+        if (!target.closest('.theme-selector-floating')) {
+            themeSelectorPanel?.classList.add('hidden');
+        }
+    });
+
+    // Theme button click handlers
+    themeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = (btn as HTMLElement).dataset.theme || 'autumn';
+
+            // Remove previous theme class
+            if (currentTheme) {
+                document.body.classList.remove(`theme-${currentTheme}`);
+            }
+            currentTheme = theme;
+            document.body.classList.add(`theme-${theme}`);
+
+            // Update active state
+            themeButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update decorations
+            updateThemeDecorations(theme);
+        });
+    });
 }
 
 // Initialize only on card-browser page

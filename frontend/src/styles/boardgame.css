@@ -86,17 +86,182 @@ body {
     font-family: var(--font-body);
     min-height: 100vh;
     overflow: hidden;
-    background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E6E6FA 100%);
+    background: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 50%, #FFDAB9 100%);
 }
 
-/* Theme: Winter (default) */
-body.theme-snowflake {
-    background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E6E6FA 100%);
+/* Theme: Spring (Cherry Blossoms & Flowers) */
+body.theme-spring {
+    background: linear-gradient(180deg, #FFE5E5 0%, #FFD1DC 50%, #FFC0CB 100%);
 }
 
-/* Theme: Spring */
-body.theme-bunny {
-    background: linear-gradient(180deg, #FFE5E5 0%, #FFD1DC 30%, #FFB6C1 60%, #FFC0CB 100%);
+/* Theme: Summer (Sunny & Bright) */
+body.theme-summer {
+    background: linear-gradient(180deg, #FFFACD 0%, #FFE4B5 50%, #FFDAB9 100%);
+}
+
+/* Theme: Autumn/Fall (default) */
+body.theme-autumn {
+    background: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 50%, #FFDAB9 100%);
+}
+
+/* Theme: Winter (Snow & Ice) */
+body.theme-winter {
+    background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E0F7FA 100%);
+}
+
+/* Theme-specific Colors */
+body.theme-spring {
+    --theme-primary: #FF69B4;
+    --theme-primary-dark: #C71585;
+    --theme-bg: #FFE5E5;
+    --theme-bg-light: #FFF0F5;
+    --theme-accent: #FFB6C1;
+
+    /* Spring: Pink category tabs */
+    --green-primary: #FF69B4;
+    --green-dark: #C71585;
+    --green-darker: #9C1266;
+    --green-light: #FFB6C1;
+    --green-bg-light: #FFF0F5;
+    --green-bg: #FFE5E5;
+}
+
+body.theme-summer {
+    --theme-primary: #FFD700;
+    --theme-primary-dark: #FFA500;
+    --theme-bg: #FFFACD;
+    --theme-bg-light: #FFFFE0;
+    --theme-accent: #FFE4B5;
+
+    /* Summer: Yellow/Gold category tabs */
+    --green-primary: #FFD700;
+    --green-dark: #FFA500;
+    --green-darker: #FF8C00;
+    --green-light: #FFEC8B;
+    --green-bg-light: #FFFFE0;
+    --green-bg: #FFFACD;
+}
+
+body.theme-autumn {
+    --theme-primary: #FF9800;
+    --theme-primary-dark: #E65100;
+    --theme-bg: #FFF9E6;
+    --theme-bg-light: #FFFEF5;
+    --theme-accent: #FFE4B5;
+
+    /* Autumn: Orange category tabs */
+    --green-primary: #FF9800;
+    --green-dark: #E65100;
+    --green-darker: #BF360C;
+    --green-light: #FFB300;
+    --green-bg-light: #FFF9E6;
+    --green-bg: #FFE4B5;
+}
+
+body.theme-winter {
+    --theme-primary: #87CEEB;
+    --theme-primary-dark: #5FA8D3;
+    --theme-bg: #E0F7FA;
+    --theme-bg-light: #F0F8FF;
+    --theme-accent: #B0E0E6;
+
+    /* Winter: Blue category tabs */
+    --green-primary: #87CEEB;
+    --green-dark: #5FA8D3;
+    --green-darker: #4A90B8;
+    --green-light: #ADD8E6;
+    --green-bg-light: #F0F8FF;
+    --green-bg: #E0F7FA;
+}
+
+/* Theme-based Modal Backgrounds */
+body.theme-spring .modal-content {
+    background: var(--theme-bg);
+    border-color: var(--theme-primary-dark);
+}
+
+body.theme-summer .modal-content {
+    background: var(--theme-bg);
+    border-color: var(--theme-primary-dark);
+}
+
+body.theme-autumn .modal-content {
+    background: var(--theme-bg);
+    border-color: var(--theme-primary-dark);
+}
+
+body.theme-winter .modal-content {
+    background: var(--theme-bg);
+    border-color: var(--theme-primary-dark);
+}
+
+/* Theme-based Modal Headers */
+body.theme-spring .modal-header {
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+}
+
+body.theme-summer .modal-header {
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+}
+
+body.theme-winter .modal-header {
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+}
+
+/* Theme-based Buttons */
+body.theme-spring .play-button,
+body.theme-spring .control-btn,
+body.theme-spring .win-button {
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+    box-shadow: 0 8px 0 var(--theme-primary-dark), 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.theme-summer .play-button,
+body.theme-summer .control-btn,
+body.theme-summer .win-button {
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+    box-shadow: 0 8px 0 var(--theme-primary-dark), 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.theme-winter .play-button,
+body.theme-winter .control-btn,
+body.theme-winter .win-button {
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+    box-shadow: 0 8px 0 var(--theme-primary-dark), 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Theme-based Card Modal */
+body.theme-spring .card-content {
+    background: var(--theme-bg-light);
+}
+
+body.theme-summer .card-content {
+    background: var(--theme-bg-light);
+}
+
+body.theme-autumn .card-content {
+    background: var(--bg-warm);
+}
+
+body.theme-winter .card-content {
+    background: var(--theme-bg-light);
+}
+
+/* Theme-based Category Tabs */
+body.theme-spring .category-tab.active {
+    background: var(--theme-primary);
+    border-bottom-color: var(--theme-primary);
+}
+
+body.theme-summer .category-tab.active {
+    background: var(--theme-primary);
+    border-bottom-color: var(--theme-primary);
+    color: #333;
+}
+
+body.theme-winter .category-tab.active {
+    background: var(--theme-primary);
+    border-bottom-color: var(--theme-primary);
 }
 
 /* Display font for headings and buttons */
@@ -111,7 +276,7 @@ h1, h2, h3, .btn {
     overflow: hidden;
 }
 
-/* Snowflakes Animation */
+/* Autumn Leaves Animation */
 .snowflakes {
     position: absolute;
     top: 0;
@@ -125,11 +290,29 @@ h1, h2, h3, .btn {
 .snowflake {
     position: absolute;
     top: -20px;
-    color: white;
+    color: rgba(255, 152, 0, 0.4);
     font-size: 1.5rem;
     animation: fall linear infinite;
-    opacity: 0.8;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    opacity: 0.5;
+    text-shadow: 0 0 5px rgba(230, 81, 0, 0.3);
+}
+
+/* Spring theme flowers */
+body.theme-spring .snowflake {
+    color: rgba(255, 182, 193, 0.8);
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+}
+
+/* Summer theme sun */
+body.theme-summer .snowflake {
+    color: rgba(255, 215, 0, 0.7);
+    text-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+}
+
+/* Winter theme snowflakes */
+body.theme-winter .snowflake {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(135, 206, 235, 0.6);
 }
 
 .snowflake:nth-child(1) { left: 5%; animation-duration: 10s; animation-delay: 0s; font-size: 1.2rem; }
@@ -266,7 +449,7 @@ h1, h2, h3, .btn {
     padding-top: 25px;
     font-family: var(--font-display);
     font-size: 32px;
-    color: var(--red-dark);
+    color: #2d2d2d;
     text-shadow: 2px 2px 0 white, -1px -1px 0 white;
     background: transparent;
 }
@@ -430,7 +613,7 @@ h1, h2, h3, .btn {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 152, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -500,11 +683,11 @@ h1, h2, h3, .btn {
     overflow-y: auto;
     overflow-x: hidden;
     box-shadow: var(--shadow-card);
-    border: 4px solid var(--red-dark);
+    border: 4px solid var(--orange-dark);
 }
 
 .modal-header {
-    background: linear-gradient(180deg, var(--red-primary) 0%, var(--red-dark) 100%);
+    background: linear-gradient(180deg, var(--orange-primary) 0%, var(--orange-dark) 100%);
     color: white;
     padding: 25px 30px;
     text-align: center;
@@ -527,14 +710,14 @@ h1, h2, h3, .btn {
     left: -20px;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    border-right: 20px solid var(--red-dark);
+    border-right: 20px solid var(--orange-dark);
 }
 
 .modal-header::after {
     right: -20px;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    border-left: 20px solid var(--red-dark);
+    border-left: 20px solid var(--orange-dark);
 }
 
 .modal-header h2 {
@@ -575,11 +758,11 @@ h1, h2, h3, .btn {
     transition: all var(--transition-fast);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 3px 0 #999;
+    box-shadow: 0 3px 0 rgba(153, 153, 153, 0.8);
 }
 
 .category-tab.active {
-    background: linear-gradient(180deg, var(--green-primary) 0%, #388E3C 100%);
+    background: linear-gradient(180deg, var(--green-primary) 0%, var(--green-dark) 100%);
     color: white;
     border-color: var(--green-dark);
     box-shadow: 0 3px 0 var(--green-darker);
@@ -633,9 +816,11 @@ h1, h2, h3, .btn {
 }
 
 .theme-options {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 220px;
+    margin: 0 auto;
 }
 
 .theme-option {
@@ -643,26 +828,26 @@ h1, h2, h3, .btn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 100px;
+    width: 100%;
+    height: 90px;
     border: 3px solid var(--gray-medium);
-    border-radius: 16px;
+    border-radius: 12px;
     cursor: pointer;
     background: linear-gradient(180deg, #ffffff 0%, var(--gray-light) 100%);
     transition: all var(--transition-fast);
-    box-shadow: 0 4px 0 #ccc;
+    box-shadow: 0 4px 0 rgba(204, 204, 204, 0.8);
     position: relative;
 }
 
 .theme-option:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 0 #ccc;
+    box-shadow: 0 6px 0 rgba(204, 204, 204, 0.8);
 }
 
 .theme-option.selected {
     border-color: var(--green-primary);
     background: linear-gradient(180deg, var(--green-bg-light) 0%, var(--green-bg) 100%);
-    box-shadow: 0 4px 0 #388E3C;
+    box-shadow: 0 4px 0 var(--green-dark);
 }
 
 .theme-option.selected::after {
@@ -683,35 +868,55 @@ h1, h2, h3, .btn {
 }
 
 .theme-emoji {
-    font-size: 40px;
-    margin-bottom: 4px;
+    font-size: 32px;
+    margin-bottom: 2px;
 }
 
 .theme-name {
     font-family: var(--font-display);
-    font-size: 11px;
+    font-size: 10px;
     color: var(--text-dark);
     text-transform: uppercase;
 }
 
-/* Snowflake theme animation */
-.theme-option[data-theme="snowflake"] .theme-emoji {
-    animation: snowflakeSpin 3s linear infinite;
+/* Spring theme animation */
+.theme-option[data-theme="spring"] .theme-emoji {
+    animation: springBounce 2s ease-in-out infinite;
 }
 
-@keyframes snowflakeSpin {
+@keyframes springBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Summer theme animation */
+.theme-option[data-theme="summer"] .theme-emoji {
+    animation: summerGlow 2s ease-in-out infinite;
+}
+
+@keyframes summerGlow {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(15deg) scale(1.1); }
+}
+
+/* Autumn theme animation */
+.theme-option[data-theme="autumn"] .theme-emoji {
+    animation: autumnFloat 3s ease-in-out infinite;
+}
+
+@keyframes autumnFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-5px) rotate(10deg); }
+}
+
+/* Winter theme animation */
+.theme-option[data-theme="winter"] .theme-emoji {
+    animation: winterSpin 3s linear infinite;
+}
+
+@keyframes winterSpin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-/* Bunny theme animation */
-.theme-option[data-theme="bunny"] .theme-emoji {
-    animation: bunnyBounce 1s ease-in-out infinite;
-}
-
-@keyframes bunnyBounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
 }
 
 /* Character Selection Section */
@@ -738,7 +943,7 @@ h1, h2, h3, .btn {
     cursor: pointer;
     background: linear-gradient(180deg, #ffffff 0%, var(--gray-light) 100%);
     transition: all var(--transition-fast);
-    box-shadow: 0 3px 0 #ccc;
+    box-shadow: 0 3px 0 rgba(204, 204, 204, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -746,13 +951,13 @@ h1, h2, h3, .btn {
 
 .character-option:hover {
     transform: translateY(-2px) scale(1.1);
-    box-shadow: 0 5px 0 #ccc;
+    box-shadow: 0 5px 0 rgba(204, 204, 204, 0.8);
 }
 
 .character-option.selected {
     border-color: var(--green-primary);
     background: linear-gradient(180deg, var(--green-bg-light) 0%, var(--green-bg) 100%);
-    box-shadow: 0 3px 0 #388E3C;
+    box-shadow: 0 3px 0 var(--green-dark);
     transform: scale(1.1);
 }
 
@@ -868,8 +1073,8 @@ h1, h2, h3, .btn {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 3px solid #78909C;
-    background: linear-gradient(180deg, #90A4AE 0%, #607D8B 100%);
+    border: 3px solid var(--gray-btn);
+    background: linear-gradient(180deg, var(--gray-btn) 0%, var(--gray-btn-dark) 100%);
     color: white;
     font-size: 22px;
     font-weight: bold;
@@ -878,7 +1083,7 @@ h1, h2, h3, .btn {
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
-    box-shadow: 0 3px 0 #455A64;
+    box-shadow: 0 3px 0 rgba(69, 90, 100, 0.8);
 }
 
 .card-close:hover {
@@ -924,7 +1129,7 @@ h1, h2, h3, .btn {
     font-family: var(--font-display);
     font-size: 24px;
     padding: 10px 40px;
-    background: linear-gradient(180deg, var(--green-light) 0%, #43A047 100%);
+    background: linear-gradient(180deg, var(--green-light) 0%, var(--green-dark) 100%);
     color: white;
     border: none;
     border-radius: 25px;
@@ -979,7 +1184,7 @@ h1, h2, h3, .btn {
 /* Disabled spin button state */
 .spin-btn:disabled,
 .spin-btn.disabled {
-    background: linear-gradient(180deg, #bdbdbd 0%, #9e9e9e 100%);
+    background: linear-gradient(180deg, var(--gray-medium) 0%, var(--gray-dark) 100%);
     color: rgba(255, 255, 255, 0.6);
     cursor: not-allowed;
     transform: none !important;
@@ -1111,7 +1316,7 @@ h1, h2, h3, .btn {
     font-family: var(--font-display);
     font-size: 28px;
     padding: 18px 60px;
-    background: linear-gradient(180deg, var(--green-light) 0%, #43A047 100%);
+    background: linear-gradient(180deg, var(--green-light) 0%, var(--green-dark) 100%);
     color: white;
     border: none;
     border-radius: 30px;
@@ -1128,51 +1333,6 @@ h1, h2, h3, .btn {
 .win-button:active {
     transform: translateY(4px);
     box-shadow: 0 2px 0 var(--green-dark);
-}
-
-/* Loading Screen */
-.loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #1a237e 0%, #283593 50%, #3949ab 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: var(--z-loading);
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.loading-screen.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loading-content {
-    text-align: center;
-    color: white;
-}
-
-.loading-snowflake {
-    font-size: 80px;
-    animation: loadingSnowflakeSpin 3s linear infinite;
-    margin-bottom: 20px;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-}
-
-@keyframes loadingSnowflakeSpin {
-    0% { transform: rotate(0deg) scale(1); }
-    50% { transform: rotate(180deg) scale(1.1); }
-    100% { transform: rotate(360deg) scale(1); }
-}
-
-.loading-title {
-    font-family: var(--font-display);
-    font-size: 36px;
-    margin: 0 0 30px 0;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Touch & Mobile Optimizations */

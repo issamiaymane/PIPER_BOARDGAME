@@ -9,6 +9,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Autumn Leaves Decoration -->
+    <div class="snowflakes">
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+    </div>
+
+    <!-- Theme Selector -->
+    <div class="theme-selector-floating" id="themeSelector">
+        <button class="theme-toggle-btn" id="themeToggleBtn">🎨</button>
+        <div class="theme-selector-panel hidden" id="themeSelectorPanel">
+            <p class="theme-selector-title">Choose Theme</p>
+            <div class="theme-grid">
+                <button class="theme-btn" data-theme="spring">
+                    <span class="theme-icon">🌸</span>
+                    <span class="theme-text">Spring</span>
+                </button>
+                <button class="theme-btn" data-theme="summer">
+                    <span class="theme-icon">☀️</span>
+                    <span class="theme-text">Summer</span>
+                </button>
+                <button class="theme-btn active" data-theme="autumn">
+                    <span class="theme-icon">🍂</span>
+                    <span class="theme-text">Fall</span>
+                </button>
+                <button class="theme-btn" data-theme="winter">
+                    <span class="theme-icon">❄</span>
+                    <span class="theme-text">Winter</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="browser-header">
         <div class="header-content">
@@ -67,7 +107,7 @@
             <div id="handlerSections" class="handler-sections">
                 <div class="loading-message">
                     <div class="loading-spinner"></div>
-                    <p>Loading card data...</p>
+                    <p>Loading PIPER...</p>
                 </div>
             </div>
         </div>

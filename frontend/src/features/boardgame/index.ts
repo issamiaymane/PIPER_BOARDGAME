@@ -7,6 +7,7 @@
 
 import { HANDLERS, CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
 import { renderCard, allCardData, languageData, articulationData } from '../card-browser/index';
+import { hideLoadingScreen } from '../../shared/components/LoadingScreen';
 
 // Types
 interface CardData {
@@ -29,7 +30,7 @@ const state = {
     currentCard: null as CardData | null,
     currentCategory: '',
     isSpinning: false,
-    selectedTheme: 'snowflake',
+    selectedTheme: 'autumn',
     selectedCharacter: '🧒',
     cardIndices: {} as Record<string, number>,
     reset() {
@@ -125,10 +126,10 @@ function renderCategorySelection(dataType: 'language' | 'articulation') {
             </div>
             <div style="display: grid; gap: 4px;">
                 ${cats.map(cat => `
-                    <label style="display: flex; align-items: center; gap: 8px; padding: 8px; background: #f5f5f5; border-radius: 4px; cursor: pointer;">
+                    <label style="display: flex; align-items: center; gap: 8px; padding: 8px; background: var(--theme-bg-light); border-radius: 4px; cursor: pointer;">
                         <input type="checkbox" class="category-checkbox" value="${escapeHtml(cat)}">
                         <span>${escapeHtml(cat)}</span>
-                        <span style="margin-left: auto; color: #888; font-size: 11px;">${data[cat].length}</span>
+                        <span style="margin-left: auto; color: var(--color-text-light); font-size: 11px;">${data[cat].length}</span>
                     </label>
                 `).join('')}
             </div>
@@ -148,7 +149,13 @@ function renderCategorySelection(dataType: 'language' | 'articulation') {
 // Board generation
 function generateBoard() {
     boardPath.innerHTML = '';
-    const themeIcon = state.selectedTheme === 'bunny' ? '🌸' : '❄';
+    const themeIcons: Record<string, string> = {
+        spring: '🌸',
+        summer: '☀️',
+        autumn: '🍂',
+        winter: '❄'
+    };
+    const themeIcon = themeIcons[state.selectedTheme] || '🍂';
 
     for (let i = 1; i <= TOTAL_SPACES; i++) {
         const space = document.createElement('div');
@@ -273,6 +280,24 @@ function resetGame() {
     scoreValue.textContent = '0';
 }
 
+function updateThemeDecorations() {
+    const snowflakesContainer = document.querySelector('.snowflakes');
+    if (!snowflakesContainer) return;
+
+    const decorations: Record<string, string[]> = {
+        spring: ['🌸', '🌷'],
+        summer: ['☀️', '🌻'],
+        autumn: ['🍂', '🍁'],
+        winter: ['❄', '🌨️']
+    };
+
+    const decorationIcon = decorations[state.selectedTheme] || decorations.autumn;
+    const snowflakes = snowflakesContainer.querySelectorAll('.snowflake');
+    snowflakes.forEach((flake, index) => {
+        flake.textContent = decorationIcon[index % 2];
+    });
+}
+
 function startGame() {
     console.log('[Game] Starting, targets:', state.selectedTargets);
     if (state.selectedTargets.length === 0) {
@@ -284,8 +309,9 @@ function startGame() {
     state.currentPosition = 0;
     state.score = 0;
 
-    // Apply theme to body
+    // Apply theme to body and update decorations
     document.body.className = `theme-${state.selectedTheme}`;
+    updateThemeDecorations();
 
     targetModal.classList.add('hidden');
     playOverlay.classList.add('hidden');
@@ -303,7 +329,10 @@ function startGame() {
 function init() {
     console.log('[Boardgame] Init...');
 
-    playOverlay = document.getElementById('playOverlay')!;
+    // Apply initial theme
+    document.body.className = `theme-${state.selectedTheme}`;
+
+    playOverlay = document.getElementById('playOverlay')!
     playButton = document.getElementById('playButton')!;
     targetModal = document.getElementById('targetModal')!;
     categoryTabs = document.querySelector('.category-tabs')!;
@@ -347,7 +376,9 @@ function init() {
             const target = (e.currentTarget as HTMLElement);
             document.querySelectorAll('.theme-option').forEach(o => o.classList.remove('selected'));
             target.classList.add('selected');
-            state.selectedTheme = target.dataset.theme || 'snowflake';
+            state.selectedTheme = target.dataset.theme || 'autumn';
+            document.body.className = `theme-${state.selectedTheme}`;
+            updateThemeDecorations();
             console.log('[Game] Selected theme:', state.selectedTheme);
         });
     });
@@ -371,10 +402,8 @@ function init() {
     resetBtn.addEventListener('click', resetGame);
     playAgainBtn.addEventListener('click', resetGame);
 
-    const loadingScreen = document.getElementById('loadingScreen');
-    if (loadingScreen) {
-        setTimeout(() => loadingScreen.classList.add('hidden'), 500);
-    }
+    // Hide loading screen using shared component
+    hideLoadingScreen(500);
 
     console.log('[Boardgame] Ready with', Object.keys(allCardData).length, 'categories');
 }

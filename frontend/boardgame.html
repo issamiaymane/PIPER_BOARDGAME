@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winter Board Game - Speech Therapy</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./src/shared/components/LoadingScreen/loading-screen.css">
     <link rel="stylesheet" href="./src/styles/boardgame.css">
     <link rel="stylesheet" href="./src/styles/card-browser.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,24 +14,24 @@
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-content">
-            <div class="loading-snowflake">❄</div>
-            <h1 class="loading-title">Loading Game...</h1>
+            <div class="loading-snowflake">🎯</div>
+            <h1 class="loading-title">Loading PIPER...</h1>
         </div>
     </div>
 
     <div class="game-container">
-        <!-- Snowflakes -->
+        <!-- Autumn Leaves -->
         <div class="snowflakes">
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
-            <div class="snowflake">❄</div>
+            <div class="snowflake">🍂</div>
+            <div class="snowflake">🍁</div>
+            <div class="snowflake">🍂</div>
+            <div class="snowflake">🍁</div>
+            <div class="snowflake">🍂</div>
+            <div class="snowflake">🍁</div>
+            <div class="snowflake">🍂</div>
+            <div class="snowflake">🍁</div>
+            <div class="snowflake">🍂</div>
+            <div class="snowflake">🍁</div>
         </div>
 
         <!-- Game Board -->
@@ -85,13 +86,21 @@
                 <div class="theme-selection-section">
                     <p class="theme-label">Pick your world!</p>
                     <div class="theme-options">
-                        <button class="theme-option selected" data-theme="snowflake">
-                            <span class="theme-emoji">❄️</span>
-                            <span class="theme-name">Winter</span>
-                        </button>
-                        <button class="theme-option" data-theme="bunny">
-                            <span class="theme-emoji">🐰</span>
+                        <button class="theme-option" data-theme="spring">
+                            <span class="theme-emoji">🌸</span>
                             <span class="theme-name">Spring</span>
+                        </button>
+                        <button class="theme-option" data-theme="summer">
+                            <span class="theme-emoji">☀️</span>
+                            <span class="theme-name">Summer</span>
+                        </button>
+                        <button class="theme-option selected" data-theme="autumn">
+                            <span class="theme-emoji">🍂</span>
+                            <span class="theme-name">Fall</span>
+                        </button>
+                        <button class="theme-option" data-theme="winter">
+                            <span class="theme-emoji">❄</span>
+                            <span class="theme-name">Winter</span>
                         </button>
                     </div>
                 </div>

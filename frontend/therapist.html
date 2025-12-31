@@ -5,32 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIPER - Therapist Dashboard</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./src/shared/components/LoadingScreen/loading-screen.css">
     <link rel="stylesheet" href="./src/styles/therapist.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Snowflakes Decoration -->
+    <!-- Autumn Leaves Decoration -->
     <div class="snowflakes">
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+    </div>
+
+    <!-- Theme Selector -->
+    <div class="theme-selector-floating" id="themeSelector">
+        <button class="theme-toggle-btn" id="themeToggleBtn">🎨</button>
+        <div class="theme-selector-panel hidden" id="themeSelectorPanel">
+            <p class="theme-selector-title">Choose Theme</p>
+            <div class="theme-grid">
+                <button class="theme-btn" data-theme="spring">
+                    <span class="theme-icon">🌸</span>
+                    <span class="theme-text">Spring</span>
+                </button>
+                <button class="theme-btn" data-theme="summer">
+                    <span class="theme-icon">☀️</span>
+                    <span class="theme-text">Summer</span>
+                </button>
+                <button class="theme-btn active" data-theme="autumn">
+                    <span class="theme-icon">🍂</span>
+                    <span class="theme-text">Fall</span>
+                </button>
+                <button class="theme-btn" data-theme="winter">
+                    <span class="theme-icon">❄</span>
+                    <span class="theme-text">Winter</span>
+                </button>
+            </div>
+        </div>
     </div>
 
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-content">
-            <div class="loading-snowflake">❄</div>
+            <div class="loading-snowflake">📋</div>
             <h1 class="loading-title">Loading PIPER...</h1>
-            <div class="loading-bar-container">
-                <div class="loading-bar" id="loadingBar"></div>
-            </div>
         </div>
     </div>
 

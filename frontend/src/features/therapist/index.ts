@@ -5,6 +5,7 @@
 
 import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../../services/api';
 import { CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
+import { hideLoadingScreen } from '../../shared/components/LoadingScreen';
 
 // Organized category groups for goal type selection
 const ORGANIZED_LANGUAGE_CATEGORIES = [
@@ -237,7 +238,6 @@ function show(el: HTMLElement): void {
 let currentTherapist: Therapist | null = null;
 let students: Student[] = [];
 let selectedStudentId: number | null = null;
-let loadingInterval: ReturnType<typeof setInterval> | null = null;
 
 // Evaluation upload state
 let pendingEvalFile: File | null = null;
@@ -249,30 +249,6 @@ let pendingGoalsFile: File | null = null;
 let extractedGoals: ExtractedGoal[] = [];
 let currentGoalsPdfUrl: string | null = null;
 let studentGoals: IEPGoal[] = [];
-
-// Loading screen
-function startLoading(): void {
-  const loadingBar = $('loadingBar') as HTMLDivElement;
-  let progress = 0;
-  loadingInterval = setInterval(() => {
-    progress += Math.random() * 15;
-    if (progress >= 90) {
-      progress = 90;
-      if (loadingInterval) clearInterval(loadingInterval);
-    }
-    loadingBar.style.width = `${progress}%`;
-  }, 100);
-}
-
-function stopLoading(): void {
-  const loadingBar = $('loadingBar') as HTMLDivElement;
-  const loadingScreen = $('loadingScreen');
-
-  loadingBar.style.width = '100%';
-  if (loadingInterval) clearInterval(loadingInterval);
-
-  setTimeout(() => hide(loadingScreen), 300);
-}
 
 // Screens
 function showAuthScreen(): void {
@@ -423,14 +399,6 @@ function renderEvalData(student: Student): void {
     },
   };
 
-  const categoryColors: Record<string, string> = {
-    basic: '#87CEEB',       // Sky blue
-    medical: '#FF6B6B',     // Coral red
-    performance: '#4CAF50', // Green
-    assessment: '#9C27B0',  // Purple
-    other: '#FF9800',       // Orange
-  };
-
   let html = '<div class="eval-data-grid">';
 
   // Render fields by category
@@ -465,10 +433,8 @@ function renderEvalData(student: Student): void {
         displayValue = String(value);
       }
 
-      const accentColor = categoryColors[category] || categoryColors.other;
-
       html += `
-        <div class="eval-data-item${isEmpty ? ' eval-data-empty' : ''}" style="border-left-color: ${accentColor}">
+        <div class="eval-data-item${isEmpty ? ' eval-data-empty' : ''}">
           <span class="eval-data-label">${label}</span>
           <span class="eval-data-value">${displayValue}</span>
         </div>
@@ -1641,12 +1607,74 @@ function bindEvents(): void {
   }
 }
 
+// Theme switching
+function initThemeSelector(): void {
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const themeSelectorPanel = document.getElementById('themeSelectorPanel');
+  const themeButtons = document.querySelectorAll('.theme-btn');
+
+  let currentTheme = 'autumn';
+  document.body.classList.add('theme-autumn');
+
+  // Toggle theme panel
+  themeToggleBtn?.addEventListener('click', () => {
+    themeSelectorPanel?.classList.toggle('hidden');
+  });
+
+  // Close panel when clicking outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (!target.closest('.theme-selector-floating')) {
+      themeSelectorPanel?.classList.add('hidden');
+    }
+  });
+
+  // Update theme decorations
+  function updateThemeDecorations(theme: string) {
+    const decorations: Record<string, string[]> = {
+      spring: ['🌸', '🌷'],
+      summer: ['☀️', '🌻'],
+      autumn: ['🍂', '🍁'],
+      winter: ['❄', '🌨️']
+    };
+
+    const decorationIcon = decorations[theme] || decorations.autumn;
+    const snowflakes = document.querySelectorAll('.snowflake');
+    snowflakes.forEach((flake, index) => {
+      flake.textContent = decorationIcon[index % 2];
+    });
+  }
+
+  // Theme button click handlers
+  themeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const theme = (btn as HTMLElement).dataset.theme || 'autumn';
+
+      // Remove previous theme class
+      document.body.classList.remove(`theme-${currentTheme}`);
+      currentTheme = theme;
+      document.body.classList.add(`theme-${theme}`);
+
+      // Update active state
+      themeButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Update decorations
+      updateThemeDecorations(theme);
+    });
+  });
+
+  // Initialize decorations
+  updateThemeDecorations(currentTheme);
+}
+
 // Initialize
 export async function init(): Promise<void> {
-  startLoading();
   bindEvents();
   await checkAuth();
-  stopLoading();
+  initThemeSelector();
+  // Hide loading screen using shared component
+  hideLoadingScreen(300);
 }
 
 // Auto-initialize on DOM ready
