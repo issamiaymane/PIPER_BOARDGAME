@@ -128,6 +128,36 @@ function runMigrations(db: Database.Database): void {
     db.exec('ALTER TABLE children ADD COLUMN goals_pdf_original_name TEXT');
     logger.info('Migration: Added goals_pdf_original_name column');
   }
+
+  // Get existing columns in iep_goals table
+  const goalColumns = db
+    .prepare("PRAGMA table_info(iep_goals)")
+    .all() as { name: string }[];
+  const goalColumnNames = goalColumns.map((c) => c.name);
+
+  // Add baseline if missing
+  if (!goalColumnNames.includes('baseline')) {
+    db.exec('ALTER TABLE iep_goals ADD COLUMN baseline TEXT');
+    logger.info('Migration: Added baseline column to iep_goals');
+  }
+
+  // Add sessions_to_confirm if missing
+  if (!goalColumnNames.includes('sessions_to_confirm')) {
+    db.exec('ALTER TABLE iep_goals ADD COLUMN sessions_to_confirm INTEGER DEFAULT 3');
+    logger.info('Migration: Added sessions_to_confirm column to iep_goals');
+  }
+
+  // Add comments if missing
+  if (!goalColumnNames.includes('comments')) {
+    db.exec('ALTER TABLE iep_goals ADD COLUMN comments TEXT');
+    logger.info('Migration: Added comments column to iep_goals');
+  }
+
+  // Add boardgame_categories if missing (stored as JSON string)
+  if (!goalColumnNames.includes('boardgame_categories')) {
+    db.exec('ALTER TABLE iep_goals ADD COLUMN boardgame_categories TEXT');
+    logger.info('Migration: Added boardgame_categories column to iep_goals');
+  }
 }
 
 export function closeDatabase(): void {

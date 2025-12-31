@@ -4,6 +4,219 @@
  */
 
 import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../../services/api';
+import { CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
+
+// Organized category groups for goal type selection
+const ORGANIZED_LANGUAGE_CATEGORIES = [
+  '---Vocabulary & Naming',
+  'Vocabulary - Basic Vocab',
+  'Vocabulary - Core Vocab',
+  'Vocabulary - Animals',
+  'Vocabulary - Food',
+  'Vocabulary - Clothing',
+  'Vocabulary - House',
+  'Vocabulary - School',
+  'Vocabulary - Beach',
+  'Common Items Around The House',
+  'Naming Community Helpers',
+  'Noun Naming',
+  'Function Labeling',
+
+  '---Concepts & Relationships',
+  'Semantic Relationships',
+  'Categories - Label The Category',
+  'Categories - Identifying Members Of A Category',
+  'Identifying Parts Of A Whole',
+  'Basic Spatial Concepts Fill In Word Or Phrase',
+  'Basic Temporal Concepts - Before And After',
+  'Before - After',
+  'Understanding Quantitative Concepts',
+  'Prepositions',
+  'Prepositions Simple Images',
+
+  '---Wh-Questions',
+  'Wh- Questions Mixed',
+  'Wh- Questions (What)',
+  'Wh- Questions (When)',
+  'Wh- Questions (Where)',
+  'Wh- Questions (Who)',
+  'Wh- Questions (Why)',
+  'Wh Questions With Picture Choices',
+  'Who Questions - Four Quadrants',
+  'Wh- Questions Short Stories',
+  'Questions For You',
+  'Yes No Questions',
+
+  '---Grammar & Syntax',
+  'Pronouns (He She They)',
+  'Pronouns - His Hers Him Her Their',
+  'Pronouns Mixed',
+  'Reflexive Pronouns',
+  'Possessives Common Nouns',
+  'Regular Plurals',
+  'Irregular Plurals',
+  'Do Vs Does',
+  'Has Vs Have',
+  'Is Vs Are',
+  'Was Vs Were',
+  'Third Person Singular',
+  'Coordinating Conjuctions',
+  'Subordinating Conjunctions',
+
+  '---Verbs & Tenses',
+  'Verbs - Basic Actions',
+  'Verbs - Select From Three',
+  'Future Tense',
+  'Past Tense Verbs Regular',
+  'Past Tense Verbs Irregular',
+  'Irregular Past Tense Verbs',
+
+  '---Adjectives & Describing',
+  'Adjectives - Opposites',
+  'Descriptive Words - Opposites',
+  'Adverbs',
+  'Describing',
+  'Describing - More Advanced',
+  'Describe The Scene Create One Sentence',
+
+  '---Comparatives & Antonyms/Synonyms',
+  'Comparatives - Superlatives',
+  'Compare And Contrast (Same And Different)',
+  'Antonyms',
+  'Antonym Name One - Middle',
+  'Synonyms',
+  'Synonym-Name One - Middle',
+  'Synonym Name One - Elementary',
+  'Antonyms Level 2',
+  'Synonyms Level 2',
+
+  '---Figurative Language',
+  'Idioms',
+  'Metaphors Elementary',
+  'Metaphors Middle',
+  'Metaphors - Identify The Meaning',
+  'Metaphors - Identify The Meaning - Multiple Choice',
+  'Similes',
+  'Similes - Identify The Meaning',
+  'Similes - Identify The Meaning - Multiple Choice',
+  'Figurative Language - Identify The Meaning',
+  'Identify The Meaning',
+  'Multiple Meaning Words',
+
+  '---Analogies & Context',
+  'Analogies Elementary',
+  'Analogies Middle',
+  'Analogies High',
+  'Context Clues Define Word In Sentence',
+  'Context Clues - Define Word In Paragraph',
+  'Context Clues In Short Paragraphs',
+  'Context Clues In Paragraphs - Fill In The Blank',
+
+  '---Inferencing & Predictions',
+  'Inferencing Level 1',
+  'Inferencing Level 2',
+  'Inferencing Based On Images',
+  'What Will Happen',
+  'What Will Happen - Predictions',
+
+  '---Problem Solving',
+  'Problem Solving',
+  'Problem Solving Based On Images',
+  'Problem Solving Part 2',
+
+  '---Sequencing & Stories',
+  'First Next Then Last',
+  'Sequencing Images - Set Of 3 Or 4',
+  'Short Stories Sequencing',
+  'How To',
+  'Basic Temporal Concepts Pick First - Second-Third',
+  'Short Stories Level 1',
+  'Short Stories Level 2',
+  'Short Stories - High',
+
+  '---Directions',
+  'Following 1-Step Directions',
+  'Following 2-Step Directions',
+  'Following Multistep Directions Level 2',
+  'Conditional Following Directions',
+  'Following Directions - Conditional',
+
+  '---Sentences',
+  'Building Sentences Level 1 - Elementary',
+  'Building Sentences Level 2 - Elementary',
+  'Expanding Sentences - Images With Who What Where',
+
+  '---Other',
+  'Negation',
+  'Negation Animals',
+  'Negation Clothing',
+  'Negation Colors',
+  'Negation Food',
+  'Negation Vehicles',
+  'Which One Does Not Belong',
+  'Rhyming',
+  'Rhyming - Match The Words That Rhyme',
+  'Sight Words',
+  'Homophones',
+  'Safety Signs',
+  'Identify What Is Missing',
+  'Naming And Categorizing',
+  'Nouns Set Of Three',
+  'Personal Hygiene Items',
+  'Vocabulary General',
+  'Vocabulary - Color',
+  'Vocabulary - Shapes',
+  'Vocabulary - Parts Of The Body',
+  'Vocabulary - Parts Of The Body Preschool',
+  'Vocabulary - Musical Instruments',
+  'Vocabulary - Sports',
+  'Vocabulary - Vehicles',
+  'Vocabulary - Vehicles Preschool',
+  'Vocabulary - Places In A Town Or City',
+  'Vocabulary - Seasonal Fall',
+  'Vocabulary - Seasonal Spring',
+  'Vocabulary - Seasonal Winter',
+  'Vocabulary - Halloween',
+  'Vocabulary - Food Real Images',
+];
+
+const ORGANIZED_ARTICULATION_CATEGORIES = [
+  '---Consonant Sounds',
+  'B Sound',
+  'P Sound',
+  'M Sound',
+  'T Sound',
+  'D Sound',
+  'N Sound',
+  'K Sound',
+  'G Sound',
+  'F Sound',
+  'V Sound',
+  'S Sound',
+  'Z Sound',
+  'Sh Sound',
+  'J Sound',
+  'Ch Sound',
+  'L Sound',
+  'R Sound',
+  'W Sound',
+  'Y Sound',
+  'H Sound',
+  'Th Voiceless Sound',
+  'Th Voiced Sound',
+  'Ng Sound',
+
+  '---Consonant Blends & Clusters',
+  'S Blends Sound',
+  'R Blends Sound',
+  'L Blends Sound',
+  'Consonant Clusters',
+
+  '---Vowels & Phonology',
+  'Vowels',
+  'Phonology',
+  'Syllable Shapes',
+];
 
 // DOM element helpers
 function $(id: string): HTMLElement {
@@ -182,57 +395,89 @@ function renderEvalData(student: Student): void {
     return;
   }
 
-  // Build display HTML
-  const fieldLabels: Record<string, string> = {
-    service_type: 'Service Type',
-    languages_spoken: 'Languages Spoken',
-    family_religion: 'Cultural/Religious Notes',
-    medical_history: 'Medical History',
-    other_diagnoses: 'Other Diagnoses',
-    speech_diagnoses: 'Speech/Language Diagnoses',
-    prior_therapy: 'Prior Therapy',
-    baseline_accuracy: 'Baseline Accuracy',
-    goals_benchmarks: 'Goals & Benchmarks',
-    strengths: 'Strengths',
-    weaknesses: 'Weaknesses',
-    target_sounds: 'Target Sounds',
-    teachers: 'Teachers/Contacts',
-    notes: 'Additional Notes',
+  // Build display HTML with categorized fields
+  const fieldCategories = {
+    basic: {
+      service_type: 'Service Type',
+      languages_spoken: 'Languages Spoken',
+      family_religion: 'Cultural/Religious Notes',
+    },
+    medical: {
+      medical_history: 'Medical History',
+      other_diagnoses: 'Other Diagnoses',
+      speech_diagnoses: 'Speech/Language Diagnoses',
+      prior_therapy: 'Prior Therapy',
+    },
+    performance: {
+      baseline_accuracy: 'Baseline Accuracy',
+      goals_benchmarks: 'Goals & Benchmarks',
+      target_sounds: 'Target Sounds',
+    },
+    assessment: {
+      strengths: 'Strengths',
+      weaknesses: 'Weaknesses',
+    },
+    other: {
+      teachers: 'Teachers/Contacts',
+      notes: 'Additional Notes',
+    },
+  };
+
+  const categoryColors: Record<string, string> = {
+    basic: '#87CEEB',       // Sky blue
+    medical: '#FF6B6B',     // Coral red
+    performance: '#4CAF50', // Green
+    assessment: '#9C27B0',  // Purple
+    other: '#FF9800',       // Orange
   };
 
   let html = '<div class="eval-data-grid">';
 
-  for (const [key, label] of Object.entries(fieldLabels)) {
-    const field = evalData[key as keyof EvalData];
-    if (!field) continue;
+  // Render fields by category
+  for (const [category, fields] of Object.entries(fieldCategories)) {
+    for (const [key, label] of Object.entries(fields)) {
+      const field = evalData[key as keyof EvalData];
 
-    let value: string | number | string[] | null = null;
-    if (typeof field === 'object' && 'value' in field) {
-      value = field.value;
-    } else if (typeof field === 'string') {
-      value = field;
+      let value: string | number | string[] | null = null;
+      if (field) {
+        if (typeof field === 'object' && 'value' in field) {
+          value = field.value;
+        } else if (typeof field === 'string' || typeof field === 'number') {
+          value = field;
+        }
+      }
+
+      // Show all fields, even if empty
+      let displayValue: string;
+      let isEmpty = false;
+
+      if (value === null || value === undefined || value === '') {
+        displayValue = 'Not provided';
+        isEmpty = true;
+      } else if (Array.isArray(value)) {
+        if (value.length === 0) {
+          displayValue = 'Not provided';
+          isEmpty = true;
+        } else {
+          displayValue = value.join(', ');
+        }
+      } else {
+        displayValue = String(value);
+      }
+
+      const accentColor = categoryColors[category] || categoryColors.other;
+
+      html += `
+        <div class="eval-data-item${isEmpty ? ' eval-data-empty' : ''}" style="border-left-color: ${accentColor}">
+          <span class="eval-data-label">${label}</span>
+          <span class="eval-data-value">${displayValue}</span>
+        </div>
+      `;
     }
-
-    if (value === null || value === undefined || value === '') continue;
-
-    const displayValue = Array.isArray(value) ? value.join(', ') : String(value);
-
-    html += `
-      <div class="eval-data-item">
-        <span class="eval-data-label">${label}</span>
-        <span class="eval-data-value">${displayValue}</span>
-      </div>
-    `;
   }
 
   html += '</div>';
-
-  // Check if any fields were rendered
-  if (html === '<div class="eval-data-grid"></div>') {
-    container.innerHTML = '<p class="empty-state">No evaluation data entered yet.</p>';
-  } else {
-    container.innerHTML = html;
-  }
+  container.innerHTML = html;
 }
 
 // Add student
@@ -349,6 +594,8 @@ function showEvalError(message: string): void {
 }
 
 function populateEvalForm(data: EvalData): void {
+  console.log('🔍 populateEvalForm - Full data:', JSON.stringify(data, null, 2));
+
   const fields = [
     'service_type',
     'languages_spoken',
@@ -378,6 +625,8 @@ function populateEvalForm(data: EvalData): void {
 
     if (!inputEl) continue;
 
+    console.log(`🔍 Field "${field}":`, fieldData);
+
     // Set value
     if (fieldData && typeof fieldData === 'object' && 'value' in fieldData) {
       const value = fieldData.value;
@@ -389,27 +638,35 @@ function populateEvalForm(data: EvalData): void {
         inputEl.value = '';
       }
 
-      // Set confidence styling
+      // Set confidence styling - yellow for missing or uncertain (< 0.7)
       const confidence = fieldData.confidence ?? 0;
+      const hasValue = value !== null && value !== undefined && value !== '';
       if (fieldContainer) {
-        fieldContainer.classList.remove('low-confidence', 'medium-confidence', 'high-confidence');
-        if (confidence < 0.5) {
+        fieldContainer.classList.remove('low-confidence');
+        if (!hasValue || confidence < 0.7) {
           fieldContainer.classList.add('low-confidence');
-        } else if (confidence < 0.8) {
-          fieldContainer.classList.add('medium-confidence');
-        } else {
-          fieldContainer.classList.add('high-confidence');
         }
       }
 
       // Set hint
-      if (hintEl && fieldData.source_hint) {
-        hintEl.textContent = fieldData.source_hint;
+      if (hintEl) {
+        if (fieldData.source_hint) {
+          console.log(`✅ Setting hint for "${field}": ${fieldData.source_hint}`);
+          hintEl.textContent = fieldData.source_hint;
+        } else {
+          console.log(`⚠️ No source_hint for "${field}"`);
+          hintEl.textContent = '';
+        }
+      } else {
+        console.log(`❌ No hintEl found for "${field}"`);
       }
     } else {
       inputEl.value = '';
       if (fieldContainer) {
         fieldContainer.classList.add('low-confidence');
+      }
+      if (hintEl) {
+        hintEl.textContent = '';
       }
     }
   }
@@ -518,8 +775,8 @@ async function uploadEvalFile(password?: string): Promise<void> {
     try {
       const pdfBlob = await api.getEvaluationPdfBlob(selectedStudentId);
       currentPdfUrl = URL.createObjectURL(pdfBlob);
-      const pdfFrame = $('eval-pdf-frame') as HTMLIFrameElement;
-      pdfFrame.src = currentPdfUrl;
+      const pdfFrame = document.getElementById('eval-pdf-frame') as HTMLIFrameElement | null;
+      if (pdfFrame) pdfFrame.src = currentPdfUrl;
     } catch {
       // PDF preview failed, but extraction succeeded - continue anyway
       console.warn('Could not load PDF preview');
@@ -564,6 +821,11 @@ async function confirmEvalData(): Promise<void> {
 
   const evalData = getFormEvalData();
   const serviceType = ($('extracted-service_type') as HTMLSelectElement).value || undefined;
+
+  console.log('📤 SENDING EVALUATION TO BACKEND:', JSON.stringify({
+    eval_data: evalData,
+    service_type: serviceType,
+  }, null, 2));
 
   try {
     hide($('eval-confirm-error'));
@@ -652,22 +914,112 @@ function renderGoalsData(): void {
   html += '</div>';
   container.innerHTML = html;
 
-  // Add click handlers to toggle details
+  // Add click handlers to show goal details modal
   container.querySelectorAll('.goal-item').forEach((item) => {
     item.addEventListener('click', () => {
-      const goalId = item.getAttribute('data-goal-id');
-      const detailsEl = document.getElementById(`goal-details-${goalId}`);
-      if (detailsEl) {
-        const isHidden = detailsEl.classList.contains('hidden');
-        // Hide all other details first
-        container.querySelectorAll('.goal-details').forEach(d => d.classList.add('hidden'));
-        // Toggle this one
-        if (isHidden) {
-          detailsEl.classList.remove('hidden');
-        }
+      const goalId = parseInt(item.getAttribute('data-goal-id') || '0');
+      const goal = studentGoals.find(g => g.id === goalId);
+      if (goal) {
+        showGoalDetailsModal(goal);
       }
     });
   });
+}
+
+function showGoalDetailsModal(goal: IEPGoal): void {
+  // Populate baseline
+  const baselineEl = document.getElementById('goal-detail-baseline');
+  if (baselineEl) {
+    baselineEl.textContent = goal.baseline || '';
+  }
+
+  // Populate deadline
+  const deadlineEl = document.getElementById('goal-detail-deadline');
+  if (deadlineEl) {
+    deadlineEl.textContent = goal.target_date
+      ? new Date(goal.target_date).toLocaleDateString()
+      : '';
+  }
+
+  // Populate description
+  const descEl = document.getElementById('goal-detail-description');
+  if (descEl) {
+    descEl.textContent = goal.goal_description;
+  }
+
+  // Populate goal type
+  const typeEl = document.getElementById('goal-detail-type');
+  if (typeEl) {
+    typeEl.textContent = goal.goal_type === 'language' ? 'Language' : 'Articulation';
+  }
+
+  // Populate boardgame categories
+  const categoriesEl = document.getElementById('goal-detail-categories');
+  if (categoriesEl) {
+    categoriesEl.innerHTML = '';
+    if (goal.boardgame_categories) {
+      try {
+        const categories = JSON.parse(goal.boardgame_categories) as string[];
+        if (categories && categories.length > 0) {
+          categories.forEach(cat => {
+            const badge = document.createElement('span');
+            badge.className = 'goal-detail-category-badge';
+            badge.textContent = cat;
+            categoriesEl.appendChild(badge);
+          });
+        }
+      } catch {
+        // Invalid JSON, leave empty
+      }
+    }
+  }
+
+  // Populate target accuracy
+  const targetEl = document.getElementById('goal-detail-target');
+  if (targetEl) {
+    targetEl.textContent = `${goal.target_percentage}%`;
+  }
+
+  // Populate sessions
+  const sessionsEl = document.getElementById('goal-detail-sessions');
+  if (sessionsEl) {
+    sessionsEl.textContent = goal.sessions_to_confirm ? goal.sessions_to_confirm.toString() : '3';
+  }
+
+  // Populate comments
+  const commentsEl = document.getElementById('goal-detail-comments');
+  if (commentsEl) {
+    commentsEl.textContent = goal.comments || '';
+  }
+
+  // Populate status
+  const statusEl = document.getElementById('goal-detail-status');
+  if (statusEl) {
+    const statusText = goal.status === 'active' ? 'Active' :
+                       goal.status === 'achieved' ? 'Achieved' : 'Discontinued';
+    statusEl.textContent = statusText;
+  }
+
+  // Populate current progress
+  const progressEl = document.getElementById('goal-detail-progress');
+  if (progressEl) {
+    progressEl.textContent = `${goal.current_percentage ?? 0}%`;
+  }
+
+  // Populate created date
+  const createdEl = document.getElementById('goal-detail-created');
+  if (createdEl) {
+    createdEl.textContent = new Date(goal.created_at).toLocaleDateString();
+  }
+
+  // Populate updated date
+  const updatedEl = document.getElementById('goal-detail-updated');
+  if (updatedEl) {
+    updatedEl.textContent = new Date(goal.updated_at).toLocaleDateString();
+  }
+
+  // Show modal
+  openModal('goal-details-modal');
 }
 
 function resetGoalsUploadModal(): void {
@@ -713,6 +1065,47 @@ function showGoalsError(message: string): void {
   show(errorEl);
 }
 
+/**
+ * Generate category checkboxes organized by groups
+ * @param categories - Array of categories with '---' prefixed group headers
+ * @param goalIndex - Goal index for unique IDs
+ * @param selectedCategories - Array of pre-selected category names
+ */
+function generateCategoryCheckboxes(categories: string[], goalIndex: number, selectedCategories: string[] = []): string {
+  let html = '';
+  let currentGroup: string | null = null;
+
+  categories.forEach((cat) => {
+    if (cat.startsWith('---')) {
+      // Close previous group
+      if (currentGroup !== null) {
+        html += '</div>'; // Close category-group
+      }
+      // Start new group
+      const groupName = cat.replace('---', '').trim();
+      currentGroup = groupName;
+      html += `<div class="category-group">
+                 <div class="category-group-header">${groupName}</div>`;
+    } else {
+      // Category checkbox
+      const isChecked = selectedCategories.includes(cat);
+      const checkboxId = `goal-${goalIndex}-cat-${cat.replace(/[^a-zA-Z0-9]/g, '-')}`;
+      html += `
+        <label class="category-checkbox">
+          <input type="checkbox" id="${checkboxId}" value="${cat}" data-goal-index="${goalIndex}" ${isChecked ? 'checked' : ''}>
+          <span>${cat}</span>
+        </label>`;
+    }
+  });
+
+  // Close last group
+  if (currentGroup !== null) {
+    html += '</div>';
+  }
+
+  return html;
+}
+
 function populateGoalsForm(goals: ExtractedGoal[]): void {
   const container = $('extracted-goals-list');
 
@@ -728,27 +1121,111 @@ function populateGoalsForm(goals: ExtractedGoal[]): void {
     const description = goal.goal_description.value || '';
     const targetPct = goal.target_percentage.value || 80;
     const targetDate = goal.target_date.value || '';
+    const baseline = goal.baseline?.value || '';
+    const deadline = goal.deadline?.value || '';
+    const sessions = goal.sessions_to_confirm?.value || 3;
+    const comments = goal.comments?.value || '';
+    const boardgameCategories = goal.boardgame_categories?.value || [];
+
+    // Extract source hints
+    const baselineHint = goal.baseline?.source_hint || '';
+    const deadlineHint = (goal.deadline?.source_hint || goal.target_date?.source_hint) || '';
+    const descriptionHint = goal.goal_description?.source_hint || '';
+    const targetPctHint = goal.target_percentage?.source_hint || '';
+    const sessionsHint = goal.sessions_to_confirm?.source_hint || '';
+    const commentsHint = goal.comments?.source_hint || '';
+    const categoriesReasoning = goal.boardgame_categories?.reasoning || goal.goal_type?.reasoning || '';
+
+    // Determine low-confidence classes (yellow highlighting for missing/uncertain)
+    const baselineConfidence = goal.baseline?.confidence ?? 0;
+    const baselineLowConf = !baseline || baselineConfidence < 0.7 ? 'low-confidence' : '';
+    const deadlineConfidence = Math.max(goal.deadline?.confidence ?? 0, goal.target_date?.confidence ?? 0);
+    const deadlineLowConf = !deadline || deadlineConfidence < 0.7 ? 'low-confidence' : '';
+    const descConfidence = goal.goal_description?.confidence ?? 0;
+    const descLowConf = !description || descConfidence < 0.7 ? 'low-confidence' : '';
+    const targetPctConfidence = goal.target_percentage?.confidence ?? 0;
+    const targetPctLowConf = targetPctConfidence < 0.7 ? 'low-confidence' : '';
+    const sessionsConfidence = goal.sessions_to_confirm?.confidence ?? 0;
+    const sessionsLowConf = sessionsConfidence < 0.7 ? 'low-confidence' : '';
+    const commentsConfidence = goal.comments?.confidence ?? 0;
+    const commentsLowConf = !comments || commentsConfidence < 0.7 ? 'low-confidence' : '';
+    const categoriesConfidence = goal.boardgame_categories?.confidence ?? 0;
+    const categoriesLowConf = boardgameCategories.length === 0 || categoriesConfidence < 0.7 ? 'low-confidence' : '';
+
+    // Determine which categories to show based on goal type
+    const categoriesToShow = goalType === 'articulation' ? ORGANIZED_ARTICULATION_CATEGORIES : ORGANIZED_LANGUAGE_CATEGORIES;
+    const selectedCategories = boardgameCategories.length > 0 ? boardgameCategories : [];
 
     html += `
       <div class="extracted-goal-item" data-index="${index}">
-        <div class="goal-form-row">
-          <label>Type:</label>
-          <select class="goal-type-select">
-            <option value="language" ${goalType === 'language' ? 'selected' : ''}>Language</option>
-            <option value="articulation" ${goalType === 'articulation' ? 'selected' : ''}>Articulation</option>
-          </select>
+        <div class="goal-header">
+          <h3 class="goal-number">Goal ${index + 1}</h3>
         </div>
-        <div class="goal-form-row">
-          <label>Goal:</label>
-          <textarea class="goal-description-input" rows="3">${description}</textarea>
+
+        <!-- Measurable Baseline -->
+        <div class="goal-form-row ${baselineLowConf}">
+          <label>Measurable Baseline:</label>
+          <input type="text" class="goal-baseline-input" value="${baseline}" placeholder="e.g., 60% accuracy at word level">
+          ${baselineHint ? `<span class="field-hint">${baselineHint}</span>` : ''}
         </div>
-        <div class="goal-form-row">
-          <label>Target %:</label>
-          <input type="number" class="goal-target-input" min="0" max="100" value="${targetPct}">
-        </div>
-        <div class="goal-form-row">
-          <label>Target Date:</label>
-          <input type="date" class="goal-date-input" value="${targetDate}">
+
+        <!-- Proposed Goal Section -->
+        <div class="proposed-goal-section">
+          <h4>Proposed Goal:</h4>
+
+          <div class="goal-form-row ${deadlineLowConf}">
+            <label>Deadline:</label>
+            <input type="text" class="goal-deadline-input" value="${deadline}" placeholder="e.g., By February 2026">
+            ${deadlineHint ? `<span class="field-hint">${deadlineHint}</span>` : ''}
+          </div>
+
+          <div class="goal-form-row ${descLowConf}">
+            <label>Description:</label>
+            <textarea class="goal-description-input" rows="3" placeholder="Full goal description...">${description}</textarea>
+            ${descriptionHint ? `<span class="field-hint">${descriptionHint}</span>` : ''}
+          </div>
+
+          <div class="goal-form-row ${categoriesLowConf}">
+            <label>Goal Types (select matching boardgame cards):</label>
+            ${selectedCategories.length > 0 ? `<div class="ai-detected-hint">AI detected: <strong>${goalType}</strong> (${selectedCategories.length} cards auto-selected)</div>` : `<div class="ai-detected-hint">AI detected: <strong>${goalType}</strong> (no specific cards selected - please select manually)</div>`}
+            ${categoriesReasoning ? `<span class="field-hint">${categoriesReasoning}</span>` : ''}
+            <div class="goal-types-multiselect" data-goal-index="${index}">
+              ${generateCategoryCheckboxes(categoriesToShow, index, selectedCategories)}
+            </div>
+          </div>
+
+          <div class="goal-form-row-split">
+            <div class="goal-form-row ${targetPctLowConf}">
+              <label>Target Accuracy %:</label>
+              <select class="goal-target-input">
+                <option value="50" ${targetPct === 50 ? 'selected' : ''}>50%</option>
+                <option value="60" ${targetPct === 60 ? 'selected' : ''}>60%</option>
+                <option value="70" ${targetPct === 70 ? 'selected' : ''}>70%</option>
+                <option value="75" ${targetPct === 75 ? 'selected' : ''}>75%</option>
+                <option value="80" ${targetPct === 80 ? 'selected' : ''}>80%</option>
+                <option value="85" ${targetPct === 85 ? 'selected' : ''}>85%</option>
+                <option value="90" ${targetPct === 90 ? 'selected' : ''}>90%</option>
+              </select>
+              ${targetPctHint ? `<span class="field-hint">${targetPctHint}</span>` : ''}
+            </div>
+
+            <div class="goal-form-row ${sessionsLowConf}">
+              <label>Sessions to Confirm:</label>
+              <select class="goal-sessions-input">
+                <option value="2" ${sessions === 2 ? 'selected' : ''}>2</option>
+                <option value="3" ${sessions === 3 ? 'selected' : ''}>3</option>
+                <option value="4" ${sessions === 4 ? 'selected' : ''}>4</option>
+                <option value="5" ${sessions === 5 ? 'selected' : ''}>5</option>
+              </select>
+              ${sessionsHint ? `<span class="field-hint">${sessionsHint}</span>` : ''}
+            </div>
+          </div>
+
+          <div class="goal-form-row ${commentsLowConf}">
+            <label>Comments:</label>
+            <textarea class="goal-comments-input" rows="2" placeholder="e.g., Based on assessment results...">${comments}</textarea>
+            ${commentsHint ? `<span class="field-hint">${commentsHint}</span>` : ''}
+          </div>
         </div>
       </div>
     `;
@@ -762,17 +1239,41 @@ function getFormGoalsData(): ExtractedGoal[] {
   const goalItems = container.querySelectorAll('.extracted-goal-item');
   const goals: ExtractedGoal[] = [];
 
-  goalItems.forEach((item) => {
-    const typeSelect = item.querySelector('.goal-type-select') as HTMLSelectElement;
+  goalItems.forEach((item, index) => {
     const descInput = item.querySelector('.goal-description-input') as HTMLTextAreaElement;
-    const targetInput = item.querySelector('.goal-target-input') as HTMLInputElement;
-    const dateInput = item.querySelector('.goal-date-input') as HTMLInputElement;
+    const targetInput = item.querySelector('.goal-target-input') as HTMLSelectElement;
+    const baselineInput = item.querySelector('.goal-baseline-input') as HTMLInputElement;
+    const deadlineInput = item.querySelector('.goal-deadline-input') as HTMLInputElement;
+    const sessionsInput = item.querySelector('.goal-sessions-input') as HTMLSelectElement;
+    const commentsInput = item.querySelector('.goal-comments-input') as HTMLTextAreaElement;
+
+    // Collect selected boardgame categories from checkboxes
+    const categoryCheckboxes = item.querySelectorAll('.goal-types-multiselect input[type="checkbox"]:checked');
+    const selectedCategories: string[] = [];
+    categoryCheckboxes.forEach((checkbox) => {
+      selectedCategories.push((checkbox as HTMLInputElement).value);
+    });
+
+    // Infer goal_type from selected categories
+    let goalType: 'language' | 'articulation' = 'language';
+    if (selectedCategories.length > 0) {
+      // Check if any selected category is in articulation list
+      const hasArticulation = selectedCategories.some(cat =>
+        ORGANIZED_ARTICULATION_CATEGORIES.includes(cat)
+      );
+      goalType = hasArticulation ? 'articulation' : 'language';
+    }
 
     goals.push({
-      goal_type: { value: typeSelect.value as 'language' | 'articulation', confidence: 0.9 },
+      goal_type: { value: goalType, confidence: 0.9 },
       goal_description: { value: descInput.value || null, confidence: 0.9 },
       target_percentage: { value: parseInt(targetInput.value) || 80, confidence: 0.9 },
-      target_date: { value: dateInput.value || null, confidence: 0.9 },
+      target_date: { value: null, confidence: 0.9 },
+      baseline: { value: baselineInput.value || null, confidence: 0.9 },
+      deadline: { value: deadlineInput.value || null, confidence: 0.9 },
+      sessions_to_confirm: { value: parseInt(sessionsInput.value) || 3, confidence: 0.9 },
+      comments: { value: commentsInput.value || null, confidence: 0.9 },
+      boardgame_categories: { value: selectedCategories.length > 0 ? selectedCategories : null, confidence: 0.9 },
     });
   });
 
@@ -810,6 +1311,7 @@ async function uploadGoalsFile(password?: string): Promise<void> {
     const result = await api.uploadGoals(selectedStudentId, pendingGoalsFile, password);
 
     extractedGoals = result.extracted_data.goals;
+    console.log('🎯 EXTRACTED GOALS FROM AI:', JSON.stringify(extractedGoals, null, 2));
 
     populateGoalsForm(extractedGoals);
 
@@ -857,6 +1359,8 @@ async function confirmGoalsData(): Promise<void> {
   if (!selectedStudentId) return;
 
   const goals = getFormGoalsData();
+
+  console.log('📤 SENDING GOALS TO BACKEND:', JSON.stringify(goals, null, 2));
 
   try {
     hide($('goals-confirm-error'));

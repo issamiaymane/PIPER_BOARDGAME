@@ -121,7 +121,9 @@ export function updateStudent(
   }
   if (data.eval_data !== undefined) {
     updates.push('eval_data = ?');
-    values.push(JSON.stringify(data.eval_data));
+    const jsonData = JSON.stringify(data.eval_data);
+    console.log(`🔍 updateStudent - Storing eval_data as JSON (${jsonData.length} chars):`, jsonData);
+    values.push(jsonData);
   }
 
   if (updates.length === 0) {
@@ -129,6 +131,7 @@ export function updateStudent(
   }
 
   values.push(id);
+  console.log(`🔍 updateStudent - Executing SQL with ${updates.length} updates for student ${id}`);
   db.prepare(`UPDATE children SET ${updates.join(', ')} WHERE id = ?`).run(...values);
 
   return getStudentById(id);

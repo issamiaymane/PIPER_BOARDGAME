@@ -19,6 +19,8 @@
         <div class="snowflake">❄</div>
         <div class="snowflake">❄</div>
         <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❄</div>
     </div>
 
     <!-- Loading Screen -->
@@ -37,8 +39,8 @@
         <div id="auth-screen" class="screen">
             <div class="auth-container">
                 <div class="auth-header">
-                    <h1>🎯 PIPER</h1>
-                    <p>Personalized IEP Progress & Evaluation Reporter</p>
+                    <h1>PIPER</h1>
+                    <p class="auth-subtitle">Personalized IEP Progress & Evaluation Reporter</p>
                 </div>
 
                 <!-- Login Form -->
@@ -53,9 +55,9 @@
                         <input type="password" id="login-password" required>
                     </div>
                     <div class="form-error hidden" id="login-error"></div>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-primary">LOGIN</button>
                     <p class="form-footer">
-                        Don't have an account? <a href="#" id="show-register">Register</a>
+                        Don't have an account? <a href="#" id="show-register">Register here</a>
                     </p>
                 </form>
 
@@ -85,9 +87,9 @@
                         <input type="text" id="reg-credentials">
                     </div>
                     <div class="form-error hidden" id="register-error"></div>
-                    <button type="submit" class="btn btn-primary">Create Account</button>
+                    <button type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
                     <p class="form-footer">
-                        Already have an account? <a href="#" id="show-login">Login</a>
+                        Already have an account? <a href="#" id="show-login">Login here</a>
                     </p>
                 </form>
             </div>
@@ -98,11 +100,13 @@
             <!-- Header -->
             <header class="dashboard-header">
                 <div class="header-left">
-                    <h1>🎯 PIPER Dashboard</h1>
+                    <h1>PIPER Dashboard</h1>
                 </div>
                 <div class="header-right">
-                    <span id="therapist-name" class="therapist-name"></span>
-                    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                    <div class="therapist-info">
+                        <span class="therapist-name" id="therapist-name"></span>
+                    </div>
+                    <button id="logout-btn" class="btn btn-logout">LOGOUT</button>
                 </div>
             </header>
 
@@ -111,8 +115,8 @@
                 <!-- Sidebar - Student List -->
                 <aside class="sidebar">
                     <div class="sidebar-header">
-                        <h2>Students</h2>
-                        <button id="add-student-btn" class="btn btn-add">+ Add</button>
+                        <h2>My Students</h2>
+                        <button id="add-student-btn" class="btn btn-add">+ ADD</button>
                     </div>
                     <div id="student-list" class="student-list">
                         <p class="empty-state">Loading students...</p>
@@ -124,7 +128,8 @@
                     <!-- No Student Selected -->
                     <div id="no-student-selected" class="content-placeholder">
                         <div class="placeholder-icon">👤</div>
-                        <p>Select a student from the sidebar to view their profile and progress.</p>
+                        <h3>Select a Student</h3>
+                        <p>Choose a student from the sidebar to view their profile and progress</p>
                     </div>
 
                     <!-- Student Profile -->
@@ -136,49 +141,60 @@
                                 <p id="profile-details"></p>
                             </div>
                             <div class="profile-actions">
-                                <button id="delete-student-btn" class="btn btn-danger">Delete</button>
+                                <button id="delete-student-btn" class="btn btn-danger">DELETE</button>
                             </div>
                         </div>
 
-                        <!-- Eval Data Card -->
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <h3>📋 Evaluation Data</h3>
-                                <button id="upload-eval-btn" class="btn btn-small">📄 Upload PDF</button>
+                        <!-- Cards Grid -->
+                        <div class="cards-grid">
+                            <!-- Eval Data Card -->
+                            <div class="profile-card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3>Evaluation Data</h3>
+                                    </div>
+                                    <button id="upload-eval-btn" class="btn btn-small">UPLOAD</button>
+                                </div>
+                                <div id="eval-data-display" class="card-content">
+                                    <p class="empty-state">No evaluation data yet</p>
+                                </div>
                             </div>
-                            <div id="eval-data-display" class="card-content">
-                                <p class="empty-state">No evaluation data entered yet.</p>
-                            </div>
-                        </div>
 
-                        <!-- Goals Card -->
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <h3>🎯 IEP Goals</h3>
-                                <button id="upload-goals-btn" class="btn btn-small">📄 Upload PDF</button>
+                            <!-- Goals Card -->
+                            <div class="profile-card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3>IEP Goals</h3>
+                                    </div>
+                                    <button id="upload-goals-btn" class="btn btn-small">UPLOAD</button>
+                                </div>
+                                <div id="goals-data-display" class="card-content">
+                                    <p class="empty-state">No goals yet</p>
+                                </div>
                             </div>
-                            <div id="goals-data-display" class="card-content">
-                                <p class="empty-state">No goals yet.</p>
-                            </div>
-                        </div>
 
-                        <!-- Sessions Card -->
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <h3>📝 Sessions</h3>
+                            <!-- Sessions Card -->
+                            <div class="profile-card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3>Sessions</h3>
+                                    </div>
+                                </div>
+                                <div id="sessions-list" class="card-content">
+                                    <p class="empty-state">No sessions yet</p>
+                                </div>
                             </div>
-                            <div id="sessions-list" class="card-content">
-                                <p class="empty-state">No sessions yet.</p>
-                            </div>
-                        </div>
 
-                        <!-- Credentials Card -->
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <h3>🔐 Login Credentials</h3>
-                            </div>
-                            <div class="card-content">
-                                <p><strong>Username:</strong> <span id="child-username"></span></p>
+                            <!-- Credentials Card -->
+                            <div class="profile-card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3>Login Credentials</h3>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p><strong>Username:</strong> <span id="child-username"></span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -245,8 +261,8 @@
 
                 <div class="form-error hidden" id="add-student-error"></div>
                 <div class="form-actions">
-                    <button type="button" class="btn btn-secondary cancel-modal" data-modal="add-student-modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Create Student</button>
+                    <button type="button" class="btn btn-secondary cancel-modal" data-modal="add-student-modal">CANCEL</button>
+                    <button type="submit" class="btn btn-primary">CREATE STUDENT</button>
                 </div>
             </form>
         </div>
@@ -261,13 +277,11 @@
             <!-- Upload State -->
             <div id="goals-upload-state" class="upload-container">
                 <div class="upload-header">
-                    <div class="upload-icon">🎯</div>
                     <h2>Upload IEP Goals Document</h2>
                     <p class="upload-description">Upload an IEP document and our AI will automatically extract and organize the student's speech therapy goals.</p>
                 </div>
 
                 <div class="upload-dropzone" id="goals-dropzone">
-                    <div class="dropzone-icon">📄</div>
                     <p class="dropzone-text">Drag & drop your IEP document here</p>
                     <p class="dropzone-subtext">or click to browse files</p>
                     <input type="file" id="goals-file-input" accept=".pdf" class="hidden">
@@ -282,10 +296,10 @@
                 <p class="upload-hint">Supports PDF files up to 20MB</p>
 
                 <div id="goals-password-field" class="password-field hidden">
-                    <label for="goals-pdf-password">🔒 This PDF is password protected</label>
+                    <label for="goals-pdf-password">This PDF is password protected</label>
                     <p class="password-hint">Enter the document password to continue</p>
                     <input type="password" id="goals-pdf-password" placeholder="Enter PDF password">
-                    <button type="button" class="btn btn-primary" id="goals-retry-password-btn">Unlock & Extract</button>
+                    <button type="button" class="btn btn-primary" id="goals-retry-password-btn">UNLOCK & EXTRACT</button>
                 </div>
                 <div id="goals-upload-error" class="form-error hidden"></div>
             </div>
@@ -303,22 +317,16 @@
 
             <!-- Review State -->
             <div id="goals-review-state" class="hidden">
-                <div class="review-layout">
-                    <div class="review-pdf">
-                        <h3>Original Document</h3>
-                        <iframe id="goals-pdf-frame" src="" title="IEP Goals PDF"></iframe>
-                    </div>
-                    <div class="review-data">
-                        <h3>Extracted Goals</h3>
-                        <p class="review-hint">Review and edit extracted goals before saving</p>
-                        <div id="extracted-goals-list" class="extracted-goals-container"></div>
-                        <div id="goals-extraction-notes-display"></div>
-                    </div>
-                </div>
+                <h2>Extracted Goals</h2>
+                <p class="review-hint">Review and edit extracted goals before saving. Yellow fields indicate missing or uncertain information</p>
+
+                <div id="extracted-goals-list" class="extracted-goals-container"></div>
+                <div id="goals-extraction-notes-display"></div>
+
                 <div class="form-error hidden" id="goals-confirm-error"></div>
                 <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" id="goals-cancel-btn">Cancel</button>
-                    <button type="button" class="btn btn-primary" id="goals-confirm-btn">Save Goals</button>
+                    <button type="button" class="btn btn-secondary" id="goals-cancel-btn">CANCEL</button>
+                    <button type="button" class="btn btn-primary" id="goals-confirm-btn">SAVE GOALS</button>
                 </div>
             </div>
         </div>
@@ -333,13 +341,11 @@
             <!-- Upload State -->
             <div id="eval-upload-state" class="upload-container">
                 <div class="upload-header">
-                    <div class="upload-icon">📋</div>
                     <h2>Upload Evaluation Report</h2>
                     <p class="upload-description">Upload a PDF document and our AI will automatically extract clinical information, diagnoses, and assessment results.</p>
                 </div>
 
                 <div class="upload-dropzone" id="eval-dropzone">
-                    <div class="dropzone-icon">📄</div>
                     <p class="dropzone-text">Drag & drop your PDF here</p>
                     <p class="dropzone-subtext">or click to browse files</p>
                     <input type="file" id="eval-file-input" accept=".pdf" class="hidden">
@@ -354,10 +360,10 @@
                 <p class="upload-hint">Supports PDF files up to 20MB</p>
 
                 <div id="eval-password-field" class="password-field hidden">
-                    <label for="eval-pdf-password">🔒 This PDF is password protected</label>
+                    <label for="eval-pdf-password">This PDF is password protected</label>
                     <p class="password-hint">Enter the document password to continue</p>
                     <input type="password" id="eval-pdf-password" placeholder="Enter PDF password">
-                    <button type="button" class="btn btn-primary" id="eval-retry-password-btn">Unlock & Extract</button>
+                    <button type="button" class="btn btn-primary" id="eval-retry-password-btn">UNLOCK & EXTRACT</button>
                 </div>
                 <div id="eval-upload-error" class="form-error hidden"></div>
             </div>
@@ -375,16 +381,10 @@
 
             <!-- Review State -->
             <div id="eval-review-state" class="hidden">
-                <div class="review-layout">
-                    <div class="review-pdf">
-                        <h3>Original Document</h3>
-                        <iframe id="eval-pdf-frame" src="" title="Evaluation PDF"></iframe>
-                    </div>
-                    <div class="review-data">
-                        <h3>Extracted Information</h3>
-                        <p class="review-hint">Red fields indicate missing or uncertain information</p>
+                <h2>Extracted Information</h2>
+                <p class="review-hint">Yellow fields indicate missing or uncertain information</p>
 
-                        <div class="eval-form-scroll">
+                <div class="eval-form-scroll">
                             <!-- Service Type -->
                             <div class="eval-section">
                                 <h4>Service Type (AI Detected)</h4>
@@ -396,6 +396,7 @@
                                         <option value="articulation">Articulation</option>
                                         <option value="both">Both (Language & Articulation)</option>
                                     </select>
+                                    <span class="field-hint"></span>
                                 </div>
                             </div>
 
@@ -405,18 +406,22 @@
                                 <div class="eval-field" id="field-languages_spoken">
                                     <label>Languages Spoken</label>
                                     <input type="text" id="extracted-languages_spoken">
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-family_religion">
                                     <label>Cultural/Religious Notes</label>
                                     <input type="text" id="extracted-family_religion">
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-medical_history">
                                     <label>Medical History</label>
                                     <textarea id="extracted-medical_history" rows="2"></textarea>
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-other_diagnoses">
                                     <label>Other Diagnoses</label>
                                     <input type="text" id="extracted-other_diagnoses">
+                                    <span class="field-hint"></span>
                                 </div>
                             </div>
 
@@ -426,6 +431,7 @@
                                 <div class="eval-field" id="field-speech_diagnoses">
                                     <label>Speech/Language Diagnoses</label>
                                     <input type="text" id="extracted-speech_diagnoses">
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-prior_therapy">
                                     <label>Prior Speech Therapy</label>
@@ -437,10 +443,12 @@
                                         <option value="2-3">2-3 years</option>
                                         <option value="3+">3+ years</option>
                                     </select>
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-baseline_accuracy">
                                     <label>Baseline Accuracy %</label>
                                     <input type="number" id="extracted-baseline_accuracy" min="0" max="100">
+                                    <span class="field-hint"></span>
                                 </div>
                             </div>
 
@@ -450,18 +458,22 @@
                                 <div class="eval-field" id="field-goals_benchmarks">
                                     <label>Goals & Benchmarks</label>
                                     <textarea id="extracted-goals_benchmarks" rows="2"></textarea>
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-strengths">
                                     <label>Strengths</label>
                                     <textarea id="extracted-strengths" rows="2"></textarea>
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-weaknesses">
                                     <label>Weaknesses</label>
                                     <textarea id="extracted-weaknesses" rows="2"></textarea>
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-target_sounds">
                                     <label>Target Sounds (for articulation)</label>
                                     <input type="text" id="extracted-target_sounds" placeholder="e.g., s, r, l, th">
+                                    <span class="field-hint"></span>
                                 </div>
                             </div>
 
@@ -471,23 +483,101 @@
                                 <div class="eval-field" id="field-teachers">
                                     <label>Teachers/Contacts</label>
                                     <textarea id="extracted-teachers" rows="2"></textarea>
+                                    <span class="field-hint"></span>
                                 </div>
                                 <div class="eval-field" id="field-notes">
                                     <label>Additional Notes</label>
                                     <textarea id="extracted-notes" rows="2"></textarea>
+                                    <span class="field-hint"></span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div id="extraction-notes-display"></div>
-                    </div>
                 </div>
+
+                <div id="extraction-notes-display"></div>
 
                 <div class="form-error hidden" id="eval-confirm-error"></div>
                 <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" id="eval-cancel-btn">Cancel</button>
-                    <button type="button" class="btn btn-primary" id="eval-confirm-btn">Save Evaluation Data</button>
+                    <button type="button" class="btn btn-secondary" id="eval-cancel-btn">CANCEL</button>
+                    <button type="button" class="btn btn-primary" id="eval-confirm-btn">SAVE EVALUATION DATA</button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Goal Details Modal -->
+    <div id="goal-details-modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content modal-wide">
+            <button class="modal-close" data-modal="goal-details-modal">&times;</button>
+            <h2>Goal Details</h2>
+
+            <div class="goal-details-scroll">
+                <!-- Measurable Baseline -->
+                <div class="goal-detail-section">
+                    <h4>Measurable Baseline</h4>
+                    <div class="goal-detail-field">
+                        <label>Baseline Performance:</label>
+                        <p id="goal-detail-baseline" class="goal-detail-value"></p>
+                    </div>
+                </div>
+
+                <!-- Proposed Goal -->
+                <div class="goal-detail-section">
+                    <h4>Proposed Goal</h4>
+                    <div class="goal-detail-field">
+                        <label>Deadline:</label>
+                        <p id="goal-detail-deadline" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Description:</label>
+                        <p id="goal-detail-description" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Goal Type:</label>
+                        <p id="goal-detail-type" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Boardgame Categories:</label>
+                        <div id="goal-detail-categories" class="goal-detail-categories"></div>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Target Accuracy:</label>
+                        <p id="goal-detail-target" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Sessions to Confirm:</label>
+                        <p id="goal-detail-sessions" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Comments:</label>
+                        <p id="goal-detail-comments" class="goal-detail-value"></p>
+                    </div>
+                </div>
+
+                <!-- Current Status -->
+                <div class="goal-detail-section">
+                    <h4>Current Status</h4>
+                    <div class="goal-detail-field">
+                        <label>Status:</label>
+                        <p id="goal-detail-status" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Current Progress:</label>
+                        <p id="goal-detail-progress" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Created:</label>
+                        <p id="goal-detail-created" class="goal-detail-value"></p>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Last Updated:</label>
+                        <p id="goal-detail-updated" class="goal-detail-value"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary cancel-modal" data-modal="goal-details-modal">CLOSE</button>
             </div>
         </div>
     </div>

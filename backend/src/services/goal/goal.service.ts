@@ -6,16 +6,38 @@
 import { getDatabase } from '../database.js';
 import type { IEPGoal, CreateGoalRequest, UpdateGoalRequest } from '../../types/index.js';
 
-function createGoal(studentId: number, data: CreateGoalRequest): IEPGoal {
+function createGoal(studentId: number, data: CreateGoalRequest & {
+  baseline?: string;
+  sessions_to_confirm?: number;
+  comments?: string;
+  boardgame_categories?: string[];
+}): IEPGoal {
   const db = getDatabase();
   const now = new Date().toISOString();
+
+  const sqlParams = {
+    studentId,
+    goal_type: data.goal_type,
+    goal_description: data.goal_description,
+    target_percentage: data.target_percentage,
+    current_percentage: data.current_percentage || 0,
+    target_date: data.target_date || null,
+    baseline: data.baseline || null,
+    sessions_to_confirm: data.sessions_to_confirm || 3,
+    comments: data.comments || null,
+    boardgame_categories: data.boardgame_categories ? JSON.stringify(data.boardgame_categories) : null,
+    now,
+  };
+
+  console.log('🔍 createGoal - SQL params:', JSON.stringify(sqlParams, null, 2));
 
   const result = db
     .prepare(
       `INSERT INTO iep_goals (
         student_id, goal_type, goal_description, target_percentage,
-        current_percentage, target_date, status, created_at, updated_at
-      ) VALUES (?, ?, ?, ?, ?, ?, 'active', ?, ?)`
+        current_percentage, target_date, baseline, sessions_to_confirm,
+        comments, boardgame_categories, status, created_at, updated_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'active', ?, ?)`
     )
     .run(
       studentId,
@@ -24,12 +46,29 @@ function createGoal(studentId: number, data: CreateGoalRequest): IEPGoal {
       data.target_percentage,
       data.current_percentage || 0,
       data.target_date || null,
+      data.baseline || null,
+      data.sessions_to_confirm || 3,
+      data.comments || null,
+      data.boardgame_categories ? JSON.stringify(data.boardgame_categories) : null,
       now,
       now
     );
 
-  return getGoalById(result.lastInsertRowid as number)!;
+  const insertedId = result.lastInsertRowid as number;
+  console.log(`✅ createGoal - Inserted goal with ID: ${insertedId}`);
+
+  return getGoalById(insertedId)!;
 }
+
+// Articulation category names for inference
+const ARTICULATION_CATEGORIES = [
+  'Syllable Shapes', 'Phonology',
+  'B Sound', 'CH Sound', 'D Sound', 'F Sound', 'G Sound', 'H Sound',
+  'J Sound', 'K Sound', 'L Sound', 'L Blends Sound', 'M Sound', 'N Sound',
+  'Ng Sound', 'P Sound', 'R Sound', 'R Blends Sound', 'S Sound',
+  'S Blends Sound', 'Sh Sound', 'T Sound', 'Th Voiced Sound', 'Th Voiceless Sound',
+  'V Sound', 'W Sound', 'Y Sound', 'Z Sound', 'Consonant Clusters', 'Vowels'
+];
 
 export function createGoalsFromExtraction(
   studentId: number,
@@ -38,25 +77,57 @@ export function createGoalsFromExtraction(
     goal_description: { value: string | null };
     target_percentage: { value: number | null };
     target_date: { value: string | null };
+    baseline?: { value: string | null };
+    deadline?: { value: string | null };
+    sessions_to_confirm?: { value: number | null };
+    comments?: { value: string | null };
+    boardgame_categories?: { value: string[] | null };
   }>
 ): IEPGoal[] {
   const createdGoals: IEPGoal[] = [];
 
+  console.log(`🔍 createGoalsFromExtraction - Processing ${goals.length} goals`);
+
   for (const goal of goals) {
-    if (!goal.goal_description.value || !goal.goal_type.value) {
+    console.log('🔍 Processing goal:', JSON.stringify(goal, null, 2));
+
+    if (!goal.goal_description.value) {
+      console.log('⚠️ Skipping goal - no description');
       continue;
     }
 
-    const created = createGoal(studentId, {
-      goal_type: goal.goal_type.value as 'language' | 'articulation',
+    // Infer goal_type from boardgame_categories if not provided
+    let goalType: 'language' | 'articulation' = 'language';
+
+    if (goal.goal_type.value) {
+      goalType = goal.goal_type.value as 'language' | 'articulation';
+    } else if (goal.boardgame_categories?.value && goal.boardgame_categories.value.length > 0) {
+      // Check if any category is an articulation category
+      const hasArticulation = goal.boardgame_categories.value.some(cat =>
+        ARTICULATION_CATEGORIES.includes(cat)
+      );
+      goalType = hasArticulation ? 'articulation' : 'language';
+    }
+
+    const goalData = {
+      goal_type: goalType,
       goal_description: goal.goal_description.value,
       target_percentage: goal.target_percentage.value || 80,
-      target_date: goal.target_date.value || undefined,
-    });
+      target_date: (goal.deadline?.value || goal.target_date.value) || undefined,
+      baseline: goal.baseline?.value || undefined,
+      sessions_to_confirm: goal.sessions_to_confirm?.value || undefined,
+      comments: goal.comments?.value || undefined,
+      boardgame_categories: goal.boardgame_categories?.value || undefined,
+    };
+
+    console.log('🔍 Calling createGoal with:', JSON.stringify(goalData, null, 2));
+
+    const created = createGoal(studentId, goalData);
 
     createdGoals.push(created);
   }
 
+  console.log(`✅ Created ${createdGoals.length} goals`);
   return createdGoals;
 }
 

@@ -153,6 +153,8 @@ router.post(
       const studentId = parseInt(req.params.id);
       const { goals } = req.body;
 
+      console.log('🔍 CONFIRM ENDPOINT - Received goals:', JSON.stringify(goals, null, 2));
+
       getVerifiedStudent(studentId, req.therapist!.therapist_id);
 
       // Delete existing goals and create new ones from extraction

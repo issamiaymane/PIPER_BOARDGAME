@@ -54,16 +54,25 @@ export interface IEPGoal {
   target_percentage: number;
   current_percentage?: number;
   target_date?: string;
+  baseline?: string;
+  sessions_to_confirm?: number;
+  comments?: string;
+  boardgame_categories?: string; // JSON string of array
   status: 'active' | 'achieved' | 'discontinued';
   created_at: string;
   updated_at: string;
 }
 
 export interface ExtractedGoal {
-  goal_type: { value: 'language' | 'articulation' | null; confidence: number };
-  goal_description: { value: string | null; confidence: number };
-  target_percentage: { value: number | null; confidence: number };
-  target_date: { value: string | null; confidence: number };
+  goal_type: { value: 'language' | 'articulation' | null; confidence: number; reasoning?: string };
+  goal_description: { value: string | null; confidence: number; source_hint?: string };
+  target_percentage: { value: number | null; confidence: number; source_hint?: string };
+  target_date: { value: string | null; confidence: number; source_hint?: string };
+  baseline?: { value: string | null; confidence: number; source_hint?: string };
+  deadline?: { value: string | null; confidence: number; source_hint?: string };
+  sessions_to_confirm?: { value: number | null; confidence: number; source_hint?: string };
+  comments?: { value: string | null; confidence: number; source_hint?: string };
+  boardgame_categories?: { value: string[] | null; confidence: number; reasoning?: string };
 }
 
 export interface GoalsUploadResponse {

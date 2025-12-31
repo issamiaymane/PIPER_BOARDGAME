@@ -157,6 +157,28 @@ router.get(
  * POST /students/:id/evaluation/confirm
  * Save confirmed/edited evaluation data
  */
+/**
+ * Transform structured extraction format to plain EvalData
+ * Frontend sends: { field: { value, confidence, source_hint } }
+ * Database stores: { field: value }
+ */
+function extractEvalDataValues(structuredData: Record<string, { value: unknown; confidence?: number; source_hint?: string }>): EvalData {
+  const evalData: EvalData = {};
+
+  for (const [key, fieldData] of Object.entries(structuredData)) {
+    if (fieldData && typeof fieldData === 'object' && 'value' in fieldData) {
+      const value = fieldData.value;
+
+      // Only include non-null, non-empty values
+      if (value !== null && value !== undefined && value !== '') {
+        (evalData as Record<string, unknown>)[key] = value;
+      }
+    }
+  }
+
+  return evalData;
+}
+
 router.post(
   '/:id/evaluation/confirm',
   validateParams(idParamSchema),
@@ -166,11 +188,21 @@ router.post(
       const studentId = parseInt(req.params.id);
       const { eval_data, service_type } = req.body;
 
+      console.log('🔍 CONFIRM EVAL ENDPOINT - Received body:', JSON.stringify(req.body, null, 2));
+      console.log('🔍 eval_data (structured):', JSON.stringify(eval_data, null, 2));
+      console.log('🔍 service_type:', service_type);
+
+      // Transform structured format to plain values for database storage
+      const plainEvalData = extractEvalDataValues(eval_data);
+      console.log('🔍 plainEvalData (extracted values):', JSON.stringify(plainEvalData, null, 2));
+
       // Build update data
-      const updateData: UpdateChildRequest = { eval_data: eval_data as EvalData };
+      const updateData: UpdateChildRequest = { eval_data: plainEvalData };
       if (service_type) {
         updateData.problem_type = service_type;
       }
+
+      console.log('🔍 Calling updateStudent with:', JSON.stringify(updateData, null, 2));
 
       // Update student
       const updatedStudent = updateStudent(
@@ -182,6 +214,8 @@ router.post(
       if (!updatedStudent) {
         throw ApiError.notFound('Student not found');
       }
+
+      console.log('✅ Student updated successfully');
 
       res.json({
         success: true,

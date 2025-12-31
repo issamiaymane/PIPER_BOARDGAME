@@ -104,8 +104,39 @@ export const updateStudentSchema = z.object({
 // Evaluation Schemas
 // ============================================
 
+// Helper schema for extracted fields
+const extractedFieldSchema = <T extends z.ZodTypeAny>(valueSchema: T) =>
+  z.object({
+    value: valueSchema,
+    confidence: z.number(),
+    source_hint: z.string().optional(),
+  });
+
+// Schema for evaluation data - matches frontend getFormEvalData() structure
+const evalDataSchema = z.object({
+  service_type: extractedFieldSchema(
+    z.enum(['language', 'articulation', 'both']).nullable()
+  )
+    .extend({ reasoning: z.string().optional() })
+    .optional(),
+  languages_spoken: extractedFieldSchema(z.string().nullable()).optional(),
+  family_religion: extractedFieldSchema(z.string().nullable()).optional(),
+  medical_history: extractedFieldSchema(z.string().nullable()).optional(),
+  other_diagnoses: extractedFieldSchema(z.string().nullable()).optional(),
+  speech_diagnoses: extractedFieldSchema(z.string().nullable()).optional(),
+  prior_therapy: extractedFieldSchema(z.string().nullable()).optional(),
+  baseline_accuracy: extractedFieldSchema(z.number().nullable()).optional(),
+  goals_benchmarks: extractedFieldSchema(z.string().nullable()).optional(),
+  strengths: extractedFieldSchema(z.string().nullable()).optional(),
+  weaknesses: extractedFieldSchema(z.string().nullable()).optional(),
+  target_sounds: extractedFieldSchema(z.array(z.string()).nullable()).optional(),
+  teachers: extractedFieldSchema(z.string().nullable()).optional(),
+  notes: extractedFieldSchema(z.string().nullable()).optional(),
+});
+
+// Schema for confirm evaluation request - matches API body structure
 export const confirmEvaluationSchema = z.object({
-  eval_data: z.record(z.string(), z.unknown()),
+  eval_data: evalDataSchema,
   service_type: z.enum(['language', 'articulation', 'both']).optional(),
 });
 
@@ -132,6 +163,26 @@ export const confirmGoalsSchema = z.object({
         value: z.string().nullable(),
         confidence: z.number().optional(),
       }),
+      baseline: z.object({
+        value: z.string().nullable(),
+        confidence: z.number().optional(),
+      }).optional(),
+      deadline: z.object({
+        value: z.string().nullable(),
+        confidence: z.number().optional(),
+      }).optional(),
+      sessions_to_confirm: z.object({
+        value: z.number().nullable(),
+        confidence: z.number().optional(),
+      }).optional(),
+      comments: z.object({
+        value: z.string().nullable(),
+        confidence: z.number().optional(),
+      }).optional(),
+      boardgame_categories: z.object({
+        value: z.array(z.string()).nullable(),
+        confidence: z.number().optional(),
+      }).optional(),
     })
   ),
 });
