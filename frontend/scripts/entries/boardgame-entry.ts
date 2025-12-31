@@ -49,6 +49,7 @@ const state = {
     currentCategory: '',
     isSpinning: false,
     selectedTheme: 'snowflake',
+    selectedCharacter: '🧒',
     cardIndices: {} as Record<string, number>,
     reset() {
         this.isPlaying = false;
@@ -71,6 +72,7 @@ let categoryGrid: HTMLElement;
 let themeOptions: HTMLElement;
 let nextButton: HTMLElement;
 let boardPath: HTMLElement;
+let leftPanel: HTMLElement;
 let playerToken: HTMLElement;
 let spinnerWheel: HTMLElement;
 let spinBtn: HTMLElement;
@@ -177,7 +179,7 @@ function generateBoard() {
 
     playerToken = document.createElement('div');
     playerToken.className = 'player-token';
-    playerToken.innerHTML = '<span>🧒</span>';
+    playerToken.innerHTML = `<span>${state.selectedCharacter}</span>`;
     playerToken.style.cssText = 'position: absolute; left: 10px; top: 520px; z-index: 10;';
     boardPath.appendChild(playerToken);
     console.log('[Game] Board generated');
@@ -271,6 +273,7 @@ function resetGame() {
     winScreen.classList.add('hidden');
     gameControls.classList.add('hidden');
     scoreDisplay.classList.add('hidden');
+    leftPanel.classList.add('hidden');
     playOverlay.classList.remove('hidden');
     scoreValue.textContent = '0';
 }
@@ -288,6 +291,7 @@ function startGame() {
 
     targetModal.classList.add('hidden');
     playOverlay.classList.add('hidden');
+    leftPanel.classList.remove('hidden');
     gameControls.classList.remove('hidden');
     scoreDisplay.classList.remove('hidden');
 
@@ -309,6 +313,7 @@ function init() {
     themeOptions = document.querySelector('.theme-options')!;
     nextButton = document.getElementById('nextButton')!;
     boardPath = document.getElementById('boardPath')!;
+    leftPanel = document.getElementById('leftPanel')!;
     spinnerWheel = document.getElementById('spinnerWheel')!;
     spinBtn = document.getElementById('spinBtn')!;
     resetBtn = document.getElementById('resetBtn')!;
@@ -336,6 +341,16 @@ function init() {
             categoryTabs.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
             (e.target as HTMLElement).classList.add('active');
             renderCategorySelection((e.target as HTMLElement).dataset.category as 'language' | 'articulation');
+        });
+    });
+
+    // Character selection
+    document.querySelectorAll('.character-option').forEach(option => {
+        option.addEventListener('click', (e) => {
+            document.querySelectorAll('.character-option').forEach(o => o.classList.remove('selected'));
+            (e.target as HTMLElement).classList.add('selected');
+            state.selectedCharacter = (e.target as HTMLElement).dataset.character || '🧒';
+            console.log('[Game] Selected character:', state.selectedCharacter);
         });
     });
 

@@ -19,10 +19,24 @@
     </div>
 
     <div class="game-container">
+        <!-- Snowflakes -->
+        <div class="snowflakes">
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❄</div>
+        </div>
+
         <!-- Game Board -->
         <div class="game-board">
             <!-- Left Panel: Spinner -->
-            <div class="left-panel">
+            <div class="left-panel hidden" id="leftPanel">
                 <div class="spinner-container">
                     <div class="spinner-wheel" id="spinnerWheel">
                         <div class="spinner-section section-1">1</div>
@@ -79,6 +93,18 @@
                             <span class="theme-emoji">🐰</span>
                             <span class="theme-name">Spring</span>
                         </button>
+                    </div>
+                </div>
+
+                <div class="character-selection-section">
+                    <p class="theme-label">Pick your character!</p>
+                    <div class="character-options">
+                        <button class="character-option selected" data-character="🧒">🧒</button>
+                        <button class="character-option" data-character="👧">👧</button>
+                        <button class="character-option" data-character="👦">👦</button>
+                        <button class="character-option" data-character="🐱">🐱</button>
+                        <button class="character-option" data-character="🐶">🐶</button>
+                        <button class="character-option" data-character="🦊">🦊</button>
                     </div>
                 </div>
 
