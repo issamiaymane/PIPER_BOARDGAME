@@ -4,7 +4,7 @@
       "question": "I packed my bag _______ my lunch for the day.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/and/backpack.png",
+          "image": "/images/cards/25_conjunctions/and/backpack.png",
           "label": "A backpack and lunch bag"
         }
       ],
@@ -16,7 +16,7 @@
       "question": "I like apples _______ oranges.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/and/fruits.png",
+          "image": "/images/cards/25_conjunctions/and/fruits.png",
           "label": "Apples and oranges"
         }
       ],
@@ -28,7 +28,7 @@
       "question": "I brushed my teeth _______ washed my face before bed.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/and/brushing.png",
+          "image": "/images/cards/25_conjunctions/and/brushing.png",
           "label": "Child brushing teeth"
         }
       ],
@@ -40,7 +40,7 @@
       "question": "We brought towels _______ sunscreen to the beach.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/and/beach_items.png",
+          "image": "/images/cards/25_conjunctions/and/beach_items.png",
           "label": "Towels and sunscreen"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "My family has a dog _______ a cat at home.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/and/pets.png",
+          "image": "/images/cards/25_conjunctions/and/pets.png",
           "label": "A dog and a cat"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "It was sunny _______ a little windy at the beach.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/but/sunny_windy.png",
+          "image": "/images/cards/25_conjunctions/but/sunny_windy.png",
           "label": "Sunny beach with wind"
         }
       ],
@@ -76,7 +76,7 @@
       "question": "I was hungry _______ there was no food left.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/but/empty_plate.png",
+          "image": "/images/cards/25_conjunctions/but/empty_plate.png",
           "label": "An empty plate"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "I wanted to swim _______ the pool was closed.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/but/closed_pool.png",
+          "image": "/images/cards/25_conjunctions/but/closed_pool.png",
           "label": "Closed swimming pool"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "It looked warm outside _______ it was actually cold.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/but/jacket.png",
+          "image": "/images/cards/25_conjunctions/but/jacket.png",
           "label": "Person wearing a jacket"
         }
       ],
@@ -112,7 +112,7 @@
       "question": "I tried to reach the cup _______ it was too high.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/but/high_shelf.png",
+          "image": "/images/cards/25_conjunctions/but/high_shelf.png",
           "label": "Cup on a high shelf"
         }
       ],
@@ -124,7 +124,7 @@
       "question": "Would you like juice _______ water to drink?",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/or/drinks.png",
+          "image": "/images/cards/25_conjunctions/or/drinks.png",
           "label": "Juice and water"
         }
       ],
@@ -136,7 +136,7 @@
       "question": "We can go to the beach _______ the park today.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/or/beach_park.png",
+          "image": "/images/cards/25_conjunctions/or/beach_park.png",
           "label": "Beach and park"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "Should I wear sneakers _______ sandals?",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/or/shoes.png",
+          "image": "/images/cards/25_conjunctions/or/shoes.png",
           "label": "Sneakers and sandals"
         }
       ],
@@ -160,7 +160,7 @@
       "question": "You can read a book _______ use the tablet.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/or/book_tablet.png",
+          "image": "/images/cards/25_conjunctions/or/book_tablet.png",
           "label": "A book and a tablet"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "Do you want oatmeal _______ toast for breakfast?",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/or/breakfast.png",
+          "image": "/images/cards/25_conjunctions/or/breakfast.png",
           "label": "Oatmeal and toast"
         }
       ],
@@ -184,7 +184,7 @@
       "question": "It started to rain _______ I used an umbrella.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/so/umbrella.png",
+          "image": "/images/cards/25_conjunctions/so/umbrella.png",
           "label": "Person with umbrella in rain"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "I was very tired _______ I went to bed early.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/so/tired.png",
+          "image": "/images/cards/25_conjunctions/so/tired.png",
           "label": "Tired child yawning"
         }
       ],
@@ -208,7 +208,7 @@
       "question": "My shoes got wet _______ I went home to change them.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/so/wet_shoes.png",
+          "image": "/images/cards/25_conjunctions/so/wet_shoes.png",
           "label": "Wet shoes"
         }
       ],
@@ -220,7 +220,7 @@
       "question": "It was very hot _______ we stayed in the shade.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/so/shade.png",
+          "image": "/images/cards/25_conjunctions/so/shade.png",
           "label": "People sitting in shade"
         }
       ],
@@ -232,7 +232,7 @@
       "question": "The sun was strong _______ I put on sunscreen.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/so/sunscreen.png",
+          "image": "/images/cards/25_conjunctions/so/sunscreen.png",
           "label": "Applying sunscreen"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "She is small _______ very strong.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/yet/strong_child.png",
+          "image": "/images/cards/25_conjunctions/yet/strong_child.png",
           "label": "Small but strong child"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "It was raining _______ we still had fun at the beach.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/yet/rainy_beach.png",
+          "image": "/images/cards/25_conjunctions/yet/rainy_beach.png",
           "label": "Playing at beach in rain"
         }
       ],
@@ -268,7 +268,7 @@
       "question": "The puzzle looked easy _______ it took a long time.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/yet/puzzle.png",
+          "image": "/images/cards/25_conjunctions/yet/puzzle.png",
           "label": "A challenging puzzle"
         }
       ],
@@ -280,7 +280,7 @@
       "question": "He doesn't like vegetables _______ he ate all his cucumbers.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/yet/vegetables.png",
+          "image": "/images/cards/25_conjunctions/yet/vegetables.png",
           "label": "Plate of vegetables"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "The line was long _______ it moved quickly.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/yet/line.png",
+          "image": "/images/cards/25_conjunctions/yet/line.png",
           "label": "People waiting in line"
         }
       ],
@@ -304,7 +304,7 @@
       "question": "I drank lots of water _______ I was very thirsty.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/for/drinking.png",
+          "image": "/images/cards/25_conjunctions/for/drinking.png",
           "label": "Child drinking water"
         }
       ],
@@ -316,7 +316,7 @@
       "question": "I wore my jacket _______ it was cold outside.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/for/jacket.png",
+          "image": "/images/cards/25_conjunctions/for/jacket.png",
           "label": "Child wearing a jacket"
         }
       ],
@@ -328,7 +328,7 @@
       "question": "We went to the beach _______ it was a beautiful day.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/for/beach_day.png",
+          "image": "/images/cards/25_conjunctions/for/beach_day.png",
           "label": "Beautiful beach day"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "I went to bed early _______ I had a big day tomorrow.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/for/bed_early.png",
+          "image": "/images/cards/25_conjunctions/for/bed_early.png",
           "label": "Child going to bed early"
         }
       ],
@@ -352,7 +352,7 @@
       "question": "I helped with the dishes _______ my mom needed help.",
       "images": [
         {
-          "image": "../assets/images/cards/25_conjunctions/for/dishes.png",
+          "image": "/images/cards/25_conjunctions/for/dishes.png",
           "label": "Child helping with dishes"
         }
       ],
@@ -366,7 +366,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/music-speakers.png",
+          "image": "/images/cards/96_subordinating_conjunctions/music-speakers.png",
           "label": "Music speakers"
         }
       ],
@@ -379,7 +379,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/sunscreen.png",
+          "image": "/images/cards/96_subordinating_conjunctions/sunscreen.png",
           "label": "Applying sunscreen"
         }
       ],
@@ -392,7 +392,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/rain.png",
+          "image": "/images/cards/96_subordinating_conjunctions/rain.png",
           "label": "Running inside from rain"
         }
       ],
@@ -405,7 +405,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/hungry-child.png",
+          "image": "/images/cards/96_subordinating_conjunctions/hungry-child.png",
           "label": "Hungry child"
         }
       ],
@@ -418,7 +418,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/shoes.png",
+          "image": "/images/cards/96_subordinating_conjunctions/shoes.png",
           "label": "Putting on shoes"
         }
       ],
@@ -431,7 +431,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/homework.png",
+          "image": "/images/cards/96_subordinating_conjunctions/homework.png",
           "label": "Finishing homework"
         }
       ],
@@ -444,7 +444,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/umbrella.png",
+          "image": "/images/cards/96_subordinating_conjunctions/umbrella.png",
           "label": "Bringing an umbrella"
         }
       ],
@@ -457,7 +457,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/swimming-pool.png",
+          "image": "/images/cards/96_subordinating_conjunctions/swimming-pool.png",
           "label": "Swimming in the pool"
         }
       ],
@@ -470,7 +470,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/helping-dishes.png",
+          "image": "/images/cards/96_subordinating_conjunctions/helping-dishes.png",
           "label": "Helping with dishes"
         }
       ],
@@ -483,7 +483,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/sleeping.png",
+          "image": "/images/cards/96_subordinating_conjunctions/sleeping.png",
           "label": "Child falling asleep"
         }
       ],
@@ -496,7 +496,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/lifeguard.png",
+          "image": "/images/cards/96_subordinating_conjunctions/lifeguard.png",
           "label": "Lifeguard at the pool"
         }
       ],
@@ -509,7 +509,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/sandcastle.png",
+          "image": "/images/cards/96_subordinating_conjunctions/sandcastle.png",
           "label": "Building a sandcastle"
         }
       ],
@@ -522,7 +522,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/brushing-teeth.png",
+          "image": "/images/cards/96_subordinating_conjunctions/brushing-teeth.png",
           "label": "Brushing teeth"
         }
       ],
@@ -535,7 +535,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/beach-love.png",
+          "image": "/images/cards/96_subordinating_conjunctions/beach-love.png",
           "label": "Playing at the beach"
         }
       ],
@@ -548,7 +548,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/window-sun.png",
+          "image": "/images/cards/96_subordinating_conjunctions/window-sun.png",
           "label": "Sun coming through the window"
         }
       ],
@@ -561,7 +561,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/clean-room.png",
+          "image": "/images/cards/96_subordinating_conjunctions/clean-room.png",
           "label": "Cleaning the room"
         }
       ],
@@ -574,7 +574,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/jacket.png",
+          "image": "/images/cards/96_subordinating_conjunctions/jacket.png",
           "label": "Wearing a jacket"
         }
       ],
@@ -587,7 +587,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/reading-book.png",
+          "image": "/images/cards/96_subordinating_conjunctions/reading-book.png",
           "label": "Reading a book"
         }
       ],
@@ -600,7 +600,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/sharing-toys.png",
+          "image": "/images/cards/96_subordinating_conjunctions/sharing-toys.png",
           "label": "Sharing toys"
         }
       ],
@@ -613,7 +613,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/sunny-beach.png",
+          "image": "/images/cards/96_subordinating_conjunctions/sunny-beach.png",
           "label": "Sunny day at the beach"
         }
       ],
@@ -626,7 +626,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/phone-grandma.png",
+          "image": "/images/cards/96_subordinating_conjunctions/phone-grandma.png",
           "label": "Calling grandma on the phone"
         }
       ],
@@ -639,7 +639,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/stay-close.png",
+          "image": "/images/cards/96_subordinating_conjunctions/stay-close.png",
           "label": "Staying close together"
         }
       ],
@@ -652,7 +652,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/bell-peppers.png",
+          "image": "/images/cards/96_subordinating_conjunctions/bell-peppers.png",
           "label": "Eating bell peppers"
         }
       ],
@@ -665,7 +665,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/running-car.png",
+          "image": "/images/cards/96_subordinating_conjunctions/running-car.png",
           "label": "Running to the car"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "What is the subordinating conjunction in this sentence?",
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/seashell-girl.png",
+          "image": "/images/cards/96_subordinating_conjunctions/seashell-girl.png",
           "label": "Girl finding a seashell"
         }
       ],
@@ -690,7 +690,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/lunch-fruit.png",
+          "image": "/images/cards/96_subordinating_conjunctions/lunch-fruit.png",
           "label": "Lunch with fruit"
         }
       ],
@@ -699,7 +699,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/sunscreen-burn.png",
+          "image": "/images/cards/96_subordinating_conjunctions/sunscreen-burn.png",
           "label": "Wearing sunscreen"
         }
       ],
@@ -708,7 +708,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/cloudy-beach.png",
+          "image": "/images/cards/96_subordinating_conjunctions/cloudy-beach.png",
           "label": "Cloudy day at the beach"
         }
       ],
@@ -717,7 +717,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/stay-here.png",
+          "image": "/images/cards/96_subordinating_conjunctions/stay-here.png",
           "label": "Staying in one place"
         }
       ],
@@ -726,7 +726,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/96_subordinating_conjunctions/neighbor-boy.png",
+          "image": "/images/cards/96_subordinating_conjunctions/neighbor-boy.png",
           "label": "Neighbor boy"
         }
       ],

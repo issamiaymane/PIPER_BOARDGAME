@@ -31,7 +31,9 @@
       "@/*": ["src/*"],
       "@features/*": ["src/features/*"],
       "@constants/*": ["src/constants/*"],
-      "@services/*": ["src/services/*"]
+      "@services/*": ["src/services/*"],
+      "@shared/*": ["src/shared/*"],
+      "@styles/*": ["src/styles/*"]
     }
   },
   "include": [

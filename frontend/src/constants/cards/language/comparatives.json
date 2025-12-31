@@ -4,15 +4,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/big/orange.png",
+          "image": "/images/cards/18_comparatives/big/orange.png",
           "label": "orange"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/big/watermelon.png",
+          "image": "/images/cards/18_comparatives/big/watermelon.png",
           "label": "watermelon"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/big/pumpkin.png",
+          "image": "/images/cards/18_comparatives/big/pumpkin.png",
           "label": "pumpkin"
         }
       ]
@@ -21,15 +21,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/small/golden_retriever.png",
+          "image": "/images/cards/18_comparatives/small/golden_retriever.png",
           "label": "golden retriever"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/small/beagle.png",
+          "image": "/images/cards/18_comparatives/small/beagle.png",
           "label": "beagle"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/small/chihuahua.png",
+          "image": "/images/cards/18_comparatives/small/chihuahua.png",
           "label": "chihuahua"
         }
       ]
@@ -38,15 +38,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/tall/sprout.png",
+          "image": "/images/cards/18_comparatives/tall/sprout.png",
           "label": "sprout"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/tall/medium_sunflower.png",
+          "image": "/images/cards/18_comparatives/tall/medium_sunflower.png",
           "label": "medium sunflower"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/tall/tall_sunflower.png",
+          "image": "/images/cards/18_comparatives/tall/tall_sunflower.png",
           "label": "tall sunflower"
         }
       ]
@@ -55,15 +55,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/long/pencil.png",
+          "image": "/images/cards/18_comparatives/long/pencil.png",
           "label": "pencil"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/long/crayon.png",
+          "image": "/images/cards/18_comparatives/long/crayon.png",
           "label": "crayon"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/long/ruler.png",
+          "image": "/images/cards/18_comparatives/long/ruler.png",
           "label": "ruler"
         }
       ]
@@ -72,15 +72,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/wide/ribbon.png",
+          "image": "/images/cards/18_comparatives/wide/ribbon.png",
           "label": "ribbon"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/wide/scarf.png",
+          "image": "/images/cards/18_comparatives/wide/scarf.png",
           "label": "scarf"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/wide/beach_towel.png",
+          "image": "/images/cards/18_comparatives/wide/beach_towel.png",
           "label": "beach towel"
         }
       ]
@@ -89,15 +89,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/thick/thin_book.png",
+          "image": "/images/cards/18_comparatives/thick/thin_book.png",
           "label": "thin book"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/thick/medium_book.png",
+          "image": "/images/cards/18_comparatives/thick/medium_book.png",
           "label": "medium book"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/thick/dictionary.png",
+          "image": "/images/cards/18_comparatives/thick/dictionary.png",
           "label": "dictionary"
         }
       ]
@@ -106,15 +106,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/many/few_strawberries.png",
+          "image": "/images/cards/18_comparatives/many/few_strawberries.png",
           "label": "four strawberries"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/many/pile_strawberries.png",
+          "image": "/images/cards/18_comparatives/many/pile_strawberries.png",
           "label": "pile of strawberries"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/many/bowl_strawberries.png",
+          "image": "/images/cards/18_comparatives/many/bowl_strawberries.png",
           "label": "overflowing bowl"
         }
       ]
@@ -123,15 +123,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/few/full_crayons.png",
+          "image": "/images/cards/18_comparatives/few/full_crayons.png",
           "label": "full box"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/few/some_crayons.png",
+          "image": "/images/cards/18_comparatives/few/some_crayons.png",
           "label": "some crayons"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/few/two_crayons.png",
+          "image": "/images/cards/18_comparatives/few/two_crayons.png",
           "label": "two crayons"
         }
       ]
@@ -140,15 +140,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/full/empty_glass.png",
+          "image": "/images/cards/18_comparatives/full/empty_glass.png",
           "label": "empty glass"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/full/half_glass.png",
+          "image": "/images/cards/18_comparatives/full/half_glass.png",
           "label": "half-full glass"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/full/full_glass.png",
+          "image": "/images/cards/18_comparatives/full/full_glass.png",
           "label": "full glass"
         }
       ]
@@ -157,15 +157,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/empty/full_basket.png",
+          "image": "/images/cards/18_comparatives/empty/full_basket.png",
           "label": "full basket"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/empty/half_basket.png",
+          "image": "/images/cards/18_comparatives/empty/half_basket.png",
           "label": "half-empty basket"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/empty/empty_basket.png",
+          "image": "/images/cards/18_comparatives/empty/empty_basket.png",
           "label": "empty basket"
         }
       ]
@@ -174,15 +174,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/hot/warm_soup.png",
+          "image": "/images/cards/18_comparatives/hot/warm_soup.png",
           "label": "warm soup"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/hot/hot_soup.png",
+          "image": "/images/cards/18_comparatives/hot/hot_soup.png",
           "label": "hot soup"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/hot/very_hot_soup.png",
+          "image": "/images/cards/18_comparatives/hot/very_hot_soup.png",
           "label": "very hot soup"
         }
       ]
@@ -191,15 +191,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/cold/cool_water.png",
+          "image": "/images/cards/18_comparatives/cold/cool_water.png",
           "label": "cool water"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/cold/ice_water.png",
+          "image": "/images/cards/18_comparatives/cold/ice_water.png",
           "label": "ice water"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/cold/popsicle.png",
+          "image": "/images/cards/18_comparatives/cold/popsicle.png",
           "label": "frozen popsicle"
         }
       ]
@@ -208,15 +208,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/soft/paper.png",
+          "image": "/images/cards/18_comparatives/soft/paper.png",
           "label": "paper"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/soft/cotton_ball.png",
+          "image": "/images/cards/18_comparatives/soft/cotton_ball.png",
           "label": "cotton ball"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/soft/fluffy_pillow.png",
+          "image": "/images/cards/18_comparatives/soft/fluffy_pillow.png",
           "label": "fluffy pillow"
         }
       ]
@@ -225,15 +225,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/hard/bread.png",
+          "image": "/images/cards/18_comparatives/hard/bread.png",
           "label": "bread"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/hard/apple.png",
+          "image": "/images/cards/18_comparatives/hard/apple.png",
           "label": "apple"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/hard/rock.png",
+          "image": "/images/cards/18_comparatives/hard/rock.png",
           "label": "rock"
         }
       ]
@@ -242,15 +242,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/smooth/sandpaper.png",
+          "image": "/images/cards/18_comparatives/smooth/sandpaper.png",
           "label": "sandpaper"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/smooth/wooden_table.png",
+          "image": "/images/cards/18_comparatives/smooth/wooden_table.png",
           "label": "wooden table"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/smooth/glass_marble.png",
+          "image": "/images/cards/18_comparatives/smooth/glass_marble.png",
           "label": "glass marble"
         }
       ]
@@ -259,15 +259,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/bumpy/flat_paper.png",
+          "image": "/images/cards/18_comparatives/bumpy/flat_paper.png",
           "label": "flat paper"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/bumpy/bubble_wrap.png",
+          "image": "/images/cards/18_comparatives/bumpy/bubble_wrap.png",
           "label": "bubble wrap"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/bumpy/sea_shell.png",
+          "image": "/images/cards/18_comparatives/bumpy/sea_shell.png",
           "label": "sea shell"
         }
       ]
@@ -276,15 +276,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/messy/small_spot.png",
+          "image": "/images/cards/18_comparatives/messy/small_spot.png",
           "label": "small spot"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/messy/food_face.png",
+          "image": "/images/cards/18_comparatives/messy/food_face.png",
           "label": "food on face"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/messy/finger_paint.png",
+          "image": "/images/cards/18_comparatives/messy/finger_paint.png",
           "label": "covered in paint"
         }
       ]
@@ -293,15 +293,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/clean/muddy_shoes.png",
+          "image": "/images/cards/18_comparatives/clean/muddy_shoes.png",
           "label": "muddy shoes"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/clean/dusty_shoes.png",
+          "image": "/images/cards/18_comparatives/clean/dusty_shoes.png",
           "label": "dusty shoes"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/clean/sparkling_shoes.png",
+          "image": "/images/cards/18_comparatives/clean/sparkling_shoes.png",
           "label": "sparkling shoes"
         }
       ]
@@ -310,15 +310,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/bright/nightlight.png",
+          "image": "/images/cards/18_comparatives/bright/nightlight.png",
           "label": "nightlight"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/bright/table_lamp.png",
+          "image": "/images/cards/18_comparatives/bright/table_lamp.png",
           "label": "table lamp"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/bright/sunshine.png",
+          "image": "/images/cards/18_comparatives/bright/sunshine.png",
           "label": "sunshine"
         }
       ]
@@ -327,15 +327,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/dark/sunny_room.png",
+          "image": "/images/cards/18_comparatives/dark/sunny_room.png",
           "label": "sunny room"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/dark/sunset_room.png",
+          "image": "/images/cards/18_comparatives/dark/sunset_room.png",
           "label": "room at sunset"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/dark/dark_room.png",
+          "image": "/images/cards/18_comparatives/dark/dark_room.png",
           "label": "dark room"
         }
       ]
@@ -344,15 +344,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/fast/turtle.png",
+          "image": "/images/cards/18_comparatives/fast/turtle.png",
           "label": "turtle"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/fast/rabbit.png",
+          "image": "/images/cards/18_comparatives/fast/rabbit.png",
           "label": "rabbit"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/fast/cheetah.png",
+          "image": "/images/cards/18_comparatives/fast/cheetah.png",
           "label": "cheetah"
         }
       ]
@@ -361,15 +361,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/slow/bird.png",
+          "image": "/images/cards/18_comparatives/slow/bird.png",
           "label": "bird"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/slow/cat.png",
+          "image": "/images/cards/18_comparatives/slow/cat.png",
           "label": "cat"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/slow/snail.png",
+          "image": "/images/cards/18_comparatives/slow/snail.png",
           "label": "snail"
         }
       ]
@@ -378,15 +378,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/loud/whisper.png",
+          "image": "/images/cards/18_comparatives/loud/whisper.png",
           "label": "whisper"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/loud/talking.png",
+          "image": "/images/cards/18_comparatives/loud/talking.png",
           "label": "talking"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/loud/shouting.png",
+          "image": "/images/cards/18_comparatives/loud/shouting.png",
           "label": "shouting"
         }
       ]
@@ -395,15 +395,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/quiet/drum.png",
+          "image": "/images/cards/18_comparatives/quiet/drum.png",
           "label": "drum"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/quiet/humming.png",
+          "image": "/images/cards/18_comparatives/quiet/humming.png",
           "label": "humming"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/quiet/sleeping_bunny.png",
+          "image": "/images/cards/18_comparatives/quiet/sleeping_bunny.png",
           "label": "sleeping bunny"
         }
       ]
@@ -412,15 +412,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/heavy/feather.png",
+          "image": "/images/cards/18_comparatives/heavy/feather.png",
           "label": "feather"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/heavy/book.png",
+          "image": "/images/cards/18_comparatives/heavy/book.png",
           "label": "book"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/heavy/watermelon.png",
+          "image": "/images/cards/18_comparatives/heavy/watermelon.png",
           "label": "watermelon"
         }
       ]
@@ -429,15 +429,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/light/bowling_ball.png",
+          "image": "/images/cards/18_comparatives/light/bowling_ball.png",
           "label": "bowling ball"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/light/orange.png",
+          "image": "/images/cards/18_comparatives/light/orange.png",
           "label": "orange"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/light/balloon.png",
+          "image": "/images/cards/18_comparatives/light/balloon.png",
           "label": "balloon"
         }
       ]
@@ -446,15 +446,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/wet/dry_towel.png",
+          "image": "/images/cards/18_comparatives/wet/dry_towel.png",
           "label": "dry towel"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/wet/damp_towel.png",
+          "image": "/images/cards/18_comparatives/wet/damp_towel.png",
           "label": "damp towel"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/wet/soaking_towel.png",
+          "image": "/images/cards/18_comparatives/wet/soaking_towel.png",
           "label": "soaking wet towel"
         }
       ]
@@ -463,15 +463,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/dry/wet_sponge.png",
+          "image": "/images/cards/18_comparatives/dry/wet_sponge.png",
           "label": "wet sponge"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/dry/damp_sponge.png",
+          "image": "/images/cards/18_comparatives/dry/damp_sponge.png",
           "label": "damp sponge"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/dry/dry_sponge.png",
+          "image": "/images/cards/18_comparatives/dry/dry_sponge.png",
           "label": "dry sponge"
         }
       ]
@@ -480,15 +480,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/smelly/flower.png",
+          "image": "/images/cards/18_comparatives/smelly/flower.png",
           "label": "flower"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/smelly/onions.png",
+          "image": "/images/cards/18_comparatives/smelly/onions.png",
           "label": "onions"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/smelly/garbage.png",
+          "image": "/images/cards/18_comparatives/smelly/garbage.png",
           "label": "garbage"
         }
       ]
@@ -497,15 +497,15 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "../assets/images/cards/18_comparatives/sweet/lemon.png",
+          "image": "/images/cards/18_comparatives/sweet/lemon.png",
           "label": "lemon"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/sweet/apple.png",
+          "image": "/images/cards/18_comparatives/sweet/apple.png",
           "label": "apple"
         },
         {
-          "image": "../assets/images/cards/18_comparatives/sweet/mango.png",
+          "image": "/images/cards/18_comparatives/sweet/mango.png",
           "label": "mango"
         }
       ]
@@ -516,11 +516,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/towel.png",
+          "image": "/images/cards/19_compare_contrast/household/towel.png",
           "label": "Towel"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/blanket.png",
+          "image": "/images/cards/19_compare_contrast/household/blanket.png",
           "label": "Blanket"
         }
       ]
@@ -529,11 +529,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/cup.png",
+          "image": "/images/cards/19_compare_contrast/household/cup.png",
           "label": "Cup"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/bowl.png",
+          "image": "/images/cards/19_compare_contrast/household/bowl.png",
           "label": "Bowl"
         }
       ]
@@ -542,11 +542,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/chair.png",
+          "image": "/images/cards/19_compare_contrast/household/chair.png",
           "label": "Chair"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/couch.png",
+          "image": "/images/cards/19_compare_contrast/household/couch.png",
           "label": "Couch"
         }
       ]
@@ -555,11 +555,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/lamp.png",
+          "image": "/images/cards/19_compare_contrast/household/lamp.png",
           "label": "Lamp"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/flashlight.png",
+          "image": "/images/cards/19_compare_contrast/household/flashlight.png",
           "label": "Flashlight"
         }
       ]
@@ -568,11 +568,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/pillow.png",
+          "image": "/images/cards/19_compare_contrast/household/pillow.png",
           "label": "Pillow"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/cushion.png",
+          "image": "/images/cards/19_compare_contrast/household/cushion.png",
           "label": "Cushion"
         }
       ]
@@ -581,11 +581,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/broom.png",
+          "image": "/images/cards/19_compare_contrast/household/broom.png",
           "label": "Broom"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/mop.png",
+          "image": "/images/cards/19_compare_contrast/household/mop.png",
           "label": "Mop"
         }
       ]
@@ -594,11 +594,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/refrigerator.png",
+          "image": "/images/cards/19_compare_contrast/household/refrigerator.png",
           "label": "Refrigerator"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/freezer.png",
+          "image": "/images/cards/19_compare_contrast/household/freezer.png",
           "label": "Freezer"
         }
       ]
@@ -607,11 +607,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/bathtub.png",
+          "image": "/images/cards/19_compare_contrast/household/bathtub.png",
           "label": "Bathtub"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/household/shower.png",
+          "image": "/images/cards/19_compare_contrast/household/shower.png",
           "label": "Shower"
         }
       ]
@@ -620,11 +620,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/socks.png",
+          "image": "/images/cards/19_compare_contrast/clothing/socks.png",
           "label": "Socks"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/shoes.png",
+          "image": "/images/cards/19_compare_contrast/clothing/shoes.png",
           "label": "Shoes"
         }
       ]
@@ -633,11 +633,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/hat.png",
+          "image": "/images/cards/19_compare_contrast/clothing/hat.png",
           "label": "Hat"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/helmet.png",
+          "image": "/images/cards/19_compare_contrast/clothing/helmet.png",
           "label": "Helmet"
         }
       ]
@@ -646,11 +646,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/jacket.png",
+          "image": "/images/cards/19_compare_contrast/clothing/jacket.png",
           "label": "Jacket"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/sweater.png",
+          "image": "/images/cards/19_compare_contrast/clothing/sweater.png",
           "label": "Sweater"
         }
       ]
@@ -659,11 +659,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/flip_flops.png",
+          "image": "/images/cards/19_compare_contrast/clothing/flip_flops.png",
           "label": "Flip Flops"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/sandals.png",
+          "image": "/images/cards/19_compare_contrast/clothing/sandals.png",
           "label": "Sandals"
         }
       ]
@@ -672,11 +672,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/backpack.png",
+          "image": "/images/cards/19_compare_contrast/clothing/backpack.png",
           "label": "Backpack"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/clothing/tote_bag.png",
+          "image": "/images/cards/19_compare_contrast/clothing/tote_bag.png",
           "label": "Tote Bag"
         }
       ]
@@ -685,11 +685,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/orange.png",
+          "image": "/images/cards/19_compare_contrast/food/orange.png",
           "label": "Orange"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/apple.png",
+          "image": "/images/cards/19_compare_contrast/food/apple.png",
           "label": "Apple"
         }
       ]
@@ -698,11 +698,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/bread.png",
+          "image": "/images/cards/19_compare_contrast/food/bread.png",
           "label": "Bread"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/tortilla.png",
+          "image": "/images/cards/19_compare_contrast/food/tortilla.png",
           "label": "Tortilla"
         }
       ]
@@ -711,11 +711,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/juice.png",
+          "image": "/images/cards/19_compare_contrast/food/juice.png",
           "label": "Juice"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/smoothie.png",
+          "image": "/images/cards/19_compare_contrast/food/smoothie.png",
           "label": "Smoothie"
         }
       ]
@@ -724,11 +724,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/rice.png",
+          "image": "/images/cards/19_compare_contrast/food/rice.png",
           "label": "Rice"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/pasta.png",
+          "image": "/images/cards/19_compare_contrast/food/pasta.png",
           "label": "Pasta"
         }
       ]
@@ -737,11 +737,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/cucumber.png",
+          "image": "/images/cards/19_compare_contrast/food/cucumber.png",
           "label": "Cucumber"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/food/bell_pepper.png",
+          "image": "/images/cards/19_compare_contrast/food/bell_pepper.png",
           "label": "Bell Pepper"
         }
       ]
@@ -750,11 +750,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/cat.png",
+          "image": "/images/cards/19_compare_contrast/animals/cat.png",
           "label": "Cat"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/dog.png",
+          "image": "/images/cards/19_compare_contrast/animals/dog.png",
           "label": "Dog"
         }
       ]
@@ -763,11 +763,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/bunny.png",
+          "image": "/images/cards/19_compare_contrast/animals/bunny.png",
           "label": "Bunny"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/hamster.png",
+          "image": "/images/cards/19_compare_contrast/animals/hamster.png",
           "label": "Hamster"
         }
       ]
@@ -776,11 +776,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/dolphin.png",
+          "image": "/images/cards/19_compare_contrast/animals/dolphin.png",
           "label": "Dolphin"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/whale.png",
+          "image": "/images/cards/19_compare_contrast/animals/whale.png",
           "label": "Whale"
         }
       ]
@@ -789,11 +789,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/butterfly.png",
+          "image": "/images/cards/19_compare_contrast/animals/butterfly.png",
           "label": "Butterfly"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/animals/bird.png",
+          "image": "/images/cards/19_compare_contrast/animals/bird.png",
           "label": "Bird"
         }
       ]
@@ -802,11 +802,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/sand.png",
+          "image": "/images/cards/19_compare_contrast/beach/sand.png",
           "label": "Sand"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/water.png",
+          "image": "/images/cards/19_compare_contrast/beach/water.png",
           "label": "Water"
         }
       ]
@@ -815,11 +815,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/surfboard.png",
+          "image": "/images/cards/19_compare_contrast/beach/surfboard.png",
           "label": "Surfboard"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/boogie_board.png",
+          "image": "/images/cards/19_compare_contrast/beach/boogie_board.png",
           "label": "Boogie Board"
         }
       ]
@@ -828,11 +828,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/seashell.png",
+          "image": "/images/cards/19_compare_contrast/beach/seashell.png",
           "label": "Seashell"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/starfish.png",
+          "image": "/images/cards/19_compare_contrast/beach/starfish.png",
           "label": "Starfish"
         }
       ]
@@ -841,11 +841,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/beach_towel.png",
+          "image": "/images/cards/19_compare_contrast/beach/beach_towel.png",
           "label": "Beach Towel"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/beach/beach_umbrella.png",
+          "image": "/images/cards/19_compare_contrast/beach/beach_umbrella.png",
           "label": "Beach Umbrella"
         }
       ]
@@ -854,11 +854,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/crayons.png",
+          "image": "/images/cards/19_compare_contrast/crafts/crayons.png",
           "label": "Crayons"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/markers.png",
+          "image": "/images/cards/19_compare_contrast/crafts/markers.png",
           "label": "Markers"
         }
       ]
@@ -867,11 +867,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/paint.png",
+          "image": "/images/cards/19_compare_contrast/crafts/paint.png",
           "label": "Paint"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/glue.png",
+          "image": "/images/cards/19_compare_contrast/crafts/glue.png",
           "label": "Glue"
         }
       ]
@@ -880,11 +880,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/puzzle.png",
+          "image": "/images/cards/19_compare_contrast/crafts/puzzle.png",
           "label": "Puzzle"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/building_blocks.png",
+          "image": "/images/cards/19_compare_contrast/crafts/building_blocks.png",
           "label": "Building Blocks"
         }
       ]
@@ -893,11 +893,11 @@
       "question": "Compare and contrast these items.",
       "images": [
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/sewing.png",
+          "image": "/images/cards/19_compare_contrast/crafts/sewing.png",
           "label": "Sewing"
         },
         {
-          "image": "../assets/images/cards/19_compare_contrast/crafts/knitting.png",
+          "image": "/images/cards/19_compare_contrast/crafts/knitting.png",
           "label": "Knitting"
         }
       ]
@@ -908,7 +908,7 @@
       "question": "The bunny is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card1.png",
+          "image": "/images/cards/semantic_relationships/card1.png",
           "label": "Bunny, birdhouse, and rocking horse"
         }
       ],
@@ -923,7 +923,7 @@
       "question": "The bucket is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card2.png",
+          "image": "/images/cards/semantic_relationships/card2.png",
           "label": "Beach scene with bucket and sandcastle"
         }
       ],
@@ -938,7 +938,7 @@
       "question": "The plate is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card3.png",
+          "image": "/images/cards/semantic_relationships/card3.png",
           "label": "Table setting with plate, cup, and spoon"
         }
       ],
@@ -953,7 +953,7 @@
       "question": "The bed is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card4.png",
+          "image": "/images/cards/semantic_relationships/card4.png",
           "label": "Bedroom with bed and clock"
         }
       ],
@@ -968,7 +968,7 @@
       "question": "The bunny is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card5.png",
+          "image": "/images/cards/semantic_relationships/card5.png",
           "label": "Items with bunny position"
         }
       ],
@@ -983,7 +983,7 @@
       "question": "The bowl is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card6.png",
+          "image": "/images/cards/semantic_relationships/card6.png",
           "label": "Bowl with banana and apple"
         }
       ],
@@ -998,7 +998,7 @@
       "question": "The boat is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card7.png",
+          "image": "/images/cards/semantic_relationships/card7.png",
           "label": "Ocean scene with boat, sun, and dolphin"
         }
       ],
@@ -1013,7 +1013,7 @@
       "question": "The jacket is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card8.png",
+          "image": "/images/cards/semantic_relationships/card8.png",
           "label": "Clothing items: hat, jacket, and shoes"
         }
       ],
@@ -1028,7 +1028,7 @@
       "question": "The bench is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card9.png",
+          "image": "/images/cards/semantic_relationships/card9.png",
           "label": "Park scene with bench and tree"
         }
       ],
@@ -1043,7 +1043,7 @@
       "question": "The rock is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card10.png",
+          "image": "/images/cards/semantic_relationships/card10.png",
           "label": "Aquarium with fish, rock, and plant"
         }
       ],
@@ -1058,7 +1058,7 @@
       "question": "The book is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card11.png",
+          "image": "/images/cards/semantic_relationships/card11.png",
           "label": "Book and pencil"
         }
       ],
@@ -1073,7 +1073,7 @@
       "question": "The tower is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card12.png",
+          "image": "/images/cards/semantic_relationships/card12.png",
           "label": "Tower, chair, and flag"
         }
       ],
@@ -1088,7 +1088,7 @@
       "question": "Where is the banana?",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card13.png",
+          "image": "/images/cards/semantic_relationships/card13.png",
           "label": "Fruits with banana position"
         }
       ],
@@ -1103,7 +1103,7 @@
       "question": "The cup is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card14.png",
+          "image": "/images/cards/semantic_relationships/card14.png",
           "label": "Bathroom items: cup, toothbrush, and soap"
         }
       ],
@@ -1118,7 +1118,7 @@
       "question": "The cloud is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card15.png",
+          "image": "/images/cards/semantic_relationships/card15.png",
           "label": "Sky scene with cloud, airplane, and bird"
         }
       ],
@@ -1133,7 +1133,7 @@
       "question": "The vase is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card16.png",
+          "image": "/images/cards/semantic_relationships/card16.png",
           "label": "Items with vase position"
         }
       ],
@@ -1148,7 +1148,7 @@
       "question": "The bucket is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card17.png",
+          "image": "/images/cards/semantic_relationships/card17.png",
           "label": "Beach items: bucket, shell, and shovel"
         }
       ],
@@ -1163,7 +1163,7 @@
       "question": "The remote is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card18.png",
+          "image": "/images/cards/semantic_relationships/card18.png",
           "label": "Living room with remote, blanket, and couch"
         }
       ],
@@ -1178,7 +1178,7 @@
       "question": "The flower is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card19.png",
+          "image": "/images/cards/semantic_relationships/card19.png",
           "label": "Garden scene with flower, butterfly, and bee"
         }
       ],
@@ -1193,7 +1193,7 @@
       "question": "The house is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card20.png",
+          "image": "/images/cards/semantic_relationships/card20.png",
           "label": "Neighborhood with house, car, and tree"
         }
       ],
@@ -1208,7 +1208,7 @@
       "question": "The grapes are:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card21.png",
+          "image": "/images/cards/semantic_relationships/card21.png",
           "label": "Fruits with grapes position"
         }
       ],
@@ -1223,7 +1223,7 @@
       "question": "The shirt is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card22.png",
+          "image": "/images/cards/semantic_relationships/card22.png",
           "label": "Clothing: shirt, shorts, and socks"
         }
       ],
@@ -1238,7 +1238,7 @@
       "question": "The wave is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card23.png",
+          "image": "/images/cards/semantic_relationships/card23.png",
           "label": "Beach scene with wave, seagull, and surfer"
         }
       ],
@@ -1253,7 +1253,7 @@
       "question": "The basket is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card24.png",
+          "image": "/images/cards/semantic_relationships/card24.png",
           "label": "Picnic items: basket, napkin, and bottle"
         }
       ],
@@ -1268,7 +1268,7 @@
       "question": "The sun is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card25.png",
+          "image": "/images/cards/semantic_relationships/card25.png",
           "label": "Room with window, sun, and plant"
         }
       ],
@@ -1283,7 +1283,7 @@
       "question": "The yellow cup is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card26.png",
+          "image": "/images/cards/semantic_relationships/card26.png",
           "label": "Cups with yellow cup position"
         }
       ],
@@ -1298,7 +1298,7 @@
       "question": "The pencil case is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card27.png",
+          "image": "/images/cards/semantic_relationships/card27.png",
           "label": "School items: pencil case, backpack, and notebook"
         }
       ],
@@ -1313,7 +1313,7 @@
       "question": "The towel is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card28.png",
+          "image": "/images/cards/semantic_relationships/card28.png",
           "label": "Bathroom with towel, bathtub, and duck"
         }
       ],
@@ -1328,7 +1328,7 @@
       "question": "The moon is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card29.png",
+          "image": "/images/cards/semantic_relationships/card29.png",
           "label": "Night sky with moon, cloud, and star"
         }
       ],
@@ -1343,7 +1343,7 @@
       "question": "The brown scoop is:",
       "images": [
         {
-          "image": "../assets/images/cards/semantic_relationships/card30.png",
+          "image": "/images/cards/semantic_relationships/card30.png",
           "label": "Ice cream scoops in different colors"
         }
       ],

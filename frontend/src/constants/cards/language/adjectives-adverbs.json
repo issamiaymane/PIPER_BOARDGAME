@@ -4,11 +4,11 @@
       "question": "What is the opposite of hot?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/hot_cold/hot.png",
+          "image": "/images/cards/1_adjectives_opposites/hot_cold/hot.png",
           "label": "hot"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/hot_cold/cold.png",
+          "image": "/images/cards/1_adjectives_opposites/hot_cold/cold.png",
           "label": "cold"
         }
       ],
@@ -20,11 +20,11 @@
       "question": "What is the opposite of big?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/big_small/big.png",
+          "image": "/images/cards/1_adjectives_opposites/big_small/big.png",
           "label": "big"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/big_small/small.png",
+          "image": "/images/cards/1_adjectives_opposites/big_small/small.png",
           "label": "small"
         }
       ],
@@ -36,11 +36,11 @@
       "question": "What is the opposite of fast?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/fast_slow/fast.png",
+          "image": "/images/cards/1_adjectives_opposites/fast_slow/fast.png",
           "label": "fast"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/fast_slow/slow.png",
+          "image": "/images/cards/1_adjectives_opposites/fast_slow/slow.png",
           "label": "slow"
         }
       ],
@@ -52,11 +52,11 @@
       "question": "What is the opposite of happy?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/happy_sad/happy.png",
+          "image": "/images/cards/1_adjectives_opposites/happy_sad/happy.png",
           "label": "happy"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/happy_sad/sad.png",
+          "image": "/images/cards/1_adjectives_opposites/happy_sad/sad.png",
           "label": "sad"
         }
       ],
@@ -68,11 +68,11 @@
       "question": "What is the opposite of tall?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/tall_short/tall.png",
+          "image": "/images/cards/1_adjectives_opposites/tall_short/tall.png",
           "label": "tall"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/tall_short/short.png",
+          "image": "/images/cards/1_adjectives_opposites/tall_short/short.png",
           "label": "short"
         }
       ],
@@ -84,11 +84,11 @@
       "question": "What is the opposite of light?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/light_dark/light.png",
+          "image": "/images/cards/1_adjectives_opposites/light_dark/light.png",
           "label": "light"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/light_dark/dark.png",
+          "image": "/images/cards/1_adjectives_opposites/light_dark/dark.png",
           "label": "dark"
         }
       ],
@@ -100,11 +100,11 @@
       "question": "What is the opposite of hard?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/hard_soft/hard.png",
+          "image": "/images/cards/1_adjectives_opposites/hard_soft/hard.png",
           "label": "hard"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/hard_soft/soft.png",
+          "image": "/images/cards/1_adjectives_opposites/hard_soft/soft.png",
           "label": "soft"
         }
       ],
@@ -116,11 +116,11 @@
       "question": "What is the opposite of clean?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/clean_dirty/clean.png",
+          "image": "/images/cards/1_adjectives_opposites/clean_dirty/clean.png",
           "label": "clean"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/clean_dirty/dirty.png",
+          "image": "/images/cards/1_adjectives_opposites/clean_dirty/dirty.png",
           "label": "dirty"
         }
       ],
@@ -132,11 +132,11 @@
       "question": "What is the opposite of new?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/new_old/new.png",
+          "image": "/images/cards/1_adjectives_opposites/new_old/new.png",
           "label": "new"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/new_old/old.png",
+          "image": "/images/cards/1_adjectives_opposites/new_old/old.png",
           "label": "old"
         }
       ],
@@ -148,11 +148,11 @@
       "question": "What is the opposite of wet?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/wet_dry/wet.png",
+          "image": "/images/cards/1_adjectives_opposites/wet_dry/wet.png",
           "label": "wet"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/wet_dry/dry.png",
+          "image": "/images/cards/1_adjectives_opposites/wet_dry/dry.png",
           "label": "dry"
         }
       ],
@@ -164,11 +164,11 @@
       "question": "What is the opposite of full?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/full_empty/full.png",
+          "image": "/images/cards/1_adjectives_opposites/full_empty/full.png",
           "label": "full"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/full_empty/empty.png",
+          "image": "/images/cards/1_adjectives_opposites/full_empty/empty.png",
           "label": "empty"
         }
       ],
@@ -180,11 +180,11 @@
       "question": "What is the opposite of loud?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/loud_quiet/loud.png",
+          "image": "/images/cards/1_adjectives_opposites/loud_quiet/loud.png",
           "label": "loud"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/loud_quiet/quiet.png",
+          "image": "/images/cards/1_adjectives_opposites/loud_quiet/quiet.png",
           "label": "quiet"
         }
       ],
@@ -196,11 +196,11 @@
       "question": "What is the opposite of heavy?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/heavy_light/heavy.png",
+          "image": "/images/cards/1_adjectives_opposites/heavy_light/heavy.png",
           "label": "heavy"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/heavy_light/light.png",
+          "image": "/images/cards/1_adjectives_opposites/heavy_light/light.png",
           "label": "light"
         }
       ],
@@ -212,11 +212,11 @@
       "question": "What is the opposite of open?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/open_closed/open.png",
+          "image": "/images/cards/1_adjectives_opposites/open_closed/open.png",
           "label": "open"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/open_closed/closed.png",
+          "image": "/images/cards/1_adjectives_opposites/open_closed/closed.png",
           "label": "closed"
         }
       ],
@@ -228,11 +228,11 @@
       "question": "What is the opposite of up?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/up_down/up.png",
+          "image": "/images/cards/1_adjectives_opposites/up_down/up.png",
           "label": "up"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/up_down/down.png",
+          "image": "/images/cards/1_adjectives_opposites/up_down/down.png",
           "label": "down"
         }
       ],
@@ -244,11 +244,11 @@
       "question": "What is the opposite of good?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/good_bad/good.png",
+          "image": "/images/cards/1_adjectives_opposites/good_bad/good.png",
           "label": "good"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/good_bad/bad.png",
+          "image": "/images/cards/1_adjectives_opposites/good_bad/bad.png",
           "label": "bad"
         }
       ],
@@ -260,11 +260,11 @@
       "question": "What is the opposite of rich?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/rich_poor/rich.png",
+          "image": "/images/cards/1_adjectives_opposites/rich_poor/rich.png",
           "label": "rich"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/rich_poor/poor.png",
+          "image": "/images/cards/1_adjectives_opposites/rich_poor/poor.png",
           "label": "poor"
         }
       ],
@@ -276,11 +276,11 @@
       "question": "What is the opposite of strong?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/strong_weak/strong.png",
+          "image": "/images/cards/1_adjectives_opposites/strong_weak/strong.png",
           "label": "strong"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/strong_weak/weak.png",
+          "image": "/images/cards/1_adjectives_opposites/strong_weak/weak.png",
           "label": "weak"
         }
       ],
@@ -292,11 +292,11 @@
       "question": "What is the opposite of thick?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/thick_thin/thick.png",
+          "image": "/images/cards/1_adjectives_opposites/thick_thin/thick.png",
           "label": "thick"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/thick_thin/thin.png",
+          "image": "/images/cards/1_adjectives_opposites/thick_thin/thin.png",
           "label": "thin"
         }
       ],
@@ -308,11 +308,11 @@
       "question": "What is the opposite of long?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/long_short/long.png",
+          "image": "/images/cards/1_adjectives_opposites/long_short/long.png",
           "label": "long"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/long_short/short.png",
+          "image": "/images/cards/1_adjectives_opposites/long_short/short.png",
           "label": "short"
         }
       ],
@@ -324,11 +324,11 @@
       "question": "What is the opposite of smooth?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/smooth_rough/smooth.png",
+          "image": "/images/cards/1_adjectives_opposites/smooth_rough/smooth.png",
           "label": "smooth"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/smooth_rough/rough.png",
+          "image": "/images/cards/1_adjectives_opposites/smooth_rough/rough.png",
           "label": "rough"
         }
       ],
@@ -340,11 +340,11 @@
       "question": "What is the opposite of sweet?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/sweet_sour/sweet.png",
+          "image": "/images/cards/1_adjectives_opposites/sweet_sour/sweet.png",
           "label": "sweet"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/sweet_sour/sour.png",
+          "image": "/images/cards/1_adjectives_opposites/sweet_sour/sour.png",
           "label": "sour"
         }
       ],
@@ -356,11 +356,11 @@
       "question": "What is the opposite of deep?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/deep_shallow/deep.png",
+          "image": "/images/cards/1_adjectives_opposites/deep_shallow/deep.png",
           "label": "deep"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/deep_shallow/shallow.png",
+          "image": "/images/cards/1_adjectives_opposites/deep_shallow/shallow.png",
           "label": "shallow"
         }
       ],
@@ -372,11 +372,11 @@
       "question": "What is the opposite of wide?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/wide_narrow/wide.png",
+          "image": "/images/cards/1_adjectives_opposites/wide_narrow/wide.png",
           "label": "wide"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/wide_narrow/narrow.png",
+          "image": "/images/cards/1_adjectives_opposites/wide_narrow/narrow.png",
           "label": "narrow"
         }
       ],
@@ -388,11 +388,11 @@
       "question": "What is the opposite of bright?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/bright_dim/bright.png",
+          "image": "/images/cards/1_adjectives_opposites/bright_dim/bright.png",
           "label": "bright"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/bright_dim/dim.png",
+          "image": "/images/cards/1_adjectives_opposites/bright_dim/dim.png",
           "label": "dim"
         }
       ],
@@ -404,11 +404,11 @@
       "question": "What is the opposite of brave?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/brave_scared/brave.png",
+          "image": "/images/cards/1_adjectives_opposites/brave_scared/brave.png",
           "label": "brave"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/brave_scared/scared.png",
+          "image": "/images/cards/1_adjectives_opposites/brave_scared/scared.png",
           "label": "scared"
         }
       ],
@@ -420,11 +420,11 @@
       "question": "What is the opposite of easy?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/easy_hard/easy.png",
+          "image": "/images/cards/1_adjectives_opposites/easy_hard/easy.png",
           "label": "easy"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/easy_hard/hard.png",
+          "image": "/images/cards/1_adjectives_opposites/easy_hard/hard.png",
           "label": "hard"
         }
       ],
@@ -436,11 +436,11 @@
       "question": "What is the opposite of early?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/early_late/early.png",
+          "image": "/images/cards/1_adjectives_opposites/early_late/early.png",
           "label": "early"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/early_late/late.png",
+          "image": "/images/cards/1_adjectives_opposites/early_late/late.png",
           "label": "late"
         }
       ],
@@ -452,11 +452,11 @@
       "question": "What is the opposite of warm?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/warm_cool/warm.png",
+          "image": "/images/cards/1_adjectives_opposites/warm_cool/warm.png",
           "label": "warm"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/warm_cool/cool.png",
+          "image": "/images/cards/1_adjectives_opposites/warm_cool/cool.png",
           "label": "cool"
         }
       ],
@@ -468,11 +468,11 @@
       "question": "What is the opposite of asleep?",
       "images": [
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/asleep_awake/asleep.png",
+          "image": "/images/cards/1_adjectives_opposites/asleep_awake/asleep.png",
           "label": "asleep"
         },
         {
-          "image": "../assets/images/cards/1_adjectives_opposites/asleep_awake/awake.png",
+          "image": "/images/cards/1_adjectives_opposites/asleep_awake/awake.png",
           "label": "awake"
         }
       ],
@@ -486,7 +486,7 @@
       "question": "She walked ___ to the door.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/1_slowly_girl.png",
+          "image": "/images/cards/2_adverbs/1_slowly_girl.png",
           "label": "slowly"
         }
       ],
@@ -500,7 +500,7 @@
       "question": "The dog barked ___ at the mailman.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/2_loudly_dog.png",
+          "image": "/images/cards/2_adverbs/2_loudly_dog.png",
           "label": "loudly"
         }
       ],
@@ -514,7 +514,7 @@
       "question": "He ___ finished his homework.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/3_quickly_kid.png",
+          "image": "/images/cards/2_adverbs/3_quickly_kid.png",
           "label": "quickly"
         }
       ],
@@ -528,7 +528,7 @@
       "question": "The baby slept ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/4_peacefully.png",
+          "image": "/images/cards/2_adverbs/4_peacefully.png",
           "label": "peacefully"
         }
       ],
@@ -542,7 +542,7 @@
       "question": "She ___ opened the present.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/5_excitedly_openbox.png",
+          "image": "/images/cards/2_adverbs/5_excitedly_openbox.png",
           "label": "excitedly"
         }
       ],
@@ -556,7 +556,7 @@
       "question": "The turtle moved ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/6_slowly_turtle.png",
+          "image": "/images/cards/2_adverbs/6_slowly_turtle.png",
           "label": "slowly"
         }
       ],
@@ -570,7 +570,7 @@
       "question": "He spoke ___ during the movie.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/7_quietly.png",
+          "image": "/images/cards/2_adverbs/7_quietly.png",
           "label": "quietly"
         }
       ],
@@ -584,7 +584,7 @@
       "question": "The bird sang ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/8_beautifully.png",
+          "image": "/images/cards/2_adverbs/8_beautifully.png",
           "label": "beautifully"
         }
       ],
@@ -598,7 +598,7 @@
       "question": "She ___ ate her vegetables.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/9_happily_eating.png",
+          "image": "/images/cards/2_adverbs/9_happily_eating.png",
           "label": "happily"
         }
       ],
@@ -612,7 +612,7 @@
       "question": "The cat jumped ___ onto the bed.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/10_gracefully.png",
+          "image": "/images/cards/2_adverbs/10_gracefully.png",
           "label": "gracefully"
         }
       ],
@@ -626,7 +626,7 @@
       "question": "He ___ cleaned his room.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/11_carefully.png",
+          "image": "/images/cards/2_adverbs/11_carefully.png",
           "label": "carefully"
         }
       ],
@@ -640,7 +640,7 @@
       "question": "The rain fell ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/12_heavily.png",
+          "image": "/images/cards/2_adverbs/12_heavily.png",
           "label": "heavily"
         }
       ],
@@ -654,7 +654,7 @@
       "question": "She smiled ___ at her friend.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/13_warmly.png",
+          "image": "/images/cards/2_adverbs/13_warmly.png",
           "label": "warmly"
         }
       ],
@@ -668,7 +668,7 @@
       "question": "The boy ran ___ to the park.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/14_eagerly.png",
+          "image": "/images/cards/2_adverbs/14_eagerly.png",
           "label": "eagerly"
         }
       ],
@@ -682,7 +682,7 @@
       "question": "He ___ shared his snack.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/15_generously.png",
+          "image": "/images/cards/2_adverbs/15_generously.png",
           "label": "generously"
         }
       ],
@@ -696,7 +696,7 @@
       "question": "The wind blew ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/16_strongly.png",
+          "image": "/images/cards/2_adverbs/16_strongly.png",
           "label": "strongly"
         }
       ],
@@ -710,7 +710,7 @@
       "question": "She answered the question ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/17_correctly.png",
+          "image": "/images/cards/2_adverbs/17_correctly.png",
           "label": "correctly"
         }
       ],
@@ -724,7 +724,7 @@
       "question": "The puppy played ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/18_playfull.png",
+          "image": "/images/cards/2_adverbs/18_playfull.png",
           "label": "playfully"
         }
       ],
@@ -738,7 +738,7 @@
       "question": "He waited ___ for his turn.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/19_patiently.png",
+          "image": "/images/cards/2_adverbs/19_patiently.png",
           "label": "patiently"
         }
       ],
@@ -752,7 +752,7 @@
       "question": "She drew the picture ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/20_neatly.png",
+          "image": "/images/cards/2_adverbs/20_neatly.png",
           "label": "neatly"
         }
       ],
@@ -766,7 +766,7 @@
       "question": "The frog jumped ___ into the pond.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/21_quickly_frog.png",
+          "image": "/images/cards/2_adverbs/21_quickly_frog.png",
           "label": "quickly"
         }
       ],
@@ -780,7 +780,7 @@
       "question": "She read the book ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/24_quietly.png",
+          "image": "/images/cards/2_adverbs/24_quietly.png",
           "label": "quietly"
         }
       ],
@@ -794,7 +794,7 @@
       "question": "He hugged his mom ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/23_tightly.png",
+          "image": "/images/cards/2_adverbs/23_tightly.png",
           "label": "tightly"
         }
       ],
@@ -808,7 +808,7 @@
       "question": "The snail crawled ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/24_slowly.png",
+          "image": "/images/cards/2_adverbs/24_slowly.png",
           "label": "slowly"
         }
       ],
@@ -822,7 +822,7 @@
       "question": "She listened ___ to the story.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/25_carefully.png",
+          "image": "/images/cards/2_adverbs/25_carefully.png",
           "label": "carefully"
         }
       ],
@@ -836,7 +836,7 @@
       "question": "The leaves fell ___ from the tree.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/26_roughly.png",
+          "image": "/images/cards/2_adverbs/26_roughly.png",
           "label": "gently"
         }
       ],
@@ -850,7 +850,7 @@
       "question": "He closed the door ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/27_softly.png",
+          "image": "/images/cards/2_adverbs/27_softly.png",
           "label": "softly"
         }
       ],
@@ -864,7 +864,7 @@
       "question": "The bunny hopped ___ across the yard.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/28_hapilly_bunny.png",
+          "image": "/images/cards/2_adverbs/28_hapilly_bunny.png",
           "label": "happily"
         }
       ],
@@ -878,7 +878,7 @@
       "question": "She waved ___ to her grandma.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/29_excitedly_wave.png",
+          "image": "/images/cards/2_adverbs/29_excitedly_wave.png",
           "label": "excitedly"
         }
       ],
@@ -892,7 +892,7 @@
       "question": "The clock ticked ___.",
       "images": [
         {
-          "image": "../assets/images/cards/2_adverbs/30_loudly_watch.png",
+          "image": "/images/cards/2_adverbs/30_loudly_watch.png",
           "label": "loudly"
         }
       ],
@@ -908,11 +908,11 @@
       "question": "What is the opposite of patient?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/patient.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/patient.png",
           "label": "patient"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/impatient.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/impatient.png",
           "label": "impatient"
         }
       ],
@@ -924,11 +924,11 @@
       "question": "What is the opposite of happy?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/happy.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/happy.png",
           "label": "happy"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/sad.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/sad.png",
           "label": "sad"
         }
       ],
@@ -940,11 +940,11 @@
       "question": "What is the opposite of brave?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/brave.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/brave.png",
           "label": "brave"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/scared.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/scared.png",
           "label": "scared"
         }
       ],
@@ -956,11 +956,11 @@
       "question": "What is the opposite of awake?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/awake.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/awake.png",
           "label": "awake"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/asleep.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/asleep.png",
           "label": "asleep"
         }
       ],
@@ -972,11 +972,11 @@
       "question": "What is the opposite of generous?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/generous.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/generous.png",
           "label": "generous"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/selfish.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/selfish.png",
           "label": "selfish"
         }
       ],
@@ -988,11 +988,11 @@
       "question": "What is the opposite of calm?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/calm.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/calm.png",
           "label": "calm"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/feelings/angry.png",
+          "image": "/images/cards/29_descriptive_opposites/feelings/angry.png",
           "label": "angry"
         }
       ],
@@ -1004,11 +1004,11 @@
       "question": "What is the opposite of straight?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/straight.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/straight.png",
           "label": "straight"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/curvy.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/curvy.png",
           "label": "curvy"
         }
       ],
@@ -1020,11 +1020,11 @@
       "question": "What is the opposite of round?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/round.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/round.png",
           "label": "round"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/square.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/square.png",
           "label": "square"
         }
       ],
@@ -1036,11 +1036,11 @@
       "question": "What is the opposite of flat?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/flat.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/flat.png",
           "label": "flat"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/bumpy.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/bumpy.png",
           "label": "bumpy"
         }
       ],
@@ -1052,11 +1052,11 @@
       "question": "What is the opposite of smooth?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/smooth.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/smooth.png",
           "label": "smooth"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/rough.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/rough.png",
           "label": "rough"
         }
       ],
@@ -1068,11 +1068,11 @@
       "question": "What is the opposite of sharp?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/sharp.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/sharp.png",
           "label": "sharp"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/dull.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/dull.png",
           "label": "dull"
         }
       ],
@@ -1084,11 +1084,11 @@
       "question": "What is the opposite of thin?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/thin.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/thin.png",
           "label": "thin"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/shapes/thick.png",
+          "image": "/images/cards/29_descriptive_opposites/shapes/thick.png",
           "label": "thick"
         }
       ],
@@ -1100,11 +1100,11 @@
       "question": "What is the opposite of clean?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/clean.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/clean.png",
           "label": "clean"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/messy.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/messy.png",
           "label": "messy"
         }
       ],
@@ -1116,11 +1116,11 @@
       "question": "What is the opposite of neat?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/neat.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/neat.png",
           "label": "neat"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/messy_bed.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/messy_bed.png",
           "label": "messy"
         }
       ],
@@ -1132,11 +1132,11 @@
       "question": "What is the opposite of tidy?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/tidy.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/tidy.png",
           "label": "tidy"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/untidy.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/untidy.png",
           "label": "untidy"
         }
       ],
@@ -1148,11 +1148,11 @@
       "question": "What is the opposite of shiny?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/shiny.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/shiny.png",
           "label": "shiny"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/dusty.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/dusty.png",
           "label": "dusty"
         }
       ],
@@ -1164,11 +1164,11 @@
       "question": "What is the opposite of smooth?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/smooth_clothes.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/smooth_clothes.png",
           "label": "smooth"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/wrinkled.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/wrinkled.png",
           "label": "wrinkled"
         }
       ],
@@ -1180,11 +1180,11 @@
       "question": "What is the opposite of clear?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/clear.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/clear.png",
           "label": "clear"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/cleanliness/murky.png",
+          "image": "/images/cards/29_descriptive_opposites/cleanliness/murky.png",
           "label": "murky"
         }
       ],
@@ -1196,11 +1196,11 @@
       "question": "What is the opposite of big?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/big.png",
+          "image": "/images/cards/29_descriptive_opposites/size/big.png",
           "label": "big"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/small.png",
+          "image": "/images/cards/29_descriptive_opposites/size/small.png",
           "label": "small"
         }
       ],
@@ -1212,11 +1212,11 @@
       "question": "What is the opposite of tall?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/tall.png",
+          "image": "/images/cards/29_descriptive_opposites/size/tall.png",
           "label": "tall"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/short.png",
+          "image": "/images/cards/29_descriptive_opposites/size/short.png",
           "label": "short"
         }
       ],
@@ -1228,11 +1228,11 @@
       "question": "What is the opposite of long?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/long.png",
+          "image": "/images/cards/29_descriptive_opposites/size/long.png",
           "label": "long"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/short_board.png",
+          "image": "/images/cards/29_descriptive_opposites/size/short_board.png",
           "label": "short"
         }
       ],
@@ -1244,11 +1244,11 @@
       "question": "What is the opposite of wide?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/wide.png",
+          "image": "/images/cards/29_descriptive_opposites/size/wide.png",
           "label": "wide"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/narrow.png",
+          "image": "/images/cards/29_descriptive_opposites/size/narrow.png",
           "label": "narrow"
         }
       ],
@@ -1260,11 +1260,11 @@
       "question": "What is the opposite of heavy?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/heavy.png",
+          "image": "/images/cards/29_descriptive_opposites/size/heavy.png",
           "label": "heavy"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/light.png",
+          "image": "/images/cards/29_descriptive_opposites/size/light.png",
           "label": "light"
         }
       ],
@@ -1276,11 +1276,11 @@
       "question": "What is the opposite of deep?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/deep.png",
+          "image": "/images/cards/29_descriptive_opposites/size/deep.png",
           "label": "deep"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/size/shallow.png",
+          "image": "/images/cards/29_descriptive_opposites/size/shallow.png",
           "label": "shallow"
         }
       ],
@@ -1292,11 +1292,11 @@
       "question": "What is the opposite of hot?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/hot.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/hot.png",
           "label": "hot"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/cold.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/cold.png",
           "label": "cold"
         }
       ],
@@ -1308,11 +1308,11 @@
       "question": "What is the opposite of sunny?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/sunny.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/sunny.png",
           "label": "sunny"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/rainy.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/rainy.png",
           "label": "rainy"
         }
       ],
@@ -1324,11 +1324,11 @@
       "question": "What is the opposite of dry?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/dry.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/dry.png",
           "label": "dry"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/wet.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/wet.png",
           "label": "wet"
         }
       ],
@@ -1340,11 +1340,11 @@
       "question": "What is the opposite of warm?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/warm.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/warm.png",
           "label": "warm"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/cool.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/cool.png",
           "label": "cool"
         }
       ],
@@ -1356,11 +1356,11 @@
       "question": "What is the opposite of bright?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/bright.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/bright.png",
           "label": "bright"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/dark.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/dark.png",
           "label": "dark"
         }
       ],
@@ -1372,11 +1372,11 @@
       "question": "What is the opposite of calm?",
       "images": [
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/calm_lake.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/calm_lake.png",
           "label": "calm"
         },
         {
-          "image": "../assets/images/cards/29_descriptive_opposites/weather/windy.png",
+          "image": "/images/cards/29_descriptive_opposites/weather/windy.png",
           "label": "windy"
         }
       ],

@@ -4,7 +4,7 @@
       "question": "What does \"it's raining cats and dogs\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/raining_cats_dogs.png",
+          "image": "/images/cards/32_figurative_language/raining_cats_dogs.png",
           "label": "Raining cats and dogs idiom"
         }
       ],
@@ -20,7 +20,7 @@
       "question": "What does \"I'm in a pickle\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/in_a_pickle.png",
+          "image": "/images/cards/32_figurative_language/in_a_pickle.png",
           "label": "In a pickle idiom"
         }
       ],
@@ -36,7 +36,7 @@
       "question": "What does \"bug off\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/bug_off.png",
+          "image": "/images/cards/32_figurative_language/bug_off.png",
           "label": "Bug off idiom"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "What does \"piece of cake\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/piece_of_cake.png",
+          "image": "/images/cards/32_figurative_language/piece_of_cake.png",
           "label": "Piece of cake idiom"
         }
       ],
@@ -68,7 +68,7 @@
       "question": "What does \"break a leg\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/break_a_leg.png",
+          "image": "/images/cards/32_figurative_language/break_a_leg.png",
           "label": "Break a leg idiom"
         }
       ],
@@ -84,7 +84,7 @@
       "question": "What does \"under the weather\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/under_the_weather.png",
+          "image": "/images/cards/32_figurative_language/under_the_weather.png",
           "label": "Under the weather idiom"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "What does \"costs an arm and a leg\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/costs_arm_leg.png",
+          "image": "/images/cards/32_figurative_language/costs_arm_leg.png",
           "label": "Costs an arm and a leg idiom"
         }
       ],
@@ -116,7 +116,7 @@
       "question": "What does \"hit the hay\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/hit_the_hay.png",
+          "image": "/images/cards/32_figurative_language/hit_the_hay.png",
           "label": "Hit the hay idiom"
         }
       ],
@@ -132,7 +132,7 @@
       "question": "What does \"let the cat out of the bag\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/cat_out_of_bag.png",
+          "image": "/images/cards/32_figurative_language/cat_out_of_bag.png",
           "label": "Let the cat out of the bag idiom"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "What does \"when pigs fly\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/when_pigs_fly.png",
+          "image": "/images/cards/32_figurative_language/when_pigs_fly.png",
           "label": "When pigs fly idiom"
         }
       ],
@@ -164,7 +164,7 @@
       "question": "What does \"on cloud nine\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/on_cloud_nine.png",
+          "image": "/images/cards/32_figurative_language/on_cloud_nine.png",
           "label": "On cloud nine idiom"
         }
       ],
@@ -180,7 +180,7 @@
       "question": "What does \"spill the beans\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/spill_the_beans.png",
+          "image": "/images/cards/32_figurative_language/spill_the_beans.png",
           "label": "Spill the beans idiom"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "What does \"give a piece of my mind\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/piece_of_mind.png",
+          "image": "/images/cards/32_figurative_language/piece_of_mind.png",
           "label": "Give a piece of my mind idiom"
         }
       ],
@@ -212,7 +212,7 @@
       "question": "What does \"bite off more than you can chew\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/bite_off_more.png",
+          "image": "/images/cards/32_figurative_language/bite_off_more.png",
           "label": "Bite off more than you can chew idiom"
         }
       ],
@@ -228,7 +228,7 @@
       "question": "What does \"the ball is in your court\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/ball_in_court.png",
+          "image": "/images/cards/32_figurative_language/ball_in_court.png",
           "label": "Ball is in your court idiom"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "What does \"hold your horses\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/hold_your_horses.png",
+          "image": "/images/cards/32_figurative_language/hold_your_horses.png",
           "label": "Hold your horses idiom"
         }
       ],
@@ -260,7 +260,7 @@
       "question": "What does \"once in a blue moon\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/blue_moon.png",
+          "image": "/images/cards/32_figurative_language/blue_moon.png",
           "label": "Once in a blue moon idiom"
         }
       ],
@@ -276,7 +276,7 @@
       "question": "What does \"barking up the wrong tree\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/wrong_tree.png",
+          "image": "/images/cards/32_figurative_language/wrong_tree.png",
           "label": "Barking up the wrong tree idiom"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "What does \"hit the nail on the head\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/nail_on_head.png",
+          "image": "/images/cards/32_figurative_language/nail_on_head.png",
           "label": "Hit the nail on the head idiom"
         }
       ],
@@ -308,7 +308,7 @@
       "question": "What does \"keep your eyes peeled\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/eyes_peeled.png",
+          "image": "/images/cards/32_figurative_language/eyes_peeled.png",
           "label": "Keep your eyes peeled idiom"
         }
       ],
@@ -324,7 +324,7 @@
       "question": "What does \"a fish out of water\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/fish_out_of_water.png",
+          "image": "/images/cards/32_figurative_language/fish_out_of_water.png",
           "label": "A fish out of water idiom"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "What does \"butterflies in my stomach\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/butterflies_stomach.png",
+          "image": "/images/cards/32_figurative_language/butterflies_stomach.png",
           "label": "Butterflies in my stomach idiom"
         }
       ],
@@ -356,7 +356,7 @@
       "question": "What does \"the early bird gets the worm\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/early_bird.png",
+          "image": "/images/cards/32_figurative_language/early_bird.png",
           "label": "The early bird gets the worm idiom"
         }
       ],
@@ -372,7 +372,7 @@
       "question": "What does \"don't cry over spilled milk\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/spilled_milk.png",
+          "image": "/images/cards/32_figurative_language/spilled_milk.png",
           "label": "Don't cry over spilled milk idiom"
         }
       ],
@@ -388,7 +388,7 @@
       "question": "What does \"walking on eggshells\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/walking_eggshells.png",
+          "image": "/images/cards/32_figurative_language/walking_eggshells.png",
           "label": "Walking on eggshells idiom"
         }
       ],
@@ -404,7 +404,7 @@
       "question": "What does \"out of the blue\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/out_of_blue.png",
+          "image": "/images/cards/32_figurative_language/out_of_blue.png",
           "label": "Out of the blue idiom"
         }
       ],
@@ -420,7 +420,7 @@
       "question": "What does \"zip your lip\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/zip_lip.png",
+          "image": "/images/cards/32_figurative_language/zip_lip.png",
           "label": "Zip your lip idiom"
         }
       ],
@@ -436,7 +436,7 @@
       "question": "What does \"in hot water\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/in_hot_water.png",
+          "image": "/images/cards/32_figurative_language/in_hot_water.png",
           "label": "In hot water idiom"
         }
       ],
@@ -452,7 +452,7 @@
       "question": "What does \"two peas in a pod\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/two_peas.png",
+          "image": "/images/cards/32_figurative_language/two_peas.png",
           "label": "Two peas in a pod idiom"
         }
       ],
@@ -468,7 +468,7 @@
       "question": "What does \"through thick and thin\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/32_figurative_language/thick_and_thin.png",
+          "image": "/images/cards/32_figurative_language/thick_and_thin.png",
           "label": "Through thick and thin idiom"
         }
       ],
@@ -486,7 +486,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/bug_off.png",
+          "image": "/images/cards/46_idioms/bug_off.png",
           "label": "Bug off idiom"
         }
       ],
@@ -502,7 +502,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/pigs_fly.png",
+          "image": "/images/cards/46_idioms/pigs_fly.png",
           "label": "When pigs fly idiom"
         }
       ],
@@ -518,7 +518,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/raining_cats_dogs.png",
+          "image": "/images/cards/46_idioms/raining_cats_dogs.png",
           "label": "Raining cats and dogs idiom"
         }
       ],
@@ -534,7 +534,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/under_weather.png",
+          "image": "/images/cards/46_idioms/under_weather.png",
           "label": "Under the weather idiom"
         }
       ],
@@ -551,7 +551,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/piece_of_cake.png",
+          "image": "/images/cards/46_idioms/piece_of_cake.png",
           "label": "A piece of cake idiom"
         }
       ],
@@ -567,7 +567,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/hit_the_hay.png",
+          "image": "/images/cards/46_idioms/hit_the_hay.png",
           "label": "Hit the hay idiom"
         }
       ],
@@ -583,7 +583,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/break_a_leg.png",
+          "image": "/images/cards/46_idioms/break_a_leg.png",
           "label": "Break a leg idiom"
         }
       ],
@@ -598,7 +598,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/butterflies_stomach.png",
+          "image": "/images/cards/46_idioms/butterflies_stomach.png",
           "label": "Butterflies in stomach idiom"
         }
       ],
@@ -614,7 +614,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/spill_beans.png",
+          "image": "/images/cards/46_idioms/spill_beans.png",
           "label": "Spill the beans idiom"
         }
       ],
@@ -630,7 +630,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/cat_out_bag.png",
+          "image": "/images/cards/46_idioms/cat_out_bag.png",
           "label": "Let the cat out of the bag idiom"
         }
       ],
@@ -646,7 +646,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/cloud_nine.png",
+          "image": "/images/cards/46_idioms/cloud_nine.png",
           "label": "On cloud nine idiom"
         }
       ],
@@ -662,7 +662,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/hold_horses.png",
+          "image": "/images/cards/46_idioms/hold_horses.png",
           "label": "Hold your horses idiom"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/arm_and_leg.png",
+          "image": "/images/cards/46_idioms/arm_and_leg.png",
           "label": "Cost an arm and a leg idiom"
         }
       ],
@@ -694,7 +694,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/ball_in_court.png",
+          "image": "/images/cards/46_idioms/ball_in_court.png",
           "label": "Ball is in your court idiom"
         }
       ],
@@ -710,7 +710,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/early_bird.png",
+          "image": "/images/cards/46_idioms/early_bird.png",
           "label": "Early bird gets the worm idiom"
         }
       ],
@@ -726,7 +726,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/walking_eggshells.png",
+          "image": "/images/cards/46_idioms/walking_eggshells.png",
           "label": "Walking on eggshells idiom"
         }
       ],
@@ -742,7 +742,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/eyes_peeled.png",
+          "image": "/images/cards/46_idioms/eyes_peeled.png",
           "label": "Keep your eyes peeled idiom"
         }
       ],
@@ -758,7 +758,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/fish_out_water.png",
+          "image": "/images/cards/46_idioms/fish_out_water.png",
           "label": "Fish out of water idiom"
         }
       ],
@@ -774,7 +774,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/spilled_milk.png",
+          "image": "/images/cards/46_idioms/spilled_milk.png",
           "label": "Don't cry over spilled milk idiom"
         }
       ],
@@ -790,7 +790,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/out_of_blue.png",
+          "image": "/images/cards/46_idioms/out_of_blue.png",
           "label": "Out of the blue idiom"
         }
       ],
@@ -806,7 +806,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/zip_lip.png",
+          "image": "/images/cards/46_idioms/zip_lip.png",
           "label": "Zip your lip idiom"
         }
       ],
@@ -822,7 +822,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/hot_water.png",
+          "image": "/images/cards/46_idioms/hot_water.png",
           "label": "In hot water idiom"
         }
       ],
@@ -838,7 +838,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/two_peas.png",
+          "image": "/images/cards/46_idioms/two_peas.png",
           "label": "Two peas in a pod idiom"
         }
       ],
@@ -854,7 +854,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/in_a_pickle.png",
+          "image": "/images/cards/46_idioms/in_a_pickle.png",
           "label": "In a pickle idiom"
         }
       ],
@@ -870,7 +870,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/best_shot.png",
+          "image": "/images/cards/46_idioms/best_shot.png",
           "label": "Give it your best shot idiom"
         }
       ],
@@ -886,7 +886,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/cold_feet.png",
+          "image": "/images/cards/46_idioms/cold_feet.png",
           "label": "Getting cold feet idiom"
         }
       ],
@@ -902,7 +902,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/wrong_tree.png",
+          "image": "/images/cards/46_idioms/wrong_tree.png",
           "label": "Barking up the wrong tree idiom"
         }
       ],
@@ -918,7 +918,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/nail_on_head.png",
+          "image": "/images/cards/46_idioms/nail_on_head.png",
           "label": "Hit the nail on the head idiom"
         }
       ],
@@ -934,7 +934,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/silver_lining.png",
+          "image": "/images/cards/46_idioms/silver_lining.png",
           "label": "Every cloud has a silver lining idiom"
         }
       ],
@@ -950,7 +950,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "../assets/images/cards/46_idioms/actions_words.png",
+          "image": "/images/cards/46_idioms/actions_words.png",
           "label": "Actions speak louder than words idiom"
         }
       ],
@@ -968,7 +968,7 @@
       "question": "What does \"I have butterflies in my stomach\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/butterflies_stomach.png",
+          "image": "/images/cards/43_identify_meaning/butterflies_stomach.png",
           "label": "Butterflies in my stomach idiom"
         }
       ],
@@ -984,7 +984,7 @@
       "question": "What does \"under the weather\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/under_weather.png",
+          "image": "/images/cards/43_identify_meaning/under_weather.png",
           "label": "Under the weather idiom"
         }
       ],
@@ -1000,7 +1000,7 @@
       "question": "What does \"a piece of cake\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/piece_of_cake.png",
+          "image": "/images/cards/43_identify_meaning/piece_of_cake.png",
           "label": "Piece of cake idiom"
         }
       ],
@@ -1016,7 +1016,7 @@
       "question": "What does \"raining cats and dogs\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/raining_cats_dogs.png",
+          "image": "/images/cards/43_identify_meaning/raining_cats_dogs.png",
           "label": "Raining cats and dogs idiom"
         }
       ],
@@ -1032,7 +1032,7 @@
       "question": "What does \"hit the hay\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/hit_the_hay.png",
+          "image": "/images/cards/43_identify_meaning/hit_the_hay.png",
           "label": "Hit the hay idiom"
         }
       ],
@@ -1048,7 +1048,7 @@
       "question": "What does \"break a leg\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/break_a_leg.png",
+          "image": "/images/cards/43_identify_meaning/break_a_leg.png",
           "label": "Break a leg idiom"
         }
       ],
@@ -1064,7 +1064,7 @@
       "question": "What does \"costs an arm and a leg\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/arm_and_leg.png",
+          "image": "/images/cards/43_identify_meaning/arm_and_leg.png",
           "label": "Costs an arm and a leg idiom"
         }
       ],
@@ -1080,7 +1080,7 @@
       "question": "What does \"spilled the beans\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/spill_beans.png",
+          "image": "/images/cards/43_identify_meaning/spill_beans.png",
           "label": "Spill the beans idiom"
         }
       ],
@@ -1096,7 +1096,7 @@
       "question": "What does \"when pigs fly\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/when_pigs_fly.png",
+          "image": "/images/cards/43_identify_meaning/when_pigs_fly.png",
           "label": "When pigs fly idiom"
         }
       ],
@@ -1112,7 +1112,7 @@
       "question": "What does \"on cloud nine\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/cloud_nine.png",
+          "image": "/images/cards/43_identify_meaning/cloud_nine.png",
           "label": "On cloud nine idiom"
         }
       ],
@@ -1128,7 +1128,7 @@
       "question": "What does \"the ball is in your court\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/ball_in_court.png",
+          "image": "/images/cards/43_identify_meaning/ball_in_court.png",
           "label": "Ball is in your court idiom"
         }
       ],
@@ -1144,7 +1144,7 @@
       "question": "What does \"hold your horses\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/hold_horses.png",
+          "image": "/images/cards/43_identify_meaning/hold_horses.png",
           "label": "Hold your horses idiom"
         }
       ],
@@ -1160,7 +1160,7 @@
       "question": "What does \"let the cat out of the bag\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/cat_out_bag.png",
+          "image": "/images/cards/43_identify_meaning/cat_out_bag.png",
           "label": "Let the cat out of the bag idiom"
         }
       ],
@@ -1176,7 +1176,7 @@
       "question": "What does \"biting off more than you can chew\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/bite_off_more.png",
+          "image": "/images/cards/43_identify_meaning/bite_off_more.png",
           "label": "Biting off more than you can chew idiom"
         }
       ],
@@ -1192,7 +1192,7 @@
       "question": "What does \"once in a blue moon\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/blue_moon.png",
+          "image": "/images/cards/43_identify_meaning/blue_moon.png",
           "label": "Once in a blue moon idiom"
         }
       ],
@@ -1208,7 +1208,7 @@
       "question": "What does \"barking up the wrong tree\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/wrong_tree.png",
+          "image": "/images/cards/43_identify_meaning/wrong_tree.png",
           "label": "Barking up the wrong tree idiom"
         }
       ],
@@ -1224,7 +1224,7 @@
       "question": "What does \"hit the nail on the head\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/nail_head.png",
+          "image": "/images/cards/43_identify_meaning/nail_head.png",
           "label": "Hit the nail on the head idiom"
         }
       ],
@@ -1240,7 +1240,7 @@
       "question": "What does \"keep your eyes peeled\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/eyes_peeled.png",
+          "image": "/images/cards/43_identify_meaning/eyes_peeled.png",
           "label": "Keep your eyes peeled idiom"
         }
       ],
@@ -1256,7 +1256,7 @@
       "question": "What does \"a fish out of water\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/fish_out_water.png",
+          "image": "/images/cards/43_identify_meaning/fish_out_water.png",
           "label": "Fish out of water idiom"
         }
       ],
@@ -1272,7 +1272,7 @@
       "question": "What does \"don't cry over spilled milk\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/spilled_milk.png",
+          "image": "/images/cards/43_identify_meaning/spilled_milk.png",
           "label": "Don't cry over spilled milk idiom"
         }
       ],
@@ -1288,7 +1288,7 @@
       "question": "What does \"walking on eggshells\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/eggshells.png",
+          "image": "/images/cards/43_identify_meaning/eggshells.png",
           "label": "Walking on eggshells idiom"
         }
       ],
@@ -1304,7 +1304,7 @@
       "question": "What does \"out of the blue\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/out_of_blue.png",
+          "image": "/images/cards/43_identify_meaning/out_of_blue.png",
           "label": "Out of the blue idiom"
         }
       ],
@@ -1320,7 +1320,7 @@
       "question": "What does \"zip your lip\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/zip_lip.png",
+          "image": "/images/cards/43_identify_meaning/zip_lip.png",
           "label": "Zip your lip idiom"
         }
       ],
@@ -1336,7 +1336,7 @@
       "question": "What does \"in hot water\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/hot_water.png",
+          "image": "/images/cards/43_identify_meaning/hot_water.png",
           "label": "In hot water idiom"
         }
       ],
@@ -1352,7 +1352,7 @@
       "question": "What does \"two peas in a pod\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/two_peas.png",
+          "image": "/images/cards/43_identify_meaning/two_peas.png",
           "label": "Two peas in a pod idiom"
         }
       ],
@@ -1368,7 +1368,7 @@
       "question": "What does \"the early bird gets the worm\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/early_bird.png",
+          "image": "/images/cards/43_identify_meaning/early_bird.png",
           "label": "Early bird gets the worm idiom"
         }
       ],
@@ -1384,7 +1384,7 @@
       "question": "What does \"give it your best shot\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/best_shot.png",
+          "image": "/images/cards/43_identify_meaning/best_shot.png",
           "label": "Give it your best shot idiom"
         }
       ],
@@ -1400,7 +1400,7 @@
       "question": "What does \"actions speak louder than words\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/actions_words.png",
+          "image": "/images/cards/43_identify_meaning/actions_words.png",
           "label": "Actions speak louder than words idiom"
         }
       ],
@@ -1416,7 +1416,7 @@
       "question": "What does \"getting cold feet\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/cold_feet.png",
+          "image": "/images/cards/43_identify_meaning/cold_feet.png",
           "label": "Getting cold feet idiom"
         }
       ],
@@ -1432,7 +1432,7 @@
       "question": "What does \"every cloud has a silver lining\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/43_identify_meaning/silver_lining.png",
+          "image": "/images/cards/43_identify_meaning/silver_lining.png",
           "label": "Every cloud has a silver lining idiom"
         }
       ],

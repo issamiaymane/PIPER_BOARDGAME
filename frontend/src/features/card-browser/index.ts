@@ -254,7 +254,7 @@ function normalizeImages(images: Array<string | { image?: string; label?: string
 
 function renderSingleImage(img: ImageItem): string {
     return `<div class="preview-image">
-        <img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='../assets/images/default.png'; this.onerror=null;">
+        <img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='/images/default.png'; this.onerror=null;">
         ${img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
     </div>`;
 }
@@ -382,7 +382,7 @@ function renderImageSelection(card: CardData): string {
         images.forEach((img, index) => {
             html += `<div class="preview-image-selection-item selectable-image" data-index="${index}">
                 <div class="image-selection-number">${index + 1}</div>
-                ${img.image ? `<img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='../assets/images/default.png'">` : ''}
+                ${img.image ? `<img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='/images/default.png'">` : ''}
                 ${hasTextLabels ? `<div class="image-selection-label">${escapeHtml(img.label)}</div>` : ''}
             </div>`;
         });
@@ -410,7 +410,7 @@ function renderSequencing(card: CardData): string {
                 ${images.map((img, idx) => `
                     <button class="sequence-image-btn" data-index="${idx}">
                         <span class="seq-img-number">${idx + 1}</span>
-                        ${img.image ? `<img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='../assets/images/default.png'">` : ''}
+                        ${img.image ? `<img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='/images/default.png'">` : ''}
                         ${img.label ? `<span class="seq-img-label">${escapeHtml(img.label)}</span>` : ''}
                     </button>
                 `).join('')}

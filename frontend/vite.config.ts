@@ -6,17 +6,16 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
   root: '.',
-  publicDir: 'assets',
+  publicDir: 'public',
 
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        boardgame: resolve(__dirname, 'pages/boardgame.html'),
-        therapist: resolve(__dirname, 'pages/therapist.html'),
-        'card-browser': resolve(__dirname, 'pages/card-browser.html'),
+        boardgame: resolve(__dirname, 'boardgame.html'),
+        therapist: resolve(__dirname, 'therapist.html'),
+        'card-browser': resolve(__dirname, 'card-browser.html'),
       },
       output: {
         assetFileNames: 'assets/[name]-[hash][extname]',
@@ -28,7 +27,7 @@ export default defineConfig({
 
   server: {
     port: 5173,
-    open: '/pages/boardgame.html',
+    open: '/boardgame.html',
     proxy: {
       '/api': {
         target: 'http://localhost:3000',
@@ -43,6 +42,8 @@ export default defineConfig({
       '@features': resolve(__dirname, 'src/features'),
       '@constants': resolve(__dirname, 'src/constants'),
       '@services': resolve(__dirname, 'src/services'),
+      '@shared': resolve(__dirname, 'src/shared'),
+      '@styles': resolve(__dirname, 'src/styles'),
     }
   }
 });

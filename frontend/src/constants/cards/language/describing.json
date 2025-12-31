@@ -4,7 +4,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/beach/sandcastle.png",
+          "image": "/images/cards/26_describe_scene/beach/sandcastle.png",
           "label": "Child building sandcastle on beach"
         }
       ],
@@ -16,7 +16,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/beach/family_shoreline.png",
+          "image": "/images/cards/26_describe_scene/beach/family_shoreline.png",
           "label": "Family walking along the shoreline"
         }
       ],
@@ -28,7 +28,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/beach/sunscreen.png",
+          "image": "/images/cards/26_describe_scene/beach/sunscreen.png",
           "label": "Person applying sunscreen at beach"
         }
       ],
@@ -40,7 +40,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/beach/splashing_waves.png",
+          "image": "/images/cards/26_describe_scene/beach/splashing_waves.png",
           "label": "People splashing in ocean waves"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/beach/seagulls.png",
+          "image": "/images/cards/26_describe_scene/beach/seagulls.png",
           "label": "Seagulls flying over the beach"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/beach/seashells.png",
+          "image": "/images/cards/26_describe_scene/beach/seashells.png",
           "label": "Seashells scattered on the sand"
         }
       ],
@@ -76,7 +76,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/park/reading_grass.png",
+          "image": "/images/cards/26_describe_scene/park/reading_grass.png",
           "label": "Person reading a book on grass"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/park/playground.png",
+          "image": "/images/cards/26_describe_scene/park/playground.png",
           "label": "Children playing on playground"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/park/picnic.png",
+          "image": "/images/cards/26_describe_scene/park/picnic.png",
           "label": "Family having a picnic in park"
         }
       ],
@@ -112,7 +112,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/park/dog_frisbee.png",
+          "image": "/images/cards/26_describe_scene/park/dog_frisbee.png",
           "label": "Dog catching a frisbee"
         }
       ],
@@ -124,7 +124,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/park/bubbles.png",
+          "image": "/images/cards/26_describe_scene/park/bubbles.png",
           "label": "Child blowing bubbles outside"
         }
       ],
@@ -136,7 +136,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/park/nature_trail.png",
+          "image": "/images/cards/26_describe_scene/park/nature_trail.png",
           "label": "People walking on a nature trail"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/home/cooking.png",
+          "image": "/images/cards/26_describe_scene/home/cooking.png",
           "label": "Person cooking in the kitchen"
         }
       ],
@@ -160,7 +160,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/home/homework.png",
+          "image": "/images/cards/26_describe_scene/home/homework.png",
           "label": "Child doing homework at desk"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/home/movie.png",
+          "image": "/images/cards/26_describe_scene/home/movie.png",
           "label": "Family watching a movie together"
         }
       ],
@@ -184,7 +184,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/home/laundry.png",
+          "image": "/images/cards/26_describe_scene/home/laundry.png",
           "label": "Person doing laundry at home"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/home/watering_plants.png",
+          "image": "/images/cards/26_describe_scene/home/watering_plants.png",
           "label": "Person watering plants"
         }
       ],
@@ -208,7 +208,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/home/making_bed.png",
+          "image": "/images/cards/26_describe_scene/home/making_bed.png",
           "label": "Child making their bed"
         }
       ],
@@ -220,7 +220,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/activity/horse_riding.png",
+          "image": "/images/cards/26_describe_scene/activity/horse_riding.png",
           "label": "Person riding a horse"
         }
       ],
@@ -232,7 +232,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/activity/soccer.png",
+          "image": "/images/cards/26_describe_scene/activity/soccer.png",
           "label": "Kids playing soccer on field"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/activity/painting.png",
+          "image": "/images/cards/26_describe_scene/activity/painting.png",
           "label": "Child painting a picture"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/activity/science_experiment.png",
+          "image": "/images/cards/26_describe_scene/activity/science_experiment.png",
           "label": "Kids doing science experiment"
         }
       ],
@@ -268,7 +268,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/activity/surfing.png",
+          "image": "/images/cards/26_describe_scene/activity/surfing.png",
           "label": "Person surfing in the ocean"
         }
       ],
@@ -280,7 +280,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/activity/board_game.png",
+          "image": "/images/cards/26_describe_scene/activity/board_game.png",
           "label": "People playing a board game"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/nature/rainbow.png",
+          "image": "/images/cards/26_describe_scene/nature/rainbow.png",
           "label": "Rainbow in the sky"
         }
       ],
@@ -304,7 +304,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/nature/sunset.png",
+          "image": "/images/cards/26_describe_scene/nature/sunset.png",
           "label": "Sun setting over the horizon"
         }
       ],
@@ -316,7 +316,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/nature/butterfly.png",
+          "image": "/images/cards/26_describe_scene/nature/butterfly.png",
           "label": "Butterfly sitting on a flower"
         }
       ],
@@ -328,7 +328,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/nature/ducks.png",
+          "image": "/images/cards/26_describe_scene/nature/ducks.png",
           "label": "Ducks swimming in a pond"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/nature/clouds.png",
+          "image": "/images/cards/26_describe_scene/nature/clouds.png",
           "label": "Fluffy clouds in the sky"
         }
       ],
@@ -352,7 +352,7 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "../assets/images/cards/26_describe_scene/nature/waves_rocks.png",
+          "image": "/images/cards/26_describe_scene/nature/waves_rocks.png",
           "label": "Waves crashing against rocks"
         }
       ],
@@ -365,7 +365,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/fruits/banana.png",
+          "image": "/images/cards/27_describing/fruits/banana.png",
           "label": "A banana"
         }
       ],
@@ -395,7 +395,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/fruits/orange.png",
+          "image": "/images/cards/27_describing/fruits/orange.png",
           "label": "An orange"
         }
       ],
@@ -425,7 +425,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/fruits/strawberry.png",
+          "image": "/images/cards/27_describing/fruits/strawberry.png",
           "label": "A strawberry"
         }
       ],
@@ -455,7 +455,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/fruits/watermelon.png",
+          "image": "/images/cards/27_describing/fruits/watermelon.png",
           "label": "A watermelon"
         }
       ],
@@ -485,7 +485,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/fruits/apple.png",
+          "image": "/images/cards/27_describing/fruits/apple.png",
           "label": "An apple"
         }
       ],
@@ -515,7 +515,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/animals/bear.png",
+          "image": "/images/cards/27_describing/animals/bear.png",
           "label": "A bear"
         }
       ],
@@ -545,7 +545,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/animals/dolphin.png",
+          "image": "/images/cards/27_describing/animals/dolphin.png",
           "label": "A dolphin"
         }
       ],
@@ -575,7 +575,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/animals/bunny.png",
+          "image": "/images/cards/27_describing/animals/bunny.png",
           "label": "A bunny"
         }
       ],
@@ -605,7 +605,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/animals/butterfly.png",
+          "image": "/images/cards/27_describing/animals/butterfly.png",
           "label": "A butterfly"
         }
       ],
@@ -635,7 +635,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/animals/dog.png",
+          "image": "/images/cards/27_describing/animals/dog.png",
           "label": "A dog"
         }
       ],
@@ -665,7 +665,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/household/refrigerator.png",
+          "image": "/images/cards/27_describing/household/refrigerator.png",
           "label": "A refrigerator"
         }
       ],
@@ -695,7 +695,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/household/bed.png",
+          "image": "/images/cards/27_describing/household/bed.png",
           "label": "A bed"
         }
       ],
@@ -725,7 +725,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/household/bathtub.png",
+          "image": "/images/cards/27_describing/household/bathtub.png",
           "label": "A bathtub"
         }
       ],
@@ -755,7 +755,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/household/couch.png",
+          "image": "/images/cards/27_describing/household/couch.png",
           "label": "A couch"
         }
       ],
@@ -785,7 +785,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/household/lamp.png",
+          "image": "/images/cards/27_describing/household/lamp.png",
           "label": "A lamp"
         }
       ],
@@ -815,7 +815,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/clothing/sneakers.png",
+          "image": "/images/cards/27_describing/clothing/sneakers.png",
           "label": "Sneakers"
         }
       ],
@@ -845,7 +845,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/clothing/jacket.png",
+          "image": "/images/cards/27_describing/clothing/jacket.png",
           "label": "A jacket"
         }
       ],
@@ -875,7 +875,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/clothing/sunhat.png",
+          "image": "/images/cards/27_describing/clothing/sunhat.png",
           "label": "A sunhat"
         }
       ],
@@ -905,7 +905,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/clothing/flipflops.png",
+          "image": "/images/cards/27_describing/clothing/flipflops.png",
           "label": "Flip flops"
         }
       ],
@@ -935,7 +935,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/clothing/backpack.png",
+          "image": "/images/cards/27_describing/clothing/backpack.png",
           "label": "A backpack"
         }
       ],
@@ -965,7 +965,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/beach/towel.png",
+          "image": "/images/cards/27_describing/beach/towel.png",
           "label": "A towel"
         }
       ],
@@ -995,7 +995,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/beach/sunscreen.png",
+          "image": "/images/cards/27_describing/beach/sunscreen.png",
           "label": "Sunscreen"
         }
       ],
@@ -1025,7 +1025,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/beach/bucket.png",
+          "image": "/images/cards/27_describing/beach/bucket.png",
           "label": "A bucket"
         }
       ],
@@ -1055,7 +1055,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/beach/sunglasses.png",
+          "image": "/images/cards/27_describing/beach/sunglasses.png",
           "label": "Sunglasses"
         }
       ],
@@ -1085,7 +1085,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/beach/seashell.png",
+          "image": "/images/cards/27_describing/beach/seashell.png",
           "label": "A seashell"
         }
       ],
@@ -1115,7 +1115,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/vehicles/car.png",
+          "image": "/images/cards/27_describing/vehicles/car.png",
           "label": "A car"
         }
       ],
@@ -1145,7 +1145,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/vehicles/airplane.png",
+          "image": "/images/cards/27_describing/vehicles/airplane.png",
           "label": "An airplane"
         }
       ],
@@ -1175,7 +1175,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/vehicles/skateboard.png",
+          "image": "/images/cards/27_describing/vehicles/skateboard.png",
           "label": "A skateboard"
         }
       ],
@@ -1205,7 +1205,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/vehicles/surfboard.png",
+          "image": "/images/cards/27_describing/vehicles/surfboard.png",
           "label": "A surfboard"
         }
       ],
@@ -1235,7 +1235,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/27_describing/vehicles/boat.png",
+          "image": "/images/cards/27_describing/vehicles/boat.png",
           "label": "A boat"
         }
       ],
@@ -1267,7 +1267,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/beach/family_waves.png",
+          "image": "/images/cards/28_describing_advanced/beach/family_waves.png",
           "label": "Family playing in waves"
         }
       ],
@@ -1297,7 +1297,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/beach/person_ocean_sunglasses.png",
+          "image": "/images/cards/28_describing_advanced/beach/person_ocean_sunglasses.png",
           "label": "Person at ocean with sunglasses"
         }
       ],
@@ -1327,7 +1327,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/beach/child_sandcastle.png",
+          "image": "/images/cards/28_describing_advanced/beach/child_sandcastle.png",
           "label": "Child building sandcastle"
         }
       ],
@@ -1357,7 +1357,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/beach/surfer_wave.png",
+          "image": "/images/cards/28_describing_advanced/beach/surfer_wave.png",
           "label": "Surfer riding a wave"
         }
       ],
@@ -1387,7 +1387,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/beach/family_seashells.png",
+          "image": "/images/cards/28_describing_advanced/beach/family_seashells.png",
           "label": "Family collecting seashells"
         }
       ],
@@ -1417,7 +1417,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/park/children_playground.png",
+          "image": "/images/cards/28_describing_advanced/park/children_playground.png",
           "label": "Children at playground"
         }
       ],
@@ -1447,7 +1447,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/park/family_picnic.png",
+          "image": "/images/cards/28_describing_advanced/park/family_picnic.png",
           "label": "Family having a picnic"
         }
       ],
@@ -1477,7 +1477,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/park/child_dog.png",
+          "image": "/images/cards/28_describing_advanced/park/child_dog.png",
           "label": "Child playing with dog"
         }
       ],
@@ -1507,7 +1507,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/park/people_sunset.png",
+          "image": "/images/cards/28_describing_advanced/park/people_sunset.png",
           "label": "People watching sunset"
         }
       ],
@@ -1537,7 +1537,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/park/kids_sprinklers.png",
+          "image": "/images/cards/28_describing_advanced/park/kids_sprinklers.png",
           "label": "Kids playing in sprinklers"
         }
       ],
@@ -1567,7 +1567,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/home/family_cooking.png",
+          "image": "/images/cards/28_describing_advanced/home/family_cooking.png",
           "label": "Family cooking together"
         }
       ],
@@ -1597,7 +1597,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/home/friends_fire_pit.png",
+          "image": "/images/cards/28_describing_advanced/home/friends_fire_pit.png",
           "label": "Friends by fire pit"
         }
       ],
@@ -1627,7 +1627,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/home/child_reading_couch.png",
+          "image": "/images/cards/28_describing_advanced/home/child_reading_couch.png",
           "label": "Child reading on couch"
         }
       ],
@@ -1657,7 +1657,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/home/family_game_night.png",
+          "image": "/images/cards/28_describing_advanced/home/family_game_night.png",
           "label": "Family game night"
         }
       ],
@@ -1687,7 +1687,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/home/child_dishes.png",
+          "image": "/images/cards/28_describing_advanced/home/child_dishes.png",
           "label": "Child washing dishes"
         }
       ],
@@ -1717,7 +1717,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/activity/kids_bikes_helmets.png",
+          "image": "/images/cards/28_describing_advanced/activity/kids_bikes_helmets.png",
           "label": "Kids riding bikes with helmets"
         }
       ],
@@ -1747,7 +1747,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/activity/students_science.png",
+          "image": "/images/cards/28_describing_advanced/activity/students_science.png",
           "label": "Students doing science experiment"
         }
       ],
@@ -1777,7 +1777,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/activity/person_horse.png",
+          "image": "/images/cards/28_describing_advanced/activity/person_horse.png",
           "label": "Person riding a horse"
         }
       ],
@@ -1807,7 +1807,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/activity/kids_soccer.png",
+          "image": "/images/cards/28_describing_advanced/activity/kids_soccer.png",
           "label": "Kids playing soccer"
         }
       ],
@@ -1837,7 +1837,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/activity/child_painting.png",
+          "image": "/images/cards/28_describing_advanced/activity/child_painting.png",
           "label": "Child painting a picture"
         }
       ],
@@ -1867,7 +1867,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/nature/rainbow_beach.png",
+          "image": "/images/cards/28_describing_advanced/nature/rainbow_beach.png",
           "label": "Rainbow over the beach"
         }
       ],
@@ -1897,7 +1897,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/nature/birds_ocean.png",
+          "image": "/images/cards/28_describing_advanced/nature/birds_ocean.png",
           "label": "Birds flying over ocean"
         }
       ],
@@ -1927,7 +1927,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/nature/tide_pools.png",
+          "image": "/images/cards/28_describing_advanced/nature/tide_pools.png",
           "label": "Tide pools at the shore"
         }
       ],
@@ -1957,7 +1957,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/nature/flowers_garden.png",
+          "image": "/images/cards/28_describing_advanced/nature/flowers_garden.png",
           "label": "Flowers in a garden"
         }
       ],
@@ -1987,7 +1987,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/nature/clouds_sky.png",
+          "image": "/images/cards/28_describing_advanced/nature/clouds_sky.png",
           "label": "Clouds in the sky"
         }
       ],
@@ -2017,7 +2017,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/food/family_dinner.png",
+          "image": "/images/cards/28_describing_advanced/food/family_dinner.png",
           "label": "Family eating dinner"
         }
       ],
@@ -2047,7 +2047,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/food/child_fruit_salad.png",
+          "image": "/images/cards/28_describing_advanced/food/child_fruit_salad.png",
           "label": "Child making fruit salad"
         }
       ],
@@ -2077,7 +2077,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/food/adult_child_smoothie.png",
+          "image": "/images/cards/28_describing_advanced/food/adult_child_smoothie.png",
           "label": "Adult and child making smoothie"
         }
       ],
@@ -2107,7 +2107,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/food/breakfast_table.png",
+          "image": "/images/cards/28_describing_advanced/food/breakfast_table.png",
           "label": "Breakfast table setting"
         }
       ],
@@ -2137,7 +2137,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/28_describing_advanced/food/farmers_market.png",
+          "image": "/images/cards/28_describing_advanced/food/farmers_market.png",
           "label": "Farmers market scene"
         }
       ],

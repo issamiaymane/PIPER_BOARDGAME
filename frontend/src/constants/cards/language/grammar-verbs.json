@@ -4,7 +4,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/laundry_basket.png",
+          "image": "/images/cards/30_do_vs_does/do/laundry_basket.png",
           "label": "Laundry basket"
         }
       ],
@@ -19,7 +19,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/man_raking.png",
+          "image": "/images/cards/30_do_vs_does/does/man_raking.png",
           "label": "Man raking"
         }
       ],
@@ -34,7 +34,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/family_dinner.png",
+          "image": "/images/cards/30_do_vs_does/do/family_dinner.png",
           "label": "Family dinner"
         }
       ],
@@ -49,7 +49,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/girl_brushing_teeth.png",
+          "image": "/images/cards/30_do_vs_does/does/girl_brushing_teeth.png",
           "label": "Girl brushing teeth"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/children_homework.png",
+          "image": "/images/cards/30_do_vs_does/do/children_homework.png",
           "label": "Children doing homework"
         }
       ],
@@ -79,7 +79,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/boy_feeding_pet.png",
+          "image": "/images/cards/30_do_vs_does/does/boy_feeding_pet.png",
           "label": "Boy feeding pet"
         }
       ],
@@ -94,7 +94,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/making_bed.png",
+          "image": "/images/cards/30_do_vs_does/do/making_bed.png",
           "label": "Making bed"
         }
       ],
@@ -109,7 +109,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/woman_watering_plants.png",
+          "image": "/images/cards/30_do_vs_does/does/woman_watering_plants.png",
           "label": "Woman watering plants"
         }
       ],
@@ -124,7 +124,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/kids_sandcastle.png",
+          "image": "/images/cards/30_do_vs_does/do/kids_sandcastle.png",
           "label": "Kids building sandcastle"
         }
       ],
@@ -139,7 +139,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/dog_trick.png",
+          "image": "/images/cards/30_do_vs_does/does/dog_trick.png",
           "label": "Dog doing trick"
         }
       ],
@@ -154,7 +154,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/people_exercising.png",
+          "image": "/images/cards/30_do_vs_does/do/people_exercising.png",
           "label": "People exercising"
         }
       ],
@@ -169,7 +169,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/girl_painting.png",
+          "image": "/images/cards/30_do_vs_does/does/girl_painting.png",
           "label": "Girl painting"
         }
       ],
@@ -184,7 +184,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/friends_board_game.png",
+          "image": "/images/cards/30_do_vs_does/do/friends_board_game.png",
           "label": "Friends playing board game"
         }
       ],
@@ -199,7 +199,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/boy_swimming.png",
+          "image": "/images/cards/30_do_vs_does/does/boy_swimming.png",
           "label": "Boy swimming"
         }
       ],
@@ -214,7 +214,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/family_cooking.png",
+          "image": "/images/cards/30_do_vs_does/do/family_cooking.png",
           "label": "Family cooking"
         }
       ],
@@ -229,7 +229,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/cat_sleeping.png",
+          "image": "/images/cards/30_do_vs_does/does/cat_sleeping.png",
           "label": "Cat sleeping"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/students_desk.png",
+          "image": "/images/cards/30_do_vs_does/do/students_desk.png",
           "label": "Students at desk"
         }
       ],
@@ -259,7 +259,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/teacher_board.png",
+          "image": "/images/cards/30_do_vs_does/does/teacher_board.png",
           "label": "Teacher at board"
         }
       ],
@@ -274,7 +274,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/do/girls_dancing.png",
+          "image": "/images/cards/30_do_vs_does/do/girls_dancing.png",
           "label": "Girls dancing"
         }
       ],
@@ -289,7 +289,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/does/chef_cooking.png",
+          "image": "/images/cards/30_do_vs_does/does/chef_cooking.png",
           "label": "Chef cooking"
         }
       ],
@@ -304,7 +304,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/child_reading.png",
+          "image": "/images/cards/30_do_vs_does/mixed/child_reading.png",
           "label": "Child reading"
         }
       ],
@@ -319,7 +319,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/family_beach.png",
+          "image": "/images/cards/30_do_vs_does/mixed/family_beach.png",
           "label": "Family at beach"
         }
       ],
@@ -334,7 +334,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/bird_flying.png",
+          "image": "/images/cards/30_do_vs_does/mixed/bird_flying.png",
           "label": "Bird flying"
         }
       ],
@@ -349,7 +349,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/kids_soccer.png",
+          "image": "/images/cards/30_do_vs_does/mixed/kids_soccer.png",
           "label": "Kids playing soccer"
         }
       ],
@@ -364,7 +364,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/grandma_baking.png",
+          "image": "/images/cards/30_do_vs_does/mixed/grandma_baking.png",
           "label": "Grandma baking"
         }
       ],
@@ -379,7 +379,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/dad_washing_car.png",
+          "image": "/images/cards/30_do_vs_does/mixed/dad_washing_car.png",
           "label": "Dad washing car"
         }
       ],
@@ -394,7 +394,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/children_cleaning.png",
+          "image": "/images/cards/30_do_vs_does/mixed/children_cleaning.png",
           "label": "Children cleaning"
         }
       ],
@@ -409,7 +409,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/sun_shining.png",
+          "image": "/images/cards/30_do_vs_does/mixed/sun_shining.png",
           "label": "Sun shining"
         }
       ],
@@ -424,7 +424,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/stretches.png",
+          "image": "/images/cards/30_do_vs_does/mixed/stretches.png",
           "label": "Stretches"
         }
       ],
@@ -439,7 +439,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/30_do_vs_does/mixed/dolphins_jumping.png",
+          "image": "/images/cards/30_do_vs_does/mixed/dolphins_jumping.png",
           "label": "Dolphins jumping"
         }
       ],
@@ -456,7 +456,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/cat_collar.png",
+          "image": "/images/cards/40_has_have/cat_collar.png",
           "label": "Cat with collar"
         }
       ],
@@ -471,7 +471,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/kids_toys.png",
+          "image": "/images/cards/40_has_have/kids_toys.png",
           "label": "Kids with toys"
         }
       ],
@@ -486,7 +486,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/girl_pigtails.png",
+          "image": "/images/cards/40_has_have/girl_pigtails.png",
           "label": "Girl with pigtails"
         }
       ],
@@ -501,7 +501,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/dogs_playing.png",
+          "image": "/images/cards/40_has_have/dogs_playing.png",
           "label": "Dogs playing"
         }
       ],
@@ -516,7 +516,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/boy_backpack.png",
+          "image": "/images/cards/40_has_have/boy_backpack.png",
           "label": "Boy with backpack"
         }
       ],
@@ -531,7 +531,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/flowers_vase.png",
+          "image": "/images/cards/40_has_have/flowers_vase.png",
           "label": "Flowers in vase"
         }
       ],
@@ -546,7 +546,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/dog_spots.png",
+          "image": "/images/cards/40_has_have/dog_spots.png",
           "label": "Dog with spots"
         }
       ],
@@ -561,7 +561,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/books_shelf.png",
+          "image": "/images/cards/40_has_have/books_shelf.png",
           "label": "Books on shelf"
         }
       ],
@@ -576,7 +576,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/house_garden.png",
+          "image": "/images/cards/40_has_have/house_garden.png",
           "label": "House with garden"
         }
       ],
@@ -591,7 +591,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/cars_parking.png",
+          "image": "/images/cards/40_has_have/cars_parking.png",
           "label": "Cars in parking"
         }
       ],
@@ -606,7 +606,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/bird_feathers.png",
+          "image": "/images/cards/40_has_have/bird_feathers.png",
           "label": "Bird with feathers"
         }
       ],
@@ -621,7 +621,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/cups_table.png",
+          "image": "/images/cards/40_has_have/cups_table.png",
           "label": "Cups on table"
         }
       ],
@@ -636,7 +636,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/bike_basket.png",
+          "image": "/images/cards/40_has_have/bike_basket.png",
           "label": "Bike with basket"
         }
       ],
@@ -651,7 +651,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/birds_tree.png",
+          "image": "/images/cards/40_has_have/birds_tree.png",
           "label": "Birds in tree"
         }
       ],
@@ -666,7 +666,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/tree_leaves.png",
+          "image": "/images/cards/40_has_have/tree_leaves.png",
           "label": "Tree with leaves"
         }
       ],
@@ -681,7 +681,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/students_pencils.png",
+          "image": "/images/cards/40_has_have/students_pencils.png",
           "label": "Students with pencils"
         }
       ],
@@ -696,7 +696,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/cake_frosting.png",
+          "image": "/images/cards/40_has_have/cake_frosting.png",
           "label": "Cake with frosting"
         }
       ],
@@ -711,7 +711,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/donuts_sprinkles.png",
+          "image": "/images/cards/40_has_have/donuts_sprinkles.png",
           "label": "Donuts with sprinkles"
         }
       ],
@@ -726,7 +726,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/clock_hands.png",
+          "image": "/images/cards/40_has_have/clock_hands.png",
           "label": "Clock with hands"
         }
       ],
@@ -741,7 +741,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/cookies_plate.png",
+          "image": "/images/cards/40_has_have/cookies_plate.png",
           "label": "Cookies on plate"
         }
       ],
@@ -756,7 +756,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/girl_umbrella.png",
+          "image": "/images/cards/40_has_have/girl_umbrella.png",
           "label": "Girl with umbrella"
         }
       ],
@@ -771,7 +771,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/person_pet.png",
+          "image": "/images/cards/40_has_have/person_pet.png",
           "label": "Person with pet"
         }
       ],
@@ -786,7 +786,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/dolphin_fin.png",
+          "image": "/images/cards/40_has_have/dolphin_fin.png",
           "label": "Dolphin with fin"
         }
       ],
@@ -801,7 +801,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/friends_beach.png",
+          "image": "/images/cards/40_has_have/friends_beach.png",
           "label": "Friends at beach"
         }
       ],
@@ -816,7 +816,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/sandcastle_flag.png",
+          "image": "/images/cards/40_has_have/sandcastle_flag.png",
           "label": "Sandcastle with flag"
         }
       ],
@@ -831,7 +831,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/boys_ball.png",
+          "image": "/images/cards/40_has_have/boys_ball.png",
           "label": "Boys with ball"
         }
       ],
@@ -846,7 +846,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/person_question.png",
+          "image": "/images/cards/40_has_have/person_question.png",
           "label": "Person with question"
         }
       ],
@@ -861,7 +861,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/family_portrait.png",
+          "image": "/images/cards/40_has_have/family_portrait.png",
           "label": "Family portrait"
         }
       ],
@@ -876,7 +876,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/person_lunch.png",
+          "image": "/images/cards/40_has_have/person_lunch.png",
           "label": "Person eating lunch"
         }
       ],
@@ -891,7 +891,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/40_has_have/family_dinner.png",
+          "image": "/images/cards/40_has_have/family_dinner.png",
           "label": "Family at dinner"
         }
       ],
@@ -1360,7 +1360,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/swimming-pool.png",
+          "image": "/images/cards/128_was_vs_were/swimming-pool.png",
           "label": "Swimming pool"
         }
       ],
@@ -1375,7 +1375,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/men-kicking-ball.png",
+          "image": "/images/cards/128_was_vs_were/men-kicking-ball.png",
           "label": "Men kicking ball"
         }
       ],
@@ -1390,7 +1390,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/dog-sleeping.png",
+          "image": "/images/cards/128_was_vs_were/dog-sleeping.png",
           "label": "Dog sleeping"
         }
       ],
@@ -1405,7 +1405,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/sandcastle.png",
+          "image": "/images/cards/128_was_vs_were/sandcastle.png",
           "label": "Sandcastle"
         }
       ],
@@ -1420,7 +1420,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/eating-apple.png",
+          "image": "/images/cards/128_was_vs_were/eating-apple.png",
           "label": "Eating apple"
         }
       ],
@@ -1435,7 +1435,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/birds-flying.png",
+          "image": "/images/cards/128_was_vs_were/birds-flying.png",
           "label": "Birds flying"
         }
       ],
@@ -1450,7 +1450,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/reading-book.png",
+          "image": "/images/cards/128_was_vs_were/reading-book.png",
           "label": "Reading book"
         }
       ],
@@ -1465,7 +1465,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/beach.png",
+          "image": "/images/cards/128_was_vs_were/beach.png",
           "label": "Beach"
         }
       ],
@@ -1480,7 +1480,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/cat-sitting.png",
+          "image": "/images/cards/128_was_vs_were/cat-sitting.png",
           "label": "Cat sitting"
         }
       ],
@@ -1495,7 +1495,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/video-games.png",
+          "image": "/images/cards/128_was_vs_were/video-games.png",
           "label": "Video games"
         }
       ],
@@ -1510,7 +1510,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/sunny-day.png",
+          "image": "/images/cards/128_was_vs_were/sunny-day.png",
           "label": "Sunny day"
         }
       ],
@@ -1525,7 +1525,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/homework.png",
+          "image": "/images/cards/128_was_vs_were/homework.png",
           "label": "Homework"
         }
       ],
@@ -1540,7 +1540,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/cooking.png",
+          "image": "/images/cards/128_was_vs_were/cooking.png",
           "label": "Cooking"
         }
       ],
@@ -1555,7 +1555,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/dolphins-jumping.png",
+          "image": "/images/cards/128_was_vs_were/dolphins-jumping.png",
           "label": "Dolphins jumping"
         }
       ],
@@ -1570,7 +1570,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/baby-sleeping.png",
+          "image": "/images/cards/128_was_vs_were/baby-sleeping.png",
           "label": "Baby sleeping"
         }
       ],
@@ -1585,7 +1585,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/girls-dancing.png",
+          "image": "/images/cards/128_was_vs_were/girls-dancing.png",
           "label": "Girls dancing"
         }
       ],
@@ -1600,7 +1600,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/ball-grass.png",
+          "image": "/images/cards/128_was_vs_were/ball-grass.png",
           "label": "Ball on grass"
         }
       ],
@@ -1615,7 +1615,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/party.png",
+          "image": "/images/cards/128_was_vs_were/party.png",
           "label": "Party"
         }
       ],
@@ -1630,7 +1630,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/drawing.png",
+          "image": "/images/cards/128_was_vs_were/drawing.png",
           "label": "Drawing"
         }
       ],
@@ -1645,7 +1645,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/eating-lunch.png",
+          "image": "/images/cards/128_was_vs_were/eating-lunch.png",
           "label": "Eating lunch"
         }
       ],
@@ -1660,7 +1660,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/store.png",
+          "image": "/images/cards/128_was_vs_were/store.png",
           "label": "Store"
         }
       ],
@@ -1675,7 +1675,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/waves-crashing.png",
+          "image": "/images/cards/128_was_vs_were/waves-crashing.png",
           "label": "Waves crashing"
         }
       ],
@@ -1690,7 +1690,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/movie-tv.png",
+          "image": "/images/cards/128_was_vs_were/movie-tv.png",
           "label": "Movie on TV"
         }
       ],
@@ -1705,7 +1705,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/flowers-blooming.png",
+          "image": "/images/cards/128_was_vs_were/flowers-blooming.png",
           "label": "Flowers blooming"
         }
       ],
@@ -1720,7 +1720,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/seashell.png",
+          "image": "/images/cards/128_was_vs_were/seashell.png",
           "label": "Seashell"
         }
       ],
@@ -1735,7 +1735,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/mom-dad-dinner.png",
+          "image": "/images/cards/128_was_vs_were/mom-dad-dinner.png",
           "label": "Mom and dad at dinner"
         }
       ],
@@ -1750,7 +1750,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/phone-ringing.png",
+          "image": "/images/cards/128_was_vs_were/phone-ringing.png",
           "label": "Phone ringing"
         }
       ],
@@ -1765,7 +1765,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/running-beach.png",
+          "image": "/images/cards/128_was_vs_were/running-beach.png",
           "label": "Running on beach"
         }
       ],
@@ -1780,7 +1780,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/lifeguard.png",
+          "image": "/images/cards/128_was_vs_were/lifeguard.png",
           "label": "Lifeguard"
         }
       ],
@@ -1795,7 +1795,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/128_was_vs_were/playing-park.png",
+          "image": "/images/cards/128_was_vs_were/playing-park.png",
           "label": "Playing at park"
         }
       ],
@@ -1812,7 +1812,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/girl-running.png",
+          "image": "/images/cards/101_third_person_singular/girl-running.png",
           "label": "Girl running"
         }
       ],
@@ -1827,7 +1827,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/boy-eating.png",
+          "image": "/images/cards/101_third_person_singular/boy-eating.png",
           "label": "Boy eating"
         }
       ],
@@ -1842,7 +1842,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/cat-sleeping.png",
+          "image": "/images/cards/101_third_person_singular/cat-sleeping.png",
           "label": "Cat sleeping"
         }
       ],
@@ -1857,7 +1857,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/woman-reading.png",
+          "image": "/images/cards/101_third_person_singular/woman-reading.png",
           "label": "Woman reading"
         }
       ],
@@ -1872,7 +1872,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/dog-jumping.png",
+          "image": "/images/cards/101_third_person_singular/dog-jumping.png",
           "label": "Dog jumping"
         }
       ],
@@ -1887,7 +1887,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/man-swimming.png",
+          "image": "/images/cards/101_third_person_singular/man-swimming.png",
           "label": "Man swimming"
         }
       ],
@@ -1902,7 +1902,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/bird-flying.png",
+          "image": "/images/cards/101_third_person_singular/bird-flying.png",
           "label": "Bird flying"
         }
       ],
@@ -1917,7 +1917,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/girl-singing.png",
+          "image": "/images/cards/101_third_person_singular/girl-singing.png",
           "label": "Girl singing"
         }
       ],
@@ -1932,7 +1932,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/boy-writing.png",
+          "image": "/images/cards/101_third_person_singular/boy-writing.png",
           "label": "Boy writing"
         }
       ],
@@ -1947,7 +1947,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/bear-walking.png",
+          "image": "/images/cards/101_third_person_singular/bear-walking.png",
           "label": "Bear walking"
         }
       ],
@@ -1962,7 +1962,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/woman-cooking.png",
+          "image": "/images/cards/101_third_person_singular/woman-cooking.png",
           "label": "Woman cooking"
         }
       ],
@@ -1977,7 +1977,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/boy-playing.png",
+          "image": "/images/cards/101_third_person_singular/boy-playing.png",
           "label": "Boy playing"
         }
       ],
@@ -1992,7 +1992,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/fish-swimming.png",
+          "image": "/images/cards/101_third_person_singular/fish-swimming.png",
           "label": "Fish swimming"
         }
       ],
@@ -2007,7 +2007,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/bunny-hopping.png",
+          "image": "/images/cards/101_third_person_singular/bunny-hopping.png",
           "label": "Bunny hopping"
         }
       ],
@@ -2022,7 +2022,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/girl-drinking.png",
+          "image": "/images/cards/101_third_person_singular/girl-drinking.png",
           "label": "Girl drinking"
         }
       ],
@@ -2037,7 +2037,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/man-driving.png",
+          "image": "/images/cards/101_third_person_singular/man-driving.png",
           "label": "Man driving"
         }
       ],
@@ -2052,7 +2052,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/dolphin-splashing.png",
+          "image": "/images/cards/101_third_person_singular/dolphin-splashing.png",
           "label": "Dolphin splashing"
         }
       ],
@@ -2067,7 +2067,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/woman-dancing.png",
+          "image": "/images/cards/101_third_person_singular/woman-dancing.png",
           "label": "Woman dancing"
         }
       ],
@@ -2082,7 +2082,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/boy-climbing.png",
+          "image": "/images/cards/101_third_person_singular/boy-climbing.png",
           "label": "Boy climbing"
         }
       ],
@@ -2097,7 +2097,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/crab-crawling.png",
+          "image": "/images/cards/101_third_person_singular/crab-crawling.png",
           "label": "Crab crawling"
         }
       ],
@@ -2112,7 +2112,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/girl-painting.png",
+          "image": "/images/cards/101_third_person_singular/girl-painting.png",
           "label": "Girl painting"
         }
       ],
@@ -2127,7 +2127,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/man-lifting.png",
+          "image": "/images/cards/101_third_person_singular/man-lifting.png",
           "label": "Man lifting weights"
         }
       ],
@@ -2142,7 +2142,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/frog-catching.png",
+          "image": "/images/cards/101_third_person_singular/frog-catching.png",
           "label": "Frog catching"
         }
       ],
@@ -2157,7 +2157,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/woman-pushing.png",
+          "image": "/images/cards/101_third_person_singular/woman-pushing.png",
           "label": "Woman pushing stroller"
         }
       ],
@@ -2172,7 +2172,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/boy-throwing.png",
+          "image": "/images/cards/101_third_person_singular/boy-throwing.png",
           "label": "Boy throwing"
         }
       ],
@@ -2187,7 +2187,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/seagull-standing.png",
+          "image": "/images/cards/101_third_person_singular/seagull-standing.png",
           "label": "Seagull standing"
         }
       ],
@@ -2202,7 +2202,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/girl-brushing.png",
+          "image": "/images/cards/101_third_person_singular/girl-brushing.png",
           "label": "Girl brushing teeth"
         }
       ],
@@ -2217,7 +2217,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/man-washing.png",
+          "image": "/images/cards/101_third_person_singular/man-washing.png",
           "label": "Man washing dishes"
         }
       ],
@@ -2232,7 +2232,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/dog-digging.png",
+          "image": "/images/cards/101_third_person_singular/dog-digging.png",
           "label": "Dog digging"
         }
       ],
@@ -2247,7 +2247,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "../assets/images/cards/101_third_person_singular/woman-teaching.png",
+          "image": "/images/cards/101_third_person_singular/woman-teaching.png",
           "label": "Woman teaching"
         }
       ],

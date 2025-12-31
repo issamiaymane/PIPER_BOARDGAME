@@ -458,7 +458,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/trampoline/trampoline.png",
+          "image": "/images/cards/14_building_sentences_l2/trampoline/trampoline.png",
           "label": "Girl jumping on a trampoline"
         }
       ],
@@ -483,7 +483,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/bicycle/bicycle.png",
+          "image": "/images/cards/14_building_sentences_l2/bicycle/bicycle.png",
           "label": "Boy riding a bicycle"
         }
       ],
@@ -510,7 +510,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/swimming/swimming.png",
+          "image": "/images/cards/14_building_sentences_l2/swimming/swimming.png",
           "label": "Girl swimming in a pool"
         }
       ],
@@ -535,7 +535,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/baking/baking.png",
+          "image": "/images/cards/14_building_sentences_l2/baking/baking.png",
           "label": "Mom baking cookies"
         }
       ],
@@ -560,7 +560,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/reading/reading.png",
+          "image": "/images/cards/14_building_sentences_l2/reading/reading.png",
           "label": "Boy reading a book"
         }
       ],
@@ -585,7 +585,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/dog_playing/dog_playing.png",
+          "image": "/images/cards/14_building_sentences_l2/dog_playing/dog_playing.png",
           "label": "Dog playing with a ball"
         }
       ],
@@ -610,7 +610,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/drawing/drawing.png",
+          "image": "/images/cards/14_building_sentences_l2/drawing/drawing.png",
           "label": "Girl drawing a picture"
         }
       ],
@@ -635,7 +635,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/eating/eating.png",
+          "image": "/images/cards/14_building_sentences_l2/eating/eating.png",
           "label": "Family eating dinner"
         }
       ],
@@ -660,7 +660,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/sleeping/sleeping.png",
+          "image": "/images/cards/14_building_sentences_l2/sleeping/sleeping.png",
           "label": "Cat sleeping on a couch"
         }
       ],
@@ -685,7 +685,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/playing/playing.png",
+          "image": "/images/cards/14_building_sentences_l2/playing/playing.png",
           "label": "Children playing video games"
         }
       ],
@@ -710,7 +710,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/climbing/climbing.png",
+          "image": "/images/cards/14_building_sentences_l2/climbing/climbing.png",
           "label": "Boy climbing a tree"
         }
       ],
@@ -735,7 +735,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/cooking/cooking.png",
+          "image": "/images/cards/14_building_sentences_l2/cooking/cooking.png",
           "label": "Dad making pancakes"
         }
       ],
@@ -760,7 +760,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/painting/painting.png",
+          "image": "/images/cards/14_building_sentences_l2/painting/painting.png",
           "label": "Girl painting a rainbow"
         }
       ],
@@ -783,7 +783,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/running/running.png",
+          "image": "/images/cards/14_building_sentences_l2/running/running.png",
           "label": "Boy running in the park"
         }
       ],
@@ -808,7 +808,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/dancing/dancing.png",
+          "image": "/images/cards/14_building_sentences_l2/dancing/dancing.png",
           "label": "Girl dancing to music"
         }
       ],
@@ -833,7 +833,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/building/building.png",
+          "image": "/images/cards/14_building_sentences_l2/building/building.png",
           "label": "Children building a block tower"
         }
       ],
@@ -858,7 +858,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/gardening/gardening.png",
+          "image": "/images/cards/14_building_sentences_l2/gardening/gardening.png",
           "label": "Grandma planting flowers"
         }
       ],
@@ -883,7 +883,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/washing/washing.png",
+          "image": "/images/cards/14_building_sentences_l2/washing/washing.png",
           "label": "Boy helping wash the car"
         }
       ],
@@ -908,7 +908,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/recycling/recycling.png",
+          "image": "/images/cards/14_building_sentences_l2/recycling/recycling.png",
           "label": "Family recycling bottles"
         }
       ],
@@ -935,7 +935,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/drinking/drinking.png",
+          "image": "/images/cards/14_building_sentences_l2/drinking/drinking.png",
           "label": "Girl drinking orange juice"
         }
       ],
@@ -960,7 +960,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/catching/catching.png",
+          "image": "/images/cards/14_building_sentences_l2/catching/catching.png",
           "label": "Boy catching a ball"
         }
       ],
@@ -987,7 +987,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/singing/singing.png",
+          "image": "/images/cards/14_building_sentences_l2/singing/singing.png",
           "label": "Girl singing into a microphone"
         }
       ],
@@ -1012,7 +1012,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/feeding/feeding.png",
+          "image": "/images/cards/14_building_sentences_l2/feeding/feeding.png",
           "label": "Boy feeding the fish"
         }
       ],
@@ -1037,7 +1037,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/sliding/sliding.png",
+          "image": "/images/cards/14_building_sentences_l2/sliding/sliding.png",
           "label": "Girl going down a slide"
         }
       ],
@@ -1062,7 +1062,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/swinging/swinging.png",
+          "image": "/images/cards/14_building_sentences_l2/swinging/swinging.png",
           "label": "Boy swinging high"
         }
       ],
@@ -1087,7 +1087,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/blowing/blowing.png",
+          "image": "/images/cards/14_building_sentences_l2/blowing/blowing.png",
           "label": "Girl blowing bubbles"
         }
       ],
@@ -1114,7 +1114,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/throwing/throwing.png",
+          "image": "/images/cards/14_building_sentences_l2/throwing/throwing.png",
           "label": "Boy throwing a frisbee"
         }
       ],
@@ -1141,7 +1141,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/hiding/hiding.png",
+          "image": "/images/cards/14_building_sentences_l2/hiding/hiding.png",
           "label": "Cat hiding in a box"
         }
       ],
@@ -1166,7 +1166,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/jumping/jumping.png",
+          "image": "/images/cards/14_building_sentences_l2/jumping/jumping.png",
           "label": "Dog jumping over a puddle"
         }
       ],
@@ -1191,7 +1191,7 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "../assets/images/cards/14_building_sentences_l2/walking/walking.png",
+          "image": "/images/cards/14_building_sentences_l2/walking/walking.png",
           "label": "Family walking on the beach"
         }
       ],
@@ -1218,7 +1218,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/home/mom_reading_child.png",
+          "image": "/images/cards/31_expanding_sentences/home/mom_reading_child.png",
           "label": "Mom reading to a child"
         }
       ]
@@ -1227,7 +1227,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/home/dad_cooking.png",
+          "image": "/images/cards/31_expanding_sentences/home/dad_cooking.png",
           "label": "Dad cooking in the kitchen"
         }
       ]
@@ -1236,7 +1236,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/home/child_sleeping.png",
+          "image": "/images/cards/31_expanding_sentences/home/child_sleeping.png",
           "label": "Child sleeping in bed"
         }
       ]
@@ -1245,7 +1245,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/home/family_dinner.png",
+          "image": "/images/cards/31_expanding_sentences/home/family_dinner.png",
           "label": "Family eating dinner"
         }
       ]
@@ -1254,7 +1254,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/home/grandma_knitting.png",
+          "image": "/images/cards/31_expanding_sentences/home/grandma_knitting.png",
           "label": "Grandma knitting"
         }
       ]
@@ -1263,7 +1263,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/home/child_brushing_teeth.png",
+          "image": "/images/cards/31_expanding_sentences/home/child_brushing_teeth.png",
           "label": "Child brushing teeth"
         }
       ]
@@ -1272,7 +1272,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/beach/lifeguard_tower.png",
+          "image": "/images/cards/31_expanding_sentences/beach/lifeguard_tower.png",
           "label": "Lifeguard on a tower"
         }
       ]
@@ -1281,7 +1281,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/beach/child_sandcastle.png",
+          "image": "/images/cards/31_expanding_sentences/beach/child_sandcastle.png",
           "label": "Child building a sandcastle"
         }
       ]
@@ -1290,7 +1290,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/beach/family_swimming.png",
+          "image": "/images/cards/31_expanding_sentences/beach/family_swimming.png",
           "label": "Family swimming at the beach"
         }
       ]
@@ -1299,7 +1299,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/beach/surfer_wave.png",
+          "image": "/images/cards/31_expanding_sentences/beach/surfer_wave.png",
           "label": "Surfer riding a wave"
         }
       ]
@@ -1308,7 +1308,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/beach/person_sunscreen.png",
+          "image": "/images/cards/31_expanding_sentences/beach/person_sunscreen.png",
           "label": "Person applying sunscreen"
         }
       ]
@@ -1317,7 +1317,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/beach/kids_seashells.png",
+          "image": "/images/cards/31_expanding_sentences/beach/kids_seashells.png",
           "label": "Kids collecting seashells"
         }
       ]
@@ -1326,7 +1326,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/community/worker_roof.png",
+          "image": "/images/cards/31_expanding_sentences/community/worker_roof.png",
           "label": "Worker on a roof"
         }
       ]
@@ -1335,7 +1335,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/community/firefighter_water.png",
+          "image": "/images/cards/31_expanding_sentences/community/firefighter_water.png",
           "label": "Firefighter spraying water"
         }
       ]
@@ -1344,7 +1344,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/community/doctor_patient.png",
+          "image": "/images/cards/31_expanding_sentences/community/doctor_patient.png",
           "label": "Doctor with a patient"
         }
       ]
@@ -1353,7 +1353,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/community/mail_carrier.png",
+          "image": "/images/cards/31_expanding_sentences/community/mail_carrier.png",
           "label": "Mail carrier delivering mail"
         }
       ]
@@ -1362,7 +1362,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/community/veterinarian_dog.png",
+          "image": "/images/cards/31_expanding_sentences/community/veterinarian_dog.png",
           "label": "Veterinarian examining a dog"
         }
       ]
@@ -1371,7 +1371,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/community/chef_kitchen.png",
+          "image": "/images/cards/31_expanding_sentences/community/chef_kitchen.png",
           "label": "Chef cooking in a kitchen"
         }
       ]
@@ -1380,7 +1380,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/outdoor/children_playground.png",
+          "image": "/images/cards/31_expanding_sentences/outdoor/children_playground.png",
           "label": "Children playing at a playground"
         }
       ]
@@ -1389,7 +1389,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/outdoor/family_picnic.png",
+          "image": "/images/cards/31_expanding_sentences/outdoor/family_picnic.png",
           "label": "Family having a picnic"
         }
       ]
@@ -1398,7 +1398,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/outdoor/person_walking_dog.png",
+          "image": "/images/cards/31_expanding_sentences/outdoor/person_walking_dog.png",
           "label": "Person walking a dog"
         }
       ]
@@ -1407,7 +1407,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/outdoor/kids_soccer.png",
+          "image": "/images/cards/31_expanding_sentences/outdoor/kids_soccer.png",
           "label": "Kids playing soccer"
         }
       ]
@@ -1416,7 +1416,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/outdoor/person_fishing.png",
+          "image": "/images/cards/31_expanding_sentences/outdoor/person_fishing.png",
           "label": "Person fishing"
         }
       ]
@@ -1425,7 +1425,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/outdoor/family_camping.png",
+          "image": "/images/cards/31_expanding_sentences/outdoor/family_camping.png",
           "label": "Family camping"
         }
       ]
@@ -1434,7 +1434,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/learning/teacher_board.png",
+          "image": "/images/cards/31_expanding_sentences/learning/teacher_board.png",
           "label": "Teacher writing on a board"
         }
       ]
@@ -1443,7 +1443,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/learning/child_painting.png",
+          "image": "/images/cards/31_expanding_sentences/learning/child_painting.png",
           "label": "Child painting"
         }
       ]
@@ -1452,7 +1452,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/learning/kids_science.png",
+          "image": "/images/cards/31_expanding_sentences/learning/kids_science.png",
           "label": "Kids doing a science experiment"
         }
       ]
@@ -1461,7 +1461,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/learning/person_reading.png",
+          "image": "/images/cards/31_expanding_sentences/learning/person_reading.png",
           "label": "Person reading in a library"
         }
       ]
@@ -1470,7 +1470,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/learning/musicians_playing.png",
+          "image": "/images/cards/31_expanding_sentences/learning/musicians_playing.png",
           "label": "Musicians playing instruments"
         }
       ]
@@ -1479,7 +1479,7 @@
       "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
       "images": [
         {
-          "image": "../assets/images/cards/31_expanding_sentences/learning/children_dancing.png",
+          "image": "/images/cards/31_expanding_sentences/learning/children_dancing.png",
           "label": "Children dancing"
         }
       ]

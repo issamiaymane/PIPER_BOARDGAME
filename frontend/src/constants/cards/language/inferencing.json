@@ -3,7 +3,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/outdoor_camping/campsite_boy.png",
+          "image": "/images/cards/47_inferencing/outdoor_camping/campsite_boy.png",
           "label": "Boy at a campsite"
         }
       ],
@@ -34,7 +34,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/emotions/scraped_knee.png",
+          "image": "/images/cards/47_inferencing/emotions/scraped_knee.png",
           "label": "Child with scraped knee"
         }
       ],
@@ -64,7 +64,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/food_meals/refrigerator_look.png",
+          "image": "/images/cards/47_inferencing/food_meals/refrigerator_look.png",
           "label": "Child looking in refrigerator"
         }
       ],
@@ -92,7 +92,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/weather_seasons/fall_leaves.png",
+          "image": "/images/cards/47_inferencing/weather_seasons/fall_leaves.png",
           "label": "Fall leaves and child"
         }
       ],
@@ -119,7 +119,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/home_daily/yawning_pajamas.png",
+          "image": "/images/cards/47_inferencing/home_daily/yawning_pajamas.png",
           "label": "Child yawning in pajamas"
         }
       ],
@@ -148,7 +148,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/activities_events/swimsuit_goggles.png",
+          "image": "/images/cards/47_inferencing/activities_events/swimsuit_goggles.png",
           "label": "Child in swimsuit with goggles"
         }
       ],
@@ -175,7 +175,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/outdoor_camping/beach_sunscreen.png",
+          "image": "/images/cards/47_inferencing/outdoor_camping/beach_sunscreen.png",
           "label": "Girl at beach with sunscreen"
         }
       ],
@@ -204,7 +204,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/emotions/trophy_smile.png",
+          "image": "/images/cards/47_inferencing/emotions/trophy_smile.png",
           "label": "Girl smiling with trophy"
         }
       ],
@@ -233,7 +233,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/food_meals/family_dinner.png",
+          "image": "/images/cards/47_inferencing/food_meals/family_dinner.png",
           "label": "Family sitting at dinner table"
         }
       ],
@@ -261,7 +261,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/weather_seasons/rain_window.png",
+          "image": "/images/cards/47_inferencing/weather_seasons/rain_window.png",
           "label": "Child looking out rainy window"
         }
       ],
@@ -289,7 +289,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/home_daily/umbrella_clouds.png",
+          "image": "/images/cards/47_inferencing/home_daily/umbrella_clouds.png",
           "label": "Person with umbrella under clouds"
         }
       ],
@@ -317,7 +317,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/activities_events/starting_line.png",
+          "image": "/images/cards/47_inferencing/activities_events/starting_line.png",
           "label": "Runners at starting line"
         }
       ],
@@ -345,7 +345,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/outdoor_camping/family_beach_car.png",
+          "image": "/images/cards/47_inferencing/outdoor_camping/family_beach_car.png",
           "label": "Family packing car for beach"
         }
       ],
@@ -374,7 +374,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/emotions/broken_toy.png",
+          "image": "/images/cards/47_inferencing/emotions/broken_toy.png",
           "label": "Boy with broken toy"
         }
       ],
@@ -403,7 +403,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/food_meals/sour_lemon.png",
+          "image": "/images/cards/47_inferencing/food_meals/sour_lemon.png",
           "label": "Child tasting sour lemon"
         }
       ],
@@ -430,7 +430,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/weather_seasons/sweating_hot.png",
+          "image": "/images/cards/47_inferencing/weather_seasons/sweating_hot.png",
           "label": "Person sweating in hot weather"
         }
       ],
@@ -458,7 +458,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/home_daily/empty_plate.png",
+          "image": "/images/cards/47_inferencing/home_daily/empty_plate.png",
           "label": "Child with empty plate"
         }
       ],
@@ -486,7 +486,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/activities_events/paint_hands.png",
+          "image": "/images/cards/47_inferencing/activities_events/paint_hands.png",
           "label": "Child with paint on hands"
         }
       ],
@@ -514,7 +514,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/outdoor_camping/surfboard_waves.png",
+          "image": "/images/cards/47_inferencing/outdoor_camping/surfboard_waves.png",
           "label": "Boy with surfboard at waves"
         }
       ],
@@ -543,7 +543,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/emotions/peeking_box.png",
+          "image": "/images/cards/47_inferencing/emotions/peeking_box.png",
           "label": "Child peeking into gift box"
         }
       ],
@@ -571,7 +571,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/food_meals/self_checkout.png",
+          "image": "/images/cards/47_inferencing/food_meals/self_checkout.png",
           "label": "Family at self checkout"
         }
       ],
@@ -599,7 +599,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/weather_seasons/jackets_door.png",
+          "image": "/images/cards/47_inferencing/weather_seasons/jackets_door.png",
           "label": "People putting on jackets by door"
         }
       ],
@@ -627,7 +627,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/home_daily/cake_candles.png",
+          "image": "/images/cards/47_inferencing/home_daily/cake_candles.png",
           "label": "Birthday cake with candles"
         }
       ],
@@ -655,7 +655,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/activities_events/suitcase_door.png",
+          "image": "/images/cards/47_inferencing/activities_events/suitcase_door.png",
           "label": "Person with suitcase at door"
         }
       ],
@@ -683,7 +683,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/outdoor_camping/sandcastle_kids.png",
+          "image": "/images/cards/47_inferencing/outdoor_camping/sandcastle_kids.png",
           "label": "Kids building sandcastle"
         }
       ],
@@ -712,7 +712,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/emotions/kids_hugging.png",
+          "image": "/images/cards/47_inferencing/emotions/kids_hugging.png",
           "label": "Kids hugging"
         }
       ],
@@ -740,7 +740,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/food_meals/baking_bowl.png",
+          "image": "/images/cards/47_inferencing/food_meals/baking_bowl.png",
           "label": "Child mixing in baking bowl"
         }
       ],
@@ -769,7 +769,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/home_daily/messy_room.png",
+          "image": "/images/cards/47_inferencing/home_daily/messy_room.png",
           "label": "Child in messy room"
         }
       ],
@@ -798,7 +798,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/activities_events/blowing_candles.png",
+          "image": "/images/cards/47_inferencing/activities_events/blowing_candles.png",
           "label": "Child blowing out birthday candles"
         }
       ],
@@ -826,7 +826,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/47_inferencing/activities_events/flashlight_fort.png",
+          "image": "/images/cards/47_inferencing/activities_events/flashlight_fort.png",
           "label": "Kids with flashlights in blanket fort"
         }
       ],
@@ -858,7 +858,7 @@
       "question": "What is she going to eat?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/food/bowl_spoon.png",
+          "image": "/images/cards/48_inferencing_level1/food/bowl_spoon.png",
           "label": "A bowl and spoon"
         }
       ],
@@ -874,7 +874,7 @@
       "question": "What smelled?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/family/babysitter.png",
+          "image": "/images/cards/48_inferencing_level1/family/babysitter.png",
           "label": "A babysitter with a baby"
         }
       ],
@@ -891,7 +891,7 @@
       "question": "What was the weather like outside?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/weather/wet_umbrella.png",
+          "image": "/images/cards/48_inferencing_level1/weather/wet_umbrella.png",
           "label": "A wet umbrella"
         }
       ],
@@ -908,7 +908,7 @@
       "question": "What did Ryan squeeze onto his toothbrush?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/routines/toothbrush.png",
+          "image": "/images/cards/48_inferencing_level1/routines/toothbrush.png",
           "label": "A toothbrush"
         }
       ],
@@ -923,7 +923,7 @@
       "question": "What happened to Ava's knee?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/emotions/scraped_knee.png",
+          "image": "/images/cards/48_inferencing_level1/emotions/scraped_knee.png",
           "label": "A child with a scraped knee"
         }
       ],
@@ -940,7 +940,7 @@
       "question": "What kind of party is this?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/activities/birthday_party.png",
+          "image": "/images/cards/48_inferencing_level1/activities/birthday_party.png",
           "label": "A birthday party"
         }
       ],
@@ -956,7 +956,7 @@
       "question": "What happened to the cookies?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/problems/empty_cookie_jar.png",
+          "image": "/images/cards/48_inferencing_level1/problems/empty_cookie_jar.png",
           "label": "An empty cookie jar"
         }
       ],
@@ -972,7 +972,7 @@
       "question": "What does the cat want?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/pets/hungry_cat.png",
+          "image": "/images/cards/48_inferencing_level1/pets/hungry_cat.png",
           "label": "A hungry cat"
         }
       ],
@@ -989,7 +989,7 @@
       "question": "What is he going to drink?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/food/orange_juice.png",
+          "image": "/images/cards/48_inferencing_level1/food/orange_juice.png",
           "label": "A glass of orange juice"
         }
       ],
@@ -1005,7 +1005,7 @@
       "question": "Why is the baby crying?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/family/baby_crying.png",
+          "image": "/images/cards/48_inferencing_level1/family/baby_crying.png",
           "label": "A crying baby"
         }
       ],
@@ -1022,7 +1022,7 @@
       "question": "What is the weather like?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/weather/winter_clothes.png",
+          "image": "/images/cards/48_inferencing_level1/weather/winter_clothes.png",
           "label": "Winter clothes"
         }
       ],
@@ -1040,7 +1040,7 @@
       "question": "What time of day is it?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/routines/alarm_clock.png",
+          "image": "/images/cards/48_inferencing_level1/routines/alarm_clock.png",
           "label": "An alarm clock"
         }
       ],
@@ -1056,7 +1056,7 @@
       "question": "How does Ben feel?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/emotions/good_grade.png",
+          "image": "/images/cards/48_inferencing_level1/emotions/good_grade.png",
           "label": "A test with a good grade"
         }
       ],
@@ -1073,7 +1073,7 @@
       "question": "Where is the family going?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/activities/swimsuits.png",
+          "image": "/images/cards/48_inferencing_level1/activities/swimsuits.png",
           "label": "Swimsuits and towels"
         }
       ],
@@ -1091,7 +1091,7 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/problems/broken_glass.png",
+          "image": "/images/cards/48_inferencing_level1/problems/broken_glass.png",
           "label": "Broken glass on the floor"
         }
       ],
@@ -1107,7 +1107,7 @@
       "question": "What does Buddy need?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/pets/dog_door.png",
+          "image": "/images/cards/48_inferencing_level1/pets/dog_door.png",
           "label": "A dog by the door"
         }
       ],
@@ -1124,7 +1124,7 @@
       "question": "What is she making?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/food/sandwich.png",
+          "image": "/images/cards/48_inferencing_level1/food/sandwich.png",
           "label": "A peanut butter and jelly sandwich"
         }
       ],
@@ -1141,7 +1141,7 @@
       "question": "What is Dad about to do?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/family/feeding_baby.png",
+          "image": "/images/cards/48_inferencing_level1/family/feeding_baby.png",
           "label": "Dad feeding a baby"
         }
       ],
@@ -1157,7 +1157,7 @@
       "question": "What is the weather like today?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/weather/sunscreen.png",
+          "image": "/images/cards/48_inferencing_level1/weather/sunscreen.png",
           "label": "Sunscreen and sunglasses"
         }
       ],
@@ -1174,7 +1174,7 @@
       "question": "What is Maya about to do?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/routines/pajamas.png",
+          "image": "/images/cards/48_inferencing_level1/routines/pajamas.png",
           "label": "Pajamas"
         }
       ],
@@ -1191,7 +1191,7 @@
       "question": "How does Olivia feel?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/emotions/sad_child.png",
+          "image": "/images/cards/48_inferencing_level1/emotions/sad_child.png",
           "label": "A sad child"
         }
       ],
@@ -1208,7 +1208,7 @@
       "question": "What is Max about to do?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/activities/dog_leash.png",
+          "image": "/images/cards/48_inferencing_level1/activities/dog_leash.png",
           "label": "A dog leash"
         }
       ],
@@ -1224,7 +1224,7 @@
       "question": "Why did Mrs. Johnson put up signs?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/problems/lost_dog.png",
+          "image": "/images/cards/48_inferencing_level1/problems/lost_dog.png",
           "label": "A lost dog sign"
         }
       ],
@@ -1240,7 +1240,7 @@
       "question": "What did his mom hand him?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/food/napkin.png",
+          "image": "/images/cards/48_inferencing_level1/food/napkin.png",
           "label": "A napkin"
         }
       ],
@@ -1257,7 +1257,7 @@
       "question": "How was the weather outside?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/weather/sweating.png",
+          "image": "/images/cards/48_inferencing_level1/weather/sweating.png",
           "label": "A person sweating"
         }
       ],
@@ -1274,7 +1274,7 @@
       "question": "What did Jack grab?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/routines/messy_hair.png",
+          "image": "/images/cards/48_inferencing_level1/routines/messy_hair.png",
           "label": "A person with messy hair"
         }
       ],
@@ -1292,7 +1292,7 @@
       "question": "How does Noah feel?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/emotions/shy_child.png",
+          "image": "/images/cards/48_inferencing_level1/emotions/shy_child.png",
           "label": "A shy child"
         }
       ],
@@ -1310,7 +1310,7 @@
       "question": "What is Lily building?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/activities/sandcastle.png",
+          "image": "/images/cards/48_inferencing_level1/activities/sandcastle.png",
           "label": "A sandcastle"
         }
       ],
@@ -1326,7 +1326,7 @@
       "question": "What happened to the car?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/problems/flat_tire.png",
+          "image": "/images/cards/48_inferencing_level1/problems/flat_tire.png",
           "label": "A car with a flat tire"
         }
       ],
@@ -1342,7 +1342,7 @@
       "question": "What did Mom bring?",
       "images": [
         {
-          "image": "../assets/images/cards/48_inferencing_level1/food/popcorn.png",
+          "image": "/images/cards/48_inferencing_level1/food/popcorn.png",
           "label": "A bowl of popcorn"
         }
       ],
@@ -1359,7 +1359,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/snow_day.png",
+          "image": "/images/cards/49_inferencing_level2/snow_day.png",
           "label": "Snow day scene"
         }
       ],
@@ -1388,7 +1388,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/cooking_disaster.png",
+          "image": "/images/cards/49_inferencing_level2/cooking_disaster.png",
           "label": "Kitchen with burned food"
         }
       ],
@@ -1427,7 +1427,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/science_fair.png",
+          "image": "/images/cards/49_inferencing_level2/science_fair.png",
           "label": "Science fair project display"
         }
       ],
@@ -1464,7 +1464,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/vacation_plans.png",
+          "image": "/images/cards/49_inferencing_level2/vacation_plans.png",
           "label": "Family planning vacation"
         }
       ],
@@ -1501,7 +1501,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/big_game.png",
+          "image": "/images/cards/49_inferencing_level2/big_game.png",
           "label": "Sports game scene"
         }
       ],
@@ -1541,7 +1541,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/sports_car.png",
+          "image": "/images/cards/49_inferencing_level2/sports_car.png",
           "label": "Sports car after accident"
         }
       ],
@@ -1580,7 +1580,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/doctor_visit.png",
+          "image": "/images/cards/49_inferencing_level2/doctor_visit.png",
           "label": "Doctor's office visit"
         }
       ],
@@ -1619,7 +1619,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/moving_day.png",
+          "image": "/images/cards/49_inferencing_level2/moving_day.png",
           "label": "Family moving day"
         }
       ],
@@ -1657,7 +1657,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/rainy_day.png",
+          "image": "/images/cards/49_inferencing_level2/rainy_day.png",
           "label": "Rainy day disappointment"
         }
       ],
@@ -1695,7 +1695,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/surprise_party.png",
+          "image": "/images/cards/49_inferencing_level2/surprise_party.png",
           "label": "Surprise party scene"
         }
       ],
@@ -1732,7 +1732,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/first_day.png",
+          "image": "/images/cards/49_inferencing_level2/first_day.png",
           "label": "First day at new school"
         }
       ],
@@ -1771,7 +1771,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/flat_tire.png",
+          "image": "/images/cards/49_inferencing_level2/flat_tire.png",
           "label": "Car with flat tire"
         }
       ],
@@ -1809,7 +1809,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/lost_dog.png",
+          "image": "/images/cards/49_inferencing_level2/lost_dog.png",
           "label": "Looking for lost dog"
         }
       ],
@@ -1846,7 +1846,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/broken_vase.png",
+          "image": "/images/cards/49_inferencing_level2/broken_vase.png",
           "label": "Broken vase on floor"
         }
       ],
@@ -1884,7 +1884,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/swimming_lesson.png",
+          "image": "/images/cards/49_inferencing_level2/swimming_lesson.png",
           "label": "Swimming lesson at pool"
         }
       ],
@@ -1921,7 +1921,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/new_baby.png",
+          "image": "/images/cards/49_inferencing_level2/new_baby.png",
           "label": "Family with new baby"
         }
       ],
@@ -1959,7 +1959,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/thunderstorm.png",
+          "image": "/images/cards/49_inferencing_level2/thunderstorm.png",
           "label": "Thunderstorm scene"
         }
       ],
@@ -1997,7 +1997,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/power_outage.png",
+          "image": "/images/cards/49_inferencing_level2/power_outage.png",
           "label": "Family during power outage"
         }
       ],
@@ -2034,7 +2034,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/school_play.png",
+          "image": "/images/cards/49_inferencing_level2/school_play.png",
           "label": "School play performance"
         }
       ],
@@ -2072,7 +2072,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/lost_phone.png",
+          "image": "/images/cards/49_inferencing_level2/lost_phone.png",
           "label": "Looking for lost phone"
         }
       ],
@@ -2110,7 +2110,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/lemonade_stand.png",
+          "image": "/images/cards/49_inferencing_level2/lemonade_stand.png",
           "label": "Kids at lemonade stand"
         }
       ],
@@ -2149,7 +2149,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/camping_trip.png",
+          "image": "/images/cards/49_inferencing_level2/camping_trip.png",
           "label": "Family camping trip"
         }
       ],
@@ -2188,7 +2188,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/art_contest.png",
+          "image": "/images/cards/49_inferencing_level2/art_contest.png",
           "label": "Art contest display"
         }
       ],
@@ -2228,7 +2228,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/forgotten_lunch.png",
+          "image": "/images/cards/49_inferencing_level2/forgotten_lunch.png",
           "label": "Boy who forgot his lunch"
         }
       ],
@@ -2267,7 +2267,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/sleepover.png",
+          "image": "/images/cards/49_inferencing_level2/sleepover.png",
           "label": "Sleepover scene"
         }
       ],
@@ -2306,7 +2306,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/waiting_room.png",
+          "image": "/images/cards/49_inferencing_level2/waiting_room.png",
           "label": "Hospital waiting room"
         }
       ],
@@ -2344,7 +2344,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/garden_project.png",
+          "image": "/images/cards/49_inferencing_level2/garden_project.png",
           "label": "Garden with growing plants"
         }
       ],
@@ -2384,7 +2384,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/job_interview.png",
+          "image": "/images/cards/49_inferencing_level2/job_interview.png",
           "label": "Job interview scene"
         }
       ],
@@ -2422,7 +2422,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/bake_sale.png",
+          "image": "/images/cards/49_inferencing_level2/bake_sale.png",
           "label": "Bake sale table"
         }
       ],
@@ -2461,7 +2461,7 @@
     {
       "images": [
         {
-          "image": "../assets/images/cards/49_inferencing_level2/long_car_ride.png",
+          "image": "/images/cards/49_inferencing_level2/long_car_ride.png",
           "label": "Family on long car ride"
         }
       ],

@@ -4,7 +4,7 @@
       "question": "What does \"perennials\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/daffodils.png",
+          "image": "/images/cards/21_context_clues/nature/daffodils.png",
           "label": "Daffodils"
         }
       ],
@@ -20,7 +20,7 @@
       "question": "What does \"autumn\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/leaves.png",
+          "image": "/images/cards/21_context_clues/nature/leaves.png",
           "label": "Autumn leaves"
         }
       ],
@@ -36,7 +36,7 @@
       "question": "What does \"freshwater\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/river.png",
+          "image": "/images/cards/21_context_clues/nature/river.png",
           "label": "A river"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "What does \"chilly\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/desert.png",
+          "image": "/images/cards/21_context_clues/nature/desert.png",
           "label": "A desert"
         }
       ],
@@ -68,7 +68,7 @@
       "question": "What does \"fluffy\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/clouds.png",
+          "image": "/images/cards/21_context_clues/nature/clouds.png",
           "label": "Fluffy clouds"
         }
       ],
@@ -84,7 +84,7 @@
       "question": "What does \"recedes\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/beach.png",
+          "image": "/images/cards/21_context_clues/nature/beach.png",
           "label": "A beach"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "What does \"transformation\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/butterfly.png",
+          "image": "/images/cards/21_context_clues/nature/butterfly.png",
           "label": "A butterfly"
         }
       ],
@@ -116,7 +116,7 @@
       "question": "What does \"towering\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/nature/sunflowers.png",
+          "image": "/images/cards/21_context_clues/nature/sunflowers.png",
           "label": "Sunflowers"
         }
       ],
@@ -132,7 +132,7 @@
       "question": "What does \"crumbly\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/beach/sandcastle.png",
+          "image": "/images/cards/21_context_clues/beach/sandcastle.png",
           "label": "A sandcastle"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "What does \"creatures\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/beach/tidepool.png",
+          "image": "/images/cards/21_context_clues/beach/tidepool.png",
           "label": "A tidepool"
         }
       ],
@@ -164,7 +164,7 @@
       "question": "What does \"spiral\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/beach/seashells.png",
+          "image": "/images/cards/21_context_clues/beach/seashells.png",
           "label": "Seashells"
         }
       ],
@@ -180,7 +180,7 @@
       "question": "What does \"powerful\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/beach/waves.png",
+          "image": "/images/cards/21_context_clues/beach/waves.png",
           "label": "Ocean waves"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "What does \"apply\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/beach/sunscreen.png",
+          "image": "/images/cards/21_context_clues/beach/sunscreen.png",
           "label": "Sunscreen"
         }
       ],
@@ -212,7 +212,7 @@
       "question": "What does \"social\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/beach/dolphins.png",
+          "image": "/images/cards/21_context_clues/beach/dolphins.png",
           "label": "Dolphins"
         }
       ],
@@ -228,7 +228,7 @@
       "question": "What does \"temperature\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/home/refrigerator.png",
+          "image": "/images/cards/21_context_clues/home/refrigerator.png",
           "label": "A refrigerator"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "What does \"remove\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/home/laundry.png",
+          "image": "/images/cards/21_context_clues/home/laundry.png",
           "label": "Laundry"
         }
       ],
@@ -260,7 +260,7 @@
       "question": "What does \"organized\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/home/tidy_room.png",
+          "image": "/images/cards/21_context_clues/home/tidy_room.png",
           "label": "A tidy room"
         }
       ],
@@ -276,7 +276,7 @@
       "question": "What does \"bubbles\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/home/bathtub.png",
+          "image": "/images/cards/21_context_clues/home/bathtub.png",
           "label": "A bathtub"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "What does \"suctions\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/home/vacuum.png",
+          "image": "/images/cards/21_context_clues/home/vacuum.png",
           "label": "A vacuum cleaner"
         }
       ],
@@ -308,7 +308,7 @@
       "question": "What does \"warmth\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/home/blanket.png",
+          "image": "/images/cards/21_context_clues/home/blanket.png",
           "label": "A blanket"
         }
       ],
@@ -324,7 +324,7 @@
       "question": "What does \"combines\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/food/smoothie.png",
+          "image": "/images/cards/21_context_clues/food/smoothie.png",
           "label": "A smoothie"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "What does \"remove\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/food/orange.png",
+          "image": "/images/cards/21_context_clues/food/orange.png",
           "label": "An orange"
         }
       ],
@@ -356,7 +356,7 @@
       "question": "What does \"nutritious\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/food/vegetables.png",
+          "image": "/images/cards/21_context_clues/food/vegetables.png",
           "label": "Vegetables"
         }
       ],
@@ -372,7 +372,7 @@
       "question": "What does \"energy\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/food/breakfast.png",
+          "image": "/images/cards/21_context_clues/food/breakfast.png",
           "label": "Breakfast"
         }
       ],
@@ -388,7 +388,7 @@
       "question": "What does \"spread\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/food/pbj.png",
+          "image": "/images/cards/21_context_clues/food/pbj.png",
           "label": "Peanut butter and jelly sandwich"
         }
       ],
@@ -404,7 +404,7 @@
       "question": "What does \"short\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/animals/bunny.png",
+          "image": "/images/cards/21_context_clues/animals/bunny.png",
           "label": "A bunny"
         }
       ],
@@ -420,7 +420,7 @@
       "question": "What does \"breathe\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/animals/fish_tank.png",
+          "image": "/images/cards/21_context_clues/animals/fish_tank.png",
           "label": "A fish tank"
         }
       ],
@@ -436,7 +436,7 @@
       "question": "What does \"companions\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/animals/dog_cat.png",
+          "image": "/images/cards/21_context_clues/animals/dog_cat.png",
           "label": "A dog and cat"
         }
       ],
@@ -452,7 +452,7 @@
       "question": "What does \"clean\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/daily/brushing_teeth.png",
+          "image": "/images/cards/21_context_clues/daily/brushing_teeth.png",
           "label": "Brushing teeth"
         }
       ],
@@ -468,7 +468,7 @@
       "question": "What does \"appropriate\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/21_context_clues/daily/getting_dressed.png",
+          "image": "/images/cards/21_context_clues/daily/getting_dressed.png",
           "label": "Getting dressed"
         }
       ],
@@ -486,7 +486,7 @@
       "question": "What does \"drenched\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/clothing/sweatshirt.png",
+          "image": "/images/cards/22_context_clues_sentence/clothing/sweatshirt.png",
           "label": "A sweatshirt"
         }
       ],
@@ -502,7 +502,7 @@
       "question": "What does \"stunning\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/clothing/woman_shopping.png",
+          "image": "/images/cards/22_context_clues_sentence/clothing/woman_shopping.png",
           "label": "Woman shopping for clothes"
         }
       ],
@@ -518,7 +518,7 @@
       "question": "What does \"baggy\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/clothing/oversized_shirt.png",
+          "image": "/images/cards/22_context_clues_sentence/clothing/oversized_shirt.png",
           "label": "An oversized shirt"
         }
       ],
@@ -534,7 +534,7 @@
       "question": "What does \"tidy\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/clothing/folded_clothes.png",
+          "image": "/images/cards/22_context_clues_sentence/clothing/folded_clothes.png",
           "label": "Folded clothes"
         }
       ],
@@ -550,7 +550,7 @@
       "question": "What does \"soft\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/clothing/fleece_jacket.png",
+          "image": "/images/cards/22_context_clues_sentence/clothing/fleece_jacket.png",
           "label": "A fleece jacket"
         }
       ],
@@ -566,7 +566,7 @@
       "question": "What does \"scorching\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/weather/sunny_beach.png",
+          "image": "/images/cards/22_context_clues_sentence/weather/sunny_beach.png",
           "label": "A sunny beach"
         }
       ],
@@ -582,7 +582,7 @@
       "question": "What does \"hazy\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/weather/foggy_morning.png",
+          "image": "/images/cards/22_context_clues_sentence/weather/foggy_morning.png",
           "label": "A foggy morning"
         }
       ],
@@ -598,7 +598,7 @@
       "question": "What does \"fierce\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/weather/windy_day.png",
+          "image": "/images/cards/22_context_clues_sentence/weather/windy_day.png",
           "label": "A windy day"
         }
       ],
@@ -614,7 +614,7 @@
       "question": "What does \"still\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/weather/calm_lake.png",
+          "image": "/images/cards/22_context_clues_sentence/weather/calm_lake.png",
           "label": "A calm lake"
         }
       ],
@@ -630,7 +630,7 @@
       "question": "What does \"ominous\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/weather/storm_clouds.png",
+          "image": "/images/cards/22_context_clues_sentence/weather/storm_clouds.png",
           "label": "Storm clouds"
         }
       ],
@@ -646,7 +646,7 @@
       "question": "What does \"ripe\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/food/strawberries.png",
+          "image": "/images/cards/22_context_clues_sentence/food/strawberries.png",
           "label": "Strawberries"
         }
       ],
@@ -662,7 +662,7 @@
       "question": "What does \"piping\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/food/hot_soup.png",
+          "image": "/images/cards/22_context_clues_sentence/food/hot_soup.png",
           "label": "Hot soup"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "What does \"tart\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/food/lemon.png",
+          "image": "/images/cards/22_context_clues_sentence/food/lemon.png",
           "label": "A lemon"
         }
       ],
@@ -694,7 +694,7 @@
       "question": "What does \"crispy\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/food/celery.png",
+          "image": "/images/cards/22_context_clues_sentence/food/celery.png",
           "label": "Celery"
         }
       ],
@@ -710,7 +710,7 @@
       "question": "What does \"refreshing\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/food/orange_juice.png",
+          "image": "/images/cards/22_context_clues_sentence/food/orange_juice.png",
           "label": "Orange juice"
         }
       ],
@@ -726,7 +726,7 @@
       "question": "What does \"parallel\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/home/car_parking.png",
+          "image": "/images/cards/22_context_clues_sentence/home/car_parking.png",
           "label": "Car parking"
         }
       ],
@@ -742,7 +742,7 @@
       "question": "What does \"tranquil\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/home/quiet_living_room.png",
+          "image": "/images/cards/22_context_clues_sentence/home/quiet_living_room.png",
           "label": "A quiet living room"
         }
       ],
@@ -758,7 +758,7 @@
       "question": "What does \"overflowing\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/home/laundry_basket.png",
+          "image": "/images/cards/22_context_clues_sentence/home/laundry_basket.png",
           "label": "A laundry basket"
         }
       ],
@@ -774,7 +774,7 @@
       "question": "What does \"spotless\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/home/clean_kitchen.png",
+          "image": "/images/cards/22_context_clues_sentence/home/clean_kitchen.png",
           "label": "A clean kitchen"
         }
       ],
@@ -790,7 +790,7 @@
       "question": "What does \"plush\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/home/armchair.png",
+          "image": "/images/cards/22_context_clues_sentence/home/armchair.png",
           "label": "An armchair"
         }
       ],
@@ -806,7 +806,7 @@
       "question": "What does \"thrilled\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/feelings/happy_child.png",
+          "image": "/images/cards/22_context_clues_sentence/feelings/happy_child.png",
           "label": "A happy child"
         }
       ],
@@ -822,7 +822,7 @@
       "question": "What does \"exhausted\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/feelings/tired_child.png",
+          "image": "/images/cards/22_context_clues_sentence/feelings/tired_child.png",
           "label": "A tired child"
         }
       ],
@@ -838,7 +838,7 @@
       "question": "What does \"anxious\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/feelings/nervous_child.png",
+          "image": "/images/cards/22_context_clues_sentence/feelings/nervous_child.png",
           "label": "A nervous child"
         }
       ],
@@ -854,7 +854,7 @@
       "question": "What does \"proud\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/feelings/proud_child.png",
+          "image": "/images/cards/22_context_clues_sentence/feelings/proud_child.png",
           "label": "A proud child"
         }
       ],
@@ -870,7 +870,7 @@
       "question": "What does \"fascinated\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/feelings/curious_child.png",
+          "image": "/images/cards/22_context_clues_sentence/feelings/curious_child.png",
           "label": "A curious child"
         }
       ],
@@ -886,7 +886,7 @@
       "question": "What does \"crept\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/actions/tiptoeing.png",
+          "image": "/images/cards/22_context_clues_sentence/actions/tiptoeing.png",
           "label": "Tiptoeing"
         }
       ],
@@ -902,7 +902,7 @@
       "question": "What does \"hurry\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/actions/rushing.png",
+          "image": "/images/cards/22_context_clues_sentence/actions/rushing.png",
           "label": "Rushing"
         }
       ],
@@ -918,7 +918,7 @@
       "question": "What does \"leaped\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/actions/dog_jumping.png",
+          "image": "/images/cards/22_context_clues_sentence/actions/dog_jumping.png",
           "label": "A dog jumping"
         }
       ],
@@ -934,7 +934,7 @@
       "question": "What does \"stretch\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/actions/stretching.png",
+          "image": "/images/cards/22_context_clues_sentence/actions/stretching.png",
           "label": "Stretching"
         }
       ],
@@ -950,7 +950,7 @@
       "question": "What does \"rummage\" mean?",
       "images": [
         {
-          "image": "../assets/images/cards/22_context_clues_sentence/actions/searching_toybox.png",
+          "image": "/images/cards/22_context_clues_sentence/actions/searching_toybox.png",
           "label": "Searching a toybox"
         }
       ],
@@ -968,7 +968,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/food/lunch.png",
+          "image": "/images/cards/23_context_clues_fill/food/lunch.png",
           "label": "Lunch"
         }
       ],
@@ -978,7 +978,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/food/snacks.png",
+          "image": "/images/cards/23_context_clues_fill/food/snacks.png",
           "label": "Snacks"
         }
       ],
@@ -988,7 +988,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/food/water_bottle.png",
+          "image": "/images/cards/23_context_clues_fill/food/water_bottle.png",
           "label": "A water bottle"
         }
       ],
@@ -998,7 +998,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/food/oatmeal.png",
+          "image": "/images/cards/23_context_clues_fill/food/oatmeal.png",
           "label": "Oatmeal"
         }
       ],
@@ -1008,7 +1008,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/food/lunch_box.png",
+          "image": "/images/cards/23_context_clues_fill/food/lunch_box.png",
           "label": "A lunch box"
         }
       ],
@@ -1018,7 +1018,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/home/recycling.png",
+          "image": "/images/cards/23_context_clues_fill/home/recycling.png",
           "label": "Recycling"
         }
       ],
@@ -1028,7 +1028,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/home/bed.png",
+          "image": "/images/cards/23_context_clues_fill/home/bed.png",
           "label": "A bed"
         }
       ],
@@ -1038,7 +1038,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/home/dresser.png",
+          "image": "/images/cards/23_context_clues_fill/home/dresser.png",
           "label": "A dresser"
         }
       ],
@@ -1048,7 +1048,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/home/cleaning.png",
+          "image": "/images/cards/23_context_clues_fill/home/cleaning.png",
           "label": "Cleaning"
         }
       ],
@@ -1058,7 +1058,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/home/trash.png",
+          "image": "/images/cards/23_context_clues_fill/home/trash.png",
           "label": "A trash can"
         }
       ],
@@ -1068,7 +1068,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/home/plant.png",
+          "image": "/images/cards/23_context_clues_fill/home/plant.png",
           "label": "A plant"
         }
       ],
@@ -1078,7 +1078,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/home/table_setting.png",
+          "image": "/images/cards/23_context_clues_fill/home/table_setting.png",
           "label": "A table setting"
         }
       ],
@@ -1088,7 +1088,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/ready/weather.png",
+          "image": "/images/cards/23_context_clues_fill/ready/weather.png",
           "label": "Weather forecast"
         }
       ],
@@ -1098,7 +1098,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/ready/toothbrush.png",
+          "image": "/images/cards/23_context_clues_fill/ready/toothbrush.png",
           "label": "A toothbrush"
         }
       ],
@@ -1108,7 +1108,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/ready/soap.png",
+          "image": "/images/cards/23_context_clues_fill/ready/soap.png",
           "label": "Soap"
         }
       ],
@@ -1118,7 +1118,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/ready/pajamas.png",
+          "image": "/images/cards/23_context_clues_fill/ready/pajamas.png",
           "label": "Pajamas"
         }
       ],
@@ -1128,7 +1128,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/ready/backpack.png",
+          "image": "/images/cards/23_context_clues_fill/ready/backpack.png",
           "label": "A backpack"
         }
       ],
@@ -1138,7 +1138,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/beach/towel.png",
+          "image": "/images/cards/23_context_clues_fill/beach/towel.png",
           "label": "A towel"
         }
       ],
@@ -1148,7 +1148,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/beach/bucket.png",
+          "image": "/images/cards/23_context_clues_fill/beach/bucket.png",
           "label": "A bucket"
         }
       ],
@@ -1158,7 +1158,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/beach/sunscreen.png",
+          "image": "/images/cards/23_context_clues_fill/beach/sunscreen.png",
           "label": "Sunscreen"
         }
       ],
@@ -1168,7 +1168,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/beach/lifeguard.png",
+          "image": "/images/cards/23_context_clues_fill/beach/lifeguard.png",
           "label": "A lifeguard"
         }
       ],
@@ -1178,7 +1178,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/beach/seashells.png",
+          "image": "/images/cards/23_context_clues_fill/beach/seashells.png",
           "label": "Seashells"
         }
       ],
@@ -1188,7 +1188,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/cleaning/bathtub.png",
+          "image": "/images/cards/23_context_clues_fill/cleaning/bathtub.png",
           "label": "A bathtub"
         }
       ],
@@ -1198,7 +1198,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/cleaning/towels.png",
+          "image": "/images/cards/23_context_clues_fill/cleaning/towels.png",
           "label": "Towels"
         }
       ],
@@ -1208,7 +1208,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/cleaning/hairbrush.png",
+          "image": "/images/cards/23_context_clues_fill/cleaning/hairbrush.png",
           "label": "A hairbrush"
         }
       ],
@@ -1218,7 +1218,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/household/refrigerator.png",
+          "image": "/images/cards/23_context_clues_fill/household/refrigerator.png",
           "label": "A refrigerator"
         }
       ],
@@ -1228,7 +1228,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/household/light_switch.png",
+          "image": "/images/cards/23_context_clues_fill/household/light_switch.png",
           "label": "A light switch"
         }
       ],
@@ -1238,7 +1238,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/household/ice_cubes.png",
+          "image": "/images/cards/23_context_clues_fill/household/ice_cubes.png",
           "label": "Ice cubes"
         }
       ],
@@ -1248,7 +1248,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/household/blanket.png",
+          "image": "/images/cards/23_context_clues_fill/household/blanket.png",
           "label": "A blanket"
         }
       ],
@@ -1258,7 +1258,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/23_context_clues_fill/household/window.png",
+          "image": "/images/cards/23_context_clues_fill/household/window.png",
           "label": "A window"
         }
       ],
@@ -1270,7 +1270,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/food/bread.png",
+          "image": "/images/cards/24_context_clues_short/food/bread.png",
           "label": "Bread"
         }
       ],
@@ -1286,7 +1286,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/food/salad.png",
+          "image": "/images/cards/24_context_clues_short/food/salad.png",
           "label": "A salad"
         }
       ],
@@ -1302,7 +1302,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/food/pasta.png",
+          "image": "/images/cards/24_context_clues_short/food/pasta.png",
           "label": "Pasta"
         }
       ],
@@ -1318,7 +1318,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/food/fruit.png",
+          "image": "/images/cards/24_context_clues_short/food/fruit.png",
           "label": "Fresh fruit"
         }
       ],
@@ -1334,7 +1334,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/food/table.png",
+          "image": "/images/cards/24_context_clues_short/food/table.png",
           "label": "Setting the table"
         }
       ],
@@ -1350,7 +1350,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/health/water.png",
+          "image": "/images/cards/24_context_clues_short/health/water.png",
           "label": "Drinking water"
         }
       ],
@@ -1366,7 +1366,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/health/sleep.png",
+          "image": "/images/cards/24_context_clues_short/health/sleep.png",
           "label": "Sleeping"
         }
       ],
@@ -1382,7 +1382,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/health/stretch.png",
+          "image": "/images/cards/24_context_clues_short/health/stretch.png",
           "label": "Stretching"
         }
       ],
@@ -1398,7 +1398,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/health/hands.png",
+          "image": "/images/cards/24_context_clues_short/health/hands.png",
           "label": "Washing hands"
         }
       ],
@@ -1414,7 +1414,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/health/breakfast.png",
+          "image": "/images/cards/24_context_clues_short/health/breakfast.png",
           "label": "Eating breakfast"
         }
       ],
@@ -1430,7 +1430,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/sports/soccer.png",
+          "image": "/images/cards/24_context_clues_short/sports/soccer.png",
           "label": "Playing soccer"
         }
       ],
@@ -1446,7 +1446,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/sports/swimming.png",
+          "image": "/images/cards/24_context_clues_short/sports/swimming.png",
           "label": "Swimming"
         }
       ],
@@ -1462,7 +1462,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/sports/basketball.png",
+          "image": "/images/cards/24_context_clues_short/sports/basketball.png",
           "label": "Playing basketball"
         }
       ],
@@ -1478,7 +1478,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/sports/bike.png",
+          "image": "/images/cards/24_context_clues_short/sports/bike.png",
           "label": "Riding a bike"
         }
       ],
@@ -1494,7 +1494,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/sports/catch.png",
+          "image": "/images/cards/24_context_clues_short/sports/catch.png",
           "label": "Playing catch"
         }
       ],
@@ -1510,7 +1510,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/home/laundry.png",
+          "image": "/images/cards/24_context_clues_short/home/laundry.png",
           "label": "Doing laundry"
         }
       ],
@@ -1526,7 +1526,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/home/bed.png",
+          "image": "/images/cards/24_context_clues_short/home/bed.png",
           "label": "Making the bed"
         }
       ],
@@ -1542,7 +1542,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/home/room.png",
+          "image": "/images/cards/24_context_clues_short/home/room.png",
           "label": "A clean room"
         }
       ],
@@ -1558,7 +1558,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/home/trash.png",
+          "image": "/images/cards/24_context_clues_short/home/trash.png",
           "label": "Taking out trash"
         }
       ],
@@ -1574,7 +1574,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/home/plants.png",
+          "image": "/images/cards/24_context_clues_short/home/plants.png",
           "label": "Watering plants"
         }
       ],
@@ -1590,7 +1590,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/nature/birds.png",
+          "image": "/images/cards/24_context_clues_short/nature/birds.png",
           "label": "Birds flying"
         }
       ],
@@ -1606,7 +1606,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/nature/seeds.png",
+          "image": "/images/cards/24_context_clues_short/nature/seeds.png",
           "label": "Planting seeds"
         }
       ],
@@ -1622,7 +1622,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/nature/rain.png",
+          "image": "/images/cards/24_context_clues_short/nature/rain.png",
           "label": "Rain"
         }
       ],
@@ -1638,7 +1638,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/nature/sunny.png",
+          "image": "/images/cards/24_context_clues_short/nature/sunny.png",
           "label": "A sunny day"
         }
       ],
@@ -1654,7 +1654,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/nature/leaves.png",
+          "image": "/images/cards/24_context_clues_short/nature/leaves.png",
           "label": "Autumn leaves"
         }
       ],
@@ -1670,7 +1670,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/feelings/friends.png",
+          "image": "/images/cards/24_context_clues_short/feelings/friends.png",
           "label": "Friends"
         }
       ],
@@ -1686,7 +1686,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/feelings/sorry.png",
+          "image": "/images/cards/24_context_clues_short/feelings/sorry.png",
           "label": "Saying sorry"
         }
       ],
@@ -1702,7 +1702,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/feelings/sharing.png",
+          "image": "/images/cards/24_context_clues_short/feelings/sharing.png",
           "label": "Sharing"
         }
       ],
@@ -1718,7 +1718,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/feelings/happy.png",
+          "image": "/images/cards/24_context_clues_short/feelings/happy.png",
           "label": "Feeling happy"
         }
       ],
@@ -1734,7 +1734,7 @@
       "question": "Fill in the blank.",
       "images": [
         {
-          "image": "../assets/images/cards/24_context_clues_short/feelings/patient.png",
+          "image": "/images/cards/24_context_clues_short/feelings/patient.png",
           "label": "Being patient"
         }
       ],
