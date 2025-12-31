@@ -362,6 +362,7 @@ export async function extractGoalData(
       ],
       max_tokens: 4000,
       temperature: 0.2, // Low temperature for consistent extraction
+      response_format: { type: 'json_object' }, // Enforce JSON output
     });
 
     const content = response.choices[0]?.message?.content;
