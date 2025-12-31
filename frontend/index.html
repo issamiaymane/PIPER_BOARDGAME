@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIPER - Speech Therapy AI</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #FF9800;
+            --color-primary-dark: #E65100;
+            --color-primary-medium: #F57C00;
+            --color-primary-light: #FFB300;
+            --color-success: #4CAF50;
+            --color-success-dark: #2E7D32;
+            --color-info: #1E88E5;
+            --color-info-dark: #1565C0;
+            --bg-cream: #FFE4B5;
+            --bg-cream-light: #FFF9E6;
+            --text-primary: #263238;
+            --text-secondary: #546E7A;
+            --font-display: 'Fredoka One', cursive;
+            --font-body: 'Nunito', sans-serif;
+            --shadow-color-light: rgba(255, 152, 0, 0.2);
+            --shadow-color-medium: rgba(255, 152, 0, 0.3);
+            --shadow-color-strong: rgba(255, 152, 0, 0.35);
+            --shadow-color-stronger: rgba(255, 152, 0, 0.4);
+            --shadow-color-dark: rgba(230, 81, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 50%, #FFDAB9 100%);
+            min-height: 100vh;
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        /* Decorative Elements */
+        .snowflakes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -20px;
+            color: var(--shadow-color-stronger);
+            font-size: 1.5rem;
+            animation: fall linear infinite;
+            opacity: 0.5;
+            text-shadow: 0 0 5px var(--shadow-color-dark);
+        }
+
+        .snowflake:nth-child(1) { left: 5%; animation-duration: 10s; animation-delay: 0s; font-size: 1.2rem; }
+        .snowflake:nth-child(2) { left: 15%; animation-duration: 12s; animation-delay: 2s; font-size: 1.8rem; }
+        .snowflake:nth-child(3) { left: 25%; animation-duration: 8s; animation-delay: 4s; font-size: 1rem; }
+        .snowflake:nth-child(4) { left: 35%; animation-duration: 14s; animation-delay: 1s; font-size: 1.5rem; }
+        .snowflake:nth-child(5) { left: 45%; animation-duration: 9s; animation-delay: 3s; font-size: 2rem; }
+        .snowflake:nth-child(6) { left: 55%; animation-duration: 11s; animation-delay: 5s; font-size: 1.3rem; }
+        .snowflake:nth-child(7) { left: 65%; animation-duration: 13s; animation-delay: 2s; font-size: 1.7rem; }
+        .snowflake:nth-child(8) { left: 75%; animation-duration: 7s; animation-delay: 4s; font-size: 1.1rem; }
+        .snowflake:nth-child(9) { left: 85%; animation-duration: 10s; animation-delay: 1s; font-size: 1.6rem; }
+        .snowflake:nth-child(10) { left: 95%; animation-duration: 9s; animation-delay: 3s; font-size: 1.4rem; }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-20px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0.3;
+            }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .title {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            color: var(--color-primary-dark);
+            text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        /* Navigation Cards */
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .nav-card {
+            background: white;
+            border-radius: 25px;
+            padding: 2.5rem;
+            border: 5px solid var(--color-primary);
+            box-shadow: 0 10px 30px var(--shadow-color-medium);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px var(--shadow-color-strong);
+            border-color: var(--color-primary-dark);
+        }
+
+        .nav-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .nav-title {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .nav-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .nav-arrow {
+            font-size: 2rem;
+            margin-top: 1rem;
+            color: var(--color-primary);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-card:hover .nav-arrow {
+            transform: translateX(10px);
+        }
+
+        /* Theme-specific card icon colors */
+        .nav-card.therapist .nav-icon {
+            filter: drop-shadow(0 4px 8px var(--shadow-color-medium));
+        }
+
+        .nav-card.game .nav-icon {
+            filter: drop-shadow(0 4px 8px var(--shadow-color-medium));
+        }
+
+        .nav-card .nav-icon {
+            filter: drop-shadow(0 4px 8px var(--shadow-color-medium));
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .nav-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .nav-card {
+                padding: 2rem;
+            }
+
+            .nav-icon {
+                font-size: 4rem;
+            }
+
+            .nav-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .snowflake {
+                animation: none;
+                opacity: 0.3;
+            }
+        }
+
+        .nav-card:focus-visible {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 5px;
+        }
+
+        /* Theme Selector Styles */
+        .theme-selector-floating {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+
+        .theme-toggle-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .theme-toggle-btn:focus-visible {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 3px;
+        }
+
+        .theme-selector-panel {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .theme-selector-panel.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+        }
+
+        .theme-selector-title {
+            font-family: var(--font-display);
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            text-transform: uppercase;
+        }
+
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .theme-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border: 2px solid #E0E0E0;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .theme-btn:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-2px);
+        }
+
+        .theme-btn:focus-visible {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .theme-btn.active {
+            border-color: var(--color-primary);
+            background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+        }
+
+        .theme-icon {
+            font-size: 28px;
+            margin-bottom: 4px;
+        }
+
+        .theme-text {
+            font-family: var(--font-display);
+            font-size: 10px;
+            text-transform: uppercase;
+            color: var(--text-primary);
+        }
+
+        /* Theme-specific backgrounds and colors */
+        body.theme-spring {
+            background: linear-gradient(180deg, #FFE5E5 0%, #FFD1DC 50%, #FFC0CB 100%);
+        }
+
+        body.theme-summer {
+            background: linear-gradient(180deg, #FFFACD 0%, #FFE4B5 50%, #FFDAB9 100%);
+        }
+
+        body.theme-autumn {
+            background: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 50%, #FFDAB9 100%);
+        }
+
+        body.theme-winter {
+            background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E0F7FA 100%);
+        }
+
+        /* Spring theme decorations */
+        body.theme-spring .snowflake {
+            color: rgba(255, 182, 193, 0.8);
+            text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+        }
+
+        body.theme-spring {
+            --color-primary: #FF69B4;
+            --color-primary-dark: #C71585;
+            --color-primary-medium: #DB7093;
+            --color-primary-light: #FFB6C1;
+            --shadow-color-light: rgba(255, 105, 180, 0.2);
+            --shadow-color-medium: rgba(255, 105, 180, 0.3);
+            --shadow-color-strong: rgba(255, 105, 180, 0.35);
+            --shadow-color-stronger: rgba(255, 105, 180, 0.4);
+            --shadow-color-dark: rgba(199, 21, 133, 0.3);
+        }
+
+        /* Summer theme decorations */
+        body.theme-summer .snowflake {
+            color: rgba(255, 215, 0, 0.7);
+            text-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+        }
+
+        body.theme-summer {
+            --color-primary: #FFD700;
+            --color-primary-dark: #FFA500;
+            --color-primary-medium: #FFB90F;
+            --color-primary-light: #FFEC8B;
+            --shadow-color-light: rgba(255, 215, 0, 0.2);
+            --shadow-color-medium: rgba(255, 215, 0, 0.3);
+            --shadow-color-strong: rgba(255, 215, 0, 0.35);
+            --shadow-color-stronger: rgba(255, 215, 0, 0.4);
+            --shadow-color-dark: rgba(255, 165, 0, 0.3);
+        }
+
+        /* Autumn theme (keep existing) */
+        body.theme-autumn {
+            --color-primary: #FF9800;
+            --color-primary-dark: #E65100;
+            --color-primary-medium: #F57C00;
+            --color-primary-light: #FFB300;
+        }
+
+        /* Winter theme decorations */
+        body.theme-winter .snowflake {
+            color: rgba(255, 255, 255, 0.8);
+            text-shadow: 0 0 10px rgba(135, 206, 235, 0.6);
+        }
+
+        body.theme-winter {
+            --color-primary: #87CEEB;
+            --color-primary-dark: #5FA8D3;
+            --color-primary-medium: #6BB6D6;
+            --color-primary-light: #ADD8E6;
+            --shadow-color-light: rgba(135, 206, 235, 0.2);
+            --shadow-color-medium: rgba(135, 206, 235, 0.3);
+            --shadow-color-strong: rgba(135, 206, 235, 0.35);
+            --shadow-color-stronger: rgba(135, 206, 235, 0.4);
+            --shadow-color-dark: rgba(95, 168, 211, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="snowflakes">
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+        <div class="snowflake">🍂</div>
+        <div class="snowflake">🍁</div>
+    </div>
+
+    <!-- Floating Theme Selector -->
+    <div class="theme-selector-floating">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme selector">
+            🎨
+        </button>
+        <div class="theme-selector-panel hidden" id="themeSelectorPanel">
+            <div class="theme-selector-title">Choose Theme</div>
+            <div class="theme-grid">
+                <button class="theme-btn" data-theme="spring" aria-label="Spring theme">
+                    <div class="theme-icon">🌸</div>
+                    <div class="theme-text">Spring</div>
+                </button>
+                <button class="theme-btn" data-theme="summer" aria-label="Summer theme">
+                    <div class="theme-icon">☀️</div>
+                    <div class="theme-text">Summer</div>
+                </button>
+                <button class="theme-btn active" data-theme="autumn" aria-label="Autumn theme">
+                    <div class="theme-icon">🍂</div>
+                    <div class="theme-text">Autumn</div>
+                </button>
+                <button class="theme-btn" data-theme="winter" aria-label="Winter theme">
+                    <div class="theme-icon">❄️</div>
+                    <div class="theme-text">Winter</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">PIPER</h1>
+            <p class="subtitle">AI-Powered Speech Therapy Platform</p>
+        </header>
+
+        <!-- Navigation Grid -->
+        <div class="nav-grid">
+            <!-- Therapist Dashboard -->
+            <a href="/therapist.html" class="nav-card therapist">
+                <div class="nav-icon">👨‍⚕️</div>
+                <h2 class="nav-title">Therapist Dashboard</h2>
+                <p class="nav-description">
+                    Manage students, upload evaluations, track progress, and create personalized goals
+                </p>
+                <div class="nav-arrow">→</div>
+            </a>
+
+            <!-- Board Game -->
+            <a href="/boardgame.html" class="nav-card game">
+                <div class="nav-icon">🎮</div>
+                <h2 class="nav-title">Board Game</h2>
+                <p class="nav-description">
+                    Interactive speech therapy game with seasonal themes and personalized challenges
+                </p>
+                <div class="nav-arrow">→</div>
+            </a>
+
+            <!-- Card Browser -->
+            <a href="/card-browser.html" class="nav-card">
+                <div class="nav-icon">🗂️</div>
+                <h2 class="nav-title">Card Browser</h2>
+                <p class="nav-description">
+                    Browse and preview all available speech therapy cards and activities
+                </p>
+                <div class="nav-arrow">→</div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 PIPER - Personalized Interactive Platform for Education & Rehabilitation</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Keyboard navigation for cards
+            const cards = document.querySelectorAll('.nav-card');
+            cards.forEach((card) => {
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        card.click();
+                    }
+                });
+            });
+
+            // Theme Selector Logic
+            const themeToggleBtn = document.getElementById('themeToggleBtn');
+            const themeSelectorPanel = document.getElementById('themeSelectorPanel');
+            const themeButtons = document.querySelectorAll('.theme-btn');
+            const snowflakes = document.querySelectorAll('.snowflake');
+
+            // Theme emoji mappings
+            const themeEmojis = {
+                spring: '🌸',
+                summer: '☀️',
+                autumn: '🍂',
+                winter: '❄️'
+            };
+
+            // Load saved theme from localStorage
+            const savedTheme = localStorage.getItem('selectedTheme') || 'autumn';
+            applyTheme(savedTheme);
+
+            // Toggle theme selector panel
+            themeToggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                themeSelectorPanel.classList.toggle('hidden');
+            });
+
+            // Close panel when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!themeSelectorPanel.contains(e.target) && e.target !== themeToggleBtn) {
+                    themeSelectorPanel.classList.add('hidden');
+                }
+            });
+
+            // Theme button click handlers
+            themeButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const theme = btn.getAttribute('data-theme');
+                    applyTheme(theme);
+                    localStorage.setItem('selectedTheme', theme);
+                    themeSelectorPanel.classList.add('hidden');
+                });
+            });
+
+            // Apply theme function
+            function applyTheme(theme) {
+                // Remove all theme classes
+                document.body.classList.remove('theme-spring', 'theme-summer', 'theme-autumn', 'theme-winter');
+
+                // Add selected theme class
+                document.body.classList.add(`theme-${theme}`);
+
+                // Update active button
+                themeButtons.forEach(btn => {
+                    if (btn.getAttribute('data-theme') === theme) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+
+                // Update snowflake emojis based on theme
+                const emoji = themeEmojis[theme];
+                snowflakes.forEach((flake, index) => {
+                    // Alternate between two emojis for variety
+                    if (theme === 'spring') {
+                        flake.textContent = index % 2 === 0 ? '🌸' : '🌺';
+                    } else if (theme === 'summer') {
+                        flake.textContent = index % 2 === 0 ? '☀️' : '🌻';
+                    } else if (theme === 'autumn') {
+                        flake.textContent = index % 2 === 0 ? '🍂' : '🍁';
+                    } else if (theme === 'winter') {
+                        flake.textContent = index % 2 === 0 ? '❄️' : '⛄';
+                    }
+                });
+            }
+
+            // Keyboard support for theme selector
+            themeToggleBtn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    themeToggleBtn.click();
+                }
+            });
+
+            // Arrow key navigation within theme panel
+            themeSelectorPanel.addEventListener('keydown', (e) => {
+                const buttons = Array.from(themeButtons);
+                const currentIndex = buttons.indexOf(document.activeElement);
+
+                if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    const nextIndex = (currentIndex + 1) % buttons.length;
+                    buttons[nextIndex].focus();
+                } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    const prevIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+                    buttons[prevIndex].focus();
+                } else if (e.key === 'Escape') {
+                    themeSelectorPanel.classList.add('hidden');
+                    themeToggleBtn.focus();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

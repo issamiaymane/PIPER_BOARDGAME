@@ -23,6 +23,9 @@
  * 17. RESPONSIVE DESIGN
  */
 
+/* Import shared theme styles */
+@import 'shared-themes.css';
+
 /* ==========================================================================
    0. CSS VARIABLES
    ========================================================================== */
@@ -69,15 +72,40 @@
     --shadow-color-dark: rgba(230, 81, 0, 0.3);
 
     /* Border Radius */
+    --radius-xs: 6px;
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
     --radius-xl: 24px;
+    --radius-xxl: 30px;
     --radius-round: 50%;
+
+    /* Border Widths */
+    --border-width-thin: 1px;
+    --border-width-normal: 2px;
+    --border-width-medium: 3px;
+    --border-width-thick: 4px;
+    --border-width-heavy: 5px;
+    --border-width-extra-heavy: 6px;
 
     /* Typography */
     --font-display: 'Fredoka One', cursive;
     --font-body: 'Nunito', sans-serif;
+
+    /* Fluid Typography (responsive font sizes) */
+    --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.85rem);
+    --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 0.95rem);
+    --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.35rem);
+    --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 1.75rem);
+    --font-size-xxl: clamp(2rem, 1.7rem + 1.5vw, 2.5rem);
+
+    /* Component Sizes */
+    --sidebar-width: 320px;
+    --sidebar-width-mobile: 280px;
+    --header-height: 90px;
+    --student-avatar-size: 40px;
+    --profile-avatar-size: 70px;
 
     /* Spacing */
     --spacing-xs: 0.25rem;
@@ -94,6 +122,12 @@
     --z-modal-backdrop: 100;
     --z-modal: 200;
     --z-loading: 9999;
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.2s ease;
+    --transition-medium: 0.3s ease;
+    --transition-slow: 0.5s ease;
 }
 
 /* ==========================================================================
@@ -111,242 +145,6 @@ body {
     min-height: 100vh;
     color: var(--text-primary);
     overflow-x: hidden;
-}
-
-/* ==========================================================================
-   2. DECORATIVE ELEMENTS
-   ========================================================================== */
-
-/* -------------------- Autumn Leaves Animation -------------------- */
-.snowflakes {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: var(--z-snowflakes);
-    overflow: hidden;
-}
-
-.snowflake {
-    position: absolute;
-    top: -20px;
-    color: var(--shadow-color-stronger);
-    animation: fall linear infinite;
-    opacity: 0.5;
-    text-shadow: 0 0 5px var(--shadow-color-dark);
-}
-
-.snowflake:nth-child(1) { left: 5%; animation-duration: 10s; animation-delay: 0s; font-size: 1.2rem; }
-.snowflake:nth-child(2) { left: 15%; animation-duration: 12s; animation-delay: 2s; font-size: 1.8rem; }
-.snowflake:nth-child(3) { left: 25%; animation-duration: 8s; animation-delay: 4s; font-size: 1rem; }
-.snowflake:nth-child(4) { left: 35%; animation-duration: 14s; animation-delay: 1s; font-size: 1.5rem; }
-.snowflake:nth-child(5) { left: 45%; animation-duration: 9s; animation-delay: 3s; font-size: 2rem; }
-.snowflake:nth-child(6) { left: 55%; animation-duration: 11s; animation-delay: 5s; font-size: 1.3rem; }
-.snowflake:nth-child(7) { left: 65%; animation-duration: 13s; animation-delay: 2s; font-size: 1.7rem; }
-.snowflake:nth-child(8) { left: 75%; animation-duration: 7s; animation-delay: 4s; font-size: 1.1rem; }
-.snowflake:nth-child(9) { left: 85%; animation-duration: 10s; animation-delay: 1s; font-size: 1.6rem; }
-.snowflake:nth-child(10) { left: 95%; animation-duration: 9s; animation-delay: 3s; font-size: 1.4rem; }
-
-/* -------------------- Theme Backgrounds -------------------- */
-body.theme-spring {
-    background: linear-gradient(180deg, #FFE5E5 0%, #FFD1DC 50%, #FFC0CB 100%);
-}
-
-body.theme-summer {
-    background: linear-gradient(180deg, #FFFACD 0%, #FFE4B5 50%, #FFDAB9 100%);
-}
-
-body.theme-autumn {
-    background: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 50%, #FFDAB9 100%);
-}
-
-body.theme-winter {
-    background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E0F7FA 100%);
-}
-
-/* Theme-specific Color Variables */
-body.theme-spring {
-    --color-primary: #FF69B4;
-    --color-primary-dark: #C71585;
-    --color-primary-medium: #DB7093;
-    --color-primary-light: #FFB6C1;
-    --bg-cream: #FFE5E5;
-    --bg-warm: #FFF0F5;
-    --border-primary: #FF69B4;
-
-    /* Spring shadow colors (pink) */
-    --shadow-color-light: rgba(255, 105, 180, 0.2);
-    --shadow-color-medium: rgba(255, 105, 180, 0.3);
-    --shadow-color-strong: rgba(255, 105, 180, 0.35);
-    --shadow-color-stronger: rgba(255, 105, 180, 0.4);
-    --shadow-color-subtle: rgba(255, 105, 180, 0.5);
-    --shadow-color-dark: rgba(199, 21, 133, 0.3);
-}
-
-body.theme-summer {
-    --color-primary: #FFD700;
-    --color-primary-dark: #FFA500;
-    --color-primary-medium: #FFB90F;
-    --color-primary-light: #FFEC8B;
-    --bg-cream: #FFFACD;
-    --bg-warm: #FFFFE0;
-    --border-primary: #FFD700;
-
-    /* Summer shadow colors (yellow/gold) */
-    --shadow-color-light: rgba(255, 215, 0, 0.2);
-    --shadow-color-medium: rgba(255, 215, 0, 0.3);
-    --shadow-color-strong: rgba(255, 215, 0, 0.35);
-    --shadow-color-stronger: rgba(255, 215, 0, 0.4);
-    --shadow-color-subtle: rgba(255, 215, 0, 0.5);
-    --shadow-color-dark: rgba(255, 165, 0, 0.3);
-}
-
-body.theme-autumn {
-    --color-primary: #FF9800;
-    --color-primary-dark: #E65100;
-    --color-primary-medium: #F57C00;
-    --color-primary-light: #FFB300;
-    --bg-cream: #FFF9E6;
-    --bg-warm: #FFE4B5;
-    --border-primary: #FF9800;
-
-    /* Autumn shadow colors (orange) */
-    --shadow-color-light: rgba(255, 152, 0, 0.2);
-    --shadow-color-medium: rgba(255, 152, 0, 0.3);
-    --shadow-color-strong: rgba(255, 152, 0, 0.35);
-    --shadow-color-stronger: rgba(255, 152, 0, 0.4);
-    --shadow-color-subtle: rgba(255, 152, 0, 0.5);
-    --shadow-color-dark: rgba(230, 81, 0, 0.3);
-}
-
-body.theme-winter {
-    --color-primary: #87CEEB;
-    --color-primary-dark: #5FA8D3;
-    --color-primary-medium: #6BB6D6;
-    --color-primary-light: #ADD8E6;
-    --bg-cream: #E0F7FA;
-    --bg-warm: #F0F8FF;
-    --border-primary: #87CEEB;
-
-    /* Winter shadow colors (blue) */
-    --shadow-color-light: rgba(135, 206, 235, 0.2);
-    --shadow-color-medium: rgba(135, 206, 235, 0.3);
-    --shadow-color-strong: rgba(135, 206, 235, 0.35);
-    --shadow-color-stronger: rgba(135, 206, 235, 0.4);
-    --shadow-color-subtle: rgba(135, 206, 235, 0.5);
-    --shadow-color-dark: rgba(95, 168, 211, 0.3);
-}
-
-/* -------------------- Theme Decorations -------------------- */
-body.theme-spring .snowflake {
-    color: rgba(255, 182, 193, 0.8);
-    text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
-}
-
-body.theme-summer .snowflake {
-    color: rgba(255, 215, 0, 0.7);
-    text-shadow: 0 0 15px var(--shadow-color-stronger);
-}
-
-body.theme-winter .snowflake {
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 0 0 10px rgba(135, 206, 235, 0.6);
-}
-
-/* -------------------- Floating Theme Selector -------------------- */
-.theme-selector-floating {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    z-index: 1000;
-}
-
-.theme-toggle-btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.theme-toggle-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-.theme-selector-panel {
-    position: absolute;
-    bottom: 70px;
-    right: 0;
-    background: white;
-    border-radius: 12px;
-    padding: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    min-width: 200px;
-    transition: all 0.3s ease;
-}
-
-.theme-selector-panel.hidden {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-}
-
-.theme-selector-title {
-    font-family: var(--font-display);
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 12px;
-    color: var(--text-primary);
-    text-transform: uppercase;
-}
-
-.theme-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-}
-
-.theme-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-    border: 2px solid #E0E0E0;
-    border-radius: 8px;
-    background: white;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.theme-btn:hover {
-    border-color: var(--color-primary);
-    transform: translateY(-2px);
-}
-
-.theme-btn.active {
-    border-color: var(--color-primary);
-    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
-}
-
-.theme-icon {
-    font-size: 28px;
-    margin-bottom: 4px;
-}
-
-.theme-text {
-    font-family: var(--font-display);
-    font-size: 10px;
-    text-transform: uppercase;
-    color: var(--text-primary);
 }
 
 /* ==========================================================================
@@ -1798,17 +1596,6 @@ body.theme-winter .snowflake {
    16. ANIMATIONS
    ========================================================================== */
 
-@keyframes fall {
-    0% {
-        transform: translateY(-20px) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(110vh) rotate(360deg);
-        opacity: 0.3;
-    }
-}
-
 @keyframes spin {
     to {
         transform: rotate(360deg);
@@ -1893,4 +1680,90 @@ body.theme-winter .snowflake {
         flex-direction: column;
         text-align: center;
     }
+}
+
+/* ==========================================================================
+   18. ACCESSIBILITY IMPROVEMENTS
+   ========================================================================== */
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .snowflake {
+        animation: none;
+        opacity: 0.3;
+    }
+
+    .loading-progress-bar {
+        animation: none;
+        width: 100%;
+    }
+}
+
+/* Better Focus Indicators for Keyboard Navigation */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.btn:focus-visible,
+.student-item:focus-visible,
+.theme-btn:focus-visible,
+.theme-toggle-btn:focus-visible,
+.character-option:focus-visible,
+.modal-close:focus-visible,
+.category-checkbox:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+    z-index: 1;
+}
+
+/* Remove focus ring for mouse users */
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Enhanced vendor prefixes for better compatibility */
+.btn,
+.student-item,
+.theme-btn,
+.theme-toggle-btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.modal-backdrop {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+/* Performance Optimizations */
+.modal-content {
+    will-change: transform, opacity;
+}
+
+.modal-content:not(.animating) {
+    will-change: auto;
+}
+
+.student-item,
+.profile-card,
+.eval-data-item {
+    contain: layout style;
+}
+
+.modal {
+    contain: layout paint;
 }
