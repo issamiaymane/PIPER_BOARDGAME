@@ -1,189 +1,213 @@
-# Speech Therapy AI
+# PIPER - Speech Therapy Application
 
-An interactive speech therapy application featuring AI-powered feedback, educational board games, and conversational practice modes for children and speech therapy professionals.
+**P**ersonalized **I**EP **P**rogress & **E**valuation **R**eporter
 
-## Project Structure
+An interactive speech therapy application featuring educational board games, therapist dashboards with AI-powered PDF extraction, and progress tracking for speech therapy professionals.
+
+## 🎯 Features
+
+- **🎮 Interactive Board Game** - Educational speech therapy games with 141+ card categories
+- **👨‍⚕️ Therapist Dashboard** - Manage students, track progress, and generate IEP reports
+- **🤖 AI-Powered Extraction** - Automatically extract evaluation data and goals from PDFs
+- **📊 Progress Tracking** - Monitor student performance and generate reports
+- **🎨 Card Browser** - Browse and preview all therapy cards
+
+## 📁 Project Structure
+
+This is a **monorepo** containing both frontend and backend:
 
 ```
-speech_therapy_ai/
-├── backend/                    # Node.js/TypeScript API Server
-│   ├── src/
-│   │   ├── api/               # REST API Layer
-│   │   │   ├── controllers/   # Request handlers
-│   │   │   ├── middleware/    # Express middleware
-│   │   │   │   ├── cors.ts    # CORS configuration
-│   │   │   │   └── errorHandler.ts
-│   │   │   └── routes/        # API route definitions
-│   │   ├── config/            # Centralized configuration
-│   │   │   └── index.ts       # Environment & app settings
-│   │   ├── services/          # Business Logic
-│   │   │   ├── analysis/      # Speech pattern analysis
-│   │   │   ├── conversation/  # AI conversation agent
-│   │   │   ├── processors/    # Card type processors
-│   │   │   ├── speech/        # Text-to-speech service
-│   │   │   └── transcription/ # Whisper transcription
-│   │   └── types/             # TypeScript type definitions
-│   ├── tests/                 # Test suites
-│   └── dist/                  # Compiled JavaScript output
-│
-├── frontend/                   # Static Web Frontend
-│   ├── assets/                # Static Assets
-│   │   ├── images/
-│   │   │   └── cards/         # Card images (141 categories)
-│   │   ├── sounds/            # Audio effects (start, correct, wrong, bonus, win)
+boardgame-clear-backend/
+├── frontend/                   # Vanilla TypeScript + Vite
+│   ├── public/                # Static assets
+│   │   ├── images/           # Card images, icons
+│   │   ├── sounds/           # Audio effects
 │   │   └── favicon.svg
-│   ├── css/                   # Stylesheets
-│   │   └── boardgame.css      # Main stylesheet (~11,500 lines, categorized)
-│   ├── pages/                 # HTML Pages
-│   │   ├── boardgame.html     # Board game interface
-│   │   ├── conversation.html  # Conversation mode
-│   │   └── assignment.html    # Assignment mode
-│   ├── scripts/               # JavaScript Modules
-│   │   ├── core/              # Core Modules
-│   │   │   ├── audio-manager.js
-│   │   │   ├── dom-cache.js
-│   │   │   ├── state-manager.js
-│   │   │   └── ui-manager.js
-│   │   ├── data/              # Game Data
-│   │   │   └── boardgame-data.js  # 141 card categories
-│   │   ├── handlers/          # Card Type Handlers (45+ handlers)
-│   │   │   ├── base-handler.js
-│   │   │   ├── vocabulary-handler.js
-│   │   │   ├── grammar-handler.js
-│   │   │   └── ... (specialized handlers)
-│   │   └── pages/             # Page Controllers
-│   │       ├── boardgame.js
-│   │       ├── conversation.js
-│   │       └── assignment.js
-│   └── index.html             # Landing page
+│   ├── src/
+│   │   ├── features/         # Feature modules
+│   │   │   ├── boardgame/   # Board game feature
+│   │   │   ├── card-browser/ # Card browser feature
+│   │   │   └── therapist/   # Therapist dashboard
+│   │   ├── shared/          # Shared code
+│   │   │   ├── components/  # Reusable UI components
+│   │   │   ├── hooks/       # Custom hooks
+│   │   │   ├── types/       # Shared TypeScript types
+│   │   │   └── utils/       # Helper functions
+│   │   ├── constants/       # Static data & card definitions
+│   │   ├── services/        # API service layer
+│   │   └── styles/          # CSS files
+│   ├── boardgame.html       # Board game page
+│   ├── card-browser.html    # Card browser page
+│   ├── therapist.html       # Therapist dashboard page
+│   └── vite.config.ts
 │
-├── data/                       # Research & Training Data
-│   ├── spectrograms/          # Audio analysis spectrograms
-│   └── voices/                # Voice sample recordings
+├── backend/                    # Node.js + Express + TypeScript
+│   ├── src/
+│   │   ├── api/              # API layer
+│   │   │   ├── middleware/  # Express middleware
+│   │   │   └── routes/      # API routes
+│   │   ├── services/        # Business logic
+│   │   │   ├── evaluation/  # Evaluation PDF extraction
+│   │   │   ├── goal/        # IEP goal extraction
+│   │   │   ├── auth.service.ts
+│   │   │   ├── database.ts
+│   │   │   └── student.service.ts
+│   │   ├── config/          # Configuration
+│   │   ├── types/           # TypeScript types
+│   │   └── utils/           # Utilities
+│   └── data/
+│       ├── piper.db         # SQLite database
+│       └── uploads/         # PDF uploads
 │
-└── docs/                       # Documentation
-    ├── ARCHITECTURE.md        # System architecture details
-    ├── FLOW.md                # User interaction flows
-    └── SETUP.md               # Detailed setup instructions
+├── Dockerfile               # Docker configuration
+├── .dockerignore
+├── render.yaml              # Render.com deployment config
+└── README.md
 ```
 
-## Quick Start
+## 🚀 Technology Stack
+
+### Frontend
+- **Language:** TypeScript 5.9
+- **Build Tool:** Vite 5.4
+- **Architecture:** Feature-Based Architecture
+- **Styling:** Vanilla CSS
+- **Module System:** ES Modules
+
+### Backend
+- **Runtime:** Node.js
+- **Framework:** Express.js 4.21
+- **Language:** TypeScript 5.6
+- **Database:** SQLite (better-sqlite3)
+- **Authentication:** JWT
+- **AI Integration:** OpenAI API
+- **Validation:** Zod
+- **File Upload:** Multer
+- **Architecture:** Layered/N-Tier
+
+## 🛠️ Development Setup
 
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
-- OpenAI API key
 
-### Installation
+### Frontend Setup
 
-1. **Clone and install dependencies:**
-   ```bash
-   cd backend
-   npm install
-   ```
-
-2. **Configure environment:**
-   ```bash
-   # Create .env file in backend/
-   OPENAI_API_KEY=your_openai_api_key
-   ANTHROPIC_API_KEY=your_anthropic_api_key  # Optional
-   PORT=3000
-   NODE_ENV=development
-   ```
-
-3. **Start the server:**
-   ```bash
-   npm run dev    # Development with hot reload
-   npm start      # Production
-   ```
-
-4. **Access the application:**
-   - Open `http://localhost:3000` in your browser
-   - Landing page redirects to conversation mode by default
-
-## Features
-
-### Board Game Mode
-- **141 Card Categories** covering vocabulary, grammar, language concepts, and comprehension
-- **Interactive gameplay** with dice rolling, player turns, and scoring
-- **Real-time speech recognition** with AI-powered feedback
-- **Visual and audio feedback** for correct/incorrect answers
-
-### Conversation Mode
-- **AI-powered dialogue** for natural speech practice
-- **Context-aware responses** tailored to speech therapy goals
-- **Voice input/output** for hands-free interaction
-
-### Assignment Mode
-- **Structured exercises** for targeted speech therapy
-- **Progress tracking** and performance metrics
-- **Customizable difficulty** levels
-
-## API Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/health` | GET | Health check |
-| `/api/transcribe` | POST | Audio transcription (Whisper) |
-| `/api/tts` | POST | Text-to-speech synthesis |
-| `/api/analyze` | POST | Phonetic analysis |
-| `/api/session/*` | * | Session management |
-| `/api/conversation/*` | * | Conversation agent |
-
-## Tech Stack
-
-### Backend
-- **Runtime**: Node.js with TypeScript
-- **Framework**: Express.js
-- **AI Services**: OpenAI (Whisper, GPT, TTS), Anthropic Claude
-
-### Frontend
-- **Framework**: Vanilla JavaScript (ES6+)
-- **Styling**: Custom CSS with categorized sections
-- **Audio**: Web Audio API
-
-### Architecture Patterns
-- **Modular handlers** for each card type
-- **Factory pattern** for processor creation
-- **Centralized state management**
-- **Event-driven audio system
-
-## Card Categories (141 Total)
-
-| Category Type | Examples |
-|--------------|----------|
-| **Vocabulary** | Animals, Food, Colors, Body Parts, Household Items |
-| **Grammar** | Verbs, Pronouns, Prepositions, Conjunctions |
-| **Language Concepts** | Synonyms, Antonyms, Analogies, Idioms |
-| **Comprehension** | Context Clues, Inferencing, Wh-Questions |
-| **Phonics** | Rhyming, Beginning Sounds, Blends |
-| **Social Skills** | Emotions, Manners, Safety Signs |
-
-## Documentation
-
-- [Architecture](docs/ARCHITECTURE.md) - System design, patterns, and data flow
-- [Flow](docs/FLOW.md) - User interaction and game flow diagrams
-- [Setup](docs/SETUP.md) - Detailed environment setup guide
-
-## Development
-
-### Running Tests
 ```bash
-cd backend
-npm test
+cd frontend
+npm install
+npm run dev        # Start dev server at http://localhost:5173
 ```
 
-### Building for Production
+### Backend Setup
+
 ```bash
 cd backend
-npm run build
+npm install
+
+# Create .env file from example
+cp .env.example .env
+# Edit .env and add your OPENAI_API_KEY
+
+npm run dev        # Start dev server at http://localhost:3000
 ```
 
-### Code Structure Guidelines
-- **Handlers**: One handler per card type in `frontend/scripts/handlers/`
-- **Data**: Card definitions in `frontend/scripts/data/boardgame-data.js`
-- **Styles**: CSS organized by category numbers [1-65] in `frontend/css/boardgame.css`
+### Full Stack Development
 
-## License
+Run both frontend and backend concurrently:
 
-Private - All rights reserved.
+```bash
+# Terminal 1 - Backend
+cd backend && npm run dev
+
+# Terminal 2 - Frontend
+cd frontend && npm run dev
+```
+
+## 📝 Available Scripts
+
+### Frontend (`/frontend`)
+```bash
+npm run dev          # Start Vite dev server
+npm run build        # Build for production (type-check + build)
+npm run preview      # Preview production build
+npm run typecheck    # Run TypeScript type checking
+npm run clean        # Clean build artifacts
+```
+
+### Backend (`/backend`)
+```bash
+npm run dev          # Start dev server with hot reload
+npm run build        # Compile TypeScript to JavaScript
+npm run start        # Run production build
+npm run typecheck    # Run TypeScript type checking
+npm run clean        # Clean dist folder
+```
+
+## 🐳 Docker Deployment
+
+```bash
+# Build Docker image
+docker build -t piper-app .
+
+# Run container
+docker run -p 3000:3000 -p 5173:5173 piper-app
+```
+
+## 🌐 Deployment
+
+This project is configured for deployment on [Render.com](https://render.com) using `render.yaml`.
+
+### Environment Variables
+
+**Backend** (`.env`):
+- `PORT` - Server port (default: 3000)
+- `NODE_ENV` - Environment (development/production)
+- `DATABASE_PATH` - SQLite database path
+- `JWT_SECRET` - JWT signing secret
+- `OPENAI_API_KEY` - OpenAI API key for PDF extraction
+- `CORS_ORIGIN` - Allowed CORS origin
+
+**Frontend** (`.env`):
+- `VITE_API_URL` - Backend API URL
+
+## 📚 Architecture
+
+### Frontend: Feature-Based Architecture
+- **Features**: Self-contained modules (`boardgame`, `therapist`, `card-browser`)
+- **Shared**: Reusable components, hooks, utilities, and types
+- **Services**: API communication layer
+- **Constants**: Static data and configurations
+
+### Backend: Layered Architecture
+- **API Layer**: Routes and middleware
+- **Service Layer**: Business logic
+- **Data Layer**: Database access
+- **Clear separation** between layers
+
+## 🎮 Card Categories
+
+The application includes **141+ speech therapy card categories** covering:
+- Language skills (vocabulary, grammar, comprehension)
+- Articulation practice
+- Sequencing and reasoning
+- Story comprehension
+- And more!
+
+## 🤖 AI Features
+
+- **PDF Evaluation Extraction**: Automatically extract patient information from evaluation PDFs
+- **IEP Goal Extraction**: Parse and extract therapy goals from IEP documents
+- **Intelligent Field Detection**: AI identifies missing or uncertain information
+
+## 📄 License
+
+[Add your license here]
+
+## 👥 Contributors
+
+[Add contributors here]
+
+## 🐛 Issues & Support
+
+For bugs and feature requests, please create an issue in the repository.
