@@ -1,0 +1,455 @@
+{
+  "Safety Signs": [
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/stop.png",
+          "label": "Stop sign"
+        }
+      ],
+      "answers": [
+        "Stop",
+        "You need to stop",
+        "Come to a complete stop",
+        "Stop your car"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/yield.png",
+          "label": "Yield sign"
+        }
+      ],
+      "answers": [
+        "Yield",
+        "Let others go first",
+        "Give way",
+        "Slow down and let others pass"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/exit.png",
+          "label": "Exit sign"
+        }
+      ],
+      "answers": [
+        "Exit",
+        "This is the way out",
+        "Go here to leave",
+        "The exit is here"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/no-symbol.png",
+          "label": "No symbol sign"
+        }
+      ],
+      "answers": [
+        "No",
+        "Not allowed",
+        "Prohibited",
+        "Do not do this",
+        "This is not allowed"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/do-not-enter.png",
+          "label": "Do not enter sign"
+        }
+      ],
+      "answers": [
+        "Do not enter",
+        "No entry",
+        "You cannot go in",
+        "Entry prohibited"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/one-way.png",
+          "label": "One way sign"
+        }
+      ],
+      "answers": [
+        "One way",
+        "Go this direction only",
+        "Traffic goes one direction",
+        "Only one direction allowed"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/speed-limit.png",
+          "label": "Speed limit sign"
+        }
+      ],
+      "answers": [
+        "Speed limit",
+        "Do not go faster than this",
+        "Maximum speed",
+        "Drive this speed or slower"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/crosswalk.png",
+          "label": "Crosswalk sign"
+        }
+      ],
+      "answers": [
+        "Crosswalk",
+        "Pedestrian crossing",
+        "People crossing",
+        "Watch for pedestrians"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/watch-children.png",
+          "label": "Watch for children sign"
+        }
+      ],
+      "answers": [
+        "Watch for children",
+        "Children playing",
+        "Kids nearby",
+        "Be careful of children"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/railroad.png",
+          "label": "Railroad crossing sign"
+        }
+      ],
+      "answers": [
+        "Railroad crossing",
+        "Train crossing",
+        "Watch for trains",
+        "Trains cross here"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/fire-truck.png",
+          "label": "Fire truck sign"
+        }
+      ],
+      "answers": [
+        "Fire truck ahead",
+        "Watch for fire trucks",
+        "Fire station nearby",
+        "Caution fire trucks"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/handicap.png",
+          "label": "Handicap accessible sign"
+        }
+      ],
+      "answers": [
+        "Handicap accessible",
+        "Wheelchair accessible",
+        "For people with disabilities",
+        "Accessible parking"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/restroom.png",
+          "label": "Restroom sign"
+        }
+      ],
+      "answers": [
+        "Restroom",
+        "Bathroom",
+        "Toilet",
+        "Restroom is here"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/first-aid.png",
+          "label": "First aid sign"
+        }
+      ],
+      "answers": [
+        "First aid",
+        "First aid station",
+        "Medical help here",
+        "Get help for injuries"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/fire-extinguisher.png",
+          "label": "Fire extinguisher sign"
+        }
+      ],
+      "answers": [
+        "Fire extinguisher",
+        "Fire extinguisher is here",
+        "Use to put out fire",
+        "Fire safety equipment"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/emergency-phone.png",
+          "label": "Emergency phone sign"
+        }
+      ],
+      "answers": [
+        "Emergency phone",
+        "Phone for emergencies",
+        "Call for help here",
+        "Emergency call station"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/wet-floor.png",
+          "label": "Wet floor sign"
+        }
+      ],
+      "answers": [
+        "Wet floor",
+        "Caution wet floor",
+        "Slippery when wet",
+        "Be careful the floor is wet"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/poison.png",
+          "label": "Poison warning sign"
+        }
+      ],
+      "answers": [
+        "Poison",
+        "Danger poison",
+        "Do not eat or drink",
+        "Poisonous substance"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/wash-hands.png",
+          "label": "Wash hands sign"
+        }
+      ],
+      "answers": [
+        "Wash hands",
+        "Wash your hands",
+        "Clean your hands",
+        "Hand washing required"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/no-running.png",
+          "label": "No running sign"
+        }
+      ],
+      "answers": [
+        "No running",
+        "Do not run",
+        "Walk only",
+        "Running is not allowed"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/no-pets.png",
+          "label": "No pets sign"
+        }
+      ],
+      "answers": [
+        "No pets",
+        "Pets not allowed",
+        "No animals",
+        "Do not bring pets"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/no-littering.png",
+          "label": "No littering sign"
+        }
+      ],
+      "answers": [
+        "No littering",
+        "Do not throw trash",
+        "Put trash in the bin",
+        "Keep area clean"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/keep-off-grass.png",
+          "label": "Keep off grass sign"
+        }
+      ],
+      "answers": [
+        "Keep off the grass",
+        "Do not walk on the grass",
+        "Stay off the grass",
+        "No walking on grass"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/lifeguard.png",
+          "label": "Lifeguard on duty sign"
+        }
+      ],
+      "answers": [
+        "Lifeguard on duty",
+        "A lifeguard is watching",
+        "Lifeguard is here",
+        "There is a lifeguard"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/no-swimming.png",
+          "label": "No swimming sign"
+        }
+      ],
+      "answers": [
+        "No swimming",
+        "Do not swim here",
+        "Swimming is not allowed",
+        "Swimming prohibited"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/no-diving.png",
+          "label": "No diving sign"
+        }
+      ],
+      "answers": [
+        "No diving",
+        "Do not dive",
+        "Diving is not allowed",
+        "Diving prohibited"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/beach-closed.png",
+          "label": "Beach closed sign"
+        }
+      ],
+      "answers": [
+        "Beach closed",
+        "The beach is closed",
+        "Do not go on the beach",
+        "Beach is not open"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/rip-current.png",
+          "label": "Rip current warning sign"
+        }
+      ],
+      "answers": [
+        "Rip current warning",
+        "Dangerous currents",
+        "Strong current",
+        "Be careful of currents"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/shark-warning.png",
+          "label": "Shark warning sign"
+        }
+      ],
+      "answers": [
+        "Shark warning",
+        "Sharks in the water",
+        "Be careful of sharks",
+        "Danger sharks nearby"
+      ]
+    },
+    {
+      "question": "What does this sign mean?",
+      "images": [
+        {
+          "image": "images/signs/jellyfish.png",
+          "label": "Jellyfish warning sign"
+        }
+      ],
+      "answers": [
+        "Jellyfish warning",
+        "Jellyfish in the water",
+        "Be careful of jellyfish",
+        "Watch out for jellyfish"
+      ]
+    }
+  ]
+}

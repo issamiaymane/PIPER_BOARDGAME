@@ -1,0 +1,1628 @@
+{
+  "Analogies Elementary": [
+    {
+      "question": "Dog is to bark as cat is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/dog_cat/dog.png",
+          "label": "dog"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/dog_cat/cat.png",
+          "label": "cat"
+        }
+      ],
+      "choices": [
+        "meow",
+        "bark"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Bird is to fly as fish is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/bird_fish/bird.png",
+          "label": "bird"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/bird_fish/fish.png",
+          "label": "fish"
+        }
+      ],
+      "choices": [
+        "swim",
+        "walk"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Eye is to see as ear is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/eye_ear/eye.png",
+          "label": "eye"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/eye_ear/ear.png",
+          "label": "ear"
+        }
+      ],
+      "choices": [
+        "hear",
+        "smell"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Night is to dark as day is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/night_day/night.png",
+          "label": "night"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/night_day/day.png",
+          "label": "day"
+        }
+      ],
+      "choices": [
+        "light",
+        "dark"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Hand is to glove as foot is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/hand_foot/hand.png",
+          "label": "hand"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/hand_foot/foot.png",
+          "label": "foot"
+        }
+      ],
+      "choices": [
+        "sock",
+        "hat"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Apple is to red as banana is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/apple_banana/apple.png",
+          "label": "apple"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/apple_banana/banana.png",
+          "label": "banana"
+        }
+      ],
+      "choices": [
+        "yellow",
+        "green"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fire is to hot as ice is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/fire_ice/fire.png",
+          "label": "fire"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/fire_ice/ice.png",
+          "label": "ice"
+        }
+      ],
+      "choices": [
+        "cold",
+        "warm"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Cow is to moo as pig is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/cow_pig/cow.png",
+          "label": "cow"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/cow_pig/pig.png",
+          "label": "pig"
+        }
+      ],
+      "choices": [
+        "oink",
+        "moo"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Hat is to head as shoe is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/hat_shoe/hat.png",
+          "label": "hat"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/hat_shoe/shoe.png",
+          "label": "shoe"
+        }
+      ],
+      "choices": [
+        "foot",
+        "hand"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Baby is to crib as bird is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/baby_bird/baby.png",
+          "label": "baby"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/baby_bird/bird.png",
+          "label": "bird"
+        }
+      ],
+      "choices": [
+        "nest",
+        "cage"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Rain is to wet as sun is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/rain_sun/rain.png",
+          "label": "rain"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/rain_sun/sun.png",
+          "label": "sun"
+        }
+      ],
+      "choices": [
+        "dry",
+        "wet"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Nose is to smell as tongue is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/nose_toungue/nose.png",
+          "label": "nose"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/nose_toungue/toungue.png",
+          "label": "toungue"
+        }
+      ],
+      "choices": [
+        "taste",
+        "see"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Puppy is to dog as kitten is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/puppy_kitten/puppy.png",
+          "label": "puppy"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/puppy_kitten/kitten.png",
+          "label": "kitten"
+        }
+      ],
+      "choices": [
+        "cat",
+        "dog"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Bed is to sleep as chair is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/bed_chair/bed.png",
+          "label": "bed"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/bed_chair/chair.png",
+          "label": "chair"
+        }
+      ],
+      "choices": [
+        "sit",
+        "stand"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Pencil is to write as scissors is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/pencil_scissors/pencil.png",
+          "label": "pencil"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/pencil_scissors/scissors.png",
+          "label": "scissors"
+        }
+      ],
+      "choices": [
+        "cut",
+        "draw"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Up is to down as in is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/up_in/up.png",
+          "label": "up"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/up_in/in.png",
+          "label": "in"
+        }
+      ],
+      "choices": [
+        "out",
+        "up"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Milk is to drink as bread is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/milk_bread/milk.png",
+          "label": "milk"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/milk_bread/bread.png",
+          "label": "bread"
+        }
+      ],
+      "choices": [
+        "eat",
+        "drink"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Tree is to tall as flower is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/tree_flower/tree.png",
+          "label": "tree"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/tree_flower/flower.png",
+          "label": "flower"
+        }
+      ],
+      "choices": [
+        "short",
+        "tall"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Frog is to hop as snake is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/frog_snake/frog.png",
+          "label": "frog"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/frog_snake/snake.png",
+          "label": "snake"
+        }
+      ],
+      "choices": [
+        "slither",
+        "jump"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Car is to road as boat is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/car_boat/car.png",
+          "label": "car"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/car_boat/boat.png",
+          "label": "boat"
+        }
+      ],
+      "choices": [
+        "water",
+        "sky"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Happy is to smile as sad is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/happy_sad/happy.png",
+          "label": "happy"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/happy_sad/sad.png",
+          "label": "sad"
+        }
+      ],
+      "choices": [
+        "cry",
+        "laugh"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Soap is to clean as dirt is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/soap_dirt/soap.png",
+          "label": "soap"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/soap_dirt/dirt.png",
+          "label": "dirt"
+        }
+      ],
+      "choices": [
+        "dirty",
+        "clean"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Lion is to roar as duck is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/lion_duck/lion.png",
+          "label": "lion"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/lion_duck/duck.png",
+          "label": "duck"
+        }
+      ],
+      "choices": [
+        "quack",
+        "roar"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Door is to open as light is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/door_light/door.png",
+          "label": "door"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/door_light/light.png",
+          "label": "light"
+        }
+      ],
+      "choices": [
+        "on",
+        "off"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Brother is to boy as sister is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/brother_sister/brother.png",
+          "label": "brother"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/brother_sister/sister.png",
+          "label": "sister"
+        }
+      ],
+      "choices": [
+        "girl",
+        "boy"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Winter is to cold as summer is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/winter_summer/winter.png",
+          "label": "winter"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/winter_summer/summer.png",
+          "label": "summer"
+        }
+      ],
+      "choices": [
+        "hot",
+        "cold"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Teeth is to brush as hair is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/teeth_hair/teeth.png",
+          "label": "teeth"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/teeth_hair/hair.png",
+          "label": "hair"
+        }
+      ],
+      "choices": [
+        "comb",
+        "brush"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Moon is to night as sun is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/moon_sun/moon.png",
+          "label": "moon"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/moon_sun/sun.png",
+          "label": "sun"
+        }
+      ],
+      "choices": [
+        "day",
+        "night"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Pig is to farm as lion is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/pig_lion/pig.png",
+          "label": "pig"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/pig_lion/lion.png",
+          "label": "lion"
+        }
+      ],
+      "choices": [
+        "zoo",
+        "farm"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Spoon is to soup as fork is to ___.",
+      "images": [
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/spoon_fork/spoon.png",
+          "label": "spoon"
+        },
+        {
+          "image": "../assets/images/cards/3_analogies_elementary/spoon_fork/fork.png",
+          "label": "fork"
+        }
+      ],
+      "choices": [
+        "food",
+        "soup"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "Analogies High": [
+    {
+      "question": "architect : blueprint :: composer : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/architect_composer/architect.png",
+          "label": "architect"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/architect_composer/composer.png",
+          "label": "composer"
+        }
+      ],
+      "choices": [
+        "score",
+        "music"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "brush : painter :: calculator : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/brush_calculator/brush.png",
+          "label": "brush"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/brush_calculator/calculator.png",
+          "label": "calculator"
+        }
+      ],
+      "choices": [
+        "mathematician",
+        "teacher"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "drought : water :: famine : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/drought_famine/drought.png",
+          "label": "drought"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/drought_famine/famine.png",
+          "label": "famine"
+        }
+      ],
+      "choices": [
+        "food",
+        "rain"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "conductor : orchestra :: director : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/conductor_director/conductor.png",
+          "label": "conductor"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/conductor_director/director.png",
+          "label": "director"
+        }
+      ],
+      "choices": [
+        "movie",
+        "theater"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "palette : painter :: keyboard : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/palette_keyboard/palette.png",
+          "label": "palette"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/palette_keyboard/keyboard.png",
+          "label": "keyboard"
+        }
+      ],
+      "choices": [
+        "writer",
+        "musician"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "chronology : time :: geography : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/chronology_geography/chronology.png",
+          "label": "chronology"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/chronology_geography/geography.png",
+          "label": "geography"
+        }
+      ],
+      "choices": [
+        "place",
+        "maps"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "diagnosis : disease :: verdict : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/diagnosis_verdict/diagnosis.png",
+          "label": "diagnosis"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/diagnosis_verdict/verdict.png",
+          "label": "verdict"
+        }
+      ],
+      "choices": [
+        "trial",
+        "judge"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "submarine : underwater :: satellite : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/submarine_satellite/submarine.png",
+          "label": "submarine"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/submarine_satellite/satellite.png",
+          "label": "satellite"
+        }
+      ],
+      "choices": [
+        "space",
+        "sky"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "hypothesis : experiment :: question : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/hypothesis_question/hypothesis.png",
+          "label": "hypothesis"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/hypothesis_question/question.png",
+          "label": "question"
+        }
+      ],
+      "choices": [
+        "answer",
+        "test"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "legislature : laws :: court : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/legislature_court/legislature.png",
+          "label": "legislature"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/legislature_court/court.png",
+          "label": "court"
+        }
+      ],
+      "choices": [
+        "justice",
+        "lawyers"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "telescope : distant :: microscope : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/telescope_microscope/telescope.png",
+          "label": "telescope"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/telescope_microscope/microscope.png",
+          "label": "microscope"
+        }
+      ],
+      "choices": [
+        "tiny",
+        "close"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "teacher : school :: nurse : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/teacher_nurse/teacher.png",
+          "label": "teacher"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/teacher_nurse/nurse.png",
+          "label": "nurse"
+        }
+      ],
+      "choices": [
+        "hospital",
+        "clinic"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "hibernation : winter :: migration : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/hibernation_migration/hibernation.png",
+          "label": "hibernation"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/hibernation_migration/migration.png",
+          "label": "migration"
+        }
+      ],
+      "choices": [
+        "seasons",
+        "birds"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "vaccination : prevention :: medicine : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/vaccination_medicine/vaccination.png",
+          "label": "vaccination"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/vaccination_medicine/medicine.png",
+          "label": "medicine"
+        }
+      ],
+      "choices": [
+        "treatment",
+        "cure"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "constitution : country :: bylaws : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/constitution_bylaws/constitution.png",
+          "label": "constitution"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/constitution_bylaws/bylaws.png",
+          "label": "bylaws"
+        }
+      ],
+      "choices": [
+        "organization",
+        "company"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "prologue : beginning :: epilogue : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/prologue_epilogue/prologue.png",
+          "label": "prologue"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/prologue_epilogue/epilogue.png",
+          "label": "epilogue"
+        }
+      ],
+      "choices": [
+        "ending",
+        "middle"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "inflation : prices :: erosion : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/inflation_erosion/inflation.png",
+          "label": "inflation"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/inflation_erosion/erosion.png",
+          "label": "erosion"
+        }
+      ],
+      "choices": [
+        "soil",
+        "rocks"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "fiction : imaginary :: nonfiction : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/fiction_nonfiction/fiction.png",
+          "label": "fiction"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/fiction_nonfiction/nonfiction.png",
+          "label": "nonfiction"
+        }
+      ],
+      "choices": [
+        "real",
+        "factual"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "peninsula : land :: bay : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/peninsula_bay/peninsula.png",
+          "label": "peninsula"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/peninsula_bay/bay.png",
+          "label": "bay"
+        }
+      ],
+      "choices": [
+        "water",
+        "ocean"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "renovation : building :: restoration : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/renovation_restoration/renovation.png",
+          "label": "renovation"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/renovation_restoration/restoration.png",
+          "label": "restoration"
+        }
+      ],
+      "choices": [
+        "artwork",
+        "painting"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "equation : math :: sentence : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/equation_sentence/equation.png",
+          "label": "equation"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/equation_sentence/sentence.png",
+          "label": "sentence"
+        }
+      ],
+      "choices": [
+        "grammar",
+        "writing"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "lens : camera :: retina : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/lens_retina/lens.png",
+          "label": "lens"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/lens_retina/retina.png",
+          "label": "retina"
+        }
+      ],
+      "choices": [
+        "eye",
+        "brain"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "practice : game :: studying : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/practice_studying/practice.png",
+          "label": "practice"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/practice_studying/studying.png",
+          "label": "studying"
+        }
+      ],
+      "choices": [
+        "test",
+        "homework"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "monopoly : competition :: dictatorship : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/monopoly_dictatorship/monopoly.png",
+          "label": "monopoly"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/monopoly_dictatorship/dictatorship.png",
+          "label": "dictatorship"
+        }
+      ],
+      "choices": [
+        "democracy",
+        "freedom"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "apprentice : expert :: amateur : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/apprentice_amateur/apprentice.png",
+          "label": "apprentice"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/apprentice_amateur/amateur.png",
+          "label": "amateur"
+        }
+      ],
+      "choices": [
+        "professional",
+        "beginner"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "fossil : dinosaur :: artifact : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/fossil_artifact/fossil.png",
+          "label": "fossil"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/fossil_artifact/artifact.png",
+          "label": "artifact"
+        }
+      ],
+      "choices": [
+        "civilization",
+        "history"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "exercise : strength :: reading : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/exercise_reading/exercise.png",
+          "label": "exercise"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/exercise_reading/reading.png",
+          "label": "reading"
+        }
+      ],
+      "choices": [
+        "vocabulary",
+        "knowledge"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "summit : mountain :: mouth : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/summit_mouth/summit.png",
+          "label": "summit"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/summit_mouth/mouth.png",
+          "label": "mouth"
+        }
+      ],
+      "choices": [
+        "river",
+        "ocean"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "diplomat : peace :: soldier : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/diplomat_soldier/diplomat.png",
+          "label": "diplomat"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/diplomat_soldier/soldier.png",
+          "label": "soldier"
+        }
+      ],
+      "choices": [
+        "war",
+        "battle"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "symptom : illness :: clue : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/4_analogies_high/symptom_clue/symptom.png",
+          "label": "symptom"
+        },
+        {
+          "image": "../assets/images/cards/4_analogies_high/symptom_clue/clue.png",
+          "label": "clue"
+        }
+      ],
+      "choices": [
+        "mystery",
+        "crime"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "Analogies Middle": [
+    {
+      "question": "plane : air :: boat : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/plane_boat/plane.png",
+          "label": "plane"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/plane_boat/boat.png",
+          "label": "boat"
+        }
+      ],
+      "choices": [
+        "water",
+        "land"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "doctor : hospital :: teacher : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/doctor_teacher/doctor.png",
+          "label": "doctor"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/doctor_teacher/teacher.png",
+          "label": "teacher"
+        }
+      ],
+      "choices": [
+        "school",
+        "office"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "bee : hive :: spider : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/bee_spider/bee.png",
+          "label": "bee"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/bee_spider/spider.png",
+          "label": "spider"
+        }
+      ],
+      "choices": [
+        "web",
+        "nest"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "author : book :: artist : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/author_artist/author.png",
+          "label": "author"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/author_artist/artist.png",
+          "label": "artist"
+        }
+      ],
+      "choices": [
+        "painting",
+        "drawing"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "calf : cow :: lamb : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/calf_lamb/calf.png",
+          "label": "calf"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/calf_lamb/lamb.png",
+          "label": "lamb"
+        }
+      ],
+      "choices": [
+        "sheep",
+        "goat"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "finger : hand :: toe : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/finger_toe/finger.png",
+          "label": "finger"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/finger_toe/toe.png",
+          "label": "toe"
+        }
+      ],
+      "choices": [
+        "foot",
+        "leg"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "chef : kitchen :: pilot : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/chef_pilot/chef.png",
+          "label": "chef"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/chef_pilot/pilot.png",
+          "label": "pilot"
+        }
+      ],
+      "choices": [
+        "cockpit",
+        "airport"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "peel : banana :: shell : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/peel_shell/peel.png",
+          "label": "peel"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/peel_shell/shell.png",
+          "label": "shell"
+        }
+      ],
+      "choices": [
+        "egg",
+        "nut"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "thermometer : temperature :: clock : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/thermometer_clock/thermometer.png",
+          "label": "thermometer"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/thermometer_clock/clock.png",
+          "label": "clock"
+        }
+      ],
+      "choices": [
+        "time",
+        "hours"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "pages : book :: keys : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/pages_keys/pages.png",
+          "label": "pages"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/pages_keys/keys.png",
+          "label": "keys"
+        }
+      ],
+      "choices": [
+        "piano",
+        "door"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "laugh : happy :: cry : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/laugh_cry/laugh.png",
+          "label": "laugh"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/laugh_cry/cry.png",
+          "label": "cry"
+        }
+      ],
+      "choices": [
+        "sad",
+        "angry"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "ocean : whale :: forest : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/ocean_forest/ocean.png",
+          "label": "ocean"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/ocean_forest/forest.png",
+          "label": "forest"
+        }
+      ],
+      "choices": [
+        "deer",
+        "fish"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "brick : house :: log : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/brick_log/brick.png",
+          "label": "brick"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/brick_log/log.png",
+          "label": "log"
+        }
+      ],
+      "choices": [
+        "cabin",
+        "fire"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "telescope : stars :: microscope : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/telescope_microscope/telescope.png",
+          "label": "telescope"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/telescope_microscope/microscope.png",
+          "label": "microscope"
+        }
+      ],
+      "choices": [
+        "germs",
+        "planets"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "wool : sheep :: feathers : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/wool_feathers/wool.png",
+          "label": "wool"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/wool_feathers/feathers.png",
+          "label": "feathers"
+        }
+      ],
+      "choices": [
+        "bird",
+        "pillow"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "seed : plant :: egg : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/seed_egg/seed.png",
+          "label": "seed"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/seed_egg/egg.png",
+          "label": "egg"
+        }
+      ],
+      "choices": [
+        "chicken",
+        "nest"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "desert : dry :: rainforest : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/desert_rainforest/desert.png",
+          "label": "desert"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/desert_rainforest/rainforest.png",
+          "label": "rainforest"
+        }
+      ],
+      "choices": [
+        "wet",
+        "hot"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "dentist : teeth :: eye doctor : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/dentist_eyedoctor/dentist.png",
+          "label": "dentist"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/dentist_eyedoctor/eyedoctor.png",
+          "label": "eyedoctor"
+        }
+      ],
+      "choices": [
+        "eyes",
+        "glasses"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "envelope : letter :: box : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/envelope_box/envelope.png",
+          "label": "envelope"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/envelope_box/box.png",
+          "label": "box"
+        }
+      ],
+      "choices": [
+        "package",
+        "gift"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "book : read :: song : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/book_song/book.png",
+          "label": "book"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/book_song/song.png",
+          "label": "song"
+        }
+      ],
+      "choices": [
+        "listen",
+        "sing"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "cow : farm :: frog : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/cow_frog/cow.png",
+          "label": "cow"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/cow_frog/frog.png",
+          "label": "frog"
+        }
+      ],
+      "choices": [
+        "pond",
+        "forest"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "brush : paint :: pen : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/brush_pen/brush.png",
+          "label": "brush"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/brush_pen/pen.png",
+          "label": "pen"
+        }
+      ],
+      "choices": [
+        "write",
+        "draw"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "glove : hand :: sock : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/glove_sock/glove.png",
+          "label": "glove"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/glove_sock/sock.png",
+          "label": "sock"
+        }
+      ],
+      "choices": [
+        "foot",
+        "shoe"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "flour : bread :: oranges : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/flour_oranges/flour.png",
+          "label": "flour"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/flour_oranges/oranges.png",
+          "label": "oranges"
+        }
+      ],
+      "choices": [
+        "juice",
+        "fruit"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "tadpole : frog :: caterpillar : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/tadpole_caterpillar/tadpole.png",
+          "label": "tadpole"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/tadpole_caterpillar/caterpillar.png",
+          "label": "caterpillar"
+        }
+      ],
+      "choices": [
+        "butterfly",
+        "moth"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "chapter : book :: episode : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/chapter_episode/chapter.png",
+          "label": "chapter"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/chapter_episode/episode.png",
+          "label": "episode"
+        }
+      ],
+      "choices": [
+        "show",
+        "movie"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "paw : dog :: hoof : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/paw_hoof/paw.png",
+          "label": "paw"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/paw_hoof/hoof.png",
+          "label": "hoof"
+        }
+      ],
+      "choices": [
+        "horse",
+        "cow"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "scale : fish :: fur : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/scale_fur/scale.png",
+          "label": "scale"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/scale_fur/fur.png",
+          "label": "fur"
+        }
+      ],
+      "choices": [
+        "bear",
+        "coat"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "oven : bake :: refrigerator : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/oven_refrigerator/oven.png",
+          "label": "oven"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/oven_refrigerator/refrigerator.png",
+          "label": "refrigerator"
+        }
+      ],
+      "choices": [
+        "cool",
+        "freeze"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "map : places :: dictionary : ______",
+      "images": [
+        {
+          "image": "../assets/images/cards/5_analogies_middle/map_dictionary/map.png",
+          "label": "map"
+        },
+        {
+          "image": "../assets/images/cards/5_analogies_middle/map_dictionary/dictionary.png",
+          "label": "dictionary"
+        }
+      ],
+      "choices": [
+        "words",
+        "books"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

@@ -1,0 +1,940 @@
+{
+  "Rhyming": [
+    {
+      "question": "What rhymes with shed?",
+      "images": [
+        {
+          "image": "images/rhyming/shed.png",
+          "label": "shed"
+        },
+        {
+          "image": "images/rhyming/bed.png",
+          "label": "bed"
+        }
+      ],
+      "answers": [
+        "bed",
+        "Bed"
+      ]
+    },
+    {
+      "question": "What rhymes with cat?",
+      "images": [
+        {
+          "image": "images/rhyming/cat.png",
+          "label": "cat"
+        },
+        {
+          "image": "images/rhyming/hat.png",
+          "label": "hat"
+        }
+      ],
+      "answers": [
+        "hat",
+        "Hat"
+      ]
+    },
+    {
+      "question": "What rhymes with sun?",
+      "images": [
+        {
+          "image": "images/rhyming/sun.png",
+          "label": "sun"
+        },
+        {
+          "image": "images/rhyming/bun.png",
+          "label": "bun"
+        }
+      ],
+      "answers": [
+        "bun",
+        "Bun"
+      ]
+    },
+    {
+      "question": "What rhymes with shell?",
+      "images": [
+        {
+          "image": "images/rhyming/shell.png",
+          "label": "shell"
+        },
+        {
+          "image": "images/rhyming/bell.png",
+          "label": "bell"
+        }
+      ],
+      "answers": [
+        "bell",
+        "Bell"
+      ]
+    },
+    {
+      "question": "What rhymes with star?",
+      "images": [
+        {
+          "image": "images/rhyming/star.png",
+          "label": "star"
+        },
+        {
+          "image": "images/rhyming/car.png",
+          "label": "car"
+        }
+      ],
+      "answers": [
+        "car",
+        "Car"
+      ]
+    },
+    {
+      "question": "What rhymes with boat?",
+      "images": [
+        {
+          "image": "images/rhyming/boat.png",
+          "label": "boat"
+        },
+        {
+          "image": "images/rhyming/coat.png",
+          "label": "coat"
+        }
+      ],
+      "answers": [
+        "coat",
+        "Coat"
+      ]
+    },
+    {
+      "question": "What rhymes with fish?",
+      "images": [
+        {
+          "image": "images/rhyming/fish.png",
+          "label": "fish"
+        },
+        {
+          "image": "images/rhyming/dish.png",
+          "label": "dish"
+        }
+      ],
+      "answers": [
+        "dish",
+        "Dish"
+      ]
+    },
+    {
+      "question": "What rhymes with whale?",
+      "images": [
+        {
+          "image": "images/rhyming/whale.png",
+          "label": "whale"
+        },
+        {
+          "image": "images/rhyming/pail.png",
+          "label": "pail"
+        }
+      ],
+      "answers": [
+        "pail",
+        "Pail",
+        "bucket",
+        "Bucket"
+      ]
+    },
+    {
+      "question": "What rhymes with bee?",
+      "images": [
+        {
+          "image": "images/rhyming/bee.png",
+          "label": "bee"
+        },
+        {
+          "image": "images/rhyming/tree.png",
+          "label": "tree"
+        }
+      ],
+      "answers": [
+        "tree",
+        "Tree"
+      ]
+    },
+    {
+      "question": "What rhymes with moon?",
+      "images": [
+        {
+          "image": "images/rhyming/moon.png",
+          "label": "moon"
+        },
+        {
+          "image": "images/rhyming/spoon.png",
+          "label": "spoon"
+        }
+      ],
+      "answers": [
+        "spoon",
+        "Spoon"
+      ]
+    },
+    {
+      "question": "What rhymes with cake?",
+      "images": [
+        {
+          "image": "images/rhyming/cake.png",
+          "label": "cake"
+        },
+        {
+          "image": "images/rhyming/lake.png",
+          "label": "lake"
+        }
+      ],
+      "answers": [
+        "lake",
+        "Lake"
+      ]
+    },
+    {
+      "question": "What rhymes with bug?",
+      "images": [
+        {
+          "image": "images/rhyming/bug.png",
+          "label": "bug"
+        },
+        {
+          "image": "images/rhyming/rug.png",
+          "label": "rug"
+        }
+      ],
+      "answers": [
+        "rug",
+        "Rug"
+      ]
+    },
+    {
+      "question": "What rhymes with rain?",
+      "images": [
+        {
+          "image": "images/rhyming/rain.png",
+          "label": "rain"
+        },
+        {
+          "image": "images/rhyming/train.png",
+          "label": "train"
+        }
+      ],
+      "answers": [
+        "train",
+        "Train"
+      ]
+    },
+    {
+      "question": "What rhymes with fox?",
+      "images": [
+        {
+          "image": "images/rhyming/fox.png",
+          "label": "fox"
+        },
+        {
+          "image": "images/rhyming/box.png",
+          "label": "box"
+        }
+      ],
+      "answers": [
+        "box",
+        "Box"
+      ]
+    },
+    {
+      "question": "What rhymes with log?",
+      "images": [
+        {
+          "image": "images/rhyming/log.png",
+          "label": "log"
+        },
+        {
+          "image": "images/rhyming/dog.png",
+          "label": "dog"
+        }
+      ],
+      "answers": [
+        "dog",
+        "Dog"
+      ]
+    },
+    {
+      "question": "What rhymes with snail?",
+      "images": [
+        {
+          "image": "images/rhyming/snail.png",
+          "label": "snail"
+        },
+        {
+          "image": "images/rhyming/tail.png",
+          "label": "tail"
+        }
+      ],
+      "answers": [
+        "tail",
+        "Tail"
+      ]
+    },
+    {
+      "question": "What rhymes with ring?",
+      "images": [
+        {
+          "image": "images/rhyming/ring.png",
+          "label": "ring"
+        },
+        {
+          "image": "images/rhyming/swing.png",
+          "label": "swing"
+        }
+      ],
+      "answers": [
+        "swing",
+        "Swing"
+      ]
+    },
+    {
+      "question": "What rhymes with nose?",
+      "images": [
+        {
+          "image": "images/rhyming/nose.png",
+          "label": "nose"
+        },
+        {
+          "image": "images/rhyming/toes.png",
+          "label": "toes"
+        }
+      ],
+      "answers": [
+        "toes",
+        "Toes",
+        "toe",
+        "Toe"
+      ]
+    },
+    {
+      "question": "What rhymes with wave?",
+      "images": [
+        {
+          "image": "images/rhyming/wave.png",
+          "label": "wave"
+        },
+        {
+          "image": "images/rhyming/cave.png",
+          "label": "cave"
+        }
+      ],
+      "answers": [
+        "cave",
+        "Cave"
+      ]
+    },
+    {
+      "question": "What rhymes with light?",
+      "images": [
+        {
+          "image": "images/rhyming/light.png",
+          "label": "light"
+        },
+        {
+          "image": "images/rhyming/kite.png",
+          "label": "kite"
+        }
+      ],
+      "answers": [
+        "kite",
+        "Kite"
+      ]
+    },
+    {
+      "question": "What rhymes with fan?",
+      "images": [
+        {
+          "image": "images/rhyming/fan.png",
+          "label": "fan"
+        },
+        {
+          "image": "images/rhyming/pan.png",
+          "label": "pan"
+        }
+      ],
+      "answers": [
+        "pan",
+        "Pan"
+      ]
+    },
+    {
+      "question": "What rhymes with duck?",
+      "images": [
+        {
+          "image": "images/rhyming/duck.png",
+          "label": "duck"
+        },
+        {
+          "image": "images/rhyming/truck.png",
+          "label": "truck"
+        }
+      ],
+      "answers": [
+        "truck",
+        "Truck"
+      ]
+    },
+    {
+      "question": "What rhymes with nest?",
+      "images": [
+        {
+          "image": "images/rhyming/nest.png",
+          "label": "nest"
+        },
+        {
+          "image": "images/rhyming/vest.png",
+          "label": "vest"
+        }
+      ],
+      "answers": [
+        "vest",
+        "Vest"
+      ]
+    },
+    {
+      "question": "What rhymes with frog?",
+      "images": [
+        {
+          "image": "images/rhyming/frog.png",
+          "label": "frog"
+        },
+        {
+          "image": "images/rhyming/log.png",
+          "label": "log"
+        }
+      ],
+      "answers": [
+        "log",
+        "Log"
+      ]
+    },
+    {
+      "question": "What rhymes with ball?",
+      "images": [
+        {
+          "image": "images/rhyming/ball.png",
+          "label": "ball"
+        },
+        {
+          "image": "images/rhyming/wall.png",
+          "label": "wall"
+        }
+      ],
+      "answers": [
+        "wall",
+        "Wall"
+      ]
+    },
+    {
+      "question": "What rhymes with sand?",
+      "images": [
+        {
+          "image": "images/rhyming/sand.png",
+          "label": "sand"
+        },
+        {
+          "image": "images/rhyming/hand.png",
+          "label": "hand"
+        }
+      ],
+      "answers": [
+        "hand",
+        "Hand"
+      ]
+    },
+    {
+      "question": "What rhymes with crown?",
+      "images": [
+        {
+          "image": "images/rhyming/crown.png",
+          "label": "crown"
+        },
+        {
+          "image": "images/rhyming/gown.png",
+          "label": "gown"
+        }
+      ],
+      "answers": [
+        "gown",
+        "Gown"
+      ]
+    },
+    {
+      "question": "What rhymes with chair?",
+      "images": [
+        {
+          "image": "images/rhyming/chair.png",
+          "label": "chair"
+        },
+        {
+          "image": "images/rhyming/hair.png",
+          "label": "hair"
+        }
+      ],
+      "answers": [
+        "hair",
+        "Hair"
+      ]
+    },
+    {
+      "question": "What rhymes with clock?",
+      "images": [
+        {
+          "image": "images/rhyming/clock.png",
+          "label": "clock"
+        },
+        {
+          "image": "images/rhyming/sock.png",
+          "label": "sock"
+        }
+      ],
+      "answers": [
+        "sock",
+        "Sock"
+      ]
+    },
+    {
+      "question": "What rhymes with map?",
+      "images": [
+        {
+          "image": "images/rhyming/map.png",
+          "label": "map"
+        },
+        {
+          "image": "images/rhyming/cap.png",
+          "label": "cap"
+        }
+      ],
+      "answers": [
+        "cap",
+        "Cap"
+      ]
+    }
+  ],
+  "Rhyming - Match The Words That Rhyme": [
+    {
+      "question": "Which words rhyme with sock?",
+      "images": [
+        {
+          "image": "images/rhyming-match/sock.png",
+          "label": "A sock"
+        }
+      ],
+      "choices": [
+        "lock",
+        "clock",
+        "rock"
+      ]
+    },
+    {
+      "question": "Which words rhyme with hat?",
+      "images": [
+        {
+          "image": "images/rhyming-match/hat.png",
+          "label": "A hat"
+        }
+      ],
+      "choices": [
+        "bat",
+        "sun",
+        "cat"
+      ]
+    },
+    {
+      "question": "Which words rhyme with bell?",
+      "images": [
+        {
+          "image": "images/rhyming-match/bell.png",
+          "label": "A bell"
+        }
+      ],
+      "choices": [
+        "shell",
+        "cup",
+        "well"
+      ]
+    },
+    {
+      "question": "Which words rhyme with cake?",
+      "images": [
+        {
+          "image": "images/rhyming-match/cake.png",
+          "label": "A cake"
+        }
+      ],
+      "choices": [
+        "rake",
+        "tree",
+        "lake"
+      ]
+    },
+    {
+      "question": "Which words rhyme with bug?",
+      "images": [
+        {
+          "image": "images/rhyming-match/bug.png",
+          "label": "A bug"
+        }
+      ],
+      "choices": [
+        "mug",
+        "ball",
+        "rug"
+      ]
+    },
+    {
+      "question": "Which words rhyme with star?",
+      "images": [
+        {
+          "image": "images/rhyming-match/star.png",
+          "label": "A star"
+        }
+      ],
+      "choices": [
+        "jar",
+        "bed",
+        "car"
+      ]
+    },
+    {
+      "question": "Which words rhyme with fish?",
+      "images": [
+        {
+          "image": "images/rhyming-match/fish.png",
+          "label": "A fish"
+        }
+      ],
+      "choices": [
+        "dish",
+        "dog",
+        "wish"
+      ]
+    },
+    {
+      "question": "Which words rhyme with ring?",
+      "images": [
+        {
+          "image": "images/rhyming-match/ring.png",
+          "label": "A ring"
+        }
+      ],
+      "choices": [
+        "king",
+        "boat",
+        "swing"
+      ]
+    },
+    {
+      "question": "Which words rhyme with tree?",
+      "images": [
+        {
+          "image": "images/rhyming-match/tree.png",
+          "label": "A tree"
+        }
+      ],
+      "choices": [
+        "bee",
+        "fan",
+        "key"
+      ]
+    },
+    {
+      "question": "Which words rhyme with dog?",
+      "images": [
+        {
+          "image": "images/rhyming-match/dog.png",
+          "label": "A dog"
+        }
+      ],
+      "choices": [
+        "cat",
+        "frog",
+        "log"
+      ]
+    },
+    {
+      "question": "Which words rhyme with sun?",
+      "images": [
+        {
+          "image": "images/rhyming-match/sun.png",
+          "label": "The sun"
+        }
+      ],
+      "choices": [
+        "bun",
+        "hat",
+        "fun"
+      ]
+    },
+    {
+      "question": "Which words rhyme with boat?",
+      "images": [
+        {
+          "image": "images/rhyming-match/boat.png",
+          "label": "A boat"
+        }
+      ],
+      "choices": [
+        "coat",
+        "fish",
+        "goat"
+      ]
+    },
+    {
+      "question": "Which words rhyme with moon?",
+      "images": [
+        {
+          "image": "images/rhyming-match/moon.png",
+          "label": "The moon"
+        }
+      ],
+      "choices": [
+        "spoon",
+        "star",
+        "balloon"
+      ]
+    },
+    {
+      "question": "Which words rhyme with fan?",
+      "images": [
+        {
+          "image": "images/rhyming-match/fan.png",
+          "label": "A fan"
+        }
+      ],
+      "choices": [
+        "pan",
+        "cup",
+        "van"
+      ]
+    },
+    {
+      "question": "Which words rhyme with bed?",
+      "images": [
+        {
+          "image": "images/rhyming-match/bed.png",
+          "label": "A bed"
+        }
+      ],
+      "choices": [
+        "red",
+        "ball",
+        "bread"
+      ]
+    },
+    {
+      "question": "Which words rhyme with fox?",
+      "images": [
+        {
+          "image": "images/rhyming-match/fox.png",
+          "label": "A fox"
+        }
+      ],
+      "choices": [
+        "clock",
+        "box",
+        "socks"
+      ]
+    },
+    {
+      "question": "Which words rhyme with rain?",
+      "images": [
+        {
+          "image": "images/rhyming-match/rain.png",
+          "label": "Rain"
+        }
+      ],
+      "choices": [
+        "train",
+        "sun",
+        "chain"
+      ]
+    },
+    {
+      "question": "Which words rhyme with chair?",
+      "images": [
+        {
+          "image": "images/rhyming-match/chair.png",
+          "label": "A chair"
+        }
+      ],
+      "choices": [
+        "hair",
+        "door",
+        "bear"
+      ]
+    },
+    {
+      "question": "Which words rhyme with whale?",
+      "images": [
+        {
+          "image": "images/rhyming-match/whale.png",
+          "label": "A whale"
+        }
+      ],
+      "choices": [
+        "snail",
+        "fish",
+        "pail"
+      ]
+    },
+    {
+      "question": "Which words rhyme with duck?",
+      "images": [
+        {
+          "image": "images/rhyming-match/duck.png",
+          "label": "A duck"
+        }
+      ],
+      "choices": [
+        "truck",
+        "bird",
+        "stuck"
+      ]
+    },
+    {
+      "question": "Which words rhyme with nose?",
+      "images": [
+        {
+          "image": "images/rhyming-match/nose.png",
+          "label": "A nose"
+        }
+      ],
+      "choices": [
+        "toes",
+        "hand",
+        "hose"
+      ]
+    },
+    {
+      "question": "Which words rhyme with ball?",
+      "images": [
+        {
+          "image": "images/rhyming-match/ball.png",
+          "label": "A ball"
+        }
+      ],
+      "choices": [
+        "wall",
+        "cup",
+        "tall"
+      ]
+    },
+    {
+      "question": "Which words rhyme with wave?",
+      "images": [
+        {
+          "image": "images/rhyming-match/wave.png",
+          "label": "A wave"
+        }
+      ],
+      "choices": [
+        "cave",
+        "sand",
+        "brave"
+      ]
+    },
+    {
+      "question": "Which words rhyme with nest?",
+      "images": [
+        {
+          "image": "images/rhyming-match/nest.png",
+          "label": "A nest"
+        }
+      ],
+      "choices": [
+        "vest",
+        "bird",
+        "chest"
+      ]
+    },
+    {
+      "question": "Which words rhyme with house?",
+      "images": [
+        {
+          "image": "images/rhyming-match/house.png",
+          "label": "A house"
+        }
+      ],
+      "choices": [
+        "mouse",
+        "door",
+        "blouse"
+      ]
+    },
+    {
+      "question": "Which words rhyme with train?",
+      "images": [
+        {
+          "image": "images/rhyming-match/train.png",
+          "label": "A train"
+        }
+      ],
+      "choices": [
+        "rain",
+        "car",
+        "brain"
+      ]
+    },
+    {
+      "question": "Which words rhyme with light?",
+      "images": [
+        {
+          "image": "images/rhyming-match/light.png",
+          "label": "A light"
+        }
+      ],
+      "choices": [
+        "night",
+        "sun",
+        "bright"
+      ]
+    },
+    {
+      "question": "Which words rhyme with sand?",
+      "images": [
+        {
+          "image": "images/rhyming-match/sand.png",
+          "label": "Sand"
+        }
+      ],
+      "choices": [
+        "hand",
+        "water",
+        "band"
+      ]
+    },
+    {
+      "question": "Which words rhyme with cup?",
+      "images": [
+        {
+          "image": "images/rhyming-match/cup.png",
+          "label": "A cup"
+        }
+      ],
+      "choices": [
+        "pup",
+        "bowl",
+        "up"
+      ]
+    },
+    {
+      "question": "Which words rhyme with shell?",
+      "images": [
+        {
+          "image": "images/rhyming-match/shell.png",
+          "label": "A shell"
+        }
+      ],
+      "choices": [
+        "bell",
+        "crab",
+        "well"
+      ]
+    }
+  ]
+}

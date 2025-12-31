@@ -1,0 +1,1810 @@
+{
+  "Future Tense": [
+    {
+      "question": "Later on today, I _____ _____ a letter to my grandparents.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/letter.png",
+          "label": "A letter and envelope"
+        }
+      ],
+      "answers": [
+        "will write"
+      ]
+    },
+    {
+      "question": "Tomorrow, she _____ _____ her new book.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/book.png",
+          "label": "A book"
+        }
+      ],
+      "answers": [
+        "will read"
+      ]
+    },
+    {
+      "question": "After lunch, I _____ _____ a picture for my mom.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/crayons.png",
+          "label": "Crayons for drawing"
+        }
+      ],
+      "answers": [
+        "will draw"
+      ]
+    },
+    {
+      "question": "This evening, Dad _____ _____ Grandma.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/telephone.png",
+          "label": "A telephone"
+        }
+      ],
+      "answers": [
+        "will call"
+      ]
+    },
+    {
+      "question": "Next week, we _____ _____ a postcard from our trip.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/mailbox.png",
+          "label": "A mailbox"
+        }
+      ],
+      "answers": [
+        "will send"
+      ]
+    },
+    {
+      "question": "At dinnertime, I _____ _____ my vegetables.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/plate.png",
+          "label": "A plate of food"
+        }
+      ],
+      "answers": [
+        "will eat"
+      ]
+    },
+    {
+      "question": "After playing, she _____ _____ a big glass of water.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/glass_water.png",
+          "label": "A glass of water"
+        }
+      ],
+      "answers": [
+        "will drink"
+      ]
+    },
+    {
+      "question": "Tomorrow morning, Dad _____ _____ pancakes for breakfast.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/pancakes.png",
+          "label": "A stack of pancakes"
+        }
+      ],
+      "answers": [
+        "will make"
+      ]
+    },
+    {
+      "question": "Tonight, I _____ _____ my lunch for tomorrow.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/lunch_box.png",
+          "label": "A lunch box"
+        }
+      ],
+      "answers": [
+        "will pack"
+      ]
+    },
+    {
+      "question": "At snack time, we _____ _____ the fruit.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/fruit_bowl.png",
+          "label": "A bowl of fruit"
+        }
+      ],
+      "answers": [
+        "will share"
+      ]
+    },
+    {
+      "question": "Before bed, I _____ _____ my teeth.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/toothbrush.png",
+          "label": "A toothbrush"
+        }
+      ],
+      "answers": [
+        "will brush"
+      ]
+    },
+    {
+      "question": "Before dinner, she _____ _____ her hands.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/washing_hands.png",
+          "label": "Hands being washed"
+        }
+      ],
+      "answers": [
+        "will wash"
+      ]
+    },
+    {
+      "question": "This afternoon, we _____ _____ our room.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/messy_room.png",
+          "label": "A messy room"
+        }
+      ],
+      "answers": [
+        "will clean"
+      ]
+    },
+    {
+      "question": "Tonight, I _____ _____ in my cozy bed.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/bed.png",
+          "label": "A cozy bed"
+        }
+      ],
+      "answers": [
+        "will sleep"
+      ]
+    },
+    {
+      "question": "Tomorrow, I _____ _____ up early.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/alarm_clock.png",
+          "label": "An alarm clock"
+        }
+      ],
+      "answers": [
+        "will wake"
+      ]
+    },
+    {
+      "question": "This summer, we _____ _____ at the beach.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/swimming_pool.png",
+          "label": "A swimming pool"
+        }
+      ],
+      "answers": [
+        "will swim"
+      ]
+    },
+    {
+      "question": "At the beach, they _____ _____ in the sand.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/beach_toys.png",
+          "label": "Beach toys"
+        }
+      ],
+      "answers": [
+        "will play"
+      ]
+    },
+    {
+      "question": "Tomorrow, I _____ _____ a big sandcastle.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/sandcastle.png",
+          "label": "A sandcastle"
+        }
+      ],
+      "answers": [
+        "will build"
+      ]
+    },
+    {
+      "question": "On our beach trip, she _____ _____ seashells.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/seashells.png",
+          "label": "Seashells on the beach"
+        }
+      ],
+      "answers": [
+        "will collect"
+      ]
+    },
+    {
+      "question": "Next summer, he _____ _____ for the first time.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/surfboard.png",
+          "label": "A surfboard"
+        }
+      ],
+      "answers": [
+        "will surf"
+      ]
+    },
+    {
+      "question": "Next year, I _____ _____ to speak Spanish.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/student.png",
+          "label": "A student learning"
+        }
+      ],
+      "answers": [
+        "will learn"
+      ]
+    },
+    {
+      "question": "After school, she _____ _____ piano.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/piano.png",
+          "label": "A piano"
+        }
+      ],
+      "answers": [
+        "will practice"
+      ]
+    },
+    {
+      "question": "Before dinner, I _____ _____ my homework.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/homework.png",
+          "label": "Homework papers"
+        }
+      ],
+      "answers": [
+        "will finish"
+      ]
+    },
+    {
+      "question": "In art class, we _____ _____ a picture.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/art_supplies.png",
+          "label": "Art supplies"
+        }
+      ],
+      "answers": [
+        "will paint"
+      ]
+    },
+    {
+      "question": "At the show, she _____ _____ her favorite song.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/microphone.png",
+          "label": "A microphone"
+        }
+      ],
+      "answers": [
+        "will sing"
+      ]
+    },
+    {
+      "question": "Next weekend, we _____ _____ Grandma and Grandpa.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/grandparents_house.png",
+          "label": "Grandparents' house"
+        }
+      ],
+      "answers": [
+        "will visit"
+      ]
+    },
+    {
+      "question": "After breakfast, I _____ _____ Mom with the dishes.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/doing_dishes.png",
+          "label": "Person doing dishes"
+        }
+      ],
+      "answers": [
+        "will help"
+      ]
+    },
+    {
+      "question": "Tomorrow, I _____ _____ my friend at the park.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/friends_waving.png",
+          "label": "Friends waving"
+        }
+      ],
+      "answers": [
+        "will meet"
+      ]
+    },
+    {
+      "question": "Next month, we _____ _____ Dad's birthday.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/party.png",
+          "label": "A birthday party"
+        }
+      ],
+      "answers": [
+        "will celebrate"
+      ]
+    },
+    {
+      "question": "This summer, our family _____ _____ to the beach.",
+      "images": [
+        {
+          "image": "../assets/images/cards/39_future_tense/suitcase.png",
+          "label": "A suitcase"
+        }
+      ],
+      "answers": [
+        "will travel"
+      ]
+    }
+  ],
+  "Irregular Past Tense Verbs": [
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/money.png",
+          "label": "Money and lottery ticket"
+        }
+      ],
+      "sentence": "She couldn't believe she <u>wined</u> the lottery.",
+      "choices": [
+        "winned",
+        "wined",
+        "woned",
+        "won"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/beach.png",
+          "label": "Family at the beach"
+        }
+      ],
+      "sentence": "Yesterday, we <u>goed</u> to the beach with our family.",
+      "choices": [
+        "goed",
+        "goned",
+        "went",
+        "wented"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/plate.png",
+          "label": "Plate of vegetables"
+        }
+      ],
+      "sentence": "She <u>eated</u> all of her vegetables at dinner.",
+      "choices": [
+        "eated",
+        "ate",
+        "ated",
+        "eaten"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/running.png",
+          "label": "Boy running"
+        }
+      ],
+      "sentence": "The boy <u>runned</u> as fast as he could.",
+      "choices": [
+        "runned",
+        "runed",
+        "ran",
+        "ranned"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/swimming.png",
+          "label": "Person swimming in pool"
+        }
+      ],
+      "sentence": "He <u>swimmed</u> across the whole pool.",
+      "choices": [
+        "swimmed",
+        "swammed",
+        "swum",
+        "swam"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/letter.png",
+          "label": "Writing a letter"
+        }
+      ],
+      "sentence": "She <u>writed</u> a letter to her grandmother.",
+      "choices": [
+        "writed",
+        "wrote",
+        "wroten",
+        "writ"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/drawing.png",
+          "label": "Person drawing a picture"
+        }
+      ],
+      "sentence": "The artist <u>drawed</u> a beautiful picture.",
+      "choices": [
+        "drawed",
+        "drawing",
+        "drew",
+        "drawn"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/sleeping.png",
+          "label": "Baby sleeping"
+        }
+      ],
+      "sentence": "The baby <u>sleeped</u> through the whole night.",
+      "choices": [
+        "sleeped",
+        "slept",
+        "slepted",
+        "slapt"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/water.png",
+          "label": "Glasses of water"
+        }
+      ],
+      "sentence": "He was so thirsty that he <u>drinked</u> three glasses of water.",
+      "choices": [
+        "drinked",
+        "drunk",
+        "drank",
+        "dranked"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/sandcastle.png",
+          "label": "Children building sandcastle"
+        }
+      ],
+      "sentence": "The children <u>maked</u> a giant sandcastle at the beach.",
+      "choices": [
+        "maked",
+        "maded",
+        "maken",
+        "made"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/broken_toy.png",
+          "label": "Broken toy"
+        }
+      ],
+      "sentence": "He accidentally <u>breaked</u> his favorite toy.",
+      "choices": [
+        "breaked",
+        "broked",
+        "broke",
+        "breakted"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/dolphins.png",
+          "label": "Dolphins in ocean"
+        }
+      ],
+      "sentence": "We <u>seed</u> dolphins jumping in the ocean!",
+      "choices": [
+        "seed",
+        "saw",
+        "seen",
+        "sawed"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/camera.png",
+          "label": "Taking photos with camera"
+        }
+      ],
+      "sentence": "She <u>taked</u> a picture of the sunset.",
+      "choices": [
+        "taked",
+        "tooked",
+        "took",
+        "taken"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/sharing.png",
+          "label": "Children sharing"
+        }
+      ],
+      "sentence": "Mom <u>gived</u> me an extra orange for my lunch.",
+      "choices": [
+        "gived",
+        "gave",
+        "gaven",
+        "gaved"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/catching_ball.png",
+          "label": "Catching a ball"
+        }
+      ],
+      "sentence": "The dog <u>catched</u> the ball in his mouth.",
+      "choices": [
+        "catched",
+        "catcht",
+        "caught",
+        "caughted"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/throwing.png",
+          "label": "Throwing a ball"
+        }
+      ],
+      "sentence": "He <u>throwed</u> the ball to his friend.",
+      "choices": [
+        "throwed",
+        "threw",
+        "threwn",
+        "throwt"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/seashells.png",
+          "label": "Collecting seashells"
+        }
+      ],
+      "sentence": "She <u>finded</u> beautiful seashells on the beach.",
+      "choices": [
+        "finded",
+        "founded",
+        "fand",
+        "found"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/talking.png",
+          "label": "People talking"
+        }
+      ],
+      "sentence": "He <u>telled</u> his friend a funny story.",
+      "choices": [
+        "telled",
+        "tolded",
+        "told",
+        "telt"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/beach_bag.png",
+          "label": "Beach bag"
+        }
+      ],
+      "sentence": "She <u>bringed</u> sunscreen to the beach.",
+      "choices": [
+        "bringed",
+        "brang",
+        "brought",
+        "broughted"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/shopping.png",
+          "label": "Person shopping"
+        }
+      ],
+      "sentence": "Dad <u>buyed</u> new towels for the pool.",
+      "choices": [
+        "buyed",
+        "boughted",
+        "bought",
+        "buyt"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/thinking.png",
+          "label": "Person thinking"
+        }
+      ],
+      "sentence": "She <u>thinked</u> about what to draw.",
+      "choices": [
+        "thinked",
+        "thought",
+        "thoughted",
+        "thunk"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/teacher.png",
+          "label": "Teacher"
+        }
+      ],
+      "sentence": "The instructor <u>teached</u> the class how to swim.",
+      "choices": [
+        "teached",
+        "taught",
+        "taughted",
+        "teachted"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/bench.png",
+          "label": "Sitting on bench"
+        }
+      ],
+      "sentence": "We <u>sitted</u> on the bench and watched the waves.",
+      "choices": [
+        "sitted",
+        "sitten",
+        "satt",
+        "sat"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/singing.png",
+          "label": "Person singing"
+        }
+      ],
+      "sentence": "She <u>singed</u> her favorite song in the car.",
+      "choices": [
+        "singed",
+        "sang",
+        "sanged",
+        "sung"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/blocks.png",
+          "label": "Building with blocks"
+        }
+      ],
+      "sentence": "The children <u>builded</u> a tall tower with blocks.",
+      "choices": [
+        "builded",
+        "builted",
+        "built",
+        "builtted"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/leaves.png",
+          "label": "Leaves falling"
+        }
+      ],
+      "sentence": "The leaves <u>falled</u> from the trees.",
+      "choices": [
+        "falled",
+        "fell",
+        "fellen",
+        "felled"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/plant.png",
+          "label": "Growing plant"
+        }
+      ],
+      "sentence": "The flowers <u>growed</u> so tall this summer.",
+      "choices": [
+        "growed",
+        "grew",
+        "grewn",
+        "grown"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/student.png",
+          "label": "Student studying"
+        }
+      ],
+      "sentence": "She <u>knowed</u> the answer to every question.",
+      "choices": [
+        "knowed",
+        "knewn",
+        "knew",
+        "knowen"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/happy.png",
+          "label": "Happy person"
+        }
+      ],
+      "sentence": "He <u>feeled</u> so happy when he finished.",
+      "choices": [
+        "feeled",
+        "felt",
+        "felted",
+        "felen"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Correct the underlined verb. Which is the correct verb form?",
+      "images": [
+        {
+          "image": "images/verbs/wind.png",
+          "label": "Wind blowing"
+        }
+      ],
+      "sentence": "The wind <u>blowed</u> sand everywhere at the beach.",
+      "choices": [
+        "blowed",
+        "blowen",
+        "blew",
+        "blewd"
+      ],
+      "answerIndex": 2
+    }
+  ],
+  "Past Tense Verbs Irregular": [
+    {
+      "images": [
+        {
+          "image": "images/verbs/running.png",
+          "label": "Boy running"
+        }
+      ],
+      "sentence": "Sanjay _______ a fast race yesterday.",
+      "choices": [
+        "Run",
+        "Ran",
+        "Runned"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/swimming.png",
+          "label": "Person swimming in pool"
+        }
+      ],
+      "sentence": "Maria _______ in the ocean last weekend.",
+      "choices": [
+        "Swim",
+        "Swimmed",
+        "Swam"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/beach.png",
+          "label": "Family at the beach"
+        }
+      ],
+      "sentence": "We _______ to the beach yesterday.",
+      "choices": [
+        "Goed",
+        "Go",
+        "Went"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/falling-leaves.png",
+          "label": "Leaves falling from trees"
+        }
+      ],
+      "sentence": "The leaves _______ from the trees.",
+      "choices": [
+        "Fell",
+        "Fall",
+        "Falled"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/eating.png",
+          "label": "Person eating"
+        }
+      ],
+      "sentence": "He _______ all of his vegetables at dinner.",
+      "choices": [
+        "Ate",
+        "Eated",
+        "Eat"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/sandcastle.png",
+          "label": "Children building sandcastle"
+        }
+      ],
+      "sentence": "She _______ a big sandcastle at the beach.",
+      "choices": [
+        "Make",
+        "Maked",
+        "Made"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/catching.png",
+          "label": "Catching a ball"
+        }
+      ],
+      "sentence": "The dog _______ the ball in his mouth.",
+      "choices": [
+        "Catch",
+        "Catched",
+        "Caught"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/throwing.png",
+          "label": "Throwing a ball"
+        }
+      ],
+      "sentence": "Lucas _______ the ball to his friend.",
+      "choices": [
+        "Throw",
+        "Throwed",
+        "Threw"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/broken.png",
+          "label": "Broken toy"
+        }
+      ],
+      "sentence": "He accidentally _______ the plate.",
+      "choices": [
+        "Breaked",
+        "Break",
+        "Broke"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/writing.png",
+          "label": "Person writing"
+        }
+      ],
+      "sentence": "Jake _______ a letter to his grandma.",
+      "choices": [
+        "Writed",
+        "Wrote",
+        "Write"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/talking.png",
+          "label": "People talking"
+        }
+      ],
+      "sentence": "He _______ his friend a funny story.",
+      "choices": [
+        "Telled",
+        "Tell",
+        "Told"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/singing.png",
+          "label": "Person singing"
+        }
+      ],
+      "sentence": "She _______ her favorite song at the concert.",
+      "choices": [
+        "Sang",
+        "Singed",
+        "Sing"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/teaching.png",
+          "label": "Teacher teaching"
+        }
+      ],
+      "sentence": "Mrs. Garcia _______ us how to swim.",
+      "choices": [
+        "Teached",
+        "Taught",
+        "Teach"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/dolphins.png",
+          "label": "Dolphins in ocean"
+        }
+      ],
+      "sentence": "They _______ dolphins in the water!",
+      "choices": [
+        "Saw",
+        "Seed",
+        "See"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/thinking.png",
+          "label": "Person thinking"
+        }
+      ],
+      "sentence": "She _______ about what to say.",
+      "choices": [
+        "Think",
+        "Thinked",
+        "Thought"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/student.png",
+          "label": "Student studying"
+        }
+      ],
+      "sentence": "She _______ all the answers on the test.",
+      "choices": [
+        "Knew",
+        "Knowed",
+        "Know"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/happy.png",
+          "label": "Happy person"
+        }
+      ],
+      "sentence": "He _______ so happy at the beach!",
+      "choices": [
+        "Feel",
+        "Feeled",
+        "Felt"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/seashells.png",
+          "label": "Collecting seashells"
+        }
+      ],
+      "sentence": "We _______ beautiful seashells on the sand.",
+      "choices": [
+        "Found",
+        "Find",
+        "Finded"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/sleeping.png",
+          "label": "Baby sleeping"
+        }
+      ],
+      "sentence": "The baby _______ all night long.",
+      "choices": [
+        "Sleeped",
+        "Slept",
+        "Sleep"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/drinking.png",
+          "label": "Person drinking"
+        }
+      ],
+      "sentence": "I _______ three glasses of water after playing.",
+      "choices": [
+        "Drank",
+        "Drink",
+        "Drinked"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/growing.png",
+          "label": "Plant growing"
+        }
+      ],
+      "sentence": "The flowers _______ very tall this summer.",
+      "choices": [
+        "Growed",
+        "Grew",
+        "Grow"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/sitting.png",
+          "label": "Person sitting"
+        }
+      ],
+      "sentence": "We _______ on the bench and watched the waves.",
+      "choices": [
+        "Sitted",
+        "Sit",
+        "Sat"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/sharing.png",
+          "label": "Children sharing"
+        }
+      ],
+      "sentence": "She _______ her brother half of her orange.",
+      "choices": [
+        "Give",
+        "Gave",
+        "Gived"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/camera.png",
+          "label": "Taking photos with camera"
+        }
+      ],
+      "sentence": "Dad _______ a picture of the sunset.",
+      "choices": [
+        "Took",
+        "Taked",
+        "Take"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/trophy.png",
+          "label": "Trophy"
+        }
+      ],
+      "sentence": "Our team _______ the game!",
+      "choices": [
+        "Winned",
+        "Won",
+        "Win"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/shopping.png",
+          "label": "Person shopping"
+        }
+      ],
+      "sentence": "Mom _______ new beach towels at the store.",
+      "choices": [
+        "Bought",
+        "Buy",
+        "Buyed"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/beach-bag.png",
+          "label": "Beach bag"
+        }
+      ],
+      "sentence": "Mom _______ sunscreen to the beach.",
+      "choices": [
+        "Bringed",
+        "Brought",
+        "Bring"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/blocks.png",
+          "label": "Building with blocks"
+        }
+      ],
+      "sentence": "The children _______ a tall tower with blocks.",
+      "choices": [
+        "Build",
+        "Builded",
+        "Built"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/drawing.png",
+          "label": "Person drawing a picture"
+        }
+      ],
+      "sentence": "Emma _______ a picture of her family.",
+      "choices": [
+        "Drew",
+        "Draw",
+        "Drawed"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "images": [
+        {
+          "image": "images/verbs/wind.png",
+          "label": "Wind blowing"
+        }
+      ],
+      "sentence": "The wind _______ sand everywhere at the beach.",
+      "choices": [
+        "Blew",
+        "Blow",
+        "Blowed"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "Past Tense Verbs Regular": [
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/cellphone.png",
+          "label": "Cellphone"
+        }
+      ],
+      "sentence": "Malik _______ his mother for a cell phone.",
+      "choices": [
+        "Asked",
+        "Asks",
+        "Ask"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/walking-beach.png",
+          "label": "Walking on beach"
+        }
+      ],
+      "sentence": "She _______ along the beach and collected seashells.",
+      "choices": [
+        "Walk",
+        "Walks",
+        "Walked"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/soccer.png",
+          "label": "Playing soccer"
+        }
+      ],
+      "sentence": "The kids _______ soccer at the park yesterday.",
+      "choices": [
+        "Played",
+        "Play",
+        "Plays"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/jumping-waves.png",
+          "label": "Jumping in waves"
+        }
+      ],
+      "sentence": "He _______ over the waves at the beach.",
+      "choices": [
+        "Jump",
+        "Jumped",
+        "Jumps"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/watching-tv.png",
+          "label": "Watching TV"
+        }
+      ],
+      "sentence": "We _______ a movie together last night.",
+      "choices": [
+        "Watch",
+        "Watches",
+        "Watched"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/washing-hands.png",
+          "label": "Washing hands"
+        }
+      ],
+      "sentence": "She _______ her hands before eating lunch.",
+      "choices": [
+        "Washed",
+        "Wash",
+        "Washs"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/toothbrush.png",
+          "label": "Brushing teeth"
+        }
+      ],
+      "sentence": "I _______ my teeth before going to bed.",
+      "choices": [
+        "Brush",
+        "Brushs",
+        "Brushed"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/clean-room.png",
+          "label": "Cleaning room"
+        }
+      ],
+      "sentence": "Mom _______ the whole house yesterday.",
+      "choices": [
+        "Cleans",
+        "Cleaned",
+        "Clean"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/helping.png",
+          "label": "Helping someone"
+        }
+      ],
+      "sentence": "Emma _______ her dad with the groceries.",
+      "choices": [
+        "Help",
+        "Helps",
+        "Helped"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/talking.png",
+          "label": "People talking"
+        }
+      ],
+      "sentence": "They _______ on the phone for an hour.",
+      "choices": [
+        "Talked",
+        "Talk",
+        "Talks"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/phone-call.png",
+          "label": "Phone call"
+        }
+      ],
+      "sentence": "He _______ his grandmother to say hello.",
+      "choices": [
+        "Call",
+        "Called",
+        "Calls"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/headphones.png",
+          "label": "Listening with headphones"
+        }
+      ],
+      "sentence": "She _______ to music while doing homework.",
+      "choices": [
+        "Listens",
+        "Listen",
+        "Listened"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/cooking.png",
+          "label": "Cooking food"
+        }
+      ],
+      "sentence": "Dad _______ dinner for the whole family.",
+      "choices": [
+        "Cooked",
+        "Cook",
+        "Cooks"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/painting.png",
+          "label": "Painting a picture"
+        }
+      ],
+      "sentence": "The artist _______ a beautiful picture of the ocean.",
+      "choices": [
+        "Paint",
+        "Paints",
+        "Painted"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/waiting.png",
+          "label": "Person waiting"
+        }
+      ],
+      "sentence": "We _______ in line for ice cream.",
+      "choices": [
+        "Wait",
+        "Waited",
+        "Waits"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/pointing.png",
+          "label": "Pointing"
+        }
+      ],
+      "sentence": "She _______ to go to the beach, so her parents took her.",
+      "choices": [
+        "Wants",
+        "Want",
+        "Wanted"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/water-bottle.png",
+          "label": "Drinking from water bottle"
+        }
+      ],
+      "sentence": "He _______ more water after running.",
+      "choices": [
+        "Needed",
+        "Need",
+        "Needs"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/starting-line.png",
+          "label": "Starting line of race"
+        }
+      ],
+      "sentence": "The race _______ at exactly 9 o'clock.",
+      "choices": [
+        "Start",
+        "Starts",
+        "Started"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/puzzle.png",
+          "label": "Putting together puzzle"
+        }
+      ],
+      "sentence": "She _______ her homework before dinner.",
+      "choices": [
+        "Finish",
+        "Finished",
+        "Finishes"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/open-door.png",
+          "label": "Opening a door"
+        }
+      ],
+      "sentence": "Dad _______ the door and let the dog outside.",
+      "choices": [
+        "Opens",
+        "Open",
+        "Opened"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/closed-window.png",
+          "label": "Closed window"
+        }
+      ],
+      "sentence": "Mom _______ the window when it started to rain.",
+      "choices": [
+        "Closed",
+        "Close",
+        "Closes"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/ice-cream.png",
+          "label": "Ice cream"
+        }
+      ],
+      "sentence": "He _______ the chocolate ice cream the best.",
+      "choices": [
+        "Like",
+        "Likes",
+        "Liked"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/puppy.png",
+          "label": "Puppy"
+        }
+      ],
+      "sentence": "She _______ playing with her puppy every day.",
+      "choices": [
+        "Love",
+        "Loved",
+        "Loves"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/sharing-snacks.png",
+          "label": "Sharing snacks"
+        }
+      ],
+      "sentence": "The children _______ their snacks at lunch.",
+      "choices": [
+        "Shares",
+        "Share",
+        "Shared"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/suitcase.png",
+          "label": "Packing suitcase"
+        }
+      ],
+      "sentence": "We _______ our bags for the beach trip.",
+      "choices": [
+        "Packed",
+        "Pack",
+        "Packs"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/splashing.png",
+          "label": "Splashing in water"
+        }
+      ],
+      "sentence": "The kids _______ in the pool all afternoon.",
+      "choices": [
+        "Splash",
+        "Splashs",
+        "Splashed"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/seashells.png",
+          "label": "Collecting seashells"
+        }
+      ],
+      "sentence": "She _______ many seashells at the beach.",
+      "choices": [
+        "Collect",
+        "Collected",
+        "Collects"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/grandparents.png",
+          "label": "Visiting grandparents"
+        }
+      ],
+      "sentence": "We _______ our grandparents last weekend.",
+      "choices": [
+        "Visits",
+        "Visit",
+        "Visited"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/piano.png",
+          "label": "Playing piano"
+        }
+      ],
+      "sentence": "He _______ piano for one hour every day.",
+      "choices": [
+        "Practiced",
+        "Practice",
+        "Practices"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Fill in the blank with the correct verb.",
+      "images": [
+        {
+          "image": "images/verbs/student.png",
+          "label": "Student studying"
+        }
+      ],
+      "sentence": "She _______ how to swim last summer.",
+      "choices": [
+        "Learn",
+        "Learns",
+        "Learned"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}
