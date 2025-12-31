@@ -28,16 +28,16 @@
     // Paths
     "baseUrl": ".",
     "paths": {
-      "@/*": ["scripts/*"],
-      "@core/*": ["scripts/core/*"],
-      "@handlers/*": ["scripts/handlers/*"],
-      "@data/*": ["scripts/data/*"]
+      "@/*": ["src/*"],
+      "@features/*": ["src/features/*"],
+      "@constants/*": ["src/constants/*"],
+      "@services/*": ["src/services/*"]
     }
   },
   "include": [
-    "scripts/**/*.ts",
-    "scripts/**/*.d.ts",
-    "scripts/**/*.js"
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.js"
   ],
   "exclude": [
     "node_modules",

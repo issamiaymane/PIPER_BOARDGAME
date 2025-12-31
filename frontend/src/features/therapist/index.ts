@@ -3,7 +3,7 @@
  * Handles UI state and user interactions
  */
 
-import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../services/api';
+import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../../services/api';
 
 // DOM element helpers
 function $(id: string): HTMLElement {

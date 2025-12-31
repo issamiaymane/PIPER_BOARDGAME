@@ -39,11 +39,10 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'scripts'),
-      '@core': resolve(__dirname, 'scripts/core'),
-      '@handlers': resolve(__dirname, 'scripts/handlers'),
-      '@child': resolve(__dirname, 'scripts/child'),
-      '@therapist': resolve(__dirname, 'scripts/therapist'),
+      '@': resolve(__dirname, 'src'),
+      '@features': resolve(__dirname, 'src/features'),
+      '@constants': resolve(__dirname, 'src/constants'),
+      '@services': resolve(__dirname, 'src/services'),
     }
   }
 });

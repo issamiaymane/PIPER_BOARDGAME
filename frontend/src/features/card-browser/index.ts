@@ -5,7 +5,7 @@
 
 /// <reference types="vite/client" />
 
-import { HANDLERS, CATEGORY_HANDLER_MAP } from '../data/handler-map';
+import { HANDLERS, CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
 
 // Type definitions
 interface CardData {
@@ -22,8 +22,8 @@ const languageFiles: Set<string> = new Set();
 const articulationFiles: Set<string> = new Set();
 
 // Import all JSON files using Vite's glob import
-const languageModules = import.meta.glob('../data/cards/language/*.json', { eager: true });
-const articulationModules = import.meta.glob('../data/cards/articulation/*.json', { eager: true });
+const languageModules = import.meta.glob('../../constants/cards/language/*.json', { eager: true });
+const articulationModules = import.meta.glob('../../constants/cards/articulation/*.json', { eager: true });
 
 // Build the data object from imported JSON files
 function loadJsonModules(modules: Record<string, unknown>, fileSet: Set<string>): CategoryData {

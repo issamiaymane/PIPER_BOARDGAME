@@ -5,7 +5,7 @@
 
 /// <reference types="vite/client" />
 
-import { HANDLERS, CATEGORY_HANDLER_MAP } from '../data/handler-map';
+import { HANDLERS, CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
 import { renderCard, allCardData, languageData, articulationData } from '../card-browser/index';
 
 // Types
