@@ -38,6 +38,9 @@ export interface Student {
   date_of_birth?: string;
   grade_level?: string;
   problem_type?: 'language' | 'articulation' | 'both';
+  eval_data?: EvalData | string;
+  eval_pdf_path?: string;
+  eval_pdf_original_name?: string;
   created_at: string;
 }
 

@@ -147,6 +147,84 @@ function selectStudent(id: number): void {
   $('profile-name').textContent = `${student.first_name} ${student.last_name}`;
   $('profile-details').textContent = student.grade_level || 'No grade level set';
   $('child-username').textContent = student.username;
+
+  // Render evaluation data
+  renderEvalData(student);
+}
+
+function renderEvalData(student: Student): void {
+  const container = $('eval-data-display');
+
+  // Parse eval_data if it's a string (from JSON in database)
+  let evalData: EvalData | null = null;
+  if (student.eval_data) {
+    if (typeof student.eval_data === 'string') {
+      try {
+        evalData = JSON.parse(student.eval_data);
+      } catch {
+        evalData = null;
+      }
+    } else {
+      evalData = student.eval_data;
+    }
+  }
+
+  if (!evalData || Object.keys(evalData).length === 0) {
+    container.innerHTML = '<p class="empty-state">No evaluation data entered yet.</p>';
+    return;
+  }
+
+  // Build display HTML
+  const fieldLabels: Record<string, string> = {
+    service_type: 'Service Type',
+    languages_spoken: 'Languages Spoken',
+    family_religion: 'Cultural/Religious Notes',
+    medical_history: 'Medical History',
+    other_diagnoses: 'Other Diagnoses',
+    speech_diagnoses: 'Speech/Language Diagnoses',
+    prior_therapy: 'Prior Therapy',
+    baseline_accuracy: 'Baseline Accuracy',
+    goals_benchmarks: 'Goals & Benchmarks',
+    strengths: 'Strengths',
+    weaknesses: 'Weaknesses',
+    target_sounds: 'Target Sounds',
+    teachers: 'Teachers/Contacts',
+    notes: 'Additional Notes',
+  };
+
+  let html = '<div class="eval-data-grid">';
+
+  for (const [key, label] of Object.entries(fieldLabels)) {
+    const field = evalData[key as keyof EvalData];
+    if (!field) continue;
+
+    let value: string | number | string[] | null = null;
+    if (typeof field === 'object' && 'value' in field) {
+      value = field.value;
+    } else if (typeof field === 'string') {
+      value = field;
+    }
+
+    if (value === null || value === undefined || value === '') continue;
+
+    const displayValue = Array.isArray(value) ? value.join(', ') : String(value);
+
+    html += `
+      <div class="eval-data-item">
+        <span class="eval-data-label">${label}</span>
+        <span class="eval-data-value">${displayValue}</span>
+      </div>
+    `;
+  }
+
+  html += '</div>';
+
+  // Check if any fields were rendered
+  if (html === '<div class="eval-data-grid"></div>') {
+    container.innerHTML = '<p class="empty-state">No evaluation data entered yet.</p>';
+  } else {
+    container.innerHTML = html;
+  }
 }
 
 // Add student
