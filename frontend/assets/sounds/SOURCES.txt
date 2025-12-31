@@ -1,0 +1,42 @@
+SOUND EFFECTS SOURCES
+=====================
+
+This file documents the sources of audio files used in the board game.
+
+1. start.mp3 (Jingle Bells - Background Music)
+   - Source: Incompetech.com (Kevin MacLeod)
+   - URL: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Jingle%20Bells.mp3
+   - License: Royalty-free
+   - Size: 5.5MB
+
+2. correct.mp3 (Success Fanfare)
+   - Source: SoundJay.com
+   - URL: https://www.soundjay.com/misc/sounds/fanfare-3.mp3
+   - License: Free for personal/commercial use
+   - Size: 26KB
+
+3. wrong.mp3 (Wrong Answer Buzzer)
+   - Source: SoundJay.com
+   - URL: https://www.soundjay.com/button/sounds/button-10.mp3
+   - License: Free for personal/commercial use
+   - Size: 44KB
+
+4. bonus.mp3 (Magic Chime)
+   - Source: SoundJay.com
+   - URL: https://www.soundjay.com/misc/sounds/magic-chime-02.mp3
+   - License: Free for personal/commercial use
+   - Size: 104KB
+
+5. win.mp3 (Victory Sound)
+   - Source: SoundJay.com
+   - URL: https://www.soundjay.com/misc/sounds/fanfare-1.mp3
+   - License: Free for personal/commercial use
+   - Size: 78KB
+
+6. spin sound (Tick-Tick Effect)
+   - Generated programmatically using Web Audio API
+   - No external file needed
+   - Creates a fun spinning wheel sound effect
+
+---
+Note: All sounds are royalty-free and suitable for educational/personal projects.
