@@ -89,6 +89,16 @@ body {
     background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E6E6FA 100%);
 }
 
+/* Theme: Winter (default) */
+body.theme-snowflake {
+    background: linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #E6E6FA 100%);
+}
+
+/* Theme: Spring */
+body.theme-bunny {
+    background: linear-gradient(180deg, #FFE5E5 0%, #FFD1DC 30%, #FFB6C1 60%, #FFC0CB 100%);
+}
+
 /* Display font for headings and buttons */
 h1, h2, h3, .btn {
     font-family: var(--font-display);
@@ -806,7 +816,6 @@ h1, h2, h3, .btn {
     max-width: 800px;
     width: 90%;
     max-height: 85vh;
-    overflow-y: auto;
     margin: 0 auto;
     box-shadow: var(--shadow-modal);
     border: 6px solid var(--orange-primary);
@@ -814,6 +823,8 @@ h1, h2, h3, .btn {
     transform: scale(1);
     opacity: 1;
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity var(--transition-medium);
+    display: flex;
+    flex-direction: column;
 }
 
 /* Fun decorative top handle */
@@ -835,6 +846,7 @@ h1, h2, h3, .btn {
     align-items: center;
     margin-bottom: 15px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .card-category {
@@ -873,18 +885,45 @@ h1, h2, h3, .btn {
     transform: translateY(-50%) scale(1.1);
 }
 
+.card-body {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.card-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card-body::-webkit-scrollbar-track {
+    background: rgba(255, 152, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+    background: var(--orange-primary);
+    border-radius: 10px;
+}
+
+.card-body::-webkit-scrollbar-thumb:hover {
+    background: var(--orange-dark);
+}
+
 /* Card Tools */
 .card-tools {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    flex-shrink: 0;
 }
 
 .done-button {
     font-family: var(--font-display);
     font-size: 24px;
-    padding: 15px 60px;
+    padding: 10px 40px;
     background: linear-gradient(180deg, var(--green-light) 0%, #43A047 100%);
     color: white;
     border: none;

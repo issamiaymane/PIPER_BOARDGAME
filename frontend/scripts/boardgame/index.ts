@@ -148,12 +148,24 @@ function renderCategorySelection(dataType: 'language' | 'articulation') {
 // Board generation
 function generateBoard() {
     boardPath.innerHTML = '';
+    const themeIcon = state.selectedTheme === 'bunny' ? '🌸' : '❄';
+
     for (let i = 1; i <= TOTAL_SPACES; i++) {
         const space = document.createElement('div');
         const pos = BOARD_POSITIONS[i - 1];
         space.className = `board-space ${i === TOTAL_SPACES ? 'finish' : i % 7 === 0 ? 'orange' : 'green'}`;
         space.textContent = String(i);
         space.style.cssText = `position: absolute; left: ${pos.x}px; top: ${pos.y}px;`;
+
+        // Add theme decoration
+        if (i % 5 === 0 && i !== TOTAL_SPACES) {
+            const decoration = document.createElement('div');
+            decoration.className = 'space-decoration';
+            decoration.textContent = themeIcon;
+            decoration.style.cssText = 'position: absolute; top: -8px; right: -8px; font-size: 16px;';
+            space.appendChild(decoration);
+        }
+
         boardPath.appendChild(space);
     }
 
@@ -162,7 +174,7 @@ function generateBoard() {
     playerToken.innerHTML = `<span>${state.selectedCharacter}</span>`;
     playerToken.style.cssText = 'position: absolute; left: 10px; top: 520px; z-index: 10;';
     boardPath.appendChild(playerToken);
-    console.log('[Game] Board generated');
+    console.log('[Game] Board generated with theme:', state.selectedTheme);
 }
 
 function updatePlayerPosition() {
@@ -234,10 +246,12 @@ function showRandomCard() {
     state.currentCard = card;
     renderCard(card, state.currentCategory, cardBody);
     cardModal.classList.remove('hidden');
+    gameControls.classList.add('hidden');
 }
 
 function closeCard() {
     cardModal.classList.add('hidden');
+    gameControls.classList.remove('hidden');
     state.score += 10;
     scoreValue.textContent = String(state.score);
 }
@@ -254,7 +268,8 @@ function resetGame() {
     gameControls.classList.add('hidden');
     scoreDisplay.classList.add('hidden');
     leftPanel.classList.add('hidden');
-    playOverlay.classList.remove('hidden');
+    playOverlay.classList.add('hidden');
+    targetModal.classList.remove('hidden');
     scoreValue.textContent = '0';
 }
 
@@ -268,6 +283,9 @@ function startGame() {
     state.isPlaying = true;
     state.currentPosition = 0;
     state.score = 0;
+
+    // Apply theme to body
+    document.body.className = `theme-${state.selectedTheme}`;
 
     targetModal.classList.add('hidden');
     playOverlay.classList.add('hidden');
@@ -323,12 +341,24 @@ function init() {
         });
     });
 
+    // Theme selection
+    document.querySelectorAll('.theme-option').forEach(option => {
+        option.addEventListener('click', (e) => {
+            const target = (e.currentTarget as HTMLElement);
+            document.querySelectorAll('.theme-option').forEach(o => o.classList.remove('selected'));
+            target.classList.add('selected');
+            state.selectedTheme = target.dataset.theme || 'snowflake';
+            console.log('[Game] Selected theme:', state.selectedTheme);
+        });
+    });
+
     // Character selection
     document.querySelectorAll('.character-option').forEach(option => {
         option.addEventListener('click', (e) => {
+            const target = (e.currentTarget as HTMLElement);
             document.querySelectorAll('.character-option').forEach(o => o.classList.remove('selected'));
-            (e.target as HTMLElement).classList.add('selected');
-            state.selectedCharacter = (e.target as HTMLElement).dataset.character || '🧒';
+            target.classList.add('selected');
+            state.selectedCharacter = target.dataset.character || '🧒';
             console.log('[Game] Selected character:', state.selectedCharacter);
         });
     });
