@@ -3,7 +3,8 @@ import cors from 'cors';
 import { config } from './config/index.js';
 import { initializeDatabase, closeDatabase } from './services/database.js';
 import { logger } from './utils/logger.js';
-import therapistRoutes from './api/routes/therapist.routes.js';
+import routes from './api/routes/index.js';
+import { globalErrorHandler, notFoundHandler } from './api/middleware/errorHandler.js';
 
 const app = express();
 
@@ -11,13 +12,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
-app.use('/api/therapist', therapistRoutes);
-
 // Health check
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
+
+// API Routes
+app.use('/api/therapist', routes);
+
+// 404 handler (after all routes)
+app.use(notFoundHandler);
+
+// Global error handler (must be last)
+app.use(globalErrorHandler);
 
 // Initialize and start
 initializeDatabase();
