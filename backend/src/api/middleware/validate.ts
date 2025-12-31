@@ -109,9 +109,37 @@ export const confirmEvaluationSchema = z.object({
   service_type: z.enum(['language', 'articulation', 'both']).optional(),
 });
 
+// ============================================
+// Goal Schemas
+// ============================================
+
+export const confirmGoalsSchema = z.object({
+  goals: z.array(
+    z.object({
+      goal_type: z.object({
+        value: z.enum(['language', 'articulation']).nullable(),
+        confidence: z.number().optional(),
+      }),
+      goal_description: z.object({
+        value: z.string().nullable(),
+        confidence: z.number().optional(),
+      }),
+      target_percentage: z.object({
+        value: z.number().nullable(),
+        confidence: z.number().optional(),
+      }),
+      target_date: z.object({
+        value: z.string().nullable(),
+        confidence: z.number().optional(),
+      }),
+    })
+  ),
+});
+
 // Export types inferred from schemas
 export type RegisterInput = z.infer<typeof registerSchema>;
 export type LoginInput = z.infer<typeof loginSchema>;
 export type CreateStudentInput = z.infer<typeof createStudentSchema>;
 export type UpdateStudentInput = z.infer<typeof updateStudentSchema>;
 export type ConfirmEvaluationInput = z.infer<typeof confirmEvaluationSchema>;
+export type ConfirmGoalsInput = z.infer<typeof confirmGoalsSchema>;

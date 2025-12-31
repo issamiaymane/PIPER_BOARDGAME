@@ -41,7 +41,44 @@ export interface Student {
   eval_data?: EvalData | string;
   eval_pdf_path?: string;
   eval_pdf_original_name?: string;
+  goals_pdf_path?: string;
+  goals_pdf_original_name?: string;
   created_at: string;
+}
+
+export interface IEPGoal {
+  id: number;
+  student_id: number;
+  goal_type: 'language' | 'articulation';
+  goal_description: string;
+  target_percentage: number;
+  current_percentage?: number;
+  target_date?: string;
+  status: 'active' | 'achieved' | 'discontinued';
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ExtractedGoal {
+  goal_type: { value: 'language' | 'articulation' | null; confidence: number };
+  goal_description: { value: string | null; confidence: number };
+  target_percentage: { value: number | null; confidence: number };
+  target_date: { value: string | null; confidence: number };
+}
+
+export interface GoalsUploadResponse {
+  success: boolean;
+  pdf_url: string;
+  extracted_data: {
+    goals: ExtractedGoal[];
+    extraction_notes: string;
+  };
+  extraction_notes?: string;
+}
+
+export interface GoalsConfirmResponse {
+  success: boolean;
+  goals: IEPGoal[];
 }
 
 export interface CreateStudentData {
@@ -291,6 +328,86 @@ class ApiService {
   async deleteEvaluationPdf(studentId: number): Promise<{ success: boolean }> {
     return this.request<{ success: boolean }>(
       `/students/${studentId}/evaluation/pdf`,
+      { method: 'DELETE' }
+    );
+  }
+
+  // Goals methods
+  async uploadGoals(
+    studentId: number,
+    file: File,
+    password?: string
+  ): Promise<GoalsUploadResponse> {
+    const formData = new FormData();
+    formData.append('file', file);
+    if (password) {
+      formData.append('password', password);
+    }
+
+    const url = `${this.baseUrl}/students/${studentId}/goals/upload`;
+    const headers: HeadersInit = {};
+    if (this.token) {
+      headers['Authorization'] = `Bearer ${this.token}`;
+    }
+
+    let response: Response;
+    try {
+      response = await fetch(url, {
+        method: 'POST',
+        headers,
+        body: formData,
+      });
+    } catch {
+      throw new ApiError('Network error - is the server running?', 0);
+    }
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      const error = new ApiError(data.error || 'Upload failed', response.status);
+      if (data.code === 'PASSWORD_REQUIRED') {
+        (error as ApiError & { code?: string }).code = 'PASSWORD_REQUIRED';
+      }
+      throw error;
+    }
+
+    return data;
+  }
+
+  async confirmGoals(
+    studentId: number,
+    goals: ExtractedGoal[]
+  ): Promise<GoalsConfirmResponse> {
+    return this.request<GoalsConfirmResponse>(
+      `/students/${studentId}/goals/confirm`,
+      {
+        method: 'POST',
+        body: JSON.stringify({ goals }),
+      }
+    );
+  }
+
+  async getGoals(studentId: number): Promise<{ goals: IEPGoal[] }> {
+    return this.request<{ goals: IEPGoal[] }>(`/students/${studentId}/goals`);
+  }
+
+  async getGoalsPdfBlob(studentId: number): Promise<Blob> {
+    const url = `${this.baseUrl}/students/${studentId}/goals/pdf`;
+    const headers: HeadersInit = {};
+    if (this.token) {
+      headers['Authorization'] = `Bearer ${this.token}`;
+    }
+
+    const response = await fetch(url, { headers });
+    if (!response.ok) {
+      throw new ApiError('Failed to load PDF', response.status);
+    }
+    return response.blob();
+  }
+
+  async deleteGoalsPdf(studentId: number): Promise<{ success: boolean }> {
+    return this.request<{ success: boolean }>(
+      `/students/${studentId}/goals/pdf`,
       { method: 'DELETE' }
     );
   }

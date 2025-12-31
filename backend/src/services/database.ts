@@ -54,6 +54,23 @@ export function initializeDatabase(): void {
     )
   `);
 
+  // Create IEP goals table
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS iep_goals (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      student_id INTEGER NOT NULL,
+      goal_type TEXT NOT NULL CHECK(goal_type IN ('language', 'articulation')),
+      goal_description TEXT NOT NULL,
+      target_percentage INTEGER DEFAULT 80,
+      current_percentage INTEGER DEFAULT 0,
+      target_date TEXT,
+      status TEXT DEFAULT 'active' CHECK(status IN ('active', 'achieved', 'discontinued')),
+      created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+      updated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (student_id) REFERENCES children(id) ON DELETE CASCADE
+    )
+  `);
+
   // Run migrations for existing tables
   runMigrations(db);
 
@@ -92,6 +109,24 @@ function runMigrations(db: Database.Database): void {
   if (!columnNames.includes('eval_pdf_original_name')) {
     db.exec('ALTER TABLE children ADD COLUMN eval_pdf_original_name TEXT');
     logger.info('Migration: Added eval_pdf_original_name column');
+  }
+
+  // Add goals_pdf_path if missing
+  if (!columnNames.includes('goals_pdf_path')) {
+    db.exec('ALTER TABLE children ADD COLUMN goals_pdf_path TEXT');
+    logger.info('Migration: Added goals_pdf_path column');
+  }
+
+  // Add goals_pdf_uploaded_at if missing
+  if (!columnNames.includes('goals_pdf_uploaded_at')) {
+    db.exec('ALTER TABLE children ADD COLUMN goals_pdf_uploaded_at TEXT');
+    logger.info('Migration: Added goals_pdf_uploaded_at column');
+  }
+
+  // Add goals_pdf_original_name if missing
+  if (!columnNames.includes('goals_pdf_original_name')) {
+    db.exec('ALTER TABLE children ADD COLUMN goals_pdf_original_name TEXT');
+    logger.info('Migration: Added goals_pdf_original_name column');
   }
 }
 

@@ -55,6 +55,9 @@ export interface Child {
   eval_pdf_path?: string;
   eval_pdf_uploaded_at?: string;
   eval_pdf_original_name?: string;
+  goals_pdf_path?: string;
+  goals_pdf_uploaded_at?: string;
+  goals_pdf_original_name?: string;
   created_at: string;
 }
 
@@ -112,6 +115,48 @@ export interface UpdateChildRequest {
   grade_level?: string;
   problem_type?: ProblemType;
   eval_data?: EvalData;
+}
+
+// IEP Goal types
+export type GoalType = 'language' | 'articulation';
+
+export interface IEPGoal {
+  id: number;
+  student_id: number;
+  goal_type: GoalType;
+  goal_description: string;
+  target_percentage: number;
+  current_percentage?: number;
+  target_date?: string;
+  status: 'active' | 'achieved' | 'discontinued';
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CreateGoalRequest {
+  goal_type: GoalType;
+  goal_description: string;
+  target_percentage: number;
+  current_percentage?: number;
+  target_date?: string;
+}
+
+export interface UpdateGoalRequest {
+  goal_description?: string;
+  target_percentage?: number;
+  current_percentage?: number;
+  target_date?: string;
+  status?: 'active' | 'achieved' | 'discontinued';
+}
+
+export interface GoalExtractionResult {
+  goals: Array<{
+    goal_type: { value: GoalType | null; confidence: number };
+    goal_description: { value: string | null; confidence: number };
+    target_percentage: { value: number | null; confidence: number };
+    target_date: { value: string | null; confidence: number };
+  }>;
+  extraction_notes: string;
 }
 
 // Express extensions

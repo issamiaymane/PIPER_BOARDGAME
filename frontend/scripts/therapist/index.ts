@@ -3,7 +3,7 @@
  * Handles UI state and user interactions
  */
 
-import { api, type Therapist, type Student, type ApiError, type EvalData } from '../services/api';
+import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../services/api';
 
 // DOM element helpers
 function $(id: string): HTMLElement {
@@ -30,6 +30,12 @@ let loadingInterval: ReturnType<typeof setInterval> | null = null;
 let pendingEvalFile: File | null = null;
 let extractedEvalData: EvalData | null = null;
 let currentPdfUrl: string | null = null;
+
+// Goals upload state
+let pendingGoalsFile: File | null = null;
+let extractedGoals: ExtractedGoal[] = [];
+let currentGoalsPdfUrl: string | null = null;
+let studentGoals: IEPGoal[] = [];
 
 // Loading screen
 function startLoading(): void {
@@ -83,8 +89,7 @@ function closeModal(modalId: string): void {
   hide($(modalId));
 }
 
-// Make closeModal available globally for onclick handlers
-(window as unknown as { closeModal: typeof closeModal }).closeModal = closeModal;
+// Modal close functionality is now handled via event listeners
 
 // Student list
 async function loadStudents(): Promise<void> {
@@ -150,6 +155,9 @@ function selectStudent(id: number): void {
 
   // Render evaluation data
   renderEvalData(student);
+
+  // Load and render goals
+  loadStudentGoals(student.id);
 }
 
 function renderEvalData(student: Student): void {
@@ -581,13 +589,291 @@ async function confirmEvalData(): Promise<void> {
   }
 }
 
-// Expose functions globally for onclick handlers
-const TherapistApp = {
-  retryEvalUploadWithPassword,
-  cancelEvalUpload,
-  confirmEvalData,
-};
-(window as unknown as { TherapistApp: typeof TherapistApp }).TherapistApp = TherapistApp;
+// ============================================
+// Goals Upload Functions
+// ============================================
+
+async function loadStudentGoals(studentId: number): Promise<void> {
+  const container = document.getElementById('goals-data-display');
+  if (!container) return;
+
+  try {
+    const result = await api.getGoals(studentId);
+    studentGoals = result.goals;
+    renderGoalsData();
+  } catch {
+    container.innerHTML = '<p class="empty-state">Failed to load goals</p>';
+  }
+}
+
+function renderGoalsData(): void {
+  const container = document.getElementById('goals-data-display');
+  if (!container) return;
+
+  if (studentGoals.length === 0) {
+    container.innerHTML = '<p class="empty-state">No IEP goals entered yet.</p>';
+    return;
+  }
+
+  let html = '<div class="goals-list">';
+
+  for (const goal of studentGoals) {
+    const typeLabel = goal.goal_type === 'language' ? 'Language' : 'Articulation';
+    const statusClass = goal.status === 'active' ? 'active' : goal.status === 'achieved' ? 'achieved' : 'discontinued';
+    const statusBadge = goal.status === 'active' ? 'Active' : goal.status === 'achieved' ? 'Achieved' : 'Discontinued';
+    const targetDate = goal.target_date ? new Date(goal.target_date).toLocaleDateString() : 'Not set';
+
+    html += `
+      <div class="goal-item ${statusClass}" data-goal-id="${goal.id}">
+        <div class="goal-header">
+          <span class="goal-type-badge ${goal.goal_type}">${typeLabel}</span>
+          <span class="goal-target">${goal.target_percentage}% target</span>
+        </div>
+        <p class="goal-description">${goal.goal_description}</p>
+        <div class="goal-details hidden" id="goal-details-${goal.id}">
+          <div class="goal-detail-row">
+            <strong>Status:</strong> ${statusBadge}
+          </div>
+          <div class="goal-detail-row">
+            <strong>Target Date:</strong> ${targetDate}
+          </div>
+          <div class="goal-detail-row">
+            <strong>Current Progress:</strong> ${goal.current_percentage ?? 0}%
+          </div>
+          <div class="goal-detail-row">
+            <strong>Created:</strong> ${new Date(goal.created_at).toLocaleDateString()}
+          </div>
+          ${goal.updated_at !== goal.created_at ? `<div class="goal-detail-row"><strong>Last Updated:</strong> ${new Date(goal.updated_at).toLocaleDateString()}</div>` : ''}
+        </div>
+      </div>
+    `;
+  }
+
+  html += '</div>';
+  container.innerHTML = html;
+
+  // Add click handlers to toggle details
+  container.querySelectorAll('.goal-item').forEach((item) => {
+    item.addEventListener('click', () => {
+      const goalId = item.getAttribute('data-goal-id');
+      const detailsEl = document.getElementById(`goal-details-${goalId}`);
+      if (detailsEl) {
+        const isHidden = detailsEl.classList.contains('hidden');
+        // Hide all other details first
+        container.querySelectorAll('.goal-details').forEach(d => d.classList.add('hidden'));
+        // Toggle this one
+        if (isHidden) {
+          detailsEl.classList.remove('hidden');
+        }
+      }
+    });
+  });
+}
+
+function resetGoalsUploadModal(): void {
+  if (currentGoalsPdfUrl) {
+    URL.revokeObjectURL(currentGoalsPdfUrl);
+  }
+
+  pendingGoalsFile = null;
+  extractedGoals = [];
+  currentGoalsPdfUrl = null;
+
+  const pdfFrame = document.getElementById('goals-pdf-frame') as HTMLIFrameElement | null;
+  if (pdfFrame) pdfFrame.src = '';
+
+  show($('goals-upload-state'));
+  hide($('goals-loading-state'));
+  hide($('goals-review-state'));
+
+  const fileInput = document.getElementById('goals-file-input') as HTMLInputElement | null;
+  if (fileInput) fileInput.value = '';
+
+  hide($('goals-password-field'));
+  hide($('goals-upload-error'));
+  const passwordInput = document.getElementById('goals-pdf-password') as HTMLInputElement | null;
+  if (passwordInput) passwordInput.value = '';
+}
+
+function showGoalsLoading(): void {
+  hide($('goals-upload-state'));
+  show($('goals-loading-state'));
+  hide($('goals-review-state'));
+}
+
+function showGoalsReview(): void {
+  hide($('goals-upload-state'));
+  hide($('goals-loading-state'));
+  show($('goals-review-state'));
+}
+
+function showGoalsError(message: string): void {
+  const errorEl = $('goals-upload-error');
+  errorEl.textContent = message;
+  show(errorEl);
+}
+
+function populateGoalsForm(goals: ExtractedGoal[]): void {
+  const container = $('extracted-goals-list');
+
+  if (goals.length === 0) {
+    container.innerHTML = '<p class="empty-state">No goals were extracted from the document.</p>';
+    return;
+  }
+
+  let html = '';
+
+  goals.forEach((goal, index) => {
+    const goalType = goal.goal_type.value || 'language';
+    const description = goal.goal_description.value || '';
+    const targetPct = goal.target_percentage.value || 80;
+    const targetDate = goal.target_date.value || '';
+
+    html += `
+      <div class="extracted-goal-item" data-index="${index}">
+        <div class="goal-form-row">
+          <label>Type:</label>
+          <select class="goal-type-select">
+            <option value="language" ${goalType === 'language' ? 'selected' : ''}>Language</option>
+            <option value="articulation" ${goalType === 'articulation' ? 'selected' : ''}>Articulation</option>
+          </select>
+        </div>
+        <div class="goal-form-row">
+          <label>Goal:</label>
+          <textarea class="goal-description-input" rows="3">${description}</textarea>
+        </div>
+        <div class="goal-form-row">
+          <label>Target %:</label>
+          <input type="number" class="goal-target-input" min="0" max="100" value="${targetPct}">
+        </div>
+        <div class="goal-form-row">
+          <label>Target Date:</label>
+          <input type="date" class="goal-date-input" value="${targetDate}">
+        </div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
+function getFormGoalsData(): ExtractedGoal[] {
+  const container = $('extracted-goals-list');
+  const goalItems = container.querySelectorAll('.extracted-goal-item');
+  const goals: ExtractedGoal[] = [];
+
+  goalItems.forEach((item) => {
+    const typeSelect = item.querySelector('.goal-type-select') as HTMLSelectElement;
+    const descInput = item.querySelector('.goal-description-input') as HTMLTextAreaElement;
+    const targetInput = item.querySelector('.goal-target-input') as HTMLInputElement;
+    const dateInput = item.querySelector('.goal-date-input') as HTMLInputElement;
+
+    goals.push({
+      goal_type: { value: typeSelect.value as 'language' | 'articulation', confidence: 0.9 },
+      goal_description: { value: descInput.value || null, confidence: 0.9 },
+      target_percentage: { value: parseInt(targetInput.value) || 80, confidence: 0.9 },
+      target_date: { value: dateInput.value || null, confidence: 0.9 },
+    });
+  });
+
+  return goals;
+}
+
+async function handleGoalsFileSelect(file: File): Promise<void> {
+  if (!selectedStudentId) {
+    showGoalsError('Please select a student first');
+    return;
+  }
+
+  if (file.type !== 'application/pdf') {
+    showGoalsError('Please select a PDF file');
+    return;
+  }
+
+  if (file.size > 20 * 1024 * 1024) {
+    showGoalsError('File is too large. Maximum size is 20MB.');
+    return;
+  }
+
+  pendingGoalsFile = file;
+  hide($('goals-upload-error'));
+
+  await uploadGoalsFile();
+}
+
+async function uploadGoalsFile(password?: string): Promise<void> {
+  if (!pendingGoalsFile || !selectedStudentId) return;
+
+  showGoalsLoading();
+
+  try {
+    const result = await api.uploadGoals(selectedStudentId, pendingGoalsFile, password);
+
+    extractedGoals = result.extracted_data.goals;
+
+    populateGoalsForm(extractedGoals);
+
+    try {
+      const pdfBlob = await api.getGoalsPdfBlob(selectedStudentId);
+      currentGoalsPdfUrl = URL.createObjectURL(pdfBlob);
+      const pdfFrame = document.getElementById('goals-pdf-frame') as HTMLIFrameElement;
+      if (pdfFrame) pdfFrame.src = currentGoalsPdfUrl;
+    } catch {
+      console.warn('Could not load PDF preview');
+    }
+
+    showGoalsReview();
+  } catch (err) {
+    const error = err as ApiError & { code?: string };
+
+    if (error.code === 'PASSWORD_REQUIRED') {
+      show($('goals-upload-state'));
+      hide($('goals-loading-state'));
+      show($('goals-password-field'));
+      return;
+    }
+
+    show($('goals-upload-state'));
+    hide($('goals-loading-state'));
+    showGoalsError(error.message);
+  }
+}
+
+async function retryGoalsUploadWithPassword(): Promise<void> {
+  const password = ($('goals-pdf-password') as HTMLInputElement).value;
+  if (!password) {
+    showGoalsError('Please enter the PDF password');
+    return;
+  }
+  await uploadGoalsFile(password);
+}
+
+function cancelGoalsUpload(): void {
+  resetGoalsUploadModal();
+  closeModal('goals-upload-modal');
+}
+
+async function confirmGoalsData(): Promise<void> {
+  if (!selectedStudentId) return;
+
+  const goals = getFormGoalsData();
+
+  try {
+    hide($('goals-confirm-error'));
+
+    await api.confirmGoals(selectedStudentId, goals);
+
+    resetGoalsUploadModal();
+    closeModal('goals-upload-modal');
+
+    // Reload goals
+    await loadStudentGoals(selectedStudentId);
+  } catch (err) {
+    const errorEl = $('goals-confirm-error');
+    errorEl.textContent = (err as ApiError).message;
+    show(errorEl);
+  }
+}
 
 // Auth handlers
 async function handleLogin(e: Event): Promise<void> {
@@ -736,11 +1022,76 @@ function bindEvents(): void {
     }
   });
 
+  // Upload Goals PDF button
+  const uploadGoalsBtn = document.getElementById('upload-goals-btn');
+  if (uploadGoalsBtn) {
+    uploadGoalsBtn.addEventListener('click', () => {
+      if (!selectedStudentId) {
+        alert('Please select a student first');
+        return;
+      }
+      resetGoalsUploadModal();
+      openModal('goals-upload-modal');
+    });
+  }
+
+  // Goals dropzone
+  const goalsDropzone = document.getElementById('goals-dropzone');
+  const goalsFileInput = document.getElementById('goals-file-input') as HTMLInputElement | null;
+
+  if (goalsDropzone && goalsFileInput) {
+    goalsDropzone.addEventListener('click', () => {
+      goalsFileInput.click();
+    });
+
+    goalsFileInput.addEventListener('change', () => {
+      const file = goalsFileInput.files?.[0];
+      if (file) {
+        handleGoalsFileSelect(file);
+      }
+    });
+
+    goalsDropzone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      goalsDropzone.classList.add('drag-over');
+    });
+
+    goalsDropzone.addEventListener('dragleave', () => {
+      goalsDropzone.classList.remove('drag-over');
+    });
+
+    goalsDropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      goalsDropzone.classList.remove('drag-over');
+      const file = e.dataTransfer?.files[0];
+      if (file) {
+        handleGoalsFileSelect(file);
+      }
+    });
+  }
+
   // Modal close buttons
   document.querySelectorAll('.modal-close').forEach((btn) => {
     btn.addEventListener('click', () => {
       const modal = btn.closest('.modal');
-      if (modal) hide(modal as HTMLElement);
+      if (modal) {
+        const modalId = modal.id;
+        // Reset modal state when closing
+        if (modalId === 'eval-upload-modal') {
+          resetEvalUploadModal();
+        } else if (modalId === 'goals-upload-modal') {
+          resetGoalsUploadModal();
+        }
+        hide(modal as HTMLElement);
+      }
+    });
+  });
+
+  // Cancel modal buttons
+  document.querySelectorAll('.cancel-modal').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const modalId = btn.getAttribute('data-modal');
+      if (modalId) closeModal(modalId);
     });
   });
 
@@ -752,6 +1103,38 @@ function bindEvents(): void {
       }
     });
   });
+
+  // Evaluation upload modal buttons
+  const evalRetryPasswordBtn = document.getElementById('eval-retry-password-btn');
+  if (evalRetryPasswordBtn) {
+    evalRetryPasswordBtn.addEventListener('click', retryEvalUploadWithPassword);
+  }
+
+  const evalCancelBtn = document.getElementById('eval-cancel-btn');
+  if (evalCancelBtn) {
+    evalCancelBtn.addEventListener('click', cancelEvalUpload);
+  }
+
+  const evalConfirmBtn = document.getElementById('eval-confirm-btn');
+  if (evalConfirmBtn) {
+    evalConfirmBtn.addEventListener('click', confirmEvalData);
+  }
+
+  // Goals upload modal buttons
+  const goalsRetryPasswordBtn = document.getElementById('goals-retry-password-btn');
+  if (goalsRetryPasswordBtn) {
+    goalsRetryPasswordBtn.addEventListener('click', retryGoalsUploadWithPassword);
+  }
+
+  const goalsCancelBtn = document.getElementById('goals-cancel-btn');
+  if (goalsCancelBtn) {
+    goalsCancelBtn.addEventListener('click', cancelGoalsUpload);
+  }
+
+  const goalsConfirmBtn = document.getElementById('goals-confirm-btn');
+  if (goalsConfirmBtn) {
+    goalsConfirmBtn.addEventListener('click', confirmGoalsData);
+  }
 }
 
 // Initialize
