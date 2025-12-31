@@ -1,3 +1,8 @@
+/**
+ * Auth Service
+ * Handles therapist authentication only
+ */
+
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { getDatabase } from './database.js';

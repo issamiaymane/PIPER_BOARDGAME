@@ -29,6 +29,27 @@ export interface LoginData {
   password: string;
 }
 
+export interface Student {
+  id: number;
+  therapist_id: number;
+  username: string;
+  first_name: string;
+  last_name: string;
+  date_of_birth?: string;
+  grade_level?: string;
+  problem_type?: 'language' | 'articulation' | 'both';
+  created_at: string;
+}
+
+export interface CreateStudentData {
+  username: string;
+  password: string;
+  first_name: string;
+  last_name: string;
+  date_of_birth?: string;
+  grade_level?: string;
+}
+
 export class ApiError extends Error {
   constructor(
     message: string,
@@ -130,6 +151,28 @@ class ApiService {
 
   isAuthenticated(): boolean {
     return this.token !== null;
+  }
+
+  // Student methods
+  async listStudents(): Promise<Student[]> {
+    return this.request<Student[]>('/students');
+  }
+
+  async createStudent(data: CreateStudentData): Promise<Student> {
+    return this.request<Student>('/students', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async getStudent(id: number): Promise<Student> {
+    return this.request<Student>(`/students/${id}`);
+  }
+
+  async deleteStudent(id: number): Promise<{ success: boolean }> {
+    return this.request<{ success: boolean }>(`/students/${id}`, {
+      method: 'DELETE',
+    });
   }
 }
 
