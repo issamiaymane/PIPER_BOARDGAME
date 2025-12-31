@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    // Target modern browsers
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    // Allow JavaScript files (gradual migration)
+    "allowJs": true,
+    "checkJs": false,
+
+    // Strict mode for new TypeScript files
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    // Interop settings
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Output settings
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+
+    // Paths
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["scripts/*"],
+      "@core/*": ["scripts/core/*"],
+      "@handlers/*": ["scripts/handlers/*"],
+      "@data/*": ["scripts/data/*"]
+    }
+  },
+  "include": [
+    "scripts/**/*.ts",
+    "scripts/**/*.d.ts",
+    "scripts/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

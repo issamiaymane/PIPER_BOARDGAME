@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: speech-therapy-ai
+    env: docker
+    region: oregon
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
+    healthCheckPath: /api/health

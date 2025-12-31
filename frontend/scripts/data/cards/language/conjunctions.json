@@ -1,0 +1,736 @@
+{
+  "Coordinating Conjuctions": [
+    {
+      "question": "I packed my bag _______ my lunch for the day.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/and/backpack.png",
+          "label": "A backpack and lunch bag"
+        }
+      ],
+      "answers": [
+        "and"
+      ]
+    },
+    {
+      "question": "I like apples _______ oranges.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/and/fruits.png",
+          "label": "Apples and oranges"
+        }
+      ],
+      "answers": [
+        "and"
+      ]
+    },
+    {
+      "question": "I brushed my teeth _______ washed my face before bed.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/and/brushing.png",
+          "label": "Child brushing teeth"
+        }
+      ],
+      "answers": [
+        "and"
+      ]
+    },
+    {
+      "question": "We brought towels _______ sunscreen to the beach.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/and/beach_items.png",
+          "label": "Towels and sunscreen"
+        }
+      ],
+      "answers": [
+        "and"
+      ]
+    },
+    {
+      "question": "My family has a dog _______ a cat at home.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/and/pets.png",
+          "label": "A dog and a cat"
+        }
+      ],
+      "answers": [
+        "and"
+      ]
+    },
+    {
+      "question": "It was sunny _______ a little windy at the beach.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/but/sunny_windy.png",
+          "label": "Sunny beach with wind"
+        }
+      ],
+      "answers": [
+        "but"
+      ]
+    },
+    {
+      "question": "I was hungry _______ there was no food left.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/but/empty_plate.png",
+          "label": "An empty plate"
+        }
+      ],
+      "answers": [
+        "but"
+      ]
+    },
+    {
+      "question": "I wanted to swim _______ the pool was closed.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/but/closed_pool.png",
+          "label": "Closed swimming pool"
+        }
+      ],
+      "answers": [
+        "but"
+      ]
+    },
+    {
+      "question": "It looked warm outside _______ it was actually cold.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/but/jacket.png",
+          "label": "Person wearing a jacket"
+        }
+      ],
+      "answers": [
+        "but"
+      ]
+    },
+    {
+      "question": "I tried to reach the cup _______ it was too high.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/but/high_shelf.png",
+          "label": "Cup on a high shelf"
+        }
+      ],
+      "answers": [
+        "but"
+      ]
+    },
+    {
+      "question": "Would you like juice _______ water to drink?",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/or/drinks.png",
+          "label": "Juice and water"
+        }
+      ],
+      "answers": [
+        "or"
+      ]
+    },
+    {
+      "question": "We can go to the beach _______ the park today.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/or/beach_park.png",
+          "label": "Beach and park"
+        }
+      ],
+      "answers": [
+        "or"
+      ]
+    },
+    {
+      "question": "Should I wear sneakers _______ sandals?",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/or/shoes.png",
+          "label": "Sneakers and sandals"
+        }
+      ],
+      "answers": [
+        "or"
+      ]
+    },
+    {
+      "question": "You can read a book _______ use the tablet.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/or/book_tablet.png",
+          "label": "A book and a tablet"
+        }
+      ],
+      "answers": [
+        "or"
+      ]
+    },
+    {
+      "question": "Do you want oatmeal _______ toast for breakfast?",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/or/breakfast.png",
+          "label": "Oatmeal and toast"
+        }
+      ],
+      "answers": [
+        "or"
+      ]
+    },
+    {
+      "question": "It started to rain _______ I used an umbrella.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/so/umbrella.png",
+          "label": "Person with umbrella in rain"
+        }
+      ],
+      "answers": [
+        "so"
+      ]
+    },
+    {
+      "question": "I was very tired _______ I went to bed early.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/so/tired.png",
+          "label": "Tired child yawning"
+        }
+      ],
+      "answers": [
+        "so"
+      ]
+    },
+    {
+      "question": "My shoes got wet _______ I went home to change them.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/so/wet_shoes.png",
+          "label": "Wet shoes"
+        }
+      ],
+      "answers": [
+        "so"
+      ]
+    },
+    {
+      "question": "It was very hot _______ we stayed in the shade.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/so/shade.png",
+          "label": "People sitting in shade"
+        }
+      ],
+      "answers": [
+        "so"
+      ]
+    },
+    {
+      "question": "The sun was strong _______ I put on sunscreen.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/so/sunscreen.png",
+          "label": "Applying sunscreen"
+        }
+      ],
+      "answers": [
+        "so"
+      ]
+    },
+    {
+      "question": "She is small _______ very strong.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/yet/strong_child.png",
+          "label": "Small but strong child"
+        }
+      ],
+      "answers": [
+        "yet"
+      ]
+    },
+    {
+      "question": "It was raining _______ we still had fun at the beach.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/yet/rainy_beach.png",
+          "label": "Playing at beach in rain"
+        }
+      ],
+      "answers": [
+        "yet"
+      ]
+    },
+    {
+      "question": "The puzzle looked easy _______ it took a long time.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/yet/puzzle.png",
+          "label": "A challenging puzzle"
+        }
+      ],
+      "answers": [
+        "yet"
+      ]
+    },
+    {
+      "question": "He doesn't like vegetables _______ he ate all his cucumbers.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/yet/vegetables.png",
+          "label": "Plate of vegetables"
+        }
+      ],
+      "answers": [
+        "yet"
+      ]
+    },
+    {
+      "question": "The line was long _______ it moved quickly.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/yet/line.png",
+          "label": "People waiting in line"
+        }
+      ],
+      "answers": [
+        "yet"
+      ]
+    },
+    {
+      "question": "I drank lots of water _______ I was very thirsty.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/for/drinking.png",
+          "label": "Child drinking water"
+        }
+      ],
+      "answers": [
+        "for"
+      ]
+    },
+    {
+      "question": "I wore my jacket _______ it was cold outside.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/for/jacket.png",
+          "label": "Child wearing a jacket"
+        }
+      ],
+      "answers": [
+        "for"
+      ]
+    },
+    {
+      "question": "We went to the beach _______ it was a beautiful day.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/for/beach_day.png",
+          "label": "Beautiful beach day"
+        }
+      ],
+      "answers": [
+        "for"
+      ]
+    },
+    {
+      "question": "I went to bed early _______ I had a big day tomorrow.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/for/bed_early.png",
+          "label": "Child going to bed early"
+        }
+      ],
+      "answers": [
+        "for"
+      ]
+    },
+    {
+      "question": "I helped with the dishes _______ my mom needed help.",
+      "images": [
+        {
+          "image": "../assets/images/cards/25_conjunctions/for/dishes.png",
+          "label": "Child helping with dishes"
+        }
+      ],
+      "answers": [
+        "for"
+      ]
+    }
+  ],
+  "Subordinating Conjunctions": [
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/music-speakers.png",
+          "label": "Music speakers"
+        }
+      ],
+      "sentence": "The person <span class='conjunction-highlight'>who</span> turned on the music needs to make sure it isn't too loud.",
+      "answers": [
+        "who"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/sunscreen.png",
+          "label": "Applying sunscreen"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>Before</span> you go to the beach, make sure to put on sunscreen.",
+      "answers": [
+        "before"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/rain.png",
+          "label": "Running inside from rain"
+        }
+      ],
+      "sentence": "We ran inside <span class='conjunction-highlight'>when</span> it started to rain.",
+      "answers": [
+        "when"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/hungry-child.png",
+          "label": "Hungry child"
+        }
+      ],
+      "sentence": "I was hungry <span class='conjunction-highlight'>because</span> I didn't eat breakfast.",
+      "answers": [
+        "because"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/shoes.png",
+          "label": "Putting on shoes"
+        }
+      ],
+      "sentence": "We can leave <span class='conjunction-highlight'>after</span> you put on your shoes.",
+      "answers": [
+        "after"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/homework.png",
+          "label": "Finishing homework"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>Although</span> she was tired, she finished her homework.",
+      "answers": [
+        "although"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/umbrella.png",
+          "label": "Bringing an umbrella"
+        }
+      ],
+      "sentence": "Bring an umbrella <span class='conjunction-highlight'>if</span> it looks like rain.",
+      "answers": [
+        "if"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/swimming-pool.png",
+          "label": "Swimming in the pool"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>While</span> we were swimming, Mom made lunch.",
+      "answers": [
+        "while"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/helping-dishes.png",
+          "label": "Helping with dishes"
+        }
+      ],
+      "sentence": "I will help you <span class='conjunction-highlight'>since</span> you helped me yesterday.",
+      "answers": [
+        "since"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/sleeping.png",
+          "label": "Child falling asleep"
+        }
+      ],
+      "sentence": "He fell asleep <span class='conjunction-highlight'>as soon as</span> his head hit the pillow.",
+      "answers": [
+        "as soon as"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/lifeguard.png",
+          "label": "Lifeguard at the pool"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>Until</span> the lifeguard says it's safe, stay out of the water.",
+      "answers": [
+        "until"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/sandcastle.png",
+          "label": "Building a sandcastle"
+        }
+      ],
+      "sentence": "We kept building <span class='conjunction-highlight'>even though</span> the waves kept washing it away.",
+      "answers": [
+        "even though"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/brushing-teeth.png",
+          "label": "Brushing teeth"
+        }
+      ],
+      "sentence": "Brush your teeth <span class='conjunction-highlight'>before</span> you go to bed.",
+      "answers": [
+        "before"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/beach-love.png",
+          "label": "Playing at the beach"
+        }
+      ],
+      "sentence": "I love the beach <span class='conjunction-highlight'>because</span> I can swim and play in the sand.",
+      "answers": [
+        "because"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/window-sun.png",
+          "label": "Sun coming through the window"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>When</span> the sun comes out, we can go outside.",
+      "answers": [
+        "when"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/clean-room.png",
+          "label": "Cleaning the room"
+        }
+      ],
+      "sentence": "You can play <span class='conjunction-highlight'>after</span> you clean your room.",
+      "answers": [
+        "after"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/jacket.png",
+          "label": "Wearing a jacket"
+        }
+      ],
+      "sentence": "Wear a jacket <span class='conjunction-highlight'>if</span> you feel cold.",
+      "answers": [
+        "if"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/reading-book.png",
+          "label": "Reading a book"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>While</span> Dad cooked dinner, I read my book.",
+      "answers": [
+        "while"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/sharing-toys.png",
+          "label": "Sharing toys"
+        }
+      ],
+      "sentence": "I shared my toys <span class='conjunction-highlight'>because</span> sharing is kind.",
+      "answers": [
+        "because"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/sunny-beach.png",
+          "label": "Sunny day at the beach"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>Since</span> it was sunny, we decided to go to the beach.",
+      "answers": [
+        "since"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/phone-grandma.png",
+          "label": "Calling grandma on the phone"
+        }
+      ],
+      "sentence": "Call Grandma <span class='conjunction-highlight'>before</span> it gets too late.",
+      "answers": [
+        "before"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/stay-close.png",
+          "label": "Staying close together"
+        }
+      ],
+      "sentence": "Stay close to me <span class='conjunction-highlight'>until</span> we find a good spot.",
+      "answers": [
+        "until"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/bell-peppers.png",
+          "label": "Eating bell peppers"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>Although</span> he doesn't like bell peppers, he ate them anyway.",
+      "answers": [
+        "although"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/running-car.png",
+          "label": "Running to the car"
+        }
+      ],
+      "sentence": "<span class='conjunction-highlight'>As soon as</span> Mom said it was time to go, I ran to the car.",
+      "answers": [
+        "as soon as"
+      ]
+    },
+    {
+      "question": "What is the subordinating conjunction in this sentence?",
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/seashell-girl.png",
+          "label": "Girl finding a seashell"
+        }
+      ],
+      "sentence": "The girl <span class='conjunction-highlight'>who</span> found the seashell was very excited.",
+      "answers": [
+        "who"
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/lunch-fruit.png",
+          "label": "Lunch with fruit"
+        }
+      ],
+      "sentence": "_____ you finish your lunch, you can have fruit."
+    },
+    {
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/sunscreen-burn.png",
+          "label": "Wearing sunscreen"
+        }
+      ],
+      "sentence": "I wore sunscreen _____ I didn't want to get burned."
+    },
+    {
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/cloudy-beach.png",
+          "label": "Cloudy day at the beach"
+        }
+      ],
+      "sentence": "_____ it was cloudy, we still went to the beach."
+    },
+    {
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/stay-here.png",
+          "label": "Staying in one place"
+        }
+      ],
+      "sentence": "Stay here _____ I come back."
+    },
+    {
+      "images": [
+        {
+          "image": "../assets/images/cards/96_subordinating_conjunctions/neighbor-boy.png",
+          "label": "Neighbor boy"
+        }
+      ],
+      "sentence": "The boy _____ lives next door is my friend."
+    }
+  ]
+}

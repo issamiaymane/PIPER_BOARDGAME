@@ -1,0 +1,1539 @@
+/**
+ * ╔═══════════════════════════════════════════════════════════════════════════╗
+ * ║                     KINDLY CUTE DESIGN SYSTEM                             ║
+ * ║                   Speech Therapy Board Game Theme                         ║
+ * ╠═══════════════════════════════════════════════════════════════════════════╣
+ * ║  A unified, child-friendly design system featuring:                       ║
+ * ║  • Soft pastel colors (Soft Teal, Pale Yellow, Lavender)                  ║
+ * ║  • Extra rounded corners (30px+)                                          ║
+ * ║  • Large dyslexia-friendly typography (24-32px)                           ║
+ * ║  • Subtle "Bounce" animations                                             ║
+ * ║  • Magical glow effects for interactive elements                          ║
+ * ╚═══════════════════════════════════════════════════════════════════════════╝
+ */
+
+/* ==================== [1] CSS VARIABLES - DESIGN TOKENS ==================== */
+:root {
+    /* === Primary Palette (Soft Pastels) === */
+    --kc-teal: #7EC8C8;
+    --kc-teal-light: #A8E0E0;
+    --kc-teal-dark: #5BA3A3;
+
+    --kc-yellow: #FFF4CC;
+    --kc-yellow-light: #FFFAE6;
+    --kc-yellow-dark: #FFE699;
+
+    --kc-lavender: #D4B8E0;
+    --kc-lavender-light: #E8D4F0;
+    --kc-lavender-dark: #B896C8;
+
+    /* === Secondary Colors === */
+    --kc-coral: #FFAB91;
+    --kc-coral-light: #FFCCBC;
+    --kc-coral-dark: #FF8A65;
+
+    --kc-mint: #A5D6A7;
+    --kc-mint-light: #C8E6C9;
+    --kc-mint-dark: #81C784;
+
+    --kc-sky: #90CAF9;
+    --kc-sky-light: #BBDEFB;
+    --kc-sky-dark: #64B5F6;
+
+    /* === Feedback Colors === */
+    --kc-success: #81C784;
+    --kc-success-bg: #E8F5E9;
+    --kc-success-border: #4CAF50;
+
+    --kc-error: #EF9A9A;
+    --kc-error-bg: #FFEBEE;
+    --kc-error-border: #F44336;
+
+    --kc-warning: #FFE082;
+    --kc-warning-bg: #FFF8E1;
+    --kc-warning-border: #FF9800;
+
+    /* === Karaoke Highlighting === */
+    --kc-karaoke-highlight: #FF6B00;
+    --kc-karaoke-glow: rgba(255, 107, 0, 0.5);
+    --kc-karaoke-bg: rgba(255, 107, 0, 0.15);
+
+    /* === Text Colors === */
+    --kc-text-primary: #4A3728;
+    --kc-text-secondary: #6D5A4A;
+    --kc-text-muted: #8D7A6A;
+    --kc-text-light: #FFFFFF;
+
+    /* === Background Colors === */
+    --kc-bg-card: linear-gradient(180deg, #FFFEF7 0%, #FFF9E6 100%);
+    --kc-bg-card-warm: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 100%);
+    --kc-bg-input: #FFFFFF;
+    --kc-bg-overlay: rgba(0, 0, 0, 0.4);
+
+    /* === Border & Shadow === */
+    --kc-border-default: 4px solid #E0D4C8;
+    --kc-border-accent: 4px solid var(--kc-coral);
+    --kc-border-focus: 4px solid var(--kc-teal);
+
+    --kc-shadow-soft: 0 8px 24px rgba(74, 55, 40, 0.15);
+    --kc-shadow-lifted: 0 12px 32px rgba(74, 55, 40, 0.2);
+    --kc-shadow-pressed: 0 4px 12px rgba(74, 55, 40, 0.1);
+
+    /* === Border Radius (Extra Rounded) === */
+    --kc-radius-sm: 16px;
+    --kc-radius-md: 24px;
+    --kc-radius-lg: 32px;
+    --kc-radius-xl: 40px;
+    --kc-radius-pill: 100px;
+    --kc-radius-circle: 50%;
+
+    /* === Typography === */
+    --kc-font-display: 'Fredoka One', cursive;
+    --kc-font-body: 'OpenDyslexic', 'Nunito', sans-serif;
+
+    --kc-size-xs: 14px;
+    --kc-size-sm: 18px;
+    --kc-size-md: 24px;
+    --kc-size-lg: 28px;
+    --kc-size-xl: 32px;
+    --kc-size-xxl: 40px;
+
+    --kc-weight-normal: 400;
+    --kc-weight-medium: 600;
+    --kc-weight-bold: 700;
+
+    /* === Spacing === */
+    --kc-space-xs: 8px;
+    --kc-space-sm: 12px;
+    --kc-space-md: 20px;
+    --kc-space-lg: 28px;
+    --kc-space-xl: 40px;
+
+    /* === Animation === */
+    --kc-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --kc-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --kc-duration-fast: 0.2s;
+    --kc-duration-normal: 0.3s;
+    --kc-duration-slow: 0.5s;
+
+    /* === Glow Effects === */
+    --kc-glow-magical: 0 0 20px rgba(126, 200, 200, 0.6), 0 0 40px rgba(126, 200, 200, 0.3);
+    --kc-glow-recording: 0 0 0 0 rgba(244, 67, 54, 0.7);
+    --kc-glow-success: 0 0 20px rgba(129, 199, 132, 0.5);
+}
+
+/* ==================== [2] BOUNCE ANIMATIONS ==================== */
+@keyframes kc-bounce-in {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes kc-bounce-out {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes kc-pulse-glow {
+    0%, 100% {
+        box-shadow: var(--kc-glow-magical);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(126, 200, 200, 0.8), 0 0 60px rgba(126, 200, 200, 0.4);
+    }
+}
+
+@keyframes kc-mic-pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(244, 67, 54, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 15px rgba(244, 67, 54, 0);
+    }
+}
+
+@keyframes kc-wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+}
+
+@keyframes kc-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes kc-sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* ==================== [3] BASE CARD STYLES ==================== */
+.kc-card {
+    background: var(--kc-bg-card-warm);
+    border-radius: var(--kc-radius-lg);
+    border: 5px solid var(--kc-coral);
+    padding: var(--kc-space-lg);
+    box-shadow: var(--kc-shadow-soft);
+    animation: kc-bounce-in var(--kc-duration-normal) var(--kc-ease-bounce);
+}
+
+.kc-card-header {
+    text-align: center;
+    margin-bottom: var(--kc-space-md);
+}
+
+.kc-card-title {
+    font-family: var(--kc-font-display);
+    font-size: var(--kc-size-lg);
+    color: var(--kc-coral-dark);
+    text-shadow: 2px 2px 0 white;
+    background: linear-gradient(180deg, #FFF 0%, var(--kc-yellow) 100%);
+    padding: var(--kc-space-xs) var(--kc-space-lg);
+    border-radius: var(--kc-radius-md);
+    border: 3px solid var(--kc-coral);
+    display: inline-block;
+}
+
+.kc-card-body {
+    background: white;
+    border-radius: var(--kc-radius-md);
+    padding: var(--kc-space-md);
+    border: 4px dashed var(--kc-yellow-dark);
+}
+
+/* ==================== [4] QUESTION TEXT STYLES ==================== */
+.kc-question {
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-md);
+    color: var(--kc-text-primary);
+    text-align: center;
+    line-height: 1.5;
+    padding: var(--kc-space-sm);
+}
+
+/* Karaoke Highlight Word */
+.kc-karaoke-word {
+    display: inline;
+    transition: all 0.15s ease;
+}
+
+.kc-karaoke-word.active {
+    color: var(--kc-karaoke-highlight);
+    background: var(--kc-karaoke-bg);
+    border-radius: var(--kc-radius-sm);
+    padding: 2px 6px;
+    font-weight: var(--kc-weight-bold);
+    text-shadow: 0 0 10px var(--kc-karaoke-glow);
+}
+
+/* ==================== [5] INPUT STYLES ==================== */
+.kc-input {
+    width: 100%;
+    padding: var(--kc-space-sm) var(--kc-space-md);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+    color: var(--kc-text-primary);
+    background: var(--kc-bg-input);
+    border: var(--kc-border-default);
+    border-radius: var(--kc-radius-md);
+    outline: none;
+    transition: all var(--kc-duration-fast) var(--kc-ease-smooth);
+}
+
+.kc-input:focus {
+    border-color: var(--kc-teal);
+    box-shadow: 0 0 0 4px rgba(126, 200, 200, 0.3);
+}
+
+.kc-input::placeholder {
+    color: var(--kc-text-muted);
+    font-style: italic;
+}
+
+.kc-input.correct {
+    border-color: var(--kc-success-border);
+    background: var(--kc-success-bg);
+}
+
+.kc-input.incorrect {
+    border-color: var(--kc-error-border);
+    background: var(--kc-error-bg);
+}
+
+/* Text Area */
+.kc-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* ==================== [6] BUTTON STYLES ==================== */
+.kc-btn {
+    font-family: var(--kc-font-display);
+    font-size: var(--kc-size-sm);
+    padding: var(--kc-space-sm) var(--kc-space-lg);
+    border: none;
+    border-radius: var(--kc-radius-pill);
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--kc-space-xs);
+}
+
+.kc-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: var(--kc-shadow-lifted);
+}
+
+.kc-btn:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: var(--kc-shadow-pressed);
+}
+
+/* Primary Button (Teal) */
+.kc-btn-primary {
+    background: linear-gradient(180deg, var(--kc-teal-light) 0%, var(--kc-teal) 100%);
+    color: var(--kc-text-light);
+    box-shadow: 0 4px 0 var(--kc-teal-dark), var(--kc-shadow-soft);
+}
+
+.kc-btn-primary:hover {
+    background: linear-gradient(180deg, var(--kc-teal) 0%, var(--kc-teal-dark) 100%);
+}
+
+/* Success Button (Green) */
+.kc-btn-success {
+    background: linear-gradient(180deg, var(--kc-mint-light) 0%, var(--kc-mint) 100%);
+    color: var(--kc-text-primary);
+    box-shadow: 0 4px 0 var(--kc-mint-dark), var(--kc-shadow-soft);
+}
+
+/* Secondary Button (Coral) */
+.kc-btn-secondary {
+    background: linear-gradient(180deg, var(--kc-coral-light) 0%, var(--kc-coral) 100%);
+    color: var(--kc-text-light);
+    box-shadow: 0 4px 0 var(--kc-coral-dark), var(--kc-shadow-soft);
+}
+
+/* Skip Button (Lavender) */
+.kc-btn-skip {
+    background: linear-gradient(180deg, var(--kc-lavender-light) 0%, var(--kc-lavender) 100%);
+    color: var(--kc-text-primary);
+    box-shadow: 0 4px 0 var(--kc-lavender-dark), var(--kc-shadow-soft);
+}
+
+/* ==================== [7] HYBRID MIC BUTTON - MAGICAL GLOW ==================== */
+.kc-mic-btn,
+.hybrid-mic-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: var(--kc-radius-circle);
+    background: linear-gradient(135deg, var(--kc-teal) 0%, var(--kc-lavender) 100%);
+    color: var(--kc-text-light);
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--kc-duration-normal) var(--kc-ease-bounce);
+    box-shadow: var(--kc-glow-magical);
+    animation: kc-pulse-glow 2s ease-in-out infinite;
+    z-index: 10;
+}
+
+.kc-mic-btn:hover,
+.hybrid-mic-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 30px rgba(126, 200, 200, 0.8), 0 0 60px rgba(212, 184, 224, 0.5);
+}
+
+.kc-mic-btn:active,
+.hybrid-mic-btn:active {
+    transform: scale(0.95);
+}
+
+/* Recording State - Red Pulsing */
+.kc-mic-btn.recording,
+.hybrid-mic-btn.recording {
+    background: linear-gradient(135deg, #F44336 0%, #E91E63 100%);
+    animation: kc-mic-pulse 1s ease-in-out infinite;
+}
+
+/* Disabled State (State-Lock active) */
+.kc-mic-btn.disabled,
+.kc-mic-btn:disabled,
+.hybrid-mic-btn.disabled,
+.hybrid-mic-btn:disabled {
+    background: linear-gradient(135deg, #9E9E9E 0%, #757575 100%);
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+    animation: none;
+}
+
+/* ==================== [8] CHOICE BUTTONS ==================== */
+.kc-choice {
+    display: flex;
+    align-items: center;
+    gap: var(--kc-space-sm);
+    padding: var(--kc-space-sm) var(--kc-space-md);
+    background: var(--kc-yellow-light);
+    border: 4px solid var(--kc-yellow-dark);
+    border-radius: var(--kc-radius-md);
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+}
+
+.kc-choice:hover {
+    background: var(--kc-sky-light);
+    border-color: var(--kc-sky);
+    transform: translateX(8px);
+}
+
+.kc-choice.selected {
+    background: var(--kc-sky-light);
+    border-color: var(--kc-sky-dark);
+}
+
+.kc-choice.correct {
+    background: var(--kc-success-bg);
+    border-color: var(--kc-success-border);
+    animation: kc-bounce-in var(--kc-duration-fast) var(--kc-ease-bounce);
+}
+
+.kc-choice.incorrect {
+    background: var(--kc-error-bg);
+    border-color: var(--kc-error-border);
+    animation: kc-wiggle var(--kc-duration-fast) ease;
+}
+
+.kc-choice-letter {
+    font-family: var(--kc-font-display);
+    font-size: var(--kc-size-md);
+    color: var(--kc-teal-dark);
+    min-width: 30px;
+}
+
+/* ==================== [9] WORD BOX (Drag & Drop / Selection) ==================== */
+.kc-word-box {
+    min-width: 80px;
+    padding: var(--kc-space-sm) var(--kc-space-md);
+    background: white;
+    border: 4px solid var(--kc-text-primary);
+    border-radius: var(--kc-radius-md);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+    font-weight: var(--kc-weight-bold);
+    color: var(--kc-text-primary);
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+    text-align: center;
+}
+
+.kc-word-box:hover {
+    background: var(--kc-sky-light);
+    border-color: var(--kc-sky);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--kc-shadow-lifted);
+}
+
+.kc-word-box.used,
+.kc-word-box.selected {
+    background: var(--kc-teal-light);
+    border-color: var(--kc-teal);
+    color: var(--kc-teal-dark);
+}
+
+.kc-word-box.disabled {
+    background: #E0E0E0;
+    border-color: #BDBDBD;
+    color: #9E9E9E;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ==================== [10] IMAGE BOX ==================== */
+.kc-image-box {
+    border-radius: var(--kc-radius-md);
+    overflow: hidden;
+    border: 5px solid var(--kc-coral);
+    background: white;
+    box-shadow: 0 6px 0 var(--kc-coral-dark), var(--kc-shadow-soft);
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+}
+
+.kc-image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 0 var(--kc-coral-dark), var(--kc-shadow-lifted);
+}
+
+.kc-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==================== [11] LABEL BADGES ==================== */
+.kc-label {
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-xs);
+    font-weight: var(--kc-weight-bold);
+    padding: var(--kc-space-xs) var(--kc-space-md);
+    border-radius: var(--kc-radius-pill);
+    display: inline-block;
+}
+
+.kc-label-word {
+    background: var(--kc-yellow);
+    color: var(--kc-text-primary);
+}
+
+.kc-label-answer {
+    background: var(--kc-sky-light);
+    color: var(--kc-sky-dark);
+}
+
+.kc-label-action {
+    background: var(--kc-mint-light);
+    color: var(--kc-mint-dark);
+}
+
+/* ==================== [12] SENTENCE DISPLAY ==================== */
+.kc-sentence-display {
+    min-height: 60px;
+    background: var(--kc-yellow-light);
+    border: 4px dashed var(--kc-yellow-dark);
+    border-radius: var(--kc-radius-md);
+    padding: var(--kc-space-md);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--kc-space-xs);
+}
+
+.kc-sentence-word {
+    background: var(--kc-teal);
+    color: white;
+    padding: var(--kc-space-xs) var(--kc-space-sm);
+    border-radius: var(--kc-radius-sm);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+    font-weight: var(--kc-weight-bold);
+    animation: kc-bounce-in var(--kc-duration-fast) var(--kc-ease-bounce);
+}
+
+/* ==================== [13] NOTIFICATION TOAST ==================== */
+.kc-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background: var(--kc-bg-card-warm);
+    border: 4px solid var(--kc-coral);
+    border-radius: var(--kc-radius-lg);
+    padding: var(--kc-space-sm) var(--kc-space-lg);
+    box-shadow: var(--kc-shadow-lifted);
+    z-index: 9999;
+    transition: transform var(--kc-duration-normal) var(--kc-ease-bounce);
+}
+
+.kc-notification.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ==================== [14] STATE-LOCK OVERLAY ==================== */
+.kc-state-locked {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.kc-state-locked::after {
+    content: '🔊 Listening...';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--kc-teal);
+    color: white;
+    padding: var(--kc-space-xs) var(--kc-space-md);
+    border-radius: var(--kc-radius-pill);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-xs);
+    animation: kc-pulse-glow 1s ease-in-out infinite;
+}
+
+/* ==================== [15] BINARY CHOICE CARDS (Was/Were, Is/Are, Yes/No) ==================== */
+.binary-choice-unified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-md);
+    padding: var(--kc-space-md);
+}
+
+/* Binary choice is simple - NO mic buttons, voice input, or extra elements */
+.binary-choice-unified-container .mic-button,
+.binary-choice-unified-container .mic-btn,
+.binary-choice-unified-container .hybrid-mic-btn,
+.binary-choice-unified-container .hybrid-input-wrapper,
+.binary-choice-unified-container .voice-input-container,
+.binary-choice-unified-container .recording-container,
+#binaryChoiceUnifiedContainer .mic-button,
+#binaryChoiceUnifiedContainer .mic-btn,
+#binaryChoiceUnifiedContainer .hybrid-mic-btn,
+#binaryChoiceUnifiedContainer .hybrid-input-wrapper {
+    display: none !important;
+}
+
+/* When binary choice is shown, hide ALL extra elements */
+/* Hide everything AFTER the binary choice container except feedback */
+#binaryChoiceUnifiedContainer ~ *:not(.binary-choice-feedback):not(#binaryChoiceFeedback) {
+    display: none !important;
+}
+
+/* Focus card, speech history, and other elements should never show with binary choice */
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .focus-card-visual,
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .focus-card-image-container,
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .speech-history-panel,
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .speech-history-container,
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .speech-history-toggle,
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .ai-voice-container,
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .recording-status,
+.card-content:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .card-tools,
+.card-modal:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .focus-card-visual,
+.card-modal:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .focus-card-image-container,
+.card-modal:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .speech-history-panel,
+.card-modal:has(#binaryChoiceUnifiedContainer:not([style*="display: none"])) .speech-history-container {
+    display: none !important;
+}
+
+.binary-choice-image-section {
+    width: 200px;
+    height: 160px;
+    border-radius: var(--kc-radius-md);
+    overflow: hidden;
+    border: 4px solid var(--kc-coral);
+    background: white;
+    box-shadow: 0 6px 0 var(--kc-coral-dark), var(--kc-shadow-soft);
+}
+
+.binary-choice-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.binary-choice-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--kc-yellow-light);
+    color: var(--kc-text-muted);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+}
+
+.binary-choice-text {
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-md);
+    color: var(--kc-text-primary);
+    text-align: center;
+    padding: var(--kc-space-sm) var(--kc-space-md);
+    background: var(--kc-yellow-light);
+    border-radius: var(--kc-radius-md);
+    border: 3px dashed var(--kc-yellow-dark);
+    max-width: 500px;
+}
+
+.binary-choice-blank {
+    display: inline-block;
+    min-width: 80px;
+    padding: 4px 12px;
+    background: var(--kc-lavender-light);
+    border: 2px solid var(--kc-lavender);
+    border-radius: var(--kc-radius-sm);
+    font-weight: var(--kc-weight-bold);
+    color: var(--kc-lavender-dark);
+}
+
+.binary-choice-blank.correct-answer {
+    background: var(--kc-success-bg);
+    border-color: var(--kc-success-border);
+    color: var(--kc-success-border);
+}
+
+.binary-choice-blank.incorrect-answer {
+    background: var(--kc-error-bg);
+    border-color: var(--kc-error-border);
+    color: var(--kc-error-border);
+}
+
+.binary-choice-buttons {
+    display: flex;
+    gap: var(--kc-space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.binary-choice-btn {
+    min-width: 120px;
+    padding: var(--kc-space-sm) var(--kc-space-lg);
+    font-family: var(--kc-font-display);
+    font-size: var(--kc-size-md);
+    border: 4px solid var(--kc-teal);
+    border-radius: var(--kc-radius-lg);
+    background: linear-gradient(180deg, white 0%, var(--kc-teal-light) 100%);
+    color: var(--kc-teal-dark);
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+    box-shadow: 0 4px 0 var(--kc-teal-dark), var(--kc-shadow-soft);
+}
+
+.binary-choice-btn:hover:not(:disabled) {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 0 var(--kc-teal-dark), var(--kc-shadow-lifted);
+}
+
+.binary-choice-btn:active:not(:disabled) {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--kc-teal-dark);
+}
+
+.binary-choice-btn.correct {
+    background: linear-gradient(180deg, var(--kc-success-bg) 0%, var(--kc-success) 100%);
+    border-color: var(--kc-success-border);
+    color: white;
+    box-shadow: 0 4px 0 #388E3C, var(--kc-glow-success);
+    animation: kc-bounce-in var(--kc-duration-fast) var(--kc-ease-bounce);
+}
+
+.binary-choice-btn.incorrect {
+    background: linear-gradient(180deg, var(--kc-error-bg) 0%, var(--kc-error) 100%);
+    border-color: var(--kc-error-border);
+    color: white;
+    box-shadow: 0 4px 0 #D32F2F;
+    animation: kc-wiggle var(--kc-duration-fast) ease;
+}
+
+.binary-choice-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Yes/No specific styling */
+.binary-choice-btn.yes-btn {
+    background: linear-gradient(180deg, white 0%, var(--kc-mint-light) 100%);
+    border-color: var(--kc-mint);
+    color: var(--kc-mint-dark);
+    box-shadow: 0 4px 0 var(--kc-mint-dark), var(--kc-shadow-soft);
+}
+
+.binary-choice-btn.no-btn {
+    background: linear-gradient(180deg, white 0%, var(--kc-coral-light) 100%);
+    border-color: var(--kc-coral);
+    color: var(--kc-coral-dark);
+    box-shadow: 0 4px 0 var(--kc-coral-dark), var(--kc-shadow-soft);
+}
+
+.binary-choice-feedback {
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+    padding: var(--kc-space-xs) var(--kc-space-md);
+    border-radius: var(--kc-radius-pill);
+    text-align: center;
+    min-height: 30px;
+}
+
+.binary-choice-feedback.correct {
+    background: var(--kc-success-bg);
+    color: var(--kc-success-border);
+    border: 2px solid var(--kc-success-border);
+}
+
+.binary-choice-feedback.incorrect {
+    background: var(--kc-error-bg);
+    color: var(--kc-error-border);
+    border: 2px solid var(--kc-error-border);
+}
+
+/* ==================== [16] INFERENCING CARDS ==================== */
+.inf-unified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-md);
+    padding: var(--kc-space-md);
+}
+
+.inf-unified-image-section {
+    width: 280px;
+    height: 200px;
+    border-radius: var(--kc-radius-md);
+    overflow: hidden;
+    border: 4px solid var(--kc-sky);
+    background: white;
+    box-shadow: 0 6px 0 var(--kc-sky-dark), var(--kc-shadow-soft);
+}
+
+.inf-unified-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inf-unified-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--kc-sky-light);
+    color: var(--kc-text-muted);
+    font-family: var(--kc-font-body);
+}
+
+.inf-unified-paragraph {
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+    color: var(--kc-text-primary);
+    text-align: center;
+    padding: var(--kc-space-md);
+    background: var(--kc-yellow-light);
+    border-radius: var(--kc-radius-md);
+    border: 3px dashed var(--kc-yellow-dark);
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* ==================== [17] SIMILES CARDS ==================== */
+.similes-unified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-md);
+    padding: var(--kc-space-md);
+}
+
+.similes-unified-prompt {
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-md);
+    color: var(--kc-text-primary);
+    text-align: center;
+    padding: var(--kc-space-md);
+    background: var(--kc-lavender-light);
+    border-radius: var(--kc-radius-md);
+    border: 3px solid var(--kc-lavender);
+}
+
+.similes-unified-blank {
+    display: inline-block;
+    min-width: 100px;
+    padding: 4px 16px;
+    background: white;
+    border: 2px dashed var(--kc-lavender-dark);
+    border-radius: var(--kc-radius-sm);
+}
+
+/* ==================== [18] MULTIPLE CHOICE UNIFIED ==================== */
+.mc-unified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-md);
+    padding: var(--kc-space-md);
+}
+
+.mc-unified-choices {
+    display: flex;
+    flex-direction: column;
+    gap: var(--kc-space-sm);
+    width: 100%;
+    max-width: 500px;
+}
+
+.mc-unified-choice {
+    display: flex;
+    align-items: center;
+    gap: var(--kc-space-sm);
+    padding: var(--kc-space-sm) var(--kc-space-md);
+    background: var(--kc-yellow-light);
+    border: 4px solid var(--kc-yellow-dark);
+    border-radius: var(--kc-radius-md);
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+}
+
+.mc-unified-choice:hover:not(:disabled) {
+    background: var(--kc-sky-light);
+    border-color: var(--kc-sky);
+    transform: translateX(8px);
+}
+
+.mc-unified-choice.selected {
+    background: var(--kc-sky-light);
+    border-color: var(--kc-sky-dark);
+}
+
+.mc-unified-choice.correct {
+    background: var(--kc-success-bg);
+    border-color: var(--kc-success-border);
+    animation: kc-bounce-in var(--kc-duration-fast) var(--kc-ease-bounce);
+}
+
+.mc-unified-choice.incorrect {
+    background: var(--kc-error-bg);
+    border-color: var(--kc-error-border);
+    animation: kc-wiggle var(--kc-duration-fast) ease;
+}
+
+/* ==================== [19] SEQUENCING CARDS ==================== */
+.seq-unified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-md);
+    padding: var(--kc-space-md);
+}
+
+.seq-unified-images {
+    display: flex;
+    gap: var(--kc-space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seq-unified-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-xs);
+}
+
+.seq-unified-image {
+    width: 140px;
+    height: 110px;
+    border-radius: var(--kc-radius-md);
+    overflow: hidden;
+    border: 4px solid var(--kc-coral);
+    background: white;
+    box-shadow: 0 4px 0 var(--kc-coral-dark);
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+}
+
+.seq-unified-image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 0 var(--kc-coral-dark);
+}
+
+.seq-unified-image.selected {
+    border-color: var(--kc-teal);
+    box-shadow: 0 4px 0 var(--kc-teal-dark), var(--kc-glow-magical);
+}
+
+.seq-unified-number {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--kc-radius-circle);
+    background: var(--kc-teal);
+    color: white;
+    font-family: var(--kc-font-display);
+    font-size: var(--kc-size-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 0 var(--kc-teal-dark);
+}
+
+/* ==================== [20] IMAGE SELECTION CARDS ==================== */
+.img-sel-unified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-md);
+    padding: var(--kc-space-md);
+}
+
+.img-sel-unified-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--kc-space-md);
+    max-width: 500px;
+}
+
+.img-sel-unified-item {
+    border-radius: var(--kc-radius-md);
+    overflow: hidden;
+    border: 4px solid var(--kc-lavender);
+    background: white;
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+    box-shadow: 0 4px 0 var(--kc-lavender-dark);
+}
+
+.img-sel-unified-item:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 0 var(--kc-lavender-dark);
+}
+
+.img-sel-unified-item.selected {
+    border-color: var(--kc-teal);
+    box-shadow: var(--kc-glow-magical);
+}
+
+.img-sel-unified-item.correct {
+    border-color: var(--kc-success-border);
+    box-shadow: var(--kc-glow-success);
+}
+
+.img-sel-unified-item.incorrect {
+    border-color: var(--kc-error-border);
+    opacity: 0.7;
+}
+
+/* ==================== [21] RHYMING CARDS ==================== */
+.rhyming-unified-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--kc-space-md);
+    padding: var(--kc-space-md);
+}
+
+.rhyming-unified-word {
+    font-family: var(--kc-font-display);
+    font-size: var(--kc-size-xl);
+    color: var(--kc-coral-dark);
+    background: linear-gradient(180deg, white 0%, var(--kc-coral-light) 100%);
+    padding: var(--kc-space-sm) var(--kc-space-xl);
+    border-radius: var(--kc-radius-lg);
+    border: 4px solid var(--kc-coral);
+    box-shadow: 0 4px 0 var(--kc-coral-dark);
+}
+
+.rhyming-unified-choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--kc-space-sm);
+    justify-content: center;
+    max-width: 500px;
+}
+
+.rhyming-unified-choice {
+    padding: var(--kc-space-sm) var(--kc-space-md);
+    font-family: var(--kc-font-body);
+    font-size: var(--kc-size-sm);
+    font-weight: var(--kc-weight-bold);
+    background: white;
+    border: 4px solid var(--kc-mint);
+    border-radius: var(--kc-radius-md);
+    cursor: pointer;
+    transition: all var(--kc-duration-fast) var(--kc-ease-bounce);
+    box-shadow: 0 3px 0 var(--kc-mint-dark);
+}
+
+.rhyming-unified-choice:hover {
+    transform: translateY(-3px);
+    background: var(--kc-mint-light);
+    box-shadow: 0 6px 0 var(--kc-mint-dark);
+}
+
+.rhyming-unified-choice.correct {
+    background: var(--kc-success-bg);
+    border-color: var(--kc-success-border);
+    color: var(--kc-success-border);
+}
+
+.rhyming-unified-choice.incorrect {
+    background: var(--kc-error-bg);
+    border-color: var(--kc-error-border);
+    color: var(--kc-error-border);
+}
+
+/* ==================== [22] GLOBAL CARD OVERRIDES - UNIFIED DESIGN ==================== */
+/* Apply consistent styling to ALL card types to match the reference design */
+
+/* === ALL Buttons - 3D Rounded Style === */
+.card-modal button,
+.card-content button,
+.card-modal .btn,
+.card-content .btn,
+.choice-btn,
+.word-box,
+.submit-btn,
+.done-btn,
+.check-btn,
+.skip-btn,
+.next-btn,
+[class*="-btn"]:not(.hybrid-mic-btn):not(.mic-btn):not(.mic-button) {
+    font-family: 'Fredoka One', cursive !important;
+    border-radius: 50px !important;
+    cursor: pointer !important;
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    border: none !important;
+    outline: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+/* === DONE / Submit Buttons - Green 3D Style === */
+.done-btn,
+.submit-btn,
+.check-btn,
+.card-submit,
+#doneButton,
+[class*="done"],
+[class*="submit"],
+[class*="check-btn"],
+.vocab-unified-check-btn,
+.wh-unified-check-btn,
+.synonym-unified-check-btn,
+.metaphors-unified-check-btn {
+    background: linear-gradient(180deg, #66BB6A 0%, #43A047 100%) !important;
+    color: white !important;
+    font-size: 18px !important;
+    padding: 14px 40px !important;
+    box-shadow: 0 6px 0 #2E7D32, 0 8px 16px rgba(46, 125, 50, 0.3) !important;
+    min-width: 140px !important;
+}
+
+.done-btn:hover,
+.submit-btn:hover,
+.check-btn:hover,
+.card-submit:hover,
+#doneButton:hover,
+[class*="done"]:hover,
+[class*="submit"]:hover,
+[class*="check-btn"]:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 9px 0 #2E7D32, 0 12px 20px rgba(46, 125, 50, 0.4) !important;
+}
+
+.done-btn:active,
+.submit-btn:active,
+.check-btn:active,
+.card-submit:active,
+#doneButton:active {
+    transform: translateY(3px) !important;
+    box-shadow: 0 3px 0 #2E7D32, 0 4px 8px rgba(46, 125, 50, 0.3) !important;
+}
+
+/* === Skip Buttons - Orange/Coral Style === */
+.skip-btn,
+.card-skip,
+[class*="skip"] {
+    background: linear-gradient(180deg, #FFB74D 0%, #FF9800 100%) !important;
+    color: white !important;
+    font-size: 16px !important;
+    padding: 12px 30px !important;
+    box-shadow: 0 5px 0 #E65100, 0 6px 12px rgba(230, 81, 0, 0.3) !important;
+}
+
+.skip-btn:hover,
+.card-skip:hover,
+[class*="skip"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 7px 0 #E65100, 0 8px 16px rgba(230, 81, 0, 0.4) !important;
+}
+
+/* === Choice Buttons (Multiple Choice) - Soft Yellow/Blue === */
+.choice-btn,
+.mc-unified-choice,
+.multiple-choice-btn {
+    background: linear-gradient(180deg, #FFFDE7 0%, #FFF9C4 100%) !important;
+    color: #5D4037 !important;
+    font-family: 'OpenDyslexic', 'Nunito', sans-serif !important;
+    font-size: 18px !important;
+    padding: 16px 24px !important;
+    border: 4px solid #FFE082 !important;
+    border-radius: 20px !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    box-shadow: 0 4px 0 #FFC107, 0 6px 12px rgba(255, 193, 7, 0.2) !important;
+    text-align: left !important;
+    width: 100% !important;
+    justify-content: flex-start !important;
+}
+
+.choice-btn:hover,
+.mc-unified-choice:hover,
+.multiple-choice-btn:hover {
+    background: linear-gradient(180deg, #E3F2FD 0%, #BBDEFB 100%) !important;
+    border-color: #64B5F6 !important;
+    transform: translateX(8px) translateY(-2px) !important;
+    box-shadow: 0 6px 0 #1976D2, 0 8px 16px rgba(25, 118, 210, 0.2) !important;
+}
+
+.choice-btn.selected,
+.mc-unified-choice.selected {
+    background: linear-gradient(180deg, #BBDEFB 0%, #90CAF9 100%) !important;
+    border-color: #1976D2 !important;
+}
+
+.choice-btn.correct,
+.mc-unified-choice.correct {
+    background: linear-gradient(180deg, #C8E6C9 0%, #A5D6A7 100%) !important;
+    border-color: #4CAF50 !important;
+    box-shadow: 0 4px 0 #388E3C, 0 0 20px rgba(76, 175, 80, 0.4) !important;
+}
+
+.choice-btn.incorrect,
+.mc-unified-choice.incorrect {
+    background: linear-gradient(180deg, #FFCDD2 0%, #EF9A9A 100%) !important;
+    border-color: #F44336 !important;
+    box-shadow: 0 4px 0 #D32F2F !important;
+}
+
+/* === Word Box Buttons (Sentence Building, etc.) === */
+.word-box {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%) !important;
+    color: #37474F !important;
+    font-family: 'OpenDyslexic', 'Nunito', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 14px 22px !important;
+    border: 4px solid #78909C !important;
+    border-radius: 16px !important;
+    text-transform: none !important;
+    box-shadow: 0 4px 0 #546E7A, 0 6px 12px rgba(84, 110, 122, 0.2) !important;
+    min-width: 80px !important;
+}
+
+.word-box:hover:not(.used) {
+    background: linear-gradient(180deg, #E1F5FE 0%, #B3E5FC 100%) !important;
+    border-color: #03A9F4 !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 0 #0288D1, 0 10px 16px rgba(2, 136, 209, 0.3) !important;
+}
+
+.word-box.used {
+    background: #E0E0E0 !important;
+    border-color: #BDBDBD !important;
+    color: #9E9E9E !important;
+    box-shadow: none !important;
+    transform: none !important;
+    cursor: not-allowed !important;
+}
+
+/* === Binary Choice Buttons (Was/Were, Is/Are, Yes/No) === */
+.binary-choice-btn {
+    background: linear-gradient(180deg, #E8F5E9 0%, #A5D6A7 100%) !important;
+    color: #2E7D32 !important;
+    font-size: 22px !important;
+    padding: 16px 36px !important;
+    border: 4px solid #66BB6A !important;
+    border-radius: 24px !important;
+    box-shadow: 0 5px 0 #388E3C, 0 6px 12px rgba(56, 142, 60, 0.3) !important;
+    min-width: 130px !important;
+}
+
+.binary-choice-btn:hover:not(:disabled) {
+    transform: translateY(-4px) scale(1.02) !important;
+    box-shadow: 0 9px 0 #388E3C, 0 10px 20px rgba(56, 142, 60, 0.4) !important;
+}
+
+.binary-choice-btn.yes-btn {
+    background: linear-gradient(180deg, #E8F5E9 0%, #81C784 100%) !important;
+    border-color: #4CAF50 !important;
+    color: #1B5E20 !important;
+    box-shadow: 0 5px 0 #2E7D32 !important;
+}
+
+.binary-choice-btn.no-btn {
+    background: linear-gradient(180deg, #FFEBEE 0%, #EF9A9A 100%) !important;
+    border-color: #EF5350 !important;
+    color: #B71C1C !important;
+    box-shadow: 0 5px 0 #C62828 !important;
+}
+
+/* === ALL Image Boxes - Soft Coral Border Style === */
+.image-box,
+.card-images .image-pair > div:first-of-type,
+[class*="-image-section"],
+[class*="-image-box"],
+.vocab-unified-image-section,
+.wh-unified-image-section,
+.synonym-unified-image-section,
+.binary-choice-image-section,
+.inf-unified-image-section,
+.seq-unified-image {
+    border: 5px solid #FFAB91 !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    background: white !important;
+    box-shadow: 0 6px 0 #FF8A65, 0 10px 20px rgba(255, 138, 101, 0.2) !important;
+}
+
+.image-box img,
+[class*="-image-section"] img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* === Labels / Badges above images === */
+.word-label,
+[class*="-label"]:not(.choice-letter) {
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 8px 20px !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+    margin-bottom: 8px !important;
+}
+
+.word-label {
+    background: linear-gradient(180deg, #FFE0B2 0%, #FFCC80 100%) !important;
+    color: #E65100 !important;
+    border: 2px solid #FFB74D !important;
+}
+
+.answer-label {
+    background: linear-gradient(180deg, #BBDEFB 0%, #90CAF9 100%) !important;
+    color: #1565C0 !important;
+    border: 2px solid #64B5F6 !important;
+}
+
+/* === Text Inputs - Rounded with shadow === */
+.card-modal input[type="text"],
+.card-content input[type="text"],
+.answer-input,
+[class*="-input"]:not([type="checkbox"]):not([type="radio"]) {
+    font-family: 'OpenDyslexic', 'Nunito', sans-serif !important;
+    font-size: 18px !important;
+    padding: 14px 24px !important;
+    border: 3px solid #E0E0E0 !important;
+    border-radius: 50px !important;
+    background: #FAFAFA !important;
+    color: #37474F !important;
+    outline: none !important;
+    transition: all 0.2s ease !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.card-modal input[type="text"]:focus,
+.card-content input[type="text"]:focus,
+.answer-input:focus,
+[class*="-input"]:focus {
+    border-color: #4CAF50 !important;
+    background: white !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05), 0 0 0 4px rgba(76, 175, 80, 0.2) !important;
+}
+
+.card-modal input[type="text"]::placeholder,
+[class*="-input"]::placeholder {
+    color: #9E9E9E !important;
+    font-style: italic !important;
+}
+
+/* === Question Text Area === */
+.card-question {
+    font-family: 'OpenDyslexic', 'Nunito', sans-serif !important;
+    font-size: 22px !important;
+    color: #37474F !important;
+    text-align: center !important;
+    padding: 20px 30px !important;
+    background: white !important;
+    border: 3px dashed #FFE0B2 !important;
+    border-radius: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+/* === Mic Button (Next to Input) - Green Circle === */
+.mic-button,
+.mic-btn {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(180deg, #66BB6A 0%, #43A047 100%) !important;
+    border: none !important;
+    color: white !important;
+    font-size: 22px !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 0 #2E7D32, 0 6px 12px rgba(46, 125, 50, 0.3) !important;
+    transition: all 0.2s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.mic-button:hover,
+.mic-btn:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 0 #2E7D32, 0 8px 16px rgba(46, 125, 50, 0.4) !important;
+}
+
+/* === Feedback Messages === */
+[class*="-feedback"],
+.feedback-message {
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 18px !important;
+    padding: 12px 24px !important;
+    border-radius: 16px !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+}
+
+[class*="-feedback"].correct,
+.feedback-message.correct {
+    background: linear-gradient(180deg, #E8F5E9 0%, #C8E6C9 100%) !important;
+    color: #2E7D32 !important;
+    border: 3px solid #4CAF50 !important;
+}
+
+[class*="-feedback"].incorrect,
+.feedback-message.incorrect {
+    background: linear-gradient(180deg, #FFEBEE 0%, #FFCDD2 100%) !important;
+    color: #C62828 !important;
+    border: 3px solid #F44336 !important;
+}
+
+/* === Card Category Title === */
+.card-category {
+    font-family: 'Fredoka One', cursive !important;
+    font-size: 26px !important;
+    color: #E65100 !important;
+    text-shadow: 2px 2px 0 white !important;
+    background: linear-gradient(180deg, #FFF 0%, #FFE0B2 100%) !important;
+    padding: 10px 32px !important;
+    border-radius: 50px !important;
+    border: 4px solid #FF9800 !important;
+    display: inline-block !important;
+}
+
+/* === Card Close Button === */
+.card-close {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(180deg, #90A4AE 0%, #607D8B 100%) !important;
+    border: 3px solid #78909C !important;
+    color: white !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    box-shadow: 0 3px 0 #455A64 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.card-close:hover {
+    transform: scale(1.1) !important;
+}
+
+/* === Sentence Display Area === */
+.sentence-display {
+    min-height: 60px !important;
+    background: linear-gradient(180deg, #FFFDE7 0%, #FFF9C4 100%) !important;
+    border: 4px dashed #FFE082 !important;
+    border-radius: 20px !important;
+    padding: 16px 20px !important;
+    margin-bottom: 15px !important;
+}
+
+.sentence-word {
+    background: linear-gradient(180deg, #4CAF50 0%, #388E3C 100%) !important;
+    color: white !important;
+    padding: 10px 16px !important;
+    border-radius: 12px !important;
+    font-family: 'OpenDyslexic', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    box-shadow: 0 3px 0 #2E7D32 !important;
+}
+
+/* === Sequencing Number Badges === */
+.seq-unified-number,
+.sequence-number {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    background: linear-gradient(180deg, #7EC8C8 0%, #5BA3A3 100%) !important;
+    color: white !important;
+    font-family: 'Fredoka One', cursive !important;
+    font-size: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 3px 0 #4A9999 !important;
+}
+
+/* ==================== [23] RESPONSIVE ADJUSTMENTS ==================== */
+@media (max-width: 768px) {
+    :root {
+        --kc-size-md: 20px;
+        --kc-size-lg: 24px;
+        --kc-size-xl: 28px;
+        --kc-radius-lg: 24px;
+        --kc-radius-xl: 32px;
+    }
+
+    .kc-card {
+        padding: var(--kc-space-md);
+        border-width: 4px;
+    }
+
+    .kc-mic-btn,
+    .hybrid-mic-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --kc-size-sm: 16px;
+        --kc-size-md: 18px;
+        --kc-size-lg: 22px;
+        --kc-radius-md: 20px;
+        --kc-radius-lg: 24px;
+    }
+
+    .kc-btn {
+        padding: var(--kc-space-xs) var(--kc-space-md);
+        font-size: var(--kc-size-xs);
+    }
+}
+
+/* ==================== [16] UTILITY CLASSES ==================== */
+.kc-text-center { text-align: center; }
+.kc-text-left { text-align: left; }
+.kc-flex-center { display: flex; align-items: center; justify-content: center; }
+.kc-flex-between { display: flex; align-items: center; justify-content: space-between; }
+.kc-gap-sm { gap: var(--kc-space-sm); }
+.kc-gap-md { gap: var(--kc-space-md); }
+.kc-mt-sm { margin-top: var(--kc-space-sm); }
+.kc-mt-md { margin-top: var(--kc-space-md); }
+.kc-mb-sm { margin-bottom: var(--kc-space-sm); }
+.kc-mb-md { margin-bottom: var(--kc-space-md); }
+
+/* Animation utilities */
+.kc-bounce { animation: kc-bounce-in var(--kc-duration-normal) var(--kc-ease-bounce); }
+.kc-wiggle { animation: kc-wiggle var(--kc-duration-fast) ease; }
+.kc-float { animation: kc-float 3s ease-in-out infinite; }
+.kc-sparkle { animation: kc-sparkle 1.5s ease-in-out infinite; }

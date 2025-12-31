@@ -1,0 +1,15 @@
+# Speech Therapy AI - Python Dependencies
+# Python 3.8+ required
+
+# Direct dependencies used in the project
+numpy>=1.24.0
+scipy>=1.10.0
+librosa>=0.10.0
+pydub>=0.25.0
+allosaurus>=1.0.0
+matplotlib>=3.7.0
+requests>=2.28.0
+
+# System dependencies (install separately):
+# - FFmpeg: sudo apt-get install ffmpeg (Ubuntu) or brew install ffmpeg (macOS)
+# - libsndfile: sudo apt-get install libsndfile1 (Ubuntu) or brew install libsndfile (macOS)
