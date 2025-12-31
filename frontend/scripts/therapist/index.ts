@@ -3,7 +3,7 @@
  * Handles UI state and user interactions
  */
 
-import { api, type Therapist, type Student, type ApiError } from '../services/api';
+import { api, type Therapist, type Student, type ApiError, type EvalData } from '../services/api';
 
 // DOM element helpers
 function $(id: string): HTMLElement {
@@ -25,6 +25,11 @@ let currentTherapist: Therapist | null = null;
 let students: Student[] = [];
 let selectedStudentId: number | null = null;
 let loadingInterval: ReturnType<typeof setInterval> | null = null;
+
+// Evaluation upload state
+let pendingEvalFile: File | null = null;
+let extractedEvalData: EvalData | null = null;
+let currentPdfUrl: string | null = null;
 
 // Loading screen
 function startLoading(): void {
@@ -206,6 +211,306 @@ async function handleDeleteStudent(): Promise<void> {
   }
 }
 
+// ============================================
+// Evaluation Upload Functions
+// ============================================
+
+function resetEvalUploadModal(): void {
+  // Clean up blob URL to prevent memory leak
+  if (currentPdfUrl) {
+    URL.revokeObjectURL(currentPdfUrl);
+  }
+
+  // Reset state
+  pendingEvalFile = null;
+  extractedEvalData = null;
+  currentPdfUrl = null;
+
+  // Clear iframe
+  const pdfFrame = document.getElementById('eval-pdf-frame') as HTMLIFrameElement | null;
+  if (pdfFrame) pdfFrame.src = '';
+
+  // Show upload state, hide others
+  show($('eval-upload-state'));
+  hide($('eval-loading-state'));
+  hide($('eval-review-state'));
+
+  // Reset file input
+  ($('eval-file-input') as HTMLInputElement).value = '';
+
+  // Hide password field and error
+  hide($('eval-password-field'));
+  hide($('eval-upload-error'));
+  ($('eval-pdf-password') as HTMLInputElement).value = '';
+}
+
+function showEvalLoading(): void {
+  hide($('eval-upload-state'));
+  show($('eval-loading-state'));
+  hide($('eval-review-state'));
+}
+
+function showEvalReview(): void {
+  hide($('eval-upload-state'));
+  hide($('eval-loading-state'));
+  show($('eval-review-state'));
+}
+
+function showEvalError(message: string): void {
+  const errorEl = $('eval-upload-error');
+  errorEl.textContent = message;
+  show(errorEl);
+}
+
+function populateEvalForm(data: EvalData): void {
+  const fields = [
+    'service_type',
+    'languages_spoken',
+    'family_religion',
+    'medical_history',
+    'other_diagnoses',
+    'speech_diagnoses',
+    'prior_therapy',
+    'baseline_accuracy',
+    'goals_benchmarks',
+    'strengths',
+    'weaknesses',
+    'target_sounds',
+    'teachers',
+    'notes',
+  ];
+
+  for (const field of fields) {
+    const fieldData = data[field as keyof EvalData];
+    const inputEl = document.getElementById(`extracted-${field}`) as
+      | HTMLInputElement
+      | HTMLSelectElement
+      | HTMLTextAreaElement
+      | null;
+    const fieldContainer = document.getElementById(`field-${field}`);
+    const hintEl = fieldContainer?.querySelector('.field-hint') as HTMLElement | null;
+
+    if (!inputEl) continue;
+
+    // Set value
+    if (fieldData && typeof fieldData === 'object' && 'value' in fieldData) {
+      const value = fieldData.value;
+      if (Array.isArray(value)) {
+        inputEl.value = value.join(', ');
+      } else if (value !== null && value !== undefined) {
+        inputEl.value = String(value);
+      } else {
+        inputEl.value = '';
+      }
+
+      // Set confidence styling
+      const confidence = fieldData.confidence ?? 0;
+      if (fieldContainer) {
+        fieldContainer.classList.remove('low-confidence', 'medium-confidence', 'high-confidence');
+        if (confidence < 0.5) {
+          fieldContainer.classList.add('low-confidence');
+        } else if (confidence < 0.8) {
+          fieldContainer.classList.add('medium-confidence');
+        } else {
+          fieldContainer.classList.add('high-confidence');
+        }
+      }
+
+      // Set hint
+      if (hintEl && fieldData.source_hint) {
+        hintEl.textContent = fieldData.source_hint;
+      }
+    } else {
+      inputEl.value = '';
+      if (fieldContainer) {
+        fieldContainer.classList.add('low-confidence');
+      }
+    }
+  }
+
+  // Set extraction notes
+  const notesEl = $('extraction-notes-display');
+  if (data.extraction_notes) {
+    notesEl.textContent = data.extraction_notes;
+    show(notesEl);
+  } else {
+    hide(notesEl);
+  }
+}
+
+function getFormEvalData(): EvalData {
+  const fields = [
+    'service_type',
+    'languages_spoken',
+    'family_religion',
+    'medical_history',
+    'other_diagnoses',
+    'speech_diagnoses',
+    'prior_therapy',
+    'baseline_accuracy',
+    'goals_benchmarks',
+    'strengths',
+    'weaknesses',
+    'target_sounds',
+    'teachers',
+    'notes',
+  ];
+
+  const data: EvalData = {};
+
+  for (const field of fields) {
+    const inputEl = document.getElementById(`extracted-${field}`) as
+      | HTMLInputElement
+      | HTMLSelectElement
+      | HTMLTextAreaElement
+      | null;
+
+    if (!inputEl) continue;
+
+    let value: string | number | string[] | null = inputEl.value.trim() || null;
+
+    // Handle special fields
+    if (field === 'baseline_accuracy' && value) {
+      value = parseInt(value as string, 10);
+      if (isNaN(value)) value = null;
+    } else if (field === 'target_sounds' && value) {
+      value = (value as string).split(',').map((s) => s.trim()).filter(Boolean);
+    }
+
+    // Keep original confidence if available
+    const original = extractedEvalData?.[field as keyof EvalData];
+    const confidence = original && typeof original === 'object' && 'confidence' in original
+      ? original.confidence
+      : 0.9; // User-edited fields get high confidence
+
+    (data as Record<string, unknown>)[field] = {
+      value,
+      confidence,
+    };
+  }
+
+  return data;
+}
+
+async function handleEvalFileSelect(file: File): Promise<void> {
+  if (!selectedStudentId) {
+    showEvalError('Please select a student first');
+    return;
+  }
+
+  if (file.type !== 'application/pdf') {
+    showEvalError('Please select a PDF file');
+    return;
+  }
+
+  if (file.size > 20 * 1024 * 1024) {
+    showEvalError('File is too large. Maximum size is 20MB.');
+    return;
+  }
+
+  pendingEvalFile = file;
+  hide($('eval-upload-error'));
+
+  await uploadEvalFile();
+}
+
+async function uploadEvalFile(password?: string): Promise<void> {
+  if (!pendingEvalFile || !selectedStudentId) return;
+
+  showEvalLoading();
+
+  try {
+    const result = await api.uploadEvaluation(selectedStudentId, pendingEvalFile, password);
+
+    // Store extracted data
+    extractedEvalData = result.extracted_data;
+
+    // Populate form
+    populateEvalForm(result.extracted_data);
+
+    // Fetch PDF with auth and create blob URL for iframe
+    try {
+      const pdfBlob = await api.getEvaluationPdfBlob(selectedStudentId);
+      currentPdfUrl = URL.createObjectURL(pdfBlob);
+      const pdfFrame = $('eval-pdf-frame') as HTMLIFrameElement;
+      pdfFrame.src = currentPdfUrl;
+    } catch {
+      // PDF preview failed, but extraction succeeded - continue anyway
+      console.warn('Could not load PDF preview');
+    }
+
+    // Show review state
+    showEvalReview();
+  } catch (err) {
+    const error = err as ApiError & { code?: string };
+
+    if (error.code === 'PASSWORD_REQUIRED') {
+      // Show password field
+      show($('eval-upload-state'));
+      hide($('eval-loading-state'));
+      show($('eval-password-field'));
+      return;
+    }
+
+    // Show error
+    show($('eval-upload-state'));
+    hide($('eval-loading-state'));
+    showEvalError(error.message);
+  }
+}
+
+async function retryEvalUploadWithPassword(): Promise<void> {
+  const password = ($('eval-pdf-password') as HTMLInputElement).value;
+  if (!password) {
+    showEvalError('Please enter the PDF password');
+    return;
+  }
+  await uploadEvalFile(password);
+}
+
+function cancelEvalUpload(): void {
+  resetEvalUploadModal();
+  closeModal('eval-upload-modal');
+}
+
+async function confirmEvalData(): Promise<void> {
+  if (!selectedStudentId) return;
+
+  const evalData = getFormEvalData();
+  const serviceType = ($('extracted-service_type') as HTMLSelectElement).value || undefined;
+
+  try {
+    hide($('eval-confirm-error'));
+
+    const result = await api.confirmEvaluation(selectedStudentId, evalData, serviceType);
+
+    // Update local student data
+    const idx = students.findIndex((s) => s.id === selectedStudentId);
+    if (idx !== -1) {
+      students[idx] = result.student;
+    }
+
+    // Close modal and reset
+    resetEvalUploadModal();
+    closeModal('eval-upload-modal');
+
+    // Re-select student to refresh profile
+    selectStudent(selectedStudentId);
+  } catch (err) {
+    const errorEl = $('eval-confirm-error');
+    errorEl.textContent = (err as ApiError).message;
+    show(errorEl);
+  }
+}
+
+// Expose functions globally for onclick handlers
+const TherapistApp = {
+  retryEvalUploadWithPassword,
+  cancelEvalUpload,
+  confirmEvalData,
+};
+(window as unknown as { TherapistApp: typeof TherapistApp }).TherapistApp = TherapistApp;
+
 // Auth handlers
 async function handleLogin(e: Event): Promise<void> {
   e.preventDefault();
@@ -306,6 +611,52 @@ function bindEvents(): void {
 
   // Delete student
   $('delete-student-btn').addEventListener('click', handleDeleteStudent);
+
+  // Upload PDF button
+  $('upload-eval-btn').addEventListener('click', () => {
+    if (!selectedStudentId) {
+      alert('Please select a student first');
+      return;
+    }
+    resetEvalUploadModal();
+    openModal('eval-upload-modal');
+  });
+
+  // Evaluation dropzone
+  const dropzone = $('eval-dropzone');
+  const fileInput = $('eval-file-input') as HTMLInputElement;
+
+  // Click to browse
+  dropzone.addEventListener('click', () => {
+    fileInput.click();
+  });
+
+  // File input change
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files?.[0];
+    if (file) {
+      handleEvalFileSelect(file);
+    }
+  });
+
+  // Drag and drop
+  dropzone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropzone.classList.add('drag-over');
+  });
+
+  dropzone.addEventListener('dragleave', () => {
+    dropzone.classList.remove('drag-over');
+  });
+
+  dropzone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropzone.classList.remove('drag-over');
+    const file = e.dataTransfer?.files[0];
+    if (file) {
+      handleEvalFileSelect(file);
+    }
+  });
 
   // Modal close buttons
   document.querySelectorAll('.modal-close').forEach((btn) => {

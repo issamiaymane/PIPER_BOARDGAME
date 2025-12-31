@@ -50,6 +50,43 @@ export interface CreateStudentData {
   grade_level?: string;
 }
 
+export interface ExtractedField {
+  value: string | number | string[] | null;
+  confidence: number;
+  source_hint?: string;
+  reasoning?: string;
+}
+
+export interface EvalData {
+  service_type?: ExtractedField;
+  languages_spoken?: ExtractedField;
+  family_religion?: ExtractedField;
+  medical_history?: ExtractedField;
+  other_diagnoses?: ExtractedField;
+  speech_diagnoses?: ExtractedField;
+  prior_therapy?: ExtractedField;
+  baseline_accuracy?: ExtractedField;
+  goals_benchmarks?: ExtractedField;
+  strengths?: ExtractedField;
+  weaknesses?: ExtractedField;
+  target_sounds?: ExtractedField;
+  teachers?: ExtractedField;
+  notes?: ExtractedField;
+  extraction_notes?: string;
+}
+
+export interface EvalUploadResponse {
+  success: boolean;
+  pdf_url: string;
+  extracted_data: EvalData;
+  extraction_notes?: string;
+}
+
+export interface EvalConfirmResponse {
+  success: boolean;
+  student: Student;
+}
+
 export class ApiError extends Error {
   constructor(
     message: string,
@@ -173,6 +210,86 @@ class ApiService {
     return this.request<{ success: boolean }>(`/students/${id}`, {
       method: 'DELETE',
     });
+  }
+
+  // Evaluation methods
+  async uploadEvaluation(
+    studentId: number,
+    file: File,
+    password?: string
+  ): Promise<EvalUploadResponse> {
+    const formData = new FormData();
+    formData.append('file', file);
+    if (password) {
+      formData.append('password', password);
+    }
+
+    const url = `${this.baseUrl}/students/${studentId}/evaluation/upload`;
+    const headers: HeadersInit = {};
+    if (this.token) {
+      headers['Authorization'] = `Bearer ${this.token}`;
+    }
+
+    let response: Response;
+    try {
+      response = await fetch(url, {
+        method: 'POST',
+        headers,
+        body: formData,
+      });
+    } catch {
+      throw new ApiError('Network error - is the server running?', 0);
+    }
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      const error = new ApiError(data.error || 'Upload failed', response.status);
+      if (data.code === 'PASSWORD_REQUIRED') {
+        (error as ApiError & { code?: string }).code = 'PASSWORD_REQUIRED';
+      }
+      throw error;
+    }
+
+    return data;
+  }
+
+  async confirmEvaluation(
+    studentId: number,
+    evalData: EvalData,
+    serviceType?: string
+  ): Promise<EvalConfirmResponse> {
+    return this.request<EvalConfirmResponse>(
+      `/students/${studentId}/evaluation/confirm`,
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          eval_data: evalData,
+          service_type: serviceType,
+        }),
+      }
+    );
+  }
+
+  async getEvaluationPdfBlob(studentId: number): Promise<Blob> {
+    const url = `${this.baseUrl}/students/${studentId}/evaluation/pdf`;
+    const headers: HeadersInit = {};
+    if (this.token) {
+      headers['Authorization'] = `Bearer ${this.token}`;
+    }
+
+    const response = await fetch(url, { headers });
+    if (!response.ok) {
+      throw new ApiError('Failed to load PDF', response.status);
+    }
+    return response.blob();
+  }
+
+  async deleteEvaluationPdf(studentId: number): Promise<{ success: boolean }> {
+    return this.request<{ success: boolean }>(
+      `/students/${studentId}/evaluation/pdf`,
+      { method: 'DELETE' }
+    );
   }
 }
 
