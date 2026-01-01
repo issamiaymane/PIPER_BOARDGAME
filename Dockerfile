@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y \
 # Set working directory
 WORKDIR /app
 
+# Cache bust - increment to force rebuild: v2
+ARG CACHEBUST=2
+
 # Copy shared code FIRST (needed for postinstall symlink)
 COPY shared/ ./shared/
 
@@ -45,9 +48,6 @@ COPY frontend/package*.json ./frontend/
 WORKDIR /app/frontend
 RUN npm ci
 COPY frontend/ ./
-
-# Debug: verify shared folder exists
-RUN ls -la /app/shared/
 
 # Build frontend (skip tsc type check, Vite handles bundling with its own alias resolution)
 RUN npx vite build
