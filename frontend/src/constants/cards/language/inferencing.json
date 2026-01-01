@@ -4,7 +4,7 @@
       "title": "Camping Trip",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/campsite_boy.png",
+          "image": "",
           "label": "Boy at a campsite"
         }
       ],
@@ -36,7 +36,7 @@
       "title": "Scraped Knee",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/scraped_knee.png",
+          "image": "",
           "label": "Child with scraped knee"
         }
       ],
@@ -67,7 +67,7 @@
       "title": "Looking for a Snack",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/refrigerator_look.png",
+          "image": "",
           "label": "Child looking in refrigerator"
         }
       ],
@@ -96,7 +96,7 @@
       "title": "Fall Season",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/fall_leaves.png",
+          "image": "",
           "label": "Fall leaves and child"
         }
       ],
@@ -124,7 +124,7 @@
       "title": "Bedtime",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/yawning_pajamas.png",
+          "image": "",
           "label": "Child yawning in pajamas"
         }
       ],
@@ -154,7 +154,7 @@
       "title": "Ready to Swim",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/swimsuit_goggles.png",
+          "image": "",
           "label": "Child in swimsuit with goggles"
         }
       ],
@@ -182,7 +182,7 @@
       "title": "Beach Day",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/beach_sunscreen.png",
+          "image": "",
           "label": "Girl at beach with sunscreen"
         }
       ],
@@ -212,7 +212,7 @@
       "title": "Winning Trophy",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/trophy_smile.png",
+          "image": "",
           "label": "Girl smiling with trophy"
         }
       ],
@@ -242,7 +242,7 @@
       "title": "Family Dinner",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/family_dinner.png",
+          "image": "",
           "label": "Family sitting at dinner table"
         }
       ],
@@ -271,7 +271,7 @@
       "title": "Rainy Day",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/rain_window.png",
+          "image": "",
           "label": "Child looking out rainy window"
         }
       ],
@@ -300,7 +300,7 @@
       "title": "Rainy Weather",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/umbrella_clouds.png",
+          "image": "",
           "label": "Person with umbrella under clouds"
         }
       ],
@@ -329,7 +329,7 @@
       "title": "Race Starting Line",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/starting_line.png",
+          "image": "",
           "label": "Runners at starting line"
         }
       ],
@@ -358,7 +358,7 @@
       "title": "Packing for the Beach",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/family_beach_car.png",
+          "image": "",
           "label": "Family packing car for beach"
         }
       ],
@@ -388,7 +388,7 @@
       "title": "Broken Toy",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/broken_toy.png",
+          "image": "",
           "label": "Boy with broken toy"
         }
       ],
@@ -418,7 +418,7 @@
       "title": "Sour Lemon",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/sour_lemon.png",
+          "image": "",
           "label": "Child tasting sour lemon"
         }
       ],
@@ -446,7 +446,7 @@
       "title": "Hot Weather",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/sweating_hot.png",
+          "image": "",
           "label": "Person sweating in hot weather"
         }
       ],
@@ -475,7 +475,7 @@
       "title": "Finished Eating",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/empty_plate.png",
+          "image": "",
           "label": "Child with empty plate"
         }
       ],
@@ -504,7 +504,7 @@
       "title": "Painting Art",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/paint_hands.png",
+          "image": "",
           "label": "Child with paint on hands"
         }
       ],
@@ -533,7 +533,7 @@
       "title": "Surfing Time",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/surfboard_waves.png",
+          "image": "",
           "label": "Boy with surfboard at waves"
         }
       ],
@@ -563,7 +563,7 @@
       "title": "Surprise Gift",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/peeking_box.png",
+          "image": "",
           "label": "Child peeking into gift box"
         }
       ],
@@ -592,7 +592,7 @@
       "title": "Self Checkout",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/self_checkout.png",
+          "image": "",
           "label": "Family at self checkout"
         }
       ],
@@ -621,7 +621,7 @@
       "title": "Getting Ready to Leave",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/jackets_door.png",
+          "image": "",
           "label": "People putting on jackets by door"
         }
       ],
@@ -650,7 +650,7 @@
       "title": "Birthday Celebration",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/cake_candles.png",
+          "image": "",
           "label": "Birthday cake with candles"
         }
       ],
@@ -679,7 +679,7 @@
       "title": "Going on a Trip",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/suitcase_door.png",
+          "image": "",
           "label": "Person with suitcase at door"
         }
       ],
@@ -708,7 +708,7 @@
       "title": "Building Sandcastle",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/sandcastle_kids.png",
+          "image": "",
           "label": "Kids building sandcastle"
         }
       ],
@@ -738,7 +738,7 @@
       "title": "Friendship Hug",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/kids_hugging.png",
+          "image": "",
           "label": "Kids hugging"
         }
       ],
@@ -767,7 +767,7 @@
       "title": "Baking Together",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/baking_bowl.png",
+          "image": "",
           "label": "Child mixing in baking bowl"
         }
       ],
@@ -797,7 +797,7 @@
       "title": "Messy Room",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/messy_room.png",
+          "image": "",
           "label": "Child in messy room"
         }
       ],
@@ -827,7 +827,7 @@
       "title": "Birthday Wish",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/blowing_candles.png",
+          "image": "",
           "label": "Child blowing out birthday candles"
         }
       ],
@@ -856,7 +856,7 @@
       "title": "Blanket Fort Adventure",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/flashlight_fort.png",
+          "image": "",
           "label": "Kids with flashlights in blanket fort"
         }
       ],
@@ -888,7 +888,7 @@
       "question": "What is she going to eat?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/bowl_spoon.png",
+          "image": "",
           "label": "A bowl and spoon"
         }
       ],
@@ -904,7 +904,7 @@
       "question": "What smelled?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/family/babysitter.png",
+          "image": "",
           "label": "A babysitter with a baby"
         }
       ],
@@ -921,7 +921,7 @@
       "question": "What was the weather like outside?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/wet_umbrella.png",
+          "image": "",
           "label": "A wet umbrella"
         }
       ],
@@ -938,7 +938,7 @@
       "question": "What did Ryan squeeze onto his toothbrush?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/toothbrush.png",
+          "image": "",
           "label": "A toothbrush"
         }
       ],
@@ -953,7 +953,7 @@
       "question": "What happened to Ava's knee?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/scraped_knee.png",
+          "image": "",
           "label": "A child with a scraped knee"
         }
       ],
@@ -970,7 +970,7 @@
       "question": "What kind of party is this?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/birthday_party.png",
+          "image": "",
           "label": "A birthday party"
         }
       ],
@@ -986,7 +986,7 @@
       "question": "What happened to the cookies?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/empty_cookie_jar.png",
+          "image": "",
           "label": "An empty cookie jar"
         }
       ],
@@ -1002,7 +1002,7 @@
       "question": "What does the cat want?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/pets/hungry_cat.png",
+          "image": "",
           "label": "A hungry cat"
         }
       ],
@@ -1019,7 +1019,7 @@
       "question": "What is he going to drink?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/orange_juice.png",
+          "image": "",
           "label": "A glass of orange juice"
         }
       ],
@@ -1035,7 +1035,7 @@
       "question": "Why is the baby crying?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/family/baby_crying.png",
+          "image": "",
           "label": "A crying baby"
         }
       ],
@@ -1052,7 +1052,7 @@
       "question": "What is the weather like?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/winter_clothes.png",
+          "image": "",
           "label": "Winter clothes"
         }
       ],
@@ -1070,7 +1070,7 @@
       "question": "What time of day is it?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/alarm_clock.png",
+          "image": "",
           "label": "An alarm clock"
         }
       ],
@@ -1086,7 +1086,7 @@
       "question": "How does Ben feel?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/good_grade.png",
+          "image": "",
           "label": "A test with a good grade"
         }
       ],
@@ -1103,7 +1103,7 @@
       "question": "Where is the family going?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/swimsuits.png",
+          "image": "",
           "label": "Swimsuits and towels"
         }
       ],
@@ -1121,7 +1121,7 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/broken_glass.png",
+          "image": "",
           "label": "Broken glass on the floor"
         }
       ],
@@ -1137,7 +1137,7 @@
       "question": "What does Buddy need?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/pets/dog_door.png",
+          "image": "",
           "label": "A dog by the door"
         }
       ],
@@ -1154,7 +1154,7 @@
       "question": "What is she making?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/sandwich.png",
+          "image": "",
           "label": "A peanut butter and jelly sandwich"
         }
       ],
@@ -1171,7 +1171,7 @@
       "question": "What is Dad about to do?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/family/feeding_baby.png",
+          "image": "",
           "label": "Dad feeding a baby"
         }
       ],
@@ -1187,7 +1187,7 @@
       "question": "What is the weather like today?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/sunscreen.png",
+          "image": "",
           "label": "Sunscreen and sunglasses"
         }
       ],
@@ -1204,7 +1204,7 @@
       "question": "What is Maya about to do?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/pajamas.png",
+          "image": "",
           "label": "Pajamas"
         }
       ],
@@ -1221,7 +1221,7 @@
       "question": "How does Olivia feel?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/sad_child.png",
+          "image": "",
           "label": "A sad child"
         }
       ],
@@ -1238,7 +1238,7 @@
       "question": "What is Max about to do?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/dog_leash.png",
+          "image": "",
           "label": "A dog leash"
         }
       ],
@@ -1254,7 +1254,7 @@
       "question": "Why did Mrs. Johnson put up signs?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/lost_dog.png",
+          "image": "",
           "label": "A lost dog sign"
         }
       ],
@@ -1270,7 +1270,7 @@
       "question": "What did his mom hand him?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/napkin.png",
+          "image": "",
           "label": "A napkin"
         }
       ],
@@ -1287,7 +1287,7 @@
       "question": "How was the weather outside?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/sweating.png",
+          "image": "",
           "label": "A person sweating"
         }
       ],
@@ -1304,7 +1304,7 @@
       "question": "What did Jack grab?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/messy_hair.png",
+          "image": "",
           "label": "A person with messy hair"
         }
       ],
@@ -1322,7 +1322,7 @@
       "question": "How does Noah feel?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/shy_child.png",
+          "image": "",
           "label": "A shy child"
         }
       ],
@@ -1340,7 +1340,7 @@
       "question": "What is Lily building?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/sandcastle.png",
+          "image": "",
           "label": "A sandcastle"
         }
       ],
@@ -1356,7 +1356,7 @@
       "question": "What happened to the car?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/flat_tire.png",
+          "image": "",
           "label": "A car with a flat tire"
         }
       ],
@@ -1372,7 +1372,7 @@
       "question": "What did Mom bring?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/popcorn.png",
+          "image": "",
           "label": "A bowl of popcorn"
         }
       ],
@@ -1390,7 +1390,7 @@
       "title": "Jackie's Snow Day",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/snow_day.png",
+          "image": "",
           "label": "Snow day scene"
         }
       ],
@@ -1420,7 +1420,7 @@
       "title": "Cooking Disaster",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/cooking_disaster.png",
+          "image": "",
           "label": "Kitchen with burned food"
         }
       ],
@@ -1460,7 +1460,7 @@
       "title": "Science Fair Project",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/science_fair.png",
+          "image": "",
           "label": "Science fair project display"
         }
       ],
@@ -1498,7 +1498,7 @@
       "title": "Beach Vacation Plans",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/vacation_plans.png",
+          "image": "",
           "label": "Family planning vacation"
         }
       ],
@@ -1536,7 +1536,7 @@
       "title": "The Big Game",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/big_game.png",
+          "image": "",
           "label": "Sports game scene"
         }
       ],
@@ -1577,7 +1577,7 @@
       "title": "Tyson's Sports Car",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/sports_car.png",
+          "image": "",
           "label": "Sports car after accident"
         }
       ],
@@ -1617,7 +1617,7 @@
       "title": "The Doctor Visit",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/doctor_visit.png",
+          "image": "",
           "label": "Doctor's office visit"
         }
       ],
@@ -1657,7 +1657,7 @@
       "title": "Moving Day",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/moving_day.png",
+          "image": "",
           "label": "Family moving day"
         }
       ],
@@ -1696,7 +1696,7 @@
       "title": "Rainy Day Disappointment",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/rainy_day.png",
+          "image": "",
           "label": "Rainy day disappointment"
         }
       ],
@@ -1735,7 +1735,7 @@
       "title": "The Surprise Party",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/surprise_party.png",
+          "image": "",
           "label": "Surprise party scene"
         }
       ],
@@ -1773,7 +1773,7 @@
       "title": "First Day Nerves",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/first_day.png",
+          "image": "",
           "label": "First day at new school"
         }
       ],
@@ -1813,7 +1813,7 @@
       "title": "The Flat Tire",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/flat_tire.png",
+          "image": "",
           "label": "Car with flat tire"
         }
       ],
@@ -1852,7 +1852,7 @@
       "title": "The Lost Dog",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/lost_dog.png",
+          "image": "",
           "label": "Looking for lost dog"
         }
       ],
@@ -1890,7 +1890,7 @@
       "title": "The Broken Vase",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/broken_vase.png",
+          "image": "",
           "label": "Broken vase on floor"
         }
       ],
@@ -1929,7 +1929,7 @@
       "title": "The Swimming Lesson",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/swimming_lesson.png",
+          "image": "",
           "label": "Swimming lesson at pool"
         }
       ],
@@ -1967,7 +1967,7 @@
       "title": "The New Baby",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/new_baby.png",
+          "image": "",
           "label": "Family with new baby"
         }
       ],
@@ -2006,7 +2006,7 @@
       "title": "The Thunderstorm",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/thunderstorm.png",
+          "image": "",
           "label": "Thunderstorm scene"
         }
       ],
@@ -2045,7 +2045,7 @@
       "title": "The Power Outage",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/power_outage.png",
+          "image": "",
           "label": "Family during power outage"
         }
       ],
@@ -2083,7 +2083,7 @@
       "title": "The School Play",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/school_play.png",
+          "image": "",
           "label": "School play performance"
         }
       ],
@@ -2122,7 +2122,7 @@
       "title": "The Lost Phone",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/lost_phone.png",
+          "image": "",
           "label": "Looking for lost phone"
         }
       ],
@@ -2161,7 +2161,7 @@
       "title": "The Neighborhood Lemonade Stand",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/lemonade_stand.png",
+          "image": "",
           "label": "Kids at lemonade stand"
         }
       ],
@@ -2201,7 +2201,7 @@
       "title": "The Camping Trip",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/camping_trip.png",
+          "image": "",
           "label": "Family camping trip"
         }
       ],
@@ -2241,7 +2241,7 @@
       "title": "The Art Contest",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/art_contest.png",
+          "image": "",
           "label": "Art contest display"
         }
       ],
@@ -2282,7 +2282,7 @@
       "title": "The Forgotten Lunch",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/forgotten_lunch.png",
+          "image": "",
           "label": "Boy who forgot his lunch"
         }
       ],
@@ -2322,7 +2322,7 @@
       "title": "The Sleepover",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/sleepover.png",
+          "image": "",
           "label": "Sleepover scene"
         }
       ],
@@ -2362,7 +2362,7 @@
       "title": "The Waiting Room",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/waiting_room.png",
+          "image": "",
           "label": "Hospital waiting room"
         }
       ],
@@ -2401,7 +2401,7 @@
       "title": "The Garden Project",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/garden_project.png",
+          "image": "",
           "label": "Garden with growing plants"
         }
       ],
@@ -2442,7 +2442,7 @@
       "title": "The Job Interview",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/job_interview.png",
+          "image": "",
           "label": "Job interview scene"
         }
       ],
@@ -2481,7 +2481,7 @@
       "title": "The Bake Sale",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/bake_sale.png",
+          "image": "",
           "label": "Bake sale table"
         }
       ],
@@ -2521,7 +2521,7 @@
       "title": "The Long Car Ride",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/long_car_ride.png",
+          "image": "",
           "label": "Family on long car ride"
         }
       ],

@@ -4,7 +4,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/girl-eating.png",
+          "image": "",
           "label": "Girl eating"
         }
       ],
@@ -17,7 +17,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-running.png",
+          "image": "",
           "label": "Boy running"
         }
       ],
@@ -30,7 +30,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/child-looking-seashell.png",
+          "image": "",
           "label": "Child looking at a seashell"
         }
       ],
@@ -44,7 +44,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/family-playing-waves.png",
+          "image": "",
           "label": "Family playing in the waves"
         }
       ],
@@ -57,7 +57,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/girl-jumping-wave.png",
+          "image": "",
           "label": "Girl jumping over a wave"
         }
       ],
@@ -70,7 +70,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-swimming.png",
+          "image": "",
           "label": "Boy swimming"
         }
       ],
@@ -83,7 +83,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/child-walking-sand.png",
+          "image": "",
           "label": "Child walking on the sand"
         }
       ],
@@ -96,7 +96,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/kids-sitting-towel.png",
+          "image": "",
           "label": "Kids sitting on a towel"
         }
       ],
@@ -109,7 +109,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-standing-surfboard.png",
+          "image": "",
           "label": "Boy standing on a surfboard"
         }
       ],
@@ -122,7 +122,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/girl-reading-umbrella.png",
+          "image": "",
           "label": "Girl reading under an umbrella"
         }
       ],
@@ -135,7 +135,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/child-sleeping-chair.png",
+          "image": "",
           "label": "Child sleeping on a chair"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-drinking-water.png",
+          "image": "",
           "label": "Boy drinking water"
         }
       ],
@@ -161,7 +161,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/girl-helping-sandcastle.png",
+          "image": "",
           "label": "Girl helping build a sandcastle"
         }
       ],
@@ -174,7 +174,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/child-looking-sun.png",
+          "image": "",
           "label": "Child looking at the sun"
         }
       ],
@@ -187,7 +187,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/mom-child-talking.png",
+          "image": "",
           "label": "Mom and child talking"
         }
       ],
@@ -200,7 +200,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-finding-starfish.png",
+          "image": "",
           "label": "Boy finding a starfish"
         }
       ],
@@ -214,7 +214,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/girl-giving-shell.png",
+          "image": "",
           "label": "Girl giving a shell"
         }
       ],
@@ -227,7 +227,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/child-making-sandcastle.png",
+          "image": "",
           "label": "Child making a sandcastle"
         }
       ],
@@ -240,7 +240,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-going-water.png",
+          "image": "",
           "label": "Boy going into the water"
         }
       ],
@@ -253,7 +253,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/girl-coming-ocean.png",
+          "image": "",
           "label": "Girl coming from the ocean"
         }
       ],
@@ -266,7 +266,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/child-putting-flipflops.png",
+          "image": "",
           "label": "Child putting on flip flops"
         }
       ],
@@ -279,7 +279,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/kids-getting-ready.png",
+          "image": "",
           "label": "Kids getting ready"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-wanting-icecream.png",
+          "image": "",
           "label": "Boy wanting ice cream"
         }
       ],
@@ -305,7 +305,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/happy-girl-beach.png",
+          "image": "",
           "label": "Happy girl at the beach"
         }
       ],
@@ -317,7 +317,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/big-wave.png",
+          "image": "",
           "label": "A big wave"
         }
       ],
@@ -329,7 +329,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/small-seashell.png",
+          "image": "",
           "label": "A small seashell"
         }
       ],
@@ -343,7 +343,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/child-saying-hello.png",
+          "image": "",
           "label": "Child saying hello"
         }
       ],
@@ -357,7 +357,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/girl-her-bag.png",
+          "image": "",
           "label": "Girl with her bag"
         }
       ],
@@ -369,7 +369,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/boy-his-sunglasses.png",
+          "image": "",
           "label": "Boy with his sunglasses"
         }
       ],
@@ -381,7 +381,7 @@
       "question": "What word is this?",
       "images": [
         {
-          "image": "images/sightwords/children-their-sandcastle.png",
+          "image": "",
           "label": "Children with their sandcastle"
         }
       ],

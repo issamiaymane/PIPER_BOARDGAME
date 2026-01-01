@@ -4,7 +4,7 @@
       "question": "Where is the lighthouse?",
       "images": [
         {
-          "image": "images/prepositions/lighthouse-rocks.png",
+          "image": "",
           "label": "Lighthouse on rocks"
         }
       ],
@@ -19,7 +19,7 @@
       "question": "Where is the seashell?",
       "images": [
         {
-          "image": "images/prepositions/seashell-sand.png",
+          "image": "",
           "label": "Seashell on sand"
         }
       ],
@@ -34,7 +34,7 @@
       "question": "Where are the sunglasses?",
       "images": [
         {
-          "image": "images/prepositions/sunglasses-towel.png",
+          "image": "",
           "label": "Sunglasses on a towel"
         }
       ],
@@ -49,7 +49,7 @@
       "question": "Where is the pelican?",
       "images": [
         {
-          "image": "images/prepositions/pelican-post.png",
+          "image": "",
           "label": "Pelican on a post"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "Where is the book?",
       "images": [
         {
-          "image": "images/prepositions/book-shelf.png",
+          "image": "",
           "label": "Book on a shelf"
         }
       ],
@@ -79,7 +79,7 @@
       "question": "Where is the bird?",
       "images": [
         {
-          "image": "images/prepositions/bird-branch.png",
+          "image": "",
           "label": "Bird on a branch"
         }
       ],
@@ -94,7 +94,7 @@
       "question": "Where is the surfer?",
       "images": [
         {
-          "image": "images/prepositions/surfer-water.png",
+          "image": "",
           "label": "Surfer in the water"
         }
       ],
@@ -108,7 +108,7 @@
       "question": "Where is the fish?",
       "images": [
         {
-          "image": "images/prepositions/fish-bucket.png",
+          "image": "",
           "label": "Fish in a bucket"
         }
       ],
@@ -122,7 +122,7 @@
       "question": "Where is the bunny?",
       "images": [
         {
-          "image": "images/prepositions/bunny-basket.png",
+          "image": "",
           "label": "Bunny in a basket"
         }
       ],
@@ -136,7 +136,7 @@
       "question": "Where is the whale?",
       "images": [
         {
-          "image": "images/prepositions/whale-ocean.png",
+          "image": "",
           "label": "Whale in the ocean"
         }
       ],
@@ -150,7 +150,7 @@
       "question": "Where is the dog?",
       "images": [
         {
-          "image": "images/prepositions/dog-water.png",
+          "image": "",
           "label": "Dog in the water"
         }
       ],
@@ -164,7 +164,7 @@
       "question": "Where is the crab?",
       "images": [
         {
-          "image": "images/prepositions/crab-rock.png",
+          "image": "",
           "label": "Crab under a rock"
         }
       ],
@@ -180,7 +180,7 @@
       "question": "Where is the starfish?",
       "images": [
         {
-          "image": "images/prepositions/starfish-seaweed.png",
+          "image": "",
           "label": "Starfish under seaweed"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "Where is the dog?",
       "images": [
         {
-          "image": "images/prepositions/dog-table.png",
+          "image": "",
           "label": "Dog under a table"
         }
       ],
@@ -212,7 +212,7 @@
       "question": "Where are the shoes?",
       "images": [
         {
-          "image": "images/prepositions/shoes-chair.png",
+          "image": "",
           "label": "Shoes under a chair"
         }
       ],
@@ -228,7 +228,7 @@
       "question": "Where is the beach ball?",
       "images": [
         {
-          "image": "images/prepositions/beachball-sandcastles.png",
+          "image": "",
           "label": "Beach ball between sandcastles"
         }
       ],
@@ -242,7 +242,7 @@
       "question": "Where is the cooler?",
       "images": [
         {
-          "image": "images/prepositions/cooler-chairs.png",
+          "image": "",
           "label": "Cooler between chairs"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "Where is the clock?",
       "images": [
         {
-          "image": "images/prepositions/clock-pictures.png",
+          "image": "",
           "label": "Clock between pictures"
         }
       ],
@@ -270,7 +270,7 @@
       "question": "Where is the seagull?",
       "images": [
         {
-          "image": "images/prepositions/seagull-waves.png",
+          "image": "",
           "label": "Seagull above waves"
         }
       ],
@@ -284,7 +284,7 @@
       "question": "Where is the sun?",
       "images": [
         {
-          "image": "images/prepositions/sun-ocean.png",
+          "image": "",
           "label": "Sun above the ocean"
         }
       ],
@@ -298,7 +298,7 @@
       "question": "Where is the airplane?",
       "images": [
         {
-          "image": "images/prepositions/airplane-clouds.png",
+          "image": "",
           "label": "Airplane above clouds"
         }
       ],
@@ -312,7 +312,7 @@
       "question": "Where is the chair?",
       "images": [
         {
-          "image": "images/prepositions/chair-umbrella.png",
+          "image": "",
           "label": "Chair next to an umbrella"
         }
       ],
@@ -328,7 +328,7 @@
       "question": "Where are the flip flops?",
       "images": [
         {
-          "image": "images/prepositions/flipflops-bag.png",
+          "image": "",
           "label": "Flip flops next to a bag"
         }
       ],
@@ -344,7 +344,7 @@
       "question": "Where is the lamp?",
       "images": [
         {
-          "image": "images/prepositions/lamp-bed.png",
+          "image": "",
           "label": "Lamp next to a bed"
         }
       ],
@@ -360,7 +360,7 @@
       "question": "Where is the dolphin?",
       "images": [
         {
-          "image": "images/prepositions/dolphin-boat.png",
+          "image": "",
           "label": "Dolphin behind a boat"
         }
       ],
@@ -374,7 +374,7 @@
       "question": "Where is the cat?",
       "images": [
         {
-          "image": "images/prepositions/cat-curtain.png",
+          "image": "",
           "label": "Cat behind a curtain"
         }
       ],
@@ -388,7 +388,7 @@
       "question": "Where is the girl?",
       "images": [
         {
-          "image": "images/prepositions/girl-tree.png",
+          "image": "",
           "label": "Girl behind a tree"
         }
       ],
@@ -402,7 +402,7 @@
       "question": "Where is the palm tree?",
       "images": [
         {
-          "image": "images/prepositions/palmtree-water.png",
+          "image": "",
           "label": "Palm tree near water"
         }
       ],
@@ -417,7 +417,7 @@
       "question": "Where is the shark?",
       "images": [
         {
-          "image": "images/prepositions/shark-reef.png",
+          "image": "",
           "label": "Shark near a coral reef"
         }
       ],
@@ -432,7 +432,7 @@
       "question": "Where is the child?",
       "images": [
         {
-          "image": "images/prepositions/child-sandcastle.png",
+          "image": "",
           "label": "Child in front of a sandcastle"
         }
       ],
@@ -448,7 +448,7 @@
       "question": "Where are the books?",
       "images": [
         {
-          "image": "images/prepositions-simple/books-shelf.png",
+          "image": "",
           "label": "Books on a shelf"
         }
       ],
@@ -462,7 +462,7 @@
       "question": "Where is the cup?",
       "images": [
         {
-          "image": "images/prepositions-simple/cup-table.png",
+          "image": "",
           "label": "Cup on a table"
         }
       ],
@@ -476,7 +476,7 @@
       "question": "Where is the bird?",
       "images": [
         {
-          "image": "images/prepositions-simple/bird-fence.png",
+          "image": "",
           "label": "Bird on a fence"
         }
       ],
@@ -490,7 +490,7 @@
       "question": "Where is the hat?",
       "images": [
         {
-          "image": "images/prepositions-simple/hat-hook.png",
+          "image": "",
           "label": "Hat on a hook"
         }
       ],
@@ -503,7 +503,7 @@
       "question": "Where is the towel?",
       "images": [
         {
-          "image": "images/prepositions-simple/towel-rack.png",
+          "image": "",
           "label": "Towel on a rack"
         }
       ],
@@ -516,7 +516,7 @@
       "question": "Where is the pillow?",
       "images": [
         {
-          "image": "images/prepositions-simple/pillow-bed.png",
+          "image": "",
           "label": "Pillow on a bed"
         }
       ],
@@ -530,7 +530,7 @@
       "question": "Where are the cookies?",
       "images": [
         {
-          "image": "images/prepositions-simple/cookies-plate.png",
+          "image": "",
           "label": "Cookies on a plate"
         }
       ],
@@ -544,7 +544,7 @@
       "question": "Where is the cat?",
       "images": [
         {
-          "image": "images/prepositions-simple/cat-box.png",
+          "image": "",
           "label": "Cat in a box"
         }
       ],
@@ -558,7 +558,7 @@
       "question": "Where is the apple?",
       "images": [
         {
-          "image": "images/prepositions-simple/apple-bowl.png",
+          "image": "",
           "label": "Apple in a bowl"
         }
       ],
@@ -572,7 +572,7 @@
       "question": "Where are the pencils?",
       "images": [
         {
-          "image": "images/prepositions-simple/pencils-jar.png",
+          "image": "",
           "label": "Pencils in a jar"
         }
       ],
@@ -586,7 +586,7 @@
       "question": "Where is the bunny?",
       "images": [
         {
-          "image": "images/prepositions-simple/bunny-cage.png",
+          "image": "",
           "label": "Bunny in a cage"
         }
       ],
@@ -600,7 +600,7 @@
       "question": "Where is the fish?",
       "images": [
         {
-          "image": "images/prepositions-simple/fish-tank.png",
+          "image": "",
           "label": "Fish in a tank"
         }
       ],
@@ -614,7 +614,7 @@
       "question": "Where are the toys?",
       "images": [
         {
-          "image": "images/prepositions-simple/toys-bin.png",
+          "image": "",
           "label": "Toys in a bin"
         }
       ],
@@ -628,7 +628,7 @@
       "question": "Where is the dog?",
       "images": [
         {
-          "image": "images/prepositions-simple/dog-couch.png",
+          "image": "",
           "label": "Dog behind a couch"
         }
       ],
@@ -642,7 +642,7 @@
       "question": "Where is the child?",
       "images": [
         {
-          "image": "images/prepositions-simple/child-chair.png",
+          "image": "",
           "label": "Child behind a chair"
         }
       ],
@@ -656,7 +656,7 @@
       "question": "Where is the ball?",
       "images": [
         {
-          "image": "images/prepositions-simple/ball-bush.png",
+          "image": "",
           "label": "Ball behind a bush"
         }
       ],
@@ -670,7 +670,7 @@
       "question": "Where is the girl?",
       "images": [
         {
-          "image": "images/prepositions-simple/girl-curtain.png",
+          "image": "",
           "label": "Girl behind a curtain"
         }
       ],
@@ -684,7 +684,7 @@
       "question": "Where is the moon?",
       "images": [
         {
-          "image": "images/prepositions-simple/moon-clouds.png",
+          "image": "",
           "label": "Moon behind clouds"
         }
       ],
@@ -698,7 +698,7 @@
       "question": "Where is the woman?",
       "images": [
         {
-          "image": "images/prepositions-simple/woman-counter.png",
+          "image": "",
           "label": "Woman behind a counter"
         }
       ],
@@ -712,7 +712,7 @@
       "question": "Where is the lamp?",
       "images": [
         {
-          "image": "images/prepositions-simple/lamp-windows.png",
+          "image": "",
           "label": "Lamp between windows"
         }
       ],
@@ -726,7 +726,7 @@
       "question": "Where is the clock?",
       "images": [
         {
-          "image": "images/prepositions-simple/clock-pictures.png",
+          "image": "",
           "label": "Clock between pictures"
         }
       ],
@@ -740,7 +740,7 @@
       "question": "Where is the vase?",
       "images": [
         {
-          "image": "images/prepositions-simple/vase-candles.png",
+          "image": "",
           "label": "Vase between candles"
         }
       ],
@@ -754,7 +754,7 @@
       "question": "Where is the phone?",
       "images": [
         {
-          "image": "images/prepositions-simple/phone-book-lamp.png",
+          "image": "",
           "label": "Phone between a book and a lamp"
         }
       ],
@@ -768,7 +768,7 @@
       "question": "Where is the chair?",
       "images": [
         {
-          "image": "images/prepositions-simple/chair-desk-bookcase.png",
+          "image": "",
           "label": "Chair between a desk and a bookcase"
         }
       ],
@@ -782,7 +782,7 @@
       "question": "Where is the plant?",
       "images": [
         {
-          "image": "images/prepositions-simple/plant-door.png",
+          "image": "",
           "label": "Plant in front of a door"
         }
       ],
@@ -796,7 +796,7 @@
       "question": "Where are the shoes?",
       "images": [
         {
-          "image": "images/prepositions-simple/shoes-door.png",
+          "image": "",
           "label": "Shoes in front of a door"
         }
       ],
@@ -810,7 +810,7 @@
       "question": "Where is the boy?",
       "images": [
         {
-          "image": "images/prepositions-simple/boy-tree.png",
+          "image": "",
           "label": "Boy in front of a tree"
         }
       ],
@@ -824,7 +824,7 @@
       "question": "Where is the car?",
       "images": [
         {
-          "image": "images/prepositions-simple/car-house.png",
+          "image": "",
           "label": "Car in front of a house"
         }
       ],
@@ -838,7 +838,7 @@
       "question": "Where is the bench?",
       "images": [
         {
-          "image": "images/prepositions-simple/bench-pond.png",
+          "image": "",
           "label": "Bench in front of a pond"
         }
       ],
@@ -852,7 +852,7 @@
       "question": "Where is the plate?",
       "images": [
         {
-          "image": "images/prepositions-simple/plate-placemat.png",
+          "image": "",
           "label": "Plate on a placemat"
         }
       ],

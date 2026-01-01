@@ -4,15 +4,15 @@
       "question": "Who is not smiling?",
       "images": [
         {
-          "image": "images/negation/man-smiling.png",
+          "image": "",
           "label": "man smiling"
         },
         {
-          "image": "images/negation/child-crying.png",
+          "image": "",
           "label": "child crying"
         },
         {
-          "image": "images/negation/woman-smiling.png",
+          "image": "",
           "label": "woman smiling"
         }
       ],
@@ -22,15 +22,15 @@
       "question": "Who is not happy?",
       "images": [
         {
-          "image": "images/negation/happy-girl.png",
+          "image": "",
           "label": "happy girl"
         },
         {
-          "image": "images/negation/sad-boy.png",
+          "image": "",
           "label": "sad boy"
         },
         {
-          "image": "images/negation/happy-woman.png",
+          "image": "",
           "label": "happy woman"
         }
       ],
@@ -40,15 +40,15 @@
       "question": "Who is not laughing?",
       "images": [
         {
-          "image": "images/negation/child-laughing1.png",
+          "image": "",
           "label": "child laughing"
         },
         {
-          "image": "images/negation/child-frowning.png",
+          "image": "",
           "label": "child frowning"
         },
         {
-          "image": "images/negation/child-laughing2.png",
+          "image": "",
           "label": "child laughing"
         }
       ],
@@ -58,15 +58,15 @@
       "question": "Who is not awake?",
       "images": [
         {
-          "image": "images/negation/eyes-open1.png",
+          "image": "",
           "label": "eyes open"
         },
         {
-          "image": "images/negation/person-sleeping.png",
+          "image": "",
           "label": "person sleeping"
         },
         {
-          "image": "images/negation/eyes-open2.png",
+          "image": "",
           "label": "eyes open"
         }
       ],
@@ -76,15 +76,15 @@
       "question": "Who is not calm?",
       "images": [
         {
-          "image": "images/negation/calm-child.png",
+          "image": "",
           "label": "calm child"
         },
         {
-          "image": "images/negation/crying-baby.png",
+          "image": "",
           "label": "crying baby"
         },
         {
-          "image": "images/negation/calm-adult.png",
+          "image": "",
           "label": "calm adult"
         }
       ],
@@ -94,15 +94,15 @@
       "question": "Who is not standing?",
       "images": [
         {
-          "image": "images/negation/person-standing1.png",
+          "image": "",
           "label": "person standing"
         },
         {
-          "image": "images/negation/person-sitting.png",
+          "image": "",
           "label": "person sitting"
         },
         {
-          "image": "images/negation/person-standing2.png",
+          "image": "",
           "label": "person standing"
         }
       ],
@@ -112,15 +112,15 @@
       "question": "Who is not sitting?",
       "images": [
         {
-          "image": "images/negation/child-sitting1.png",
+          "image": "",
           "label": "child sitting"
         },
         {
-          "image": "images/negation/child-standing.png",
+          "image": "",
           "label": "child standing"
         },
         {
-          "image": "images/negation/child-sitting2.png",
+          "image": "",
           "label": "child sitting"
         }
       ],
@@ -130,15 +130,15 @@
       "question": "Who is not standing?",
       "images": [
         {
-          "image": "images/negation/person-lying.png",
+          "image": "",
           "label": "person lying"
         },
         {
-          "image": "images/negation/person-standing3.png",
+          "image": "",
           "label": "person standing"
         },
         {
-          "image": "images/negation/person-standing4.png",
+          "image": "",
           "label": "person standing"
         }
       ],
@@ -148,15 +148,15 @@
       "question": "Who is not moving?",
       "images": [
         {
-          "image": "images/negation/child-running.png",
+          "image": "",
           "label": "child running"
         },
         {
-          "image": "images/negation/child-walking.png",
+          "image": "",
           "label": "child walking"
         },
         {
-          "image": "images/negation/child-still.png",
+          "image": "",
           "label": "child still"
         }
       ],
@@ -166,15 +166,15 @@
       "question": "Who is not swimming?",
       "images": [
         {
-          "image": "images/negation/person-swimming1.png",
+          "image": "",
           "label": "person swimming"
         },
         {
-          "image": "images/negation/person-swimming2.png",
+          "image": "",
           "label": "person swimming"
         },
         {
-          "image": "images/negation/person-beach.png",
+          "image": "",
           "label": "person beach"
         }
       ],
@@ -184,15 +184,15 @@
       "question": "Which animal is not moving?",
       "images": [
         {
-          "image": "images/negation/dog-jumping.png",
+          "image": "",
           "label": "dog jumping"
         },
         {
-          "image": "images/negation/cat-sleeping.png",
+          "image": "",
           "label": "cat sleeping"
         },
         {
-          "image": "images/negation/bird-flying.png",
+          "image": "",
           "label": "bird flying"
         }
       ],
@@ -202,15 +202,15 @@
       "question": "Who is not dancing?",
       "images": [
         {
-          "image": "images/negation/person-dancing1.png",
+          "image": "",
           "label": "person dancing"
         },
         {
-          "image": "images/negation/person-reading.png",
+          "image": "",
           "label": "person reading"
         },
         {
-          "image": "images/negation/person-dancing2.png",
+          "image": "",
           "label": "person dancing"
         }
       ],
@@ -220,15 +220,15 @@
       "question": "Who is not wearing a hat?",
       "images": [
         {
-          "image": "images/negation/with-hat1.png",
+          "image": "",
           "label": "with hat"
         },
         {
-          "image": "images/negation/without-hat.png",
+          "image": "",
           "label": "without hat"
         },
         {
-          "image": "images/negation/with-hat2.png",
+          "image": "",
           "label": "with hat"
         }
       ],
@@ -238,15 +238,15 @@
       "question": "Who is not wearing shoes?",
       "images": [
         {
-          "image": "images/negation/with-shoes1.png",
+          "image": "",
           "label": "with shoes"
         },
         {
-          "image": "images/negation/barefoot.png",
+          "image": "",
           "label": "barefoot"
         },
         {
-          "image": "images/negation/with-shoes2.png",
+          "image": "",
           "label": "with shoes"
         }
       ],
@@ -256,15 +256,15 @@
       "question": "Who is not wearing glasses?",
       "images": [
         {
-          "image": "images/negation/with-glasses1.png",
+          "image": "",
           "label": "with glasses"
         },
         {
-          "image": "images/negation/with-glasses2.png",
+          "image": "",
           "label": "with glasses"
         },
         {
-          "image": "images/negation/without-glasses.png",
+          "image": "",
           "label": "without glasses"
         }
       ],
@@ -274,15 +274,15 @@
       "question": "Who is not wearing a jacket?",
       "images": [
         {
-          "image": "images/negation/with-jacket1.png",
+          "image": "",
           "label": "with jacket"
         },
         {
-          "image": "images/negation/in-tshirt.png",
+          "image": "",
           "label": "in tshirt"
         },
         {
-          "image": "images/negation/with-jacket2.png",
+          "image": "",
           "label": "with jacket"
         }
       ],
@@ -292,15 +292,15 @@
       "question": "Who is not holding something?",
       "images": [
         {
-          "image": "images/negation/child-ball.png",
+          "image": "",
           "label": "child ball"
         },
         {
-          "image": "images/negation/child-empty.png",
+          "image": "",
           "label": "child empty"
         },
         {
-          "image": "images/negation/child-toy.png",
+          "image": "",
           "label": "child toy"
         }
       ],
@@ -310,15 +310,15 @@
       "question": "Who is not holding an umbrella?",
       "images": [
         {
-          "image": "images/negation/with-umbrella1.png",
+          "image": "",
           "label": "with umbrella"
         },
         {
-          "image": "images/negation/with-umbrella2.png",
+          "image": "",
           "label": "with umbrella"
         },
         {
-          "image": "images/negation/without-umbrella.png",
+          "image": "",
           "label": "without umbrella"
         }
       ],
@@ -328,15 +328,15 @@
       "question": "Who is not holding a book?",
       "images": [
         {
-          "image": "images/negation/with-book1.png",
+          "image": "",
           "label": "with book"
         },
         {
-          "image": "images/negation/with-book2.png",
+          "image": "",
           "label": "with book"
         },
         {
-          "image": "images/negation/without-book.png",
+          "image": "",
           "label": "without book"
         }
       ],
@@ -346,15 +346,15 @@
       "question": "Who is not eating or drinking?",
       "images": [
         {
-          "image": "images/negation/person-eating.png",
+          "image": "",
           "label": "person eating"
         },
         {
-          "image": "images/negation/person-drinking.png",
+          "image": "",
           "label": "person drinking"
         },
         {
-          "image": "images/negation/person-talking.png",
+          "image": "",
           "label": "person talking"
         }
       ],
@@ -364,15 +364,15 @@
       "question": "Who is not drinking?",
       "images": [
         {
-          "image": "images/negation/child-milk.png",
+          "image": "",
           "label": "child milk"
         },
         {
-          "image": "images/negation/child-juice.png",
+          "image": "",
           "label": "child juice"
         },
         {
-          "image": "images/negation/child-playing.png",
+          "image": "",
           "label": "child playing"
         }
       ],
@@ -382,15 +382,15 @@
       "question": "Which pet is not eating?",
       "images": [
         {
-          "image": "images/negation/dog-eating.png",
+          "image": "",
           "label": "dog eating"
         },
         {
-          "image": "images/negation/cat-eating.png",
+          "image": "",
           "label": "cat eating"
         },
         {
-          "image": "images/negation/bird-sitting.png",
+          "image": "",
           "label": "bird sitting"
         }
       ],
@@ -400,15 +400,15 @@
       "question": "Who is not in the water?",
       "images": [
         {
-          "image": "images/negation/child-water1.png",
+          "image": "",
           "label": "child water"
         },
         {
-          "image": "images/negation/child-sand.png",
+          "image": "",
           "label": "child sand"
         },
         {
-          "image": "images/negation/child-water2.png",
+          "image": "",
           "label": "child water"
         }
       ],
@@ -418,15 +418,15 @@
       "question": "Who is not wearing sunscreen?",
       "images": [
         {
-          "image": "images/negation/with-sunscreen1.png",
+          "image": "",
           "label": "with sunscreen"
         },
         {
-          "image": "images/negation/with-sunscreen2.png",
+          "image": "",
           "label": "with sunscreen"
         },
         {
-          "image": "images/negation/without-sunscreen.png",
+          "image": "",
           "label": "without sunscreen"
         }
       ],
@@ -436,15 +436,15 @@
       "question": "Who is not building a sandcastle?",
       "images": [
         {
-          "image": "images/negation/sandcastle1.png",
+          "image": "",
           "label": "sandcastle"
         },
         {
-          "image": "images/negation/swimming.png",
+          "image": "",
           "label": "swimming"
         },
         {
-          "image": "images/negation/sandcastle2.png",
+          "image": "",
           "label": "sandcastle"
         }
       ],
@@ -454,15 +454,15 @@
       "question": "Which light is not on?",
       "images": [
         {
-          "image": "images/negation/light-on1.png",
+          "image": "",
           "label": "light on"
         },
         {
-          "image": "images/negation/light-on2.png",
+          "image": "",
           "label": "light on"
         },
         {
-          "image": "images/negation/light-off.png",
+          "image": "",
           "label": "light off"
         }
       ],
@@ -472,15 +472,15 @@
       "question": "Which door is not open?",
       "images": [
         {
-          "image": "images/negation/door-open1.png",
+          "image": "",
           "label": "door open"
         },
         {
-          "image": "images/negation/door-closed.png",
+          "image": "",
           "label": "door closed"
         },
         {
-          "image": "images/negation/door-open2.png",
+          "image": "",
           "label": "door open"
         }
       ],
@@ -490,15 +490,15 @@
       "question": "Which glass is not full?",
       "images": [
         {
-          "image": "images/negation/glass-full1.png",
+          "image": "",
           "label": "glass full"
         },
         {
-          "image": "images/negation/glass-empty.png",
+          "image": "",
           "label": "glass empty"
         },
         {
-          "image": "images/negation/glass-full2.png",
+          "image": "",
           "label": "glass full"
         }
       ],
@@ -508,15 +508,15 @@
       "question": "Which towel is not wet?",
       "images": [
         {
-          "image": "images/negation/towel-wet1.png",
+          "image": "",
           "label": "towel wet"
         },
         {
-          "image": "images/negation/towel-dry.png",
+          "image": "",
           "label": "towel dry"
         },
         {
-          "image": "images/negation/towel-wet2.png",
+          "image": "",
           "label": "towel wet"
         }
       ],
@@ -526,15 +526,15 @@
       "question": "Which room is not clean?",
       "images": [
         {
-          "image": "images/negation/room-clean1.png",
+          "image": "",
           "label": "room clean"
         },
         {
-          "image": "images/negation/room-messy.png",
+          "image": "",
           "label": "room messy"
         },
         {
-          "image": "images/negation/room-clean2.png",
+          "image": "",
           "label": "room clean"
         }
       ],
@@ -546,15 +546,15 @@
       "question": "Which one is not a bear?",
       "images": [
         {
-          "image": "images/animals/bear1.png",
+          "image": "",
           "label": "bear"
         },
         {
-          "image": "images/animals/bear2.png",
+          "image": "",
           "label": "bear"
         },
         {
-          "image": "images/animals/wolf.png",
+          "image": "",
           "label": "wolf"
         }
       ],
@@ -564,15 +564,15 @@
       "question": "Which one is not a bear?",
       "images": [
         {
-          "image": "images/animals/bear3.png",
+          "image": "",
           "label": "bear"
         },
         {
-          "image": "images/animals/fox.png",
+          "image": "",
           "label": "fox"
         },
         {
-          "image": "images/animals/bear4.png",
+          "image": "",
           "label": "bear"
         }
       ],
@@ -582,15 +582,15 @@
       "question": "Which one is not a cat?",
       "images": [
         {
-          "image": "images/animals/cat1.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "images/animals/cat2.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "images/animals/rabbit.png",
+          "image": "",
           "label": "rabbit"
         }
       ],
@@ -600,15 +600,15 @@
       "question": "Which one is not a cat?",
       "images": [
         {
-          "image": "images/animals/squirrel.png",
+          "image": "",
           "label": "squirrel"
         },
         {
-          "image": "images/animals/cat3.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "images/animals/cat4.png",
+          "image": "",
           "label": "cat"
         }
       ],
@@ -618,15 +618,15 @@
       "question": "Which one is not a dog?",
       "images": [
         {
-          "image": "images/animals/dog1.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "images/animals/coyote.png",
+          "image": "",
           "label": "coyote"
         },
         {
-          "image": "images/animals/dog2.png",
+          "image": "",
           "label": "dog"
         }
       ],
@@ -636,15 +636,15 @@
       "question": "Which one is not a dog?",
       "images": [
         {
-          "image": "images/animals/dog3.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "images/animals/dog4.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "images/animals/hyena.png",
+          "image": "",
           "label": "hyena"
         }
       ],
@@ -654,15 +654,15 @@
       "question": "Which one is not a bird?",
       "images": [
         {
-          "image": "images/animals/robin.png",
+          "image": "",
           "label": "robin"
         },
         {
-          "image": "images/animals/bat.png",
+          "image": "",
           "label": "bat"
         },
         {
-          "image": "images/animals/sparrow.png",
+          "image": "",
           "label": "sparrow"
         }
       ],
@@ -672,15 +672,15 @@
       "question": "Which one is not a bird?",
       "images": [
         {
-          "image": "images/animals/butterfly.png",
+          "image": "",
           "label": "butterfly"
         },
         {
-          "image": "images/animals/cardinal.png",
+          "image": "",
           "label": "cardinal"
         },
         {
-          "image": "images/animals/bluejay.png",
+          "image": "",
           "label": "bluejay"
         }
       ],
@@ -690,15 +690,15 @@
       "question": "Which one is not a fish?",
       "images": [
         {
-          "image": "images/animals/goldfish.png",
+          "image": "",
           "label": "goldfish"
         },
         {
-          "image": "images/animals/clownfish.png",
+          "image": "",
           "label": "clownfish"
         },
         {
-          "image": "images/animals/dolphin.png",
+          "image": "",
           "label": "dolphin"
         }
       ],
@@ -708,15 +708,15 @@
       "question": "Which one is not a fish?",
       "images": [
         {
-          "image": "images/animals/whale.png",
+          "image": "",
           "label": "whale"
         },
         {
-          "image": "images/animals/salmon.png",
+          "image": "",
           "label": "salmon"
         },
         {
-          "image": "images/animals/tuna.png",
+          "image": "",
           "label": "tuna"
         }
       ],
@@ -726,15 +726,15 @@
       "question": "Which one is not a horse?",
       "images": [
         {
-          "image": "images/animals/horse1.png",
+          "image": "",
           "label": "horse"
         },
         {
-          "image": "images/animals/horse2.png",
+          "image": "",
           "label": "horse"
         },
         {
-          "image": "images/animals/donkey.png",
+          "image": "",
           "label": "donkey"
         }
       ],
@@ -744,15 +744,15 @@
       "question": "Which one is not a horse?",
       "images": [
         {
-          "image": "images/animals/zebra.png",
+          "image": "",
           "label": "zebra"
         },
         {
-          "image": "images/animals/horse3.png",
+          "image": "",
           "label": "horse"
         },
         {
-          "image": "images/animals/horse4.png",
+          "image": "",
           "label": "horse"
         }
       ],
@@ -762,15 +762,15 @@
       "question": "Which one is not an elephant?",
       "images": [
         {
-          "image": "images/animals/elephant1.png",
+          "image": "",
           "label": "elephant"
         },
         {
-          "image": "images/animals/rhino.png",
+          "image": "",
           "label": "rhino"
         },
         {
-          "image": "images/animals/elephant2.png",
+          "image": "",
           "label": "elephant"
         }
       ],
@@ -780,15 +780,15 @@
       "question": "Which one is not an elephant?",
       "images": [
         {
-          "image": "images/animals/elephant3.png",
+          "image": "",
           "label": "elephant"
         },
         {
-          "image": "images/animals/elephant4.png",
+          "image": "",
           "label": "elephant"
         },
         {
-          "image": "images/animals/hippo.png",
+          "image": "",
           "label": "hippo"
         }
       ],
@@ -798,15 +798,15 @@
       "question": "Which one is not a lion?",
       "images": [
         {
-          "image": "images/animals/lion1.png",
+          "image": "",
           "label": "lion"
         },
         {
-          "image": "images/animals/tiger.png",
+          "image": "",
           "label": "tiger"
         },
         {
-          "image": "images/animals/lion2.png",
+          "image": "",
           "label": "lion"
         }
       ],
@@ -816,15 +816,15 @@
       "question": "Which one is not a lion?",
       "images": [
         {
-          "image": "images/animals/cheetah.png",
+          "image": "",
           "label": "cheetah"
         },
         {
-          "image": "images/animals/lion3.png",
+          "image": "",
           "label": "lion"
         },
         {
-          "image": "images/animals/lion4.png",
+          "image": "",
           "label": "lion"
         }
       ],
@@ -834,15 +834,15 @@
       "question": "Which one is not a monkey?",
       "images": [
         {
-          "image": "images/animals/monkey1.png",
+          "image": "",
           "label": "monkey"
         },
         {
-          "image": "images/animals/monkey2.png",
+          "image": "",
           "label": "monkey"
         },
         {
-          "image": "images/animals/lemur.png",
+          "image": "",
           "label": "lemur"
         }
       ],
@@ -852,15 +852,15 @@
       "question": "Which one is not a monkey?",
       "images": [
         {
-          "image": "images/animals/sloth.png",
+          "image": "",
           "label": "sloth"
         },
         {
-          "image": "images/animals/monkey3.png",
+          "image": "",
           "label": "monkey"
         },
         {
-          "image": "images/animals/monkey4.png",
+          "image": "",
           "label": "monkey"
         }
       ],
@@ -870,15 +870,15 @@
       "question": "Which one is not a cow?",
       "images": [
         {
-          "image": "images/animals/cow1.png",
+          "image": "",
           "label": "cow"
         },
         {
-          "image": "images/animals/buffalo.png",
+          "image": "",
           "label": "buffalo"
         },
         {
-          "image": "images/animals/cow2.png",
+          "image": "",
           "label": "cow"
         }
       ],
@@ -888,15 +888,15 @@
       "question": "Which one is not a cow?",
       "images": [
         {
-          "image": "images/animals/cow3.png",
+          "image": "",
           "label": "cow"
         },
         {
-          "image": "images/animals/cow4.png",
+          "image": "",
           "label": "cow"
         },
         {
-          "image": "images/animals/moose.png",
+          "image": "",
           "label": "moose"
         }
       ],
@@ -906,15 +906,15 @@
       "question": "Which one is not a pig?",
       "images": [
         {
-          "image": "images/animals/pig1.png",
+          "image": "",
           "label": "pig"
         },
         {
-          "image": "images/animals/pig2.png",
+          "image": "",
           "label": "pig"
         },
         {
-          "image": "images/animals/boar.png",
+          "image": "",
           "label": "boar"
         }
       ],
@@ -924,15 +924,15 @@
       "question": "Which one is not a pig?",
       "images": [
         {
-          "image": "images/animals/warthog.png",
+          "image": "",
           "label": "warthog"
         },
         {
-          "image": "images/animals/pig3.png",
+          "image": "",
           "label": "pig"
         },
         {
-          "image": "images/animals/pig4.png",
+          "image": "",
           "label": "pig"
         }
       ],
@@ -942,15 +942,15 @@
       "question": "Which one is not a sheep?",
       "images": [
         {
-          "image": "images/animals/sheep1.png",
+          "image": "",
           "label": "sheep"
         },
         {
-          "image": "images/animals/goat.png",
+          "image": "",
           "label": "goat"
         },
         {
-          "image": "images/animals/sheep2.png",
+          "image": "",
           "label": "sheep"
         }
       ],
@@ -960,15 +960,15 @@
       "question": "Which one is not a sheep?",
       "images": [
         {
-          "image": "images/animals/sheep3.png",
+          "image": "",
           "label": "sheep"
         },
         {
-          "image": "images/animals/sheep4.png",
+          "image": "",
           "label": "sheep"
         },
         {
-          "image": "images/animals/llama.png",
+          "image": "",
           "label": "llama"
         }
       ],
@@ -978,15 +978,15 @@
       "question": "Which one is not a duck?",
       "images": [
         {
-          "image": "images/animals/duck1.png",
+          "image": "",
           "label": "duck"
         },
         {
-          "image": "images/animals/swan.png",
+          "image": "",
           "label": "swan"
         },
         {
-          "image": "images/animals/duck2.png",
+          "image": "",
           "label": "duck"
         }
       ],
@@ -996,15 +996,15 @@
       "question": "Which one is not a duck?",
       "images": [
         {
-          "image": "images/animals/goose.png",
+          "image": "",
           "label": "goose"
         },
         {
-          "image": "images/animals/duck3.png",
+          "image": "",
           "label": "duck"
         },
         {
-          "image": "images/animals/duck4.png",
+          "image": "",
           "label": "duck"
         }
       ],
@@ -1014,15 +1014,15 @@
       "question": "Which one is not a frog?",
       "images": [
         {
-          "image": "images/animals/frog1.png",
+          "image": "",
           "label": "frog"
         },
         {
-          "image": "images/animals/frog2.png",
+          "image": "",
           "label": "frog"
         },
         {
-          "image": "images/animals/toad.png",
+          "image": "",
           "label": "toad"
         }
       ],
@@ -1032,15 +1032,15 @@
       "question": "Which one is not a frog?",
       "images": [
         {
-          "image": "images/animals/salamander.png",
+          "image": "",
           "label": "salamander"
         },
         {
-          "image": "images/animals/frog3.png",
+          "image": "",
           "label": "frog"
         },
         {
-          "image": "images/animals/frog4.png",
+          "image": "",
           "label": "frog"
         }
       ],
@@ -1050,15 +1050,15 @@
       "question": "Which one is not a turtle?",
       "images": [
         {
-          "image": "images/animals/turtle1.png",
+          "image": "",
           "label": "turtle"
         },
         {
-          "image": "images/animals/tortoise.png",
+          "image": "",
           "label": "tortoise"
         },
         {
-          "image": "images/animals/turtle2.png",
+          "image": "",
           "label": "turtle"
         }
       ],
@@ -1068,15 +1068,15 @@
       "question": "Which one is not a turtle?",
       "images": [
         {
-          "image": "images/animals/turtle3.png",
+          "image": "",
           "label": "turtle"
         },
         {
-          "image": "images/animals/turtle4.png",
+          "image": "",
           "label": "turtle"
         },
         {
-          "image": "images/animals/snail.png",
+          "image": "",
           "label": "snail"
         }
       ],
@@ -1088,15 +1088,15 @@
       "question": "Which one is not a swimsuit?",
       "images": [
         {
-          "image": "images/clothing/swim-trunks.png",
+          "image": "",
           "label": "swim trunks"
         },
         {
-          "image": "images/clothing/girls-swimsuit.png",
+          "image": "",
           "label": "girls swimsuit"
         },
         {
-          "image": "images/clothing/red-tshirt.png",
+          "image": "",
           "label": "red tshirt"
         }
       ],
@@ -1106,15 +1106,15 @@
       "question": "Which one is not beach footwear?",
       "images": [
         {
-          "image": "images/clothing/flip-flops1.png",
+          "image": "",
           "label": "flip flops"
         },
         {
-          "image": "images/clothing/sandals.png",
+          "image": "",
           "label": "sandals"
         },
         {
-          "image": "images/clothing/sneakers1.png",
+          "image": "",
           "label": "sneakers"
         }
       ],
@@ -1124,15 +1124,15 @@
       "question": "Which one is not a sun hat?",
       "images": [
         {
-          "image": "images/clothing/sun-hat1.png",
+          "image": "",
           "label": "sun hat"
         },
         {
-          "image": "images/clothing/baseball-cap.png",
+          "image": "",
           "label": "baseball cap"
         },
         {
-          "image": "images/clothing/sun-hat2.png",
+          "image": "",
           "label": "sun hat"
         }
       ],
@@ -1142,15 +1142,15 @@
       "question": "Which one is not for the beach?",
       "images": [
         {
-          "image": "images/clothing/swimsuit-coverup.png",
+          "image": "",
           "label": "swimsuit coverup"
         },
         {
-          "image": "images/clothing/beach-dress.png",
+          "image": "",
           "label": "beach dress"
         },
         {
-          "image": "images/clothing/winter-coat.png",
+          "image": "",
           "label": "winter coat"
         }
       ],
@@ -1160,15 +1160,15 @@
       "question": "Which one is not a shirt?",
       "images": [
         {
-          "image": "images/clothing/tshirt1.png",
+          "image": "",
           "label": "tshirt"
         },
         {
-          "image": "images/clothing/tshirt2.png",
+          "image": "",
           "label": "tshirt"
         },
         {
-          "image": "images/clothing/pants1.png",
+          "image": "",
           "label": "pants"
         }
       ],
@@ -1178,15 +1178,15 @@
       "question": "Which one is not a sweater?",
       "images": [
         {
-          "image": "images/clothing/sweater1.png",
+          "image": "",
           "label": "sweater"
         },
         {
-          "image": "images/clothing/tank-top.png",
+          "image": "",
           "label": "tank top"
         },
         {
-          "image": "images/clothing/sweater2.png",
+          "image": "",
           "label": "sweater"
         }
       ],
@@ -1196,15 +1196,15 @@
       "question": "Which one is not a jacket?",
       "images": [
         {
-          "image": "images/clothing/jacket1.png",
+          "image": "",
           "label": "jacket"
         },
         {
-          "image": "images/clothing/jacket2.png",
+          "image": "",
           "label": "jacket"
         },
         {
-          "image": "images/clothing/shorts1.png",
+          "image": "",
           "label": "shorts"
         }
       ],
@@ -1214,15 +1214,15 @@
       "question": "Which one is not a hoodie?",
       "images": [
         {
-          "image": "images/clothing/hoodie1.png",
+          "image": "",
           "label": "hoodie"
         },
         {
-          "image": "images/clothing/hoodie2.png",
+          "image": "",
           "label": "hoodie"
         },
         {
-          "image": "images/clothing/dress1.png",
+          "image": "",
           "label": "dress"
         }
       ],
@@ -1232,15 +1232,15 @@
       "question": "Which one is not a button-up shirt?",
       "images": [
         {
-          "image": "images/clothing/button-shirt1.png",
+          "image": "",
           "label": "button shirt"
         },
         {
-          "image": "images/clothing/vest.png",
+          "image": "",
           "label": "vest"
         },
         {
-          "image": "images/clothing/button-shirt2.png",
+          "image": "",
           "label": "button shirt"
         }
       ],
@@ -1250,15 +1250,15 @@
       "question": "Which one is not jeans?",
       "images": [
         {
-          "image": "images/clothing/jeans1.png",
+          "image": "",
           "label": "jeans"
         },
         {
-          "image": "images/clothing/skirt1.png",
+          "image": "",
           "label": "skirt"
         },
         {
-          "image": "images/clothing/jeans2.png",
+          "image": "",
           "label": "jeans"
         }
       ],
@@ -1268,15 +1268,15 @@
       "question": "Which one is not shorts?",
       "images": [
         {
-          "image": "images/clothing/shorts2.png",
+          "image": "",
           "label": "shorts"
         },
         {
-          "image": "images/clothing/shorts3.png",
+          "image": "",
           "label": "shorts"
         },
         {
-          "image": "images/clothing/pants2.png",
+          "image": "",
           "label": "pants"
         }
       ],
@@ -1286,15 +1286,15 @@
       "question": "Which one is not a skirt?",
       "images": [
         {
-          "image": "images/clothing/skirt2.png",
+          "image": "",
           "label": "skirt"
         },
         {
-          "image": "images/clothing/skirt3.png",
+          "image": "",
           "label": "skirt"
         },
         {
-          "image": "images/clothing/leggings.png",
+          "image": "",
           "label": "leggings"
         }
       ],
@@ -1304,15 +1304,15 @@
       "question": "Which one is not sweatpants?",
       "images": [
         {
-          "image": "images/clothing/sweatpants1.png",
+          "image": "",
           "label": "sweatpants"
         },
         {
-          "image": "images/clothing/dress-pants.png",
+          "image": "",
           "label": "dress pants"
         },
         {
-          "image": "images/clothing/sweatpants2.png",
+          "image": "",
           "label": "sweatpants"
         }
       ],
@@ -1322,15 +1322,15 @@
       "question": "Which one is not boots?",
       "images": [
         {
-          "image": "images/clothing/boots1.png",
+          "image": "",
           "label": "boots"
         },
         {
-          "image": "images/clothing/boots2.png",
+          "image": "",
           "label": "boots"
         },
         {
-          "image": "images/clothing/sandals2.png",
+          "image": "",
           "label": "sandals"
         }
       ],
@@ -1340,15 +1340,15 @@
       "question": "Which one is not sneakers?",
       "images": [
         {
-          "image": "images/clothing/sneakers2.png",
+          "image": "",
           "label": "sneakers"
         },
         {
-          "image": "images/clothing/dress-shoes.png",
+          "image": "",
           "label": "dress shoes"
         },
         {
-          "image": "images/clothing/sneakers3.png",
+          "image": "",
           "label": "sneakers"
         }
       ],
@@ -1358,15 +1358,15 @@
       "question": "Which one is not flip flops?",
       "images": [
         {
-          "image": "images/clothing/flip-flops2.png",
+          "image": "",
           "label": "flip flops"
         },
         {
-          "image": "images/clothing/flip-flops3.png",
+          "image": "",
           "label": "flip flops"
         },
         {
-          "image": "images/clothing/rain-boots.png",
+          "image": "",
           "label": "rain boots"
         }
       ],
@@ -1376,15 +1376,15 @@
       "question": "Which one is not slippers?",
       "images": [
         {
-          "image": "images/clothing/slippers1.png",
+          "image": "",
           "label": "slippers"
         },
         {
-          "image": "images/clothing/high-heels.png",
+          "image": "",
           "label": "high heels"
         },
         {
-          "image": "images/clothing/slippers2.png",
+          "image": "",
           "label": "slippers"
         }
       ],
@@ -1394,15 +1394,15 @@
       "question": "Which one is not a hat?",
       "images": [
         {
-          "image": "images/clothing/hat1.png",
+          "image": "",
           "label": "hat"
         },
         {
-          "image": "images/clothing/hat2.png",
+          "image": "",
           "label": "hat"
         },
         {
-          "image": "images/clothing/gloves1.png",
+          "image": "",
           "label": "gloves"
         }
       ],
@@ -1412,15 +1412,15 @@
       "question": "Which one is not a scarf?",
       "images": [
         {
-          "image": "images/clothing/scarf1.png",
+          "image": "",
           "label": "scarf"
         },
         {
-          "image": "images/clothing/belt1.png",
+          "image": "",
           "label": "belt"
         },
         {
-          "image": "images/clothing/scarf2.png",
+          "image": "",
           "label": "scarf"
         }
       ],
@@ -1430,15 +1430,15 @@
       "question": "Which one is not sunglasses?",
       "images": [
         {
-          "image": "images/clothing/sunglasses1.png",
+          "image": "",
           "label": "sunglasses"
         },
         {
-          "image": "images/clothing/sunglasses2.png",
+          "image": "",
           "label": "sunglasses"
         },
         {
-          "image": "images/clothing/watch.png",
+          "image": "",
           "label": "watch"
         }
       ],
@@ -1448,15 +1448,15 @@
       "question": "Which one is not for hands?",
       "images": [
         {
-          "image": "images/clothing/gloves2.png",
+          "image": "",
           "label": "gloves"
         },
         {
-          "image": "images/clothing/mittens1.png",
+          "image": "",
           "label": "mittens"
         },
         {
-          "image": "images/clothing/socks1.png",
+          "image": "",
           "label": "socks"
         }
       ],
@@ -1466,15 +1466,15 @@
       "question": "Which one is not a belt?",
       "images": [
         {
-          "image": "images/clothing/belt2.png",
+          "image": "",
           "label": "belt"
         },
         {
-          "image": "images/clothing/belt3.png",
+          "image": "",
           "label": "belt"
         },
         {
-          "image": "images/clothing/necklace.png",
+          "image": "",
           "label": "necklace"
         }
       ],
@@ -1484,15 +1484,15 @@
       "question": "Which one is not a winter coat?",
       "images": [
         {
-          "image": "images/clothing/winter-coat1.png",
+          "image": "",
           "label": "winter coat"
         },
         {
-          "image": "images/clothing/winter-coat2.png",
+          "image": "",
           "label": "winter coat"
         },
         {
-          "image": "images/clothing/raincoat.png",
+          "image": "",
           "label": "raincoat"
         }
       ],
@@ -1502,15 +1502,15 @@
       "question": "Which one is not mittens?",
       "images": [
         {
-          "image": "images/clothing/mittens2.png",
+          "image": "",
           "label": "mittens"
         },
         {
-          "image": "images/clothing/earmuffs.png",
+          "image": "",
           "label": "earmuffs"
         },
         {
-          "image": "images/clothing/mittens3.png",
+          "image": "",
           "label": "mittens"
         }
       ],
@@ -1520,15 +1520,15 @@
       "question": "Which one is not a beanie?",
       "images": [
         {
-          "image": "images/clothing/beanie1.png",
+          "image": "",
           "label": "beanie"
         },
         {
-          "image": "images/clothing/beanie2.png",
+          "image": "",
           "label": "beanie"
         },
         {
-          "image": "images/clothing/visor.png",
+          "image": "",
           "label": "visor"
         }
       ],
@@ -1538,15 +1538,15 @@
       "question": "Which one is not for cold weather?",
       "images": [
         {
-          "image": "images/clothing/snow-boots1.png",
+          "image": "",
           "label": "snow boots"
         },
         {
-          "image": "images/clothing/snow-boots2.png",
+          "image": "",
           "label": "snow boots"
         },
         {
-          "image": "images/clothing/flip-flops4.png",
+          "image": "",
           "label": "flip flops"
         }
       ],
@@ -1556,15 +1556,15 @@
       "question": "Which one is not pajamas?",
       "images": [
         {
-          "image": "images/clothing/pajamas1.png",
+          "image": "",
           "label": "pajamas"
         },
         {
-          "image": "images/clothing/pajamas2.png",
+          "image": "",
           "label": "pajamas"
         },
         {
-          "image": "images/clothing/jeans3.png",
+          "image": "",
           "label": "jeans"
         }
       ],
@@ -1574,15 +1574,15 @@
       "question": "Which one is not a bathrobe?",
       "images": [
         {
-          "image": "images/clothing/bathrobe1.png",
+          "image": "",
           "label": "bathrobe"
         },
         {
-          "image": "images/clothing/bathrobe2.png",
+          "image": "",
           "label": "bathrobe"
         },
         {
-          "image": "images/clothing/jacket3.png",
+          "image": "",
           "label": "jacket"
         }
       ],
@@ -1592,15 +1592,15 @@
       "question": "Which one is not socks?",
       "images": [
         {
-          "image": "images/clothing/socks2.png",
+          "image": "",
           "label": "socks"
         },
         {
-          "image": "images/clothing/socks3.png",
+          "image": "",
           "label": "socks"
         },
         {
-          "image": "images/clothing/gloves3.png",
+          "image": "",
           "label": "gloves"
         }
       ],
@@ -1610,15 +1610,15 @@
       "question": "Which one is not a dress?",
       "images": [
         {
-          "image": "images/clothing/dress2.png",
+          "image": "",
           "label": "dress"
         },
         {
-          "image": "images/clothing/tshirt3.png",
+          "image": "",
           "label": "tshirt"
         },
         {
-          "image": "images/clothing/dress3.png",
+          "image": "",
           "label": "dress"
         }
       ],
@@ -1630,15 +1630,15 @@
       "question": "Which one is not white?",
       "images": [
         {
-          "image": "images/colors/green-lettuce.png",
+          "image": "",
           "label": "green lettuce"
         },
         {
-          "image": "images/colors/snowy-mountains.png",
+          "image": "",
           "label": "snowy mountains"
         },
         {
-          "image": "images/colors/white-marshmallow.png",
+          "image": "",
           "label": "white marshmallow"
         }
       ],
@@ -1648,15 +1648,15 @@
       "question": "Which one is not white?",
       "images": [
         {
-          "image": "images/colors/white-clouds.png",
+          "image": "",
           "label": "white clouds"
         },
         {
-          "image": "images/colors/white-milk.png",
+          "image": "",
           "label": "white milk"
         },
         {
-          "image": "images/colors/red-apple.png",
+          "image": "",
           "label": "red apple"
         }
       ],
@@ -1666,15 +1666,15 @@
       "question": "Which one is not white?",
       "images": [
         {
-          "image": "images/colors/white-snow.png",
+          "image": "",
           "label": "white snow"
         },
         {
-          "image": "images/colors/brown-chocolate.png",
+          "image": "",
           "label": "brown chocolate"
         },
         {
-          "image": "images/colors/white-paper.png",
+          "image": "",
           "label": "white paper"
         }
       ],
@@ -1684,15 +1684,15 @@
       "question": "Which one is not red?",
       "images": [
         {
-          "image": "images/colors/red-strawberry.png",
+          "image": "",
           "label": "red strawberry"
         },
         {
-          "image": "images/colors/red-firetruck.png",
+          "image": "",
           "label": "red firetruck"
         },
         {
-          "image": "images/colors/yellow-banana.png",
+          "image": "",
           "label": "yellow banana"
         }
       ],
@@ -1702,15 +1702,15 @@
       "question": "Which one is not red?",
       "images": [
         {
-          "image": "images/colors/red-apple.png",
+          "image": "",
           "label": "red apple"
         },
         {
-          "image": "images/colors/green-grapes.png",
+          "image": "",
           "label": "green grapes"
         },
         {
-          "image": "images/colors/red-tomato.png",
+          "image": "",
           "label": "red tomato"
         }
       ],
@@ -1720,15 +1720,15 @@
       "question": "Which one is not red?",
       "images": [
         {
-          "image": "images/colors/red-ladybug.png",
+          "image": "",
           "label": "red ladybug"
         },
         {
-          "image": "images/colors/red-rose.png",
+          "image": "",
           "label": "red rose"
         },
         {
-          "image": "images/colors/blue-blueberries.png",
+          "image": "",
           "label": "blue blueberries"
         }
       ],
@@ -1738,15 +1738,15 @@
       "question": "Which one is not blue?",
       "images": [
         {
-          "image": "images/colors/blue-ocean.png",
+          "image": "",
           "label": "blue ocean"
         },
         {
-          "image": "images/colors/blue-sky.png",
+          "image": "",
           "label": "blue sky"
         },
         {
-          "image": "images/colors/orange-orange.png",
+          "image": "",
           "label": "orange orange"
         }
       ],
@@ -1756,15 +1756,15 @@
       "question": "Which one is not blue?",
       "images": [
         {
-          "image": "images/colors/blue-whale.png",
+          "image": "",
           "label": "blue whale"
         },
         {
-          "image": "images/colors/green-frog.png",
+          "image": "",
           "label": "green frog"
         },
         {
-          "image": "images/colors/blue-jeans.png",
+          "image": "",
           "label": "blue jeans"
         }
       ],
@@ -1774,15 +1774,15 @@
       "question": "Which one is not blue?",
       "images": [
         {
-          "image": "images/colors/blueberries.png",
+          "image": "",
           "label": "blueberries"
         },
         {
-          "image": "images/colors/blue-butterfly.png",
+          "image": "",
           "label": "blue butterfly"
         },
         {
-          "image": "images/colors/yellow-sun.png",
+          "image": "",
           "label": "yellow sun"
         }
       ],
@@ -1792,15 +1792,15 @@
       "question": "Which one is not yellow?",
       "images": [
         {
-          "image": "images/colors/yellow-sun.png",
+          "image": "",
           "label": "yellow sun"
         },
         {
-          "image": "images/colors/yellow-banana.png",
+          "image": "",
           "label": "yellow banana"
         },
         {
-          "image": "images/colors/purple-grapes.png",
+          "image": "",
           "label": "purple grapes"
         }
       ],
@@ -1810,15 +1810,15 @@
       "question": "Which one is not yellow?",
       "images": [
         {
-          "image": "images/colors/yellow-lemon.png",
+          "image": "",
           "label": "yellow lemon"
         },
         {
-          "image": "images/colors/yellow-schoolbus.png",
+          "image": "",
           "label": "yellow schoolbus"
         },
         {
-          "image": "images/colors/red-strawberry.png",
+          "image": "",
           "label": "red strawberry"
         }
       ],
@@ -1828,15 +1828,15 @@
       "question": "Which one is not yellow?",
       "images": [
         {
-          "image": "images/colors/yellow-duck.png",
+          "image": "",
           "label": "yellow duck"
         },
         {
-          "image": "images/colors/brown-bear.png",
+          "image": "",
           "label": "brown bear"
         },
         {
-          "image": "images/colors/yellow-corn.png",
+          "image": "",
           "label": "yellow corn"
         }
       ],
@@ -1846,15 +1846,15 @@
       "question": "Which one is not green?",
       "images": [
         {
-          "image": "images/colors/green-grass.png",
+          "image": "",
           "label": "green grass"
         },
         {
-          "image": "images/colors/green-frog.png",
+          "image": "",
           "label": "green frog"
         },
         {
-          "image": "images/colors/orange-carrot.png",
+          "image": "",
           "label": "orange carrot"
         }
       ],
@@ -1864,15 +1864,15 @@
       "question": "Which one is not green?",
       "images": [
         {
-          "image": "images/colors/green-leaves.png",
+          "image": "",
           "label": "green leaves"
         },
         {
-          "image": "images/colors/pink-flamingo.png",
+          "image": "",
           "label": "pink flamingo"
         },
         {
-          "image": "images/colors/green-broccoli.png",
+          "image": "",
           "label": "green broccoli"
         }
       ],
@@ -1882,15 +1882,15 @@
       "question": "Which one is not green?",
       "images": [
         {
-          "image": "images/colors/green-turtle.png",
+          "image": "",
           "label": "green turtle"
         },
         {
-          "image": "images/colors/green-cucumber.png",
+          "image": "",
           "label": "green cucumber"
         },
         {
-          "image": "images/colors/red-firetruck.png",
+          "image": "",
           "label": "red firetruck"
         }
       ],
@@ -1900,15 +1900,15 @@
       "question": "Which one is not orange?",
       "images": [
         {
-          "image": "images/colors/orange-pumpkin.png",
+          "image": "",
           "label": "orange pumpkin"
         },
         {
-          "image": "images/colors/orange-carrot.png",
+          "image": "",
           "label": "orange carrot"
         },
         {
-          "image": "images/colors/green-lettuce.png",
+          "image": "",
           "label": "green lettuce"
         }
       ],
@@ -1918,15 +1918,15 @@
       "question": "Which one is not orange?",
       "images": [
         {
-          "image": "images/colors/orange-basketball.png",
+          "image": "",
           "label": "orange basketball"
         },
         {
-          "image": "images/colors/purple-eggplant.png",
+          "image": "",
           "label": "purple eggplant"
         },
         {
-          "image": "images/colors/orange-orange.png",
+          "image": "",
           "label": "orange orange"
         }
       ],
@@ -1936,15 +1936,15 @@
       "question": "Which one is not orange?",
       "images": [
         {
-          "image": "images/colors/orange-goldfish.png",
+          "image": "",
           "label": "orange goldfish"
         },
         {
-          "image": "images/colors/orange-tiger.png",
+          "image": "",
           "label": "orange tiger"
         },
         {
-          "image": "images/colors/gray-elephant.png",
+          "image": "",
           "label": "gray elephant"
         }
       ],
@@ -1954,15 +1954,15 @@
       "question": "Which one is not purple?",
       "images": [
         {
-          "image": "images/colors/purple-grapes.png",
+          "image": "",
           "label": "purple grapes"
         },
         {
-          "image": "images/colors/purple-eggplant.png",
+          "image": "",
           "label": "purple eggplant"
         },
         {
-          "image": "images/colors/yellow-lemon.png",
+          "image": "",
           "label": "yellow lemon"
         }
       ],
@@ -1972,15 +1972,15 @@
       "question": "Which one is not purple?",
       "images": [
         {
-          "image": "images/colors/purple-lavender.png",
+          "image": "",
           "label": "purple lavender"
         },
         {
-          "image": "images/colors/red-tomato.png",
+          "image": "",
           "label": "red tomato"
         },
         {
-          "image": "images/colors/purple-butterfly.png",
+          "image": "",
           "label": "purple butterfly"
         }
       ],
@@ -1990,15 +1990,15 @@
       "question": "Which one is not purple?",
       "images": [
         {
-          "image": "images/colors/purple-plum.png",
+          "image": "",
           "label": "purple plum"
         },
         {
-          "image": "images/colors/purple-iris.png",
+          "image": "",
           "label": "purple iris"
         },
         {
-          "image": "images/colors/white-milk.png",
+          "image": "",
           "label": "white milk"
         }
       ],
@@ -2008,15 +2008,15 @@
       "question": "Which one is not pink?",
       "images": [
         {
-          "image": "images/colors/pink-flamingo.png",
+          "image": "",
           "label": "pink flamingo"
         },
         {
-          "image": "images/colors/pink-pig.png",
+          "image": "",
           "label": "pink pig"
         },
         {
-          "image": "images/colors/black-cat.png",
+          "image": "",
           "label": "black cat"
         }
       ],
@@ -2026,15 +2026,15 @@
       "question": "Which one is not pink?",
       "images": [
         {
-          "image": "images/colors/pink-cottoncandy.png",
+          "image": "",
           "label": "pink cottoncandy"
         },
         {
-          "image": "images/colors/pink-rose.png",
+          "image": "",
           "label": "pink rose"
         },
         {
-          "image": "images/colors/brown-dog.png",
+          "image": "",
           "label": "brown dog"
         }
       ],
@@ -2044,15 +2044,15 @@
       "question": "Which one is not pink?",
       "images": [
         {
-          "image": "images/colors/green-apple.png",
+          "image": "",
           "label": "green apple"
         },
         {
-          "image": "images/colors/pink-donut.png",
+          "image": "",
           "label": "pink donut"
         },
         {
-          "image": "images/colors/pink-shrimp.png",
+          "image": "",
           "label": "pink shrimp"
         }
       ],
@@ -2062,15 +2062,15 @@
       "question": "Which one is not brown?",
       "images": [
         {
-          "image": "images/colors/brown-chocolate.png",
+          "image": "",
           "label": "brown chocolate"
         },
         {
-          "image": "images/colors/brown-teddybear.png",
+          "image": "",
           "label": "brown teddybear"
         },
         {
-          "image": "images/colors/white-snow.png",
+          "image": "",
           "label": "white snow"
         }
       ],
@@ -2080,15 +2080,15 @@
       "question": "Which one is not brown?",
       "images": [
         {
-          "image": "images/colors/brown-treetrunk.png",
+          "image": "",
           "label": "brown treetrunk"
         },
         {
-          "image": "images/colors/blue-ocean.png",
+          "image": "",
           "label": "blue ocean"
         },
         {
-          "image": "images/colors/brown-coconut.png",
+          "image": "",
           "label": "brown coconut"
         }
       ],
@@ -2098,15 +2098,15 @@
       "question": "Which one is not brown?",
       "images": [
         {
-          "image": "images/colors/brown-horse.png",
+          "image": "",
           "label": "brown horse"
         },
         {
-          "image": "images/colors/brown-bread.png",
+          "image": "",
           "label": "brown bread"
         },
         {
-          "image": "images/colors/green-grass.png",
+          "image": "",
           "label": "green grass"
         }
       ],
@@ -2116,15 +2116,15 @@
       "question": "Which one is not black?",
       "images": [
         {
-          "image": "images/colors/black-cat.png",
+          "image": "",
           "label": "black cat"
         },
         {
-          "image": "images/colors/black-tire.png",
+          "image": "",
           "label": "black tire"
         },
         {
-          "image": "images/colors/white-cloud.png",
+          "image": "",
           "label": "white cloud"
         }
       ],
@@ -2134,15 +2134,15 @@
       "question": "Which one is not black?",
       "images": [
         {
-          "image": "images/colors/black-spider.png",
+          "image": "",
           "label": "black spider"
         },
         {
-          "image": "images/colors/yellow-sun.png",
+          "image": "",
           "label": "yellow sun"
         },
         {
-          "image": "images/colors/black-bat.png",
+          "image": "",
           "label": "black bat"
         }
       ],
@@ -2152,15 +2152,15 @@
       "question": "Which one is not black?",
       "images": [
         {
-          "image": "images/colors/black-penguin.png",
+          "image": "",
           "label": "black penguin"
         },
         {
-          "image": "images/colors/black-nightsky.png",
+          "image": "",
           "label": "black nightsky"
         },
         {
-          "image": "images/colors/orange-pumpkin.png",
+          "image": "",
           "label": "orange pumpkin"
         }
       ],
@@ -2172,15 +2172,15 @@
       "question": "Which one is not pizza?",
       "images": [
         {
-          "image": "images/food/pizza1.png",
+          "image": "",
           "label": "pizza"
         },
         {
-          "image": "images/food/pizza2.png",
+          "image": "",
           "label": "pizza"
         },
         {
-          "image": "images/food/egg.png",
+          "image": "",
           "label": "egg"
         }
       ],
@@ -2190,15 +2190,15 @@
       "question": "Which one is not pasta?",
       "images": [
         {
-          "image": "images/food/spaghetti1.png",
+          "image": "",
           "label": "spaghetti"
         },
         {
-          "image": "images/food/spaghetti2.png",
+          "image": "",
           "label": "spaghetti"
         },
         {
-          "image": "images/food/sandwich.png",
+          "image": "",
           "label": "sandwich"
         }
       ],
@@ -2208,15 +2208,15 @@
       "question": "Which one is not a hamburger?",
       "images": [
         {
-          "image": "images/food/hamburger1.png",
+          "image": "",
           "label": "hamburger"
         },
         {
-          "image": "images/food/hotdog.png",
+          "image": "",
           "label": "hotdog"
         },
         {
-          "image": "images/food/hamburger2.png",
+          "image": "",
           "label": "hamburger"
         }
       ],
@@ -2226,15 +2226,15 @@
       "question": "Which one is not a taco?",
       "images": [
         {
-          "image": "images/food/taco1.png",
+          "image": "",
           "label": "taco"
         },
         {
-          "image": "images/food/taco2.png",
+          "image": "",
           "label": "taco"
         },
         {
-          "image": "images/food/burrito.png",
+          "image": "",
           "label": "burrito"
         }
       ],
@@ -2244,15 +2244,15 @@
       "question": "Which one is not soup?",
       "images": [
         {
-          "image": "images/food/soup1.png",
+          "image": "",
           "label": "soup"
         },
         {
-          "image": "images/food/salad.png",
+          "image": "",
           "label": "salad"
         },
         {
-          "image": "images/food/soup2.png",
+          "image": "",
           "label": "soup"
         }
       ],
@@ -2262,15 +2262,15 @@
       "question": "Which one is not an apple?",
       "images": [
         {
-          "image": "images/food/apple1.png",
+          "image": "",
           "label": "apple"
         },
         {
-          "image": "images/food/orange1.png",
+          "image": "",
           "label": "orange"
         },
         {
-          "image": "images/food/apple2.png",
+          "image": "",
           "label": "apple"
         }
       ],
@@ -2280,15 +2280,15 @@
       "question": "Which one is not a banana?",
       "images": [
         {
-          "image": "images/food/banana1.png",
+          "image": "",
           "label": "banana"
         },
         {
-          "image": "images/food/banana2.png",
+          "image": "",
           "label": "banana"
         },
         {
-          "image": "images/food/grapes.png",
+          "image": "",
           "label": "grapes"
         }
       ],
@@ -2298,15 +2298,15 @@
       "question": "Which one is not a strawberry?",
       "images": [
         {
-          "image": "images/food/strawberry1.png",
+          "image": "",
           "label": "strawberry"
         },
         {
-          "image": "images/food/carrot1.png",
+          "image": "",
           "label": "carrot"
         },
         {
-          "image": "images/food/strawberry2.png",
+          "image": "",
           "label": "strawberry"
         }
       ],
@@ -2316,15 +2316,15 @@
       "question": "Which one is not a watermelon?",
       "images": [
         {
-          "image": "images/food/watermelon1.png",
+          "image": "",
           "label": "watermelon"
         },
         {
-          "image": "images/food/watermelon2.png",
+          "image": "",
           "label": "watermelon"
         },
         {
-          "image": "images/food/cantaloupe.png",
+          "image": "",
           "label": "cantaloupe"
         }
       ],
@@ -2334,15 +2334,15 @@
       "question": "Which one is not an orange?",
       "images": [
         {
-          "image": "images/food/orange2.png",
+          "image": "",
           "label": "orange"
         },
         {
-          "image": "images/food/lemon.png",
+          "image": "",
           "label": "lemon"
         },
         {
-          "image": "images/food/orange3.png",
+          "image": "",
           "label": "orange"
         }
       ],
@@ -2352,15 +2352,15 @@
       "question": "Which one is not a carrot?",
       "images": [
         {
-          "image": "images/food/carrot2.png",
+          "image": "",
           "label": "carrot"
         },
         {
-          "image": "images/food/celery.png",
+          "image": "",
           "label": "celery"
         },
         {
-          "image": "images/food/carrot3.png",
+          "image": "",
           "label": "carrot"
         }
       ],
@@ -2370,15 +2370,15 @@
       "question": "Which one is not broccoli?",
       "images": [
         {
-          "image": "images/food/broccoli1.png",
+          "image": "",
           "label": "broccoli"
         },
         {
-          "image": "images/food/broccoli2.png",
+          "image": "",
           "label": "broccoli"
         },
         {
-          "image": "images/food/cauliflower.png",
+          "image": "",
           "label": "cauliflower"
         }
       ],
@@ -2388,15 +2388,15 @@
       "question": "Which one is not corn?",
       "images": [
         {
-          "image": "images/food/corn1.png",
+          "image": "",
           "label": "corn"
         },
         {
-          "image": "images/food/peas.png",
+          "image": "",
           "label": "peas"
         },
         {
-          "image": "images/food/corn2.png",
+          "image": "",
           "label": "corn"
         }
       ],
@@ -2406,15 +2406,15 @@
       "question": "Which one is not a tomato?",
       "images": [
         {
-          "image": "images/food/tomato1.png",
+          "image": "",
           "label": "tomato"
         },
         {
-          "image": "images/food/tomato2.png",
+          "image": "",
           "label": "tomato"
         },
         {
-          "image": "images/food/bellpepper.png",
+          "image": "",
           "label": "bellpepper"
         }
       ],
@@ -2424,15 +2424,15 @@
       "question": "Which one is not a potato?",
       "images": [
         {
-          "image": "images/food/potato1.png",
+          "image": "",
           "label": "potato"
         },
         {
-          "image": "images/food/sweetpotato.png",
+          "image": "",
           "label": "sweetpotato"
         },
         {
-          "image": "images/food/potato2.png",
+          "image": "",
           "label": "potato"
         }
       ],
@@ -2442,15 +2442,15 @@
       "question": "Which one is not pancakes?",
       "images": [
         {
-          "image": "images/food/pancakes1.png",
+          "image": "",
           "label": "pancakes"
         },
         {
-          "image": "images/food/waffle.png",
+          "image": "",
           "label": "waffle"
         },
         {
-          "image": "images/food/pancakes2.png",
+          "image": "",
           "label": "pancakes"
         }
       ],
@@ -2460,15 +2460,15 @@
       "question": "Which one is not cereal?",
       "images": [
         {
-          "image": "images/food/cereal1.png",
+          "image": "",
           "label": "cereal"
         },
         {
-          "image": "images/food/oatmeal.png",
+          "image": "",
           "label": "oatmeal"
         },
         {
-          "image": "images/food/cereal2.png",
+          "image": "",
           "label": "cereal"
         }
       ],
@@ -2478,15 +2478,15 @@
       "question": "Which one is not eggs?",
       "images": [
         {
-          "image": "images/food/scrambledeggs.png",
+          "image": "",
           "label": "scrambledeggs"
         },
         {
-          "image": "images/food/toast.png",
+          "image": "",
           "label": "toast"
         },
         {
-          "image": "images/food/friedeggs.png",
+          "image": "",
           "label": "friedeggs"
         }
       ],
@@ -2496,15 +2496,15 @@
       "question": "Which one is not a bagel?",
       "images": [
         {
-          "image": "images/food/bagel1.png",
+          "image": "",
           "label": "bagel"
         },
         {
-          "image": "images/food/bagel2.png",
+          "image": "",
           "label": "bagel"
         },
         {
-          "image": "images/food/donut.png",
+          "image": "",
           "label": "donut"
         }
       ],
@@ -2514,15 +2514,15 @@
       "question": "Which one is not popcorn?",
       "images": [
         {
-          "image": "images/food/popcorn1.png",
+          "image": "",
           "label": "popcorn"
         },
         {
-          "image": "images/food/popcorn2.png",
+          "image": "",
           "label": "popcorn"
         },
         {
-          "image": "images/food/chips.png",
+          "image": "",
           "label": "chips"
         }
       ],
@@ -2532,15 +2532,15 @@
       "question": "Which one is not crackers?",
       "images": [
         {
-          "image": "images/food/crackers1.png",
+          "image": "",
           "label": "crackers"
         },
         {
-          "image": "images/food/cookies1.png",
+          "image": "",
           "label": "cookies"
         },
         {
-          "image": "images/food/crackers2.png",
+          "image": "",
           "label": "crackers"
         }
       ],
@@ -2550,15 +2550,15 @@
       "question": "Which one is not pretzels?",
       "images": [
         {
-          "image": "images/food/pretzels1.png",
+          "image": "",
           "label": "pretzels"
         },
         {
-          "image": "images/food/pretzels2.png",
+          "image": "",
           "label": "pretzels"
         },
         {
-          "image": "images/food/goldfish.png",
+          "image": "",
           "label": "goldfish"
         }
       ],
@@ -2568,15 +2568,15 @@
       "question": "Which one is not milk?",
       "images": [
         {
-          "image": "images/food/milk1.png",
+          "image": "",
           "label": "milk"
         },
         {
-          "image": "images/food/milk2.png",
+          "image": "",
           "label": "milk"
         },
         {
-          "image": "images/food/orangejuice.png",
+          "image": "",
           "label": "orangejuice"
         }
       ],
@@ -2586,15 +2586,15 @@
       "question": "Which one is not apple juice?",
       "images": [
         {
-          "image": "images/food/applejuice1.png",
+          "image": "",
           "label": "applejuice"
         },
         {
-          "image": "images/food/grapejuice.png",
+          "image": "",
           "label": "grapejuice"
         },
         {
-          "image": "images/food/applejuice2.png",
+          "image": "",
           "label": "applejuice"
         }
       ],
@@ -2604,15 +2604,15 @@
       "question": "Which one is not water?",
       "images": [
         {
-          "image": "images/food/water1.png",
+          "image": "",
           "label": "water"
         },
         {
-          "image": "images/food/lemonade.png",
+          "image": "",
           "label": "lemonade"
         },
         {
-          "image": "images/food/water2.png",
+          "image": "",
           "label": "water"
         }
       ],
@@ -2622,15 +2622,15 @@
       "question": "Which one is not ice cream?",
       "images": [
         {
-          "image": "images/food/icecream1.png",
+          "image": "",
           "label": "icecream"
         },
         {
-          "image": "images/food/cupcake.png",
+          "image": "",
           "label": "cupcake"
         },
         {
-          "image": "images/food/icecream2.png",
+          "image": "",
           "label": "icecream"
         }
       ],
@@ -2640,15 +2640,15 @@
       "question": "Which one is not a cookie?",
       "images": [
         {
-          "image": "images/food/cookie1.png",
+          "image": "",
           "label": "cookie"
         },
         {
-          "image": "images/food/cookie2.png",
+          "image": "",
           "label": "cookie"
         },
         {
-          "image": "images/food/brownie.png",
+          "image": "",
           "label": "brownie"
         }
       ],
@@ -2658,15 +2658,15 @@
       "question": "Which one is not cake?",
       "images": [
         {
-          "image": "images/food/cake1.png",
+          "image": "",
           "label": "cake"
         },
         {
-          "image": "images/food/pie.png",
+          "image": "",
           "label": "pie"
         },
         {
-          "image": "images/food/cake2.png",
+          "image": "",
           "label": "cake"
         }
       ],
@@ -2676,15 +2676,15 @@
       "question": "Which one is not cheese?",
       "images": [
         {
-          "image": "images/food/cheese1.png",
+          "image": "",
           "label": "cheese"
         },
         {
-          "image": "images/food/cheese2.png",
+          "image": "",
           "label": "cheese"
         },
         {
-          "image": "images/food/butter.png",
+          "image": "",
           "label": "butter"
         }
       ],
@@ -2694,15 +2694,15 @@
       "question": "Which one is not bread?",
       "images": [
         {
-          "image": "images/food/breadloaf.png",
+          "image": "",
           "label": "breadloaf"
         },
         {
-          "image": "images/food/breadslice.png",
+          "image": "",
           "label": "breadslice"
         },
         {
-          "image": "images/food/muffin.png",
+          "image": "",
           "label": "muffin"
         }
       ],
@@ -2714,15 +2714,15 @@
       "question": "Which one is not a bus?",
       "images": [
         {
-          "image": "images/vehicles/schoolbus.png",
+          "image": "",
           "label": "schoolbus"
         },
         {
-          "image": "images/vehicles/citybus.png",
+          "image": "",
           "label": "citybus"
         },
         {
-          "image": "images/vehicles/snowmobile.png",
+          "image": "",
           "label": "snowmobile"
         }
       ],
@@ -2732,15 +2732,15 @@
       "question": "Which one is not a bus?",
       "images": [
         {
-          "image": "images/vehicles/tourbus.png",
+          "image": "",
           "label": "tourbus"
         },
         {
-          "image": "images/vehicles/schoolbus2.png",
+          "image": "",
           "label": "schoolbus"
         },
         {
-          "image": "images/vehicles/ambulance1.png",
+          "image": "",
           "label": "ambulance"
         }
       ],
@@ -2750,15 +2750,15 @@
       "question": "Which one is not a bus?",
       "images": [
         {
-          "image": "images/vehicles/citybus2.png",
+          "image": "",
           "label": "citybus"
         },
         {
-          "image": "images/vehicles/firetruck1.png",
+          "image": "",
           "label": "firetruck"
         },
         {
-          "image": "images/vehicles/doubledeckerbus.png",
+          "image": "",
           "label": "doubledeckerbus"
         }
       ],
@@ -2768,15 +2768,15 @@
       "question": "Which one is not a car?",
       "images": [
         {
-          "image": "images/vehicles/car1.png",
+          "image": "",
           "label": "car"
         },
         {
-          "image": "images/vehicles/car2.png",
+          "image": "",
           "label": "car"
         },
         {
-          "image": "images/vehicles/motorcycle1.png",
+          "image": "",
           "label": "motorcycle"
         }
       ],
@@ -2786,15 +2786,15 @@
       "question": "Which one is not a truck?",
       "images": [
         {
-          "image": "images/vehicles/pickuptruck1.png",
+          "image": "",
           "label": "pickuptruck"
         },
         {
-          "image": "images/vehicles/pickuptruck2.png",
+          "image": "",
           "label": "pickuptruck"
         },
         {
-          "image": "images/vehicles/van.png",
+          "image": "",
           "label": "van"
         }
       ],
@@ -2804,15 +2804,15 @@
       "question": "Which one is not an SUV?",
       "images": [
         {
-          "image": "images/vehicles/suv1.png",
+          "image": "",
           "label": "suv"
         },
         {
-          "image": "images/vehicles/sedan.png",
+          "image": "",
           "label": "sedan"
         },
         {
-          "image": "images/vehicles/suv2.png",
+          "image": "",
           "label": "suv"
         }
       ],
@@ -2822,15 +2822,15 @@
       "question": "Which one is not a minivan?",
       "images": [
         {
-          "image": "images/vehicles/minivan1.png",
+          "image": "",
           "label": "minivan"
         },
         {
-          "image": "images/vehicles/minivan2.png",
+          "image": "",
           "label": "minivan"
         },
         {
-          "image": "images/vehicles/sportscar.png",
+          "image": "",
           "label": "sportscar"
         }
       ],
@@ -2840,15 +2840,15 @@
       "question": "Which one is not a convertible?",
       "images": [
         {
-          "image": "images/vehicles/convertible1.png",
+          "image": "",
           "label": "convertible"
         },
         {
-          "image": "images/vehicles/convertible2.png",
+          "image": "",
           "label": "convertible"
         },
         {
-          "image": "images/vehicles/jeep.png",
+          "image": "",
           "label": "jeep"
         }
       ],
@@ -2858,15 +2858,15 @@
       "question": "Which one is not a fire truck?",
       "images": [
         {
-          "image": "images/vehicles/firetruck2.png",
+          "image": "",
           "label": "firetruck"
         },
         {
-          "image": "images/vehicles/firetruck3.png",
+          "image": "",
           "label": "firetruck"
         },
         {
-          "image": "images/vehicles/garbagetruck.png",
+          "image": "",
           "label": "garbagetruck"
         }
       ],
@@ -2876,15 +2876,15 @@
       "question": "Which one is not an ambulance?",
       "images": [
         {
-          "image": "images/vehicles/ambulance2.png",
+          "image": "",
           "label": "ambulance"
         },
         {
-          "image": "images/vehicles/policecar1.png",
+          "image": "",
           "label": "policecar"
         },
         {
-          "image": "images/vehicles/ambulance3.png",
+          "image": "",
           "label": "ambulance"
         }
       ],
@@ -2894,15 +2894,15 @@
       "question": "Which one is not a police car?",
       "images": [
         {
-          "image": "images/vehicles/policecar2.png",
+          "image": "",
           "label": "policecar"
         },
         {
-          "image": "images/vehicles/policecar3.png",
+          "image": "",
           "label": "policecar"
         },
         {
-          "image": "images/vehicles/taxi.png",
+          "image": "",
           "label": "taxi"
         }
       ],
@@ -2912,15 +2912,15 @@
       "question": "Which one is not a boat?",
       "images": [
         {
-          "image": "images/vehicles/sailboat1.png",
+          "image": "",
           "label": "sailboat"
         },
         {
-          "image": "images/vehicles/sailboat2.png",
+          "image": "",
           "label": "sailboat"
         },
         {
-          "image": "images/vehicles/airplane1.png",
+          "image": "",
           "label": "airplane"
         }
       ],
@@ -2930,15 +2930,15 @@
       "question": "Which one is not a kayak?",
       "images": [
         {
-          "image": "images/vehicles/kayak1.png",
+          "image": "",
           "label": "kayak"
         },
         {
-          "image": "images/vehicles/canoe.png",
+          "image": "",
           "label": "canoe"
         },
         {
-          "image": "images/vehicles/jetski.png",
+          "image": "",
           "label": "jetski"
         }
       ],
@@ -2948,15 +2948,15 @@
       "question": "Which one is not a ferry?",
       "images": [
         {
-          "image": "images/vehicles/ferry1.png",
+          "image": "",
           "label": "ferry"
         },
         {
-          "image": "images/vehicles/cruiseship.png",
+          "image": "",
           "label": "cruiseship"
         },
         {
-          "image": "images/vehicles/ferry2.png",
+          "image": "",
           "label": "ferry"
         }
       ],
@@ -2966,15 +2966,15 @@
       "question": "Which one is not a fishing boat?",
       "images": [
         {
-          "image": "images/vehicles/fishingboat1.png",
+          "image": "",
           "label": "fishingboat"
         },
         {
-          "image": "images/vehicles/yacht.png",
+          "image": "",
           "label": "yacht"
         },
         {
-          "image": "images/vehicles/fishingboat2.png",
+          "image": "",
           "label": "fishingboat"
         }
       ],
@@ -2984,15 +2984,15 @@
       "question": "Which one is not a submarine?",
       "images": [
         {
-          "image": "images/vehicles/submarine1.png",
+          "image": "",
           "label": "submarine"
         },
         {
-          "image": "images/vehicles/submarine2.png",
+          "image": "",
           "label": "submarine"
         },
         {
-          "image": "images/vehicles/speedboat.png",
+          "image": "",
           "label": "speedboat"
         }
       ],
@@ -3002,15 +3002,15 @@
       "question": "Which one is not an airplane?",
       "images": [
         {
-          "image": "images/vehicles/airplane2.png",
+          "image": "",
           "label": "airplane"
         },
         {
-          "image": "images/vehicles/helicopter1.png",
+          "image": "",
           "label": "helicopter"
         },
         {
-          "image": "images/vehicles/airplane3.png",
+          "image": "",
           "label": "airplane"
         }
       ],
@@ -3020,15 +3020,15 @@
       "question": "Which one is not a helicopter?",
       "images": [
         {
-          "image": "images/vehicles/helicopter2.png",
+          "image": "",
           "label": "helicopter"
         },
         {
-          "image": "images/vehicles/helicopter3.png",
+          "image": "",
           "label": "helicopter"
         },
         {
-          "image": "images/vehicles/hotairballoon.png",
+          "image": "",
           "label": "hotairballoon"
         }
       ],
@@ -3038,15 +3038,15 @@
       "question": "Which one is not a jet?",
       "images": [
         {
-          "image": "images/vehicles/jet1.png",
+          "image": "",
           "label": "jet"
         },
         {
-          "image": "images/vehicles/rocket.png",
+          "image": "",
           "label": "rocket"
         },
         {
-          "image": "images/vehicles/jet2.png",
+          "image": "",
           "label": "jet"
         }
       ],
@@ -3056,15 +3056,15 @@
       "question": "Which one is not a plane?",
       "images": [
         {
-          "image": "images/vehicles/smallplane1.png",
+          "image": "",
           "label": "smallplane"
         },
         {
-          "image": "images/vehicles/blimp.png",
+          "image": "",
           "label": "blimp"
         },
         {
-          "image": "images/vehicles/smallplane2.png",
+          "image": "",
           "label": "smallplane"
         }
       ],
@@ -3074,15 +3074,15 @@
       "question": "Which one is not a motorcycle?",
       "images": [
         {
-          "image": "images/vehicles/motorcycle2.png",
+          "image": "",
           "label": "motorcycle"
         },
         {
-          "image": "images/vehicles/motorcycle3.png",
+          "image": "",
           "label": "motorcycle"
         },
         {
-          "image": "images/vehicles/scooter1.png",
+          "image": "",
           "label": "scooter"
         }
       ],
@@ -3092,15 +3092,15 @@
       "question": "Which one is not a scooter?",
       "images": [
         {
-          "image": "images/vehicles/scooter2.png",
+          "image": "",
           "label": "scooter"
         },
         {
-          "image": "images/vehicles/skateboard.png",
+          "image": "",
           "label": "skateboard"
         },
         {
-          "image": "images/vehicles/scooter3.png",
+          "image": "",
           "label": "scooter"
         }
       ],
@@ -3110,15 +3110,15 @@
       "question": "Which one is not a bulldozer?",
       "images": [
         {
-          "image": "images/vehicles/bulldozer1.png",
+          "image": "",
           "label": "bulldozer"
         },
         {
-          "image": "images/vehicles/bulldozer2.png",
+          "image": "",
           "label": "bulldozer"
         },
         {
-          "image": "images/vehicles/tractor.png",
+          "image": "",
           "label": "tractor"
         }
       ],
@@ -3128,15 +3128,15 @@
       "question": "Which one is not a dump truck?",
       "images": [
         {
-          "image": "images/vehicles/dumptruck1.png",
+          "image": "",
           "label": "dumptruck"
         },
         {
-          "image": "images/vehicles/cementmixer.png",
+          "image": "",
           "label": "cementmixer"
         },
         {
-          "image": "images/vehicles/dumptruck2.png",
+          "image": "",
           "label": "dumptruck"
         }
       ],
@@ -3146,15 +3146,15 @@
       "question": "Which one is not an excavator?",
       "images": [
         {
-          "image": "images/vehicles/excavator1.png",
+          "image": "",
           "label": "excavator"
         },
         {
-          "image": "images/vehicles/crane.png",
+          "image": "",
           "label": "crane"
         },
         {
-          "image": "images/vehicles/excavator2.png",
+          "image": "",
           "label": "excavator"
         }
       ],
@@ -3164,15 +3164,15 @@
       "question": "Which one is not a forklift?",
       "images": [
         {
-          "image": "images/vehicles/forklift1.png",
+          "image": "",
           "label": "forklift"
         },
         {
-          "image": "images/vehicles/forklift2.png",
+          "image": "",
           "label": "forklift"
         },
         {
-          "image": "images/vehicles/towtruck.png",
+          "image": "",
           "label": "towtruck"
         }
       ],
@@ -3182,15 +3182,15 @@
       "question": "Which one is not a train?",
       "images": [
         {
-          "image": "images/vehicles/train1.png",
+          "image": "",
           "label": "train"
         },
         {
-          "image": "images/vehicles/train2.png",
+          "image": "",
           "label": "train"
         },
         {
-          "image": "images/vehicles/trolley.png",
+          "image": "",
           "label": "trolley"
         }
       ],
@@ -3200,15 +3200,15 @@
       "question": "Which one is not a subway?",
       "images": [
         {
-          "image": "images/vehicles/subway1.png",
+          "image": "",
           "label": "subway"
         },
         {
-          "image": "images/vehicles/monorail.png",
+          "image": "",
           "label": "monorail"
         },
         {
-          "image": "images/vehicles/subway2.png",
+          "image": "",
           "label": "subway"
         }
       ],
@@ -3218,15 +3218,15 @@
       "question": "Which one is not an RV?",
       "images": [
         {
-          "image": "images/vehicles/rv1.png",
+          "image": "",
           "label": "rv"
         },
         {
-          "image": "images/vehicles/rv2.png",
+          "image": "",
           "label": "rv"
         },
         {
-          "image": "images/vehicles/movingtruck.png",
+          "image": "",
           "label": "movingtruck"
         }
       ],
@@ -3236,15 +3236,15 @@
       "question": "Which one is not a golf cart?",
       "images": [
         {
-          "image": "images/vehicles/golfcart1.png",
+          "image": "",
           "label": "golfcart"
         },
         {
-          "image": "images/vehicles/atv.png",
+          "image": "",
           "label": "atv"
         },
         {
-          "image": "images/vehicles/golfcart2.png",
+          "image": "",
           "label": "golfcart"
         }
       ],

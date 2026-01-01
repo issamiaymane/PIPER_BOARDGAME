@@ -4,7 +4,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/guitar.png",
+          "image": "",
           "label": "guitar"
         }
       ],
@@ -19,7 +19,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/lamp.png",
+          "image": "",
           "label": "lamp"
         }
       ],
@@ -34,7 +34,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/apple.png",
+          "image": "",
           "label": "apple"
         }
       ],
@@ -48,7 +48,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/dog.png",
+          "image": "",
           "label": "dog"
         }
       ],
@@ -63,7 +63,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/surfboard.png",
+          "image": "",
           "label": "surfboard"
         }
       ],
@@ -77,7 +77,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/shirt.png",
+          "image": "",
           "label": "shirt"
         }
       ],
@@ -92,7 +92,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/car.png",
+          "image": "",
           "label": "car"
         }
       ],
@@ -107,7 +107,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/piano.png",
+          "image": "",
           "label": "piano"
         }
       ],
@@ -122,7 +122,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/couch.png",
+          "image": "",
           "label": "couch"
         }
       ],
@@ -138,7 +138,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/sandwich.png",
+          "image": "",
           "label": "sandwich"
         }
       ],
@@ -151,7 +151,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/cat.png",
+          "image": "",
           "label": "cat"
         }
       ],
@@ -167,7 +167,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/sunglasses.png",
+          "image": "",
           "label": "sunglasses"
         }
       ],
@@ -182,7 +182,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/shoes.png",
+          "image": "",
           "label": "shoes"
         }
       ],
@@ -197,7 +197,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/airplane.png",
+          "image": "",
           "label": "airplane"
         }
       ],
@@ -214,7 +214,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/drums.png",
+          "image": "",
           "label": "drums"
         }
       ],
@@ -230,7 +230,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/television.png",
+          "image": "",
           "label": "television"
         }
       ],
@@ -247,7 +247,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/pizza.png",
+          "image": "",
           "label": "pizza"
         }
       ],
@@ -261,7 +261,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/dolphin.png",
+          "image": "",
           "label": "dolphin"
         }
       ],
@@ -274,7 +274,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/towel.png",
+          "image": "",
           "label": "towel"
         }
       ],
@@ -288,7 +288,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/hat.png",
+          "image": "",
           "label": "hat"
         }
       ],
@@ -302,7 +302,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/violin.png",
+          "image": "",
           "label": "violin"
         }
       ],
@@ -316,7 +316,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/refrigerator.png",
+          "image": "",
           "label": "refrigerator"
         }
       ],
@@ -331,7 +331,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/banana.png",
+          "image": "",
           "label": "banana"
         }
       ],
@@ -344,7 +344,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/bird.png",
+          "image": "",
           "label": "bird"
         }
       ],
@@ -357,7 +357,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/seashell.png",
+          "image": "",
           "label": "seashell"
         }
       ],
@@ -373,7 +373,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/trumpet.png",
+          "image": "",
           "label": "trumpet"
         }
       ],
@@ -387,7 +387,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/clock.png",
+          "image": "",
           "label": "clock"
         }
       ],
@@ -401,7 +401,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/carrot.png",
+          "image": "",
           "label": "carrot"
         }
       ],
@@ -414,7 +414,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/fish.png",
+          "image": "",
           "label": "fish"
         }
       ],
@@ -427,7 +427,7 @@
       "question": "What is this?",
       "images": [
         {
-          "image": "images/nouns/sandcastle.png",
+          "image": "",
           "label": "sandcastle"
         }
       ],
@@ -444,15 +444,15 @@
       "question": "Which one is a bathtub?",
       "images": [
         {
-          "image": "images/nouns/flowers-basket.png",
+          "image": "",
           "label": "flowers basket"
         },
         {
-          "image": "images/nouns/bathtub.png",
+          "image": "",
           "label": "bathtub"
         },
         {
-          "image": "images/nouns/duck.png",
+          "image": "",
           "label": "duck"
         }
       ],
@@ -462,15 +462,15 @@
       "question": "Which one is a toothbrush?",
       "images": [
         {
-          "image": "images/nouns/toothbrush.png",
+          "image": "",
           "label": "toothbrush"
         },
         {
-          "image": "images/nouns/hammer.png",
+          "image": "",
           "label": "hammer"
         },
         {
-          "image": "images/nouns/banana.png",
+          "image": "",
           "label": "banana"
         }
       ],
@@ -480,15 +480,15 @@
       "question": "Which one is a towel?",
       "images": [
         {
-          "image": "images/nouns/book.png",
+          "image": "",
           "label": "book"
         },
         {
-          "image": "images/nouns/lamp.png",
+          "image": "",
           "label": "lamp"
         },
         {
-          "image": "images/nouns/towel.png",
+          "image": "",
           "label": "towel"
         }
       ],
@@ -498,15 +498,15 @@
       "question": "Which one is a refrigerator?",
       "images": [
         {
-          "image": "images/nouns/tree.png",
+          "image": "",
           "label": "tree"
         },
         {
-          "image": "images/nouns/refrigerator.png",
+          "image": "",
           "label": "refrigerator"
         },
         {
-          "image": "images/nouns/guitar.png",
+          "image": "",
           "label": "guitar"
         }
       ],
@@ -516,15 +516,15 @@
       "question": "Which one is a spoon?",
       "images": [
         {
-          "image": "images/nouns/spoon.png",
+          "image": "",
           "label": "spoon"
         },
         {
-          "image": "images/nouns/key.png",
+          "image": "",
           "label": "key"
         },
         {
-          "image": "images/nouns/pencil.png",
+          "image": "",
           "label": "pencil"
         }
       ],
@@ -534,15 +534,15 @@
       "question": "Which one is a cup?",
       "images": [
         {
-          "image": "images/nouns/ball.png",
+          "image": "",
           "label": "ball"
         },
         {
-          "image": "images/nouns/shoe.png",
+          "image": "",
           "label": "shoe"
         },
         {
-          "image": "images/nouns/cup.png",
+          "image": "",
           "label": "cup"
         }
       ],
@@ -552,15 +552,15 @@
       "question": "Which one is a dolphin?",
       "images": [
         {
-          "image": "images/nouns/chair.png",
+          "image": "",
           "label": "chair"
         },
         {
-          "image": "images/nouns/dolphin.png",
+          "image": "",
           "label": "dolphin"
         },
         {
-          "image": "images/nouns/hat.png",
+          "image": "",
           "label": "hat"
         }
       ],
@@ -570,15 +570,15 @@
       "question": "Which one is a butterfly?",
       "images": [
         {
-          "image": "images/nouns/butterfly.png",
+          "image": "",
           "label": "butterfly"
         },
         {
-          "image": "images/nouns/clock.png",
+          "image": "",
           "label": "clock"
         },
         {
-          "image": "images/nouns/pizza.png",
+          "image": "",
           "label": "pizza"
         }
       ],
@@ -588,15 +588,15 @@
       "question": "Which one is a rabbit?",
       "images": [
         {
-          "image": "images/nouns/umbrella.png",
+          "image": "",
           "label": "umbrella"
         },
         {
-          "image": "images/nouns/flower.png",
+          "image": "",
           "label": "flower"
         },
         {
-          "image": "images/nouns/rabbit.png",
+          "image": "",
           "label": "rabbit"
         }
       ],
@@ -606,15 +606,15 @@
       "question": "Which one is a turtle?",
       "images": [
         {
-          "image": "images/nouns/turtle.png",
+          "image": "",
           "label": "turtle"
         },
         {
-          "image": "images/nouns/sandwich.png",
+          "image": "",
           "label": "sandwich"
         },
         {
-          "image": "images/nouns/pillow.png",
+          "image": "",
           "label": "pillow"
         }
       ],
@@ -624,15 +624,15 @@
       "question": "Which one is an apple?",
       "images": [
         {
-          "image": "images/nouns/dog.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "images/nouns/apple.png",
+          "image": "",
           "label": "apple"
         },
         {
-          "image": "images/nouns/sock.png",
+          "image": "",
           "label": "sock"
         }
       ],
@@ -642,15 +642,15 @@
       "question": "Which one is a carrot?",
       "images": [
         {
-          "image": "images/nouns/carrot.png",
+          "image": "",
           "label": "carrot"
         },
         {
-          "image": "images/nouns/television.png",
+          "image": "",
           "label": "television"
         },
         {
-          "image": "images/nouns/bird.png",
+          "image": "",
           "label": "bird"
         }
       ],
@@ -660,15 +660,15 @@
       "question": "Which one is a sandwich?",
       "images": [
         {
-          "image": "images/nouns/ladder.png",
+          "image": "",
           "label": "ladder"
         },
         {
-          "image": "images/nouns/fish.png",
+          "image": "",
           "label": "fish"
         },
         {
-          "image": "images/nouns/sandwich.png",
+          "image": "",
           "label": "sandwich"
         }
       ],
@@ -678,15 +678,15 @@
       "question": "Which one is a banana?",
       "images": [
         {
-          "image": "images/nouns/couch.png",
+          "image": "",
           "label": "couch"
         },
         {
-          "image": "images/nouns/banana.png",
+          "image": "",
           "label": "banana"
         },
         {
-          "image": "images/nouns/window.png",
+          "image": "",
           "label": "window"
         }
       ],
@@ -696,15 +696,15 @@
       "question": "Which one is a shoe?",
       "images": [
         {
-          "image": "images/nouns/shoe.png",
+          "image": "",
           "label": "shoe"
         },
         {
-          "image": "images/nouns/orange.png",
+          "image": "",
           "label": "orange"
         },
         {
-          "image": "images/nouns/table.png",
+          "image": "",
           "label": "table"
         }
       ],
@@ -714,15 +714,15 @@
       "question": "Which one is a hat?",
       "images": [
         {
-          "image": "images/nouns/elephant.png",
+          "image": "",
           "label": "elephant"
         },
         {
-          "image": "images/nouns/cupcake.png",
+          "image": "",
           "label": "cupcake"
         },
         {
-          "image": "images/nouns/hat.png",
+          "image": "",
           "label": "hat"
         }
       ],
@@ -732,15 +732,15 @@
       "question": "Which one is a jacket?",
       "images": [
         {
-          "image": "images/nouns/starfish.png",
+          "image": "",
           "label": "starfish"
         },
         {
-          "image": "images/nouns/jacket.png",
+          "image": "",
           "label": "jacket"
         },
         {
-          "image": "images/nouns/drum.png",
+          "image": "",
           "label": "drum"
         }
       ],
@@ -750,15 +750,15 @@
       "question": "Which one is a surfboard?",
       "images": [
         {
-          "image": "images/nouns/surfboard.png",
+          "image": "",
           "label": "surfboard"
         },
         {
-          "image": "images/nouns/chicken.png",
+          "image": "",
           "label": "chicken"
         },
         {
-          "image": "images/nouns/phone.png",
+          "image": "",
           "label": "phone"
         }
       ],
@@ -768,15 +768,15 @@
       "question": "Which one is a seashell?",
       "images": [
         {
-          "image": "images/nouns/corn.png",
+          "image": "",
           "label": "corn"
         },
         {
-          "image": "images/nouns/seashell.png",
+          "image": "",
           "label": "seashell"
         },
         {
-          "image": "images/nouns/bed.png",
+          "image": "",
           "label": "bed"
         }
       ],
@@ -786,15 +786,15 @@
       "question": "Which one is a sandcastle?",
       "images": [
         {
-          "image": "images/nouns/grapes.png",
+          "image": "",
           "label": "grapes"
         },
         {
-          "image": "images/nouns/truck.png",
+          "image": "",
           "label": "truck"
         },
         {
-          "image": "images/nouns/sandcastle.png",
+          "image": "",
           "label": "sandcastle"
         }
       ],
@@ -804,15 +804,15 @@
       "question": "Which one is a lamp?",
       "images": [
         {
-          "image": "images/nouns/lamp.png",
+          "image": "",
           "label": "lamp"
         },
         {
-          "image": "images/nouns/frog.png",
+          "image": "",
           "label": "frog"
         },
         {
-          "image": "images/nouns/strawberry.png",
+          "image": "",
           "label": "strawberry"
         }
       ],
@@ -822,15 +822,15 @@
       "question": "Which one is a chair?",
       "images": [
         {
-          "image": "images/nouns/crab.png",
+          "image": "",
           "label": "crab"
         },
         {
-          "image": "images/nouns/chair.png",
+          "image": "",
           "label": "chair"
         },
         {
-          "image": "images/nouns/leaf.png",
+          "image": "",
           "label": "leaf"
         }
       ],
@@ -840,15 +840,15 @@
       "question": "Which one is a clock?",
       "images": [
         {
-          "image": "images/nouns/pineapple.png",
+          "image": "",
           "label": "pineapple"
         },
         {
-          "image": "images/nouns/penguin.png",
+          "image": "",
           "label": "penguin"
         },
         {
-          "image": "images/nouns/clock.png",
+          "image": "",
           "label": "clock"
         }
       ],
@@ -858,15 +858,15 @@
       "question": "Which one is a bed?",
       "images": [
         {
-          "image": "images/nouns/bed.png",
+          "image": "",
           "label": "bed"
         },
         {
-          "image": "images/nouns/kite.png",
+          "image": "",
           "label": "kite"
         },
         {
-          "image": "images/nouns/broccoli.png",
+          "image": "",
           "label": "broccoli"
         }
       ],
@@ -876,15 +876,15 @@
       "question": "Which one is a boat?",
       "images": [
         {
-          "image": "images/nouns/sunglasses.png",
+          "image": "",
           "label": "sunglasses"
         },
         {
-          "image": "images/nouns/boat.png",
+          "image": "",
           "label": "boat"
         },
         {
-          "image": "images/nouns/tiger.png",
+          "image": "",
           "label": "tiger"
         }
       ],
@@ -894,15 +894,15 @@
       "question": "Which one is an airplane?",
       "images": [
         {
-          "image": "images/nouns/airplane.png",
+          "image": "",
           "label": "airplane"
         },
         {
-          "image": "images/nouns/cookie.png",
+          "image": "",
           "label": "cookie"
         },
         {
-          "image": "images/nouns/bear.png",
+          "image": "",
           "label": "bear"
         }
       ],
@@ -912,15 +912,15 @@
       "question": "Which one is a car?",
       "images": [
         {
-          "image": "images/nouns/moon.png",
+          "image": "",
           "label": "moon"
         },
         {
-          "image": "images/nouns/spider.png",
+          "image": "",
           "label": "spider"
         },
         {
-          "image": "images/nouns/car.png",
+          "image": "",
           "label": "car"
         }
       ],
@@ -930,15 +930,15 @@
       "question": "Which one is a flower?",
       "images": [
         {
-          "image": "images/nouns/flower.png",
+          "image": "",
           "label": "flower"
         },
         {
-          "image": "images/nouns/scissors.png",
+          "image": "",
           "label": "scissors"
         },
         {
-          "image": "images/nouns/horse.png",
+          "image": "",
           "label": "horse"
         }
       ],
@@ -948,15 +948,15 @@
       "question": "Which one is a tree?",
       "images": [
         {
-          "image": "images/nouns/mailbox.png",
+          "image": "",
           "label": "mailbox"
         },
         {
-          "image": "images/nouns/tree.png",
+          "image": "",
           "label": "tree"
         },
         {
-          "image": "images/nouns/bicycle.png",
+          "image": "",
           "label": "bicycle"
         }
       ],
@@ -966,15 +966,15 @@
       "question": "Which one is the sun?",
       "images": [
         {
-          "image": "images/nouns/balloon.png",
+          "image": "",
           "label": "balloon"
         },
         {
-          "image": "images/nouns/watermelon.png",
+          "image": "",
           "label": "watermelon"
         },
         {
-          "image": "images/nouns/sun.png",
+          "image": "",
           "label": "sun"
         }
       ],
@@ -986,7 +986,7 @@
       "question": "The _______ whiskers are long and white.",
       "images": [
         {
-          "image": "images/possessives/cat-whiskers.png",
+          "image": "",
           "label": "cat whiskers"
         }
       ],
@@ -1001,7 +1001,7 @@
       "question": "The _______ bone is buried in the yard.",
       "images": [
         {
-          "image": "images/possessives/dog-bone.png",
+          "image": "",
           "label": "dog bone"
         }
       ],
@@ -1016,7 +1016,7 @@
       "question": "The _______ nest is high in the tree.",
       "images": [
         {
-          "image": "images/possessives/bird-nest.png",
+          "image": "",
           "label": "bird nest"
         }
       ],
@@ -1031,7 +1031,7 @@
       "question": "The _______ ears are very long.",
       "images": [
         {
-          "image": "images/possessives/rabbit-ears.png",
+          "image": "",
           "label": "rabbit ears"
         }
       ],
@@ -1046,7 +1046,7 @@
       "question": "The _______ bowl needs fresh water.",
       "images": [
         {
-          "image": "images/possessives/fish-bowl.png",
+          "image": "",
           "label": "fish bowl"
         }
       ],
@@ -1061,7 +1061,7 @@
       "question": "The _______ saddle is brown leather.",
       "images": [
         {
-          "image": "images/possessives/horse-saddle.png",
+          "image": "",
           "label": "horse saddle"
         }
       ],
@@ -1076,7 +1076,7 @@
       "question": "The _______ backpack is blue.",
       "images": [
         {
-          "image": "images/possessives/boy-backpack.png",
+          "image": "",
           "label": "boy with backpack"
         }
       ],
@@ -1091,7 +1091,7 @@
       "question": "The _______ dress has flowers on it.",
       "images": [
         {
-          "image": "images/possessives/girl-dress.png",
+          "image": "",
           "label": "girl in dress"
         }
       ],
@@ -1106,7 +1106,7 @@
       "question": "The _______ bottle is warm.",
       "images": [
         {
-          "image": "images/possessives/baby-bottle.png",
+          "image": "",
           "label": "baby bottle"
         }
       ],
@@ -1121,7 +1121,7 @@
       "question": "_______ purse is on the table.",
       "images": [
         {
-          "image": "images/possessives/mom-purse.png",
+          "image": "",
           "label": "mom with purse"
         }
       ],
@@ -1136,7 +1136,7 @@
       "question": "_______ car is in the garage.",
       "images": [
         {
-          "image": "images/possessives/dad-car.png",
+          "image": "",
           "label": "dad with car"
         }
       ],
@@ -1151,7 +1151,7 @@
       "question": "_______ glasses help her read.",
       "images": [
         {
-          "image": "images/possessives/grandma-glasses.png",
+          "image": "",
           "label": "grandma with glasses"
         }
       ],
@@ -1166,7 +1166,7 @@
       "question": "The _______ desk has many papers.",
       "images": [
         {
-          "image": "images/possessives/teacher-desk.png",
+          "image": "",
           "label": "teacher desk"
         }
       ],
@@ -1181,7 +1181,7 @@
       "question": "The _______ pencil broke during the test.",
       "images": [
         {
-          "image": "images/possessives/student-pencil.png",
+          "image": "",
           "label": "student with pencil"
         }
       ],
@@ -1196,7 +1196,7 @@
       "question": "My _______ book fell on the floor.",
       "images": [
         {
-          "image": "images/possessives/friend-book.png",
+          "image": "",
           "label": "friend with book"
         }
       ],
@@ -1211,7 +1211,7 @@
       "question": "The _______ leaves are turning orange.",
       "images": [
         {
-          "image": "images/possessives/tree-leaves.png",
+          "image": "",
           "label": "tree leaves"
         }
       ],
@@ -1226,7 +1226,7 @@
       "question": "The _______ petals are soft and pink.",
       "images": [
         {
-          "image": "images/possessives/flower-petals.png",
+          "image": "",
           "label": "flower petals"
         }
       ],
@@ -1241,7 +1241,7 @@
       "question": "The _______ stem is green.",
       "images": [
         {
-          "image": "images/possessives/apple-stem.png",
+          "image": "",
           "label": "apple stem"
         }
       ],
@@ -1256,7 +1256,7 @@
       "question": "The _______ wheels are spinning fast.",
       "images": [
         {
-          "image": "images/possessives/car-wheels.png",
+          "image": "",
           "label": "car wheels"
         }
       ],
@@ -1271,7 +1271,7 @@
       "question": "The _______ seat is too high.",
       "images": [
         {
-          "image": "images/possessives/bike-seat.png",
+          "image": "",
           "label": "bike seat"
         }
       ],
@@ -1286,7 +1286,7 @@
       "question": "The _______ hair is long and curly.",
       "images": [
         {
-          "image": "images/possessives/doll-hair.png",
+          "image": "",
           "label": "doll hair"
         }
       ],
@@ -1301,7 +1301,7 @@
       "question": "The _______ bounce is very high.",
       "images": [
         {
-          "image": "images/possessives/ball-bounce.png",
+          "image": "",
           "label": "ball bouncing"
         }
       ],
@@ -1316,7 +1316,7 @@
       "question": "The _______ eyes are made of buttons.",
       "images": [
         {
-          "image": "images/possessives/teddy-bear-eyes.png",
+          "image": "",
           "label": "teddy bear eyes"
         }
       ],
@@ -1331,7 +1331,7 @@
       "question": "The _______ roof is covered with snow.",
       "images": [
         {
-          "image": "images/possessives/house-roof.png",
+          "image": "",
           "label": "house roof"
         }
       ],
@@ -1346,7 +1346,7 @@
       "question": "The _______ bell rings at 3 o'clock.",
       "images": [
         {
-          "image": "images/possessives/school-bell.png",
+          "image": "",
           "label": "school bell"
         }
       ],
@@ -1361,7 +1361,7 @@
       "question": "The _______ door is painted red.",
       "images": [
         {
-          "image": "images/possessives/store-door.png",
+          "image": "",
           "label": "store door"
         }
       ],
@@ -1376,7 +1376,7 @@
       "question": "The _______ milk is fresh from the farm.",
       "images": [
         {
-          "image": "images/possessives/cow-milk.png",
+          "image": "",
           "label": "cow milk"
         }
       ],
@@ -1391,7 +1391,7 @@
       "question": "The _______ tail is curly.",
       "images": [
         {
-          "image": "images/possessives/pig-tail.png",
+          "image": "",
           "label": "pig tail"
         }
       ],
@@ -1406,7 +1406,7 @@
       "question": "The _______ tongue catches flies.",
       "images": [
         {
-          "image": "images/possessives/frog-tongue.png",
+          "image": "",
           "label": "frog tongue"
         }
       ],
@@ -1421,7 +1421,7 @@
       "question": "The _______ mane is big and golden.",
       "images": [
         {
-          "image": "images/possessives/lion-mane.png",
+          "image": "",
           "label": "lion mane"
         }
       ],
@@ -1438,7 +1438,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/girl-balls.png",
+          "image": "",
           "label": "girl with balls"
         }
       ],
@@ -1451,7 +1451,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/man-backpack.png",
+          "image": "",
           "label": "man with backpack"
         }
       ],
@@ -1464,7 +1464,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/boy-surfboard.png",
+          "image": "",
           "label": "boy with surfboard"
         }
       ],
@@ -1477,7 +1477,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/girl-sunhat.png",
+          "image": "",
           "label": "girl wearing sunhat"
         }
       ],
@@ -1490,7 +1490,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/kids-sandcastle.png",
+          "image": "",
           "label": "kids with sandcastle"
         }
       ],
@@ -1503,7 +1503,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/man-flipflops.png",
+          "image": "",
           "label": "man with flip flops"
         }
       ],
@@ -1516,7 +1516,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/woman-sunscreen.png",
+          "image": "",
           "label": "woman applying sunscreen"
         }
       ],
@@ -1529,7 +1529,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/boy-dog.png",
+          "image": "",
           "label": "boy with dog"
         }
       ],
@@ -1542,7 +1542,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/girl-brushing-hair.png",
+          "image": "",
           "label": "girl brushing hair"
         }
       ],
@@ -1555,7 +1555,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/family-towels.png",
+          "image": "",
           "label": "family with towels"
         }
       ],
@@ -1568,7 +1568,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/man-water.png",
+          "image": "",
           "label": "man drinking water"
         }
       ],
@@ -1581,7 +1581,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/woman-keys.png",
+          "image": "",
           "label": "woman with keys"
         }
       ],
@@ -1594,7 +1594,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/boy-tying-shoes.png",
+          "image": "",
           "label": "boy tying shoes"
         }
       ],
@@ -1607,7 +1607,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/girl-backpack.png",
+          "image": "",
           "label": "girl carrying backpack"
         }
       ],
@@ -1620,7 +1620,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/children-umbrella.png",
+          "image": "",
           "label": "children with umbrella"
         }
       ],
@@ -1633,7 +1633,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/woman-sunglasses.png",
+          "image": "",
           "label": "woman wearing sunglasses"
         }
       ],
@@ -1646,7 +1646,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/man-reading.png",
+          "image": "",
           "label": "man reading book"
         }
       ],
@@ -1659,7 +1659,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/girl-bunny.png",
+          "image": "",
           "label": "girl with bunny"
         }
       ],
@@ -1672,7 +1672,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/boy-eating-lunch.png",
+          "image": "",
           "label": "boy eating lunch"
         }
       ],
@@ -1685,7 +1685,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/parents-child.png",
+          "image": "",
           "label": "parents with child"
         }
       ],
@@ -1698,7 +1698,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/woman-lotion.png",
+          "image": "",
           "label": "woman using lotion"
         }
       ],
@@ -1711,7 +1711,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/man-watch.png",
+          "image": "",
           "label": "man wearing watch"
         }
       ],
@@ -1724,7 +1724,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/girl-stuffed-animal.png",
+          "image": "",
           "label": "girl with stuffed animal"
         }
       ],
@@ -1737,7 +1737,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/boy-pajamas.png",
+          "image": "",
           "label": "boy wearing pajamas"
         }
       ],
@@ -1750,7 +1750,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/friends-blanket.png",
+          "image": "",
           "label": "friends with blanket"
         }
       ],
@@ -1763,7 +1763,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/woman-phone.png",
+          "image": "",
           "label": "woman with phone"
         }
       ],
@@ -1776,7 +1776,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/man-hat.png",
+          "image": "",
           "label": "man putting on hat"
         }
       ],
@@ -1789,7 +1789,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/girl-washing-face.png",
+          "image": "",
           "label": "girl washing face"
         }
       ],
@@ -1802,7 +1802,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/boy-jacket.png",
+          "image": "",
           "label": "boy zipping jacket"
         }
       ],
@@ -1815,7 +1815,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns/grandparents-grandchildren.png",
+          "image": "",
           "label": "grandparents with grandchildren"
         }
       ],
@@ -1830,7 +1830,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-lacrosse.png",
+          "image": "",
           "label": "boy with lacrosse stick"
         }
       ],
@@ -1843,7 +1843,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-singing.png",
+          "image": "",
           "label": "girl singing"
         }
       ],
@@ -1856,7 +1856,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/kids-sand.png",
+          "image": "",
           "label": "kids playing in sand"
         }
       ],
@@ -1869,7 +1869,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-apple.png",
+          "image": "",
           "label": "boy eating apple"
         }
       ],
@@ -1882,7 +1882,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-reading.png",
+          "image": "",
           "label": "girl reading book"
         }
       ],
@@ -1895,7 +1895,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/children-swimming.png",
+          "image": "",
           "label": "children swimming"
         }
       ],
@@ -1908,7 +1908,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/man-sandcastle.png",
+          "image": "",
           "label": "man building sandcastle"
         }
       ],
@@ -1921,7 +1921,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/woman-sunscreen.png",
+          "image": "",
           "label": "woman applying sunscreen"
         }
       ],
@@ -1934,7 +1934,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-brushing-teeth.png",
+          "image": "",
           "label": "boy brushing teeth"
         }
       ],
@@ -1947,7 +1947,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-bunny.png",
+          "image": "",
           "label": "girl petting bunny"
         }
       ],
@@ -1960,7 +1960,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/friends-towel.png",
+          "image": "",
           "label": "friends sharing towel"
         }
       ],
@@ -1973,7 +1973,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-throwing-ball.png",
+          "image": "",
           "label": "boy throwing ball"
         }
       ],
@@ -1986,7 +1986,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-drinking-water.png",
+          "image": "",
           "label": "girl drinking water"
         }
       ],
@@ -1999,7 +1999,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/kids-seashells.png",
+          "image": "",
           "label": "kids collecting seashells"
         }
       ],
@@ -2012,7 +2012,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/man-walking-dog.png",
+          "image": "",
           "label": "man walking dog"
         }
       ],
@@ -2025,7 +2025,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/woman-umbrella.png",
+          "image": "",
           "label": "woman holding umbrella"
         }
       ],
@@ -2038,7 +2038,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-flipflops.png",
+          "image": "",
           "label": "boy putting on flip flops"
         }
       ],
@@ -2051,7 +2051,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-washing-hands.png",
+          "image": "",
           "label": "girl washing hands"
         }
       ],
@@ -2064,7 +2064,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/family-picnic.png",
+          "image": "",
           "label": "family eating picnic"
         }
       ],
@@ -2077,7 +2077,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-drawing.png",
+          "image": "",
           "label": "boy drawing"
         }
       ],
@@ -2090,7 +2090,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-hat.png",
+          "image": "",
           "label": "girl wearing hat"
         }
       ],
@@ -2103,7 +2103,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/children-waves.png",
+          "image": "",
           "label": "children jumping in waves"
         }
       ],
@@ -2116,7 +2116,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/man-fishing.png",
+          "image": "",
           "label": "man fishing"
         }
       ],
@@ -2129,7 +2129,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/woman-photo.png",
+          "image": "",
           "label": "woman taking photo"
         }
       ],
@@ -2142,7 +2142,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-combing-hair.png",
+          "image": "",
           "label": "boy combing hair"
         }
       ],
@@ -2155,7 +2155,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-tying-shoes.png",
+          "image": "",
           "label": "girl tying shoes"
         }
       ],
@@ -2168,7 +2168,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/grandparents-bench.png",
+          "image": "",
           "label": "grandparents sitting on bench"
         }
       ],
@@ -2181,7 +2181,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/boy-bubbles.png",
+          "image": "",
           "label": "boy blowing bubbles"
         }
       ],
@@ -2194,7 +2194,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/girl-feeding-cat.png",
+          "image": "",
           "label": "girl feeding cat"
         }
       ],
@@ -2207,7 +2207,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-subject/kids-playing-dog.png",
+          "image": "",
           "label": "kids playing with dog"
         }
       ],
@@ -2222,7 +2222,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/woman-hair.png",
+          "image": "",
           "label": "woman doing hair"
         }
       ],
@@ -2235,7 +2235,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/group-running.png",
+          "image": "",
           "label": "group running race"
         }
       ],
@@ -2248,7 +2248,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/boy-drinking-juice.png",
+          "image": "",
           "label": "boy drinking juice"
         }
       ],
@@ -2261,7 +2261,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/girl-writing.png",
+          "image": "",
           "label": "girl writing in notebook"
         }
       ],
@@ -2274,7 +2274,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/children-splashing.png",
+          "image": "",
           "label": "children splashing in waves"
         }
       ],
@@ -2287,7 +2287,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/man-groceries.png",
+          "image": "",
           "label": "man carrying groceries"
         }
       ],
@@ -2300,7 +2300,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/woman-beach.png",
+          "image": "",
           "label": "woman walking on beach"
         }
       ],
@@ -2313,7 +2313,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/boy-playing-dog.png",
+          "image": "",
           "label": "boy playing with dog"
         }
       ],
@@ -2326,7 +2326,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/girl-sunscreen.png",
+          "image": "",
           "label": "girl putting on sunscreen"
         }
       ],
@@ -2339,7 +2339,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/kids-sandcastle.png",
+          "image": "",
           "label": "kids building sandcastle"
         }
       ],
@@ -2352,7 +2352,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/man-cooking.png",
+          "image": "",
           "label": "man cooking"
         }
       ],
@@ -2365,7 +2365,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/woman-seashell.png",
+          "image": "",
           "label": "woman holding seashell"
         }
       ],
@@ -2378,7 +2378,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/boy-sleeping.png",
+          "image": "",
           "label": "boy sleeping"
         }
       ],
@@ -2391,7 +2391,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/girl-candles.png",
+          "image": "",
           "label": "girl blowing out candles"
         }
       ],
@@ -2404,7 +2404,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/family-picnic.png",
+          "image": "",
           "label": "family having picnic"
         }
       ],
@@ -2417,7 +2417,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/man-weights.png",
+          "image": "",
           "label": "man lifting weights"
         }
       ],
@@ -2430,7 +2430,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/woman-watering.png",
+          "image": "",
           "label": "woman watering plants"
         }
       ],
@@ -2443,7 +2443,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/boy-catching-ball.png",
+          "image": "",
           "label": "boy catching ball"
         }
       ],
@@ -2456,7 +2456,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/girl-hugging-mom.png",
+          "image": "",
           "label": "girl hugging mom"
         }
       ],
@@ -2469,7 +2469,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/kids-watermelon.png",
+          "image": "",
           "label": "kids eating watermelon"
         }
       ],
@@ -2482,7 +2482,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/man-sunglasses.png",
+          "image": "",
           "label": "man wearing sunglasses"
         }
       ],
@@ -2495,7 +2495,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/woman-magazine.png",
+          "image": "",
           "label": "woman reading magazine"
         }
       ],
@@ -2508,7 +2508,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/boy-packing.png",
+          "image": "",
           "label": "boy packing bag"
         }
       ],
@@ -2521,7 +2521,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/girl-jumping-rope.png",
+          "image": "",
           "label": "girl jumping rope"
         }
       ],
@@ -2534,7 +2534,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/friends-sunset.png",
+          "image": "",
           "label": "friends watching sunset"
         }
       ],
@@ -2547,7 +2547,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/man-umbrella.png",
+          "image": "",
           "label": "man putting up umbrella"
         }
       ],
@@ -2560,7 +2560,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/woman-brushing-teeth.png",
+          "image": "",
           "label": "woman brushing teeth"
         }
       ],
@@ -2573,7 +2573,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/boy-feeding-fish.png",
+          "image": "",
           "label": "boy feeding fish"
         }
       ],
@@ -2586,7 +2586,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/girl-making-bed.png",
+          "image": "",
           "label": "girl making bed"
         }
       ],
@@ -2599,7 +2599,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/pronouns-mixed/students-hands.png",
+          "image": "",
           "label": "students raising hands"
         }
       ],
@@ -2614,7 +2614,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/girls-sand.png",
+          "image": "",
           "label": "girl playing in sand"
         }
       ],
@@ -2627,7 +2627,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/boy-tying-shoes.png",
+          "image": "",
           "label": "boy tying shoes"
         }
       ],
@@ -2640,7 +2640,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/girl-brushing-hair.png",
+          "image": "",
           "label": "girl brushing hair"
         }
       ],
@@ -2653,7 +2653,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/cat-cleaning.png",
+          "image": "",
           "label": "cat cleaning itself"
         }
       ],
@@ -2666,7 +2666,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/child-washing-hands.png",
+          "image": "",
           "label": "child washing hands"
         }
       ],
@@ -2679,7 +2679,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/kids-setting-towels.png",
+          "image": "",
           "label": "kids setting up towels"
         }
       ],
@@ -2692,7 +2692,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/children-sandcastle.png",
+          "image": "",
           "label": "children building sandcastle"
         }
       ],
@@ -2705,7 +2705,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/boy-getting-dressed.png",
+          "image": "",
           "label": "boy getting dressed"
         }
       ],
@@ -2718,7 +2718,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/girl-making-bed.png",
+          "image": "",
           "label": "girl making bed"
         }
       ],
@@ -2731,7 +2731,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/child-reading-book.png",
+          "image": "",
           "label": "child reading book"
         }
       ],
@@ -2744,7 +2744,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/dog-scratching.png",
+          "image": "",
           "label": "dog scratching itself"
         }
       ],
@@ -2757,7 +2757,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/boy-feeding-self.png",
+          "image": "",
           "label": "boy feeding himself"
         }
       ],
@@ -2770,7 +2770,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/girl-sunscreen.png",
+          "image": "",
           "label": "girl applying sunscreen"
         }
       ],
@@ -2783,7 +2783,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/kids-cleaning-up.png",
+          "image": "",
           "label": "kids cleaning up"
         }
       ],
@@ -2796,7 +2796,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/students-project.png",
+          "image": "",
           "label": "students finishing project"
         }
       ],
@@ -2809,7 +2809,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/child-drawing.png",
+          "image": "",
           "label": "child drawing picture"
         }
       ],
@@ -2822,7 +2822,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/boy-pouring-drink.png",
+          "image": "",
           "label": "boy pouring drink"
         }
       ],
@@ -2835,7 +2835,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/girl-zipping-jacket.png",
+          "image": "",
           "label": "girl zipping jacket"
         }
       ],
@@ -2848,7 +2848,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/bunny-grooming.png",
+          "image": "",
           "label": "bunny grooming itself"
         }
       ],
@@ -2861,7 +2861,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/child-packing-backpack.png",
+          "image": "",
           "label": "child packing backpack"
         }
       ],
@@ -2874,7 +2874,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/family-decorating.png",
+          "image": "",
           "label": "family decorating"
         }
       ],
@@ -2887,7 +2887,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/friends-washing-car.png",
+          "image": "",
           "label": "friends washing car"
         }
       ],
@@ -2900,7 +2900,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/boy-applying-sunscreen.png",
+          "image": "",
           "label": "boy applying sunscreen"
         }
       ],
@@ -2913,7 +2913,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/girl-drying-off.png",
+          "image": "",
           "label": "girl drying off"
         }
       ],
@@ -2926,7 +2926,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/child-puzzle.png",
+          "image": "",
           "label": "child completing puzzle"
         }
       ],
@@ -2939,7 +2939,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/bird-preening.png",
+          "image": "",
           "label": "bird preening itself"
         }
       ],
@@ -2952,7 +2952,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/boy-carrying-bag.png",
+          "image": "",
           "label": "boy carrying bag"
         }
       ],
@@ -2965,7 +2965,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/girl-combing-hair.png",
+          "image": "",
           "label": "girl combing hair"
         }
       ],
@@ -2978,7 +2978,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/siblings-cleaning-room.png",
+          "image": "",
           "label": "siblings cleaning room"
         }
       ],
@@ -2991,7 +2991,7 @@
       "question": "Fill in the blank with the correct pronoun.",
       "images": [
         {
-          "image": "images/reflexive-pronouns/kids-collecting-shells.png",
+          "image": "",
           "label": "kids collecting shells"
         }
       ],

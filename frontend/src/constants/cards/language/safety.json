@@ -4,7 +4,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/stop.png",
+          "image": "",
           "label": "Stop sign"
         }
       ],
@@ -19,7 +19,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/yield.png",
+          "image": "",
           "label": "Yield sign"
         }
       ],
@@ -34,7 +34,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/exit.png",
+          "image": "",
           "label": "Exit sign"
         }
       ],
@@ -49,7 +49,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/no-symbol.png",
+          "image": "",
           "label": "No symbol sign"
         }
       ],
@@ -65,7 +65,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/do-not-enter.png",
+          "image": "",
           "label": "Do not enter sign"
         }
       ],
@@ -80,7 +80,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/one-way.png",
+          "image": "",
           "label": "One way sign"
         }
       ],
@@ -95,7 +95,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/speed-limit.png",
+          "image": "",
           "label": "Speed limit sign"
         }
       ],
@@ -110,7 +110,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/crosswalk.png",
+          "image": "",
           "label": "Crosswalk sign"
         }
       ],
@@ -125,7 +125,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/watch-children.png",
+          "image": "",
           "label": "Watch for children sign"
         }
       ],
@@ -140,7 +140,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/railroad.png",
+          "image": "",
           "label": "Railroad crossing sign"
         }
       ],
@@ -155,7 +155,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/fire-truck.png",
+          "image": "",
           "label": "Fire truck sign"
         }
       ],
@@ -170,7 +170,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/handicap.png",
+          "image": "",
           "label": "Handicap accessible sign"
         }
       ],
@@ -185,7 +185,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/restroom.png",
+          "image": "",
           "label": "Restroom sign"
         }
       ],
@@ -200,7 +200,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/first-aid.png",
+          "image": "",
           "label": "First aid sign"
         }
       ],
@@ -215,7 +215,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/fire-extinguisher.png",
+          "image": "",
           "label": "Fire extinguisher sign"
         }
       ],
@@ -230,7 +230,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/emergency-phone.png",
+          "image": "",
           "label": "Emergency phone sign"
         }
       ],
@@ -245,7 +245,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/wet-floor.png",
+          "image": "",
           "label": "Wet floor sign"
         }
       ],
@@ -260,7 +260,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/poison.png",
+          "image": "",
           "label": "Poison warning sign"
         }
       ],
@@ -275,7 +275,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/wash-hands.png",
+          "image": "",
           "label": "Wash hands sign"
         }
       ],
@@ -290,7 +290,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/no-running.png",
+          "image": "",
           "label": "No running sign"
         }
       ],
@@ -305,7 +305,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/no-pets.png",
+          "image": "",
           "label": "No pets sign"
         }
       ],
@@ -320,7 +320,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/no-littering.png",
+          "image": "",
           "label": "No littering sign"
         }
       ],
@@ -335,7 +335,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/keep-off-grass.png",
+          "image": "",
           "label": "Keep off grass sign"
         }
       ],
@@ -350,7 +350,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/lifeguard.png",
+          "image": "",
           "label": "Lifeguard on duty sign"
         }
       ],
@@ -365,7 +365,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/no-swimming.png",
+          "image": "",
           "label": "No swimming sign"
         }
       ],
@@ -380,7 +380,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/no-diving.png",
+          "image": "",
           "label": "No diving sign"
         }
       ],
@@ -395,7 +395,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/beach-closed.png",
+          "image": "",
           "label": "Beach closed sign"
         }
       ],
@@ -410,7 +410,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/rip-current.png",
+          "image": "",
           "label": "Rip current warning sign"
         }
       ],
@@ -425,7 +425,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/shark-warning.png",
+          "image": "",
           "label": "Shark warning sign"
         }
       ],
@@ -440,7 +440,7 @@
       "question": "What does this sign mean?",
       "images": [
         {
-          "image": "images/signs/jellyfish.png",
+          "image": "",
           "label": "Jellyfish warning sign"
         }
       ],

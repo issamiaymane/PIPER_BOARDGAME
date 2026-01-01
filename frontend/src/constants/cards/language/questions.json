@@ -4,7 +4,7 @@
       "question": "Do you prefer to write with a pen or a pencil?",
       "images": [
         {
-          "image": "images/questions/pencils.png",
+          "image": "",
           "label": "Pencils"
         }
       ],
@@ -18,7 +18,7 @@
       "question": "How do you want to celebrate your next birthday?",
       "images": [
         {
-          "image": "images/questions/balloons-pool.png",
+          "image": "",
           "label": "Birthday balloons at a pool"
         }
       ],
@@ -32,7 +32,7 @@
       "question": "What is your favorite thing to do at the beach?",
       "images": [
         {
-          "image": "images/questions/sunny-beach.png",
+          "image": "",
           "label": "A sunny beach"
         }
       ],
@@ -46,7 +46,7 @@
       "question": "What is your favorite flavor of ice cream?",
       "images": [
         {
-          "image": "images/questions/ice-cream.png",
+          "image": "",
           "label": "Ice cream cones"
         }
       ],
@@ -60,7 +60,7 @@
       "question": "Do you like to sleep in or wake up early?",
       "images": [
         {
-          "image": "images/questions/cozy-bed.png",
+          "image": "",
           "label": "A cozy bed"
         }
       ],
@@ -74,7 +74,7 @@
       "question": "Do you prefer sunny days or rainy days?",
       "images": [
         {
-          "image": "images/questions/sunny-rainy.png",
+          "image": "",
           "label": "Sunny and rainy weather"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "Do you like cats or dogs better?",
       "images": [
         {
-          "image": "images/questions/cat-dog.png",
+          "image": "",
           "label": "A cat and a dog"
         }
       ],
@@ -102,7 +102,7 @@
       "question": "What is your favorite book?",
       "images": [
         {
-          "image": "images/questions/books.png",
+          "image": "",
           "label": "A stack of books"
         }
       ],
@@ -116,7 +116,7 @@
       "question": "What is your favorite topping on pizza?",
       "images": [
         {
-          "image": "images/questions/pizza.png",
+          "image": "",
           "label": "A pizza"
         }
       ],
@@ -130,7 +130,7 @@
       "question": "What is your favorite color?",
       "images": [
         {
-          "image": "images/questions/crayons.png",
+          "image": "",
           "label": "Colorful crayons"
         }
       ],
@@ -144,7 +144,7 @@
       "question": "What is your favorite food to eat for dinner?",
       "images": [
         {
-          "image": "images/questions/family-dinner.png",
+          "image": "",
           "label": "Family eating dinner"
         }
       ],
@@ -158,7 +158,7 @@
       "question": "What is your favorite movie?",
       "images": [
         {
-          "image": "images/questions/movie-popcorn.png",
+          "image": "",
           "label": "Movie and popcorn"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "What is the first thing you do when you wake up?",
       "images": [
         {
-          "image": "images/questions/sunrise.png",
+          "image": "",
           "label": "Sunrise"
         }
       ],
@@ -186,7 +186,7 @@
       "question": "What do you like to do during free time?",
       "images": [
         {
-          "image": "images/questions/playground.png",
+          "image": "",
           "label": "A playground"
         }
       ],
@@ -200,7 +200,7 @@
       "question": "What makes you laugh?",
       "images": [
         {
-          "image": "images/questions/laughing-friends.png",
+          "image": "",
           "label": "Friends laughing"
         }
       ],
@@ -214,7 +214,7 @@
       "question": "Can you play any instruments?",
       "images": [
         {
-          "image": "images/questions/instruments.png",
+          "image": "",
           "label": "Musical instruments"
         }
       ],
@@ -228,7 +228,7 @@
       "question": "What is your favorite fruit?",
       "images": [
         {
-          "image": "images/questions/fruits.png",
+          "image": "",
           "label": "Various fruits"
         }
       ],
@@ -242,7 +242,7 @@
       "question": "Do you like to swim?",
       "images": [
         {
-          "image": "images/questions/swimming-pool.png",
+          "image": "",
           "label": "A swimming pool"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "What do you want to be when you grow up?",
       "images": [
         {
-          "image": "images/questions/stars.png",
+          "image": "",
           "label": "Stars in the sky"
         }
       ],
@@ -270,7 +270,7 @@
       "question": "What is your favorite game to play?",
       "images": [
         {
-          "image": "images/questions/games.png",
+          "image": "",
           "label": "Games to play"
         }
       ],
@@ -284,7 +284,7 @@
       "question": "Where would you like to go on vacation?",
       "images": [
         {
-          "image": "images/questions/vacation.png",
+          "image": "",
           "label": "A vacation destination"
         }
       ],
@@ -298,7 +298,7 @@
       "question": "Do you have any pets?",
       "images": [
         {
-          "image": "images/questions/bunny.png",
+          "image": "",
           "label": "A bunny"
         }
       ],
@@ -312,7 +312,7 @@
       "question": "How do you help at home?",
       "images": [
         {
-          "image": "images/questions/helping.png",
+          "image": "",
           "label": "Helping at home"
         }
       ],
@@ -326,7 +326,7 @@
       "question": "What is something you are really good at?",
       "images": [
         {
-          "image": "images/questions/thinking.png",
+          "image": "",
           "label": "Person thinking"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "What is your favorite day of the week?",
       "images": [
         {
-          "image": "images/questions/calendar.png",
+          "image": "",
           "label": "A calendar"
         }
       ],
@@ -354,7 +354,7 @@
       "question": "What is your favorite season?",
       "images": [
         {
-          "image": "images/questions/seasons.png",
+          "image": "",
           "label": "The four seasons"
         }
       ],
@@ -368,7 +368,7 @@
       "question": "What do you like to eat for breakfast?",
       "images": [
         {
-          "image": "images/questions/breakfast.png",
+          "image": "",
           "label": "Breakfast foods"
         }
       ],
@@ -382,7 +382,7 @@
       "question": "If you had a superpower, what would it be?",
       "images": [
         {
-          "image": "images/questions/superhero.png",
+          "image": "",
           "label": "A superhero"
         }
       ],
@@ -396,7 +396,7 @@
       "question": "What do you like to do with your friends?",
       "images": [
         {
-          "image": "images/questions/friends.png",
+          "image": "",
           "label": "Friends together"
         }
       ],
@@ -410,7 +410,7 @@
       "question": "What is one thing that makes you happy?",
       "images": [
         {
-          "image": "images/questions/sunset.png",
+          "image": "",
           "label": "A sunset"
         }
       ],
@@ -426,7 +426,7 @@
       "question": "Is this a garden hose?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/garden-hose.png",
+          "image": "",
           "label": "A garden hose"
         }
       ],
@@ -440,7 +440,7 @@
       "question": "Is this a banana?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/red-apple.png",
+          "image": "",
           "label": "A red apple"
         }
       ],
@@ -454,7 +454,7 @@
       "question": "Is this the sun?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/sun.png",
+          "image": "",
           "label": "The sun"
         }
       ],
@@ -468,7 +468,7 @@
       "question": "Is this a dog?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/cat.png",
+          "image": "",
           "label": "A cat"
         }
       ],
@@ -482,7 +482,7 @@
       "question": "Is this the ocean?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/ocean.png",
+          "image": "",
           "label": "The ocean"
         }
       ],
@@ -496,7 +496,7 @@
       "question": "Are these boots?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/flipflops.png",
+          "image": "",
           "label": "Flip flops"
         }
       ],
@@ -510,7 +510,7 @@
       "question": "Is the child swimming?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-swimming.png",
+          "image": "",
           "label": "Child swimming"
         }
       ],
@@ -524,7 +524,7 @@
       "question": "Is the child eating?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-sleeping.png",
+          "image": "",
           "label": "Child sleeping"
         }
       ],
@@ -538,7 +538,7 @@
       "question": "Is this a sandcastle?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/sandcastle.png",
+          "image": "",
           "label": "A sandcastle"
         }
       ],
@@ -552,7 +552,7 @@
       "question": "Is this a hairbrush?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/toothbrush.png",
+          "image": "",
           "label": "A toothbrush"
         }
       ],
@@ -566,7 +566,7 @@
       "question": "Is this a seashell?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/seashell.png",
+          "image": "",
           "label": "A seashell"
         }
       ],
@@ -580,7 +580,7 @@
       "question": "Is the bunny sleeping?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/bunny-eating.png",
+          "image": "",
           "label": "Bunny eating"
         }
       ],
@@ -594,7 +594,7 @@
       "question": "Are these sunglasses?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/sunglasses.png",
+          "image": "",
           "label": "Sunglasses"
         }
       ],
@@ -608,7 +608,7 @@
       "question": "Is this orange juice?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/milk.png",
+          "image": "",
           "label": "A glass of milk"
         }
       ],
@@ -622,7 +622,7 @@
       "question": "Is it raining?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/raining.png",
+          "image": "",
           "label": "It is raining"
         }
       ],
@@ -636,7 +636,7 @@
       "question": "Is the child sitting?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-running.png",
+          "image": "",
           "label": "Child running"
         }
       ],
@@ -650,7 +650,7 @@
       "question": "Is this a starfish?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/starfish.png",
+          "image": "",
           "label": "A starfish"
         }
       ],
@@ -664,7 +664,7 @@
       "question": "Is this a car?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/bicycle.png",
+          "image": "",
           "label": "A bicycle"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "Is this a dolphin?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/dolphin.png",
+          "image": "",
           "label": "A dolphin"
         }
       ],
@@ -692,7 +692,7 @@
       "question": "Is the child wearing shorts?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-jacket.png",
+          "image": "",
           "label": "Child wearing a jacket"
         }
       ],
@@ -706,7 +706,7 @@
       "question": "Is this a beach ball?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/beachball.png",
+          "image": "",
           "label": "A beach ball"
         }
       ],
@@ -720,7 +720,7 @@
       "question": "Is this an orange?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/banana.png",
+          "image": "",
           "label": "A banana"
         }
       ],
@@ -734,7 +734,7 @@
       "question": "Is this a fire truck?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/firetruck.png",
+          "image": "",
           "label": "A fire truck"
         }
       ],
@@ -748,7 +748,7 @@
       "question": "Is the child combing hair?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-brushing-teeth.png",
+          "image": "",
           "label": "Child brushing teeth"
         }
       ],
@@ -762,7 +762,7 @@
       "question": "Is this pizza?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/pizza.png",
+          "image": "",
           "label": "Pizza"
         }
       ],
@@ -776,7 +776,7 @@
       "question": "Is the dog sleeping?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/dog-playing.png",
+          "image": "",
           "label": "Dog playing"
         }
       ],
@@ -790,7 +790,7 @@
       "question": "Is this a palm tree?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/palmtree.png",
+          "image": "",
           "label": "A palm tree"
         }
       ],
@@ -804,7 +804,7 @@
       "question": "Is this a sun hat?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/winter-hat.png",
+          "image": "",
           "label": "A winter hat"
         }
       ],
@@ -818,7 +818,7 @@
       "question": "Is this a lifeguard?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/lifeguard.png",
+          "image": "",
           "label": "A lifeguard"
         }
       ],
@@ -832,7 +832,7 @@
       "question": "Is the girl dancing?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/girl-reading.png",
+          "image": "",
           "label": "Girl reading"
         }
       ],

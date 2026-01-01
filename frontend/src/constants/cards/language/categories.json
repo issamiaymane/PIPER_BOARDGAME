@@ -4,27 +4,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/tools/hammer.png",
+          "image": "",
           "label": "hammer"
         },
         {
-          "image": "/images/cards/15_categories/tools/wrench.png",
+          "image": "",
           "label": "wrench"
         },
         {
-          "image": "/images/cards/15_categories/tools/pliers.png",
+          "image": "",
           "label": "pliers"
         },
         {
-          "image": "/images/cards/15_categories/tools/screwdriver.png",
+          "image": "",
           "label": "screwdriver"
         },
         {
-          "image": "/images/cards/15_categories/tools/jigsaw.png",
+          "image": "",
           "label": "jigsaw"
         },
         {
-          "image": "/images/cards/15_categories/tools/drill.png",
+          "image": "",
           "label": "drill"
         }
       ],
@@ -41,27 +41,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/beverages/orange_juice.png",
+          "image": "",
           "label": "orange juice"
         },
         {
-          "image": "/images/cards/15_categories/beverages/lemonade.png",
+          "image": "",
           "label": "lemonade"
         },
         {
-          "image": "/images/cards/15_categories/beverages/coffee.png",
+          "image": "",
           "label": "coffee"
         },
         {
-          "image": "/images/cards/15_categories/beverages/milk.png",
+          "image": "",
           "label": "milk"
         },
         {
-          "image": "/images/cards/15_categories/beverages/tea.png",
+          "image": "",
           "label": "tea"
         },
         {
-          "image": "/images/cards/15_categories/beverages/soda.png",
+          "image": "",
           "label": "soda"
         }
       ],
@@ -78,27 +78,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/fruits/apple.png",
+          "image": "",
           "label": "apple"
         },
         {
-          "image": "/images/cards/15_categories/fruits/banana.png",
+          "image": "",
           "label": "banana"
         },
         {
-          "image": "/images/cards/15_categories/fruits/grapes.png",
+          "image": "",
           "label": "grapes"
         },
         {
-          "image": "/images/cards/15_categories/fruits/strawberry.png",
+          "image": "",
           "label": "strawberry"
         },
         {
-          "image": "/images/cards/15_categories/fruits/orange.png",
+          "image": "",
           "label": "orange"
         },
         {
-          "image": "/images/cards/15_categories/fruits/watermelon.png",
+          "image": "",
           "label": "watermelon"
         }
       ],
@@ -115,27 +115,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/vegetables/broccoli.png",
+          "image": "",
           "label": "broccoli"
         },
         {
-          "image": "/images/cards/15_categories/vegetables/carrot.png",
+          "image": "",
           "label": "carrot"
         },
         {
-          "image": "/images/cards/15_categories/vegetables/cucumber.png",
+          "image": "",
           "label": "cucumber"
         },
         {
-          "image": "/images/cards/15_categories/vegetables/pepper.png",
+          "image": "",
           "label": "bell pepper"
         },
         {
-          "image": "/images/cards/15_categories/vegetables/tomato.png",
+          "image": "",
           "label": "tomato"
         },
         {
-          "image": "/images/cards/15_categories/vegetables/lettuce.png",
+          "image": "",
           "label": "lettuce"
         }
       ],
@@ -152,27 +152,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/animals/dog.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "/images/cards/15_categories/animals/cat.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "/images/cards/15_categories/animals/bird.png",
+          "image": "",
           "label": "bird"
         },
         {
-          "image": "/images/cards/15_categories/animals/fish.png",
+          "image": "",
           "label": "fish"
         },
         {
-          "image": "/images/cards/15_categories/animals/rabbit.png",
+          "image": "",
           "label": "rabbit"
         },
         {
-          "image": "/images/cards/15_categories/animals/horse.png",
+          "image": "",
           "label": "horse"
         }
       ],
@@ -189,27 +189,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/clothing/shirt.png",
+          "image": "",
           "label": "shirt"
         },
         {
-          "image": "/images/cards/15_categories/clothing/pants.png",
+          "image": "",
           "label": "pants"
         },
         {
-          "image": "/images/cards/15_categories/clothing/shoes.png",
+          "image": "",
           "label": "shoes"
         },
         {
-          "image": "/images/cards/15_categories/clothing/hat.png",
+          "image": "",
           "label": "hat"
         },
         {
-          "image": "/images/cards/15_categories/clothing/socks.png",
+          "image": "",
           "label": "socks"
         },
         {
-          "image": "/images/cards/15_categories/clothing/jacket.png",
+          "image": "",
           "label": "jacket"
         }
       ],
@@ -226,27 +226,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/toys/ball.png",
+          "image": "",
           "label": "ball"
         },
         {
-          "image": "/images/cards/15_categories/toys/doll.png",
+          "image": "",
           "label": "doll"
         },
         {
-          "image": "/images/cards/15_categories/toys/blocks.png",
+          "image": "",
           "label": "blocks"
         },
         {
-          "image": "/images/cards/15_categories/toys/puzzle.png",
+          "image": "",
           "label": "puzzle"
         },
         {
-          "image": "/images/cards/15_categories/toys/teddy_bear.png",
+          "image": "",
           "label": "teddy bear"
         },
         {
-          "image": "/images/cards/15_categories/toys/toy_car.png",
+          "image": "",
           "label": "toy car"
         }
       ],
@@ -263,27 +263,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/vehicles/car.png",
+          "image": "",
           "label": "car"
         },
         {
-          "image": "/images/cards/15_categories/vehicles/truck.png",
+          "image": "",
           "label": "truck"
         },
         {
-          "image": "/images/cards/15_categories/vehicles/bike.png",
+          "image": "",
           "label": "bike"
         },
         {
-          "image": "/images/cards/15_categories/vehicles/airplane.png",
+          "image": "",
           "label": "airplane"
         },
         {
-          "image": "/images/cards/15_categories/vehicles/boat.png",
+          "image": "",
           "label": "boat"
         },
         {
-          "image": "/images/cards/15_categories/vehicles/train.png",
+          "image": "",
           "label": "train"
         }
       ],
@@ -300,27 +300,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/furniture/chair.png",
+          "image": "",
           "label": "chair"
         },
         {
-          "image": "/images/cards/15_categories/furniture/table.png",
+          "image": "",
           "label": "table"
         },
         {
-          "image": "/images/cards/15_categories/furniture/bed.png",
+          "image": "",
           "label": "bed"
         },
         {
-          "image": "/images/cards/15_categories/furniture/couch.png",
+          "image": "",
           "label": "couch"
         },
         {
-          "image": "/images/cards/15_categories/furniture/dresser.png",
+          "image": "",
           "label": "dresser"
         },
         {
-          "image": "/images/cards/15_categories/furniture/desk.png",
+          "image": "",
           "label": "desk"
         }
       ],
@@ -337,27 +337,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/instruments/guitar.png",
+          "image": "",
           "label": "guitar"
         },
         {
-          "image": "/images/cards/15_categories/instruments/piano.png",
+          "image": "",
           "label": "piano"
         },
         {
-          "image": "/images/cards/15_categories/instruments/drums.png",
+          "image": "",
           "label": "drums"
         },
         {
-          "image": "/images/cards/15_categories/instruments/violin.png",
+          "image": "",
           "label": "violin"
         },
         {
-          "image": "/images/cards/15_categories/instruments/trumpet.png",
+          "image": "",
           "label": "trumpet"
         },
         {
-          "image": "/images/cards/15_categories/instruments/flute.png",
+          "image": "",
           "label": "flute"
         }
       ],
@@ -374,27 +374,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/school/pencil.png",
+          "image": "",
           "label": "pencil"
         },
         {
-          "image": "/images/cards/15_categories/school/eraser.png",
+          "image": "",
           "label": "eraser"
         },
         {
-          "image": "/images/cards/15_categories/school/ruler.png",
+          "image": "",
           "label": "ruler"
         },
         {
-          "image": "/images/cards/15_categories/school/crayons.png",
+          "image": "",
           "label": "crayons"
         },
         {
-          "image": "/images/cards/15_categories/school/notebook.png",
+          "image": "",
           "label": "notebook"
         },
         {
-          "image": "/images/cards/15_categories/school/scissors.png",
+          "image": "",
           "label": "scissors"
         }
       ],
@@ -411,27 +411,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/body/hand.png",
+          "image": "",
           "label": "hand"
         },
         {
-          "image": "/images/cards/15_categories/body/foot.png",
+          "image": "",
           "label": "foot"
         },
         {
-          "image": "/images/cards/15_categories/body/nose.png",
+          "image": "",
           "label": "nose"
         },
         {
-          "image": "/images/cards/15_categories/body/ear.png",
+          "image": "",
           "label": "ear"
         },
         {
-          "image": "/images/cards/15_categories/body/eye.png",
+          "image": "",
           "label": "eye"
         },
         {
-          "image": "/images/cards/15_categories/body/mouth.png",
+          "image": "",
           "label": "mouth"
         }
       ],
@@ -448,27 +448,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/kitchen/fork.png",
+          "image": "",
           "label": "fork"
         },
         {
-          "image": "/images/cards/15_categories/kitchen/spoon.png",
+          "image": "",
           "label": "spoon"
         },
         {
-          "image": "/images/cards/15_categories/kitchen/plate.png",
+          "image": "",
           "label": "plate"
         },
         {
-          "image": "/images/cards/15_categories/kitchen/cup.png",
+          "image": "",
           "label": "cup"
         },
         {
-          "image": "/images/cards/15_categories/kitchen/pot.png",
+          "image": "",
           "label": "pot"
         },
         {
-          "image": "/images/cards/15_categories/kitchen/knife.png",
+          "image": "",
           "label": "knife"
         }
       ],
@@ -485,27 +485,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/desserts/cake.png",
+          "image": "",
           "label": "cake"
         },
         {
-          "image": "/images/cards/15_categories/desserts/ice_cream.png",
+          "image": "",
           "label": "ice cream"
         },
         {
-          "image": "/images/cards/15_categories/desserts/cookies.png",
+          "image": "",
           "label": "cookies"
         },
         {
-          "image": "/images/cards/15_categories/desserts/pie.png",
+          "image": "",
           "label": "pie"
         },
         {
-          "image": "/images/cards/15_categories/desserts/cupcake.png",
+          "image": "",
           "label": "cupcake"
         },
         {
-          "image": "/images/cards/15_categories/desserts/brownie.png",
+          "image": "",
           "label": "brownie"
         }
       ],
@@ -522,27 +522,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/pets/dog.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "/images/cards/15_categories/pets/cat.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "/images/cards/15_categories/pets/hamster.png",
+          "image": "",
           "label": "hamster"
         },
         {
-          "image": "/images/cards/15_categories/pets/fish.png",
+          "image": "",
           "label": "fish"
         },
         {
-          "image": "/images/cards/15_categories/pets/bird.png",
+          "image": "",
           "label": "bird"
         },
         {
-          "image": "/images/cards/15_categories/pets/bunny.png",
+          "image": "",
           "label": "bunny"
         }
       ],
@@ -559,27 +559,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/farm/cow.png",
+          "image": "",
           "label": "cow"
         },
         {
-          "image": "/images/cards/15_categories/farm/pig.png",
+          "image": "",
           "label": "pig"
         },
         {
-          "image": "/images/cards/15_categories/farm/chicken.png",
+          "image": "",
           "label": "chicken"
         },
         {
-          "image": "/images/cards/15_categories/farm/horse.png",
+          "image": "",
           "label": "horse"
         },
         {
-          "image": "/images/cards/15_categories/farm/sheep.png",
+          "image": "",
           "label": "sheep"
         },
         {
-          "image": "/images/cards/15_categories/farm/goat.png",
+          "image": "",
           "label": "goat"
         }
       ],
@@ -596,27 +596,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/ocean/fish.png",
+          "image": "",
           "label": "fish"
         },
         {
-          "image": "/images/cards/15_categories/ocean/whale.png",
+          "image": "",
           "label": "whale"
         },
         {
-          "image": "/images/cards/15_categories/ocean/shark.png",
+          "image": "",
           "label": "shark"
         },
         {
-          "image": "/images/cards/15_categories/ocean/dolphin.png",
+          "image": "",
           "label": "dolphin"
         },
         {
-          "image": "/images/cards/15_categories/ocean/octopus.png",
+          "image": "",
           "label": "octopus"
         },
         {
-          "image": "/images/cards/15_categories/ocean/crab.png",
+          "image": "",
           "label": "crab"
         }
       ],
@@ -633,27 +633,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/insects/butterfly.png",
+          "image": "",
           "label": "butterfly"
         },
         {
-          "image": "/images/cards/15_categories/insects/bee.png",
+          "image": "",
           "label": "bee"
         },
         {
-          "image": "/images/cards/15_categories/insects/ant.png",
+          "image": "",
           "label": "ant"
         },
         {
-          "image": "/images/cards/15_categories/insects/ladybug.png",
+          "image": "",
           "label": "ladybug"
         },
         {
-          "image": "/images/cards/15_categories/insects/grasshopper.png",
+          "image": "",
           "label": "grasshopper"
         },
         {
-          "image": "/images/cards/15_categories/insects/dragonfly.png",
+          "image": "",
           "label": "dragonfly"
         }
       ],
@@ -670,27 +670,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/sports/baseball.png",
+          "image": "",
           "label": "baseball"
         },
         {
-          "image": "/images/cards/15_categories/sports/tennis_racket.png",
+          "image": "",
           "label": "tennis racket"
         },
         {
-          "image": "/images/cards/15_categories/sports/soccer_ball.png",
+          "image": "",
           "label": "soccer ball"
         },
         {
-          "image": "/images/cards/15_categories/sports/basketball.png",
+          "image": "",
           "label": "basketball"
         },
         {
-          "image": "/images/cards/15_categories/sports/helmet.png",
+          "image": "",
           "label": "helmet"
         },
         {
-          "image": "/images/cards/15_categories/sports/bat.png",
+          "image": "",
           "label": "bat"
         }
       ],
@@ -707,27 +707,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/buildings/house.png",
+          "image": "",
           "label": "house"
         },
         {
-          "image": "/images/cards/15_categories/buildings/store.png",
+          "image": "",
           "label": "store"
         },
         {
-          "image": "/images/cards/15_categories/buildings/hospital.png",
+          "image": "",
           "label": "hospital"
         },
         {
-          "image": "/images/cards/15_categories/buildings/apartment.png",
+          "image": "",
           "label": "apartment"
         },
         {
-          "image": "/images/cards/15_categories/buildings/church.png",
+          "image": "",
           "label": "church"
         },
         {
-          "image": "/images/cards/15_categories/buildings/barn.png",
+          "image": "",
           "label": "barn"
         }
       ],
@@ -744,27 +744,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/breakfast/cereal.png",
+          "image": "",
           "label": "cereal"
         },
         {
-          "image": "/images/cards/15_categories/breakfast/pancakes.png",
+          "image": "",
           "label": "pancakes"
         },
         {
-          "image": "/images/cards/15_categories/breakfast/eggs.png",
+          "image": "",
           "label": "eggs"
         },
         {
-          "image": "/images/cards/15_categories/breakfast/toast.png",
+          "image": "",
           "label": "toast"
         },
         {
-          "image": "/images/cards/15_categories/breakfast/bacon.png",
+          "image": "",
           "label": "bacon"
         },
         {
-          "image": "/images/cards/15_categories/breakfast/waffles.png",
+          "image": "",
           "label": "waffles"
         }
       ],
@@ -781,27 +781,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/flying/bird.png",
+          "image": "",
           "label": "bird"
         },
         {
-          "image": "/images/cards/15_categories/flying/airplane.png",
+          "image": "",
           "label": "airplane"
         },
         {
-          "image": "/images/cards/15_categories/flying/butterfly.png",
+          "image": "",
           "label": "butterfly"
         },
         {
-          "image": "/images/cards/15_categories/flying/kite.png",
+          "image": "",
           "label": "kite"
         },
         {
-          "image": "/images/cards/15_categories/flying/helicopter.png",
+          "image": "",
           "label": "helicopter"
         },
         {
-          "image": "/images/cards/15_categories/flying/bee.png",
+          "image": "",
           "label": "bee"
         }
       ],
@@ -818,27 +818,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/wheels/car.png",
+          "image": "",
           "label": "car"
         },
         {
-          "image": "/images/cards/15_categories/wheels/bike.png",
+          "image": "",
           "label": "bike"
         },
         {
-          "image": "/images/cards/15_categories/wheels/skateboard.png",
+          "image": "",
           "label": "skateboard"
         },
         {
-          "image": "/images/cards/15_categories/wheels/wagon.png",
+          "image": "",
           "label": "wagon"
         },
         {
-          "image": "/images/cards/15_categories/wheels/scooter.png",
+          "image": "",
           "label": "scooter"
         },
         {
-          "image": "/images/cards/15_categories/wheels/wheelchair.png",
+          "image": "",
           "label": "wheelchair"
         }
       ],
@@ -855,27 +855,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/cleaning/broom.png",
+          "image": "",
           "label": "broom"
         },
         {
-          "image": "/images/cards/15_categories/cleaning/mop.png",
+          "image": "",
           "label": "mop"
         },
         {
-          "image": "/images/cards/15_categories/cleaning/sponge.png",
+          "image": "",
           "label": "sponge"
         },
         {
-          "image": "/images/cards/15_categories/cleaning/soap.png",
+          "image": "",
           "label": "soap"
         },
         {
-          "image": "/images/cards/15_categories/cleaning/bucket.png",
+          "image": "",
           "label": "bucket"
         },
         {
-          "image": "/images/cards/15_categories/cleaning/vacuum.png",
+          "image": "",
           "label": "vacuum"
         }
       ],
@@ -892,27 +892,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/bathroom/toothbrush.png",
+          "image": "",
           "label": "toothbrush"
         },
         {
-          "image": "/images/cards/15_categories/bathroom/soap.png",
+          "image": "",
           "label": "soap"
         },
         {
-          "image": "/images/cards/15_categories/bathroom/towel.png",
+          "image": "",
           "label": "towel"
         },
         {
-          "image": "/images/cards/15_categories/bathroom/shampoo.png",
+          "image": "",
           "label": "shampoo"
         },
         {
-          "image": "/images/cards/15_categories/bathroom/toilet_paper.png",
+          "image": "",
           "label": "toilet paper"
         },
         {
-          "image": "/images/cards/15_categories/bathroom/comb.png",
+          "image": "",
           "label": "comb"
         }
       ],
@@ -929,27 +929,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/flowers/rose.png",
+          "image": "",
           "label": "rose"
         },
         {
-          "image": "/images/cards/15_categories/flowers/tulip.png",
+          "image": "",
           "label": "tulip"
         },
         {
-          "image": "/images/cards/15_categories/flowers/sunflower.png",
+          "image": "",
           "label": "sunflower"
         },
         {
-          "image": "/images/cards/15_categories/flowers/daisy.png",
+          "image": "",
           "label": "daisy"
         },
         {
-          "image": "/images/cards/15_categories/flowers/lily.png",
+          "image": "",
           "label": "lily"
         },
         {
-          "image": "/images/cards/15_categories/flowers/daffodil.png",
+          "image": "",
           "label": "daffodil"
         }
       ],
@@ -966,27 +966,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/shapes/circle.png",
+          "image": "",
           "label": "circle"
         },
         {
-          "image": "/images/cards/15_categories/shapes/square.png",
+          "image": "",
           "label": "square"
         },
         {
-          "image": "/images/cards/15_categories/shapes/triangle.png",
+          "image": "",
           "label": "triangle"
         },
         {
-          "image": "/images/cards/15_categories/shapes/rectangle.png",
+          "image": "",
           "label": "rectangle"
         },
         {
-          "image": "/images/cards/15_categories/shapes/star.png",
+          "image": "",
           "label": "star"
         },
         {
-          "image": "/images/cards/15_categories/shapes/heart.png",
+          "image": "",
           "label": "heart"
         }
       ],
@@ -1003,27 +1003,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/weather/sun.png",
+          "image": "",
           "label": "sun"
         },
         {
-          "image": "/images/cards/15_categories/weather/clouds.png",
+          "image": "",
           "label": "clouds"
         },
         {
-          "image": "/images/cards/15_categories/weather/rain.png",
+          "image": "",
           "label": "rain"
         },
         {
-          "image": "/images/cards/15_categories/weather/snow.png",
+          "image": "",
           "label": "snow"
         },
         {
-          "image": "/images/cards/15_categories/weather/lightning.png",
+          "image": "",
           "label": "lightning"
         },
         {
-          "image": "/images/cards/15_categories/weather/wind.png",
+          "image": "",
           "label": "wind"
         }
       ],
@@ -1040,27 +1040,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/baby/bottle.png",
+          "image": "",
           "label": "bottle"
         },
         {
-          "image": "/images/cards/15_categories/baby/pacifier.png",
+          "image": "",
           "label": "pacifier"
         },
         {
-          "image": "/images/cards/15_categories/baby/diaper.png",
+          "image": "",
           "label": "diaper"
         },
         {
-          "image": "/images/cards/15_categories/baby/crib.png",
+          "image": "",
           "label": "crib"
         },
         {
-          "image": "/images/cards/15_categories/baby/rattle.png",
+          "image": "",
           "label": "rattle"
         },
         {
-          "image": "/images/cards/15_categories/baby/bib.png",
+          "image": "",
           "label": "bib"
         }
       ],
@@ -1077,27 +1077,27 @@
       "question": "Name an item you see",
       "images": [
         {
-          "image": "/images/cards/15_categories/snacks/chips.png",
+          "image": "",
           "label": "chips"
         },
         {
-          "image": "/images/cards/15_categories/snacks/popcorn.png",
+          "image": "",
           "label": "popcorn"
         },
         {
-          "image": "/images/cards/15_categories/snacks/crackers.png",
+          "image": "",
           "label": "crackers"
         },
         {
-          "image": "/images/cards/15_categories/snacks/pretzels.png",
+          "image": "",
           "label": "pretzels"
         },
         {
-          "image": "/images/cards/15_categories/snacks/fruit_snacks.png",
+          "image": "",
           "label": "fruit snacks"
         },
         {
-          "image": "/images/cards/15_categories/snacks/granola_bar.png",
+          "image": "",
           "label": "granola bar"
         }
       ],
@@ -1116,27 +1116,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/beverages/orange_juice.png",
+          "image": "",
           "label": "orange juice"
         },
         {
-          "image": "/images/cards/16_label_category/beverages/lemonade.png",
+          "image": "",
           "label": "lemonade"
         },
         {
-          "image": "/images/cards/16_label_category/beverages/coffee.png",
+          "image": "",
           "label": "coffee"
         },
         {
-          "image": "/images/cards/16_label_category/beverages/milk.png",
+          "image": "",
           "label": "milk"
         },
         {
-          "image": "/images/cards/16_label_category/beverages/tea.png",
+          "image": "",
           "label": "tea"
         },
         {
-          "image": "/images/cards/16_label_category/beverages/soda.png",
+          "image": "",
           "label": "soda"
         }
       ],
@@ -1149,27 +1149,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/tools/hammer.png",
+          "image": "",
           "label": "hammer"
         },
         {
-          "image": "/images/cards/16_label_category/tools/wrench.png",
+          "image": "",
           "label": "wrench"
         },
         {
-          "image": "/images/cards/16_label_category/tools/pliers.png",
+          "image": "",
           "label": "pliers"
         },
         {
-          "image": "/images/cards/16_label_category/tools/screwdriver.png",
+          "image": "",
           "label": "screwdriver"
         },
         {
-          "image": "/images/cards/16_label_category/tools/saw.png",
+          "image": "",
           "label": "saw"
         },
         {
-          "image": "/images/cards/16_label_category/tools/drill.png",
+          "image": "",
           "label": "drill"
         }
       ],
@@ -1181,27 +1181,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/fruits/apple.png",
+          "image": "",
           "label": "apple"
         },
         {
-          "image": "/images/cards/16_label_category/fruits/banana.png",
+          "image": "",
           "label": "banana"
         },
         {
-          "image": "/images/cards/16_label_category/fruits/grapes.png",
+          "image": "",
           "label": "grapes"
         },
         {
-          "image": "/images/cards/16_label_category/fruits/strawberry.png",
+          "image": "",
           "label": "strawberry"
         },
         {
-          "image": "/images/cards/16_label_category/fruits/orange.png",
+          "image": "",
           "label": "orange"
         },
         {
-          "image": "/images/cards/16_label_category/fruits/watermelon.png",
+          "image": "",
           "label": "watermelon"
         }
       ],
@@ -1214,27 +1214,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/vegetables/broccoli.png",
+          "image": "",
           "label": "broccoli"
         },
         {
-          "image": "/images/cards/16_label_category/vegetables/carrot.png",
+          "image": "",
           "label": "carrot"
         },
         {
-          "image": "/images/cards/16_label_category/vegetables/cucumber.png",
+          "image": "",
           "label": "cucumber"
         },
         {
-          "image": "/images/cards/16_label_category/vegetables/pepper.png",
+          "image": "",
           "label": "bell pepper"
         },
         {
-          "image": "/images/cards/16_label_category/vegetables/tomato.png",
+          "image": "",
           "label": "tomato"
         },
         {
-          "image": "/images/cards/16_label_category/vegetables/lettuce.png",
+          "image": "",
           "label": "lettuce"
         }
       ],
@@ -1248,27 +1248,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/animals/dog.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "/images/cards/16_label_category/animals/cat.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "/images/cards/16_label_category/animals/bird.png",
+          "image": "",
           "label": "bird"
         },
         {
-          "image": "/images/cards/16_label_category/animals/fish.png",
+          "image": "",
           "label": "fish"
         },
         {
-          "image": "/images/cards/16_label_category/animals/rabbit.png",
+          "image": "",
           "label": "rabbit"
         },
         {
-          "image": "/images/cards/16_label_category/animals/horse.png",
+          "image": "",
           "label": "horse"
         }
       ],
@@ -1281,27 +1281,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/clothing/shirt.png",
+          "image": "",
           "label": "shirt"
         },
         {
-          "image": "/images/cards/16_label_category/clothing/pants.png",
+          "image": "",
           "label": "pants"
         },
         {
-          "image": "/images/cards/16_label_category/clothing/shoes.png",
+          "image": "",
           "label": "shoes"
         },
         {
-          "image": "/images/cards/16_label_category/clothing/hat.png",
+          "image": "",
           "label": "hat"
         },
         {
-          "image": "/images/cards/16_label_category/clothing/socks.png",
+          "image": "",
           "label": "socks"
         },
         {
-          "image": "/images/cards/16_label_category/clothing/jacket.png",
+          "image": "",
           "label": "jacket"
         }
       ],
@@ -1314,27 +1314,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/toys/ball.png",
+          "image": "",
           "label": "ball"
         },
         {
-          "image": "/images/cards/16_label_category/toys/doll.png",
+          "image": "",
           "label": "doll"
         },
         {
-          "image": "/images/cards/16_label_category/toys/blocks.png",
+          "image": "",
           "label": "blocks"
         },
         {
-          "image": "/images/cards/16_label_category/toys/puzzle.png",
+          "image": "",
           "label": "puzzle"
         },
         {
-          "image": "/images/cards/16_label_category/toys/teddy_bear.png",
+          "image": "",
           "label": "teddy bear"
         },
         {
-          "image": "/images/cards/16_label_category/toys/toy_car.png",
+          "image": "",
           "label": "toy car"
         }
       ],
@@ -1347,27 +1347,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/vehicles/car.png",
+          "image": "",
           "label": "car"
         },
         {
-          "image": "/images/cards/16_label_category/vehicles/truck.png",
+          "image": "",
           "label": "truck"
         },
         {
-          "image": "/images/cards/16_label_category/vehicles/bike.png",
+          "image": "",
           "label": "bike"
         },
         {
-          "image": "/images/cards/16_label_category/vehicles/airplane.png",
+          "image": "",
           "label": "airplane"
         },
         {
-          "image": "/images/cards/16_label_category/vehicles/boat.png",
+          "image": "",
           "label": "boat"
         },
         {
-          "image": "/images/cards/16_label_category/vehicles/train.png",
+          "image": "",
           "label": "train"
         }
       ],
@@ -1381,27 +1381,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/furniture/chair.png",
+          "image": "",
           "label": "chair"
         },
         {
-          "image": "/images/cards/16_label_category/furniture/table.png",
+          "image": "",
           "label": "table"
         },
         {
-          "image": "/images/cards/16_label_category/furniture/bed.png",
+          "image": "",
           "label": "bed"
         },
         {
-          "image": "/images/cards/16_label_category/furniture/couch.png",
+          "image": "",
           "label": "couch"
         },
         {
-          "image": "/images/cards/16_label_category/furniture/dresser.png",
+          "image": "",
           "label": "dresser"
         },
         {
-          "image": "/images/cards/16_label_category/furniture/desk.png",
+          "image": "",
           "label": "desk"
         }
       ],
@@ -1413,27 +1413,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/instruments/guitar.png",
+          "image": "",
           "label": "guitar"
         },
         {
-          "image": "/images/cards/16_label_category/instruments/piano.png",
+          "image": "",
           "label": "piano"
         },
         {
-          "image": "/images/cards/16_label_category/instruments/drums.png",
+          "image": "",
           "label": "drums"
         },
         {
-          "image": "/images/cards/16_label_category/instruments/violin.png",
+          "image": "",
           "label": "violin"
         },
         {
-          "image": "/images/cards/16_label_category/instruments/trumpet.png",
+          "image": "",
           "label": "trumpet"
         },
         {
-          "image": "/images/cards/16_label_category/instruments/flute.png",
+          "image": "",
           "label": "flute"
         }
       ],
@@ -1447,27 +1447,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/school/pencil.png",
+          "image": "",
           "label": "pencil"
         },
         {
-          "image": "/images/cards/16_label_category/school/eraser.png",
+          "image": "",
           "label": "eraser"
         },
         {
-          "image": "/images/cards/16_label_category/school/ruler.png",
+          "image": "",
           "label": "ruler"
         },
         {
-          "image": "/images/cards/16_label_category/school/crayons.png",
+          "image": "",
           "label": "crayons"
         },
         {
-          "image": "/images/cards/16_label_category/school/notebook.png",
+          "image": "",
           "label": "notebook"
         },
         {
-          "image": "/images/cards/16_label_category/school/scissors.png",
+          "image": "",
           "label": "scissors"
         }
       ],
@@ -1481,27 +1481,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/body/hand.png",
+          "image": "",
           "label": "hand"
         },
         {
-          "image": "/images/cards/16_label_category/body/foot.png",
+          "image": "",
           "label": "foot"
         },
         {
-          "image": "/images/cards/16_label_category/body/nose.png",
+          "image": "",
           "label": "nose"
         },
         {
-          "image": "/images/cards/16_label_category/body/ear.png",
+          "image": "",
           "label": "ear"
         },
         {
-          "image": "/images/cards/16_label_category/body/eye.png",
+          "image": "",
           "label": "eye"
         },
         {
-          "image": "/images/cards/16_label_category/body/mouth.png",
+          "image": "",
           "label": "mouth"
         }
       ],
@@ -1514,27 +1514,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/kitchen/fork.png",
+          "image": "",
           "label": "fork"
         },
         {
-          "image": "/images/cards/16_label_category/kitchen/spoon.png",
+          "image": "",
           "label": "spoon"
         },
         {
-          "image": "/images/cards/16_label_category/kitchen/plate.png",
+          "image": "",
           "label": "plate"
         },
         {
-          "image": "/images/cards/16_label_category/kitchen/cup.png",
+          "image": "",
           "label": "cup"
         },
         {
-          "image": "/images/cards/16_label_category/kitchen/pot.png",
+          "image": "",
           "label": "pot"
         },
         {
-          "image": "/images/cards/16_label_category/kitchen/knife.png",
+          "image": "",
           "label": "knife"
         }
       ],
@@ -1549,27 +1549,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/desserts/cake.png",
+          "image": "",
           "label": "cake"
         },
         {
-          "image": "/images/cards/16_label_category/desserts/ice_cream.png",
+          "image": "",
           "label": "ice cream"
         },
         {
-          "image": "/images/cards/16_label_category/desserts/cookies.png",
+          "image": "",
           "label": "cookies"
         },
         {
-          "image": "/images/cards/16_label_category/desserts/pie.png",
+          "image": "",
           "label": "pie"
         },
         {
-          "image": "/images/cards/16_label_category/desserts/cupcake.png",
+          "image": "",
           "label": "cupcake"
         },
         {
-          "image": "/images/cards/16_label_category/desserts/brownie.png",
+          "image": "",
           "label": "brownie"
         }
       ],
@@ -1584,27 +1584,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/pets/dog.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "/images/cards/16_label_category/pets/cat.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "/images/cards/16_label_category/pets/hamster.png",
+          "image": "",
           "label": "hamster"
         },
         {
-          "image": "/images/cards/16_label_category/pets/fish.png",
+          "image": "",
           "label": "fish"
         },
         {
-          "image": "/images/cards/16_label_category/pets/bird.png",
+          "image": "",
           "label": "bird"
         },
         {
-          "image": "/images/cards/16_label_category/pets/bunny.png",
+          "image": "",
           "label": "bunny"
         }
       ],
@@ -1617,27 +1617,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/farm/cow.png",
+          "image": "",
           "label": "cow"
         },
         {
-          "image": "/images/cards/16_label_category/farm/pig.png",
+          "image": "",
           "label": "pig"
         },
         {
-          "image": "/images/cards/16_label_category/farm/chicken.png",
+          "image": "",
           "label": "chicken"
         },
         {
-          "image": "/images/cards/16_label_category/farm/horse.png",
+          "image": "",
           "label": "horse"
         },
         {
-          "image": "/images/cards/16_label_category/farm/sheep.png",
+          "image": "",
           "label": "sheep"
         },
         {
-          "image": "/images/cards/16_label_category/farm/goat.png",
+          "image": "",
           "label": "goat"
         }
       ],
@@ -1650,27 +1650,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/ocean/fish.png",
+          "image": "",
           "label": "fish"
         },
         {
-          "image": "/images/cards/16_label_category/ocean/whale.png",
+          "image": "",
           "label": "whale"
         },
         {
-          "image": "/images/cards/16_label_category/ocean/shark.png",
+          "image": "",
           "label": "shark"
         },
         {
-          "image": "/images/cards/16_label_category/ocean/dolphin.png",
+          "image": "",
           "label": "dolphin"
         },
         {
-          "image": "/images/cards/16_label_category/ocean/octopus.png",
+          "image": "",
           "label": "octopus"
         },
         {
-          "image": "/images/cards/16_label_category/ocean/crab.png",
+          "image": "",
           "label": "crab"
         }
       ],
@@ -1685,27 +1685,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/insects/butterfly.png",
+          "image": "",
           "label": "butterfly"
         },
         {
-          "image": "/images/cards/16_label_category/insects/bee.png",
+          "image": "",
           "label": "bee"
         },
         {
-          "image": "/images/cards/16_label_category/insects/ant.png",
+          "image": "",
           "label": "ant"
         },
         {
-          "image": "/images/cards/16_label_category/insects/ladybug.png",
+          "image": "",
           "label": "ladybug"
         },
         {
-          "image": "/images/cards/16_label_category/insects/grasshopper.png",
+          "image": "",
           "label": "grasshopper"
         },
         {
-          "image": "/images/cards/16_label_category/insects/dragonfly.png",
+          "image": "",
           "label": "dragonfly"
         }
       ],
@@ -1720,27 +1720,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/sports/baseball.png",
+          "image": "",
           "label": "baseball"
         },
         {
-          "image": "/images/cards/16_label_category/sports/tennis_racket.png",
+          "image": "",
           "label": "tennis racket"
         },
         {
-          "image": "/images/cards/16_label_category/sports/soccer_ball.png",
+          "image": "",
           "label": "soccer ball"
         },
         {
-          "image": "/images/cards/16_label_category/sports/basketball.png",
+          "image": "",
           "label": "basketball"
         },
         {
-          "image": "/images/cards/16_label_category/sports/helmet.png",
+          "image": "",
           "label": "helmet"
         },
         {
-          "image": "/images/cards/16_label_category/sports/bat.png",
+          "image": "",
           "label": "bat"
         }
       ],
@@ -1754,27 +1754,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/breakfast/cereal.png",
+          "image": "",
           "label": "cereal"
         },
         {
-          "image": "/images/cards/16_label_category/breakfast/pancakes.png",
+          "image": "",
           "label": "pancakes"
         },
         {
-          "image": "/images/cards/16_label_category/breakfast/eggs.png",
+          "image": "",
           "label": "eggs"
         },
         {
-          "image": "/images/cards/16_label_category/breakfast/toast.png",
+          "image": "",
           "label": "toast"
         },
         {
-          "image": "/images/cards/16_label_category/breakfast/bacon.png",
+          "image": "",
           "label": "bacon"
         },
         {
-          "image": "/images/cards/16_label_category/breakfast/waffles.png",
+          "image": "",
           "label": "waffles"
         }
       ],
@@ -1788,27 +1788,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/flying/bird.png",
+          "image": "",
           "label": "bird"
         },
         {
-          "image": "/images/cards/16_label_category/flying/airplane.png",
+          "image": "",
           "label": "airplane"
         },
         {
-          "image": "/images/cards/16_label_category/flying/butterfly.png",
+          "image": "",
           "label": "butterfly"
         },
         {
-          "image": "/images/cards/16_label_category/flying/kite.png",
+          "image": "",
           "label": "kite"
         },
         {
-          "image": "/images/cards/16_label_category/flying/helicopter.png",
+          "image": "",
           "label": "helicopter"
         },
         {
-          "image": "/images/cards/16_label_category/flying/bee.png",
+          "image": "",
           "label": "bee"
         }
       ],
@@ -1822,27 +1822,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/wheels/car.png",
+          "image": "",
           "label": "car"
         },
         {
-          "image": "/images/cards/16_label_category/wheels/bike.png",
+          "image": "",
           "label": "bike"
         },
         {
-          "image": "/images/cards/16_label_category/wheels/skateboard.png",
+          "image": "",
           "label": "skateboard"
         },
         {
-          "image": "/images/cards/16_label_category/wheels/wagon.png",
+          "image": "",
           "label": "wagon"
         },
         {
-          "image": "/images/cards/16_label_category/wheels/scooter.png",
+          "image": "",
           "label": "scooter"
         },
         {
-          "image": "/images/cards/16_label_category/wheels/wheelchair.png",
+          "image": "",
           "label": "wheelchair"
         }
       ],
@@ -1856,27 +1856,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/cleaning/broom.png",
+          "image": "",
           "label": "broom"
         },
         {
-          "image": "/images/cards/16_label_category/cleaning/mop.png",
+          "image": "",
           "label": "mop"
         },
         {
-          "image": "/images/cards/16_label_category/cleaning/sponge.png",
+          "image": "",
           "label": "sponge"
         },
         {
-          "image": "/images/cards/16_label_category/cleaning/soap.png",
+          "image": "",
           "label": "soap"
         },
         {
-          "image": "/images/cards/16_label_category/cleaning/bucket.png",
+          "image": "",
           "label": "bucket"
         },
         {
-          "image": "/images/cards/16_label_category/cleaning/vacuum.png",
+          "image": "",
           "label": "vacuum"
         }
       ],
@@ -1890,27 +1890,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/bathroom/toothbrush.png",
+          "image": "",
           "label": "toothbrush"
         },
         {
-          "image": "/images/cards/16_label_category/bathroom/soap.png",
+          "image": "",
           "label": "soap"
         },
         {
-          "image": "/images/cards/16_label_category/bathroom/towel.png",
+          "image": "",
           "label": "towel"
         },
         {
-          "image": "/images/cards/16_label_category/bathroom/shampoo.png",
+          "image": "",
           "label": "shampoo"
         },
         {
-          "image": "/images/cards/16_label_category/bathroom/toilet_paper.png",
+          "image": "",
           "label": "toilet paper"
         },
         {
-          "image": "/images/cards/16_label_category/bathroom/comb.png",
+          "image": "",
           "label": "comb"
         }
       ],
@@ -1924,27 +1924,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/flowers/rose.png",
+          "image": "",
           "label": "rose"
         },
         {
-          "image": "/images/cards/16_label_category/flowers/tulip.png",
+          "image": "",
           "label": "tulip"
         },
         {
-          "image": "/images/cards/16_label_category/flowers/sunflower.png",
+          "image": "",
           "label": "sunflower"
         },
         {
-          "image": "/images/cards/16_label_category/flowers/daisy.png",
+          "image": "",
           "label": "daisy"
         },
         {
-          "image": "/images/cards/16_label_category/flowers/lily.png",
+          "image": "",
           "label": "lily"
         },
         {
-          "image": "/images/cards/16_label_category/flowers/daffodil.png",
+          "image": "",
           "label": "daffodil"
         }
       ],
@@ -1957,27 +1957,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/shapes/circle.png",
+          "image": "",
           "label": "circle"
         },
         {
-          "image": "/images/cards/16_label_category/shapes/square.png",
+          "image": "",
           "label": "square"
         },
         {
-          "image": "/images/cards/16_label_category/shapes/triangle.png",
+          "image": "",
           "label": "triangle"
         },
         {
-          "image": "/images/cards/16_label_category/shapes/rectangle.png",
+          "image": "",
           "label": "rectangle"
         },
         {
-          "image": "/images/cards/16_label_category/shapes/star.png",
+          "image": "",
           "label": "star"
         },
         {
-          "image": "/images/cards/16_label_category/shapes/heart.png",
+          "image": "",
           "label": "heart"
         }
       ],
@@ -1990,27 +1990,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/baby/bottle.png",
+          "image": "",
           "label": "bottle"
         },
         {
-          "image": "/images/cards/16_label_category/baby/pacifier.png",
+          "image": "",
           "label": "pacifier"
         },
         {
-          "image": "/images/cards/16_label_category/baby/diaper.png",
+          "image": "",
           "label": "diaper"
         },
         {
-          "image": "/images/cards/16_label_category/baby/crib.png",
+          "image": "",
           "label": "crib"
         },
         {
-          "image": "/images/cards/16_label_category/baby/rattle.png",
+          "image": "",
           "label": "rattle"
         },
         {
-          "image": "/images/cards/16_label_category/baby/bib.png",
+          "image": "",
           "label": "bib"
         }
       ],
@@ -2024,27 +2024,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/snacks/chips.png",
+          "image": "",
           "label": "chips"
         },
         {
-          "image": "/images/cards/16_label_category/snacks/popcorn.png",
+          "image": "",
           "label": "popcorn"
         },
         {
-          "image": "/images/cards/16_label_category/snacks/crackers.png",
+          "image": "",
           "label": "crackers"
         },
         {
-          "image": "/images/cards/16_label_category/snacks/pretzels.png",
+          "image": "",
           "label": "pretzels"
         },
         {
-          "image": "/images/cards/16_label_category/snacks/fruit_snacks.png",
+          "image": "",
           "label": "fruit snacks"
         },
         {
-          "image": "/images/cards/16_label_category/snacks/granola_bar.png",
+          "image": "",
           "label": "granola bar"
         }
       ],
@@ -2057,27 +2057,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/zoo/lion.png",
+          "image": "",
           "label": "lion"
         },
         {
-          "image": "/images/cards/16_label_category/zoo/elephant.png",
+          "image": "",
           "label": "elephant"
         },
         {
-          "image": "/images/cards/16_label_category/zoo/giraffe.png",
+          "image": "",
           "label": "giraffe"
         },
         {
-          "image": "/images/cards/16_label_category/zoo/zebra.png",
+          "image": "",
           "label": "zebra"
         },
         {
-          "image": "/images/cards/16_label_category/zoo/monkey.png",
+          "image": "",
           "label": "monkey"
         },
         {
-          "image": "/images/cards/16_label_category/zoo/tiger.png",
+          "image": "",
           "label": "tiger"
         }
       ],
@@ -2091,27 +2091,27 @@
       "question": "What category do these belong to?",
       "images": [
         {
-          "image": "/images/cards/16_label_category/jewelry/ring.png",
+          "image": "",
           "label": "ring"
         },
         {
-          "image": "/images/cards/16_label_category/jewelry/necklace.png",
+          "image": "",
           "label": "necklace"
         },
         {
-          "image": "/images/cards/16_label_category/jewelry/bracelet.png",
+          "image": "",
           "label": "bracelet"
         },
         {
-          "image": "/images/cards/16_label_category/jewelry/earrings.png",
+          "image": "",
           "label": "earrings"
         },
         {
-          "image": "/images/cards/16_label_category/jewelry/watch.png",
+          "image": "",
           "label": "watch"
         },
         {
-          "image": "/images/cards/16_label_category/jewelry/brooch.png",
+          "image": "",
           "label": "brooch"
         }
       ],
@@ -2127,15 +2127,15 @@
       "title": "Jobs / Occupations",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/jobs/doctor.png",
+          "image": "",
           "label": "doctor"
         },
         {
-          "image": "/images/cards/naming_categorizing/jobs/teacher.png",
+          "image": "",
           "label": "teacher"
         },
         {
-          "image": "/images/cards/naming_categorizing/jobs/firefighter.png",
+          "image": "",
           "label": "firefighter"
         }
       ],
@@ -2162,15 +2162,15 @@
       "title": "Fruits",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/fruits/apple.png",
+          "image": "",
           "label": "apple"
         },
         {
-          "image": "/images/cards/naming_categorizing/fruits/banana.png",
+          "image": "",
           "label": "banana"
         },
         {
-          "image": "/images/cards/naming_categorizing/fruits/orange.png",
+          "image": "",
           "label": "orange"
         }
       ],
@@ -2197,15 +2197,15 @@
       "title": "Vegetables",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/vegetables/carrot.png",
+          "image": "",
           "label": "carrot"
         },
         {
-          "image": "/images/cards/naming_categorizing/vegetables/broccoli.png",
+          "image": "",
           "label": "broccoli"
         },
         {
-          "image": "/images/cards/naming_categorizing/vegetables/tomato.png",
+          "image": "",
           "label": "tomato"
         }
       ],
@@ -2232,15 +2232,15 @@
       "title": "Pets",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/pets/dog.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "/images/cards/naming_categorizing/pets/cat.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "/images/cards/naming_categorizing/pets/fish.png",
+          "image": "",
           "label": "fish"
         }
       ],
@@ -2267,15 +2267,15 @@
       "title": "Ocean Animals",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/ocean_animals/dolphin.png",
+          "image": "",
           "label": "dolphin"
         },
         {
-          "image": "/images/cards/naming_categorizing/ocean_animals/shark.png",
+          "image": "",
           "label": "shark"
         },
         {
-          "image": "/images/cards/naming_categorizing/ocean_animals/whale.png",
+          "image": "",
           "label": "whale"
         }
       ],
@@ -2302,15 +2302,15 @@
       "title": "Furniture",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/furniture/chair.png",
+          "image": "",
           "label": "chair"
         },
         {
-          "image": "/images/cards/naming_categorizing/furniture/table.png",
+          "image": "",
           "label": "table"
         },
         {
-          "image": "/images/cards/naming_categorizing/furniture/bed.png",
+          "image": "",
           "label": "bed"
         }
       ],
@@ -2337,15 +2337,15 @@
       "title": "Clothing",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/clothing/shirt.png",
+          "image": "",
           "label": "shirt"
         },
         {
-          "image": "/images/cards/naming_categorizing/clothing/pants.png",
+          "image": "",
           "label": "pants"
         },
         {
-          "image": "/images/cards/naming_categorizing/clothing/hat.png",
+          "image": "",
           "label": "hat"
         }
       ],
@@ -2372,15 +2372,15 @@
       "title": "Vehicles",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/vehicles/car.png",
+          "image": "",
           "label": "car"
         },
         {
-          "image": "/images/cards/naming_categorizing/vehicles/truck.png",
+          "image": "",
           "label": "truck"
         },
         {
-          "image": "/images/cards/naming_categorizing/vehicles/airplane.png",
+          "image": "",
           "label": "airplane"
         }
       ],
@@ -2407,15 +2407,15 @@
       "title": "Kitchen Appliances",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/kitchen_appliances/microwave.png",
+          "image": "",
           "label": "microwave"
         },
         {
-          "image": "/images/cards/naming_categorizing/kitchen_appliances/blender.png",
+          "image": "",
           "label": "blender"
         },
         {
-          "image": "/images/cards/naming_categorizing/kitchen_appliances/toaster.png",
+          "image": "",
           "label": "toaster"
         }
       ],
@@ -2442,15 +2442,15 @@
       "title": "Body Parts",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/body_parts/hand.png",
+          "image": "",
           "label": "hand"
         },
         {
-          "image": "/images/cards/naming_categorizing/body_parts/foot.png",
+          "image": "",
           "label": "foot"
         },
         {
-          "image": "/images/cards/naming_categorizing/body_parts/nose.png",
+          "image": "",
           "label": "nose"
         }
       ],
@@ -2477,15 +2477,15 @@
       "title": "Colors",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/colors/red.png",
+          "image": "",
           "label": "red"
         },
         {
-          "image": "/images/cards/naming_categorizing/colors/blue.png",
+          "image": "",
           "label": "blue"
         },
         {
-          "image": "/images/cards/naming_categorizing/colors/green.png",
+          "image": "",
           "label": "green"
         }
       ],
@@ -2512,15 +2512,15 @@
       "title": "Shapes",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/shapes/circle.png",
+          "image": "",
           "label": "circle"
         },
         {
-          "image": "/images/cards/naming_categorizing/shapes/square.png",
+          "image": "",
           "label": "square"
         },
         {
-          "image": "/images/cards/naming_categorizing/shapes/triangle.png",
+          "image": "",
           "label": "triangle"
         }
       ],
@@ -2547,15 +2547,15 @@
       "title": "Beach Items",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/beach_items/bucket.png",
+          "image": "",
           "label": "bucket"
         },
         {
-          "image": "/images/cards/naming_categorizing/beach_items/sunglasses.png",
+          "image": "",
           "label": "sunglasses"
         },
         {
-          "image": "/images/cards/naming_categorizing/beach_items/towel.png",
+          "image": "",
           "label": "towel"
         }
       ],
@@ -2582,15 +2582,15 @@
       "title": "Drinks",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/drinks/juice.png",
+          "image": "",
           "label": "juice"
         },
         {
-          "image": "/images/cards/naming_categorizing/drinks/milk.png",
+          "image": "",
           "label": "milk"
         },
         {
-          "image": "/images/cards/naming_categorizing/drinks/water.png",
+          "image": "",
           "label": "water"
         }
       ],
@@ -2617,15 +2617,15 @@
       "title": "Musical Instruments",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/musical_instruments/guitar.png",
+          "image": "",
           "label": "guitar"
         },
         {
-          "image": "/images/cards/naming_categorizing/musical_instruments/piano.png",
+          "image": "",
           "label": "piano"
         },
         {
-          "image": "/images/cards/naming_categorizing/musical_instruments/drums.png",
+          "image": "",
           "label": "drums"
         }
       ],
@@ -2652,15 +2652,15 @@
       "title": "Weather",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/weather/sun.png",
+          "image": "",
           "label": "sun"
         },
         {
-          "image": "/images/cards/naming_categorizing/weather/rain.png",
+          "image": "",
           "label": "rain"
         },
         {
-          "image": "/images/cards/naming_categorizing/weather/snow.png",
+          "image": "",
           "label": "snow"
         }
       ],
@@ -2687,15 +2687,15 @@
       "title": "Seasons",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/seasons/spring.png",
+          "image": "",
           "label": "spring"
         },
         {
-          "image": "/images/cards/naming_categorizing/seasons/summer.png",
+          "image": "",
           "label": "summer"
         },
         {
-          "image": "/images/cards/naming_categorizing/seasons/winter.png",
+          "image": "",
           "label": "winter"
         }
       ],
@@ -2722,15 +2722,15 @@
       "title": "Cleaning Supplies",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/cleaning_supplies/broom.png",
+          "image": "",
           "label": "broom"
         },
         {
-          "image": "/images/cards/naming_categorizing/cleaning_supplies/mop.png",
+          "image": "",
           "label": "mop"
         },
         {
-          "image": "/images/cards/naming_categorizing/cleaning_supplies/sponge.png",
+          "image": "",
           "label": "sponge"
         }
       ],
@@ -2757,15 +2757,15 @@
       "title": "Sports Equipment",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/sports/baseball.png",
+          "image": "",
           "label": "baseball"
         },
         {
-          "image": "/images/cards/naming_categorizing/sports/soccer_ball.png",
+          "image": "",
           "label": "soccer ball"
         },
         {
-          "image": "/images/cards/naming_categorizing/sports/basketball.png",
+          "image": "",
           "label": "basketball"
         }
       ],
@@ -2792,15 +2792,15 @@
       "title": "Buildings",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/buildings/house.png",
+          "image": "",
           "label": "house"
         },
         {
-          "image": "/images/cards/naming_categorizing/buildings/school.png",
+          "image": "",
           "label": "school"
         },
         {
-          "image": "/images/cards/naming_categorizing/buildings/hospital.png",
+          "image": "",
           "label": "hospital"
         }
       ],
@@ -2827,15 +2827,15 @@
       "title": "Breakfast Foods",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/breakfast_foods/cereal.png",
+          "image": "",
           "label": "cereal"
         },
         {
-          "image": "/images/cards/naming_categorizing/breakfast_foods/pancakes.png",
+          "image": "",
           "label": "pancakes"
         },
         {
-          "image": "/images/cards/naming_categorizing/breakfast_foods/eggs.png",
+          "image": "",
           "label": "eggs"
         }
       ],
@@ -2862,15 +2862,15 @@
       "title": "Insects",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/insects/butterfly.png",
+          "image": "",
           "label": "butterfly"
         },
         {
-          "image": "/images/cards/naming_categorizing/insects/bee.png",
+          "image": "",
           "label": "bee"
         },
         {
-          "image": "/images/cards/naming_categorizing/insects/ant.png",
+          "image": "",
           "label": "ant"
         }
       ],
@@ -2897,15 +2897,15 @@
       "title": "Bathroom Items",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/bathroom_items/toothbrush.png",
+          "image": "",
           "label": "toothbrush"
         },
         {
-          "image": "/images/cards/naming_categorizing/bathroom_items/soap.png",
+          "image": "",
           "label": "soap"
         },
         {
-          "image": "/images/cards/naming_categorizing/bathroom_items/towel.png",
+          "image": "",
           "label": "towel"
         }
       ],
@@ -2932,15 +2932,15 @@
       "title": "Tools",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/tools/hammer.png",
+          "image": "",
           "label": "hammer"
         },
         {
-          "image": "/images/cards/naming_categorizing/tools/screwdriver.png",
+          "image": "",
           "label": "screwdriver"
         },
         {
-          "image": "/images/cards/naming_categorizing/tools/wrench.png",
+          "image": "",
           "label": "wrench"
         }
       ],
@@ -2967,15 +2967,15 @@
       "title": "Flowers",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/flowers/rose.png",
+          "image": "",
           "label": "rose"
         },
         {
-          "image": "/images/cards/naming_categorizing/flowers/tulip.png",
+          "image": "",
           "label": "tulip"
         },
         {
-          "image": "/images/cards/naming_categorizing/flowers/sunflower.png",
+          "image": "",
           "label": "sunflower"
         }
       ],
@@ -3002,15 +3002,15 @@
       "title": "Dairy Products",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/dairy_products/milk.png",
+          "image": "",
           "label": "milk"
         },
         {
-          "image": "/images/cards/naming_categorizing/dairy_products/cheese.png",
+          "image": "",
           "label": "cheese"
         },
         {
-          "image": "/images/cards/naming_categorizing/dairy_products/yogurt.png",
+          "image": "",
           "label": "yogurt"
         }
       ],
@@ -3037,15 +3037,15 @@
       "title": "Art Supplies",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/art_supplies/crayons.png",
+          "image": "",
           "label": "crayons"
         },
         {
-          "image": "/images/cards/naming_categorizing/art_supplies/paintbrush.png",
+          "image": "",
           "label": "paintbrush"
         },
         {
-          "image": "/images/cards/naming_categorizing/art_supplies/scissors.png",
+          "image": "",
           "label": "scissors"
         }
       ],
@@ -3072,15 +3072,15 @@
       "title": "Footwear",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/footwear/sneakers.png",
+          "image": "",
           "label": "sneakers"
         },
         {
-          "image": "/images/cards/naming_categorizing/footwear/boots.png",
+          "image": "",
           "label": "boots"
         },
         {
-          "image": "/images/cards/naming_categorizing/footwear/sandals.png",
+          "image": "",
           "label": "sandals"
         }
       ],
@@ -3107,15 +3107,15 @@
       "title": "Rooms",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/rooms/bedroom.png",
+          "image": "",
           "label": "bedroom"
         },
         {
-          "image": "/images/cards/naming_categorizing/rooms/kitchen.png",
+          "image": "",
           "label": "kitchen"
         },
         {
-          "image": "/images/cards/naming_categorizing/rooms/bathroom.png",
+          "image": "",
           "label": "bathroom"
         }
       ],
@@ -3142,15 +3142,15 @@
       "title": "Feelings",
       "images": [
         {
-          "image": "/images/cards/naming_categorizing/feelings/happy.png",
+          "image": "",
           "label": "happy"
         },
         {
-          "image": "/images/cards/naming_categorizing/feelings/sad.png",
+          "image": "",
           "label": "sad"
         },
         {
-          "image": "/images/cards/naming_categorizing/feelings/angry.png",
+          "image": "",
           "label": "angry"
         }
       ],
@@ -3179,15 +3179,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/bucket.png",
+          "image": "",
           "label": "bucket"
         },
         {
-          "image": "/images/cards/17_which_one/winter_boots.png",
+          "image": "",
           "label": "winter boots"
         },
         {
-          "image": "/images/cards/17_which_one/sunglasses.png",
+          "image": "",
           "label": "sunglasses"
         }
       ],
@@ -3197,15 +3197,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/apple.png",
+          "image": "",
           "label": "apple"
         },
         {
-          "image": "/images/cards/17_which_one/banana.png",
+          "image": "",
           "label": "banana"
         },
         {
-          "image": "/images/cards/17_which_one/chair.png",
+          "image": "",
           "label": "chair"
         }
       ],
@@ -3215,15 +3215,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/dog.png",
+          "image": "",
           "label": "dog"
         },
         {
-          "image": "/images/cards/17_which_one/cat.png",
+          "image": "",
           "label": "cat"
         },
         {
-          "image": "/images/cards/17_which_one/car.png",
+          "image": "",
           "label": "car"
         }
       ],
@@ -3233,15 +3233,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/surfboard.png",
+          "image": "",
           "label": "surfboard"
         },
         {
-          "image": "/images/cards/17_which_one/towel.png",
+          "image": "",
           "label": "towel"
         },
         {
-          "image": "/images/cards/17_which_one/snow_boots.png",
+          "image": "",
           "label": "snow boots"
         }
       ],
@@ -3251,15 +3251,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/fork.png",
+          "image": "",
           "label": "fork"
         },
         {
-          "image": "/images/cards/17_which_one/spoon.png",
+          "image": "",
           "label": "spoon"
         },
         {
-          "image": "/images/cards/17_which_one/pencil.png",
+          "image": "",
           "label": "pencil"
         }
       ],
@@ -3269,15 +3269,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/dolphin.png",
+          "image": "",
           "label": "dolphin"
         },
         {
-          "image": "/images/cards/17_which_one/shark.png",
+          "image": "",
           "label": "shark"
         },
         {
-          "image": "/images/cards/17_which_one/bicycle.png",
+          "image": "",
           "label": "bicycle"
         }
       ],
@@ -3287,15 +3287,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/t-shirt.png",
+          "image": "",
           "label": "t-shirt"
         },
         {
-          "image": "/images/cards/17_which_one/shorts.png",
+          "image": "",
           "label": "shorts"
         },
         {
-          "image": "/images/cards/17_which_one/toothbrush.png",
+          "image": "",
           "label": "toothbrush"
         }
       ],
@@ -3305,15 +3305,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/orange.png",
+          "image": "",
           "label": "orange"
         },
         {
-          "image": "/images/cards/17_which_one/strawberry.png",
+          "image": "",
           "label": "strawberry"
         },
         {
-          "image": "/images/cards/17_which_one/sock.png",
+          "image": "",
           "label": "sock"
         }
       ],
@@ -3323,15 +3323,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/seashell.png",
+          "image": "",
           "label": "seashell"
         },
         {
-          "image": "/images/cards/17_which_one/starfish.png",
+          "image": "",
           "label": "starfish"
         },
         {
-          "image": "/images/cards/17_which_one/refrigerator.png",
+          "image": "",
           "label": "refrigerator"
         }
       ],
@@ -3341,15 +3341,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/guitar.png",
+          "image": "",
           "label": "guitar"
         },
         {
-          "image": "/images/cards/17_which_one/piano.png",
+          "image": "",
           "label": "piano"
         },
         {
-          "image": "/images/cards/17_which_one/table.png",
+          "image": "",
           "label": "table"
         }
       ],
@@ -3359,15 +3359,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/swimsuit.png",
+          "image": "",
           "label": "swimsuit"
         },
         {
-          "image": "/images/cards/17_which_one/flip_flops.png",
+          "image": "",
           "label": "flip flops"
         },
         {
-          "image": "/images/cards/17_which_one/winter_coat.png",
+          "image": "",
           "label": "winter coat"
         }
       ],
@@ -3377,15 +3377,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/bed.png",
+          "image": "",
           "label": "bed"
         },
         {
-          "image": "/images/cards/17_which_one/pillow.png",
+          "image": "",
           "label": "pillow"
         },
         {
-          "image": "/images/cards/17_which_one/sandwich.png",
+          "image": "",
           "label": "sandwich"
         }
       ],
@@ -3395,15 +3395,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/airplane.png",
+          "image": "",
           "label": "airplane"
         },
         {
-          "image": "/images/cards/17_which_one/helicopter.png",
+          "image": "",
           "label": "helicopter"
         },
         {
-          "image": "/images/cards/17_which_one/banana.png",
+          "image": "",
           "label": "banana"
         }
       ],
@@ -3413,15 +3413,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/carrot.png",
+          "image": "",
           "label": "carrot"
         },
         {
-          "image": "/images/cards/17_which_one/cucumber.png",
+          "image": "",
           "label": "cucumber"
         },
         {
-          "image": "/images/cards/17_which_one/lamp.png",
+          "image": "",
           "label": "lamp"
         }
       ],
@@ -3431,15 +3431,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/sunscreen.png",
+          "image": "",
           "label": "sunscreen"
         },
         {
-          "image": "/images/cards/17_which_one/beach_ball.png",
+          "image": "",
           "label": "beach ball"
         },
         {
-          "image": "/images/cards/17_which_one/mittens.png",
+          "image": "",
           "label": "mittens"
         }
       ],
@@ -3449,15 +3449,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/eye.png",
+          "image": "",
           "label": "eye"
         },
         {
-          "image": "/images/cards/17_which_one/ear.png",
+          "image": "",
           "label": "ear"
         },
         {
-          "image": "/images/cards/17_which_one/book.png",
+          "image": "",
           "label": "book"
         }
       ],
@@ -3467,15 +3467,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/boat.png",
+          "image": "",
           "label": "boat"
         },
         {
-          "image": "/images/cards/17_which_one/sailboat.png",
+          "image": "",
           "label": "sailboat"
         },
         {
-          "image": "/images/cards/17_which_one/tree.png",
+          "image": "",
           "label": "tree"
         }
       ],
@@ -3485,15 +3485,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/crayon.png",
+          "image": "",
           "label": "crayon"
         },
         {
-          "image": "/images/cards/17_which_one/marker.png",
+          "image": "",
           "label": "marker"
         },
         {
-          "image": "/images/cards/17_which_one/apple.png",
+          "image": "",
           "label": "apple"
         }
       ],
@@ -3503,15 +3503,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/lifeguard.png",
+          "image": "",
           "label": "lifeguard"
         },
         {
-          "image": "/images/cards/17_which_one/firefighter.png",
+          "image": "",
           "label": "firefighter"
         },
         {
-          "image": "/images/cards/17_which_one/pizza.png",
+          "image": "",
           "label": "pizza"
         }
       ],
@@ -3521,15 +3521,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/seagull.png",
+          "image": "",
           "label": "seagull"
         },
         {
-          "image": "/images/cards/17_which_one/pelican.png",
+          "image": "",
           "label": "pelican"
         },
         {
-          "image": "/images/cards/17_which_one/sofa.png",
+          "image": "",
           "label": "sofa"
         }
       ],
@@ -3539,15 +3539,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/juice.png",
+          "image": "",
           "label": "juice"
         },
         {
-          "image": "/images/cards/17_which_one/milk.png",
+          "image": "",
           "label": "milk"
         },
         {
-          "image": "/images/cards/17_which_one/shoe.png",
+          "image": "",
           "label": "shoe"
         }
       ],
@@ -3557,15 +3557,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/sand.png",
+          "image": "",
           "label": "sand"
         },
         {
-          "image": "/images/cards/17_which_one/waves.png",
+          "image": "",
           "label": "waves"
         },
         {
-          "image": "/images/cards/17_which_one/clock.png",
+          "image": "",
           "label": "clock"
         }
       ],
@@ -3575,15 +3575,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/bunny.png",
+          "image": "",
           "label": "bunny"
         },
         {
-          "image": "/images/cards/17_which_one/hamster.png",
+          "image": "",
           "label": "hamster"
         },
         {
-          "image": "/images/cards/17_which_one/truck.png",
+          "image": "",
           "label": "truck"
         }
       ],
@@ -3593,15 +3593,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/bowl.png",
+          "image": "",
           "label": "bowl"
         },
         {
-          "image": "/images/cards/17_which_one/plate.png",
+          "image": "",
           "label": "plate"
         },
         {
-          "image": "/images/cards/17_which_one/sweater.png",
+          "image": "",
           "label": "sweater"
         }
       ],
@@ -3611,15 +3611,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/toothbrush.png",
+          "image": "",
           "label": "toothbrush"
         },
         {
-          "image": "/images/cards/17_which_one/soap.png",
+          "image": "",
           "label": "soap"
         },
         {
-          "image": "/images/cards/17_which_one/pizza.png",
+          "image": "",
           "label": "pizza"
         }
       ],
@@ -3629,15 +3629,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/umbrella.png",
+          "image": "",
           "label": "umbrella"
         },
         {
-          "image": "/images/cards/17_which_one/sunglasses.png",
+          "image": "",
           "label": "sunglasses"
         },
         {
-          "image": "/images/cards/17_which_one/drum.png",
+          "image": "",
           "label": "drum"
         }
       ],
@@ -3647,15 +3647,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/baseball.png",
+          "image": "",
           "label": "baseball"
         },
         {
-          "image": "/images/cards/17_which_one/soccer_ball.png",
+          "image": "",
           "label": "soccer ball"
         },
         {
-          "image": "/images/cards/17_which_one/chair.png",
+          "image": "",
           "label": "chair"
         }
       ],
@@ -3665,15 +3665,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/palm_tree.png",
+          "image": "",
           "label": "palm tree"
         },
         {
-          "image": "/images/cards/17_which_one/sunflower.png",
+          "image": "",
           "label": "sunflower"
         },
         {
-          "image": "/images/cards/17_which_one/telephone.png",
+          "image": "",
           "label": "telephone"
         }
       ],
@@ -3683,15 +3683,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/crab.png",
+          "image": "",
           "label": "crab"
         },
         {
-          "image": "/images/cards/17_which_one/jellyfish.png",
+          "image": "",
           "label": "jellyfish"
         },
         {
-          "image": "/images/cards/17_which_one/backpack.png",
+          "image": "",
           "label": "backpack"
         }
       ],
@@ -3701,15 +3701,15 @@
       "question": "Which one does not belong?",
       "images": [
         {
-          "image": "/images/cards/17_which_one/pancakes.png",
+          "image": "",
           "label": "pancakes"
         },
         {
-          "image": "/images/cards/17_which_one/waffles.png",
+          "image": "",
           "label": "waffles"
         },
         {
-          "image": "/images/cards/17_which_one/hat.png",
+          "image": "",
           "label": "hat"
         }
       ],
