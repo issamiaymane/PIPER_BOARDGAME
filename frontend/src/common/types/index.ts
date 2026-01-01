@@ -1,6 +1,6 @@
 /**
- * Shared TypeScript Types
- * Common types used across multiple features
+ * Common TypeScript Types
+ * Types used across multiple features
  */
 
 // Card data structure
@@ -22,5 +22,6 @@ export interface CardData {
 // Category data mapping
 export type CategoryData = Record<string, CardData[]>;
 
-// Handler types - re-exported from the single source of truth
-export type { HandlerType, HandlerConfig } from '../../constants/handler-map';
+// Handler types - re-exported from sources
+export type { HandlerType } from '@shared/categories';
+export type { HandlerConfig } from '@features/card-browser/index';

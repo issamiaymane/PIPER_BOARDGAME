@@ -32,14 +32,16 @@
       "@features/*": ["src/features/*"],
       "@constants/*": ["src/constants/*"],
       "@services/*": ["src/services/*"],
-      "@shared/*": ["src/shared/*"],
-      "@styles/*": ["src/styles/*"]
+      "@common/*": ["src/common/*"],
+      "@styles/*": ["src/styles/*"],
+      "@shared/*": ["../shared/*"]
     }
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "src/**/*.js"
+    "src/**/*.js",
+    "../shared/**/*.ts"
   ],
   "exclude": [
     "node_modules",

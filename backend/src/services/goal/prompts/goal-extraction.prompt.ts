@@ -6,73 +6,7 @@
  * Supports both ARTICULATION and LANGUAGE therapy goals.
  */
 
-/**
- * VALID ARTICULATION CATEGORY NAMES (use these exact values for goal_type)
- */
-const ARTICULATION_CATEGORIES = [
-  'Syllable Shapes', 'Phonology',
-  'B Sound', 'CH Sound', 'D Sound', 'F Sound', 'G Sound', 'H Sound',
-  'J Sound', 'K Sound', 'L Sound', 'L Blends Sound', 'M Sound', 'N Sound',
-  'Ng Sound', 'P Sound', 'R Sound', 'R Blends Sound', 'S Sound',
-  'S Blends Sound', 'Sh Sound', 'T Sound', 'Th Voiced Sound', 'Th Voiceless Sound',
-  'V Sound', 'W Sound', 'Y Sound', 'Z Sound', 'Consonant Clusters', 'Vowels'
-];
-
-/**
- * VALID LANGUAGE CATEGORY NAMES (use these exact values for goal_type)
- */
-const LANGUAGE_CATEGORIES = [
-  'Adjectives - Opposites', 'Descriptive Words - Opposites', 'Adverbs',
-  'Analogies Elementary', 'Analogies Middle', 'Analogies High',
-  'Antonyms', 'Antonym Name One - Middle', 'Antonyms Level 2',
-  'Synonyms', 'Synonym-Name One - Middle', 'Synonym Name One - Elementary', 'Synonyms Level 2',
-  'Categories - Label The Category', 'Categories - Identifying Members Of A Category', 'Which One Does Not Belong',
-  'Basic Spatial Concepts Fill In Word Or Phrase', 'Basic Temporal Concepts - Before And After',
-  'Before - After', 'Understanding Quantitative Concepts', 'Basic Temporal Concepts Pick First - Second-Third',
-  'Context Clues Define Word In Sentence', 'Context Clues - Define Word In Paragraph',
-  'Context Clues In Short Paragraphs', 'Context Clues In Paragraphs - Fill In The Blank',
-  'Describing', 'Describing - More Advanced', 'Describe The Scene Create One Sentence',
-  'Idioms', 'Metaphors Elementary', 'Metaphors Middle', 'Metaphors - Identify The Meaning',
-  'Metaphors - Identify The Meaning - Multiple Choice', 'Similes', 'Similes - Identify The Meaning',
-  'Similes - Identify The Meaning - Multiple Choice', 'Figurative Language - Identify The Meaning',
-  'Identify The Meaning', 'Multiple Meaning Words',
-  'Following 1-Step Directions', 'Following 2-Step Directions', 'Following Multistep Directions Level 2',
-  'Conditional Following Directions', 'Following Directions - Conditional',
-  'Do Vs Does', 'Has Vs Have', 'Is Vs Are', 'Was Vs Were', 'Third Person Singular',
-  'Coordinating Conjuctions', 'Subordinating Conjunctions',
-  'Inferencing Level 1', 'Inferencing Level 2', 'Inferencing Based On Images',
-  'Homophones',
-  'Negation', 'Negation Animals', 'Negation Clothing', 'Negation Colors', 'Negation Food', 'Negation Vehicles',
-  'Noun Naming', 'Nouns Set Of Three', 'Pronouns (He She They)', 'Pronouns - His Hers Him Her Their',
-  'Pronouns Mixed', 'Reflexive Pronouns', 'Possessives Common Nouns',
-  'Regular Plurals', 'Irregular Plurals',
-  'Prepositions', 'Prepositions Simple Images',
-  'Problem Solving', 'Problem Solving Based On Images', 'Problem Solving Part 2',
-  'Questions For You', 'Yes No Questions',
-  'Rhyming', 'Rhyming - Match The Words That Rhyme',
-  'Semantic Relationships', 'Comparatives - Superlatives', 'Compare And Contrast (Same And Different)',
-  'First Next Then Last', 'Sequencing Images - Set Of 3 Or 4', 'Short Stories Sequencing', 'How To',
-  'Short Stories Level 1', 'Short Stories Level 2', 'Short Stories - High', 'Wh- Questions Short Stories',
-  'Sight Words',
-  'Safety Signs',
-  'Verbs - Basic Actions', 'Verbs - Select From Three', 'Function Labeling',
-  'Future Tense', 'Past Tense Verbs Regular', 'Past Tense Verbs Irregular', 'Irregular Past Tense Verbs',
-  'Wh- Questions Mixed', 'Wh- Questions (What)', 'Wh- Questions (When)', 'Wh- Questions (Where)',
-  'Wh- Questions (Who)', 'Wh- Questions (Why)', 'Wh Questions With Picture Choices', 'Who Questions - Four Quadrants',
-  'What Will Happen', 'What Will Happen - Predictions',
-  'Building Sentences Level 1 - Elementary', 'Building Sentences Level 2 - Elementary',
-  'Expanding Sentences - Images With Who What Where',
-  'Naming And Categorizing', 'Identifying Parts Of A Whole',
-  'Common Items Around The House', 'Naming Community Helpers', 'Personal Hygiene Items',
-  'Vocabulary - Basic Vocab', 'Vocabulary - Core Vocab', 'Vocabulary - Animals', 'Vocabulary - Food',
-  'Vocabulary - Clothing', 'Vocabulary - House', 'Vocabulary - School', 'Vocabulary - Beach',
-  'Vocabulary - Color', 'Vocabulary - Shapes', 'Vocabulary - Parts Of The Body',
-  'Vocabulary - Parts Of The Body Preschool', 'Vocabulary - Musical Instruments', 'Vocabulary - Sports',
-  'Vocabulary - Vehicles', 'Vocabulary - Vehicles Preschool', 'Vocabulary - Places In A Town Or City',
-  'Vocabulary - Seasonal Fall', 'Vocabulary - Seasonal Spring', 'Vocabulary - Seasonal Winter',
-  'Vocabulary - Halloween', 'Vocabulary - Food Real Images', 'Vocabulary General',
-  'Identify What Is Missing'
-];
+import { ARTICULATION_CATEGORIES, LANGUAGE_CATEGORIES } from '@shared/categories';
 
 export const GOAL_EXTRACTION_PROMPT = `
 IEP GOAL EXTRACTION SYSTEM

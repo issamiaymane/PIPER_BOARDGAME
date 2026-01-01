@@ -3,6 +3,8 @@
  * Usage: import { createLoadingScreen, hideLoadingScreen } from './components/LoadingScreen'
  */
 
+import './loading-screen.css';
+
 export interface LoadingScreenOptions {
     title?: string;
     container?: HTMLElement;

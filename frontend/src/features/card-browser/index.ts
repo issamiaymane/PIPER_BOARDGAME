@@ -5,8 +5,8 @@
 
 /// <reference types="vite/client" />
 
-import { CATEGORY_HANDLER_MAP, type HandlerType } from '@root-shared/categories';
-import { hideLoadingScreen } from '../../shared/components/LoadingScreen/LoadingScreen';
+import { CATEGORY_HANDLER_MAP, type HandlerType } from '@shared/categories';
+import { hideLoadingScreen } from '@common/components/LoadingScreen/LoadingScreen';
 
 // Type definitions
 interface CardData {
@@ -42,8 +42,8 @@ const languageFiles: Set<string> = new Set();
 const articulationFiles: Set<string> = new Set();
 
 // Import all JSON files using Vite's glob import
-const languageModules = import.meta.glob('@root-shared/cards/language/*.json', { eager: true });
-const articulationModules = import.meta.glob('@root-shared/cards/articulation/*.json', { eager: true });
+const languageModules = import.meta.glob('@shared/cards/language/*.json', { eager: true });
+const articulationModules = import.meta.glob('@shared/cards/articulation/*.json', { eager: true });
 
 // Build the data object from imported JSON files
 function loadJsonModules(modules: Record<string, unknown>, fileSet: Set<string>): CategoryData {

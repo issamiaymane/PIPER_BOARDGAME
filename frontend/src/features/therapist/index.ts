@@ -4,8 +4,8 @@
  */
 
 import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../../services/api';
-import { CATEGORY_HANDLER_MAP, LANGUAGE_CATEGORIES, ARTICULATION_CATEGORIES } from '@root-shared/categories';
-import { hideLoadingScreen } from '../../shared/components/LoadingScreen';
+// Categories imported from @shared/categories are defined in ORGANIZED_*_CATEGORIES below
+import { hideLoadingScreen } from '@common/components/LoadingScreen';
 
 /**
  * Organized category groups for goal type selection UI

@@ -42,8 +42,9 @@ export default defineConfig({
       '@features': resolve(__dirname, 'src/features'),
       '@constants': resolve(__dirname, 'src/constants'),
       '@services': resolve(__dirname, 'src/services'),
-      '@shared': resolve(__dirname, 'src/shared'),
+      '@common': resolve(__dirname, 'src/common'),
       '@styles': resolve(__dirname, 'src/styles'),
+      '@shared': resolve(__dirname, '../shared'),
     }
   }
 });
