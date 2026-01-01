@@ -39,8 +39,10 @@ RUN npm run build
 # Remove dev dependencies to reduce image size
 RUN npm prune --production
 
+# Create production package.json for compiled shared code
+RUN echo '{"name":"@shared","type":"module","exports":{"./categories":"./categories.js"}}' > dist/shared/package.json
+
 # Fix @shared symlink to point to compiled JS (not TS source)
-# Must be AFTER npm prune to avoid being reset
 RUN rm -rf node_modules/@shared && ln -s ../dist/shared node_modules/@shared
 
 # Copy frontend files
