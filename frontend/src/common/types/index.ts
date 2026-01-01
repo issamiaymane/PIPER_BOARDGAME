@@ -24,4 +24,4 @@ export type CategoryData = Record<string, CardData[]>;
 
 // Handler types - re-exported from sources
 export type { HandlerType } from '@shared/categories';
-export type { HandlerConfig } from '@features/card-browser/index';
+export type { HandlerConfig } from '@features/cards/index';

@@ -4,92 +4,100 @@
 
 An interactive speech therapy application featuring educational board games, therapist dashboards with AI-powered PDF extraction, and progress tracking for speech therapy professionals.
 
-## 🎯 Features
+## Features
 
-- **🎮 Interactive Board Game** - Educational speech therapy games with 141+ card categories
-- **👨‍⚕️ Therapist Dashboard** - Manage students, track progress, and generate IEP reports
-- **🤖 AI-Powered Extraction** - Automatically extract evaluation data and goals from PDFs
-- **📊 Progress Tracking** - Monitor student performance and generate reports
-- **🎨 Card Browser** - Browse and preview all therapy cards
+- **Interactive Board Game** - Educational speech therapy games with 141+ card categories
+- **Therapist Dashboard** - Manage students, track progress, and generate IEP reports
+- **AI-Powered Extraction** - Automatically extract evaluation data and goals from PDFs
+- **Progress Tracking** - Monitor student performance and generate reports
+- **Card Browser** - Browse and preview all therapy cards
+- **Seasonal Themes** - Spring, Summer, Autumn, and Winter themes with persistent selection
 
-## 📁 Project Structure
+## Project Structure
 
-This is a **monorepo** containing both frontend and backend:
+This is a **monorepo** with shared code between frontend and backend:
 
 ```
-boardgame-clear-backend/
-├── frontend/                   # Vanilla TypeScript + Vite
-│   ├── public/                # Static assets
-│   │   ├── images/           # Card images, icons
-│   │   ├── sounds/           # Audio effects
-│   │   └── favicon.svg
+boardgame/
+├── shared/                      # Shared code between frontend & backend
+│   ├── categories.ts           # Category definitions & handler mappings
+│   ├── cards/                  # Card data JSON files
+│   │   ├── language/          # Language therapy cards (30+ files)
+│   │   └── articulation/      # Articulation cards (20+ files)
+│   └── package.json           # ESM package config
+│
+├── frontend/                    # Vanilla TypeScript + Vite
+│   ├── public/                 # Static assets
+│   │   ├── css/               # Global CSS (loading screen)
+│   │   ├── images/            # Card images, icons
+│   │   └── sounds/            # Audio effects
 │   ├── src/
-│   │   ├── features/         # Feature modules
-│   │   │   ├── boardgame/   # Board game feature
+│   │   ├── features/          # Feature modules
+│   │   │   ├── home/         # Home page
+│   │   │   ├── boardgame/    # Board game feature
 │   │   │   ├── card-browser/ # Card browser feature
-│   │   │   └── therapist/   # Therapist dashboard
-│   │   ├── shared/          # Shared code
-│   │   │   ├── components/  # Reusable UI components
-│   │   │   ├── hooks/       # Custom hooks
-│   │   │   ├── types/       # Shared TypeScript types
-│   │   │   └── utils/       # Helper functions
-│   │   ├── constants/       # Static data & card definitions
-│   │   ├── services/        # API service layer
-│   │   └── styles/          # CSS files
-│   ├── boardgame.html       # Board game page
-│   ├── card-browser.html    # Card browser page
-│   ├── therapist.html       # Therapist dashboard page
+│   │   │   └── therapist/    # Therapist dashboard
+│   │   ├── common/           # Shared frontend code
+│   │   │   ├── components/   # Reusable UI components
+│   │   │   └── types/        # Shared TypeScript types
+│   │   ├── services/         # API service layer
+│   │   └── styles/           # CSS files
+│   ├── index.html            # Home page
+│   ├── boardgame.html        # Board game page
+│   ├── card-browser.html     # Card browser page
+│   ├── therapist.html        # Therapist dashboard page
 │   └── vite.config.ts
 │
-├── backend/                    # Node.js + Express + TypeScript
+├── backend/                     # Node.js + Express + TypeScript
 │   ├── src/
-│   │   ├── api/              # API layer
-│   │   │   ├── middleware/  # Express middleware
-│   │   │   └── routes/      # API routes
-│   │   ├── services/        # Business logic
-│   │   │   ├── evaluation/  # Evaluation PDF extraction
-│   │   │   ├── goal/        # IEP goal extraction
+│   │   ├── api/               # API layer
+│   │   │   ├── middleware/   # Express middleware
+│   │   │   └── routes/       # API routes
+│   │   ├── services/         # Business logic
+│   │   │   ├── evaluation/   # Evaluation PDF extraction
+│   │   │   ├── goal/         # IEP goal extraction
 │   │   │   ├── auth.service.ts
 │   │   │   ├── database.ts
 │   │   │   └── student.service.ts
-│   │   ├── config/          # Configuration
-│   │   ├── types/           # TypeScript types
-│   │   └── utils/           # Utilities
+│   │   ├── config/           # Configuration
+│   │   └── types/            # TypeScript types
 │   └── data/
-│       ├── piper.db         # SQLite database
-│       └── uploads/         # PDF uploads
+│       ├── piper.db          # SQLite database
+│       └── uploads/          # PDF uploads
 │
-├── Dockerfile               # Docker configuration
-├── .dockerignore
-├── render.yaml              # Render.com deployment config
 └── README.md
 ```
 
-## 🚀 Technology Stack
+## Technology Stack
 
 ### Frontend
-- **Language:** TypeScript 5.9
+- **Language:** TypeScript 5.x
 - **Build Tool:** Vite 5.4
 - **Architecture:** Feature-Based Architecture
-- **Styling:** Vanilla CSS
+- **Styling:** Vanilla CSS with CSS Variables
 - **Module System:** ES Modules
+- **Path Aliases:** `@features`, `@common`, `@shared`, `@styles`, `@services`
 
 ### Backend
-- **Runtime:** Node.js
+- **Runtime:** Node.js 22+
 - **Framework:** Express.js 4.21
 - **Language:** TypeScript 5.6
 - **Database:** SQLite (better-sqlite3)
 - **Authentication:** JWT
 - **AI Integration:** OpenAI API
 - **Validation:** Zod
-- **File Upload:** Multer
-- **Architecture:** Layered/N-Tier
+- **Dev Runner:** tsx with watch mode
 
-## 🛠️ Development Setup
+### Shared
+- **Categories:** Single source of truth for all card categories and handler mappings
+- **Card Data:** JSON files for language and articulation therapy cards
+- **Import Alias:** `@shared` available in both frontend and backend
+
+## Development Setup
 
 ### Prerequisites
-- Node.js 18+
-- npm or yarn
+- Node.js 22+
+- npm
 
 ### Frontend Setup
 
@@ -103,9 +111,9 @@ npm run dev        # Start dev server at http://localhost:5173
 
 ```bash
 cd backend
-npm install
+npm install        # Also creates @shared symlink via postinstall
 
-# Create .env file from example
+# Create .env file
 cp .env.example .env
 # Edit .env and add your OPENAI_API_KEY
 
@@ -124,43 +132,39 @@ cd backend && npm run dev
 cd frontend && npm run dev
 ```
 
-## 📝 Available Scripts
+## Available Scripts
 
 ### Frontend (`/frontend`)
 ```bash
 npm run dev          # Start Vite dev server
-npm run build        # Build for production (type-check + build)
+npm run build        # Build for production
 npm run preview      # Preview production build
 npm run typecheck    # Run TypeScript type checking
-npm run clean        # Clean build artifacts
 ```
 
 ### Backend (`/backend`)
 ```bash
-npm run dev          # Start dev server with hot reload
+npm run dev          # Start dev server with hot reload (tsx watch)
 npm run build        # Compile TypeScript to JavaScript
 npm run start        # Run production build
 npm run typecheck    # Run TypeScript type checking
-npm run clean        # Clean dist folder
 ```
 
-## 🐳 Docker Deployment
+## Path Aliases
 
-```bash
-# Build Docker image
-docker build -t piper-app .
+### Frontend (via Vite)
+- `@features/*` → `src/features/*`
+- `@common/*` → `src/common/*`
+- `@services/*` → `src/services/*`
+- `@styles/*` → `src/styles/*`
+- `@shared/*` → `../shared/*`
 
-# Run container
-docker run -p 3000:3000 -p 5173:5173 piper-app
-```
+### Backend (via symlink)
+- `@shared/*` → `../shared/*` (symlinked to `node_modules/@shared`)
 
-## 🌐 Deployment
+## Environment Variables
 
-This project is configured for deployment on [Render.com](https://render.com) using `render.yaml`.
-
-### Environment Variables
-
-**Backend** (`.env`):
+### Backend (`.env`)
 - `PORT` - Server port (default: 3000)
 - `NODE_ENV` - Environment (development/production)
 - `DATABASE_PATH` - SQLite database path
@@ -168,46 +172,44 @@ This project is configured for deployment on [Render.com](https://render.com) us
 - `OPENAI_API_KEY` - OpenAI API key for PDF extraction
 - `CORS_ORIGIN` - Allowed CORS origin
 
-**Frontend** (`.env`):
+### Frontend (`.env`)
 - `VITE_API_URL` - Backend API URL
 
-## 📚 Architecture
+## Architecture
+
+### Shared Module
+- **categories.ts** - Defines all category names, handler types, and category-to-handler mappings
+- **cards/** - JSON data files organized by therapy type (language/articulation)
+- Used by both frontend (card rendering) and backend (goal extraction prompts)
 
 ### Frontend: Feature-Based Architecture
-- **Features**: Self-contained modules (`boardgame`, `therapist`, `card-browser`)
-- **Shared**: Reusable components, hooks, utilities, and types
+- **Features**: Self-contained modules (`home`, `boardgame`, `therapist`, `card-browser`)
+- **Common**: Reusable components and types
 - **Services**: API communication layer
-- **Constants**: Static data and configurations
 
 ### Backend: Layered Architecture
 - **API Layer**: Routes and middleware
 - **Service Layer**: Business logic
 - **Data Layer**: Database access
-- **Clear separation** between layers
 
-## 🎮 Card Categories
+## Card Categories
 
-The application includes **141+ speech therapy card categories** covering:
-- Language skills (vocabulary, grammar, comprehension)
-- Articulation practice
-- Sequencing and reasoning
-- Story comprehension
-- And more!
+The application includes **141+ speech therapy card categories** with 8 handler types:
+- `single-answer` - Single text response
+- `multiple-answers` - Multiple questions per card
+- `multiple-choice` - Choice selection
+- `image-selection` - Image-based selection
+- `sequencing` - Order/sequence tasks
+- `building` - Word/sentence building
+- `conditional` - Yes/no conditional responses
+- `standard` - Standard card format
 
-## 🤖 AI Features
+## AI Features
 
 - **PDF Evaluation Extraction**: Automatically extract patient information from evaluation PDFs
 - **IEP Goal Extraction**: Parse and extract therapy goals from IEP documents
-- **Intelligent Field Detection**: AI identifies missing or uncertain information
+- **Category Matching**: AI matches extracted goals to appropriate card categories
 
-## 📄 License
+## License
 
 [Add your license here]
-
-## 👥 Contributors
-
-[Add contributors here]
-
-## 🐛 Issues & Support
-
-For bugs and feature requests, please create an issue in the repository.

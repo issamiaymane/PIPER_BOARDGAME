@@ -269,6 +269,27 @@ body {
     animation: shake 0.5s;
 }
 
+.form-footer {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.form-footer a {
+    color: var(--color-primary);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.form-footer a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
 /* ==========================================================================
    6. BUTTONS (Matching boardgame.html 3D button style)
    ========================================================================== */

@@ -6,7 +6,7 @@
 /// <reference types="vite/client" />
 
 import { CATEGORY_HANDLER_MAP } from '@shared/categories';
-import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../card-browser/index';
+import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../cards/index';
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
 
 // Types

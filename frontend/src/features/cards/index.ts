@@ -1021,7 +1021,7 @@ function initThemeSelector(): void {
     });
 }
 
-// Initialize only on card-browser page
+// Initialize only on cards page
 const isCardBrowserPage = document.getElementById('handlerSections') !== null;
 if (isCardBrowserPage) {
     if (document.readyState === 'loading') {

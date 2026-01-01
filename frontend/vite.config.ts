@@ -15,7 +15,7 @@ export default defineConfig({
       input: {
         boardgame: resolve(__dirname, 'boardgame.html'),
         therapist: resolve(__dirname, 'therapist.html'),
-        'card-browser': resolve(__dirname, 'card-browser.html'),
+        'cards': resolve(__dirname, 'cards.html'),
       },
       output: {
         assetFileNames: 'assets/[name]-[hash][extname]',
