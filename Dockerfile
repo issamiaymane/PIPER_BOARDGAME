@@ -14,13 +14,19 @@ RUN apt-get update && apt-get install -y \
 # Set working directory
 WORKDIR /app
 
-# Cache bust - increment to force rebuild: v4
-ARG CACHEBUST=4
+# Cache bust - increment to force rebuild: v5
+ARG CACHEBUST=5
 # Force cache invalidation by using the ARG
 RUN echo "Cache bust: $CACHEBUST"
 
-# Copy shared code FIRST (needed for postinstall symlink)
-COPY shared/ ./shared/
+# List what's in build context to debug
+RUN echo "Listing /app contents before any COPY"
+
+# Copy shared code - use ADD instead of COPY to avoid caching issues
+ADD shared/ ./shared/
+
+# Verify shared was copied
+RUN echo "=== After ADD shared ===" && ls -la /app/shared/ && wc -l /app/shared/categories.ts
 
 # Copy package files
 COPY backend/package*.json ./backend/
@@ -50,6 +56,9 @@ COPY frontend/package*.json ./frontend/
 WORKDIR /app/frontend
 RUN npm ci
 COPY frontend/ ./
+
+# Copy shared folder DIRECTLY into frontend's expected location
+COPY shared/ ../shared/
 
 # Debug: verify shared folder exists
 RUN echo "=== Checking shared folder ===" && ls -la /app/shared/ && cat /app/shared/categories.ts | head -5
