@@ -45,6 +45,10 @@ COPY frontend/package*.json ./frontend/
 WORKDIR /app/frontend
 RUN npm ci
 COPY frontend/ ./
+
+# Create symlink for @shared (from node_modules/@shared -> /app/shared)
+RUN ln -s ../../shared node_modules/@shared
+
 RUN npm run build
 
 # Set working directory to backend for runtime
