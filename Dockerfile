@@ -36,11 +36,12 @@ COPY backend/ ./
 # Build TypeScript
 RUN npm run build
 
-# Fix @shared symlink to point to compiled JS (not TS source)
-RUN rm -rf node_modules/@shared && ln -s ../dist/shared node_modules/@shared
-
 # Remove dev dependencies to reduce image size
 RUN npm prune --production
+
+# Fix @shared symlink to point to compiled JS (not TS source)
+# Must be AFTER npm prune to avoid being reset
+RUN rm -rf node_modules/@shared && ln -s ../dist/shared node_modules/@shared
 
 # Copy frontend files
 WORKDIR /app
