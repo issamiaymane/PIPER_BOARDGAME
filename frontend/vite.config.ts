@@ -46,6 +46,8 @@ export default defineConfig({
       '@services': resolve(__dirname, 'src/services'),
       '@common': resolve(__dirname, 'src/common'),
       '@styles': resolve(__dirname, 'src/styles'),
+      // Explicit mapping for @shared/categories to include .ts extension
+      '@shared/categories': resolve(__dirname, '../shared/categories.ts'),
       '@shared': resolve(__dirname, '../shared'),
     }
   }
