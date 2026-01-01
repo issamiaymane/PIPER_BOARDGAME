@@ -458,17 +458,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/trampoline/trampoline.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/trampoline/trampoline.png",
           "label": "Girl jumping on a trampoline"
         }
       ],
       "words": [
-        "She",
+        "the",
+        "trampoline",
         "jumped",
         "high",
         "on",
-        "the",
-        "trampoline"
+        "She"
       ],
       "answerSequence": [
         "She",
@@ -483,18 +483,18 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/bicycle/bicycle.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/bicycle/bicycle.png",
           "label": "Boy riding a bicycle"
         }
       ],
       "words": [
-        "He",
-        "rode",
-        "his",
         "bike",
         "to",
+        "park",
         "the",
-        "park"
+        "his",
+        "He",
+        "rode"
       ],
       "answerSequence": [
         "He",
@@ -510,17 +510,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/swimming/swimming.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/swimming/swimming.png",
           "label": "Girl swimming in a pool"
         }
       ],
       "words": [
         "She",
-        "swims",
-        "fast",
         "in",
-        "the",
-        "pool"
+        "swims",
+        "pool",
+        "fast",
+        "the"
       ],
       "answerSequence": [
         "She",
@@ -535,17 +535,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/baking/baking.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/baking/baking.png",
           "label": "Mom baking cookies"
         }
       ],
       "words": [
-        "Mom",
-        "baked",
-        "yummy",
-        "cookies",
         "for",
-        "us"
+        "us",
+        "Mom",
+        "cookies",
+        "baked",
+        "yummy"
       ],
       "answerSequence": [
         "Mom",
@@ -560,17 +560,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/reading/reading.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/reading/reading.png",
           "label": "Boy reading a book"
         }
       ],
       "words": [
-        "He",
-        "reads",
-        "a",
+        "night",
         "book",
+        "He",
+        "a",
         "every",
-        "night"
+        "reads"
       ],
       "answerSequence": [
         "He",
@@ -585,16 +585,16 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/dog_playing/dog_playing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/dog_playing/dog_playing.png",
           "label": "Dog playing with a ball"
         }
       ],
       "words": [
-        "The",
+        "with",
         "dog",
         "plays",
-        "with",
         "the",
+        "The",
         "ball"
       ],
       "answerSequence": [
@@ -610,16 +610,16 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/drawing/drawing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/drawing/drawing.png",
           "label": "Girl drawing a picture"
         }
       ],
       "words": [
-        "She",
-        "drew",
-        "a",
         "pretty",
+        "a",
+        "drew",
         "picture",
+        "She",
         "today"
       ],
       "answerSequence": [
@@ -635,16 +635,16 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/eating/eating.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/eating/eating.png",
           "label": "Family eating dinner"
         }
       ],
       "words": [
-        "We",
-        "eat",
-        "dinner",
         "together",
         "every",
+        "dinner",
+        "We",
+        "eat",
         "night"
       ],
       "answerSequence": [
@@ -660,17 +660,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/sleeping/sleeping.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/sleeping/sleeping.png",
           "label": "Cat sleeping on a couch"
         }
       ],
       "words": [
-        "The",
-        "cat",
         "sleeps",
+        "cat",
+        "The",
+        "couch",
         "on",
-        "the",
-        "couch"
+        "the"
       ],
       "answerSequence": [
         "The",
@@ -685,17 +685,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/playing/playing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/playing/playing.png",
           "label": "Children playing video games"
         }
       ],
       "words": [
         "They",
-        "play",
         "video",
+        "play",
+        "school",
         "games",
-        "after",
-        "school"
+        "after"
       ],
       "answerSequence": [
         "They",
@@ -710,17 +710,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/climbing/climbing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/climbing/climbing.png",
           "label": "Boy climbing a tree"
         }
       ],
       "words": [
         "He",
         "climbed",
+        "tree",
         "up",
         "the",
-        "big",
-        "tree"
+        "big"
       ],
       "answerSequence": [
         "He",
@@ -735,17 +735,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/cooking/cooking.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/cooking/cooking.png",
           "label": "Dad making pancakes"
         }
       ],
       "words": [
-        "Dad",
-        "makes",
-        "pancakes",
         "for",
-        "breakfast",
-        "today"
+        "makes",
+        "Dad",
+        "today",
+        "pancakes",
+        "breakfast"
       ],
       "answerSequence": [
         "Dad",
@@ -760,16 +760,16 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/painting/painting.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/painting/painting.png",
           "label": "Girl painting a rainbow"
         }
       ],
       "words": [
-        "She",
-        "painted",
         "a",
         "colorful",
-        "rainbow"
+        "rainbow",
+        "She",
+        "painted"
       ],
       "answerSequence": [
         "She",
@@ -783,15 +783,15 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/running/running.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/running/running.png",
           "label": "Boy running in the park"
         }
       ],
       "words": [
+        "around",
         "He",
         "ran",
         "fast",
-        "around",
         "the",
         "park"
       ],
@@ -808,14 +808,14 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/dancing/dancing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/dancing/dancing.png",
           "label": "Girl dancing to music"
         }
       ],
       "words": [
         "She",
-        "loves",
         "to",
+        "loves",
         "dance",
         "to",
         "music"
@@ -833,16 +833,16 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/building/building.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/building/building.png",
           "label": "Children building a block tower"
         }
       ],
       "words": [
-        "They",
-        "built",
         "a",
-        "tall",
         "block",
+        "built",
+        "tall",
+        "They",
         "tower"
       ],
       "answerSequence": [
@@ -858,17 +858,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/gardening/gardening.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/gardening/gardening.png",
           "label": "Grandma planting flowers"
         }
       ],
       "words": [
-        "Grandma",
-        "planted",
-        "pretty",
         "flowers",
-        "in",
-        "spring"
+        "Grandma",
+        "spring",
+        "pretty",
+        "planted",
+        "in"
       ],
       "answerSequence": [
         "Grandma",
@@ -883,17 +883,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/washing/washing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/washing/washing.png",
           "label": "Boy helping wash the car"
         }
       ],
       "words": [
         "He",
-        "helped",
-        "Dad",
         "wash",
+        "car",
         "the",
-        "car"
+        "helped",
+        "Dad"
       ],
       "answerSequence": [
         "He",
@@ -908,18 +908,18 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/recycling/recycling.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/recycling/recycling.png",
           "label": "Family recycling bottles"
         }
       ],
       "words": [
-        "We",
-        "put",
-        "bottles",
-        "in",
-        "the",
         "recycling",
-        "bin"
+        "in",
+        "bin",
+        "bottles",
+        "put",
+        "We",
+        "the"
       ],
       "answerSequence": [
         "We",
@@ -935,15 +935,15 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/drinking/drinking.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/drinking/drinking.png",
           "label": "Girl drinking orange juice"
         }
       ],
       "words": [
-        "She",
-        "drinks",
         "orange",
+        "drinks",
         "juice",
+        "She",
         "every",
         "morning"
       ],
@@ -960,18 +960,18 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/catching/catching.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/catching/catching.png",
           "label": "Boy catching a ball"
         }
       ],
       "words": [
-        "He",
         "caught",
-        "the",
         "ball",
+        "glove",
         "with",
+        "He",
         "his",
-        "glove"
+        "the"
       ],
       "answerSequence": [
         "He",
@@ -987,16 +987,16 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/singing/singing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/singing/singing.png",
           "label": "Girl singing into a microphone"
         }
       ],
       "words": [
         "She",
-        "sings",
+        "the",
         "songs",
         "into",
-        "the",
+        "sings",
         "microphone"
       ],
       "answerSequence": [
@@ -1012,17 +1012,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/feeding/feeding.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/feeding/feeding.png",
           "label": "Boy feeding the fish"
         }
       ],
       "words": [
-        "He",
-        "feeds",
-        "the",
-        "fish",
         "every",
-        "day"
+        "fish",
+        "the",
+        "feeds",
+        "day",
+        "He"
       ],
       "answerSequence": [
         "He",
@@ -1037,17 +1037,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/sliding/sliding.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/sliding/sliding.png",
           "label": "Girl going down a slide"
         }
       ],
       "words": [
-        "She",
-        "went",
         "down",
+        "went",
+        "slide",
+        "She",
         "the",
-        "big",
-        "slide"
+        "big"
       ],
       "answerSequence": [
         "She",
@@ -1062,17 +1062,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/swinging/swinging.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/swinging/swinging.png",
           "label": "Boy swinging high"
         }
       ],
       "words": [
-        "He",
-        "swings",
         "high",
-        "on",
         "the",
-        "swing"
+        "swing",
+        "He",
+        "on",
+        "swings"
       ],
       "answerSequence": [
         "He",
@@ -1087,18 +1087,18 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/blowing/blowing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/blowing/blowing.png",
           "label": "Girl blowing bubbles"
         }
       ],
       "words": [
-        "She",
-        "blows",
         "big",
-        "bubbles",
         "in",
+        "bubbles",
         "the",
-        "air"
+        "air",
+        "blows",
+        "She"
       ],
       "answerSequence": [
         "She",
@@ -1114,18 +1114,18 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/throwing/throwing.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/throwing/throwing.png",
           "label": "Boy throwing a frisbee"
         }
       ],
       "words": [
-        "He",
-        "throws",
         "the",
+        "throws",
+        "He",
         "frisbee",
+        "dog",
         "to",
-        "his",
-        "dog"
+        "his"
       ],
       "answerSequence": [
         "He",
@@ -1141,17 +1141,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/hiding/hiding.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/hiding/hiding.png",
           "label": "Cat hiding in a box"
         }
       ],
       "words": [
-        "The",
-        "cat",
         "hides",
-        "inside",
+        "cat",
+        "box",
+        "The",
         "the",
-        "box"
+        "inside"
       ],
       "answerSequence": [
         "The",
@@ -1166,17 +1166,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/jumping/jumping.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/jumping/jumping.png",
           "label": "Dog jumping over a puddle"
         }
       ],
       "words": [
-        "The",
-        "dog",
+        "puddle",
         "jumps",
+        "dog",
+        "The",
         "over",
-        "the",
-        "puddle"
+        "the"
       ],
       "answerSequence": [
         "The",
@@ -1191,17 +1191,17 @@
       "question": "Put the words in order to make a sentence.",
       "images": [
         {
-          "image": "/images/cards/14_building_sentences_l2/walking/walking.png",
+          "image": "../assets/images/cards/14_building_sentences_l2/walking/walking.png",
           "label": "Family walking on the beach"
         }
       ],
       "words": [
-        "We",
-        "walked",
-        "along",
-        "the",
         "sandy",
-        "beach"
+        "walked",
+        "We",
+        "along",
+        "beach",
+        "the"
       ],
       "answerSequence": [
         "We",
@@ -1215,272 +1215,1100 @@
   ],
   "Expanding Sentences - Images With Who What Where": [
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Mom Reading to Child",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/home/mom_reading_child.png",
+          "image": "../assets/images/cards/31_expanding_sentences/home/mom_reading_child.png",
           "label": "Mom reading to a child"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Mom",
+            "Mother",
+            "A mom",
+            "A mother",
+            "The mom"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "reading",
+            "reading a book",
+            "reading to the child",
+            "reading a story"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "on the couch",
+            "in the living room",
+            "at home",
+            "on a sofa"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Dad Cooking",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/home/dad_cooking.png",
+          "image": "../assets/images/cards/31_expanding_sentences/home/dad_cooking.png",
           "label": "Dad cooking in the kitchen"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Dad",
+            "Father",
+            "A dad",
+            "A father",
+            "The dad"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "cooking",
+            "making food",
+            "preparing a meal",
+            "cooking dinner"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in the kitchen",
+            "at the stove",
+            "at home"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Child Sleeping",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/home/child_sleeping.png",
+          "image": "../assets/images/cards/31_expanding_sentences/home/child_sleeping.png",
           "label": "Child sleeping in bed"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A child",
+            "The child",
+            "A kid",
+            "The kid",
+            "A boy",
+            "A girl"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "sleeping",
+            "resting",
+            "taking a nap",
+            "lying down"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in bed",
+            "in the bedroom",
+            "in their room",
+            "at home"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Family Eating Dinner",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/home/family_dinner.png",
+          "image": "../assets/images/cards/31_expanding_sentences/home/family_dinner.png",
           "label": "Family eating dinner"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "The family",
+            "A family",
+            "Family members",
+            "Everyone"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "eating dinner",
+            "having a meal",
+            "eating together",
+            "having dinner"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at the table",
+            "in the dining room",
+            "at home",
+            "in the kitchen"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Grandma Knitting",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/home/grandma_knitting.png",
+          "image": "../assets/images/cards/31_expanding_sentences/home/grandma_knitting.png",
           "label": "Grandma knitting"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Grandma",
+            "Grandmother",
+            "A grandma",
+            "The grandmother"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "knitting",
+            "making something",
+            "knitting yarn",
+            "crafting"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in the living room",
+            "on a chair",
+            "at home",
+            "in her room"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Child Brushing Teeth",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/home/child_brushing_teeth.png",
+          "image": "../assets/images/cards/31_expanding_sentences/home/child_brushing_teeth.png",
           "label": "Child brushing teeth"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A child",
+            "The child",
+            "A kid",
+            "The kid"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "brushing teeth",
+            "brushing their teeth",
+            "cleaning teeth"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in the bathroom",
+            "at the sink",
+            "at home"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Lifeguard on Tower",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/beach/lifeguard_tower.png",
+          "image": "../assets/images/cards/31_expanding_sentences/beach/lifeguard_tower.png",
           "label": "Lifeguard on a tower"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A lifeguard",
+            "The lifeguard"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "watching",
+            "looking out",
+            "guarding",
+            "keeping watch"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "on a tower",
+            "at the beach",
+            "on the lifeguard stand"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Child Building Sandcastle",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/beach/child_sandcastle.png",
+          "image": "../assets/images/cards/31_expanding_sentences/beach/child_sandcastle.png",
           "label": "Child building a sandcastle"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A child",
+            "The child",
+            "A kid",
+            "The kid"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "building a sandcastle",
+            "making a sandcastle",
+            "playing with sand"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at the beach",
+            "on the sand",
+            "by the ocean"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Family Swimming",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/beach/family_swimming.png",
+          "image": "../assets/images/cards/31_expanding_sentences/beach/family_swimming.png",
           "label": "Family swimming at the beach"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "The family",
+            "A family",
+            "Family members"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "swimming",
+            "playing in the water",
+            "having fun in the water"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at the beach",
+            "in the ocean",
+            "in the water",
+            "at the sea"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Surfer Riding Wave",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/beach/surfer_wave.png",
+          "image": "../assets/images/cards/31_expanding_sentences/beach/surfer_wave.png",
           "label": "Surfer riding a wave"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A surfer",
+            "The surfer"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "surfing",
+            "riding a wave",
+            "surfing on a wave"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in the ocean",
+            "at the beach",
+            "on a wave",
+            "in the water"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Person Applying Sunscreen",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/beach/person_sunscreen.png",
+          "image": "../assets/images/cards/31_expanding_sentences/beach/person_sunscreen.png",
           "label": "Person applying sunscreen"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A person",
+            "Someone",
+            "A man",
+            "A woman"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "applying sunscreen",
+            "putting on sunscreen",
+            "rubbing sunscreen"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at the beach",
+            "outside",
+            "on the sand"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Kids Collecting Seashells",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/beach/kids_seashells.png",
+          "image": "../assets/images/cards/31_expanding_sentences/beach/kids_seashells.png",
           "label": "Kids collecting seashells"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Kids",
+            "Children",
+            "The kids",
+            "Some children"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "collecting seashells",
+            "picking up shells",
+            "finding seashells"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at the beach",
+            "on the sand",
+            "by the ocean"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Worker on Roof",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/community/worker_roof.png",
+          "image": "../assets/images/cards/31_expanding_sentences/community/worker_roof.png",
           "label": "Worker on a roof"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A worker",
+            "The worker",
+            "A roofer",
+            "A construction worker"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "working",
+            "fixing the roof",
+            "building",
+            "repairing"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "on a roof",
+            "on top of a house",
+            "outside"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Firefighter Spraying Water",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/community/firefighter_water.png",
+          "image": "../assets/images/cards/31_expanding_sentences/community/firefighter_water.png",
           "label": "Firefighter spraying water"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A firefighter",
+            "The firefighter",
+            "A fireman"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "spraying water",
+            "putting out a fire",
+            "using a hose"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at a fire",
+            "outside",
+            "at a building",
+            "on the street"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Doctor with Patient",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/community/doctor_patient.png",
+          "image": "../assets/images/cards/31_expanding_sentences/community/doctor_patient.png",
           "label": "Doctor with a patient"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A doctor",
+            "The doctor"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "examining",
+            "helping a patient",
+            "checking",
+            "treating"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in a hospital",
+            "at the clinic",
+            "in an office",
+            "at the doctor's office"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Mail Carrier Delivering",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/community/mail_carrier.png",
+          "image": "../assets/images/cards/31_expanding_sentences/community/mail_carrier.png",
           "label": "Mail carrier delivering mail"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A mail carrier",
+            "The mail carrier",
+            "A mailman",
+            "A postal worker"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "delivering mail",
+            "bringing letters",
+            "giving out mail"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "on the street",
+            "at a house",
+            "in the neighborhood",
+            "outside"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Veterinarian Examining Dog",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/community/veterinarian_dog.png",
+          "image": "../assets/images/cards/31_expanding_sentences/community/veterinarian_dog.png",
           "label": "Veterinarian examining a dog"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A veterinarian",
+            "The vet",
+            "A vet",
+            "The veterinarian"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "examining a dog",
+            "checking the dog",
+            "helping a dog"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at the vet",
+            "in the clinic",
+            "at the animal hospital"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Chef Cooking",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/community/chef_kitchen.png",
+          "image": "../assets/images/cards/31_expanding_sentences/community/chef_kitchen.png",
           "label": "Chef cooking in a kitchen"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A chef",
+            "The chef",
+            "A cook"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "cooking",
+            "making food",
+            "preparing a dish"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in a kitchen",
+            "at a restaurant",
+            "in a commercial kitchen"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Children at Playground",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/outdoor/children_playground.png",
+          "image": "../assets/images/cards/31_expanding_sentences/outdoor/children_playground.png",
           "label": "Children playing at a playground"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Children",
+            "Kids",
+            "The children",
+            "Some kids"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "playing",
+            "having fun",
+            "playing on the equipment"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at a playground",
+            "at the park",
+            "outside"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Family Having Picnic",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/outdoor/family_picnic.png",
+          "image": "../assets/images/cards/31_expanding_sentences/outdoor/family_picnic.png",
           "label": "Family having a picnic"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "The family",
+            "A family",
+            "Family members"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "having a picnic",
+            "eating outside",
+            "enjoying food"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at the park",
+            "outside",
+            "on the grass",
+            "in a field"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Person Walking Dog",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/outdoor/person_walking_dog.png",
+          "image": "../assets/images/cards/31_expanding_sentences/outdoor/person_walking_dog.png",
           "label": "Person walking a dog"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A person",
+            "Someone",
+            "A man",
+            "A woman",
+            "The owner"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "walking a dog",
+            "taking the dog for a walk",
+            "exercising the dog"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "outside",
+            "on the sidewalk",
+            "at the park",
+            "in the neighborhood"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Kids Playing Soccer",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/outdoor/kids_soccer.png",
+          "image": "../assets/images/cards/31_expanding_sentences/outdoor/kids_soccer.png",
           "label": "Kids playing soccer"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Kids",
+            "Children",
+            "The kids",
+            "Some children"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "playing soccer",
+            "kicking a ball",
+            "playing a game"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "on a field",
+            "at the park",
+            "outside",
+            "on the grass"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Person Fishing",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/outdoor/person_fishing.png",
+          "image": "../assets/images/cards/31_expanding_sentences/outdoor/person_fishing.png",
           "label": "Person fishing"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A person",
+            "Someone",
+            "A man",
+            "A fisherman"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "fishing",
+            "catching fish",
+            "holding a fishing rod"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "at a lake",
+            "by the water",
+            "at a river",
+            "on a dock"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Family Camping",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/outdoor/family_camping.png",
+          "image": "../assets/images/cards/31_expanding_sentences/outdoor/family_camping.png",
           "label": "Family camping"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "The family",
+            "A family",
+            "Family members"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "camping",
+            "setting up camp",
+            "staying outdoors"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in the woods",
+            "at a campsite",
+            "in nature",
+            "outside"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Teacher at Board",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/learning/teacher_board.png",
+          "image": "../assets/images/cards/31_expanding_sentences/learning/teacher_board.png",
           "label": "Teacher writing on a board"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A teacher",
+            "The teacher"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "writing on the board",
+            "teaching",
+            "explaining something"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in a classroom",
+            "at school",
+            "at the front of the class"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Child Painting",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/learning/child_painting.png",
+          "image": "../assets/images/cards/31_expanding_sentences/learning/child_painting.png",
           "label": "Child painting"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "A child",
+            "The child",
+            "A kid",
+            "A student"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "painting",
+            "making art",
+            "drawing",
+            "creating artwork"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in a classroom",
+            "at school",
+            "at an art class",
+            "at home"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Kids Doing Science",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/learning/kids_science.png",
+          "image": "../assets/images/cards/31_expanding_sentences/learning/kids_science.png",
           "label": "Kids doing a science experiment"
         }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Kids",
+            "Children",
+            "Students",
+            "The kids"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "doing a science experiment",
+            "experimenting",
+            "learning science"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in a classroom",
+            "at school",
+            "in a science lab"
+          ]
+        }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Person Reading in Library",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/learning/person_reading.png",
+          "image": "../assets/images/cards/31_expanding_sentences/learning/person_reading.png",
           "label": "Person reading in a library"
         }
-      ]
-    },
-    {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
-      "images": [
+      ],
+      "questions": [
         {
-          "image": "/images/cards/31_expanding_sentences/learning/musicians_playing.png",
-          "label": "Musicians playing instruments"
+          "question": "Who?",
+          "answers": [
+            "A person",
+            "Someone",
+            "A reader",
+            "A student"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "reading",
+            "reading a book",
+            "studying"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in a library",
+            "at the library",
+            "at a desk"
+          ]
         }
       ]
     },
     {
-      "question": "Look at the picture. Tell me WHO is doing WHAT and WHERE.",
+      "title": "Musicians Playing",
       "images": [
         {
-          "image": "/images/cards/31_expanding_sentences/learning/children_dancing.png",
+          "image": "../assets/images/cards/31_expanding_sentences/learning/musicians_playing.png",
+          "label": "Musicians playing instruments"
+        }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Musicians",
+            "The musicians",
+            "People",
+            "Band members"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "playing instruments",
+            "making music",
+            "performing"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "on stage",
+            "in a music room",
+            "at a concert",
+            "at school"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Children Dancing",
+      "images": [
+        {
+          "image": "../assets/images/cards/31_expanding_sentences/learning/children_dancing.png",
           "label": "Children dancing"
+        }
+      ],
+      "questions": [
+        {
+          "question": "Who?",
+          "answers": [
+            "Children",
+            "Kids",
+            "The children",
+            "Dancers"
+          ]
+        },
+        {
+          "question": "What?",
+          "answers": [
+            "dancing",
+            "moving to music",
+            "performing a dance"
+          ]
+        },
+        {
+          "question": "Where?",
+          "answers": [
+            "in a studio",
+            "on stage",
+            "in a dance class",
+            "at school"
+          ]
         }
       ]
     }

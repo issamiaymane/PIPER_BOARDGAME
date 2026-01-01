@@ -4,7 +4,7 @@
       "question": "Name an antonym for tall",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/short_person/short.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/short_person/short.png",
           "label": "short"
         }
       ],
@@ -16,7 +16,7 @@
       "question": "Name an antonym for full",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/empty_plate/empty.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/empty_plate/empty.png",
           "label": "empty"
         }
       ],
@@ -28,7 +28,7 @@
       "question": "Name an antonym for neat",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/messy_room/messy.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/messy_room/messy.png",
           "label": "messy"
         }
       ],
@@ -40,7 +40,7 @@
       "question": "Name an antonym for fixed",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/broken_train/broken.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/broken_train/broken.png",
           "label": "broken"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "Name an antonym for empty",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/crowded_room/crowded.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/crowded_room/crowded.png",
           "label": "crowded"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "Name an antonym for clear",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/foggy_day/foggy.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/foggy_day/foggy.png",
           "label": "foggy"
         }
       ],
@@ -76,7 +76,7 @@
       "question": "Name an antonym for modern",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/ancient_castle/ancient.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/ancient_castle/ancient.png",
           "label": "ancient"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "Name an antonym for smooth",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/rough_sandpaper/rough.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/rough_sandpaper/rough.png",
           "label": "rough"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "Name an antonym for tiny",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/giant_elephant/giant.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/giant_elephant/giant.png",
           "label": "giant"
         }
       ],
@@ -112,7 +112,7 @@
       "question": "Name an antonym for deep",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/shallow_puddle/shallow.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/shallow_puddle/shallow.png",
           "label": "shallow"
         }
       ],
@@ -124,7 +124,7 @@
       "question": "Name an antonym for straight",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/curved_line/curved.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/curved_line/curved.png",
           "label": "curved"
         }
       ],
@@ -136,7 +136,7 @@
       "question": "Name an antonym for melted",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/frozen_lake/frozen.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/frozen_lake/frozen.png",
           "label": "frozen"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "Name an antonym for tame",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/wild_horses/wild.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/wild_horses/wild.png",
           "label": "wild"
         }
       ],
@@ -160,7 +160,7 @@
       "question": "Name an antonym for sharp",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/dull_knife/dull.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/dull_knife/dull.png",
           "label": "dull"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "Name an antonym for tight",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/loose_shirt/loose.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/loose_shirt/loose.png",
           "label": "loose"
         }
       ],
@@ -184,7 +184,7 @@
       "question": "Name an antonym for bright",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/pale_face/pale.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/pale_face/pale.png",
           "label": "pale"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "Name an antonym for expensive",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/cheap_toy/cheap.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/cheap_toy/cheap.png",
           "label": "cheap"
         }
       ],
@@ -208,7 +208,7 @@
       "question": "Name an antonym for wide",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/narrow_path/narrow.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/narrow_path/narrow.png",
           "label": "narrow"
         }
       ],
@@ -220,7 +220,7 @@
       "question": "Name an antonym for common",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/rare_gem/rare.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/rare_gem/rare.png",
           "label": "rare"
         }
       ],
@@ -232,7 +232,7 @@
       "question": "Name an antonym for exciting",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/boring_movie/boring.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/boring_movie/boring.png",
           "label": "boring"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "Name an antonym for polite",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/rude_person/rude.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/rude_person/rude.png",
           "label": "rude"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "Name an antonym for straight",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/crooked_line/crooked.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/crooked_line/crooked.png",
           "label": "crooked"
         }
       ],
@@ -268,7 +268,7 @@
       "question": "Name an antonym for silly",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/serious_face/serious.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/serious_face/serious.png",
           "label": "serious"
         }
       ],
@@ -280,7 +280,7 @@
       "question": "Name an antonym for rough",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/calm_ocean/calm.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/calm_ocean/calm.png",
           "label": "calm"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "Name an antonym for sweet",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/sour_lemon/sour.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/sour_lemon/sour.png",
           "label": "sour"
         }
       ],
@@ -304,7 +304,7 @@
       "question": "Name an antonym for full",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/empty_box/empty.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/empty_box/empty.png",
           "label": "empty"
         }
       ],
@@ -316,7 +316,7 @@
       "question": "Name an antonym for brave",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/cowardly_lion/cowardly.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/cowardly_lion/cowardly.png",
           "label": "cowardly"
         }
       ],
@@ -328,7 +328,7 @@
       "question": "Name an antonym for fresh",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/stale_bread/stale.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/stale_bread/stale.png",
           "label": "stale"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "Name an antonym for real",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/artificial_flower/artificial.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/artificial_flower/artificial.png",
           "label": "artificial"
         }
       ],
@@ -352,7 +352,7 @@
       "question": "Name an antonym for frozen",
       "images": [
         {
-          "image": "/images/cards/6_antonyms_name_one/melting_ice/melted.png",
+          "image": "../assets/images/cards/6_antonyms_name_one/melting_ice/melted.png",
           "label": "melted"
         }
       ],
@@ -366,11 +366,11 @@
       "question": "What is the opposite of fast?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/fast_slow/fast.png",
+          "image": "../assets/images/cards/7_antonyms/fast_slow/fast.png",
           "label": "fast"
         },
         {
-          "image": "/images/cards/7_antonyms/fast_slow/slow.png",
+          "image": "../assets/images/cards/7_antonyms/fast_slow/slow.png",
           "label": "slow"
         }
       ],
@@ -382,11 +382,11 @@
       "question": "What is the opposite of hot?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/hot_cold/hot.png",
+          "image": "../assets/images/cards/7_antonyms/hot_cold/hot.png",
           "label": "hot"
         },
         {
-          "image": "/images/cards/7_antonyms/hot_cold/cold.png",
+          "image": "../assets/images/cards/7_antonyms/hot_cold/cold.png",
           "label": "cold"
         }
       ],
@@ -398,11 +398,11 @@
       "question": "What is the opposite of big?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/big_small/big.png",
+          "image": "../assets/images/cards/7_antonyms/big_small/big.png",
           "label": "big"
         },
         {
-          "image": "/images/cards/7_antonyms/big_small/small.png",
+          "image": "../assets/images/cards/7_antonyms/big_small/small.png",
           "label": "small"
         }
       ],
@@ -414,11 +414,11 @@
       "question": "What is the opposite of happy?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/happy_sad/happy.png",
+          "image": "../assets/images/cards/7_antonyms/happy_sad/happy.png",
           "label": "happy"
         },
         {
-          "image": "/images/cards/7_antonyms/happy_sad/sad.png",
+          "image": "../assets/images/cards/7_antonyms/happy_sad/sad.png",
           "label": "sad"
         }
       ],
@@ -430,11 +430,11 @@
       "question": "What is the opposite of up?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/up_down/up.png",
+          "image": "../assets/images/cards/7_antonyms/up_down/up.png",
           "label": "up"
         },
         {
-          "image": "/images/cards/7_antonyms/up_down/down.png",
+          "image": "../assets/images/cards/7_antonyms/up_down/down.png",
           "label": "down"
         }
       ],
@@ -446,11 +446,11 @@
       "question": "What is the opposite of day?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/day_night/day.png",
+          "image": "../assets/images/cards/7_antonyms/day_night/day.png",
           "label": "day"
         },
         {
-          "image": "/images/cards/7_antonyms/day_night/night.png",
+          "image": "../assets/images/cards/7_antonyms/day_night/night.png",
           "label": "night"
         }
       ],
@@ -462,11 +462,11 @@
       "question": "What is the opposite of tall?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/tall_short/tall.png",
+          "image": "../assets/images/cards/7_antonyms/tall_short/tall.png",
           "label": "tall"
         },
         {
-          "image": "/images/cards/7_antonyms/tall_short/short.png",
+          "image": "../assets/images/cards/7_antonyms/tall_short/short.png",
           "label": "short"
         }
       ],
@@ -478,11 +478,11 @@
       "question": "What is the opposite of open?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/closed_open/open.png",
+          "image": "../assets/images/cards/7_antonyms/closed_open/open.png",
           "label": "open"
         },
         {
-          "image": "/images/cards/7_antonyms/closed_open/close.png",
+          "image": "../assets/images/cards/7_antonyms/closed_open/close.png",
           "label": "closed"
         }
       ],
@@ -494,11 +494,11 @@
       "question": "What is the opposite of new?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/old_new/new.png",
+          "image": "../assets/images/cards/7_antonyms/old_new/new.png",
           "label": "new"
         },
         {
-          "image": "/images/cards/7_antonyms/old_new/old.png",
+          "image": "../assets/images/cards/7_antonyms/old_new/old.png",
           "label": "old"
         }
       ],
@@ -510,11 +510,11 @@
       "question": "What is the opposite of wet?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/wet_dry/wet.png",
+          "image": "../assets/images/cards/7_antonyms/wet_dry/wet.png",
           "label": "wet"
         },
         {
-          "image": "/images/cards/7_antonyms/wet_dry/dry.png",
+          "image": "../assets/images/cards/7_antonyms/wet_dry/dry.png",
           "label": "dry"
         }
       ],
@@ -526,11 +526,11 @@
       "question": "What is the opposite of loud?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/loud_quiet/loud.png",
+          "image": "../assets/images/cards/7_antonyms/loud_quiet/loud.png",
           "label": "loud"
         },
         {
-          "image": "/images/cards/7_antonyms/loud_quiet/quiet.png",
+          "image": "../assets/images/cards/7_antonyms/loud_quiet/quiet.png",
           "label": "quiet"
         }
       ],
@@ -542,11 +542,11 @@
       "question": "What is the opposite of clean?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/dirty_clean/clean.png",
+          "image": "../assets/images/cards/7_antonyms/dirty_clean/clean.png",
           "label": "clean"
         },
         {
-          "image": "/images/cards/7_antonyms/dirty_clean/dirty.png",
+          "image": "../assets/images/cards/7_antonyms/dirty_clean/dirty.png",
           "label": "dirty"
         }
       ],
@@ -558,11 +558,11 @@
       "question": "What is the opposite of full?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/empty-full/full.png",
+          "image": "../assets/images/cards/7_antonyms/empty-full/full.png",
           "label": "full"
         },
         {
-          "image": "/images/cards/7_antonyms/empty-full/empty.png",
+          "image": "../assets/images/cards/7_antonyms/empty-full/empty.png",
           "label": "empty"
         }
       ],
@@ -574,11 +574,11 @@
       "question": "What is the opposite of hard?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/soft_hard/hard.png",
+          "image": "../assets/images/cards/7_antonyms/soft_hard/hard.png",
           "label": "hard"
         },
         {
-          "image": "/images/cards/7_antonyms/soft_hard/soft.png",
+          "image": "../assets/images/cards/7_antonyms/soft_hard/soft.png",
           "label": "soft"
         }
       ],
@@ -590,11 +590,11 @@
       "question": "What is the opposite of before?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/before_after/before.png",
+          "image": "../assets/images/cards/7_antonyms/before_after/before.png",
           "label": "before"
         },
         {
-          "image": "/images/cards/7_antonyms/before_after/after.png",
+          "image": "../assets/images/cards/7_antonyms/before_after/after.png",
           "label": "after"
         }
       ],
@@ -606,11 +606,11 @@
       "question": "What is the opposite of sit?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/sit_stand/sit.png",
+          "image": "../assets/images/cards/7_antonyms/sit_stand/sit.png",
           "label": "sit"
         },
         {
-          "image": "/images/cards/7_antonyms/sit_stand/stand.png",
+          "image": "../assets/images/cards/7_antonyms/sit_stand/stand.png",
           "label": "stand"
         }
       ],
@@ -622,11 +622,11 @@
       "question": "What is the opposite of pull?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/pull_push/pull.png",
+          "image": "../assets/images/cards/7_antonyms/pull_push/pull.png",
           "label": "pull"
         },
         {
-          "image": "/images/cards/7_antonyms/pull_push/push.png",
+          "image": "../assets/images/cards/7_antonyms/pull_push/push.png",
           "label": "push"
         }
       ],
@@ -638,11 +638,11 @@
       "question": "What is the opposite of boy?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/boy_girl/boy.png",
+          "image": "../assets/images/cards/7_antonyms/boy_girl/boy.png",
           "label": "boy"
         },
         {
-          "image": "/images/cards/7_antonyms/boy_girl/girl.png",
+          "image": "../assets/images/cards/7_antonyms/boy_girl/girl.png",
           "label": "girl"
         }
       ],
@@ -654,11 +654,11 @@
       "question": "What is the opposite of front?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/front_back/front.png",
+          "image": "../assets/images/cards/7_antonyms/front_back/front.png",
           "label": "front"
         },
         {
-          "image": "/images/cards/7_antonyms/front_back/Back.png",
+          "image": "../assets/images/cards/7_antonyms/front_back/Back.png",
           "label": "back"
         }
       ],
@@ -670,11 +670,11 @@
       "question": "What is the opposite of lost?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/lost_found/lost.png",
+          "image": "../assets/images/cards/7_antonyms/lost_found/lost.png",
           "label": "lost"
         },
         {
-          "image": "/images/cards/7_antonyms/lost_found/found.png",
+          "image": "../assets/images/cards/7_antonyms/lost_found/found.png",
           "label": "found"
         }
       ],
@@ -686,11 +686,11 @@
       "question": "What is the opposite of early?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/late_early/early.png",
+          "image": "../assets/images/cards/7_antonyms/late_early/early.png",
           "label": "early"
         },
         {
-          "image": "/images/cards/7_antonyms/late_early/late.png",
+          "image": "../assets/images/cards/7_antonyms/late_early/late.png",
           "label": "late"
         }
       ],
@@ -702,11 +702,11 @@
       "question": "What is the opposite of over?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/over_under/over.png",
+          "image": "../assets/images/cards/7_antonyms/over_under/over.png",
           "label": "over"
         },
         {
-          "image": "/images/cards/7_antonyms/over_under/under.png",
+          "image": "../assets/images/cards/7_antonyms/over_under/under.png",
           "label": "under"
         }
       ],
@@ -718,11 +718,11 @@
       "question": "What is the opposite of on?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/on_off/on.png",
+          "image": "../assets/images/cards/7_antonyms/on_off/on.png",
           "label": "on"
         },
         {
-          "image": "/images/cards/7_antonyms/on_off/off.png",
+          "image": "../assets/images/cards/7_antonyms/on_off/off.png",
           "label": "off"
         }
       ],
@@ -734,11 +734,11 @@
       "question": "What is the opposite of in?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/in-out/in.png",
+          "image": "../assets/images/cards/7_antonyms/in-out/in.png",
           "label": "in"
         },
         {
-          "image": "/images/cards/7_antonyms/in-out/out.png",
+          "image": "../assets/images/cards/7_antonyms/in-out/out.png",
           "label": "out"
         }
       ],
@@ -750,11 +750,11 @@
       "question": "What is the opposite of all?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/all-none/all.png",
+          "image": "../assets/images/cards/7_antonyms/all-none/all.png",
           "label": "all"
         },
         {
-          "image": "/images/cards/7_antonyms/all-none/none.png",
+          "image": "../assets/images/cards/7_antonyms/all-none/none.png",
           "label": "none"
         }
       ],
@@ -766,11 +766,11 @@
       "question": "What is the opposite of play?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/play_work/play.png",
+          "image": "../assets/images/cards/7_antonyms/play_work/play.png",
           "label": "play"
         },
         {
-          "image": "/images/cards/7_antonyms/play_work/work.png",
+          "image": "../assets/images/cards/7_antonyms/play_work/work.png",
           "label": "work"
         }
       ],
@@ -782,11 +782,11 @@
       "question": "What is the opposite of wrong?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/wrong_correct/wrong.png",
+          "image": "../assets/images/cards/7_antonyms/wrong_correct/wrong.png",
           "label": "wrong"
         },
         {
-          "image": "/images/cards/7_antonyms/wrong_correct/correct.png",
+          "image": "../assets/images/cards/7_antonyms/wrong_correct/correct.png",
           "label": "correct"
         }
       ],
@@ -798,11 +798,11 @@
       "question": "What is the opposite of top?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/top_bottom/top.png",
+          "image": "../assets/images/cards/7_antonyms/top_bottom/top.png",
           "label": "top"
         },
         {
-          "image": "/images/cards/7_antonyms/top_bottom/bottom.png",
+          "image": "../assets/images/cards/7_antonyms/top_bottom/bottom.png",
           "label": "bottom"
         }
       ],
@@ -814,11 +814,11 @@
       "question": "What is the opposite of stop?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/stop_run/stop.png",
+          "image": "../assets/images/cards/7_antonyms/stop_run/stop.png",
           "label": "stop"
         },
         {
-          "image": "/images/cards/7_antonyms/stop_run/run.png",
+          "image": "../assets/images/cards/7_antonyms/stop_run/run.png",
           "label": "run"
         }
       ],
@@ -830,11 +830,11 @@
       "question": "What is the opposite of low?",
       "images": [
         {
-          "image": "/images/cards/7_antonyms/low_up/low.png",
+          "image": "../assets/images/cards/7_antonyms/low_up/low.png",
           "label": "low"
         },
         {
-          "image": "/images/cards/7_antonyms/low_up/up.png",
+          "image": "../assets/images/cards/7_antonyms/low_up/up.png",
           "label": "high"
         }
       ],
@@ -848,31 +848,31 @@
       "question": "Choose the best antonym for: attach",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/attach/attach.png",
+          "image": "../assets/images/cards/8_antonyms_level2/attach/attach.png",
           "label": "attach"
         }
       ],
       "choices": [
-        "fasten",
-        "detach",
+        "break",
         "clamp",
-        "break"
+        "fasten",
+        "detach"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: construct",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/construct/construct.png",
+          "image": "../assets/images/cards/8_antonyms_level2/construct/construct.png",
           "label": "construct"
         }
       ],
       "choices": [
-        "create",
-        "destroy",
         "design",
-        "fix"
+        "destroy",
+        "fix",
+        "create"
       ],
       "answerIndex": 1
     },
@@ -880,31 +880,31 @@
       "question": "Choose the best antonym for: appear",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/appear/appear.png",
+          "image": "../assets/images/cards/8_antonyms_level2/appear/appear.png",
           "label": "appear"
         }
       ],
       "choices": [
-        "show",
         "vanish",
         "arrive",
-        "emerge"
+        "emerge",
+        "show"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Choose the best antonym for: accept",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/accept/accept.png",
+          "image": "../assets/images/cards/8_antonyms_level2/accept/accept.png",
           "label": "accept"
         }
       ],
       "choices": [
-        "take",
+        "receive",
         "reject",
-        "grab",
-        "receive"
+        "take",
+        "grab"
       ],
       "answerIndex": 1
     },
@@ -912,15 +912,15 @@
       "question": "Choose the best antonym for: accelerate",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/accelerate/accelerate.png",
+          "image": "../assets/images/cards/8_antonyms_level2/accelerate/accelerate.png",
           "label": "accelerate"
         }
       ],
       "choices": [
         "rush",
-        "hurry",
+        "zoom",
         "decelerate",
-        "zoom"
+        "hurry"
       ],
       "answerIndex": 2
     },
@@ -928,95 +928,95 @@
       "question": "Choose the best antonym for: include",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/include/include.png",
+          "image": "../assets/images/cards/8_antonyms_level2/include/include.png",
           "label": "include"
         }
       ],
       "choices": [
+        "exclude",
         "contain",
         "add",
-        "exclude",
         "involve"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "Choose the best antonym for: ascend",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/ascend/ascend.png",
+          "image": "../assets/images/cards/8_antonyms_level2/ascend/ascend.png",
           "label": "ascend"
         }
       ],
       "choices": [
-        "rise",
+        "soar",
         "climb",
-        "descend",
-        "soar"
+        "rise",
+        "descend"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: begin",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/begin/begin.png",
+          "image": "../assets/images/cards/8_antonyms_level2/begin/begin.png",
           "label": "begin"
         }
       ],
       "choices": [
-        "start",
+        "initiate",
         "launch",
-        "end",
-        "initiate"
+        "start",
+        "end"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: capture",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/capture/capture.png",
+          "image": "../assets/images/cards/8_antonyms_level2/capture/capture.png",
           "label": "capture"
         }
       ],
       "choices": [
-        "grab",
-        "seize",
+        "trap",
         "release",
-        "trap"
+        "seize",
+        "grab"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best antonym for: mix",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/mix/mix.png",
+          "image": "../assets/images/cards/8_antonyms_level2/mix/mix.png",
           "label": "mix"
         }
       ],
       "choices": [
-        "blend",
-        "stir",
+        "combine",
         "separate",
-        "combine"
+        "blend",
+        "stir"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best antonym for: expand",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/expand/expand.png",
+          "image": "../assets/images/cards/8_antonyms_level2/expand/expand.png",
           "label": "expand"
         }
       ],
       "choices": [
+        "spread",
         "grow",
-        "stretch",
         "shrink",
-        "spread"
+        "stretch"
       ],
       "answerIndex": 2
     },
@@ -1024,15 +1024,15 @@
       "question": "Choose the best antonym for: increase",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/increase/increase.png",
+          "image": "../assets/images/cards/8_antonyms_level2/increase/increase.png",
           "label": "increase"
         }
       ],
       "choices": [
         "add",
-        "raise",
+        "multiply",
         "decrease",
-        "multiply"
+        "raise"
       ],
       "answerIndex": 2
     },
@@ -1040,15 +1040,15 @@
       "question": "Choose the best antonym for: complete",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/complete/complete.png",
+          "image": "../assets/images/cards/8_antonyms_level2/complete/complete.png",
           "label": "complete"
         }
       ],
       "choices": [
-        "finish",
         "assemble",
+        "build",
         "dismantle",
-        "build"
+        "finish"
       ],
       "answerIndex": 2
     },
@@ -1056,223 +1056,223 @@
       "question": "Choose the best antonym for: defend",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/defend/defend.png",
+          "image": "../assets/images/cards/8_antonyms_level2/defend/defend.png",
           "label": "defend"
         }
       ],
       "choices": [
-        "protect",
-        "guard",
         "attack",
-        "shield"
+        "guard",
+        "shield",
+        "protect"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "Choose the best antonym for: permit",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/permit/permit.png",
+          "image": "../assets/images/cards/8_antonyms_level2/permit/permit.png",
           "label": "permit"
         }
       ],
       "choices": [
-        "allow",
         "let",
         "forbid",
-        "grant"
+        "grant",
+        "allow"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best antonym for: advance",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/advance/advance.png",
+          "image": "../assets/images/cards/8_antonyms_level2/advance/advance.png",
           "label": "advance"
         }
       ],
       "choices": [
-        "proceed",
-        "progress",
         "retreat",
-        "move"
+        "move",
+        "proceed",
+        "progress"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "Choose the best antonym for: collect",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/collect/collect.png",
+          "image": "../assets/images/cards/8_antonyms_level2/collect/collect.png",
           "label": "collect"
         }
       ],
       "choices": [
-        "gather",
         "assemble",
         "scatter",
-        "accumulate"
+        "accumulate",
+        "gather"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best antonym for: conceal",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/conceal/conceal.png",
+          "image": "../assets/images/cards/8_antonyms_level2/conceal/conceal.png",
           "label": "conceal"
         }
       ],
       "choices": [
         "hide",
         "cover",
-        "reveal",
-        "mask"
+        "mask",
+        "reveal"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: praise",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/praise/praise.png",
+          "image": "../assets/images/cards/8_antonyms_level2/praise/praise.png",
           "label": "praise"
         }
       ],
       "choices": [
-        "compliment",
-        "admire",
+        "honor",
         "criticize",
-        "honor"
+        "admire",
+        "compliment"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best antonym for: create",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/create/create.png",
+          "image": "../assets/images/cards/8_antonyms_level2/create/create.png",
           "label": "create"
         }
       ],
       "choices": [
-        "make",
         "build",
-        "destroy",
-        "design"
+        "make",
+        "design",
+        "destroy"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: enter",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/enter/enter.png",
+          "image": "../assets/images/cards/8_antonyms_level2/enter/enter.png",
           "label": "enter"
         }
       ],
       "choices": [
-        "arrive",
+        "approach",
         "come",
-        "exit",
-        "approach"
+        "arrive",
+        "exit"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: raise",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/raise/raise.png",
+          "image": "../assets/images/cards/8_antonyms_level2/raise/raise.png",
           "label": "raise"
         }
       ],
       "choices": [
         "lift",
-        "elevate",
         "lower",
+        "elevate",
         "hoist"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best antonym for: lend",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/lend/lend.png",
+          "image": "../assets/images/cards/8_antonyms_level2/lend/lend.png",
           "label": "lend"
         }
       ],
       "choices": [
-        "give",
-        "loan",
         "borrow",
-        "share"
+        "share",
+        "give",
+        "loan"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "Choose the best antonym for: arrive",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/arrive/arrive.png",
+          "image": "../assets/images/cards/8_antonyms_level2/arrive/arrive.png",
           "label": "arrive"
         }
       ],
       "choices": [
-        "come",
-        "reach",
         "depart",
-        "appear"
+        "appear",
+        "come",
+        "reach"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "Choose the best antonym for: push",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/push/push.png",
+          "image": "../assets/images/cards/8_antonyms_level2/push/push.png",
           "label": "push"
         }
       ],
       "choices": [
-        "shove",
-        "thrust",
+        "press",
         "pull",
-        "press"
+        "thrust",
+        "shove"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best antonym for: succeed",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/succeed/succeed.png",
+          "image": "../assets/images/cards/8_antonyms_level2/succeed/succeed.png",
           "label": "succeed"
         }
       ],
       "choices": [
         "achieve",
         "win",
-        "fail",
-        "triumph"
+        "triumph",
+        "fail"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: open",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/open/open.png",
+          "image": "../assets/images/cards/8_antonyms_level2/open/open.png",
           "label": "open"
         }
       ],
       "choices": [
-        "unwrap",
         "unlock",
+        "reveal",
         "close",
-        "reveal"
+        "unwrap"
       ],
       "answerIndex": 2
     },
@@ -1280,15 +1280,15 @@
       "question": "Choose the best antonym for: save",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/save/save.png",
+          "image": "../assets/images/cards/8_antonyms_level2/save/save.png",
           "label": "save"
         }
       ],
       "choices": [
+        "preserve",
         "keep",
-        "store",
         "spend",
-        "preserve"
+        "store"
       ],
       "answerIndex": 2
     },
@@ -1296,33 +1296,33 @@
       "question": "Choose the best antonym for: tighten",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/tighten/tighten.png",
+          "image": "../assets/images/cards/8_antonyms_level2/tighten/tighten.png",
           "label": "tighten"
         }
       ],
       "choices": [
-        "secure",
         "fasten",
-        "loosen",
-        "fix"
+        "secure",
+        "fix",
+        "loosen"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best antonym for: reward",
       "images": [
         {
-          "image": "/images/cards/8_antonyms_level2/reward/reward.png",
+          "image": "../assets/images/cards/8_antonyms_level2/reward/reward.png",
           "label": "reward"
         }
       ],
       "choices": [
-        "prize",
+        "praise",
         "honor",
-        "punish",
-        "praise"
+        "prize",
+        "punish"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     }
   ],
   "Synonym-Name One - Middle": [
@@ -1330,7 +1330,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/surprised-baby.png",
+          "image": "../assets/images/cards/97_synonym_middle/surprised-baby.png",
           "label": "amazement"
         }
       ],
@@ -1346,7 +1346,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/happy-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/happy-child.png",
           "label": "joyful"
         }
       ],
@@ -1361,7 +1361,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/scared-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/scared-child.png",
           "label": "frightened"
         }
       ],
@@ -1376,7 +1376,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/angry-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/angry-child.png",
           "label": "furious"
         }
       ],
@@ -1391,7 +1391,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/sad-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/sad-child.png",
           "label": "unhappy"
         }
       ],
@@ -1406,7 +1406,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/running-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/running-child.png",
           "label": "quick"
         }
       ],
@@ -1421,7 +1421,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/elephant.png",
+          "image": "../assets/images/cards/97_synonym_middle/elephant.png",
           "label": "huge"
         }
       ],
@@ -1437,7 +1437,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/ladybug.png",
+          "image": "../assets/images/cards/97_synonym_middle/ladybug.png",
           "label": "tiny"
         }
       ],
@@ -1452,7 +1452,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/tired-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/tired-child.png",
           "label": "exhausted"
         }
       ],
@@ -1467,7 +1467,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/sunny-beach.png",
+          "image": "../assets/images/cards/97_synonym_middle/sunny-beach.png",
           "label": "bright"
         }
       ],
@@ -1482,7 +1482,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/confused-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/confused-child.png",
           "label": "puzzled"
         }
       ],
@@ -1497,7 +1497,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/sunset-ocean.png",
+          "image": "../assets/images/cards/97_synonym_middle/sunset-ocean.png",
           "label": "beautiful"
         }
       ],
@@ -1512,7 +1512,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/brave-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/brave-child.png",
           "label": "courageous"
         }
       ],
@@ -1527,7 +1527,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/quiet-reading.png",
+          "image": "../assets/images/cards/97_synonym_middle/quiet-reading.png",
           "label": "silent"
         }
       ],
@@ -1542,7 +1542,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/concert-speakers.png",
+          "image": "../assets/images/cards/97_synonym_middle/concert-speakers.png",
           "label": "noisy"
         }
       ],
@@ -1557,7 +1557,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/laughing-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/laughing-child.png",
           "label": "hilarious"
         }
       ],
@@ -1572,7 +1572,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/ice.png",
+          "image": "../assets/images/cards/97_synonym_middle/ice.png",
           "label": "freezing"
         }
       ],
@@ -1587,7 +1587,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/hot-soup.png",
+          "image": "../assets/images/cards/97_synonym_middle/hot-soup.png",
           "label": "boiling"
         }
       ],
@@ -1602,7 +1602,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/eating-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/eating-child.png",
           "label": "delicious"
         }
       ],
@@ -1617,7 +1617,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/helping-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/helping-child.png",
           "label": "kind"
         }
       ],
@@ -1632,7 +1632,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/villain.png",
+          "image": "../assets/images/cards/97_synonym_middle/villain.png",
           "label": "cruel"
         }
       ],
@@ -1647,7 +1647,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/worried-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/worried-child.png",
           "label": "anxious"
         }
       ],
@@ -1662,7 +1662,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/mansion.png",
+          "image": "../assets/images/cards/97_synonym_middle/mansion.png",
           "label": "wealthy"
         }
       ],
@@ -1677,7 +1677,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/solving-puzzle.png",
+          "image": "../assets/images/cards/97_synonym_middle/solving-puzzle.png",
           "label": "intelligent"
         }
       ],
@@ -1692,7 +1692,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/easy-puzzle.png",
+          "image": "../assets/images/cards/97_synonym_middle/easy-puzzle.png",
           "label": "simple"
         }
       ],
@@ -1707,7 +1707,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/maze.png",
+          "image": "../assets/images/cards/97_synonym_middle/maze.png",
           "label": "difficult"
         }
       ],
@@ -1722,7 +1722,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/start-line.png",
+          "image": "../assets/images/cards/97_synonym_middle/start-line.png",
           "label": "begin"
         }
       ],
@@ -1737,7 +1737,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/finish-line.png",
+          "image": "../assets/images/cards/97_synonym_middle/finish-line.png",
           "label": "finish"
         }
       ],
@@ -1752,7 +1752,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/talking-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/talking-child.png",
           "label": "speak"
         }
       ],
@@ -1767,7 +1767,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/97_synonym_middle/looking-child.png",
+          "image": "../assets/images/cards/97_synonym_middle/looking-child.png",
           "label": "observe"
         }
       ],
@@ -1785,7 +1785,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/snowy-bridge.png",
+          "image": "../assets/images/cards/98_synonym_elementary/snowy-bridge.png",
           "label": "cold"
         }
       ],
@@ -1801,7 +1801,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/happy-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/happy-child.png",
           "label": "happy"
         }
       ],
@@ -1816,7 +1816,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/sad-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/sad-child.png",
           "label": "sad"
         }
       ],
@@ -1831,7 +1831,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/whale.png",
+          "image": "../assets/images/cards/98_synonym_elementary/whale.png",
           "label": "big"
         }
       ],
@@ -1846,7 +1846,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/tiny-ant.png",
+          "image": "../assets/images/cards/98_synonym_elementary/tiny-ant.png",
           "label": "small"
         }
       ],
@@ -1861,7 +1861,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/running-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/running-child.png",
           "label": "fast"
         }
       ],
@@ -1876,7 +1876,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/turtle.png",
+          "image": "../assets/images/cards/98_synonym_elementary/turtle.png",
           "label": "slow"
         }
       ],
@@ -1891,7 +1891,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/sunny-beach.png",
+          "image": "../assets/images/cards/98_synonym_elementary/sunny-beach.png",
           "label": "hot"
         }
       ],
@@ -1906,7 +1906,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/laughing-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/laughing-child.png",
           "label": "funny"
         }
       ],
@@ -1921,7 +1921,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/sharing-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/sharing-child.png",
           "label": "nice"
         }
       ],
@@ -1936,7 +1936,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/scared-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/scared-child.png",
           "label": "scared"
         }
       ],
@@ -1951,7 +1951,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/angry-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/angry-child.png",
           "label": "mad"
         }
       ],
@@ -1966,7 +1966,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/pretty-flower.png",
+          "image": "../assets/images/cards/98_synonym_elementary/pretty-flower.png",
           "label": "pretty"
         }
       ],
@@ -1981,7 +1981,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/messy-room.png",
+          "image": "../assets/images/cards/98_synonym_elementary/messy-room.png",
           "label": "messy"
         }
       ],
@@ -1996,7 +1996,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/clean-room.png",
+          "image": "../assets/images/cards/98_synonym_elementary/clean-room.png",
           "label": "clean"
         }
       ],
@@ -2011,7 +2011,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/yelling-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/yelling-child.png",
           "label": "loud"
         }
       ],
@@ -2026,7 +2026,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/whispering-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/whispering-child.png",
           "label": "quiet"
         }
       ],
@@ -2041,7 +2041,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/tired-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/tired-child.png",
           "label": "tired"
         }
       ],
@@ -2056,7 +2056,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/surprised-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/surprised-child.png",
           "label": "surprised"
         }
       ],
@@ -2071,7 +2071,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/eating-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/eating-child.png",
           "label": "yummy"
         }
       ],
@@ -2086,7 +2086,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/gross-food.png",
+          "image": "../assets/images/cards/98_synonym_elementary/gross-food.png",
           "label": "yucky"
         }
       ],
@@ -2101,7 +2101,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/easy-puzzle.png",
+          "image": "../assets/images/cards/98_synonym_elementary/easy-puzzle.png",
           "label": "easy"
         }
       ],
@@ -2116,7 +2116,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/hard-puzzle.png",
+          "image": "../assets/images/cards/98_synonym_elementary/hard-puzzle.png",
           "label": "hard"
         }
       ],
@@ -2131,7 +2131,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/start-race.png",
+          "image": "../assets/images/cards/98_synonym_elementary/start-race.png",
           "label": "start"
         }
       ],
@@ -2146,7 +2146,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/finish-line.png",
+          "image": "../assets/images/cards/98_synonym_elementary/finish-line.png",
           "label": "end"
         }
       ],
@@ -2161,7 +2161,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/walking-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/walking-child.png",
           "label": "walk"
         }
       ],
@@ -2176,7 +2176,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/talking-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/talking-child.png",
           "label": "talk"
         }
       ],
@@ -2191,7 +2191,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/looking-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/looking-child.png",
           "label": "look"
         }
       ],
@@ -2206,7 +2206,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/jumping-child.png",
+          "image": "../assets/images/cards/98_synonym_elementary/jumping-child.png",
           "label": "jump"
         }
       ],
@@ -2221,7 +2221,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "/images/cards/98_synonym_elementary/pulling-wagon.png",
+          "image": "../assets/images/cards/98_synonym_elementary/pulling-wagon.png",
           "label": "pull"
         }
       ],
@@ -2238,47 +2238,47 @@
       "question": "What means the same as watch?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/man-window-coffee.png",
+          "image": "../assets/images/cards/99_synonyms_mc/man-window-coffee.png",
           "label": "watch"
         }
       ],
       "choices": [
-        "look",
+        "like",
         "happy",
         "distracted",
-        "like"
+        "look"
       ],
-      "answerIndex": 0
+      "answerIndex": 3
     },
     {
       "question": "What means the same as happy?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-smiling.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-smiling.png",
           "label": "happy"
         }
       ],
       "choices": [
-        "sad",
         "angry",
         "glad",
+        "sad",
         "tired"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What means the same as fast?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-running.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-running.png",
           "label": "fast"
         }
       ],
       "choices": [
         "slow",
         "quick",
-        "funny",
-        "large"
+        "large",
+        "funny"
       ],
       "answerIndex": 1
     },
@@ -2286,31 +2286,31 @@
       "question": "What means the same as big?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/huge-elephant.png",
+          "image": "../assets/images/cards/99_synonyms_mc/huge-elephant.png",
           "label": "big"
         }
       ],
       "choices": [
-        "tiny",
         "small",
         "large",
+        "tiny",
         "short"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What means the same as small?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/tiny-ladybug.png",
+          "image": "../assets/images/cards/99_synonyms_mc/tiny-ladybug.png",
           "label": "small"
         }
       ],
       "choices": [
         "huge",
         "little",
-        "tall",
-        "wide"
+        "wide",
+        "tall"
       ],
       "answerIndex": 1
     },
@@ -2318,238 +2318,238 @@
       "question": "What means the same as sad?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-crying.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-crying.png",
           "label": "sad"
         }
       ],
       "choices": [
-        "happy",
-        "unhappy",
+        "silly",
         "excited",
-        "silly"
+        "happy",
+        "unhappy"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "What means the same as mad?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-angry.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-angry.png",
           "label": "mad"
         }
       ],
       "choices": [
-        "glad",
-        "tired",
         "angry",
+        "tired",
+        "glad",
         "scared"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "What means the same as scared?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-scared.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-scared.png",
           "label": "scared"
         }
       ],
       "choices": [
         "brave",
+        "calm",
         "afraid",
-        "happy",
-        "calm"
+        "happy"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What means the same as hot?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/sunny-beach.png",
+          "image": "../assets/images/cards/99_synonyms_mc/sunny-beach.png",
           "label": "hot"
         }
       ],
       "choices": [
         "cold",
-        "cool",
         "warm",
-        "freezing"
+        "freezing",
+        "cool"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What means the same as cold?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/snowy-scene.png",
+          "image": "../assets/images/cards/99_synonyms_mc/snowy-scene.png",
           "label": "cold"
         }
       ],
       "choices": [
-        "hot",
-        "chilly",
         "warm",
-        "burning"
+        "hot",
+        "burning",
+        "chilly"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "What means the same as funny?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-laughing.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-laughing.png",
           "label": "funny"
         }
       ],
       "choices": [
         "sad",
-        "serious",
         "silly",
-        "angry"
+        "angry",
+        "serious"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What means the same as pretty?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/pretty-flower.png",
+          "image": "../assets/images/cards/99_synonyms_mc/pretty-flower.png",
           "label": "pretty"
         }
       ],
       "choices": [
-        "ugly",
-        "beautiful",
         "plain",
-        "dark"
+        "dark",
+        "beautiful",
+        "ugly"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What means the same as loud?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-yelling.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-yelling.png",
           "label": "loud"
         }
       ],
       "choices": [
-        "quiet",
-        "soft",
         "noisy",
-        "silent"
+        "silent",
+        "quiet",
+        "soft"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "What means the same as quiet?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-whispering.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-whispering.png",
           "label": "quiet"
         }
       ],
       "choices": [
         "loud",
-        "noisy",
         "silent",
+        "noisy",
         "yelling"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What means the same as nice?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/kind-child.png",
+          "image": "../assets/images/cards/99_synonyms_mc/kind-child.png",
           "label": "nice"
         }
       ],
       "choices": [
+        "angry",
         "mean",
         "kind",
-        "rude",
-        "angry"
+        "rude"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What means the same as tired?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/tired-child.png",
+          "image": "../assets/images/cards/99_synonyms_mc/tired-child.png",
           "label": "tired"
         }
       ],
       "choices": [
+        "hyper",
         "awake",
         "energetic",
-        "sleepy",
-        "hyper"
+        "sleepy"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "What means the same as start?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/start-race.png",
+          "image": "../assets/images/cards/99_synonyms_mc/start-race.png",
           "label": "start"
         }
       ],
       "choices": [
         "end",
+        "finish",
         "stop",
-        "begin",
-        "finish"
+        "begin"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "What means the same as end?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/finish-line.png",
+          "image": "../assets/images/cards/99_synonyms_mc/finish-line.png",
           "label": "end"
         }
       ],
       "choices": [
-        "start",
+        "go",
         "begin",
-        "finish",
-        "go"
+        "start",
+        "finish"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "What means the same as yummy?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/eating-child.png",
+          "image": "../assets/images/cards/99_synonyms_mc/eating-child.png",
           "label": "yummy"
         }
       ],
       "choices": [
         "gross",
+        "bad",
         "tasty",
-        "yucky",
-        "bad"
+        "yucky"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What means the same as messy?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/messy-room.png",
+          "image": "../assets/images/cards/99_synonyms_mc/messy-room.png",
           "label": "messy"
         }
       ],
       "choices": [
         "clean",
-        "tidy",
         "neat",
+        "tidy",
         "untidy"
       ],
       "answerIndex": 3
@@ -2558,30 +2558,30 @@
       "question": "What means the same as clean?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/clean-room.png",
+          "image": "../assets/images/cards/99_synonyms_mc/clean-room.png",
           "label": "clean"
         }
       ],
       "choices": [
-        "dirty",
-        "messy",
+        "sloppy",
         "neat",
-        "sloppy"
+        "dirty",
+        "messy"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What means the same as talk?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-talking.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-talking.png",
           "label": "talk"
         }
       ],
       "choices": [
-        "listen",
-        "speak",
         "hear",
+        "speak",
+        "listen",
         "quiet"
       ],
       "answerIndex": 1
@@ -2590,31 +2590,31 @@
       "question": "What means the same as jump?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-jumping.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-jumping.png",
           "label": "jump"
         }
       ],
       "choices": [
-        "sit",
         "walk",
-        "leap",
-        "crawl"
+        "sit",
+        "crawl",
+        "leap"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "What means the same as walk?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-walking.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-walking.png",
           "label": "walk"
         }
       ],
       "choices": [
-        "run",
-        "stroll",
         "sprint",
-        "jump"
+        "stroll",
+        "jump",
+        "run"
       ],
       "answerIndex": 1
     },
@@ -2622,55 +2622,55 @@
       "question": "What means the same as pull?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/child-pulling-wagon.png",
+          "image": "../assets/images/cards/99_synonyms_mc/child-pulling-wagon.png",
           "label": "pull"
         }
       ],
       "choices": [
-        "push",
-        "tug",
+        "drop",
         "throw",
-        "drop"
+        "push",
+        "tug"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "What means the same as easy?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/easy-puzzle.png",
+          "image": "../assets/images/cards/99_synonyms_mc/easy-puzzle.png",
           "label": "easy"
         }
       ],
       "choices": [
+        "tricky",
         "hard",
         "difficult",
-        "simple",
-        "tricky"
+        "simple"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "What means the same as hard?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/hard-puzzle.png",
+          "image": "../assets/images/cards/99_synonyms_mc/hard-puzzle.png",
           "label": "hard"
         }
       ],
       "choices": [
         "easy",
         "simple",
-        "soft",
-        "difficult"
+        "difficult",
+        "soft"
       ],
-      "answerIndex": 3
+      "answerIndex": 2
     },
     {
       "question": "What means the same as surprised?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/surprised-child.png",
+          "image": "../assets/images/cards/99_synonyms_mc/surprised-child.png",
           "label": "surprised"
         }
       ],
@@ -2686,33 +2686,33 @@
       "question": "What means the same as brave?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/brave-child.png",
+          "image": "../assets/images/cards/99_synonyms_mc/brave-child.png",
           "label": "brave"
         }
       ],
       "choices": [
-        "scared",
-        "afraid",
         "courageous",
-        "nervous"
+        "afraid",
+        "nervous",
+        "scared"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "What means the same as smart?",
       "images": [
         {
-          "image": "/images/cards/99_synonyms_mc/smart-child.png",
+          "image": "../assets/images/cards/99_synonyms_mc/smart-child.png",
           "label": "smart"
         }
       ],
       "choices": [
-        "silly",
-        "clever",
         "confused",
-        "lost"
+        "lost",
+        "clever",
+        "silly"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     }
   ],
   "Synonyms Level 2": [
@@ -2720,127 +2720,127 @@
       "question": "Choose the best synonym for: meeting",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/business-meeting.png",
+          "image": "../assets/images/cards/100_synonyms_level2/business-meeting.png",
           "label": "business-meeting"
         }
       ],
       "choices": [
+        "greeting",
         "speech",
         "smiling",
-        "encounter",
-        "greeting"
+        "encounter"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: curious",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/curious-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/curious-child.png",
           "label": "curious-child"
         }
       ],
       "choices": [
         "bored",
+        "angry",
         "inquisitive",
-        "tired",
-        "angry"
+        "tired"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "Choose the best synonym for: gorgeous",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/ocean-sunset.png",
+          "image": "../assets/images/cards/100_synonyms_level2/ocean-sunset.png",
           "label": "ocean-sunset"
         }
       ],
       "choices": [
-        "ugly",
         "plain",
         "stunning",
+        "ugly",
         "dull"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best synonym for: determined",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/determined-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/determined-child.png",
           "label": "determined-child"
         }
       ],
       "choices": [
-        "lazy",
         "resolved",
+        "lazy",
         "confused",
         "weak"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Choose the best synonym for: ancient",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/ancient-ruins.png",
+          "image": "../assets/images/cards/100_synonyms_level2/ancient-ruins.png",
           "label": "ancient-ruins"
         }
       ],
       "choices": [
         "modern",
-        "new",
         "antique",
+        "new",
         "recent"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best synonym for: exhausted",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/exhausted-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/exhausted-child.png",
           "label": "exhausted-child"
         }
       ],
       "choices": [
         "energetic",
-        "fatigued",
         "lively",
-        "active"
+        "active",
+        "fatigued"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: enormous",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/enormous-whale.png",
+          "image": "../assets/images/cards/100_synonyms_level2/enormous-whale.png",
           "label": "enormous-whale"
         }
       ],
       "choices": [
         "tiny",
-        "miniature",
         "immense",
-        "small"
+        "small",
+        "miniature"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best synonym for: brilliant",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/sparkling-diamond.png",
+          "image": "../assets/images/cards/100_synonyms_level2/sparkling-diamond.png",
           "label": "sparkling-diamond"
         }
       ],
       "choices": [
+        "dark",
         "dull",
-        "dim",
         "radiant",
-        "dark"
+        "dim"
       ],
       "answerIndex": 2
     },
@@ -2848,15 +2848,15 @@
       "question": "Choose the best synonym for: terrified",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/terrified-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/terrified-child.png",
           "label": "terrified-child"
         }
       ],
       "choices": [
-        "calm",
+        "brave",
         "petrified",
-        "relaxed",
-        "brave"
+        "calm",
+        "relaxed"
       ],
       "answerIndex": 1
     },
@@ -2864,7 +2864,7 @@
       "question": "Choose the best synonym for: wealthy",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/wealthy-mansion.png",
+          "image": "../assets/images/cards/100_synonyms_level2/wealthy-mansion.png",
           "label": "wealthy-mansion"
         }
       ],
@@ -2880,15 +2880,15 @@
       "question": "Choose the best synonym for: furious",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/furious-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/furious-child.png",
           "label": "furious-child"
         }
       ],
       "choices": [
-        "calm",
         "pleased",
+        "content",
         "enraged",
-        "content"
+        "calm"
       ],
       "answerIndex": 2
     },
@@ -2896,15 +2896,15 @@
       "question": "Choose the best synonym for: assist",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/person-helping.png",
+          "image": "../assets/images/cards/100_synonyms_level2/person-helping.png",
           "label": "person-helping"
         }
       ],
       "choices": [
         "ignore",
         "aid",
-        "hinder",
-        "block"
+        "block",
+        "hinder"
       ],
       "answerIndex": 1
     },
@@ -2912,15 +2912,15 @@
       "question": "Choose the best synonym for: confident",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/confident-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/confident-child.png",
           "label": "confident-child"
         }
       ],
       "choices": [
-        "nervous",
+        "uncertain",
         "self-assured",
-        "doubtful",
-        "uncertain"
+        "nervous",
+        "doubtful"
       ],
       "answerIndex": 1
     },
@@ -2928,15 +2928,15 @@
       "question": "Choose the best synonym for: challenging",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/challenging-task.png",
+          "image": "../assets/images/cards/100_synonyms_level2/challenging-task.png",
           "label": "challenging-task"
         }
       ],
       "choices": [
-        "easy",
+        "effortless",
         "simple",
         "demanding",
-        "effortless"
+        "easy"
       ],
       "answerIndex": 2
     },
@@ -2944,30 +2944,30 @@
       "question": "Choose the best synonym for: declare",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/person-speaking.png",
+          "image": "../assets/images/cards/100_synonyms_level2/person-speaking.png",
           "label": "person-speaking"
         }
       ],
       "choices": [
-        "whisper",
         "hide",
         "announce",
+        "whisper",
         "conceal"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best synonym for: disappointed",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/disappointed-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/disappointed-child.png",
           "label": "disappointed-child"
         }
       ],
       "choices": [
-        "thrilled",
-        "letdown",
         "excited",
+        "letdown",
+        "thrilled",
         "pleased"
       ],
       "answerIndex": 1
@@ -2976,94 +2976,94 @@
       "question": "Choose the best synonym for: swift",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/cheetah-running.png",
+          "image": "../assets/images/cards/100_synonyms_level2/cheetah-running.png",
           "label": "cheetah-running"
         }
       ],
       "choices": [
-        "slow",
-        "sluggish",
+        "lazy",
         "rapid",
-        "lazy"
+        "slow",
+        "sluggish"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best synonym for: cautious",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/cautious-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/cautious-child.png",
           "label": "cautious-child"
         }
       ],
       "choices": [
+        "careless",
         "reckless",
         "careful",
-        "careless",
         "hasty"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "Choose the best synonym for: delectable",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/gourmet-food.png",
+          "image": "../assets/images/cards/100_synonyms_level2/gourmet-food.png",
           "label": "gourmet-food"
         }
       ],
       "choices": [
         "disgusting",
         "bland",
-        "delicious",
-        "tasteless"
+        "tasteless",
+        "delicious"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: genuine",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/genuine-smile.png",
+          "image": "../assets/images/cards/100_synonyms_level2/genuine-smile.png",
           "label": "genuine-smile"
         }
       ],
       "choices": [
+        "phony",
         "fake",
         "authentic",
-        "false",
-        "phony"
+        "false"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "Choose the best synonym for: intelligent",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/intelligent-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/intelligent-child.png",
           "label": "intelligent-child"
         }
       ],
       "choices": [
         "foolish",
-        "clever",
         "dumb",
+        "clever",
         "ignorant"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "Choose the best synonym for: astonished",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/astonished-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/astonished-child.png",
           "label": "astonished-child"
         }
       ],
       "choices": [
-        "bored",
-        "amazed",
         "unimpressed",
+        "amazed",
+        "bored",
         "indifferent"
       ],
       "answerIndex": 1
@@ -3072,129 +3072,129 @@
       "question": "Choose the best synonym for: tranquil",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/peaceful-beach.png",
+          "image": "../assets/images/cards/100_synonyms_level2/peaceful-beach.png",
           "label": "peaceful-beach"
         }
       ],
       "choices": [
-        "chaotic",
+        "hectic",
         "noisy",
-        "serene",
-        "hectic"
+        "chaotic",
+        "serene"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: courageous",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/courageous-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/courageous-child.png",
           "label": "courageous-child"
         }
       ],
       "choices": [
-        "cowardly",
-        "fearful",
+        "timid",
         "valiant",
-        "timid"
+        "cowardly",
+        "fearful"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best synonym for: perplexed",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/perplexed-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/perplexed-child.png",
           "label": "perplexed-child"
         }
       ],
       "choices": [
-        "certain",
-        "baffled",
         "clear",
-        "sure"
+        "certain",
+        "sure",
+        "baffled"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: content",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/content-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/content-child.png",
           "label": "content-child"
         }
       ],
       "choices": [
         "miserable",
-        "satisfied",
+        "restless",
         "upset",
-        "restless"
+        "satisfied"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: examine",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/examining-person.png",
+          "image": "../assets/images/cards/100_synonyms_level2/examining-person.png",
           "label": "examining-person"
         }
       ],
       "choices": [
+        "neglect",
         "ignore",
-        "inspect",
         "overlook",
-        "neglect"
+        "inspect"
       ],
-      "answerIndex": 1
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: scarce",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/scarce-item.png",
+          "image": "../assets/images/cards/100_synonyms_level2/scarce-item.png",
           "label": "scarce-item"
         }
       ],
       "choices": [
-        "abundant",
         "plentiful",
-        "rare",
-        "common"
+        "abundant",
+        "common",
+        "rare"
       ],
-      "answerIndex": 2
+      "answerIndex": 3
     },
     {
       "question": "Choose the best synonym for: anxious",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/anxious-child.png",
+          "image": "../assets/images/cards/100_synonyms_level2/anxious-child.png",
           "label": "anxious-child"
         }
       ],
       "choices": [
         "calm",
-        "relaxed",
         "worried",
-        "peaceful"
+        "peaceful",
+        "relaxed"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "Choose the best synonym for: demonstrate",
       "images": [
         {
-          "image": "/images/cards/100_synonyms_level2/demonstrating-person.png",
+          "image": "../assets/images/cards/100_synonyms_level2/demonstrating-person.png",
           "label": "demonstrating-person"
         }
       ],
       "choices": [
-        "hide",
-        "conceal",
         "exhibit",
-        "cover"
+        "cover",
+        "conceal",
+        "hide"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     }
   ]
 }

@@ -4,56 +4,56 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/laundry_basket.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/laundry_basket.png",
           "label": "Laundry basket"
         }
       ],
-      "sentence": "I _______ my laundry on Sundays.",
+      "paragraph": "I _______ my laundry on Sundays.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/man_raking.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/man_raking.png",
           "label": "Man raking"
         }
       ],
-      "sentence": "George _______ his yard work every weekend.",
+      "paragraph": "George _______ his yard work every weekend.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/family_dinner.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/family_dinner.png",
           "label": "Family dinner"
         }
       ],
-      "sentence": "We _______ the dishes after dinner.",
+      "paragraph": "We _______ the dishes after dinner.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/girl_brushing_teeth.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/girl_brushing_teeth.png",
           "label": "Girl brushing teeth"
         }
       ],
-      "sentence": "She _______ brush her teeth every night before bed.",
+      "paragraph": "She _______ brush her teeth every night before bed.",
       "choices": [
         "do",
         "does"
@@ -64,11 +64,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/children_homework.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/children_homework.png",
           "label": "Children doing homework"
         }
       ],
-      "sentence": "They _______ their homework every night.",
+      "paragraph": "They _______ their homework every night.",
       "choices": [
         "do",
         "does"
@@ -79,26 +79,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/boy_feeding_pet.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/boy_feeding_pet.png",
           "label": "Boy feeding pet"
         }
       ],
-      "sentence": "He _______ feed his bunny every morning before school.",
+      "paragraph": "He _______ feed his bunny every morning before school.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/making_bed.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/making_bed.png",
           "label": "Making bed"
         }
       ],
-      "sentence": "I _______ make my bed every morning.",
+      "paragraph": "I _______ make my bed every morning.",
       "choices": [
         "do",
         "does"
@@ -109,11 +109,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/woman_watering_plants.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/woman_watering_plants.png",
           "label": "Woman watering plants"
         }
       ],
-      "sentence": "Mom _______ water the plants on Saturdays.",
+      "paragraph": "Mom _______ water the plants on Saturdays.",
       "choices": [
         "do",
         "does"
@@ -124,86 +124,86 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/kids_sandcastle.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/kids_sandcastle.png",
           "label": "Kids building sandcastle"
         }
       ],
-      "sentence": "We _______ build sandcastles at the beach.",
+      "paragraph": "We _______ build sandcastles at the beach.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/dog_trick.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/dog_trick.png",
           "label": "Dog doing trick"
         }
       ],
-      "sentence": "The dog _______ tricks for treats.",
+      "paragraph": "The dog _______ tricks for treats.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/people_exercising.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/people_exercising.png",
           "label": "People exercising"
         }
       ],
-      "sentence": "You _______ exercise every day.",
+      "paragraph": "You _______ exercise every day.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/girl_painting.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/girl_painting.png",
           "label": "Girl painting"
         }
       ],
-      "sentence": "She _______ paint beautiful pictures.",
+      "paragraph": "She _______ paint beautiful pictures.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/friends_board_game.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/friends_board_game.png",
           "label": "Friends playing board game"
         }
       ],
-      "sentence": "They _______ play games on the weekend.",
+      "paragraph": "They _______ play games on the weekend.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/boy_swimming.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/boy_swimming.png",
           "label": "Boy swimming"
         }
       ],
-      "sentence": "He _______ swim at the beach every summer.",
+      "paragraph": "He _______ swim at the beach every summer.",
       "choices": [
         "do",
         "does"
@@ -214,41 +214,41 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/family_cooking.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/family_cooking.png",
           "label": "Family cooking"
         }
       ],
-      "sentence": "We _______ cook dinner together.",
+      "paragraph": "We _______ cook dinner together.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/cat_sleeping.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/cat_sleeping.png",
           "label": "Cat sleeping"
         }
       ],
-      "sentence": "The cat _______ sleep all day.",
+      "paragraph": "The cat _______ sleep all day.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/students_desk.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/students_desk.png",
           "label": "Students at desk"
         }
       ],
-      "sentence": "You _______ your best work.",
+      "paragraph": "You _______ your best work.",
       "choices": [
         "do",
         "does"
@@ -259,11 +259,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/teacher_board.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/teacher_board.png",
           "label": "Teacher at board"
         }
       ],
-      "sentence": "The teacher _______ write on the board.",
+      "paragraph": "The teacher _______ write on the board.",
       "choices": [
         "do",
         "does"
@@ -274,41 +274,41 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/do/girls_dancing.png",
+          "image": "../assets/images/cards/30_do_vs_does/do/girls_dancing.png",
           "label": "Girls dancing"
         }
       ],
-      "sentence": "We _______ a dance on the path.",
+      "paragraph": "We _______ a dance on the path.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/does/chef_cooking.png",
+          "image": "../assets/images/cards/30_do_vs_does/does/chef_cooking.png",
           "label": "Chef cooking"
         }
       ],
-      "sentence": "The chef _______ make delicious food.",
+      "paragraph": "The chef _______ make delicious food.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/child_reading.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/child_reading.png",
           "label": "Child reading"
         }
       ],
-      "sentence": "She _______ read books every day.",
+      "paragraph": "She _______ read books every day.",
       "choices": [
         "do",
         "does"
@@ -319,11 +319,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/family_beach.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/family_beach.png",
           "label": "Family at beach"
         }
       ],
-      "sentence": "We _______ go to the beach in summer.",
+      "paragraph": "We _______ go to the beach in summer.",
       "choices": [
         "do",
         "does"
@@ -334,11 +334,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/bird_flying.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/bird_flying.png",
           "label": "Bird flying"
         }
       ],
-      "sentence": "The bird _______ fly south in winter.",
+      "paragraph": "The bird _______ fly south in winter.",
       "choices": [
         "do",
         "does"
@@ -349,26 +349,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/kids_soccer.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/kids_soccer.png",
           "label": "Kids playing soccer"
         }
       ],
-      "sentence": "They _______ play soccer after school.",
+      "paragraph": "They _______ play soccer after school.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/grandma_baking.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/grandma_baking.png",
           "label": "Grandma baking"
         }
       ],
-      "sentence": "Grandma _______ bake on weekends.",
+      "paragraph": "Grandma _______ bake on weekends.",
       "choices": [
         "do",
         "does"
@@ -379,11 +379,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/dad_washing_car.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/dad_washing_car.png",
           "label": "Dad washing car"
         }
       ],
-      "sentence": "Dad _______ wash the car on Saturdays.",
+      "paragraph": "Dad _______ wash the car on Saturdays.",
       "choices": [
         "do",
         "does"
@@ -394,11 +394,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/children_cleaning.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/children_cleaning.png",
           "label": "Children cleaning"
         }
       ],
-      "sentence": "We _______ clean our room every week.",
+      "paragraph": "We _______ clean our room every week.",
       "choices": [
         "do",
         "does"
@@ -409,14 +409,29 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/sun_shining.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/sun_shining.png",
           "label": "Sun shining"
         }
       ],
-      "sentence": "The sun _______ shine brightly today.",
+      "paragraph": "The sun _______ shine brightly today.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "Which word completes the sentence correctly?",
+      "images": [
+        {
+          "image": "../assets/images/cards/30_do_vs_does/mixed/stretches.png",
+          "label": "Stretches"
+        }
+      ],
+      "paragraph": "I _______ stretches before exercise.",
+      "choices": [
+        "does",
+        "do"
       ],
       "answerIndex": 1
     },
@@ -424,31 +439,16 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/30_do_vs_does/mixed/stretches.png",
-          "label": "Stretches"
-        }
-      ],
-      "sentence": "I _______ stretches before exercise.",
-      "choices": [
-        "do",
-        "does"
-      ],
-      "answerIndex": 0
-    },
-    {
-      "question": "Which word completes the sentence correctly?",
-      "images": [
-        {
-          "image": "/images/cards/30_do_vs_does/mixed/dolphins_jumping.png",
+          "image": "../assets/images/cards/30_do_vs_does/mixed/dolphins_jumping.png",
           "label": "Dolphins jumping"
         }
       ],
-      "sentence": "Dolphins _______ jump out of the water.",
+      "paragraph": "Dolphins _______ jump out of the water.",
       "choices": [
-        "do",
-        "does"
+        "does",
+        "do"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     }
   ],
   "Has Vs Have": [
@@ -456,11 +456,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/cat_collar.png",
+          "image": "../assets/images/cards/40_has_have/cat_collar.png",
           "label": "Cat with collar"
         }
       ],
-      "sentence": "The cat _______ a blue collar.",
+      "paragraph": "The cat _______ a blue collar.",
       "choices": [
         "has",
         "have"
@@ -471,11 +471,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/kids_toys.png",
+          "image": "../assets/images/cards/40_has_have/kids_toys.png",
           "label": "Kids with toys"
         }
       ],
-      "sentence": "The children _______ many toys.",
+      "paragraph": "The children _______ many toys.",
       "choices": [
         "has",
         "have"
@@ -486,11 +486,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/girl_pigtails.png",
+          "image": "../assets/images/cards/40_has_have/girl_pigtails.png",
           "label": "Girl with pigtails"
         }
       ],
-      "sentence": "She _______ pigtails in her hair.",
+      "paragraph": "She _______ pigtails in her hair.",
       "choices": [
         "has",
         "have"
@@ -501,26 +501,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/dogs_playing.png",
+          "image": "../assets/images/cards/40_has_have/dogs_playing.png",
           "label": "Dogs playing"
         }
       ],
-      "sentence": "The dogs _______ lots of energy.",
+      "paragraph": "The dogs _______ lots of energy.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/boy_backpack.png",
+          "image": "../assets/images/cards/40_has_have/boy_backpack.png",
           "label": "Boy with backpack"
         }
       ],
-      "sentence": "He _______ a red backpack.",
+      "paragraph": "He _______ a red backpack.",
       "choices": [
         "has",
         "have"
@@ -531,116 +531,116 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/flowers_vase.png",
+          "image": "../assets/images/cards/40_has_have/flowers_vase.png",
           "label": "Flowers in vase"
         }
       ],
-      "sentence": "The flowers _______ a nice smell.",
+      "paragraph": "The flowers _______ a nice smell.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/dog_spots.png",
+          "image": "../assets/images/cards/40_has_have/dog_spots.png",
           "label": "Dog with spots"
         }
       ],
-      "sentence": "The dog _______ brown spots.",
+      "paragraph": "The dog _______ brown spots.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/books_shelf.png",
+          "image": "../assets/images/cards/40_has_have/books_shelf.png",
           "label": "Books on shelf"
         }
       ],
-      "sentence": "The books _______ colorful covers.",
+      "paragraph": "The books _______ colorful covers.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/house_garden.png",
+          "image": "../assets/images/cards/40_has_have/house_garden.png",
           "label": "House with garden"
         }
       ],
-      "sentence": "The house _______ a beautiful garden.",
+      "paragraph": "The house _______ a beautiful garden.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/cars_parking.png",
+          "image": "../assets/images/cards/40_has_have/cars_parking.png",
           "label": "Cars in parking"
         }
       ],
-      "sentence": "The cars _______ four wheels each.",
+      "paragraph": "The cars _______ four wheels each.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/bird_feathers.png",
+          "image": "../assets/images/cards/40_has_have/bird_feathers.png",
           "label": "Bird with feathers"
         }
       ],
-      "sentence": "The bird _______ colorful feathers.",
+      "paragraph": "The bird _______ colorful feathers.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/cups_table.png",
+          "image": "../assets/images/cards/40_has_have/cups_table.png",
           "label": "Cups on table"
         }
       ],
-      "sentence": "The cups _______ handles.",
+      "paragraph": "The cups _______ handles.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/bike_basket.png",
+          "image": "../assets/images/cards/40_has_have/bike_basket.png",
           "label": "Bike with basket"
         }
       ],
-      "sentence": "The bike _______ a basket on front.",
+      "paragraph": "The bike _______ a basket on front.",
       "choices": [
         "has",
         "have"
@@ -651,26 +651,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/birds_tree.png",
+          "image": "../assets/images/cards/40_has_have/birds_tree.png",
           "label": "Birds in tree"
         }
       ],
-      "sentence": "The birds _______ nests in the tree.",
+      "paragraph": "The birds _______ nests in the tree.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/tree_leaves.png",
+          "image": "../assets/images/cards/40_has_have/tree_leaves.png",
           "label": "Tree with leaves"
         }
       ],
-      "sentence": "The tree _______ many green leaves.",
+      "paragraph": "The tree _______ many green leaves.",
       "choices": [
         "has",
         "have"
@@ -681,56 +681,56 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/students_pencils.png",
+          "image": "../assets/images/cards/40_has_have/students_pencils.png",
           "label": "Students with pencils"
         }
       ],
-      "sentence": "The students _______ pencils.",
+      "paragraph": "The students _______ pencils.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/cake_frosting.png",
+          "image": "../assets/images/cards/40_has_have/cake_frosting.png",
           "label": "Cake with frosting"
         }
       ],
-      "sentence": "The cake _______ pink frosting.",
+      "paragraph": "The cake _______ pink frosting.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/donuts_sprinkles.png",
+          "image": "../assets/images/cards/40_has_have/donuts_sprinkles.png",
           "label": "Donuts with sprinkles"
         }
       ],
-      "sentence": "The donuts _______ sprinkles on them.",
+      "paragraph": "The donuts _______ sprinkles on them.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/clock_hands.png",
+          "image": "../assets/images/cards/40_has_have/clock_hands.png",
           "label": "Clock with hands"
         }
       ],
-      "sentence": "The clock _______ two hands.",
+      "paragraph": "The clock _______ two hands.",
       "choices": [
         "has",
         "have"
@@ -741,11 +741,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/cookies_plate.png",
+          "image": "../assets/images/cards/40_has_have/cookies_plate.png",
           "label": "Cookies on plate"
         }
       ],
-      "sentence": "The cookies _______ chocolate chips.",
+      "paragraph": "The cookies _______ chocolate chips.",
       "choices": [
         "has",
         "have"
@@ -756,26 +756,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/girl_umbrella.png",
+          "image": "../assets/images/cards/40_has_have/girl_umbrella.png",
           "label": "Girl with umbrella"
         }
       ],
-      "sentence": "She _______ a yellow umbrella.",
+      "paragraph": "She _______ a yellow umbrella.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/person_pet.png",
+          "image": "../assets/images/cards/40_has_have/person_pet.png",
           "label": "Person with pet"
         }
       ],
-      "sentence": "I _______ a pet bunny at home.",
+      "paragraph": "I _______ a pet bunny at home.",
       "choices": [
         "has",
         "have"
@@ -786,11 +786,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/dolphin_fin.png",
+          "image": "../assets/images/cards/40_has_have/dolphin_fin.png",
           "label": "Dolphin with fin"
         }
       ],
-      "sentence": "The dolphin _______ a curved fin.",
+      "paragraph": "The dolphin _______ a curved fin.",
       "choices": [
         "has",
         "have"
@@ -801,11 +801,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/friends_beach.png",
+          "image": "../assets/images/cards/40_has_have/friends_beach.png",
           "label": "Friends at beach"
         }
       ],
-      "sentence": "We _______ fun at the beach.",
+      "paragraph": "We _______ fun at the beach.",
       "choices": [
         "has",
         "have"
@@ -816,11 +816,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/sandcastle_flag.png",
+          "image": "../assets/images/cards/40_has_have/sandcastle_flag.png",
           "label": "Sandcastle with flag"
         }
       ],
-      "sentence": "The sandcastle _______ a little flag on top.",
+      "paragraph": "The sandcastle _______ a little flag on top.",
       "choices": [
         "has",
         "have"
@@ -831,41 +831,41 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/boys_ball.png",
+          "image": "../assets/images/cards/40_has_have/boys_ball.png",
           "label": "Boys with ball"
         }
       ],
-      "sentence": "They _______ a soccer ball.",
+      "paragraph": "They _______ a soccer ball.",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/person_question.png",
+          "image": "../assets/images/cards/40_has_have/person_question.png",
           "label": "Person with question"
         }
       ],
-      "sentence": "Do you _______ any questions?",
+      "paragraph": "Do you _______ any questions?",
       "choices": [
-        "has",
-        "have"
+        "have",
+        "has"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/family_portrait.png",
+          "image": "../assets/images/cards/40_has_have/family_portrait.png",
           "label": "Family portrait"
         }
       ],
-      "sentence": "We _______ a big family.",
+      "paragraph": "We _______ a big family.",
       "choices": [
         "has",
         "have"
@@ -876,11 +876,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/person_lunch.png",
+          "image": "../assets/images/cards/40_has_have/person_lunch.png",
           "label": "Person eating lunch"
         }
       ],
-      "sentence": "I _______ a sandwich for lunch.",
+      "paragraph": "I _______ a sandwich for lunch.",
       "choices": [
         "has",
         "have"
@@ -891,11 +891,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/40_has_have/family_dinner.png",
+          "image": "../assets/images/cards/40_has_have/family_dinner.png",
           "label": "Family at dinner"
         }
       ],
-      "sentence": "We _______ dinner together every night.",
+      "paragraph": "We _______ dinner together every night.",
       "choices": [
         "has",
         "have"
@@ -912,7 +912,7 @@
           "label": "One bee"
         }
       ],
-      "sentence": "The bee _______ flying.",
+      "paragraph": "The bee _______ flying.",
       "choices": [
         "is",
         "are"
@@ -927,7 +927,7 @@
           "label": "Many bees"
         }
       ],
-      "sentence": "The bees _______ flying around the flowers.",
+      "paragraph": "The bees _______ flying around the flowers.",
       "choices": [
         "is",
         "are"
@@ -942,12 +942,12 @@
           "label": "One dog"
         }
       ],
-      "sentence": "The dog _______ running in the yard.",
+      "paragraph": "The dog _______ running in the yard.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -957,7 +957,7 @@
           "label": "Two dogs"
         }
       ],
-      "sentence": "The dogs _______ playing together.",
+      "paragraph": "The dogs _______ playing together.",
       "choices": [
         "is",
         "are"
@@ -972,7 +972,7 @@
           "label": "One cat"
         }
       ],
-      "sentence": "The cat _______ sleeping on the couch.",
+      "paragraph": "The cat _______ sleeping on the couch.",
       "choices": [
         "is",
         "are"
@@ -987,7 +987,7 @@
           "label": "Three cats"
         }
       ],
-      "sentence": "The cats _______ sitting on the fence.",
+      "paragraph": "The cats _______ sitting on the fence.",
       "choices": [
         "is",
         "are"
@@ -1002,7 +1002,7 @@
           "label": "Sun"
         }
       ],
-      "sentence": "The sun _______ shining brightly.",
+      "paragraph": "The sun _______ shining brightly.",
       "choices": [
         "is",
         "are"
@@ -1017,12 +1017,12 @@
           "label": "Stars"
         }
       ],
-      "sentence": "The stars _______ twinkling at night.",
+      "paragraph": "The stars _______ twinkling at night.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -1032,7 +1032,7 @@
           "label": "One apple"
         }
       ],
-      "sentence": "The apple _______ red and shiny.",
+      "paragraph": "The apple _______ red and shiny.",
       "choices": [
         "is",
         "are"
@@ -1047,7 +1047,7 @@
           "label": "Many apples"
         }
       ],
-      "sentence": "The apples _______ in the bowl.",
+      "paragraph": "The apples _______ in the bowl.",
       "choices": [
         "is",
         "are"
@@ -1062,7 +1062,7 @@
           "label": "Girl reading"
         }
       ],
-      "sentence": "She _______ reading a book.",
+      "paragraph": "She _______ reading a book.",
       "choices": [
         "is",
         "are"
@@ -1077,12 +1077,12 @@
           "label": "Kids at beach"
         }
       ],
-      "sentence": "They _______ building a sandcastle.",
+      "paragraph": "They _______ building a sandcastle.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -1092,7 +1092,7 @@
           "label": "Boy swimming"
         }
       ],
-      "sentence": "He _______ swimming in the ocean.",
+      "paragraph": "He _______ swimming in the ocean.",
       "choices": [
         "is",
         "are"
@@ -1107,7 +1107,7 @@
           "label": "Family"
         }
       ],
-      "sentence": "We _______ going to the beach today.",
+      "paragraph": "We _______ going to the beach today.",
       "choices": [
         "is",
         "are"
@@ -1122,12 +1122,12 @@
           "label": "One dolphin"
         }
       ],
-      "sentence": "The dolphin _______ jumping out of the water.",
+      "paragraph": "The dolphin _______ jumping out of the water.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -1137,12 +1137,12 @@
           "label": "Dolphins"
         }
       ],
-      "sentence": "The dolphins _______ swimming near the shore.",
+      "paragraph": "The dolphins _______ swimming near the shore.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -1152,7 +1152,7 @@
           "label": "Sandcastle"
         }
       ],
-      "sentence": "The sandcastle _______ very tall.",
+      "paragraph": "The sandcastle _______ very tall.",
       "choices": [
         "is",
         "are"
@@ -1167,7 +1167,7 @@
           "label": "Seashells"
         }
       ],
-      "sentence": "The seashells _______ on the sand.",
+      "paragraph": "The seashells _______ on the sand.",
       "choices": [
         "is",
         "are"
@@ -1182,7 +1182,7 @@
           "label": "One flower"
         }
       ],
-      "sentence": "The flower _______ growing in the garden.",
+      "paragraph": "The flower _______ growing in the garden.",
       "choices": [
         "is",
         "are"
@@ -1197,12 +1197,12 @@
           "label": "Flowers"
         }
       ],
-      "sentence": "The flowers _______ blooming in spring.",
+      "paragraph": "The flowers _______ blooming in spring.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -1212,7 +1212,7 @@
           "label": "One bird"
         }
       ],
-      "sentence": "The bird _______ singing a song.",
+      "paragraph": "The bird _______ singing a song.",
       "choices": [
         "is",
         "are"
@@ -1227,12 +1227,12 @@
           "label": "Children playing"
         }
       ],
-      "sentence": "The children _______ having fun at the park.",
+      "paragraph": "The children _______ having fun at the park.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -1242,12 +1242,12 @@
           "label": "Surfboard"
         }
       ],
-      "sentence": "The surfboard _______ leaning against the wall.",
+      "paragraph": "The surfboard _______ leaning against the wall.",
       "choices": [
-        "is",
-        "are"
+        "are",
+        "is"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
@@ -1257,7 +1257,7 @@
           "label": "Waves"
         }
       ],
-      "sentence": "The waves _______ crashing on the beach.",
+      "paragraph": "The waves _______ crashing on the beach.",
       "choices": [
         "is",
         "are"
@@ -1272,7 +1272,7 @@
           "label": "One cloud"
         }
       ],
-      "sentence": "The cloud _______ fluffy and white.",
+      "paragraph": "The cloud _______ fluffy and white.",
       "choices": [
         "is",
         "are"
@@ -1287,7 +1287,7 @@
           "label": "Many clouds"
         }
       ],
-      "sentence": "The clouds _______ moving across the sky.",
+      "paragraph": "The clouds _______ moving across the sky.",
       "choices": [
         "is",
         "are"
@@ -1302,7 +1302,7 @@
           "label": "One bunny"
         }
       ],
-      "sentence": "The bunny _______ hopping in the grass.",
+      "paragraph": "The bunny _______ hopping in the grass.",
       "choices": [
         "is",
         "are"
@@ -1317,7 +1317,7 @@
           "label": "Two bunnies"
         }
       ],
-      "sentence": "The bunnies _______ eating carrots.",
+      "paragraph": "The bunnies _______ eating carrots.",
       "choices": [
         "is",
         "are"
@@ -1332,7 +1332,7 @@
           "label": "One towel"
         }
       ],
-      "sentence": "The towel _______ soft and dry.",
+      "paragraph": "The towel _______ soft and dry.",
       "choices": [
         "is",
         "are"
@@ -1347,7 +1347,7 @@
           "label": "Beach towels"
         }
       ],
-      "sentence": "The towels _______ spread out on the sand.",
+      "paragraph": "The towels _______ spread out on the sand.",
       "choices": [
         "is",
         "are"
@@ -1360,26 +1360,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/swimming-pool.png",
+          "image": "../assets/images/cards/128_was_vs_were/swimming-pool.png",
           "label": "Swimming pool"
         }
       ],
-      "sentence": "She _______ swimming in the pool.",
+      "paragraph": "She _______ swimming in the pool.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/men-kicking-ball.png",
+          "image": "../assets/images/cards/128_was_vs_were/men-kicking-ball.png",
           "label": "Men kicking ball"
         }
       ],
-      "sentence": "The men _______ kicking the ball back and forth.",
+      "paragraph": "The men _______ kicking the ball back and forth.",
       "choices": [
         "was",
         "were"
@@ -1390,11 +1390,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/dog-sleeping.png",
+          "image": "../assets/images/cards/128_was_vs_were/dog-sleeping.png",
           "label": "Dog sleeping"
         }
       ],
-      "sentence": "The dog _______ sleeping on the bed.",
+      "paragraph": "The dog _______ sleeping on the bed.",
       "choices": [
         "was",
         "were"
@@ -1405,26 +1405,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/sandcastle.png",
+          "image": "../assets/images/cards/128_was_vs_were/sandcastle.png",
           "label": "Sandcastle"
         }
       ],
-      "sentence": "The kids _______ building a sandcastle.",
+      "paragraph": "The kids _______ building a sandcastle.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/eating-apple.png",
+          "image": "../assets/images/cards/128_was_vs_were/eating-apple.png",
           "label": "Eating apple"
         }
       ],
-      "sentence": "He _______ eating an apple.",
+      "paragraph": "He _______ eating an apple.",
       "choices": [
         "was",
         "were"
@@ -1435,11 +1435,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/birds-flying.png",
+          "image": "../assets/images/cards/128_was_vs_were/birds-flying.png",
           "label": "Birds flying"
         }
       ],
-      "sentence": "The birds _______ flying in the sky.",
+      "paragraph": "The birds _______ flying in the sky.",
       "choices": [
         "was",
         "were"
@@ -1450,11 +1450,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/reading-book.png",
+          "image": "../assets/images/cards/128_was_vs_were/reading-book.png",
           "label": "Reading book"
         }
       ],
-      "sentence": "She _______ reading a book.",
+      "paragraph": "She _______ reading a book.",
       "choices": [
         "was",
         "were"
@@ -1465,11 +1465,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/beach.png",
+          "image": "../assets/images/cards/128_was_vs_were/beach.png",
           "label": "Beach"
         }
       ],
-      "sentence": "We _______ at the beach yesterday.",
+      "paragraph": "We _______ at the beach yesterday.",
       "choices": [
         "was",
         "were"
@@ -1480,71 +1480,71 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/cat-sitting.png",
+          "image": "../assets/images/cards/128_was_vs_were/cat-sitting.png",
           "label": "Cat sitting"
         }
       ],
-      "sentence": "The cat _______ sitting on the chair.",
+      "paragraph": "The cat _______ sitting on the chair.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/video-games.png",
+          "image": "../assets/images/cards/128_was_vs_were/video-games.png",
           "label": "Video games"
         }
       ],
-      "sentence": "The boys _______ playing video games.",
+      "paragraph": "The boys _______ playing video games.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/sunny-day.png",
+          "image": "../assets/images/cards/128_was_vs_were/sunny-day.png",
           "label": "Sunny day"
         }
       ],
-      "sentence": "It _______ sunny yesterday.",
+      "paragraph": "It _______ sunny yesterday.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/homework.png",
+          "image": "../assets/images/cards/128_was_vs_were/homework.png",
           "label": "Homework"
         }
       ],
-      "sentence": "The students _______ doing their homework.",
+      "paragraph": "The students _______ doing their homework.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/cooking.png",
+          "image": "../assets/images/cards/128_was_vs_were/cooking.png",
           "label": "Cooking"
         }
       ],
-      "sentence": "He _______ cooking dinner.",
+      "paragraph": "He _______ cooking dinner.",
       "choices": [
         "was",
         "were"
@@ -1555,26 +1555,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/dolphins-jumping.png",
+          "image": "../assets/images/cards/128_was_vs_were/dolphins-jumping.png",
           "label": "Dolphins jumping"
         }
       ],
-      "sentence": "The dolphins _______ jumping in the waves.",
+      "paragraph": "The dolphins _______ jumping in the waves.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/baby-sleeping.png",
+          "image": "../assets/images/cards/128_was_vs_were/baby-sleeping.png",
           "label": "Baby sleeping"
         }
       ],
-      "sentence": "The baby _______ sleeping peacefully.",
+      "paragraph": "The baby _______ sleeping peacefully.",
       "choices": [
         "was",
         "were"
@@ -1585,41 +1585,41 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/girls-dancing.png",
+          "image": "../assets/images/cards/128_was_vs_were/girls-dancing.png",
           "label": "Girls dancing"
         }
       ],
-      "sentence": "The girls _______ dancing together.",
+      "paragraph": "The girls _______ dancing together.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/ball-grass.png",
+          "image": "../assets/images/cards/128_was_vs_were/ball-grass.png",
           "label": "Ball on grass"
         }
       ],
-      "sentence": "The ball _______ on the grass.",
+      "paragraph": "The ball _______ on the grass.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/party.png",
+          "image": "../assets/images/cards/128_was_vs_were/party.png",
           "label": "Party"
         }
       ],
-      "sentence": "You _______ at the party last night.",
+      "paragraph": "You _______ at the party last night.",
       "choices": [
         "was",
         "were"
@@ -1630,26 +1630,26 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/drawing.png",
+          "image": "../assets/images/cards/128_was_vs_were/drawing.png",
           "label": "Drawing"
         }
       ],
-      "sentence": "She _______ drawing a picture.",
+      "paragraph": "She _______ drawing a picture.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/eating-lunch.png",
+          "image": "../assets/images/cards/128_was_vs_were/eating-lunch.png",
           "label": "Eating lunch"
         }
       ],
-      "sentence": "My friends _______ eating lunch.",
+      "paragraph": "My friends _______ eating lunch.",
       "choices": [
         "was",
         "were"
@@ -1660,41 +1660,41 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/store.png",
+          "image": "../assets/images/cards/128_was_vs_were/store.png",
           "label": "Store"
         }
       ],
-      "sentence": "I _______ at the store this morning.",
+      "paragraph": "I _______ at the store this morning.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/waves-crashing.png",
+          "image": "../assets/images/cards/128_was_vs_were/waves-crashing.png",
           "label": "Waves crashing"
         }
       ],
-      "sentence": "The waves _______ crashing on the shore.",
+      "paragraph": "The waves _______ crashing on the shore.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/movie-tv.png",
+          "image": "../assets/images/cards/128_was_vs_were/movie-tv.png",
           "label": "Movie on TV"
         }
       ],
-      "sentence": "The movie _______ playing on TV.",
+      "paragraph": "The movie _______ playing on TV.",
       "choices": [
         "was",
         "were"
@@ -1705,11 +1705,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/flowers-blooming.png",
+          "image": "../assets/images/cards/128_was_vs_were/flowers-blooming.png",
           "label": "Flowers blooming"
         }
       ],
-      "sentence": "The flowers _______ blooming in the garden.",
+      "paragraph": "The flowers _______ blooming in the garden.",
       "choices": [
         "was",
         "were"
@@ -1720,56 +1720,56 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/seashell.png",
+          "image": "../assets/images/cards/128_was_vs_were/seashell.png",
           "label": "Seashell"
         }
       ],
-      "sentence": "The seashell _______ on the sand.",
+      "paragraph": "The seashell _______ on the sand.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/mom-dad-dinner.png",
+          "image": "../assets/images/cards/128_was_vs_were/mom-dad-dinner.png",
           "label": "Mom and dad at dinner"
         }
       ],
-      "sentence": "Mom and Dad _______ helping with dinner.",
+      "paragraph": "Mom and Dad _______ helping with dinner.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/phone-ringing.png",
+          "image": "../assets/images/cards/128_was_vs_were/phone-ringing.png",
           "label": "Phone ringing"
         }
       ],
-      "sentence": "The phone _______ ringing loudly.",
+      "paragraph": "The phone _______ ringing loudly.",
       "choices": [
-        "was",
-        "were"
+        "were",
+        "was"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/running-beach.png",
+          "image": "../assets/images/cards/128_was_vs_were/running-beach.png",
           "label": "Running on beach"
         }
       ],
-      "sentence": "They _______ running on the beach.",
+      "paragraph": "They _______ running on the beach.",
       "choices": [
         "was",
         "were"
@@ -1780,11 +1780,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/lifeguard.png",
+          "image": "../assets/images/cards/128_was_vs_were/lifeguard.png",
           "label": "Lifeguard"
         }
       ],
-      "sentence": "The lifeguard _______ watching the swimmers.",
+      "paragraph": "The lifeguard _______ watching the swimmers.",
       "choices": [
         "was",
         "were"
@@ -1795,11 +1795,11 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/128_was_vs_were/playing-park.png",
+          "image": "../assets/images/cards/128_was_vs_were/playing-park.png",
           "label": "Playing at park"
         }
       ],
-      "sentence": "We _______ playing at the park.",
+      "paragraph": "We _______ playing at the park.",
       "choices": [
         "was",
         "were"
@@ -1812,7 +1812,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/girl-running.png",
+          "image": "../assets/images/cards/101_third_person_singular/girl-running.png",
           "label": "Girl running"
         }
       ],
@@ -1827,37 +1827,37 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/boy-eating.png",
+          "image": "../assets/images/cards/101_third_person_singular/boy-eating.png",
           "label": "Boy eating"
         }
       ],
       "paragraph": "It's breakfast time and Marcus is very hungry. His mom made his favorite pancakes with syrup. He _______ them all before anyone else finishes.",
       "choices": [
-        "eat",
-        "eats"
+        "eats",
+        "eat"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/cat-sleeping.png",
+          "image": "../assets/images/cards/101_third_person_singular/cat-sleeping.png",
           "label": "Cat sleeping"
         }
       ],
       "paragraph": "Whiskers is a fluffy orange cat who loves warm spots. After playing with yarn all morning, the cat finds a sunny spot on the couch. It _______ there for hours.",
       "choices": [
-        "sleep",
-        "sleeps"
+        "sleeps",
+        "sleep"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/woman-reading.png",
+          "image": "../assets/images/cards/101_third_person_singular/woman-reading.png",
           "label": "Woman reading"
         }
       ],
@@ -1872,7 +1872,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/dog-jumping.png",
+          "image": "../assets/images/cards/101_third_person_singular/dog-jumping.png",
           "label": "Dog jumping"
         }
       ],
@@ -1887,7 +1887,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/man-swimming.png",
+          "image": "../assets/images/cards/101_third_person_singular/man-swimming.png",
           "label": "Man swimming"
         }
       ],
@@ -1902,7 +1902,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/bird-flying.png",
+          "image": "../assets/images/cards/101_third_person_singular/bird-flying.png",
           "label": "Bird flying"
         }
       ],
@@ -1917,7 +1917,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/girl-singing.png",
+          "image": "../assets/images/cards/101_third_person_singular/girl-singing.png",
           "label": "Girl singing"
         }
       ],
@@ -1932,7 +1932,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/boy-writing.png",
+          "image": "../assets/images/cards/101_third_person_singular/boy-writing.png",
           "label": "Boy writing"
         }
       ],
@@ -1947,37 +1947,37 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/bear-walking.png",
+          "image": "../assets/images/cards/101_third_person_singular/bear-walking.png",
           "label": "Bear walking"
         }
       ],
       "paragraph": "In the forest, a big brown bear wakes up from its nap. It's hungry and wants to find berries. It _______ slowly through the trees looking for food.",
       "choices": [
-        "walk",
-        "walks"
+        "walks",
+        "walk"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/woman-cooking.png",
+          "image": "../assets/images/cards/101_third_person_singular/woman-cooking.png",
           "label": "Woman cooking"
         }
       ],
       "paragraph": "Grandma loves making dinner for the whole family. Every Sunday, she prepares a special meal. She _______ delicious pasta with homemade sauce.",
       "choices": [
-        "cook",
-        "cooks"
+        "cooks",
+        "cook"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/boy-playing.png",
+          "image": "../assets/images/cards/101_third_person_singular/boy-playing.png",
           "label": "Boy playing"
         }
       ],
@@ -1992,7 +1992,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/fish-swimming.png",
+          "image": "../assets/images/cards/101_third_person_singular/fish-swimming.png",
           "label": "Fish swimming"
         }
       ],
@@ -2007,7 +2007,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/bunny-hopping.png",
+          "image": "../assets/images/cards/101_third_person_singular/bunny-hopping.png",
           "label": "Bunny hopping"
         }
       ],
@@ -2022,22 +2022,22 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/girl-drinking.png",
+          "image": "../assets/images/cards/101_third_person_singular/girl-drinking.png",
           "label": "Girl drinking"
         }
       ],
       "paragraph": "After playing outside in the hot sun, Sofia comes inside feeling thirsty. Her mom gives her a cold glass of lemonade. She _______ it all in one gulp.",
       "choices": [
-        "drink",
-        "drinks"
+        "drinks",
+        "drink"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/man-driving.png",
+          "image": "../assets/images/cards/101_third_person_singular/man-driving.png",
           "label": "Man driving"
         }
       ],
@@ -2052,7 +2052,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/dolphin-splashing.png",
+          "image": "../assets/images/cards/101_third_person_singular/dolphin-splashing.png",
           "label": "Dolphin splashing"
         }
       ],
@@ -2067,7 +2067,7 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/woman-dancing.png",
+          "image": "../assets/images/cards/101_third_person_singular/woman-dancing.png",
           "label": "Woman dancing"
         }
       ],
@@ -2082,82 +2082,82 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/boy-climbing.png",
+          "image": "../assets/images/cards/101_third_person_singular/boy-climbing.png",
           "label": "Boy climbing"
         }
       ],
       "paragraph": "At the playground, there's a tall climbing wall that all the kids love. Ben is the best at it in his class. He _______ all the way to the top in record time.",
       "choices": [
-        "climb",
-        "climbs"
+        "climbs",
+        "climb"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/crab-crawling.png",
+          "image": "../assets/images/cards/101_third_person_singular/crab-crawling.png",
           "label": "Crab crawling"
         }
       ],
       "paragraph": "At the beach, there's a little red crab hiding under a rock. When the waves come in, it moves to find food. It _______ sideways across the wet sand.",
       "choices": [
-        "crawl",
-        "crawls"
+        "crawls",
+        "crawl"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/girl-painting.png",
+          "image": "../assets/images/cards/101_third_person_singular/girl-painting.png",
           "label": "Girl painting"
         }
       ],
       "paragraph": "Lily loves art more than anything else. She has an easel set up in her bedroom. She _______ beautiful pictures of flowers and animals.",
       "choices": [
-        "paint",
-        "paints"
+        "paints",
+        "paint"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/man-lifting.png",
+          "image": "../assets/images/cards/101_third_person_singular/man-lifting.png",
           "label": "Man lifting weights"
         }
       ],
       "paragraph": "Uncle Joe goes to the gym every morning to stay strong. He works with heavy equipment to build his muscles. He _______ weights for an hour each day.",
       "choices": [
-        "lift",
-        "lifts"
+        "lifts",
+        "lift"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/frog-catching.png",
+          "image": "../assets/images/cards/101_third_person_singular/frog-catching.png",
           "label": "Frog catching"
         }
       ],
       "paragraph": "By the pond, a green frog sits very still on a lily pad. It's waiting for a fly to come close. When one does, it _______ it with its long tongue.",
       "choices": [
-        "catch",
-        "catches"
+        "catches",
+        "catch"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/woman-pushing.png",
+          "image": "../assets/images/cards/101_third_person_singular/woman-pushing.png",
           "label": "Woman pushing stroller"
         }
       ],
@@ -2172,91 +2172,91 @@
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/boy-throwing.png",
+          "image": "../assets/images/cards/101_third_person_singular/boy-throwing.png",
           "label": "Boy throwing"
         }
       ],
       "paragraph": "Kevin is on the school baseball team and practices every day. His coach says he has a strong arm. He _______ the ball faster than anyone else on the team.",
       "choices": [
-        "throw",
-        "throws"
+        "throws",
+        "throw"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/seagull-standing.png",
+          "image": "../assets/images/cards/101_third_person_singular/seagull-standing.png",
           "label": "Seagull standing"
         }
       ],
       "paragraph": "At the beach, a seagull watches the waves roll in. It's looking for fish near the shore. It _______ on one leg while it waits patiently.",
       "choices": [
-        "stand",
-        "stands"
+        "stands",
+        "stand"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/girl-brushing.png",
+          "image": "../assets/images/cards/101_third_person_singular/girl-brushing.png",
           "label": "Girl brushing teeth"
         }
       ],
       "paragraph": "Every night before bed, Anna has a routine she follows. She puts on her pajamas and gets her toothbrush ready. She _______ her teeth for two whole minutes.",
       "choices": [
-        "brush",
-        "brushes"
+        "brushes",
+        "brush"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/man-washing.png",
+          "image": "../assets/images/cards/101_third_person_singular/man-washing.png",
           "label": "Man washing dishes"
         }
       ],
       "paragraph": "Dad helps clean up after dinner every night. He rolls up his sleeves and turns on the water. He _______ all the dishes until they sparkle.",
       "choices": [
-        "wash",
-        "washes"
+        "washes",
+        "wash"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/dog-digging.png",
+          "image": "../assets/images/cards/101_third_person_singular/dog-digging.png",
           "label": "Dog digging"
         }
       ],
       "paragraph": "Buddy the dog loves playing in the backyard. He found a spot near the fence where the dirt is soft. He _______ holes to bury his favorite bones.",
       "choices": [
-        "dig",
-        "digs"
+        "digs",
+        "dig"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Which word completes the sentence correctly?",
       "images": [
         {
-          "image": "/images/cards/101_third_person_singular/woman-teaching.png",
+          "image": "../assets/images/cards/101_third_person_singular/woman-teaching.png",
           "label": "Woman teaching"
         }
       ],
       "paragraph": "Ms. Rodriguez loves working with children. She works at the elementary school on Main Street. She _______ second grade and helps kids learn to read.",
       "choices": [
-        "teach",
-        "teaches"
+        "teaches",
+        "teach"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     }
   ]
 }

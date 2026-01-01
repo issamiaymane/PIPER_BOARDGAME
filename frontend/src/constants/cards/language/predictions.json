@@ -4,7 +4,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/ice-tray-water.png",
+          "image": "../assets/images/cards/137_what_will_happen/ice-tray-water.png",
           "label": "Ice tray with water going into freezer"
         }
       ],
@@ -18,7 +18,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/child-dandelion.png",
+          "image": "../assets/images/cards/137_what_will_happen/child-dandelion.png",
           "label": "Child blowing on a dandelion"
         }
       ],
@@ -32,7 +32,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/child-balloon.png",
+          "image": "../assets/images/cards/137_what_will_happen/child-balloon.png",
           "label": "Child letting go of a balloon"
         }
       ],
@@ -46,7 +46,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/dark-clouds.png",
+          "image": "../assets/images/cards/137_what_will_happen/dark-clouds.png",
           "label": "Dark clouds in the sky"
         }
       ],
@@ -60,7 +60,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/dropping-milk.png",
+          "image": "../assets/images/cards/137_what_will_happen/dropping-milk.png",
           "label": "Glass of milk about to fall"
         }
       ],
@@ -74,7 +74,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/ice-cream-sun.png",
+          "image": "../assets/images/cards/137_what_will_happen/ice-cream-sun.png",
           "label": "Ice cream cone in the sun"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/wave-sandcastle.png",
+          "image": "../assets/images/cards/137_what_will_happen/wave-sandcastle.png",
           "label": "Wave approaching a sandcastle"
         }
       ],
@@ -102,7 +102,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/balloon-blowing.png",
+          "image": "../assets/images/cards/137_what_will_happen/balloon-blowing.png",
           "label": "Balloon being over-inflated"
         }
       ],
@@ -116,7 +116,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/dog-ball.png",
+          "image": "../assets/images/cards/137_what_will_happen/dog-ball.png",
           "label": "Dog watching a ball being thrown"
         }
       ],
@@ -130,7 +130,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/child-yawning.png",
+          "image": "../assets/images/cards/137_what_will_happen/child-yawning.png",
           "label": "Child yawning"
         }
       ],
@@ -144,7 +144,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/plant-no-water.png",
+          "image": "../assets/images/cards/137_what_will_happen/plant-no-water.png",
           "label": "Dry plant without water"
         }
       ],
@@ -158,7 +158,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/child-jump-pool.png",
+          "image": "../assets/images/cards/137_what_will_happen/child-jump-pool.png",
           "label": "Child jumping into a pool"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/umbrella-rain.png",
+          "image": "../assets/images/cards/137_what_will_happen/umbrella-rain.png",
           "label": "Person with umbrella in the rain"
         }
       ],
@@ -186,7 +186,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/egg-table.png",
+          "image": "../assets/images/cards/137_what_will_happen/egg-table.png",
           "label": "Egg on edge of a table"
         }
       ],
@@ -200,7 +200,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/bread-toaster.png",
+          "image": "../assets/images/cards/137_what_will_happen/bread-toaster.png",
           "label": "Bread going into a toaster"
         }
       ],
@@ -214,7 +214,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/snowman-sun.png",
+          "image": "../assets/images/cards/137_what_will_happen/snowman-sun.png",
           "label": "Snowman in the sun"
         }
       ],
@@ -228,7 +228,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/candles-blowing.png",
+          "image": "../assets/images/cards/137_what_will_happen/candles-blowing.png",
           "label": "Person blowing out birthday candles"
         }
       ],
@@ -242,7 +242,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/not-looking.png",
+          "image": "../assets/images/cards/137_what_will_happen/not-looking.png",
           "label": "Child walking without looking"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/water-freezer.png",
+          "image": "../assets/images/cards/137_what_will_happen/water-freezer.png",
           "label": "Water being put in freezer"
         }
       ],
@@ -270,7 +270,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/seed-planted.png",
+          "image": "../assets/images/cards/137_what_will_happen/seed-planted.png",
           "label": "Seed being planted"
         }
       ],
@@ -284,7 +284,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/child-sleepy.png",
+          "image": "../assets/images/cards/137_what_will_happen/child-sleepy.png",
           "label": "Sleepy child"
         }
       ],
@@ -298,7 +298,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/towel-wind.png",
+          "image": "../assets/images/cards/137_what_will_happen/towel-wind.png",
           "label": "Towel on a line in the wind"
         }
       ],
@@ -312,7 +312,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/pot-stove.png",
+          "image": "../assets/images/cards/137_what_will_happen/pot-stove.png",
           "label": "Pot of water on the stove"
         }
       ],
@@ -326,7 +326,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/child-puddle.png",
+          "image": "../assets/images/cards/137_what_will_happen/child-puddle.png",
           "label": "Child about to step in a puddle"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/caterpillar-cocoon.png",
+          "image": "../assets/images/cards/137_what_will_happen/caterpillar-cocoon.png",
           "label": "Caterpillar in a cocoon"
         }
       ],
@@ -354,7 +354,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/butter-warm.png",
+          "image": "../assets/images/cards/137_what_will_happen/butter-warm.png",
           "label": "Butter in a warm room"
         }
       ],
@@ -368,7 +368,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/dog-gate.png",
+          "image": "../assets/images/cards/137_what_will_happen/dog-gate.png",
           "label": "Dog near an open gate"
         }
       ],
@@ -382,7 +382,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/juice-overflow.png",
+          "image": "../assets/images/cards/137_what_will_happen/juice-overflow.png",
           "label": "Juice being poured into a full cup"
         }
       ],
@@ -396,7 +396,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/sunset.png",
+          "image": "../assets/images/cards/137_what_will_happen/sunset.png",
           "label": "Sun setting"
         }
       ],
@@ -410,7 +410,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/137_what_will_happen/sunscreen.png",
+          "image": "../assets/images/cards/137_what_will_happen/sunscreen.png",
           "label": "Applying sunscreen"
         }
       ],
@@ -426,7 +426,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/overflowing-glass.png",
+          "image": "../assets/images/cards/138_predictions/overflowing-glass.png",
           "label": "Glass of water overflowing"
         }
       ],
@@ -440,7 +440,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/child-slide.png",
+          "image": "../assets/images/cards/138_predictions/child-slide.png",
           "label": "Child at the top of a slide"
         }
       ],
@@ -454,7 +454,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/person-sneeze.png",
+          "image": "../assets/images/cards/138_predictions/person-sneeze.png",
           "label": "Person about to sneeze"
         }
       ],
@@ -468,7 +468,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/heavy-books.png",
+          "image": "../assets/images/cards/138_predictions/heavy-books.png",
           "label": "Child carrying heavy books"
         }
       ],
@@ -482,7 +482,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/match-candle.png",
+          "image": "../assets/images/cards/138_predictions/match-candle.png",
           "label": "Match near a candle"
         }
       ],
@@ -496,7 +496,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/ball-stairs.png",
+          "image": "../assets/images/cards/138_predictions/ball-stairs.png",
           "label": "Ball at the top of stairs"
         }
       ],
@@ -510,7 +510,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/banana-peel.png",
+          "image": "../assets/images/cards/138_predictions/banana-peel.png",
           "label": "Banana peel on the floor"
         }
       ],
@@ -524,7 +524,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/blowing-bubbles.png",
+          "image": "../assets/images/cards/138_predictions/blowing-bubbles.png",
           "label": "Person blowing bubbles"
         }
       ],
@@ -538,7 +538,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/cup-edge.png",
+          "image": "../assets/images/cards/138_predictions/cup-edge.png",
           "label": "Cup on edge of table"
         }
       ],
@@ -552,7 +552,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/kite-wind.png",
+          "image": "../assets/images/cards/138_predictions/kite-wind.png",
           "label": "Person holding a kite on windy day"
         }
       ],
@@ -566,7 +566,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/wet-clothes.png",
+          "image": "../assets/images/cards/138_predictions/wet-clothes.png",
           "label": "Wet clothes on a clothesline"
         }
       ],
@@ -580,7 +580,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/petting-dog.png",
+          "image": "../assets/images/cards/138_predictions/petting-dog.png",
           "label": "Person petting a dog"
         }
       ],
@@ -594,7 +594,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/bubble-wrap.png",
+          "image": "../assets/images/cards/138_predictions/bubble-wrap.png",
           "label": "Hands squeezing bubble wrap"
         }
       ],
@@ -608,7 +608,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/lights-off.png",
+          "image": "../assets/images/cards/138_predictions/lights-off.png",
           "label": "Finger on light switch"
         }
       ],
@@ -622,7 +622,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/mixing-paint.png",
+          "image": "../assets/images/cards/138_predictions/mixing-paint.png",
           "label": "Blue and yellow paint being mixed"
         }
       ],
@@ -636,7 +636,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/untied-shoes.png",
+          "image": "../assets/images/cards/138_predictions/untied-shoes.png",
           "label": "Untied shoelaces"
         }
       ],
@@ -650,7 +650,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/doorbell.png",
+          "image": "../assets/images/cards/138_predictions/doorbell.png",
           "label": "Finger pressing doorbell"
         }
       ],
@@ -664,7 +664,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/squeezing-orange.png",
+          "image": "../assets/images/cards/138_predictions/squeezing-orange.png",
           "label": "Squeezing an orange"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/sponge-water.png",
+          "image": "../assets/images/cards/138_predictions/sponge-water.png",
           "label": "Sponge in water"
         }
       ],
@@ -692,7 +692,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/fridge-open.png",
+          "image": "../assets/images/cards/138_predictions/fridge-open.png",
           "label": "Refrigerator door being opened"
         }
       ],
@@ -706,7 +706,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/dominoes.png",
+          "image": "../assets/images/cards/138_predictions/dominoes.png",
           "label": "Dominoes lined up"
         }
       ],
@@ -720,7 +720,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/paper-airplane.png",
+          "image": "../assets/images/cards/138_predictions/paper-airplane.png",
           "label": "Person throwing a paper airplane"
         }
       ],
@@ -734,7 +734,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/toys-box.png",
+          "image": "../assets/images/cards/138_predictions/toys-box.png",
           "label": "Too many toys for a box"
         }
       ],
@@ -748,7 +748,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/bathtub-running.png",
+          "image": "../assets/images/cards/138_predictions/bathtub-running.png",
           "label": "Bathtub filling with water"
         }
       ],
@@ -762,7 +762,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/flower-water.png",
+          "image": "../assets/images/cards/138_predictions/flower-water.png",
           "label": "Watering a flower"
         }
       ],
@@ -776,7 +776,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/crayon-car.png",
+          "image": "../assets/images/cards/138_predictions/crayon-car.png",
           "label": "Crayon in a hot car"
         }
       ],
@@ -790,7 +790,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/bird-window.png",
+          "image": "../assets/images/cards/138_predictions/bird-window.png",
           "label": "Bird near an open window"
         }
       ],
@@ -804,7 +804,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/letter-mailbox.png",
+          "image": "../assets/images/cards/138_predictions/letter-mailbox.png",
           "label": "Putting a letter in a mailbox"
         }
       ],
@@ -818,7 +818,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/tablecloth-pull.png",
+          "image": "../assets/images/cards/138_predictions/tablecloth-pull.png",
           "label": "Person pulling a tablecloth"
         }
       ],
@@ -832,7 +832,7 @@
       "question": "What will happen?",
       "images": [
         {
-          "image": "/images/cards/138_predictions/soap-bath.png",
+          "image": "../assets/images/cards/138_predictions/soap-bath.png",
           "label": "Adding soap to bath water"
         }
       ],

@@ -4,47 +4,47 @@
       "question": "What does \"it's raining cats and dogs\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/raining_cats_dogs.png",
+          "image": "../assets/images/cards/32_figurative_language/raining_cats_dogs.png",
           "label": "Raining cats and dogs idiom"
         }
       ],
       "paragraph": "When Lawrence checked the weather report last night, it said today was going to be a beautiful day. Lawrence immediately asked his dad if they could play baseball together, and he said yes. Now, Lawrence just walked into the kitchen and asked his dad when he wanted to leave. His dad replied that it's <b>raining cats and dogs</b>, and he doesn't think they can play at all today.",
       "choices": [
-        "Animals are falling from the sky",
         "It is raining very hard",
+        "Animals are falling from the sky",
         "Cats and dogs are playing outside"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"I'm in a pickle\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/in_a_pickle.png",
+          "image": "../assets/images/cards/32_figurative_language/in_a_pickle.png",
           "label": "In a pickle idiom"
         }
       ],
       "paragraph": "Aaron was riding to the community center this morning, when his friend, Jenna, asked him what he thought about their math homework. Aaron started to say that he didn't think it was bad, when all of a sudden, he realized he left his homework at home! Aaron turned to Jenna and said, \"<b>I'm in a pickle</b>.\" Jenna suggested that Aaron explain the situation to their teacher and ask to bring it tomorrow.",
       "choices": [
         "I am inside a vegetable",
-        "I am in a difficult situation",
-        "I am very hungry"
+        "I am very hungry",
+        "I am in a difficult situation"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"bug off\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/bug_off.png",
+          "image": "../assets/images/cards/32_figurative_language/bug_off.png",
           "label": "Bug off idiom"
         }
       ],
       "paragraph": "Matt is in his bedroom working. He has two quizzes tomorrow, as well as a worksheet to complete, and a chapter to read. He has been trying to focus, but his two brothers, Zach and Brian, keep making noise and running into his room. Just as Matt thought they had settled down, they ran in again! Matt was losing his patience and said they needed to <b>bug off</b>.",
       "choices": [
-        "Go find some insects",
+        "Turn off the lights",
         "Go away and leave me alone",
-        "Turn off the lights"
+        "Go find some insects"
       ],
       "answerIndex": 1
     },
@@ -52,55 +52,55 @@
       "question": "What does \"piece of cake\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/piece_of_cake.png",
+          "image": "../assets/images/cards/32_figurative_language/piece_of_cake.png",
           "label": "Piece of cake idiom"
         }
       ],
       "paragraph": "Maria was nervous about her math test all week. She studied every night and practiced lots of problems. When she sat down to take the test, she realized she knew all the answers! After the test, her friend asked how it went. Maria smiled and said, \"It was a <b>piece of cake</b>!\"",
       "choices": [
-        "There was dessert after the test",
         "Something that was very easy",
+        "There was dessert after the test",
         "The test was about baking"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"break a leg\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/break_a_leg.png",
+          "image": "../assets/images/cards/32_figurative_language/break_a_leg.png",
           "label": "Break a leg idiom"
         }
       ],
       "paragraph": "Sofia was getting ready for her dance performance. She had practiced for months and knew all her moves. Her mom gave her a hug backstage and said, \"<b>Break a leg</b>!\" Sofia smiled, knowing her mom wanted her to do her best.",
       "choices": [
+        "Hurt yourself",
         "Be careful not to fall",
-        "Good luck",
-        "Hurt yourself"
+        "Good luck"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"under the weather\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/under_the_weather.png",
+          "image": "../assets/images/cards/32_figurative_language/under_the_weather.png",
           "label": "Under the weather idiom"
         }
       ],
       "paragraph": "Ben was supposed to go to the beach with his friends today. He woke up with a sore throat and runny nose. When his friend called to ask if he was ready, Ben said, \"I'm feeling <b>under the weather</b> today. I better stay home and rest.\"",
       "choices": [
         "Standing in the rain",
-        "Feeling sick",
-        "Checking the forecast"
+        "Checking the forecast",
+        "Feeling sick"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"costs an arm and a leg\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/costs_arm_leg.png",
+          "image": "../assets/images/cards/32_figurative_language/costs_arm_leg.png",
           "label": "Costs an arm and a leg idiom"
         }
       ],
@@ -116,79 +116,79 @@
       "question": "What does \"hit the hay\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/hit_the_hay.png",
+          "image": "../assets/images/cards/32_figurative_language/hit_the_hay.png",
           "label": "Hit the hay idiom"
         }
       ],
       "paragraph": "After a long day at the beach, Jake could barely keep his eyes open. He told his family, \"I'm so tired, I need to <b>hit the hay</b>.\" He went to his room and fell asleep right away.",
       "choices": [
-        "Go punch some grass",
         "Go to sleep",
+        "Go punch some grass",
         "Play on a farm"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"let the cat out of the bag\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/cat_out_of_bag.png",
+          "image": "../assets/images/cards/32_figurative_language/cat_out_of_bag.png",
           "label": "Let the cat out of the bag idiom"
         }
       ],
       "paragraph": "Emma was planning a surprise party for her brother. She told all her friends to keep it a secret. But at dinner, her little sister accidentally <b>let the cat out of the bag</b> by asking what color balloons they were getting for the party.",
       "choices": [
-        "Released a pet from a container",
         "Accidentally told a secret",
-        "Went shopping for pet supplies"
+        "Went shopping for pet supplies",
+        "Released a pet from a container"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"when pigs fly\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/when_pigs_fly.png",
+          "image": "../assets/images/cards/32_figurative_language/when_pigs_fly.png",
           "label": "When pigs fly idiom"
         }
       ],
       "paragraph": "Carlos asked his older sister if she would let him play her video game. She laughed and said, \"You can play my game <b>when pigs fly</b>!\" Carlos knew that meant she would never let him play.",
       "choices": [
         "When animals learn to fly",
-        "Never",
-        "During a special holiday"
+        "During a special holiday",
+        "Never"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"on cloud nine\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/on_cloud_nine.png",
+          "image": "../assets/images/cards/32_figurative_language/on_cloud_nine.png",
           "label": "On cloud nine idiom"
         }
       ],
       "paragraph": "After winning first place in the art contest, Maya couldn't stop smiling. Her teacher said, \"You look like you're <b>on cloud nine</b>!\" Maya nodded happily, still holding her ribbon.",
       "choices": [
+        "Very tired",
         "Floating in the sky",
-        "Extremely happy",
-        "Very tired"
+        "Extremely happy"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"spill the beans\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/spill_the_beans.png",
+          "image": "../assets/images/cards/32_figurative_language/spill_the_beans.png",
           "label": "Spill the beans idiom"
         }
       ],
       "paragraph": "Nathan knew about the surprise trip to the aquarium. His mom told him not to tell his little brother. But when his brother asked what they were doing this weekend, Nathan accidentally <b>spilled the beans</b> and ruined the surprise.",
       "choices": [
-        "Dropped food on the floor",
+        "Made a mess in the kitchen",
         "Told a secret by accident",
-        "Made a mess in the kitchen"
+        "Dropped food on the floor"
       ],
       "answerIndex": 1
     },
@@ -196,31 +196,31 @@
       "question": "What does \"give a piece of my mind\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/piece_of_mind.png",
+          "image": "../assets/images/cards/32_figurative_language/piece_of_mind.png",
           "label": "Give a piece of my mind idiom"
         }
       ],
       "paragraph": "The neighbor's dog kept coming into our yard and digging holes. Mom was very frustrated. She said she was going to <b>give the neighbor a piece of her mind</b> about keeping the dog in their own yard.",
       "choices": [
         "Share your thoughts kindly",
-        "Tell someone you are upset with them",
-        "Give someone a gift"
+        "Give someone a gift",
+        "Tell someone you are upset with them"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"bite off more than you can chew\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/bite_off_more.png",
+          "image": "../assets/images/cards/32_figurative_language/bite_off_more.png",
           "label": "Bite off more than you can chew idiom"
         }
       ],
       "paragraph": "Tommy signed up for three different sports teams, art class, and music lessons all at the same time. His dad warned him that he might be <b>biting off more than he can chew</b>. Soon, Tommy realized he was too busy and had to drop some activities.",
       "choices": [
-        "Eating too much food",
+        "Having a big appetite",
         "Taking on too many responsibilities",
-        "Having a big appetite"
+        "Eating too much food"
       ],
       "answerIndex": 1
     },
@@ -228,15 +228,15 @@
       "question": "What does \"the ball is in your court\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/ball_in_court.png",
+          "image": "../assets/images/cards/32_figurative_language/ball_in_court.png",
           "label": "Ball is in your court idiom"
         }
       ],
       "paragraph": "After his friend apologized for the argument, Marcus didn't know what to say. His mom told him, \"<b>The ball is in your court</b> now. You get to decide if you want to forgive him.\"",
       "choices": [
-        "Time to play basketball",
+        "You need to clean up",
         "It's your turn to make a decision",
-        "You need to clean up"
+        "Time to play basketball"
       ],
       "answerIndex": 1
     },
@@ -244,47 +244,47 @@
       "question": "What does \"hold your horses\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/hold_your_horses.png",
+          "image": "../assets/images/cards/32_figurative_language/hold_your_horses.png",
           "label": "Hold your horses idiom"
         }
       ],
       "paragraph": "Ella was so excited for the trip to the aquarium that she ran to the car before anyone else was ready. Her dad laughed and said, \"<b>Hold your horses</b>! We still need to pack our lunches.\"",
       "choices": [
-        "Take care of animals",
         "Wait and be patient",
+        "Take care of animals",
         "Run faster"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"once in a blue moon\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/blue_moon.png",
+          "image": "../assets/images/cards/32_figurative_language/blue_moon.png",
           "label": "Once in a blue moon idiom"
         }
       ],
       "paragraph": "Grandma rarely lets us have smoothies before dinner. When she said yes, Mom whispered, \"That only happens <b>once in a blue moon</b>!\"",
       "choices": [
-        "Only during full moons",
         "Very rarely",
-        "Every night"
+        "Every night",
+        "Only during full moons"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"barking up the wrong tree\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/wrong_tree.png",
+          "image": "../assets/images/cards/32_figurative_language/wrong_tree.png",
           "label": "Barking up the wrong tree idiom"
         }
       ],
       "paragraph": "Kevin thought his sister ate his last orange. He kept asking her about it until Mom said, \"You're <b>barking up the wrong tree</b>. Dad ate it this morning.\"",
       "choices": [
-        "Yelling at a plant",
+        "Playing with dogs",
         "Blaming the wrong person",
-        "Playing with dogs"
+        "Yelling at a plant"
       ],
       "answerIndex": 1
     },
@@ -292,7 +292,7 @@
       "question": "What does \"hit the nail on the head\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/nail_on_head.png",
+          "image": "../assets/images/cards/32_figurative_language/nail_on_head.png",
           "label": "Hit the nail on the head idiom"
         }
       ],
@@ -308,55 +308,55 @@
       "question": "What does \"keep your eyes peeled\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/eyes_peeled.png",
+          "image": "../assets/images/cards/32_figurative_language/eyes_peeled.png",
           "label": "Keep your eyes peeled idiom"
         }
       ],
       "paragraph": "At the beach, Dad told us to <b>keep our eyes peeled</b> for dolphins. We watched the water carefully and finally spotted some jumping in the waves!",
       "choices": [
+        "Close your eyes",
         "Remove your eyelids",
-        "Watch very carefully",
-        "Close your eyes"
+        "Watch very carefully"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"a fish out of water\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/fish_out_of_water.png",
+          "image": "../assets/images/cards/32_figurative_language/fish_out_of_water.png",
           "label": "A fish out of water idiom"
         }
       ],
       "paragraph": "On his first day at the new community center, Leo didn't know anyone. He felt like <b>a fish out of water</b> until a friendly kid invited him to play.",
       "choices": [
         "A sea animal on land",
-        "Feeling uncomfortable in a new place",
-        "Going swimming"
+        "Going swimming",
+        "Feeling uncomfortable in a new place"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"butterflies in my stomach\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/butterflies_stomach.png",
+          "image": "../assets/images/cards/32_figurative_language/butterflies_stomach.png",
           "label": "Butterflies in my stomach idiom"
         }
       ],
       "paragraph": "Before the talent show, Rosa said she had <b>butterflies in her stomach</b>. Her mom hugged her and said it was normal to feel nervous before performing.",
       "choices": [
         "Insects inside your body",
-        "Feeling nervous or excited",
-        "Feeling very hungry"
+        "Feeling very hungry",
+        "Feeling nervous or excited"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"the early bird gets the worm\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/early_bird.png",
+          "image": "../assets/images/cards/32_figurative_language/early_bird.png",
           "label": "The early bird gets the worm idiom"
         }
       ],
@@ -372,31 +372,31 @@
       "question": "What does \"don't cry over spilled milk\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/spilled_milk.png",
+          "image": "../assets/images/cards/32_figurative_language/spilled_milk.png",
           "label": "Don't cry over spilled milk idiom"
         }
       ],
       "paragraph": "When Aiden accidentally knocked over his juice, he got very upset. His grandma said, \"<b>Don't cry over spilled milk</b>. Let's just clean it up and pour you another glass.\"",
       "choices": [
-        "Milk is not worth crying about",
         "Don't waste time being upset about small accidents",
+        "Milk is not worth crying about",
         "Always drink from a closed cup"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"walking on eggshells\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/walking_eggshells.png",
+          "image": "../assets/images/cards/32_figurative_language/walking_eggshells.png",
           "label": "Walking on eggshells idiom"
         }
       ],
       "paragraph": "When Dad was tired after work, everyone was <b>walking on eggshells</b> around him. We tried to be quiet and not bother him until he felt better.",
       "choices": [
-        "Stepping on breakfast food",
+        "Walking very slowly",
         "Being very careful not to upset someone",
-        "Walking very slowly"
+        "Stepping on breakfast food"
       ],
       "answerIndex": 1
     },
@@ -404,63 +404,63 @@
       "question": "What does \"out of the blue\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/out_of_blue.png",
+          "image": "../assets/images/cards/32_figurative_language/out_of_blue.png",
           "label": "Out of the blue idiom"
         }
       ],
       "paragraph": "We were playing at the park when, <b>out of the blue</b>, it started raining! We had to run to find shelter because we weren't expecting rain at all.",
       "choices": [
-        "Coming from the sky",
         "Happening suddenly and unexpectedly",
-        "The color changed"
+        "The color changed",
+        "Coming from the sky"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"zip your lip\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/zip_lip.png",
+          "image": "../assets/images/cards/32_figurative_language/zip_lip.png",
           "label": "Zip your lip idiom"
         }
       ],
       "paragraph": "During the movie, my little brother kept talking. Mom leaned over and whispered, \"<b>Zip your lip</b>!\" He finally stayed quiet for the rest of the film.",
       "choices": [
-        "Put a zipper on your mouth",
         "Stop talking and be quiet",
+        "Put a zipper on your mouth",
         "Eat your food"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"in hot water\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/in_hot_water.png",
+          "image": "../assets/images/cards/32_figurative_language/in_hot_water.png",
           "label": "In hot water idiom"
         }
       ],
       "paragraph": "After staying out past curfew, Jake knew he was <b>in hot water</b> with his parents. He apologized and promised to come home on time next time.",
       "choices": [
         "Taking a warm bath",
-        "In trouble",
-        "Feeling too warm"
+        "Feeling too warm",
+        "In trouble"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"two peas in a pod\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/two_peas.png",
+          "image": "../assets/images/cards/32_figurative_language/two_peas.png",
           "label": "Two peas in a pod idiom"
         }
       ],
       "paragraph": "Best friends Mia and Sophia do everything together. They dress alike, like the same foods, and always play together. Their teacher says they are like <b>two peas in a pod</b>.",
       "choices": [
-        "Vegetables in a garden",
+        "A small green snack",
         "Two people who are very similar",
-        "A small green snack"
+        "Vegetables in a garden"
       ],
       "answerIndex": 1
     },
@@ -468,7 +468,7 @@
       "question": "What does \"through thick and thin\" mean?",
       "images": [
         {
-          "image": "/images/cards/32_figurative_language/thick_and_thin.png",
+          "image": "../assets/images/cards/32_figurative_language/thick_and_thin.png",
           "label": "Through thick and thin idiom"
         }
       ],
@@ -486,7 +486,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/bug_off.png",
+          "image": "../assets/images/cards/46_idioms/bug_off.png",
           "label": "Bug off idiom"
         }
       ],
@@ -502,7 +502,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/pigs_fly.png",
+          "image": "../assets/images/cards/46_idioms/pigs_fly.png",
           "label": "When pigs fly idiom"
         }
       ],
@@ -518,7 +518,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/raining_cats_dogs.png",
+          "image": "../assets/images/cards/46_idioms/raining_cats_dogs.png",
           "label": "Raining cats and dogs idiom"
         }
       ],
@@ -534,7 +534,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/under_weather.png",
+          "image": "../assets/images/cards/46_idioms/under_weather.png",
           "label": "Under the weather idiom"
         }
       ],
@@ -551,7 +551,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/piece_of_cake.png",
+          "image": "../assets/images/cards/46_idioms/piece_of_cake.png",
           "label": "A piece of cake idiom"
         }
       ],
@@ -567,7 +567,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/hit_the_hay.png",
+          "image": "../assets/images/cards/46_idioms/hit_the_hay.png",
           "label": "Hit the hay idiom"
         }
       ],
@@ -583,7 +583,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/break_a_leg.png",
+          "image": "../assets/images/cards/46_idioms/break_a_leg.png",
           "label": "Break a leg idiom"
         }
       ],
@@ -598,7 +598,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/butterflies_stomach.png",
+          "image": "../assets/images/cards/46_idioms/butterflies_stomach.png",
           "label": "Butterflies in stomach idiom"
         }
       ],
@@ -614,7 +614,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/spill_beans.png",
+          "image": "../assets/images/cards/46_idioms/spill_beans.png",
           "label": "Spill the beans idiom"
         }
       ],
@@ -630,7 +630,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/cat_out_bag.png",
+          "image": "../assets/images/cards/46_idioms/cat_out_bag.png",
           "label": "Let the cat out of the bag idiom"
         }
       ],
@@ -646,7 +646,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/cloud_nine.png",
+          "image": "../assets/images/cards/46_idioms/cloud_nine.png",
           "label": "On cloud nine idiom"
         }
       ],
@@ -662,7 +662,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/hold_horses.png",
+          "image": "../assets/images/cards/46_idioms/hold_horses.png",
           "label": "Hold your horses idiom"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/arm_and_leg.png",
+          "image": "../assets/images/cards/46_idioms/arm_and_leg.png",
           "label": "Cost an arm and a leg idiom"
         }
       ],
@@ -694,7 +694,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/ball_in_court.png",
+          "image": "../assets/images/cards/46_idioms/ball_in_court.png",
           "label": "Ball is in your court idiom"
         }
       ],
@@ -710,7 +710,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/early_bird.png",
+          "image": "../assets/images/cards/46_idioms/early_bird.png",
           "label": "Early bird gets the worm idiom"
         }
       ],
@@ -726,7 +726,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/walking_eggshells.png",
+          "image": "../assets/images/cards/46_idioms/walking_eggshells.png",
           "label": "Walking on eggshells idiom"
         }
       ],
@@ -742,7 +742,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/eyes_peeled.png",
+          "image": "../assets/images/cards/46_idioms/eyes_peeled.png",
           "label": "Keep your eyes peeled idiom"
         }
       ],
@@ -758,7 +758,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/fish_out_water.png",
+          "image": "../assets/images/cards/46_idioms/fish_out_water.png",
           "label": "Fish out of water idiom"
         }
       ],
@@ -774,7 +774,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/spilled_milk.png",
+          "image": "../assets/images/cards/46_idioms/spilled_milk.png",
           "label": "Don't cry over spilled milk idiom"
         }
       ],
@@ -790,7 +790,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/out_of_blue.png",
+          "image": "../assets/images/cards/46_idioms/out_of_blue.png",
           "label": "Out of the blue idiom"
         }
       ],
@@ -806,7 +806,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/zip_lip.png",
+          "image": "../assets/images/cards/46_idioms/zip_lip.png",
           "label": "Zip your lip idiom"
         }
       ],
@@ -822,7 +822,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/hot_water.png",
+          "image": "../assets/images/cards/46_idioms/hot_water.png",
           "label": "In hot water idiom"
         }
       ],
@@ -838,7 +838,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/two_peas.png",
+          "image": "../assets/images/cards/46_idioms/two_peas.png",
           "label": "Two peas in a pod idiom"
         }
       ],
@@ -854,7 +854,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/in_a_pickle.png",
+          "image": "../assets/images/cards/46_idioms/in_a_pickle.png",
           "label": "In a pickle idiom"
         }
       ],
@@ -870,7 +870,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/best_shot.png",
+          "image": "../assets/images/cards/46_idioms/best_shot.png",
           "label": "Give it your best shot idiom"
         }
       ],
@@ -886,7 +886,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/cold_feet.png",
+          "image": "../assets/images/cards/46_idioms/cold_feet.png",
           "label": "Getting cold feet idiom"
         }
       ],
@@ -902,7 +902,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/wrong_tree.png",
+          "image": "../assets/images/cards/46_idioms/wrong_tree.png",
           "label": "Barking up the wrong tree idiom"
         }
       ],
@@ -918,7 +918,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/nail_on_head.png",
+          "image": "../assets/images/cards/46_idioms/nail_on_head.png",
           "label": "Hit the nail on the head idiom"
         }
       ],
@@ -934,7 +934,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/silver_lining.png",
+          "image": "../assets/images/cards/46_idioms/silver_lining.png",
           "label": "Every cloud has a silver lining idiom"
         }
       ],
@@ -950,7 +950,7 @@
       "question": "What does this idiom mean?",
       "images": [
         {
-          "image": "/images/cards/46_idioms/actions_words.png",
+          "image": "../assets/images/cards/46_idioms/actions_words.png",
           "label": "Actions speak louder than words idiom"
         }
       ],
@@ -968,7 +968,7 @@
       "question": "What does \"I have butterflies in my stomach\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/butterflies_stomach.png",
+          "image": "../assets/images/cards/43_identify_meaning/butterflies_stomach.png",
           "label": "Butterflies in my stomach idiom"
         }
       ],
@@ -984,87 +984,87 @@
       "question": "What does \"under the weather\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/under_weather.png",
+          "image": "../assets/images/cards/43_identify_meaning/under_weather.png",
           "label": "Under the weather idiom"
         }
       ],
       "paragraph": "Mia woke up this morning with a sore throat and a runny nose. She really wanted to go to the beach with her family, but she knew she wasn't feeling well. When her mom asked if she was ready to go, Mia said, \"I'm feeling <b>under the weather</b> today. I think I should stay home and rest.\" Her mom agreed and made her some warm soup.",
       "choices": [
+        "Watching the weather forecast",
         "Standing outside in the rain",
-        "Feeling sick or unwell",
-        "Watching the weather forecast"
+        "Feeling sick or unwell"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"a piece of cake\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/piece_of_cake.png",
+          "image": "../assets/images/cards/43_identify_meaning/piece_of_cake.png",
           "label": "Piece of cake idiom"
         }
       ],
       "paragraph": "Noah was worried about his spelling test all week. He studied every night and practiced writing each word. When he finally took the test, he knew every single answer! After school, his dad asked how the test went. Noah smiled and said, \"It was <b>a piece of cake</b>!\"",
       "choices": [
-        "He got dessert after the test",
         "The test was very easy",
-        "The test was about baking"
+        "The test was about baking",
+        "He got dessert after the test"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"raining cats and dogs\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/raining_cats_dogs.png",
+          "image": "../assets/images/cards/43_identify_meaning/raining_cats_dogs.png",
           "label": "Raining cats and dogs idiom"
         }
       ],
       "paragraph": "Sophia had plans to play outside with her neighbors. She looked out the window and saw dark clouds forming. Suddenly, it started pouring! Her little brother ran to the window and asked if they could still go out. Sophia laughed and said, \"No way! It's <b>raining cats and dogs</b> out there!\"",
       "choices": [
-        "Pets are falling from the sky",
         "It is raining very heavily",
-        "Animals are playing in the rain"
+        "Animals are playing in the rain",
+        "Pets are falling from the sky"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"hit the hay\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/hit_the_hay.png",
+          "image": "../assets/images/cards/43_identify_meaning/hit_the_hay.png",
           "label": "Hit the hay idiom"
         }
       ],
       "paragraph": "After spending all day at the beach building sandcastles and swimming in the waves, Tyler could barely keep his eyes open. His family had just finished dinner, and he let out a big yawn. \"I think it's time for me to <b>hit the hay</b>,\" Tyler said as he headed to his bedroom.",
       "choices": [
+        "Hit something with your hand",
         "Go to a farm",
-        "Go to bed and sleep",
-        "Hit something with your hand"
+        "Go to bed and sleep"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"break a leg\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/break_a_leg.png",
+          "image": "../assets/images/cards/43_identify_meaning/break_a_leg.png",
           "label": "Break a leg idiom"
         }
       ],
       "paragraph": "Emma was getting ready for her big dance recital. She had practiced for months and knew all her moves perfectly. Right before she went on stage, her mom gave her a big hug and said, \"<b>Break a leg</b>, sweetheart!\" Emma smiled, knowing her mom was wishing her luck.",
       "choices": [
         "Be careful not to fall",
-        "Good luck",
-        "Do a leg exercise"
+        "Do a leg exercise",
+        "Good luck"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"costs an arm and a leg\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/arm_and_leg.png",
+          "image": "../assets/images/cards/43_identify_meaning/arm_and_leg.png",
           "label": "Costs an arm and a leg idiom"
         }
       ],
@@ -1080,95 +1080,95 @@
       "question": "What does \"spilled the beans\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/spill_beans.png",
+          "image": "../assets/images/cards/43_identify_meaning/spill_beans.png",
           "label": "Spill the beans idiom"
         }
       ],
       "paragraph": "Ava knew about the surprise trip to the aquarium that her parents had planned for her little sister. She promised to keep it a secret. But when her sister asked what they were doing on Saturday, Ava accidentally <b>spilled the beans</b> and told her everything!",
       "choices": [
-        "Dropped food on the floor",
         "Told a secret by accident",
+        "Dropped food on the floor",
         "Made a mess in the kitchen"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"when pigs fly\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/when_pigs_fly.png",
+          "image": "../assets/images/cards/43_identify_meaning/when_pigs_fly.png",
           "label": "When pigs fly idiom"
         }
       ],
       "paragraph": "Daniel asked his older brother if he could borrow his new tablet. His brother laughed and said, \"You can use my tablet <b>when pigs fly</b>!\" Daniel knew that meant his brother would never let him borrow it.",
       "choices": [
-        "When animals learn to fly",
         "Never",
+        "When animals learn to fly",
         "During a special event"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"on cloud nine\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/cloud_nine.png",
+          "image": "../assets/images/cards/43_identify_meaning/cloud_nine.png",
           "label": "On cloud nine idiom"
         }
       ],
       "paragraph": "After winning first place in the art contest, Lily couldn't stop smiling. She ran to show her parents the blue ribbon. Her dad said, \"You look like you're <b>on cloud nine</b>!\" Lily nodded happily, still looking at her prize.",
       "choices": [
-        "Floating in the sky",
         "Extremely happy",
+        "Floating in the sky",
         "Very confused"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"the ball is in your court\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/ball_in_court.png",
+          "image": "../assets/images/cards/43_identify_meaning/ball_in_court.png",
           "label": "Ball is in your court idiom"
         }
       ],
       "paragraph": "Ryan and his friend Max had an argument last week about which game to play. Max apologized yesterday and said he was sorry. Ryan's mom told him, \"<b>The ball is in your court</b> now. It's up to you to decide if you want to make up with him.\"",
       "choices": [
-        "You need to play basketball",
         "It's your turn to make a decision",
-        "You dropped something"
+        "You dropped something",
+        "You need to play basketball"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"hold your horses\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/hold_horses.png",
+          "image": "../assets/images/cards/43_identify_meaning/hold_horses.png",
           "label": "Hold your horses idiom"
         }
       ],
       "paragraph": "Chloe was so excited about going to the beach that she ran to the car before anyone else was ready. Her dad called out, \"<b>Hold your horses</b>! We still need to pack the sunscreen and towels.\"",
       "choices": [
-        "Take care of animals",
         "Wait and be patient",
-        "Ride faster"
+        "Ride faster",
+        "Take care of animals"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"let the cat out of the bag\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/cat_out_bag.png",
+          "image": "../assets/images/cards/43_identify_meaning/cat_out_bag.png",
           "label": "Let the cat out of the bag idiom"
         }
       ],
       "paragraph": "The family was planning a surprise party for Grandma. Everyone knew to keep it a secret. But during dinner, little Tommy accidentally <b>let the cat out of the bag</b> when he asked what flavor the party cake would be!",
       "choices": [
-        "Released a pet",
+        "Opened a shopping bag",
         "Revealed a secret by accident",
-        "Opened a shopping bag"
+        "Released a pet"
       ],
       "answerIndex": 1
     },
@@ -1176,207 +1176,207 @@
       "question": "What does \"biting off more than you can chew\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/bite_off_more.png",
+          "image": "../assets/images/cards/43_identify_meaning/bite_off_more.png",
           "label": "Biting off more than you can chew idiom"
         }
       ],
       "paragraph": "Samantha signed up for art class, swimming lessons, and coding club all at the same time. She also promised to help her mom with chores every day. Her dad warned her that she might be <b>biting off more than she can chew</b>. By the end of the week, Samantha was exhausted!",
       "choices": [
-        "Eating too much food",
         "Taking on too many things at once",
+        "Eating too much food",
         "Having a big appetite"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"once in a blue moon\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/blue_moon.png",
+          "image": "../assets/images/cards/43_identify_meaning/blue_moon.png",
           "label": "Once in a blue moon idiom"
         }
       ],
       "paragraph": "Grandpa rarely lets the kids stay up late. But on this special summer night, he said they could watch the stars together. Mom whispered to the kids, \"Grandpa lets you stay up late <b>once in a blue moon</b>, so enjoy it!\"",
       "choices": [
+        "Every night",
         "Only during a full moon",
-        "Very rarely",
-        "Every night"
+        "Very rarely"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"barking up the wrong tree\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/wrong_tree.png",
+          "image": "../assets/images/cards/43_identify_meaning/wrong_tree.png",
           "label": "Barking up the wrong tree idiom"
         }
       ],
       "paragraph": "Kevin thought his sister took his favorite book. He kept asking her about it and looking in her room. Finally, Mom said, \"You're <b>barking up the wrong tree</b>. I borrowed it to read and forgot to put it back.\"",
       "choices": [
         "Making dog sounds at plants",
-        "Blaming or looking in the wrong place",
-        "Climbing trees"
+        "Climbing trees",
+        "Blaming or looking in the wrong place"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"hit the nail on the head\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/nail_head.png",
+          "image": "../assets/images/cards/43_identify_meaning/nail_head.png",
           "label": "Hit the nail on the head idiom"
         }
       ],
       "paragraph": "In science class, the teacher asked why plants need sunlight. When Maya answered that plants use sunlight to make their own food, the teacher smiled and said, \"You <b>hit the nail on the head</b>!\"",
       "choices": [
-        "Used a hammer correctly",
         "Got exactly the right answer",
+        "Used a hammer correctly",
         "Made a loud noise"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"keep your eyes peeled\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/eyes_peeled.png",
+          "image": "../assets/images/cards/43_identify_meaning/eyes_peeled.png",
           "label": "Keep your eyes peeled idiom"
         }
       ],
       "paragraph": "The family was at the beach watching for dolphins. Dad told everyone to <b>keep their eyes peeled</b> because dolphins sometimes jump out of the water near the shore. Sure enough, they spotted three dolphins!",
       "choices": [
-        "Close your eyes",
         "Watch very carefully",
-        "Peel something off your face"
+        "Peel something off your face",
+        "Close your eyes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"a fish out of water\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/fish_out_water.png",
+          "image": "../assets/images/cards/43_identify_meaning/fish_out_water.png",
           "label": "Fish out of water idiom"
         }
       ],
       "paragraph": "On his first day at the new community center, Leo didn't know anyone. He stood by himself feeling awkward. He felt like <b>a fish out of water</b> until a friendly girl invited him to join her group.",
       "choices": [
         "A sea animal on the beach",
-        "Feeling uncomfortable in a new situation",
-        "Wanting to go swimming"
+        "Wanting to go swimming",
+        "Feeling uncomfortable in a new situation"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"don't cry over spilled milk\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/spilled_milk.png",
+          "image": "../assets/images/cards/43_identify_meaning/spilled_milk.png",
           "label": "Don't cry over spilled milk idiom"
         }
       ],
       "paragraph": "When Jake accidentally knocked over his glass of juice, he got really upset. His grandmother said, \"<b>Don't cry over spilled milk</b>. It was just an accident. Let's clean it up and pour you another glass.\"",
       "choices": [
-        "Milk isn't worth crying about",
         "Don't get upset over small accidents that can't be changed",
+        "Milk isn't worth crying about",
         "Always use a lid on your cup"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"walking on eggshells\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/eggshells.png",
+          "image": "../assets/images/cards/43_identify_meaning/eggshells.png",
           "label": "Walking on eggshells idiom"
         }
       ],
       "paragraph": "Mom had a really long day at work and seemed very tired. Everyone in the family was <b>walking on eggshells</b> around her, being extra quiet and careful not to bother her until she felt better.",
       "choices": [
+        "Walking very slowly",
         "Stepping on breakfast food",
-        "Being very careful not to upset someone",
-        "Walking very slowly"
+        "Being very careful not to upset someone"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"out of the blue\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/out_of_blue.png",
+          "image": "../assets/images/cards/43_identify_meaning/out_of_blue.png",
           "label": "Out of the blue idiom"
         }
       ],
       "paragraph": "The kids were playing in the backyard when, <b>out of the blue</b>, their uncle showed up for a surprise visit! Nobody knew he was coming, so everyone was shocked and happy to see him.",
       "choices": [
-        "Coming from the sky",
         "Happening suddenly without warning",
+        "Coming from the sky",
         "Wearing blue clothes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"zip your lip\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/zip_lip.png",
+          "image": "../assets/images/cards/43_identify_meaning/zip_lip.png",
           "label": "Zip your lip idiom"
         }
       ],
       "paragraph": "During the movie, Carlos kept whispering to his friend. The person behind them leaned forward and quietly said, \"Please <b>zip your lip</b>!\" Carlos felt embarrassed and stayed quiet for the rest of the film.",
       "choices": [
+        "Eat your food faster",
         "Put a zipper on your mouth",
-        "Stop talking and be quiet",
-        "Eat your food faster"
+        "Stop talking and be quiet"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"in hot water\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/hot_water.png",
+          "image": "../assets/images/cards/43_identify_meaning/hot_water.png",
           "label": "In hot water idiom"
         }
       ],
       "paragraph": "After coming home much later than she promised, Nina knew she was <b>in hot water</b> with her parents. She apologized and explained what happened, promising to always call if she's going to be late.",
       "choices": [
-        "Taking a warm bath",
         "In trouble",
-        "Feeling too warm"
+        "Feeling too warm",
+        "Taking a warm bath"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"two peas in a pod\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/two_peas.png",
+          "image": "../assets/images/cards/43_identify_meaning/two_peas.png",
           "label": "Two peas in a pod idiom"
         }
       ],
       "paragraph": "Best friends Sofia and Isabella do everything together. They like the same music, wear similar clothes, and even finish each other's sentences. Their teacher always says they are like <b>two peas in a pod</b>.",
       "choices": [
+        "A small snack",
         "Vegetables in a garden",
-        "Two people who are very similar",
-        "A small snack"
+        "Two people who are very similar"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"the early bird gets the worm\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/early_bird.png",
+          "image": "../assets/images/cards/43_identify_meaning/early_bird.png",
           "label": "Early bird gets the worm idiom"
         }
       ],
       "paragraph": "Mia woke up early to get a good spot at the beach. When she arrived, she found the perfect place near the water with lots of shade. Her mom smiled and said, \"<b>The early bird gets the worm</b>!\"",
       "choices": [
-        "Birds eat breakfast early",
+        "You should feed birds in the morning",
         "Those who start early get the best results",
-        "You should feed birds in the morning"
+        "Birds eat breakfast early"
       ],
       "answerIndex": 1
     },
@@ -1384,63 +1384,63 @@
       "question": "What does \"give it your best shot\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/best_shot.png",
+          "image": "../assets/images/cards/43_identify_meaning/best_shot.png",
           "label": "Give it your best shot idiom"
         }
       ],
       "paragraph": "Brandon was nervous about trying out for the soccer team. He wasn't sure if he was good enough. His older sister told him to \"<b>give it your best shot</b>\" and not worry about the results.",
       "choices": [
-        "Kick the ball hard",
         "Try your hardest",
-        "Take a photograph"
+        "Take a photograph",
+        "Kick the ball hard"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"actions speak louder than words\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/actions_words.png",
+          "image": "../assets/images/cards/43_identify_meaning/actions_words.png",
           "label": "Actions speak louder than words idiom"
         }
       ],
       "paragraph": "Luis kept saying he would help his mom clean the house, but he never actually did it. Finally, his mom said, \"<b>Actions speak louder than words</b>. I need you to show me, not just tell me.\"",
       "choices": [
-        "You should be louder when you talk",
         "What you do is more important than what you say",
-        "Actions make noise"
+        "Actions make noise",
+        "You should be louder when you talk"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"getting cold feet\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/cold_feet.png",
+          "image": "../assets/images/cards/43_identify_meaning/cold_feet.png",
           "label": "Getting cold feet idiom"
         }
       ],
       "paragraph": "Maya was supposed to perform her song at the talent show. Right before her turn, she started feeling very nervous and almost didn't want to go on stage. She told her friend, \"I'm <b>getting cold feet</b>!\"",
       "choices": [
-        "Her feet are freezing",
         "Becoming nervous and wanting to back out",
-        "Needing to wear socks"
+        "Needing to wear socks",
+        "Her feet are freezing"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"every cloud has a silver lining\" mean?",
       "images": [
         {
-          "image": "/images/cards/43_identify_meaning/silver_lining.png",
+          "image": "../assets/images/cards/43_identify_meaning/silver_lining.png",
           "label": "Every cloud has a silver lining idiom"
         }
       ],
       "paragraph": "When the beach trip got cancelled because of rain, Ethan was disappointed. But his mom said, \"<b>Every cloud has a silver lining</b>.\" They ended up having a fun game day at home and made the best of it.",
       "choices": [
-        "Clouds are made of silver",
+        "The weather will always get better",
         "Something good can come from a bad situation",
-        "The weather will always get better"
+        "Clouds are made of silver"
       ],
       "answerIndex": 1
     }
@@ -1908,11 +1908,11 @@
       ],
       "paragraph": "Christina is at the town pool with her friends Dana and Hailey. Hailey announced that she wanted to jump off the high dive, and Christina said it sounded like fun. However, Dana got really quiet, and didn't follow them towards the high dive. Hailey turned around and said that <b>Dana is a chicken</b>. Christina told Hailey that wasn't nice, and then told Dana she would swim with her.",
       "choices": [
-        "Dana likes to eat chicken",
         "Dana is thrilled",
-        "Dana is afraid"
+        "Dana is afraid",
+        "Dana likes to eat chicken"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What does \"couch potato\" mean?",
@@ -1924,11 +1924,11 @@
       ],
       "paragraph": "Marcus hasn't left the house all weekend. He's been sitting on the sofa playing video games and watching movies. His mom said, \"You've become such a <b>couch potato</b>! Go outside and get some fresh air!\"",
       "choices": [
-        "Someone who grows vegetables",
         "Someone who is lazy and sits around a lot",
-        "Someone who likes potatoes"
+        "Someone who likes potatoes",
+        "Someone who grows vegetables"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"has a heart of gold\" mean?",
@@ -1956,11 +1956,11 @@
       ],
       "paragraph": "It felt like the beach vacation had just started, but suddenly it was time to pack up and go home. \"I can't believe it's over already,\" said Emma. \"<b>Time flies</b> when you're having fun!\"",
       "choices": [
-        "Time moves slowly",
         "Time passes very quickly",
+        "Time moves slowly",
         "Clocks have wings"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"is a busy bee\" mean?",
@@ -1988,11 +1988,11 @@
       ],
       "paragraph": "While everyone else goes to bed at 9 PM, Tyler stays up until midnight. He loves reading, drawing, and playing quiet games after dark. His family says Tyler <b>is a night owl</b>.",
       "choices": [
-        "He sleeps during the day",
         "He can see in the dark",
-        "He likes to stay up late at night"
+        "He likes to stay up late at night",
+        "He sleeps during the day"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What does \"is a bright star\" mean?",
@@ -2020,9 +2020,9 @@
       ],
       "paragraph": "Dad came home from work looking very tired and grumpy. The kids knew not to bother him right away. Mom whispered, \"Let's <b>walk on eggshells</b> until Dad feels better.\"",
       "choices": [
-        "Step on eggs in the kitchen",
+        "Walk very slowly",
         "Be very careful not to upset someone",
-        "Walk very slowly"
+        "Step on eggs in the kitchen"
       ],
       "answerIndex": 1
     },
@@ -2036,11 +2036,11 @@
       ],
       "paragraph": "After studying all week, Maria felt ready for her spelling test. When she finished, her friend asked how it went. Maria smiled and said, \"It was a <b>piece of cake</b>!\"",
       "choices": [
-        "There was dessert after the test",
+        "The test was very easy",
         "The test was about baking",
-        "The test was very easy"
+        "There was dessert after the test"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "What does \"a blanket of snow\" mean?",
@@ -2052,9 +2052,9 @@
       ],
       "paragraph": "When Jake looked out his window in the morning, everything was covered in white. The yard, the trees, and the cars all had <b>a blanket of snow</b> over them.",
       "choices": [
-        "A blanket made of snow",
+        "A cold blanket",
         "Snow covering everything completely",
-        "A cold blanket"
+        "A blanket made of snow"
       ],
       "answerIndex": 1
     },
@@ -2068,11 +2068,11 @@
       ],
       "paragraph": "Lily woke up with a sore throat and runny nose. She told her mom she didn't feel well. \"You're looking <b>under the weather</b> today,\" Mom said. \"You should stay home and rest.\"",
       "choices": [
-        "Standing outside in rain",
         "Feeling sick",
+        "Standing outside in rain",
         "Checking the weather report"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"has a green thumb\" mean?",
@@ -2084,11 +2084,11 @@
       ],
       "paragraph": "Grandma's garden is beautiful! Her flowers bloom brightly and her vegetables grow perfectly. She never seems to have trouble with her plants. Everyone says Grandma <b>has a green thumb</b>.",
       "choices": [
-        "Her thumb is colored green",
         "She is good at growing plants",
-        "She paints her nails green"
+        "She paints her nails green",
+        "Her thumb is colored green"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"bookworm\" mean?",
@@ -2100,11 +2100,11 @@
       ],
       "paragraph": "Every time you see Ashley, she has her nose in a book. She reads during lunch, before bed, and on weekends. She has read every book in her house! Her friends call her a <b>bookworm</b>.",
       "choices": [
-        "A worm that eats books",
         "Someone who loves reading",
-        "Someone who doesn't like books"
+        "Someone who doesn't like books",
+        "A worm that eats books"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"is an early bird\" mean?",
@@ -2116,11 +2116,11 @@
       ],
       "paragraph": "While everyone else is still sleeping, Grandpa is already awake. He watches the sunrise, drinks his coffee, and takes a walk before breakfast. Grandpa <b>is an early bird</b>.",
       "choices": [
-        "He likes to feed birds",
         "He wakes up very early",
-        "He chirps like a bird"
+        "He chirps like a bird",
+        "He likes to feed birds"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"a rollercoaster of emotions\" mean?",
@@ -2149,10 +2149,10 @@
       "paragraph": "Jake was supposed to jump off the diving board for the first time. He climbed up the ladder and looked down at the water. Suddenly, he <b>got cold feet</b> and climbed back down.",
       "choices": [
         "His feet were freezing",
-        "He became too nervous to do it",
-        "He needed socks"
+        "He needed socks",
+        "He became too nervous to do it"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"is the apple of her eye\" mean?",
@@ -2180,11 +2180,11 @@
       ],
       "paragraph": "When the substitute teacher arrived, students were running around, shouting, and not listening. Papers were flying everywhere. The principal walked by and thought <b>the classroom was a zoo</b>.",
       "choices": [
-        "There were animals in class",
         "The classroom was wild and out of control",
+        "There were animals in class",
         "They were learning about animals"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"head is in the clouds\" mean?",
@@ -2196,11 +2196,11 @@
       ],
       "paragraph": "During class, Ethan stared out the window instead of listening to the teacher. He was daydreaming about summer vacation and the beach. His teacher said, \"Ethan, your <b>head is in the clouds</b> today!\"",
       "choices": [
-        "He is very tall",
         "He is daydreaming and not paying attention",
+        "He is very tall",
         "He likes clouds"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"her heart sank\" mean?",
@@ -2213,10 +2213,10 @@
       "paragraph": "Olivia was hoping to go to the beach, but when she looked outside, it was raining hard. <b>Her heart sank</b> when she realized the trip would be cancelled.",
       "choices": [
         "Her heart fell to her feet",
-        "She suddenly felt very sad",
-        "She needs to see a doctor"
+        "She needs to see a doctor",
+        "She suddenly felt very sad"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"a sea of people\" mean?",
@@ -2228,11 +2228,11 @@
       ],
       "paragraph": "When the family arrived at the beach on the holiday weekend, it was packed! There were people everywhere they looked. Dad said, \"Wow, it's <b>a sea of people</b> out here today!\"",
       "choices": [
-        "People swimming in the sea",
         "A very large crowd of people",
+        "People swimming in the sea",
         "People who like the ocean"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"sharp as a tack\" mean?",
@@ -2244,9 +2244,9 @@
       ],
       "paragraph": "Even though Great-Grandpa is 90 years old, he still remembers everything. He can do crossword puzzles and beat everyone at trivia games. The family says he is <b>sharp as a tack</b>.",
       "choices": [
-        "He is dangerous",
+        "He collects tacks",
         "He is very smart and alert",
-        "He collects tacks"
+        "He is dangerous"
       ],
       "answerIndex": 1
     },
@@ -2260,11 +2260,11 @@
       ],
       "paragraph": "Maria's neighborhood has families from many different countries. They speak different languages and share food from their cultures at block parties. Her dad says the neighborhood <b>is a melting pot</b>.",
       "choices": [
-        "The neighborhood is very hot",
         "A place where different cultures mix together",
+        "The neighborhood is very hot",
         "They cook together"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"is a social butterfly\" mean?",
@@ -2276,11 +2276,11 @@
       ],
       "paragraph": "At the party, Ava talked to everyone. She moved from group to group making friends and sharing stories. Her mom smiled and said Ava <b>is a social butterfly</b>.",
       "choices": [
+        "She is shy and quiet",
         "She collects butterflies",
-        "She is friendly and talks to everyone",
-        "She is shy and quiet"
+        "She is friendly and talks to everyone"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"is a rock\" mean?",
@@ -2292,11 +2292,11 @@
       ],
       "paragraph": "When the family was going through a hard time, Dad stayed calm and helped everyone. He made sure everything got done and kept everyone's spirits up. Mom said, \"Your father <b>is a rock</b> for this family.\"",
       "choices": [
-        "He is hard and cold",
         "He is strong and dependable",
-        "He likes to collect rocks"
+        "He likes to collect rocks",
+        "He is hard and cold"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"light at the end of the tunnel\" mean?",
@@ -2308,11 +2308,11 @@
       ],
       "paragraph": "The school year had been very difficult with many tests and projects. But now there was only one week left until summer! The students could finally see <b>the light at the end of the tunnel</b>.",
       "choices": [
-        "There's a light in the hallway",
         "A difficult time is almost over",
-        "They are in a tunnel"
+        "They are in a tunnel",
+        "There's a light in the hallway"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"is a walking encyclopedia\" mean?",
@@ -2341,10 +2341,10 @@
       "paragraph": "Right before his speech in front of the whole school, Noah felt nervous. His stomach felt fluttery and he couldn't sit still. He told his mom he had <b>butterflies in his stomach</b>.",
       "choices": [
         "He swallowed butterflies",
-        "He feels nervous",
-        "He is hungry"
+        "He is hungry",
+        "He feels nervous"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"is a chip off the old block\" mean?",
@@ -2372,11 +2372,11 @@
       ],
       "paragraph": "After finishing school, Lucas wasn't sure what to do next. His uncle told him, \"You're young and talented. <b>The world is your oyster</b>. You can do anything!\"",
       "choices": [
-        "He should eat oysters",
         "He has many opportunities and can achieve anything",
+        "He should eat oysters",
         "The world is round"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     }
   ],
   "Metaphors Elementary": [
@@ -3285,6 +3285,7 @@
   ],
   "Similes": [
     {
+      "title": "Like a Pig",
       "images": [
         {
           "image": "images/similes/pig-eating.png",
@@ -3313,11 +3314,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "My little brother eats like a pig when he is hungry",
+            "She ate the whole pizza like a pig",
+            "He devoured his food like a pig"
+          ]
         }
       ]
     },
     {
+      "title": "Like the Wind",
       "images": [
         {
           "image": "images/similes/child-running-beach.png",
@@ -3344,11 +3350,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The car raced like the wind down the highway",
+            "She ran like the wind to catch the bus",
+            "The horse galloped like the wind"
+          ]
         }
       ]
     },
     {
+      "title": "Busy as a Bee",
       "images": [
         {
           "image": "images/similes/child-sleeping.png",
@@ -3376,11 +3387,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "After the game, I slept like a log",
+            "He was so tired he slept like a log all night",
+            "The baby slept like a log through the storm"
+          ]
         }
       ]
     },
     {
+      "title": "Sweet as Sugar",
       "images": [
         {
           "image": "images/similes/quiet-house.png",
@@ -3407,11 +3423,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The library was as quiet as a mouse",
+            "She tiptoed as quiet as a mouse",
+            "The children were as quiet as a mouse during the test"
+          ]
         }
       ]
     },
     {
+      "title": "Cold as Ice",
       "images": [
         {
           "image": "images/similes/brave-child-pool.png",
@@ -3439,11 +3460,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "She was as brave as a lion when she gave her speech",
+            "The firefighter was as brave as a lion",
+            "He felt as brave as a lion facing his fear"
+          ]
         }
       ]
     },
     {
+      "title": "Light as a Feather",
       "images": [
         {
           "image": "images/similes/bright-sunny-beach.png",
@@ -3470,11 +3496,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The stars were as bright as a diamond in the night sky",
+            "Her eyes sparkled as bright as a diamond",
+            "The light was as bright as a diamond"
+          ]
         }
       ]
     },
     {
+      "title": "Slept Like a Log",
       "images": [
         {
           "image": "images/similes/slow-turtle.png",
@@ -3502,11 +3533,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "Traffic moved as slow as a turtle this morning",
+            "The old computer runs as slow as a turtle",
+            "Time passes as slow as a turtle when I am bored"
+          ]
         }
       ]
     },
     {
+      "title": "Quiet as a Mouse",
       "images": [
         {
           "image": "images/similes/child-swimming.png",
@@ -3534,11 +3570,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "He swims like a fish in the pool",
+            "She took to surfing like a fish to water",
+            "My sister swims like a fish"
+          ]
         }
       ]
     },
     {
+      "title": "Strong as an Ox",
       "images": [
         {
           "image": "images/similes/fluffy-clouds.png",
@@ -3565,11 +3606,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The snow looked like cotton balls falling from the sky",
+            "The dandelions floated like cotton balls in the breeze",
+            "The sheep looked like cotton balls in the field"
+          ]
         }
       ]
     },
     {
+      "title": "Blind as a Bat",
       "images": [
         {
           "image": "images/similes/child-dancing.png",
@@ -3597,11 +3643,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The balloon was as light as a feather",
+            "She felt as light as a feather after the good news",
+            "The fabric is as light as a feather"
+          ]
         }
       ]
     },
     {
+      "title": "Fast as Lightning",
       "images": [
         {
           "image": "images/similes/cold-water-ice.png",
@@ -3629,11 +3680,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "Her hands were as cold as ice",
+            "The room was as cold as ice in winter",
+            "His stare was as cold as ice"
+          ]
         }
       ]
     },
     {
+      "title": "Happy as a Clam",
       "images": [
         {
           "image": "images/similes/busy-beach.png",
@@ -3660,11 +3716,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The store was as busy as a beehive on Black Friday",
+            "The office is as busy as a beehive today",
+            "The kitchen was as busy as a beehive during the party"
+          ]
         }
       ]
     },
     {
+      "title": "Cool as a Cucumber",
       "images": [
         {
           "image": "images/similes/soft-hair.png",
@@ -3691,11 +3752,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The blanket felt as soft as silk",
+            "Her skin was as soft as silk",
+            "The puppy fur was as soft as silk"
+          ]
         }
       ]
     },
     {
+      "title": "Snug as a Bug in a Rug",
       "images": [
         {
           "image": "images/similes/tall-dad.png",
@@ -3722,11 +3788,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The basketball player is as tall as a tree",
+            "The building stood as tall as a tree",
+            "He grew as tall as a tree over the summer"
+          ]
         }
       ]
     },
     {
+      "title": "Hungry as a Bear",
       "images": [
         {
           "image": "images/similes/hungry-child.png",
@@ -3754,11 +3825,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "I am as hungry as a bear after practice",
+            "He ate three sandwiches because he was as hungry as a bear",
+            "We were as hungry as a bear after hiking"
+          ]
         }
       ]
     },
     {
+      "title": "Sly as a Fox",
       "images": [
         {
           "image": "images/similes/strong-child.png",
@@ -3786,11 +3862,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "My uncle is as strong as an ox",
+            "She is as strong as an ox from all that training",
+            "The weightlifter was as strong as an ox"
+          ]
         }
       ]
     },
     {
+      "title": "Smart as a Whip",
       "images": [
         {
           "image": "images/similes/clean-kitchen.png",
@@ -3817,11 +3898,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The dishes were as clean as a whistle after washing",
+            "His room was as clean as a whistle",
+            "The car looked as clean as a whistle after detailing"
+          ]
         }
       ]
     },
     {
+      "title": "Straight as an Arrow",
       "images": [
         {
           "image": "images/similes/bright-smile.png",
@@ -3848,11 +3934,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "Her smile was as bright as the sun",
+            "The lamp shone as bright as the sun",
+            "His future looks as bright as the sun"
+          ]
         }
       ]
     },
     {
+      "title": "Clear as Crystal",
       "images": [
         {
           "image": "images/similes/flat-water.png",
@@ -3880,11 +3971,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The tire was as flat as a pancake",
+            "The land stretched out as flat as a pancake",
+            "My hair looks as flat as a pancake today"
+          ]
         }
       ]
     },
     {
+      "title": "Easy as Pie",
       "images": [
         {
           "image": "images/similes/still-statue.png",
@@ -3912,11 +4008,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "He stood as still as a statue waiting for the surprise",
+            "The deer froze as still as a statue",
+            "She remained as still as a statue during meditation"
+          ]
         }
       ]
     },
     {
+      "title": "Hard as Nails",
       "images": [
         {
           "image": "images/similes/white-hair-grandma.png",
@@ -3943,11 +4044,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "She shopped like there was no tomorrow during the sale",
+            "They danced like there was no tomorrow",
+            "He studied like there was no tomorrow before the exam"
+          ]
         }
       ]
     },
     {
+      "title": "Smooth as Silk",
       "images": [
         {
           "image": "images/similes/twins.png",
@@ -3974,11 +4080,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The mattress was as hard as a rock",
+            "The frozen ground was as hard as a rock",
+            "His muscles were as hard as a rock"
+          ]
         }
       ]
     },
     {
+      "title": "Sharp as a Tack",
       "images": [
         {
           "image": "images/similes/warm-towel.png",
@@ -4005,11 +4116,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "Her dress was as white as snow",
+            "The paper was as white as snow",
+            "His teeth were as white as snow"
+          ]
         }
       ]
     },
     {
+      "title": "Slow as a Snail",
       "images": [
         {
           "image": "images/similes/wise-grandfather.png",
@@ -4036,11 +4152,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The news hit me like a ton of bricks",
+            "Exhaustion hit him like a ton of bricks",
+            "The realization came like a ton of bricks"
+          ]
         }
       ]
     },
     {
+      "title": "Brave as a Lion",
       "images": [
         {
           "image": "images/similes/light-balloon.png",
@@ -4067,11 +4188,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The lake was as smooth as glass this morning",
+            "Her voice was as smooth as glass",
+            "The ice was as smooth as glass"
+          ]
         }
       ]
     },
     {
+      "title": "Tough as Nails",
       "images": [
         {
           "image": "images/similes/child-singing.png",
@@ -4099,11 +4225,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "Her voice was as sweet as honey",
+            "The cake tasted as sweet as honey",
+            "His words were as sweet as honey"
+          ]
         }
       ]
     },
     {
+      "title": "Free as a Bird",
       "images": [
         {
           "image": "images/similes/rough-sandpaper.png",
@@ -4131,11 +4262,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "She answered as quick as lightning",
+            "The cat pounced as quick as lightning",
+            "He ran as quick as lightning"
+          ]
         }
       ]
     },
     {
+      "title": "Fits Like a Glove",
       "images": [
         {
           "image": "images/similes/eating-fast.png",
@@ -4163,11 +4299,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The vacation went like a dream",
+            "Everything worked out like a dream",
+            "The performance went like a dream"
+          ]
         }
       ]
     },
     {
+      "title": "Runs Like Clockwork",
       "images": [
         {
           "image": "images/similes/hard-rock.png",
@@ -4194,11 +4335,16 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The desert was as dry as a bone",
+            "My throat was as dry as a bone",
+            "The old wood was as dry as a bone"
+          ]
         }
       ]
     },
     {
+      "title": "Sparkles Like Diamonds",
       "images": [
         {
           "image": "images/similes/clear-water.png",
@@ -4226,7 +4372,11 @@
         },
         {
           "question": "Can you use this simile in your own sentence?",
-          "type": "creative"
+          "answers": [
+            "The water was as clear as glass in the pool",
+            "Her explanation was as clear as glass",
+            "The sky was as clear as glass"
+          ]
         }
       ]
     }
@@ -4770,11 +4920,11 @@
       ],
       "paragraph": "When Mom said it was time to go to the beach, Lucas grabbed his towel and ran <b>like the wind</b> to the car. He didn't want to waste a single second. He was the first one ready and was waiting by the door before anyone else had even found their flip flops.",
       "choices": [
+        "running in circles",
         "running slowly",
-        "running very fast",
-        "running in circles"
+        "running very fast"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"out like a light\" mean?",
@@ -4786,11 +4936,11 @@
       ],
       "paragraph": "After a long day of swimming and playing in the sand, Mia was exhausted. As soon as she got home and lay down on the couch, she was <b>out like a light</b>. Her dad had to carry her to bed because she wouldn't wake up.",
       "choices": [
-        "wide awake",
         "fell asleep immediately",
-        "feeling sick"
+        "feeling sick",
+        "wide awake"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"as quiet as a mouse\" mean?",
@@ -4818,11 +4968,11 @@
       ],
       "paragraph": "When Sophia jumped into the pool, the water was <b>as cold as ice</b>. She gasped and quickly swam to the shallow end. It took her a few minutes to get used to the temperature before she could enjoy swimming.",
       "choices": [
-        "very warm",
         "extremely cold",
-        "perfectly comfortable"
+        "perfectly comfortable",
+        "very warm"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"like a horse\" mean?",
@@ -4835,10 +4985,10 @@
       "paragraph": "Jake hadn't eaten since breakfast, and by lunchtime he was starving. When his sandwich was ready, he ate <b>like a horse</b>. In just a few minutes, his entire lunch was gone and he was asking for more.",
       "choices": [
         "eating very little",
-        "eating a lot and quickly",
-        "eating very slowly"
+        "eating very slowly",
+        "eating a lot and quickly"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"as brave as a lion\" mean?",
@@ -4850,8 +5000,8 @@
       ],
       "paragraph": "It was Ava's first time jumping off the high dive. She climbed the ladder and walked to the edge. Even though she was nervous inside, she stood <b>as brave as a lion</b> and jumped right in. Everyone at the pool cheered for her.",
       "choices": [
-        "very scared",
         "very angry",
+        "very scared",
         "very courageous"
       ],
       "answerIndex": 2
@@ -4867,10 +5017,10 @@
       "paragraph": "When it was time to clean up his toys, Oliver moved <b>as slow as a snail</b>. He took forever to put each toy in the bin. His mom had to remind him several times to hurry up so they wouldn't be late.",
       "choices": [
         "moving very quickly",
-        "moving very slowly",
-        "not moving at all"
+        "not moving at all",
+        "moving very slowly"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"like a fish\" mean?",
@@ -4882,11 +5032,11 @@
       ],
       "paragraph": "Emma has been taking swim lessons for three years. Now she swims <b>like a fish</b>. She glides through the water smoothly and can swim faster than most kids her age. Her coach thinks she could compete someday.",
       "choices": [
+        "swims very poorly",
         "afraid of water",
-        "swims very well",
-        "swims very poorly"
+        "swims very well"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"as alike as two peas in a pod\" mean?",
@@ -4899,10 +5049,10 @@
       "paragraph": "The Martinez twins always dress alike. With their matching outfits and same hairstyles, they are <b>as alike as two peas in a pod</b>. Even their teacher sometimes mixes up their names!",
       "choices": [
         "very different from each other",
-        "always fighting",
-        "very similar to each other"
+        "very similar to each other",
+        "always fighting"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What does \"as bright as the sun\" mean?",
@@ -4914,9 +5064,9 @@
       ],
       "paragraph": "When Grandma said she was taking everyone to the beach, Lily's face lit up and she smiled <b>as bright as the sun</b>. She was so happy she jumped up and down with excitement. Beach days are her favorite!",
       "choices": [
-        "looking very sad",
+        "looking confused",
         "looking extremely happy",
-        "looking confused"
+        "looking very sad"
       ],
       "answerIndex": 1
     },
@@ -4931,10 +5081,10 @@
       "paragraph": "Dad carried all the beach chairs, the cooler, and the umbrella by himself. He is <b>as strong as an ox</b>. Mom joked that he was our own personal pack mule.",
       "choices": [
         "very weak",
-        "very tired",
-        "very strong"
+        "very strong",
+        "very tired"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What does \"as still as a statue\" mean?",
@@ -4946,11 +5096,11 @@
       ],
       "paragraph": "During the game of freeze tag, Noah stood <b>as still as a statue</b>. He didn't move a muscle, even when a bug landed on his arm. He was determined not to get caught!",
       "choices": [
-        "moving around a lot",
         "completely motionless",
-        "jumping up and down"
+        "jumping up and down",
+        "moving around a lot"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"as packed as sardines\" mean?",
@@ -4962,11 +5112,11 @@
       ],
       "paragraph": "We went to the beach on a holiday weekend, and it was <b>as packed as sardines</b>. There were people everywhere, and we could barely find a spot for our blanket. Next time we'll go on a regular day!",
       "choices": [
-        "completely empty",
         "extremely crowded",
+        "completely empty",
         "slightly busy"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"like a parrot\" mean?",
@@ -4979,10 +5129,10 @@
       "paragraph": "My little brother talks <b>like a parrot</b>. From morning until bedtime, he never stops chattering. He tells us everything that pops into his head!",
       "choices": [
         "very quietly",
-        "not at all",
-        "constantly and a lot"
+        "constantly and a lot",
+        "not at all"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What does \"as soft as a cloud\" mean?",
@@ -4994,11 +5144,11 @@
       ],
       "paragraph": "The new beach towel Mom bought is <b>as soft as a cloud</b>. It feels so cozy when I wrap it around myself after swimming. I never want to use any other towel!",
       "choices": [
-        "very rough",
         "very soft and comfortable",
+        "very rough",
         "very thin"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"as clear as glass\" mean?",
@@ -5026,11 +5176,11 @@
       ],
       "paragraph": "After playing all morning, Ethan was <b>as hungry as a bear</b>. He ate three tacos, a banana, and two glasses of juice. Mom couldn't believe how much food he finished!",
       "choices": [
+        "extremely hungry",
         "not hungry at all",
-        "a little bit hungry",
-        "extremely hungry"
+        "a little bit hungry"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "What does \"as wise as an owl\" mean?",
@@ -5043,10 +5193,10 @@
       "paragraph": "Grandpa knows everything about the ocean. He's <b>as wise as an owl</b> when it comes to fishing, swimming, and beach safety. I always learn something new from him.",
       "choices": [
         "very silly",
-        "very knowledgeable",
-        "very forgetful"
+        "very forgetful",
+        "very knowledgeable"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"as hot as fire\" mean?",
@@ -5090,11 +5240,11 @@
       ],
       "paragraph": "Maya found a beautiful shell that sparkled in the sun. It was <b>as shiny as a diamond</b>. She decided to keep it as a special souvenir from the beach.",
       "choices": [
-        "very dull",
         "very dirty",
-        "very bright and sparkling"
+        "very bright and sparkling",
+        "very dull"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "What does \"like glue\" mean?",
@@ -5106,11 +5256,11 @@
       ],
       "paragraph": "On his first day at the new beach, little Sam was nervous. He stayed <b>like glue</b> next to his mom the whole time. He held her hand and didn't want to let go.",
       "choices": [
+        "running around",
         "far away",
-        "very close, attached",
-        "running around"
+        "very close, attached"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"as red as a tomato\" mean?",
@@ -5123,10 +5273,10 @@
       "paragraph": "After forgetting to reapply sunscreen, Tyler's cheeks turned <b>as red as a tomato</b>. Mom put some aloe vera gel on his face and reminded him to be more careful next time.",
       "choices": [
         "very pale",
-        "bright red",
-        "slightly pink"
+        "slightly pink",
+        "bright red"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"as smooth as silk\" mean?",
@@ -5138,11 +5288,11 @@
       ],
       "paragraph": "Early in the morning, before the wind picked up, the ocean was <b>as smooth as silk</b>. There were no waves at all. It was the perfect time for a peaceful swim.",
       "choices": [
-        "very rough and wavy",
         "perfectly smooth and calm",
+        "very rough and wavy",
         "choppy and dangerous"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"as playful as a kitten\" mean?",
@@ -5170,11 +5320,11 @@
       ],
       "paragraph": "The neighbor's dog looks scary because he's so big, but he's actually <b>as gentle as a lamb</b>. He loves to be petted and would never hurt anyone.",
       "choices": [
-        "mean and aggressive",
         "calm and kind",
-        "loud and scary"
+        "loud and scary",
+        "mean and aggressive"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "What does \"as neat as a pin\" mean?",
@@ -5187,10 +5337,10 @@
       "paragraph": "After spending all morning organizing, my room was <b>as neat as a pin</b>. Everything was in its place, my bed was made, and not a single thing was on the floor.",
       "choices": [
         "very messy",
-        "perfectly organized",
-        "somewhat tidy"
+        "somewhat tidy",
+        "perfectly organized"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "What does \"like a kangaroo\" mean?",
@@ -5202,11 +5352,11 @@
       ],
       "paragraph": "At the trampoline park, Kayla bounced <b>like a kangaroo</b>. She jumped so high that she almost touched the ceiling! All her friends were amazed at how much air she could get.",
       "choices": [
-        "jumping very low",
+        "jumping very high",
         "not jumping at all",
-        "jumping very high"
+        "jumping very low"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "What does \"as hard as a rock\" mean?",
@@ -5219,10 +5369,10 @@
       "paragraph": "The bread had been sitting out for three days. When I tried to eat it, it was <b>as hard as a rock</b>. We had to throw it away because no one could chew it!",
       "choices": [
         "very soft",
-        "extremely hard",
-        "slightly stale"
+        "slightly stale",
+        "extremely hard"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     }
   ]
 }

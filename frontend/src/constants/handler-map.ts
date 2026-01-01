@@ -84,7 +84,7 @@ export const CATEGORY_HANDLER_MAP: Record<string, HandlerType> = {
     'Metaphors - Identify The Meaning': 'single-answer',
     'Metaphors Elementary': 'single-answer',
     'Metaphors Middle': 'single-answer',
-    'Similes': 'single-answer',
+    'Similes': 'multiple-answers',
     'Similes - Identify The Meaning': 'single-answer',
 
     // inferencing.json
@@ -292,11 +292,11 @@ export const CATEGORY_HANDLER_MAP: Record<string, HandlerType> = {
 
     // categories.json
     'Categories - Identifying Members Of A Category': 'single-answer',
-    'Naming And Categorizing': 'conditional',
+    'Naming And Categorizing': 'multiple-answers',
 
     // comparatives.json
-    'Comparatives - Superlatives': 'conditional',
-    'Compare And Contrast (Same And Different)': 'conditional',
+    'Comparatives - Superlatives': 'single-answer',
+    'Compare And Contrast (Same And Different)': 'multiple-answers',
 
     // directions.json
     'Conditional Following Directions': 'conditional',
@@ -305,10 +305,10 @@ export const CATEGORY_HANDLER_MAP: Record<string, HandlerType> = {
     'Following Directions - Conditional': 'conditional',
 
     // sentences.json
-    'Expanding Sentences - Images With Who What Where': 'conditional',
+    'Expanding Sentences - Images With Who What Where': 'multiple-answers',
 
     // vocabulary.json
-    'Identifying Parts Of A Whole': 'conditional',
+    'Identifying Parts Of A Whole': 'multiple-answers',
 };
 
 /**

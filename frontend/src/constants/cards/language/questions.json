@@ -426,7 +426,7 @@
       "question": "Is this a garden hose?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/garden-hose.png",
+          "image": "../assets/images/cards/141_yes_no/garden-hose.png",
           "label": "A garden hose"
         }
       ],
@@ -440,7 +440,7 @@
       "question": "Is this a banana?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/red-apple.png",
+          "image": "../assets/images/cards/141_yes_no/red-apple.png",
           "label": "A red apple"
         }
       ],
@@ -454,35 +454,35 @@
       "question": "Is this the sun?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/sun.png",
+          "image": "../assets/images/cards/141_yes_no/sun.png",
           "label": "The sun"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Is this a dog?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/cat.png",
+          "image": "../assets/images/cards/141_yes_no/cat.png",
           "label": "A cat"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Is this the ocean?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/ocean.png",
+          "image": "../assets/images/cards/141_yes_no/ocean.png",
           "label": "The ocean"
         }
       ],
@@ -496,7 +496,7 @@
       "question": "Are these boots?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/flipflops.png",
+          "image": "../assets/images/cards/141_yes_no/flipflops.png",
           "label": "Flip flops"
         }
       ],
@@ -510,63 +510,63 @@
       "question": "Is the child swimming?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-swimming.png",
+          "image": "../assets/images/cards/141_yes_no/child-swimming.png",
           "label": "Child swimming"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Is the child eating?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-sleeping.png",
+          "image": "../assets/images/cards/141_yes_no/child-sleeping.png",
           "label": "Child sleeping"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Is this a sandcastle?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/sandcastle.png",
+          "image": "../assets/images/cards/141_yes_no/sandcastle.png",
           "label": "A sandcastle"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Is this a hairbrush?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/toothbrush.png",
+          "image": "../assets/images/cards/141_yes_no/toothbrush.png",
           "label": "A toothbrush"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Is this a seashell?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/seashell.png",
+          "image": "../assets/images/cards/141_yes_no/seashell.png",
           "label": "A seashell"
         }
       ],
@@ -580,7 +580,7 @@
       "question": "Is the bunny sleeping?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/bunny-eating.png",
+          "image": "../assets/images/cards/141_yes_no/bunny-eating.png",
           "label": "Bunny eating"
         }
       ],
@@ -594,21 +594,21 @@
       "question": "Are these sunglasses?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/sunglasses.png",
+          "image": "../assets/images/cards/141_yes_no/sunglasses.png",
           "label": "Sunglasses"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Is this orange juice?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/milk.png",
+          "image": "../assets/images/cards/141_yes_no/milk.png",
           "label": "A glass of milk"
         }
       ],
@@ -622,21 +622,21 @@
       "question": "Is it raining?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/raining.png",
+          "image": "../assets/images/cards/141_yes_no/raining.png",
           "label": "It is raining"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Is the child sitting?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-running.png",
+          "image": "../assets/images/cards/141_yes_no/child-running.png",
           "label": "Child running"
         }
       ],
@@ -650,7 +650,7 @@
       "question": "Is this a starfish?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/starfish.png",
+          "image": "../assets/images/cards/141_yes_no/starfish.png",
           "label": "A starfish"
         }
       ],
@@ -664,7 +664,7 @@
       "question": "Is this a car?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/bicycle.png",
+          "image": "../assets/images/cards/141_yes_no/bicycle.png",
           "label": "A bicycle"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "Is this a dolphin?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/dolphin.png",
+          "image": "../assets/images/cards/141_yes_no/dolphin.png",
           "label": "A dolphin"
         }
       ],
@@ -692,35 +692,35 @@
       "question": "Is the child wearing shorts?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-jacket.png",
+          "image": "../assets/images/cards/141_yes_no/child-jacket.png",
           "label": "Child wearing a jacket"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Is this a beach ball?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/beachball.png",
+          "image": "../assets/images/cards/141_yes_no/beachball.png",
           "label": "A beach ball"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Is this an orange?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/banana.png",
+          "image": "../assets/images/cards/141_yes_no/banana.png",
           "label": "A banana"
         }
       ],
@@ -734,7 +734,7 @@
       "question": "Is this a fire truck?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/firetruck.png",
+          "image": "../assets/images/cards/141_yes_no/firetruck.png",
           "label": "A fire truck"
         }
       ],
@@ -748,7 +748,7 @@
       "question": "Is the child combing hair?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/child-brushing-teeth.png",
+          "image": "../assets/images/cards/141_yes_no/child-brushing-teeth.png",
           "label": "Child brushing teeth"
         }
       ],
@@ -762,7 +762,7 @@
       "question": "Is this pizza?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/pizza.png",
+          "image": "../assets/images/cards/141_yes_no/pizza.png",
           "label": "Pizza"
         }
       ],
@@ -776,49 +776,49 @@
       "question": "Is the dog sleeping?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/dog-playing.png",
+          "image": "../assets/images/cards/141_yes_no/dog-playing.png",
           "label": "Dog playing"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Is this a palm tree?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/palmtree.png",
+          "image": "../assets/images/cards/141_yes_no/palmtree.png",
           "label": "A palm tree"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "Is this a sun hat?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/winter-hat.png",
+          "image": "../assets/images/cards/141_yes_no/winter-hat.png",
           "label": "A winter hat"
         }
       ],
       "choices": [
-        "Yes",
-        "No"
+        "No",
+        "Yes"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "Is this a lifeguard?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/lifeguard.png",
+          "image": "../assets/images/cards/141_yes_no/lifeguard.png",
           "label": "A lifeguard"
         }
       ],
@@ -832,7 +832,7 @@
       "question": "Is the girl dancing?",
       "images": [
         {
-          "image": "/images/cards/141_yes_no/girl-reading.png",
+          "image": "../assets/images/cards/141_yes_no/girl-reading.png",
           "label": "Girl reading"
         }
       ],

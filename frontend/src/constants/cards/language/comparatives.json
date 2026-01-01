@@ -4,901 +4,1591 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/big/orange.png",
+          "image": "../assets/images/cards/18_comparatives/big/orange.png",
           "label": "orange"
         },
         {
-          "image": "/images/cards/18_comparatives/big/watermelon.png",
+          "image": "../assets/images/cards/18_comparatives/big/watermelon.png",
           "label": "watermelon"
         },
         {
-          "image": "/images/cards/18_comparatives/big/pumpkin.png",
+          "image": "../assets/images/cards/18_comparatives/big/pumpkin.png",
           "label": "pumpkin"
         }
+      ],
+      "answers": [
+        "The orange is big.",
+        "The watermelon is bigger.",
+        "The pumpkin is biggest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/small/golden_retriever.png",
+          "image": "../assets/images/cards/18_comparatives/small/golden_retriever.png",
           "label": "golden retriever"
         },
         {
-          "image": "/images/cards/18_comparatives/small/beagle.png",
+          "image": "../assets/images/cards/18_comparatives/small/beagle.png",
           "label": "beagle"
         },
         {
-          "image": "/images/cards/18_comparatives/small/chihuahua.png",
+          "image": "../assets/images/cards/18_comparatives/small/chihuahua.png",
           "label": "chihuahua"
         }
+      ],
+      "answers": [
+        "The golden retriever is small.",
+        "The beagle is smaller.",
+        "The chihuahua is smallest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/tall/sprout.png",
+          "image": "../assets/images/cards/18_comparatives/tall/sprout.png",
           "label": "sprout"
         },
         {
-          "image": "/images/cards/18_comparatives/tall/medium_sunflower.png",
+          "image": "../assets/images/cards/18_comparatives/tall/medium_sunflower.png",
           "label": "medium sunflower"
         },
         {
-          "image": "/images/cards/18_comparatives/tall/tall_sunflower.png",
+          "image": "../assets/images/cards/18_comparatives/tall/tall_sunflower.png",
           "label": "tall sunflower"
         }
+      ],
+      "answers": [
+        "The sprout is tall.",
+        "The medium sunflower is taller.",
+        "The tall sunflower is tallest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/long/pencil.png",
+          "image": "../assets/images/cards/18_comparatives/long/pencil.png",
           "label": "pencil"
         },
         {
-          "image": "/images/cards/18_comparatives/long/crayon.png",
+          "image": "../assets/images/cards/18_comparatives/long/crayon.png",
           "label": "crayon"
         },
         {
-          "image": "/images/cards/18_comparatives/long/ruler.png",
+          "image": "../assets/images/cards/18_comparatives/long/ruler.png",
           "label": "ruler"
         }
+      ],
+      "answers": [
+        "The crayon is long.",
+        "The pencil is longer.",
+        "The ruler is longest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/wide/ribbon.png",
+          "image": "../assets/images/cards/18_comparatives/wide/ribbon.png",
           "label": "ribbon"
         },
         {
-          "image": "/images/cards/18_comparatives/wide/scarf.png",
+          "image": "../assets/images/cards/18_comparatives/wide/scarf.png",
           "label": "scarf"
         },
         {
-          "image": "/images/cards/18_comparatives/wide/beach_towel.png",
+          "image": "../assets/images/cards/18_comparatives/wide/beach_towel.png",
           "label": "beach towel"
         }
+      ],
+      "answers": [
+        "The ribbon is wide.",
+        "The scarf is wider.",
+        "The beach towel is widest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/thick/thin_book.png",
+          "image": "../assets/images/cards/18_comparatives/thick/thin_book.png",
           "label": "thin book"
         },
         {
-          "image": "/images/cards/18_comparatives/thick/medium_book.png",
+          "image": "../assets/images/cards/18_comparatives/thick/medium_book.png",
           "label": "medium book"
         },
         {
-          "image": "/images/cards/18_comparatives/thick/dictionary.png",
+          "image": "../assets/images/cards/18_comparatives/thick/dictionary.png",
           "label": "dictionary"
         }
+      ],
+      "answers": [
+        "The thin book is thick.",
+        "The medium book is thicker.",
+        "The dictionary is thickest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/many/few_strawberries.png",
+          "image": "../assets/images/cards/18_comparatives/many/few_strawberries.png",
           "label": "four strawberries"
         },
         {
-          "image": "/images/cards/18_comparatives/many/pile_strawberries.png",
+          "image": "../assets/images/cards/18_comparatives/many/pile_strawberries.png",
           "label": "pile of strawberries"
         },
         {
-          "image": "/images/cards/18_comparatives/many/bowl_strawberries.png",
+          "image": "../assets/images/cards/18_comparatives/many/bowl_strawberries.png",
           "label": "overflowing bowl"
         }
+      ],
+      "answers": [
+        "Four strawberries is many.",
+        "The pile of strawberries is more.",
+        "The overflowing bowl has the most."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/few/full_crayons.png",
+          "image": "../assets/images/cards/18_comparatives/few/full_crayons.png",
           "label": "full box"
         },
         {
-          "image": "/images/cards/18_comparatives/few/some_crayons.png",
+          "image": "../assets/images/cards/18_comparatives/few/some_crayons.png",
           "label": "some crayons"
         },
         {
-          "image": "/images/cards/18_comparatives/few/two_crayons.png",
+          "image": "../assets/images/cards/18_comparatives/few/two_crayons.png",
           "label": "two crayons"
         }
+      ],
+      "answers": [
+        "The full box has few.",
+        "Some crayons is fewer.",
+        "Two crayons is fewest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/full/empty_glass.png",
+          "image": "../assets/images/cards/18_comparatives/full/empty_glass.png",
           "label": "empty glass"
         },
         {
-          "image": "/images/cards/18_comparatives/full/half_glass.png",
+          "image": "../assets/images/cards/18_comparatives/full/half_glass.png",
           "label": "half-full glass"
         },
         {
-          "image": "/images/cards/18_comparatives/full/full_glass.png",
+          "image": "../assets/images/cards/18_comparatives/full/full_glass.png",
           "label": "full glass"
         }
+      ],
+      "answers": [
+        "The empty glass is full.",
+        "The half-full glass is fuller.",
+        "The full glass is fullest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/empty/full_basket.png",
+          "image": "../assets/images/cards/18_comparatives/empty/full_basket.png",
           "label": "full basket"
         },
         {
-          "image": "/images/cards/18_comparatives/empty/half_basket.png",
+          "image": "../assets/images/cards/18_comparatives/empty/half_basket.png",
           "label": "half-empty basket"
         },
         {
-          "image": "/images/cards/18_comparatives/empty/empty_basket.png",
+          "image": "../assets/images/cards/18_comparatives/empty/empty_basket.png",
           "label": "empty basket"
         }
+      ],
+      "answers": [
+        "The full basket is empty.",
+        "The half-empty basket is emptier.",
+        "The empty basket is emptiest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/hot/warm_soup.png",
+          "image": "../assets/images/cards/18_comparatives/hot/warm_soup.png",
           "label": "warm soup"
         },
         {
-          "image": "/images/cards/18_comparatives/hot/hot_soup.png",
+          "image": "../assets/images/cards/18_comparatives/hot/hot_soup.png",
           "label": "hot soup"
         },
         {
-          "image": "/images/cards/18_comparatives/hot/very_hot_soup.png",
+          "image": "../assets/images/cards/18_comparatives/hot/very_hot_soup.png",
           "label": "very hot soup"
         }
+      ],
+      "answers": [
+        "The warm soup is hot.",
+        "The hot soup is hotter.",
+        "The very hot soup is hottest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/cold/cool_water.png",
+          "image": "../assets/images/cards/18_comparatives/cold/cool_water.png",
           "label": "cool water"
         },
         {
-          "image": "/images/cards/18_comparatives/cold/ice_water.png",
+          "image": "../assets/images/cards/18_comparatives/cold/ice_water.png",
           "label": "ice water"
         },
         {
-          "image": "/images/cards/18_comparatives/cold/popsicle.png",
+          "image": "../assets/images/cards/18_comparatives/cold/popsicle.png",
           "label": "frozen popsicle"
         }
+      ],
+      "answers": [
+        "The cool water is cold.",
+        "The ice water is colder.",
+        "The frozen popsicle is coldest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/soft/paper.png",
+          "image": "../assets/images/cards/18_comparatives/soft/paper.png",
           "label": "paper"
         },
         {
-          "image": "/images/cards/18_comparatives/soft/cotton_ball.png",
+          "image": "../assets/images/cards/18_comparatives/soft/cotton_ball.png",
           "label": "cotton ball"
         },
         {
-          "image": "/images/cards/18_comparatives/soft/fluffy_pillow.png",
+          "image": "../assets/images/cards/18_comparatives/soft/fluffy_pillow.png",
           "label": "fluffy pillow"
         }
+      ],
+      "answers": [
+        "The paper is soft.",
+        "The cotton ball is softer.",
+        "The fluffy pillow is softest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/hard/bread.png",
+          "image": "../assets/images/cards/18_comparatives/hard/bread.png",
           "label": "bread"
         },
         {
-          "image": "/images/cards/18_comparatives/hard/apple.png",
+          "image": "../assets/images/cards/18_comparatives/hard/apple.png",
           "label": "apple"
         },
         {
-          "image": "/images/cards/18_comparatives/hard/rock.png",
+          "image": "../assets/images/cards/18_comparatives/hard/rock.png",
           "label": "rock"
         }
+      ],
+      "answers": [
+        "The bread is hard.",
+        "The apple is harder.",
+        "The rock is hardest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/smooth/sandpaper.png",
+          "image": "../assets/images/cards/18_comparatives/smooth/sandpaper.png",
           "label": "sandpaper"
         },
         {
-          "image": "/images/cards/18_comparatives/smooth/wooden_table.png",
+          "image": "../assets/images/cards/18_comparatives/smooth/wooden_table.png",
           "label": "wooden table"
         },
         {
-          "image": "/images/cards/18_comparatives/smooth/glass_marble.png",
+          "image": "../assets/images/cards/18_comparatives/smooth/glass_marble.png",
           "label": "glass marble"
         }
+      ],
+      "answers": [
+        "The sandpaper is smooth.",
+        "The wooden table is smoother.",
+        "The glass marble is smoothest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/bumpy/flat_paper.png",
+          "image": "../assets/images/cards/18_comparatives/bumpy/flat_paper.png",
           "label": "flat paper"
         },
         {
-          "image": "/images/cards/18_comparatives/bumpy/bubble_wrap.png",
+          "image": "../assets/images/cards/18_comparatives/bumpy/bubble_wrap.png",
           "label": "bubble wrap"
         },
         {
-          "image": "/images/cards/18_comparatives/bumpy/sea_shell.png",
+          "image": "../assets/images/cards/18_comparatives/bumpy/sea_shell.png",
           "label": "sea shell"
         }
+      ],
+      "answers": [
+        "The flat paper is bumpy.",
+        "The bubble wrap is bumpier.",
+        "The sea shell is bumpiest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/messy/small_spot.png",
+          "image": "../assets/images/cards/18_comparatives/messy/small_spot.png",
           "label": "small spot"
         },
         {
-          "image": "/images/cards/18_comparatives/messy/food_face.png",
+          "image": "../assets/images/cards/18_comparatives/messy/food_face.png",
           "label": "food on face"
         },
         {
-          "image": "/images/cards/18_comparatives/messy/finger_paint.png",
+          "image": "../assets/images/cards/18_comparatives/messy/finger_paint.png",
           "label": "covered in paint"
         }
+      ],
+      "answers": [
+        "The small spot is messy.",
+        "The food on face is messier.",
+        "Being covered in paint is messiest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/clean/muddy_shoes.png",
+          "image": "../assets/images/cards/18_comparatives/clean/muddy_shoes.png",
           "label": "muddy shoes"
         },
         {
-          "image": "/images/cards/18_comparatives/clean/dusty_shoes.png",
+          "image": "../assets/images/cards/18_comparatives/clean/dusty_shoes.png",
           "label": "dusty shoes"
         },
         {
-          "image": "/images/cards/18_comparatives/clean/sparkling_shoes.png",
+          "image": "../assets/images/cards/18_comparatives/clean/sparkling_shoes.png",
           "label": "sparkling shoes"
         }
+      ],
+      "answers": [
+        "The muddy shoes are clean.",
+        "The dusty shoes are cleaner.",
+        "The sparkling shoes are cleanest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/bright/nightlight.png",
+          "image": "../assets/images/cards/18_comparatives/bright/nightlight.png",
           "label": "nightlight"
         },
         {
-          "image": "/images/cards/18_comparatives/bright/table_lamp.png",
+          "image": "../assets/images/cards/18_comparatives/bright/table_lamp.png",
           "label": "table lamp"
         },
         {
-          "image": "/images/cards/18_comparatives/bright/sunshine.png",
+          "image": "../assets/images/cards/18_comparatives/bright/sunshine.png",
           "label": "sunshine"
         }
+      ],
+      "answers": [
+        "The nightlight is bright.",
+        "The table lamp is brighter.",
+        "The sunshine is brightest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/dark/sunny_room.png",
+          "image": "../assets/images/cards/18_comparatives/dark/sunny_room.png",
           "label": "sunny room"
         },
         {
-          "image": "/images/cards/18_comparatives/dark/sunset_room.png",
+          "image": "../assets/images/cards/18_comparatives/dark/sunset_room.png",
           "label": "room at sunset"
         },
         {
-          "image": "/images/cards/18_comparatives/dark/dark_room.png",
+          "image": "../assets/images/cards/18_comparatives/dark/dark_room.png",
           "label": "dark room"
         }
+      ],
+      "answers": [
+        "The sunny room is dark.",
+        "The room at sunset is darker.",
+        "The dark room is darkest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/fast/turtle.png",
+          "image": "../assets/images/cards/18_comparatives/fast/turtle.png",
           "label": "turtle"
         },
         {
-          "image": "/images/cards/18_comparatives/fast/rabbit.png",
+          "image": "../assets/images/cards/18_comparatives/fast/rabbit.png",
           "label": "rabbit"
         },
         {
-          "image": "/images/cards/18_comparatives/fast/cheetah.png",
+          "image": "../assets/images/cards/18_comparatives/fast/cheetah.png",
           "label": "cheetah"
         }
+      ],
+      "answers": [
+        "The turtle is fast.",
+        "The rabbit is faster.",
+        "The cheetah is fastest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/slow/bird.png",
+          "image": "../assets/images/cards/18_comparatives/slow/bird.png",
           "label": "bird"
         },
         {
-          "image": "/images/cards/18_comparatives/slow/cat.png",
+          "image": "../assets/images/cards/18_comparatives/slow/cat.png",
           "label": "cat"
         },
         {
-          "image": "/images/cards/18_comparatives/slow/snail.png",
+          "image": "../assets/images/cards/18_comparatives/slow/snail.png",
           "label": "snail"
         }
+      ],
+      "answers": [
+        "The bird is slow.",
+        "The cat is slower.",
+        "The snail is slowest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/loud/whisper.png",
+          "image": "../assets/images/cards/18_comparatives/loud/whisper.png",
           "label": "whisper"
         },
         {
-          "image": "/images/cards/18_comparatives/loud/talking.png",
+          "image": "../assets/images/cards/18_comparatives/loud/talking.png",
           "label": "talking"
         },
         {
-          "image": "/images/cards/18_comparatives/loud/shouting.png",
+          "image": "../assets/images/cards/18_comparatives/loud/shouting.png",
           "label": "shouting"
         }
+      ],
+      "answers": [
+        "A whisper is loud.",
+        "Talking is louder.",
+        "Shouting is loudest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/quiet/drum.png",
+          "image": "../assets/images/cards/18_comparatives/quiet/drum.png",
           "label": "drum"
         },
         {
-          "image": "/images/cards/18_comparatives/quiet/humming.png",
+          "image": "../assets/images/cards/18_comparatives/quiet/humming.png",
           "label": "humming"
         },
         {
-          "image": "/images/cards/18_comparatives/quiet/sleeping_bunny.png",
+          "image": "../assets/images/cards/18_comparatives/quiet/sleeping_bunny.png",
           "label": "sleeping bunny"
         }
+      ],
+      "answers": [
+        "The drum is quiet.",
+        "Humming is quieter.",
+        "The sleeping bunny is quietest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/heavy/feather.png",
+          "image": "../assets/images/cards/18_comparatives/heavy/feather.png",
           "label": "feather"
         },
         {
-          "image": "/images/cards/18_comparatives/heavy/book.png",
+          "image": "../assets/images/cards/18_comparatives/heavy/book.png",
           "label": "book"
         },
         {
-          "image": "/images/cards/18_comparatives/heavy/watermelon.png",
+          "image": "../assets/images/cards/18_comparatives/heavy/watermelon.png",
           "label": "watermelon"
         }
+      ],
+      "answers": [
+        "The feather is heavy.",
+        "The book is heavier.",
+        "The watermelon is heaviest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/light/bowling_ball.png",
+          "image": "../assets/images/cards/18_comparatives/light/bowling_ball.png",
           "label": "bowling ball"
         },
         {
-          "image": "/images/cards/18_comparatives/light/orange.png",
+          "image": "../assets/images/cards/18_comparatives/light/orange.png",
           "label": "orange"
         },
         {
-          "image": "/images/cards/18_comparatives/light/balloon.png",
+          "image": "../assets/images/cards/18_comparatives/light/balloon.png",
           "label": "balloon"
         }
+      ],
+      "answers": [
+        "The bowling ball is light.",
+        "The orange is lighter.",
+        "The balloon is lightest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/wet/dry_towel.png",
+          "image": "../assets/images/cards/18_comparatives/wet/dry_towel.png",
           "label": "dry towel"
         },
         {
-          "image": "/images/cards/18_comparatives/wet/damp_towel.png",
+          "image": "../assets/images/cards/18_comparatives/wet/damp_towel.png",
           "label": "damp towel"
         },
         {
-          "image": "/images/cards/18_comparatives/wet/soaking_towel.png",
+          "image": "../assets/images/cards/18_comparatives/wet/soaking_towel.png",
           "label": "soaking wet towel"
         }
+      ],
+      "answers": [
+        "The dry towel is wet.",
+        "The damp towel is wetter.",
+        "The soaking wet towel is wettest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/dry/wet_sponge.png",
+          "image": "../assets/images/cards/18_comparatives/dry/wet_sponge.png",
           "label": "wet sponge"
         },
         {
-          "image": "/images/cards/18_comparatives/dry/damp_sponge.png",
+          "image": "../assets/images/cards/18_comparatives/dry/damp_sponge.png",
           "label": "damp sponge"
         },
         {
-          "image": "/images/cards/18_comparatives/dry/dry_sponge.png",
+          "image": "../assets/images/cards/18_comparatives/dry/dry_sponge.png",
           "label": "dry sponge"
         }
+      ],
+      "answers": [
+        "The wet sponge is dry.",
+        "The damp sponge is drier.",
+        "The dry sponge is driest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/smelly/flower.png",
+          "image": "../assets/images/cards/18_comparatives/smelly/flower.png",
           "label": "flower"
         },
         {
-          "image": "/images/cards/18_comparatives/smelly/onions.png",
+          "image": "../assets/images/cards/18_comparatives/smelly/onions.png",
           "label": "onions"
         },
         {
-          "image": "/images/cards/18_comparatives/smelly/garbage.png",
+          "image": "../assets/images/cards/18_comparatives/smelly/garbage.png",
           "label": "garbage"
         }
+      ],
+      "answers": [
+        "The flower is smelly.",
+        "The onions are smellier.",
+        "The garbage is smelliest."
       ]
     },
     {
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/images/cards/18_comparatives/sweet/lemon.png",
+          "image": "../assets/images/cards/18_comparatives/sweet/lemon.png",
           "label": "lemon"
         },
         {
-          "image": "/images/cards/18_comparatives/sweet/apple.png",
+          "image": "../assets/images/cards/18_comparatives/sweet/apple.png",
           "label": "apple"
         },
         {
-          "image": "/images/cards/18_comparatives/sweet/mango.png",
+          "image": "../assets/images/cards/18_comparatives/sweet/mango.png",
           "label": "mango"
         }
+      ],
+      "answers": [
+        "The lemon is sweet.",
+        "The apple is sweeter.",
+        "The mango is sweetest."
       ]
     }
   ],
   "Compare And Contrast (Same And Different)": [
     {
-      "question": "Compare and contrast these items.",
+      "title": "Towel and Blanket",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/towel.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/towel.png",
           "label": "Towel"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/blanket.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/blanket.png",
           "label": "Blanket"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a towel and a blanket the same?",
+          "answers": [
+            "They are both made of soft fabric.",
+            "They both keep you warm or dry.",
+            "They are both used in the home."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A towel is used to dry off after a bath.",
+            "A blanket is used to keep warm in bed.",
+            "Towels are smaller than blankets."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Cup and Bowl",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/cup.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/cup.png",
           "label": "Cup"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/bowl.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/bowl.png",
           "label": "Bowl"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a cup and a bowl the same?",
+          "answers": [
+            "They are both containers for food or drinks.",
+            "They can both hold liquids.",
+            "They are both used at the table."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A cup is tall and has a handle.",
+            "A bowl is wide and shallow.",
+            "You drink from a cup but eat from a bowl."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Chair and Couch",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/chair.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/chair.png",
           "label": "Chair"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/couch.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/couch.png",
           "label": "Couch"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a chair and a couch the same?",
+          "answers": [
+            "They are both furniture for sitting.",
+            "They both have seats and backs.",
+            "They are both found in homes."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A chair is for one person.",
+            "A couch can seat multiple people.",
+            "A couch is longer than a chair."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Lamp and Flashlight",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/lamp.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/lamp.png",
           "label": "Lamp"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/flashlight.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/flashlight.png",
           "label": "Flashlight"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a lamp and a flashlight the same?",
+          "answers": [
+            "They both produce light.",
+            "They both help you see in the dark.",
+            "They both use electricity."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A lamp stays in one place.",
+            "A flashlight is portable.",
+            "A lamp plugs into the wall, a flashlight uses batteries."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Pillow and Cushion",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/pillow.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/pillow.png",
           "label": "Pillow"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/cushion.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/cushion.png",
           "label": "Cushion"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a pillow and a cushion the same?",
+          "answers": [
+            "They are both soft and filled with stuffing.",
+            "They both provide comfort.",
+            "They are both used on furniture."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A pillow is used for sleeping.",
+            "A cushion is used for sitting.",
+            "Pillows are usually on beds, cushions on couches."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Broom and Mop",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/broom.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/broom.png",
           "label": "Broom"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/mop.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/mop.png",
           "label": "Mop"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a broom and a mop the same?",
+          "answers": [
+            "They are both cleaning tools.",
+            "They both have long handles.",
+            "They are both used to clean floors."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A broom is used for sweeping dry dirt.",
+            "A mop is used for wet cleaning.",
+            "A broom has bristles, a mop has a sponge or cloth."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Refrigerator and Freezer",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/refrigerator.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/refrigerator.png",
           "label": "Refrigerator"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/freezer.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/freezer.png",
           "label": "Freezer"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a refrigerator and a freezer the same?",
+          "answers": [
+            "They both keep food cold.",
+            "They are both kitchen appliances.",
+            "They both use electricity."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A refrigerator keeps food cool.",
+            "A freezer keeps food frozen.",
+            "A freezer is colder than a refrigerator."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Bathtub and Shower",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/household/bathtub.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/bathtub.png",
           "label": "Bathtub"
         },
         {
-          "image": "/images/cards/19_compare_contrast/household/shower.png",
+          "image": "../assets/images/cards/19_compare_contrast/household/shower.png",
           "label": "Shower"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a bathtub and a shower the same?",
+          "answers": [
+            "They are both used for bathing.",
+            "They both use water to get clean.",
+            "They are both found in bathrooms."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A bathtub holds water to soak in.",
+            "A shower sprays water from above.",
+            "You sit in a bathtub but stand in a shower."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Socks and Shoes",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/clothing/socks.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/socks.png",
           "label": "Socks"
         },
         {
-          "image": "/images/cards/19_compare_contrast/clothing/shoes.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/shoes.png",
           "label": "Shoes"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are socks and shoes the same?",
+          "answers": [
+            "They are both worn on feet.",
+            "They both protect your feet.",
+            "They are both clothing items."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Socks are soft and worn inside shoes.",
+            "Shoes are hard and worn outside.",
+            "Socks are made of fabric, shoes have soles."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Hat and Helmet",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/clothing/hat.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/hat.png",
           "label": "Hat"
         },
         {
-          "image": "/images/cards/19_compare_contrast/clothing/helmet.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/helmet.png",
           "label": "Helmet"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a hat and a helmet the same?",
+          "answers": [
+            "They are both worn on the head.",
+            "They both cover your head.",
+            "They both come in different styles."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A hat is soft and for fashion or sun protection.",
+            "A helmet is hard and protects from injury.",
+            "Helmets are for safety, hats are for style."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Jacket and Sweater",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/clothing/jacket.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/jacket.png",
           "label": "Jacket"
         },
         {
-          "image": "/images/cards/19_compare_contrast/clothing/sweater.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/sweater.png",
           "label": "Sweater"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a jacket and a sweater the same?",
+          "answers": [
+            "They are both worn on the upper body.",
+            "They both keep you warm.",
+            "They are both types of outerwear."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A jacket has a zipper or buttons in front.",
+            "A sweater is pulled over the head.",
+            "Jackets are often waterproof, sweaters are knitted."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Flip Flops and Sandals",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/clothing/flip_flops.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/flip_flops.png",
           "label": "Flip Flops"
         },
         {
-          "image": "/images/cards/19_compare_contrast/clothing/sandals.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/sandals.png",
           "label": "Sandals"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are flip flops and sandals the same?",
+          "answers": [
+            "They are both open shoes.",
+            "They are both worn in warm weather.",
+            "They both leave parts of your feet exposed."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Flip flops have a strap between the toes.",
+            "Sandals have straps around the foot.",
+            "Sandals often have more support than flip flops."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Backpack and Tote Bag",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/clothing/backpack.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/backpack.png",
           "label": "Backpack"
         },
         {
-          "image": "/images/cards/19_compare_contrast/clothing/tote_bag.png",
+          "image": "../assets/images/cards/19_compare_contrast/clothing/tote_bag.png",
           "label": "Tote Bag"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a backpack and a tote bag the same?",
+          "answers": [
+            "They are both bags for carrying things.",
+            "They both have handles or straps.",
+            "They both store personal items."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A backpack is worn on your back.",
+            "A tote bag is carried by hand or shoulder.",
+            "A backpack has two straps, a tote has one or two handles."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Orange and Apple",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/food/orange.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/orange.png",
           "label": "Orange"
         },
         {
-          "image": "/images/cards/19_compare_contrast/food/apple.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/apple.png",
           "label": "Apple"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are an orange and an apple the same?",
+          "answers": [
+            "They are both fruits.",
+            "They are both round in shape.",
+            "They are both healthy snacks."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "An orange has a peel you remove.",
+            "An apple has edible skin.",
+            "An orange is citrus, an apple is not."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Bread and Tortilla",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/food/bread.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/bread.png",
           "label": "Bread"
         },
         {
-          "image": "/images/cards/19_compare_contrast/food/tortilla.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/tortilla.png",
           "label": "Tortilla"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are bread and a tortilla the same?",
+          "answers": [
+            "They are both made from flour.",
+            "They are both used to eat with other foods.",
+            "They are both baked or cooked."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Bread is thick and fluffy.",
+            "A tortilla is thin and flat.",
+            "Bread is sliced, a tortilla is folded."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Juice and Smoothie",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/food/juice.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/juice.png",
           "label": "Juice"
         },
         {
-          "image": "/images/cards/19_compare_contrast/food/smoothie.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/smoothie.png",
           "label": "Smoothie"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are juice and a smoothie the same?",
+          "answers": [
+            "They are both drinks made from fruits.",
+            "They are both healthy beverages.",
+            "They can both be served cold."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Juice is thin and clear.",
+            "A smoothie is thick and creamy.",
+            "Smoothies often have yogurt or milk added."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Rice and Pasta",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/food/rice.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/rice.png",
           "label": "Rice"
         },
         {
-          "image": "/images/cards/19_compare_contrast/food/pasta.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/pasta.png",
           "label": "Pasta"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are rice and pasta the same?",
+          "answers": [
+            "They are both carbohydrates.",
+            "They are both cooked in boiling water.",
+            "They are both served as side dishes."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Rice is a grain that grows in paddies.",
+            "Pasta is made from wheat flour.",
+            "Rice is small grains, pasta comes in many shapes."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Cucumber and Bell Pepper",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/food/cucumber.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/cucumber.png",
           "label": "Cucumber"
         },
         {
-          "image": "/images/cards/19_compare_contrast/food/bell_pepper.png",
+          "image": "../assets/images/cards/19_compare_contrast/food/bell_pepper.png",
           "label": "Bell Pepper"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a cucumber and a bell pepper the same?",
+          "answers": [
+            "They are both vegetables.",
+            "They can both be eaten raw.",
+            "They are both crunchy."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A cucumber is long and green.",
+            "A bell pepper is round and can be many colors.",
+            "A cucumber has seeds inside, a bell pepper is hollow."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Cat and Dog",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/animals/cat.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/cat.png",
           "label": "Cat"
         },
         {
-          "image": "/images/cards/19_compare_contrast/animals/dog.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/dog.png",
           "label": "Dog"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a cat and a dog the same?",
+          "answers": [
+            "They are both pets.",
+            "They are both furry animals.",
+            "They both have four legs."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A cat meows and a dog barks.",
+            "Cats are more independent, dogs need more attention.",
+            "Dogs are usually bigger than cats."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Bunny and Hamster",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/animals/bunny.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/bunny.png",
           "label": "Bunny"
         },
         {
-          "image": "/images/cards/19_compare_contrast/animals/hamster.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/hamster.png",
           "label": "Hamster"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a bunny and a hamster the same?",
+          "answers": [
+            "They are both small furry pets.",
+            "They both have soft fur.",
+            "They both eat vegetables."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A bunny has long ears.",
+            "A hamster has small round ears.",
+            "Bunnies hop, hamsters run."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Dolphin and Whale",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/animals/dolphin.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/dolphin.png",
           "label": "Dolphin"
         },
         {
-          "image": "/images/cards/19_compare_contrast/animals/whale.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/whale.png",
           "label": "Whale"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a dolphin and a whale the same?",
+          "answers": [
+            "They are both marine mammals.",
+            "They both live in the ocean.",
+            "They both breathe air through blowholes."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A dolphin is much smaller than a whale.",
+            "Dolphins have pointed snouts.",
+            "Whales are the largest animals on Earth."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Butterfly and Bird",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/animals/butterfly.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/butterfly.png",
           "label": "Butterfly"
         },
         {
-          "image": "/images/cards/19_compare_contrast/animals/bird.png",
+          "image": "../assets/images/cards/19_compare_contrast/animals/bird.png",
           "label": "Bird"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a butterfly and a bird the same?",
+          "answers": [
+            "They both have wings.",
+            "They can both fly.",
+            "They are both colorful."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A butterfly is an insect.",
+            "A bird has feathers and a beak.",
+            "Butterflies have antennae, birds do not."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Sand and Water",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/beach/sand.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/sand.png",
           "label": "Sand"
         },
         {
-          "image": "/images/cards/19_compare_contrast/beach/water.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/water.png",
           "label": "Water"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are sand and water the same?",
+          "answers": [
+            "They are both found at the beach.",
+            "They both feel nice to play in.",
+            "They are both part of nature."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Sand is solid and dry.",
+            "Water is liquid and wet.",
+            "You build with sand but swim in water."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Surfboard and Boogie Board",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/beach/surfboard.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/surfboard.png",
           "label": "Surfboard"
         },
         {
-          "image": "/images/cards/19_compare_contrast/beach/boogie_board.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/boogie_board.png",
           "label": "Boogie Board"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a surfboard and a boogie board the same?",
+          "answers": [
+            "They are both used in the ocean.",
+            "They both help you ride waves.",
+            "They both float on water."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A surfboard is longer and you stand on it.",
+            "A boogie board is shorter and you lie on it.",
+            "Surfboards require more skill to ride."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Seashell and Starfish",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/beach/seashell.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/seashell.png",
           "label": "Seashell"
         },
         {
-          "image": "/images/cards/19_compare_contrast/beach/starfish.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/starfish.png",
           "label": "Starfish"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a seashell and a starfish the same?",
+          "answers": [
+            "They are both found at the beach.",
+            "They both come from the ocean.",
+            "They are both collected as souvenirs."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A seashell is a hard shell from a mollusk.",
+            "A starfish is a living sea creature.",
+            "Starfish have arms, seashells are curved."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Beach Towel and Beach Umbrella",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/beach/beach_towel.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/beach_towel.png",
           "label": "Beach Towel"
         },
         {
-          "image": "/images/cards/19_compare_contrast/beach/beach_umbrella.png",
+          "image": "../assets/images/cards/19_compare_contrast/beach/beach_umbrella.png",
           "label": "Beach Umbrella"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a beach towel and a beach umbrella the same?",
+          "answers": [
+            "They are both used at the beach.",
+            "They both help you stay comfortable.",
+            "They are both brought for beach trips."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A beach towel is for lying on or drying off.",
+            "A beach umbrella provides shade from the sun.",
+            "Towels are flat, umbrellas stand up."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Crayons and Markers",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/crafts/crayons.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/crayons.png",
           "label": "Crayons"
         },
         {
-          "image": "/images/cards/19_compare_contrast/crafts/markers.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/markers.png",
           "label": "Markers"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are crayons and markers the same?",
+          "answers": [
+            "They are both used for coloring.",
+            "They both come in many colors.",
+            "They are both art supplies."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Crayons are made of wax.",
+            "Markers use ink.",
+            "Markers have brighter colors than crayons."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Paint and Glue",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/crafts/paint.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/paint.png",
           "label": "Paint"
         },
         {
-          "image": "/images/cards/19_compare_contrast/crafts/glue.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/glue.png",
           "label": "Glue"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are paint and glue the same?",
+          "answers": [
+            "They are both used in art projects.",
+            "They both come in bottles.",
+            "They both start wet and dry."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Paint adds color to things.",
+            "Glue sticks things together.",
+            "Paint comes in many colors, glue is usually white or clear."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Puzzle and Building Blocks",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/crafts/puzzle.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/puzzle.png",
           "label": "Puzzle"
         },
         {
-          "image": "/images/cards/19_compare_contrast/crafts/building_blocks.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/building_blocks.png",
           "label": "Building Blocks"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are a puzzle and building blocks the same?",
+          "answers": [
+            "They are both toys with many pieces.",
+            "They both require thinking to use.",
+            "They are both fun to play with."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "A puzzle pieces fit together to make a picture.",
+            "Building blocks stack to make structures.",
+            "Puzzles have one solution, blocks can build anything."
+          ]
         }
       ]
     },
     {
-      "question": "Compare and contrast these items.",
+      "title": "Sewing and Knitting",
       "images": [
         {
-          "image": "/images/cards/19_compare_contrast/crafts/sewing.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/sewing.png",
           "label": "Sewing"
         },
         {
-          "image": "/images/cards/19_compare_contrast/crafts/knitting.png",
+          "image": "../assets/images/cards/19_compare_contrast/crafts/knitting.png",
           "label": "Knitting"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are sewing and knitting the same?",
+          "answers": [
+            "They are both crafts that use thread or yarn.",
+            "They both create fabric items.",
+            "They both require practice and skill."
+          ]
+        },
+        {
+          "question": "How are they different?",
+          "answers": [
+            "Sewing uses a needle and thread.",
+            "Knitting uses two needles and yarn.",
+            "Sewing joins fabric, knitting creates fabric."
+          ]
         }
       ]
     }
@@ -908,13 +1598,13 @@
       "question": "The bunny is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card1.png",
+          "image": "../assets/images/cards/semantic_relationships/card1.png",
           "label": "Bunny, birdhouse, and rocking horse"
         }
       ],
       "choices": [
-        "on top of the birdhouse",
         "below the rocking horse",
+        "on top of the birdhouse",
         "above the rocking horse"
       ],
       "answerIndex": 2
@@ -923,52 +1613,52 @@
       "question": "The bucket is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card2.png",
+          "image": "../assets/images/cards/semantic_relationships/card2.png",
           "label": "Beach scene with bucket and sandcastle"
         }
       ],
       "choices": [
-        "under the umbrella",
         "next to the sandcastle",
+        "under the umbrella",
         "on the towel"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The plate is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card3.png",
+          "image": "../assets/images/cards/semantic_relationships/card3.png",
           "label": "Table setting with plate, cup, and spoon"
         }
       ],
       "choices": [
+        "behind the cup",
         "in front of the cup",
-        "under the spoon",
-        "behind the cup"
+        "under the spoon"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "The bed is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card4.png",
+          "image": "../assets/images/cards/semantic_relationships/card4.png",
           "label": "Bedroom with bed and clock"
         }
       ],
       "choices": [
-        "above the clock",
         "below the clock",
+        "above the clock",
         "next to the clock"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The bunny is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card5.png",
+          "image": "../assets/images/cards/semantic_relationships/card5.png",
           "label": "Items with bunny position"
         }
       ],
@@ -983,7 +1673,7 @@
       "question": "The bowl is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card6.png",
+          "image": "../assets/images/cards/semantic_relationships/card6.png",
           "label": "Bowl with banana and apple"
         }
       ],
@@ -998,14 +1688,14 @@
       "question": "The boat is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card7.png",
+          "image": "../assets/images/cards/semantic_relationships/card7.png",
           "label": "Ocean scene with boat, sun, and dolphin"
         }
       ],
       "choices": [
         "under the sun",
-        "above the dolphin",
-        "below the dolphin"
+        "below the dolphin",
+        "above the dolphin"
       ],
       "answerIndex": 0
     },
@@ -1013,37 +1703,37 @@
       "question": "The jacket is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card8.png",
+          "image": "../assets/images/cards/semantic_relationships/card8.png",
           "label": "Clothing items: hat, jacket, and shoes"
         }
       ],
       "choices": [
         "below the hat",
-        "above the shoes",
-        "both a and b"
+        "both a and b",
+        "above the shoes"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "The bench is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card9.png",
+          "image": "../assets/images/cards/semantic_relationships/card9.png",
           "label": "Park scene with bench and tree"
         }
       ],
       "choices": [
+        "above the tree",
         "in front of the tree",
-        "behind the tree",
-        "above the tree"
+        "behind the tree"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "The rock is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card10.png",
+          "image": "../assets/images/cards/semantic_relationships/card10.png",
           "label": "Aquarium with fish, rock, and plant"
         }
       ],
@@ -1058,52 +1748,52 @@
       "question": "The book is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card11.png",
+          "image": "../assets/images/cards/semantic_relationships/card11.png",
           "label": "Book and pencil"
         }
       ],
       "choices": [
-        "under the pencil",
         "on the pencil",
+        "under the pencil",
         "next to the pencil"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "The tower is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card12.png",
+          "image": "../assets/images/cards/semantic_relationships/card12.png",
           "label": "Tower, chair, and flag"
         }
       ],
       "choices": [
-        "behind the chair",
         "next to the flag",
-        "under the chair"
+        "under the chair",
+        "behind the chair"
       ],
-      "answerIndex": 0
+      "answerIndex": 2
     },
     {
       "question": "Where is the banana?",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card13.png",
+          "image": "../assets/images/cards/semantic_relationships/card13.png",
           "label": "Fruits with banana position"
         }
       ],
       "choices": [
+        "on the right",
         "on the left",
-        "in the middle",
-        "on the right"
+        "in the middle"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "The cup is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card14.png",
+          "image": "../assets/images/cards/semantic_relationships/card14.png",
           "label": "Bathroom items: cup, toothbrush, and soap"
         }
       ],
@@ -1118,37 +1808,37 @@
       "question": "The cloud is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card15.png",
+          "image": "../assets/images/cards/semantic_relationships/card15.png",
           "label": "Sky scene with cloud, airplane, and bird"
         }
       ],
       "choices": [
-        "below the airplane",
         "above the airplane",
-        "next to the bird"
+        "next to the bird",
+        "below the airplane"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The vase is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card16.png",
+          "image": "../assets/images/cards/semantic_relationships/card16.png",
           "label": "Items with vase position"
         }
       ],
       "choices": [
-        "on the left",
         "in the middle",
-        "on the right"
+        "on the right",
+        "on the left"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
       "question": "The bucket is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card17.png",
+          "image": "../assets/images/cards/semantic_relationships/card17.png",
           "label": "Beach items: bucket, shell, and shovel"
         }
       ],
@@ -1163,29 +1853,29 @@
       "question": "The remote is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card18.png",
+          "image": "../assets/images/cards/semantic_relationships/card18.png",
           "label": "Living room with remote, blanket, and couch"
         }
       ],
       "choices": [
-        "under the blanket",
         "next to the couch",
-        "on top of everything"
+        "on top of everything",
+        "under the blanket"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The flower is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card19.png",
+          "image": "../assets/images/cards/semantic_relationships/card19.png",
           "label": "Garden scene with flower, butterfly, and bee"
         }
       ],
       "choices": [
-        "above the butterfly",
+        "next to the bee",
         "under the butterfly",
-        "next to the bee"
+        "above the butterfly"
       ],
       "answerIndex": 1
     },
@@ -1193,7 +1883,7 @@
       "question": "The house is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card20.png",
+          "image": "../assets/images/cards/semantic_relationships/card20.png",
           "label": "Neighborhood with house, car, and tree"
         }
       ],
@@ -1208,13 +1898,13 @@
       "question": "The grapes are:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card21.png",
+          "image": "../assets/images/cards/semantic_relationships/card21.png",
           "label": "Fruits with grapes position"
         }
       ],
       "choices": [
-        "on the left",
         "in the middle",
+        "on the left",
         "on the right"
       ],
       "answerIndex": 2
@@ -1223,13 +1913,13 @@
       "question": "The shirt is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card22.png",
+          "image": "../assets/images/cards/semantic_relationships/card22.png",
           "label": "Clothing: shirt, shorts, and socks"
         }
       ],
       "choices": [
-        "above the shorts",
         "below the socks",
+        "above the shorts",
         "both a and b"
       ],
       "answerIndex": 2
@@ -1238,97 +1928,97 @@
       "question": "The wave is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card23.png",
+          "image": "../assets/images/cards/semantic_relationships/card23.png",
           "label": "Beach scene with wave, seagull, and surfer"
         }
       ],
       "choices": [
+        "next to the seagull",
         "below the seagull",
-        "above the surfer",
-        "next to the seagull"
+        "above the surfer"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
       "question": "The basket is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card24.png",
+          "image": "../assets/images/cards/semantic_relationships/card24.png",
           "label": "Picnic items: basket, napkin, and bottle"
         }
       ],
       "choices": [
-        "on the napkin",
         "under the bottle",
-        "next to the napkin"
+        "next to the napkin",
+        "on the napkin"
       ],
-      "answerIndex": 0
+      "answerIndex": 2
     },
     {
       "question": "The sun is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card25.png",
+          "image": "../assets/images/cards/semantic_relationships/card25.png",
           "label": "Room with window, sun, and plant"
         }
       ],
       "choices": [
-        "inside the house",
         "outside the window",
-        "below the plant"
+        "below the plant",
+        "inside the house"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The yellow cup is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card26.png",
+          "image": "../assets/images/cards/semantic_relationships/card26.png",
           "label": "Cups with yellow cup position"
         }
       ],
       "choices": [
-        "on the left",
+        "on the right",
         "in the middle",
-        "on the right"
+        "on the left"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "The pencil case is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card27.png",
+          "image": "../assets/images/cards/semantic_relationships/card27.png",
           "label": "School items: pencil case, backpack, and notebook"
         }
       ],
       "choices": [
+        "outside the backpack",
         "on top of the backpack",
-        "next to the notebook",
-        "outside the backpack"
+        "next to the notebook"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "The towel is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card28.png",
+          "image": "../assets/images/cards/semantic_relationships/card28.png",
           "label": "Bathroom with towel, bathtub, and duck"
         }
       ],
       "choices": [
-        "in the water",
         "next to the bathtub",
-        "under the duck"
+        "under the duck",
+        "in the water"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The moon is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card29.png",
+          "image": "../assets/images/cards/semantic_relationships/card29.png",
           "label": "Night sky with moon, cloud, and star"
         }
       ],
@@ -1343,16 +2033,16 @@
       "question": "The brown scoop is:",
       "images": [
         {
-          "image": "/images/cards/semantic_relationships/card30.png",
+          "image": "../assets/images/cards/semantic_relationships/card30.png",
           "label": "Ice cream scoops in different colors"
         }
       ],
       "choices": [
         "above the white scoop",
-        "below the pink scoop",
-        "both a and b"
+        "both a and b",
+        "below the pink scoop"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     }
   ]
 }

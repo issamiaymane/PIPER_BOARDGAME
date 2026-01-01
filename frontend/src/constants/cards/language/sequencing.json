@@ -4,19 +4,19 @@
       "question": "Put these steps in order: Planting a Seed",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/planting_seed_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_seed_a.png",
           "label": "Empty pot"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/planting_seed_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_seed_b.png",
           "label": "Watering the plant"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/planting_seed_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_seed_c.png",
           "label": "Putting soil in pot"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/planting_seed_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_seed_d.png",
           "label": "Small sprout growing"
         }
       ],
@@ -31,19 +31,19 @@
       "question": "Put these steps in order: Growing a Flower",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/growing_flower_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_flower_a.png",
           "label": "Full bloom flower"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/growing_flower_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_flower_b.png",
           "label": "Seed in ground"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/growing_flower_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_flower_c.png",
           "label": "Small sprout"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/growing_flower_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_flower_d.png",
           "label": "Bud forming"
         }
       ],
@@ -58,19 +58,19 @@
       "question": "Put these steps in order: Planting in Garden",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/planting_garden_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_garden_a.png",
           "label": "Watering can watering"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/planting_garden_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_garden_b.png",
           "label": "Empty pots"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/planting_garden_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_garden_c.png",
           "label": "Soil in pot"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/planting_garden_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/planting_garden_d.png",
           "label": "Plants sprouting"
         }
       ],
@@ -85,19 +85,19 @@
       "question": "Put these steps in order: Sunflower Growing",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/sunflower_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunflower_a.png",
           "label": "Tall sunflower"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sunflower_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunflower_b.png",
           "label": "Seed packet"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sunflower_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunflower_c.png",
           "label": "Small seedling"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sunflower_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunflower_d.png",
           "label": "Medium plant"
         }
       ],
@@ -112,19 +112,19 @@
       "question": "Put these steps in order: Growing Vegetables",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/growing_vegetables_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_vegetables_a.png",
           "label": "Harvesting vegetables"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/growing_vegetables_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_vegetables_b.png",
           "label": "Seeds"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/growing_vegetables_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_vegetables_c.png",
           "label": "Watering seedlings"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/growing_vegetables_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/growing_vegetables_d.png",
           "label": "Small plants"
         }
       ],
@@ -139,19 +139,19 @@
       "question": "Put these steps in order: Building a Treehouse",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/treehouse_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/treehouse_a.png",
           "label": "Finished treehouse"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/treehouse_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/treehouse_b.png",
           "label": "Stack of wood"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/treehouse_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/treehouse_c.png",
           "label": "Grown-up using saw"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/treehouse_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/treehouse_d.png",
           "label": "Grown-up hammering"
         }
       ],
@@ -166,19 +166,19 @@
       "question": "Put these steps in order: Making a Sandcastle",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/sandcastle_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandcastle_a.png",
           "label": "Finished castle"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sandcastle_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandcastle_b.png",
           "label": "Empty beach"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sandcastle_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandcastle_c.png",
           "label": "Filling bucket"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sandcastle_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandcastle_d.png",
           "label": "Stacking sand"
         }
       ],
@@ -193,19 +193,19 @@
       "question": "Put these steps in order: Building with Blocks",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/blocks_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/blocks_a.png",
           "label": "Tall tower"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/blocks_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/blocks_b.png",
           "label": "Blocks in box"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/blocks_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/blocks_c.png",
           "label": "First few blocks"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/blocks_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/blocks_d.png",
           "label": "Half-built tower"
         }
       ],
@@ -220,19 +220,19 @@
       "question": "Put these steps in order: Making a Puzzle",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/puzzle_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/puzzle_a.png",
           "label": "Completed puzzle"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/puzzle_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/puzzle_b.png",
           "label": "Puzzle pieces scattered"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/puzzle_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/puzzle_c.png",
           "label": "Edge pieces connected"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/puzzle_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/puzzle_d.png",
           "label": "Most pieces done"
         }
       ],
@@ -247,19 +247,19 @@
       "question": "Put these steps in order: Making Art Project",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/art_project_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/art_project_a.png",
           "label": "Blank paper"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/art_project_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/art_project_b.png",
           "label": "Finished painting"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/art_project_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/art_project_c.png",
           "label": "Sketch drawn"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/art_project_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/art_project_d.png",
           "label": "Colors added"
         }
       ],
@@ -274,19 +274,19 @@
       "question": "Put these steps in order: Getting Ready for the Day",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/getting_ready_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_ready_a.png",
           "label": "Eating breakfast"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/getting_ready_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_ready_b.png",
           "label": "Waking up in bed"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/getting_ready_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_ready_c.png",
           "label": "Getting dressed"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/getting_ready_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_ready_d.png",
           "label": "Leaving house"
         }
       ],
@@ -301,19 +301,19 @@
       "question": "Put these steps in order: Brushing Teeth",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/brushing_teeth_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/brushing_teeth_a.png",
           "label": "Rinsing mouth"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/brushing_teeth_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/brushing_teeth_b.png",
           "label": "Getting toothbrush"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/brushing_teeth_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/brushing_teeth_c.png",
           "label": "Putting on toothpaste"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/brushing_teeth_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/brushing_teeth_d.png",
           "label": "Brushing teeth"
         }
       ],
@@ -328,19 +328,19 @@
       "question": "Put these steps in order: Making the Bed",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/making_bed_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/making_bed_a.png",
           "label": "Messy bed"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/making_bed_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/making_bed_b.png",
           "label": "Putting on pillow"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/making_bed_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/making_bed_c.png",
           "label": "Pulling up sheet"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/making_bed_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/making_bed_d.png",
           "label": "Neat finished bed"
         }
       ],
@@ -355,19 +355,19 @@
       "question": "Put these steps in order: Getting Dressed",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/getting_dressed_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_dressed_a.png",
           "label": "In pajamas"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/getting_dressed_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_dressed_b.png",
           "label": "Putting on shirt"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/getting_dressed_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_dressed_c.png",
           "label": "Putting on pants"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/getting_dressed_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/getting_dressed_d.png",
           "label": "Putting on shoes"
         }
       ],
@@ -382,19 +382,19 @@
       "question": "Put these steps in order: Eating Breakfast",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/eating_breakfast_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/eating_breakfast_a.png",
           "label": "Sitting at table"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/eating_breakfast_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/eating_breakfast_b.png",
           "label": "Pouring cereal"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/eating_breakfast_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/eating_breakfast_c.png",
           "label": "Eating"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/eating_breakfast_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/eating_breakfast_d.png",
           "label": "Empty bowl finished"
         }
       ],
@@ -409,19 +409,19 @@
       "question": "Put these steps in order: Getting Ready for Bed",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/ready_for_bed_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/ready_for_bed_a.png",
           "label": "Brushing teeth"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/ready_for_bed_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/ready_for_bed_b.png",
           "label": "Putting on pajamas"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/ready_for_bed_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/ready_for_bed_c.png",
           "label": "Getting in bed"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/ready_for_bed_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/ready_for_bed_d.png",
           "label": "Sleeping"
         }
       ],
@@ -436,19 +436,19 @@
       "question": "Put these steps in order: Taking a Bath",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/taking_bath_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/taking_bath_a.png",
           "label": "Empty tub"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/taking_bath_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/taking_bath_b.png",
           "label": "Filling with water"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/taking_bath_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/taking_bath_c.png",
           "label": "Washing with soap"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/taking_bath_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/taking_bath_d.png",
           "label": "Drying with towel"
         }
       ],
@@ -463,19 +463,19 @@
       "question": "Put these steps in order: Washing Hands",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/washing_hands_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/washing_hands_a.png",
           "label": "Turning on water"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/washing_hands_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/washing_hands_b.png",
           "label": "Adding soap"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/washing_hands_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/washing_hands_c.png",
           "label": "Scrubbing hands"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/washing_hands_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/washing_hands_d.png",
           "label": "Drying with towel"
         }
       ],
@@ -490,19 +490,19 @@
       "question": "Put these steps in order: Bedtime Story",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/bedtime_story_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/bedtime_story_a.png",
           "label": "Picking a book"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/bedtime_story_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/bedtime_story_b.png",
           "label": "Sitting on bed"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/bedtime_story_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/bedtime_story_c.png",
           "label": "Reading book"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/bedtime_story_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/bedtime_story_d.png",
           "label": "Closing book, going to sleep"
         }
       ],
@@ -517,19 +517,19 @@
       "question": "Put these steps in order: Cleaning Up Toys",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/cleaning_toys_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/cleaning_toys_a.png",
           "label": "Toys on floor"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/cleaning_toys_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/cleaning_toys_b.png",
           "label": "Picking up toys"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/cleaning_toys_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/cleaning_toys_c.png",
           "label": "Putting in toy box"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/cleaning_toys_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/cleaning_toys_d.png",
           "label": "Clean room"
         }
       ],
@@ -544,19 +544,19 @@
       "question": "Put these steps in order: Going to the Beach",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/going_beach_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/going_beach_a.png",
           "label": "Packing bag"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/going_beach_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/going_beach_b.png",
           "label": "Arriving at beach"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/going_beach_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/going_beach_c.png",
           "label": "Setting up towel"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/going_beach_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/going_beach_d.png",
           "label": "Playing in water"
         }
       ],
@@ -571,19 +571,19 @@
       "question": "Put these steps in order: Applying Sunscreen",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/sunscreen_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunscreen_a.png",
           "label": "Getting sunscreen bottle"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sunscreen_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunscreen_b.png",
           "label": "Squeezing into hand"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sunscreen_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunscreen_c.png",
           "label": "Rubbing on skin"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sunscreen_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sunscreen_d.png",
           "label": "Playing in sun safely"
         }
       ],
@@ -598,19 +598,19 @@
       "question": "Put these steps in order: Building Sandcastle",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/build_sandcastle_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/build_sandcastle_a.png",
           "label": "Getting bucket and shovel"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/build_sandcastle_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/build_sandcastle_b.png",
           "label": "Filling bucket with wet sand"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/build_sandcastle_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/build_sandcastle_c.png",
           "label": "Flipping bucket over"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/build_sandcastle_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/build_sandcastle_d.png",
           "label": "Decorated castle"
         }
       ],
@@ -625,19 +625,19 @@
       "question": "Put these steps in order: Collecting Seashells",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/seashells_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/seashells_a.png",
           "label": "Walking on beach"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/seashells_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/seashells_b.png",
           "label": "Finding a shell"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/seashells_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/seashells_c.png",
           "label": "Putting in bucket"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/seashells_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/seashells_d.png",
           "label": "Full bucket of shells"
         }
       ],
@@ -652,19 +652,19 @@
       "question": "Put these steps in order: Drying Off After Swimming",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/drying_off_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/drying_off_a.png",
           "label": "Getting out of water"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/drying_off_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/drying_off_b.png",
           "label": "Walking to towel"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/drying_off_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/drying_off_c.png",
           "label": "Wrapping in towel"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/drying_off_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/drying_off_d.png",
           "label": "Dry and warm"
         }
       ],
@@ -679,19 +679,19 @@
       "question": "Put these steps in order: Making a Smoothie",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/smoothie_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/smoothie_a.png",
           "label": "Getting fruit"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/smoothie_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/smoothie_b.png",
           "label": "Putting fruit in blender"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/smoothie_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/smoothie_c.png",
           "label": "Grown-up blending"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/smoothie_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/smoothie_d.png",
           "label": "Pouring into glass"
         }
       ],
@@ -706,19 +706,19 @@
       "question": "Put these steps in order: Making a Sandwich",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/sandwich_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandwich_a.png",
           "label": "Getting bread"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sandwich_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandwich_b.png",
           "label": "Spreading peanut butter"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sandwich_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandwich_c.png",
           "label": "Adding jelly"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/sandwich_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/sandwich_d.png",
           "label": "Putting bread together"
         }
       ],
@@ -733,19 +733,19 @@
       "question": "Put these steps in order: Peeling an Orange",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/orange_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/orange_a.png",
           "label": "Whole orange"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/orange_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/orange_b.png",
           "label": "Starting to peel"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/orange_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/orange_c.png",
           "label": "Peel coming off"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/orange_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/orange_d.png",
           "label": "Eating orange segments"
         }
       ],
@@ -760,19 +760,19 @@
       "question": "Put these steps in order: Setting the Table",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/setting_table_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/setting_table_a.png",
           "label": "Empty table"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/setting_table_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/setting_table_b.png",
           "label": "Putting down plates"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/setting_table_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/setting_table_c.png",
           "label": "Adding cups"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/setting_table_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/setting_table_d.png",
           "label": "Adding utensils"
         }
       ],
@@ -787,19 +787,19 @@
       "question": "Put these steps in order: Packing Lunch",
       "images": [
         {
-          "image": "/images/cards/33_first_next_then_last/packing_lunch_a.png",
+          "image": "../assets/images/cards/33_first_next_then_last/packing_lunch_a.png",
           "label": "Empty lunch box"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/packing_lunch_b.png",
+          "image": "../assets/images/cards/33_first_next_then_last/packing_lunch_b.png",
           "label": "Adding sandwich"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/packing_lunch_c.png",
+          "image": "../assets/images/cards/33_first_next_then_last/packing_lunch_c.png",
           "label": "Adding fruit"
         },
         {
-          "image": "/images/cards/33_first_next_then_last/packing_lunch_d.png",
+          "image": "../assets/images/cards/33_first_next_then_last/packing_lunch_d.png",
           "label": "Closing lunch box"
         }
       ],
@@ -816,7 +816,7 @@
       "question": "How do you close a car door?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/car_door.png",
+          "image": "../assets/images/cards/42_how_to/car_door.png",
           "label": "A car door"
         }
       ],
@@ -831,7 +831,7 @@
       "question": "How do you turn on a light?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/light_switch.png",
+          "image": "../assets/images/cards/42_how_to/light_switch.png",
           "label": "A light switch"
         }
       ],
@@ -844,7 +844,7 @@
       "question": "How do you open a window?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/window.png",
+          "image": "../assets/images/cards/42_how_to/window.png",
           "label": "A window"
         }
       ],
@@ -858,7 +858,7 @@
       "question": "How do you open a door?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/door.png",
+          "image": "../assets/images/cards/42_how_to/door.png",
           "label": "A door"
         }
       ],
@@ -872,7 +872,7 @@
       "question": "How do you turn on the water?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/faucet.png",
+          "image": "../assets/images/cards/42_how_to/faucet.png",
           "label": "A faucet"
         }
       ],
@@ -886,7 +886,7 @@
       "question": "How do you make your bed?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/bed.png",
+          "image": "../assets/images/cards/42_how_to/bed.png",
           "label": "A bed"
         }
       ],
@@ -901,7 +901,7 @@
       "question": "How do you turn off an alarm clock?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/alarm_clock.png",
+          "image": "../assets/images/cards/42_how_to/alarm_clock.png",
           "label": "An alarm clock"
         }
       ],
@@ -914,7 +914,7 @@
       "question": "How do you turn on the TV?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/tv_remote.png",
+          "image": "../assets/images/cards/42_how_to/tv_remote.png",
           "label": "A TV remote"
         }
       ],
@@ -928,7 +928,7 @@
       "question": "How do you turn off a lamp?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/lamp.png",
+          "image": "../assets/images/cards/42_how_to/lamp.png",
           "label": "A lamp"
         }
       ],
@@ -941,7 +941,7 @@
       "question": "How do you answer the phone?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/phone.png",
+          "image": "../assets/images/cards/42_how_to/phone.png",
           "label": "A phone"
         }
       ],
@@ -955,7 +955,7 @@
       "question": "How do you brush your teeth?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/toothbrush.png",
+          "image": "../assets/images/cards/42_how_to/toothbrush.png",
           "label": "A toothbrush"
         }
       ],
@@ -971,7 +971,7 @@
       "question": "How do you wash your hands?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/wash_hands.png",
+          "image": "../assets/images/cards/42_how_to/wash_hands.png",
           "label": "Washing hands"
         }
       ],
@@ -988,7 +988,7 @@
       "question": "How do you brush your hair?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/hairbrush.png",
+          "image": "../assets/images/cards/42_how_to/hairbrush.png",
           "label": "A hairbrush"
         }
       ],
@@ -1003,7 +1003,7 @@
       "question": "How do you dry off after a bath?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/towel_bath.png",
+          "image": "../assets/images/cards/42_how_to/towel_bath.png",
           "label": "A bath towel"
         }
       ],
@@ -1018,7 +1018,7 @@
       "question": "How do you wash your hair?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/shampoo.png",
+          "image": "../assets/images/cards/42_how_to/shampoo.png",
           "label": "A bottle of shampoo"
         }
       ],
@@ -1034,7 +1034,7 @@
       "question": "How do you blow your nose?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/tissues.png",
+          "image": "../assets/images/cards/42_how_to/tissues.png",
           "label": "A box of tissues"
         }
       ],
@@ -1050,7 +1050,7 @@
       "question": "How do you put on sunscreen?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/sunscreen.png",
+          "image": "../assets/images/cards/42_how_to/sunscreen.png",
           "label": "A bottle of sunscreen"
         }
       ],
@@ -1065,7 +1065,7 @@
       "question": "How do you zip up a jacket?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/jacket_zipper.png",
+          "image": "../assets/images/cards/42_how_to/jacket_zipper.png",
           "label": "A jacket with zipper"
         }
       ],
@@ -1079,7 +1079,7 @@
       "question": "How do you tie your shoes?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/sneakers.png",
+          "image": "../assets/images/cards/42_how_to/sneakers.png",
           "label": "Sneakers with laces"
         }
       ],
@@ -1094,7 +1094,7 @@
       "question": "How do you button a shirt?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/button_shirt.png",
+          "image": "../assets/images/cards/42_how_to/button_shirt.png",
           "label": "A button-up shirt"
         }
       ],
@@ -1108,7 +1108,7 @@
       "question": "How do you put on velcro shoes?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/velcro_shoes.png",
+          "image": "../assets/images/cards/42_how_to/velcro_shoes.png",
           "label": "Velcro shoes"
         }
       ],
@@ -1123,7 +1123,7 @@
       "question": "How do you put on a backpack?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/backpack.png",
+          "image": "../assets/images/cards/42_how_to/backpack.png",
           "label": "A backpack"
         }
       ],
@@ -1138,7 +1138,7 @@
       "question": "How do you put on a hat?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/hat.png",
+          "image": "../assets/images/cards/42_how_to/hat.png",
           "label": "A hat"
         }
       ],
@@ -1152,7 +1152,7 @@
       "question": "How do you peel an orange?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/orange.png",
+          "image": "../assets/images/cards/42_how_to/orange.png",
           "label": "An orange"
         }
       ],
@@ -1167,7 +1167,7 @@
       "question": "How do you make a peanut butter sandwich?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/pb_sandwich.png",
+          "image": "../assets/images/cards/42_how_to/pb_sandwich.png",
           "label": "Peanut butter sandwich ingredients"
         }
       ],
@@ -1182,7 +1182,7 @@
       "question": "How do you pour a glass of water?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/pour_water.png",
+          "image": "../assets/images/cards/42_how_to/pour_water.png",
           "label": "Pouring water into a glass"
         }
       ],
@@ -1198,7 +1198,7 @@
       "question": "How do you peel a banana?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/banana.png",
+          "image": "../assets/images/cards/42_how_to/banana.png",
           "label": "A banana"
         }
       ],
@@ -1213,7 +1213,7 @@
       "question": "How do you pack a lunch?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/lunch_box.png",
+          "image": "../assets/images/cards/42_how_to/lunch_box.png",
           "label": "A lunch box"
         }
       ],
@@ -1229,7 +1229,7 @@
       "question": "How do you set up a beach towel?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/beach_towel.png",
+          "image": "../assets/images/cards/42_how_to/beach_towel.png",
           "label": "A beach towel"
         }
       ],
@@ -1244,7 +1244,7 @@
       "question": "How do you build a sandcastle?",
       "images": [
         {
-          "image": "/images/cards/42_how_to/sandcastle.png",
+          "image": "../assets/images/cards/42_how_to/sandcastle.png",
           "label": "A sandcastle"
         }
       ],
@@ -2000,7 +2000,7 @@
           "label": "Finished fries"
         }
       ],
-      "story": "My favorite food is French fries. Yesterday, I learned how to make French fries from scratch with my grandpa. First, we washed the potatoes. Then, we peeled the potatoes. After the potatoes were peeled, my grandpa helped me cut them into long strips. Once we were done, my grandpa carefully cooked them. Once they were finished, he put them on a tray to drain and cool. Once they had cooled a bit, I put them onto a platter with ketchup.",
+      "paragraph": "My favorite food is French fries. Yesterday, I learned how to make French fries from scratch with my grandpa. First, we washed the potatoes. Then, we peeled the potatoes. After the potatoes were peeled, my grandpa helped me cut them into long strips. Once we were done, my grandpa carefully cooked them. Once they were finished, he put them on a tray to drain and cool. Once they had cooled a bit, I put them onto a platter with ketchup.",
       "answerSequence": [
         1,
         2,
@@ -2028,7 +2028,7 @@
           "label": "Family eating"
         }
       ],
-      "story": "Last night, I decided to help my father cook a fancy dinner for the whole family. First, I helped my dad make some homemade dinner rolls. They smelled delicious! Afterwards, I helped my dad make a big, fresh salad. Once that was all set, we roasted some potatoes in the oven. Finally, once everything was prepared, my whole family sat on the deck and enjoyed the meal.",
+      "paragraph": "Last night, I decided to help my father cook a fancy dinner for the whole family. First, I helped my dad make some homemade dinner rolls. They smelled delicious! Afterwards, I helped my dad make a big, fresh salad. Once that was all set, we roasted some potatoes in the oven. Finally, once everything was prepared, my whole family sat on the deck and enjoyed the meal.",
       "answerSequence": [
         1,
         2,
@@ -2056,7 +2056,7 @@
           "label": "Sunset at beach"
         }
       ],
-      "story": "My family went to the beach last Saturday. First, Mom helped us put on sunscreen so we wouldn't get burned. Then, we spread out our towels on the sand to save our spot. After that, my brother and I built a huge sandcastle with towers and a moat. We stayed until the sun started to set over the ocean. It was a perfect day.",
+      "paragraph": "My family went to the beach last Saturday. First, Mom helped us put on sunscreen so we wouldn't get burned. Then, we spread out our towels on the sand to save our spot. After that, my brother and I built a huge sandcastle with towers and a moat. We stayed until the sun started to set over the ocean. It was a perfect day.",
       "answerSequence": [
         1,
         2,
@@ -2084,7 +2084,7 @@
           "label": "Putting groceries away"
         }
       ],
-      "story": "Mom asked me to help with grocery shopping. First, we made a list of everything we needed. Then, we went to the store and put items in the cart. I helped find the fruits and vegetables. After we paid at self-checkout, we loaded the bags into the car. When we got home, we put all the groceries away on the counter and in the refrigerator.",
+      "paragraph": "Mom asked me to help with grocery shopping. First, we made a list of everything we needed. Then, we went to the store and put items in the cart. I helped find the fruits and vegetables. After we paid at self-checkout, we loaded the bags into the car. When we got home, we put all the groceries away on the counter and in the refrigerator.",
       "answerSequence": [
         1,
         2,
@@ -2112,7 +2112,7 @@
           "label": "Clean room"
         }
       ],
-      "story": "My room was so messy I couldn't find anything. Mom said I had to clean it before I could go to the beach. First, I picked up all my toys and put them in the toy bin. Next, I organized my books on the shelf. Then I made my bed and put my dirty clothes in the hamper. Finally, my room was clean and I was ready to go!",
+      "paragraph": "My room was so messy I couldn't find anything. Mom said I had to clean it before I could go to the beach. First, I picked up all my toys and put them in the toy bin. Next, I organized my books on the shelf. Then I made my bed and put my dirty clothes in the hamper. Finally, my room was clean and I was ready to go!",
       "answerSequence": [
         1,
         2,
@@ -2140,7 +2140,7 @@
           "label": "Finished sandwich"
         }
       ],
-      "story": "I was hungry and wanted to make my own lunch. I decided to make a PB&J sandwich. First, I got two slices of bread from the bag. Then, I spread peanut butter on one slice. After that, I spread jelly on the other slice. Finally, I put the two slices together and cut the sandwich in half. It was delicious!",
+      "paragraph": "I was hungry and wanted to make my own lunch. I decided to make a PB&J sandwich. First, I got two slices of bread from the bag. Then, I spread peanut butter on one slice. After that, I spread jelly on the other slice. Finally, I put the two slices together and cut the sandwich in half. It was delicious!",
       "answerSequence": [
         1,
         2,
@@ -2168,7 +2168,7 @@
           "label": "Eating breakfast"
         }
       ],
-      "story": "I have a morning routine that I follow every day. First, I wake up when my alarm goes off. Then, I go to the bathroom and brush my teeth. After that, I get dressed in my clothes for the day. Finally, I go to the kitchen and eat breakfast. Following my routine helps me get ready on time.",
+      "paragraph": "I have a morning routine that I follow every day. First, I wake up when my alarm goes off. Then, I go to the bathroom and brush my teeth. After that, I get dressed in my clothes for the day. Finally, I go to the kitchen and eat breakfast. Following my routine helps me get ready on time.",
       "answerSequence": [
         1,
         2,
@@ -2196,7 +2196,7 @@
           "label": "Dog resting"
         }
       ],
-      "story": "My job is to walk our dog, Coco, every afternoon. First, I get her leash and attach it to her collar. Then, we walk around the neighborhood for about twenty minutes. When we get home, I give Coco fresh water to drink because she's thirsty. After drinking, Coco goes to her bed and takes a nap. She's tired from all the walking!",
+      "paragraph": "My job is to walk our dog, Coco, every afternoon. First, I get her leash and attach it to her collar. Then, we walk around the neighborhood for about twenty minutes. When we get home, I give Coco fresh water to drink because she's thirsty. After drinking, Coco goes to her bed and takes a nap. She's tired from all the walking!",
       "answerSequence": [
         1,
         2,
@@ -2224,7 +2224,7 @@
           "label": "Muffins cooling"
         }
       ],
-      "story": "Grandma and I made muffins together. First, she got out all the ingredients like flour, sugar, and eggs. Then, we mixed everything together in a big bowl until the batter was smooth. Grandma put the batter into the muffin tin and placed it in the oven. After twenty minutes, she took out the muffins and put them on a cooling rack. They smelled amazing!",
+      "paragraph": "Grandma and I made muffins together. First, she got out all the ingredients like flour, sugar, and eggs. Then, we mixed everything together in a big bowl until the batter was smooth. Grandma put the batter into the muffin tin and placed it in the oven. After twenty minutes, she took out the muffins and put them on a cooling rack. They smelled amazing!",
       "answerSequence": [
         1,
         2,
@@ -2252,7 +2252,7 @@
           "label": "Clean tank"
         }
       ],
-      "story": "My fish tank was getting cloudy, so Dad helped me clean it. First, we looked at the tank and saw it really needed cleaning. Then, Dad carefully scooped out my fish with a net. He put them in a temporary bowl with some of their old water. After we cleaned the tank and added fresh water, we gently put the fish back in. They looked so happy in their clean home!",
+      "paragraph": "My fish tank was getting cloudy, so Dad helped me clean it. First, we looked at the tank and saw it really needed cleaning. Then, Dad carefully scooped out my fish with a net. He put them in a temporary bowl with some of their old water. After we cleaned the tank and added fresh water, we gently put the fish back in. They looked so happy in their clean home!",
       "answerSequence": [
         1,
         2,
@@ -2280,7 +2280,7 @@
           "label": "Finished castle"
         }
       ],
-      "story": "My sister and I decided to build the best sandcastle ever. First, we gathered our bucket, shovel, and other tools. Then, we started digging and piling up wet sand to make the base. Next, we shaped towers and walls using our bucket. Finally, we decorated our castle with shells we found on the beach. Everyone who walked by said it looked amazing!",
+      "paragraph": "My sister and I decided to build the best sandcastle ever. First, we gathered our bucket, shovel, and other tools. Then, we started digging and piling up wet sand to make the base. Next, we shaped towers and walls using our bucket. Finally, we decorated our castle with shells we found on the beach. Everyone who walked by said it looked amazing!",
       "answerSequence": [
         1,
         2,
@@ -2308,7 +2308,7 @@
           "label": "Pizza in oven"
         }
       ],
-      "story": "Dad let me help make homemade pizza for dinner. First, we rolled out the pizza dough on the counter. Then, I spread tomato sauce all over the dough with a spoon. Next, I added cheese and my favorite toppings like bell peppers and olives. Dad put it in the oven, and when it came out, it was bubbly and golden. It was the best pizza ever!",
+      "paragraph": "Dad let me help make homemade pizza for dinner. First, we rolled out the pizza dough on the counter. Then, I spread tomato sauce all over the dough with a spoon. Next, I added cheese and my favorite toppings like bell peppers and olives. Dad put it in the oven, and when it came out, it was bubbly and golden. It was the best pizza ever!",
       "answerSequence": [
         1,
         2,
@@ -2336,7 +2336,7 @@
           "label": "Tied bow"
         }
       ],
-      "story": "I finally learned how to tie my own shoes! First, I looked at my tangled shoelaces and knew I needed to start over. Then, I made two loops that looked like bunny ears. Next, I crossed one loop over the other. Finally, I pulled them tight and had a perfect bow! Now I can tie my shoes all by myself.",
+      "paragraph": "I finally learned how to tie my own shoes! First, I looked at my tangled shoelaces and knew I needed to start over. Then, I made two loops that looked like bunny ears. Next, I crossed one loop over the other. Finally, I pulled them tight and had a perfect bow! Now I can tie my shoes all by myself.",
       "answerSequence": [
         1,
         2,
@@ -2364,7 +2364,7 @@
           "label": "Clean smile"
         }
       ],
-      "story": "Before bed, I always brush my teeth. First, I put toothpaste on my toothbrush. Then, I brush all my teeth—the front, the back, and the chewing parts—for two whole minutes. After that, I rinse my mouth with water and spit it out. Finally, I smile in the mirror to check that my teeth are clean and shiny!",
+      "paragraph": "Before bed, I always brush my teeth. First, I put toothpaste on my toothbrush. Then, I brush all my teeth—the front, the back, and the chewing parts—for two whole minutes. After that, I rinse my mouth with water and spit it out. Finally, I smile in the mirror to check that my teeth are clean and shiny!",
       "answerSequence": [
         1,
         2,
@@ -2392,7 +2392,7 @@
           "label": "Sprout growing"
         }
       ],
-      "story": "We planted sunflowers in our backyard. First, Grandma showed me the seed packet and we read the directions. Then, I dug small holes in the soil for each seed. After I put the seeds in and covered them with dirt, I watered them gently. A few weeks later, I was so excited to see little green sprouts poking out of the ground!",
+      "paragraph": "We planted sunflowers in our backyard. First, Grandma showed me the seed packet and we read the directions. Then, I dug small holes in the soil for each seed. After I put the seeds in and covered them with dirt, I watered them gently. A few weeks later, I was so excited to see little green sprouts poking out of the ground!",
       "answerSequence": [
         1,
         2,
@@ -2420,7 +2420,7 @@
           "label": "Painting on wall"
         }
       ],
-      "story": "I made a painting for my mom's birthday. First, I gathered all my supplies—paint, brushes, and a canvas. Then, I carefully painted a picture of the beach because that's her favorite place. After I finished, I had to let the painting dry overnight. The next day, Dad helped me hang it on the wall. Mom loved her surprise!",
+      "paragraph": "I made a painting for my mom's birthday. First, I gathered all my supplies—paint, brushes, and a canvas. Then, I carefully painted a picture of the beach because that's her favorite place. After I finished, I had to let the painting dry overnight. The next day, Dad helped me hang it on the wall. Mom loved her surprise!",
       "answerSequence": [
         1,
         2,
@@ -2448,7 +2448,7 @@
           "label": "Folded clothes"
         }
       ],
-      "story": "Mom taught me how to do laundry. First, I gathered all the dirty clothes and put them in the laundry basket. Then, I loaded them into the washing machine and added detergent. After the wash cycle was done, I moved the clothes to the dryer. When they were dry, I folded them neatly and put them away.",
+      "paragraph": "Mom taught me how to do laundry. First, I gathered all the dirty clothes and put them in the laundry basket. Then, I loaded them into the washing machine and added detergent. After the wash cycle was done, I moved the clothes to the dryer. When they were dry, I folded them neatly and put them away.",
       "answerSequence": [
         1,
         2,
@@ -2476,7 +2476,7 @@
           "label": "Packed suitcase"
         }
       ],
-      "story": "I packed my own suitcase for our beach vacation. First, I got my suitcase out of the closet. Then, I laid out all the clothes I wanted to bring on my bed. Next, I carefully folded each item and placed it in the suitcase. Finally, I zipped up my packed suitcase. I was ready for our trip!",
+      "paragraph": "I packed my own suitcase for our beach vacation. First, I got my suitcase out of the closet. Then, I laid out all the clothes I wanted to bring on my bed. Next, I carefully folded each item and placed it in the suitcase. Finally, I zipped up my packed suitcase. I was ready for our trip!",
       "answerSequence": [
         1,
         2,
@@ -2504,7 +2504,7 @@
           "label": "Orange juice"
         }
       ],
-      "story": "We visited an orange grove and picked our own oranges. First, we saw the beautiful orange trees full of fruit. Then, we reached up and picked the ripest oranges we could find. We filled a whole basket with oranges. When we got home, Dad helped us squeeze the oranges to make fresh juice. It was so sweet and delicious!",
+      "paragraph": "We visited an orange grove and picked our own oranges. First, we saw the beautiful orange trees full of fruit. Then, we reached up and picked the ripest oranges we could find. We filled a whole basket with oranges. When we got home, Dad helped us squeeze the oranges to make fresh juice. It was so sweet and delicious!",
       "answerSequence": [
         1,
         2,
@@ -2532,7 +2532,7 @@
           "label": "Completed puzzle"
         }
       ],
-      "story": "I got a new puzzle and couldn't wait to put it together. First, I looked at the picture on the box to see what it would look like. Then, I dumped out all the pieces and spread them on the table. I started by finding all the edge pieces and worked my way in. After two hours, I finally placed the last piece. I did it!",
+      "paragraph": "I got a new puzzle and couldn't wait to put it together. First, I looked at the picture on the box to see what it would look like. Then, I dumped out all the pieces and spread them on the table. I started by finding all the edge pieces and worked my way in. After two hours, I finally placed the last piece. I did it!",
       "answerSequence": [
         1,
         2,
@@ -2560,7 +2560,7 @@
           "label": "Shiny car"
         }
       ],
-      "story": "Our car was so dirty you could write your name on it! Dad said we could wash it together. First, we got out the bucket, soap, and sponges. Then, we scrubbed the car with soapy water. After that, we rinsed off all the soap with the hose. Finally, the car was shiny and clean. It looked brand new!",
+      "paragraph": "Our car was so dirty you could write your name on it! Dad said we could wash it together. First, we got out the bucket, soap, and sponges. Then, we scrubbed the car with soapy water. After that, we rinsed off all the soap with the hose. Finally, the car was shiny and clean. It looked brand new!",
       "answerSequence": [
         1,
         2,
@@ -2588,7 +2588,7 @@
           "label": "Glass of lemonade"
         }
       ],
-      "story": "It was a hot day, so I decided to make lemonade. First, I got out the pitcher and filled it with water. Then, I squeezed lots of lemons into the water. After that, I added sugar and stirred until it dissolved. Finally, I poured a cold glass of lemonade and took a big sip. So refreshing!",
+      "paragraph": "It was a hot day, so I decided to make lemonade. First, I got out the pitcher and filled it with water. Then, I squeezed lots of lemons into the water. After that, I added sugar and stirred until it dissolved. Finally, I poured a cold glass of lemonade and took a big sip. So refreshing!",
       "answerSequence": [
         1,
         2,
@@ -2616,7 +2616,7 @@
           "label": "Ready for day"
         }
       ],
-      "story": "I had a sleepy start to my morning. First, I woke up feeling very tired and rubbed my eyes. Then, I took a warm shower to help me wake up. After my shower, I got dressed in my favorite outfit. Finally, I looked in the mirror and felt ready to start my day!",
+      "paragraph": "I had a sleepy start to my morning. First, I woke up feeling very tired and rubbed my eyes. Then, I took a warm shower to help me wake up. After my shower, I got dressed in my favorite outfit. Finally, I looked in the mirror and felt ready to start my day!",
       "answerSequence": [
         1,
         2,
@@ -2644,7 +2644,7 @@
           "label": "Floating happily"
         }
       ],
-      "story": "I wanted to use my floatie in the pool. First, I got out my flat, deflated floatie. Then, Dad used the pump to blow air into it. Once it was full of air, I put it in the water. Finally, I climbed on and floated happily in the pool. It was so relaxing!",
+      "paragraph": "I wanted to use my floatie in the pool. First, I got out my flat, deflated floatie. Then, Dad used the pump to blow air into it. Once it was full of air, I put it in the water. Finally, I climbed on and floated happily in the pool. It was so relaxing!",
       "answerSequence": [
         1,
         2,
@@ -2672,7 +2672,7 @@
           "label": "Salad served"
         }
       ],
-      "story": "I helped Mom make a big salad for dinner. First, I washed all the lettuce and put it in a spinner to dry. Then, Mom helped chop the cucumbers, tomatoes, and bell peppers. After we put all the vegetables in a bowl, I added the salad dressing. Finally, we served the salad to everyone at the table.",
+      "paragraph": "I helped Mom make a big salad for dinner. First, I washed all the lettuce and put it in a spinner to dry. Then, Mom helped chop the cucumbers, tomatoes, and bell peppers. After we put all the vegetables in a bowl, I added the salad dressing. Finally, we served the salad to everyone at the table.",
       "answerSequence": [
         1,
         2,
@@ -2700,7 +2700,7 @@
           "label": "Walking to bathroom"
         }
       ],
-      "story": "Every morning starts the same way for me. First, my alarm clock rings loudly on my nightstand. Then, I stretch my arms up high while still in bed. Next, I put my feet on the floor and stand up slowly. Finally, I walk to the bathroom to start getting ready for the day.",
+      "paragraph": "Every morning starts the same way for me. First, my alarm clock rings loudly on my nightstand. Then, I stretch my arms up high while still in bed. Next, I put my feet on the floor and stand up slowly. Finally, I walk to the bathroom to start getting ready for the day.",
       "answerSequence": [
         1,
         2,
@@ -2728,7 +2728,7 @@
           "label": "Birds eating"
         }
       ],
-      "story": "The birds in our yard were hungry because the feeder was empty. First, I noticed there was no more seed in the bird feeder. Then, I got the bag of birdseed from the garage. I carefully poured the seed into the feeder until it was full. Soon, lots of birds came to eat. They were so happy!",
+      "paragraph": "The birds in our yard were hungry because the feeder was empty. First, I noticed there was no more seed in the bird feeder. Then, I got the bag of birdseed from the garage. I carefully poured the seed into the feeder until it was full. Soon, lots of birds came to eat. They were so happy!",
       "answerSequence": [
         1,
         2,
@@ -2756,7 +2756,7 @@
           "label": "Eating cereal"
         }
       ],
-      "story": "I made my own breakfast this morning. First, I got a bowl and spoon from the cabinet. Then, I poured my favorite cereal into the bowl. Next, I carefully poured milk over the cereal. Finally, I sat down at the table and ate my crunchy breakfast. I did it all by myself!",
+      "paragraph": "I made my own breakfast this morning. First, I got a bowl and spoon from the cabinet. Then, I poured my favorite cereal into the bowl. Next, I carefully poured milk over the cereal. Finally, I sat down at the table and ate my crunchy breakfast. I did it all by myself!",
       "answerSequence": [
         1,
         2,
@@ -2784,7 +2784,7 @@
           "label": "Finished artwork"
         }
       ],
-      "story": "I made a picture for Grandma. First, I got a blank piece of paper from my desk. Then, I drew a picture of the beach with pencil. Next, I colored in the ocean, sand, and sky with my crayons. Finally, my artwork was finished and ready to give to Grandma. She put it on her refrigerator!",
+      "paragraph": "I made a picture for Grandma. First, I got a blank piece of paper from my desk. Then, I drew a picture of the beach with pencil. Next, I colored in the ocean, sand, and sky with my crayons. Finally, my artwork was finished and ready to give to Grandma. She put it on her refrigerator!",
       "answerSequence": [
         1,
         2,
@@ -2812,7 +2812,7 @@
           "label": "Drying with towel"
         }
       ],
-      "story": "I always wash my hands before eating. First, I wet my hands and add soap. Then, I scrub my hands together for twenty seconds, making sure to get between my fingers. After that, I rinse off all the soap under the water. Finally, I dry my hands with a clean towel. Now they're clean!",
+      "paragraph": "I always wash my hands before eating. First, I wet my hands and add soap. Then, I scrub my hands together for twenty seconds, making sure to get between my fingers. After that, I rinse off all the soap under the water. Finally, I dry my hands with a clean towel. Now they're clean!",
       "answerSequence": [
         1,
         2,

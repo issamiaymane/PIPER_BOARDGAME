@@ -1,9 +1,10 @@
 {
   "Inferencing Based On Images": [
     {
+      "title": "Camping Trip",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/campsite_boy.png",
+          "image": "../assets/images/cards/47_inferencing/outdoor_camping/campsite_boy.png",
           "label": "Boy at a campsite"
         }
       ],
@@ -32,9 +33,10 @@
       ]
     },
     {
+      "title": "Scraped Knee",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/scraped_knee.png",
+          "image": "../assets/images/cards/47_inferencing/emotions/scraped_knee.png",
           "label": "Child with scraped knee"
         }
       ],
@@ -62,9 +64,10 @@
       ]
     },
     {
+      "title": "Looking for a Snack",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/refrigerator_look.png",
+          "image": "../assets/images/cards/47_inferencing/food_meals/refrigerator_look.png",
           "label": "Child looking in refrigerator"
         }
       ],
@@ -90,9 +93,10 @@
       ]
     },
     {
+      "title": "Fall Season",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/fall_leaves.png",
+          "image": "../assets/images/cards/47_inferencing/weather_seasons/fall_leaves.png",
           "label": "Fall leaves and child"
         }
       ],
@@ -117,9 +121,10 @@
       ]
     },
     {
+      "title": "Bedtime",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/yawning_pajamas.png",
+          "image": "../assets/images/cards/47_inferencing/home_daily/yawning_pajamas.png",
           "label": "Child yawning in pajamas"
         }
       ],
@@ -146,9 +151,10 @@
       ]
     },
     {
+      "title": "Ready to Swim",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/swimsuit_goggles.png",
+          "image": "../assets/images/cards/47_inferencing/activities_events/swimsuit_goggles.png",
           "label": "Child in swimsuit with goggles"
         }
       ],
@@ -173,9 +179,10 @@
       ]
     },
     {
+      "title": "Beach Day",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/beach_sunscreen.png",
+          "image": "../assets/images/cards/47_inferencing/outdoor_camping/beach_sunscreen.png",
           "label": "Girl at beach with sunscreen"
         }
       ],
@@ -202,9 +209,10 @@
       ]
     },
     {
+      "title": "Winning Trophy",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/trophy_smile.png",
+          "image": "../assets/images/cards/47_inferencing/emotions/trophy_smile.png",
           "label": "Girl smiling with trophy"
         }
       ],
@@ -231,9 +239,10 @@
       ]
     },
     {
+      "title": "Family Dinner",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/family_dinner.png",
+          "image": "../assets/images/cards/47_inferencing/food_meals/family_dinner.png",
           "label": "Family sitting at dinner table"
         }
       ],
@@ -259,9 +268,10 @@
       ]
     },
     {
+      "title": "Rainy Day",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/rain_window.png",
+          "image": "../assets/images/cards/47_inferencing/weather_seasons/rain_window.png",
           "label": "Child looking out rainy window"
         }
       ],
@@ -287,9 +297,10 @@
       ]
     },
     {
+      "title": "Rainy Weather",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/umbrella_clouds.png",
+          "image": "../assets/images/cards/47_inferencing/home_daily/umbrella_clouds.png",
           "label": "Person with umbrella under clouds"
         }
       ],
@@ -315,9 +326,10 @@
       ]
     },
     {
+      "title": "Race Starting Line",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/starting_line.png",
+          "image": "../assets/images/cards/47_inferencing/activities_events/starting_line.png",
           "label": "Runners at starting line"
         }
       ],
@@ -343,9 +355,10 @@
       ]
     },
     {
+      "title": "Packing for the Beach",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/family_beach_car.png",
+          "image": "../assets/images/cards/47_inferencing/outdoor_camping/family_beach_car.png",
           "label": "Family packing car for beach"
         }
       ],
@@ -372,9 +385,10 @@
       ]
     },
     {
+      "title": "Broken Toy",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/broken_toy.png",
+          "image": "../assets/images/cards/47_inferencing/emotions/broken_toy.png",
           "label": "Boy with broken toy"
         }
       ],
@@ -401,9 +415,10 @@
       ]
     },
     {
+      "title": "Sour Lemon",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/sour_lemon.png",
+          "image": "../assets/images/cards/47_inferencing/food_meals/sour_lemon.png",
           "label": "Child tasting sour lemon"
         }
       ],
@@ -428,9 +443,10 @@
       ]
     },
     {
+      "title": "Hot Weather",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/sweating_hot.png",
+          "image": "../assets/images/cards/47_inferencing/weather_seasons/sweating_hot.png",
           "label": "Person sweating in hot weather"
         }
       ],
@@ -456,9 +472,10 @@
       ]
     },
     {
+      "title": "Finished Eating",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/empty_plate.png",
+          "image": "../assets/images/cards/47_inferencing/home_daily/empty_plate.png",
           "label": "Child with empty plate"
         }
       ],
@@ -484,9 +501,10 @@
       ]
     },
     {
+      "title": "Painting Art",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/paint_hands.png",
+          "image": "../assets/images/cards/47_inferencing/activities_events/paint_hands.png",
           "label": "Child with paint on hands"
         }
       ],
@@ -512,9 +530,10 @@
       ]
     },
     {
+      "title": "Surfing Time",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/surfboard_waves.png",
+          "image": "../assets/images/cards/47_inferencing/outdoor_camping/surfboard_waves.png",
           "label": "Boy with surfboard at waves"
         }
       ],
@@ -541,9 +560,10 @@
       ]
     },
     {
+      "title": "Surprise Gift",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/peeking_box.png",
+          "image": "../assets/images/cards/47_inferencing/emotions/peeking_box.png",
           "label": "Child peeking into gift box"
         }
       ],
@@ -569,9 +589,10 @@
       ]
     },
     {
+      "title": "Self Checkout",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/self_checkout.png",
+          "image": "../assets/images/cards/47_inferencing/food_meals/self_checkout.png",
           "label": "Family at self checkout"
         }
       ],
@@ -597,9 +618,10 @@
       ]
     },
     {
+      "title": "Getting Ready to Leave",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/weather_seasons/jackets_door.png",
+          "image": "../assets/images/cards/47_inferencing/weather_seasons/jackets_door.png",
           "label": "People putting on jackets by door"
         }
       ],
@@ -625,9 +647,10 @@
       ]
     },
     {
+      "title": "Birthday Celebration",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/cake_candles.png",
+          "image": "../assets/images/cards/47_inferencing/home_daily/cake_candles.png",
           "label": "Birthday cake with candles"
         }
       ],
@@ -653,9 +676,10 @@
       ]
     },
     {
+      "title": "Going on a Trip",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/suitcase_door.png",
+          "image": "../assets/images/cards/47_inferencing/activities_events/suitcase_door.png",
           "label": "Person with suitcase at door"
         }
       ],
@@ -681,9 +705,10 @@
       ]
     },
     {
+      "title": "Building Sandcastle",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/outdoor_camping/sandcastle_kids.png",
+          "image": "../assets/images/cards/47_inferencing/outdoor_camping/sandcastle_kids.png",
           "label": "Kids building sandcastle"
         }
       ],
@@ -710,9 +735,10 @@
       ]
     },
     {
+      "title": "Friendship Hug",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/emotions/kids_hugging.png",
+          "image": "../assets/images/cards/47_inferencing/emotions/kids_hugging.png",
           "label": "Kids hugging"
         }
       ],
@@ -738,9 +764,10 @@
       ]
     },
     {
+      "title": "Baking Together",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/food_meals/baking_bowl.png",
+          "image": "../assets/images/cards/47_inferencing/food_meals/baking_bowl.png",
           "label": "Child mixing in baking bowl"
         }
       ],
@@ -767,9 +794,10 @@
       ]
     },
     {
+      "title": "Messy Room",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/home_daily/messy_room.png",
+          "image": "../assets/images/cards/47_inferencing/home_daily/messy_room.png",
           "label": "Child in messy room"
         }
       ],
@@ -796,9 +824,10 @@
       ]
     },
     {
+      "title": "Birthday Wish",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/blowing_candles.png",
+          "image": "../assets/images/cards/47_inferencing/activities_events/blowing_candles.png",
           "label": "Child blowing out birthday candles"
         }
       ],
@@ -824,9 +853,10 @@
       ]
     },
     {
+      "title": "Blanket Fort Adventure",
       "images": [
         {
-          "image": "/images/cards/47_inferencing/activities_events/flashlight_fort.png",
+          "image": "../assets/images/cards/47_inferencing/activities_events/flashlight_fort.png",
           "label": "Kids with flashlights in blanket fort"
         }
       ],
@@ -858,7 +888,7 @@
       "question": "What is she going to eat?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/bowl_spoon.png",
+          "image": "../assets/images/cards/48_inferencing_level1/food/bowl_spoon.png",
           "label": "A bowl and spoon"
         }
       ],
@@ -874,7 +904,7 @@
       "question": "What smelled?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/family/babysitter.png",
+          "image": "../assets/images/cards/48_inferencing_level1/family/babysitter.png",
           "label": "A babysitter with a baby"
         }
       ],
@@ -891,7 +921,7 @@
       "question": "What was the weather like outside?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/wet_umbrella.png",
+          "image": "../assets/images/cards/48_inferencing_level1/weather/wet_umbrella.png",
           "label": "A wet umbrella"
         }
       ],
@@ -908,7 +938,7 @@
       "question": "What did Ryan squeeze onto his toothbrush?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/toothbrush.png",
+          "image": "../assets/images/cards/48_inferencing_level1/routines/toothbrush.png",
           "label": "A toothbrush"
         }
       ],
@@ -923,7 +953,7 @@
       "question": "What happened to Ava's knee?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/scraped_knee.png",
+          "image": "../assets/images/cards/48_inferencing_level1/emotions/scraped_knee.png",
           "label": "A child with a scraped knee"
         }
       ],
@@ -940,7 +970,7 @@
       "question": "What kind of party is this?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/birthday_party.png",
+          "image": "../assets/images/cards/48_inferencing_level1/activities/birthday_party.png",
           "label": "A birthday party"
         }
       ],
@@ -956,7 +986,7 @@
       "question": "What happened to the cookies?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/empty_cookie_jar.png",
+          "image": "../assets/images/cards/48_inferencing_level1/problems/empty_cookie_jar.png",
           "label": "An empty cookie jar"
         }
       ],
@@ -972,7 +1002,7 @@
       "question": "What does the cat want?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/pets/hungry_cat.png",
+          "image": "../assets/images/cards/48_inferencing_level1/pets/hungry_cat.png",
           "label": "A hungry cat"
         }
       ],
@@ -989,7 +1019,7 @@
       "question": "What is he going to drink?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/orange_juice.png",
+          "image": "../assets/images/cards/48_inferencing_level1/food/orange_juice.png",
           "label": "A glass of orange juice"
         }
       ],
@@ -1005,7 +1035,7 @@
       "question": "Why is the baby crying?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/family/baby_crying.png",
+          "image": "../assets/images/cards/48_inferencing_level1/family/baby_crying.png",
           "label": "A crying baby"
         }
       ],
@@ -1022,7 +1052,7 @@
       "question": "What is the weather like?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/winter_clothes.png",
+          "image": "../assets/images/cards/48_inferencing_level1/weather/winter_clothes.png",
           "label": "Winter clothes"
         }
       ],
@@ -1040,7 +1070,7 @@
       "question": "What time of day is it?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/alarm_clock.png",
+          "image": "../assets/images/cards/48_inferencing_level1/routines/alarm_clock.png",
           "label": "An alarm clock"
         }
       ],
@@ -1056,7 +1086,7 @@
       "question": "How does Ben feel?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/good_grade.png",
+          "image": "../assets/images/cards/48_inferencing_level1/emotions/good_grade.png",
           "label": "A test with a good grade"
         }
       ],
@@ -1073,7 +1103,7 @@
       "question": "Where is the family going?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/swimsuits.png",
+          "image": "../assets/images/cards/48_inferencing_level1/activities/swimsuits.png",
           "label": "Swimsuits and towels"
         }
       ],
@@ -1091,7 +1121,7 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/broken_glass.png",
+          "image": "../assets/images/cards/48_inferencing_level1/problems/broken_glass.png",
           "label": "Broken glass on the floor"
         }
       ],
@@ -1107,7 +1137,7 @@
       "question": "What does Buddy need?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/pets/dog_door.png",
+          "image": "../assets/images/cards/48_inferencing_level1/pets/dog_door.png",
           "label": "A dog by the door"
         }
       ],
@@ -1124,7 +1154,7 @@
       "question": "What is she making?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/sandwich.png",
+          "image": "../assets/images/cards/48_inferencing_level1/food/sandwich.png",
           "label": "A peanut butter and jelly sandwich"
         }
       ],
@@ -1141,7 +1171,7 @@
       "question": "What is Dad about to do?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/family/feeding_baby.png",
+          "image": "../assets/images/cards/48_inferencing_level1/family/feeding_baby.png",
           "label": "Dad feeding a baby"
         }
       ],
@@ -1157,7 +1187,7 @@
       "question": "What is the weather like today?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/sunscreen.png",
+          "image": "../assets/images/cards/48_inferencing_level1/weather/sunscreen.png",
           "label": "Sunscreen and sunglasses"
         }
       ],
@@ -1174,7 +1204,7 @@
       "question": "What is Maya about to do?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/pajamas.png",
+          "image": "../assets/images/cards/48_inferencing_level1/routines/pajamas.png",
           "label": "Pajamas"
         }
       ],
@@ -1191,7 +1221,7 @@
       "question": "How does Olivia feel?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/sad_child.png",
+          "image": "../assets/images/cards/48_inferencing_level1/emotions/sad_child.png",
           "label": "A sad child"
         }
       ],
@@ -1208,7 +1238,7 @@
       "question": "What is Max about to do?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/dog_leash.png",
+          "image": "../assets/images/cards/48_inferencing_level1/activities/dog_leash.png",
           "label": "A dog leash"
         }
       ],
@@ -1224,7 +1254,7 @@
       "question": "Why did Mrs. Johnson put up signs?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/lost_dog.png",
+          "image": "../assets/images/cards/48_inferencing_level1/problems/lost_dog.png",
           "label": "A lost dog sign"
         }
       ],
@@ -1240,7 +1270,7 @@
       "question": "What did his mom hand him?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/napkin.png",
+          "image": "../assets/images/cards/48_inferencing_level1/food/napkin.png",
           "label": "A napkin"
         }
       ],
@@ -1257,7 +1287,7 @@
       "question": "How was the weather outside?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/weather/sweating.png",
+          "image": "../assets/images/cards/48_inferencing_level1/weather/sweating.png",
           "label": "A person sweating"
         }
       ],
@@ -1274,7 +1304,7 @@
       "question": "What did Jack grab?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/routines/messy_hair.png",
+          "image": "../assets/images/cards/48_inferencing_level1/routines/messy_hair.png",
           "label": "A person with messy hair"
         }
       ],
@@ -1292,7 +1322,7 @@
       "question": "How does Noah feel?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/emotions/shy_child.png",
+          "image": "../assets/images/cards/48_inferencing_level1/emotions/shy_child.png",
           "label": "A shy child"
         }
       ],
@@ -1310,7 +1340,7 @@
       "question": "What is Lily building?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/activities/sandcastle.png",
+          "image": "../assets/images/cards/48_inferencing_level1/activities/sandcastle.png",
           "label": "A sandcastle"
         }
       ],
@@ -1326,7 +1356,7 @@
       "question": "What happened to the car?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/problems/flat_tire.png",
+          "image": "../assets/images/cards/48_inferencing_level1/problems/flat_tire.png",
           "label": "A car with a flat tire"
         }
       ],
@@ -1342,7 +1372,7 @@
       "question": "What did Mom bring?",
       "images": [
         {
-          "image": "/images/cards/48_inferencing_level1/food/popcorn.png",
+          "image": "../assets/images/cards/48_inferencing_level1/food/popcorn.png",
           "label": "A bowl of popcorn"
         }
       ],
@@ -1357,13 +1387,14 @@
   ],
   "Inferencing Level 2": [
     {
+      "title": "Jackie's Snow Day",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/snow_day.png",
+          "image": "../assets/images/cards/49_inferencing_level2/snow_day.png",
           "label": "Snow day scene"
         }
       ],
-      "title": "Jackie's Snow Day",
+      "paragraph": "It was Thursday night and Jackie kept checking the weather report every 10 minutes. She has an exam in her chemistry class tomorrow and is hoping her school closes so she won't have to take it. The weatherman announced it's going to be a very messy commute and that everyone should stay off the roads between 12am and 7pm on Friday. The map showed that Jackie's town may get up to 26 inches. Jackie was pretty confident that her class would be cancelled, but she was anxiously waiting until it was announced on her school's website.",
       "questions": [
         {
           "question": "Why might her school close on Friday?",
@@ -1386,13 +1417,14 @@
       ]
     },
     {
+      "title": "Cooking Disaster",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/cooking_disaster.png",
+          "image": "../assets/images/cards/49_inferencing_level2/cooking_disaster.png",
           "label": "Kitchen with burned food"
         }
       ],
-      "title": "Cooking Disaster",
+      "paragraph": "Dad wanted to surprise the family by making dinner. He found a recipe online and gathered all the ingredients. While the food was cooking, he went to the living room to watch TV for \"just a minute.\" Twenty minutes later, he smelled something burning. He ran to the kitchen and saw smoke coming from the pan. The smoke alarm started beeping loudly. Mom walked in and looked at the blackened food, then looked at Dad.",
       "questions": [
         {
           "question": "What happened to the dinner?",
@@ -1425,13 +1457,14 @@
       ]
     },
     {
+      "title": "Science Fair Project",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/science_fair.png",
+          "image": "../assets/images/cards/49_inferencing_level2/science_fair.png",
           "label": "Science fair project display"
         }
       ],
-      "title": "Science Fair Project",
+      "paragraph": "Miguel had been working on his project for three weeks. He stayed up late every night adding more research and making his display board perfect. On the day of the fair, he carefully carried his project into the gym. He saw that some other students had fancy projects with lights and moving parts. When the judges came to his table, Miguel explained everything he had learned. At the end of the day, the principal announced the winners over the loudspeaker.",
       "questions": [
         {
           "question": "What event is Miguel participating in?",
@@ -1462,13 +1495,14 @@
       ]
     },
     {
+      "title": "Beach Vacation Plans",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/vacation_plans.png",
+          "image": "../assets/images/cards/49_inferencing_level2/vacation_plans.png",
           "label": "Family planning vacation"
         }
       ],
-      "title": "Beach Vacation Plans",
+      "paragraph": "The Martinez family was sitting around the kitchen table looking at pictures on the computer. Mom pointed at a photo of a sunny beach with palm trees. \"This one has great reviews,\" she said. Dad looked at the calendar on the wall and counted the days until summer break. The kids were bouncing in their seats with excitement. Grandma said she would watch their dog while they were gone.",
       "questions": [
         {
           "question": "What is the family planning?",
@@ -1499,13 +1533,14 @@
       ]
     },
     {
+      "title": "The Big Game",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/big_game.png",
+          "image": "../assets/images/cards/49_inferencing_level2/big_game.png",
           "label": "Sports game scene"
         }
       ],
-      "title": "The Big Game",
+      "paragraph": "Marcus sat on the bench with his head in his hands. His team had been practicing for months for this championship game. With only two minutes left, the score was tied. The coach looked down the bench and called Marcus's name. Marcus's heart started pounding as he ran onto the field. He could see his parents in the stands holding up a sign with his name on it.",
       "questions": [
         {
           "question": "How is Marcus feeling?",
@@ -1539,13 +1574,14 @@
       ]
     },
     {
+      "title": "Tyson's Sports Car",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/sports_car.png",
+          "image": "../assets/images/cards/49_inferencing_level2/sports_car.png",
           "label": "Sports car after accident"
         }
       ],
-      "title": "Tyson's Sports Car",
+      "paragraph": "Tyson loves his new sports car. He treats it like gold. He always parks far from other cars just to make sure no one scratches it. One day, it was snowing and Tyson had to go to work. His car wasn't the best in the snow, but he figured he has to try to make it in. He didn't want his boss to get angry.\n\nWhen Tyson was stopped at a red light, he felt his car bump forward. His car was pushed all the way under the traffic light. He looked around and couldn't believe what just happened. He got out of his car to inspect it. The driver behind him also got out to look.",
       "questions": [
         {
           "question": "What happened to Tyson's car?",
@@ -1578,13 +1614,14 @@
       ]
     },
     {
+      "title": "The Doctor Visit",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/doctor_visit.png",
+          "image": "../assets/images/cards/49_inferencing_level2/doctor_visit.png",
           "label": "Doctor's office visit"
         }
       ],
-      "title": "The Doctor Visit",
+      "paragraph": "Emma sat in the waiting room swinging her legs nervously. She didn't like coming to this place because it usually meant getting a shot. The walls were covered with posters about staying healthy. A nurse in colorful scrubs called her name. Emma held her mom's hand tightly as they walked down the hallway. The nurse said Emma had grown two inches since her last visit.",
       "questions": [
         {
           "question": "Where is Emma?",
@@ -1617,13 +1654,14 @@
       ]
     },
     {
+      "title": "Moving Day",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/moving_day.png",
+          "image": "../assets/images/cards/49_inferencing_level2/moving_day.png",
           "label": "Family moving day"
         }
       ],
-      "title": "Moving Day",
+      "paragraph": "Sophia walked through the empty rooms of her house one last time. The walls looked so bare without all the family photos. She could see the marks on the floor where the couch used to be. Outside, a big truck was being loaded with all their furniture. Her mom called from the front door that it was time to go. Sophia wiped a tear from her eye and whispered goodbye to her bedroom.",
       "questions": [
         {
           "question": "What is happening to Sophia's family?",
@@ -1655,13 +1693,14 @@
       ]
     },
     {
+      "title": "Rainy Day Disappointment",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/rainy_day.png",
+          "image": "../assets/images/cards/49_inferencing_level2/rainy_day.png",
           "label": "Rainy day disappointment"
         }
       ],
-      "title": "Rainy Day Disappointment",
+      "paragraph": "Jake had been counting down the days all month. Today was supposed to be the big beach trip with his friends. He woke up extra early and put on his swim trunks. But when he looked out the window, his smile faded. Dark clouds covered the sky and rain was pouring down. His mom came in and said the trip would have to be rescheduled. Jake didn't want to eat breakfast.",
       "questions": [
         {
           "question": "Why was Jake excited?",
@@ -1693,13 +1732,14 @@
       ]
     },
     {
+      "title": "The Surprise Party",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/surprise_party.png",
+          "image": "../assets/images/cards/49_inferencing_level2/surprise_party.png",
           "label": "Surprise party scene"
         }
       ],
-      "title": "The Surprise Party",
+      "paragraph": "Everyone was hiding behind the furniture in the dark living room. Mom kept peeking out the window watching for headlights. \"Shh! I think I see the car!\" she whispered. Everyone got very quiet. They could hear the front door opening and footsteps in the hallway. When the light switched on, everyone jumped up and yelled. Grandpa dropped his keys in surprise and put his hand on his heart.",
       "questions": [
         {
           "question": "What kind of event is this?",
@@ -1730,13 +1770,14 @@
       ]
     },
     {
+      "title": "First Day Nerves",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/first_day.png",
+          "image": "../assets/images/cards/49_inferencing_level2/first_day.png",
           "label": "First day at new school"
         }
       ],
-      "title": "First Day Nerves",
+      "paragraph": "It was Maya's first day at her new school. Her family had moved over the summer, so she didn't know anyone. She stood at the entrance and watched groups of kids laughing together. They all seemed to already have friends. Maya took a deep breath and walked inside. At lunch, she sat alone until a girl with a friendly smile asked if she could sit with her.",
       "questions": [
         {
           "question": "Why doesn't Maya know anyone?",
@@ -1769,13 +1810,14 @@
       ]
     },
     {
+      "title": "The Flat Tire",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/flat_tire.png",
+          "image": "../assets/images/cards/49_inferencing_level2/flat_tire.png",
           "label": "Car with flat tire"
         }
       ],
-      "title": "The Flat Tire",
+      "paragraph": "The family was driving to Grandma's house when they heard a loud pop. The car started bumping and pulling to one side. Dad carefully pulled over to the shoulder of the road. He got out and walked around the car, then came back shaking his head. He opened the trunk and started pulling out tools. Mom looked up directions to the nearest service station on her phone, just in case.",
       "questions": [
         {
           "question": "What happened to the car?",
@@ -1807,13 +1849,14 @@
       ]
     },
     {
+      "title": "The Lost Dog",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/lost_dog.png",
+          "image": "../assets/images/cards/49_inferencing_level2/lost_dog.png",
           "label": "Looking for lost dog"
         }
       ],
-      "title": "The Lost Dog",
+      "paragraph": "Oliver was walking his dog Buster at the park when he stopped to tie his shoe. He wrapped the leash around his wrist, but when a squirrel ran by, Buster pulled so hard that the leash slipped off. Oliver called and called, but Buster had disappeared into the trees. Oliver ran home crying and told his mom what happened. Within an hour, the whole neighborhood was outside helping to search.",
       "questions": [
         {
           "question": "What happened to Buster?",
@@ -1844,13 +1887,14 @@
       ]
     },
     {
+      "title": "The Broken Vase",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/broken_vase.png",
+          "image": "../assets/images/cards/49_inferencing_level2/broken_vase.png",
           "label": "Broken vase on floor"
         }
       ],
-      "title": "The Broken Vase",
+      "paragraph": "Ethan was playing catch with his brother inside the house, even though Mom always said not to. The ball bounced off the wall and knocked over Mom's favorite vase. It shattered into a hundred pieces on the floor. Both boys looked at each other with wide eyes. They heard Mom's car pulling into the driveway. Ethan grabbed a broom and started sweeping as fast as he could.",
       "questions": [
         {
           "question": "What rule did the boys break?",
@@ -1882,13 +1926,14 @@
       ]
     },
     {
+      "title": "The Swimming Lesson",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/swimming_lesson.png",
+          "image": "../assets/images/cards/49_inferencing_level2/swimming_lesson.png",
           "label": "Swimming lesson at pool"
         }
       ],
-      "title": "The Swimming Lesson",
+      "paragraph": "Ava stood at the edge of the pool, her toes gripping the wet concrete. The water looked so deep and dark. Her swimming instructor waited in the pool with his arms out, telling her it was safe. Ava remembered that her older sister could swim across the whole pool. She took a deep breath, closed her eyes, and jumped. When she came up, the instructor was holding her and smiling.",
       "questions": [
         {
           "question": "How does Ava feel about the water?",
@@ -1919,13 +1964,14 @@
       ]
     },
     {
+      "title": "The New Baby",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/new_baby.png",
+          "image": "../assets/images/cards/49_inferencing_level2/new_baby.png",
           "label": "Family with new baby"
         }
       ],
-      "title": "The New Baby",
+      "paragraph": "Lily's parents brought home a tiny bundle wrapped in a pink blanket. Everyone kept coming over to look at the baby and saying how cute she was. Lily noticed that her parents looked very tired. The baby cried a lot at night, and Lily had to be very quiet during the day. At first, Lily felt a little left out, but then her mom let her help feed the baby with a bottle.",
       "questions": [
         {
           "question": "What changed in Lily's family?",
@@ -1957,13 +2003,14 @@
       ]
     },
     {
+      "title": "The Thunderstorm",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/thunderstorm.png",
+          "image": "../assets/images/cards/49_inferencing_level2/thunderstorm.png",
           "label": "Thunderstorm scene"
         }
       ],
-      "title": "The Thunderstorm",
+      "paragraph": "The sky turned dark green and the wind started howling. Mom called everyone inside and turned on the news. The weatherman warned that a big storm was coming. When the thunder boomed, the dog hid under the bed. The lights flickered on and off. Little Mia climbed onto her dad's lap and covered her ears. Dad told her stories to help her feel less scared until the storm passed.",
       "questions": [
         {
           "question": "What kind of weather event is happening?",
@@ -1995,13 +2042,14 @@
       ]
     },
     {
+      "title": "The Power Outage",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/power_outage.png",
+          "image": "../assets/images/cards/49_inferencing_level2/power_outage.png",
           "label": "Family during power outage"
         }
       ],
-      "title": "The Power Outage",
+      "paragraph": "The family was watching a movie when suddenly everything went dark and silent. The TV turned off, the refrigerator stopped humming, and all the lights went out. Dad looked out the window and saw that the whole neighborhood was dark too. Mom found flashlights in the drawer while the kids thought it was an adventure. They played card games by candlelight until the lights finally came back on three hours later.",
       "questions": [
         {
           "question": "What happened?",
@@ -2032,13 +2080,14 @@
       ]
     },
     {
+      "title": "The School Play",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/school_play.png",
+          "image": "../assets/images/cards/49_inferencing_level2/school_play.png",
           "label": "School play performance"
         }
       ],
-      "title": "The School Play",
+      "paragraph": "Olivia had practiced her lines a hundred times. She knew exactly when to walk on stage and where to stand. But when she peeked through the curtain and saw all the people in the audience, her heart started racing. Her hands got sweaty and she forgot her first line. Then she saw her grandparents in the front row, smiling and waving. She took a deep breath and walked on stage. The words came back to her.",
       "questions": [
         {
           "question": "What is Olivia about to do?",
@@ -2070,13 +2119,14 @@
       ]
     },
     {
+      "title": "The Lost Phone",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/lost_phone.png",
+          "image": "../assets/images/cards/49_inferencing_level2/lost_phone.png",
           "label": "Looking for lost phone"
         }
       ],
-      "title": "The Lost Phone",
+      "paragraph": "Mia checked her pockets for the third time, but they were still empty. She looked under the couch cushions and in her backpack. She retraced her steps from when she came home. Her mom suggested calling the phone. They listened quietly and heard a faint ringing coming from the laundry room. The phone was in the pocket of her jeans, which were in the washing machine!",
       "questions": [
         {
           "question": "What was Mia looking for?",
@@ -2108,13 +2158,14 @@
       ]
     },
     {
+      "title": "The Neighborhood Lemonade Stand",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/lemonade_stand.png",
+          "image": "../assets/images/cards/49_inferencing_level2/lemonade_stand.png",
           "label": "Kids at lemonade stand"
         }
       ],
-      "title": "The Neighborhood Lemonade Stand",
+      "paragraph": "Lily and her brother set up a table in front of their house. They made a big sign with markers and set out a pitcher of lemonade. At first, only a few people walked by without stopping. Then their neighbor came over and bought three cups. Soon, more and more people started coming. By the end of the day, their money jar was full. They decided to donate half to the animal shelter.",
       "questions": [
         {
           "question": "What are the kids doing?",
@@ -2147,13 +2198,14 @@
       ]
     },
     {
+      "title": "The Camping Trip",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/camping_trip.png",
+          "image": "../assets/images/cards/49_inferencing_level2/camping_trip.png",
           "label": "Family camping trip"
         }
       ],
-      "title": "The Camping Trip",
+      "paragraph": "The family set up their tent just before dark. Dad made a fire while the kids collected sticks. They roasted marshmallows and told stories. When it was time for bed, everyone squeezed into the tent. Lucas could hear strange sounds outside – crickets chirping and an owl hooting. At first he was scared, but his dad explained that those were just nature sounds. Lucas fell asleep feeling safe.",
       "questions": [
         {
           "question": "Where is the family?",
@@ -2186,13 +2238,14 @@
       ]
     },
     {
+      "title": "The Art Contest",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/art_contest.png",
+          "image": "../assets/images/cards/49_inferencing_level2/art_contest.png",
           "label": "Art contest display"
         }
       ],
-      "title": "The Art Contest",
+      "paragraph": "Sofia spent two weeks working on her painting for the art contest. She chose to paint the ocean because she loved going to the beach with her family. She carefully mixed blues and greens to get the color of the waves just right. On the day of the contest, she saw that other students had painted flowers, animals, and landscapes. The judge walked slowly past each painting, writing notes on her clipboard.",
       "questions": [
         {
           "question": "What did Sofia paint?",
@@ -2226,13 +2279,14 @@
       ]
     },
     {
+      "title": "The Forgotten Lunch",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/forgotten_lunch.png",
+          "image": "../assets/images/cards/49_inferencing_level2/forgotten_lunch.png",
           "label": "Boy who forgot his lunch"
         }
       ],
-      "title": "The Forgotten Lunch",
+      "paragraph": "Ben got to school and reached into his backpack for his lunch. His hand felt around but there was nothing there. Then he remembered – his lunch was still sitting on the kitchen counter! His stomach growled as he thought about the sandwich his dad had made. Just then, the office called his name over the loudspeaker. His mom was at the front desk, holding his lunch bag and smiling.",
       "questions": [
         {
           "question": "What problem did Ben have?",
@@ -2265,13 +2319,14 @@
       ]
     },
     {
+      "title": "The Sleepover",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/sleepover.png",
+          "image": "../assets/images/cards/49_inferencing_level2/sleepover.png",
           "label": "Sleepover scene"
         }
       ],
-      "title": "The Sleepover",
+      "paragraph": "It was Jake's first sleepover at his friend's house. He packed his sleeping bag, pajamas, and his favorite stuffed animal (hidden at the bottom of his bag). The boys played video games and ate pizza. When the lights went out, Jake felt a little homesick. He missed his own bed and his family. But then his friend started telling funny jokes in the dark, and soon they were both laughing.",
       "questions": [
         {
           "question": "Why did Jake hide his stuffed animal?",
@@ -2304,13 +2359,14 @@
       ]
     },
     {
+      "title": "The Waiting Room",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/waiting_room.png",
+          "image": "../assets/images/cards/49_inferencing_level2/waiting_room.png",
           "label": "Hospital waiting room"
         }
       ],
-      "title": "The Waiting Room",
+      "paragraph": "Mrs. Chen kept looking at the clock on the wall. She had been waiting for two hours already. Her daughter was somewhere behind the big double doors. A nurse came out occasionally to give updates to other families. Finally, a doctor in scrubs came through the doors and called her name. He was smiling, which made Mrs. Chen feel so relieved. He said everything went perfectly.",
       "questions": [
         {
           "question": "Where is Mrs. Chen?",
@@ -2342,13 +2398,14 @@
       ]
     },
     {
+      "title": "The Garden Project",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/garden_project.png",
+          "image": "../assets/images/cards/49_inferencing_level2/garden_project.png",
           "label": "Garden with growing plants"
         }
       ],
-      "title": "The Garden Project",
+      "paragraph": "Every day after school, Maria checked on her garden. She watered the soil and pulled out any weeds she saw. For two weeks, nothing happened. She started to worry that she had done something wrong. Then one morning, she saw tiny green sprouts poking through the dirt. She ran inside to tell her mom, who came out with a camera to take pictures. Maria couldn't wait to see what they would grow into.",
       "questions": [
         {
           "question": "What is Maria growing?",
@@ -2382,13 +2439,14 @@
       ]
     },
     {
+      "title": "The Job Interview",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/job_interview.png",
+          "image": "../assets/images/cards/49_inferencing_level2/job_interview.png",
           "label": "Job interview scene"
         }
       ],
-      "title": "The Job Interview",
+      "paragraph": "Tyler put on his nicest shirt and practiced his handshake in the mirror. His mom drove him to the store where he had applied for a summer job. He sat in a small office across from the manager, trying not to fidget. The manager asked him questions about his experience and why he wanted to work there. When she smiled and shook his hand at the end, she said she would call him by Friday.",
       "questions": [
         {
           "question": "What is Tyler doing?",
@@ -2420,13 +2478,14 @@
       ]
     },
     {
+      "title": "The Bake Sale",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/bake_sale.png",
+          "image": "../assets/images/cards/49_inferencing_level2/bake_sale.png",
           "label": "Bake sale table"
         }
       ],
-      "title": "The Bake Sale",
+      "paragraph": "The classroom was filled with the smell of cookies, brownies, and cupcakes. Each student had brought something from home to sell. The money they raised would go toward their field trip. Emma looked at her plain-looking banana bread next to her classmate's fancy decorated cupcakes. She felt a little embarrassed. But by the end of the day, her banana bread was the first thing to sell out!",
       "questions": [
         {
           "question": "Why are the students selling baked goods?",
@@ -2459,13 +2518,14 @@
       ]
     },
     {
+      "title": "The Long Car Ride",
       "images": [
         {
-          "image": "/images/cards/49_inferencing_level2/long_car_ride.png",
+          "image": "../assets/images/cards/49_inferencing_level2/long_car_ride.png",
           "label": "Family on long car ride"
         }
       ],
-      "title": "The Long Car Ride",
+      "paragraph": "\"Are we there yet?\" Abby asked for the fifth time. Her mom sighed and said there were still three more hours to go. Abby had already played all her games and watched a movie. Her legs were restless and she was tired of sitting. Her little brother was asleep next to her. Finally, she saw a sign that said \"Beach: 10 miles.\" She sat up straight and pressed her face against the window, looking for the ocean.",
       "questions": [
         {
           "question": "Where is the family going?",
