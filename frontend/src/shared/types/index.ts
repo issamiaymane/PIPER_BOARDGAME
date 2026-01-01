@@ -22,20 +22,5 @@ export interface CardData {
 // Category data mapping
 export type CategoryData = Record<string, CardData[]>;
 
-// Handler types
-export type HandlerType =
-  | 'single-answer'
-  | 'multiple-answers'
-  | 'multiple-choice'
-  | 'image-selection'
-  | 'sequencing'
-  | 'building'
-  | 'conditional'
-  | 'standard';
-
-// Handler configuration
-export interface HandlerConfig {
-  name: string;
-  icon: string;
-  color: string;
-}
+// Handler types - re-exported from the single source of truth
+export type { HandlerType, HandlerConfig } from '../../constants/handler-map';
