@@ -13,6 +13,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
+        main: resolve(__dirname, 'index.html'),
         boardgame: resolve(__dirname, 'boardgame.html'),
         therapist: resolve(__dirname, 'therapist.html'),
         'cards': resolve(__dirname, 'cards.html'),
@@ -27,7 +28,7 @@ export default defineConfig({
 
   server: {
     port: 5173,
-    open: '/boardgame.html',
+    open: '/index.html',
     proxy: {
       '/api': {
         target: 'http://localhost:3000',

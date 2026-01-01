@@ -1,10 +1,9 @@
 import Database from 'better-sqlite3';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { logger } from '../utils/logger.js';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DB_PATH = path.join(__dirname, '../../data/piper.db');
+// Use process.cwd() for consistent path resolution in both dev and production
+const DB_PATH = path.join(process.cwd(), 'data', 'piper.db');
 
 let db: Database.Database | null = null;
 
