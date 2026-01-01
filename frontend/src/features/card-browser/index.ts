@@ -6,6 +6,7 @@
 /// <reference types="vite/client" />
 
 import { HANDLERS, CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
+import { hideLoadingScreen } from '../../shared/components/LoadingScreen/LoadingScreen';
 
 // Type definitions
 interface CardData {
@@ -926,6 +927,7 @@ function init() {
 
     initThemeSelector();
     renderSections();
+    hideLoadingScreen();
 }
 
 // Theme switching

@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Browser - PIPER Speech Therapy</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./src/shared/components/LoadingScreen/loading-screen.css">
     <link rel="stylesheet" href="./src/styles/card-browser.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-snowflake">🎯</div>
+            <h1 class="loading-title">Loading PIPER...</h1>
+        </div>
+    </div>
+
     <!-- Autumn Leaves Decoration -->
     <div class="snowflakes">
         <div class="snowflake">🍂</div>
@@ -53,7 +62,6 @@
     <header class="browser-header">
         <div class="header-content">
             <div class="header-text">
-                <a href="boardgame.html" class="back-link">← Back to Game</a>
                 <h1 class="header-title">Card Browser</h1>
                 <p class="header-subtitle">Browse and preview all deck cards</p>
             </div>
@@ -105,10 +113,6 @@
         <div class="browser-content">
             <!-- Handler Sections will be dynamically generated -->
             <div id="handlerSections" class="handler-sections">
-                <div class="loading-message">
-                    <div class="loading-spinner"></div>
-                    <p>Loading PIPER...</p>
-                </div>
             </div>
         </div>
     </main>
