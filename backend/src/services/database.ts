@@ -1,9 +1,11 @@
 import Database from 'better-sqlite3';
+import fs from 'fs';
 import path from 'path';
 import { logger } from '../utils/logger.js';
 
 // Use process.cwd() for consistent path resolution in both dev and production
-const DB_PATH = path.join(process.cwd(), 'data', 'piper.db');
+const DATA_DIR = path.join(process.cwd(), 'data');
+const DB_PATH = path.join(DATA_DIR, 'piper.db');
 
 let db: Database.Database | null = null;
 
@@ -16,6 +18,12 @@ export function getDatabase(): Database.Database {
 
 export function initializeDatabase(): void {
   logger.info('Initializing database...');
+
+  // Create data directory if it doesn't exist
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+    logger.info(`Created data directory: ${DATA_DIR}`);
+  }
 
   db = new Database(DB_PATH);
   db.pragma('journal_mode = WAL');
