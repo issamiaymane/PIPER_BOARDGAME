@@ -370,7 +370,7 @@
           "label": "Music speakers"
         }
       ],
-      "sentence": "The person <span class='conjunction-highlight'>who</span> turned on the music needs to make sure it isn't too loud.",
+      "paragraph": "The person <span class='conjunction-highlight'>who</span> turned on the music needs to make sure it isn't too loud.",
       "answers": [
         "who"
       ]
@@ -383,7 +383,7 @@
           "label": "Applying sunscreen"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>Before</span> you go to the beach, make sure to put on sunscreen.",
+      "paragraph": "<span class='conjunction-highlight'>Before</span> you go to the beach, make sure to put on sunscreen.",
       "answers": [
         "before"
       ]
@@ -396,7 +396,7 @@
           "label": "Running inside from rain"
         }
       ],
-      "sentence": "We ran inside <span class='conjunction-highlight'>when</span> it started to rain.",
+      "paragraph": "We ran inside <span class='conjunction-highlight'>when</span> it started to rain.",
       "answers": [
         "when"
       ]
@@ -409,7 +409,7 @@
           "label": "Hungry child"
         }
       ],
-      "sentence": "I was hungry <span class='conjunction-highlight'>because</span> I didn't eat breakfast.",
+      "paragraph": "I was hungry <span class='conjunction-highlight'>because</span> I didn't eat breakfast.",
       "answers": [
         "because"
       ]
@@ -422,7 +422,7 @@
           "label": "Putting on shoes"
         }
       ],
-      "sentence": "We can leave <span class='conjunction-highlight'>after</span> you put on your shoes.",
+      "paragraph": "We can leave <span class='conjunction-highlight'>after</span> you put on your shoes.",
       "answers": [
         "after"
       ]
@@ -435,7 +435,7 @@
           "label": "Finishing homework"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>Although</span> she was tired, she finished her homework.",
+      "paragraph": "<span class='conjunction-highlight'>Although</span> she was tired, she finished her homework.",
       "answers": [
         "although"
       ]
@@ -448,7 +448,7 @@
           "label": "Bringing an umbrella"
         }
       ],
-      "sentence": "Bring an umbrella <span class='conjunction-highlight'>if</span> it looks like rain.",
+      "paragraph": "Bring an umbrella <span class='conjunction-highlight'>if</span> it looks like rain.",
       "answers": [
         "if"
       ]
@@ -461,7 +461,7 @@
           "label": "Swimming in the pool"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>While</span> we were swimming, Mom made lunch.",
+      "paragraph": "<span class='conjunction-highlight'>While</span> we were swimming, Mom made lunch.",
       "answers": [
         "while"
       ]
@@ -474,7 +474,7 @@
           "label": "Helping with dishes"
         }
       ],
-      "sentence": "I will help you <span class='conjunction-highlight'>since</span> you helped me yesterday.",
+      "paragraph": "I will help you <span class='conjunction-highlight'>since</span> you helped me yesterday.",
       "answers": [
         "since"
       ]
@@ -487,7 +487,7 @@
           "label": "Child falling asleep"
         }
       ],
-      "sentence": "He fell asleep <span class='conjunction-highlight'>as soon as</span> his head hit the pillow.",
+      "paragraph": "He fell asleep <span class='conjunction-highlight'>as soon as</span> his head hit the pillow.",
       "answers": [
         "as soon as"
       ]
@@ -500,7 +500,7 @@
           "label": "Lifeguard at the pool"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>Until</span> the lifeguard says it's safe, stay out of the water.",
+      "paragraph": "<span class='conjunction-highlight'>Until</span> the lifeguard says it's safe, stay out of the water.",
       "answers": [
         "until"
       ]
@@ -513,7 +513,7 @@
           "label": "Building a sandcastle"
         }
       ],
-      "sentence": "We kept building <span class='conjunction-highlight'>even though</span> the waves kept washing it away.",
+      "paragraph": "We kept building <span class='conjunction-highlight'>even though</span> the waves kept washing it away.",
       "answers": [
         "even though"
       ]
@@ -526,7 +526,7 @@
           "label": "Brushing teeth"
         }
       ],
-      "sentence": "Brush your teeth <span class='conjunction-highlight'>before</span> you go to bed.",
+      "paragraph": "Brush your teeth <span class='conjunction-highlight'>before</span> you go to bed.",
       "answers": [
         "before"
       ]
@@ -539,7 +539,7 @@
           "label": "Playing at the beach"
         }
       ],
-      "sentence": "I love the beach <span class='conjunction-highlight'>because</span> I can swim and play in the sand.",
+      "paragraph": "I love the beach <span class='conjunction-highlight'>because</span> I can swim and play in the sand.",
       "answers": [
         "because"
       ]
@@ -552,7 +552,7 @@
           "label": "Sun coming through the window"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>When</span> the sun comes out, we can go outside.",
+      "paragraph": "<span class='conjunction-highlight'>When</span> the sun comes out, we can go outside.",
       "answers": [
         "when"
       ]
@@ -565,7 +565,7 @@
           "label": "Cleaning the room"
         }
       ],
-      "sentence": "You can play <span class='conjunction-highlight'>after</span> you clean your room.",
+      "paragraph": "You can play <span class='conjunction-highlight'>after</span> you clean your room.",
       "answers": [
         "after"
       ]
@@ -578,7 +578,7 @@
           "label": "Wearing a jacket"
         }
       ],
-      "sentence": "Wear a jacket <span class='conjunction-highlight'>if</span> you feel cold.",
+      "paragraph": "Wear a jacket <span class='conjunction-highlight'>if</span> you feel cold.",
       "answers": [
         "if"
       ]
@@ -591,7 +591,7 @@
           "label": "Reading a book"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>While</span> Dad cooked dinner, I read my book.",
+      "paragraph": "<span class='conjunction-highlight'>While</span> Dad cooked dinner, I read my book.",
       "answers": [
         "while"
       ]
@@ -604,7 +604,7 @@
           "label": "Sharing toys"
         }
       ],
-      "sentence": "I shared my toys <span class='conjunction-highlight'>because</span> sharing is kind.",
+      "paragraph": "I shared my toys <span class='conjunction-highlight'>because</span> sharing is kind.",
       "answers": [
         "because"
       ]
@@ -617,7 +617,7 @@
           "label": "Sunny day at the beach"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>Since</span> it was sunny, we decided to go to the beach.",
+      "paragraph": "<span class='conjunction-highlight'>Since</span> it was sunny, we decided to go to the beach.",
       "answers": [
         "since"
       ]
@@ -630,7 +630,7 @@
           "label": "Calling grandma on the phone"
         }
       ],
-      "sentence": "Call Grandma <span class='conjunction-highlight'>before</span> it gets too late.",
+      "paragraph": "Call Grandma <span class='conjunction-highlight'>before</span> it gets too late.",
       "answers": [
         "before"
       ]
@@ -643,7 +643,7 @@
           "label": "Staying close together"
         }
       ],
-      "sentence": "Stay close to me <span class='conjunction-highlight'>until</span> we find a good spot.",
+      "paragraph": "Stay close to me <span class='conjunction-highlight'>until</span> we find a good spot.",
       "answers": [
         "until"
       ]
@@ -656,7 +656,7 @@
           "label": "Eating bell peppers"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>Although</span> he doesn't like bell peppers, he ate them anyway.",
+      "paragraph": "<span class='conjunction-highlight'>Although</span> he doesn't like bell peppers, he ate them anyway.",
       "answers": [
         "although"
       ]
@@ -669,7 +669,7 @@
           "label": "Running to the car"
         }
       ],
-      "sentence": "<span class='conjunction-highlight'>As soon as</span> Mom said it was time to go, I ran to the car.",
+      "paragraph": "<span class='conjunction-highlight'>As soon as</span> Mom said it was time to go, I ran to the car.",
       "answers": [
         "as soon as"
       ]
@@ -682,7 +682,7 @@
           "label": "Girl finding a seashell"
         }
       ],
-      "sentence": "The girl <span class='conjunction-highlight'>who</span> found the seashell was very excited.",
+      "paragraph": "The girl <span class='conjunction-highlight'>who</span> found the seashell was very excited.",
       "answers": [
         "who"
       ]
@@ -694,7 +694,7 @@
           "label": "Lunch with fruit"
         }
       ],
-      "sentence": "_____ you finish your lunch, you can have fruit."
+      "paragraph": "_____ you finish your lunch, you can have fruit."
     },
     {
       "images": [
@@ -703,7 +703,7 @@
           "label": "Wearing sunscreen"
         }
       ],
-      "sentence": "I wore sunscreen _____ I didn't want to get burned."
+      "paragraph": "I wore sunscreen _____ I didn't want to get burned."
     },
     {
       "images": [
@@ -712,7 +712,7 @@
           "label": "Cloudy day at the beach"
         }
       ],
-      "sentence": "_____ it was cloudy, we still went to the beach."
+      "paragraph": "_____ it was cloudy, we still went to the beach."
     },
     {
       "images": [
@@ -721,7 +721,7 @@
           "label": "Staying in one place"
         }
       ],
-      "sentence": "Stay here _____ I come back."
+      "paragraph": "Stay here _____ I come back."
     },
     {
       "images": [
@@ -730,7 +730,7 @@
           "label": "Neighbor boy"
         }
       ],
-      "sentence": "The boy _____ lives next door is my friend."
+      "paragraph": "The boy _____ lives next door is my friend."
     }
   ]
 }

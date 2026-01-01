@@ -1442,7 +1442,7 @@
           "label": "girl with balls"
         }
       ],
-      "sentence": "The balls belong to _______.",
+      "paragraph": "The balls belong to _______.",
       "answers": [
         "her"
       ]
@@ -1455,7 +1455,7 @@
           "label": "man with backpack"
         }
       ],
-      "sentence": "He is wearing _______ backpack.",
+      "paragraph": "He is wearing _______ backpack.",
       "answers": [
         "his"
       ]
@@ -1468,7 +1468,7 @@
           "label": "boy with surfboard"
         }
       ],
-      "sentence": "The surfboard belongs to _______.",
+      "paragraph": "The surfboard belongs to _______.",
       "answers": [
         "him"
       ]
@@ -1481,7 +1481,7 @@
           "label": "girl wearing sunhat"
         }
       ],
-      "sentence": "She is wearing _______ sunhat.",
+      "paragraph": "She is wearing _______ sunhat.",
       "answers": [
         "her"
       ]
@@ -1494,7 +1494,7 @@
           "label": "kids with sandcastle"
         }
       ],
-      "sentence": "The sandcastle belongs to _______.",
+      "paragraph": "The sandcastle belongs to _______.",
       "answers": [
         "them"
       ]
@@ -1507,7 +1507,7 @@
           "label": "man with flip flops"
         }
       ],
-      "sentence": "He is putting on _______ flip flops.",
+      "paragraph": "He is putting on _______ flip flops.",
       "answers": [
         "his"
       ]
@@ -1520,7 +1520,7 @@
           "label": "woman applying sunscreen"
         }
       ],
-      "sentence": "She is putting on _______ sunscreen.",
+      "paragraph": "She is putting on _______ sunscreen.",
       "answers": [
         "her"
       ]
@@ -1533,7 +1533,7 @@
           "label": "boy with dog"
         }
       ],
-      "sentence": "The dog belongs to _______.",
+      "paragraph": "The dog belongs to _______.",
       "answers": [
         "him"
       ]
@@ -1546,7 +1546,7 @@
           "label": "girl brushing hair"
         }
       ],
-      "sentence": "She is brushing _______ hair.",
+      "paragraph": "She is brushing _______ hair.",
       "answers": [
         "her"
       ]
@@ -1559,7 +1559,7 @@
           "label": "family with towels"
         }
       ],
-      "sentence": "The towels belong to _______.",
+      "paragraph": "The towels belong to _______.",
       "answers": [
         "them"
       ]
@@ -1572,7 +1572,7 @@
           "label": "man drinking water"
         }
       ],
-      "sentence": "He is drinking _______ water.",
+      "paragraph": "He is drinking _______ water.",
       "answers": [
         "his"
       ]
@@ -1585,7 +1585,7 @@
           "label": "woman with keys"
         }
       ],
-      "sentence": "The keys belong to _______.",
+      "paragraph": "The keys belong to _______.",
       "answers": [
         "her"
       ]
@@ -1598,7 +1598,7 @@
           "label": "boy tying shoes"
         }
       ],
-      "sentence": "He is tying _______ shoes.",
+      "paragraph": "He is tying _______ shoes.",
       "answers": [
         "his"
       ]
@@ -1611,7 +1611,7 @@
           "label": "girl carrying backpack"
         }
       ],
-      "sentence": "She is carrying _______ backpack.",
+      "paragraph": "She is carrying _______ backpack.",
       "answers": [
         "her"
       ]
@@ -1624,7 +1624,7 @@
           "label": "children with umbrella"
         }
       ],
-      "sentence": "The umbrella belongs to _______.",
+      "paragraph": "The umbrella belongs to _______.",
       "answers": [
         "them"
       ]
@@ -1637,7 +1637,7 @@
           "label": "woman wearing sunglasses"
         }
       ],
-      "sentence": "She is wearing _______ sunglasses.",
+      "paragraph": "She is wearing _______ sunglasses.",
       "answers": [
         "her"
       ]
@@ -1650,7 +1650,7 @@
           "label": "man reading book"
         }
       ],
-      "sentence": "He is reading _______ book.",
+      "paragraph": "He is reading _______ book.",
       "answers": [
         "his"
       ]
@@ -1663,7 +1663,7 @@
           "label": "girl with bunny"
         }
       ],
-      "sentence": "The bunny belongs to _______.",
+      "paragraph": "The bunny belongs to _______.",
       "answers": [
         "her"
       ]
@@ -1676,7 +1676,7 @@
           "label": "boy eating lunch"
         }
       ],
-      "sentence": "He is eating _______ lunch.",
+      "paragraph": "He is eating _______ lunch.",
       "answers": [
         "his"
       ]
@@ -1689,7 +1689,7 @@
           "label": "parents with child"
         }
       ],
-      "sentence": "The child belongs to _______.",
+      "paragraph": "The child belongs to _______.",
       "answers": [
         "them"
       ]
@@ -1702,7 +1702,7 @@
           "label": "woman using lotion"
         }
       ],
-      "sentence": "She is using _______ lotion.",
+      "paragraph": "She is using _______ lotion.",
       "answers": [
         "her"
       ]
@@ -1715,7 +1715,7 @@
           "label": "man wearing watch"
         }
       ],
-      "sentence": "He is wearing _______ watch.",
+      "paragraph": "He is wearing _______ watch.",
       "answers": [
         "his"
       ]
@@ -1728,7 +1728,7 @@
           "label": "girl with stuffed animal"
         }
       ],
-      "sentence": "The stuffed animal belongs to _______.",
+      "paragraph": "The stuffed animal belongs to _______.",
       "answers": [
         "her"
       ]
@@ -1741,7 +1741,7 @@
           "label": "boy wearing pajamas"
         }
       ],
-      "sentence": "He is wearing _______ pajamas.",
+      "paragraph": "He is wearing _______ pajamas.",
       "answers": [
         "his"
       ]
@@ -1754,7 +1754,7 @@
           "label": "friends with blanket"
         }
       ],
-      "sentence": "The blanket belongs to _______.",
+      "paragraph": "The blanket belongs to _______.",
       "answers": [
         "them"
       ]
@@ -1767,7 +1767,7 @@
           "label": "woman with phone"
         }
       ],
-      "sentence": "The phone belongs to _______.",
+      "paragraph": "The phone belongs to _______.",
       "answers": [
         "her"
       ]
@@ -1780,7 +1780,7 @@
           "label": "man putting on hat"
         }
       ],
-      "sentence": "He is putting on _______ hat.",
+      "paragraph": "He is putting on _______ hat.",
       "answers": [
         "his"
       ]
@@ -1793,7 +1793,7 @@
           "label": "girl washing face"
         }
       ],
-      "sentence": "She is washing _______ face.",
+      "paragraph": "She is washing _______ face.",
       "answers": [
         "her"
       ]
@@ -1806,7 +1806,7 @@
           "label": "boy zipping jacket"
         }
       ],
-      "sentence": "He is zipping _______ jacket.",
+      "paragraph": "He is zipping _______ jacket.",
       "answers": [
         "his"
       ]
@@ -1819,7 +1819,7 @@
           "label": "grandparents with grandchildren"
         }
       ],
-      "sentence": "The grandchildren belong to _______.",
+      "paragraph": "The grandchildren belong to _______.",
       "answers": [
         "them"
       ]
@@ -1834,7 +1834,7 @@
           "label": "boy with lacrosse stick"
         }
       ],
-      "sentence": "Who is holding a lacrosse stick?",
+      "paragraph": "Who is holding a lacrosse stick?",
       "answers": [
         "He"
       ]
@@ -1847,7 +1847,7 @@
           "label": "girl singing"
         }
       ],
-      "sentence": "Who is singing?",
+      "paragraph": "Who is singing?",
       "answers": [
         "She"
       ]
@@ -1860,7 +1860,7 @@
           "label": "kids playing in sand"
         }
       ],
-      "sentence": "Who is playing in the sand?",
+      "paragraph": "Who is playing in the sand?",
       "answers": [
         "They"
       ]
@@ -1873,7 +1873,7 @@
           "label": "boy eating apple"
         }
       ],
-      "sentence": "Who is eating an apple?",
+      "paragraph": "Who is eating an apple?",
       "answers": [
         "He"
       ]
@@ -1886,7 +1886,7 @@
           "label": "girl reading book"
         }
       ],
-      "sentence": "Who is reading a book?",
+      "paragraph": "Who is reading a book?",
       "answers": [
         "She"
       ]
@@ -1899,7 +1899,7 @@
           "label": "children swimming"
         }
       ],
-      "sentence": "Who is swimming?",
+      "paragraph": "Who is swimming?",
       "answers": [
         "They"
       ]
@@ -1912,7 +1912,7 @@
           "label": "man building sandcastle"
         }
       ],
-      "sentence": "Who is building a sandcastle?",
+      "paragraph": "Who is building a sandcastle?",
       "answers": [
         "He"
       ]
@@ -1925,7 +1925,7 @@
           "label": "woman applying sunscreen"
         }
       ],
-      "sentence": "Who is applying sunscreen?",
+      "paragraph": "Who is applying sunscreen?",
       "answers": [
         "She"
       ]
@@ -1938,7 +1938,7 @@
           "label": "boy brushing teeth"
         }
       ],
-      "sentence": "Who is brushing teeth?",
+      "paragraph": "Who is brushing teeth?",
       "answers": [
         "He"
       ]
@@ -1951,7 +1951,7 @@
           "label": "girl petting bunny"
         }
       ],
-      "sentence": "Who is petting the bunny?",
+      "paragraph": "Who is petting the bunny?",
       "answers": [
         "She"
       ]
@@ -1964,7 +1964,7 @@
           "label": "friends sharing towel"
         }
       ],
-      "sentence": "Who is sharing a towel?",
+      "paragraph": "Who is sharing a towel?",
       "answers": [
         "They"
       ]
@@ -1977,7 +1977,7 @@
           "label": "boy throwing ball"
         }
       ],
-      "sentence": "Who is throwing the ball?",
+      "paragraph": "Who is throwing the ball?",
       "answers": [
         "He"
       ]
@@ -1990,7 +1990,7 @@
           "label": "girl drinking water"
         }
       ],
-      "sentence": "Who is drinking water?",
+      "paragraph": "Who is drinking water?",
       "answers": [
         "She"
       ]
@@ -2003,7 +2003,7 @@
           "label": "kids collecting seashells"
         }
       ],
-      "sentence": "Who is collecting seashells?",
+      "paragraph": "Who is collecting seashells?",
       "answers": [
         "They"
       ]
@@ -2016,7 +2016,7 @@
           "label": "man walking dog"
         }
       ],
-      "sentence": "Who is walking the dog?",
+      "paragraph": "Who is walking the dog?",
       "answers": [
         "He"
       ]
@@ -2029,7 +2029,7 @@
           "label": "woman holding umbrella"
         }
       ],
-      "sentence": "Who is holding an umbrella?",
+      "paragraph": "Who is holding an umbrella?",
       "answers": [
         "She"
       ]
@@ -2042,7 +2042,7 @@
           "label": "boy putting on flip flops"
         }
       ],
-      "sentence": "Who is putting on flip flops?",
+      "paragraph": "Who is putting on flip flops?",
       "answers": [
         "He"
       ]
@@ -2055,7 +2055,7 @@
           "label": "girl washing hands"
         }
       ],
-      "sentence": "Who is washing hands?",
+      "paragraph": "Who is washing hands?",
       "answers": [
         "She"
       ]
@@ -2068,7 +2068,7 @@
           "label": "family eating picnic"
         }
       ],
-      "sentence": "Who is eating a picnic?",
+      "paragraph": "Who is eating a picnic?",
       "answers": [
         "They"
       ]
@@ -2081,7 +2081,7 @@
           "label": "boy drawing"
         }
       ],
-      "sentence": "Who is drawing?",
+      "paragraph": "Who is drawing?",
       "answers": [
         "He"
       ]
@@ -2094,7 +2094,7 @@
           "label": "girl wearing hat"
         }
       ],
-      "sentence": "Who is wearing a hat?",
+      "paragraph": "Who is wearing a hat?",
       "answers": [
         "She"
       ]
@@ -2107,7 +2107,7 @@
           "label": "children jumping in waves"
         }
       ],
-      "sentence": "Who is jumping in the waves?",
+      "paragraph": "Who is jumping in the waves?",
       "answers": [
         "They"
       ]
@@ -2120,7 +2120,7 @@
           "label": "man fishing"
         }
       ],
-      "sentence": "Who is fishing?",
+      "paragraph": "Who is fishing?",
       "answers": [
         "He"
       ]
@@ -2133,7 +2133,7 @@
           "label": "woman taking photo"
         }
       ],
-      "sentence": "Who is taking a photo?",
+      "paragraph": "Who is taking a photo?",
       "answers": [
         "She"
       ]
@@ -2146,7 +2146,7 @@
           "label": "boy combing hair"
         }
       ],
-      "sentence": "Who is combing hair?",
+      "paragraph": "Who is combing hair?",
       "answers": [
         "He"
       ]
@@ -2159,7 +2159,7 @@
           "label": "girl tying shoes"
         }
       ],
-      "sentence": "Who is tying shoes?",
+      "paragraph": "Who is tying shoes?",
       "answers": [
         "She"
       ]
@@ -2172,7 +2172,7 @@
           "label": "grandparents sitting on bench"
         }
       ],
-      "sentence": "Who is sitting on the bench?",
+      "paragraph": "Who is sitting on the bench?",
       "answers": [
         "They"
       ]
@@ -2185,7 +2185,7 @@
           "label": "boy blowing bubbles"
         }
       ],
-      "sentence": "Who is blowing bubbles?",
+      "paragraph": "Who is blowing bubbles?",
       "answers": [
         "He"
       ]
@@ -2198,7 +2198,7 @@
           "label": "girl feeding cat"
         }
       ],
-      "sentence": "Who is feeding the cat?",
+      "paragraph": "Who is feeding the cat?",
       "answers": [
         "She"
       ]
@@ -2211,7 +2211,7 @@
           "label": "kids playing with dog"
         }
       ],
-      "sentence": "Who is playing with the dog?",
+      "paragraph": "Who is playing with the dog?",
       "answers": [
         "They"
       ]
@@ -2226,7 +2226,7 @@
           "label": "woman doing hair"
         }
       ],
-      "sentence": "_______ is doing her hair.",
+      "paragraph": "_______ is doing her hair.",
       "answers": [
         "She"
       ]
@@ -2239,7 +2239,7 @@
           "label": "group running race"
         }
       ],
-      "sentence": "_______ are competing in a race.",
+      "paragraph": "_______ are competing in a race.",
       "answers": [
         "They"
       ]
@@ -2252,7 +2252,7 @@
           "label": "boy drinking juice"
         }
       ],
-      "sentence": "_______ is drinking juice.",
+      "paragraph": "_______ is drinking juice.",
       "answers": [
         "He"
       ]
@@ -2265,7 +2265,7 @@
           "label": "girl writing in notebook"
         }
       ],
-      "sentence": "_______ is writing in a notebook.",
+      "paragraph": "_______ is writing in a notebook.",
       "answers": [
         "She"
       ]
@@ -2278,7 +2278,7 @@
           "label": "children splashing in waves"
         }
       ],
-      "sentence": "_______ are splashing in the waves.",
+      "paragraph": "_______ are splashing in the waves.",
       "answers": [
         "They"
       ]
@@ -2291,7 +2291,7 @@
           "label": "man carrying groceries"
         }
       ],
-      "sentence": "_______ is carrying groceries.",
+      "paragraph": "_______ is carrying groceries.",
       "answers": [
         "He"
       ]
@@ -2304,7 +2304,7 @@
           "label": "woman walking on beach"
         }
       ],
-      "sentence": "_______ is walking on the beach.",
+      "paragraph": "_______ is walking on the beach.",
       "answers": [
         "She"
       ]
@@ -2317,7 +2317,7 @@
           "label": "boy playing with dog"
         }
       ],
-      "sentence": "_______ is playing with the dog.",
+      "paragraph": "_______ is playing with the dog.",
       "answers": [
         "He"
       ]
@@ -2330,7 +2330,7 @@
           "label": "girl putting on sunscreen"
         }
       ],
-      "sentence": "_______ is putting on sunscreen.",
+      "paragraph": "_______ is putting on sunscreen.",
       "answers": [
         "She"
       ]
@@ -2343,7 +2343,7 @@
           "label": "kids building sandcastle"
         }
       ],
-      "sentence": "_______ are building a sandcastle.",
+      "paragraph": "_______ are building a sandcastle.",
       "answers": [
         "They"
       ]
@@ -2356,7 +2356,7 @@
           "label": "man cooking"
         }
       ],
-      "sentence": "_______ is cooking.",
+      "paragraph": "_______ is cooking.",
       "answers": [
         "He"
       ]
@@ -2369,7 +2369,7 @@
           "label": "woman holding seashell"
         }
       ],
-      "sentence": "_______ is holding a seashell.",
+      "paragraph": "_______ is holding a seashell.",
       "answers": [
         "She"
       ]
@@ -2382,7 +2382,7 @@
           "label": "boy sleeping"
         }
       ],
-      "sentence": "_______ is sleeping.",
+      "paragraph": "_______ is sleeping.",
       "answers": [
         "He"
       ]
@@ -2395,7 +2395,7 @@
           "label": "girl blowing out candles"
         }
       ],
-      "sentence": "_______ is blowing out candles.",
+      "paragraph": "_______ is blowing out candles.",
       "answers": [
         "She"
       ]
@@ -2408,7 +2408,7 @@
           "label": "family having picnic"
         }
       ],
-      "sentence": "_______ are having a picnic.",
+      "paragraph": "_______ are having a picnic.",
       "answers": [
         "They"
       ]
@@ -2421,7 +2421,7 @@
           "label": "man lifting weights"
         }
       ],
-      "sentence": "_______ is lifting weights.",
+      "paragraph": "_______ is lifting weights.",
       "answers": [
         "He"
       ]
@@ -2434,7 +2434,7 @@
           "label": "woman watering plants"
         }
       ],
-      "sentence": "_______ is watering plants.",
+      "paragraph": "_______ is watering plants.",
       "answers": [
         "She"
       ]
@@ -2447,7 +2447,7 @@
           "label": "boy catching ball"
         }
       ],
-      "sentence": "_______ is catching a ball.",
+      "paragraph": "_______ is catching a ball.",
       "answers": [
         "He"
       ]
@@ -2460,7 +2460,7 @@
           "label": "girl hugging mom"
         }
       ],
-      "sentence": "_______ is hugging her mom.",
+      "paragraph": "_______ is hugging her mom.",
       "answers": [
         "She"
       ]
@@ -2473,7 +2473,7 @@
           "label": "kids eating watermelon"
         }
       ],
-      "sentence": "_______ are eating watermelon.",
+      "paragraph": "_______ are eating watermelon.",
       "answers": [
         "They"
       ]
@@ -2486,7 +2486,7 @@
           "label": "man wearing sunglasses"
         }
       ],
-      "sentence": "_______ is wearing sunglasses.",
+      "paragraph": "_______ is wearing sunglasses.",
       "answers": [
         "He"
       ]
@@ -2499,7 +2499,7 @@
           "label": "woman reading magazine"
         }
       ],
-      "sentence": "_______ is reading a magazine.",
+      "paragraph": "_______ is reading a magazine.",
       "answers": [
         "She"
       ]
@@ -2512,7 +2512,7 @@
           "label": "boy packing bag"
         }
       ],
-      "sentence": "_______ is packing a bag.",
+      "paragraph": "_______ is packing a bag.",
       "answers": [
         "He"
       ]
@@ -2525,7 +2525,7 @@
           "label": "girl jumping rope"
         }
       ],
-      "sentence": "_______ is jumping rope.",
+      "paragraph": "_______ is jumping rope.",
       "answers": [
         "She"
       ]
@@ -2538,7 +2538,7 @@
           "label": "friends watching sunset"
         }
       ],
-      "sentence": "_______ are watching the sunset.",
+      "paragraph": "_______ are watching the sunset.",
       "answers": [
         "They"
       ]
@@ -2551,7 +2551,7 @@
           "label": "man putting up umbrella"
         }
       ],
-      "sentence": "_______ is putting up an umbrella.",
+      "paragraph": "_______ is putting up an umbrella.",
       "answers": [
         "He"
       ]
@@ -2564,7 +2564,7 @@
           "label": "woman brushing teeth"
         }
       ],
-      "sentence": "_______ is brushing her teeth.",
+      "paragraph": "_______ is brushing her teeth.",
       "answers": [
         "She"
       ]
@@ -2577,7 +2577,7 @@
           "label": "boy feeding fish"
         }
       ],
-      "sentence": "_______ is feeding the fish.",
+      "paragraph": "_______ is feeding the fish.",
       "answers": [
         "He"
       ]
@@ -2590,7 +2590,7 @@
           "label": "girl making bed"
         }
       ],
-      "sentence": "_______ is making her bed.",
+      "paragraph": "_______ is making her bed.",
       "answers": [
         "She"
       ]
@@ -2603,7 +2603,7 @@
           "label": "students raising hands"
         }
       ],
-      "sentence": "_______ are raising their hands.",
+      "paragraph": "_______ are raising their hands.",
       "answers": [
         "They"
       ]
@@ -2618,7 +2618,7 @@
           "label": "girl playing in sand"
         }
       ],
-      "sentence": "You are playing in the sand by _______.",
+      "paragraph": "You are playing in the sand by _______.",
       "answers": [
         "yourself"
       ]
@@ -2631,7 +2631,7 @@
           "label": "boy tying shoes"
         }
       ],
-      "sentence": "He is tying his shoes by _______.",
+      "paragraph": "He is tying his shoes by _______.",
       "answers": [
         "himself"
       ]
@@ -2644,7 +2644,7 @@
           "label": "girl brushing hair"
         }
       ],
-      "sentence": "She is brushing her hair by _______.",
+      "paragraph": "She is brushing her hair by _______.",
       "answers": [
         "herself"
       ]
@@ -2657,7 +2657,7 @@
           "label": "cat cleaning itself"
         }
       ],
-      "sentence": "The cat is cleaning _______.",
+      "paragraph": "The cat is cleaning _______.",
       "answers": [
         "itself"
       ]
@@ -2670,7 +2670,7 @@
           "label": "child washing hands"
         }
       ],
-      "sentence": "I am washing my hands by _______.",
+      "paragraph": "I am washing my hands by _______.",
       "answers": [
         "myself"
       ]
@@ -2683,7 +2683,7 @@
           "label": "kids setting up towels"
         }
       ],
-      "sentence": "We are setting up by _______.",
+      "paragraph": "We are setting up by _______.",
       "answers": [
         "ourselves"
       ]
@@ -2696,7 +2696,7 @@
           "label": "children building sandcastle"
         }
       ],
-      "sentence": "They built the sandcastle by _______.",
+      "paragraph": "They built the sandcastle by _______.",
       "answers": [
         "themselves"
       ]
@@ -2709,7 +2709,7 @@
           "label": "boy getting dressed"
         }
       ],
-      "sentence": "He is getting dressed by _______.",
+      "paragraph": "He is getting dressed by _______.",
       "answers": [
         "himself"
       ]
@@ -2722,7 +2722,7 @@
           "label": "girl making bed"
         }
       ],
-      "sentence": "She made her bed by _______.",
+      "paragraph": "She made her bed by _______.",
       "answers": [
         "herself"
       ]
@@ -2735,7 +2735,7 @@
           "label": "child reading book"
         }
       ],
-      "sentence": "I can read this book by _______.",
+      "paragraph": "I can read this book by _______.",
       "answers": [
         "myself"
       ]
@@ -2748,7 +2748,7 @@
           "label": "dog scratching itself"
         }
       ],
-      "sentence": "The dog is scratching _______.",
+      "paragraph": "The dog is scratching _______.",
       "answers": [
         "itself"
       ]
@@ -2761,7 +2761,7 @@
           "label": "boy feeding himself"
         }
       ],
-      "sentence": "He is feeding _______.",
+      "paragraph": "He is feeding _______.",
       "answers": [
         "himself"
       ]
@@ -2774,7 +2774,7 @@
           "label": "girl applying sunscreen"
         }
       ],
-      "sentence": "She put on sunscreen by _______.",
+      "paragraph": "She put on sunscreen by _______.",
       "answers": [
         "herself"
       ]
@@ -2787,7 +2787,7 @@
           "label": "kids cleaning up"
         }
       ],
-      "sentence": "We cleaned up by _______.",
+      "paragraph": "We cleaned up by _______.",
       "answers": [
         "ourselves"
       ]
@@ -2800,7 +2800,7 @@
           "label": "students finishing project"
         }
       ],
-      "sentence": "They finished the project by _______.",
+      "paragraph": "They finished the project by _______.",
       "answers": [
         "themselves"
       ]
@@ -2813,7 +2813,7 @@
           "label": "child drawing picture"
         }
       ],
-      "sentence": "I drew this picture by _______.",
+      "paragraph": "I drew this picture by _______.",
       "answers": [
         "myself"
       ]
@@ -2826,7 +2826,7 @@
           "label": "boy pouring drink"
         }
       ],
-      "sentence": "He poured the drink by _______.",
+      "paragraph": "He poured the drink by _______.",
       "answers": [
         "himself"
       ]
@@ -2839,7 +2839,7 @@
           "label": "girl zipping jacket"
         }
       ],
-      "sentence": "She zipped her jacket by _______.",
+      "paragraph": "She zipped her jacket by _______.",
       "answers": [
         "herself"
       ]
@@ -2852,7 +2852,7 @@
           "label": "bunny grooming itself"
         }
       ],
-      "sentence": "The bunny is grooming _______.",
+      "paragraph": "The bunny is grooming _______.",
       "answers": [
         "itself"
       ]
@@ -2865,7 +2865,7 @@
           "label": "child packing backpack"
         }
       ],
-      "sentence": "I packed my backpack by _______.",
+      "paragraph": "I packed my backpack by _______.",
       "answers": [
         "myself"
       ]
@@ -2878,7 +2878,7 @@
           "label": "family decorating"
         }
       ],
-      "sentence": "We decorated by _______.",
+      "paragraph": "We decorated by _______.",
       "answers": [
         "ourselves"
       ]
@@ -2891,7 +2891,7 @@
           "label": "friends washing car"
         }
       ],
-      "sentence": "They washed the car by _______.",
+      "paragraph": "They washed the car by _______.",
       "answers": [
         "themselves"
       ]
@@ -2904,7 +2904,7 @@
           "label": "boy applying sunscreen"
         }
       ],
-      "sentence": "He put sunscreen on _______.",
+      "paragraph": "He put sunscreen on _______.",
       "answers": [
         "himself"
       ]
@@ -2917,7 +2917,7 @@
           "label": "girl drying off"
         }
       ],
-      "sentence": "She dried _______ off with a towel.",
+      "paragraph": "She dried _______ off with a towel.",
       "answers": [
         "herself"
       ]
@@ -2930,7 +2930,7 @@
           "label": "child completing puzzle"
         }
       ],
-      "sentence": "I completed the puzzle by _______.",
+      "paragraph": "I completed the puzzle by _______.",
       "answers": [
         "myself"
       ]
@@ -2943,7 +2943,7 @@
           "label": "bird preening itself"
         }
       ],
-      "sentence": "The bird is preening _______.",
+      "paragraph": "The bird is preening _______.",
       "answers": [
         "itself"
       ]
@@ -2956,7 +2956,7 @@
           "label": "boy carrying bag"
         }
       ],
-      "sentence": "He carried the bag by _______.",
+      "paragraph": "He carried the bag by _______.",
       "answers": [
         "himself"
       ]
@@ -2969,7 +2969,7 @@
           "label": "girl combing hair"
         }
       ],
-      "sentence": "She combed her hair by _______.",
+      "paragraph": "She combed her hair by _______.",
       "answers": [
         "herself"
       ]
@@ -2982,7 +2982,7 @@
           "label": "siblings cleaning room"
         }
       ],
-      "sentence": "We cleaned our room by _______.",
+      "paragraph": "We cleaned our room by _______.",
       "answers": [
         "ourselves"
       ]
@@ -2995,7 +2995,7 @@
           "label": "kids collecting shells"
         }
       ],
-      "sentence": "They collected shells by _______.",
+      "paragraph": "They collected shells by _______.",
       "answers": [
         "themselves"
       ]

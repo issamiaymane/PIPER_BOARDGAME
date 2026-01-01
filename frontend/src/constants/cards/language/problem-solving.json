@@ -8,7 +8,7 @@
           "label": "Cup with leaking lid"
         }
       ],
-      "sentence": "You didn't realize the lid wasn't secure on your cup, and it leaked.",
+      "paragraph": "You didn't realize the lid wasn't secure on your cup, and it leaked.",
       "answers": [
         "Secure the lid properly",
         "Clean up the spill",
@@ -24,7 +24,7 @@
           "label": "Spilled water bottle"
         }
       ],
-      "sentence": "You accidentally knocked over your water bottle and it spilled on the floor.",
+      "paragraph": "You accidentally knocked over your water bottle and it spilled on the floor.",
       "answers": [
         "Clean it up with a towel",
         "Get a paper towel and wipe it up",
@@ -40,7 +40,7 @@
           "label": "Wet towel on floor"
         }
       ],
-      "sentence": "You left your wet towel on the floor after your shower.",
+      "paragraph": "You left your wet towel on the floor after your shower.",
       "answers": [
         "Hang it up to dry",
         "Put it on the towel rack",
@@ -56,7 +56,7 @@
           "label": "Cup filled too full"
         }
       ],
-      "sentence": "You poured your drink too full and it might spill.",
+      "paragraph": "You poured your drink too full and it might spill.",
       "answers": [
         "Carefully take a sip to lower the level",
         "Pour some out",
@@ -72,7 +72,7 @@
           "label": "Sand in flip flops"
         }
       ],
-      "sentence": "You have sand stuck in your flip flops and it's uncomfortable.",
+      "paragraph": "You have sand stuck in your flip flops and it's uncomfortable.",
       "answers": [
         "Take them off and shake out the sand",
         "Rinse them in water",
@@ -88,7 +88,7 @@
           "label": "Shirt worn inside out"
         }
       ],
-      "sentence": "You notice your shirt is on inside out.",
+      "paragraph": "You notice your shirt is on inside out.",
       "answers": [
         "Take it off and put it on the right way",
         "Turn it right side out",
@@ -104,7 +104,7 @@
           "label": "Tangled shoelaces"
         }
       ],
-      "sentence": "Your shoelaces are all tangled up in a knot.",
+      "paragraph": "Your shoelaces are all tangled up in a knot.",
       "answers": [
         "Carefully untie the knot",
         "Ask for help to untangle them",
@@ -120,7 +120,7 @@
           "label": "Ripped backpack strap"
         }
       ],
-      "sentence": "The strap on your backpack ripped.",
+      "paragraph": "The strap on your backpack ripped.",
       "answers": [
         "Tell a parent and ask to fix or replace it",
         "Use tape temporarily",
@@ -136,7 +136,7 @@
           "label": "Stuck zipper"
         }
       ],
-      "sentence": "The zipper on your jacket is stuck.",
+      "paragraph": "The zipper on your jacket is stuck.",
       "answers": [
         "Gently wiggle it back and forth",
         "Ask for help",
@@ -152,7 +152,7 @@
           "label": "Mismatched socks"
         }
       ],
-      "sentence": "You can only find one sock that matches.",
+      "paragraph": "You can only find one sock that matches.",
       "answers": [
         "Look for the matching sock",
         "Wear mismatched socks",
@@ -168,7 +168,7 @@
           "label": "Muddy shoes"
         }
       ],
-      "sentence": "You stepped in mud and your shoes are dirty.",
+      "paragraph": "You stepped in mud and your shoes are dirty.",
       "answers": [
         "Take them off outside",
         "Wipe them on a mat",
@@ -184,7 +184,7 @@
           "label": "Stained shirt"
         }
       ],
-      "sentence": "You got a stain on your shirt.",
+      "paragraph": "You got a stain on your shirt.",
       "answers": [
         "Tell an adult and try to clean it",
         "Dab it with water",
@@ -200,7 +200,7 @@
           "label": "Remote with dead batteries"
         }
       ],
-      "sentence": "The remote control isn't working.",
+      "paragraph": "The remote control isn't working.",
       "answers": [
         "Check if it needs new batteries",
         "Try pressing the buttons harder",
@@ -216,7 +216,7 @@
           "label": "Low battery warning"
         }
       ],
-      "sentence": "Your tablet shows a low battery warning.",
+      "paragraph": "Your tablet shows a low battery warning.",
       "answers": [
         "Plug it in to charge",
         "Find the charger",
@@ -232,7 +232,7 @@
           "label": "Broken crayon"
         }
       ],
-      "sentence": "Your favorite crayon broke in half.",
+      "paragraph": "Your favorite crayon broke in half.",
       "answers": [
         "You can still use both pieces",
         "Peel the paper and use it",
@@ -248,7 +248,7 @@
           "label": "Dried out marker"
         }
       ],
-      "sentence": "Your marker dried out and won't write anymore.",
+      "paragraph": "Your marker dried out and won't write anymore.",
       "answers": [
         "Get a new marker",
         "Try a different color",
@@ -264,7 +264,7 @@
           "label": "Tangled headphones"
         }
       ],
-      "sentence": "Your headphones are all tangled up.",
+      "paragraph": "Your headphones are all tangled up.",
       "answers": [
         "Carefully untangle them",
         "Take your time and work out the knots",
@@ -280,7 +280,7 @@
           "label": "Puzzle piece won't fit"
         }
       ],
-      "sentence": "You're working on a puzzle but a piece won't fit where you want it.",
+      "paragraph": "You're working on a puzzle but a piece won't fit where you want it.",
       "answers": [
         "Try it in a different spot",
         "Look for another piece that fits",
@@ -296,7 +296,7 @@
           "label": "Forgot to apply sunscreen"
         }
       ],
-      "sentence": "You're at the beach and forgot to put on sunscreen.",
+      "paragraph": "You're at the beach and forgot to put on sunscreen.",
       "answers": [
         "Put sunscreen on right away",
         "Ask someone for sunscreen",
@@ -312,7 +312,7 @@
           "label": "No toilet paper"
         }
       ],
-      "sentence": "You go to the bathroom and there's no toilet paper left.",
+      "paragraph": "You go to the bathroom and there's no toilet paper left.",
       "answers": [
         "Call for help",
         "Ask someone to bring you some",
@@ -328,7 +328,7 @@
           "label": "Foggy glasses"
         }
       ],
-      "sentence": "Your glasses are all foggy and you can't see.",
+      "paragraph": "Your glasses are all foggy and you can't see.",
       "answers": [
         "Wipe them with a cloth",
         "Clean them with your shirt",
@@ -344,7 +344,7 @@
           "label": "Child with runny nose"
         }
       ],
-      "sentence": "Your nose is running but you don't have a tissue nearby.",
+      "paragraph": "Your nose is running but you don't have a tissue nearby.",
       "answers": [
         "Find a tissue or napkin",
         "Go to the bathroom",
@@ -360,7 +360,7 @@
           "label": "Sand in eyes"
         }
       ],
-      "sentence": "You got sand in your eyes at the beach.",
+      "paragraph": "You got sand in your eyes at the beach.",
       "answers": [
         "Rinse your eyes with clean water",
         "Don't rub them",
@@ -376,7 +376,7 @@
           "label": "Messy drawer"
         }
       ],
-      "sentence": "You can barely open your dresser drawers, and they are a mess!",
+      "paragraph": "You can barely open your dresser drawers, and they are a mess!",
       "answers": [
         "Clean out and organize the drawer",
         "Fold clothes neatly",
@@ -392,7 +392,7 @@
           "label": "Child lost at beach"
         }
       ],
-      "sentence": "You can't find your family at the beach.",
+      "paragraph": "You can't find your family at the beach.",
       "answers": [
         "Stay where you are",
         "Find a lifeguard for help",
@@ -408,7 +408,7 @@
           "label": "Bent book pages"
         }
       ],
-      "sentence": "The pages in your book got bent and wrinkled.",
+      "paragraph": "The pages in your book got bent and wrinkled.",
       "answers": [
         "Carefully flatten them out",
         "Put the book under something heavy",
@@ -424,7 +424,7 @@
           "label": "Door won't open"
         }
       ],
-      "sentence": "You're trying to open a door but it won't budge.",
+      "paragraph": "You're trying to open a door but it won't budge.",
       "answers": [
         "Check if it's locked",
         "Try pushing or pulling",
@@ -440,7 +440,7 @@
           "label": "Cap won't open"
         }
       ],
-      "sentence": "You can't get the cap off your water bottle.",
+      "paragraph": "You can't get the cap off your water bottle.",
       "answers": [
         "Ask someone stronger to help",
         "Try twisting harder",
@@ -456,7 +456,7 @@
           "label": "Seashells falling from bucket"
         }
       ],
-      "sentence": "Your seashells keep falling out of your bucket at the beach.",
+      "paragraph": "Your seashells keep falling out of your bucket at the beach.",
       "answers": [
         "Put fewer shells in at a time",
         "Hold the bucket more carefully",
@@ -472,7 +472,7 @@
           "label": "Too much toothpaste"
         }
       ],
-      "sentence": "You squeezed too much toothpaste onto your toothbrush.",
+      "paragraph": "You squeezed too much toothpaste onto your toothbrush.",
       "answers": [
         "Wipe some off",
         "Use it anyway",

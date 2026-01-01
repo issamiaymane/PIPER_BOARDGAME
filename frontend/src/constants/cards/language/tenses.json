@@ -370,7 +370,7 @@
           "label": "Money and lottery ticket"
         }
       ],
-      "sentence": "She couldn't believe she _______ the lottery.",
+      "paragraph": "She couldn't believe she _______ the lottery.",
       "choices": [
         "won",
         "wined",
@@ -387,7 +387,7 @@
           "label": "Family at the beach"
         }
       ],
-      "sentence": "Yesterday, we _______ to the beach with our family.",
+      "paragraph": "Yesterday, we _______ to the beach with our family.",
       "choices": [
         "goed",
         "went",
@@ -404,7 +404,7 @@
           "label": "Plate of vegetables"
         }
       ],
-      "sentence": "She _______ all of her vegetables at dinner.",
+      "paragraph": "She _______ all of her vegetables at dinner.",
       "choices": [
         "ated",
         "ate",
@@ -421,7 +421,7 @@
           "label": "Boy running"
         }
       ],
-      "sentence": "The boy _______ as fast as he could.",
+      "paragraph": "The boy _______ as fast as he could.",
       "choices": [
         "ran",
         "runed",
@@ -438,7 +438,7 @@
           "label": "Person swimming in pool"
         }
       ],
-      "sentence": "He _______ across the whole pool.",
+      "paragraph": "He _______ across the whole pool.",
       "choices": [
         "swam",
         "swimmed",
@@ -455,7 +455,7 @@
           "label": "Writing a letter"
         }
       ],
-      "sentence": "She _______ a letter to her grandmother.",
+      "paragraph": "She _______ a letter to her grandmother.",
       "choices": [
         "writ",
         "writed",
@@ -472,7 +472,7 @@
           "label": "Person drawing a picture"
         }
       ],
-      "sentence": "The artist _______ a beautiful picture.",
+      "paragraph": "The artist _______ a beautiful picture.",
       "choices": [
         "drew",
         "drawed",
@@ -489,7 +489,7 @@
           "label": "Baby sleeping"
         }
       ],
-      "sentence": "The baby _______ through the whole night.",
+      "paragraph": "The baby _______ through the whole night.",
       "choices": [
         "slepted",
         "slept",
@@ -506,7 +506,7 @@
           "label": "Glasses of water"
         }
       ],
-      "sentence": "He was so thirsty that he _______ three glasses of water.",
+      "paragraph": "He was so thirsty that he _______ three glasses of water.",
       "choices": [
         "dranked",
         "drunk",
@@ -523,7 +523,7 @@
           "label": "Children building sandcastle"
         }
       ],
-      "sentence": "The children _______ a giant sandcastle at the beach.",
+      "paragraph": "The children _______ a giant sandcastle at the beach.",
       "choices": [
         "maken",
         "maded",
@@ -540,7 +540,7 @@
           "label": "Broken toy"
         }
       ],
-      "sentence": "He accidentally _______ his favorite toy.",
+      "paragraph": "He accidentally _______ his favorite toy.",
       "choices": [
         "breaked",
         "broke",
@@ -557,7 +557,7 @@
           "label": "Dolphins in ocean"
         }
       ],
-      "sentence": "We _______ dolphins jumping in the ocean!",
+      "paragraph": "We _______ dolphins jumping in the ocean!",
       "choices": [
         "seen",
         "saw",
@@ -574,7 +574,7 @@
           "label": "Taking photos with camera"
         }
       ],
-      "sentence": "She _______ a picture of the sunset.",
+      "paragraph": "She _______ a picture of the sunset.",
       "choices": [
         "tooked",
         "taken",
@@ -591,7 +591,7 @@
           "label": "Children sharing"
         }
       ],
-      "sentence": "Mom _______ me an extra orange for my lunch.",
+      "paragraph": "Mom _______ me an extra orange for my lunch.",
       "choices": [
         "gived",
         "gaved",
@@ -608,7 +608,7 @@
           "label": "Catching a ball"
         }
       ],
-      "sentence": "The dog _______ the ball in his mouth.",
+      "paragraph": "The dog _______ the ball in his mouth.",
       "choices": [
         "catcht",
         "caughted",
@@ -625,7 +625,7 @@
           "label": "Throwing a ball"
         }
       ],
-      "sentence": "He _______ the ball to his friend.",
+      "paragraph": "He _______ the ball to his friend.",
       "choices": [
         "threw",
         "throwed",
@@ -642,7 +642,7 @@
           "label": "Collecting seashells"
         }
       ],
-      "sentence": "She _______ beautiful seashells on the beach.",
+      "paragraph": "She _______ beautiful seashells on the beach.",
       "choices": [
         "finded",
         "found",
@@ -659,7 +659,7 @@
           "label": "People talking"
         }
       ],
-      "sentence": "He _______ his friend a funny story.",
+      "paragraph": "He _______ his friend a funny story.",
       "choices": [
         "told",
         "tolded",
@@ -676,7 +676,7 @@
           "label": "Beach bag"
         }
       ],
-      "sentence": "She _______ sunscreen to the beach.",
+      "paragraph": "She _______ sunscreen to the beach.",
       "choices": [
         "broughted",
         "brought",
@@ -693,7 +693,7 @@
           "label": "Person shopping"
         }
       ],
-      "sentence": "Dad _______ new towels for the pool.",
+      "paragraph": "Dad _______ new towels for the pool.",
       "choices": [
         "bought",
         "boughted",
@@ -710,7 +710,7 @@
           "label": "Person thinking"
         }
       ],
-      "sentence": "She _______ about what to draw.",
+      "paragraph": "She _______ about what to draw.",
       "choices": [
         "thought",
         "thinked",
@@ -727,7 +727,7 @@
           "label": "Teacher"
         }
       ],
-      "sentence": "The instructor _______ the class how to swim.",
+      "paragraph": "The instructor _______ the class how to swim.",
       "choices": [
         "teached",
         "teachted",
@@ -744,7 +744,7 @@
           "label": "Sitting on bench"
         }
       ],
-      "sentence": "We _______ on the bench and watched the waves.",
+      "paragraph": "We _______ on the bench and watched the waves.",
       "choices": [
         "sitten",
         "sat",
@@ -761,7 +761,7 @@
           "label": "Person singing"
         }
       ],
-      "sentence": "She _______ her favorite song in the car.",
+      "paragraph": "She _______ her favorite song in the car.",
       "choices": [
         "sanged",
         "singed",
@@ -778,7 +778,7 @@
           "label": "Building with blocks"
         }
       ],
-      "sentence": "The children _______ a tall tower with blocks.",
+      "paragraph": "The children _______ a tall tower with blocks.",
       "choices": [
         "builded",
         "builtted",
@@ -795,7 +795,7 @@
           "label": "Leaves falling"
         }
       ],
-      "sentence": "The leaves _______ from the trees.",
+      "paragraph": "The leaves _______ from the trees.",
       "choices": [
         "fell",
         "falled",
@@ -812,7 +812,7 @@
           "label": "Growing plant"
         }
       ],
-      "sentence": "The flowers _______ so tall this summer.",
+      "paragraph": "The flowers _______ so tall this summer.",
       "choices": [
         "grown",
         "grew",
@@ -829,7 +829,7 @@
           "label": "Student studying"
         }
       ],
-      "sentence": "She _______ the answer to every question.",
+      "paragraph": "She _______ the answer to every question.",
       "choices": [
         "knew",
         "knewn",
@@ -846,7 +846,7 @@
           "label": "Happy person"
         }
       ],
-      "sentence": "He _______ so happy when he finished.",
+      "paragraph": "He _______ so happy when he finished.",
       "choices": [
         "felen",
         "feeled",
@@ -863,7 +863,7 @@
           "label": "Wind blowing"
         }
       ],
-      "sentence": "The wind _______ sand everywhere at the beach.",
+      "paragraph": "The wind _______ sand everywhere at the beach.",
       "choices": [
         "blewd",
         "blowed",
@@ -1364,7 +1364,7 @@
           "label": "Cellphone"
         }
       ],
-      "sentence": "Malik _______ his mother for a cell phone.",
+      "paragraph": "Malik _______ his mother for a cell phone.",
       "choices": [
         "Asked",
         "Asks",
@@ -1380,7 +1380,7 @@
           "label": "Walking on beach"
         }
       ],
-      "sentence": "She _______ along the beach and collected seashells.",
+      "paragraph": "She _______ along the beach and collected seashells.",
       "choices": [
         "Walked",
         "Walk",
@@ -1396,7 +1396,7 @@
           "label": "Playing soccer"
         }
       ],
-      "sentence": "The kids _______ soccer at the park yesterday.",
+      "paragraph": "The kids _______ soccer at the park yesterday.",
       "choices": [
         "Played",
         "Play",
@@ -1412,7 +1412,7 @@
           "label": "Jumping in waves"
         }
       ],
-      "sentence": "He _______ over the waves at the beach.",
+      "paragraph": "He _______ over the waves at the beach.",
       "choices": [
         "Jump",
         "Jumps",
@@ -1428,7 +1428,7 @@
           "label": "Watching TV"
         }
       ],
-      "sentence": "We _______ a movie together last night.",
+      "paragraph": "We _______ a movie together last night.",
       "choices": [
         "Watched",
         "Watches",
@@ -1444,7 +1444,7 @@
           "label": "Washing hands"
         }
       ],
-      "sentence": "She _______ her hands before eating lunch.",
+      "paragraph": "She _______ her hands before eating lunch.",
       "choices": [
         "Washs",
         "Washed",
@@ -1460,7 +1460,7 @@
           "label": "Brushing teeth"
         }
       ],
-      "sentence": "I _______ my teeth before going to bed.",
+      "paragraph": "I _______ my teeth before going to bed.",
       "choices": [
         "Brush",
         "Brushed",
@@ -1476,7 +1476,7 @@
           "label": "Cleaning room"
         }
       ],
-      "sentence": "Mom _______ the whole house yesterday.",
+      "paragraph": "Mom _______ the whole house yesterday.",
       "choices": [
         "Clean",
         "Cleaned",
@@ -1492,7 +1492,7 @@
           "label": "Helping someone"
         }
       ],
-      "sentence": "Emma _______ her dad with the groceries.",
+      "paragraph": "Emma _______ her dad with the groceries.",
       "choices": [
         "Helps",
         "Help",
@@ -1508,7 +1508,7 @@
           "label": "People talking"
         }
       ],
-      "sentence": "They _______ on the phone for an hour.",
+      "paragraph": "They _______ on the phone for an hour.",
       "choices": [
         "Talks",
         "Talked",
@@ -1524,7 +1524,7 @@
           "label": "Phone call"
         }
       ],
-      "sentence": "He _______ his grandmother to say hello.",
+      "paragraph": "He _______ his grandmother to say hello.",
       "choices": [
         "Calls",
         "Call",
@@ -1540,7 +1540,7 @@
           "label": "Listening with headphones"
         }
       ],
-      "sentence": "She _______ to music while doing homework.",
+      "paragraph": "She _______ to music while doing homework.",
       "choices": [
         "Listen",
         "Listens",
@@ -1556,7 +1556,7 @@
           "label": "Cooking food"
         }
       ],
-      "sentence": "Dad _______ dinner for the whole family.",
+      "paragraph": "Dad _______ dinner for the whole family.",
       "choices": [
         "Cooks",
         "Cook",
@@ -1572,7 +1572,7 @@
           "label": "Painting a picture"
         }
       ],
-      "sentence": "The artist _______ a beautiful picture of the ocean.",
+      "paragraph": "The artist _______ a beautiful picture of the ocean.",
       "choices": [
         "Paint",
         "Painted",
@@ -1588,7 +1588,7 @@
           "label": "Person waiting"
         }
       ],
-      "sentence": "We _______ in line for ice cream.",
+      "paragraph": "We _______ in line for ice cream.",
       "choices": [
         "Wait",
         "Waited",
@@ -1604,7 +1604,7 @@
           "label": "Pointing"
         }
       ],
-      "sentence": "She _______ to go to the beach, so her parents took her.",
+      "paragraph": "She _______ to go to the beach, so her parents took her.",
       "choices": [
         "Want",
         "Wants",
@@ -1620,7 +1620,7 @@
           "label": "Drinking from water bottle"
         }
       ],
-      "sentence": "He _______ more water after running.",
+      "paragraph": "He _______ more water after running.",
       "choices": [
         "Needed",
         "Need",
@@ -1636,7 +1636,7 @@
           "label": "Starting line of race"
         }
       ],
-      "sentence": "The race _______ at exactly 9 o'clock.",
+      "paragraph": "The race _______ at exactly 9 o'clock.",
       "choices": [
         "Starts",
         "Started",
@@ -1652,7 +1652,7 @@
           "label": "Putting together puzzle"
         }
       ],
-      "sentence": "She _______ her homework before dinner.",
+      "paragraph": "She _______ her homework before dinner.",
       "choices": [
         "Finished",
         "Finish",
@@ -1668,7 +1668,7 @@
           "label": "Opening a door"
         }
       ],
-      "sentence": "Dad _______ the door and let the dog outside.",
+      "paragraph": "Dad _______ the door and let the dog outside.",
       "choices": [
         "Open",
         "Opened",
@@ -1684,7 +1684,7 @@
           "label": "Closed window"
         }
       ],
-      "sentence": "Mom _______ the window when it started to rain.",
+      "paragraph": "Mom _______ the window when it started to rain.",
       "choices": [
         "Closes",
         "Close",
@@ -1700,7 +1700,7 @@
           "label": "Ice cream"
         }
       ],
-      "sentence": "He _______ the chocolate ice cream the best.",
+      "paragraph": "He _______ the chocolate ice cream the best.",
       "choices": [
         "Like",
         "Likes",
@@ -1716,7 +1716,7 @@
           "label": "Puppy"
         }
       ],
-      "sentence": "She _______ playing with her puppy every day.",
+      "paragraph": "She _______ playing with her puppy every day.",
       "choices": [
         "Loved",
         "Loves",
@@ -1732,7 +1732,7 @@
           "label": "Sharing snacks"
         }
       ],
-      "sentence": "The children _______ their snacks at lunch.",
+      "paragraph": "The children _______ their snacks at lunch.",
       "choices": [
         "Shared",
         "Share",
@@ -1748,7 +1748,7 @@
           "label": "Packing suitcase"
         }
       ],
-      "sentence": "We _______ our bags for the beach trip.",
+      "paragraph": "We _______ our bags for the beach trip.",
       "choices": [
         "Packed",
         "Pack",
@@ -1764,7 +1764,7 @@
           "label": "Splashing in water"
         }
       ],
-      "sentence": "The kids _______ in the pool all afternoon.",
+      "paragraph": "The kids _______ in the pool all afternoon.",
       "choices": [
         "Splashed",
         "Splashs",
@@ -1780,7 +1780,7 @@
           "label": "Collecting seashells"
         }
       ],
-      "sentence": "She _______ many seashells at the beach.",
+      "paragraph": "She _______ many seashells at the beach.",
       "choices": [
         "Collects",
         "Collect",
@@ -1796,7 +1796,7 @@
           "label": "Visiting grandparents"
         }
       ],
-      "sentence": "We _______ our grandparents last weekend.",
+      "paragraph": "We _______ our grandparents last weekend.",
       "choices": [
         "Visits",
         "Visit",
@@ -1812,7 +1812,7 @@
           "label": "Playing piano"
         }
       ],
-      "sentence": "He _______ piano for one hour every day.",
+      "paragraph": "He _______ piano for one hour every day.",
       "choices": [
         "Practiced",
         "Practices",
@@ -1828,7 +1828,7 @@
           "label": "Student studying"
         }
       ],
-      "sentence": "She _______ how to swim last summer.",
+      "paragraph": "She _______ how to swim last summer.",
       "choices": [
         "Learned",
         "Learns",
