@@ -26,9 +26,11 @@ body.theme-winter {
 
 /* ==========================================================================
    THEME COLOR VARIABLES
+   Applied to both html (for early loading) and body
    ========================================================================== */
 
 /* Spring Theme (Pink/Cherry Blossom) */
+html.theme-spring,
 body.theme-spring {
     --color-primary: #FF69B4;
     --color-primary-dark: #C71585;
@@ -52,6 +54,7 @@ body.theme-spring {
 }
 
 /* Summer Theme (Yellow/Gold/Sunny) */
+html.theme-summer,
 body.theme-summer {
     --color-primary: #FFD700;
     --color-primary-dark: #FFA500;
@@ -75,6 +78,7 @@ body.theme-summer {
 }
 
 /* Autumn Theme (Orange/Fall) */
+html.theme-autumn,
 body.theme-autumn {
     --color-primary: #FF9800;
     --color-primary-dark: #E65100;
@@ -98,6 +102,7 @@ body.theme-autumn {
 }
 
 /* Winter Theme (Blue/Snow/Ice) */
+html.theme-winter,
 body.theme-winter {
     --color-primary: #87CEEB;
     --color-primary-dark: #5FA8D3;

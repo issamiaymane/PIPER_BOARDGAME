@@ -5,8 +5,8 @@
 
 /// <reference types="vite/client" />
 
-import { HANDLERS, CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
-import { renderCard, allCardData, languageData, articulationData } from '../card-browser/index';
+import { CATEGORY_HANDLER_MAP } from '@root-shared/categories';
+import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../card-browser/index';
 import { hideLoadingScreen } from '../../shared/components/LoadingScreen';
 
 // Types
@@ -329,8 +329,19 @@ function startGame() {
 function init() {
     console.log('[Boardgame] Init...');
 
-    // Apply initial theme
+    // Load saved theme from localStorage
+    const savedTheme = localStorage.getItem('piper-theme');
+    if (savedTheme) {
+        state.selectedTheme = savedTheme;
+    }
+
+    // Apply theme to body (html already has it from inline script)
     document.body.className = `theme-${state.selectedTheme}`;
+
+    // Pre-select the saved theme button
+    document.querySelectorAll('.theme-option').forEach(o => {
+        o.classList.toggle('selected', (o as HTMLElement).dataset.theme === state.selectedTheme);
+    });
 
     playOverlay = document.getElementById('playOverlay')!
     playButton = document.getElementById('playButton')!;
@@ -378,6 +389,8 @@ function init() {
             target.classList.add('selected');
             state.selectedTheme = target.dataset.theme || 'autumn';
             document.body.className = `theme-${state.selectedTheme}`;
+            document.documentElement.className = `theme-${state.selectedTheme}`;
+            localStorage.setItem('piper-theme', state.selectedTheme);
             updateThemeDecorations();
             console.log('[Game] Selected theme:', state.selectedTheme);
         });

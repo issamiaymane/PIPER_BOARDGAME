@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #FFF9E6 0%, #FFE4B5 50%, #FFDAB9 100%);
+    background: linear-gradient(180deg, var(--color-cream-light, #FFF9E6) 0%, var(--bg-warm, #FFE4B5) 50%, var(--color-cream, #FFDAB9) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,14 +26,14 @@
 /* Loading Content */
 .loading-content {
     text-align: center;
-    color: #5D4037;
+    color: var(--color-primary-dark, #5D4037);
 }
 
 .loading-snowflake {
     font-size: 80px;
     animation: loadingSnowflakeSpin 3s linear infinite;
     margin-bottom: 20px;
-    text-shadow: 0 0 20px rgba(255, 152, 0, 0.6);
+    text-shadow: 0 0 20px var(--shadow-color-subtle, rgba(255, 152, 0, 0.6));
 }
 
 @keyframes loadingSnowflakeSpin {

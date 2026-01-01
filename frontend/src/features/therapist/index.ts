@@ -4,10 +4,14 @@
  */
 
 import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../../services/api';
-import { CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
+import { CATEGORY_HANDLER_MAP, LANGUAGE_CATEGORIES, ARTICULATION_CATEGORIES } from '@root-shared/categories';
 import { hideLoadingScreen } from '../../shared/components/LoadingScreen';
 
-// Organized category groups for goal type selection
+/**
+ * Organized category groups for goal type selection UI
+ * Categories are from shared/categories.ts, organized with UI group headers (---)
+ * When adding new categories, add to shared/categories.ts first, then organize here
+ */
 const ORGANIZED_LANGUAGE_CATEGORIES = [
   '---Vocabulary & Naming',
   'Vocabulary - Basic Vocab',
@@ -181,6 +185,10 @@ const ORGANIZED_LANGUAGE_CATEGORIES = [
   'Vocabulary - Food Real Images',
 ];
 
+/**
+ * Organized articulation categories for goal type selection UI
+ * Categories are from shared/categories.ts → ARTICULATION_CATEGORIES, organized with UI group headers
+ */
 const ORGANIZED_ARTICULATION_CATEGORIES = [
   '---Consonant Sounds',
   'B Sound',
@@ -1613,8 +1621,14 @@ function initThemeSelector(): void {
   const themeSelectorPanel = document.getElementById('themeSelectorPanel');
   const themeButtons = document.querySelectorAll('.theme-btn');
 
-  let currentTheme = 'autumn';
-  document.body.classList.add('theme-autumn');
+  // Load saved theme from localStorage
+  let currentTheme = localStorage.getItem('piper-theme') || 'autumn';
+  document.body.classList.add(`theme-${currentTheme}`);
+
+  // Pre-select the saved theme button
+  themeButtons.forEach(btn => {
+    btn.classList.toggle('active', (btn as HTMLElement).dataset.theme === currentTheme);
+  });
 
   // Toggle theme panel
   themeToggleBtn?.addEventListener('click', () => {
@@ -1645,6 +1659,9 @@ function initThemeSelector(): void {
     });
   }
 
+  // Initialize decorations with saved theme
+  updateThemeDecorations(currentTheme);
+
   // Theme button click handlers
   themeButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -1652,8 +1669,11 @@ function initThemeSelector(): void {
 
       // Remove previous theme class
       document.body.classList.remove(`theme-${currentTheme}`);
+      document.documentElement.classList.remove(`theme-${currentTheme}`);
       currentTheme = theme;
       document.body.classList.add(`theme-${theme}`);
+      document.documentElement.classList.add(`theme-${theme}`);
+      localStorage.setItem('piper-theme', theme);
 
       // Update active state
       themeButtons.forEach(b => b.classList.remove('active'));

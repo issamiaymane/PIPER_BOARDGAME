@@ -5,7 +5,7 @@
 
 /// <reference types="vite/client" />
 
-import { HANDLERS, CATEGORY_HANDLER_MAP } from '../../constants/handler-map';
+import { CATEGORY_HANDLER_MAP, type HandlerType } from '@root-shared/categories';
 import { hideLoadingScreen } from '../../shared/components/LoadingScreen/LoadingScreen';
 
 // Type definitions
@@ -15,6 +15,25 @@ interface CardData {
 
 type CategoryData = Record<string, CardData[]>;
 
+// Handler configuration with display info (UI-specific)
+export interface HandlerConfig {
+    name: string;
+    icon: string;
+    color: string;
+}
+
+// Handler configuration with colors and icons
+export const HANDLERS: Record<HandlerType, HandlerConfig> = {
+    'single-answer': { name: 'Single Answer', icon: '💬', color: '#2196F3' },
+    'multiple-answers': { name: 'Multiple Answers', icon: '📖', color: '#673AB7' },
+    'multiple-choice': { name: 'Multiple Choice', icon: '🔘', color: '#9C27B0' },
+    'image-selection': { name: 'Image Selection', icon: '🖼️', color: '#00BCD4' },
+    'sequencing': { name: 'Sequencing', icon: '📊', color: '#795548' },
+    'building': { name: 'Building', icon: '🧩', color: '#8BC34A' },
+    'conditional': { name: 'Conditional', icon: '❓', color: '#00897B' },
+    'standard': { name: 'Standard', icon: '📋', color: '#9E9E9E' }
+};
+
 // Source file mapping (category name -> filename)
 const categorySourceFiles: Record<string, string> = {};
 
@@ -23,8 +42,8 @@ const languageFiles: Set<string> = new Set();
 const articulationFiles: Set<string> = new Set();
 
 // Import all JSON files using Vite's glob import
-const languageModules = import.meta.glob('../../constants/cards/language/*.json', { eager: true });
-const articulationModules = import.meta.glob('../../constants/cards/articulation/*.json', { eager: true });
+const languageModules = import.meta.glob('@root-shared/cards/language/*.json', { eager: true });
+const articulationModules = import.meta.glob('@root-shared/cards/articulation/*.json', { eager: true });
 
 // Build the data object from imported JSON files
 function loadJsonModules(modules: Record<string, unknown>, fileSet: Set<string>): CategoryData {
@@ -936,8 +955,14 @@ function initThemeSelector(): void {
     const themeSelectorPanel = document.getElementById('themeSelectorPanel');
     const themeButtons = document.querySelectorAll('.theme-btn');
 
-    let currentTheme = 'autumn';
-    document.body.classList.add('theme-autumn');
+    // Load saved theme from localStorage
+    let currentTheme = localStorage.getItem('piper-theme') || 'autumn';
+    document.body.classList.add(`theme-${currentTheme}`);
+
+    // Pre-select the saved theme button
+    themeButtons.forEach(btn => {
+        btn.classList.toggle('active', (btn as HTMLElement).dataset.theme === currentTheme);
+    });
 
     // Update theme decorations
     function updateThemeDecorations(theme: string) {
@@ -979,9 +1004,12 @@ function initThemeSelector(): void {
             // Remove previous theme class
             if (currentTheme) {
                 document.body.classList.remove(`theme-${currentTheme}`);
+                document.documentElement.classList.remove(`theme-${currentTheme}`);
             }
             currentTheme = theme;
             document.body.classList.add(`theme-${theme}`);
+            document.documentElement.classList.add(`theme-${theme}`);
+            localStorage.setItem('piper-theme', theme);
 
             // Update active state
             themeButtons.forEach(b => b.classList.remove('active'));
