@@ -14,8 +14,10 @@ RUN apt-get update && apt-get install -y \
 # Set working directory
 WORKDIR /app
 
-# Cache bust - increment to force rebuild: v3
-ARG CACHEBUST=3
+# Cache bust - increment to force rebuild: v4
+ARG CACHEBUST=4
+# Force cache invalidation by using the ARG
+RUN echo "Cache bust: $CACHEBUST"
 
 # Copy shared code FIRST (needed for postinstall symlink)
 COPY shared/ ./shared/
