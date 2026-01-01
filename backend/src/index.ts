@@ -1,10 +1,14 @@
 import express from 'express';
 import cors from 'cors';
+import path from 'path';
 import { config } from './config/index.js';
 import { initializeDatabase, closeDatabase } from './services/database.js';
 import { logger } from './utils/logger.js';
 import routes from './api/routes/index.js';
 import { globalErrorHandler, notFoundHandler } from './api/middleware/errorHandler.js';
+
+// Frontend path (relative to backend in Docker: /app/backend -> /app/frontend)
+const FRONTEND_PATH = path.join(process.cwd(), '..', 'frontend');
 
 const app = express();
 
@@ -24,6 +28,20 @@ app.get('/api/health', (_req, res) => {
 
 // API Routes
 app.use('/api/therapist', routes);
+
+// Serve static frontend files (in production)
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(FRONTEND_PATH));
+
+  // Serve index.html for root and any non-API routes
+  app.get('*', (req, res, next) => {
+    // Skip API routes
+    if (req.path.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(FRONTEND_PATH, req.path.endsWith('.html') ? req.path : 'index.html'));
+  });
+}
 
 // 404 handler (after all routes)
 app.use(notFoundHandler);
