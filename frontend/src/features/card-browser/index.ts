@@ -244,9 +244,12 @@ function normalizeImages(images: Array<string | { image?: string; label?: string
     });
 }
 
+const DEFAULT_IMAGE = '/images/default.png';
+
 function renderSingleImage(img: ImageItem): string {
+    const imageSrc = img.image || DEFAULT_IMAGE;
     return `<div class="preview-image">
-        <img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='/images/default.png'; this.onerror=null;">
+        <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
         ${img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
     </div>`;
 }
@@ -254,8 +257,9 @@ function renderSingleImage(img: ImageItem): string {
 function renderImagesGrid(images: ImageItem[], showLabels = true): string {
     let html = `<div class="preview-images-grid">`;
     images.forEach((img, index) => {
+        const imageSrc = img.image || DEFAULT_IMAGE;
         html += `<div class="preview-image" data-index="${index}">
-            ${img.image ? `<img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='../assets/images/default.png'; this.onerror=null;">` : ''}
+            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
             ${showLabels && img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
         </div>`;
     });
@@ -372,9 +376,10 @@ function renderImageSelection(card: CardData): string {
 
         html += `<div class="preview-image-selection-grid">`;
         images.forEach((img, index) => {
+            const imageSrc = img.image || DEFAULT_IMAGE;
             html += `<div class="preview-image-selection-item selectable-image" data-index="${index}">
                 <div class="image-selection-number">${index + 1}</div>
-                ${img.image ? `<img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='/images/default.png'">` : ''}
+                <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
                 ${hasTextLabels ? `<div class="image-selection-label">${escapeHtml(img.label)}</div>` : ''}
             </div>`;
         });
@@ -399,13 +404,15 @@ function renderSequencing(card: CardData): string {
         html += `<div class="image-ordering-container">
             <div class="sequence-build-area" data-placeholder="Click images in order..."></div>
             <div class="sequence-image-buttons">
-                ${images.map((img, idx) => `
+                ${images.map((img, idx) => {
+                    const imageSrc = img.image || DEFAULT_IMAGE;
+                    return `
                     <button class="sequence-image-btn" data-index="${idx}">
                         <span class="seq-img-number">${idx + 1}</span>
-                        ${img.image ? `<img src="${escapeHtml(img.image)}" alt="${escapeHtml(img.label)}" onerror="this.src='/images/default.png'">` : ''}
+                        <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
                         ${img.label ? `<span class="seq-img-label">${escapeHtml(img.label)}</span>` : ''}
                     </button>
-                `).join('')}
+                `}).join('')}
             </div>
             <button class="clear-sequence-btn">Clear</button>
         </div>`;

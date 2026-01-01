@@ -719,7 +719,7 @@ body {
     font-size: 1.8rem;
     color: var(--color-primary-dark);
     text-align: center;
-    background: var(--color-cream-light);
+    background: linear-gradient(180deg, var(--color-cream-light) 0%, var(--color-cream) 100%);
     padding: 0.75rem var(--spacing-md);
     border-radius: 16px;
     border: 3px solid var(--color-primary);
@@ -933,28 +933,28 @@ body {
 }
 
 .preview-question-item {
-    background: linear-gradient(180deg, var(--color-info-bg-light) 0%, var(--color-info-bg) 100%);
+    background: linear-gradient(180deg, var(--color-cream-light) 0%, var(--color-cream) 100%);
     padding: var(--spacing-md) 1.25rem;
     border-radius: var(--radius-lg);
-    border: 3px solid var(--color-info-lighter);
-    color: var(--color-info-dark);
+    border: 3px solid var(--color-border);
+    color: var(--color-primary-dark);
 }
 
 .preview-question-item strong {
-    color: var(--color-info-darker);
+    color: var(--color-primary-dark);
 }
 
 .preview-valid-answers,
 .preview-keywords {
     margin-top: var(--spacing-sm);
     font-size: 0.9rem;
-    color: #1976D2;
+    color: var(--color-primary-dark);
     padding-left: var(--spacing-md);
 }
 
 .preview-valid-answers em,
 .preview-keywords em {
-    color: var(--color-info-darker);
+    color: var(--color-primary-dark);
 }
 
 
@@ -1157,7 +1157,6 @@ body {
     color: var(--color-success-dark);
     font-weight: 700;
 }
-
 
 /* --------------------------------------------------------------------------
    6.5 SEQUENCING HANDLER
