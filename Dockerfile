@@ -46,6 +46,9 @@ WORKDIR /app/frontend
 RUN npm ci
 COPY frontend/ ./
 
+# Debug: verify shared folder exists
+RUN ls -la /app/shared/
+
 # Build frontend (skip tsc type check, Vite handles bundling with its own alias resolution)
 RUN npx vite build
 

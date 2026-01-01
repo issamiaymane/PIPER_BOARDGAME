@@ -38,6 +38,7 @@ export default defineConfig({
   },
 
   resolve: {
+    extensions: ['.ts', '.js', '.json'],
     alias: {
       '@': resolve(__dirname, 'src'),
       '@features': resolve(__dirname, 'src/features'),
