@@ -227,18 +227,10 @@ function renderQuestion(question: string): string {
 }
 
 function renderContextText(card: CardData): string {
-    let html = '';
-    if (card.story) {
-        html += `<div class="preview-story">${escapeHtml(card.story as string)}</div>`;
-    }
     if (card.paragraph) {
-        html += `<div class="preview-paragraph">${escapeHtml(card.paragraph as string)}</div>`;
+        return `<div class="preview-paragraph">${card.paragraph as string}</div>`;
     }
-    if (card.sentence) {
-        const sentence = (card.sentence as string).replace(/_+/g, '<span class="quiz-blank">______</span>');
-        html += `<div class="preview-sentence">${sentence}</div>`;
-    }
-    return html;
+    return '';
 }
 
 type ImageItem = { image: string; label: string };
