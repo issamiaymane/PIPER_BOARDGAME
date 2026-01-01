@@ -39,9 +39,13 @@ RUN npm run build
 # Remove dev dependencies to reduce image size
 RUN npm prune --production
 
-# Copy frontend files
+# Build frontend
 WORKDIR /app
-COPY frontend/ ./frontend/
+COPY frontend/package*.json ./frontend/
+WORKDIR /app/frontend
+RUN npm ci
+COPY frontend/ ./
+RUN npm run build
 
 # Set working directory to backend for runtime
 WORKDIR /app/backend

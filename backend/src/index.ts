@@ -7,8 +7,8 @@ import { logger } from './utils/logger.js';
 import routes from './api/routes/index.js';
 import { globalErrorHandler, notFoundHandler } from './api/middleware/errorHandler.js';
 
-// Frontend path (relative to backend in Docker: /app/backend -> /app/frontend)
-const FRONTEND_PATH = path.join(process.cwd(), '..', 'frontend');
+// Frontend path (relative to backend in Docker: /app/backend -> /app/frontend/dist)
+const FRONTEND_PATH = path.join(process.cwd(), '..', 'frontend', 'dist');
 
 const app = express();
 
