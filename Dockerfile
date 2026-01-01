@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y \
 # Set working directory
 WORKDIR /app
 
+# Copy shared code FIRST (needed for postinstall symlink)
+COPY shared/ ./shared/
+
 # Copy package files
 COPY backend/package*.json ./backend/
 
@@ -27,12 +30,7 @@ COPY backend/requirements.txt ./
 # Install Python dependencies
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Copy shared code
-WORKDIR /app
-COPY shared/ ./shared/
-
 # Copy backend source code
-WORKDIR /app/backend
 COPY backend/ ./
 
 # Build TypeScript
