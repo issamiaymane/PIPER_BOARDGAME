@@ -4,7 +4,7 @@
       "question": "Where is the child playing?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/child-at-beach.png",
+          "image": "/images/cards/129_wh_questions_mixed/child-at-beach.png",
           "label": "child at beach"
         }
       ],
@@ -18,7 +18,7 @@
       "question": "What is the family doing?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/family-eating.png",
+          "image": "/images/cards/129_wh_questions_mixed/family-eating.png",
           "label": "family eating"
         }
       ],
@@ -32,7 +32,7 @@
       "question": "Who is holding the surfboard?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/boy-surfboard.png",
+          "image": "/images/cards/129_wh_questions_mixed/boy-surfboard.png",
           "label": "boy surfboard"
         }
       ],
@@ -47,7 +47,7 @@
       "question": "What time is it?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/clock-3.png",
+          "image": "/images/cards/129_wh_questions_mixed/clock-3.png",
           "label": "clock 3"
         }
       ],
@@ -61,7 +61,7 @@
       "question": "Why is she crying?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/girl-crying.png",
+          "image": "/images/cards/129_wh_questions_mixed/girl-crying.png",
           "label": "girl crying"
         }
       ],
@@ -76,7 +76,7 @@
       "question": "When do you brush your teeth?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/brushing-teeth.png",
+          "image": "/images/cards/129_wh_questions_mixed/brushing-teeth.png",
           "label": "brushing teeth"
         }
       ],
@@ -91,7 +91,7 @@
       "question": "Where is the dog running?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/dog-running-park.png",
+          "image": "/images/cards/129_wh_questions_mixed/dog-running-park.png",
           "label": "dog running park"
         }
       ],
@@ -105,7 +105,7 @@
       "question": "What is she making?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/woman-cooking.png",
+          "image": "/images/cards/129_wh_questions_mixed/woman-cooking.png",
           "label": "woman cooking"
         }
       ],
@@ -120,7 +120,7 @@
       "question": "Who watches the swimmers at the beach?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/lifeguard-beach.png",
+          "image": "/images/cards/129_wh_questions_mixed/lifeguard-beach.png",
           "label": "lifeguard beach"
         }
       ],
@@ -134,7 +134,7 @@
       "question": "Why do we wear sunscreen?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/sunscreen.png",
+          "image": "/images/cards/129_wh_questions_mixed/sunscreen.png",
           "label": "sunscreen"
         }
       ],
@@ -149,7 +149,7 @@
       "question": "Where can you find swings?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/playground-swings.png",
+          "image": "/images/cards/129_wh_questions_mixed/playground-swings.png",
           "label": "playground swings"
         }
       ],
@@ -163,7 +163,7 @@
       "question": "What is he drinking?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/boy-drinking.png",
+          "image": "/images/cards/129_wh_questions_mixed/boy-drinking.png",
           "label": "boy drinking"
         }
       ],
@@ -178,7 +178,7 @@
       "question": "Who brings the mail?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/mail-carrier.png",
+          "image": "/images/cards/129_wh_questions_mixed/mail-carrier.png",
           "label": "mail carrier"
         }
       ],
@@ -193,7 +193,7 @@
       "question": "When do you wake up?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/waking-up.png",
+          "image": "/images/cards/129_wh_questions_mixed/waking-up.png",
           "label": "waking up"
         }
       ],
@@ -207,7 +207,7 @@
       "question": "Why is she sad?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/sad-girl-toy.png",
+          "image": "/images/cards/129_wh_questions_mixed/sad-girl-toy.png",
           "label": "sad girl toy"
         }
       ],
@@ -222,7 +222,7 @@
       "question": "What are the children doing?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/children-swimming.png",
+          "image": "/images/cards/129_wh_questions_mixed/children-swimming.png",
           "label": "children swimming"
         }
       ],
@@ -236,7 +236,7 @@
       "question": "Who drives a fire truck?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/firefighter-truck.png",
+          "image": "/images/cards/129_wh_questions_mixed/firefighter-truck.png",
           "label": "firefighter truck"
         }
       ],
@@ -250,7 +250,7 @@
       "question": "Where do you buy food?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/grocery-store.png",
+          "image": "/images/cards/129_wh_questions_mixed/grocery-store.png",
           "label": "grocery store"
         }
       ],
@@ -265,7 +265,7 @@
       "question": "When do you go to sleep?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/sleeping-night.png",
+          "image": "/images/cards/129_wh_questions_mixed/sleeping-night.png",
           "label": "sleeping night"
         }
       ],
@@ -280,7 +280,7 @@
       "question": "Why is he wearing a jacket?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/boy-jacket.png",
+          "image": "/images/cards/129_wh_questions_mixed/boy-jacket.png",
           "label": "boy jacket"
         }
       ],
@@ -295,7 +295,7 @@
       "question": "Where do dolphins live?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/dolphins-ocean.png",
+          "image": "/images/cards/129_wh_questions_mixed/dolphins-ocean.png",
           "label": "dolphins ocean"
         }
       ],
@@ -311,7 +311,7 @@
       "question": "What is she reading?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/girl-reading.png",
+          "image": "/images/cards/129_wh_questions_mixed/girl-reading.png",
           "label": "girl reading"
         }
       ],
@@ -325,7 +325,7 @@
       "question": "Who helps you when you are sick?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/doctor.png",
+          "image": "/images/cards/129_wh_questions_mixed/doctor.png",
           "label": "doctor"
         }
       ],
@@ -341,7 +341,7 @@
       "question": "When do you eat breakfast?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/breakfast.png",
+          "image": "/images/cards/129_wh_questions_mixed/breakfast.png",
           "label": "breakfast"
         }
       ],
@@ -355,7 +355,7 @@
       "question": "Why is he smiling?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/boy-ice-cream.png",
+          "image": "/images/cards/129_wh_questions_mixed/boy-ice-cream.png",
           "label": "boy ice cream"
         }
       ],
@@ -370,7 +370,7 @@
       "question": "Where can you find seashells?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/seashells-beach.png",
+          "image": "/images/cards/129_wh_questions_mixed/seashells-beach.png",
           "label": "seashells beach"
         }
       ],
@@ -385,7 +385,7 @@
       "question": "What animal is she petting?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/girl-bunny.png",
+          "image": "/images/cards/129_wh_questions_mixed/girl-bunny.png",
           "label": "girl bunny"
         }
       ],
@@ -400,7 +400,7 @@
       "question": "Who works in a restaurant kitchen?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/chef-kitchen.png",
+          "image": "/images/cards/129_wh_questions_mixed/chef-kitchen.png",
           "label": "chef kitchen"
         }
       ],
@@ -415,7 +415,7 @@
       "question": "What are they packing?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/packing-suitcase.png",
+          "image": "/images/cards/129_wh_questions_mixed/packing-suitcase.png",
           "label": "packing suitcase"
         }
       ],
@@ -430,7 +430,7 @@
       "question": "When do you clean your room?",
       "images": [
         {
-          "image": "../assets/images/cards/129_wh_questions_mixed/cleaning-room.png",
+          "image": "/images/cards/129_wh_questions_mixed/cleaning-room.png",
           "label": "cleaning room"
         }
       ],
@@ -447,7 +447,7 @@
       "title": "Moving Day Dance Party",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/family-dancing-boxes.png",
+          "image": "/images/cards/130_wh_questions_short_stories/family-dancing-boxes.png",
           "label": "family dancing with boxes"
         }
       ],
@@ -476,7 +476,7 @@
       "title": "Building a Sandcastle",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/building-sandcastle.png",
+          "image": "/images/cards/130_wh_questions_short_stories/building-sandcastle.png",
           "label": "building sandcastle"
         }
       ],
@@ -515,7 +515,7 @@
       "title": "Snowball the Bunny",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/pet-bunny.png",
+          "image": "/images/cards/130_wh_questions_short_stories/pet-bunny.png",
           "label": "pet bunny"
         }
       ],
@@ -553,7 +553,7 @@
       "title": "Grocery Shopping Helper",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/grocery-store.png",
+          "image": "/images/cards/130_wh_questions_short_stories/grocery-store.png",
           "label": "grocery store"
         }
       ],
@@ -597,7 +597,7 @@
       "title": "Swimming Pool Fun",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/swimming-pool.png",
+          "image": "/images/cards/130_wh_questions_short_stories/swimming-pool.png",
           "label": "swimming pool"
         }
       ],
@@ -637,7 +637,7 @@
       "title": "Washing the Car",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/washing-car.png",
+          "image": "/images/cards/130_wh_questions_short_stories/washing-car.png",
           "label": "washing car"
         }
       ],
@@ -678,7 +678,7 @@
       "title": "Dentist Visit",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/dentist-visit.png",
+          "image": "/images/cards/130_wh_questions_short_stories/dentist-visit.png",
           "label": "dentist visit"
         }
       ],
@@ -719,7 +719,7 @@
       "title": "Beach Picnic",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/beach-picnic.png",
+          "image": "/images/cards/130_wh_questions_short_stories/beach-picnic.png",
           "label": "beach picnic"
         }
       ],
@@ -761,7 +761,7 @@
       "title": "Surf Lessons",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/surf-lessons.png",
+          "image": "/images/cards/130_wh_questions_short_stories/surf-lessons.png",
           "label": "surf lessons"
         }
       ],
@@ -799,7 +799,7 @@
       "title": "Seashell Hunting",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/finding-seashells.png",
+          "image": "/images/cards/130_wh_questions_short_stories/finding-seashells.png",
           "label": "finding seashells"
         }
       ],
@@ -838,7 +838,7 @@
       "title": "Doctor Checkup",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/doctor-checkup.png",
+          "image": "/images/cards/130_wh_questions_short_stories/doctor-checkup.png",
           "label": "doctor checkup"
         }
       ],
@@ -879,7 +879,7 @@
       "title": "Pizza Night",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/making-pizza.png",
+          "image": "/images/cards/130_wh_questions_short_stories/making-pizza.png",
           "label": "making pizza"
         }
       ],
@@ -919,7 +919,7 @@
       "title": "Aquarium Birthday Trip",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/aquarium-visit.png",
+          "image": "/images/cards/130_wh_questions_short_stories/aquarium-visit.png",
           "label": "aquarium visit"
         }
       ],
@@ -960,7 +960,7 @@
       "title": "Beach Safety",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/putting-sunscreen.png",
+          "image": "/images/cards/130_wh_questions_short_stories/putting-sunscreen.png",
           "label": "putting sunscreen"
         }
       ],
@@ -1001,7 +1001,7 @@
       "title": "Reading Time with Dad",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/reading-with-dad.png",
+          "image": "/images/cards/130_wh_questions_short_stories/reading-with-dad.png",
           "label": "reading with dad"
         }
       ],
@@ -1044,7 +1044,7 @@
       "title": "Sunset at the Beach",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/watching-sunset.png",
+          "image": "/images/cards/130_wh_questions_short_stories/watching-sunset.png",
           "label": "watching sunset"
         }
       ],
@@ -1085,7 +1085,7 @@
       "title": "Setting the Table",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/setting-table.png",
+          "image": "/images/cards/130_wh_questions_short_stories/setting-table.png",
           "label": "setting table"
         }
       ],
@@ -1126,7 +1126,7 @@
       "title": "Buddy at the Beach",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/dog-at-beach.png",
+          "image": "/images/cards/130_wh_questions_short_stories/dog-at-beach.png",
           "label": "dog at beach"
         }
       ],
@@ -1169,7 +1169,7 @@
       "title": "Ocean Painting",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/painting-ocean.png",
+          "image": "/images/cards/130_wh_questions_short_stories/painting-ocean.png",
           "label": "painting ocean"
         }
       ],
@@ -1210,7 +1210,7 @@
       "title": "Farmers Market Trip",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/farmers-market.png",
+          "image": "/images/cards/130_wh_questions_short_stories/farmers-market.png",
           "label": "farmers market"
         }
       ],
@@ -1251,7 +1251,7 @@
       "title": "Washing Hands",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/washing-hands.png",
+          "image": "/images/cards/130_wh_questions_short_stories/washing-hands.png",
           "label": "washing hands"
         }
       ],
@@ -1289,7 +1289,7 @@
       "title": "Flying a Kite",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/flying-kite.png",
+          "image": "/images/cards/130_wh_questions_short_stories/flying-kite.png",
           "label": "flying kite"
         }
       ],
@@ -1328,7 +1328,7 @@
       "title": "Birthday Party",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/birthday-party.png",
+          "image": "/images/cards/130_wh_questions_short_stories/birthday-party.png",
           "label": "birthday party"
         }
       ],
@@ -1365,7 +1365,7 @@
       "title": "Grandma's Garden",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/garden-helping.png",
+          "image": "/images/cards/130_wh_questions_short_stories/garden-helping.png",
           "label": "garden helping"
         }
       ],
@@ -1407,7 +1407,7 @@
       "title": "Brushing Teeth",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/brushing-teeth.png",
+          "image": "/images/cards/130_wh_questions_short_stories/brushing-teeth.png",
           "label": "brushing teeth"
         }
       ],
@@ -1448,7 +1448,7 @@
       "title": "Beach Trail Walk",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/beach-trail-walk.png",
+          "image": "/images/cards/130_wh_questions_short_stories/beach-trail-walk.png",
           "label": "beach trail walk"
         }
       ],
@@ -1488,7 +1488,7 @@
       "title": "Making Smoothies",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/making-smoothie.png",
+          "image": "/images/cards/130_wh_questions_short_stories/making-smoothie.png",
           "label": "making smoothie"
         }
       ],
@@ -1528,7 +1528,7 @@
       "title": "The Lifeguard",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/lifeguard.png",
+          "image": "/images/cards/130_wh_questions_short_stories/lifeguard.png",
           "label": "lifeguard"
         }
       ],
@@ -1572,7 +1572,7 @@
       "title": "Bubbles the Fish",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/fish-tank.png",
+          "image": "/images/cards/130_wh_questions_short_stories/fish-tank.png",
           "label": "fish tank"
         }
       ],
@@ -1609,7 +1609,7 @@
       "title": "Packing for the Beach",
       "images": [
         {
-          "image": "../assets/images/cards/130_wh_questions_short_stories/packing-beach.png",
+          "image": "/images/cards/130_wh_questions_short_stories/packing-beach.png",
           "label": "packing beach"
         }
       ],
@@ -1652,7 +1652,7 @@
       "question": "What is the dog wearing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/dog-sunglasses.png",
+          "image": "/images/cards/131_wh_questions_what/dog-sunglasses.png",
           "label": "dog sunglasses"
         }
       ],
@@ -1666,7 +1666,7 @@
       "question": "What is the child eating?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/child-eating-apple.png",
+          "image": "/images/cards/131_wh_questions_what/child-eating-apple.png",
           "label": "child eating apple"
         }
       ],
@@ -1680,7 +1680,7 @@
       "question": "What is she holding?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/girl-seashell.png",
+          "image": "/images/cards/131_wh_questions_what/girl-seashell.png",
           "label": "girl seashell"
         }
       ],
@@ -1694,7 +1694,7 @@
       "question": "What is he riding?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/boy-skateboard.png",
+          "image": "/images/cards/131_wh_questions_what/boy-skateboard.png",
           "label": "boy skateboard"
         }
       ],
@@ -1707,7 +1707,7 @@
       "question": "What is the cat doing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/cat-sleeping.png",
+          "image": "/images/cards/131_wh_questions_what/cat-sleeping.png",
           "label": "cat sleeping"
         }
       ],
@@ -1721,7 +1721,7 @@
       "question": "What are they building?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/kids-sandcastle.png",
+          "image": "/images/cards/131_wh_questions_what/kids-sandcastle.png",
           "label": "kids sandcastle"
         }
       ],
@@ -1735,7 +1735,7 @@
       "question": "What is she reading?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/girl-reading.png",
+          "image": "/images/cards/131_wh_questions_what/girl-reading.png",
           "label": "girl reading"
         }
       ],
@@ -1748,7 +1748,7 @@
       "question": "What is he kicking?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/boy-soccer.png",
+          "image": "/images/cards/131_wh_questions_what/boy-soccer.png",
           "label": "boy soccer"
         }
       ],
@@ -1763,7 +1763,7 @@
       "question": "What is she drinking?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/girl-juice.png",
+          "image": "/images/cards/131_wh_questions_what/girl-juice.png",
           "label": "girl juice"
         }
       ],
@@ -1777,7 +1777,7 @@
       "question": "What is the child doing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/child-painting.png",
+          "image": "/images/cards/131_wh_questions_what/child-painting.png",
           "label": "child painting"
         }
       ],
@@ -1791,7 +1791,7 @@
       "question": "What is he cooking?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/boy-cooking.png",
+          "image": "/images/cards/131_wh_questions_what/boy-cooking.png",
           "label": "boy cooking"
         }
       ],
@@ -1805,7 +1805,7 @@
       "question": "What is the bunny eating?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/bunny-lettuce.png",
+          "image": "/images/cards/131_wh_questions_what/bunny-lettuce.png",
           "label": "bunny lettuce"
         }
       ],
@@ -1820,7 +1820,7 @@
       "question": "What are the kids playing in?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/kids-waves.png",
+          "image": "/images/cards/131_wh_questions_what/kids-waves.png",
           "label": "kids waves"
         }
       ],
@@ -1835,7 +1835,7 @@
       "question": "What is she wearing on her head?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/girl-sunhat.png",
+          "image": "/images/cards/131_wh_questions_what/girl-sunhat.png",
           "label": "girl sunhat"
         }
       ],
@@ -1849,7 +1849,7 @@
       "question": "What is he brushing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/boy-brushing-teeth.png",
+          "image": "/images/cards/131_wh_questions_what/boy-brushing-teeth.png",
           "label": "boy brushing teeth"
         }
       ],
@@ -1862,7 +1862,7 @@
       "question": "What is the dog catching?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/dog-catching.png",
+          "image": "/images/cards/131_wh_questions_what/dog-catching.png",
           "label": "dog catching"
         }
       ],
@@ -1876,7 +1876,7 @@
       "question": "What is the child doing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/child-tv.png",
+          "image": "/images/cards/131_wh_questions_what/child-tv.png",
           "label": "child tv"
         }
       ],
@@ -1890,7 +1890,7 @@
       "question": "What is Mom pushing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/mom-cart.png",
+          "image": "/images/cards/131_wh_questions_what/mom-cart.png",
           "label": "mom cart"
         }
       ],
@@ -1904,7 +1904,7 @@
       "question": "What is the bird sitting in?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/bird-nest.png",
+          "image": "/images/cards/131_wh_questions_what/bird-nest.png",
           "label": "bird nest"
         }
       ],
@@ -1918,7 +1918,7 @@
       "question": "What is he throwing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/boy-frisbee.png",
+          "image": "/images/cards/131_wh_questions_what/boy-frisbee.png",
           "label": "boy frisbee"
         }
       ],
@@ -1932,7 +1932,7 @@
       "question": "What animal is she petting?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/girl-petting-cat.png",
+          "image": "/images/cards/131_wh_questions_what/girl-petting-cat.png",
           "label": "girl petting cat"
         }
       ],
@@ -1946,7 +1946,7 @@
       "question": "What is the child blowing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/child-bubbles.png",
+          "image": "/images/cards/131_wh_questions_what/child-bubbles.png",
           "label": "child bubbles"
         }
       ],
@@ -1959,7 +1959,7 @@
       "question": "What are they eating?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/kids-pizza.png",
+          "image": "/images/cards/131_wh_questions_what/kids-pizza.png",
           "label": "kids pizza"
         }
       ],
@@ -1972,7 +1972,7 @@
       "question": "What is the lifeguard holding?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/lifeguard-whistle.png",
+          "image": "/images/cards/131_wh_questions_what/lifeguard-whistle.png",
           "label": "lifeguard whistle"
         }
       ],
@@ -1985,7 +1985,7 @@
       "question": "What is he putting on?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/boy-sunscreen.png",
+          "image": "/images/cards/131_wh_questions_what/boy-sunscreen.png",
           "label": "boy sunscreen"
         }
       ],
@@ -1999,7 +1999,7 @@
       "question": "What is she carrying?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/girl-beach-bag.png",
+          "image": "/images/cards/131_wh_questions_what/girl-beach-bag.png",
           "label": "girl beach bag"
         }
       ],
@@ -2013,7 +2013,7 @@
       "question": "What is the child drawing with?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/child-crayons.png",
+          "image": "/images/cards/131_wh_questions_what/child-crayons.png",
           "label": "child crayons"
         }
       ],
@@ -2027,7 +2027,7 @@
       "question": "What is the dolphin doing?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/dolphin-jumping.png",
+          "image": "/images/cards/131_wh_questions_what/dolphin-jumping.png",
           "label": "dolphin jumping"
         }
       ],
@@ -2041,7 +2041,7 @@
       "question": "What is he opening?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/boy-door.png",
+          "image": "/images/cards/131_wh_questions_what/boy-door.png",
           "label": "boy door"
         }
       ],
@@ -2055,7 +2055,7 @@
       "question": "What is she planting?",
       "images": [
         {
-          "image": "../assets/images/cards/131_wh_questions_what/girl-planting.png",
+          "image": "/images/cards/131_wh_questions_what/girl-planting.png",
           "label": "girl planting"
         }
       ],
@@ -2071,7 +2071,7 @@
       "question": "When do you listen to music?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/listening-music.png",
+          "image": "/images/cards/132_wh_questions_when/listening-music.png",
           "label": "listening music"
         }
       ],
@@ -2086,7 +2086,7 @@
       "question": "When do you wake up?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/waking-up.png",
+          "image": "/images/cards/132_wh_questions_when/waking-up.png",
           "label": "waking up"
         }
       ],
@@ -2100,7 +2100,7 @@
       "question": "When do you brush your teeth?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/brushing-teeth.png",
+          "image": "/images/cards/132_wh_questions_when/brushing-teeth.png",
           "label": "brushing teeth"
         }
       ],
@@ -2115,7 +2115,7 @@
       "question": "When do you eat breakfast?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/eating-breakfast.png",
+          "image": "/images/cards/132_wh_questions_when/eating-breakfast.png",
           "label": "eating breakfast"
         }
       ],
@@ -2129,7 +2129,7 @@
       "question": "When do you eat lunch?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/eating-lunch.png",
+          "image": "/images/cards/132_wh_questions_when/eating-lunch.png",
           "label": "eating lunch"
         }
       ],
@@ -2144,7 +2144,7 @@
       "question": "When do you eat dinner?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/eating-dinner.png",
+          "image": "/images/cards/132_wh_questions_when/eating-dinner.png",
           "label": "eating dinner"
         }
       ],
@@ -2158,7 +2158,7 @@
       "question": "When do you go to sleep?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/going-sleep.png",
+          "image": "/images/cards/132_wh_questions_when/going-sleep.png",
           "label": "going sleep"
         }
       ],
@@ -2172,7 +2172,7 @@
       "question": "When do you take a bath?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/taking-bath.png",
+          "image": "/images/cards/132_wh_questions_when/taking-bath.png",
           "label": "taking bath"
         }
       ],
@@ -2186,7 +2186,7 @@
       "question": "When do you wash your hands?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/washing-hands.png",
+          "image": "/images/cards/132_wh_questions_when/washing-hands.png",
           "label": "washing hands"
         }
       ],
@@ -2200,7 +2200,7 @@
       "question": "When do you put on your shoes?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/putting-shoes.png",
+          "image": "/images/cards/132_wh_questions_when/putting-shoes.png",
           "label": "putting shoes"
         }
       ],
@@ -2214,7 +2214,7 @@
       "question": "When do you go to the beach?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/going-beach.png",
+          "image": "/images/cards/132_wh_questions_when/going-beach.png",
           "label": "going beach"
         }
       ],
@@ -2228,7 +2228,7 @@
       "question": "When do you go swimming?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/swimming.png",
+          "image": "/images/cards/132_wh_questions_when/swimming.png",
           "label": "swimming"
         }
       ],
@@ -2242,7 +2242,7 @@
       "question": "When do you play outside?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/playing-outside.png",
+          "image": "/images/cards/132_wh_questions_when/playing-outside.png",
           "label": "playing outside"
         }
       ],
@@ -2256,7 +2256,7 @@
       "question": "When do you read books?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/reading-books.png",
+          "image": "/images/cards/132_wh_questions_when/reading-books.png",
           "label": "reading books"
         }
       ],
@@ -2270,7 +2270,7 @@
       "question": "When do you do your homework?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/doing-homework.png",
+          "image": "/images/cards/132_wh_questions_when/doing-homework.png",
           "label": "doing homework"
         }
       ],
@@ -2284,7 +2284,7 @@
       "question": "When do you clean your room?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/cleaning-room.png",
+          "image": "/images/cards/132_wh_questions_when/cleaning-room.png",
           "label": "cleaning room"
         }
       ],
@@ -2298,7 +2298,7 @@
       "question": "When do you watch movies?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/watching-movies.png",
+          "image": "/images/cards/132_wh_questions_when/watching-movies.png",
           "label": "watching movies"
         }
       ],
@@ -2312,7 +2312,7 @@
       "question": "When do you put on your pajamas?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/putting-pajamas.png",
+          "image": "/images/cards/132_wh_questions_when/putting-pajamas.png",
           "label": "putting pajamas"
         }
       ],
@@ -2326,7 +2326,7 @@
       "question": "When do you drink water?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/drinking-water.png",
+          "image": "/images/cards/132_wh_questions_when/drinking-water.png",
           "label": "drinking water"
         }
       ],
@@ -2340,7 +2340,7 @@
       "question": "When do you go to the store?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/going-store.png",
+          "image": "/images/cards/132_wh_questions_when/going-store.png",
           "label": "going store"
         }
       ],
@@ -2354,7 +2354,7 @@
       "question": "When do you use an umbrella?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/using-umbrella.png",
+          "image": "/images/cards/132_wh_questions_when/using-umbrella.png",
           "label": "using umbrella"
         }
       ],
@@ -2368,7 +2368,7 @@
       "question": "When do you put on sunscreen?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/putting-sunscreen.png",
+          "image": "/images/cards/132_wh_questions_when/putting-sunscreen.png",
           "label": "putting sunscreen"
         }
       ],
@@ -2382,7 +2382,7 @@
       "question": "When do you wear a jacket?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/wearing-jacket.png",
+          "image": "/images/cards/132_wh_questions_when/wearing-jacket.png",
           "label": "wearing jacket"
         }
       ],
@@ -2396,7 +2396,7 @@
       "question": "When do you set the table?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/setting-table.png",
+          "image": "/images/cards/132_wh_questions_when/setting-table.png",
           "label": "setting table"
         }
       ],
@@ -2410,7 +2410,7 @@
       "question": "When do you feed your pet?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/feeding-pet.png",
+          "image": "/images/cards/132_wh_questions_when/feeding-pet.png",
           "label": "feeding pet"
         }
       ],
@@ -2424,7 +2424,7 @@
       "question": "When do you water the plants?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/watering-plants.png",
+          "image": "/images/cards/132_wh_questions_when/watering-plants.png",
           "label": "watering plants"
         }
       ],
@@ -2438,7 +2438,7 @@
       "question": "When do you say goodbye?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/saying-goodbye.png",
+          "image": "/images/cards/132_wh_questions_when/saying-goodbye.png",
           "label": "saying goodbye"
         }
       ],
@@ -2452,7 +2452,7 @@
       "question": "When do you say thank you?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/saying-thankyou.png",
+          "image": "/images/cards/132_wh_questions_when/saying-thankyou.png",
           "label": "saying thankyou"
         }
       ],
@@ -2466,7 +2466,7 @@
       "question": "When do you comb your hair?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/combing-hair.png",
+          "image": "/images/cards/132_wh_questions_when/combing-hair.png",
           "label": "combing hair"
         }
       ],
@@ -2480,7 +2480,7 @@
       "question": "When do you feel tired?",
       "images": [
         {
-          "image": "../assets/images/cards/132_wh_questions_when/feeling-tired.png",
+          "image": "/images/cards/132_wh_questions_when/feeling-tired.png",
           "label": "feeling tired"
         }
       ],
@@ -2496,7 +2496,7 @@
       "question": "Where is the hamster?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/hamster-teapot.png",
+          "image": "/images/cards/133_wh_questions_where/hamster-teapot.png",
           "label": "hamster teapot"
         }
       ],
@@ -2510,7 +2510,7 @@
       "question": "Where is the cat sleeping?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/cat-bed.png",
+          "image": "/images/cards/133_wh_questions_where/cat-bed.png",
           "label": "cat bed"
         }
       ],
@@ -2524,7 +2524,7 @@
       "question": "Where is the dog?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/dog-table.png",
+          "image": "/images/cards/133_wh_questions_where/dog-table.png",
           "label": "dog table"
         }
       ],
@@ -2538,7 +2538,7 @@
       "question": "Where is the ball?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/ball-grass.png",
+          "image": "/images/cards/133_wh_questions_where/ball-grass.png",
           "label": "ball grass"
         }
       ],
@@ -2552,7 +2552,7 @@
       "question": "Where is the book?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/book-shelf.png",
+          "image": "/images/cards/133_wh_questions_where/book-shelf.png",
           "label": "book shelf"
         }
       ],
@@ -2566,7 +2566,7 @@
       "question": "Where is the child playing?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/child-beach.png",
+          "image": "/images/cards/133_wh_questions_where/child-beach.png",
           "label": "child beach"
         }
       ],
@@ -2580,7 +2580,7 @@
       "question": "Where is the fish swimming?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/fish-tank.png",
+          "image": "/images/cards/133_wh_questions_where/fish-tank.png",
           "label": "fish tank"
         }
       ],
@@ -2594,7 +2594,7 @@
       "question": "Where is the bird?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/bird-tree.png",
+          "image": "/images/cards/133_wh_questions_where/bird-tree.png",
           "label": "bird tree"
         }
       ],
@@ -2608,7 +2608,7 @@
       "question": "Where are the shoes?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/shoes-door.png",
+          "image": "/images/cards/133_wh_questions_where/shoes-door.png",
           "label": "shoes door"
         }
       ],
@@ -2622,7 +2622,7 @@
       "question": "Where is the bunny?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/bunny-cage.png",
+          "image": "/images/cards/133_wh_questions_where/bunny-cage.png",
           "label": "bunny cage"
         }
       ],
@@ -2636,7 +2636,7 @@
       "question": "Where is the cup?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/cup-table.png",
+          "image": "/images/cards/133_wh_questions_where/cup-table.png",
           "label": "cup table"
         }
       ],
@@ -2649,7 +2649,7 @@
       "question": "Where is the towel?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/towel-chair.png",
+          "image": "/images/cards/133_wh_questions_where/towel-chair.png",
           "label": "towel chair"
         }
       ],
@@ -2663,7 +2663,7 @@
       "question": "Where is the child swimming?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/child-pool.png",
+          "image": "/images/cards/133_wh_questions_where/child-pool.png",
           "label": "child pool"
         }
       ],
@@ -2677,7 +2677,7 @@
       "question": "Where is the seashell?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/seashell-sand.png",
+          "image": "/images/cards/133_wh_questions_where/seashell-sand.png",
           "label": "seashell sand"
         }
       ],
@@ -2691,7 +2691,7 @@
       "question": "Where is the sun?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/sun-sky.png",
+          "image": "/images/cards/133_wh_questions_where/sun-sky.png",
           "label": "sun sky"
         }
       ],
@@ -2705,7 +2705,7 @@
       "question": "Where is the crab?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/crab-rock.png",
+          "image": "/images/cards/133_wh_questions_where/crab-rock.png",
           "label": "crab rock"
         }
       ],
@@ -2719,7 +2719,7 @@
       "question": "Where is the umbrella?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/umbrella-beach.png",
+          "image": "/images/cards/133_wh_questions_where/umbrella-beach.png",
           "label": "umbrella beach"
         }
       ],
@@ -2732,7 +2732,7 @@
       "question": "Where are the cookies?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/cookies-jar.png",
+          "image": "/images/cards/133_wh_questions_where/cookies-jar.png",
           "label": "cookies jar"
         }
       ],
@@ -2746,7 +2746,7 @@
       "question": "Where is the car?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/car-parking.png",
+          "image": "/images/cards/133_wh_questions_where/car-parking.png",
           "label": "car parking"
         }
       ],
@@ -2760,7 +2760,7 @@
       "question": "Where is the pencil?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/pencil-cup.png",
+          "image": "/images/cards/133_wh_questions_where/pencil-cup.png",
           "label": "pencil cup"
         }
       ],
@@ -2774,7 +2774,7 @@
       "question": "Where does the dolphin live?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/dolphin-ocean.png",
+          "image": "/images/cards/133_wh_questions_where/dolphin-ocean.png",
           "label": "dolphin ocean"
         }
       ],
@@ -2788,7 +2788,7 @@
       "question": "Where is the child?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/child-store.png",
+          "image": "/images/cards/133_wh_questions_where/child-store.png",
           "label": "child store"
         }
       ],
@@ -2802,7 +2802,7 @@
       "question": "Where is the lifeguard?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/lifeguard-tower.png",
+          "image": "/images/cards/133_wh_questions_where/lifeguard-tower.png",
           "label": "lifeguard tower"
         }
       ],
@@ -2816,7 +2816,7 @@
       "question": "Where are the clothes?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/clothes-closet.png",
+          "image": "/images/cards/133_wh_questions_where/clothes-closet.png",
           "label": "clothes closet"
         }
       ],
@@ -2830,7 +2830,7 @@
       "question": "Where is the surfer?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/surfer-wave.png",
+          "image": "/images/cards/133_wh_questions_where/surfer-wave.png",
           "label": "surfer wave"
         }
       ],
@@ -2844,7 +2844,7 @@
       "question": "Where is the food?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/food-fridge.png",
+          "image": "/images/cards/133_wh_questions_where/food-fridge.png",
           "label": "food fridge"
         }
       ],
@@ -2858,7 +2858,7 @@
       "question": "Where is the sandcastle?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/sandcastle-beach.png",
+          "image": "/images/cards/133_wh_questions_where/sandcastle-beach.png",
           "label": "sandcastle beach"
         }
       ],
@@ -2872,7 +2872,7 @@
       "question": "Where is the child hiding?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/child-tree.png",
+          "image": "/images/cards/133_wh_questions_where/child-tree.png",
           "label": "child tree"
         }
       ],
@@ -2885,7 +2885,7 @@
       "question": "Where is the starfish?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/starfish-pool.png",
+          "image": "/images/cards/133_wh_questions_where/starfish-pool.png",
           "label": "starfish pool"
         }
       ],
@@ -2899,7 +2899,7 @@
       "question": "Where is the toothbrush?",
       "images": [
         {
-          "image": "../assets/images/cards/133_wh_questions_where/toothbrush-bathroom.png",
+          "image": "/images/cards/133_wh_questions_where/toothbrush-bathroom.png",
           "label": "toothbrush bathroom"
         }
       ],
@@ -2915,7 +2915,7 @@
       "question": "Who makes baked goods?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/baker-kneading.png",
+          "image": "/images/cards/134_wh_questions_who/baker-kneading.png",
           "label": "baker kneading"
         }
       ],
@@ -2929,7 +2929,7 @@
       "question": "Who drives a fire truck?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/firefighter-truck.png",
+          "image": "/images/cards/134_wh_questions_who/firefighter-truck.png",
           "label": "firefighter truck"
         }
       ],
@@ -2943,7 +2943,7 @@
       "question": "Who helps you when you are sick?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/doctor-patient.png",
+          "image": "/images/cards/134_wh_questions_who/doctor-patient.png",
           "label": "doctor patient"
         }
       ],
@@ -2958,7 +2958,7 @@
       "question": "Who watches swimmers at the beach?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/lifeguard-beach.png",
+          "image": "/images/cards/134_wh_questions_who/lifeguard-beach.png",
           "label": "lifeguard beach"
         }
       ],
@@ -2972,7 +2972,7 @@
       "question": "Who keeps people safe in the community?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/police-officer.png",
+          "image": "/images/cards/134_wh_questions_who/police-officer.png",
           "label": "police officer"
         }
       ],
@@ -2987,7 +2987,7 @@
       "question": "Who brings the mail to your house?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/mail-carrier.png",
+          "image": "/images/cards/134_wh_questions_who/mail-carrier.png",
           "label": "mail carrier"
         }
       ],
@@ -3002,7 +3002,7 @@
       "question": "Who cooks food at a restaurant?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/chef-cooking.png",
+          "image": "/images/cards/134_wh_questions_who/chef-cooking.png",
           "label": "chef cooking"
         }
       ],
@@ -3017,7 +3017,7 @@
       "question": "Who checks your teeth?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/dentist-teeth.png",
+          "image": "/images/cards/134_wh_questions_who/dentist-teeth.png",
           "label": "dentist teeth"
         }
       ],
@@ -3031,7 +3031,7 @@
       "question": "Who takes care of sick animals?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/vet-animal.png",
+          "image": "/images/cards/134_wh_questions_who/vet-animal.png",
           "label": "vet animal"
         }
       ],
@@ -3045,7 +3045,7 @@
       "question": "Who flies an airplane?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/pilot-airplane.png",
+          "image": "/images/cards/134_wh_questions_who/pilot-airplane.png",
           "label": "pilot airplane"
         }
       ],
@@ -3059,7 +3059,7 @@
       "question": "Who grows fruits and vegetables?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/farmer-field.png",
+          "image": "/images/cards/134_wh_questions_who/farmer-field.png",
           "label": "farmer field"
         }
       ],
@@ -3073,7 +3073,7 @@
       "question": "Who is playing with the ball?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/boy-ball.png",
+          "image": "/images/cards/134_wh_questions_who/boy-ball.png",
           "label": "boy ball"
         }
       ],
@@ -3087,7 +3087,7 @@
       "question": "Who is building a sandcastle?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/girl-sandcastle.png",
+          "image": "/images/cards/134_wh_questions_who/girl-sandcastle.png",
           "label": "girl sandcastle"
         }
       ],
@@ -3101,7 +3101,7 @@
       "question": "Who is reading the story?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/mom-reading.png",
+          "image": "/images/cards/134_wh_questions_who/mom-reading.png",
           "label": "mom reading"
         }
       ],
@@ -3115,7 +3115,7 @@
       "question": "Who is cooking dinner?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/dad-cooking.png",
+          "image": "/images/cards/134_wh_questions_who/dad-cooking.png",
           "label": "dad cooking"
         }
       ],
@@ -3129,7 +3129,7 @@
       "question": "Who is working in the garden?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/grandma-garden.png",
+          "image": "/images/cards/134_wh_questions_who/grandma-garden.png",
           "label": "grandma garden"
         }
       ],
@@ -3143,7 +3143,7 @@
       "question": "Who is fishing?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/grandpa-fishing.png",
+          "image": "/images/cards/134_wh_questions_who/grandpa-fishing.png",
           "label": "grandpa fishing"
         }
       ],
@@ -3157,7 +3157,7 @@
       "question": "Who is swimming in the pool?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/children-pool.png",
+          "image": "/images/cards/134_wh_questions_who/children-pool.png",
           "label": "children pool"
         }
       ],
@@ -3171,7 +3171,7 @@
       "question": "Who is sleeping?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/baby-sleeping.png",
+          "image": "/images/cards/134_wh_questions_who/baby-sleeping.png",
           "label": "baby sleeping"
         }
       ],
@@ -3185,7 +3185,7 @@
       "question": "Who teaches people to surf?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/surf-instructor.png",
+          "image": "/images/cards/134_wh_questions_who/surf-instructor.png",
           "label": "surf instructor"
         }
       ],
@@ -3199,7 +3199,7 @@
       "question": "Who picks up the trash?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/sanitation-worker.png",
+          "image": "/images/cards/134_wh_questions_who/sanitation-worker.png",
           "label": "sanitation worker"
         }
       ],
@@ -3213,7 +3213,7 @@
       "question": "Who works at the checkout?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/cashier-store.png",
+          "image": "/images/cards/134_wh_questions_who/cashier-store.png",
           "label": "cashier store"
         }
       ],
@@ -3227,7 +3227,7 @@
       "question": "Who helps you cross the street safely?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/crossing-guard.png",
+          "image": "/images/cards/134_wh_questions_who/crossing-guard.png",
           "label": "crossing guard"
         }
       ],
@@ -3240,7 +3240,7 @@
       "question": "Who helps you find books?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/librarian-books.png",
+          "image": "/images/cards/134_wh_questions_who/librarian-books.png",
           "label": "librarian books"
         }
       ],
@@ -3254,7 +3254,7 @@
       "question": "Who is catching the frisbee?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/dog-frisbee.png",
+          "image": "/images/cards/134_wh_questions_who/dog-frisbee.png",
           "label": "dog frisbee"
         }
       ],
@@ -3268,7 +3268,7 @@
       "question": "Who is hugging the bunny?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/girl-bunny.png",
+          "image": "/images/cards/134_wh_questions_who/girl-bunny.png",
           "label": "girl bunny"
         }
       ],
@@ -3282,7 +3282,7 @@
       "question": "Who is helping carry groceries?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/boy-groceries.png",
+          "image": "/images/cards/134_wh_questions_who/boy-groceries.png",
           "label": "boy groceries"
         }
       ],
@@ -3296,7 +3296,7 @@
       "question": "Who helps people in an ambulance?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/paramedic-ambulance.png",
+          "image": "/images/cards/134_wh_questions_who/paramedic-ambulance.png",
           "label": "paramedic ambulance"
         }
       ],
@@ -3310,7 +3310,7 @@
       "question": "Who paints pictures?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/artist-painting.png",
+          "image": "/images/cards/134_wh_questions_who/artist-painting.png",
           "label": "artist painting"
         }
       ],
@@ -3324,7 +3324,7 @@
       "question": "Who teaches swimming lessons?",
       "images": [
         {
-          "image": "../assets/images/cards/134_wh_questions_who/swim-coach.png",
+          "image": "/images/cards/134_wh_questions_who/swim-coach.png",
           "label": "swim coach"
         }
       ],
@@ -3340,7 +3340,7 @@
       "question": "Why do you wear sunscreen?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-sunscreen.png",
+          "image": "/images/cards/135_wh_questions_why/child-sunscreen.png",
           "label": "child sunscreen"
         }
       ],
@@ -3354,7 +3354,7 @@
       "question": "Why do you wear sunglasses?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-sunglasses.png",
+          "image": "/images/cards/135_wh_questions_why/child-sunglasses.png",
           "label": "child sunglasses"
         }
       ],
@@ -3368,7 +3368,7 @@
       "question": "Why do you drink water?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-water.png",
+          "image": "/images/cards/135_wh_questions_why/child-water.png",
           "label": "child water"
         }
       ],
@@ -3382,7 +3382,7 @@
       "question": "Why do you eat breakfast?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-breakfast.png",
+          "image": "/images/cards/135_wh_questions_why/child-breakfast.png",
           "label": "child breakfast"
         }
       ],
@@ -3396,7 +3396,7 @@
       "question": "Why do you brush your teeth?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-brushing.png",
+          "image": "/images/cards/135_wh_questions_why/child-brushing.png",
           "label": "child brushing"
         }
       ],
@@ -3410,7 +3410,7 @@
       "question": "Why do you wash your hands?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-washing-hands.png",
+          "image": "/images/cards/135_wh_questions_why/child-washing-hands.png",
           "label": "child washing hands"
         }
       ],
@@ -3424,7 +3424,7 @@
       "question": "Why do you wear a jacket?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-jacket.png",
+          "image": "/images/cards/135_wh_questions_why/child-jacket.png",
           "label": "child jacket"
         }
       ],
@@ -3438,7 +3438,7 @@
       "question": "Why do you sleep?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-sleeping.png",
+          "image": "/images/cards/135_wh_questions_why/child-sleeping.png",
           "label": "child sleeping"
         }
       ],
@@ -3452,7 +3452,7 @@
       "question": "Why is the child crying?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-crying.png",
+          "image": "/images/cards/135_wh_questions_why/child-crying.png",
           "label": "child crying"
         }
       ],
@@ -3466,7 +3466,7 @@
       "question": "Why is the child laughing?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-laughing.png",
+          "image": "/images/cards/135_wh_questions_why/child-laughing.png",
           "label": "child laughing"
         }
       ],
@@ -3480,7 +3480,7 @@
       "question": "Why is he running?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-running.png",
+          "image": "/images/cards/135_wh_questions_why/child-running.png",
           "label": "child running"
         }
       ],
@@ -3494,7 +3494,7 @@
       "question": "Why do we have lifeguards?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/lifeguard-tower.png",
+          "image": "/images/cards/135_wh_questions_why/lifeguard-tower.png",
           "label": "lifeguard tower"
         }
       ],
@@ -3508,7 +3508,7 @@
       "question": "Why do you use an umbrella?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-umbrella.png",
+          "image": "/images/cards/135_wh_questions_why/child-umbrella.png",
           "label": "child umbrella"
         }
       ],
@@ -3522,7 +3522,7 @@
       "question": "Why do you wear flip flops at beach?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-flipflops.png",
+          "image": "/images/cards/135_wh_questions_why/child-flipflops.png",
           "label": "child flipflops"
         }
       ],
@@ -3536,7 +3536,7 @@
       "question": "Why is she yawning?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-yawning.png",
+          "image": "/images/cards/135_wh_questions_why/child-yawning.png",
           "label": "child yawning"
         }
       ],
@@ -3550,7 +3550,7 @@
       "question": "Why is he smiling?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-smiling.png",
+          "image": "/images/cards/135_wh_questions_why/child-smiling.png",
           "label": "child smiling"
         }
       ],
@@ -3564,7 +3564,7 @@
       "question": "Why do people go to the beach?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/family-beach.png",
+          "image": "/images/cards/135_wh_questions_why/family-beach.png",
           "label": "family beach"
         }
       ],
@@ -3578,7 +3578,7 @@
       "question": "Why do you clean your room?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-cleaning.png",
+          "image": "/images/cards/135_wh_questions_why/child-cleaning.png",
           "label": "child cleaning"
         }
       ],
@@ -3592,7 +3592,7 @@
       "question": "Why do you feed your pet?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-feeding-pet.png",
+          "image": "/images/cards/135_wh_questions_why/child-feeding-pet.png",
           "label": "child feeding pet"
         }
       ],
@@ -3606,7 +3606,7 @@
       "question": "Why do you wear a hat?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-hat.png",
+          "image": "/images/cards/135_wh_questions_why/child-hat.png",
           "label": "child hat"
         }
       ],
@@ -3620,7 +3620,7 @@
       "question": "Why do you water plants?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-watering.png",
+          "image": "/images/cards/135_wh_questions_why/child-watering.png",
           "label": "child watering"
         }
       ],
@@ -3634,7 +3634,7 @@
       "question": "Why is he scared?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-scared.png",
+          "image": "/images/cards/135_wh_questions_why/child-scared.png",
           "label": "child scared"
         }
       ],
@@ -3648,7 +3648,7 @@
       "question": "Why do you help your family?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-helping.png",
+          "image": "/images/cards/135_wh_questions_why/child-helping.png",
           "label": "child helping"
         }
       ],
@@ -3662,7 +3662,7 @@
       "question": "Why do you go to the doctor?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-doctor.png",
+          "image": "/images/cards/135_wh_questions_why/child-doctor.png",
           "label": "child doctor"
         }
       ],
@@ -3676,7 +3676,7 @@
       "question": "Why do you exercise?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-exercise.png",
+          "image": "/images/cards/135_wh_questions_why/child-exercise.png",
           "label": "child exercise"
         }
       ],
@@ -3690,7 +3690,7 @@
       "question": "Why is she frustrated?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-frustrated.png",
+          "image": "/images/cards/135_wh_questions_why/child-frustrated.png",
           "label": "child frustrated"
         }
       ],
@@ -3704,7 +3704,7 @@
       "question": "Why do you say sorry?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-sorry.png",
+          "image": "/images/cards/135_wh_questions_why/child-sorry.png",
           "label": "child sorry"
         }
       ],
@@ -3718,7 +3718,7 @@
       "question": "Why do you say thank you?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-thankyou.png",
+          "image": "/images/cards/135_wh_questions_why/child-thankyou.png",
           "label": "child thankyou"
         }
       ],
@@ -3732,7 +3732,7 @@
       "question": "Why do you wait in line?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-line.png",
+          "image": "/images/cards/135_wh_questions_why/child-line.png",
           "label": "child line"
         }
       ],
@@ -3746,7 +3746,7 @@
       "question": "Why do you wear a seatbelt?",
       "images": [
         {
-          "image": "../assets/images/cards/135_wh_questions_why/child-seatbelt.png",
+          "image": "/images/cards/135_wh_questions_why/child-seatbelt.png",
           "label": "child seatbelt"
         }
       ],
@@ -3762,15 +3762,15 @@
       "question": "Who gives animals check-ups?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/veterinarian.png",
+          "image": "/images/cards/136_wh_picture_choices/veterinarian.png",
           "label": "veterinarian examining a cat"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/firefighter.png",
+          "image": "/images/cards/136_wh_picture_choices/firefighter.png",
           "label": "firefighter by fire truck"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/cashier.png",
+          "image": "/images/cards/136_wh_picture_choices/cashier.png",
           "label": "cashier at store"
         }
       ],
@@ -3780,15 +3780,15 @@
       "question": "Who puts out fires?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/doctor.png",
+          "image": "/images/cards/136_wh_picture_choices/doctor.png",
           "label": "doctor with stethoscope"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/firefighter2.png",
+          "image": "/images/cards/136_wh_picture_choices/firefighter2.png",
           "label": "firefighter with hose"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/teacher.png",
+          "image": "/images/cards/136_wh_picture_choices/teacher.png",
           "label": "teacher at desk"
         }
       ],
@@ -3798,15 +3798,15 @@
       "question": "Who helps you at checkout?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/pilot.png",
+          "image": "/images/cards/136_wh_picture_choices/pilot.png",
           "label": "pilot in uniform"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/farmer.png",
+          "image": "/images/cards/136_wh_picture_choices/farmer.png",
           "label": "farmer with tractor"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/cashier2.png",
+          "image": "/images/cards/136_wh_picture_choices/cashier2.png",
           "label": "cashier scanning items"
         }
       ],
@@ -3816,15 +3816,15 @@
       "question": "Where do fish live?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/forest.png",
+          "image": "/images/cards/136_wh_picture_choices/forest.png",
           "label": "forest with trees"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/ocean.png",
+          "image": "/images/cards/136_wh_picture_choices/ocean.png",
           "label": "ocean with waves"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/desert.png",
+          "image": "/images/cards/136_wh_picture_choices/desert.png",
           "label": "desert with sand"
         }
       ],
@@ -3834,15 +3834,15 @@
       "question": "Where do you sleep?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/bed.png",
+          "image": "/images/cards/136_wh_picture_choices/bed.png",
           "label": "cozy bed with pillow"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/kitchen.png",
+          "image": "/images/cards/136_wh_picture_choices/kitchen.png",
           "label": "kitchen with stove"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/bathroom.png",
+          "image": "/images/cards/136_wh_picture_choices/bathroom.png",
           "label": "bathroom with tub"
         }
       ],
@@ -3852,15 +3852,15 @@
       "question": "Where do you buy groceries?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/library.png",
+          "image": "/images/cards/136_wh_picture_choices/library.png",
           "label": "library with books"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/school.png",
+          "image": "/images/cards/136_wh_picture_choices/school.png",
           "label": "school building"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/grocery-store.png",
+          "image": "/images/cards/136_wh_picture_choices/grocery-store.png",
           "label": "grocery store aisles"
         }
       ],
@@ -3870,15 +3870,15 @@
       "question": "What do you use to brush your teeth?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/comb.png",
+          "image": "/images/cards/136_wh_picture_choices/comb.png",
           "label": "hair comb"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/toothbrush.png",
+          "image": "/images/cards/136_wh_picture_choices/toothbrush.png",
           "label": "toothbrush"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/fork.png",
+          "image": "/images/cards/136_wh_picture_choices/fork.png",
           "label": "fork"
         }
       ],
@@ -3888,15 +3888,15 @@
       "question": "What do you wear on your feet?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/hat.png",
+          "image": "/images/cards/136_wh_picture_choices/hat.png",
           "label": "hat"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/gloves.png",
+          "image": "/images/cards/136_wh_picture_choices/gloves.png",
           "label": "gloves"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/shoes.png",
+          "image": "/images/cards/136_wh_picture_choices/shoes.png",
           "label": "shoes"
         }
       ],
@@ -3906,15 +3906,15 @@
       "question": "What do you use when it rains?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/sunglasses.png",
+          "image": "/images/cards/136_wh_picture_choices/sunglasses.png",
           "label": "sunglasses"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/umbrella.png",
+          "image": "/images/cards/136_wh_picture_choices/umbrella.png",
           "label": "umbrella"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/scarf.png",
+          "image": "/images/cards/136_wh_picture_choices/scarf.png",
           "label": "scarf"
         }
       ],
@@ -3924,15 +3924,15 @@
       "question": "Who delivers mail?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/chef.png",
+          "image": "/images/cards/136_wh_picture_choices/chef.png",
           "label": "chef cooking"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/mailcarrier.png",
+          "image": "/images/cards/136_wh_picture_choices/mailcarrier.png",
           "label": "mail carrier with bag"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/dentist.png",
+          "image": "/images/cards/136_wh_picture_choices/dentist.png",
           "label": "dentist"
         }
       ],
@@ -3942,15 +3942,15 @@
       "question": "Who flies an airplane?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/bus-driver.png",
+          "image": "/images/cards/136_wh_picture_choices/bus-driver.png",
           "label": "bus driver"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/sailor.png",
+          "image": "/images/cards/136_wh_picture_choices/sailor.png",
           "label": "sailor"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/pilot2.png",
+          "image": "/images/cards/136_wh_picture_choices/pilot2.png",
           "label": "pilot in cockpit"
         }
       ],
@@ -3960,15 +3960,15 @@
       "question": "Who watches swimmers?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/lifeguard.png",
+          "image": "/images/cards/136_wh_picture_choices/lifeguard.png",
           "label": "lifeguard in tower"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/librarian.png",
+          "image": "/images/cards/136_wh_picture_choices/librarian.png",
           "label": "librarian"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/artist.png",
+          "image": "/images/cards/136_wh_picture_choices/artist.png",
           "label": "artist painting"
         }
       ],
@@ -3978,15 +3978,15 @@
       "question": "Where do you wash your hands?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/stove.png",
+          "image": "/images/cards/136_wh_picture_choices/stove.png",
           "label": "stove"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/sink.png",
+          "image": "/images/cards/136_wh_picture_choices/sink.png",
           "label": "sink with water"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/couch.png",
+          "image": "/images/cards/136_wh_picture_choices/couch.png",
           "label": "couch"
         }
       ],
@@ -3996,15 +3996,15 @@
       "question": "Where do you find sand and waves?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/beach.png",
+          "image": "/images/cards/136_wh_picture_choices/beach.png",
           "label": "sunny beach"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/mountain.png",
+          "image": "/images/cards/136_wh_picture_choices/mountain.png",
           "label": "mountain"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/city.png",
+          "image": "/images/cards/136_wh_picture_choices/city.png",
           "label": "city street"
         }
       ],
@@ -4014,15 +4014,15 @@
       "question": "Where do you borrow books?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/gym.png",
+          "image": "/images/cards/136_wh_picture_choices/gym.png",
           "label": "gym"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/library2.png",
+          "image": "/images/cards/136_wh_picture_choices/library2.png",
           "label": "library shelves"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/restaurant.png",
+          "image": "/images/cards/136_wh_picture_choices/restaurant.png",
           "label": "restaurant"
         }
       ],
@@ -4032,15 +4032,15 @@
       "question": "What do you eat for breakfast?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/pizza.png",
+          "image": "/images/cards/136_wh_picture_choices/pizza.png",
           "label": "pizza"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/ice-cream.png",
+          "image": "/images/cards/136_wh_picture_choices/ice-cream.png",
           "label": "ice cream"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/cereal.png",
+          "image": "/images/cards/136_wh_picture_choices/cereal.png",
           "label": "cereal bowl"
         }
       ],
@@ -4050,15 +4050,15 @@
       "question": "What do you drink when thirsty?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/soup.png",
+          "image": "/images/cards/136_wh_picture_choices/soup.png",
           "label": "soup"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/water.png",
+          "image": "/images/cards/136_wh_picture_choices/water.png",
           "label": "glass of water"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/cake.png",
+          "image": "/images/cards/136_wh_picture_choices/cake.png",
           "label": "cake"
         }
       ],
@@ -4068,15 +4068,15 @@
       "question": "What do you use to write?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/spoon.png",
+          "image": "/images/cards/136_wh_picture_choices/spoon.png",
           "label": "spoon"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/pencil.png",
+          "image": "/images/cards/136_wh_picture_choices/pencil.png",
           "label": "pencil"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/cup.png",
+          "image": "/images/cards/136_wh_picture_choices/cup.png",
           "label": "cup"
         }
       ],
@@ -4086,15 +4086,15 @@
       "question": "Who helps when you're sick?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/doctor2.png",
+          "image": "/images/cards/136_wh_picture_choices/doctor2.png",
           "label": "doctor examining"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/plumber.png",
+          "image": "/images/cards/136_wh_picture_choices/plumber.png",
           "label": "plumber"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/mechanic.png",
+          "image": "/images/cards/136_wh_picture_choices/mechanic.png",
           "label": "mechanic"
         }
       ],
@@ -4104,15 +4104,15 @@
       "question": "Who bakes bread and cakes?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/electrician.png",
+          "image": "/images/cards/136_wh_picture_choices/electrician.png",
           "label": "electrician"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/gardener.png",
+          "image": "/images/cards/136_wh_picture_choices/gardener.png",
           "label": "gardener"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/baker.png",
+          "image": "/images/cards/136_wh_picture_choices/baker.png",
           "label": "baker with bread"
         }
       ],
@@ -4122,15 +4122,15 @@
       "question": "Who checks your teeth?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/dentist2.png",
+          "image": "/images/cards/136_wh_picture_choices/dentist2.png",
           "label": "dentist with tools"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/nurse.png",
+          "image": "/images/cards/136_wh_picture_choices/nurse.png",
           "label": "nurse"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/coach.png",
+          "image": "/images/cards/136_wh_picture_choices/coach.png",
           "label": "coach"
         }
       ],
@@ -4140,15 +4140,15 @@
       "question": "Where do you go to swim?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/store.png",
+          "image": "/images/cards/136_wh_picture_choices/store.png",
           "label": "store"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/pool.png",
+          "image": "/images/cards/136_wh_picture_choices/pool.png",
           "label": "swimming pool"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/playground.png",
+          "image": "/images/cards/136_wh_picture_choices/playground.png",
           "label": "playground"
         }
       ],
@@ -4158,15 +4158,15 @@
       "question": "Where does a bird live?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/nest.png",
+          "image": "/images/cards/136_wh_picture_choices/nest.png",
           "label": "bird nest"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/doghouse.png",
+          "image": "/images/cards/136_wh_picture_choices/doghouse.png",
           "label": "dog house"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/fishtank.png",
+          "image": "/images/cards/136_wh_picture_choices/fishtank.png",
           "label": "fish tank"
         }
       ],
@@ -4176,15 +4176,15 @@
       "question": "Where do you cook food?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/garage.png",
+          "image": "/images/cards/136_wh_picture_choices/garage.png",
           "label": "garage"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/bedroom.png",
+          "image": "/images/cards/136_wh_picture_choices/bedroom.png",
           "label": "bedroom"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/kitchen2.png",
+          "image": "/images/cards/136_wh_picture_choices/kitchen2.png",
           "label": "kitchen with pots"
         }
       ],
@@ -4194,15 +4194,15 @@
       "question": "What do you use to eat soup?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/spoon2.png",
+          "image": "/images/cards/136_wh_picture_choices/spoon2.png",
           "label": "spoon"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/knife.png",
+          "image": "/images/cards/136_wh_picture_choices/knife.png",
           "label": "knife"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/plate.png",
+          "image": "/images/cards/136_wh_picture_choices/plate.png",
           "label": "plate"
         }
       ],
@@ -4212,15 +4212,15 @@
       "question": "What keeps you dry in rain?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/fan.png",
+          "image": "/images/cards/136_wh_picture_choices/fan.png",
           "label": "fan"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/umbrella2.png",
+          "image": "/images/cards/136_wh_picture_choices/umbrella2.png",
           "label": "umbrella"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/blanket.png",
+          "image": "/images/cards/136_wh_picture_choices/blanket.png",
           "label": "blanket"
         }
       ],
@@ -4230,15 +4230,15 @@
       "question": "What do you wear to swim?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/pajamas.png",
+          "image": "/images/cards/136_wh_picture_choices/pajamas.png",
           "label": "pajamas"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/coat.png",
+          "image": "/images/cards/136_wh_picture_choices/coat.png",
           "label": "coat"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/swimsuit.png",
+          "image": "/images/cards/136_wh_picture_choices/swimsuit.png",
           "label": "swimsuit"
         }
       ],
@@ -4248,15 +4248,15 @@
       "question": "Who grows fruits and vegetables?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/banker.png",
+          "image": "/images/cards/136_wh_picture_choices/banker.png",
           "label": "banker"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/farmer2.png",
+          "image": "/images/cards/136_wh_picture_choices/farmer2.png",
           "label": "farmer in field"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/waiter.png",
+          "image": "/images/cards/136_wh_picture_choices/waiter.png",
           "label": "waiter"
         }
       ],
@@ -4266,15 +4266,15 @@
       "question": "Who keeps people safe?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/police.png",
+          "image": "/images/cards/136_wh_picture_choices/police.png",
           "label": "police officer"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/actor.png",
+          "image": "/images/cards/136_wh_picture_choices/actor.png",
           "label": "actor"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/singer.png",
+          "image": "/images/cards/136_wh_picture_choices/singer.png",
           "label": "singer"
         }
       ],
@@ -4284,15 +4284,15 @@
       "question": "Where do you watch movies on big screen?",
       "images": [
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/hospital.png",
+          "image": "/images/cards/136_wh_picture_choices/hospital.png",
           "label": "hospital"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/movie-theater.png",
+          "image": "/images/cards/136_wh_picture_choices/movie-theater.png",
           "label": "movie theater"
         },
         {
-          "image": "../assets/images/cards/136_wh_picture_choices/post-office.png",
+          "image": "/images/cards/136_wh_picture_choices/post-office.png",
           "label": "post office"
         }
       ],
@@ -4304,19 +4304,19 @@
       "question": "Who is typing?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/mara-kayaking.png",
+          "image": "/images/cards/140_four_quadrants/mara-kayaking.png",
           "label": "Mara kayaking on river"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/cammi-toys.png",
+          "image": "/images/cards/140_four_quadrants/cammi-toys.png",
           "label": "Cammi playing with toys"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/eva-slide.png",
+          "image": "/images/cards/140_four_quadrants/eva-slide.png",
           "label": "Eva on playground slide"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/trent-laptop.png",
+          "image": "/images/cards/140_four_quadrants/trent-laptop.png",
           "label": "Trent using laptop"
         }
       ],
@@ -4326,19 +4326,19 @@
       "question": "Who is swimming?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/lily-reading.png",
+          "image": "/images/cards/140_four_quadrants/lily-reading.png",
           "label": "Lily reading a book"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/marco-swimming.png",
+          "image": "/images/cards/140_four_quadrants/marco-swimming.png",
           "label": "Marco swimming in pool"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/ava-eating.png",
+          "image": "/images/cards/140_four_quadrants/ava-eating.png",
           "label": "Ava eating lunch"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/noah-dog.png",
+          "image": "/images/cards/140_four_quadrants/noah-dog.png",
           "label": "Noah walking dog"
         }
       ],
@@ -4348,19 +4348,19 @@
       "question": "Who is building a sandcastle?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/zoe-sandcastle.png",
+          "image": "/images/cards/140_four_quadrants/zoe-sandcastle.png",
           "label": "Zoe building sandcastle"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/leo-bike.png",
+          "image": "/images/cards/140_four_quadrants/leo-bike.png",
           "label": "Leo riding bike"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/mia-teeth.png",
+          "image": "/images/cards/140_four_quadrants/mia-teeth.png",
           "label": "Mia brushing teeth"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/jake-painting.png",
+          "image": "/images/cards/140_four_quadrants/jake-painting.png",
           "label": "Jake painting"
         }
       ],
@@ -4370,19 +4370,19 @@
       "question": "Who is eating an apple?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/emma-juice.png",
+          "image": "/images/cards/140_four_quadrants/emma-juice.png",
           "label": "Emma drinking juice"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/tyler-sleeping.png",
+          "image": "/images/cards/140_four_quadrants/tyler-sleeping.png",
           "label": "Tyler sleeping"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/sofia-apple.png",
+          "image": "/images/cards/140_four_quadrants/sofia-apple.png",
           "label": "Sofia eating apple"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/lucas-soccer.png",
+          "image": "/images/cards/140_four_quadrants/lucas-soccer.png",
           "label": "Lucas playing soccer"
         }
       ],
@@ -4392,19 +4392,19 @@
       "question": "Who is riding a bike?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/aiden-bike.png",
+          "image": "/images/cards/140_four_quadrants/aiden-bike.png",
           "label": "Aiden riding bike"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/bella-bunny.png",
+          "image": "/images/cards/140_four_quadrants/bella-bunny.png",
           "label": "Bella holding bunny"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/caleb-jumping.png",
+          "image": "/images/cards/140_four_quadrants/caleb-jumping.png",
           "label": "Caleb jumping"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/daisy-coloring.png",
+          "image": "/images/cards/140_four_quadrants/daisy-coloring.png",
           "label": "Daisy coloring"
         }
       ],
@@ -4414,19 +4414,19 @@
       "question": "Who is sleeping?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/maya-dancing.png",
+          "image": "/images/cards/140_four_quadrants/maya-dancing.png",
           "label": "Maya dancing"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/owen-sleeping.png",
+          "image": "/images/cards/140_four_quadrants/owen-sleeping.png",
           "label": "Owen sleeping"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/lily-beach.png",
+          "image": "/images/cards/140_four_quadrants/lily-beach.png",
           "label": "Lily at beach"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/ryan-cooking.png",
+          "image": "/images/cards/140_four_quadrants/ryan-cooking.png",
           "label": "Ryan cooking"
         }
       ],
@@ -4436,19 +4436,19 @@
       "question": "Who is watering plants?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/ella-tv.png",
+          "image": "/images/cards/140_four_quadrants/ella-tv.png",
           "label": "Ella watching TV"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/finn-games.png",
+          "image": "/images/cards/140_four_quadrants/finn-games.png",
           "label": "Finn playing games"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/grace-watering.png",
+          "image": "/images/cards/140_four_quadrants/grace-watering.png",
           "label": "Grace watering plants"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/henry-breakfast.png",
+          "image": "/images/cards/140_four_quadrants/henry-breakfast.png",
           "label": "Henry eating breakfast"
         }
       ],
@@ -4458,19 +4458,19 @@
       "question": "Who is playing with a dog?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/ivy-reading.png",
+          "image": "/images/cards/140_four_quadrants/ivy-reading.png",
           "label": "Ivy reading"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/jack-dog.png",
+          "image": "/images/cards/140_four_quadrants/jack-dog.png",
           "label": "Jack playing with dog"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/kate-swimming.png",
+          "image": "/images/cards/140_four_quadrants/kate-swimming.png",
           "label": "Kate swimming"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/liam-drawing.png",
+          "image": "/images/cards/140_four_quadrants/liam-drawing.png",
           "label": "Liam drawing"
         }
       ],
@@ -4480,19 +4480,19 @@
       "question": "Who is brushing their teeth?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/milo-teeth.png",
+          "image": "/images/cards/140_four_quadrants/milo-teeth.png",
           "label": "Milo brushing teeth"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/nina-playground.png",
+          "image": "/images/cards/140_four_quadrants/nina-playground.png",
           "label": "Nina at playground"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/oscar-pizza.png",
+          "image": "/images/cards/140_four_quadrants/oscar-pizza.png",
           "label": "Oscar eating pizza"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/penny-dancing.png",
+          "image": "/images/cards/140_four_quadrants/penny-dancing.png",
           "label": "Penny dancing"
         }
       ],
@@ -4502,19 +4502,19 @@
       "question": "Who is wearing sunglasses?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/quinn-sunglasses.png",
+          "image": "/images/cards/140_four_quadrants/quinn-sunglasses.png",
           "label": "Quinn wearing sunglasses"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/ruby-baking.png",
+          "image": "/images/cards/140_four_quadrants/ruby-baking.png",
           "label": "Ruby baking"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/sam-homework.png",
+          "image": "/images/cards/140_four_quadrants/sam-homework.png",
           "label": "Sam doing homework"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/tara-washing.png",
+          "image": "/images/cards/140_four_quadrants/tara-washing.png",
           "label": "Tara washing dishes"
         }
       ],
@@ -4524,19 +4524,19 @@
       "question": "Who is jumping?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/uma-couch.png",
+          "image": "/images/cards/140_four_quadrants/uma-couch.png",
           "label": "Uma on couch"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/victor-jumping.png",
+          "image": "/images/cards/140_four_quadrants/victor-jumping.png",
           "label": "Victor jumping"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/wendy-painting.png",
+          "image": "/images/cards/140_four_quadrants/wendy-painting.png",
           "label": "Wendy painting"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/xavier-book.png",
+          "image": "/images/cards/140_four_quadrants/xavier-book.png",
           "label": "Xavier reading book"
         }
       ],
@@ -4546,19 +4546,19 @@
       "question": "Who is at the beach?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/yara-store.png",
+          "image": "/images/cards/140_four_quadrants/yara-store.png",
           "label": "Yara at store"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/zack-beach.png",
+          "image": "/images/cards/140_four_quadrants/zack-beach.png",
           "label": "Zack at beach"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/amy-kitchen.png",
+          "image": "/images/cards/140_four_quadrants/amy-kitchen.png",
           "label": "Amy in kitchen"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/ben-bedroom.png",
+          "image": "/images/cards/140_four_quadrants/ben-bedroom.png",
           "label": "Ben in bedroom"
         }
       ],
@@ -4568,19 +4568,19 @@
       "question": "Who is painting a picture?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/chloe-painting.png",
+          "image": "/images/cards/140_four_quadrants/chloe-painting.png",
           "label": "Chloe painting"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/diego-basketball.png",
+          "image": "/images/cards/140_four_quadrants/diego-basketball.png",
           "label": "Diego playing basketball"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/ellie-cereal.png",
+          "image": "/images/cards/140_four_quadrants/ellie-cereal.png",
           "label": "Ellie eating cereal"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/felix-running.png",
+          "image": "/images/cards/140_four_quadrants/felix-running.png",
           "label": "Felix running"
         }
       ],
@@ -4590,19 +4590,19 @@
       "question": "Who is drinking water?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/gina-piano.png",
+          "image": "/images/cards/140_four_quadrants/gina-piano.png",
           "label": "Gina playing piano"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/hugo-water.png",
+          "image": "/images/cards/140_four_quadrants/hugo-water.png",
           "label": "Hugo drinking water"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/iris-park.png",
+          "image": "/images/cards/140_four_quadrants/iris-park.png",
           "label": "Iris at park"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/joey-writing.png",
+          "image": "/images/cards/140_four_quadrants/joey-writing.png",
           "label": "Joey writing"
         }
       ],
@@ -4612,19 +4612,19 @@
       "question": "Who is putting on sunscreen?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/kira-sunscreen.png",
+          "image": "/images/cards/140_four_quadrants/kira-sunscreen.png",
           "label": "Kira putting on sunscreen"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/leo-catch.png",
+          "image": "/images/cards/140_four_quadrants/leo-catch.png",
           "label": "Leo playing catch"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/mona-hair.png",
+          "image": "/images/cards/140_four_quadrants/mona-hair.png",
           "label": "Mona brushing hair"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/nate-fish.png",
+          "image": "/images/cards/140_four_quadrants/nate-fish.png",
           "label": "Nate feeding fish"
         }
       ],
@@ -4634,19 +4634,19 @@
       "question": "Who is reading a book?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/olive-reading.png",
+          "image": "/images/cards/140_four_quadrants/olive-reading.png",
           "label": "Olive reading"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/peter-surfing.png",
+          "image": "/images/cards/140_four_quadrants/peter-surfing.png",
           "label": "Peter surfing"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/quinn-bed.png",
+          "image": "/images/cards/140_four_quadrants/quinn-bed.png",
           "label": "Quinn in bed"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/rosa-hugging.png",
+          "image": "/images/cards/140_four_quadrants/rosa-hugging.png",
           "label": "Rosa hugging"
         }
       ],
@@ -4656,19 +4656,19 @@
       "question": "Who is helping with groceries?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/sara-groceries.png",
+          "image": "/images/cards/140_four_quadrants/sara-groceries.png",
           "label": "Sara helping with groceries"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/theo-drums.png",
+          "image": "/images/cards/140_four_quadrants/theo-drums.png",
           "label": "Theo playing drums"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/uma-pool.png",
+          "image": "/images/cards/140_four_quadrants/uma-pool.png",
           "label": "Uma at pool"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/vince-shoes.png",
+          "image": "/images/cards/140_four_quadrants/vince-shoes.png",
           "label": "Vince tying shoes"
         }
       ],
@@ -4678,19 +4678,19 @@
       "question": "Who is playing soccer?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/willa-sleeping.png",
+          "image": "/images/cards/140_four_quadrants/willa-sleeping.png",
           "label": "Willa sleeping"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/xander-soccer.png",
+          "image": "/images/cards/140_four_quadrants/xander-soccer.png",
           "label": "Xander playing soccer"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/yolanda-lunch.png",
+          "image": "/images/cards/140_four_quadrants/yolanda-lunch.png",
           "label": "Yolanda eating lunch"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/zane-drawing.png",
+          "image": "/images/cards/140_four_quadrants/zane-drawing.png",
           "label": "Zane drawing"
         }
       ],
@@ -4700,19 +4700,19 @@
       "question": "Who is washing their hands?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/anna-washing.png",
+          "image": "/images/cards/140_four_quadrants/anna-washing.png",
           "label": "Anna washing hands"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/bryce-toys.png",
+          "image": "/images/cards/140_four_quadrants/bryce-toys.png",
           "label": "Bryce playing with toys"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/carmen-beach.png",
+          "image": "/images/cards/140_four_quadrants/carmen-beach.png",
           "label": "Carmen at beach"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/drew-puzzle.png",
+          "image": "/images/cards/140_four_quadrants/drew-puzzle.png",
           "label": "Drew doing puzzle"
         }
       ],
@@ -4722,19 +4722,19 @@
       "question": "Who is flying a kite?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/elena-kite.png",
+          "image": "/images/cards/140_four_quadrants/elena-kite.png",
           "label": "Elena flying kite"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/finn-swimming.png",
+          "image": "/images/cards/140_four_quadrants/finn-swimming.png",
           "label": "Finn swimming"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/greta-cleaning.png",
+          "image": "/images/cards/140_four_quadrants/greta-cleaning.png",
           "label": "Greta cleaning"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/hank-apple.png",
+          "image": "/images/cards/140_four_quadrants/hank-apple.png",
           "label": "Hank eating apple"
         }
       ],
@@ -4744,19 +4744,19 @@
       "question": "Who is cooking with a parent?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/isaac-movie.png",
+          "image": "/images/cards/140_four_quadrants/isaac-movie.png",
           "label": "Isaac watching movie"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/jade-cooking.png",
+          "image": "/images/cards/140_four_quadrants/jade-cooking.png",
           "label": "Jade cooking"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/kevin-blocks.png",
+          "image": "/images/cards/140_four_quadrants/kevin-blocks.png",
           "label": "Kevin building blocks"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/luna-park.png",
+          "image": "/images/cards/140_four_quadrants/luna-park.png",
           "label": "Luna at park"
         }
       ],
@@ -4766,19 +4766,19 @@
       "question": "Who is petting a bunny?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/max-game.png",
+          "image": "/images/cards/140_four_quadrants/max-game.png",
           "label": "Max playing game"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/nora-bunny.png",
+          "image": "/images/cards/140_four_quadrants/nora-bunny.png",
           "label": "Nora petting bunny"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/oscar-breakfast.png",
+          "image": "/images/cards/140_four_quadrants/oscar-breakfast.png",
           "label": "Oscar eating breakfast"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/piper-reading.png",
+          "image": "/images/cards/140_four_quadrants/piper-reading.png",
           "label": "Piper reading"
         }
       ],
@@ -4788,19 +4788,19 @@
       "question": "Who is making their bed?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/quinn-bed2.png",
+          "image": "/images/cards/140_four_quadrants/quinn-bed2.png",
           "label": "Quinn making bed"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/riley-beach.png",
+          "image": "/images/cards/140_four_quadrants/riley-beach.png",
           "label": "Riley at beach"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/stella-teeth.png",
+          "image": "/images/cards/140_four_quadrants/stella-teeth.png",
           "label": "Stella brushing teeth"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/tyler-scooter.png",
+          "image": "/images/cards/140_four_quadrants/tyler-scooter.png",
           "label": "Tyler riding scooter"
         }
       ],
@@ -4810,19 +4810,19 @@
       "question": "Who is at the grocery store?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/uma-store.png",
+          "image": "/images/cards/140_four_quadrants/uma-store.png",
           "label": "Uma at grocery store"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/violet-pool.png",
+          "image": "/images/cards/140_four_quadrants/violet-pool.png",
           "label": "Violet at pool"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/wesley-dinner.png",
+          "image": "/images/cards/140_four_quadrants/wesley-dinner.png",
           "label": "Wesley eating dinner"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/xena-painting.png",
+          "image": "/images/cards/140_four_quadrants/xena-painting.png",
           "label": "Xena painting"
         }
       ],
@@ -4832,19 +4832,19 @@
       "question": "Who is playing in the waves?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/yosef-waves.png",
+          "image": "/images/cards/140_four_quadrants/yosef-waves.png",
           "label": "Yosef playing in waves"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/zara-book.png",
+          "image": "/images/cards/140_four_quadrants/zara-book.png",
           "label": "Zara reading book"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/adam-snack.png",
+          "image": "/images/cards/140_four_quadrants/adam-snack.png",
           "label": "Adam eating snack"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/bella-piano.png",
+          "image": "/images/cards/140_four_quadrants/bella-piano.png",
           "label": "Bella playing piano"
         }
       ],
@@ -4854,19 +4854,19 @@
       "question": "Who is blowing bubbles?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/carlos-running.png",
+          "image": "/images/cards/140_four_quadrants/carlos-running.png",
           "label": "Carlos running"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/diana-bubbles.png",
+          "image": "/images/cards/140_four_quadrants/diana-bubbles.png",
           "label": "Diana blowing bubbles"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/ethan-dentist.png",
+          "image": "/images/cards/140_four_quadrants/ethan-dentist.png",
           "label": "Ethan at dentist"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/fiona-sleeping.png",
+          "image": "/images/cards/140_four_quadrants/fiona-sleeping.png",
           "label": "Fiona sleeping"
         }
       ],
@@ -4876,19 +4876,19 @@
       "question": "Who is putting on shoes?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/gavin-shoes.png",
+          "image": "/images/cards/140_four_quadrants/gavin-shoes.png",
           "label": "Gavin putting on shoes"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/holly-beach.png",
+          "image": "/images/cards/140_four_quadrants/holly-beach.png",
           "label": "Holly at beach"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/ivan-cereal.png",
+          "image": "/images/cards/140_four_quadrants/ivan-cereal.png",
           "label": "Ivan eating cereal"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/julia-dancing.png",
+          "image": "/images/cards/140_four_quadrants/julia-dancing.png",
           "label": "Julia dancing"
         }
       ],
@@ -4898,19 +4898,19 @@
       "question": "Who is using binoculars?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/kyle-binoculars.png",
+          "image": "/images/cards/140_four_quadrants/kyle-binoculars.png",
           "label": "Kyle using binoculars"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/layla-swimming.png",
+          "image": "/images/cards/140_four_quadrants/layla-swimming.png",
           "label": "Layla swimming"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/mason-sandcastle.png",
+          "image": "/images/cards/140_four_quadrants/mason-sandcastle.png",
           "label": "Mason building sandcastle"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/nadia-cleaning.png",
+          "image": "/images/cards/140_four_quadrants/nadia-cleaning.png",
           "label": "Nadia cleaning"
         }
       ],
@@ -4920,19 +4920,19 @@
       "question": "Who is doing a puzzle?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/omar-catch.png",
+          "image": "/images/cards/140_four_quadrants/omar-catch.png",
           "label": "Omar playing catch"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/paige-puzzle.png",
+          "image": "/images/cards/140_four_quadrants/paige-puzzle.png",
           "label": "Paige doing puzzle"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/reed-teeth.png",
+          "image": "/images/cards/140_four_quadrants/reed-teeth.png",
           "label": "Reed brushing teeth"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/skylar-bike.png",
+          "image": "/images/cards/140_four_quadrants/skylar-bike.png",
           "label": "Skylar riding bike"
         }
       ],
@@ -4942,19 +4942,19 @@
       "question": "Who is collecting seashells?",
       "images": [
         {
-          "image": "../assets/images/cards/140_four_quadrants/tia-seashells.png",
+          "image": "/images/cards/140_four_quadrants/tia-seashells.png",
           "label": "Tia collecting seashells"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/uriah-reading.png",
+          "image": "/images/cards/140_four_quadrants/uriah-reading.png",
           "label": "Uriah reading"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/vera-lunch.png",
+          "image": "/images/cards/140_four_quadrants/vera-lunch.png",
           "label": "Vera eating lunch"
         },
         {
-          "image": "../assets/images/cards/140_four_quadrants/wade-dog.png",
+          "image": "/images/cards/140_four_quadrants/wade-dog.png",
           "label": "Wade walking dog"
         }
       ],

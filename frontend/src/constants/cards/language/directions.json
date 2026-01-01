@@ -4,7 +4,7 @@
       "question": "If chickens lay eggs, point to a corner in the room.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/chickens.png",
+          "image": "/images/cards/20_conditional_directions/animals/chickens.png",
           "label": "Chickens"
         }
       ]
@@ -13,7 +13,7 @@
       "question": "If dogs have four legs, clap your hands two times.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/dog_wagging.png",
+          "image": "/images/cards/20_conditional_directions/animals/dog_wagging.png",
           "label": "Dog wagging tail"
         }
       ]
@@ -22,7 +22,7 @@
       "question": "If fish live in water, touch your nose.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/fish_tank.png",
+          "image": "/images/cards/20_conditional_directions/animals/fish_tank.png",
           "label": "Fish in tank"
         }
       ]
@@ -31,7 +31,7 @@
       "question": "If bunnies hop, wiggle your fingers.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/bunny.png",
+          "image": "/images/cards/20_conditional_directions/animals/bunny.png",
           "label": "Bunny"
         }
       ]
@@ -40,7 +40,7 @@
       "question": "If birds have feathers, wave your hand.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/bird_flying.png",
+          "image": "/images/cards/20_conditional_directions/animals/bird_flying.png",
           "label": "Bird flying"
         }
       ]
@@ -49,7 +49,7 @@
       "question": "If cats can bark, tell me your favorite fruit.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/cat.png",
+          "image": "/images/cards/20_conditional_directions/animals/cat.png",
           "label": "Cat"
         }
       ]
@@ -58,7 +58,7 @@
       "question": "If elephants are smaller than mice, stomp your feet.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/elephant.png",
+          "image": "/images/cards/20_conditional_directions/animals/elephant.png",
           "label": "Elephant"
         }
       ]
@@ -67,7 +67,7 @@
       "question": "If cows can fly, raise both hands.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/cow.png",
+          "image": "/images/cards/20_conditional_directions/animals/cow.png",
           "label": "Cow"
         }
       ]
@@ -76,7 +76,7 @@
       "question": "If frogs have fur, spin around one time.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/frog.png",
+          "image": "/images/cards/20_conditional_directions/animals/frog.png",
           "label": "Frog"
         }
       ]
@@ -85,7 +85,7 @@
       "question": "If dolphins live in the desert, touch your toes.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/animals/dolphin.png",
+          "image": "/images/cards/20_conditional_directions/animals/dolphin.png",
           "label": "Dolphin"
         }
       ]
@@ -94,7 +94,7 @@
       "question": "If you like chocolate, give a thumbs up.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/brownies.png",
+          "image": "/images/cards/20_conditional_directions/food/brownies.png",
           "label": "Brownies"
         }
       ]
@@ -103,7 +103,7 @@
       "question": "If oranges are a fruit, pat your head.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/orange.png",
+          "image": "/images/cards/20_conditional_directions/food/orange.png",
           "label": "Orange"
         }
       ]
@@ -112,7 +112,7 @@
       "question": "If ice is cold, shiver like you are freezing.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/ice_cubes.png",
+          "image": "/images/cards/20_conditional_directions/food/ice_cubes.png",
           "label": "Ice cubes"
         }
       ]
@@ -121,7 +121,7 @@
       "question": "If watermelon has seeds, blink your eyes three times.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/watermelon.png",
+          "image": "/images/cards/20_conditional_directions/food/watermelon.png",
           "label": "Watermelon"
         }
       ]
@@ -130,7 +130,7 @@
       "question": "If rice is white, point to something else that is white.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/rice.png",
+          "image": "/images/cards/20_conditional_directions/food/rice.png",
           "label": "Bowl of rice"
         }
       ]
@@ -139,7 +139,7 @@
       "question": "If bananas are blue, stand on one foot.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/banana.png",
+          "image": "/images/cards/20_conditional_directions/food/banana.png",
           "label": "Banana"
         }
       ]
@@ -148,7 +148,7 @@
       "question": "If cucumbers are hot like fire, clap five times.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/cucumber.png",
+          "image": "/images/cards/20_conditional_directions/food/cucumber.png",
           "label": "Cucumber"
         }
       ]
@@ -157,7 +157,7 @@
       "question": "If juice is a vegetable, touch your elbow.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/orange_juice.png",
+          "image": "/images/cards/20_conditional_directions/food/orange_juice.png",
           "label": "Orange juice"
         }
       ]
@@ -166,7 +166,7 @@
       "question": "If bell peppers taste like ice cream, snap your fingers.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/bell_peppers.png",
+          "image": "/images/cards/20_conditional_directions/food/bell_peppers.png",
           "label": "Bell peppers"
         }
       ]
@@ -175,7 +175,7 @@
       "question": "If strawberries grow underground, jump up high.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/food/strawberries.png",
+          "image": "/images/cards/20_conditional_directions/food/strawberries.png",
           "label": "Strawberries"
         }
       ]
@@ -184,7 +184,7 @@
       "question": "If a refrigerator keeps food cold, pretend to shiver.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/refrigerator.png",
+          "image": "/images/cards/20_conditional_directions/household/refrigerator.png",
           "label": "Refrigerator"
         }
       ]
@@ -193,7 +193,7 @@
       "question": "If pillows are soft, rest your head on your hands.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/pillow.png",
+          "image": "/images/cards/20_conditional_directions/household/pillow.png",
           "label": "Pillow"
         }
       ]
@@ -202,7 +202,7 @@
       "question": "If water is wet, pretend to wash your hands.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/faucet.png",
+          "image": "/images/cards/20_conditional_directions/household/faucet.png",
           "label": "Water faucet"
         }
       ]
@@ -211,7 +211,7 @@
       "question": "If lamps give us light, point to something bright.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/lamp.png",
+          "image": "/images/cards/20_conditional_directions/household/lamp.png",
           "label": "Lamp"
         }
       ]
@@ -220,7 +220,7 @@
       "question": "If blankets keep you warm, give yourself a hug.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/blanket.png",
+          "image": "/images/cards/20_conditional_directions/household/blanket.png",
           "label": "Blanket"
         }
       ]
@@ -229,7 +229,7 @@
       "question": "If televisions are made of cotton, nod your head yes.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/television.png",
+          "image": "/images/cards/20_conditional_directions/household/television.png",
           "label": "Television"
         }
       ]
@@ -238,7 +238,7 @@
       "question": "If you take a bath in the kitchen, wave goodbye.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/bathtub.png",
+          "image": "/images/cards/20_conditional_directions/household/bathtub.png",
           "label": "Bathtub"
         }
       ]
@@ -247,7 +247,7 @@
       "question": "If chairs are for wearing on your head, tap your shoulder.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/chair.png",
+          "image": "/images/cards/20_conditional_directions/household/chair.png",
           "label": "Chair"
         }
       ]
@@ -256,7 +256,7 @@
       "question": "If windows are made of spaghetti, turn around twice.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/window.png",
+          "image": "/images/cards/20_conditional_directions/household/window.png",
           "label": "Window"
         }
       ]
@@ -265,7 +265,7 @@
       "question": "If towels are used to brush your teeth, shake your head no.",
       "images": [
         {
-          "image": "../assets/images/cards/20_conditional_directions/household/towels.png",
+          "image": "/images/cards/20_conditional_directions/household/towels.png",
           "label": "Towels"
         }
       ]
@@ -276,7 +276,7 @@
       "question": "Point to a light in the room.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/lamp.png",
+          "image": "/images/cards/34_following_1_step/lamp.png",
           "label": "Lamp"
         }
       ]
@@ -285,7 +285,7 @@
       "question": "Point to a window.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/window.png",
+          "image": "/images/cards/34_following_1_step/window.png",
           "label": "Window"
         }
       ]
@@ -294,7 +294,7 @@
       "question": "Point to the door.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/door.png",
+          "image": "/images/cards/34_following_1_step/door.png",
           "label": "Door"
         }
       ]
@@ -303,7 +303,7 @@
       "question": "Point to the floor.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/floor.png",
+          "image": "/images/cards/34_following_1_step/floor.png",
           "label": "Floor"
         }
       ]
@@ -312,7 +312,7 @@
       "question": "Point to the ceiling.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/ceiling.png",
+          "image": "/images/cards/34_following_1_step/ceiling.png",
           "label": "Ceiling"
         }
       ]
@@ -321,7 +321,7 @@
       "question": "Point to something you sit on.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/chair.png",
+          "image": "/images/cards/34_following_1_step/chair.png",
           "label": "Chair"
         }
       ]
@@ -330,7 +330,7 @@
       "question": "Point to something that tells time.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/clock.png",
+          "image": "/images/cards/34_following_1_step/clock.png",
           "label": "Clock"
         }
       ]
@@ -339,7 +339,7 @@
       "question": "Point to something red.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/red_apple.png",
+          "image": "/images/cards/34_following_1_step/red_apple.png",
           "label": "Red apple"
         }
       ]
@@ -348,7 +348,7 @@
       "question": "Point to something blue.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/blue_sky.png",
+          "image": "/images/cards/34_following_1_step/blue_sky.png",
           "label": "Blue sky"
         }
       ]
@@ -357,7 +357,7 @@
       "question": "Point to something green.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/green_plant.png",
+          "image": "/images/cards/34_following_1_step/green_plant.png",
           "label": "Green plant"
         }
       ]
@@ -366,7 +366,7 @@
       "question": "Give a thumbs up.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/thumbs_up.png",
+          "image": "/images/cards/34_following_1_step/thumbs_up.png",
           "label": "Thumbs up"
         }
       ]
@@ -375,7 +375,7 @@
       "question": "Wave hello.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/waving_hand.png",
+          "image": "/images/cards/34_following_1_step/waving_hand.png",
           "label": "Waving hand"
         }
       ]
@@ -384,7 +384,7 @@
       "question": "Clap your hands.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/clapping_hands.png",
+          "image": "/images/cards/34_following_1_step/clapping_hands.png",
           "label": "Clapping hands"
         }
       ]
@@ -393,7 +393,7 @@
       "question": "Stand up.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_standing.png",
+          "image": "/images/cards/34_following_1_step/person_standing.png",
           "label": "Person standing"
         }
       ]
@@ -402,7 +402,7 @@
       "question": "Sit down.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_sitting.png",
+          "image": "/images/cards/34_following_1_step/person_sitting.png",
           "label": "Person sitting"
         }
       ]
@@ -411,7 +411,7 @@
       "question": "Jump one time.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_jumping.png",
+          "image": "/images/cards/34_following_1_step/person_jumping.png",
           "label": "Person jumping"
         }
       ]
@@ -420,7 +420,7 @@
       "question": "Turn around.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_turning.png",
+          "image": "/images/cards/34_following_1_step/person_turning.png",
           "label": "Person turning"
         }
       ]
@@ -429,7 +429,7 @@
       "question": "Stretch your arms up high.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_stretching.png",
+          "image": "/images/cards/34_following_1_step/person_stretching.png",
           "label": "Person stretching"
         }
       ]
@@ -438,7 +438,7 @@
       "question": "Touch your toes.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_touching_toes.png",
+          "image": "/images/cards/34_following_1_step/person_touching_toes.png",
           "label": "Person touching toes"
         }
       ]
@@ -447,7 +447,7 @@
       "question": "March in place.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_marching.png",
+          "image": "/images/cards/34_following_1_step/person_marching.png",
           "label": "Person marching"
         }
       ]
@@ -456,7 +456,7 @@
       "question": "Pretend to comb your hair.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/comb_brush.png",
+          "image": "/images/cards/34_following_1_step/comb_brush.png",
           "label": "Comb and brush"
         }
       ]
@@ -465,7 +465,7 @@
       "question": "Pretend to brush your teeth.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/toothbrush.png",
+          "image": "/images/cards/34_following_1_step/toothbrush.png",
           "label": "Toothbrush"
         }
       ]
@@ -474,7 +474,7 @@
       "question": "Pretend to drive a car.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/steering_wheel.png",
+          "image": "/images/cards/34_following_1_step/steering_wheel.png",
           "label": "Steering wheel"
         }
       ]
@@ -483,7 +483,7 @@
       "question": "Pretend to talk on the phone.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/telephone.png",
+          "image": "/images/cards/34_following_1_step/telephone.png",
           "label": "Telephone"
         }
       ]
@@ -492,7 +492,7 @@
       "question": "Pretend to read a book.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/book.png",
+          "image": "/images/cards/34_following_1_step/book.png",
           "label": "Book"
         }
       ]
@@ -501,7 +501,7 @@
       "question": "Pretend to drink water.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/glass_of_water.png",
+          "image": "/images/cards/34_following_1_step/glass_of_water.png",
           "label": "Glass of water"
         }
       ]
@@ -510,7 +510,7 @@
       "question": "Pretend to sleep.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/pillow.png",
+          "image": "/images/cards/34_following_1_step/pillow.png",
           "label": "Pillow"
         }
       ]
@@ -519,7 +519,7 @@
       "question": "Pretend to throw a ball.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/ball.png",
+          "image": "/images/cards/34_following_1_step/ball.png",
           "label": "Ball"
         }
       ]
@@ -528,7 +528,7 @@
       "question": "Pretend to swim.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/swimmer.png",
+          "image": "/images/cards/34_following_1_step/swimmer.png",
           "label": "Swimmer"
         }
       ]
@@ -537,7 +537,7 @@
       "question": "Pretend to eat with a spoon.",
       "images": [
         {
-          "image": "../assets/images/cards/34_following_1_step/person_eating.png",
+          "image": "/images/cards/34_following_1_step/person_eating.png",
           "label": "Person eating"
         }
       ]
@@ -548,7 +548,7 @@
       "question": "Pretend to shake someone's hand, then say 'nice to meet you.'",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/handshake.png",
+          "image": "/images/cards/35_following_2_step/handshake.png",
           "label": "Handshake"
         }
       ]
@@ -557,7 +557,7 @@
       "question": "Wave hello, then say your name.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/waving.png",
+          "image": "/images/cards/35_following_2_step/waving.png",
           "label": "Person waving"
         }
       ]
@@ -566,7 +566,7 @@
       "question": "Smile, then give a thumbs up.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/smiling_face.png",
+          "image": "/images/cards/35_following_2_step/smiling_face.png",
           "label": "Smiling face"
         }
       ]
@@ -575,7 +575,7 @@
       "question": "Say 'hello,' then ask 'how are you?'",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/two_people_talking.png",
+          "image": "/images/cards/35_following_2_step/two_people_talking.png",
           "label": "Two people talking"
         }
       ]
@@ -584,7 +584,7 @@
       "question": "Say 'goodbye,' then wave your hand.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/goodbye_wave.png",
+          "image": "/images/cards/35_following_2_step/goodbye_wave.png",
           "label": "Goodbye wave"
         }
       ]
@@ -593,7 +593,7 @@
       "question": "Shake your head 'yes,' then tell me the color of your shirt.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/yes_sign.png",
+          "image": "/images/cards/35_following_2_step/yes_sign.png",
           "label": "Yes sign"
         }
       ]
@@ -602,7 +602,7 @@
       "question": "Shake your head 'no,' then cross your arms.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/no_sign.png",
+          "image": "/images/cards/35_following_2_step/no_sign.png",
           "label": "No sign"
         }
       ]
@@ -611,7 +611,7 @@
       "question": "Touch your head, then touch your shoulders.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/head_shoulders.png",
+          "image": "/images/cards/35_following_2_step/head_shoulders.png",
           "label": "Head and shoulders"
         }
       ]
@@ -620,7 +620,7 @@
       "question": "Point to your eyes, then point to your ears.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/eyes_ears.png",
+          "image": "/images/cards/35_following_2_step/eyes_ears.png",
           "label": "Eyes and ears"
         }
       ]
@@ -629,7 +629,7 @@
       "question": "Touch your nose, then touch your mouth.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/nose_mouth.png",
+          "image": "/images/cards/35_following_2_step/nose_mouth.png",
           "label": "Nose and mouth"
         }
       ]
@@ -638,7 +638,7 @@
       "question": "Clap your hands, then stomp your feet.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/hands_feet.png",
+          "image": "/images/cards/35_following_2_step/hands_feet.png",
           "label": "Hands and feet"
         }
       ]
@@ -647,7 +647,7 @@
       "question": "Raise your arms, then lower them slowly.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/arms_raised.png",
+          "image": "/images/cards/35_following_2_step/arms_raised.png",
           "label": "Arms raised"
         }
       ]
@@ -656,7 +656,7 @@
       "question": "Tell me what season it is, then clap your hands twice.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/fall_leaves.png",
+          "image": "/images/cards/35_following_2_step/fall_leaves.png",
           "label": "Fall leaves"
         }
       ]
@@ -665,7 +665,7 @@
       "question": "Tell me what the weather looks like, then pretend to put on sunglasses.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/sunny_day.png",
+          "image": "/images/cards/35_following_2_step/sunny_day.png",
           "label": "Sunny day"
         }
       ]
@@ -674,7 +674,7 @@
       "question": "Pretend to hold an umbrella, then say 'it's raining.'",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/rainy_day.png",
+          "image": "/images/cards/35_following_2_step/rainy_day.png",
           "label": "Rainy day"
         }
       ]
@@ -683,7 +683,7 @@
       "question": "Pretend to shiver, then say 'it's cold.'",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/snowy_scene.png",
+          "image": "/images/cards/35_following_2_step/snowy_scene.png",
           "label": "Snowy scene"
         }
       ]
@@ -692,7 +692,7 @@
       "question": "Pretend to swim, then pretend to build a sandcastle.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/beach_scene.png",
+          "image": "/images/cards/35_following_2_step/beach_scene.png",
           "label": "Beach scene"
         }
       ]
@@ -701,7 +701,7 @@
       "question": "Name two colors you see, then point to something that color.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/rainbow_colors.png",
+          "image": "/images/cards/35_following_2_step/rainbow_colors.png",
           "label": "Rainbow colors"
         }
       ]
@@ -710,7 +710,7 @@
       "question": "Count to five, then clap five times.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/numbers_1_5.png",
+          "image": "/images/cards/35_following_2_step/numbers_1_5.png",
           "label": "Numbers 1 to 5"
         }
       ]
@@ -719,7 +719,7 @@
       "question": "Name a shape, then draw it in the air with your finger.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/shapes.png",
+          "image": "/images/cards/35_following_2_step/shapes.png",
           "label": "Shapes"
         }
       ]
@@ -728,7 +728,7 @@
       "question": "Pick your favorite color, then tell me why you like it.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/colored_crayons.png",
+          "image": "/images/cards/35_following_2_step/colored_crayons.png",
           "label": "Colored crayons"
         }
       ]
@@ -737,7 +737,7 @@
       "question": "Count the stars, then hold up that many fingers.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/stars.png",
+          "image": "/images/cards/35_following_2_step/stars.png",
           "label": "Stars"
         }
       ]
@@ -746,7 +746,7 @@
       "question": "Stand up, then sit back down.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/standing_person.png",
+          "image": "/images/cards/35_following_2_step/standing_person.png",
           "label": "Standing person"
         }
       ]
@@ -755,7 +755,7 @@
       "question": "Spin around once, then touch the ground.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/spinning_person.png",
+          "image": "/images/cards/35_following_2_step/spinning_person.png",
           "label": "Spinning person"
         }
       ]
@@ -764,7 +764,7 @@
       "question": "Jump two times, then freeze like a statue.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/jumping_person.png",
+          "image": "/images/cards/35_following_2_step/jumping_person.png",
           "label": "Jumping person"
         }
       ]
@@ -773,7 +773,7 @@
       "question": "Take three steps forward, then take three steps back.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/walking_person.png",
+          "image": "/images/cards/35_following_2_step/walking_person.png",
           "label": "Walking person"
         }
       ]
@@ -782,7 +782,7 @@
       "question": "Do a dance move, then take a bow.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/dancing_person.png",
+          "image": "/images/cards/35_following_2_step/dancing_person.png",
           "label": "Person dancing"
         }
       ]
@@ -791,7 +791,7 @@
       "question": "Pretend to be a cat, then say 'meow.'",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/cat.png",
+          "image": "/images/cards/35_following_2_step/cat.png",
           "label": "Cat"
         }
       ]
@@ -800,7 +800,7 @@
       "question": "Pretend to be a dog, then say 'woof.'",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/dog.png",
+          "image": "/images/cards/35_following_2_step/dog.png",
           "label": "Dog"
         }
       ]
@@ -809,7 +809,7 @@
       "question": "Flap your arms like a bird, then pretend to land on a branch.",
       "images": [
         {
-          "image": "../assets/images/cards/35_following_2_step/bird.png",
+          "image": "/images/cards/35_following_2_step/bird.png",
           "label": "Bird"
         }
       ]
@@ -820,7 +820,7 @@
       "question": "If you write a letter with a fork, raise both of your hands.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/fork.png",
+          "image": "/images/cards/36_following_directions_conditional/fork.png",
           "label": "Fork"
         }
       ]
@@ -829,7 +829,7 @@
       "question": "If juice comes out of a kitchen faucet, count to five out loud.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/kitchen_faucet.png",
+          "image": "/images/cards/36_following_directions_conditional/kitchen_faucet.png",
           "label": "Kitchen faucet"
         }
       ]
@@ -838,7 +838,7 @@
       "question": "If stop signs are squares, say the name of your favorite dessert.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/stop_sign.png",
+          "image": "/images/cards/36_following_directions_conditional/stop_sign.png",
           "label": "Stop sign"
         }
       ]
@@ -847,7 +847,7 @@
       "question": "If bananas are purple, touch your elbows.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/banana.png",
+          "image": "/images/cards/36_following_directions_conditional/banana.png",
           "label": "Banana"
         }
       ]
@@ -856,7 +856,7 @@
       "question": "If fish can walk on land, stand on one foot.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/fish.png",
+          "image": "/images/cards/36_following_directions_conditional/fish.png",
           "label": "Fish"
         }
       ]
@@ -865,7 +865,7 @@
       "question": "If refrigerators keep food hot, wave to a friend.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/refrigerator.png",
+          "image": "/images/cards/36_following_directions_conditional/refrigerator.png",
           "label": "Refrigerator"
         }
       ]
@@ -874,7 +874,7 @@
       "question": "If pillows are made of rocks, pat your head three times.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/pillow.png",
+          "image": "/images/cards/36_following_directions_conditional/pillow.png",
           "label": "Pillow"
         }
       ]
@@ -883,7 +883,7 @@
       "question": "If the sun comes out at night, snap your fingers.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/sun.png",
+          "image": "/images/cards/36_following_directions_conditional/sun.png",
           "label": "Sun"
         }
       ]
@@ -892,7 +892,7 @@
       "question": "If you take a bath in the kitchen, spin around twice.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/bathtub.png",
+          "image": "/images/cards/36_following_directions_conditional/bathtub.png",
           "label": "Bathtub"
         }
       ]
@@ -901,7 +901,7 @@
       "question": "If you wear shoes on your hands, give yourself a hug.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/shoes.png",
+          "image": "/images/cards/36_following_directions_conditional/shoes.png",
           "label": "Shoes"
         }
       ]
@@ -910,7 +910,7 @@
       "question": "If clocks have 100 hours, blink your eyes five times.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/clock.png",
+          "image": "/images/cards/36_following_directions_conditional/clock.png",
           "label": "Clock"
         }
       ]
@@ -919,7 +919,7 @@
       "question": "If you brush your teeth with a spoon, shake your head no.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/toothbrush.png",
+          "image": "/images/cards/36_following_directions_conditional/toothbrush.png",
           "label": "Toothbrush"
         }
       ]
@@ -928,7 +928,7 @@
       "question": "If umbrellas make you wet, tap your shoulders.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/umbrella.png",
+          "image": "/images/cards/36_following_directions_conditional/umbrella.png",
           "label": "Umbrella"
         }
       ]
@@ -937,7 +937,7 @@
       "question": "If ice cubes are hot, stick out your tongue.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/ice_cube.png",
+          "image": "/images/cards/36_following_directions_conditional/ice_cube.png",
           "label": "Ice cube"
         }
       ]
@@ -946,7 +946,7 @@
       "question": "If you sleep standing up, wiggle your nose.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/bed.png",
+          "image": "/images/cards/36_following_directions_conditional/bed.png",
           "label": "Bed"
         }
       ]
@@ -955,7 +955,7 @@
       "question": "If dogs have four legs, clap your hands two times.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/dog.png",
+          "image": "/images/cards/36_following_directions_conditional/dog.png",
           "label": "Dog"
         }
       ]
@@ -964,7 +964,7 @@
       "question": "If the ocean has salt water, pretend to swim.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/ocean_waves.png",
+          "image": "/images/cards/36_following_directions_conditional/ocean_waves.png",
           "label": "Ocean waves"
         }
       ]
@@ -973,7 +973,7 @@
       "question": "If apples grow on trees, touch your nose.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/apple.png",
+          "image": "/images/cards/36_following_directions_conditional/apple.png",
           "label": "Apple"
         }
       ]
@@ -982,7 +982,7 @@
       "question": "If towels help you dry off, rub your arms.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/towel.png",
+          "image": "/images/cards/36_following_directions_conditional/towel.png",
           "label": "Towel"
         }
       ]
@@ -991,7 +991,7 @@
       "question": "If lamps give us light, point to something bright.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/lamp.png",
+          "image": "/images/cards/36_following_directions_conditional/lamp.png",
           "label": "Lamp"
         }
       ]
@@ -1000,7 +1000,7 @@
       "question": "If birds have feathers, flap your arms like wings.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/bird_flying.png",
+          "image": "/images/cards/36_following_directions_conditional/bird_flying.png",
           "label": "Bird flying"
         }
       ]
@@ -1009,7 +1009,7 @@
       "question": "If sunscreen protects your skin, pretend to rub lotion on your arm.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/sunscreen.png",
+          "image": "/images/cards/36_following_directions_conditional/sunscreen.png",
           "label": "Sunscreen"
         }
       ]
@@ -1018,7 +1018,7 @@
       "question": "If water is wet, pretend to drink from a cup.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/glass_of_water.png",
+          "image": "/images/cards/36_following_directions_conditional/glass_of_water.png",
           "label": "Glass of water"
         }
       ]
@@ -1027,7 +1027,7 @@
       "question": "If bunnies have long ears, put your hands on your head like ears.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/bunny.png",
+          "image": "/images/cards/36_following_directions_conditional/bunny.png",
           "label": "Bunny"
         }
       ]
@@ -1036,7 +1036,7 @@
       "question": "If blankets keep you warm, give yourself a hug.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/blanket.png",
+          "image": "/images/cards/36_following_directions_conditional/blanket.png",
           "label": "Blanket"
         }
       ]
@@ -1045,7 +1045,7 @@
       "question": "If dolphins live in the ocean, make a wave with your hand.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/dolphin.png",
+          "image": "/images/cards/36_following_directions_conditional/dolphin.png",
           "label": "Dolphin"
         }
       ]
@@ -1054,7 +1054,7 @@
       "question": "If soap helps you get clean, pretend to wash your hands.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/soap.png",
+          "image": "/images/cards/36_following_directions_conditional/soap.png",
           "label": "Soap"
         }
       ]
@@ -1063,7 +1063,7 @@
       "question": "If clouds are in the sky, point up.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/clouds.png",
+          "image": "/images/cards/36_following_directions_conditional/clouds.png",
           "label": "Clouds"
         }
       ]
@@ -1072,7 +1072,7 @@
       "question": "If strawberries are red, touch something red.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/strawberry.png",
+          "image": "/images/cards/36_following_directions_conditional/strawberry.png",
           "label": "Strawberry"
         }
       ]
@@ -1081,7 +1081,7 @@
       "question": "If you build sandcastles at the beach, pretend to scoop sand.",
       "images": [
         {
-          "image": "../assets/images/cards/36_following_directions_conditional/sandcastle.png",
+          "image": "/images/cards/36_following_directions_conditional/sandcastle.png",
           "label": "Sandcastle"
         }
       ]
@@ -1092,7 +1092,7 @@
       "question": "Describe the woman running next to the woman wearing a pink jacket. Then, tell me the number of people sitting on the bench.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/park_jogging.png",
+          "image": "/images/cards/37_following_multistep_level2/park_jogging.png",
           "label": "People jogging and sitting in a park"
         }
       ],
@@ -1105,7 +1105,7 @@
       "question": "Count how many children are on the swings. Then, describe what the child closest to the slide is wearing.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/playground_children.png",
+          "image": "/images/cards/37_following_multistep_level2/playground_children.png",
           "label": "Children playing on playground equipment"
         }
       ],
@@ -1118,7 +1118,7 @@
       "question": "Find the person building a sandcastle. Then, tell me what color their swimsuit is and name two things they might need.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/beach_scene.png",
+          "image": "/images/cards/37_following_multistep_level2/beach_scene.png",
           "label": "Beach scene with people and sandcastles"
         }
       ],
@@ -1131,7 +1131,7 @@
       "question": "Describe what the family is eating. Then, tell me three other foods they could bring to a picnic.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/picnic_scene.png",
+          "image": "/images/cards/37_following_multistep_level2/picnic_scene.png",
           "label": "Family having a picnic"
         }
       ],
@@ -1144,7 +1144,7 @@
       "question": "Count the dogs in the picture. Then, describe the biggest dog and tell me what sound it makes.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/dog_park.png",
+          "image": "/images/cards/37_following_multistep_level2/dog_park.png",
           "label": "Dogs playing at a dog park"
         }
       ],
@@ -1158,7 +1158,7 @@
       "question": "Your family wants to go on vacation. You told them that you can't go before May or after August. Tell me what months you can go and then where you would like to go.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/calendar_months.png",
+          "image": "/images/cards/37_following_multistep_level2/calendar_months.png",
           "label": "Calendar showing months of the year"
         }
       ],
@@ -1171,7 +1171,7 @@
       "question": "Look at the schedule. Tell me what happens on Wednesday, then name two activities you do on the weekend.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/weekly_schedule.png",
+          "image": "/images/cards/37_following_multistep_level2/weekly_schedule.png",
           "label": "Weekly schedule chart"
         }
       ],
@@ -1184,7 +1184,7 @@
       "question": "Tell me what time it is. Then, describe what you usually do at this time of day.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/clock_time.png",
+          "image": "/images/cards/37_following_multistep_level2/clock_time.png",
           "label": "Clock showing time"
         }
       ],
@@ -1197,7 +1197,7 @@
       "question": "Find the birthday on the calendar. Tell me what month it is in, then name three things you need for a birthday party.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/calendar_birthday.png",
+          "image": "/images/cards/37_following_multistep_level2/calendar_birthday.png",
           "label": "Calendar with birthday marked"
         }
       ],
@@ -1210,7 +1210,7 @@
       "question": "Name the four seasons in order. Then, tell me your favorite season and describe what the weather is like.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/seasons_chart.png",
+          "image": "/images/cards/37_following_multistep_level2/seasons_chart.png",
           "label": "Chart showing the four seasons"
         }
       ],
@@ -1223,7 +1223,7 @@
       "question": "Describe in detail what the kids are wearing. Then, name three more things they can wear or use to keep warm.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/kids_winter_clothes.png",
+          "image": "/images/cards/37_following_multistep_level2/kids_winter_clothes.png",
           "label": "Kids wearing winter clothes"
         }
       ],
@@ -1236,7 +1236,7 @@
       "question": "Describe what the person is wearing to stay cool. Then, name three things they should bring to the beach.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/person_summer_clothes.png",
+          "image": "/images/cards/37_following_multistep_level2/person_summer_clothes.png",
           "label": "Person wearing summer clothes"
         }
       ],
@@ -1249,7 +1249,7 @@
       "question": "Describe the rain gear the child is wearing. Then, tell me what you would do if you got caught in the rain without an umbrella.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/child_rain_gear.png",
+          "image": "/images/cards/37_following_multistep_level2/child_rain_gear.png",
           "label": "Child wearing rain gear"
         }
       ],
@@ -1262,7 +1262,7 @@
       "question": "Look at what each person is wearing. Tell me what season it might be, then describe what you would wear today.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/family_different_weather.png",
+          "image": "/images/cards/37_following_multistep_level2/family_different_weather.png",
           "label": "Family dressed for different weather"
         }
       ],
@@ -1275,7 +1275,7 @@
       "question": "If it's a cold day, tell me what you would pick from the closet. Then, describe what you would wear if it was a hot day at the beach.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/closet_clothes.png",
+          "image": "/images/cards/37_following_multistep_level2/closet_clothes.png",
           "label": "Closet with various clothes"
         }
       ],
@@ -1288,7 +1288,7 @@
       "question": "Name three things you see on the counter. Then, tell me what meal you could make with those items.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/kitchen_counter.png",
+          "image": "/images/cards/37_following_multistep_level2/kitchen_counter.png",
           "label": "Kitchen counter with food items"
         }
       ],
@@ -1301,7 +1301,7 @@
       "question": "Describe what you see in the refrigerator. Then, name three healthy foods that should always be kept cold.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/refrigerator_food.png",
+          "image": "/images/cards/37_following_multistep_level2/refrigerator_food.png",
           "label": "Open refrigerator with food"
         }
       ],
@@ -1314,7 +1314,7 @@
       "question": "Count how many place settings there are. Then, describe what is missing from the table and what meal this might be for.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/table_dinner.png",
+          "image": "/images/cards/37_following_multistep_level2/table_dinner.png",
           "label": "Dinner table with place settings"
         }
       ],
@@ -1328,7 +1328,7 @@
       "question": "List five items you can see in the grocery bags. Then, tell me which items go in the refrigerator and which go in the pantry.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/grocery_bags.png",
+          "image": "/images/cards/37_following_multistep_level2/grocery_bags.png",
           "label": "Grocery bags with food items"
         }
       ],
@@ -1341,7 +1341,7 @@
       "question": "Describe what is in the lunch box. Then, name three changes you would make to make it healthier.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/lunch_boxes.png",
+          "image": "/images/cards/37_following_multistep_level2/lunch_boxes.png",
           "label": "Lunch box with food"
         }
       ],
@@ -1354,7 +1354,7 @@
       "question": "Describe where the lamp is located. Then, count how many pillows are on the couch and tell me what color they are.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/living_room.png",
+          "image": "/images/cards/37_following_multistep_level2/living_room.png",
           "label": "Living room with lamp and couch"
         }
       ],
@@ -1368,7 +1368,7 @@
       "question": "Tell me three things that need to be cleaned up in this room. Then, describe where each item should go.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/bedroom_messy.png",
+          "image": "/images/cards/37_following_multistep_level2/bedroom_messy.png",
           "label": "Messy bedroom with items to clean"
         }
       ],
@@ -1381,7 +1381,7 @@
       "question": "Name four things you see that you use in the morning. Then, put them in the order you would use them.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/bathroom_toiletries.png",
+          "image": "/images/cards/37_following_multistep_level2/bathroom_toiletries.png",
           "label": "Bathroom with toiletries"
         }
       ],
@@ -1394,7 +1394,7 @@
       "question": "Describe what each person is doing. Then, tell me two more chores that need to be done and who should do them.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/family_chores.png",
+          "image": "/images/cards/37_following_multistep_level2/family_chores.png",
           "label": "Family doing household chores"
         }
       ],
@@ -1408,7 +1408,7 @@
       "question": "Name the pet supplies you see. Then, tell me what kind of pet lives here and what else the pet might need.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/pet_supplies.png",
+          "image": "/images/cards/37_following_multistep_level2/pet_supplies.png",
           "label": "Pet supplies and accessories"
         }
       ],
@@ -1422,7 +1422,7 @@
       "question": "Describe what the lifeguard is doing. Then, name three pool safety rules everyone should follow.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/swimming_pool.png",
+          "image": "/images/cards/37_following_multistep_level2/swimming_pool.png",
           "label": "Swimming pool with lifeguard"
         }
       ],
@@ -1435,7 +1435,7 @@
       "question": "Name four things being sold at the market. Then, tell me which items are fruits and which are vegetables.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/farmers_market.png",
+          "image": "/images/cards/37_following_multistep_level2/farmers_market.png",
           "label": "Farmers market with produce"
         }
       ],
@@ -1448,7 +1448,7 @@
       "question": "Describe what the students are making. Then, name three art supplies they are using and what you would create.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/art_class.png",
+          "image": "/images/cards/37_following_multistep_level2/art_class.png",
           "label": "Students in art class"
         }
       ],
@@ -1462,7 +1462,7 @@
       "question": "Tell me which team is winning and how you know. Then, describe what the goalie is doing.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/soccer_game.png",
+          "image": "/images/cards/37_following_multistep_level2/soccer_game.png",
           "label": "Soccer game in progress"
         }
       ],
@@ -1476,7 +1476,7 @@
       "question": "Count how many children are at the party. Then, describe what activities they are doing and name two games they could play next.",
       "images": [
         {
-          "image": "../assets/images/cards/37_following_multistep_level2/birthday_party.png",
+          "image": "/images/cards/37_following_multistep_level2/birthday_party.png",
           "label": "Birthday party with children"
         }
       ],

@@ -4,7 +4,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-playing-piano.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-playing-piano.png",
           "label": "Girl playing piano"
         }
       ],
@@ -16,7 +16,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-running.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-running.png",
           "label": "Boy running"
         }
       ],
@@ -28,7 +28,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-jumping.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-jumping.png",
           "label": "Child jumping"
         }
       ],
@@ -40,7 +40,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-swimming.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-swimming.png",
           "label": "Girl swimming"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-eating-apple.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-eating-apple.png",
           "label": "Boy eating an apple"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-drinking-water.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-drinking-water.png",
           "label": "Child drinking water"
         }
       ],
@@ -76,7 +76,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-sleeping.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-sleeping.png",
           "label": "Girl sleeping"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-walking.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-walking.png",
           "label": "Boy walking"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-sitting.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-sitting.png",
           "label": "Child sitting"
         }
       ],
@@ -112,7 +112,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-standing.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-standing.png",
           "label": "Girl standing"
         }
       ],
@@ -124,7 +124,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-reading-book.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-reading-book.png",
           "label": "Boy reading a book"
         }
       ],
@@ -136,7 +136,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-writing.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-writing.png",
           "label": "Child writing"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-drawing.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-drawing.png",
           "label": "Girl drawing"
         }
       ],
@@ -160,7 +160,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-singing.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-singing.png",
           "label": "Boy singing"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-dancing.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-dancing.png",
           "label": "Child dancing"
         }
       ],
@@ -184,7 +184,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-laughing.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-laughing.png",
           "label": "Girl laughing"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-crying.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-crying.png",
           "label": "Boy crying"
         }
       ],
@@ -208,7 +208,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-clapping.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-clapping.png",
           "label": "Child clapping"
         }
       ],
@@ -220,7 +220,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-waving.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-waving.png",
           "label": "Girl waving"
         }
       ],
@@ -232,7 +232,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-kicking-ball.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-kicking-ball.png",
           "label": "Boy kicking a ball"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-throwing-ball.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-throwing-ball.png",
           "label": "Child throwing a ball"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-catching-ball.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-catching-ball.png",
           "label": "Girl catching a ball"
         }
       ],
@@ -268,7 +268,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-climbing.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-climbing.png",
           "label": "Boy climbing"
         }
       ],
@@ -280,7 +280,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-digging.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-digging.png",
           "label": "Child digging"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-pushing-cart.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-pushing-cart.png",
           "label": "Girl pushing a cart"
         }
       ],
@@ -304,7 +304,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-pulling-wagon.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-pulling-wagon.png",
           "label": "Boy pulling a wagon"
         }
       ],
@@ -316,7 +316,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-hugging.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-hugging.png",
           "label": "Child hugging"
         }
       ],
@@ -328,7 +328,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/girl-brushing-teeth.png",
+          "image": "/images/cards/103_verbs_basic_actions/girl-brushing-teeth.png",
           "label": "Girl brushing teeth"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/boy-washing-hands.png",
+          "image": "/images/cards/103_verbs_basic_actions/boy-washing-hands.png",
           "label": "Boy washing hands"
         }
       ],
@@ -352,7 +352,7 @@
       "question": "What action is happening?",
       "images": [
         {
-          "image": "../assets/images/cards/103_verbs_basic_actions/child-helping-groceries.png",
+          "image": "/images/cards/103_verbs_basic_actions/child-helping-groceries.png",
           "label": "Child helping with groceries"
         }
       ],
@@ -366,15 +366,15 @@
       "question": "Which one shows someone sewing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/girl-swinging.png",
+          "image": "/images/cards/104_verbs_select_from_three/girl-swinging.png",
           "label": "Girl swinging"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/boy-thinking-laptop.png",
+          "image": "/images/cards/104_verbs_select_from_three/boy-thinking-laptop.png",
           "label": "Boy thinking at laptop"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/boy-sewing.png",
+          "image": "/images/cards/104_verbs_select_from_three/boy-sewing.png",
           "label": "Boy sewing"
         }
       ],
@@ -384,15 +384,15 @@
       "question": "Which one shows someone swimming?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-swimming.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-swimming.png",
           "label": "Child swimming"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-reading.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-reading.png",
           "label": "Child reading"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-sleeping.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-sleeping.png",
           "label": "Child sleeping"
         }
       ],
@@ -402,15 +402,15 @@
       "question": "Which one shows someone eating?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-running.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-running.png",
           "label": "Child running"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-jumping.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-jumping.png",
           "label": "Child jumping"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-eating.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-eating.png",
           "label": "Child eating"
         }
       ],
@@ -420,15 +420,15 @@
       "question": "Which one shows someone reading?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-reading-book.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-reading-book.png",
           "label": "Child reading a book"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-dancing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-dancing.png",
           "label": "Child dancing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-painting.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-painting.png",
           "label": "Child painting"
         }
       ],
@@ -438,15 +438,15 @@
       "question": "Which one shows someone sleeping?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-playing-ball.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-playing-ball.png",
           "label": "Child playing with a ball"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-sleeping-bed.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-sleeping-bed.png",
           "label": "Child sleeping in bed"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-walking.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-walking.png",
           "label": "Child walking"
         }
       ],
@@ -456,15 +456,15 @@
       "question": "Which one shows someone jumping?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-sitting.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-sitting.png",
           "label": "Child sitting"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-jumping-air.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-jumping-air.png",
           "label": "Child jumping in the air"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-drinking.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-drinking.png",
           "label": "Child drinking"
         }
       ],
@@ -474,15 +474,15 @@
       "question": "Which one shows someone cooking?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/person-cooking.png",
+          "image": "/images/cards/104_verbs_select_from_three/person-cooking.png",
           "label": "Person cooking"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/person-watching-tv.png",
+          "image": "/images/cards/104_verbs_select_from_three/person-watching-tv.png",
           "label": "Person watching TV"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/person-sleeping.png",
+          "image": "/images/cards/104_verbs_select_from_three/person-sleeping.png",
           "label": "Person sleeping"
         }
       ],
@@ -492,15 +492,15 @@
       "question": "Which one shows someone painting?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-writing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-writing.png",
           "label": "Child writing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-singing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-singing.png",
           "label": "Child singing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-painting-canvas.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-painting-canvas.png",
           "label": "Child painting on canvas"
         }
       ],
@@ -510,15 +510,15 @@
       "question": "Which one shows someone climbing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-climbing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-climbing.png",
           "label": "Child climbing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-sitting-bench.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-sitting-bench.png",
           "label": "Child sitting on a bench"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-lying-down.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-lying-down.png",
           "label": "Child lying down"
         }
       ],
@@ -528,15 +528,15 @@
       "question": "Which one shows someone dancing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-standing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-standing.png",
           "label": "Child standing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-dancing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-dancing.png",
           "label": "Child dancing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-eating.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-eating.png",
           "label": "Child eating"
         }
       ],
@@ -546,15 +546,15 @@
       "question": "Which one shows someone digging?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-reading.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-reading.png",
           "label": "Child reading"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-digging-sand.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-digging-sand.png",
           "label": "Child digging in sand"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-drinking.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-drinking.png",
           "label": "Child drinking"
         }
       ],
@@ -564,15 +564,15 @@
       "question": "Which one shows someone throwing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-throwing-ball.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-throwing-ball.png",
           "label": "Child throwing a ball"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-catching-ball.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-catching-ball.png",
           "label": "Child catching a ball"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-kicking-ball.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-kicking-ball.png",
           "label": "Child kicking a ball"
         }
       ],
@@ -582,15 +582,15 @@
       "question": "Which one shows someone writing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-talking.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-talking.png",
           "label": "Child talking"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-listening.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-listening.png",
           "label": "Child listening"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-writing-notebook.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-writing-notebook.png",
           "label": "Child writing in a notebook"
         }
       ],
@@ -600,15 +600,15 @@
       "question": "Which one shows someone singing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-singing-mic.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-singing-mic.png",
           "label": "Child singing with a mic"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-drawing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-drawing.png",
           "label": "Child drawing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-running.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-running.png",
           "label": "Child running"
         }
       ],
@@ -618,15 +618,15 @@
       "question": "Which one shows someone washing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-playing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-playing.png",
           "label": "Child playing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-washing-hands.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-washing-hands.png",
           "label": "Child washing hands"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-sleeping.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-sleeping.png",
           "label": "Child sleeping"
         }
       ],
@@ -636,15 +636,15 @@
       "question": "Which one shows someone brushing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-eating-breakfast.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-eating-breakfast.png",
           "label": "Child eating breakfast"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-getting-dressed.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-getting-dressed.png",
           "label": "Child getting dressed"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-brushing-teeth.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-brushing-teeth.png",
           "label": "Child brushing teeth"
         }
       ],
@@ -654,15 +654,15 @@
       "question": "Which one shows someone hugging?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-hugging-parent.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-hugging-parent.png",
           "label": "Child hugging parent"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-waving.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-waving.png",
           "label": "Child waving"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-pointing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-pointing.png",
           "label": "Child pointing"
         }
       ],
@@ -672,15 +672,15 @@
       "question": "Which one shows someone kicking?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-throwing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-throwing.png",
           "label": "Child throwing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-kicking.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-kicking.png",
           "label": "Child kicking"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-catching.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-catching.png",
           "label": "Child catching"
         }
       ],
@@ -690,15 +690,15 @@
       "question": "Which one shows someone pushing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-pulling-wagon.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-pulling-wagon.png",
           "label": "Child pulling a wagon"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-carrying-bag.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-carrying-bag.png",
           "label": "Child carrying a bag"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-pushing-cart.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-pushing-cart.png",
           "label": "Child pushing a cart"
         }
       ],
@@ -708,15 +708,15 @@
       "question": "Which one shows someone pulling?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-pulling.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-pulling.png",
           "label": "Child pulling"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-pushing-door.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-pushing-door.png",
           "label": "Child pushing a door"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-lifting-box.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-lifting-box.png",
           "label": "Child lifting a box"
         }
       ],
@@ -726,15 +726,15 @@
       "question": "Which one shows someone laughing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-crying.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-crying.png",
           "label": "Child crying"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-laughing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-laughing.png",
           "label": "Child laughing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-yawning.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-yawning.png",
           "label": "Child yawning"
         }
       ],
@@ -744,15 +744,15 @@
       "question": "Which one shows someone waving?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-clapping.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-clapping.png",
           "label": "Child clapping"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-pointing.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-pointing.png",
           "label": "Child pointing"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-waving-goodbye.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-waving-goodbye.png",
           "label": "Child waving goodbye"
         }
       ],
@@ -762,15 +762,15 @@
       "question": "Which one shows someone pouring?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-pouring-juice.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-pouring-juice.png",
           "label": "Child pouring juice"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-drinking-glass.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-drinking-glass.png",
           "label": "Child drinking from a glass"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-holding-glass.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-holding-glass.png",
           "label": "Child holding a glass"
         }
       ],
@@ -780,15 +780,15 @@
       "question": "Which one shows someone building?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-knocking-blocks.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-knocking-blocks.png",
           "label": "Child knocking down blocks"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-building-blocks.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-building-blocks.png",
           "label": "Child building with blocks"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-looking-blocks.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-looking-blocks.png",
           "label": "Child looking at blocks"
         }
       ],
@@ -798,15 +798,15 @@
       "question": "Which one shows someone catching?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-throwing-ball.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-throwing-ball.png",
           "label": "Child throwing a ball"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-dropping-ball.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-dropping-ball.png",
           "label": "Child dropping a ball"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-catching-ball.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-catching-ball.png",
           "label": "Child catching a ball"
         }
       ],
@@ -816,15 +816,15 @@
       "question": "Which one shows someone clapping?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-clapping-hands.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-clapping-hands.png",
           "label": "Child clapping hands"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-snapping.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-snapping.png",
           "label": "Child snapping"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-folding-arms.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-folding-arms.png",
           "label": "Child folding arms"
         }
       ],
@@ -834,15 +834,15 @@
       "question": "Which one shows someone stretching?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-sitting.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-sitting.png",
           "label": "Child sitting"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-stretching.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-stretching.png",
           "label": "Child stretching"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-bending.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-bending.png",
           "label": "Child bending"
         }
       ],
@@ -852,15 +852,15 @@
       "question": "Which one shows someone blowing?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-eating.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-eating.png",
           "label": "Child eating"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-drinking.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-drinking.png",
           "label": "Child drinking"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-blowing-bubbles.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-blowing-bubbles.png",
           "label": "Child blowing bubbles"
         }
       ],
@@ -870,15 +870,15 @@
       "question": "Which one shows someone carrying?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-carrying-bag.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-carrying-bag.png",
           "label": "Child carrying a bag"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-dragging-bag.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-dragging-bag.png",
           "label": "Child dragging a bag"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-dropping-bag.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-dropping-bag.png",
           "label": "Child dropping a bag"
         }
       ],
@@ -888,15 +888,15 @@
       "question": "Which one shows someone watering?",
       "images": [
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-picking-flowers.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-picking-flowers.png",
           "label": "Child picking flowers"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-watering-plants.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-watering-plants.png",
           "label": "Child watering plants"
         },
         {
-          "image": "../assets/images/cards/104_verbs_select_from_three/child-smelling-flowers.png",
+          "image": "/images/cards/104_verbs_select_from_three/child-smelling-flowers.png",
           "label": "Child smelling flowers"
         }
       ],
@@ -908,7 +908,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/printer.png",
+          "image": "/images/cards/38_function_labeling/printer.png",
           "label": "A printer"
         }
       ],
@@ -924,7 +924,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/television.png",
+          "image": "/images/cards/38_function_labeling/television.png",
           "label": "A television"
         }
       ],
@@ -940,7 +940,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/tablet.png",
+          "image": "/images/cards/38_function_labeling/tablet.png",
           "label": "A tablet"
         }
       ],
@@ -957,7 +957,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/flashlight.png",
+          "image": "/images/cards/38_function_labeling/flashlight.png",
           "label": "A flashlight"
         }
       ],
@@ -973,7 +973,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/telephone.png",
+          "image": "/images/cards/38_function_labeling/telephone.png",
           "label": "A telephone"
         }
       ],
@@ -989,7 +989,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/camera.png",
+          "image": "/images/cards/38_function_labeling/camera.png",
           "label": "A camera"
         }
       ],
@@ -1005,7 +1005,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/refrigerator.png",
+          "image": "/images/cards/38_function_labeling/refrigerator.png",
           "label": "A refrigerator"
         }
       ],
@@ -1021,7 +1021,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/blender.png",
+          "image": "/images/cards/38_function_labeling/blender.png",
           "label": "A blender"
         }
       ],
@@ -1037,7 +1037,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/toaster_oven.png",
+          "image": "/images/cards/38_function_labeling/toaster_oven.png",
           "label": "A toaster oven"
         }
       ],
@@ -1053,7 +1053,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/microwave.png",
+          "image": "/images/cards/38_function_labeling/microwave.png",
           "label": "A microwave"
         }
       ],
@@ -1069,7 +1069,7 @@
       "question": "What are they used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/measuring_cups.png",
+          "image": "/images/cards/38_function_labeling/measuring_cups.png",
           "label": "Measuring cups"
         }
       ],
@@ -1085,7 +1085,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/spatula.png",
+          "image": "/images/cards/38_function_labeling/spatula.png",
           "label": "A spatula"
         }
       ],
@@ -1101,7 +1101,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/vacuum_cleaner.png",
+          "image": "/images/cards/38_function_labeling/vacuum_cleaner.png",
           "label": "A vacuum cleaner"
         }
       ],
@@ -1117,7 +1117,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/broom.png",
+          "image": "/images/cards/38_function_labeling/broom.png",
           "label": "A broom"
         }
       ],
@@ -1133,7 +1133,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/mop.png",
+          "image": "/images/cards/38_function_labeling/mop.png",
           "label": "A mop"
         }
       ],
@@ -1149,7 +1149,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/sponge.png",
+          "image": "/images/cards/38_function_labeling/sponge.png",
           "label": "A sponge"
         }
       ],
@@ -1165,7 +1165,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/dustpan.png",
+          "image": "/images/cards/38_function_labeling/dustpan.png",
           "label": "A dustpan"
         }
       ],
@@ -1181,7 +1181,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/laundry_basket.png",
+          "image": "/images/cards/38_function_labeling/laundry_basket.png",
           "label": "A laundry basket"
         }
       ],
@@ -1197,7 +1197,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/toothbrush.png",
+          "image": "/images/cards/38_function_labeling/toothbrush.png",
           "label": "A toothbrush"
         }
       ],
@@ -1213,7 +1213,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/soap.png",
+          "image": "/images/cards/38_function_labeling/soap.png",
           "label": "A bar of soap"
         }
       ],
@@ -1229,7 +1229,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/towel.png",
+          "image": "/images/cards/38_function_labeling/towel.png",
           "label": "A towel"
         }
       ],
@@ -1245,7 +1245,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/hairbrush.png",
+          "image": "/images/cards/38_function_labeling/hairbrush.png",
           "label": "A hairbrush"
         }
       ],
@@ -1261,7 +1261,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/bathtub.png",
+          "image": "/images/cards/38_function_labeling/bathtub.png",
           "label": "A bathtub"
         }
       ],
@@ -1277,7 +1277,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/shampoo.png",
+          "image": "/images/cards/38_function_labeling/shampoo.png",
           "label": "A bottle of shampoo"
         }
       ],
@@ -1293,7 +1293,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/sunscreen.png",
+          "image": "/images/cards/38_function_labeling/sunscreen.png",
           "label": "A bottle of sunscreen"
         }
       ],
@@ -1309,7 +1309,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/beach_umbrella.png",
+          "image": "/images/cards/38_function_labeling/beach_umbrella.png",
           "label": "A beach umbrella"
         }
       ],
@@ -1325,7 +1325,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/surfboard.png",
+          "image": "/images/cards/38_function_labeling/surfboard.png",
           "label": "A surfboard"
         }
       ],
@@ -1341,7 +1341,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/beach_bucket.png",
+          "image": "/images/cards/38_function_labeling/beach_bucket.png",
           "label": "A beach bucket"
         }
       ],
@@ -1357,7 +1357,7 @@
       "question": "What are they used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/sunglasses.png",
+          "image": "/images/cards/38_function_labeling/sunglasses.png",
           "label": "Sunglasses"
         }
       ],
@@ -1373,7 +1373,7 @@
       "question": "What is it used for?",
       "images": [
         {
-          "image": "../assets/images/cards/38_function_labeling/life_jacket.png",
+          "image": "/images/cards/38_function_labeling/life_jacket.png",
           "label": "A life jacket"
         }
       ],

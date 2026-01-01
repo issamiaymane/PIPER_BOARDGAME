@@ -4,7 +4,7 @@
       "question": "The cat is ___ the table.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/cat_table/cat_table.png",
+          "image": "/images/cards/9_spatial_concepts/cat_table/cat_table.png",
           "label": "Cat sitting on the table"
         }
       ],
@@ -16,7 +16,7 @@
       "question": "The dog is ___ the bed.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/dog_bed/dog_bed.png",
+          "image": "/images/cards/9_spatial_concepts/dog_bed/dog_bed.png",
           "label": "Dog hiding under the bed"
         }
       ],
@@ -28,7 +28,7 @@
       "question": "The bird is ___ the tree.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/bird_tree/bird_tree.png",
+          "image": "/images/cards/9_spatial_concepts/bird_tree/bird_tree.png",
           "label": "Bird perched in the tree"
         }
       ],
@@ -40,7 +40,7 @@
       "question": "The ball is ___ the box.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/ball_box/ball_box.png",
+          "image": "/images/cards/9_spatial_concepts/ball_box/ball_box.png",
           "label": "Ball behind the box"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "The book is ___ the lamp.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/book_lamp/book_lamp.png",
+          "image": "/images/cards/9_spatial_concepts/book_lamp/book_lamp.png",
           "label": "Book next to the lamp"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "The fish is ___ the bowl.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/fish_bowl/fish_bowl.png",
+          "image": "/images/cards/9_spatial_concepts/fish_bowl/fish_bowl.png",
           "label": "Fish swimming in the bowl"
         }
       ],
@@ -76,7 +76,7 @@
       "question": "The plane is ___ the clouds.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/plane_clouds/plane_clouds.png",
+          "image": "/images/cards/9_spatial_concepts/plane_clouds/plane_clouds.png",
           "label": "Plane flying above the clouds"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "The shoes are ___ the chair.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/shoes_chair/shoes_chair.png",
+          "image": "/images/cards/9_spatial_concepts/shoes_chair/shoes_chair.png",
           "label": "Shoes placed below the chair"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "The toy is ___ the TV.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/toy_tv/toy_tv.png",
+          "image": "/images/cards/9_spatial_concepts/toy_tv/toy_tv.png",
           "label": "Toy in front of the TV"
         }
       ],
@@ -112,7 +112,7 @@
       "question": "The lamp is ___ the desk.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/lamp_desk/lamp_desk.png",
+          "image": "/images/cards/9_spatial_concepts/lamp_desk/lamp_desk.png",
           "label": "Lamp on the desk"
         }
       ],
@@ -124,7 +124,7 @@
       "question": "The mouse is ___ the boxes.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/mouse_boxes/mouse_boxes.png",
+          "image": "/images/cards/9_spatial_concepts/mouse_boxes/mouse_boxes.png",
           "label": "Mouse between the boxes"
         }
       ],
@@ -136,7 +136,7 @@
       "question": "The bee is ___ the flower.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/bee_flower/bee_flower.png",
+          "image": "/images/cards/9_spatial_concepts/bee_flower/bee_flower.png",
           "label": "Bee near the flower"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "The cup is ___ the plate.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/cup_plate/cup_plate.png",
+          "image": "/images/cards/9_spatial_concepts/cup_plate/cup_plate.png",
           "label": "Cup beside the plate"
         }
       ],
@@ -160,7 +160,7 @@
       "question": "The car is ___ the garage.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/car_garage/car_garage.png",
+          "image": "/images/cards/9_spatial_concepts/car_garage/car_garage.png",
           "label": "Car parked outside the garage"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "The bear is ___ the cave.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/bear_cave/bear_cave.png",
+          "image": "/images/cards/9_spatial_concepts/bear_cave/bear_cave.png",
           "label": "Bear inside the cave"
         }
       ],
@@ -184,7 +184,7 @@
       "question": "The spider is ___ the door.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/spider_door/spider_door.png",
+          "image": "/images/cards/9_spatial_concepts/spider_door/spider_door.png",
           "label": "Spider above the door"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "The frog is ___ the rock.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/frog_rock/frog_rock.png",
+          "image": "/images/cards/9_spatial_concepts/frog_rock/frog_rock.png",
           "label": "Frog sitting on the rock"
         }
       ],
@@ -208,7 +208,7 @@
       "question": "The rabbit is ___ the bush.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/rabbit_bush/rabbit_bush.png",
+          "image": "/images/cards/9_spatial_concepts/rabbit_bush/rabbit_bush.png",
           "label": "Rabbit hiding under the bush"
         }
       ],
@@ -220,7 +220,7 @@
       "question": "The star is ___ the moon.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/star_moon/star_moon.png",
+          "image": "/images/cards/9_spatial_concepts/star_moon/star_moon.png",
           "label": "Star over the moon"
         }
       ],
@@ -232,7 +232,7 @@
       "question": "The socks are ___ the drawer.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/socks_drawer/socks_drawer.png",
+          "image": "/images/cards/9_spatial_concepts/socks_drawer/socks_drawer.png",
           "label": "Socks in the drawer"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "The apple is ___ the banana.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/apple_banana/apple_banana.png",
+          "image": "/images/cards/9_spatial_concepts/apple_banana/apple_banana.png",
           "label": "Apple next to the banana"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "The butterfly is ___ the flowers.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/butterfly_flowers/butterfly_flowers.png",
+          "image": "/images/cards/9_spatial_concepts/butterfly_flowers/butterfly_flowers.png",
           "label": "Butterfly flying around the flowers"
         }
       ],
@@ -268,7 +268,7 @@
       "question": "The duck is ___ the pond.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/duck_pond/duck_pond.png",
+          "image": "/images/cards/9_spatial_concepts/duck_pond/duck_pond.png",
           "label": "Duck floating on the pond"
         }
       ],
@@ -280,7 +280,7 @@
       "question": "The remote is ___ the couch.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/remote_couch/remote_couch.png",
+          "image": "/images/cards/9_spatial_concepts/remote_couch/remote_couch.png",
           "label": "Remote under the couch"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "The balloon is ___ the house.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/balloon_house/balloon_house.png",
+          "image": "/images/cards/9_spatial_concepts/balloon_house/balloon_house.png",
           "label": "Balloon floating above the house"
         }
       ],
@@ -304,7 +304,7 @@
       "question": "The cat is ___ the curtain.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/cat_curtain/cat_curtain.png",
+          "image": "/images/cards/9_spatial_concepts/cat_curtain/cat_curtain.png",
           "label": "Cat hiding behind the curtain"
         }
       ],
@@ -316,7 +316,7 @@
       "question": "The snail is ___ the leaf.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/snail_leaf/snail_leaf.png",
+          "image": "/images/cards/9_spatial_concepts/snail_leaf/snail_leaf.png",
           "label": "Snail crawling on the leaf"
         }
       ],
@@ -328,7 +328,7 @@
       "question": "The cookie is ___ the jar.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/cookie_jar/cookie_jar.png",
+          "image": "/images/cards/9_spatial_concepts/cookie_jar/cookie_jar.png",
           "label": "Cookie in the jar"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "The pillow is ___ the bed.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/pillow_bed/pillow_bed.png",
+          "image": "/images/cards/9_spatial_concepts/pillow_bed/pillow_bed.png",
           "label": "Pillow on the bed"
         }
       ],
@@ -352,7 +352,7 @@
       "question": "The toy box is ___ the bed.",
       "images": [
         {
-          "image": "../assets/images/cards/9_spatial_concepts/toybox_bed/toybox_bed.png",
+          "image": "/images/cards/9_spatial_concepts/toybox_bed/toybox_bed.png",
           "label": "Toy box beside the bed"
         }
       ],
@@ -366,7 +366,7 @@
       "question": "What do you do after your clothes are dry?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/fold_clothes/fold_clothes.png",
+          "image": "/images/cards/10_temporal_concepts/fold_clothes/fold_clothes.png",
           "label": "Folding clothes"
         }
       ],
@@ -378,7 +378,7 @@
       "question": "What do you do before you go to bed?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/brush_teeth/brush_teeth.png",
+          "image": "/images/cards/10_temporal_concepts/brush_teeth/brush_teeth.png",
           "label": "Brushing teeth"
         }
       ],
@@ -390,7 +390,7 @@
       "question": "What do you do after you put on socks?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/put_on_shoes/put_on_shoes.png",
+          "image": "/images/cards/10_temporal_concepts/put_on_shoes/put_on_shoes.png",
           "label": "Putting on shoes"
         }
       ],
@@ -402,7 +402,7 @@
       "question": "What do you do before you eat?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/wash_hands/wash_hands.png",
+          "image": "/images/cards/10_temporal_concepts/wash_hands/wash_hands.png",
           "label": "Washing hands"
         }
       ],
@@ -414,7 +414,7 @@
       "question": "What do you do before you get out of bed?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/stretch_bed/stretch_bed.png",
+          "image": "/images/cards/10_temporal_concepts/stretch_bed/stretch_bed.png",
           "label": "Stretching in bed"
         }
       ],
@@ -426,7 +426,7 @@
       "question": "What do you do after you take a bath?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/dry_off/dry_off.png",
+          "image": "/images/cards/10_temporal_concepts/dry_off/dry_off.png",
           "label": "Drying off with towel"
         }
       ],
@@ -438,7 +438,7 @@
       "question": "What do you do after you get out the milk?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/eat_cereal/eat_cereal.png",
+          "image": "/images/cards/10_temporal_concepts/eat_cereal/eat_cereal.png",
           "label": "Eating cereal"
         }
       ],
@@ -450,7 +450,7 @@
       "question": "What do you do before you put on running shoes?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/put_on_socks/put_on_socks.png",
+          "image": "/images/cards/10_temporal_concepts/put_on_socks/put_on_socks.png",
           "label": "Putting on socks"
         }
       ],
@@ -462,7 +462,7 @@
       "question": "What do you do before you send a thank you card?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/read_card/read_card.png",
+          "image": "/images/cards/10_temporal_concepts/read_card/read_card.png",
           "label": "Writing a message"
         }
       ],
@@ -474,7 +474,7 @@
       "question": "What do you do after people sing Happy Birthday?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/blow_candles/blow_candles.png",
+          "image": "/images/cards/10_temporal_concepts/blow_candles/blow_candles.png",
           "label": "Blowing out candles"
         }
       ],
@@ -486,7 +486,7 @@
       "question": "What do you do before you go outside in winter?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/put_on_coat/put_on_coat.png",
+          "image": "/images/cards/10_temporal_concepts/put_on_coat/put_on_coat.png",
           "label": "Putting on coat"
         }
       ],
@@ -498,7 +498,7 @@
       "question": "What do you do after you get in the car?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/buckle_seatbelt/buckle_seatbelt.png",
+          "image": "/images/cards/10_temporal_concepts/buckle_seatbelt/buckle_seatbelt.png",
           "label": "Buckling seatbelt"
         }
       ],
@@ -510,7 +510,7 @@
       "question": "What do you do before you fall asleep?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/yawning/yawning.png",
+          "image": "/images/cards/10_temporal_concepts/yawning/yawning.png",
           "label": "Yawning and closing eyes"
         }
       ],
@@ -522,7 +522,7 @@
       "question": "What do you do before you bake a cake?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/mix_batter/mix_batter.png",
+          "image": "/images/cards/10_temporal_concepts/mix_batter/mix_batter.png",
           "label": "Mixing batter"
         }
       ],
@@ -534,7 +534,7 @@
       "question": "What do you do after you draw a picture?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/hang_artwork/hang_artwork.png",
+          "image": "/images/cards/10_temporal_concepts/hang_artwork/hang_artwork.png",
           "label": "Hanging artwork"
         }
       ],
@@ -546,7 +546,7 @@
       "question": "What do you do after you plant a seed?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/water_plant/water_plant.png",
+          "image": "/images/cards/10_temporal_concepts/water_plant/water_plant.png",
           "label": "Watering a plant"
         }
       ],
@@ -558,7 +558,7 @@
       "question": "What do you do after you put on shoes?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/tie_shoes/tie_shoes.png",
+          "image": "/images/cards/10_temporal_concepts/tie_shoes/tie_shoes.png",
           "label": "Tying shoes"
         }
       ],
@@ -570,7 +570,7 @@
       "question": "What do grown-ups do before they cook an egg?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/crack_egg/crack_egg.png",
+          "image": "/images/cards/10_temporal_concepts/crack_egg/crack_egg.png",
           "label": "Cracking an egg"
         }
       ],
@@ -582,7 +582,7 @@
       "question": "What do you do before you go on a trip?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/pack_bag/pack_bag.png",
+          "image": "/images/cards/10_temporal_concepts/pack_bag/pack_bag.png",
           "label": "Packing a bag"
         }
       ],
@@ -594,7 +594,7 @@
       "question": "What do you do after your pet is hungry?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/feed_pet/feed_pet.png",
+          "image": "/images/cards/10_temporal_concepts/feed_pet/feed_pet.png",
           "label": "Feeding a pet"
         }
       ],
@@ -606,7 +606,7 @@
       "question": "What do you do before you go swimming?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/apply_sunscreen/apply_sunscreen.png",
+          "image": "/images/cards/10_temporal_concepts/apply_sunscreen/apply_sunscreen.png",
           "label": "Applying sunscreen"
         }
       ],
@@ -618,7 +618,7 @@
       "question": "What do you do after you finish playing?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/clean_up_toys/clean_up_toys.png",
+          "image": "/images/cards/10_temporal_concepts/clean_up_toys/clean_up_toys.png",
           "label": "Cleaning up toys"
         }
       ],
@@ -630,7 +630,7 @@
       "question": "What do you do before the battery dies?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/charge_tablet/charge_tablet.png",
+          "image": "/images/cards/10_temporal_concepts/charge_tablet/charge_tablet.png",
           "label": "Charging tablet"
         }
       ],
@@ -642,7 +642,7 @@
       "question": "What do you do after you wash your hair?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/comb_hair/comb_hair.png",
+          "image": "/images/cards/10_temporal_concepts/comb_hair/comb_hair.png",
           "label": "Combing hair"
         }
       ],
@@ -654,7 +654,7 @@
       "question": "What do you do before someone leaves?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/say_goodbye/say_goodbye.png",
+          "image": "/images/cards/10_temporal_concepts/say_goodbye/say_goodbye.png",
           "label": "Saying goodbye"
         }
       ],
@@ -666,7 +666,7 @@
       "question": "What do you do before you order food?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/read_menu/read_menu.png",
+          "image": "/images/cards/10_temporal_concepts/read_menu/read_menu.png",
           "label": "Reading a menu"
         }
       ],
@@ -678,7 +678,7 @@
       "question": "What do you do after you scan items at the self-checkout?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/bag_groceries/bag_groceries.png",
+          "image": "/images/cards/10_temporal_concepts/bag_groceries/bag_groceries.png",
           "label": "Bagging groceries"
         }
       ],
@@ -690,7 +690,7 @@
       "question": "What do you do before dinner is served?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/set_table/set_table.png",
+          "image": "/images/cards/10_temporal_concepts/set_table/set_table.png",
           "label": "Setting the table"
         }
       ],
@@ -702,7 +702,7 @@
       "question": "What do you do after you get out of bed?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/make_bed/make_bed.png",
+          "image": "/images/cards/10_temporal_concepts/make_bed/make_bed.png",
           "label": "Making the bed"
         }
       ],
@@ -714,7 +714,7 @@
       "question": "What do you do before you eat an orange?",
       "images": [
         {
-          "image": "../assets/images/cards/10_temporal_concepts/peel_orange/peel_orange.png",
+          "image": "/images/cards/10_temporal_concepts/peel_orange/peel_orange.png",
           "label": "Peeling an orange"
         }
       ],
@@ -728,15 +728,15 @@
       "question": "Put these steps in order: Making a Sandwich",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/sandwich/step1.png",
+          "image": "/images/cards/11_temporal_sequence/sandwich/step1.png",
           "label": "Putting bread slices on plate"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/sandwich/step2.png",
+          "image": "/images/cards/11_temporal_sequence/sandwich/step2.png",
           "label": "Adding peanut butter and jelly"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/sandwich/step3.png",
+          "image": "/images/cards/11_temporal_sequence/sandwich/step3.png",
           "label": "Completed sandwich cut in half"
         }
       ],
@@ -750,15 +750,15 @@
       "question": "Put these steps in order: Getting Dressed",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/getting_dressed/step1.png",
+          "image": "/images/cards/11_temporal_sequence/getting_dressed/step1.png",
           "label": "Putting on shirt"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/getting_dressed/step2.png",
+          "image": "/images/cards/11_temporal_sequence/getting_dressed/step2.png",
           "label": "Putting on pants"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/getting_dressed/step3.png",
+          "image": "/images/cards/11_temporal_sequence/getting_dressed/step3.png",
           "label": "Tying shoes"
         }
       ],
@@ -772,15 +772,15 @@
       "question": "Put these steps in order: Brushing Teeth",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/brushing_teeth/step1.png",
+          "image": "/images/cards/11_temporal_sequence/brushing_teeth/step1.png",
           "label": "Putting toothpaste on brush"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/brushing_teeth/step2.png",
+          "image": "/images/cards/11_temporal_sequence/brushing_teeth/step2.png",
           "label": "Brushing teeth"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/brushing_teeth/step3.png",
+          "image": "/images/cards/11_temporal_sequence/brushing_teeth/step3.png",
           "label": "Rinsing mouth"
         }
       ],
@@ -794,15 +794,15 @@
       "question": "Put these steps in order: Making Orange Juice",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/orange_juice/step1.png",
+          "image": "/images/cards/11_temporal_sequence/orange_juice/step1.png",
           "label": "Cutting oranges in half"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/orange_juice/step2.png",
+          "image": "/images/cards/11_temporal_sequence/orange_juice/step2.png",
           "label": "Squeezing oranges"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/orange_juice/step3.png",
+          "image": "/images/cards/11_temporal_sequence/orange_juice/step3.png",
           "label": "Pouring juice into glass"
         }
       ],
@@ -816,15 +816,15 @@
       "question": "Put these steps in order: Planting a Flower",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/planting_flower/step1.png",
+          "image": "/images/cards/11_temporal_sequence/planting_flower/step1.png",
           "label": "Digging a hole in soil"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/planting_flower/step2.png",
+          "image": "/images/cards/11_temporal_sequence/planting_flower/step2.png",
           "label": "Placing seed in hole"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/planting_flower/step3.png",
+          "image": "/images/cards/11_temporal_sequence/planting_flower/step3.png",
           "label": "Watering the planted seed"
         }
       ],
@@ -838,15 +838,15 @@
       "question": "Put these steps in order: Washing Hands",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/washing_hands/step1.png",
+          "image": "/images/cards/11_temporal_sequence/washing_hands/step1.png",
           "label": "Turning on water"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/washing_hands/step2.png",
+          "image": "/images/cards/11_temporal_sequence/washing_hands/step2.png",
           "label": "Scrubbing with soap"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/washing_hands/step3.png",
+          "image": "/images/cards/11_temporal_sequence/washing_hands/step3.png",
           "label": "Drying with towel"
         }
       ],
@@ -860,15 +860,15 @@
       "question": "Put these steps in order: Making Cereal",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_cereal/step1.png",
+          "image": "/images/cards/11_temporal_sequence/making_cereal/step1.png",
           "label": "Getting bowl from cabinet"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_cereal/step2.png",
+          "image": "/images/cards/11_temporal_sequence/making_cereal/step2.png",
           "label": "Pouring cereal and milk into bowl"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_cereal/step3.png",
+          "image": "/images/cards/11_temporal_sequence/making_cereal/step3.png",
           "label": "Eating at the table"
         }
       ],
@@ -882,15 +882,15 @@
       "question": "Put these steps in order: Drawing a Picture",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/drawing_picture/step1.png",
+          "image": "/images/cards/11_temporal_sequence/drawing_picture/step1.png",
           "label": "Blank paper and crayons"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/drawing_picture/step2.png",
+          "image": "/images/cards/11_temporal_sequence/drawing_picture/step2.png",
           "label": "Drawing shapes and lines"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/drawing_picture/step3.png",
+          "image": "/images/cards/11_temporal_sequence/drawing_picture/step3.png",
           "label": "Completed colorful picture"
         }
       ],
@@ -904,15 +904,15 @@
       "question": "Put these steps in order: Building a Snowman",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/building_snowman/step1.png",
+          "image": "/images/cards/11_temporal_sequence/building_snowman/step1.png",
           "label": "Rolling large snowball for body"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/building_snowman/step2.png",
+          "image": "/images/cards/11_temporal_sequence/building_snowman/step2.png",
           "label": "Stacking snowballs"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/building_snowman/step3.png",
+          "image": "/images/cards/11_temporal_sequence/building_snowman/step3.png",
           "label": "Adding face and scarf"
         }
       ],
@@ -926,15 +926,15 @@
       "question": "Put these steps in order: Baking Cookies",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/baking_cookies/step1.png",
+          "image": "/images/cards/11_temporal_sequence/baking_cookies/step1.png",
           "label": "Mixing dough in bowl"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/baking_cookies/step2.png",
+          "image": "/images/cards/11_temporal_sequence/baking_cookies/step2.png",
           "label": "Cookies on baking sheet"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/baking_cookies/step3.png",
+          "image": "/images/cards/11_temporal_sequence/baking_cookies/step3.png",
           "label": "Finished cookies on plate"
         }
       ],
@@ -948,15 +948,15 @@
       "question": "Put these steps in order: Wrapping a Gift",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/wrapping_gift/step1.png",
+          "image": "/images/cards/11_temporal_sequence/wrapping_gift/step1.png",
           "label": "Gift box and wrapping paper"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/wrapping_gift/step2.png",
+          "image": "/images/cards/11_temporal_sequence/wrapping_gift/step2.png",
           "label": "Wrapping paper around box"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/wrapping_gift/step3.png",
+          "image": "/images/cards/11_temporal_sequence/wrapping_gift/step3.png",
           "label": "Finished gift with bow"
         }
       ],
@@ -970,15 +970,15 @@
       "question": "Put these steps in order: Making the Bed",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_bed/step1.png",
+          "image": "/images/cards/11_temporal_sequence/making_bed/step1.png",
           "label": "Messy unmade bed"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_bed/step2.png",
+          "image": "/images/cards/11_temporal_sequence/making_bed/step2.png",
           "label": "Pulling up blanket"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_bed/step3.png",
+          "image": "/images/cards/11_temporal_sequence/making_bed/step3.png",
           "label": "Bed made with pillow in place"
         }
       ],
@@ -992,15 +992,15 @@
       "question": "Put these steps in order: Feeding the Dog",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/feeding_dog/step1.png",
+          "image": "/images/cards/11_temporal_sequence/feeding_dog/step1.png",
           "label": "Getting dog food bag"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/feeding_dog/step2.png",
+          "image": "/images/cards/11_temporal_sequence/feeding_dog/step2.png",
           "label": "Pouring food in bowl"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/feeding_dog/step3.png",
+          "image": "/images/cards/11_temporal_sequence/feeding_dog/step3.png",
           "label": "Dog eating from bowl"
         }
       ],
@@ -1014,15 +1014,15 @@
       "question": "Put these steps in order: Taking a Bath",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/taking_bath/step1.png",
+          "image": "/images/cards/11_temporal_sequence/taking_bath/step1.png",
           "label": "Filling tub with water"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/taking_bath/step2.png",
+          "image": "/images/cards/11_temporal_sequence/taking_bath/step2.png",
           "label": "Washing with soap"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/taking_bath/step3.png",
+          "image": "/images/cards/11_temporal_sequence/taking_bath/step3.png",
           "label": "Drying off with towel"
         }
       ],
@@ -1036,15 +1036,15 @@
       "question": "Put these steps in order: Making a Phone Call",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/phone_call/step1.png",
+          "image": "/images/cards/11_temporal_sequence/phone_call/step1.png",
           "label": "Picking up phone"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/phone_call/step2.png",
+          "image": "/images/cards/11_temporal_sequence/phone_call/step2.png",
           "label": "Dialing numbers"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/phone_call/step3.png",
+          "image": "/images/cards/11_temporal_sequence/phone_call/step3.png",
           "label": "Talking on phone"
         }
       ],
@@ -1058,15 +1058,15 @@
       "question": "Put these steps in order: Cooking an Egg",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/cooking_egg/step1.png",
+          "image": "/images/cards/11_temporal_sequence/cooking_egg/step1.png",
           "label": "Cracking egg into pan"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/cooking_egg/step2.png",
+          "image": "/images/cards/11_temporal_sequence/cooking_egg/step2.png",
           "label": "Egg cooking in pan"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/cooking_egg/step3.png",
+          "image": "/images/cards/11_temporal_sequence/cooking_egg/step3.png",
           "label": "Egg on plate"
         }
       ],
@@ -1080,15 +1080,15 @@
       "question": "Put these steps in order: Building a Sandcastle",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/sandcastle/step1.png",
+          "image": "/images/cards/11_temporal_sequence/sandcastle/step1.png",
           "label": "Filling bucket with wet sand"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/sandcastle/step2.png",
+          "image": "/images/cards/11_temporal_sequence/sandcastle/step2.png",
           "label": "Flipping bucket over"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/sandcastle/step3.png",
+          "image": "/images/cards/11_temporal_sequence/sandcastle/step3.png",
           "label": "Decorated sandcastle with shells"
         }
       ],
@@ -1102,15 +1102,15 @@
       "question": "Put these steps in order: Making Lemonade",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/lemonade/step1.png",
+          "image": "/images/cards/11_temporal_sequence/lemonade/step1.png",
           "label": "Squeezing lemons"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/lemonade/step2.png",
+          "image": "/images/cards/11_temporal_sequence/lemonade/step2.png",
           "label": "Adding sugar and water"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/lemonade/step3.png",
+          "image": "/images/cards/11_temporal_sequence/lemonade/step3.png",
           "label": "Stirring and serving"
         }
       ],
@@ -1124,15 +1124,15 @@
       "question": "Put these steps in order: Mailing a Letter",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/mailing_letter/step1.png",
+          "image": "/images/cards/11_temporal_sequence/mailing_letter/step1.png",
           "label": "Writing the letter"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/mailing_letter/step2.png",
+          "image": "/images/cards/11_temporal_sequence/mailing_letter/step2.png",
           "label": "Putting letter in envelope"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/mailing_letter/step3.png",
+          "image": "/images/cards/11_temporal_sequence/mailing_letter/step3.png",
           "label": "Dropping in mailbox"
         }
       ],
@@ -1146,15 +1146,15 @@
       "question": "Put these steps in order: Building with Blocks",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/building_blocks/step1.png",
+          "image": "/images/cards/11_temporal_sequence/building_blocks/step1.png",
           "label": "Blocks scattered on floor"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/building_blocks/step2.png",
+          "image": "/images/cards/11_temporal_sequence/building_blocks/step2.png",
           "label": "Stacking blocks up"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/building_blocks/step3.png",
+          "image": "/images/cards/11_temporal_sequence/building_blocks/step3.png",
           "label": "Completed tower"
         }
       ],
@@ -1168,15 +1168,15 @@
       "question": "Put these steps in order: Eating an Apple",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/eating_apple/step1.png",
+          "image": "/images/cards/11_temporal_sequence/eating_apple/step1.png",
           "label": "Whole apple"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/eating_apple/step2.png",
+          "image": "/images/cards/11_temporal_sequence/eating_apple/step2.png",
           "label": "Apple with bite taken"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/eating_apple/step3.png",
+          "image": "/images/cards/11_temporal_sequence/eating_apple/step3.png",
           "label": "Just the apple core left"
         }
       ],
@@ -1190,15 +1190,15 @@
       "question": "Put these steps in order: Putting on a Band-Aid",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/bandaid/step1.png",
+          "image": "/images/cards/11_temporal_sequence/bandaid/step1.png",
           "label": "Scraped knee"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/bandaid/step2.png",
+          "image": "/images/cards/11_temporal_sequence/bandaid/step2.png",
           "label": "Opening band-aid wrapper"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/bandaid/step3.png",
+          "image": "/images/cards/11_temporal_sequence/bandaid/step3.png",
           "label": "Band-aid on knee"
         }
       ],
@@ -1212,15 +1212,15 @@
       "question": "Put these steps in order: Watering Plants",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/watering_plants/step1.png",
+          "image": "/images/cards/11_temporal_sequence/watering_plants/step1.png",
           "label": "Filling watering can"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/watering_plants/step2.png",
+          "image": "/images/cards/11_temporal_sequence/watering_plants/step2.png",
           "label": "Carrying watering can to plant"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/watering_plants/step3.png",
+          "image": "/images/cards/11_temporal_sequence/watering_plants/step3.png",
           "label": "Pouring water on plant"
         }
       ],
@@ -1234,15 +1234,15 @@
       "question": "Put these steps in order: Coding a Simple Game",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/coding_game/step1.png",
+          "image": "/images/cards/11_temporal_sequence/coding_game/step1.png",
           "label": "Kid sitting at computer with blank screen"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/coding_game/step2.png",
+          "image": "/images/cards/11_temporal_sequence/coding_game/step2.png",
           "label": "Kid typing code"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/coding_game/step3.png",
+          "image": "/images/cards/11_temporal_sequence/coding_game/step3.png",
           "label": "Game running on screen"
         }
       ],
@@ -1256,15 +1256,15 @@
       "question": "Put these steps in order: Blowing Up a Balloon",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/balloon/step1.png",
+          "image": "/images/cards/11_temporal_sequence/balloon/step1.png",
           "label": "Flat balloon"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/balloon/step2.png",
+          "image": "/images/cards/11_temporal_sequence/balloon/step2.png",
           "label": "Blowing air into balloon"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/balloon/step3.png",
+          "image": "/images/cards/11_temporal_sequence/balloon/step3.png",
           "label": "Tied balloon floating"
         }
       ],
@@ -1278,15 +1278,15 @@
       "question": "Put these steps in order: Making Toast",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_toast/step1.png",
+          "image": "/images/cards/11_temporal_sequence/making_toast/step1.png",
           "label": "Asking adult to help make toast"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_toast/step2.png",
+          "image": "/images/cards/11_temporal_sequence/making_toast/step2.png",
           "label": "Adult putting bread in toaster oven"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/making_toast/step3.png",
+          "image": "/images/cards/11_temporal_sequence/making_toast/step3.png",
           "label": "Eating toast at table"
         }
       ],
@@ -1300,15 +1300,15 @@
       "question": "Put these steps in order: Putting on Shoes",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/putting_on_shoes/step1.png",
+          "image": "/images/cards/11_temporal_sequence/putting_on_shoes/step1.png",
           "label": "Bare feet"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/putting_on_shoes/step2.png",
+          "image": "/images/cards/11_temporal_sequence/putting_on_shoes/step2.png",
           "label": "Putting on socks"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/putting_on_shoes/step3.png",
+          "image": "/images/cards/11_temporal_sequence/putting_on_shoes/step3.png",
           "label": "Shoes on and tied"
         }
       ],
@@ -1322,15 +1322,15 @@
       "question": "Put these steps in order: Opening a Present",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/opening_present/step1.png",
+          "image": "/images/cards/11_temporal_sequence/opening_present/step1.png",
           "label": "Wrapped gift box"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/opening_present/step2.png",
+          "image": "/images/cards/11_temporal_sequence/opening_present/step2.png",
           "label": "Tearing off wrapping paper"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/opening_present/step3.png",
+          "image": "/images/cards/11_temporal_sequence/opening_present/step3.png",
           "label": "Holding toy from inside"
         }
       ],
@@ -1344,15 +1344,15 @@
       "question": "Put these steps in order: Going Surfing",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/surfing/step1.png",
+          "image": "/images/cards/11_temporal_sequence/surfing/step1.png",
           "label": "Putting on wetsuit"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/surfing/step2.png",
+          "image": "/images/cards/11_temporal_sequence/surfing/step2.png",
           "label": "Carrying surfboard to water"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/surfing/step3.png",
+          "image": "/images/cards/11_temporal_sequence/surfing/step3.png",
           "label": "Riding a wave"
         }
       ],
@@ -1366,15 +1366,15 @@
       "question": "Put these steps in order: Lighting a Candle",
       "images": [
         {
-          "image": "../assets/images/cards/11_temporal_sequence/lighting_candle/step1.png",
+          "image": "/images/cards/11_temporal_sequence/lighting_candle/step1.png",
           "label": "Candle on birthday cake"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/lighting_candle/step2.png",
+          "image": "/images/cards/11_temporal_sequence/lighting_candle/step2.png",
           "label": "Adult lighting candle"
         },
         {
-          "image": "../assets/images/cards/11_temporal_sequence/lighting_candle/step3.png",
+          "image": "/images/cards/11_temporal_sequence/lighting_candle/step3.png",
           "label": "Blowing out candle"
         }
       ],
@@ -1390,11 +1390,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/painting/before.png",
+          "image": "/images/cards/12_before_after/painting/before.png",
           "label": "Before: Blank canvas with paint brush and palette"
         },
         {
-          "image": "../assets/images/cards/12_before_after/painting/after.png",
+          "image": "/images/cards/12_before_after/painting/after.png",
           "label": "After: Colorful painted artwork"
         }
       ],
@@ -1406,11 +1406,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/cookie/before.png",
+          "image": "/images/cards/12_before_after/cookie/before.png",
           "label": "Before: Whole cookie on plate"
         },
         {
-          "image": "../assets/images/cards/12_before_after/cookie/after.png",
+          "image": "/images/cards/12_before_after/cookie/after.png",
           "label": "After: Cookie with bite taken out"
         }
       ],
@@ -1422,11 +1422,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/balloon/before.png",
+          "image": "/images/cards/12_before_after/balloon/before.png",
           "label": "Before: Flat deflated balloon"
         },
         {
-          "image": "../assets/images/cards/12_before_after/balloon/after.png",
+          "image": "/images/cards/12_before_after/balloon/after.png",
           "label": "After: Big round inflated balloon"
         }
       ],
@@ -1438,11 +1438,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/sandcastle/before.png",
+          "image": "/images/cards/12_before_after/sandcastle/before.png",
           "label": "Before: Flat pile of sand"
         },
         {
-          "image": "../assets/images/cards/12_before_after/sandcastle/after.png",
+          "image": "/images/cards/12_before_after/sandcastle/after.png",
           "label": "After: Sandcastle with towers"
         }
       ],
@@ -1454,11 +1454,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/bed/before.png",
+          "image": "/images/cards/12_before_after/bed/before.png",
           "label": "Before: Messy unmade bed"
         },
         {
-          "image": "../assets/images/cards/12_before_after/bed/after.png",
+          "image": "/images/cards/12_before_after/bed/after.png",
           "label": "After: Neat bed with pillow"
         }
       ],
@@ -1470,11 +1470,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/puppy/before.png",
+          "image": "/images/cards/12_before_after/puppy/before.png",
           "label": "Before: Small puppy"
         },
         {
-          "image": "../assets/images/cards/12_before_after/puppy/after.png",
+          "image": "/images/cards/12_before_after/puppy/after.png",
           "label": "After: Grown-up dog"
         }
       ],
@@ -1486,11 +1486,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/gift/before.png",
+          "image": "/images/cards/12_before_after/gift/before.png",
           "label": "Before: Unwrapped box"
         },
         {
-          "image": "../assets/images/cards/12_before_after/gift/after.png",
+          "image": "/images/cards/12_before_after/gift/after.png",
           "label": "After: Wrapped present with bow"
         }
       ],
@@ -1502,11 +1502,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/cake/before.png",
+          "image": "/images/cards/12_before_after/cake/before.png",
           "label": "Before: Bowl of batter"
         },
         {
-          "image": "../assets/images/cards/12_before_after/cake/after.png",
+          "image": "/images/cards/12_before_after/cake/after.png",
           "label": "After: Decorated birthday cake"
         }
       ],
@@ -1518,11 +1518,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/seed/before.png",
+          "image": "/images/cards/12_before_after/seed/before.png",
           "label": "Before: Empty pot with soil"
         },
         {
-          "image": "../assets/images/cards/12_before_after/seed/after.png",
+          "image": "/images/cards/12_before_after/seed/after.png",
           "label": "After: Pot with flower growing"
         }
       ],
@@ -1534,11 +1534,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/dishes/before.png",
+          "image": "/images/cards/12_before_after/dishes/before.png",
           "label": "Before: Sink full of dirty dishes"
         },
         {
-          "image": "../assets/images/cards/12_before_after/dishes/after.png",
+          "image": "/images/cards/12_before_after/dishes/after.png",
           "label": "After: Clean dishes in rack"
         }
       ],
@@ -1550,11 +1550,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/bath/before.png",
+          "image": "/images/cards/12_before_after/bath/before.png",
           "label": "Before: Dirty muddy child"
         },
         {
-          "image": "../assets/images/cards/12_before_after/bath/after.png",
+          "image": "/images/cards/12_before_after/bath/after.png",
           "label": "After: Clean child in towel"
         }
       ],
@@ -1566,11 +1566,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/icecream/before.png",
+          "image": "/images/cards/12_before_after/icecream/before.png",
           "label": "Before: Ice cream cone with scoops"
         },
         {
-          "image": "../assets/images/cards/12_before_after/icecream/after.png",
+          "image": "/images/cards/12_before_after/icecream/after.png",
           "label": "After: Melted ice cream dripping"
         }
       ],
@@ -1582,11 +1582,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/popcorn/before.png",
+          "image": "/images/cards/12_before_after/popcorn/before.png",
           "label": "Before: Bag of kernels"
         },
         {
-          "image": "../assets/images/cards/12_before_after/popcorn/after.png",
+          "image": "/images/cards/12_before_after/popcorn/after.png",
           "label": "After: Bowl of fluffy popcorn"
         }
       ],
@@ -1598,11 +1598,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/blocks/before.png",
+          "image": "/images/cards/12_before_after/blocks/before.png",
           "label": "Before: Blocks scattered on floor"
         },
         {
-          "image": "../assets/images/cards/12_before_after/blocks/after.png",
+          "image": "/images/cards/12_before_after/blocks/after.png",
           "label": "After: Tall tower built"
         }
       ],
@@ -1614,11 +1614,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/beach/before.png",
+          "image": "/images/cards/12_before_after/beach/before.png",
           "label": "Before: Putting on sunscreen indoors"
         },
         {
-          "image": "../assets/images/cards/12_before_after/beach/after.png",
+          "image": "/images/cards/12_before_after/beach/after.png",
           "label": "After: Playing in the ocean waves"
         }
       ],
@@ -1630,11 +1630,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/videogame/before.png",
+          "image": "/images/cards/12_before_after/videogame/before.png",
           "label": "Before: Empty piggy bank"
         },
         {
-          "image": "../assets/images/cards/12_before_after/videogame/after.png",
+          "image": "/images/cards/12_before_after/videogame/after.png",
           "label": "After: Kid holding new video game"
         }
       ],
@@ -1646,11 +1646,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/present/before.png",
+          "image": "/images/cards/12_before_after/present/before.png",
           "label": "Before: Wrapped gift box"
         },
         {
-          "image": "../assets/images/cards/12_before_after/present/after.png",
+          "image": "/images/cards/12_before_after/present/after.png",
           "label": "After: Opened box with toy inside"
         }
       ],
@@ -1662,11 +1662,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/homework/before.png",
+          "image": "/images/cards/12_before_after/homework/before.png",
           "label": "Before: Blank worksheet"
         },
         {
-          "image": "../assets/images/cards/12_before_after/homework/after.png",
+          "image": "/images/cards/12_before_after/homework/after.png",
           "label": "After: Completed worksheet with answers"
         }
       ],
@@ -1678,11 +1678,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/pizza/before.png",
+          "image": "/images/cards/12_before_after/pizza/before.png",
           "label": "Before: Whole pizza"
         },
         {
-          "image": "../assets/images/cards/12_before_after/pizza/after.png",
+          "image": "/images/cards/12_before_after/pizza/after.png",
           "label": "After: Empty box with crumbs"
         }
       ],
@@ -1694,11 +1694,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/room/before.png",
+          "image": "/images/cards/12_before_after/room/before.png",
           "label": "Before: Messy room with toys everywhere"
         },
         {
-          "image": "../assets/images/cards/12_before_after/room/after.png",
+          "image": "/images/cards/12_before_after/room/after.png",
           "label": "After: Tidy room with toys put away"
         }
       ],
@@ -1710,11 +1710,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/eggs/before.png",
+          "image": "/images/cards/12_before_after/eggs/before.png",
           "label": "Before: Raw eggs in shell"
         },
         {
-          "image": "../assets/images/cards/12_before_after/eggs/after.png",
+          "image": "/images/cards/12_before_after/eggs/after.png",
           "label": "After: Scrambled eggs on plate"
         }
       ],
@@ -1726,11 +1726,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/flipflops/before.png",
+          "image": "/images/cards/12_before_after/flipflops/before.png",
           "label": "Before: Little boy with bare feet"
         },
         {
-          "image": "../assets/images/cards/12_before_after/flipflops/after.png",
+          "image": "/images/cards/12_before_after/flipflops/after.png",
           "label": "After: Little boy wearing flip flops"
         }
       ],
@@ -1742,11 +1742,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/face/before.png",
+          "image": "/images/cards/12_before_after/face/before.png",
           "label": "Before: Blank circle"
         },
         {
-          "image": "../assets/images/cards/12_before_after/face/after.png",
+          "image": "/images/cards/12_before_after/face/after.png",
           "label": "After: Face with eyes, nose, mouth"
         }
       ],
@@ -1758,11 +1758,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/teeth/before.png",
+          "image": "/images/cards/12_before_after/teeth/before.png",
           "label": "Before: Little girl with unbrushed teeth"
         },
         {
-          "image": "../assets/images/cards/12_before_after/teeth/after.png",
+          "image": "/images/cards/12_before_after/teeth/after.png",
           "label": "After: Little girl with clean shiny teeth"
         }
       ],
@@ -1774,11 +1774,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/plant/before.png",
+          "image": "/images/cards/12_before_after/plant/before.png",
           "label": "Before: Droopy wilted plant"
         },
         {
-          "image": "../assets/images/cards/12_before_after/plant/after.png",
+          "image": "/images/cards/12_before_after/plant/after.png",
           "label": "After: Perky healthy plant"
         }
       ],
@@ -1790,11 +1790,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/table/before.png",
+          "image": "/images/cards/12_before_after/table/before.png",
           "label": "Before: Empty table"
         },
         {
-          "image": "../assets/images/cards/12_before_after/table/after.png",
+          "image": "/images/cards/12_before_after/table/after.png",
           "label": "After: Table with plates and cups"
         }
       ],
@@ -1806,11 +1806,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/snowman/before.png",
+          "image": "/images/cards/12_before_after/snowman/before.png",
           "label": "Before: Plain snow on ground"
         },
         {
-          "image": "../assets/images/cards/12_before_after/snowman/after.png",
+          "image": "/images/cards/12_before_after/snowman/after.png",
           "label": "After: Snowman with hat and scarf"
         }
       ],
@@ -1822,11 +1822,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/glass/before.png",
+          "image": "/images/cards/12_before_after/glass/before.png",
           "label": "Before: Empty glass"
         },
         {
-          "image": "../assets/images/cards/12_before_after/glass/after.png",
+          "image": "/images/cards/12_before_after/glass/after.png",
           "label": "After: Glass full of juice"
         }
       ],
@@ -1838,11 +1838,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/coloring/before.png",
+          "image": "/images/cards/12_before_after/coloring/before.png",
           "label": "Before: Black and white outline"
         },
         {
-          "image": "../assets/images/cards/12_before_after/coloring/after.png",
+          "image": "/images/cards/12_before_after/coloring/after.png",
           "label": "After: Colorful filled-in picture"
         }
       ],
@@ -1854,11 +1854,11 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "../assets/images/cards/12_before_after/candle/before.png",
+          "image": "/images/cards/12_before_after/candle/before.png",
           "label": "Before: Unlit candle"
         },
         {
-          "image": "../assets/images/cards/12_before_after/candle/after.png",
+          "image": "/images/cards/12_before_after/candle/after.png",
           "label": "After: Candle with flame glowing"
         }
       ],
@@ -1872,7 +1872,7 @@
       "question": "How many pieces of fruit are oranges?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/bowl-mixed-fruit.png",
+          "image": "/images/cards/102_quantitative_concepts/bowl-mixed-fruit.png",
           "label": "Bowl of mixed fruit"
         }
       ],
@@ -1887,7 +1887,7 @@
       "question": "How many pieces of fruit are bananas?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/plate-bananas.png",
+          "image": "/images/cards/102_quantitative_concepts/plate-bananas.png",
           "label": "Plate of bananas"
         }
       ],
@@ -1902,7 +1902,7 @@
       "question": "How many apples are green?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/basket-red-apples.png",
+          "image": "/images/cards/102_quantitative_concepts/basket-red-apples.png",
           "label": "Basket of red apples"
         }
       ],
@@ -1917,7 +1917,7 @@
       "question": "How many umbrellas are blue?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/beach-umbrellas.png",
+          "image": "/images/cards/102_quantitative_concepts/beach-umbrellas.png",
           "label": "Beach umbrellas"
         }
       ],
@@ -1932,7 +1932,7 @@
       "question": "How many shells are in the jar?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/jar-seashells.png",
+          "image": "/images/cards/102_quantitative_concepts/jar-seashells.png",
           "label": "Jar full of seashells"
         }
       ],
@@ -1947,7 +1947,7 @@
       "question": "How many cookies are on the plate?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/plate-one-cookie.png",
+          "image": "/images/cards/102_quantitative_concepts/plate-one-cookie.png",
           "label": "Plate with one cookie"
         }
       ],
@@ -1962,7 +1962,7 @@
       "question": "How many children are wearing hats?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/children-hats.png",
+          "image": "/images/cards/102_quantitative_concepts/children-hats.png",
           "label": "Children wearing hats"
         }
       ],
@@ -1977,7 +1977,7 @@
       "question": "How many cars are in the parking lot?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/parking-lot-few-cars.png",
+          "image": "/images/cards/102_quantitative_concepts/parking-lot-few-cars.png",
           "label": "Parking lot with a few cars"
         }
       ],
@@ -1992,7 +1992,7 @@
       "question": "How many seashells are in the bucket?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/empty-bucket.png",
+          "image": "/images/cards/102_quantitative_concepts/empty-bucket.png",
           "label": "Empty bucket"
         }
       ],
@@ -2007,7 +2007,7 @@
       "question": "How many crayons are broken?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/broken-crayons.png",
+          "image": "/images/cards/102_quantitative_concepts/broken-crayons.png",
           "label": "Broken crayons"
         }
       ],
@@ -2022,7 +2022,7 @@
       "question": "How many grapes are purple?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/bowl-purple-grapes.png",
+          "image": "/images/cards/102_quantitative_concepts/bowl-purple-grapes.png",
           "label": "Bowl of purple grapes"
         }
       ],
@@ -2037,7 +2037,7 @@
       "question": "How many balloons are red?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/balloons-half-red.png",
+          "image": "/images/cards/102_quantitative_concepts/balloons-half-red.png",
           "label": "Balloons, half are red"
         }
       ],
@@ -2052,7 +2052,7 @@
       "question": "How many towels have stripes?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/beach-towels-stripes.png",
+          "image": "/images/cards/102_quantitative_concepts/beach-towels-stripes.png",
           "label": "Beach towels with stripes"
         }
       ],
@@ -2067,7 +2067,7 @@
       "question": "How many books are open?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/stack-closed-books.png",
+          "image": "/images/cards/102_quantitative_concepts/stack-closed-books.png",
           "label": "Stack of closed books"
         }
       ],
@@ -2082,7 +2082,7 @@
       "question": "How many oranges are in the bag?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/bag-many-oranges.png",
+          "image": "/images/cards/102_quantitative_concepts/bag-many-oranges.png",
           "label": "Bag with many oranges"
         }
       ],
@@ -2097,7 +2097,7 @@
       "question": "How many fish are in the tank?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/fish-tank-several.png",
+          "image": "/images/cards/102_quantitative_concepts/fish-tank-several.png",
           "label": "Fish tank with several fish"
         }
       ],
@@ -2112,7 +2112,7 @@
       "question": "How many vegetables are green?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/plate-green-vegetables.png",
+          "image": "/images/cards/102_quantitative_concepts/plate-green-vegetables.png",
           "label": "Plate of green vegetables"
         }
       ],
@@ -2127,7 +2127,7 @@
       "question": "How many flip flops are colorful?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/flip-flops-colorful.png",
+          "image": "/images/cards/102_quantitative_concepts/flip-flops-colorful.png",
           "label": "Colorful flip flops"
         }
       ],
@@ -2142,7 +2142,7 @@
       "question": "How many items in the bowl are nuts?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/bowl-mixed-nuts.png",
+          "image": "/images/cards/102_quantitative_concepts/bowl-mixed-nuts.png",
           "label": "Bowl of mixed nuts"
         }
       ],
@@ -2157,7 +2157,7 @@
       "question": "How many sandcastles are there?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/beach-sandcastles.png",
+          "image": "/images/cards/102_quantitative_concepts/beach-sandcastles.png",
           "label": "Beach with sandcastles"
         }
       ],
@@ -2172,7 +2172,7 @@
       "question": "How many pencils are in the cup?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/cup-many-pencils.png",
+          "image": "/images/cards/102_quantitative_concepts/cup-many-pencils.png",
           "label": "Cup with many pencils"
         }
       ],
@@ -2187,7 +2187,7 @@
       "question": "How many books are standing up?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/shelf-books-standing.png",
+          "image": "/images/cards/102_quantitative_concepts/shelf-books-standing.png",
           "label": "Shelf with books standing"
         }
       ],
@@ -2202,7 +2202,7 @@
       "question": "How full is the glass?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/glass-almost-full.png",
+          "image": "/images/cards/102_quantitative_concepts/glass-almost-full.png",
           "label": "Glass almost full"
         }
       ],
@@ -2217,7 +2217,7 @@
       "question": "How many strawberries are red?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/box-red-strawberries.png",
+          "image": "/images/cards/102_quantitative_concepts/box-red-strawberries.png",
           "label": "Box of red strawberries"
         }
       ],
@@ -2232,7 +2232,7 @@
       "question": "How many dogs are spotted?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/dogs-one-spotted.png",
+          "image": "/images/cards/102_quantitative_concepts/dogs-one-spotted.png",
           "label": "Dogs with one spotted"
         }
       ],
@@ -2247,7 +2247,7 @@
       "question": "How many cupcakes have frosting?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/cupcakes-half-frosting.png",
+          "image": "/images/cards/102_quantitative_concepts/cupcakes-half-frosting.png",
           "label": "Cupcakes, half with frosting"
         }
       ],
@@ -2262,7 +2262,7 @@
       "question": "How many people are at the beach?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/beach-empty.png",
+          "image": "/images/cards/102_quantitative_concepts/beach-empty.png",
           "label": "Empty beach"
         }
       ],
@@ -2277,7 +2277,7 @@
       "question": "How much fruit is in the bowl?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/bowl-fruit-salad.png",
+          "image": "/images/cards/102_quantitative_concepts/bowl-fruit-salad.png",
           "label": "Bowl of fruit salad"
         }
       ],
@@ -2292,7 +2292,7 @@
       "question": "How many shells are in the sand?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/sand-few-shells.png",
+          "image": "/images/cards/102_quantitative_concepts/sand-few-shells.png",
           "label": "Sand with a few shells"
         }
       ],
@@ -2307,7 +2307,7 @@
       "question": "How many cookies are left?",
       "images": [
         {
-          "image": "../assets/images/cards/102_quantitative_concepts/cookie-jar-one-left.png",
+          "image": "/images/cards/102_quantitative_concepts/cookie-jar-one-left.png",
           "label": "Cookie jar with one cookie left"
         }
       ],

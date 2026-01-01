@@ -4,7 +4,7 @@
       "question": "Later on today, I _____ _____ a letter to my grandparents.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/letter.png",
+          "image": "/images/cards/39_future_tense/letter.png",
           "label": "A letter and envelope"
         }
       ],
@@ -16,7 +16,7 @@
       "question": "Tomorrow, she _____ _____ her new book.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/book.png",
+          "image": "/images/cards/39_future_tense/book.png",
           "label": "A book"
         }
       ],
@@ -28,7 +28,7 @@
       "question": "After lunch, I _____ _____ a picture for my mom.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/crayons.png",
+          "image": "/images/cards/39_future_tense/crayons.png",
           "label": "Crayons for drawing"
         }
       ],
@@ -40,7 +40,7 @@
       "question": "This evening, Dad _____ _____ Grandma.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/telephone.png",
+          "image": "/images/cards/39_future_tense/telephone.png",
           "label": "A telephone"
         }
       ],
@@ -52,7 +52,7 @@
       "question": "Next week, we _____ _____ a postcard from our trip.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/mailbox.png",
+          "image": "/images/cards/39_future_tense/mailbox.png",
           "label": "A mailbox"
         }
       ],
@@ -64,7 +64,7 @@
       "question": "At dinnertime, I _____ _____ my vegetables.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/plate.png",
+          "image": "/images/cards/39_future_tense/plate.png",
           "label": "A plate of food"
         }
       ],
@@ -76,7 +76,7 @@
       "question": "After playing, she _____ _____ a big glass of water.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/glass_water.png",
+          "image": "/images/cards/39_future_tense/glass_water.png",
           "label": "A glass of water"
         }
       ],
@@ -88,7 +88,7 @@
       "question": "Tomorrow morning, Dad _____ _____ pancakes for breakfast.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/pancakes.png",
+          "image": "/images/cards/39_future_tense/pancakes.png",
           "label": "A stack of pancakes"
         }
       ],
@@ -100,7 +100,7 @@
       "question": "Tonight, I _____ _____ my lunch for tomorrow.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/lunch_box.png",
+          "image": "/images/cards/39_future_tense/lunch_box.png",
           "label": "A lunch box"
         }
       ],
@@ -112,7 +112,7 @@
       "question": "At snack time, we _____ _____ the fruit.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/fruit_bowl.png",
+          "image": "/images/cards/39_future_tense/fruit_bowl.png",
           "label": "A bowl of fruit"
         }
       ],
@@ -124,7 +124,7 @@
       "question": "Before bed, I _____ _____ my teeth.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/toothbrush.png",
+          "image": "/images/cards/39_future_tense/toothbrush.png",
           "label": "A toothbrush"
         }
       ],
@@ -136,7 +136,7 @@
       "question": "Before dinner, she _____ _____ her hands.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/washing_hands.png",
+          "image": "/images/cards/39_future_tense/washing_hands.png",
           "label": "Hands being washed"
         }
       ],
@@ -148,7 +148,7 @@
       "question": "This afternoon, we _____ _____ our room.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/messy_room.png",
+          "image": "/images/cards/39_future_tense/messy_room.png",
           "label": "A messy room"
         }
       ],
@@ -160,7 +160,7 @@
       "question": "Tonight, I _____ _____ in my cozy bed.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/bed.png",
+          "image": "/images/cards/39_future_tense/bed.png",
           "label": "A cozy bed"
         }
       ],
@@ -172,7 +172,7 @@
       "question": "Tomorrow, I _____ _____ up early.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/alarm_clock.png",
+          "image": "/images/cards/39_future_tense/alarm_clock.png",
           "label": "An alarm clock"
         }
       ],
@@ -184,7 +184,7 @@
       "question": "This summer, we _____ _____ at the beach.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/swimming_pool.png",
+          "image": "/images/cards/39_future_tense/swimming_pool.png",
           "label": "A swimming pool"
         }
       ],
@@ -196,7 +196,7 @@
       "question": "At the beach, they _____ _____ in the sand.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/beach_toys.png",
+          "image": "/images/cards/39_future_tense/beach_toys.png",
           "label": "Beach toys"
         }
       ],
@@ -208,7 +208,7 @@
       "question": "Tomorrow, I _____ _____ a big sandcastle.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/sandcastle.png",
+          "image": "/images/cards/39_future_tense/sandcastle.png",
           "label": "A sandcastle"
         }
       ],
@@ -220,7 +220,7 @@
       "question": "On our beach trip, she _____ _____ seashells.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/seashells.png",
+          "image": "/images/cards/39_future_tense/seashells.png",
           "label": "Seashells on the beach"
         }
       ],
@@ -232,7 +232,7 @@
       "question": "Next summer, he _____ _____ for the first time.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/surfboard.png",
+          "image": "/images/cards/39_future_tense/surfboard.png",
           "label": "A surfboard"
         }
       ],
@@ -244,7 +244,7 @@
       "question": "Next year, I _____ _____ to speak Spanish.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/student.png",
+          "image": "/images/cards/39_future_tense/student.png",
           "label": "A student learning"
         }
       ],
@@ -256,7 +256,7 @@
       "question": "After school, she _____ _____ piano.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/piano.png",
+          "image": "/images/cards/39_future_tense/piano.png",
           "label": "A piano"
         }
       ],
@@ -268,7 +268,7 @@
       "question": "Before dinner, I _____ _____ my homework.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/homework.png",
+          "image": "/images/cards/39_future_tense/homework.png",
           "label": "Homework papers"
         }
       ],
@@ -280,7 +280,7 @@
       "question": "In art class, we _____ _____ a picture.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/art_supplies.png",
+          "image": "/images/cards/39_future_tense/art_supplies.png",
           "label": "Art supplies"
         }
       ],
@@ -292,7 +292,7 @@
       "question": "At the show, she _____ _____ her favorite song.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/microphone.png",
+          "image": "/images/cards/39_future_tense/microphone.png",
           "label": "A microphone"
         }
       ],
@@ -304,7 +304,7 @@
       "question": "Next weekend, we _____ _____ Grandma and Grandpa.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/grandparents_house.png",
+          "image": "/images/cards/39_future_tense/grandparents_house.png",
           "label": "Grandparents' house"
         }
       ],
@@ -316,7 +316,7 @@
       "question": "After breakfast, I _____ _____ Mom with the dishes.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/doing_dishes.png",
+          "image": "/images/cards/39_future_tense/doing_dishes.png",
           "label": "Person doing dishes"
         }
       ],
@@ -328,7 +328,7 @@
       "question": "Tomorrow, I _____ _____ my friend at the park.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/friends_waving.png",
+          "image": "/images/cards/39_future_tense/friends_waving.png",
           "label": "Friends waving"
         }
       ],
@@ -340,7 +340,7 @@
       "question": "Next month, we _____ _____ Dad's birthday.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/party.png",
+          "image": "/images/cards/39_future_tense/party.png",
           "label": "A birthday party"
         }
       ],
@@ -352,7 +352,7 @@
       "question": "This summer, our family _____ _____ to the beach.",
       "images": [
         {
-          "image": "../assets/images/cards/39_future_tense/suitcase.png",
+          "image": "/images/cards/39_future_tense/suitcase.png",
           "label": "A suitcase"
         }
       ],
