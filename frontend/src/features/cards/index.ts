@@ -287,11 +287,8 @@ function renderImagesGrid(images: ImageItem[], showLabels = true): string {
     return html;
 }
 
-function renderAnswerInput(placeholder = 'Type your answer...'): string {
-    return `<div class="preview-answer-input">
-        <input type="text" class="category-answer-input" placeholder="${placeholder}">
-        <button class="preview-mic-btn" title="Click to speak">🎤</button>
-    </div>`;
+function renderAnswerInput(_placeholder = 'Type your answer...'): string {
+    return '';
 }
 
 // ============================================================
@@ -368,10 +365,10 @@ function renderMultipleChoice(card: CardData): string {
     html += renderContextText(card);
 
     if (card.choices && Array.isArray(card.choices)) {
-        html += `<div class="preview-choices" data-clickable="true">`;
+        html += `<div class="preview-choices">`;
         const labels = ['A', 'B', 'C', 'D'];
         (card.choices as string[]).forEach((choice, i) => {
-            html += `<div class="preview-choice clickable-choice" data-choice="${i}">
+            html += `<div class="preview-choice">
                 <span class="choice-label">${labels[i]}</span>${escapeHtml(choice)}
             </div>`;
         });
@@ -397,7 +394,7 @@ function renderImageSelection(card: CardData): string {
         html += `<div class="preview-image-selection-grid">`;
         images.forEach((img, index) => {
             const imageSrc = img.image || DEFAULT_IMAGE;
-            html += `<div class="preview-image-selection-item selectable-image" data-index="${index}">
+            html += `<div class="preview-image-selection-item" data-index="${index}">
                 <div class="image-selection-number">${index + 1}</div>
                 <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
                 ${hasTextLabels ? `<div class="image-selection-label">${escapeHtml(img.label)}</div>` : ''}
@@ -495,30 +492,6 @@ function renderConditional(card: CardData): string {
 // ============================================================
 
 function setupPreviewEventListeners(): void {
-    previewCardContent.querySelectorAll('.selectable-image').forEach(img => {
-        img.addEventListener('click', () => {
-            const parent = img.closest('.preview-image-selection-grid');
-            if (parent) {
-                parent.querySelectorAll('.selectable-image').forEach(sibling => {
-                    sibling.classList.remove('selected');
-                });
-            }
-            img.classList.add('selected');
-        });
-    });
-
-    previewCardContent.querySelectorAll('.preview-choice.clickable-choice').forEach(choice => {
-        choice.addEventListener('click', () => {
-            const parent = choice.closest('.preview-choices');
-            if (parent) {
-                parent.querySelectorAll('.preview-choice').forEach(sibling => {
-                    sibling.classList.remove('selected');
-                });
-            }
-            choice.classList.add('selected');
-        });
-    });
-
     const wordContainer = previewCardContent.querySelector('.word-ordering-container');
     if (wordContainer) {
         const buildArea = wordContainer.querySelector('.sentence-build-area') as HTMLElement;
@@ -709,30 +682,6 @@ function closePreview() {
  * Setup event listeners for interactive card elements
  */
 export function setupCardEventListeners(container: HTMLElement): void {
-    container.querySelectorAll('.selectable-image').forEach(img => {
-        img.addEventListener('click', () => {
-            const parent = img.closest('.preview-image-selection-grid');
-            if (parent) {
-                parent.querySelectorAll('.selectable-image').forEach(sibling => {
-                    sibling.classList.remove('selected');
-                });
-            }
-            img.classList.add('selected');
-        });
-    });
-
-    container.querySelectorAll('.preview-choice.clickable-choice').forEach(choice => {
-        choice.addEventListener('click', () => {
-            const parent = choice.closest('.preview-choices');
-            if (parent) {
-                parent.querySelectorAll('.preview-choice').forEach(sibling => {
-                    sibling.classList.remove('selected');
-                });
-            }
-            choice.classList.add('selected');
-        });
-    });
-
     const wordContainer = container.querySelector('.word-ordering-container');
     if (wordContainer) {
         const buildArea = wordContainer.querySelector('.sentence-build-area') as HTMLElement;
