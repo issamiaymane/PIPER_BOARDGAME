@@ -1560,3 +1560,205 @@ button:focus:not(:focus-visible),
 .modal-overlay {
     contain: layout paint;
 }
+
+/* ===========================================
+   VOICE MODE STYLES
+   =========================================== */
+
+/* Voice Toggle Container */
+.voice-toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: var(--z-controls);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.voice-toggle-container.hidden {
+    display: none;
+}
+
+/* Voice Toggle Button */
+.voice-toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #607D8B 0%, #455A64 100%);
+    color: white;
+    font-family: var(--font-display);
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #37474F, 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+.voice-toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #37474F, 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.voice-toggle-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #37474F, 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.voice-icon {
+    font-size: 20px;
+}
+
+.voice-label {
+    font-weight: 600;
+}
+
+/* Voice Active State */
+.voice-toggle-btn.active {
+    background: linear-gradient(180deg, #4CAF50 0%, #388E3C 100%);
+    box-shadow: 0 4px 0 #2E7D32, 0 6px 15px rgba(76, 175, 80, 0.4);
+    animation: voice-glow 2s ease-in-out infinite;
+}
+
+@keyframes voice-glow {
+    0%, 100% {
+        box-shadow: 0 4px 0 #2E7D32, 0 6px 15px rgba(76, 175, 80, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 0 #2E7D32, 0 6px 25px rgba(76, 175, 80, 0.6);
+    }
+}
+
+/* Voice Connecting State */
+.voice-toggle-btn.connecting {
+    background: linear-gradient(180deg, #FF9800 0%, #F57C00 100%);
+    box-shadow: 0 4px 0 #E65100, 0 6px 15px rgba(255, 152, 0, 0.4);
+    animation: voice-pulse 1s ease-in-out infinite;
+}
+
+@keyframes voice-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Voice Speaking State */
+.voice-toggle-btn.speaking {
+    background: linear-gradient(180deg, #2196F3 0%, #1976D2 100%);
+    box-shadow: 0 4px 0 #1565C0, 0 6px 15px rgba(33, 150, 243, 0.4);
+}
+
+/* Voice Listening State */
+.voice-toggle-btn.listening {
+    background: linear-gradient(180deg, #9C27B0 0%, #7B1FA2 100%);
+    box-shadow: 0 4px 0 #6A1B9A, 0 6px 15px rgba(156, 39, 176, 0.4);
+    animation: voice-listen 1.5s ease-in-out infinite;
+}
+
+@keyframes voice-listen {
+    0%, 100% {
+        box-shadow: 0 4px 0 #6A1B9A, 0 6px 15px rgba(156, 39, 176, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 0 #6A1B9A, 0 6px 30px rgba(156, 39, 176, 0.7);
+    }
+}
+
+/* Voice Status Text */
+.voice-status {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 4px 12px;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.voice-toggle-container:hover .voice-status:not(:empty) {
+    opacity: 1;
+}
+
+/* Voice Indicator in Card Modal */
+.voice-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: linear-gradient(180deg, #2196F3 0%, #1976D2 100%);
+    border-radius: 15px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.voice-indicator.hidden {
+    display: none;
+}
+
+.voice-indicator.listening {
+    background: linear-gradient(180deg, #9C27B0 0%, #7B1FA2 100%);
+}
+
+.voice-indicator.listening .voice-indicator-text::after {
+    content: "Listening...";
+}
+
+.voice-indicator.listening .voice-indicator-text {
+    font-size: 0;
+}
+
+.voice-pulse {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: pulse-ring 1s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+}
+
+/* Responsive Voice Toggle */
+@media (max-width: 768px) {
+    .voice-toggle-container {
+        top: 10px;
+        right: 10px;
+    }
+
+    .voice-toggle-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .voice-icon {
+        font-size: 18px;
+    }
+
+    .voice-label {
+        display: none;
+    }
+
+    .voice-indicator {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}

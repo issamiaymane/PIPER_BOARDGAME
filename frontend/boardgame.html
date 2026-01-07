@@ -127,6 +127,10 @@
             <div class="card-content">
                 <div class="card-header">
                     <span class="card-category"></span>
+                    <span class="voice-indicator hidden" id="voiceIndicator">
+                        <span class="voice-pulse"></span>
+                        <span class="voice-indicator-text">Speaking...</span>
+                    </span>
                     <button class="card-close" id="cardClose">×</button>
                 </div>
                 <div class="card-body" id="cardBody"></div>
@@ -140,6 +144,15 @@
         <div class="game-controls hidden" id="gameControls">
             <button class="control-btn spin-btn" id="spinBtn">SPIN</button>
             <button class="control-btn reset-btn" id="resetBtn">MENU</button>
+        </div>
+
+        <!-- Voice Mode Toggle -->
+        <div class="voice-toggle-container hidden" id="voiceToggle">
+            <button class="voice-toggle-btn" id="voiceToggleBtn" title="Enable Voice Mode">
+                <span class="voice-icon">🎙️</span>
+                <span class="voice-label">Voice</span>
+            </button>
+            <div class="voice-status" id="voiceStatus"></div>
         </div>
 
         <!-- Score Display -->

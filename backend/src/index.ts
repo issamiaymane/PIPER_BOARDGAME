@@ -6,6 +6,8 @@ import { initializeDatabase, closeDatabase } from './services/database.js';
 import { logger } from './utils/logger.js';
 import routes from './api/routes/index.js';
 import { globalErrorHandler, notFoundHandler } from './api/middleware/errorHandler.js';
+import { setupVoiceWebSocket } from './api/routes/voice.routes.js';
+import { voiceSessionManager } from './services/voice/index.js';
 
 // Frontend path (relative to backend in Docker: /app/backend -> /app/frontend/dist)
 const FRONTEND_PATH = path.join(process.cwd(), '..', 'frontend', 'dist');
@@ -56,9 +58,13 @@ const server = app.listen(config.port, () => {
   logger.info(`Server running on http://localhost:${config.port}`);
 });
 
+// Setup Voice WebSocket server
+setupVoiceWebSocket(server);
+
 // Graceful shutdown
 process.on('SIGINT', () => {
   logger.info('Shutting down...');
+  voiceSessionManager.endAllSessions();
   server.close();
   closeDatabase();
   process.exit(0);

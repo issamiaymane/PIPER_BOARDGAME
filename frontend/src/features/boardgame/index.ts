@@ -8,6 +8,7 @@
 import { CATEGORY_HANDLER_MAP } from '@shared/categories';
 import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../cards/index';
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
+import { voiceService, VoiceState } from './services/voice.service';
 
 // Types
 interface CardData {
@@ -69,6 +70,10 @@ let doneButton: HTMLElement;
 let winScreen: HTMLElement;
 let finalScore: HTMLElement;
 let playAgainBtn: HTMLElement;
+let voiceToggle: HTMLElement;
+let voiceToggleBtn: HTMLElement;
+let voiceStatus: HTMLElement;
+let voiceIndicator: HTMLElement;
 
 // Board positions
 const TOTAL_SPACES = 35;
@@ -254,6 +259,11 @@ function showRandomCard() {
     renderCard(card, state.currentCategory, cardBody);
     cardModal.classList.remove('hidden');
     gameControls.classList.add('hidden');
+
+    // Speak the card if voice mode is enabled
+    if (voiceService.isReady()) {
+        voiceService.speakCard(card, state.currentCategory);
+    }
 }
 
 function closeCard() {
@@ -261,6 +271,63 @@ function closeCard() {
     gameControls.classList.remove('hidden');
     state.score += 10;
     scoreValue.textContent = String(state.score);
+
+    // Stop listening when card is closed
+    if (voiceService.isEnabled()) {
+        voiceService.stopListening();
+    }
+}
+
+// Voice mode functions
+function updateVoiceUI(voiceState: VoiceState) {
+    // Update toggle button classes
+    voiceToggleBtn.classList.remove('active', 'connecting', 'speaking', 'listening');
+
+    switch (voiceState) {
+        case 'ready':
+            voiceToggleBtn.classList.add('active');
+            voiceStatus.textContent = 'Voice mode active';
+            voiceIndicator.classList.add('hidden');
+            break;
+        case 'connecting':
+            voiceToggleBtn.classList.add('connecting');
+            voiceStatus.textContent = 'Connecting...';
+            voiceIndicator.classList.add('hidden');
+            break;
+        case 'speaking':
+            voiceToggleBtn.classList.add('speaking');
+            voiceStatus.textContent = 'AI speaking';
+            voiceIndicator.classList.remove('hidden');
+            voiceIndicator.classList.remove('listening');
+            const indicatorText = voiceIndicator.querySelector('.voice-indicator-text');
+            if (indicatorText) indicatorText.textContent = 'Speaking...';
+            break;
+        case 'listening':
+            voiceToggleBtn.classList.add('listening');
+            voiceStatus.textContent = 'Listening...';
+            voiceIndicator.classList.remove('hidden');
+            voiceIndicator.classList.add('listening');
+            break;
+        case 'idle':
+        default:
+            voiceStatus.textContent = '';
+            voiceIndicator.classList.add('hidden');
+            break;
+    }
+}
+
+async function toggleVoiceMode() {
+    if (voiceService.isEnabled()) {
+        voiceService.disable();
+        console.log('[Voice] Disabled');
+    } else {
+        const success = await voiceService.enable();
+        if (success) {
+            console.log('[Voice] Enabled');
+        } else {
+            console.error('[Voice] Failed to enable');
+        }
+    }
 }
 
 function showWinScreen() {
@@ -277,7 +344,13 @@ function resetGame() {
     leftPanel.classList.add('hidden');
     playOverlay.classList.add('hidden');
     targetModal.classList.remove('hidden');
+    voiceToggle.classList.add('hidden');
     scoreValue.textContent = '0';
+
+    // Disable voice mode when game resets
+    if (voiceService.isEnabled()) {
+        voiceService.disable();
+    }
 }
 
 function updateThemeDecorations() {
@@ -318,6 +391,7 @@ function startGame() {
     leftPanel.classList.remove('hidden');
     gameControls.classList.remove('hidden');
     scoreDisplay.classList.remove('hidden');
+    voiceToggle.classList.remove('hidden');
 
     generateBoard();
     updatePlayerPosition();
@@ -365,6 +439,10 @@ function init() {
     winScreen = document.getElementById('winScreen')!;
     finalScore = document.getElementById('finalScore')!;
     playAgainBtn = document.getElementById('playAgainBtn')!;
+    voiceToggle = document.getElementById('voiceToggle')!;
+    voiceToggleBtn = document.getElementById('voiceToggleBtn')!;
+    voiceStatus = document.getElementById('voiceStatus')!;
+    voiceIndicator = document.getElementById('voiceIndicator')!;
 
     playButton.addEventListener('click', () => {
         console.log('[Game] PLAY clicked');
@@ -414,6 +492,24 @@ function init() {
     doneButton.addEventListener('click', closeCard);
     resetBtn.addEventListener('click', resetGame);
     playAgainBtn.addEventListener('click', resetGame);
+
+    // Voice mode setup
+    voiceToggleBtn.addEventListener('click', toggleVoiceMode);
+
+    // Set up voice service callbacks
+    voiceService.onStateChange = updateVoiceUI;
+    voiceService.onError = (message) => {
+        console.error('[Voice] Error:', message);
+        voiceStatus.textContent = message;
+        setTimeout(() => {
+            if (voiceStatus.textContent === message) {
+                voiceStatus.textContent = '';
+            }
+        }, 3000);
+    };
+    voiceService.onTranscript = (text, role) => {
+        console.log(`[Voice] ${role}: ${text}`);
+    };
 
     // Hide loading screen using shared component
     hideLoadingScreen(500);
