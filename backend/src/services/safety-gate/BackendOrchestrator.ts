@@ -6,6 +6,14 @@ import { PromptBuilder } from './PromptBuilder.js';
 import { LLMClient, LLMResponse } from './LLMClient.js';
 import { ResponseValidator, ResponseValidationResult } from './ResponseValidator.js';
 
+export interface TaskContext {
+  cardType: string;
+  category: string;
+  question: string;
+  targetAnswer: string;
+  imageLabels: string[];
+}
+
 export interface UIPackage {
   avatar: {
     animation: string;
@@ -31,6 +39,8 @@ export interface UIPackage {
   admin_overlay: {
     safety_level: SafetyGateLevel;
     interventions_active: number;
+    interventions_list: InterventionType[];
+    signals_detected: string[];
     time_in_session: string;
     state_snapshot: ChildState;
   };
@@ -49,7 +59,22 @@ interface Logger {
   logForSOAP(data: any): Promise<void>;
 }
 
-class ConsoleLogger implements Logger {
+// Silent logger - formatted output is handled by SafetyGateSession
+class SilentLogger implements Logger {
+  logStateUpdate(_state: ChildState, _event: ChildEvent): void {}
+  logSignals(_signals: string[]): void {}
+  logSafetyAssessment(_level: SafetyGateLevel, _state: ChildState, _signals: string[]): void {}
+  logInterventions(_interventions: InterventionType[]): void {}
+  logConfigAdaptation(_config: SessionConfig): void {}
+  logBackendResponse(_response: BackendResponse): void {}
+  logLLMResponse(_response: LLMResponse): void {}
+  logValidationFailure(_validation: ResponseValidationResult): void {}
+  logValidationSuccess(_validation: ResponseValidationResult): void {}
+  async logForSOAP(_data: any): Promise<void> {}
+}
+
+// Verbose logger - for debugging (enable by using VerboseLogger in constructor)
+class VerboseLogger implements Logger {
   logStateUpdate(state: ChildState, event: ChildEvent): void {
     console.log('[State Update]', { state, event });
   }
@@ -90,6 +115,7 @@ export class BackendOrchestrator {
   private llmClient: LLMClient;
   private validator: ResponseValidator;
   private logger: Logger;
+  private currentTaskContext: TaskContext | null = null;
 
   constructor() {
     this.stateEngine = new StateEngine();
@@ -98,10 +124,28 @@ export class BackendOrchestrator {
     this.promptBuilder = new PromptBuilder();
     this.llmClient = new LLMClient();
     this.validator = new ResponseValidator();
-    this.logger = new ConsoleLogger();
+    this.logger = new SilentLogger(); // Use VerboseLogger for debugging
   }
 
-  async processChildEvent(event: ChildEvent): Promise<UIPackage> {
+  /**
+   * Set the current task context for card-specific processing
+   */
+  setTaskContext(context: TaskContext): void {
+    this.currentTaskContext = context;
+  }
+
+  /**
+   * Clear the current task context
+   */
+  clearTaskContext(): void {
+    this.currentTaskContext = null;
+  }
+
+  async processChildEvent(event: ChildEvent, taskContext?: TaskContext): Promise<UIPackage> {
+    // Use provided task context or fall back to stored context
+    if (taskContext) {
+      this.currentTaskContext = taskContext;
+    }
     // 1. Update state
     const state = this.stateEngine.updateFromEvent(event);
     this.logger.logStateUpdate(state, event);
@@ -168,7 +212,7 @@ export class BackendOrchestrator {
     if (!validation.valid) {
       this.logger.logValidationFailure(validation);
       // Retry or use fallback
-      return this.generateFallbackResponse(backendResponse);
+      return this.generateFallbackResponse(backendResponse, state);
     }
     this.logger.logValidationSuccess(validation);
 
@@ -212,17 +256,20 @@ export class BackendOrchestrator {
       signals.push('ENGAGEMENT_DROP');
     }
 
-    // Check for verbal signals
-    if (event.type === 'VERBAL_SIGNAL' && event.signal) {
-      if (event.signal.toLowerCase().includes('break')) {
-        signals.push('I_NEED_BREAK');
-      }
-      if (event.signal.toLowerCase().includes('done')) {
-        signals.push('IM_DONE');
-      }
-      if (event.signal.toLowerCase().includes('scream')) {
-        signals.push('SCREAMING');
-      }
+    // Check for verbal signals in the response content (not just VERBAL_SIGNAL events)
+    const responseText = (event.response || event.signal || '').toLowerCase();
+    // Normalize text: remove punctuation for pattern matching
+    const normalizedText = responseText.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
+
+    if (responseText.includes('break') || responseText.includes('stop') || responseText.includes('tired')) {
+      signals.push('I_NEED_BREAK');
+    }
+    if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
+      signals.push('IM_DONE');
+    }
+    // Check for screaming signals (normalize to handle "no, no, no" -> "no no no")
+    if (responseText.includes('scream') || responseText.includes('ahhh') || normalizedText.includes('no no no')) {
+      signals.push('SCREAMING');
     }
 
     // Check fatigue
@@ -269,14 +316,30 @@ export class BackendOrchestrator {
   }
 
   private buildContext(event: ChildEvent, state: ChildState): any {
-    return {
+    const baseContext = {
       what_happened: event.type === 'CHILD_RESPONSE'
         ? (event.correct ? 'correct_response' : 'incorrect_response')
         : event.type.toLowerCase(),
       child_said: event.response || '',
-      target_was: '', // Would come from task context
+      target_was: this.currentTaskContext?.targetAnswer || '',
       attempt_number: state.consecutiveErrors + 1
     };
+
+    // Add card-specific context if available
+    if (this.currentTaskContext) {
+      return {
+        ...baseContext,
+        card_context: {
+          category: this.currentTaskContext.category,
+          card_type: this.currentTaskContext.cardType,
+          question: this.currentTaskContext.question,
+          expected_answer: this.currentTaskContext.targetAnswer,
+          visual_supports: this.currentTaskContext.imageLabels
+        }
+      };
+    }
+
+    return baseContext;
   }
 
   private buildConstraints(config: SessionConfig, level: SafetyGateLevel): any {
@@ -287,7 +350,9 @@ export class BackendOrchestrator {
       must_not_pressure: true,
       must_offer_choices: level >= SafetyGateLevel.YELLOW,
       must_validate_feelings: level >= SafetyGateLevel.ORANGE,
-      max_sentences: level >= SafetyGateLevel.ORANGE ? 2 : 1,
+      // GREEN: 2 sentences ("I heard X. Let's try again!")
+      // YELLOW+: 3 sentences ("I heard X. Almost there! What would you like to do?")
+      max_sentences: level >= SafetyGateLevel.YELLOW ? 3 : 2,
       forbidden_words: ['wrong', 'incorrect', 'bad', 'no', 'try harder', 'focus'],
       required_approach: 'describe_what_heard_offer_support'
     };
@@ -306,7 +371,19 @@ export class BackendOrchestrator {
     };
   }
 
-  private generateFallbackResponse(backendResponse: BackendResponse): UIPackage {
+  private generateFallbackResponse(backendResponse: BackendResponse, state: ChildState): UIPackage {
+    // Generate level-appropriate fallback text
+    const level = backendResponse.safety_level;
+    let fallbackText: string;
+
+    if (level >= SafetyGateLevel.YELLOW) {
+      // YELLOW+ levels: include choice prompt
+      fallbackText = "I heard you! Good try! What would you like to do?";
+    } else {
+      // GREEN level: simple encouragement without choice prompt
+      fallbackText = "I heard you! Let's try again!";
+    }
+
     return {
       avatar: {
         animation: 'gentle_nod',
@@ -314,11 +391,11 @@ export class BackendOrchestrator {
         position: 'centered'
       },
       speech: {
-        text: "Let's take a moment. What would you like to do?",
-        voice_tone: 'calm',
-        speed: 'slow'
+        text: fallbackText,
+        voice_tone: backendResponse.parameters.avatar_tone,
+        speed: level >= SafetyGateLevel.ORANGE ? 'slow' : 'normal'
       },
-      choice_message: "You can choose:",
+      choice_message: "What would you like to do?",
       choices: backendResponse.choices,
       visual_cues: {
         enabled: true
@@ -332,8 +409,10 @@ export class BackendOrchestrator {
       admin_overlay: {
         safety_level: backendResponse.safety_level,
         interventions_active: backendResponse.interventions_active.length,
-        time_in_session: '0:00',
-        state_snapshot: {} as ChildState
+        interventions_list: backendResponse.interventions_active,
+        signals_detected: backendResponse.signals_detected,
+        time_in_session: this.formatTime(state.timeInSession),
+        state_snapshot: state
       }
     };
   }
@@ -368,6 +447,8 @@ export class BackendOrchestrator {
       admin_overlay: {
         safety_level: backendResponse.safety_level,
         interventions_active: backendResponse.interventions_active.length,
+        interventions_list: backendResponse.interventions_active,
+        signals_detected: backendResponse.signals_detected,
         time_in_session: this.formatTime(state.timeInSession),
         state_snapshot: state
       }

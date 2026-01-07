@@ -99,10 +99,49 @@ export class StateEngine {
         // Suggests: not processing feedback, stuck in pattern, dysregulated
         // +2 is a big jump because this is serious
       }
+
+      // CHECK FOR VERBAL DISTRESS SIGNALS IN RESPONSE
+      // This catches "I'm done", "no no no", "I can't", etc.
+      this.checkVerbalDistressInResponse(event.response || '');
     }
 
     // Update error frequency (rolling average)
     this.updateErrorFrequency();
+  }
+
+  // ============================================
+  // VERBAL DISTRESS IN RESPONSE CHECK
+  // ============================================
+
+  private checkVerbalDistressInResponse(response: string): void {
+    const text = response.toLowerCase();
+    const normalizedText = text.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
+
+    // Check for screaming/distress signals
+    if (text.includes('scream') || text.includes('ahhh') || normalizedText.includes('no no no')) {
+      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 4);
+      // Why? Strong distress indicator - big increase
+    }
+
+    // Check for "I'm done" / quit signals
+    if (text.includes('done') || text.includes('quit') || text.includes('no more')) {
+      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 2);
+      this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + 2);
+      // Why? Child wants to stop - moderate distress + fatigue
+    }
+
+    // Check for "I can't" / frustration signals
+    if (text.includes("can't") || text.includes('cannot') || text.includes("don't know")) {
+      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 1);
+      // Why? Frustration/helplessness - mild increase
+    }
+
+    // Check for break/tired signals
+    if (text.includes('break') || text.includes('stop') || text.includes('tired')) {
+      this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + 2);
+      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 1);
+      // Why? Child is tired - increase fatigue more than dysregulation
+    }
   }
 
   // ============================================

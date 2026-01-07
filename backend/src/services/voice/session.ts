@@ -1,10 +1,13 @@
 /**
  * Voice Session Manager
  * Manages per-client voice sessions and coordinates between client WebSocket and OpenAI Realtime API
+ * Integrates with SafetyGateSession for PIPER safety-gate processing
  */
 
 import WebSocket from 'ws';
 import { RealtimeVoiceService, RealtimeServerEvent } from './realtime.service.js';
+import { SafetyGateSession, CardContext, SafetyGateResult } from '../safety-gate/SafetyGateSession.js';
+import { UIPackage } from '../safety-gate/BackendOrchestrator.js';
 import { logger } from '../../utils/logger.js';
 
 export interface VoiceSession {
@@ -14,22 +17,35 @@ export interface VoiceSession {
   isActive: boolean;
   currentCardText?: string;
   createdAt: Date;
+  // Safety-gate integration
+  safetyGateSession: SafetyGateSession;
+  currentCardContext?: CardContext;
 }
 
 export interface ClientMessage {
-  type: 'start_session' | 'speak_card' | 'audio_chunk' | 'commit_audio' | 'end_session';
+  type: 'start_session' | 'speak_card' | 'audio_chunk' | 'commit_audio' | 'end_session' | 'set_card_context';
   text?: string;
   category?: string;
   audio?: string; // base64 encoded PCM16 audio
+  // Card context for safety-gate
+  cardContext?: {
+    category: string;
+    question: string;
+    targetAnswers: string[];
+    images: Array<{ image: string; label: string }>;
+  };
 }
 
 export interface ServerMessage {
-  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error';
+  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error' | 'safety_gate_response';
   sessionId?: string;
   audio?: string; // base64 encoded PCM16 audio
   text?: string;
   role?: 'assistant' | 'user';
   message?: string;
+  // Safety-gate UI package
+  uiPackage?: UIPackage;
+  isCorrect?: boolean;
 }
 
 export class VoiceSessionManager {
@@ -66,7 +82,8 @@ export class VoiceSessionManager {
       clientWs,
       realtimeService,
       isActive: true,
-      createdAt: new Date()
+      createdAt: new Date(),
+      safetyGateSession: new SafetyGateSession()
     };
 
     this.sessions.set(sessionId, session);
@@ -128,15 +145,33 @@ export class VoiceSessionManager {
         case 'conversation.item.input_audio_transcription.completed':
           // User's speech was transcribed
           if (event.transcript) {
+            const transcription = event.transcript as string;
+
+            // Send transcription to client
             this.sendToClient(session, {
               type: 'transcript',
-              text: event.transcript as string,
+              text: transcription,
               role: 'user'
             });
+
+            // Process through safety-gate if card context is set
+            if (session.currentCardContext) {
+              this.processWithSafetyGate(session, transcription);
+            }
           }
           break;
 
         case 'error':
+          // Ignore benign errors (expected during normal operation)
+          const errorCode = (event.error as { code?: string })?.code;
+          const benignErrors = [
+            'input_audio_buffer_commit_empty',  // Happens when clearing audio buffer
+            'response_cancel_not_active'         // Happens when canceling with no active response
+          ];
+          if (benignErrors.includes(errorCode || '')) {
+            // These are expected - just ignore
+            break;
+          }
           logger.error(`Realtime API error for session ${sessionId}:`, event);
           this.sendToClient(session, {
             type: 'error',
@@ -175,11 +210,31 @@ export class VoiceSessionManager {
     switch (message.type) {
       case 'speak_card':
         if (message.text) {
+          // Clear any pending audio from previous card to prevent context mismatch
+          session.realtimeService.clearAudio();
+          session.realtimeService.cancelResponse();
+
           session.currentCardText = message.text;
+
+          // Set card context for safety-gate if provided
+          if (message.cardContext) {
+            session.currentCardContext = message.cardContext;
+            session.safetyGateSession.setCurrentCard(message.cardContext);
+            logger.info(`Card context set for session ${sessionId}: ${message.cardContext.category} - Target: [${message.cardContext.targetAnswers.join(', ')}]`);
+          }
+
           const prompt = message.category
             ? `Here's a ${message.category} question: ${message.text}`
             : message.text;
           session.realtimeService.speakText(prompt);
+        }
+        break;
+
+      case 'set_card_context':
+        if (message.cardContext) {
+          session.currentCardContext = message.cardContext;
+          session.safetyGateSession.setCurrentCard(message.cardContext);
+          logger.info(`Card context updated for session ${sessionId}: ${message.cardContext.category}`);
         }
         break;
 
@@ -198,7 +253,49 @@ export class VoiceSessionManager {
         break;
 
       default:
-        logger.warn(`Unknown message type from client: ${message.type}`);
+        logger.warn(`Unknown message type from client: ${(message as any).type}`);
+    }
+  }
+
+  /**
+   * Process child's transcribed response through the safety-gate pipeline
+   */
+  private async processWithSafetyGate(
+    session: VoiceSession,
+    transcription: string
+  ): Promise<void> {
+    try {
+      // Process through safety-gate session (logging handled by SafetyGateSession)
+      const result: SafetyGateResult = await session.safetyGateSession.processChildResponse(transcription);
+
+      // Cancel any ongoing OpenAI response before speaking safety-gate feedback
+      session.realtimeService.cancelResponse();
+
+      // Small delay to ensure cancellation is processed
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Speak the validated feedback through OpenAI Realtime
+      if (result.shouldSpeak && result.feedbackText) {
+        session.realtimeService.speakFeedback(result.feedbackText);
+      }
+
+      // Send safety-gate response to frontend
+      this.sendToClient(session, {
+        type: 'safety_gate_response',
+        uiPackage: result.uiPackage,
+        isCorrect: result.isCorrect
+      });
+
+      // Note: Detailed logging is handled by SafetyGateSession using safetyGateLogger
+
+    } catch (error) {
+      logger.error(`Safety-gate processing error:`, error);
+
+      // Send error to client
+      this.sendToClient(session, {
+        type: 'error',
+        message: 'Safety gate processing failed'
+      });
     }
   }
 

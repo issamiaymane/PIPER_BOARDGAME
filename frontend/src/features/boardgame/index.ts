@@ -8,7 +8,7 @@
 import { CATEGORY_HANDLER_MAP } from '@shared/categories';
 import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../cards/index';
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
-import { voiceService, VoiceState } from './services/voice.service';
+import { voiceService, VoiceState, UIPackage } from './services/voice.service';
 
 // Types
 interface CardData {
@@ -74,6 +74,16 @@ let voiceToggle: HTMLElement;
 let voiceToggleBtn: HTMLElement;
 let voiceStatus: HTMLElement;
 let voiceIndicator: HTMLElement;
+
+// Safety-gate UI elements
+let safetyOverlay: HTMLElement;
+let choicesContainer: HTMLElement;
+let bubbleBreathingModal: HTMLElement;
+let feedbackDisplay: HTMLElement;
+
+// Safety-gate state
+let currentSafetyLevel = 0;
+let isBreathingActive = false;
 
 // Board positions
 const TOTAL_SPACES = 35;
@@ -262,7 +272,7 @@ function showRandomCard() {
 
     // Speak the card if voice mode is enabled
     if (voiceService.isReady()) {
-        voiceService.speakCard(card, state.currentCategory);
+        voiceService.speakCard(card as any, state.currentCategory);
     }
 }
 
@@ -276,6 +286,9 @@ function closeCard() {
     if (voiceService.isEnabled()) {
         voiceService.stopListening();
     }
+
+    // Hide safety-gate UI
+    hideChoices();
 }
 
 // Voice mode functions
@@ -330,6 +343,304 @@ async function toggleVoiceMode() {
     }
 }
 
+// Safety-gate UI functions
+function initSafetyGateUI() {
+    // Create safety overlay
+    safetyOverlay = document.createElement('div');
+    safetyOverlay.id = 'safetyOverlay';
+    safetyOverlay.className = 'safety-overlay hidden';
+    document.body.appendChild(safetyOverlay);
+
+    // Create choices container
+    choicesContainer = document.createElement('div');
+    choicesContainer.id = 'choicesContainer';
+    choicesContainer.className = 'choices-container hidden';
+    safetyOverlay.appendChild(choicesContainer);
+
+    // Create feedback display
+    feedbackDisplay = document.createElement('div');
+    feedbackDisplay.id = 'feedbackDisplay';
+    feedbackDisplay.className = 'feedback-display hidden';
+    document.body.appendChild(feedbackDisplay);
+
+    // Create bubble breathing modal
+    bubbleBreathingModal = document.createElement('div');
+    bubbleBreathingModal.id = 'bubbleBreathingModal';
+    bubbleBreathingModal.className = 'bubble-breathing-modal hidden';
+    bubbleBreathingModal.innerHTML = `
+        <div class="breathing-content">
+            <div class="breathing-bubble"></div>
+            <div class="breathing-instructions">
+                <span class="breathing-phase">Breathe in slowly...</span>
+            </div>
+            <button class="done-breathing-btn">I feel better</button>
+        </div>
+    `;
+    document.body.appendChild(bubbleBreathingModal);
+
+    // Set up breathing modal done button
+    const doneBreathingBtn = bubbleBreathingModal.querySelector('.done-breathing-btn');
+    if (doneBreathingBtn) {
+        doneBreathingBtn.addEventListener('click', closeBubbleBreathing);
+    }
+}
+
+function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean) {
+    console.log('[SafetyGate] Response received:', {
+        safetyLevel: uiPackage.admin_overlay.safety_level,
+        isCorrect,
+        choices: uiPackage.choices.length,
+        interventions: uiPackage.admin_overlay.interventions_active
+    });
+
+    currentSafetyLevel = uiPackage.admin_overlay.safety_level;
+
+    // Show feedback display
+    if (uiPackage.speech.text) {
+        showFeedback(uiPackage.speech.text, isCorrect);
+    }
+
+    // If answer is correct, auto-progress after feedback is spoken
+    if (isCorrect) {
+        // Stop listening - we got the right answer!
+        if (voiceService.isEnabled()) {
+            voiceService.stopListening();
+        }
+
+        // Show celebration
+        showCelebration();
+
+        // Wait for feedback to be spoken (approximately 3 seconds), then close card
+        setTimeout(() => {
+            closeCard();
+        }, 3500);
+        return; // Don't show choices for correct answers
+    }
+
+    // Show choices if there are any and safety level indicates need (for incorrect answers)
+    if (uiPackage.choices.length > 0 && currentSafetyLevel >= 1) {
+        // Pause listening when showing choices - let feedback continue speaking, just don't listen
+        if (voiceService.isEnabled()) {
+            voiceService.pauseListening();
+        }
+        renderChoices(uiPackage.choices, uiPackage.choice_message);
+    }
+}
+
+function showFeedback(text: string, isCorrect: boolean) {
+    feedbackDisplay.textContent = text;
+    feedbackDisplay.className = `feedback-display ${isCorrect ? 'correct' : 'incorrect'}`;
+    feedbackDisplay.classList.remove('hidden');
+
+    // Auto-hide after 5 seconds if correct
+    if (isCorrect) {
+        setTimeout(() => {
+            feedbackDisplay.classList.add('hidden');
+        }, 5000);
+    }
+}
+
+function showCelebration() {
+    // Create celebration overlay
+    const celebration = document.createElement('div');
+    celebration.className = 'celebration-overlay';
+    celebration.innerHTML = `
+        <div class="celebration-content">
+            <div class="celebration-emoji">🎉</div>
+            <div class="celebration-text">Great job!</div>
+            <div class="celebration-stars">
+                <span class="star star-1">⭐</span>
+                <span class="star star-2">⭐</span>
+                <span class="star star-3">⭐</span>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(celebration);
+
+    // Add confetti particles
+    for (let i = 0; i < 30; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.animationDelay = `${Math.random() * 0.5}s`;
+        confetti.style.backgroundColor = ['#FFD700', '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4'][Math.floor(Math.random() * 5)];
+        celebration.appendChild(confetti);
+    }
+
+    // Auto-remove after animation
+    setTimeout(() => {
+        celebration.classList.add('fade-out');
+        setTimeout(() => celebration.remove(), 500);
+    }, 3000);
+}
+
+function renderChoices(choices: UIPackage['choices'], message: string) {
+    const sortedChoices = [...choices].sort((a, b) => a.priority - b.priority);
+
+    choicesContainer.innerHTML = `
+        <div class="choices-message">${escapeHtml(message)}</div>
+        <div class="choices-buttons">
+            ${sortedChoices.map(choice => `
+                <button class="choice-btn" data-action="${choice.action}" data-id="${choice.id}">
+                    <span class="choice-icon">${choice.icon}</span>
+                    <span class="choice-label">${escapeHtml(choice.label)}</span>
+                </button>
+            `).join('')}
+        </div>
+    `;
+
+    // Add click handlers
+    choicesContainer.querySelectorAll('.choice-btn').forEach(btn => {
+        btn.addEventListener('click', handleChoiceClick);
+    });
+
+    // Show overlay and choices
+    safetyOverlay.classList.remove('hidden');
+    choicesContainer.classList.remove('hidden');
+}
+
+function handleChoiceClick(e: Event) {
+    const target = e.currentTarget as HTMLElement;
+    const action = target.dataset.action;
+    const choiceId = target.dataset.id;
+
+    console.log('[SafetyGate] Choice selected:', { action, choiceId });
+
+    // Hide choices
+    hideChoices();
+
+    switch (action) {
+        case 'START_REGULATION_ACTIVITY':
+            showBubbleBreathing();
+            break;
+
+        case 'SWITCH_ACTIVITY':
+            closeCard();
+            setTimeout(() => showRandomCard(), 500);
+            break;
+
+        case 'RETRY_TASK':
+            // Start listening again
+            if (voiceService.isReady()) {
+                voiceService.startListening();
+            }
+            break;
+
+        case 'START_BREAK':
+            startBreak();
+            break;
+
+        case 'CALL_GROWNUP':
+            handleGrownupHelp();
+            break;
+
+        default:
+            console.log('[SafetyGate] Unknown action:', action);
+    }
+}
+
+function hideChoices() {
+    safetyOverlay.classList.add('hidden');
+    choicesContainer.classList.add('hidden');
+    feedbackDisplay.classList.add('hidden');
+}
+
+function showBubbleBreathing() {
+    isBreathingActive = true;
+    bubbleBreathingModal.classList.remove('hidden');
+    startBreathingAnimation();
+}
+
+function closeBubbleBreathing() {
+    isBreathingActive = false;
+    bubbleBreathingModal.classList.add('hidden');
+
+    // Resume listening if voice is enabled
+    if (voiceService.isReady()) {
+        voiceService.startListening();
+    }
+}
+
+function startBreathingAnimation() {
+    const bubble = bubbleBreathingModal.querySelector('.breathing-bubble') as HTMLElement;
+    const phaseText = bubbleBreathingModal.querySelector('.breathing-phase') as HTMLElement;
+
+    if (!bubble || !phaseText) return;
+
+    let phase = 0;
+    const phases = [
+        { text: 'Breathe in slowly...', scale: 1.5, duration: 4000 },
+        { text: 'Hold...', scale: 1.5, duration: 2000 },
+        { text: 'Breathe out slowly...', scale: 1, duration: 4000 },
+        { text: 'Hold...', scale: 1, duration: 2000 }
+    ];
+
+    function animate() {
+        if (!isBreathingActive) return;
+
+        const currentPhase = phases[phase % phases.length];
+        phaseText.textContent = currentPhase.text;
+        bubble.style.transform = `scale(${currentPhase.scale})`;
+
+        phase++;
+        setTimeout(animate, currentPhase.duration);
+    }
+
+    animate();
+}
+
+function startBreak() {
+    // Close the card and show a break screen
+    closeCard();
+
+    // Show a simple break message
+    const breakMessage = document.createElement('div');
+    breakMessage.className = 'break-message';
+    breakMessage.innerHTML = `
+        <div class="break-content">
+            <div class="break-icon">🎵</div>
+            <h2>Break Time!</h2>
+            <p>Take a moment to relax.</p>
+            <button class="end-break-btn">I'm ready to continue</button>
+        </div>
+    `;
+    document.body.appendChild(breakMessage);
+
+    const endBreakBtn = breakMessage.querySelector('.end-break-btn');
+    if (endBreakBtn) {
+        endBreakBtn.addEventListener('click', () => {
+            breakMessage.remove();
+        });
+    }
+}
+
+function handleGrownupHelp() {
+    console.log('[SafetyGate] Grownup help requested');
+
+    // Hide choices modal if open
+    hideChoices();
+
+    // Show a grownup help modal
+    const helpModal = document.createElement('div');
+    helpModal.className = 'grownup-help-modal';
+    helpModal.innerHTML = `
+        <div class="help-content">
+            <div class="help-icon">👋</div>
+            <h2>Help is on the way!</h2>
+            <p>A grownup has been notified.</p>
+            <button class="close-help-btn">Close</button>
+        </div>
+    `;
+    document.body.appendChild(helpModal);
+
+    const closeBtn = helpModal.querySelector('.close-help-btn');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            helpModal.remove();
+        });
+    }
+}
+
 function showWinScreen() {
     finalScore.textContent = String(state.score);
     winScreen.classList.remove('hidden');
@@ -347,7 +658,7 @@ function resetGame() {
     voiceToggle.classList.add('hidden');
     scoreValue.textContent = '0';
 
-    // Disable voice mode when game resets
+    // Disable voice mode when game resets (will auto-start again on next game)
     if (voiceService.isEnabled()) {
         voiceService.disable();
     }
@@ -371,7 +682,7 @@ function updateThemeDecorations() {
     });
 }
 
-function startGame() {
+async function startGame() {
     console.log('[Game] Starting, targets:', state.selectedTargets);
     if (state.selectedTargets.length === 0) {
         alert('Please select at least one category!');
@@ -391,12 +702,23 @@ function startGame() {
     leftPanel.classList.remove('hidden');
     gameControls.classList.remove('hidden');
     scoreDisplay.classList.remove('hidden');
-    voiceToggle.classList.remove('hidden');
+    // Voice toggle is hidden - voice starts automatically
+    voiceToggle.classList.add('hidden');
 
     generateBoard();
     updatePlayerPosition();
     scoreValue.textContent = '0';
     positionValue.textContent = 'Start';
+
+    // Auto-start voice mode
+    console.log('[Voice] Auto-starting voice mode...');
+    const voiceEnabled = await voiceService.enable();
+    if (voiceEnabled) {
+        console.log('[Voice] Voice mode started successfully');
+    } else {
+        console.error('[Voice] Failed to auto-start voice mode');
+    }
+
     console.log('[Game] Started!');
 }
 
@@ -488,10 +810,15 @@ function init() {
     nextButton.addEventListener('click', startGame);
     spinBtn.addEventListener('click', spin);
     spinnerWheel.addEventListener('click', spin);
-    cardClose.addEventListener('click', closeCard);
-    doneButton.addEventListener('click', closeCard);
+    // Card close/done buttons removed - safety-gate handles progression
+    // cardClose.addEventListener('click', closeCard);
+    // doneButton.addEventListener('click', closeCard);
     resetBtn.addEventListener('click', resetGame);
     playAgainBtn.addEventListener('click', resetGame);
+
+    // Hide the done button - safety-gate controls the flow
+    if (doneButton) doneButton.style.display = 'none';
+    if (cardClose) cardClose.style.display = 'none';
 
     // Voice mode setup
     voiceToggleBtn.addEventListener('click', toggleVoiceMode);
@@ -510,6 +837,12 @@ function init() {
     voiceService.onTranscript = (text, role) => {
         console.log(`[Voice] ${role}: ${text}`);
     };
+
+    // Set up safety-gate callback
+    voiceService.onSafetyGateResponse = handleSafetyGateResponse;
+
+    // Initialize safety-gate UI
+    initSafetyGateUI();
 
     // Hide loading screen using shared component
     hideLoadingScreen(500);

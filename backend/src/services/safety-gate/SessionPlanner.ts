@@ -203,6 +203,20 @@ export class SessionPlanner {
       priority: 4
     });
 
+    // ============================================
+    // CHOICE 5: Grownup Help (if available)
+    // ============================================
+
+    if (config.grownup_help_available) {
+      choices.push({
+        id: 'grownup_help',
+        label: 'Ask grownup for help',
+        icon: '👋',
+        action: 'CALL_GROWNUP',
+        priority: 5
+      });
+    }
+
     // Sort by priority and return
     return choices.sort((a, b) => a.priority - b.priority);
   }

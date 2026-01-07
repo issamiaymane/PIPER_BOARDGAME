@@ -1,3 +1,7 @@
+import OpenAI from 'openai';
+import { config } from '../../config/index.js';
+import { logger } from '../../utils/logger.js';
+
 export interface LLMResponse {
   coach_line: string;
   choice_presentation: string;
@@ -6,40 +10,65 @@ export interface LLMResponse {
 }
 
 export class LLMClient {
+  private client: OpenAI;
+
+  constructor() {
+    this.client = new OpenAI({
+      apiKey: config.openai.apiKey,
+    });
+  }
 
   async generateResponse(
     systemPrompt: string,
     _context: any
   ): Promise<LLMResponse> {
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        // API key handled by proxy
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1000,
-        system: systemPrompt,
+    try {
+      const response = await this.client.chat.completions.create({
+        model: 'gpt-4o',
+        max_tokens: 500,
+        response_format: { type: 'json_object' },
         messages: [
           {
+            role: 'system',
+            content: systemPrompt
+          },
+          {
             role: 'user',
-            content: 'Generate your response following the system prompt instructions.'
+            content: 'Generate your response following the system prompt instructions. Respond with valid JSON only.'
           }
         ]
-      })
-    });
+      });
 
-    const data = await response.json();
+      const text = response.choices[0]?.message?.content || '';
 
-    // Extract JSON from response
-    const text = data.content.find((c: any) => c.type === 'text')?.text || '';
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (!text) {
+        throw new Error('LLM returned empty response');
+      }
 
-    if (!jsonMatch) {
-      throw new Error('LLM did not return valid JSON');
+      const parsed = JSON.parse(text);
+
+      // Validate required fields
+      if (!parsed.coach_line || !parsed.tone_used) {
+        throw new Error('LLM response missing required fields');
+      }
+
+      return {
+        coach_line: parsed.coach_line || '',
+        choice_presentation: parsed.choice_presentation || '',
+        detected_signals: parsed.detected_signals || [],
+        tone_used: parsed.tone_used || 'calm'
+      };
+
+    } catch (error) {
+      logger.error('LLMClient error:', error);
+
+      // Return a safe fallback response (simple encouragement)
+      return {
+        coach_line: "I heard you! Let's try again!",
+        choice_presentation: "What would you like to do?",
+        detected_signals: [],
+        tone_used: 'warm'
+      };
     }
-
-    return JSON.parse(jsonMatch[0]);
   }
 }

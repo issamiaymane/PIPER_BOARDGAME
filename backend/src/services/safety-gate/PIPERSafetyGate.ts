@@ -82,8 +82,8 @@ export class PIPERSafetyGate {
   ): InterventionType[] {
     switch (level) {
       case SafetyGateLevel.RED:
-        return [InterventionType.CALL_GROWNUP];
-        // Only intervention at RED: Get adult help
+        return this.redLevelInterventions(state, signals);
+        // RED: Get adult help + calming options
 
       case SafetyGateLevel.ORANGE:
         return this.orangeLevelInterventions(state, signals);
@@ -95,6 +95,31 @@ export class PIPERSafetyGate {
         return [];
         // GREEN = no interventions needed
     }
+  }
+
+  // ============================================
+  // RED INTERVENTIONS
+  // ============================================
+
+  private redLevelInterventions(
+    _state: ChildState,
+    _signals: string[]
+  ): InterventionType[] {
+    const interventions: InterventionType[] = [];
+
+    // ALWAYS at RED: Adult help needed
+    interventions.push(InterventionType.CALL_GROWNUP);
+
+    // ALWAYS at RED: Calming options still available
+    interventions.push(InterventionType.CALMER_TONE);
+    interventions.push(InterventionType.BUBBLE_BREATHING);
+    // Why? Child needs calming options while waiting for adult
+
+    // ALWAYS at RED: Allow escape
+    interventions.push(InterventionType.ALLOW_SKIP);
+    // Why? Don't force child to continue current task
+
+    return interventions;
   }
 
   // ============================================
@@ -114,16 +139,16 @@ export class PIPERSafetyGate {
     interventions.push(InterventionType.OFFER_CHOICE);
     // Why? Restore sense of control
 
-    // CONDITIONAL: If dysregulated
-    if (state.dysregulationLevel >= 6) {
+    // CONDITIONAL: If dysregulated (lowered threshold from 6 to 4 for earlier intervention)
+    if (state.dysregulationLevel >= 4) {
       interventions.push(InterventionType.BUBBLE_BREATHING);
-      // Why? Need active regulation strategy
+      // Why? Need active regulation strategy - catch it early
     }
 
-    // CONDITIONAL: If high error streak
-    if (state.consecutiveErrors >= 4) {
+    // CONDITIONAL: If error streak (lowered from 4 to 3 to match YELLOW)
+    if (state.consecutiveErrors >= 3) {
       interventions.push(InterventionType.ALLOW_SKIP);
-      // Why? Child is stuck, needs escape route
+      // Why? Child is stuck, needs escape route earlier
     }
 
     // CONDITIONAL: If fatigued

@@ -17,17 +17,64 @@ export interface CardData {
   paragraph?: string;
   story?: string;
   questions?: Array<{ question: string }>;
-  images?: Array<{ label?: string }>;
+  images?: Array<{ label?: string; image?: string }>;
+  answers?: string[];
+  answerIndex?: number;
   [key: string]: unknown;
 }
 
+export interface UIPackage {
+  avatar: {
+    animation: string;
+    expression: string;
+    position: string;
+  };
+  speech: {
+    text: string;
+    voice_tone: string;
+    speed: string;
+  };
+  choice_message: string;
+  choices: Array<{
+    id: string;
+    label: string;
+    icon: string;
+    action: string;
+    priority: number;
+  }>;
+  visual_cues: {
+    enabled: boolean;
+  };
+  audio_support: {
+    available: boolean;
+  };
+  grownup_help: {
+    available: boolean;
+  };
+  admin_overlay: {
+    safety_level: number;
+    interventions_active: number;
+    time_in_session: string;
+    state_snapshot: any;
+  };
+}
+
 interface ServerMessage {
-  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error';
+  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error' | 'safety_gate_response';
   sessionId?: string;
   audio?: string;
   text?: string;
   role?: 'assistant' | 'user';
   message?: string;
+  uiPackage?: UIPackage;
+  isCorrect?: boolean;
+}
+
+interface CardContext {
+  category: string;
+  question: string;
+  targetAnswers: string[];
+  images: Array<{ image: string; label: string }>;
 }
 
 export class VoiceService {
@@ -46,6 +93,9 @@ export class VoiceService {
 
   // Callback for errors
   onError?: (message: string) => void;
+
+  // Callback for safety-gate response
+  onSafetyGateResponse?: (uiPackage: UIPackage, isCorrect: boolean) => void;
 
   constructor() {
     this.audioCapture = new AudioCapture();
@@ -138,14 +188,61 @@ export class VoiceService {
     // Extract text from card
     const text = this.extractTextFromCard(card, category);
 
-    // Send to backend
+    // Extract card context for safety-gate
+    const cardContext = this.extractCardContext(card, category);
+
+    // Send to backend with card context
     this.sendMessage({
       type: 'speak_card',
       text,
-      category
+      category,
+      cardContext
     });
 
     this.setState('speaking');
+  }
+
+  /**
+   * Extract card context for safety-gate processing
+   */
+  private extractCardContext(card: CardData, category: string): CardContext {
+    return {
+      category,
+      question: card.question || card.title || '',
+      targetAnswers: this.extractTargetAnswers(card),
+      images: (card.images || []).map(img => ({
+        image: img.image || '',
+        label: img.label || ''
+      }))
+    };
+  }
+
+  /**
+   * Extract target answers from various card types
+   */
+  private extractTargetAnswers(card: CardData): string[] {
+    // For cards with explicit answers array (like Adjectives - Opposites)
+    if (card.answers && Array.isArray(card.answers)) {
+      return card.answers;
+    }
+
+    // For multiple choice cards with answerIndex
+    if (card.choices && typeof card.answerIndex === 'number') {
+      return [card.choices[card.answerIndex]];
+    }
+
+    // For cards with image labels as answers
+    if (card.images && card.images.length > 0) {
+      const labels = card.images
+        .filter(img => img.label)
+        .map(img => img.label as string);
+      if (labels.length > 0) {
+        return labels;
+      }
+    }
+
+    // Default: no specific answer expected
+    return [];
   }
 
   /**
@@ -169,6 +266,19 @@ export class VoiceService {
     // Commit the audio buffer
     this.sendMessage({ type: 'commit_audio' });
 
+    if (this.state === 'listening') {
+      this.setState('ready');
+    }
+  }
+
+  /**
+   * Pause listening without committing audio (for when choices are shown)
+   * This allows the AI to continue speaking while we wait for user action
+   */
+  pauseListening(): void {
+    this.isListeningEnabled = false;
+    this.audioCapture.stop();
+    // Don't commit audio - just pause
     if (this.state === 'listening') {
       this.setState('ready');
     }
@@ -290,6 +400,17 @@ export class VoiceService {
       case 'error':
         console.error('Voice server error:', message.message);
         this.onError?.(message.message || 'Unknown error');
+        break;
+
+      case 'safety_gate_response':
+        if (message.uiPackage) {
+          console.log('[Voice] Safety-gate response received:', {
+            safetyLevel: message.uiPackage.admin_overlay.safety_level,
+            isCorrect: message.isCorrect,
+            choicesCount: message.uiPackage.choices.length
+          });
+          this.onSafetyGateResponse?.(message.uiPackage, message.isCorrect ?? false);
+        }
         break;
     }
   }

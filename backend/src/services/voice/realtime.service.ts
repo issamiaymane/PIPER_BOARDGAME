@@ -115,13 +115,15 @@ export class RealtimeVoiceService {
         input_audio_format: 'pcm16',
         output_audio_format: 'pcm16',
         input_audio_transcription: {
-          model: 'whisper-1'
+          model: 'whisper-1',
+          language: 'en'
         },
         turn_detection: {
           type: 'server_vad',
           threshold: 0.5,
           prefix_padding_ms: 300,
-          silence_duration_ms: 800
+          silence_duration_ms: 800,
+          create_response: false
         }
       }
     });
@@ -139,7 +141,12 @@ export class RealtimeVoiceService {
         logger.info('Realtime session configured');
         break;
       case 'error':
-        logger.error('Realtime API error:', event);
+        // Suppress benign errors
+        const errorCode = (event.error as { code?: string })?.code;
+        const benignErrors = ['input_audio_buffer_commit_empty', 'response_cancel_not_active'];
+        if (!benignErrors.includes(errorCode || '')) {
+          logger.error('Realtime API error:', event);
+        }
         break;
       default:
         // Forward all events to the handler
@@ -169,7 +176,7 @@ export class RealtimeVoiceService {
   }
 
   /**
-   * Send text to be spoken by the AI
+   * Send text to be spoken by the AI (for card questions)
    */
   speakText(text: string): void {
     // Create a conversation item with the text
@@ -182,6 +189,34 @@ export class RealtimeVoiceService {
           {
             type: 'input_text',
             text: `Please read this card question aloud to the student: "${text}"`
+          }
+        ]
+      }
+    });
+
+    // Trigger response generation
+    this.sendEvent({
+      type: 'response.create',
+      response: {
+        modalities: ['text', 'audio']
+      }
+    });
+  }
+
+  /**
+   * Speak feedback text directly (for safety-gate responses)
+   */
+  speakFeedback(text: string): void {
+    // Create a conversation item with exact feedback to speak
+    this.sendEvent({
+      type: 'conversation.item.create',
+      item: {
+        type: 'message',
+        role: 'user',
+        content: [
+          {
+            type: 'input_text',
+            text: `Say exactly this to the student (nothing more, nothing less): "${text}"`
           }
         ]
       }
