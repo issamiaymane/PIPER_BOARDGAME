@@ -331,9 +331,11 @@ export class VoiceService {
         const url = new URL(apiUrl);
         const protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
         const host = url.hostname;
-        const port = url.port || (protocol === 'wss:' ? '443' : '80');
 
-        const wsUrl = `${protocol}//${host}:${port}/api/voice`;
+        // Only include port if explicitly specified (not default 80/443)
+        const portPart = url.port ? `:${url.port}` : '';
+
+        const wsUrl = `${protocol}//${host}${portPart}/api/voice`;
         console.log('[Voice] Connecting to:', wsUrl);
 
         this.ws = new WebSocket(wsUrl);
