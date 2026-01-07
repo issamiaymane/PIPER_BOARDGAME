@@ -326,16 +326,25 @@ export class VoiceService {
   private connectWebSocket(): Promise<boolean> {
     return new Promise((resolve) => {
       try {
-        // Determine WebSocket URL based on API URL or default to backend port
-        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
-        const url = new URL(apiUrl);
-        const protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
-        const host = url.hostname;
+        // Determine WebSocket URL:
+        // - In production (deployed): use current page origin (same host)
+        // - In development: use VITE_API_URL or default to localhost:3000
+        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
-        // Only include port if explicitly specified (not default 80/443)
-        const portPart = url.port ? `:${url.port}` : '';
-
-        const wsUrl = `${protocol}//${host}${portPart}/api/voice`;
+        let wsUrl: string;
+        if (isLocalhost) {
+          // Local development - use env variable or default
+          const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+          const url = new URL(apiUrl);
+          const protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
+          const host = url.hostname;
+          const portPart = url.port ? `:${url.port}` : '';
+          wsUrl = `${protocol}//${host}${portPart}/api/voice`;
+        } else {
+          // Production - use same origin as the page
+          const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+          wsUrl = `${protocol}//${window.location.host}/api/voice`;
+        }
         console.log('[Voice] Connecting to:', wsUrl);
 
         this.ws = new WebSocket(wsUrl);
