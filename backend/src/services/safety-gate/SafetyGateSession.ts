@@ -21,6 +21,11 @@ export interface SafetyGateResult {
   shouldSpeak: boolean;
   interventionRequired: boolean;
   isCorrect: boolean;
+  // Additional data for frontend console logging
+  childSaid?: string;
+  targetAnswers?: string[];
+  attemptNumber?: number;
+  responseHistory?: string[];
 }
 
 export class SafetyGateSession {

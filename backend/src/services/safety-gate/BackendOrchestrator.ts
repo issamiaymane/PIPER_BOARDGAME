@@ -44,6 +44,11 @@ export interface UIPackage {
     time_in_session: string;
     state_snapshot: ChildState;
   };
+  // Optional fields for frontend console logging
+  childSaid?: string;
+  targetAnswers?: string[];
+  attemptNumber?: number;
+  responseHistory?: string[];
 }
 
 interface Logger {
