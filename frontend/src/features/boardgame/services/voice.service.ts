@@ -54,9 +54,24 @@ export interface UIPackage {
   admin_overlay: {
     safety_level: number;
     interventions_active: number;
+    interventions_list: string[];
+    signals_detected: string[];
     time_in_session: string;
-    state_snapshot: any;
+    state_snapshot: {
+      engagementLevel: number;
+      dysregulationLevel: number;
+      fatigueLevel: number;
+      consecutiveErrors: number;
+      timeInSession: number;
+      errorFrequency: number;
+      timeSinceBreak: number;
+    };
   };
+  // Additional fields from SafetyGateSession for console logging
+  childSaid?: string;
+  targetAnswers?: string[];
+  attemptNumber?: number;
+  responseHistory?: string[];
 }
 
 interface ServerMessage {
@@ -404,11 +419,7 @@ export class VoiceService {
 
       case 'safety_gate_response':
         if (message.uiPackage) {
-          console.log('[Voice] Safety-gate response received:', {
-            safetyLevel: message.uiPackage.admin_overlay.safety_level,
-            isCorrect: message.isCorrect,
-            choicesCount: message.uiPackage.choices.length
-          });
+          // Detailed logging is done in handleSafetyGateResponse with styled output
           this.onSafetyGateResponse?.(message.uiPackage, message.isCorrect ?? false);
         }
         break;

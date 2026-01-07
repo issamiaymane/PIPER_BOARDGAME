@@ -279,10 +279,17 @@ export class VoiceSessionManager {
         session.realtimeService.speakFeedback(result.feedbackText);
       }
 
-      // Send safety-gate response to frontend
+      // Send safety-gate response to frontend (include extra data for console logging)
       this.sendToClient(session, {
         type: 'safety_gate_response',
-        uiPackage: result.uiPackage,
+        uiPackage: {
+          ...result.uiPackage,
+          // Add extra fields for frontend console logging
+          childSaid: result.childSaid,
+          targetAnswers: result.targetAnswers,
+          attemptNumber: result.attemptNumber,
+          responseHistory: result.responseHistory
+        },
         isCorrect: result.isCorrect
       });
 

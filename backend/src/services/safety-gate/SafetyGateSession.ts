@@ -139,7 +139,12 @@ export class SafetyGateSession {
       choiceMessage: uiPackage.choice_message,
       shouldSpeak: true, // Always speak feedback
       interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
-      isCorrect
+      isCorrect,
+      // Additional data for frontend console logging
+      childSaid: transcription,
+      targetAnswers: this.currentCard.targetAnswers,
+      attemptNumber: this.attemptCount,
+      responseHistory: [...this.responseHistory]
     };
   }
 

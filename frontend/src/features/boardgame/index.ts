@@ -9,6 +9,7 @@ import { CATEGORY_HANDLER_MAP } from '@shared/categories';
 import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../cards/index';
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
 import { voiceService, VoiceState, UIPackage } from './services/voice.service';
+import { safetyGateLogger, SafetyGateLogData } from './utils/safety-gate-logger';
 
 // Types
 interface CardData {
@@ -386,14 +387,30 @@ function initSafetyGateUI() {
 }
 
 function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean) {
-    console.log('[SafetyGate] Response received:', {
-        safetyLevel: uiPackage.admin_overlay.safety_level,
-        isCorrect,
-        choices: uiPackage.choices.length,
-        interventions: uiPackage.admin_overlay.interventions_active
-    });
-
     currentSafetyLevel = uiPackage.admin_overlay.safety_level;
+
+    // Log to Chrome console with same format as backend terminal
+    const logData: SafetyGateLogData = {
+        childSaid: uiPackage.childSaid || '[unknown]',
+        targetAnswers: uiPackage.targetAnswers || [],
+        isCorrect,
+        safetyLevel: uiPackage.admin_overlay.safety_level,
+        signals: uiPackage.admin_overlay.signals_detected || [],
+        interventions: uiPackage.admin_overlay.interventions_list || [],
+        state: {
+            engagement: uiPackage.admin_overlay.state_snapshot?.engagementLevel || 0,
+            dysregulation: uiPackage.admin_overlay.state_snapshot?.dysregulationLevel || 0,
+            fatigue: uiPackage.admin_overlay.state_snapshot?.fatigueLevel || 0,
+            consecutiveErrors: uiPackage.admin_overlay.state_snapshot?.consecutiveErrors || 0,
+            timeInSession: uiPackage.admin_overlay.state_snapshot?.timeInSession || 0,
+        },
+        choices: uiPackage.choices.map(c => ({ icon: c.icon, label: c.label, action: c.action })),
+        feedback: uiPackage.speech.text,
+        attemptNumber: uiPackage.attemptNumber || 1,
+        responseHistory: uiPackage.responseHistory || [],
+        shouldSpeak: true
+    };
+    safetyGateLogger.logSessionState(logData);
 
     // Show feedback display
     if (uiPackage.speech.text) {
@@ -501,16 +518,18 @@ function renderChoices(choices: UIPackage['choices'], message: string) {
 
 function handleChoiceClick(e: Event) {
     const target = e.currentTarget as HTMLElement;
-    const action = target.dataset.action;
-    const choiceId = target.dataset.id;
+    const action = target.dataset.action || '';
+    const choiceId = target.dataset.id || '';
 
-    console.log('[SafetyGate] Choice selected:', { action, choiceId });
+    // Log choice selection with styled console output
+    safetyGateLogger.logChoiceSelected(action, choiceId);
 
     // Hide choices
     hideChoices();
 
     switch (action) {
         case 'START_REGULATION_ACTIVITY':
+            safetyGateLogger.logBubbleBreathingStart();
             showBubbleBreathing();
             break;
 
@@ -615,7 +634,8 @@ function startBreak() {
 }
 
 function handleGrownupHelp() {
-    console.log('[SafetyGate] Grownup help requested');
+    // Log with styled console output
+    safetyGateLogger.logGrownupHelp();
 
     // Hide choices modal if open
     hideChoices();
