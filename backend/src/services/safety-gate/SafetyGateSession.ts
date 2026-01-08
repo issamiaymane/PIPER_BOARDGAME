@@ -49,10 +49,15 @@ export class SafetyGateSession {
   /**
    * Set the current card context for answer evaluation
    * Note: attemptCount and responseHistory persist across cards for full session tracking
+   * This also starts the inactivity timer since we're now waiting for the child's response
    */
   setCurrentCard(card: CardContext): void {
     this.currentCard = card;
     // Don't reset attemptCount or responseHistory - they persist across all cards
+
+    // Start inactivity timer - we're now waiting for child to respond to this card
+    this.startInactivityTimer();
+    console.log(`[SafetyGateSession] 📋 Card set: "${card.question}" - Timer STARTED`);
   }
 
   /**
@@ -159,6 +164,11 @@ export class SafetyGateSession {
         // Remove trailing punctuation and add the choice prompt
         feedbackText = feedbackText.replace(/[.!?]+$/, '') + '! ' + choicePrompt;
       }
+
+      // Stop inactivity timer when showing choices - child is not expected to answer the card
+      // Timer should only restart when child selects "Try again" or a new card is shown
+      this.stopInactivityTimer();
+      console.log(`[SafetyGateSession] ⏱️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
     }
 
     return {
@@ -376,6 +386,88 @@ export class SafetyGateSession {
   }
 
   /**
+   * Resume waiting for card response - call this when child selects "Try again"
+   * This restarts the inactivity timer after choices were dismissed
+   */
+  resumeWaitingForResponse(): void {
+    console.log(`[SafetyGateSession] ⏱️ RESUME - Child selected retry, waiting for card response again`);
+    this.startInactivityTimer();
+  }
+
+  /**
+   * Handle when a choice is selected from the choices modal
+   * This manages the inactivity timer appropriately for each choice type:
+   *
+   * - RETRY_TASK: Restart timer (child will answer the card)
+   * - START_BREAK: Stop timer (session paused for break)
+   * - SWITCH_ACTIVITY: Timer starts when new card is set via setCurrentCard()
+   * - START_REGULATION_ACTIVITY: Stop timer (doing bubble breathing)
+   * - CALL_GROWNUP: Stop timer (session paused for adult intervention)
+   *
+   * @param action The choice action string
+   */
+  handleChoiceSelection(action: string): void {
+    console.log(`[SafetyGateSession] 🎯 Choice selected: ${action}`);
+
+    switch (action) {
+      case 'RETRY_TASK':
+        // Child wants to try again - restart timer to wait for their answer
+        console.log(`[SafetyGateSession] ⏱️ RETRY_TASK - Restarting timer for card response`);
+        this.startInactivityTimer();
+        break;
+
+      case 'START_BREAK':
+        // Child is taking a break - timer stays stopped
+        console.log(`[SafetyGateSession] ⏱️ START_BREAK - Timer remains stopped (break time)`);
+        this.stopInactivityTimer();
+        break;
+
+      case 'SWITCH_ACTIVITY':
+        // Child wants to skip to next card - timer will restart when setCurrentCard() is called
+        console.log(`[SafetyGateSession] ⏱️ SWITCH_ACTIVITY - Timer will restart when new card is shown`);
+        this.stopInactivityTimer();
+        break;
+
+      case 'START_REGULATION_ACTIVITY':
+        // Child is doing bubble breathing - timer stays stopped
+        console.log(`[SafetyGateSession] ⏱️ START_REGULATION_ACTIVITY - Timer remains stopped (regulation activity)`);
+        this.stopInactivityTimer();
+        break;
+
+      case 'CALL_GROWNUP':
+        // Adult help requested - session paused, timer stops
+        console.log(`[SafetyGateSession] ⏱️ CALL_GROWNUP - Timer stopped (adult intervention)`);
+        this.stopInactivityTimer();
+        break;
+
+      default:
+        // Unknown action - stop timer to be safe
+        console.log(`[SafetyGateSession] ⏱️ Unknown action "${action}" - Timer stopped`);
+        this.stopInactivityTimer();
+        break;
+    }
+  }
+
+  /**
+   * Resume session after a break or regulation activity
+   * Call this when returning to normal card flow after:
+   * - Break ends
+   * - Bubble breathing ends
+   * - Adult intervention resolved
+   *
+   * This will restart the inactivity timer if there's an active card
+   */
+  resumeSession(): void {
+    console.log(`[SafetyGateSession] ▶️ Session resumed`);
+    if (this.currentCard) {
+      console.log(`[SafetyGateSession] ⏱️ Active card exists - restarting timer`);
+      this.startInactivityTimer();
+    } else {
+      console.log(`[SafetyGateSession] ⏱️ No active card - timer not started`);
+    }
+  }
+
+  /**
    * Handle inactivity - fires CHILD_INACTIVE event through the pipeline
    */
   private async handleInactivity(): Promise<void> {
@@ -464,9 +556,16 @@ export class SafetyGateSession {
       console.log(`[SafetyGateSession] ⚠️ No inactivity callback registered`);
     }
 
-    // Restart timer for next inactivity check
-    console.log(`[SafetyGateSession] ⚠️ Restarting timer for next inactivity check...`);
-    this.startInactivityTimer();
+    // Only restart timer if NOT showing choices (GREEN level)
+    // If YELLOW+ level, choices are shown and child should interact with them, not answer the card
+    const safetyLevel = result.uiPackage.admin_overlay.safety_level;
+    if (safetyLevel >= SafetyGateLevel.YELLOW) {
+      console.log(`[SafetyGateSession] ⚠️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
+      this.stopInactivityTimer();
+    } else {
+      console.log(`[SafetyGateSession] ⚠️ Restarting timer for next inactivity check (GREEN level)...`);
+      this.startInactivityTimer();
+    }
   }
 
   /**

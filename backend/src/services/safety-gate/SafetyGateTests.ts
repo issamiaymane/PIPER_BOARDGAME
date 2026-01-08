@@ -14,10 +14,11 @@
  */
 
 import { StateEngine } from './StateEngine.js';
-import { PIPERSafetyGate } from './PIPERSafetyGate.js';
+import { LevelAssessor } from './LevelAssessor.js';
+import { InterventionSelector } from './InterventionSelector.js';
 import { SessionPlanner } from './SessionPlanner.js';
 import { BackendOrchestrator, TaskContext } from './BackendOrchestrator.js';
-import { ChildState, ChildEvent, SafetyGateLevel, InterventionType } from './types.js';
+import { ChildState, ChildEvent, SafetyGateLevel, InterventionType, Signal } from './types.js';
 
 // ============================================
 // TEST UTILITIES
@@ -56,7 +57,7 @@ function logTestHeader(testId: string, description: string) {
   console.log('='.repeat(60));
 }
 
-function logState(state: ChildState, level: SafetyGateLevel, signals: string[], interventions: InterventionType[]) {
+function logState(state: ChildState, level: SafetyGateLevel, signals: Signal[], interventions: InterventionType[]) {
   const levelColor = colorForLevel(level);
 
   console.log(`\n${COLORS.bold}📊 State Snapshot:${COLORS.reset}`);
@@ -91,13 +92,15 @@ function logResult(passed: boolean, expected: string, actual: string) {
 
 class SafetyGateTestRunner {
   private stateEngine: StateEngine;
-  private safetyGate: PIPERSafetyGate;
+  private levelAssessor: LevelAssessor;
+  private interventionSelector: InterventionSelector;
   private sessionPlanner: SessionPlanner;
   private results: { id: string; passed: boolean; description: string }[] = [];
 
   constructor() {
     this.stateEngine = new StateEngine();
-    this.safetyGate = new PIPERSafetyGate();
+    this.levelAssessor = new LevelAssessor();
+    this.interventionSelector = new InterventionSelector();
     this.sessionPlanner = new SessionPlanner();
   }
 
@@ -126,13 +129,13 @@ class SafetyGateTestRunner {
     description: string,
     events: ChildEvent[],
     expectedLevel: SafetyGateLevel,
-    expectedSignals?: string[],
+    expectedSignals?: Signal[],
     expectedInterventions?: InterventionType[]
   ): boolean {
     logTestHeader(testId, description);
 
     let state: ChildState = this.stateEngine.getState();
-    let signals: string[] = [];
+    let signals: Signal[] = [];
     let level: SafetyGateLevel = SafetyGateLevel.GREEN;
     let interventions: InterventionType[] = [];
 
@@ -142,15 +145,15 @@ class SafetyGateTestRunner {
 
       state = this.stateEngine.updateFromEvent(event);
       signals = this.detectSignals(event, state);
-      level = this.safetyGate.assessSafetyLevel(state, signals);
-      interventions = this.safetyGate.determineInterventions(level, state, signals);
+      level = this.levelAssessor.assessLevel(state, signals);
+      interventions = this.interventionSelector.selectInterventions(level, state, signals);
     }
 
     logState(state, level, signals, interventions);
 
     // Build choices to show what UI would display
     const config = this.sessionPlanner.adaptSessionConfig(level, interventions, state);
-    const choices = this.sessionPlanner.buildChoices(interventions, config);
+    const choices = this.sessionPlanner.buildChoices(interventions, config, level);
 
     if (choices.length > 0) {
       console.log(`\n${COLORS.bold}🎭 Choices Available:${COLORS.reset}`);
@@ -183,38 +186,38 @@ class SafetyGateTestRunner {
     return passed;
   }
 
-  private detectSignals(event: ChildEvent, state: ChildState): string[] {
-    const signals: string[] = [];
+  private detectSignals(event: ChildEvent, state: ChildState): Signal[] {
+    const signals: Signal[] = [];
 
     if (state.consecutiveErrors >= 3) {
-      signals.push('CONSECUTIVE_ERRORS');
+      signals.push(Signal.CONSECUTIVE_ERRORS);
     }
 
     if (event.type === 'CHILD_RESPONSE' && event.response === event.previousResponse) {
-      signals.push('REPETITIVE_WRONG_RESPONSE');
+      signals.push(Signal.REPETITIVE_WRONG_RESPONSE);
     }
 
     if (state.engagementLevel <= 3) {
-      signals.push('ENGAGEMENT_DROP');
+      signals.push(Signal.ENGAGEMENT_DROP);
     }
 
     const responseText = (event.response || event.signal || '').toLowerCase();
     if (responseText.includes('break') || responseText.includes('stop') || responseText.includes('tired')) {
-      signals.push('I_NEED_BREAK');
+      signals.push(Signal.I_NEED_BREAK);
     }
     if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
-      signals.push('IM_DONE');
+      signals.push(Signal.IM_DONE);
     }
     if (responseText.includes('scream') || responseText.includes('ahhh') || responseText.includes('no no no')) {
-      signals.push('SCREAMING');
+      signals.push(Signal.SCREAMING);
     }
 
     if (state.fatigueLevel >= 7) {
-      signals.push('FATIGUE_HIGH');
+      signals.push(Signal.FATIGUE_HIGH);
     }
 
     if (state.dysregulationLevel >= 6) {
-      signals.push('DYSREGULATION_DETECTED');
+      signals.push(Signal.DYSREGULATION_DETECTED);
     }
 
     return signals;
@@ -272,7 +275,7 @@ class SafetyGateTestRunner {
         this.createEvent('CHILD_RESPONSE', 'fire', false),
       ],
       SafetyGateLevel.YELLOW,
-      ['CONSECUTIVE_ERRORS'],
+      [Signal.CONSECUTIVE_ERRORS],
       [InterventionType.SHORTEN_TASK, InterventionType.OFFER_CHOICE, InterventionType.ALLOW_SKIP]
     );
   }
@@ -291,7 +294,7 @@ class SafetyGateTestRunner {
       'Low engagement (engagement <= 3) - should trigger YELLOW or higher',
       events,
       SafetyGateLevel.ORANGE, // Will be ORANGE due to error count >= 5
-      ['ENGAGEMENT_DROP']
+      [Signal.ENGAGEMENT_DROP]
     );
   }
 
@@ -302,7 +305,7 @@ class SafetyGateTestRunner {
       'Child says "I need a break" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'I need a break', false)],
       SafetyGateLevel.YELLOW,
-      ['I_NEED_BREAK']
+      [Signal.I_NEED_BREAK]
     );
   }
 
@@ -313,7 +316,7 @@ class SafetyGateTestRunner {
       'Child says "I\'m done" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', "I'm done with this", false)],
       SafetyGateLevel.YELLOW,
-      ['IM_DONE']
+      [Signal.IM_DONE]
     );
   }
 
@@ -324,7 +327,7 @@ class SafetyGateTestRunner {
       'Child says "tired" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', "I'm tired", false)],
       SafetyGateLevel.YELLOW,
-      ['I_NEED_BREAK']
+      [Signal.I_NEED_BREAK]
     );
   }
 
@@ -335,7 +338,7 @@ class SafetyGateTestRunner {
       'Child says "stop" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'stop', false)],
       SafetyGateLevel.YELLOW,
-      ['I_NEED_BREAK']
+      [Signal.I_NEED_BREAK]
     );
   }
 
@@ -346,7 +349,7 @@ class SafetyGateTestRunner {
       'Child says "quit" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'I want to quit', false)],
       SafetyGateLevel.YELLOW,
-      ['IM_DONE']
+      [Signal.IM_DONE]
     );
   }
 
@@ -357,7 +360,7 @@ class SafetyGateTestRunner {
       'Child says "no more" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'no more please', false)],
       SafetyGateLevel.YELLOW,
-      ['IM_DONE']
+      [Signal.IM_DONE]
     );
   }
 
@@ -378,7 +381,7 @@ class SafetyGateTestRunner {
         this.createEvent('CHILD_RESPONSE', 'e', false),
       ],
       SafetyGateLevel.ORANGE,
-      ['CONSECUTIVE_ERRORS'],
+      [Signal.CONSECUTIVE_ERRORS],
       [InterventionType.CALMER_TONE, InterventionType.OFFER_CHOICE, InterventionType.ALLOW_SKIP]
     );
   }
@@ -394,7 +397,7 @@ class SafetyGateTestRunner {
         this.createEvent('CHILD_RESPONSE', 'hot', false, 'hot', 'hot'), // 3rd time with both previous responses
       ],
       SafetyGateLevel.ORANGE,
-      ['REPETITIVE_WRONG_RESPONSE', 'CONSECUTIVE_ERRORS']
+      [Signal.REPETITIVE_WRONG_RESPONSE, Signal.CONSECUTIVE_ERRORS]
     );
   }
 
@@ -405,7 +408,7 @@ class SafetyGateTestRunner {
       'Child screams "ahhh" - should trigger ORANGE',
       [this.createEvent('CHILD_RESPONSE', 'ahhhhh', false)],
       SafetyGateLevel.ORANGE,
-      ['SCREAMING']
+      [Signal.SCREAMING]
     );
   }
 
@@ -416,7 +419,7 @@ class SafetyGateTestRunner {
       'Child says "no no no" - should trigger ORANGE',
       [this.createEvent('CHILD_RESPONSE', 'no no no', false)],
       SafetyGateLevel.ORANGE,
-      ['SCREAMING']
+      [Signal.SCREAMING]
     );
   }
 
@@ -432,7 +435,7 @@ class SafetyGateTestRunner {
     logTestHeader('O6', 'Bubble breathing triggered when dysreg >= 6 at ORANGE');
 
     let state: ChildState = this.stateEngine.getState();
-    let signals: string[] = [];
+    let signals: Signal[] = [];
     let level: SafetyGateLevel = SafetyGateLevel.GREEN;
     let interventions: InterventionType[] = [];
 
@@ -444,13 +447,13 @@ class SafetyGateTestRunner {
     (state as any).dysregulationLevel = 6;
 
     signals = this.detectSignals(events[events.length - 1], state);
-    level = this.safetyGate.assessSafetyLevel(state, signals);
-    interventions = this.safetyGate.determineInterventions(level, state, signals);
+    level = this.levelAssessor.assessLevel(state, signals);
+    interventions = this.interventionSelector.selectInterventions(level, state, signals);
 
     logState(state, level, signals, interventions);
 
     const config = this.sessionPlanner.adaptSessionConfig(level, interventions, state);
-    const choices = this.sessionPlanner.buildChoices(interventions, config);
+    const choices = this.sessionPlanner.buildChoices(interventions, config, level);
 
     console.log(`\n${COLORS.bold}🎭 Choices Available:${COLORS.reset}`);
     choices.forEach(c => console.log(`   ${c.icon} ${c.label} (${c.action})`));
@@ -479,8 +482,8 @@ class SafetyGateTestRunner {
     (state as any).dysregulationLevel = 9;
 
     const signals = this.detectSignals(this.createEvent('CHILD_RESPONSE', 'ahhh', false), state);
-    const level = this.safetyGate.assessSafetyLevel(state, signals);
-    const interventions = this.safetyGate.determineInterventions(level, state, signals);
+    const level = this.levelAssessor.assessLevel(state, signals);
+    const interventions = this.interventionSelector.selectInterventions(level, state, signals);
 
     logState(state, level, signals, interventions);
 
@@ -563,14 +566,14 @@ class SafetyGateTestRunner {
     const yellowState = this.stateEngine.updateFromEvent(this.createEvent('CHILD_RESPONSE', 'c', false));
 
     let signals = this.detectSignals(this.createEvent('CHILD_RESPONSE', 'c', false), yellowState);
-    let level = this.safetyGate.assessSafetyLevel(yellowState, signals);
+    let level = this.levelAssessor.assessLevel(yellowState, signals);
 
     console.log(`${COLORS.gray}At YELLOW: errors=${yellowState.consecutiveErrors}, level=${levelName(level)}${COLORS.reset}`);
 
     // Now recover with correct answer
     const recoveredState = this.stateEngine.updateFromEvent(this.createEvent('CHILD_RESPONSE', 'cold', true));
     signals = this.detectSignals(this.createEvent('CHILD_RESPONSE', 'cold', true), recoveredState);
-    level = this.safetyGate.assessSafetyLevel(recoveredState, signals);
+    level = this.levelAssessor.assessLevel(recoveredState, signals);
 
     console.log(`${COLORS.gray}After correct: errors=${recoveredState.consecutiveErrors}, level=${levelName(level)}${COLORS.reset}`);
 
@@ -595,7 +598,7 @@ class SafetyGateTestRunner {
     const interventions: InterventionType[] = [];
 
     const config = this.sessionPlanner.adaptSessionConfig(level, interventions, state);
-    const choices = this.sessionPlanner.buildChoices(interventions, config);
+    const choices = this.sessionPlanner.buildChoices(interventions, config, level);
 
     console.log(`\n${COLORS.bold}Choices at GREEN:${COLORS.reset}`);
     choices.forEach(c => console.log(`   ${c.icon} ${c.label}`));
@@ -623,7 +626,7 @@ class SafetyGateTestRunner {
     const interventions = [InterventionType.SHORTEN_TASK, InterventionType.OFFER_CHOICE, InterventionType.ALLOW_SKIP];
 
     const config = this.sessionPlanner.adaptSessionConfig(level, interventions, state);
-    const choices = this.sessionPlanner.buildChoices(interventions, config);
+    const choices = this.sessionPlanner.buildChoices(interventions, config, level);
 
     console.log(`\n${COLORS.bold}Choices at YELLOW with ALLOW_SKIP:${COLORS.reset}`);
     choices.forEach(c => console.log(`   ${c.icon} ${c.label}`));
@@ -655,7 +658,7 @@ class SafetyGateTestRunner {
     ];
 
     const config = this.sessionPlanner.adaptSessionConfig(level, interventions, state);
-    const choices = this.sessionPlanner.buildChoices(interventions, config);
+    const choices = this.sessionPlanner.buildChoices(interventions, config, level);
 
     console.log(`\n${COLORS.bold}Choices at ORANGE with BUBBLE_BREATHING:${COLORS.reset}`);
     choices.forEach(c => console.log(`   ${c.icon} ${c.label} (priority: ${c.priority})`));

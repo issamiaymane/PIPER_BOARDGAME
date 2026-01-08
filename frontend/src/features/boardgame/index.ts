@@ -524,6 +524,11 @@ function handleChoiceClick(e: Event) {
     // Log choice selection with styled console output
     safetyGateLogger.logChoiceSelected(action, choiceId);
 
+    // Notify backend about choice selection (for inactivity timer management)
+    if (voiceService.isEnabled()) {
+        voiceService.notifyChoiceSelected(action);
+    }
+
     // Hide choices
     hideChoices();
 
@@ -573,6 +578,11 @@ function showBubbleBreathing() {
 function closeBubbleBreathing() {
     isBreathingActive = false;
     bubbleBreathingModal.classList.add('hidden');
+
+    // Notify backend that bubble breathing ended - resume session timer
+    if (voiceService.isEnabled()) {
+        voiceService.notifyActivityEnded('BUBBLE_BREATHING');
+    }
 
     // Resume listening if voice is enabled
     if (voiceService.isReady()) {
@@ -629,6 +639,14 @@ function startBreak() {
     if (endBreakBtn) {
         endBreakBtn.addEventListener('click', () => {
             breakMessage.remove();
+
+            // Notify backend that break ended - resume session timer
+            if (voiceService.isEnabled()) {
+                voiceService.notifyActivityEnded('BREAK');
+            }
+
+            // Show next card after break
+            setTimeout(() => showRandomCard(), 500);
         });
     }
 }
@@ -657,6 +675,16 @@ function handleGrownupHelp() {
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
             helpModal.remove();
+
+            // Notify backend that grownup help ended - resume session timer
+            if (voiceService.isEnabled()) {
+                voiceService.notifyActivityEnded('GROWNUP_HELP');
+            }
+
+            // Resume listening if voice is ready
+            if (voiceService.isReady()) {
+                voiceService.startListening();
+            }
         });
     }
 }

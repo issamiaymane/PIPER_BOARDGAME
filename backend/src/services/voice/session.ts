@@ -38,7 +38,7 @@ export interface VoiceSession {
 }
 
 export interface ClientMessage {
-  type: 'start_session' | 'speak_card' | 'audio_chunk' | 'commit_audio' | 'end_session' | 'set_card_context';
+  type: 'start_session' | 'speak_card' | 'audio_chunk' | 'commit_audio' | 'end_session' | 'set_card_context' | 'choice_selected' | 'activity_ended';
   text?: string;
   category?: string;
   audio?: string; // base64 encoded PCM16 audio
@@ -52,6 +52,10 @@ export interface ClientMessage {
     targetAnswers: string[];
     images: Array<{ image: string; label: string }>;
   };
+  // Choice selection action
+  action?: string;
+  // Activity that ended (for activity_ended message)
+  activity?: string;
 }
 
 export interface ServerMessage {
@@ -286,6 +290,20 @@ export class VoiceSessionManager {
 
       case 'end_session':
         this.endSession(sessionId);
+        break;
+
+      case 'choice_selected':
+        if (message.action) {
+          // Handle choice selection - manages inactivity timer appropriately
+          session.safetyGateSession.handleChoiceSelection(message.action);
+          logger.info(`Session ${sessionId}: Choice selected - ${message.action}`);
+        }
+        break;
+
+      case 'activity_ended':
+        // Activity (break, bubble breathing, grownup help) has ended - resume session
+        session.safetyGateSession.resumeSession();
+        logger.info(`Session ${sessionId}: Activity ended - ${message.activity || 'unknown'}, session resumed`);
         break;
 
       default:

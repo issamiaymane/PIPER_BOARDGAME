@@ -1,4 +1,4 @@
-import { ChildState, ChildEvent } from './types.js';
+import { ChildState, ChildEvent, Signal } from './types.js';
 
 export class StateEngine {
   private state: ChildState;
@@ -120,11 +120,11 @@ export class StateEngine {
     const normalizedText = text.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
 
     // Track individual distress signals for stacking
-    let distressSignals: string[] = [];
+    let distressSignals: Signal[] = [];
 
     // Check for "no no no" pattern
     const hasNoNoNo = normalizedText.includes('no no no');
-    if (hasNoNoNo) distressSignals.push('NO_NO_NO');
+    if (hasNoNoNo) distressSignals.push(Signal.NO_NO_NO);
 
     // Check for screaming/yelling text patterns
     const hasTextScreaming =
@@ -138,18 +138,18 @@ export class StateEngine {
       text.includes('[yelling]') ||
       text.includes('[shouting]') ||
       text.includes('[crying]');
-    if (hasTextScreaming) distressSignals.push('TEXT_SCREAMING');
+    if (hasTextScreaming) distressSignals.push(Signal.TEXT_SCREAMING);
 
     // Check for frustration words
     const hasFrustration = text.includes('ugh') || text.includes('argh');
-    if (hasFrustration && !hasTextScreaming) distressSignals.push('FRUSTRATION');
+    if (hasFrustration && !hasTextScreaming) distressSignals.push(Signal.FRUSTRATION);
 
     // Include audio screaming in the count
-    if (hasAudioScreaming) distressSignals.push('AUDIO_SCREAMING');
+    if (hasAudioScreaming) distressSignals.push(Signal.AUDIO_SCREAMING);
 
     // Check for "I'm done" / quit signals
     const hasQuitSignal = text.includes('done') || text.includes('quit') || text.includes('no more');
-    if (hasQuitSignal) distressSignals.push('QUIT_SIGNAL');
+    if (hasQuitSignal) distressSignals.push(Signal.QUIT_SIGNAL);
 
     // Calculate dysregulation based on number of signals (stacking)
     const signalCount = distressSignals.length;
@@ -160,11 +160,11 @@ export class StateEngine {
       let fatigueIncrease = 0;
 
       // Individual signal effects
-      if (distressSignals.includes('NO_NO_NO')) dysregulationIncrease += 3;
-      if (distressSignals.includes('TEXT_SCREAMING')) dysregulationIncrease += 3;
-      if (distressSignals.includes('AUDIO_SCREAMING')) dysregulationIncrease += 4; // Strong indicator from audio amplitude
-      if (distressSignals.includes('FRUSTRATION')) dysregulationIncrease += 1;
-      if (distressSignals.includes('QUIT_SIGNAL')) {
+      if (distressSignals.includes(Signal.NO_NO_NO)) dysregulationIncrease += 3;
+      if (distressSignals.includes(Signal.TEXT_SCREAMING)) dysregulationIncrease += 3;
+      if (distressSignals.includes(Signal.AUDIO_SCREAMING)) dysregulationIncrease += 4; // Strong indicator from audio amplitude
+      if (distressSignals.includes(Signal.FRUSTRATION)) dysregulationIncrease += 1;
+      if (distressSignals.includes(Signal.QUIT_SIGNAL)) {
         dysregulationIncrease += 2;
         fatigueIncrease += 2;
       }

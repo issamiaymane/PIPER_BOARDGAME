@@ -147,7 +147,8 @@ export class SessionPlanner {
 
   buildChoices(
     interventions: InterventionType[],
-    config: SessionConfig
+    config: SessionConfig,
+    safetyLevel: SafetyGateLevel = SafetyGateLevel.GREEN
   ): Choice[] {
     const choices: Choice[] = [];
 
@@ -192,16 +193,19 @@ export class SessionPlanner {
     });
 
     // ============================================
-    // CHOICE 4: Break (always available)
+    // CHOICE 4: Break (ORANGE+ only)
+    // YELLOW level: only retry and skip options
     // ============================================
 
-    choices.push({
-      id: 'break',
-      label: 'Take a break',
-      icon: '🎵',
-      action: 'START_BREAK',
-      priority: 4
-    });
+    if (safetyLevel >= SafetyGateLevel.ORANGE) {
+      choices.push({
+        id: 'break',
+        label: 'Take a break',
+        icon: '🎵',
+        action: 'START_BREAK',
+        priority: 4
+      });
+    }
 
     // ============================================
     // CHOICE 5: Grownup Help (if available)

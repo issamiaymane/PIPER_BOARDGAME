@@ -49,6 +49,31 @@ export enum InterventionType {
   CALL_GROWNUP = 'call_grownup'
 }
 
+export enum Signal {
+  // Behavioral (detected from state)
+  CONSECUTIVE_ERRORS = 'CONSECUTIVE_ERRORS',
+  REPETITIVE_WRONG_RESPONSE = 'REPETITIVE_WRONG_RESPONSE',
+  ENGAGEMENT_DROP = 'ENGAGEMENT_DROP',
+  FATIGUE_HIGH = 'FATIGUE_HIGH',
+  DYSREGULATION_DETECTED = 'DYSREGULATION_DETECTED',
+
+  // Verbal (detected from response text)
+  I_NEED_BREAK = 'I_NEED_BREAK',
+  IM_DONE = 'IM_DONE',
+  SCREAMING = 'SCREAMING',
+  NO_NO_NO = 'NO_NO_NO',
+  TEXT_SCREAMING = 'TEXT_SCREAMING',
+  AUDIO_SCREAMING = 'AUDIO_SCREAMING',
+  FRUSTRATION = 'FRUSTRATION',
+  QUIT_SIGNAL = 'QUIT_SIGNAL',
+
+  // Escalation (severe)
+  TANTRUM = 'TANTRUM',
+  MELTDOWN = 'MELTDOWN',
+  EXTREME_DISTRESS = 'EXTREME_DISTRESS',
+  LEAVING_ACTIVITY = 'LEAVING_ACTIVITY'
+}
+
 export interface SessionConfig {
   prompt_intensity: number; // 0-3
   avatar_tone: 'calm' | 'warm' | 'neutral';
@@ -69,7 +94,7 @@ export interface BackendResponse {
   choices: Choice[];
   context: any;
   constraints: any;
-  signals_detected: string[];
+  signals_detected: Signal[];
   interventions_active: InterventionType[];
   reasoning: any;
   timestamp: Date;

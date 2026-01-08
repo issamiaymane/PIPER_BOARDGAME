@@ -1,6 +1,8 @@
-import { ChildState, ChildEvent, SafetyGateLevel, InterventionType, SessionConfig, BackendResponse, Choice } from './types.js';
+import { ChildState, ChildEvent, SafetyGateLevel, InterventionType, SessionConfig, BackendResponse, Choice, Signal } from './types.js';
 import { StateEngine } from './StateEngine.js';
-import { PIPERSafetyGate } from './PIPERSafetyGate.js';
+import { SignalDetector } from './SignalDetector.js';
+import { LevelAssessor } from './LevelAssessor.js';
+import { InterventionSelector } from './InterventionSelector.js';
 import { SessionPlanner } from './SessionPlanner.js';
 import { PromptBuilder } from './PromptBuilder.js';
 import { LLMClient, LLMResponse } from './LLMClient.js';
@@ -40,7 +42,7 @@ export interface UIPackage {
     safety_level: SafetyGateLevel;
     interventions_active: number;
     interventions_list: InterventionType[];
-    signals_detected: string[];
+    signals_detected: Signal[];
     time_in_session: string;
     state_snapshot: ChildState;
   };
@@ -53,8 +55,8 @@ export interface UIPackage {
 
 interface Logger {
   logStateUpdate(state: ChildState, event: ChildEvent): void;
-  logSignals(signals: string[]): void;
-  logSafetyAssessment(level: SafetyGateLevel, state: ChildState, signals: string[]): void;
+  logSignals(signals: Signal[]): void;
+  logSafetyAssessment(level: SafetyGateLevel, state: ChildState, signals: Signal[]): void;
   logInterventions(interventions: InterventionType[]): void;
   logConfigAdaptation(config: SessionConfig): void;
   logBackendResponse(response: BackendResponse): void;
@@ -67,8 +69,8 @@ interface Logger {
 // Silent logger - formatted output is handled by SafetyGateSession
 class SilentLogger implements Logger {
   logStateUpdate(_state: ChildState, _event: ChildEvent): void {}
-  logSignals(_signals: string[]): void {}
-  logSafetyAssessment(_level: SafetyGateLevel, _state: ChildState, _signals: string[]): void {}
+  logSignals(_signals: Signal[]): void {}
+  logSafetyAssessment(_level: SafetyGateLevel, _state: ChildState, _signals: Signal[]): void {}
   logInterventions(_interventions: InterventionType[]): void {}
   logConfigAdaptation(_config: SessionConfig): void {}
   logBackendResponse(_response: BackendResponse): void {}
@@ -83,10 +85,10 @@ class VerboseLogger implements Logger {
   logStateUpdate(state: ChildState, event: ChildEvent): void {
     console.log('[State Update]', { state, event });
   }
-  logSignals(signals: string[]): void {
+  logSignals(signals: Signal[]): void {
     console.log('[Signals]', signals);
   }
-  logSafetyAssessment(level: SafetyGateLevel, state: ChildState, signals: string[]): void {
+  logSafetyAssessment(level: SafetyGateLevel, state: ChildState, signals: Signal[]): void {
     console.log('[Safety Assessment]', { level, state, signals });
   }
   logInterventions(interventions: InterventionType[]): void {
@@ -114,7 +116,9 @@ class VerboseLogger implements Logger {
 
 export class BackendOrchestrator {
   private stateEngine: StateEngine;
-  private safetyGate: PIPERSafetyGate;
+  private signalDetector: SignalDetector;
+  private levelAssessor: LevelAssessor;
+  private interventionSelector: InterventionSelector;
   private sessionPlanner: SessionPlanner;
   private promptBuilder: PromptBuilder;
   private llmClient: LLMClient;
@@ -124,7 +128,9 @@ export class BackendOrchestrator {
 
   constructor() {
     this.stateEngine = new StateEngine();
-    this.safetyGate = new PIPERSafetyGate();
+    this.signalDetector = new SignalDetector();
+    this.levelAssessor = new LevelAssessor();
+    this.interventionSelector = new InterventionSelector();
     this.sessionPlanner = new SessionPlanner();
     this.promptBuilder = new PromptBuilder();
     this.llmClient = new LLMClient();
@@ -156,15 +162,15 @@ export class BackendOrchestrator {
     this.logger.logStateUpdate(state, event);
 
     // 2. Detect signals
-    const signals = this.detectSignals(event, state);
+    const signals = this.signalDetector.detectSignals(event, state);
     this.logger.logSignals(signals);
 
     // 3. Assess safety
-    const safetyLevel = this.safetyGate.assessSafetyLevel(state, signals);
+    const safetyLevel = this.levelAssessor.assessLevel(state, signals);
     this.logger.logSafetyAssessment(safetyLevel, state, signals);
 
     // 4. Determine interventions
-    const interventions = this.safetyGate.determineInterventions(
+    const interventions = this.interventionSelector.selectInterventions(
       safetyLevel,
       state,
       signals
@@ -180,7 +186,7 @@ export class BackendOrchestrator {
     this.logger.logConfigAdaptation(config);
 
     // 6. Build choices
-    const choices = this.sessionPlanner.buildChoices(interventions, config);
+    const choices = this.sessionPlanner.buildChoices(interventions, config, safetyLevel);
 
     // 7. Create backend response
     const backendResponse: BackendResponse = {
@@ -247,74 +253,6 @@ export class BackendOrchestrator {
     });
 
     return uiPackage;
-  }
-
-  private detectSignals(event: ChildEvent, state: ChildState): string[] {
-    const signals: string[] = [];
-
-    // Check for consecutive errors
-    if (state.consecutiveErrors >= 3) {
-      signals.push('CONSECUTIVE_ERRORS');
-    }
-
-    // Check for repetitive wrong response
-    if (event.type === 'CHILD_RESPONSE' && event.response === event.previousResponse) {
-      signals.push('REPETITIVE_WRONG_RESPONSE');
-    }
-
-    // Check for engagement drop
-    if (state.engagementLevel <= 3) {
-      signals.push('ENGAGEMENT_DROP');
-    }
-
-    // Check for verbal signals in the response content (not just VERBAL_SIGNAL events)
-    const responseText = (event.response || event.signal || '').toLowerCase();
-    // Normalize text: remove punctuation for pattern matching
-    const normalizedText = responseText.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
-
-    if (responseText.includes('break') || responseText.includes('stop') || responseText.includes('tired')) {
-      signals.push('I_NEED_BREAK');
-    }
-    if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
-      signals.push('IM_DONE');
-    }
-    // Check for screaming signals from multiple sources:
-    // 1. Audio amplitude detection (signal field from session)
-    // 2. Text patterns in transcription
-    const hasAudioScreaming = event.signal?.includes('screaming_detected_audio');
-
-    // Text-based screaming detection (normalize to handle "no, no, no" -> "no no no")
-    const hasTextScreaming =
-      responseText.includes('scream') ||
-      responseText.includes('yell') ||
-      responseText.includes('shout') ||
-      /a{2,}h{1,}/i.test(responseText) ||  // "aah", "aaah", "aahh", "aahhh" etc.
-      /ah{2,}/i.test(responseText) ||       // "ahh", "ahhh", "ahhhh" etc.
-      responseText.includes('argh') ||
-      responseText.includes('ugh') ||
-      responseText.includes('[screaming]') ||
-      responseText.includes('[yelling]') ||
-      responseText.includes('[shouting]') ||
-      responseText.includes('[crying]') ||
-      normalizedText.includes('no no no');
-
-    if (hasAudioScreaming || hasTextScreaming) {
-      signals.push('SCREAMING');
-      // Debug: Log which source detected screaming
-      console.log(`[BackendOrchestrator] 🚨 SCREAMING signal added - Audio: ${hasAudioScreaming}, Text: ${hasTextScreaming}`);
-    }
-
-    // Check fatigue
-    if (state.fatigueLevel >= 7) {
-      signals.push('FATIGUE_HIGH');
-    }
-
-    // Check dysregulation
-    if (state.dysregulationLevel >= 6) {
-      signals.push('DYSREGULATION_DETECTED');
-    }
-
-    return signals;
   }
 
   private determineDecision(

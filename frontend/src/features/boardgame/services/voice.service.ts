@@ -300,6 +300,32 @@ export class VoiceService {
   }
 
   /**
+   * Notify backend about choice selection
+   * This allows the backend to manage inactivity timer appropriately
+   * @param action The choice action (RETRY_TASK, START_BREAK, etc.)
+   */
+  notifyChoiceSelected(action: string): void {
+    console.log(`[Voice] Notifying backend of choice: ${action}`);
+    this.sendMessage({
+      type: 'choice_selected',
+      action
+    });
+  }
+
+  /**
+   * Notify backend that an activity has ended and session should resume
+   * Call this when: break ends, bubble breathing ends, grownup help modal closes
+   * @param activity The activity that ended (for logging)
+   */
+  notifyActivityEnded(activity: string): void {
+    console.log(`[Voice] Activity ended: ${activity} - requesting session resume`);
+    this.sendMessage({
+      type: 'activity_ended',
+      activity
+    });
+  }
+
+  /**
    * Check if voice mode is enabled
    */
   isEnabled(): boolean {
