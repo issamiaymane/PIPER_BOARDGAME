@@ -162,8 +162,8 @@ export class BackendOrchestrator {
     const state = this.stateEngine.processEvent(event);
     this.logger.logStateUpdate(state, event);
 
-    // 2. Detect signals from state and event
-    const signals = this.signalDetector.detectSignals(state, event);
+    // 2. Detect signals from state and event (async for LLM-based text classification)
+    const signals = await this.signalDetector.detectSignals(state, event);
     this.logger.logSignals(signals);
 
     // 3. Assess safety level

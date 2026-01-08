@@ -1,24 +1,41 @@
+import OpenAI from 'openai';
+import { config } from '../../config/index.js';
 import { State, Event, Signal } from './types.js';
 
+interface LLMSignalClassification {
+  break_request: boolean;
+  quit_request: boolean;
+  frustration: boolean;
+  distress: boolean;  // covers screaming, crying, no_no_no
+  confidence: number;
+}
+
 export class SignalDetector {
+  private openai: OpenAI;
+
+  constructor() {
+    this.openai = new OpenAI({
+      apiKey: config.openai.apiKey,
+    });
+  }
 
   // ============================================
-  // MAIN DETECTION FUNCTION
+  // MAIN DETECTION FUNCTION (ASYNC for LLM)
   // ============================================
 
-  detectSignals(state: State, event: Event): Signal[] {
+  async detectSignals(state: State, event: Event): Promise<Signal[]> {
     const signals: Signal[] = [];
 
-    // 1. State-based signals
+    // 1. State-based signals (instant)
     this.detectStateBasedSignals(state, signals);
 
-    // 2. Event-based signals
+    // 2. Event-based signals (instant)
     this.detectEventBasedSignals(event, signals);
 
-    // 3. Text-based signals
-    this.detectTextSignals(event, signals);
+    // 3. Text-based signals (LLM-powered)
+    await this.detectTextSignalsIntelligent(event, signals);
 
-    // 4. Audio-based signals
+    // 4. Audio-based signals (instant)
     this.detectAudioSignals(event, signals);
 
     return signals;
@@ -58,47 +75,114 @@ export class SignalDetector {
   }
 
   // ============================================
-  // 3. TEXT-BASED SIGNALS
+  // 3. TEXT-BASED SIGNALS (LLM-POWERED)
   // ============================================
 
-  private detectTextSignals(event: Event, signals: Signal[]): void {
-    const responseText = (event.response || '').toLowerCase();
-    const normalizedText = responseText.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
+  private async detectTextSignalsIntelligent(event: Event, signals: Signal[]): Promise<void> {
+    const responseText = (event.response || '').trim();
 
-    // BREAK_REQUEST: "break", "stop", "tired"
-    if (responseText.includes('break') || responseText.includes('stop') || responseText.includes('tired')) {
+    // Skip if no text to analyze
+    if (!responseText) {
+      return;
+    }
+
+    try {
+      const classification = await this.classifyTextWithLLM(responseText);
+
+      // Map classification to signals
+      if (classification.break_request) {
+        signals.push(Signal.BREAK_REQUEST);
+      }
+      if (classification.quit_request) {
+        signals.push(Signal.QUIT_REQUEST);
+      }
+      if (classification.frustration) {
+        signals.push(Signal.FRUSTRATION);
+      }
+      if (classification.distress) {
+        // Distress covers: screaming, crying, "no no no" patterns
+        signals.push(Signal.TEXT_SCREAMING);
+        signals.push(Signal.NO_NO_NO);
+      }
+    } catch (error) {
+      // Fallback to keyword matching if LLM fails
+      console.warn('[SignalDetector] LLM classification failed, using keyword fallback:', error);
+      this.detectTextSignalsKeywordFallback(responseText, signals);
+    }
+  }
+
+  private async classifyTextWithLLM(text: string): Promise<LLMSignalClassification> {
+    const response = await this.openai.chat.completions.create({
+      model: 'gpt-4o-mini',  // Fast & cheap for classification
+      max_tokens: 100,
+      response_format: { type: 'json_object' },
+      messages: [
+        {
+          role: 'system',
+          content: `You are a child speech analysis system. Classify the child's speech for emotional signals.
+
+Return JSON with these boolean fields:
+- break_request: Child wants to stop/rest/take a break (e.g., "I'm tired", "can we stop", "I need a break")
+- quit_request: Child wants to quit entirely (e.g., "I don't want to play anymore", "I'm done", "no more")
+- frustration: Child is frustrated but manageable (e.g., "ugh", "this is hard", sighing)
+- distress: Child is in significant distress - crying, screaming, repeated "no no no", severe upset
+- confidence: 0-1 how confident you are in this classification
+
+Context: This is a speech therapy app for children. Be sensitive to subtle cues.
+Only mark true if you're reasonably confident the signal is present.`
+        },
+        {
+          role: 'user',
+          content: `Child said: "${text}"`
+        }
+      ]
+    });
+
+    const content = response.choices[0]?.message?.content || '{}';
+    const parsed = JSON.parse(content);
+
+    return {
+      break_request: parsed.break_request === true,
+      quit_request: parsed.quit_request === true,
+      frustration: parsed.frustration === true,
+      distress: parsed.distress === true,
+      confidence: typeof parsed.confidence === 'number' ? parsed.confidence : 0.5
+    };
+  }
+
+  // Keyword fallback if LLM fails
+  private detectTextSignalsKeywordFallback(responseText: string, signals: Signal[]): void {
+    const text = responseText.toLowerCase();
+    const normalizedText = text.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
+
+    // BREAK_REQUEST
+    if (text.includes('break') || text.includes('stop') || text.includes('tired')) {
       signals.push(Signal.BREAK_REQUEST);
     }
 
-    // QUIT_REQUEST: "done", "quit", "no more"
-    if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
+    // QUIT_REQUEST
+    if (text.includes('done') || text.includes('quit') || text.includes('no more')) {
       signals.push(Signal.QUIT_REQUEST);
     }
 
-    // NO_NO_NO: "no no no" pattern
+    // NO_NO_NO
     if (normalizedText.includes('no no no')) {
       signals.push(Signal.NO_NO_NO);
     }
 
-    // TEXT_SCREAMING: screaming patterns in text
+    // TEXT_SCREAMING
     const hasTextScreaming =
-      responseText.includes('scream') ||
-      responseText.includes('yell') ||
-      responseText.includes('shout') ||
-      /a{2,}h{1,}/i.test(responseText) ||
-      /ah{2,}/i.test(responseText) ||
-      responseText.includes('[screaming]') ||
-      responseText.includes('[yelling]') ||
-      responseText.includes('[shouting]') ||
-      responseText.includes('[crying]');
+      text.includes('scream') ||
+      text.includes('yell') ||
+      /a{2,}h{1,}/i.test(text) ||
+      text.includes('[crying]');
 
     if (hasTextScreaming) {
       signals.push(Signal.TEXT_SCREAMING);
     }
 
-    // FRUSTRATION: "ugh", "argh" (only if not already screaming)
-    const hasFrustration = responseText.includes('ugh') || responseText.includes('argh');
-    if (hasFrustration && !hasTextScreaming) {
+    // FRUSTRATION
+    if ((text.includes('ugh') || text.includes('argh')) && !hasTextScreaming) {
       signals.push(Signal.FRUSTRATION);
     }
   }

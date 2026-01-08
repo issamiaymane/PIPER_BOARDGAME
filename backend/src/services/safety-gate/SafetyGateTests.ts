@@ -14,7 +14,7 @@
  */
 
 import { StateEngine } from './StateEngine.js';
-import { SignalDetector } from './SignalDetector.js';
+// Note: Tests use local deterministic signal detection instead of LLM-based SignalDetector
 import { LevelAssessor } from './LevelAssessor.js';
 import { InterventionSelector } from './InterventionSelector.js';
 import { SessionPlanner } from './SessionPlanner.js';
@@ -93,7 +93,8 @@ function logResult(passed: boolean, expected: string, actual: string) {
 
 class SafetyGateTestRunner {
   private stateEngine: StateEngine;
-  private signalDetector: SignalDetector;
+  // Note: Tests use local deterministic signal detection (this.detectSignals)
+  // instead of LLM-based SignalDetector for fast, repeatable tests
   private levelAssessor: LevelAssessor;
   private interventionSelector: InterventionSelector;
   private sessionPlanner: SessionPlanner;
@@ -101,7 +102,6 @@ class SafetyGateTestRunner {
 
   constructor() {
     this.stateEngine = new StateEngine();
-    this.signalDetector = new SignalDetector();
     this.levelAssessor = new LevelAssessor();
     this.interventionSelector = new InterventionSelector();
     this.sessionPlanner = new SessionPlanner();
@@ -147,7 +147,8 @@ class SafetyGateTestRunner {
       console.log(`\n${COLORS.gray}Event ${i + 1}: ${event.type}${event.response ? ` - "${event.response}"` : ''}${event.correct !== undefined ? ` (${event.correct ? 'correct' : 'incorrect'})` : ''}${COLORS.reset}`);
 
       state = this.stateEngine.processEvent(event);
-      signals = this.signalDetector.detectSignals(state, event);
+      // Use local deterministic signal detection for tests (not LLM-based)
+      signals = this.detectSignals(event, state);
       level = this.levelAssessor.assessLevel(state, signals);
       interventions = this.interventionSelector.selectInterventions(level, state, signals);
     }
@@ -208,8 +209,12 @@ class SafetyGateTestRunner {
     if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
       signals.push(Signal.QUIT_REQUEST);
     }
-    if (responseText.includes('scream') || responseText.includes('ahhh') || responseText.includes('no no no')) {
+    if (responseText.includes('scream') || responseText.includes('ahhh')) {
       signals.push(Signal.TEXT_SCREAMING);
+    }
+    if (responseText.includes('no no no')) {
+      signals.push(Signal.NO_NO_NO);
+      signals.push(Signal.TEXT_SCREAMING);  // Also distress indicator
     }
 
     if (state.fatigueLevel >= 7) {
@@ -441,7 +446,8 @@ class SafetyGateTestRunner {
 
     for (const event of events) {
       state = this.stateEngine.processEvent(event);
-      signals = this.signalDetector.detectSignals(state, event);
+      // Use local deterministic signal detection for tests (not LLM-based)
+      signals = this.detectSignals(event, state);
     }
 
     // Manually set dysregulation to 6 to test bubble breathing
@@ -561,7 +567,8 @@ class SafetyGateTestRunner {
     this.stateEngine.processEvent(this.createEvent('CHILD_RESPONSE', 'b', false));
     const yellowEvent = this.createEvent('CHILD_RESPONSE', 'c', false);
     const yellowState = this.stateEngine.processEvent(yellowEvent);
-    const yellowSignals = this.signalDetector.detectSignals(yellowState, yellowEvent);
+    // Use local deterministic signal detection for tests (not LLM-based)
+    const yellowSignals = this.detectSignals(yellowEvent, yellowState);
 
     let level = this.levelAssessor.assessLevel(yellowState, yellowSignals);
 
@@ -570,7 +577,8 @@ class SafetyGateTestRunner {
     // Now recover with correct answer
     const correctEvent = this.createEvent('CHILD_RESPONSE', 'cold', true);
     const recoveredState = this.stateEngine.processEvent(correctEvent);
-    const recoveredSignals = this.signalDetector.detectSignals(recoveredState, correctEvent);
+    // Use local deterministic signal detection for tests (not LLM-based)
+    const recoveredSignals = this.detectSignals(correctEvent, recoveredState);
     level = this.levelAssessor.assessLevel(recoveredState, recoveredSignals);
 
     console.log(`${COLORS.gray}After correct: errors=${recoveredState.consecutiveErrors}, level=${levelName(level)}${COLORS.reset}`);
