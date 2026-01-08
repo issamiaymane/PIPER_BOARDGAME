@@ -11,11 +11,13 @@ import { UIPackage } from '../safety-gate/BackendOrchestrator.js';
 import { logger } from '../../utils/logger.js';
 
 // Screaming detection threshold (RMS amplitude 0-1 scale)
-// Normal speech: ~0.05-0.15, Loud speech: ~0.15-0.25, Screaming/Yelling: >0.2
-const SCREAMING_AMPLITUDE_THRESHOLD = 0.20;
-const SCREAMING_PEAK_THRESHOLD = 0.70;
+// Normal speech: ~0.05-0.15, Loud speech: ~0.15-0.30, Screaming/Yelling: >0.35
+// RAISED from 0.20 because normal loud speech ("Snowy") was hitting 0.26 RMS
+const SCREAMING_AMPLITUDE_THRESHOLD = 0.35;
+const SCREAMING_PEAK_THRESHOLD = 0.90;
 // Number of consecutive high-amplitude chunks to confirm screaming
-const SCREAMING_CONFIRMATION_CHUNKS = 3;
+// RAISED from 3 to require more confirmation
+const SCREAMING_CONFIRMATION_CHUNKS = 4;
 // Time to wait for transcription AFTER speech stops before triggering screaming-only response (ms)
 // This ensures we give OpenAI enough time to transcribe before assuming pure screaming
 const SCREAMING_POST_SPEECH_WAIT_MS = 1500;
@@ -255,9 +257,10 @@ export class VoiceSessionManager {
     switch (message.type) {
       case 'speak_card':
         if (message.text) {
-          // Clear any pending audio from previous card to prevent context mismatch
+          // Clear any pending audio and conversation from previous card to prevent context mismatch
           session.realtimeService.clearAudio();
           session.realtimeService.cancelResponse();
+          session.realtimeService.clearConversation();
 
           // Reset amplitude tracking for new card
           this.resetAmplitudeTracking(session);

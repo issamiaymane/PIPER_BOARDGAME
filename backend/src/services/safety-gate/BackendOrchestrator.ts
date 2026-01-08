@@ -333,8 +333,12 @@ export class BackendOrchestrator {
 
     // Check if this is an inactivity event
     const isInactivity = backendResponse.context?.what_happened === 'child_inactive';
+    const isCorrect = backendResponse.context?.what_happened === 'correct_response';
 
-    if (isInactivity) {
+    if (isCorrect) {
+      // Correct answer - celebrate!
+      fallbackText = "Great job! You got it!";
+    } else if (isInactivity) {
       // Special handling for inactivity - gentle prompt
       if (level >= Level.YELLOW) {
         fallbackText = "Are you still there? Take your time! What would you like to do?";

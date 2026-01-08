@@ -89,17 +89,24 @@ export class SignalDetector {
     try {
       const classification = await this.classifyTextWithLLM(responseText);
 
+      // DEBUG: Log LLM classification result
+      console.log(`[SignalDetector] LLM classification for "${responseText}":`, classification);
+
       // Map classification to signals
       if (classification.break_request) {
+        console.log(`[SignalDetector] 🟡 LLM detected WANTS_BREAK in: "${responseText}"`);
         signals.push(Signal.WANTS_BREAK);
       }
       if (classification.quit_request) {
+        console.log(`[SignalDetector] 🟡 LLM detected WANTS_QUIT in: "${responseText}"`);
         signals.push(Signal.WANTS_QUIT);
       }
       if (classification.frustration) {
+        console.log(`[SignalDetector] 🟠 LLM detected FRUSTRATION in: "${responseText}"`);
         signals.push(Signal.FRUSTRATION);
       }
       if (classification.distress) {
+        console.log(`[SignalDetector] 🔴 LLM detected DISTRESS in: "${responseText}"`);
         signals.push(Signal.DISTRESS);
       }
     } catch (error) {
@@ -117,17 +124,28 @@ export class SignalDetector {
       messages: [
         {
           role: 'system',
-          content: `You are a child speech analysis system. Classify the child's speech for emotional signals.
+          content: `You are a child speech analysis system for a speech therapy card game.
+
+CRITICAL CONTEXT: The child is ANSWERING QUESTIONS in a game. Their speech is likely an ANSWER to a question, NOT an expression of their emotional state.
+
+Examples of NORMAL ANSWERS (do NOT flag these):
+- "Sad" → probably answering "What's the opposite of happy?"
+- "Angry" → probably answering a question about emotions
+- "Slow" → probably answering "What's the opposite of fast?"
+- "Very small" → probably answering a size question
+- "Snowy" → probably describing weather or a picture
+
+Only flag emotional signals when the child is CLEARLY expressing their OWN feelings, NOT answering a question.
 
 Return JSON with these boolean fields:
-- break_request: Child wants to stop/rest/take a break (e.g., "I'm tired", "can we stop", "I need a break")
-- quit_request: Child wants to quit entirely (e.g., "I don't want to play anymore", "I'm done", "no more")
-- frustration: Child is frustrated but manageable (e.g., "ugh", "this is hard", sighing)
-- distress: Child is in significant distress - crying, screaming, repeated "no no no", severe upset
-- confidence: 0-1 how confident you are in this classification
+- break_request: Child DIRECTLY asks to stop/rest (e.g., "I want a break", "can we stop playing")
+- quit_request: Child DIRECTLY wants to quit (e.g., "I don't want to play anymore", "I'm done with this game")
+- frustration: Child expresses frustration at the game (e.g., "ugh this is too hard", "I can't do this", sighing with "argh")
+- distress: Child is in CLEAR distress - crying sounds, screaming "AHHH", repeated "no no no I don't want to"
+- confidence: 0-1 how confident you are
 
-Context: This is a speech therapy app for children. Be sensitive to subtle cues.
-Only mark true if you're reasonably confident the signal is present.`
+BE CONSERVATIVE: Default to all false unless you're very confident.
+A single word answer like "Sad" or "Slow" is almost certainly just an answer, not distress.`
         },
         {
           role: 'user',
@@ -193,6 +211,7 @@ Only mark true if you're reasonably confident the signal is present.`
       event.signal?.includes('AUDIO_SCREAMING') ||
       false;
     if (hasAudioDistress) {
+      console.log(`[SignalDetector] 🔴 AUDIO detected DISTRESS (signal: "${event.signal}")`);
       signals.push(Signal.DISTRESS);
     }
   }

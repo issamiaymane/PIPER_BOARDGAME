@@ -6,6 +6,7 @@
 import { BackendOrchestrator, UIPackage } from './BackendOrchestrator.js';
 import { Event, Level } from './types.js';
 import { logger, safetyGateLogger, SafetyGateLogData } from '../../utils/logger.js';
+import { AdjectiveSimilarityService } from './AdjectiveSimilarityService.js';
 
 export interface CardContext {
   category: string;
@@ -30,6 +31,7 @@ export interface SafetyGateResult {
 
 export class SafetyGateSession {
   private orchestrator: BackendOrchestrator;
+  private similarityService: AdjectiveSimilarityService;
   private currentCard: CardContext | null = null;
   private attemptCount: number = 0;
   private responseHistory: string[] = [];
@@ -43,6 +45,7 @@ export class SafetyGateSession {
 
   constructor() {
     this.orchestrator = new BackendOrchestrator();
+    this.similarityService = new AdjectiveSimilarityService();
     this.sessionStartTime = new Date();
   }
 
@@ -95,7 +98,11 @@ export class SafetyGateSession {
     this.responseHistory.push(transcription);
 
     // Evaluate if the answer is correct
-    const isCorrect = this.evaluateAnswer(transcription, this.currentCard.targetAnswers);
+    const isCorrect = await this.evaluateAnswer(
+      transcription,
+      this.currentCard.targetAnswers,
+      { category: this.currentCard.category, question: this.currentCard.question }
+    );
 
     // Build the child event for the orchestrator
     // If screaming was detected via audio amplitude, include it in the signal field
@@ -155,7 +162,11 @@ export class SafetyGateSession {
 
     safetyGateLogger.logSessionState(logData);
 
-    if (safetyLevel >= Level.YELLOW && !isCorrect) {
+    // Stop timer when answer is correct - card will close and move to next step
+    if (isCorrect) {
+      this.stopInactivityTimer();
+      console.log(`[SafetyGateSession] ⏱️ Timer STOPPED - Correct answer, card closing`);
+    } else if (safetyLevel >= Level.YELLOW) {
       // Check if feedback already ends with the choice prompt
       if (!feedbackText.toLowerCase().includes(choicePrompt.toLowerCase())) {
         // Append the choice prompt to the feedback
@@ -187,9 +198,54 @@ export class SafetyGateSession {
 
   /**
    * Evaluate if the child's response matches the target answer
+   * Uses fuzzy matching first, then AI similarity for adjective categories
+   */
+  private async evaluateAnswer(
+    transcription: string,
+    targetAnswers: string[],
+    context?: { category: string; question: string }
+  ): Promise<boolean> {
+    // Step 1: Try sync checks first (fast path)
+    if (this.evaluateAnswerSync(transcription, targetAnswers)) {
+      return true;
+    }
+
+    // Step 2: For adjective/opposite categories only, try AI similarity
+    const aiCategories = [
+      'Adjectives - Opposites',
+      'Descriptive Words - Opposites',
+      'Antonyms',
+      'Antonym Name One - Middle',
+      'Synonym Name One - Elementary',
+      'Synonym-Name One - Middle',
+      'Synonyms Level 1'
+    ];
+
+    if (context?.category && aiCategories.includes(context.category)) {
+      console.log(`[SafetyGateSession] Sync match failed for "${transcription}", trying AI similarity...`);
+      try {
+        const aiResult = await this.similarityService.checkSimilarity(
+          transcription,
+          targetAnswers[0],
+          context
+        );
+        if (aiResult) {
+          console.log(`[SafetyGateSession] AI accepted "${transcription}" as equivalent to "${targetAnswers[0]}"`);
+          return true;
+        }
+      } catch (error) {
+        console.log(`[SafetyGateSession] AI similarity check failed, using sync result`);
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Synchronous answer evaluation using exact/fuzzy matching
    * Uses fuzzy matching to account for speech recognition variations
    */
-  private evaluateAnswer(transcription: string, targetAnswers: string[]): boolean {
+  private evaluateAnswerSync(transcription: string, targetAnswers: string[]): boolean {
     const normalized = transcription.toLowerCase().trim();
 
     // Check for exact or partial match
