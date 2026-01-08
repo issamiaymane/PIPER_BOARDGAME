@@ -106,6 +106,11 @@ export class VoiceSessionManager {
       screamingDetected: false
     };
 
+    // Set up inactivity callback
+    session.safetyGateSession.setInactivityCallback((result) => {
+      this.handleInactivityResult(session, result);
+    });
+
     this.sessions.set(sessionId, session);
     logger.info(`Voice session created: ${sessionId}`);
 
@@ -244,6 +249,9 @@ export class VoiceSessionManager {
             session.currentCardContext = message.cardContext;
             session.safetyGateSession.setCurrentCard(message.cardContext);
             logger.info(`Card context set for session ${sessionId}: ${message.cardContext.category} - Target: [${message.cardContext.targetAnswers.join(', ')}]`);
+
+            // Start inactivity timer - waiting for child's response
+            session.safetyGateSession.startInactivityTimer();
           }
 
           const prompt = message.category
@@ -358,6 +366,46 @@ export class VoiceSessionManager {
   }
 
   /**
+   * Handle inactivity detection result from SafetyGateSession
+   */
+  private async handleInactivityResult(
+    session: VoiceSession,
+    result: SafetyGateResult
+  ): Promise<void> {
+    console.log(`[VoiceSession] 🚨 INACTIVITY CALLBACK TRIGGERED for session ${session.id}`);
+
+    try {
+      // Cancel any ongoing OpenAI response
+      session.realtimeService.cancelResponse();
+
+      // Small delay to ensure cancellation is processed
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Speak the inactivity feedback through OpenAI Realtime
+      if (result.shouldSpeak && result.feedbackText) {
+        console.log(`[VoiceSession] Speaking inactivity feedback: "${result.feedbackText}"`);
+        session.realtimeService.speakFeedback(result.feedbackText);
+      }
+
+      // Send safety-gate response to frontend
+      this.sendToClient(session, {
+        type: 'safety_gate_response',
+        uiPackage: {
+          ...result.uiPackage,
+          childSaid: '[INACTIVE - No response]',
+          targetAnswers: result.targetAnswers,
+          attemptNumber: result.attemptNumber,
+          responseHistory: result.responseHistory
+        },
+        isCorrect: false
+      });
+
+    } catch (error) {
+      logger.error(`Inactivity response error:`, error);
+    }
+  }
+
+  /**
    * Get a session by ID
    */
   getSession(sessionId: string): VoiceSession | undefined {
@@ -371,6 +419,8 @@ export class VoiceSessionManager {
     const session = this.sessions.get(sessionId);
     if (session) {
       session.isActive = false;
+      // Stop inactivity timer
+      session.safetyGateSession.stopInactivityTimer();
       session.realtimeService.disconnect();
       this.sessions.delete(sessionId);
       logger.info(`Voice session ended: ${sessionId}`);

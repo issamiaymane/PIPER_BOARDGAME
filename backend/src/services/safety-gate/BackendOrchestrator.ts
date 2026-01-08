@@ -198,6 +198,12 @@ export class BackendOrchestrator {
     };
     this.logger.logBackendResponse(backendResponse);
 
+    // 7.5. For inactivity events, skip LLM and use fallback directly
+    if (event.type === 'CHILD_INACTIVE') {
+      console.log('[BackendOrchestrator] Inactivity event - using fallback response (skipping LLM)');
+      return this.generateFallbackResponse(backendResponse, state);
+    }
+
     // 8. Build system prompt
     const systemPrompt = this.promptBuilder.buildSystemPrompt(backendResponse);
 
@@ -402,7 +408,17 @@ export class BackendOrchestrator {
     const level = backendResponse.safety_level;
     let fallbackText: string;
 
-    if (level >= SafetyGateLevel.YELLOW) {
+    // Check if this is an inactivity event
+    const isInactivity = backendResponse.context?.what_happened === 'child_inactive';
+
+    if (isInactivity) {
+      // Special handling for inactivity - gentle prompt
+      if (level >= SafetyGateLevel.YELLOW) {
+        fallbackText = "Are you still there? Take your time! What would you like to do?";
+      } else {
+        fallbackText = "Are you still there? Take your time!";
+      }
+    } else if (level >= SafetyGateLevel.YELLOW) {
       // YELLOW+ levels: include choice prompt
       fallbackText = "I heard you! Good try! What would you like to do?";
     } else {

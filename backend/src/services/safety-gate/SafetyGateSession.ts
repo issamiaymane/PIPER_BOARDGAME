@@ -4,7 +4,7 @@
  */
 
 import { BackendOrchestrator, UIPackage } from './BackendOrchestrator.js';
-import { ChildEvent, ChildState, SafetyGateLevel } from './types.js';
+import { ChildEvent, SafetyGateLevel } from './types.js';
 import { logger, safetyGateLogger, SafetyGateLogData } from '../../utils/logger.js';
 
 export interface CardContext {
@@ -34,6 +34,12 @@ export class SafetyGateSession {
   private attemptCount: number = 0;
   private responseHistory: string[] = [];
   private sessionStartTime: Date;
+
+  // Inactivity detection
+  private inactivityTimeoutMs: number = 30000; // 30 seconds
+  private inactivityTimer: ReturnType<typeof setTimeout> | null = null;
+  private onInactivityCallback: ((result: SafetyGateResult) => void) | null = null;
+  private isWaitingForResponse: boolean = false;
 
   constructor() {
     this.orchestrator = new BackendOrchestrator();
@@ -72,6 +78,9 @@ export class SafetyGateSession {
     transcription: string,
     options?: { screamingDetected?: boolean }
   ): Promise<SafetyGateResult> {
+    // Reset inactivity timer - child responded
+    this.resetInactivityTimer();
+
     if (!this.currentCard) {
       logger.warn('SafetyGateSession: No card context set, using default processing');
       return this.generateDefaultResult(transcription);
@@ -301,5 +310,169 @@ export class SafetyGateSession {
    */
   getSessionDuration(): number {
     return Math.floor((Date.now() - this.sessionStartTime.getTime()) / 1000);
+  }
+
+  // ============================================
+  // INACTIVITY DETECTION
+  // ============================================
+
+  /**
+   * Set the callback to be called when inactivity is detected
+   * @param callback Function to call with the SafetyGateResult when child is inactive
+   */
+  setInactivityCallback(callback: (result: SafetyGateResult) => void): void {
+    this.onInactivityCallback = callback;
+  }
+
+  /**
+   * Set custom inactivity timeout (default is 30 seconds)
+   * @param ms Timeout in milliseconds
+   */
+  setInactivityTimeout(ms: number): void {
+    this.inactivityTimeoutMs = ms;
+  }
+
+  /**
+   * Start the inactivity timer - call this when waiting for child response
+   * (e.g., after showing a card or after giving feedback)
+   */
+  startInactivityTimer(): void {
+    this.stopInactivityTimer(); // Clear any existing timer
+    this.isWaitingForResponse = true;
+
+    const timeoutSeconds = this.inactivityTimeoutMs / 1000;
+    console.log(`\n[SafetyGateSession] ⏱️ ========================================`);
+    console.log(`[SafetyGateSession] ⏱️ INACTIVITY TIMER STARTED`);
+    console.log(`[SafetyGateSession] ⏱️ Timeout: ${timeoutSeconds} seconds`);
+    console.log(`[SafetyGateSession] ⏱️ Will fire at: ${new Date(Date.now() + this.inactivityTimeoutMs).toLocaleTimeString()}`);
+    console.log(`[SafetyGateSession] ⏱️ ========================================\n`);
+
+    this.inactivityTimer = setTimeout(() => {
+      this.handleInactivity();
+    }, this.inactivityTimeoutMs);
+  }
+
+  /**
+   * Stop the inactivity timer - call this when session ends or pauses
+   */
+  stopInactivityTimer(): void {
+    if (this.inactivityTimer) {
+      clearTimeout(this.inactivityTimer);
+      this.inactivityTimer = null;
+      console.log(`[SafetyGateSession] ⏱️ TIMER STOPPED (was waiting: ${this.isWaitingForResponse})`);
+    }
+    this.isWaitingForResponse = false;
+  }
+
+  /**
+   * Reset the inactivity timer - call this when child responds
+   * This is called automatically by processChildResponse
+   */
+  resetInactivityTimer(): void {
+    if (this.isWaitingForResponse) {
+      console.log(`[SafetyGateSession] ⏱️ TIMER RESET - Child responded, restarting countdown`);
+      this.startInactivityTimer();
+    }
+  }
+
+  /**
+   * Handle inactivity - fires CHILD_INACTIVE event through the pipeline
+   */
+  private async handleInactivity(): Promise<void> {
+    if (!this.isWaitingForResponse) {
+      console.log(`[SafetyGateSession] ⏱️ Timer fired but not waiting for response - ignoring`);
+      return; // Not waiting for response, ignore
+    }
+
+    console.log(`\n[SafetyGateSession] ⚠️ ========================================`);
+    console.log(`[SafetyGateSession] ⚠️ 🚨 INACTIVITY DETECTED!`);
+    console.log(`[SafetyGateSession] ⚠️ Child has not responded for ${this.inactivityTimeoutMs / 1000} seconds`);
+    console.log(`[SafetyGateSession] ⚠️ Firing CHILD_INACTIVE event...`);
+    console.log(`[SafetyGateSession] ⚠️ ========================================\n`);
+
+    // Build CHILD_INACTIVE event
+    const event: ChildEvent = {
+      type: 'CHILD_INACTIVE',
+      correct: false,
+      response: undefined,
+      previousResponse: this.responseHistory[this.responseHistory.length - 1],
+      previousPreviousResponse: this.responseHistory[this.responseHistory.length - 2]
+    };
+
+    // Build task context if we have a current card
+    const taskContext = this.currentCard ? {
+      cardType: 'single-answer',
+      category: this.currentCard.category,
+      question: this.currentCard.question,
+      targetAnswer: this.currentCard.targetAnswers.join(', '),
+      imageLabels: this.currentCard.images.map(img => img.label)
+    } : undefined;
+
+    // Process through safety-gate pipeline
+    const uiPackage = await this.orchestrator.processChildEvent(event, taskContext);
+
+    // Log the inactivity event
+    const logData: SafetyGateLogData = {
+      childSaid: '[NO RESPONSE - INACTIVE]',
+      targetAnswers: this.currentCard?.targetAnswers || [],
+      isCorrect: false,
+      safetyLevel: uiPackage.admin_overlay.safety_level,
+      signals: uiPackage.admin_overlay.signals_detected,
+      interventions: uiPackage.admin_overlay.interventions_list,
+      state: {
+        engagement: uiPackage.admin_overlay.state_snapshot.engagementLevel,
+        dysregulation: uiPackage.admin_overlay.state_snapshot.dysregulationLevel,
+        fatigue: uiPackage.admin_overlay.state_snapshot.fatigueLevel,
+        consecutiveErrors: uiPackage.admin_overlay.state_snapshot.consecutiveErrors,
+        timeInSession: uiPackage.admin_overlay.state_snapshot.timeInSession
+      },
+      choices: uiPackage.choices.map(c => ({ icon: c.icon, label: c.label, action: c.action })),
+      feedback: uiPackage.speech.text,
+      attemptNumber: this.attemptCount,
+      responseHistory: this.responseHistory,
+      shouldSpeak: true
+    };
+
+    safetyGateLogger.logSessionState(logData);
+
+    // Build result
+    const result: SafetyGateResult = {
+      uiPackage,
+      feedbackText: uiPackage.speech.text,
+      choiceMessage: uiPackage.choice_message,
+      shouldSpeak: true,
+      interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
+      isCorrect: false,
+      childSaid: '[INACTIVE]',
+      targetAnswers: this.currentCard?.targetAnswers,
+      attemptNumber: this.attemptCount,
+      responseHistory: [...this.responseHistory]
+    };
+
+    // Log the state changes from inactivity
+    console.log(`[SafetyGateSession] ⚠️ INACTIVITY RESULT:`);
+    console.log(`[SafetyGateSession] ⚠️   Engagement: ${result.uiPackage.admin_overlay.state_snapshot.engagementLevel.toFixed(1)}`);
+    console.log(`[SafetyGateSession] ⚠️   Safety Level: ${['GREEN', 'YELLOW', 'ORANGE', 'RED'][result.uiPackage.admin_overlay.safety_level]}`);
+    console.log(`[SafetyGateSession] ⚠️   Signals: ${result.uiPackage.admin_overlay.signals_detected.join(', ') || 'none'}`);
+    console.log(`[SafetyGateSession] ⚠️   Feedback: "${result.feedbackText}"`);
+
+    // Call the callback if registered
+    if (this.onInactivityCallback) {
+      console.log(`[SafetyGateSession] ⚠️ Calling inactivity callback...`);
+      this.onInactivityCallback(result);
+    } else {
+      console.log(`[SafetyGateSession] ⚠️ No inactivity callback registered`);
+    }
+
+    // Restart timer for next inactivity check
+    console.log(`[SafetyGateSession] ⚠️ Restarting timer for next inactivity check...`);
+    this.startInactivityTimer();
+  }
+
+  /**
+   * Check if currently waiting for a response
+   */
+  isWaitingForChildResponse(): boolean {
+    return this.isWaitingForResponse;
   }
 }
