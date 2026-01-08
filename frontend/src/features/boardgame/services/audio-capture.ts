@@ -3,6 +3,12 @@
  * Captures microphone audio and converts to PCM16 format for OpenAI Realtime API
  */
 
+export interface AudioChunkData {
+  audio: string;      // base64 encoded PCM16
+  amplitude: number;  // RMS amplitude (0-1 scale)
+  peak: number;       // Peak amplitude (0-1 scale)
+}
+
 export class AudioCapture {
   private mediaStream: MediaStream | null = null;
   private audioContext: AudioContext | null = null;
@@ -10,8 +16,8 @@ export class AudioCapture {
   private processorNode: ScriptProcessorNode | null = null;
   private isCapturing = false;
 
-  // Callback when audio chunk is ready (base64 encoded PCM16)
-  onAudioChunk?: (chunk: string) => void;
+  // Callback when audio chunk is ready (with amplitude data)
+  onAudioChunk?: (data: AudioChunkData) => void;
 
   /**
    * Request microphone permission and initialize audio pipeline
@@ -41,9 +47,23 @@ export class AudioCapture {
         if (!this.isCapturing || !this.onAudioChunk) return;
 
         const inputData = event.inputBuffer.getChannelData(0);
+
+        // Calculate amplitude metrics
+        const { rms, peak } = this.calculateAmplitude(inputData);
+
+        // Debug: Log high amplitude (potential screaming)
+        if (rms > 0.3 || peak > 0.6) {
+          console.log(`[AudioCapture] HIGH AMPLITUDE - RMS: ${rms.toFixed(3)}, Peak: ${peak.toFixed(3)}`);
+        }
+
         const pcm16 = this.float32ToPCM16(inputData);
         const base64 = this.arrayBufferToBase64(pcm16.buffer as ArrayBuffer);
-        this.onAudioChunk(base64);
+
+        this.onAudioChunk({
+          audio: base64,
+          amplitude: rms,
+          peak: peak
+        });
       };
 
       return true;
@@ -111,6 +131,24 @@ export class AudioCapture {
 
     this.sourceNode = null;
     this.processorNode = null;
+  }
+
+  /**
+   * Calculate RMS (root mean square) and peak amplitude from audio samples
+   * Returns values in 0-1 range
+   */
+  private calculateAmplitude(samples: Float32Array): { rms: number; peak: number } {
+    let sumSquares = 0;
+    let peak = 0;
+
+    for (let i = 0; i < samples.length; i++) {
+      const abs = Math.abs(samples[i]);
+      sumSquares += samples[i] * samples[i];
+      if (abs > peak) peak = abs;
+    }
+
+    const rms = Math.sqrt(sumSquares / samples.length);
+    return { rms, peak };
   }
 
   /**

@@ -4,7 +4,7 @@
  * Manages WebSocket connection, audio capture, and playback
  */
 
-import { AudioCapture } from './audio-capture.js';
+import { AudioCapture, AudioChunkData } from './audio-capture.js';
 import { AudioPlayback } from './audio-playback.js';
 
 export type VoiceState = 'idle' | 'connecting' | 'ready' | 'speaking' | 'listening';
@@ -117,8 +117,8 @@ export class VoiceService {
     this.audioPlayback = new AudioPlayback();
 
     // Set up audio capture callback
-    this.audioCapture.onAudioChunk = (chunk) => {
-      this.sendAudioChunk(chunk);
+    this.audioCapture.onAudioChunk = (data) => {
+      this.sendAudioChunk(data);
     };
 
     // Set up playback state callback
@@ -447,12 +447,14 @@ export class VoiceService {
   }
 
   /**
-   * Send audio chunk to server
+   * Send audio chunk to server with amplitude data
    */
-  private sendAudioChunk(chunk: string): void {
+  private sendAudioChunk(data: AudioChunkData): void {
     this.sendMessage({
       type: 'audio_chunk',
-      audio: chunk
+      audio: data.audio,
+      amplitude: data.amplitude,
+      peak: data.peak
     });
   }
 

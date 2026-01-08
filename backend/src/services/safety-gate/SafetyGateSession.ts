@@ -65,8 +65,13 @@ export class SafetyGateSession {
 
   /**
    * Process a child's spoken response through the safety-gate pipeline
+   * @param transcription The child's transcribed speech
+   * @param options Additional options like audio-based screaming detection
    */
-  async processChildResponse(transcription: string): Promise<SafetyGateResult> {
+  async processChildResponse(
+    transcription: string,
+    options?: { screamingDetected?: boolean }
+  ): Promise<SafetyGateResult> {
     if (!this.currentCard) {
       logger.warn('SafetyGateSession: No card context set, using default processing');
       return this.generateDefaultResult(transcription);
@@ -79,12 +84,21 @@ export class SafetyGateSession {
     const isCorrect = this.evaluateAnswer(transcription, this.currentCard.targetAnswers);
 
     // Build the child event for the orchestrator
+    // If screaming was detected via audio amplitude, include it in the signal field
+    const screamingSignal = options?.screamingDetected ? 'screaming_detected_audio' : undefined;
+
+    // Debug: Log when audio-based screaming is detected
+    if (screamingSignal) {
+      console.log(`[SafetyGateSession] 🎤 Audio-based SCREAMING signal added to event`);
+    }
+
     const event: ChildEvent = {
       type: 'CHILD_RESPONSE',
       correct: isCorrect,
       response: transcription,
       previousResponse: this.responseHistory[this.responseHistory.length - 2],
-      previousPreviousResponse: this.responseHistory[this.responseHistory.length - 3]
+      previousPreviousResponse: this.responseHistory[this.responseHistory.length - 3],
+      signal: screamingSignal
     };
 
     // Build task context for the orchestrator

@@ -102,7 +102,9 @@ export class StateEngine {
 
       // CHECK FOR VERBAL DISTRESS SIGNALS IN RESPONSE
       // This catches "I'm done", "no no no", "I can't", etc.
-      this.checkVerbalDistressInResponse(event.response || '');
+      // Pass audio screaming flag so it can stack with other signals
+      const hasAudioScreaming = event.signal?.includes('screaming_detected_audio') || false;
+      this.checkVerbalDistressInResponse(event.response || '', hasAudioScreaming);
     }
 
     // Update error frequency (rolling average)
@@ -113,18 +115,82 @@ export class StateEngine {
   // VERBAL DISTRESS IN RESPONSE CHECK
   // ============================================
 
-  private checkVerbalDistressInResponse(response: string): void {
+  private checkVerbalDistressInResponse(response: string, hasAudioScreaming: boolean = false): void {
     const text = response.toLowerCase();
     const normalizedText = text.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
 
-    // Check for screaming/distress signals
-    if (text.includes('scream') || text.includes('ahhh') || normalizedText.includes('no no no')) {
-      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 4);
-      // Why? Strong distress indicator - big increase
-    }
+    // Track individual distress signals for stacking
+    let distressSignals: string[] = [];
+
+    // Check for "no no no" pattern
+    const hasNoNoNo = normalizedText.includes('no no no');
+    if (hasNoNoNo) distressSignals.push('NO_NO_NO');
+
+    // Check for screaming/yelling text patterns
+    const hasTextScreaming =
+      text.includes('scream') ||
+      text.includes('yell') ||
+      text.includes('shout') ||
+      /a{2,}h{1,}/i.test(text) ||  // "aah", "aaah", "aahh", "aahhh" etc.
+      /ah{2,}/i.test(text) ||       // "ahh", "ahhh", "ahhhh" etc.
+      text.includes('argh') ||
+      text.includes('[screaming]') ||
+      text.includes('[yelling]') ||
+      text.includes('[shouting]') ||
+      text.includes('[crying]');
+    if (hasTextScreaming) distressSignals.push('TEXT_SCREAMING');
+
+    // Check for frustration words
+    const hasFrustration = text.includes('ugh') || text.includes('argh');
+    if (hasFrustration && !hasTextScreaming) distressSignals.push('FRUSTRATION');
+
+    // Include audio screaming in the count
+    if (hasAudioScreaming) distressSignals.push('AUDIO_SCREAMING');
 
     // Check for "I'm done" / quit signals
-    if (text.includes('done') || text.includes('quit') || text.includes('no more')) {
+    const hasQuitSignal = text.includes('done') || text.includes('quit') || text.includes('no more');
+    if (hasQuitSignal) distressSignals.push('QUIT_SIGNAL');
+
+    // Calculate dysregulation based on number of signals (stacking)
+    const signalCount = distressSignals.length;
+
+    if (signalCount > 0) {
+      // Base points per signal type
+      let dysregulationIncrease = 0;
+      let fatigueIncrease = 0;
+
+      // Individual signal effects
+      if (distressSignals.includes('NO_NO_NO')) dysregulationIncrease += 3;
+      if (distressSignals.includes('TEXT_SCREAMING')) dysregulationIncrease += 3;
+      if (distressSignals.includes('AUDIO_SCREAMING')) dysregulationIncrease += 4; // Strong indicator from audio amplitude
+      if (distressSignals.includes('FRUSTRATION')) dysregulationIncrease += 1;
+      if (distressSignals.includes('QUIT_SIGNAL')) {
+        dysregulationIncrease += 2;
+        fatigueIncrease += 2;
+      }
+
+      // STACKING BONUS: Multiple signals = child is really struggling
+      if (signalCount >= 2) {
+        dysregulationIncrease += 2; // Bonus for 2+ signals
+        fatigueIncrease += 1;       // Also increases fatigue
+        console.log(`[StateEngine] 🔥 STACKING: ${signalCount} distress signals detected: [${distressSignals.join(', ')}]`);
+      }
+      if (signalCount >= 3) {
+        dysregulationIncrease += 2; // Extra bonus for 3+ signals
+        fatigueIncrease += 1;
+        console.log(`[StateEngine] 🔥🔥 SEVERE DISTRESS: ${signalCount} signals!`);
+      }
+
+      // Apply increases
+      const oldDysreg = this.state.dysregulationLevel;
+      const oldFatigue = this.state.fatigueLevel;
+
+      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + dysregulationIncrease);
+      this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + fatigueIncrease);
+
+      console.log(`[StateEngine] Verbal distress: dysregulation ${oldDysreg} → ${this.state.dysregulationLevel} (+${dysregulationIncrease}), fatigue ${oldFatigue} → ${this.state.fatigueLevel} (+${fatigueIncrease})`);
+    } else if (hasQuitSignal) {
+      // Quit signal alone (shouldn't reach here but just in case)
       this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 2);
       this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + 2);
       // Why? Child wants to stop - moderate distress + fatigue

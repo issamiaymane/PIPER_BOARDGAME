@@ -272,9 +272,30 @@ export class BackendOrchestrator {
     if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
       signals.push('IM_DONE');
     }
-    // Check for screaming signals (normalize to handle "no, no, no" -> "no no no")
-    if (responseText.includes('scream') || responseText.includes('ahhh') || normalizedText.includes('no no no')) {
+    // Check for screaming signals from multiple sources:
+    // 1. Audio amplitude detection (signal field from session)
+    // 2. Text patterns in transcription
+    const hasAudioScreaming = event.signal?.includes('screaming_detected_audio');
+
+    // Text-based screaming detection (normalize to handle "no, no, no" -> "no no no")
+    const hasTextScreaming =
+      responseText.includes('scream') ||
+      responseText.includes('yell') ||
+      responseText.includes('shout') ||
+      /a{2,}h{1,}/i.test(responseText) ||  // "aah", "aaah", "aahh", "aahhh" etc.
+      /ah{2,}/i.test(responseText) ||       // "ahh", "ahhh", "ahhhh" etc.
+      responseText.includes('argh') ||
+      responseText.includes('ugh') ||
+      responseText.includes('[screaming]') ||
+      responseText.includes('[yelling]') ||
+      responseText.includes('[shouting]') ||
+      responseText.includes('[crying]') ||
+      normalizedText.includes('no no no');
+
+    if (hasAudioScreaming || hasTextScreaming) {
       signals.push('SCREAMING');
+      // Debug: Log which source detected screaming
+      console.log(`[BackendOrchestrator] 🚨 SCREAMING signal added - Audio: ${hasAudioScreaming}, Text: ${hasTextScreaming}`);
     }
 
     // Check fatigue

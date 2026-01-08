@@ -10,6 +10,16 @@ import { SafetyGateSession, CardContext, SafetyGateResult } from '../safety-gate
 import { UIPackage } from '../safety-gate/BackendOrchestrator.js';
 import { logger } from '../../utils/logger.js';
 
+// Screaming detection threshold (RMS amplitude 0-1 scale)
+// Normal speech: ~0.05-0.15, Loud speech: ~0.15-0.25, Screaming/Yelling: >0.2
+const SCREAMING_AMPLITUDE_THRESHOLD = 0.20;
+const SCREAMING_PEAK_THRESHOLD = 0.70;
+// Number of consecutive high-amplitude chunks to confirm screaming
+const SCREAMING_CONFIRMATION_CHUNKS = 3;
+// Time to wait for transcription before triggering screaming-only response (ms)
+// This allows "no no no" + screaming to stack if child says words while screaming
+const SCREAMING_TRANSCRIPTION_WAIT_MS = 800;
+
 export interface VoiceSession {
   id: string;
   clientWs: WebSocket;
@@ -20,6 +30,11 @@ export interface VoiceSession {
   // Safety-gate integration
   safetyGateSession: SafetyGateSession;
   currentCardContext?: CardContext;
+  // Audio amplitude tracking for screaming detection
+  recentAmplitudes: { amplitude: number; peak: number; timestamp: number }[];
+  screamingDetected: boolean;
+  // Timer for delayed screaming response (to allow transcription to arrive for stacking)
+  screamingTimeoutId?: ReturnType<typeof setTimeout>;
 }
 
 export interface ClientMessage {
@@ -27,6 +42,9 @@ export interface ClientMessage {
   text?: string;
   category?: string;
   audio?: string; // base64 encoded PCM16 audio
+  // Audio amplitude data for screaming detection
+  amplitude?: number; // RMS amplitude (0-1 scale)
+  peak?: number;      // Peak amplitude (0-1 scale)
   // Card context for safety-gate
   cardContext?: {
     category: string;
@@ -83,7 +101,9 @@ export class VoiceSessionManager {
       realtimeService,
       isActive: true,
       createdAt: new Date(),
-      safetyGateSession: new SafetyGateSession()
+      safetyGateSession: new SafetyGateSession(),
+      recentAmplitudes: [],
+      screamingDetected: false
     };
 
     this.sessions.set(sessionId, session);
@@ -214,6 +234,9 @@ export class VoiceSessionManager {
           session.realtimeService.clearAudio();
           session.realtimeService.cancelResponse();
 
+          // Reset amplitude tracking for new card
+          this.resetAmplitudeTracking(session);
+
           session.currentCardText = message.text;
 
           // Set card context for safety-gate if provided
@@ -241,6 +264,11 @@ export class VoiceSessionManager {
       case 'audio_chunk':
         if (message.audio) {
           session.realtimeService.sendAudio(message.audio);
+
+          // Track amplitude for screaming detection
+          if (typeof message.amplitude === 'number' && typeof message.peak === 'number') {
+            this.trackAmplitude(session, message.amplitude, message.peak);
+          }
         }
         break;
 
@@ -265,8 +293,31 @@ export class VoiceSessionManager {
     transcription: string
   ): Promise<void> {
     try {
-      // Process through safety-gate session (logging handled by SafetyGateSession)
-      const result: SafetyGateResult = await session.safetyGateSession.processChildResponse(transcription);
+      // Cancel screaming timeout if it's pending - transcription arrived first
+      if (session.screamingTimeoutId) {
+        clearTimeout(session.screamingTimeoutId);
+        session.screamingTimeoutId = undefined;
+        // Only log "stacking" if screaming was actually detected
+        if (session.screamingDetected) {
+          console.log(`[VoiceSession] ✅ Transcription arrived while screaming detected - STACKING ENABLED!`);
+        } else {
+          console.log(`[VoiceSession] Transcription arrived - cancelled pending screaming timeout`);
+        }
+      }
+
+      // Debug: Log screaming detection status when processing
+      if (session.screamingDetected) {
+        console.log(`[VoiceSession] 🔥 Processing transcription "${transcription}" WITH SCREAMING flag = true (STACKING!)`);
+      }
+
+      // Process through safety-gate session with audio-based screaming detection
+      const result: SafetyGateResult = await session.safetyGateSession.processChildResponse(
+        transcription,
+        { screamingDetected: session.screamingDetected }
+      );
+
+      // Reset screaming detection after processing
+      session.screamingDetected = false;
 
       // Cancel any ongoing OpenAI response before speaking safety-gate feedback
       session.realtimeService.cancelResponse();
@@ -340,6 +391,117 @@ export class VoiceSessionManager {
    */
   getActiveSessionCount(): number {
     return this.sessions.size;
+  }
+
+  /**
+   * Track audio amplitude and detect screaming
+   */
+  private trackAmplitude(session: VoiceSession, amplitude: number, peak: number): void {
+    const now = Date.now();
+
+    // Debug: Log high amplitude chunks
+    if (amplitude > 0.3 || peak > 0.6) {
+      console.log(`[VoiceSession] HIGH AMPLITUDE received - RMS: ${amplitude.toFixed(3)}, Peak: ${peak.toFixed(3)}`);
+    }
+
+    // Add new amplitude reading
+    session.recentAmplitudes.push({ amplitude, peak, timestamp: now });
+
+    // Keep only recent readings (last 2 seconds)
+    const cutoff = now - 2000;
+    session.recentAmplitudes = session.recentAmplitudes.filter(a => a.timestamp > cutoff);
+
+    // Check for screaming: consecutive high-amplitude chunks
+    const recentHighAmplitude = session.recentAmplitudes.filter(
+      a => a.amplitude > SCREAMING_AMPLITUDE_THRESHOLD || a.peak > SCREAMING_PEAK_THRESHOLD
+    );
+
+    // Debug: Log screaming detection progress
+    if (recentHighAmplitude.length > 0) {
+      console.log(`[VoiceSession] High amplitude chunks: ${recentHighAmplitude.length}/${SCREAMING_CONFIRMATION_CHUNKS} needed for SCREAMING`);
+    }
+
+    if (recentHighAmplitude.length >= SCREAMING_CONFIRMATION_CHUNKS) {
+      if (!session.screamingDetected) {
+        session.screamingDetected = true;
+        console.log(`[VoiceSession] 🚨 SCREAMING DETECTED! (amplitude: ${amplitude.toFixed(3)}, peak: ${peak.toFixed(3)})`);
+        logger.info(`Session ${session.id}: SCREAMING DETECTED (amplitude: ${amplitude.toFixed(3)}, peak: ${peak.toFixed(3)})`);
+
+        // Start timer - wait briefly for transcription to arrive for stacking
+        // If transcription arrives within the window, it will be processed with screaming flag
+        // If no transcription arrives, trigger screaming-only response after timeout
+        console.log(`[VoiceSession] ⏳ Waiting ${SCREAMING_TRANSCRIPTION_WAIT_MS}ms for transcription (allows stacking with "no no no" etc.)`);
+        session.screamingTimeoutId = setTimeout(() => {
+          // Only trigger if screaming flag is still set (not already processed by transcription)
+          if (session.screamingDetected) {
+            console.log(`[VoiceSession] ⏰ Timeout - no transcription, triggering screaming-only response`);
+            this.triggerScreamingResponse(session);
+          }
+        }, SCREAMING_TRANSCRIPTION_WAIT_MS);
+      }
+    }
+  }
+
+  /**
+   * Immediately trigger safety gate response for screaming (without waiting for transcription)
+   */
+  private async triggerScreamingResponse(session: VoiceSession): Promise<void> {
+    // Clear the timeout ID since the timer has fired
+    session.screamingTimeoutId = undefined;
+
+    console.log(`[VoiceSession] 🔥 IMMEDIATE screaming response triggered!`);
+
+    try {
+      // Process through safety-gate with screaming signal (no transcription needed)
+      // Use empty placeholder - dysregulation is handled via the screamingDetected signal
+      const result: SafetyGateResult = await session.safetyGateSession.processChildResponse(
+        '', // Empty - audio signal handles dysregulation
+        { screamingDetected: true }
+      );
+
+      // Cancel any ongoing OpenAI response
+      session.realtimeService.cancelResponse();
+
+      // Small delay to ensure cancellation is processed
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Speak the calming feedback through OpenAI Realtime
+      if (result.shouldSpeak && result.feedbackText) {
+        session.realtimeService.speakFeedback(result.feedbackText);
+      }
+
+      // Send safety-gate response to frontend
+      this.sendToClient(session, {
+        type: 'safety_gate_response',
+        uiPackage: {
+          ...result.uiPackage,
+          childSaid: '[screaming detected]',
+          targetAnswers: result.targetAnswers,
+          attemptNumber: result.attemptNumber,
+          responseHistory: result.responseHistory
+        },
+        isCorrect: false
+      });
+
+      // Reset screaming detection after handling
+      session.screamingDetected = false;
+
+    } catch (error) {
+      logger.error(`Screaming response error:`, error);
+    }
+  }
+
+  /**
+   * Reset amplitude tracking for a new interaction
+   */
+  private resetAmplitudeTracking(session: VoiceSession): void {
+    // Clear any pending screaming timeout
+    if (session.screamingTimeoutId) {
+      clearTimeout(session.screamingTimeoutId);
+      session.screamingTimeoutId = undefined;
+    }
+    session.recentAmplitudes = [];
+    session.screamingDetected = false;
   }
 }
 
