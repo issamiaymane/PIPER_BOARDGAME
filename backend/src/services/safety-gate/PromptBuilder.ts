@@ -1,9 +1,9 @@
-import { BackendResponse, SafetyGateLevel } from './types.js';
+import { BackendResponse, Level } from './types.js';
 
 export class PromptBuilder {
 
   buildSystemPrompt(backendResponse: BackendResponse): string {
-    const { safety_level, parameters, context, constraints, choices } = backendResponse;
+    const { safety_level, parameters, context, constraints, interventions_active } = backendResponse;
 
     return `
 # PIPER - Speech Therapy Coach
@@ -29,32 +29,32 @@ ${constraints.forbidden_words.join(', ')}
 - Use complex sentences
 - Sound disappointed
 
-## CHOICES
-${choices.map((c: { label: string }, i: number) => `${i + 1}. ${c.label}`).join('\n')}
+## AVAILABLE ACTIONS
+${interventions_active.map((intervention, i) => `${i + 1}. ${intervention}`).join('\n')}
 
 ## RESPONSE (JSON only)
 {
-  "coach_line": "${safety_level >= SafetyGateLevel.YELLOW ? `"I heard '[child_word]'. [encouragement]! What would you like to do?"` : `"I heard '[child_word]'. [encouragement]!"`}",
+  "coach_line": "${safety_level >= Level.YELLOW ? `"I heard '[child_word]'. [encouragement]! What would you like to do?"` : `"I heard '[child_word]'. [encouragement]!"`}",
   "choice_presentation": "What would you like to do?",
   "detected_signals": [],
   "tone_used": "${parameters.avatar_tone}"
 }
 
-${safety_level >= SafetyGateLevel.YELLOW ? `⚠️ CRITICAL: Your coach_line MUST end with "What would you like to do?" because choices are being displayed!` : ''}
+${safety_level >= Level.YELLOW ? `⚠️ CRITICAL: Your coach_line MUST end with "What would you like to do?" because choices are being displayed!` : ''}
     `;
   }
 
-  private getSafetyLevelName(level: SafetyGateLevel): string {
-    const names: Record<SafetyGateLevel, string> = {
-      [SafetyGateLevel.GREEN]: 'GREEN',
-      [SafetyGateLevel.YELLOW]: 'YELLOW',
-      [SafetyGateLevel.ORANGE]: 'ORANGE',
-      [SafetyGateLevel.RED]: 'RED'
+  private getSafetyLevelName(level: Level): string {
+    const names: Record<Level, string> = {
+      [Level.GREEN]: 'GREEN',
+      [Level.YELLOW]: 'YELLOW',
+      [Level.ORANGE]: 'ORANGE',
+      [Level.RED]: 'RED'
     };
     return names[level];
   }
 
-  private getFeedbackRules(level: SafetyGateLevel, _attempt: number, childSaid: string): string {
+  private getFeedbackRules(level: Level, _attempt: number, childSaid: string): string {
     // Use the actual child's response in examples
     const word = childSaid || '[child_word]';
 
@@ -66,7 +66,7 @@ If CORRECT:
 - "I heard '${word}'. You got it!"`;
 
     // GREEN level (1st error) - simple encouragement
-    if (level === SafetyGateLevel.GREEN) {
+    if (level === Level.GREEN) {
       return `${correctExamples}
 
 If INCORRECT (1st try - keep it light):
@@ -76,7 +76,7 @@ If INCORRECT (1st try - keep it light):
     }
 
     // YELLOW level (2nd error) - slightly warmer, prompt for choice
-    if (level === SafetyGateLevel.YELLOW) {
+    if (level === Level.YELLOW) {
       return `${correctExamples}
 
 If INCORRECT (2nd try - encourage and offer choices):
@@ -88,7 +88,7 @@ IMPORTANT: Always end with "What would you like to do?" because choices are bein
     }
 
     // ORANGE level (3+ errors) - extra gentle, validate feelings, prompt for choice
-    if (level === SafetyGateLevel.ORANGE) {
+    if (level === Level.ORANGE) {
       return `${correctExamples}
 
 If INCORRECT (3+ tries - be extra gentle and offer choices):

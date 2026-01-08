@@ -4,7 +4,7 @@
  */
 
 import { BackendOrchestrator, UIPackage } from './BackendOrchestrator.js';
-import { ChildEvent, SafetyGateLevel } from './types.js';
+import { Event, Level } from './types.js';
 import { logger, safetyGateLogger, SafetyGateLogData } from '../../utils/logger.js';
 
 export interface CardContext {
@@ -106,7 +106,7 @@ export class SafetyGateSession {
       console.log(`[SafetyGateSession] 🎤 Audio-based SCREAMING signal added to event`);
     }
 
-    const event: ChildEvent = {
+    const event: Event = {
       type: 'CHILD_RESPONSE',
       correct: isCorrect,
       response: transcription,
@@ -125,7 +125,7 @@ export class SafetyGateSession {
     };
 
     // Process through the full safety-gate pipeline with task context
-    const uiPackage = await this.orchestrator.processChildEvent(event, taskContext);
+    const uiPackage = await this.orchestrator.processEvent(event, taskContext);
 
     // Post-process feedback: ensure "What would you like to do?" is appended for YELLOW+ levels
     let feedbackText = uiPackage.speech.text;
@@ -147,7 +147,6 @@ export class SafetyGateSession {
         consecutiveErrors: uiPackage.admin_overlay.state_snapshot.consecutiveErrors,
         timeInSession: uiPackage.admin_overlay.state_snapshot.timeInSession
       },
-      choices: uiPackage.choices.map(c => ({ icon: c.icon, label: c.label, action: c.action })),
       feedback: feedbackText,
       attemptNumber: this.attemptCount,
       responseHistory: this.responseHistory,
@@ -156,7 +155,7 @@ export class SafetyGateSession {
 
     safetyGateLogger.logSessionState(logData);
 
-    if (safetyLevel >= SafetyGateLevel.YELLOW && !isCorrect) {
+    if (safetyLevel >= Level.YELLOW && !isCorrect) {
       // Check if feedback already ends with the choice prompt
       if (!feedbackText.toLowerCase().includes(choicePrompt.toLowerCase())) {
         // Append the choice prompt to the feedback
@@ -274,13 +273,13 @@ export class SafetyGateSession {
    * Generate a default result when no card context is set
    */
   private async generateDefaultResult(transcription: string): Promise<SafetyGateResult> {
-    const event: ChildEvent = {
+    const event: Event = {
       type: 'CHILD_RESPONSE',
       correct: true, // Default to positive
       response: transcription
     };
 
-    const uiPackage = await this.orchestrator.processChildEvent(event);
+    const uiPackage = await this.orchestrator.processEvent(event);
 
     return {
       uiPackage,
@@ -398,11 +397,11 @@ export class SafetyGateSession {
    * Handle when a choice is selected from the choices modal
    * This manages the inactivity timer appropriately for each choice type:
    *
-   * - RETRY_TASK: Restart timer (child will answer the card)
-   * - START_BREAK: Stop timer (session paused for break)
-   * - SWITCH_ACTIVITY: Timer starts when new card is set via setCurrentCard()
-   * - START_REGULATION_ACTIVITY: Stop timer (doing bubble breathing)
-   * - CALL_GROWNUP: Stop timer (session paused for adult intervention)
+   * - retry: Restart timer (child will answer the card)
+   * - trigger_break: Stop timer (session paused for break)
+   * - allow_skip: Timer starts when new card is set via setCurrentCard()
+   * - bubble_breathing: Stop timer (doing bubble breathing)
+   * - call_grownup: Stop timer (session paused for adult intervention)
    *
    * @param action The choice action string
    */
@@ -410,9 +409,9 @@ export class SafetyGateSession {
     console.log(`[SafetyGateSession] 🎯 Choice selected: ${action}`);
 
     switch (action) {
-      case 'RETRY_TASK':
+      case 'RETRY_CARD':
         // Child wants to try again - restart timer to wait for their answer
-        console.log(`[SafetyGateSession] ⏱️ RETRY_TASK - Restarting timer for card response`);
+        console.log(`[SafetyGateSession] ⏱️ RETRY_CARD - Restarting timer for card response`);
         this.startInactivityTimer();
         break;
 
@@ -422,15 +421,15 @@ export class SafetyGateSession {
         this.stopInactivityTimer();
         break;
 
-      case 'SWITCH_ACTIVITY':
+      case 'SKIP_CARD':
         // Child wants to skip to next card - timer will restart when setCurrentCard() is called
-        console.log(`[SafetyGateSession] ⏱️ SWITCH_ACTIVITY - Timer will restart when new card is shown`);
+        console.log(`[SafetyGateSession] ⏱️ SKIP_CARD - Timer will restart when new card is shown`);
         this.stopInactivityTimer();
         break;
 
-      case 'START_REGULATION_ACTIVITY':
+      case 'BUBBLE_BREATHING':
         // Child is doing bubble breathing - timer stays stopped
-        console.log(`[SafetyGateSession] ⏱️ START_REGULATION_ACTIVITY - Timer remains stopped (regulation activity)`);
+        console.log(`[SafetyGateSession] ⏱️ BUBBLE_BREATHING - Timer remains stopped (regulation activity)`);
         this.stopInactivityTimer();
         break;
 
@@ -483,7 +482,7 @@ export class SafetyGateSession {
     console.log(`[SafetyGateSession] ⚠️ ========================================\n`);
 
     // Build CHILD_INACTIVE event
-    const event: ChildEvent = {
+    const event: Event = {
       type: 'CHILD_INACTIVE',
       correct: false,
       response: undefined,
@@ -501,7 +500,7 @@ export class SafetyGateSession {
     } : undefined;
 
     // Process through safety-gate pipeline
-    const uiPackage = await this.orchestrator.processChildEvent(event, taskContext);
+    const uiPackage = await this.orchestrator.processEvent(event, taskContext);
 
     // Log the inactivity event
     const logData: SafetyGateLogData = {
@@ -518,7 +517,6 @@ export class SafetyGateSession {
         consecutiveErrors: uiPackage.admin_overlay.state_snapshot.consecutiveErrors,
         timeInSession: uiPackage.admin_overlay.state_snapshot.timeInSession
       },
-      choices: uiPackage.choices.map(c => ({ icon: c.icon, label: c.label, action: c.action })),
       feedback: uiPackage.speech.text,
       attemptNumber: this.attemptCount,
       responseHistory: this.responseHistory,
@@ -559,7 +557,7 @@ export class SafetyGateSession {
     // Only restart timer if NOT showing choices (GREEN level)
     // If YELLOW+ level, choices are shown and child should interact with them, not answer the card
     const safetyLevel = result.uiPackage.admin_overlay.safety_level;
-    if (safetyLevel >= SafetyGateLevel.YELLOW) {
+    if (safetyLevel >= Level.YELLOW) {
       console.log(`[SafetyGateSession] ⚠️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
       this.stopInactivityTimer();
     } else {

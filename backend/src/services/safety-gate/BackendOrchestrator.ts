@@ -1,4 +1,4 @@
-import { ChildState, ChildEvent, SafetyGateLevel, InterventionType, SessionConfig, BackendResponse, Choice, Signal } from './types.js';
+import { State, Event, Level, Intervention, SessionConfig, BackendResponse, Signal } from './types.js';
 import { StateEngine } from './StateEngine.js';
 import { SignalDetector } from './SignalDetector.js';
 import { LevelAssessor } from './LevelAssessor.js';
@@ -28,7 +28,7 @@ export interface UIPackage {
     speed: string;
   };
   choice_message: string;
-  choices: Choice[];
+  interventions: Intervention[];
   visual_cues: {
     enabled: boolean;
   };
@@ -39,12 +39,12 @@ export interface UIPackage {
     available: boolean;
   };
   admin_overlay: {
-    safety_level: SafetyGateLevel;
+    safety_level: Level;
     interventions_active: number;
-    interventions_list: InterventionType[];
+    interventions_list: Intervention[];
     signals_detected: Signal[];
     time_in_session: string;
-    state_snapshot: ChildState;
+    state_snapshot: State;
   };
   // Optional fields for frontend console logging
   childSaid?: string;
@@ -54,10 +54,10 @@ export interface UIPackage {
 }
 
 interface Logger {
-  logStateUpdate(state: ChildState, event: ChildEvent): void;
+  logStateUpdate(state: State, event: Event): void;
   logSignals(signals: Signal[]): void;
-  logSafetyAssessment(level: SafetyGateLevel, state: ChildState, signals: Signal[]): void;
-  logInterventions(interventions: InterventionType[]): void;
+  logSafetyAssessment(level: Level, state: State, signals: Signal[]): void;
+  logInterventions(interventions: Intervention[]): void;
   logConfigAdaptation(config: SessionConfig): void;
   logBackendResponse(response: BackendResponse): void;
   logLLMResponse(response: LLMResponse): void;
@@ -68,10 +68,10 @@ interface Logger {
 
 // Silent logger - formatted output is handled by SafetyGateSession
 class SilentLogger implements Logger {
-  logStateUpdate(_state: ChildState, _event: ChildEvent): void {}
+  logStateUpdate(_state: State, _event: Event): void {}
   logSignals(_signals: Signal[]): void {}
-  logSafetyAssessment(_level: SafetyGateLevel, _state: ChildState, _signals: Signal[]): void {}
-  logInterventions(_interventions: InterventionType[]): void {}
+  logSafetyAssessment(_level: Level, _state: State, _signals: Signal[]): void {}
+  logInterventions(_interventions: Intervention[]): void {}
   logConfigAdaptation(_config: SessionConfig): void {}
   logBackendResponse(_response: BackendResponse): void {}
   logLLMResponse(_response: LLMResponse): void {}
@@ -82,16 +82,16 @@ class SilentLogger implements Logger {
 
 // Verbose logger - for debugging (enable by using VerboseLogger in constructor)
 class VerboseLogger implements Logger {
-  logStateUpdate(state: ChildState, event: ChildEvent): void {
+  logStateUpdate(state: State, event: Event): void {
     console.log('[State Update]', { state, event });
   }
   logSignals(signals: Signal[]): void {
     console.log('[Signals]', signals);
   }
-  logSafetyAssessment(level: SafetyGateLevel, state: ChildState, signals: Signal[]): void {
+  logSafetyAssessment(level: Level, state: State, signals: Signal[]): void {
     console.log('[Safety Assessment]', { level, state, signals });
   }
-  logInterventions(interventions: InterventionType[]): void {
+  logInterventions(interventions: Intervention[]): void {
     console.log('[Interventions]', interventions);
   }
   logConfigAdaptation(config: SessionConfig): void {
@@ -152,20 +152,21 @@ export class BackendOrchestrator {
     this.currentTaskContext = null;
   }
 
-  async processChildEvent(event: ChildEvent, taskContext?: TaskContext): Promise<UIPackage> {
+  async processEvent(event: Event, taskContext?: TaskContext): Promise<UIPackage> {
     // Use provided task context or fall back to stored context
     if (taskContext) {
       this.currentTaskContext = taskContext;
     }
-    // 1. Update state
-    const state = this.stateEngine.updateFromEvent(event);
+
+    // 1. Update state from event
+    const state = this.stateEngine.processEvent(event);
     this.logger.logStateUpdate(state, event);
 
-    // 2. Detect signals
-    const signals = this.signalDetector.detectSignals(event, state);
+    // 2. Detect signals from state and event
+    const signals = this.signalDetector.detectSignals(state, event);
     this.logger.logSignals(signals);
 
-    // 3. Assess safety
+    // 3. Assess safety level
     const safetyLevel = this.levelAssessor.assessLevel(state, signals);
     this.logger.logSafetyAssessment(safetyLevel, state, signals);
 
@@ -178,23 +179,15 @@ export class BackendOrchestrator {
     this.logger.logInterventions(interventions);
 
     // 5. Adapt session config
-    const config = this.sessionPlanner.adaptSessionConfig(
-      safetyLevel,
-      interventions,
-      state
-    );
+    const config = this.sessionPlanner.adaptSessionConfig(safetyLevel);
     this.logger.logConfigAdaptation(config);
 
-    // 6. Build choices
-    const choices = this.sessionPlanner.buildChoices(interventions, config, safetyLevel);
-
-    // 7. Create backend response
+    // 6. Create backend response
     const backendResponse: BackendResponse = {
       decision: this.determineDecision(safetyLevel, interventions),
       safety_level: safetyLevel,
       session_state: this.getSessionState(event, state),
       parameters: config,
-      choices,
       context: this.buildContext(event, state),
       constraints: this.buildConstraints(config, safetyLevel),
       signals_detected: signals,
@@ -204,23 +197,21 @@ export class BackendOrchestrator {
     };
     this.logger.logBackendResponse(backendResponse);
 
-    // 7.5. For inactivity events, skip LLM and use fallback directly
+    // 7. For inactivity events, skip LLM and use fallback directly
     if (event.type === 'CHILD_INACTIVE') {
       console.log('[BackendOrchestrator] Inactivity event - using fallback response (skipping LLM)');
       return this.generateFallbackResponse(backendResponse, state);
     }
 
-    // 8. Build system prompt
+    // 8. Build system prompt and get LLM response
     const systemPrompt = this.promptBuilder.buildSystemPrompt(backendResponse);
-
-    // 9. Get LLM response
     const llmResponse = await this.llmClient.generateResponse(
       systemPrompt,
       backendResponse.context
     );
     this.logger.logLLMResponse(llmResponse);
 
-    // 10. Validate LLM response
+    // 9. Validate LLM response
     const validation = this.validator.validate(
       llmResponse,
       backendResponse.constraints
@@ -228,19 +219,13 @@ export class BackendOrchestrator {
 
     if (!validation.valid) {
       this.logger.logValidationFailure(validation);
-      // Retry or use fallback
       return this.generateFallbackResponse(backendResponse, state);
     }
     this.logger.logValidationSuccess(validation);
 
-    // 11. Build UI package
-    const uiPackage = this.buildUIPackage(
-      backendResponse,
-      llmResponse,
-      state
-    );
+    // 10. Build UI package and log
+    const uiPackage = this.buildUIPackage(backendResponse, llmResponse, state);
 
-    // 12. Log for SOAP note
     await this.logger.logForSOAP({
       event,
       state,
@@ -256,25 +241,25 @@ export class BackendOrchestrator {
   }
 
   private determineDecision(
-    level: SafetyGateLevel,
-    interventions: InterventionType[]
+    level: Level,
+    interventions: Intervention[]
   ): string {
-    if (level === SafetyGateLevel.RED) {
+    if (level === Level.RED) {
       return 'CALL_GROWNUP_IMMEDIATELY';
     }
-    if (interventions.includes(InterventionType.BUBBLE_BREATHING)) {
+    if (interventions.includes(Intervention.BUBBLE_BREATHING)) {
       return 'TRIGGER_REGULATION_WITH_CHOICES';
     }
-    if (interventions.includes(InterventionType.TRIGGER_BREAK)) {
+    if (interventions.includes(Intervention.START_BREAK)) {
       return 'START_BREAK_NOW';
     }
-    if (level >= SafetyGateLevel.YELLOW) {
+    if (level >= Level.YELLOW) {
       return 'ADAPT_AND_CONTINUE';
     }
     return 'CONTINUE_NORMAL';
   }
 
-  private getSessionState(event: ChildEvent, state: ChildState): any {
+  private getSessionState(event: Event, state: State): any {
     return {
       current_event: event.type,
       engagement: state.engagementLevel,
@@ -285,7 +270,7 @@ export class BackendOrchestrator {
     };
   }
 
-  private buildContext(event: ChildEvent, state: ChildState): any {
+  private buildContext(event: Event, state: State): any {
     const baseContext = {
       what_happened: event.type === 'CHILD_RESPONSE'
         ? (event.correct ? 'correct_response' : 'incorrect_response')
@@ -312,36 +297,36 @@ export class BackendOrchestrator {
     return baseContext;
   }
 
-  private buildConstraints(config: SessionConfig, level: SafetyGateLevel): any {
+  private buildConstraints(config: SessionConfig, level: Level): any {
     return {
       must_use_tone: config.avatar_tone,
       must_be_brief: true,
       must_not_judge: true,
       must_not_pressure: true,
-      must_offer_choices: level >= SafetyGateLevel.YELLOW,
-      must_validate_feelings: level >= SafetyGateLevel.ORANGE,
+      must_offer_choices: level >= Level.YELLOW,
+      must_validate_feelings: level >= Level.ORANGE,
       // GREEN: 2 sentences ("I heard X. Let's try again!")
       // YELLOW+: 3 sentences ("I heard X. Almost there! What would you like to do?")
-      max_sentences: level >= SafetyGateLevel.YELLOW ? 3 : 2,
+      max_sentences: level >= Level.YELLOW ? 3 : 2,
       forbidden_words: ['wrong', 'incorrect', 'bad', 'no', 'try harder', 'focus'],
       required_approach: 'describe_what_heard_offer_support'
     };
   }
 
   private buildReasoning(
-    level: SafetyGateLevel,
-    interventions: InterventionType[],
+    level: Level,
+    interventions: Intervention[],
     signals: string[]
   ): any {
     return {
-      safety_level_reason: `Level ${SafetyGateLevel[level]} due to signals: ${signals.join(', ') || 'none'}`,
+      safety_level_reason: `Level ${Level[level]} due to signals: ${signals.join(', ') || 'none'}`,
       interventions_reason: interventions.length > 0
         ? `Applying: ${interventions.join(', ')}`
         : 'No interventions needed'
     };
   }
 
-  private generateFallbackResponse(backendResponse: BackendResponse, state: ChildState): UIPackage {
+  private generateFallbackResponse(backendResponse: BackendResponse, state: State): UIPackage {
     // Generate level-appropriate fallback text
     const level = backendResponse.safety_level;
     let fallbackText: string;
@@ -351,12 +336,12 @@ export class BackendOrchestrator {
 
     if (isInactivity) {
       // Special handling for inactivity - gentle prompt
-      if (level >= SafetyGateLevel.YELLOW) {
+      if (level >= Level.YELLOW) {
         fallbackText = "Are you still there? Take your time! What would you like to do?";
       } else {
         fallbackText = "Are you still there? Take your time!";
       }
-    } else if (level >= SafetyGateLevel.YELLOW) {
+    } else if (level >= Level.YELLOW) {
       // YELLOW+ levels: include choice prompt
       fallbackText = "I heard you! Good try! What would you like to do?";
     } else {
@@ -373,10 +358,10 @@ export class BackendOrchestrator {
       speech: {
         text: fallbackText,
         voice_tone: backendResponse.parameters.avatar_tone,
-        speed: level >= SafetyGateLevel.ORANGE ? 'slow' : 'normal'
+        speed: level >= Level.ORANGE ? 'slow' : 'normal'
       },
       choice_message: "What would you like to do?",
-      choices: backendResponse.choices,
+      interventions: backendResponse.interventions_active,
       visual_cues: {
         enabled: true
       },
@@ -384,7 +369,7 @@ export class BackendOrchestrator {
         available: backendResponse.parameters.enable_audio_support
       },
       grownup_help: {
-        available: backendResponse.parameters.grownup_help_available
+        available: backendResponse.interventions_active.includes(Intervention.CALL_GROWNUP)
       },
       admin_overlay: {
         safety_level: backendResponse.safety_level,
@@ -400,7 +385,7 @@ export class BackendOrchestrator {
   private buildUIPackage(
     backendResponse: BackendResponse,
     llmResponse: LLMResponse,
-    state: ChildState
+    state: State
   ): UIPackage {
     return {
       avatar: {
@@ -411,10 +396,10 @@ export class BackendOrchestrator {
       speech: {
         text: llmResponse.coach_line,
         voice_tone: backendResponse.parameters.avatar_tone,
-        speed: backendResponse.safety_level >= SafetyGateLevel.ORANGE ? 'slow' : 'normal'
+        speed: backendResponse.safety_level >= Level.ORANGE ? 'slow' : 'normal'
       },
       choice_message: llmResponse.choice_presentation,
-      choices: backendResponse.choices,
+      interventions: backendResponse.interventions_active,
       visual_cues: {
         enabled: backendResponse.parameters.show_visual_cues
       },
@@ -422,7 +407,7 @@ export class BackendOrchestrator {
         available: backendResponse.parameters.enable_audio_support
       },
       grownup_help: {
-        available: backendResponse.parameters.grownup_help_available
+        available: backendResponse.interventions_active.includes(Intervention.CALL_GROWNUP)
       },
       admin_overlay: {
         safety_level: backendResponse.safety_level,
@@ -435,13 +420,13 @@ export class BackendOrchestrator {
     };
   }
 
-  private getAvatarAnimation(level: SafetyGateLevel): string {
+  private getAvatarAnimation(level: Level): string {
     switch (level) {
-      case SafetyGateLevel.RED:
+      case Level.RED:
         return 'calm_breathing';
-      case SafetyGateLevel.ORANGE:
+      case Level.ORANGE:
         return 'gentle_nod';
-      case SafetyGateLevel.YELLOW:
+      case Level.YELLOW:
         return 'encouraging';
       default:
         return 'neutral';

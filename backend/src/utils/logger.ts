@@ -68,7 +68,6 @@ export interface SafetyGateLogData {
     consecutiveErrors: number;
     timeInSession: number;
   };
-  choices: Array<{ icon: string; label: string; action: string }>;
   feedback: string;
   attemptNumber: number;
   responseHistory: string[];
@@ -152,11 +151,9 @@ export const safetyGateLogger = {
       const speakIcon = data.shouldSpeak ? `${COLORS.green}🔊` : `${COLORS.gray}🔇`;
       console.log(`${COLORS.bold}💬 Feedback:${COLORS.reset} "${COLORS.cyan}${data.feedback}${COLORS.reset}" ${speakIcon}${COLORS.reset}`);
 
-      // Choices (only shown for incorrect + YELLOW+)
-      if (data.safetyLevel >= 1 && data.choices.length > 0) {
-        const choiceStr = data.choices.map(c => `${c.icon} ${c.label}`).join(' | ');
-        console.log(`${COLORS.bold}🎭 Choices Shown:${COLORS.reset} ${choiceStr}`);
-        console.log(`${COLORS.bold}🎤 Listening:${COLORS.reset} ${COLORS.red}PAUSED${COLORS.reset} (waiting for choice click)`);
+      // Interventions (only shown for incorrect + YELLOW+)
+      if (data.safetyLevel >= 1 && data.interventions.length > 0) {
+        console.log(`${COLORS.bold}🎤 Listening:${COLORS.reset} ${COLORS.red}PAUSED${COLORS.reset} (waiting for intervention selection)`);
       } else {
         console.log(`${COLORS.bold}🎬 UI Action:${COLORS.reset} ${COLORS.yellow}Waiting for retry${COLORS.reset}`);
         console.log(`${COLORS.bold}🎤 Listening:${COLORS.reset} ${COLORS.green}ACTIVE${COLORS.reset}`);

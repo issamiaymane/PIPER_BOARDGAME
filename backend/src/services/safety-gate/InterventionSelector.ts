@@ -1,4 +1,4 @@
-import { ChildState, SafetyGateLevel, InterventionType, Signal } from './types.js';
+import { State, Level, Intervention, Signal } from './types.js';
 
 export class InterventionSelector {
 
@@ -7,23 +7,23 @@ export class InterventionSelector {
   // ============================================
 
   selectInterventions(
-    level: SafetyGateLevel,
-    state: ChildState,
+    level: Level,
+    state: State,
     signals: Signal[]
-  ): InterventionType[] {
+  ): Intervention[] {
     switch (level) {
-      case SafetyGateLevel.RED:
+      case Level.RED:
         return this.redLevelInterventions(state, signals);
 
-      case SafetyGateLevel.ORANGE:
+      case Level.ORANGE:
         return this.orangeLevelInterventions(state, signals);
 
-      case SafetyGateLevel.YELLOW:
+      case Level.YELLOW:
         return this.yellowLevelInterventions(state, signals);
 
       default:
-        return [];
-        // GREEN = no interventions needed
+        // GREEN = only retry available
+        return [Intervention.RETRY_CARD];
     }
   }
 
@@ -32,24 +32,16 @@ export class InterventionSelector {
   // ============================================
 
   private redLevelInterventions(
-    _state: ChildState,
+    _state: State,
     _signals: Signal[]
-  ): InterventionType[] {
-    const interventions: InterventionType[] = [];
-
-    // ALWAYS at RED: Adult help needed
-    interventions.push(InterventionType.CALL_GROWNUP);
-
-    // ALWAYS at RED: Calming options still available
-    interventions.push(InterventionType.CALMER_TONE);
-    interventions.push(InterventionType.BUBBLE_BREATHING);
-    // Why? Child needs calming options while waiting for adult
-
-    // ALWAYS at RED: Allow escape
-    interventions.push(InterventionType.ALLOW_SKIP);
-    // Why? Don't force child to continue current task
-
-    return interventions;
+  ): Intervention[] {
+    return [
+      Intervention.BUBBLE_BREATHING,  // Calming first
+      Intervention.SKIP_CARD,         // Escape option
+      Intervention.RETRY_CARD,        // Always available
+      Intervention.START_BREAK,       // Rest option
+      Intervention.CALL_GROWNUP       // Adult help
+    ];
   }
 
   // ============================================
@@ -57,35 +49,24 @@ export class InterventionSelector {
   // ============================================
 
   private orangeLevelInterventions(
-    state: ChildState,
-    signals: Signal[]
-  ): InterventionType[] {
-    const interventions: InterventionType[] = [];
+    state: State,
+    _signals: Signal[]
+  ): Intervention[] {
+    const interventions: Intervention[] = [];
 
-    // ALWAYS at ORANGE
-    interventions.push(InterventionType.CALMER_TONE);
-    // Why? All ORANGE situations need calming approach
-
-    interventions.push(InterventionType.OFFER_CHOICE);
-    // Why? Restore sense of control
-
-    // CONDITIONAL: If dysregulated (lowered threshold from 6 to 4 for earlier intervention)
+    // CONDITIONAL: If dysregulated (threshold 4 for earlier intervention)
     if (state.dysregulationLevel >= 4) {
-      interventions.push(InterventionType.BUBBLE_BREATHING);
-      // Why? Need active regulation strategy - catch it early
+      interventions.push(Intervention.BUBBLE_BREATHING);
     }
 
-    // CONDITIONAL: If error streak (lowered from 4 to 3 to match YELLOW)
+    // CONDITIONAL: If error streak
     if (state.consecutiveErrors >= 3) {
-      interventions.push(InterventionType.ALLOW_SKIP);
-      // Why? Child is stuck, needs escape route earlier
+      interventions.push(Intervention.SKIP_CARD);
     }
 
-    // CONDITIONAL: If fatigued
-    if (state.fatigueLevel >= 7) {
-      interventions.push(InterventionType.TRIGGER_BREAK);
-      // Why? Child needs rest NOW
-    }
+    // ALWAYS at ORANGE+
+    interventions.push(Intervention.RETRY_CARD);
+    interventions.push(Intervention.START_BREAK);
 
     return interventions;
   }
@@ -95,21 +76,12 @@ export class InterventionSelector {
   // ============================================
 
   private yellowLevelInterventions(
-    state: ChildState,
-    signals: Signal[]
-  ): InterventionType[] {
-    const interventions: InterventionType[] = [];
-
-    interventions.push(InterventionType.SHORTEN_TASK);
-    // Why? Reduce demands early, prevent escalation
-
-    interventions.push(InterventionType.OFFER_CHOICE);
-    // Why? Give some control
-
-    interventions.push(InterventionType.ALLOW_SKIP);
-    // Why? Always give escape option at YELLOW
-    // Child has shown signs of struggle - let them move on
-
-    return interventions;
+    _state: State,
+    _signals: Signal[]
+  ): Intervention[] {
+    return [
+      Intervention.SKIP_CARD,   // Escape option
+      Intervention.RETRY_CARD   // Always available
+    ];
   }
 }

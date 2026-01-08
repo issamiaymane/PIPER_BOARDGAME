@@ -1,4 +1,4 @@
-import { ChildState, SafetyGateLevel, Signal } from './types.js';
+import { State, Level, Signal } from './types.js';
 
 export class LevelAssessor {
 
@@ -6,48 +6,47 @@ export class LevelAssessor {
   // MAIN ASSESSMENT FUNCTION
   // ============================================
 
-  assessLevel(state: ChildState, signals: Signal[]): SafetyGateLevel {
+  assessLevel(state: State, signals: Signal[]): Level {
     // Check from most severe to least severe
-    // If any RED condition is met, return RED immediately
-    // Don't check YELLOW if already ORANGE
-
     if (this.isRedLevel(state, signals)) {
-      return SafetyGateLevel.RED;
+      return Level.RED;
     }
 
     if (this.isOrangeLevel(state, signals)) {
-      return SafetyGateLevel.ORANGE;
+      return Level.ORANGE;
     }
 
     if (this.isYellowLevel(state, signals)) {
-      return SafetyGateLevel.YELLOW;
+      return Level.YELLOW;
     }
 
-    return SafetyGateLevel.GREEN;
+    return Level.GREEN;
   }
 
   // ============================================
   // RED LEVEL CHECK
+  // Severe crisis - immediate adult intervention needed
   // ============================================
 
-  private isRedLevel(state: ChildState, signals: Signal[]): boolean {
+  private isRedLevel(state: State, signals: Signal[]): boolean {
     return (
-      signals.includes(Signal.TANTRUM) ||
-      signals.includes(Signal.MELTDOWN) ||
-      signals.includes(Signal.EXTREME_DISTRESS) ||
-      state.dysregulationLevel >= 9
+      state.dysregulationLevel >= 9 ||
+      // Multiple high-intensity signals together
+      (signals.includes(Signal.AUDIO_SCREAMING) && signals.includes(Signal.NO_NO_NO))
     );
   }
 
   // ============================================
   // ORANGE LEVEL CHECK
+  // Significant distress - needs active regulation support
   // ============================================
 
-  private isOrangeLevel(state: ChildState, signals: Signal[]): boolean {
+  private isOrangeLevel(state: State, signals: Signal[]): boolean {
     return (
-      signals.includes(Signal.SCREAMING) ||
+      signals.includes(Signal.TEXT_SCREAMING) ||
+      signals.includes(Signal.AUDIO_SCREAMING) ||
+      signals.includes(Signal.NO_NO_NO) ||
       signals.includes(Signal.REPETITIVE_WRONG_RESPONSE) ||
-      signals.includes(Signal.LEAVING_ACTIVITY) ||
       state.dysregulationLevel >= 7 ||
       state.consecutiveErrors >= 5 ||
       state.fatigueLevel >= 8
@@ -56,12 +55,14 @@ export class LevelAssessor {
 
   // ============================================
   // YELLOW LEVEL CHECK
+  // Minor distress - needs adapted support
   // ============================================
 
-  private isYellowLevel(state: ChildState, signals: Signal[]): boolean {
+  private isYellowLevel(state: State, signals: Signal[]): boolean {
     return (
-      signals.includes(Signal.I_NEED_BREAK) ||
-      signals.includes(Signal.IM_DONE) ||
+      signals.includes(Signal.BREAK_REQUEST) ||
+      signals.includes(Signal.QUIT_REQUEST) ||
+      signals.includes(Signal.FRUSTRATION) ||
       signals.includes(Signal.CONSECUTIVE_ERRORS) ||
       signals.includes(Signal.ENGAGEMENT_DROP) ||
       state.engagementLevel <= 3 ||

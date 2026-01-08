@@ -1,4 +1,13 @@
-export interface ChildState {
+export interface Event {
+  type: 'CHILD_RESPONSE' | 'CHILD_INACTIVE';
+  correct?: boolean;
+  response?: string;
+  previousResponse?: string;
+  previousPreviousResponse?: string;
+  signal?: string; // Audio-based signals (e.g., 'screaming_detected_audio')
+}
+
+export interface State {
   engagementLevel: number; // 0-10
   dysregulationLevel: number; // 0-10
   fatigueLevel: number; // 0-10
@@ -9,69 +18,55 @@ export interface ChildState {
   lastActivityTimestamp: Date;
 }
 
-export interface ChildEvent {
-  type: 'CHILD_RESPONSE' | 'CHILD_INACTIVE' | 'VERBAL_SIGNAL';
-  correct?: boolean;
-  response?: string;
-  previousResponse?: string;
-  previousPreviousResponse?: string;
-  signal?: string;
-}
-
 export interface ValidationResult {
   approved: boolean;
   reason: string;
   rejectedWords?: string[];
 }
 
-export interface Choice {
-  id: string;
-  label: string;
-  icon: string;
-  action: string;
-  priority: number;
-}
-
-export enum SafetyGateLevel {
+export enum Level {
   GREEN = 0, // Normal operation
   YELLOW = 1, // Minor adaptation
   ORANGE = 2, // Significant adaptation
   RED = 3 // Emergency intervention
 }
 
-export enum InterventionType {
-  SHORTEN_TASK = 'shorten_task',
-  CALMER_TONE = 'calmer_tone',
-  OFFER_CHOICE = 'offer_choice',
-  TRIGGER_BREAK = 'trigger_break',
-  BUBBLE_BREATHING = 'bubble_breathing',
-  ALLOW_SKIP = 'allow_skip',
-  CALL_GROWNUP = 'call_grownup'
+export enum Intervention {
+  // Available actions for the child
+  BUBBLE_BREATHING = 'BUBBLE_BREATHING',
+  SKIP_CARD = 'SKIP_CARD',
+  RETRY_CARD = 'RETRY_CARD',
+  START_BREAK = 'START_BREAK',
+  CALL_GROWNUP = 'CALL_GROWNUP'
 }
 
 export enum Signal {
-  // Behavioral (detected from state)
-  CONSECUTIVE_ERRORS = 'CONSECUTIVE_ERRORS',
-  REPETITIVE_WRONG_RESPONSE = 'REPETITIVE_WRONG_RESPONSE',
-  ENGAGEMENT_DROP = 'ENGAGEMENT_DROP',
-  FATIGUE_HIGH = 'FATIGUE_HIGH',
-  DYSREGULATION_DETECTED = 'DYSREGULATION_DETECTED',
+  // ═══════════════════════════════════════════
+  // 1. STATE-BASED (derived from State)
+  // ═══════════════════════════════════════════
+  CONSECUTIVE_ERRORS = 'CONSECUTIVE_ERRORS',       // consecutiveErrors >= 3
+  ENGAGEMENT_DROP = 'ENGAGEMENT_DROP',             // engagementLevel <= 3
+  FATIGUE_HIGH = 'FATIGUE_HIGH',                   // fatigueLevel >= 7
+  DYSREGULATION_DETECTED = 'DYSREGULATION_DETECTED', // dysregulationLevel >= 6
 
-  // Verbal (detected from response text)
-  I_NEED_BREAK = 'I_NEED_BREAK',
-  IM_DONE = 'IM_DONE',
-  SCREAMING = 'SCREAMING',
-  NO_NO_NO = 'NO_NO_NO',
-  TEXT_SCREAMING = 'TEXT_SCREAMING',
-  AUDIO_SCREAMING = 'AUDIO_SCREAMING',
-  FRUSTRATION = 'FRUSTRATION',
-  QUIT_SIGNAL = 'QUIT_SIGNAL',
+  // ═══════════════════════════════════════════
+  // 2. EVENT-BASED (derived from Event)
+  // ═══════════════════════════════════════════
+  REPETITIVE_WRONG_RESPONSE = 'REPETITIVE_WRONG_RESPONSE', // response === previousResponse
 
-  // Escalation (severe)
-  TANTRUM = 'TANTRUM',
-  MELTDOWN = 'MELTDOWN',
-  EXTREME_DISTRESS = 'EXTREME_DISTRESS',
-  LEAVING_ACTIVITY = 'LEAVING_ACTIVITY'
+  // ═══════════════════════════════════════════
+  // 3. TEXT-BASED (detected from response text)
+  // ═══════════════════════════════════════════
+  BREAK_REQUEST = 'BREAK_REQUEST',     // "break", "stop", "tired"
+  QUIT_REQUEST = 'QUIT_REQUEST',       // "done", "quit", "no more"
+  NO_NO_NO = 'NO_NO_NO',               // "no no no" pattern
+  TEXT_SCREAMING = 'TEXT_SCREAMING',   // "scream", "ahhh", "[crying]"
+  FRUSTRATION = 'FRUSTRATION',         // "ugh", "argh"
+
+  // ═══════════════════════════════════════════
+  // 4. AUDIO-BASED (detected from amplitude)
+  // ═══════════════════════════════════════════
+  AUDIO_SCREAMING = 'AUDIO_SCREAMING'  // high amplitude detection
 }
 
 export interface SessionConfig {
@@ -79,23 +74,19 @@ export interface SessionConfig {
   avatar_tone: 'calm' | 'warm' | 'neutral';
   max_retries: number; // 1-3
   max_task_time: number; // seconds
-  allow_skip: boolean;
   show_visual_cues: boolean;
   enable_audio_support: boolean;
-  grownup_help_available: boolean;
-  show_bubble_breathing: boolean;
 }
 
 export interface BackendResponse {
   decision: string;
-  safety_level: SafetyGateLevel;
+  safety_level: Level;
   session_state: any;
   parameters: SessionConfig;
-  choices: Choice[];
   context: any;
   constraints: any;
   signals_detected: Signal[];
-  interventions_active: InterventionType[];
+  interventions_active: Intervention[];
   reasoning: any;
   timestamp: Date;
 }

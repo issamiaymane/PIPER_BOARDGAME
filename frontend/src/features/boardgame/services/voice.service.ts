@@ -35,13 +35,7 @@ export interface UIPackage {
     speed: string;
   };
   choice_message: string;
-  choices: Array<{
-    id: string;
-    label: string;
-    icon: string;
-    action: string;
-    priority: number;
-  }>;
+  interventions: string[];
   visual_cues: {
     enabled: boolean;
   };
@@ -302,7 +296,7 @@ export class VoiceService {
   /**
    * Notify backend about choice selection
    * This allows the backend to manage inactivity timer appropriately
-   * @param action The choice action (RETRY_TASK, START_BREAK, etc.)
+   * @param action The choice action (retry, trigger_break, etc.)
    */
   notifyChoiceSelected(action: string): void {
     console.log(`[Voice] Notifying backend of choice: ${action}`);

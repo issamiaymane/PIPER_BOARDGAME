@@ -86,6 +86,15 @@ let feedbackDisplay: HTMLElement;
 let currentSafetyLevel = 0;
 let isBreathingActive = false;
 
+// Intervention display mapping
+const INTERVENTION_DISPLAY: Record<string, { icon: string; label: string; priority: number }> = {
+    'BUBBLE_BREATHING': { icon: '🫧', label: 'Bubble Breathing', priority: 1 },
+    'SKIP_CARD': { icon: '⏭️', label: 'Skip This One', priority: 2 },
+    'RETRY_CARD': { icon: '🔄', label: 'Try Again', priority: 3 },
+    'START_BREAK': { icon: '☕', label: 'Take a Break', priority: 4 },
+    'CALL_GROWNUP': { icon: '👨‍👩‍👧', label: 'Call a Grownup', priority: 5 }
+};
+
 // Board positions
 const TOTAL_SPACES = 35;
 const BOARD_POSITIONS = [
@@ -396,7 +405,7 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean) {
         isCorrect,
         safetyLevel: uiPackage.admin_overlay.safety_level,
         signals: uiPackage.admin_overlay.signals_detected || [],
-        interventions: uiPackage.admin_overlay.interventions_list || [],
+        interventions: uiPackage.interventions || [],
         state: {
             engagement: uiPackage.admin_overlay.state_snapshot?.engagementLevel || 0,
             dysregulation: uiPackage.admin_overlay.state_snapshot?.dysregulationLevel || 0,
@@ -404,7 +413,6 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean) {
             consecutiveErrors: uiPackage.admin_overlay.state_snapshot?.consecutiveErrors || 0,
             timeInSession: uiPackage.admin_overlay.state_snapshot?.timeInSession || 0,
         },
-        choices: uiPackage.choices.map(c => ({ icon: c.icon, label: c.label, action: c.action })),
         feedback: uiPackage.speech.text,
         attemptNumber: uiPackage.attemptNumber || 1,
         responseHistory: uiPackage.responseHistory || [],
@@ -434,13 +442,13 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean) {
         return; // Don't show choices for correct answers
     }
 
-    // Show choices if there are any and safety level indicates need (for incorrect answers)
-    if (uiPackage.choices.length > 0 && currentSafetyLevel >= 1) {
+    // Show choices if there are any interventions and safety level indicates need (for incorrect answers)
+    if (uiPackage.interventions.length > 0 && currentSafetyLevel >= 1) {
         // Pause listening when showing choices - let feedback continue speaking, just don't listen
         if (voiceService.isEnabled()) {
             voiceService.pauseListening();
         }
-        renderChoices(uiPackage.choices, uiPackage.choice_message);
+        renderInterventions(uiPackage.interventions, uiPackage.choice_message);
     }
 }
 
@@ -491,14 +499,24 @@ function showCelebration() {
     }, 3000);
 }
 
-function renderChoices(choices: UIPackage['choices'], message: string) {
-    const sortedChoices = [...choices].sort((a, b) => a.priority - b.priority);
+function renderInterventions(interventions: string[], message: string) {
+    // Map intervention strings to display objects and sort by priority
+    const displayChoices = interventions
+        .map(intervention => {
+            const display = INTERVENTION_DISPLAY[intervention] || {
+                icon: '❓',
+                label: intervention,
+                priority: 99
+            };
+            return { ...display, action: intervention };
+        })
+        .sort((a, b) => a.priority - b.priority);
 
     choicesContainer.innerHTML = `
         <div class="choices-message">${escapeHtml(message)}</div>
         <div class="choices-buttons">
-            ${sortedChoices.map(choice => `
-                <button class="choice-btn" data-action="${choice.action}" data-id="${choice.id}">
+            ${displayChoices.map(choice => `
+                <button class="choice-btn" data-action="${choice.action}">
                     <span class="choice-icon">${choice.icon}</span>
                     <span class="choice-label">${escapeHtml(choice.label)}</span>
                 </button>
@@ -508,7 +526,7 @@ function renderChoices(choices: UIPackage['choices'], message: string) {
 
     // Add click handlers
     choicesContainer.querySelectorAll('.choice-btn').forEach(btn => {
-        btn.addEventListener('click', handleChoiceClick);
+        btn.addEventListener('click', handleInterventionClick);
     });
 
     // Show overlay and choices
@@ -516,34 +534,33 @@ function renderChoices(choices: UIPackage['choices'], message: string) {
     choicesContainer.classList.remove('hidden');
 }
 
-function handleChoiceClick(e: Event) {
+function handleInterventionClick(e: Event) {
     const target = e.currentTarget as HTMLElement;
     const action = target.dataset.action || '';
-    const choiceId = target.dataset.id || '';
 
-    // Log choice selection with styled console output
-    safetyGateLogger.logChoiceSelected(action, choiceId);
+    // Log intervention selection with styled console output
+    safetyGateLogger.logInterventionSelected(action);
 
-    // Notify backend about choice selection (for inactivity timer management)
+    // Notify backend about intervention selection (for inactivity timer management)
     if (voiceService.isEnabled()) {
         voiceService.notifyChoiceSelected(action);
     }
 
-    // Hide choices
+    // Hide interventions
     hideChoices();
 
     switch (action) {
-        case 'START_REGULATION_ACTIVITY':
+        case 'BUBBLE_BREATHING':
             safetyGateLogger.logBubbleBreathingStart();
             showBubbleBreathing();
             break;
 
-        case 'SWITCH_ACTIVITY':
+        case 'SKIP_CARD':
             closeCard();
             setTimeout(() => showRandomCard(), 500);
             break;
 
-        case 'RETRY_TASK':
+        case 'RETRY_CARD':
             // Start listening again
             if (voiceService.isReady()) {
                 voiceService.startListening();

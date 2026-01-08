@@ -69,7 +69,6 @@ export interface SafetyGateLogData {
     consecutiveErrors: number;
     timeInSession: number;
   };
-  choices: Array<{ icon: string; label: string; action: string }>;
   feedback: string;
   attemptNumber: number;
   responseHistory: string[];
@@ -192,10 +191,8 @@ export const safetyGateLogger = {
       const speakIcon = data.shouldSpeak ? '🔊' : '🔇';
       console.log(`%c💬 Feedback:%c "${data.feedback}" ${speakIcon}`, STYLES.bold, STYLES.cyan);
 
-      if (data.safetyLevel >= 1 && data.choices.length > 0) {
-        const choiceStr = data.choices.map(c => `${c.icon} ${c.label}`).join(' │ ');
-        console.log(`%c🎭 Choices Shown:%c ${choiceStr}`, STYLES.bold, '');
-        console.log(`%c🎤 Listening:%c PAUSED%c (waiting for choice click)`, STYLES.bold, STYLES.red, STYLES.dim);
+      if (data.safetyLevel >= 1 && data.interventions.length > 0) {
+        console.log(`%c🎤 Listening:%c PAUSED%c (waiting for intervention selection)`, STYLES.bold, STYLES.red, STYLES.dim);
       } else {
         console.log(`%c🎬 UI Action:%c Waiting for retry`, STYLES.bold, STYLES.yellow);
         console.log(`%c🎤 Listening:%c ACTIVE`, STYLES.bold, STYLES.correct);
@@ -248,14 +245,13 @@ export const safetyGateLogger = {
   },
 
   /**
-   * Log choice selection
+   * Log intervention selection
    */
-  logChoiceSelected(action: string, choiceId: string): void {
+  logInterventionSelected(action: string): void {
     console.log(
-      `%c🎯 [Choice Selected]%c ${action}%c (${choiceId})`,
+      `%c🎯 [Intervention Selected]%c ${action}`,
       STYLES.blue,
-      STYLES.bold,
-      STYLES.dim
+      STYLES.bold
     );
   },
 

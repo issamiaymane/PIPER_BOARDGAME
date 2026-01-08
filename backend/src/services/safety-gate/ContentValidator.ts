@@ -1,4 +1,4 @@
-import { SafetyGateLevel, ValidationResult } from './types.js';
+import { Level, ValidationResult } from './types.js';
 
 export class ContentValidator {
 
@@ -6,7 +6,7 @@ export class ContentValidator {
   // CONTENT VALIDATION
   // ============================================
 
-  validate(content: string, level: SafetyGateLevel): ValidationResult {
+  validate(content: string, level: Level): ValidationResult {
     const forbiddenWords = ['wrong', 'incorrect', 'bad', 'no', 'failure'];
 
     const hasForbidden = forbiddenWords.some(word =>
