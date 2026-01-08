@@ -1737,6 +1737,34 @@ button:focus:not(:focus-visible),
     }
 }
 
+/* Listen Indicator in Card Modal */
+.listen-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: linear-gradient(180deg, #9C27B0 0%, #7B1FA2 100%);
+    border-radius: 15px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.listen-indicator.hidden {
+    display: none;
+}
+
+.listen-pulse {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: pulse-ring 1s ease-in-out infinite;
+}
+
 /* Responsive Voice Toggle */
 @media (max-width: 768px) {
     .voice-toggle-container {
@@ -1757,7 +1785,8 @@ button:focus:not(:focus-visible),
         display: none;
     }
 
-    .voice-indicator {
+    .voice-indicator,
+    .listen-indicator {
         font-size: 12px;
         padding: 4px 10px;
     }

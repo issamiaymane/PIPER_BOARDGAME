@@ -195,7 +195,7 @@ class SafetyGateTestRunner {
     }
 
     if (event.type === 'CHILD_RESPONSE' && event.response === event.previousResponse) {
-      signals.push(Signal.REPETITIVE_WRONG_RESPONSE);
+      signals.push(Signal.REPETITIVE_RESPONSE);
     }
 
     if (state.engagementLevel <= 3) {
@@ -204,17 +204,19 @@ class SafetyGateTestRunner {
 
     const responseText = (event.response || event.signal || '').toLowerCase();
     if (responseText.includes('break') || responseText.includes('stop') || responseText.includes('tired')) {
-      signals.push(Signal.BREAK_REQUEST);
+      signals.push(Signal.WANTS_BREAK);
     }
     if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
-      signals.push(Signal.QUIT_REQUEST);
+      signals.push(Signal.WANTS_QUIT);
     }
-    if (responseText.includes('scream') || responseText.includes('ahhh')) {
-      signals.push(Signal.TEXT_SCREAMING);
-    }
-    if (responseText.includes('no no no')) {
-      signals.push(Signal.NO_NO_NO);
-      signals.push(Signal.TEXT_SCREAMING);  // Also distress indicator
+
+    // DISTRESS: screaming, "no no no", crying patterns
+    const hasDistress =
+      responseText.includes('scream') ||
+      responseText.includes('ahhh') ||
+      responseText.includes('no no no');
+    if (hasDistress) {
+      signals.push(Signal.DISTRESS);
     }
 
     if (state.fatigueLevel >= 7) {
@@ -310,7 +312,7 @@ class SafetyGateTestRunner {
       'Child says "I need a break" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'I need a break', false)],
       Level.YELLOW,
-      [Signal.BREAK_REQUEST]
+      [Signal.WANTS_BREAK]
     );
   }
 
@@ -321,7 +323,7 @@ class SafetyGateTestRunner {
       'Child says "I\'m done" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', "I'm done with this", false)],
       Level.YELLOW,
-      [Signal.QUIT_REQUEST]
+      [Signal.WANTS_QUIT]
     );
   }
 
@@ -332,7 +334,7 @@ class SafetyGateTestRunner {
       'Child says "tired" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', "I'm tired", false)],
       Level.YELLOW,
-      [Signal.BREAK_REQUEST]
+      [Signal.WANTS_BREAK]
     );
   }
 
@@ -343,7 +345,7 @@ class SafetyGateTestRunner {
       'Child says "stop" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'stop', false)],
       Level.YELLOW,
-      [Signal.BREAK_REQUEST]
+      [Signal.WANTS_BREAK]
     );
   }
 
@@ -354,7 +356,7 @@ class SafetyGateTestRunner {
       'Child says "quit" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'I want to quit', false)],
       Level.YELLOW,
-      [Signal.QUIT_REQUEST]
+      [Signal.WANTS_QUIT]
     );
   }
 
@@ -365,7 +367,7 @@ class SafetyGateTestRunner {
       'Child says "no more" - should trigger YELLOW',
       [this.createEvent('CHILD_RESPONSE', 'no more please', false)],
       Level.YELLOW,
-      [Signal.QUIT_REQUEST]
+      [Signal.WANTS_QUIT]
     );
   }
 
@@ -402,7 +404,7 @@ class SafetyGateTestRunner {
         this.createEvent('CHILD_RESPONSE', 'hot', false, 'hot', 'hot'), // 3rd time with both previous responses
       ],
       Level.ORANGE,
-      [Signal.REPETITIVE_WRONG_RESPONSE, Signal.CONSECUTIVE_ERRORS]
+      [Signal.REPETITIVE_RESPONSE, Signal.CONSECUTIVE_ERRORS]
     );
   }
 
@@ -413,7 +415,7 @@ class SafetyGateTestRunner {
       'Child screams "ahhh" - should trigger ORANGE',
       [this.createEvent('CHILD_RESPONSE', 'ahhhhh', false)],
       Level.ORANGE,
-      [Signal.TEXT_SCREAMING]
+      [Signal.DISTRESS]
     );
   }
 
@@ -424,7 +426,7 @@ class SafetyGateTestRunner {
       'Child says "no no no" - should trigger ORANGE',
       [this.createEvent('CHILD_RESPONSE', 'no no no', false)],
       Level.ORANGE,
-      [Signal.NO_NO_NO]
+      [Signal.DISTRESS]
     );
   }
 

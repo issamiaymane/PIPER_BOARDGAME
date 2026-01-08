@@ -70,7 +70,7 @@ export class SignalDetector {
   private detectEventBasedSignals(event: Event, signals: Signal[]): void {
     // Check for repetitive wrong response
     if (event.type === 'CHILD_RESPONSE' && event.response === event.previousResponse) {
-      signals.push(Signal.REPETITIVE_WRONG_RESPONSE);
+      signals.push(Signal.REPETITIVE_RESPONSE);
     }
   }
 
@@ -91,18 +91,16 @@ export class SignalDetector {
 
       // Map classification to signals
       if (classification.break_request) {
-        signals.push(Signal.BREAK_REQUEST);
+        signals.push(Signal.WANTS_BREAK);
       }
       if (classification.quit_request) {
-        signals.push(Signal.QUIT_REQUEST);
+        signals.push(Signal.WANTS_QUIT);
       }
       if (classification.frustration) {
         signals.push(Signal.FRUSTRATION);
       }
       if (classification.distress) {
-        // Distress covers: screaming, crying, "no no no" patterns
-        signals.push(Signal.TEXT_SCREAMING);
-        signals.push(Signal.NO_NO_NO);
+        signals.push(Signal.DISTRESS);
       }
     } catch (error) {
       // Fallback to keyword matching if LLM fails
@@ -155,34 +153,30 @@ Only mark true if you're reasonably confident the signal is present.`
     const text = responseText.toLowerCase();
     const normalizedText = text.replace(/[,!?.]/g, ' ').replace(/\s+/g, ' ');
 
-    // BREAK_REQUEST
+    // WANTS_BREAK
     if (text.includes('break') || text.includes('stop') || text.includes('tired')) {
-      signals.push(Signal.BREAK_REQUEST);
+      signals.push(Signal.WANTS_BREAK);
     }
 
-    // QUIT_REQUEST
+    // WANTS_QUIT
     if (text.includes('done') || text.includes('quit') || text.includes('no more')) {
-      signals.push(Signal.QUIT_REQUEST);
+      signals.push(Signal.WANTS_QUIT);
     }
 
-    // NO_NO_NO
-    if (normalizedText.includes('no no no')) {
-      signals.push(Signal.NO_NO_NO);
-    }
-
-    // TEXT_SCREAMING
-    const hasTextScreaming =
+    // DISTRESS: "no no no", screaming, crying patterns
+    const hasDistress =
+      normalizedText.includes('no no no') ||
       text.includes('scream') ||
       text.includes('yell') ||
       /a{2,}h{1,}/i.test(text) ||
       text.includes('[crying]');
 
-    if (hasTextScreaming) {
-      signals.push(Signal.TEXT_SCREAMING);
+    if (hasDistress) {
+      signals.push(Signal.DISTRESS);
     }
 
-    // FRUSTRATION
-    if ((text.includes('ugh') || text.includes('argh')) && !hasTextScreaming) {
+    // FRUSTRATION (only if not distress)
+    if ((text.includes('ugh') || text.includes('argh')) && !hasDistress) {
       signals.push(Signal.FRUSTRATION);
     }
   }
@@ -192,10 +186,14 @@ Only mark true if you're reasonably confident the signal is present.`
   // ============================================
 
   private detectAudioSignals(event: Event, signals: Signal[]): void {
-    // AUDIO_SCREAMING: from amplitude detection
-    const hasAudioScreaming = event.signal?.includes('screaming_detected_audio') || false;
-    if (hasAudioScreaming) {
-      signals.push(Signal.AUDIO_SCREAMING);
+    // DISTRESS from audio: high amplitude detection from frontend
+    // Frontend sends 'screaming_detected_audio' or 'AUDIO_SCREAMING'
+    const hasAudioDistress =
+      event.signal?.includes('screaming_detected_audio') ||
+      event.signal?.includes('AUDIO_SCREAMING') ||
+      false;
+    if (hasAudioDistress) {
+      signals.push(Signal.DISTRESS);
     }
   }
 }

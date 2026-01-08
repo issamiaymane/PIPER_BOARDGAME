@@ -31,8 +31,8 @@ export class LevelAssessor {
   private isRedLevel(state: State, signals: Signal[]): boolean {
     return (
       state.dysregulationLevel >= 9 ||
-      // Multiple high-intensity signals together
-      (signals.includes(Signal.AUDIO_SCREAMING) && signals.includes(Signal.NO_NO_NO))
+      // Distress combined with elevated dysregulation = crisis
+      (signals.includes(Signal.DISTRESS) && state.dysregulationLevel >= 7)
     );
   }
 
@@ -43,10 +43,8 @@ export class LevelAssessor {
 
   private isOrangeLevel(state: State, signals: Signal[]): boolean {
     return (
-      signals.includes(Signal.TEXT_SCREAMING) ||
-      signals.includes(Signal.AUDIO_SCREAMING) ||
-      signals.includes(Signal.NO_NO_NO) ||
-      signals.includes(Signal.REPETITIVE_WRONG_RESPONSE) ||
+      signals.includes(Signal.DISTRESS) ||
+      signals.includes(Signal.REPETITIVE_RESPONSE) ||
       state.dysregulationLevel >= 7 ||
       state.consecutiveErrors >= 5 ||
       state.fatigueLevel >= 8
@@ -60,8 +58,8 @@ export class LevelAssessor {
 
   private isYellowLevel(state: State, signals: Signal[]): boolean {
     return (
-      signals.includes(Signal.BREAK_REQUEST) ||
-      signals.includes(Signal.QUIT_REQUEST) ||
+      signals.includes(Signal.WANTS_BREAK) ||
+      signals.includes(Signal.WANTS_QUIT) ||
       signals.includes(Signal.FRUSTRATION) ||
       signals.includes(Signal.CONSECUTIVE_ERRORS) ||
       signals.includes(Signal.ENGAGEMENT_DROP) ||

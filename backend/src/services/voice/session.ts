@@ -16,9 +16,9 @@ const SCREAMING_AMPLITUDE_THRESHOLD = 0.20;
 const SCREAMING_PEAK_THRESHOLD = 0.70;
 // Number of consecutive high-amplitude chunks to confirm screaming
 const SCREAMING_CONFIRMATION_CHUNKS = 3;
-// Time to wait for transcription before triggering screaming-only response (ms)
-// This allows "no no no" + screaming to stack if child says words while screaming
-const SCREAMING_TRANSCRIPTION_WAIT_MS = 800;
+// Time to wait for transcription AFTER speech stops before triggering screaming-only response (ms)
+// This ensures we give OpenAI enough time to transcribe before assuming pure screaming
+const SCREAMING_POST_SPEECH_WAIT_MS = 1500;
 
 export interface VoiceSession {
   id: string;
@@ -33,8 +33,10 @@ export interface VoiceSession {
   // Audio amplitude tracking for screaming detection
   recentAmplitudes: { amplitude: number; peak: number; timestamp: number }[];
   screamingDetected: boolean;
-  // Timer for delayed screaming response (to allow transcription to arrive for stacking)
+  // Timer for delayed screaming response (starts AFTER speech stops)
   screamingTimeoutId?: ReturnType<typeof setTimeout>;
+  // Track if speech has stopped (to know when to start timeout)
+  speechStopped: boolean;
 }
 
 export interface ClientMessage {
@@ -107,7 +109,8 @@ export class VoiceSessionManager {
       createdAt: new Date(),
       safetyGateSession: new SafetyGateSession(),
       recentAmplitudes: [],
-      screamingDetected: false
+      screamingDetected: false,
+      speechStopped: false
     };
 
     // Set up inactivity callback
@@ -165,10 +168,23 @@ export class VoiceSessionManager {
 
         case 'input_audio_buffer.speech_started':
           logger.debug(`Session ${sessionId}: User started speaking`);
+          session.speechStopped = false;
           break;
 
         case 'input_audio_buffer.speech_stopped':
           logger.debug(`Session ${sessionId}: User stopped speaking`);
+          session.speechStopped = true;
+          // If screaming was detected during speech, start timeout for transcription
+          if (session.screamingDetected && !session.screamingTimeoutId) {
+            console.log(`[VoiceSession] 🎤 Speech stopped with screaming detected - waiting ${SCREAMING_POST_SPEECH_WAIT_MS}ms for transcription`);
+            session.screamingTimeoutId = setTimeout(() => {
+              // Only trigger if screaming flag is still set (not already processed by transcription)
+              if (session.screamingDetected) {
+                console.log(`[VoiceSession] ⏰ Timeout after speech stopped - no transcription, triggering screaming-only response`);
+                this.triggerScreamingResponse(session);
+              }
+            }, SCREAMING_POST_SPEECH_WAIT_MS);
+          }
           break;
 
         case 'conversation.item.input_audio_transcription.completed':
@@ -319,15 +335,12 @@ export class VoiceSessionManager {
     transcription: string
   ): Promise<void> {
     try {
-      // Cancel screaming timeout if it's pending - transcription arrived first
+      // Cancel screaming timeout if it's pending - transcription arrived, we can stack!
       if (session.screamingTimeoutId) {
         clearTimeout(session.screamingTimeoutId);
         session.screamingTimeoutId = undefined;
-        // Only log "stacking" if screaming was actually detected
         if (session.screamingDetected) {
-          console.log(`[VoiceSession] ✅ Transcription arrived while screaming detected - STACKING ENABLED!`);
-        } else {
-          console.log(`[VoiceSession] Transcription arrived - cancelled pending screaming timeout`);
+          console.log(`[VoiceSession] ✅ Transcription "${transcription}" arrived with screaming - STACKING!`);
         }
       }
 
@@ -494,18 +507,8 @@ export class VoiceSessionManager {
         session.screamingDetected = true;
         console.log(`[VoiceSession] 🚨 SCREAMING DETECTED! (amplitude: ${amplitude.toFixed(3)}, peak: ${peak.toFixed(3)})`);
         logger.info(`Session ${session.id}: SCREAMING DETECTED (amplitude: ${amplitude.toFixed(3)}, peak: ${peak.toFixed(3)})`);
-
-        // Start timer - wait briefly for transcription to arrive for stacking
-        // If transcription arrives within the window, it will be processed with screaming flag
-        // If no transcription arrives, trigger screaming-only response after timeout
-        console.log(`[VoiceSession] ⏳ Waiting ${SCREAMING_TRANSCRIPTION_WAIT_MS}ms for transcription (allows stacking with "no no no" etc.)`);
-        session.screamingTimeoutId = setTimeout(() => {
-          // Only trigger if screaming flag is still set (not already processed by transcription)
-          if (session.screamingDetected) {
-            console.log(`[VoiceSession] ⏰ Timeout - no transcription, triggering screaming-only response`);
-            this.triggerScreamingResponse(session);
-          }
-        }, SCREAMING_TRANSCRIPTION_WAIT_MS);
+        // Note: Timeout is NOT started here - it will start when speech_stopped event arrives
+        // This ensures we wait for transcription to arrive for proper stacking
       }
     }
   }
@@ -570,6 +573,7 @@ export class VoiceSessionManager {
     }
     session.recentAmplitudes = [];
     session.screamingDetected = false;
+    session.speechStopped = false;
   }
 }
 

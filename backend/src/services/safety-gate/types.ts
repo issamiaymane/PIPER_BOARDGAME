@@ -11,8 +11,8 @@ export interface State {
   engagementLevel: number; // 0-10
   dysregulationLevel: number; // 0-10
   fatigueLevel: number; // 0-10
-  errorFrequency: number; // errors per minute
   consecutiveErrors: number;
+  errorFrequency: number; // errors per minute
   timeInSession: number; // seconds
   timeSinceBreak: number; // seconds
   lastActivityTimestamp: Date;
@@ -52,21 +52,19 @@ export enum Signal {
   // ═══════════════════════════════════════════
   // 2. EVENT-BASED (derived from Event)
   // ═══════════════════════════════════════════
-  REPETITIVE_WRONG_RESPONSE = 'REPETITIVE_WRONG_RESPONSE', // response === previousResponse
+  REPETITIVE_RESPONSE = 'REPETITIVE_RESPONSE',     // response === previousResponse
 
   // ═══════════════════════════════════════════
-  // 3. TEXT-BASED (detected from response text)
+  // 3. VERBAL INTENT (detected from response text)
   // ═══════════════════════════════════════════
-  BREAK_REQUEST = 'BREAK_REQUEST',     // "break", "stop", "tired"
-  QUIT_REQUEST = 'QUIT_REQUEST',       // "done", "quit", "no more"
-  NO_NO_NO = 'NO_NO_NO',               // "no no no" pattern
-  TEXT_SCREAMING = 'TEXT_SCREAMING',   // "scream", "ahhh", "[crying]"
-  FRUSTRATION = 'FRUSTRATION',         // "ugh", "argh"
+  WANTS_BREAK = 'WANTS_BREAK',         // "break", "stop", "tired"
+  WANTS_QUIT = 'WANTS_QUIT',           // "done", "quit", "no more"
 
   // ═══════════════════════════════════════════
-  // 4. AUDIO-BASED (detected from amplitude)
+  // 4. EMOTIONAL STATE (text or audio)
   // ═══════════════════════════════════════════
-  AUDIO_SCREAMING = 'AUDIO_SCREAMING'  // high amplitude detection
+  FRUSTRATION = 'FRUSTRATION',         // "ugh", "argh" - manageable
+  DISTRESS = 'DISTRESS'                // screaming, crying, "no no no", high amplitude
 }
 
 export interface SessionConfig {

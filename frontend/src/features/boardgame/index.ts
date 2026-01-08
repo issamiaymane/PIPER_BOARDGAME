@@ -75,6 +75,7 @@ let voiceToggle: HTMLElement;
 let voiceToggleBtn: HTMLElement;
 let voiceStatus: HTMLElement;
 let voiceIndicator: HTMLElement;
+let listenIndicator: HTMLElement;
 
 // Safety-gate UI elements
 let safetyOverlay: HTMLElement;
@@ -311,30 +312,31 @@ function updateVoiceUI(voiceState: VoiceState) {
             voiceToggleBtn.classList.add('active');
             voiceStatus.textContent = 'Voice mode active';
             voiceIndicator.classList.add('hidden');
+            listenIndicator.classList.add('hidden');
             break;
         case 'connecting':
             voiceToggleBtn.classList.add('connecting');
             voiceStatus.textContent = 'Connecting...';
             voiceIndicator.classList.add('hidden');
+            listenIndicator.classList.add('hidden');
             break;
         case 'speaking':
             voiceToggleBtn.classList.add('speaking');
             voiceStatus.textContent = 'AI speaking';
             voiceIndicator.classList.remove('hidden');
-            voiceIndicator.classList.remove('listening');
-            const indicatorText = voiceIndicator.querySelector('.voice-indicator-text');
-            if (indicatorText) indicatorText.textContent = 'Speaking...';
+            listenIndicator.classList.add('hidden');
             break;
         case 'listening':
             voiceToggleBtn.classList.add('listening');
             voiceStatus.textContent = 'Listening...';
-            voiceIndicator.classList.remove('hidden');
-            voiceIndicator.classList.add('listening');
+            voiceIndicator.classList.add('hidden');
+            listenIndicator.classList.remove('hidden');
             break;
         case 'idle':
         default:
             voiceStatus.textContent = '';
             voiceIndicator.classList.add('hidden');
+            listenIndicator.classList.add('hidden');
             break;
     }
 }
@@ -830,6 +832,7 @@ function init() {
     voiceToggleBtn = document.getElementById('voiceToggleBtn')!;
     voiceStatus = document.getElementById('voiceStatus')!;
     voiceIndicator = document.getElementById('voiceIndicator')!;
+    listenIndicator = document.getElementById('listenIndicator')!;
 
     playButton.addEventListener('click', () => {
         console.log('[Game] PLAY clicked');
