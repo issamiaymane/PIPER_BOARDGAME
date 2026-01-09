@@ -2242,9 +2242,18 @@ body:has(.break-message:not(.hidden)) .grownup-help-btn {
     font-family: var(--font-body);
     font-size: 20px;
     color: #558B2F;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-weight: 600;
     line-height: 1.4;
+}
+
+.break-timer {
+    font-family: var(--font-display);
+    font-size: 48px;
+    color: #2E7D32;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8);
 }
 
 .end-break-btn {
@@ -2265,63 +2274,131 @@ body:has(.break-message:not(.hidden)) .grownup-help-btn {
     box-shadow: 0 8px 0 #2E7D32, 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* Grownup Help Modal */
+/* Grownup Help Modal - Full Screen */
 .grownup-help-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
-    z-index: calc(var(--z-card) + 25);
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 40%, #FFCC80 100%);
+    z-index: calc(var(--z-controls) + 100);
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+/* Decorative floating shapes for grownup help */
+.grownup-help-modal::before,
+.grownup-help-modal::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: floatBubble 6s ease-in-out infinite;
+}
+
+.grownup-help-modal::before {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%);
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.grownup-help-modal::after {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #FFCC80 0%, #FFB74D 100%);
+    bottom: 15%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+.grownup-help-modal.hidden {
+    display: none;
+}
+
+/* Hide game UI elements when grownup help modal is visible */
+body:has(.grownup-help-modal:not(.hidden)) .spinner-container,
+body:has(.grownup-help-modal:not(.hidden)) .game-controls,
+body:has(.grownup-help-modal:not(.hidden)) .left-panel,
+body:has(.grownup-help-modal:not(.hidden)) .voice-toggle-container,
+body:has(.grownup-help-modal:not(.hidden)) .grownup-help-btn {
+    display: none !important;
 }
 
 .help-content {
-    background: white;
-    border-radius: 24px;
-    padding: 40px 60px;
     text-align: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFF8E1 100%);
+    padding: 50px 70px;
+    border-radius: 30px;
+    border: 5px solid #FFB74D;
+    box-shadow:
+        0 8px 0 #F57C00,
+        0 15px 40px rgba(255, 152, 0, 0.3),
+        inset 0 -5px 20px rgba(255, 152, 0, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
-.help-icon {
-    font-size: 60px;
-    margin-bottom: 16px;
+/* Sparkle decorations */
+.help-content::before {
+    content: '✨';
+    position: absolute;
+    font-size: 40px;
+    top: -20px;
+    right: -20px;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+    50% { opacity: 0.7; transform: scale(1.2) rotate(10deg); }
 }
 
 .help-content h2 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 42px;
     color: #E65100;
     margin-bottom: 12px;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
 }
 
 .help-content p {
     font-family: var(--font-body);
-    font-size: 18px;
-    color: var(--text-dark);
-    margin-bottom: 24px;
+    font-size: 20px;
+    color: #EF6C00;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.help-content .help-subtext {
+    font-size: 16px;
+    color: #FF8F00;
+    margin-bottom: 30px;
 }
 
 .close-help-btn {
     font-family: var(--font-display);
-    font-size: 16px;
-    padding: 12px 30px;
-    background: linear-gradient(180deg, var(--gray-btn) 0%, var(--gray-btn-dark) 100%);
+    font-size: 20px;
+    padding: 16px 40px;
+    background: linear-gradient(180deg, #FF9800 0%, #F57C00 100%);
     color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
-    box-shadow: 0 4px 0 #37474F;
+    box-shadow: 0 5px 0 #E65100, 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease;
 }
 
 .close-help-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 0 #E65100, 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 /* Responsive Safety-Gate UI */

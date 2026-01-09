@@ -656,6 +656,9 @@ function startBreak() {
     // Close the card and show a break screen
     closeCard();
 
+    const BREAK_DURATION = 45; // seconds
+    let remainingTime = BREAK_DURATION;
+
     // Show a simple break message
     const breakMessage = document.createElement('div');
     breakMessage.className = 'break-message';
@@ -664,24 +667,41 @@ function startBreak() {
             <div class="break-icon">🎵</div>
             <h2>Break Time!</h2>
             <p>Take a moment to relax.</p>
+            <div class="break-timer">${remainingTime}s</div>
             <button class="end-break-btn">I'm ready to continue</button>
         </div>
     `;
     document.body.appendChild(breakMessage);
 
+    const timerDisplay = breakMessage.querySelector('.break-timer') as HTMLElement;
     const endBreakBtn = breakMessage.querySelector('.end-break-btn');
+
+    // Countdown timer
+    const timerInterval = setInterval(() => {
+        remainingTime--;
+        if (timerDisplay) {
+            timerDisplay.textContent = `${remainingTime}s`;
+        }
+        if (remainingTime <= 0) {
+            clearInterval(timerInterval);
+            endBreak();
+        }
+    }, 1000);
+
+    function endBreak() {
+        clearInterval(timerInterval);
+        breakMessage.remove();
+
+        // Notify backend that break ended - resume session timer
+        if (voiceService.isEnabled()) {
+            voiceService.notifyActivityEnded('BREAK');
+        }
+
+        // Return to spinner (gameControls already visible from closeCard())
+    }
+
     if (endBreakBtn) {
-        endBreakBtn.addEventListener('click', () => {
-            breakMessage.remove();
-
-            // Notify backend that break ended - resume session timer
-            if (voiceService.isEnabled()) {
-                voiceService.notifyActivityEnded('BREAK');
-            }
-
-            // Show next card after break
-            setTimeout(() => showRandomCard(), 500);
-        });
+        endBreakBtn.addEventListener('click', endBreak);
     }
 }
 
@@ -692,15 +712,18 @@ function handleGrownupHelp() {
     // Hide choices modal if open
     hideChoices();
 
-    // Show a grownup help modal
+    // Close the card and show full-screen grownup help
+    closeCard();
+
+    // Show full-screen grownup help modal
     const helpModal = document.createElement('div');
     helpModal.className = 'grownup-help-modal';
     helpModal.innerHTML = `
         <div class="help-content">
-            <div class="help-icon">👋</div>
             <h2>Help is on the way!</h2>
             <p>A grownup has been notified.</p>
-            <button class="close-help-btn">Close</button>
+            <p class="help-subtext">Take a moment to relax while you wait.</p>
+            <button class="close-help-btn">I'm ready to continue</button>
         </div>
     `;
     document.body.appendChild(helpModal);
@@ -715,10 +738,7 @@ function handleGrownupHelp() {
                 voiceService.notifyActivityEnded('GROWNUP_HELP');
             }
 
-            // Resume listening if voice is ready
-            if (voiceService.isReady()) {
-                voiceService.startListening();
-            }
+            // Return to spinner (gameControls already visible from closeCard())
         });
     }
 }
