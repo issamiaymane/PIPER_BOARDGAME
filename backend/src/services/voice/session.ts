@@ -335,10 +335,7 @@ export class VoiceSessionManager {
             session.safetyGateSession.startInactivityTimer();
           }
 
-          const prompt = message.category
-            ? `Here's a ${message.category} question: ${message.text}`
-            : message.text;
-          session.realtimeService.speakText(prompt);
+          session.realtimeService.speakText(message.text);
         }
         break;
 

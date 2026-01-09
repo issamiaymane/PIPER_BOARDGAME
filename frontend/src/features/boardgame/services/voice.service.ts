@@ -186,7 +186,7 @@ export class VoiceService {
     this.isListeningEnabled = true;
 
     // Extract text from card
-    const text = this.extractTextFromCard(card, category);
+    const text = this.extractTextFromCard(card);
 
     // Extract card context for safety-gate
     const cardContext = this.extractCardContext(card, category);
@@ -495,11 +495,8 @@ export class VoiceService {
   /**
    * Extract readable text from various card types
    */
-  private extractTextFromCard(card: CardData, category: string): string {
+  private extractTextFromCard(card: CardData): string {
     const parts: string[] = [];
-
-    // Add category context
-    parts.push(`Here's a ${category} question.`);
 
     // Add title if present
     if (card.title) {

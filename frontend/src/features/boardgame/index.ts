@@ -227,11 +227,61 @@ function updatePlayerPosition() {
                                 `${state.currentPosition}/${TOTAL_SPACES}`;
 }
 
+// Spin sound effect using Web Audio API (tick-tick effect)
+function playSpinSound(duration: number = 3000) {
+    const audioContext = new AudioContext();
+    const startTime = audioContext.currentTime;
+    const endTime = startTime + duration / 1000;
+
+    let tickCount = 0;
+    const maxTicks = 30;
+
+    function scheduleTick(time: number, volume: number) {
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        oscillator.frequency.value = 800 + Math.random() * 200;
+        oscillator.type = 'square';
+
+        gainNode.gain.setValueAtTime(volume * 0.3, time);
+        gainNode.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
+
+        oscillator.start(time);
+        oscillator.stop(time + 0.05);
+    }
+
+    function scheduleAllTicks() {
+        let currentTime = startTime;
+        let interval = 0.05;
+
+        while (currentTime < endTime && tickCount < maxTicks) {
+            const progress = (currentTime - startTime) / (endTime - startTime);
+            const volume = 1 - progress * 0.7;
+
+            scheduleTick(currentTime, volume);
+
+            interval = 0.05 + progress * 0.25;
+            currentTime += interval;
+            tickCount++;
+        }
+    }
+
+    scheduleAllTicks();
+
+    setTimeout(() => audioContext.close(), duration + 100);
+}
+
 // Spinner
 function spin() {
     if (state.isSpinning || !state.isPlaying) return;
     state.isSpinning = true;
     spinBtn.classList.add('disabled');
+
+    // Play tick-tick spin sound
+    playSpinSound(3000);
 
     const result = Math.floor(Math.random() * 6) + 1;
     const rotation = 360 * 5 + (6 - result) * 60 + 30;

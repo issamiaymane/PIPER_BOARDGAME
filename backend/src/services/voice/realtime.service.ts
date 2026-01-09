@@ -188,7 +188,7 @@ export class RealtimeVoiceService {
         content: [
           {
             type: 'input_text',
-            text: `Please read this card question aloud to the student: "${text}"`
+            text: `Say exactly this to the student (nothing more, nothing less): "${text}"`
           }
         ]
       }
