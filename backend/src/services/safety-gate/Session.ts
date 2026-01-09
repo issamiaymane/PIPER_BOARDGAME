@@ -21,7 +21,6 @@ export class Session {
   private sessionStartTime: Date;
 
   // Per-card tracking (reset when card changes)
-  private cardRetryCount: number = 0;
   private cardStartTime: Date | null = null;
 
   // Task timeout (max_task_time)
@@ -51,7 +50,6 @@ export class Session {
     // Don't reset attemptCount or responseHistory - they persist across all cards
 
     // Reset per-card tracking
-    this.cardRetryCount = 0;
     this.cardStartTime = new Date();
 
     // Start task timeout timer (default 60s, will be checked against actual config on response)
@@ -103,12 +101,6 @@ export class Session {
       { category: this.currentCard.category, question: this.currentCard.question }
     );
 
-    // Increment per-card retry count on incorrect responses
-    if (!isCorrect) {
-      this.cardRetryCount++;
-      console.log(`[Session] ❌ Incorrect - Card retry count: ${this.cardRetryCount}`);
-    }
-
     // Build the child event for the orchestrator
     // Pass pre-detected signals from voice layer
     const signals = (options?.screaming || options?.crying || options?.prolongedSilence)
@@ -149,20 +141,11 @@ export class Session {
     const safetyLevel = uiPackage.admin_overlay.safety_level;
     const choicePrompt = 'What would you like to do?';
 
-    // Check if max_retries exceeded (based on current config from safety level)
-    const maxRetries = uiPackage.session_config.max_retries;
-    const maxRetriesExceeded = !isCorrect && this.cardRetryCount > maxRetries;
-
-    if (maxRetriesExceeded) {
-      console.log(`[Session] 🚫 MAX RETRIES EXCEEDED: ${this.cardRetryCount} > ${maxRetries}`);
-      feedbackText = "Let's try a different one!";
-    }
-
-    // Stop timers when answer is correct or max retries exceeded - card will close
-    if (isCorrect || maxRetriesExceeded) {
+    // Stop timers when answer is correct - card will close
+    if (isCorrect) {
       this.stopInactivityTimer();
       this.stopTaskTimeoutTimer();
-      console.log(`[Session] ⏱️ Timers STOPPED - ${isCorrect ? 'Correct answer' : 'Max retries exceeded'}, card closing`);
+      console.log(`[Session] ⏱️ Timers STOPPED - Correct answer, card closing`);
     } else if (safetyLevel >= Level.YELLOW) {
       // Check if feedback already ends with the choice prompt
       if (!feedbackText.toLowerCase().includes(choicePrompt.toLowerCase())) {
@@ -186,7 +169,6 @@ export class Session {
       shouldSpeak: true, // Always speak feedback
       interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
       isCorrect,
-      maxRetriesExceeded,
       taskTimeExceeded: false,
       // Additional data for frontend console logging
       childSaid: transcription,
@@ -344,7 +326,6 @@ export class Session {
       shouldSpeak: true,
       interventionRequired: false,
       isCorrect: true,
-      maxRetriesExceeded: false,
       taskTimeExceeded: false
     };
   }
@@ -571,7 +552,6 @@ export class Session {
       shouldSpeak: true,
       interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
       isCorrect: false,
-      maxRetriesExceeded: false,
       taskTimeExceeded: false,
       childSaid: '[INACTIVE]',
       targetAnswers: this.currentCard?.targetAnswers,
@@ -684,7 +664,6 @@ export class Session {
       shouldSpeak: true,
       interventionRequired: true,
       isCorrect: false,
-      maxRetriesExceeded: false,
       taskTimeExceeded: true,
       childSaid: '[TASK_TIMEOUT]',
       targetAnswers: this.currentCard?.targetAnswers,
@@ -699,13 +678,6 @@ export class Session {
       console.log(`[Session] ⚠️ Calling task timeout callback...`);
       this.onTaskTimeoutCallback(result);
     }
-  }
-
-  /**
-   * Get the current card retry count
-   */
-  getCardRetryCount(): number {
-    return this.cardRetryCount;
   }
 
   /**

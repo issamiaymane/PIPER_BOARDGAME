@@ -112,7 +112,6 @@ export class BackendOrchestrator {
     flowData.sessionConfig = {
       prompt_intensity: config.prompt_intensity,
       avatar_tone: config.avatar_tone,
-      max_retries: config.max_retries,
       max_task_time: config.max_task_time,
       inactivity_timeout: config.inactivity_timeout,
       show_visual_cues: config.show_visual_cues,

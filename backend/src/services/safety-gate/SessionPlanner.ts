@@ -11,7 +11,6 @@ export class SessionPlanner {
     const config: SessionConfig = {
       prompt_intensity: 2,
       avatar_tone: 'warm',
-      max_retries: 2,
       max_task_time: 60,
       inactivity_timeout: 30, // 30 seconds before "are you there?" prompt
       show_visual_cues: true,
@@ -35,9 +34,6 @@ export class SessionPlanner {
         config.avatar_tone = 'calm';
         // Why? Soothing tone only
 
-        config.max_retries = 0;
-        // Why? Don't continue task at all
-
         config.inactivity_timeout = 15;
         // Why? Check in quickly (15s) when child is in crisis
         // Faster check-ins show presence without being intrusive
@@ -55,11 +51,6 @@ export class SessionPlanner {
         config.avatar_tone = 'calm';
         // Why? Extra calm, not just warm
         // Need soothing approach
-
-        config.max_retries = 1;
-        // Why? Only one more try allowed
-        // Don't force repeated attempts when struggling
-        // After 1 more try, move on
 
         config.max_task_time = 30;
         // Why? Shorten from 60s to 30s

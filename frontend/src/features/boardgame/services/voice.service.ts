@@ -77,6 +77,8 @@ interface ServerMessage {
   message?: string;
   uiPackage?: UIPackage;
   isCorrect?: boolean;
+  // Flag for card flow control
+  taskTimeExceeded?: boolean;
 }
 
 interface CardContext {
@@ -104,7 +106,8 @@ export class VoiceService {
   onError?: (message: string) => void;
 
   // Callback for safety-gate response
-  onSafetyGateResponse?: (uiPackage: UIPackage, isCorrect: boolean) => void;
+  // shouldSkipCard is true when taskTimeExceeded
+  onSafetyGateResponse?: (uiPackage: UIPackage, isCorrect: boolean, shouldSkipCard: boolean) => void;
 
   constructor() {
     this.audioCapture = new AudioCapture();
@@ -451,7 +454,9 @@ export class VoiceService {
       case 'safety_gate_response':
         if (message.uiPackage) {
           // Detailed logging is done in handleSafetyGateResponse with styled output
-          this.onSafetyGateResponse?.(message.uiPackage, message.isCorrect ?? false);
+          // shouldSkipCard = true when taskTimeExceeded
+          const shouldSkipCard = message.taskTimeExceeded === true;
+          this.onSafetyGateResponse?.(message.uiPackage, message.isCorrect ?? false, shouldSkipCard);
         }
         break;
     }

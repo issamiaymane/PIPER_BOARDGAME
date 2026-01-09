@@ -52,7 +52,6 @@ export interface PipelineFlowData {
   sessionConfig: {
     prompt_intensity: number;
     avatar_tone: string;
-    max_retries: number;
     max_task_time: number;
     inactivity_timeout: number;
     show_visual_cues: boolean;
@@ -267,7 +266,6 @@ export const pipelineLogger = {
     const intensityLabels = ['Minimal', 'Low', 'Medium', 'High'];
     console.log(`   prompt_intensity:    ${cfg.prompt_intensity} (${intensityLabels[cfg.prompt_intensity] || 'Unknown'})`);
     console.log(`   avatar_tone:         ${cfg.avatar_tone}`);
-    console.log(`   max_retries:         ${cfg.max_retries}`);
     console.log(`   max_task_time:       ${cfg.max_task_time}s`);
     console.log(`   inactivity_timeout:  ${cfg.inactivity_timeout}s`);
     console.log(`   show_visual_cues:    ${cfg.show_visual_cues}`);

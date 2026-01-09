@@ -397,7 +397,7 @@ function initSafetyGateUI() {
     }
 }
 
-function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean) {
+function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shouldSkipCard: boolean = false) {
     currentSafetyLevel = uiPackage.admin_overlay.safety_level;
 
     // Log to Chrome console with same format as backend terminal
@@ -442,6 +442,21 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean) {
             closeCard();
         }, 3500);
         return; // Don't show choices for correct answers
+    }
+
+    // If shouldSkipCard (taskTimeExceeded), skip to next card
+    if (shouldSkipCard) {
+        console.log('[Boardgame] 🔄 Skipping card (taskTimeExceeded)');
+        // Stop listening
+        if (voiceService.isEnabled()) {
+            voiceService.stopListening();
+        }
+
+        // Wait for feedback to be spoken, then close card
+        setTimeout(() => {
+            closeCard();
+        }, 3000);
+        return; // Don't show choices when skipping
     }
 
     // Show choices if there are any interventions and safety level indicates need (for incorrect answers)

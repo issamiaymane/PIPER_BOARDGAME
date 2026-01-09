@@ -1,10 +1,11 @@
 // ═══════════════════════════════════════════════════════════════════════════
 // SAFETY-GATE TYPES
-// Organized by architecture flow: Event → State → Signals → Level → Interventions
+// Organized by architecture flow:
+// Event → Signals → State → Level → Interventions → Config → LLM → Output
 // ═══════════════════════════════════════════════════════════════════════════
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 1. INPUT - Events and Card Context
+// 1. INPUT - Events and Context
 // ─────────────────────────────────────────────────────────────────────────────
 
 export interface Event {
@@ -28,23 +29,16 @@ export interface CardContext {
   images: Array<{ image: string; label: string }>;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// 2. STATE - Session tracking
-// ─────────────────────────────────────────────────────────────────────────────
-
-export interface State {
-  engagementLevel: number; // 0-10
-  dysregulationLevel: number; // 0-10
-  fatigueLevel: number; // 0-10
-  consecutiveErrors: number;
-  errorFrequency: number; // errors per minute
-  timeInSession: number; // seconds
-  timeSinceBreak: number; // seconds
-  lastActivityTimestamp: Date;
+export interface TaskContext {
+  cardType: string;
+  category: string;
+  question: string;
+  targetAnswer: string;
+  imageLabels: string[];
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 3. SIGNALS - Detection
+// 2. SIGNALS - Detected from Event
 // ─────────────────────────────────────────────────────────────────────────────
 
 export enum Signal {
@@ -63,14 +57,29 @@ export enum Signal {
   REPETITIVE_RESPONSE = 'REPETITIVE_RESPONSE'
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// 3. STATE - Updated with Signal Effects
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface State {
+  engagementLevel: number; // 0-10
+  dysregulationLevel: number; // 0-10
+  fatigueLevel: number; // 0-10
+  consecutiveErrors: number;
+  errorFrequency: number; // errors per minute
+  timeInSession: number; // seconds
+  timeSinceBreak: number; // seconds
+  lastActivityTimestamp: Date;
+}
+
 // NOTE: State thresholds are checked directly by LevelAssessor:
-// - state.consecutiveErrors >= 3
-// - state.engagementLevel <= 3
-// - state.fatigueLevel >= 7
-// - state.dysregulationLevel >= 6
+// - state.consecutiveErrors >= 3 (YELLOW), >= 5 (ORANGE)
+// - state.engagementLevel <= 3 (YELLOW)
+// - state.fatigueLevel >= 6 (YELLOW), >= 8 (ORANGE)
+// - state.dysregulationLevel >= 5 (YELLOW), >= 7 (ORANGE), >= 9 (RED)
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 4. LEVEL - Safety assessment
+// 4. LEVEL - Assessed from State + Signals
 // ─────────────────────────────────────────────────────────────────────────────
 
 export enum Level {
@@ -81,7 +90,7 @@ export enum Level {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 5. INTERVENTIONS - Available actions
+// 5. INTERVENTIONS - Selected based on Level
 // ─────────────────────────────────────────────────────────────────────────────
 
 export enum Intervention {
@@ -93,7 +102,20 @@ export enum Intervention {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 6. AI PROCESSING - LLM feedback and validation
+// 6. CONFIG - Adapted based on Level
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface SessionConfig {
+  prompt_intensity: number; // 0-3
+  avatar_tone: 'calm' | 'warm' | 'neutral';
+  max_task_time: number; // seconds (total time on card)
+  inactivity_timeout: number; // seconds (time before "are you there?" prompt)
+  show_visual_cues: boolean;
+  enable_audio_support: boolean;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 7. LLM - Response Generation and Validation
 // ─────────────────────────────────────────────────────────────────────────────
 
 export interface LLMResponse {
@@ -108,19 +130,7 @@ export interface ResponseValidationResult {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 7. CONTEXT - Task context for orchestrator
-// ─────────────────────────────────────────────────────────────────────────────
-
-export interface TaskContext {
-  cardType: string;
-  category: string;
-  question: string;
-  targetAnswer: string;
-  imageLabels: string[];
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// 8. OUTPUT - UI package and final result
+// 8. OUTPUT - Final Results
 // ─────────────────────────────────────────────────────────────────────────────
 
 export interface UIPackage {
@@ -153,7 +163,7 @@ export interface UIPackage {
     time_in_session: string;
     state_snapshot: State;
   };
-  // Session config for retry/timeout limits
+  // Session config for timeout limits
   session_config: SessionConfig;
   // Optional fields for frontend console logging
   childSaid?: string;
@@ -169,28 +179,13 @@ export interface SafetyGateResult {
   shouldSpeak: boolean;
   interventionRequired: boolean;
   isCorrect: boolean;
-  // Per-card limit flags
-  maxRetriesExceeded: boolean;
+  // Per-card limit flag
   taskTimeExceeded: boolean;
   // Additional data for frontend console logging
   childSaid?: string;
   targetAnswers?: string[];
   attemptNumber?: number;
   responseHistory?: string[];
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// 9. CONFIG - Session configuration
-// ─────────────────────────────────────────────────────────────────────────────
-
-export interface SessionConfig {
-  prompt_intensity: number; // 0-3
-  avatar_tone: 'calm' | 'warm' | 'neutral';
-  max_retries: number; // 0-2
-  max_task_time: number; // seconds (total time on card)
-  inactivity_timeout: number; // seconds (time before "are you there?" prompt)
-  show_visual_cues: boolean;
-  enable_audio_support: boolean;
 }
 
 export interface BackendResponse {

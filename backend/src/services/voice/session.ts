@@ -76,6 +76,8 @@ export interface ServerMessage {
   // Safety-gate UI package
   uiPackage?: UIPackage;
   isCorrect?: boolean;
+  // Flag for card flow control
+  taskTimeExceeded?: boolean;
 }
 
 export class VoiceSessionManager {
@@ -123,6 +125,11 @@ export class VoiceSessionManager {
     // Set up inactivity callback
     session.safetyGateSession.setInactivityCallback((result) => {
       this.handleInactivityResult(session, result);
+    });
+
+    // Set up task timeout callback
+    session.safetyGateSession.setTaskTimeoutCallback((result) => {
+      this.handleTaskTimeoutResult(session, result);
     });
 
     this.sessions.set(sessionId, session);
@@ -458,6 +465,48 @@ export class VoiceSessionManager {
 
     } catch (error) {
       logger.error(`Inactivity response error:`, error);
+    }
+  }
+
+  /**
+   * Handle task timeout - card should be skipped
+   */
+  private async handleTaskTimeoutResult(
+    session: VoiceSession,
+    result: SafetyGateResult
+  ): Promise<void> {
+    console.log(`[VoiceSession] ⏱️ TASK TIMEOUT CALLBACK TRIGGERED for session ${session.id}`);
+
+    try {
+      // Cancel any ongoing OpenAI response
+      session.realtimeService.cancelResponse();
+
+      // Small delay to ensure cancellation is processed
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      // Speak the timeout feedback through OpenAI Realtime
+      if (result.shouldSpeak && result.feedbackText) {
+        console.log(`[VoiceSession] Speaking timeout feedback: "${result.feedbackText}"`);
+        session.realtimeService.speakFeedback(result.feedbackText);
+      }
+
+      // Send safety-gate response to frontend with taskTimeExceeded flag
+      // This tells the frontend to skip/close the current card
+      this.sendToClient(session, {
+        type: 'safety_gate_response',
+        uiPackage: {
+          ...result.uiPackage,
+          childSaid: '[TASK_TIMEOUT]',
+          targetAnswers: result.targetAnswers,
+          attemptNumber: result.attemptNumber,
+          responseHistory: result.responseHistory
+        },
+        isCorrect: false,
+        taskTimeExceeded: true
+      });
+
+    } catch (error) {
+      logger.error(`Task timeout response error:`, error);
     }
   }
 

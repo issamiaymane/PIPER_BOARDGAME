@@ -686,22 +686,20 @@ class SafetyGateTestRunner {
   testConfig_Green() {
     this.reset();
 
-    logTestHeader('CFG_GREEN', 'GREEN level config should have warm tone, 2 retries, 60s time');
+    logTestHeader('CFG_GREEN', 'GREEN level config should have warm tone, 60s time');
 
     const config = this.sessionPlanner.adaptSessionConfig(Level.GREEN);
 
     console.log(`\n${COLORS.bold}Config at GREEN:${COLORS.reset}`);
     console.log(`   prompt_intensity: ${config.prompt_intensity}`);
     console.log(`   avatar_tone: ${config.avatar_tone}`);
-    console.log(`   max_retries: ${config.max_retries}`);
     console.log(`   max_task_time: ${config.max_task_time}s`);
 
     const passed = config.avatar_tone === 'warm' &&
-                   config.max_retries === 2 &&
                    config.max_task_time === 60;
 
-    logResult(passed, 'warm, 2 retries, 60s',
-              `${config.avatar_tone}, ${config.max_retries} retries, ${config.max_task_time}s`);
+    logResult(passed, 'warm, 60s',
+              `${config.avatar_tone}, ${config.max_task_time}s`);
 
     this.results.push({ id: 'CFG_GREEN', passed, description: 'GREEN config is correct' });
     return passed;
@@ -710,24 +708,22 @@ class SafetyGateTestRunner {
   testConfig_Orange() {
     this.reset();
 
-    logTestHeader('CFG_ORANGE', 'ORANGE level config should have calm tone, 1 retry, 30s time, audio enabled');
+    logTestHeader('CFG_ORANGE', 'ORANGE level config should have calm tone, 30s time, audio enabled');
 
     const config = this.sessionPlanner.adaptSessionConfig(Level.ORANGE);
 
     console.log(`\n${COLORS.bold}Config at ORANGE:${COLORS.reset}`);
     console.log(`   prompt_intensity: ${config.prompt_intensity}`);
     console.log(`   avatar_tone: ${config.avatar_tone}`);
-    console.log(`   max_retries: ${config.max_retries}`);
     console.log(`   max_task_time: ${config.max_task_time}s`);
     console.log(`   enable_audio_support: ${config.enable_audio_support}`);
 
     const passed = config.avatar_tone === 'calm' &&
-                   config.max_retries === 1 &&
                    config.max_task_time === 30 &&
                    config.enable_audio_support;
 
-    logResult(passed, 'calm, 1 retry, 30s, audio=true',
-              `${config.avatar_tone}, ${config.max_retries} retries, ${config.max_task_time}s, audio=${config.enable_audio_support}`);
+    logResult(passed, 'calm, 30s, audio=true',
+              `${config.avatar_tone}, ${config.max_task_time}s, audio=${config.enable_audio_support}`);
 
     this.results.push({ id: 'CFG_ORANGE', passed, description: 'ORANGE config is correct' });
     return passed;
@@ -736,19 +732,18 @@ class SafetyGateTestRunner {
   testConfig_Red() {
     this.reset();
 
-    logTestHeader('CFG_RED', 'RED level config should have 0 retries, calm tone');
+    logTestHeader('CFG_RED', 'RED level config should have calm tone');
 
     const config = this.sessionPlanner.adaptSessionConfig(Level.RED);
 
     console.log(`\n${COLORS.bold}Config at RED:${COLORS.reset}`);
     console.log(`   prompt_intensity: ${config.prompt_intensity}`);
     console.log(`   avatar_tone: ${config.avatar_tone}`);
-    console.log(`   max_retries: ${config.max_retries}`);
 
-    const passed = config.max_retries === 0 && config.avatar_tone === 'calm';
+    const passed = config.avatar_tone === 'calm';
 
-    logResult(passed, '0 retries, calm tone',
-              `${config.max_retries} retries, ${config.avatar_tone} tone`);
+    logResult(passed, 'calm tone',
+              `${config.avatar_tone} tone`);
 
     this.results.push({ id: 'CFG_RED', passed, description: 'RED config is correct' });
     return passed;
