@@ -97,6 +97,16 @@ export class Session {
   }
 
   /**
+   * Populate logging data in UIPackage (single source of truth)
+   */
+  private populateLoggingData(uiPackage: { childSaid?: string; targetAnswers?: string[]; attemptNumber?: number; responseHistory?: string[] }, childSaid: string): void {
+    uiPackage.childSaid = childSaid;
+    uiPackage.targetAnswers = this.currentCard?.targetAnswers;
+    uiPackage.attemptNumber = this.attemptCount;
+    uiPackage.responseHistory = [...this.responseHistory];
+  }
+
+  /**
    * Set the current card context for answer evaluation
    * Note: attemptCount and responseHistory persist across cards for full session tracking
    * This also starts the inactivity timer since we're now waiting for the child's response
@@ -215,11 +225,7 @@ export class Session {
       logger.debug('Session: Timers STOPPED - Choices shown (YELLOW+ level)');
     }
 
-    // Populate logging data in UIPackage (single source of truth)
-    uiPackage.childSaid = transcription;
-    uiPackage.targetAnswers = this.currentCard.targetAnswers;
-    uiPackage.attemptNumber = this.attemptCount;
-    uiPackage.responseHistory = [...this.responseHistory];
+    this.populateLoggingData(uiPackage, transcription);
 
     return {
       uiPackage,
@@ -530,11 +536,7 @@ export class Session {
     // Update inactivity timeout based on current safety level
     this.inactivityTimeoutMs = uiPackage.sessionConfig.inactivityTimeout * 1000;
 
-    // Populate logging data in UIPackage
-    uiPackage.childSaid = '[INACTIVE]';
-    uiPackage.targetAnswers = this.currentCard?.targetAnswers;
-    uiPackage.attemptNumber = this.attemptCount;
-    uiPackage.responseHistory = [...this.responseHistory];
+    this.populateLoggingData(uiPackage, '[INACTIVE]');
 
     // Build result
     const result: SafetyGateResult = {
@@ -638,11 +640,7 @@ export class Session {
     // Override speech text for task timeout (custom message)
     uiPackage.speech.text = "Let's try a different one!";
 
-    // Populate logging data in UIPackage
-    uiPackage.childSaid = '[TASK_TIMEOUT]';
-    uiPackage.targetAnswers = this.currentCard?.targetAnswers;
-    uiPackage.attemptNumber = this.attemptCount;
-    uiPackage.responseHistory = [...this.responseHistory];
+    this.populateLoggingData(uiPackage, '[TASK_TIMEOUT]');
 
     // Build result with taskTimeExceeded flag
     const result: SafetyGateResult = {

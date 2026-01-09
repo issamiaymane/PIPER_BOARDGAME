@@ -47,6 +47,9 @@ const ClientMessageSchema = z.object({
   activity: z.string().optional()
 });
 
+// Derive type from schema (single source of truth)
+export type ClientMessage = z.infer<typeof ClientMessageSchema>;
+
 // ─────────────────────────────────────────────────────────────────────────────
 // SCREAMING DETECTION CONFIG (from centralized config)
 // ─────────────────────────────────────────────────────────────────────────────
@@ -78,26 +81,6 @@ export interface VoiceSession {
   lastScreamingResponseTime?: number;
 }
 
-export interface ClientMessage {
-  type: 'start_session' | 'speak_card' | 'audio_chunk' | 'commit_audio' | 'end_session' | 'set_card_context' | 'choice_selected' | 'activity_ended';
-  text?: string;
-  category?: string;
-  audio?: string; // base64 encoded PCM16 audio
-  // Audio amplitude data for screaming detection
-  amplitude?: number; // RMS amplitude (0-1 scale)
-  peak?: number;      // Peak amplitude (0-1 scale)
-  // Card context for safety-gate
-  cardContext?: {
-    category: string;
-    question: string;
-    targetAnswers: string[];
-    images: Array<{ image: string; label: string }>;
-  };
-  // Choice selection action
-  action?: string;
-  // Activity that ended (for activity_ended message)
-  activity?: string;
-}
 
 export interface ServerMessage {
   type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error' | 'safety_gate_response';
@@ -290,6 +273,29 @@ export class VoiceSessionManager {
   }
 
   /**
+   * Cancel current response, speak feedback, and send result to client
+   */
+  private async speakAndSendResult(
+    session: VoiceSession,
+    result: SafetyGateResult,
+    options?: { taskTimeExceeded?: boolean }
+  ): Promise<void> {
+    session.realtimeService.cancelResponse();
+    await new Promise(resolve => setTimeout(resolve, 100));
+
+    if (result.shouldSpeak && result.uiPackage.speech.text) {
+      session.realtimeService.speakText(result.uiPackage.speech.text);
+    }
+
+    this.sendToClient(session, {
+      type: 'safety_gate_response',
+      uiPackage: result.uiPackage,
+      isCorrect: result.isCorrect,
+      ...(options?.taskTimeExceeded && { taskTimeExceeded: true })
+    });
+  }
+
+  /**
    * Handle incoming message from client
    */
   handleClientMessage(sessionId: string, rawMessage: unknown): void {
@@ -433,25 +439,7 @@ export class VoiceSessionManager {
       // Reset screaming detection after processing
       session.screamingDetected = false;
 
-      // Cancel any ongoing OpenAI response before speaking safety-gate feedback
-      session.realtimeService.cancelResponse();
-
-      // Small delay to ensure cancellation is processed
-      await new Promise(resolve => setTimeout(resolve, 100));
-
-      // Speak the validated feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.uiPackage.speech.text) {
-        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
-      }
-
-      // Send safety-gate response to frontend (logging data already in uiPackage)
-      this.sendToClient(session, {
-        type: 'safety_gate_response',
-        uiPackage: result.uiPackage,
-        isCorrect: result.isCorrect
-      });
-
-      // Note: Detailed logging is handled by Session using pipelineLogger
+      await this.speakAndSendResult(session, result);
 
     } catch (error) {
       logger.error(`Safety-gate processing error:`, error);
@@ -474,25 +462,7 @@ export class VoiceSessionManager {
     logger.debug(`VoiceSession: Inactivity callback triggered for session ${session.id}`);
 
     try {
-      // Cancel any ongoing OpenAI response
-      session.realtimeService.cancelResponse();
-
-      // Small delay to ensure cancellation is processed
-      await new Promise(resolve => setTimeout(resolve, 100));
-
-      // Speak the inactivity feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.uiPackage.speech.text) {
-        logger.debug(`VoiceSession: Speaking inactivity feedback`);
-        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
-      }
-
-      // Send safety-gate response to frontend (logging data already in uiPackage)
-      this.sendToClient(session, {
-        type: 'safety_gate_response',
-        uiPackage: result.uiPackage,
-        isCorrect: false
-      });
-
+      await this.speakAndSendResult(session, result);
     } catch (error) {
       logger.error(`Inactivity response error:`, error);
     }
@@ -508,27 +478,7 @@ export class VoiceSessionManager {
     logger.debug(`VoiceSession: Task timeout callback triggered for session ${session.id}`);
 
     try {
-      // Cancel any ongoing OpenAI response
-      session.realtimeService.cancelResponse();
-
-      // Small delay to ensure cancellation is processed
-      await new Promise(resolve => setTimeout(resolve, 100));
-
-      // Speak the timeout feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.uiPackage.speech.text) {
-        logger.debug('VoiceSession: Speaking timeout feedback');
-        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
-      }
-
-      // Send safety-gate response to frontend with taskTimeExceeded flag
-      // This tells the frontend to skip/close the current card (logging data already in uiPackage)
-      this.sendToClient(session, {
-        type: 'safety_gate_response',
-        uiPackage: result.uiPackage,
-        isCorrect: false,
-        taskTimeExceeded: result.taskTimeExceeded
-      });
-
+      await this.speakAndSendResult(session, result, { taskTimeExceeded: result.taskTimeExceeded });
     } catch (error) {
       logger.error(`Task timeout response error:`, error);
     }
@@ -637,32 +587,15 @@ export class VoiceSessionManager {
 
     try {
       // Process through safety-gate with screaming signal (no transcription needed)
-      // Use empty placeholder - dysregulation is handled via the screaming signal
       const result: SafetyGateResult = await session.safetyGateSession.processChildResponse(
         '', // Empty - audio signal handles dysregulation
         { screaming: true }
       );
 
-      // Cancel any ongoing OpenAI response
-      session.realtimeService.cancelResponse();
-
-      // Small delay to ensure cancellation is processed
-      await new Promise(resolve => setTimeout(resolve, 100));
-
-      // Speak the calming feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.uiPackage.speech.text) {
-        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
-      }
-
-      // Override childSaid for screaming detection (logging data already in uiPackage)
+      // Override childSaid for screaming detection
       result.uiPackage.childSaid = '[screaming detected]';
 
-      // Send safety-gate response to frontend
-      this.sendToClient(session, {
-        type: 'safety_gate_response',
-        uiPackage: result.uiPackage,
-        isCorrect: false
-      });
+      await this.speakAndSendResult(session, result);
 
       // Reset screaming detection after handling
       session.screamingDetected = false;

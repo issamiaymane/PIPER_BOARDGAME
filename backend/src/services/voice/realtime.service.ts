@@ -204,34 +204,6 @@ export class RealtimeVoiceService {
   }
 
   /**
-   * Speak feedback text directly (for safety-gate responses)
-   */
-  speakFeedback(text: string): void {
-    // Create a conversation item with exact feedback to speak
-    this.sendEvent({
-      type: 'conversation.item.create',
-      item: {
-        type: 'message',
-        role: 'user',
-        content: [
-          {
-            type: 'input_text',
-            text: `Say exactly this to the student (nothing more, nothing less): "${text}"`
-          }
-        ]
-      }
-    });
-
-    // Trigger response generation
-    this.sendEvent({
-      type: 'response.create',
-      response: {
-        modalities: ['text', 'audio']
-      }
-    });
-  }
-
-  /**
    * Send audio data to the Realtime API
    */
   sendAudio(audioBase64: string): void {
