@@ -1,3 +1,8 @@
+// ═══════════════════════════════════════════════════════════════════════════
+// BACKEND ORCHESTRATOR
+// Main pipeline: Event → Signals → State → Level → Interventions → Config → LLM → Output
+// ═══════════════════════════════════════════════════════════════════════════
+
 import { Level, Intervention } from './types.js';
 import type {
   State,
@@ -23,8 +28,9 @@ import type { PipelineFlowData } from '../../utils/logger.js';
 export type { UIPackage, TaskContext };
 
 export class BackendOrchestrator {
-  private stateEngine: StateEngine;
+  // Pipeline components (ordered by flow)
   private signalDetector: SignalDetector;
+  private stateEngine: StateEngine;
   private levelAssessor: LevelAssessor;
   private interventionSelector: InterventionSelector;
   private sessionPlanner: SessionPlanner;
@@ -34,8 +40,8 @@ export class BackendOrchestrator {
   private currentTaskContext: TaskContext | null = null;
 
   constructor() {
-    this.stateEngine = new StateEngine();
     this.signalDetector = new SignalDetector();
+    this.stateEngine = new StateEngine();
     this.levelAssessor = new LevelAssessor();
     this.interventionSelector = new InterventionSelector();
     this.sessionPlanner = new SessionPlanner();
@@ -44,6 +50,10 @@ export class BackendOrchestrator {
     this.validator = new ResponseValidator();
   }
 
+  // ─────────────────────────────────────────────────────────────────────────────
+  // 1. INPUT - Task Context
+  // ─────────────────────────────────────────────────────────────────────────────
+
   /**
    * Set the current task context for card-specific processing
    */
@@ -51,12 +61,10 @@ export class BackendOrchestrator {
     this.currentTaskContext = context;
   }
 
-  /**
-   * Clear the current task context
-   */
-  clearTaskContext(): void {
-    this.currentTaskContext = null;
-  }
+  // ─────────────────────────────────────────────────────────────────────────────
+  // MAIN PIPELINE
+  // Event → Signals → State → Level → Interventions → Config → LLM → Output
+  // ─────────────────────────────────────────────────────────────────────────────
 
   async processEvent(event: Event, taskContext?: TaskContext): Promise<UIPackage> {
     // Use provided task context or fall back to stored context
@@ -149,7 +157,6 @@ export class BackendOrchestrator {
         speechText: uiPackage.speech.text,
         voiceTone: uiPackage.speech.voice_tone,
         speed: uiPackage.speech.speed,
-        avatarAnimation: uiPackage.avatar.animation,
         choiceMessage: uiPackage.choice_message
       };
 
@@ -186,7 +193,6 @@ export class BackendOrchestrator {
         speechText: uiPackage.speech.text,
         voiceTone: uiPackage.speech.voice_tone,
         speed: uiPackage.speech.speed,
-        avatarAnimation: uiPackage.avatar.animation,
         choiceMessage: uiPackage.choice_message
       };
 
@@ -201,7 +207,6 @@ export class BackendOrchestrator {
       speechText: uiPackage.speech.text,
       voiceTone: uiPackage.speech.voice_tone,
       speed: uiPackage.speech.speed,
-      avatarAnimation: uiPackage.avatar.animation,
       choiceMessage: uiPackage.choice_message
     };
 
@@ -210,6 +215,10 @@ export class BackendOrchestrator {
 
     return uiPackage;
   }
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // 6. BACKEND RESPONSE HELPERS
+  // ─────────────────────────────────────────────────────────────────────────────
 
   private determineDecision(
     level: Level,
@@ -297,6 +306,10 @@ export class BackendOrchestrator {
     };
   }
 
+  // ─────────────────────────────────────────────────────────────────────────────
+  // 7-9. LLM FALLBACK
+  // ─────────────────────────────────────────────────────────────────────────────
+
   private generateFallbackResponse(backendResponse: BackendResponse, state: State): UIPackage {
     // Generate level-appropriate fallback text
     const level = backendResponse.safety_level;
@@ -326,8 +339,8 @@ export class BackendOrchestrator {
 
     return {
       avatar: {
-        animation: 'gentle_nod',
-        expression: 'supportive',
+        animation: 'idle',
+        expression: 'neutral',
         position: 'centered'
       },
       speech: {
@@ -358,6 +371,10 @@ export class BackendOrchestrator {
     };
   }
 
+  // ─────────────────────────────────────────────────────────────────────────────
+  // 10. OUTPUT - Build UI Package
+  // ─────────────────────────────────────────────────────────────────────────────
+
   private buildUIPackage(
     backendResponse: BackendResponse,
     llmResponse: LLMResponse,
@@ -365,8 +382,8 @@ export class BackendOrchestrator {
   ): UIPackage {
     return {
       avatar: {
-        animation: this.getAvatarAnimation(backendResponse.safety_level),
-        expression: this.getAvatarExpression(backendResponse.parameters.avatar_tone),
+        animation: 'idle',
+        expression: 'neutral',
         position: 'centered'
       },
       speech: {
@@ -397,29 +414,9 @@ export class BackendOrchestrator {
     };
   }
 
-  private getAvatarAnimation(level: Level): string {
-    switch (level) {
-      case Level.RED:
-        return 'calm_breathing';
-      case Level.ORANGE:
-        return 'gentle_nod';
-      case Level.YELLOW:
-        return 'encouraging';
-      default:
-        return 'neutral';
-    }
-  }
-
-  private getAvatarExpression(tone: string): string {
-    switch (tone) {
-      case 'calm':
-        return 'serene';
-      case 'warm':
-        return 'friendly';
-      default:
-        return 'neutral';
-    }
-  }
+  // ─────────────────────────────────────────────────────────────────────────────
+  // UTILITIES
+  // ─────────────────────────────────────────────────────────────────────────────
 
   private formatTime(seconds: number): string {
     const mins = Math.floor(seconds / 60);

@@ -86,7 +86,6 @@ export interface PipelineFlowData {
     speechText: string;
     voiceTone: string;
     speed: string;
-    avatarAnimation: string;
     choiceMessage: string;
   };
 }
@@ -327,7 +326,6 @@ export const pipelineLogger = {
     console.log(`   ${C.bold}speech.text:${C.reset}     "${C.cyan}${data.uiPackage.speechText}${C.reset}"`);
     console.log(`   voice_tone:       ${data.uiPackage.voiceTone}`);
     console.log(`   speed:            ${data.uiPackage.speed}`);
-    console.log(`   avatar_animation: ${data.uiPackage.avatarAnimation}`);
     console.log(`   choice_message:   "${data.uiPackage.choiceMessage}"`);
 
     console.log(`\n${C.cyan}${divider}${C.reset}\n`);

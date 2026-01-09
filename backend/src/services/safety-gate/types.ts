@@ -72,12 +72,6 @@ export interface State {
   lastActivityTimestamp: Date;
 }
 
-// NOTE: State thresholds are checked directly by LevelAssessor:
-// - state.consecutiveErrors >= 3 (YELLOW), >= 5 (ORANGE)
-// - state.engagementLevel <= 3 (YELLOW)
-// - state.fatigueLevel >= 6 (YELLOW), >= 8 (ORANGE)
-// - state.dysregulationLevel >= 5 (YELLOW), >= 7 (ORANGE), >= 9 (RED)
-
 // ─────────────────────────────────────────────────────────────────────────────
 // 4. LEVEL - Assessed from State + Signals
 // ─────────────────────────────────────────────────────────────────────────────
@@ -107,7 +101,7 @@ export enum Intervention {
 
 export interface SessionConfig {
   prompt_intensity: number; // 0-3
-  avatar_tone: 'calm' | 'warm' | 'neutral';
+  avatar_tone: 'calm' | 'warm';
   max_task_time: number; // seconds (total time on card)
   inactivity_timeout: number; // seconds (time before "are you there?" prompt)
   show_visual_cues: boolean;
@@ -141,7 +135,7 @@ export interface UIPackage {
   };
   speech: {
     text: string;
-    voice_tone: 'calm' | 'warm' | 'neutral';
+    voice_tone: 'calm' | 'warm';
     speed: string;
   };
   choice_message: string;
