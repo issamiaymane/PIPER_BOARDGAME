@@ -52,35 +52,23 @@ export class ChildAnswerCheck {
     const cacheKey = this.getCacheKey(normalizedChild, normalizedTarget);
     const cached = this.cache.get(cacheKey);
     if (cached !== undefined) {
-      console.log(`\n[ChildAnswerCheck] ========================================`);
-      console.log(`[ChildAnswerCheck] CACHE HIT`);
-      console.log(`[ChildAnswerCheck]   Child said: "${normalizedChild}"`);
-      console.log(`[ChildAnswerCheck]   Target: "${normalizedTarget}"`);
-      console.log(`[ChildAnswerCheck]   Result: ${cached ? 'SIMILAR' : 'NOT SIMILAR'}`);
-      console.log(`[ChildAnswerCheck] ========================================\n`);
+      logger.debug(`ChildAnswerCheck: CACHE HIT - "${normalizedChild}" vs "${normalizedTarget}" = ${cached ? 'SIMILAR' : 'NOT SIMILAR'}`);
       return cached;
     }
 
     // Call OpenAI API with timeout
-    console.log(`\n[ChildAnswerCheck] ========================================`);
-    console.log(`[ChildAnswerCheck] CALLING AI for similarity check`);
-    console.log(`[ChildAnswerCheck]   Child said: "${normalizedChild}"`);
-    console.log(`[ChildAnswerCheck]   Target: "${normalizedTarget}"`);
-    console.log(`[ChildAnswerCheck]   Category: ${context.category}`);
+    logger.debug(`ChildAnswerCheck: Calling AI - "${normalizedChild}" vs "${normalizedTarget}" (${context.category})`);
 
     try {
       const result = await this.callOpenAI(normalizedChild, normalizedTarget, context);
 
       // Cache the result
       this.cache.set(cacheKey, result);
-      console.log(`[ChildAnswerCheck]   AI Result: ${result ? 'SIMILAR - ACCEPTED!' : 'NOT SIMILAR - REJECTED'}`);
-      console.log(`[ChildAnswerCheck] ========================================\n`);
+      logger.debug(`ChildAnswerCheck: AI Result = ${result ? 'SIMILAR - ACCEPTED' : 'NOT SIMILAR - REJECTED'}`);
 
       return result;
     } catch (error) {
-      logger.error('[ChildAnswerCheck] API error:', error);
-      console.log(`[ChildAnswerCheck]   API ERROR - falling back to false`);
-      console.log(`[ChildAnswerCheck] ========================================\n`);
+      logger.error('ChildAnswerCheck: API error, falling back to false', error);
       return false;
     }
   }
@@ -123,7 +111,7 @@ Respond JSON only: {"similar": true} or {"similar": false}`;
     const timeoutId = setTimeout(() => controller.abort(), this.timeoutMs);
 
     try {
-      console.log(`[ChildAnswerCheck] Calling OpenAI: "${childWord}" vs "${targetWord}"`);
+      logger.debug(`ChildAnswerCheck: Calling OpenAI API`);
 
       const response = await this.client.chat.completions.create({
         model: 'gpt-4o-mini',
@@ -142,21 +130,21 @@ Respond JSON only: {"similar": true} or {"similar": false}`;
 
       const content = response.choices[0]?.message?.content;
       if (!content) {
-        console.log(`[ChildAnswerCheck] Empty response from API`);
+        logger.warn('ChildAnswerCheck: Empty response from API');
         return false;
       }
 
       const parsed = JSON.parse(content);
       const isSimilar = parsed.similar === true;
 
-      console.log(`[ChildAnswerCheck] API result: ${isSimilar} (raw: ${content})`);
+      logger.debug(`ChildAnswerCheck: API response = ${isSimilar}`);
       return isSimilar;
 
     } catch (error: unknown) {
       clearTimeout(timeoutId);
 
       if (error instanceof Error && error.name === 'AbortError') {
-        console.log(`[ChildAnswerCheck] API timeout after ${this.timeoutMs}ms`);
+        logger.warn(`ChildAnswerCheck: API timeout after ${this.timeoutMs}ms`);
       }
       throw error;
     }
@@ -167,7 +155,7 @@ Respond JSON only: {"similar": true} or {"similar": false}`;
    */
   clearCache(): void {
     this.cache.clear();
-    console.log(`[ChildAnswerCheck] Cache cleared`);
+    logger.debug('ChildAnswerCheck: Cache cleared');
   }
 
   /**

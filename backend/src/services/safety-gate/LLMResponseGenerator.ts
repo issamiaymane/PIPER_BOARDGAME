@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 import { config } from '../../config/index.js';
 import { logger } from '../../utils/logger.js';
-import type { LLMGeneration } from './types.js';
+import type { LLMGeneration } from '../../types/safety-gate.js';
 
 // Re-export for backward compatibility
 export type { LLMGeneration };

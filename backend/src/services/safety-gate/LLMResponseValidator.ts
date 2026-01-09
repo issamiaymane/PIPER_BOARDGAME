@@ -1,4 +1,4 @@
-import type { LLMGeneration, LLMValidation } from './types.js';
+import type { LLMGeneration, LLMValidation } from '../../types/safety-gate.js';
 
 // Re-export for backward compatibility
 export type { LLMValidation };

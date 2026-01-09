@@ -1,5 +1,5 @@
-import { Level, Intervention, Signal } from './types.js';
-import type { State } from './types.js';
+import { Level, Intervention, Signal } from '../../types/safety-gate.js';
+import type { State } from '../../types/safety-gate.js';
 
 export class InterventionSelector {
 

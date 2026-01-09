@@ -4,13 +4,61 @@
  */
 
 import { BackendOrchestrator } from './BackendOrchestrator.js';
-import { Level } from './types.js';
-import type { Event, CardContext, SafetyGateResult } from './types.js';
+import { Level } from '../../types/safety-gate.js';
+import type { Event, CardContext, SafetyGateResult } from '../../types/safety-gate.js';
 import { logger } from '../../utils/logger.js';
 import { ChildAnswerCheck } from './ChildAnswerCheck.js';
 
 // Re-export for backward compatibility
 export type { CardContext, SafetyGateResult };
+
+// ============================================
+// PHONETIC VARIATIONS
+// Common speech recognition substitutions for fuzzy matching
+// ============================================
+
+const phoneticVariations: Record<string, string[]> = {
+  'cold': ['called', 'coal'],
+  'hot': ['hat', 'hut'],
+  'big': ['beg', 'bag'],
+  'small': ['smell', 'mall'],
+  'fast': ['fist', 'fest'],
+  'slow': ['slew'],
+  'happy': ['happy'],
+  'sad': ['said', 'sat'],
+  'tall': ['toll', 'tale'],
+  'short': ['shirt', 'shot'],
+  'light': ['lite', 'lit'],
+  'dark': ['dock', 'dork'],
+  'hard': ['heart'],
+  'soft': ['sought'],
+  'clean': ['clene'],
+  'dirty': ['thirty'],
+  'new': ['knew', 'nu'],
+  'old': ['owed'],
+  'wet': ['what'],
+  'dry': ['dri', 'try'],
+  'full': ['fool'],
+  'empty': ['empti'],
+  'loud': ['allowed'],
+  'quiet': ['quite'],
+  'heavy': ['heave'],
+  'open': ['opened'],
+  'closed': ['close'],
+  'up': ['up'],
+  'down': ['downed'],
+  'good': ['could', 'wood'],
+  'bad': ['bed', 'bat']
+};
+
+function getPhoneticVariations(word: string): string[] {
+  const normalizedWord = word.toLowerCase().trim();
+  const variations = [normalizedWord];
+  if (phoneticVariations[normalizedWord]) {
+    variations.push(...phoneticVariations[normalizedWord]);
+  }
+  return variations;
+}
 
 export class Session {
   private orchestrator: BackendOrchestrator;
@@ -34,9 +82,17 @@ export class Session {
   private onInactivityCallback: ((result: SafetyGateResult) => void) | null = null;
   private isWaitingForResponse: boolean = false;
 
-  constructor() {
-    this.orchestrator = new BackendOrchestrator();
-    this.childAnswerCheck = new ChildAnswerCheck();
+  /**
+   * Create a new Session with optional dependency injection for testing
+   * @param orchestrator Optional BackendOrchestrator instance (defaults to new instance)
+   * @param childAnswerCheck Optional ChildAnswerCheck instance (defaults to new instance)
+   */
+  constructor(
+    orchestrator: BackendOrchestrator = new BackendOrchestrator(),
+    childAnswerCheck: ChildAnswerCheck = new ChildAnswerCheck()
+  ) {
+    this.orchestrator = orchestrator;
+    this.childAnswerCheck = childAnswerCheck;
     this.sessionStartTime = new Date();
   }
 
@@ -57,7 +113,7 @@ export class Session {
 
     // Start inactivity timer - we're now waiting for child to respond to this card
     this.startInactivityTimer();
-    console.log(`[Session] 📋 Card set: "${card.question}" - Timers STARTED (retry: 0, task timeout: 60s)`);
+    logger.debug(`Session: Card set "${card.question}" - Timers STARTED`);
   }
 
   /**
@@ -145,7 +201,7 @@ export class Session {
     if (isCorrect) {
       this.stopInactivityTimer();
       this.stopTaskTimeoutTimer();
-      console.log(`[Session] ⏱️ Timers STOPPED - Correct answer, card closing`);
+      logger.debug('Session: Timers STOPPED - Correct answer');
     } else if (safetyLevel >= Level.YELLOW) {
       // Check if feedback already ends with the choice prompt
       if (!feedbackText.toLowerCase().includes(choicePrompt.toLowerCase())) {
@@ -159,7 +215,7 @@ export class Session {
       // Timers should only restart when child selects "Try again" or a new card is shown
       this.stopInactivityTimer();
       this.stopTaskTimeoutTimer();
-      console.log(`[Session] ⏱️ BOTH TIMERS STOPPED - Choices are being shown (YELLOW+ level)`);
+      logger.debug('Session: Timers STOPPED - Choices shown (YELLOW+ level)');
     }
 
     return {
@@ -204,7 +260,7 @@ export class Session {
     ];
 
     if (context?.category && aiCategories.includes(context.category)) {
-      console.log(`[Session] Sync match failed for "${transcription}", trying AI similarity...`);
+      logger.debug(`Session: Sync match failed for "${transcription}", trying AI similarity`);
       try {
         const aiResult = await this.childAnswerCheck.checkSimilarity(
           transcription,
@@ -212,11 +268,11 @@ export class Session {
           context
         );
         if (aiResult) {
-          console.log(`[Session] AI accepted "${transcription}" as equivalent to "${targetAnswers[0]}"`);
+          logger.debug(`Session: AI accepted "${transcription}" as equivalent to "${targetAnswers[0]}"`);
           return true;
         }
       } catch (error) {
-        console.log(`[Session] AI similarity check failed, using sync result`);
+        logger.debug('Session: AI similarity check failed, using sync result');
       }
     }
 
@@ -249,62 +305,14 @@ export class Session {
         return true;
       }
 
-      // Handle common speech recognition variations
-      const variations = this.getPhoneticVariations(normalizedTarget);
+      // Handle common speech recognition variations (from external config)
+      const variations = getPhoneticVariations(normalizedTarget);
       if (variations.some(v => normalized.includes(v))) {
         return true;
       }
     }
 
     return false;
-  }
-
-  /**
-   * Get phonetic variations of a word for fuzzy matching
-   */
-  private getPhoneticVariations(word: string): string[] {
-    const variations: string[] = [word];
-
-    // Common speech recognition substitutions
-    const substitutions: Record<string, string[]> = {
-      'cold': ['called', 'coal'],
-      'hot': ['hat', 'hut'],
-      'big': ['beg', 'bag'],
-      'small': ['smell', 'mall'],
-      'fast': ['fist', 'fest'],
-      'slow': ['slew'],
-      'happy': ['happy'],
-      'sad': ['said', 'sat'],
-      'tall': ['toll', 'tale'],
-      'short': ['shirt', 'shot'],
-      'light': ['lite', 'lit'],
-      'dark': ['dock', 'dork'],
-      'hard': ['heart'],
-      'soft': ['sought'],
-      'clean': ['clene'],
-      'dirty': ['thirty'],
-      'new': ['knew', 'nu'],
-      'old': ['owed'],
-      'wet': ['what'],
-      'dry': ['dri', 'try'],
-      'full': ['fool'],
-      'empty': ['empti'],
-      'loud': ['allowed'],
-      'quiet': ['quite'],
-      'heavy': ['heave'],
-      'open': ['opened'],
-      'closed': ['close'],
-      'up': ['up'],
-      'down': ['downed'],
-      'good': ['could', 'wood'],
-      'bad': ['bed', 'bat']
-    };
-
-    if (substitutions[word]) {
-      variations.push(...substitutions[word]);
-    }
-
-    return variations;
   }
 
   /**
@@ -389,11 +397,7 @@ export class Session {
     this.isWaitingForResponse = true;
 
     const timeoutSeconds = this.inactivityTimeoutMs / 1000;
-    console.log(`\n[Session] ⏱️ ========================================`);
-    console.log(`[Session] ⏱️ INACTIVITY TIMER STARTED`);
-    console.log(`[Session] ⏱️ Timeout: ${timeoutSeconds} seconds`);
-    console.log(`[Session] ⏱️ Will fire at: ${new Date(Date.now() + this.inactivityTimeoutMs).toLocaleTimeString()}`);
-    console.log(`[Session] ⏱️ ========================================\n`);
+    logger.debug(`Session: Inactivity timer STARTED (${timeoutSeconds}s)`);
 
     this.inactivityTimer = setTimeout(() => {
       this.handleInactivity();
@@ -407,7 +411,7 @@ export class Session {
     if (this.inactivityTimer) {
       clearTimeout(this.inactivityTimer);
       this.inactivityTimer = null;
-      console.log(`[Session] ⏱️ TIMER STOPPED (was waiting: ${this.isWaitingForResponse})`);
+      logger.debug(`Session: Inactivity timer STOPPED`);
     }
     this.isWaitingForResponse = false;
   }
@@ -418,7 +422,7 @@ export class Session {
    */
   resetInactivityTimer(): void {
     if (this.isWaitingForResponse) {
-      console.log(`[Session] ⏱️ TIMER RESET - Child responded, restarting countdown`);
+      logger.debug('Session: Timer RESET - Child responded');
       this.startInactivityTimer();
     }
   }
@@ -428,7 +432,7 @@ export class Session {
    * This restarts the inactivity timer after choices were dismissed
    */
   resumeWaitingForResponse(): void {
-    console.log(`[Session] ⏱️ RESUME - Child selected retry, waiting for card response again`);
+    logger.debug('Session: Timer RESUMED - Child selected retry');
     this.startInactivityTimer();
   }
 
@@ -445,42 +449,37 @@ export class Session {
    * @param action The choice action string
    */
   handleChoiceSelection(action: string): void {
-    console.log(`[Session] 🎯 Choice selected: ${action}`);
+    logger.debug(`Session: Choice selected - ${action}`);
 
     switch (action) {
       case 'RETRY_CARD':
         // Child wants to try again - restart timer to wait for their answer
-        console.log(`[Session] ⏱️ RETRY_CARD - Restarting timer for card response`);
         this.startInactivityTimer();
         break;
 
       case 'START_BREAK':
         // Child is taking a break - timer stays stopped
-        console.log(`[Session] ⏱️ START_BREAK - Timer remains stopped (break time)`);
         this.stopInactivityTimer();
         break;
 
       case 'SKIP_CARD':
         // Child wants to skip to next card - timer will restart when setCurrentCard() is called
-        console.log(`[Session] ⏱️ SKIP_CARD - Timer will restart when new card is shown`);
         this.stopInactivityTimer();
         break;
 
       case 'BUBBLE_BREATHING':
         // Child is doing bubble breathing - timer stays stopped
-        console.log(`[Session] ⏱️ BUBBLE_BREATHING - Timer remains stopped (regulation activity)`);
         this.stopInactivityTimer();
         break;
 
       case 'CALL_GROWNUP':
         // Adult help requested - session paused, timer stops
-        console.log(`[Session] ⏱️ CALL_GROWNUP - Timer stopped (adult intervention)`);
         this.stopInactivityTimer();
         break;
 
       default:
         // Unknown action - stop timer to be safe
-        console.log(`[Session] ⏱️ Unknown action "${action}" - Timer stopped`);
+        logger.warn(`Session: Unknown action "${action}" - Timer stopped`);
         this.stopInactivityTimer();
         break;
     }
@@ -496,12 +495,9 @@ export class Session {
    * This will restart the inactivity timer if there's an active card
    */
   resumeSession(): void {
-    console.log(`[Session] ▶️ Session resumed`);
+    logger.debug('Session: Session resumed');
     if (this.currentCard) {
-      console.log(`[Session] ⏱️ Active card exists - restarting timer`);
       this.startInactivityTimer();
-    } else {
-      console.log(`[Session] ⏱️ No active card - timer not started`);
     }
   }
 
@@ -510,15 +506,10 @@ export class Session {
    */
   private async handleInactivity(): Promise<void> {
     if (!this.isWaitingForResponse) {
-      console.log(`[Session] ⏱️ Timer fired but not waiting for response - ignoring`);
       return; // Not waiting for response, ignore
     }
 
-    console.log(`\n[Session] ⚠️ ========================================`);
-    console.log(`[Session] ⚠️ 🚨 INACTIVITY DETECTED!`);
-    console.log(`[Session] ⚠️ Child has not responded for ${this.inactivityTimeoutMs / 1000} seconds`);
-    console.log(`[Session] ⚠️ Firing CHILD_INACTIVE event...`);
-    console.log(`[Session] ⚠️ ========================================\n`);
+    logger.info(`Session: INACTIVITY DETECTED after ${this.inactivityTimeoutMs / 1000}s - firing CHILD_INACTIVE event`);
 
     // Build CHILD_INACTIVE event
     const event: Event = {
@@ -561,20 +552,17 @@ export class Session {
 
     // Call the callback if registered
     if (this.onInactivityCallback) {
-      console.log(`[Session] ⚠️ Calling inactivity callback...`);
       this.onInactivityCallback(result);
     } else {
-      console.log(`[Session] ⚠️ No inactivity callback registered`);
+      logger.warn('Session: No inactivity callback registered');
     }
 
     // Only restart timer if NOT showing choices (GREEN level)
     // If YELLOW+ level, choices are shown and child should interact with them, not answer the card
     const safetyLevel = result.uiPackage.overlay.safetyLevel;
     if (safetyLevel >= Level.YELLOW) {
-      console.log(`[Session] ⚠️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
       this.stopInactivityTimer();
     } else {
-      console.log(`[Session] ⚠️ Restarting timer for next inactivity check (GREEN level)...`);
       this.startInactivityTimer();
     }
   }
@@ -606,7 +594,7 @@ export class Session {
     this.stopTaskTimeoutTimer(); // Clear any existing timer
 
     const timeoutMs = seconds * 1000;
-    console.log(`[Session] ⏱️ TASK TIMEOUT TIMER STARTED: ${seconds}s`);
+    logger.debug(`Session: Task timeout timer STARTED (${seconds}s)`);
 
     this.taskTimeoutTimer = setTimeout(() => {
       this.handleTaskTimeout();
@@ -620,7 +608,7 @@ export class Session {
     if (this.taskTimeoutTimer) {
       clearTimeout(this.taskTimeoutTimer);
       this.taskTimeoutTimer = null;
-      console.log(`[Session] ⏱️ TASK TIMEOUT TIMER STOPPED`);
+      logger.debug('Session: Task timeout timer STOPPED');
     }
   }
 
@@ -628,10 +616,7 @@ export class Session {
    * Handle task timeout - fires when max_task_time is exceeded
    */
   private async handleTaskTimeout(): Promise<void> {
-    console.log(`\n[Session] ⚠️ ========================================`);
-    console.log(`[Session] ⚠️ 🚨 TASK TIMEOUT!`);
-    console.log(`[Session] ⚠️ Child has exceeded max_task_time for this card`);
-    console.log(`[Session] ⚠️ ========================================\n`);
+    logger.info('Session: TASK TIMEOUT - max_task_time exceeded');
 
     // Stop inactivity timer as well
     this.stopInactivityTimer();
@@ -671,11 +656,8 @@ export class Session {
       responseHistory: [...this.responseHistory]
     };
 
-    console.log(`[Session] ⚠️ TASK TIMEOUT - Card should be skipped`);
-
     // Call the callback if registered
     if (this.onTaskTimeoutCallback) {
-      console.log(`[Session] ⚠️ Calling task timeout callback...`);
       this.onTaskTimeoutCallback(result);
     }
   }

@@ -1,5 +1,5 @@
-import { Level } from './types.js';
-import type { BackendResponse } from './types.js';
+import { Level } from '../../types/safety-gate.js';
+import type { BackendResponse } from '../../types/safety-gate.js';
 
 export class PromptBuilder {
 

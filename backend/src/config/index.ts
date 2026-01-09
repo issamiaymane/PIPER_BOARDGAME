@@ -3,6 +3,8 @@
  */
 
 import dotenv from 'dotenv';
+import { safetyGateConfig } from './safety-gate.js';
+
 dotenv.config();
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -27,4 +29,7 @@ export const config = {
   openai: {
     apiKey: process.env.OPENAI_API_KEY || '',
   },
+
+  // Safety-gate configuration (from separate module)
+  safetyGate: safetyGateConfig,
 };

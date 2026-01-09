@@ -1,5 +1,6 @@
-import type { State, Event, Signal } from './types.js';
-import { Signal as SignalEnum } from './types.js';
+import type { State, Event, Signal } from '../../types/safety-gate.js';
+import { Signal as SignalEnum } from '../../types/safety-gate.js';
+import { logger } from '../../utils/logger.js';
 
 export class StateEngine {
   private state: State;
@@ -50,27 +51,27 @@ export class StateEngine {
       switch (signal) {
         case SignalEnum.SCREAMING:
           this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 4);
-          console.log(`[StateEngine] 🔊 SCREAMING → dysregulation +4 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          logger.debug(`StateEngine: SCREAMING → dysregulation +4 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.CRYING:
           this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 3);
-          console.log(`[StateEngine] 😢 CRYING → dysregulation +3 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          logger.debug(`StateEngine: CRYING → dysregulation +3 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.DISTRESS:
           this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 2);
-          console.log(`[StateEngine] 😰 DISTRESS → dysregulation +2 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          logger.debug(`StateEngine: DISTRESS → dysregulation +2 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.FRUSTRATION:
           this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 1);
-          console.log(`[StateEngine] 😤 FRUSTRATION → dysregulation +1 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          logger.debug(`StateEngine: FRUSTRATION → dysregulation +1 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.WANTS_QUIT:
           this.state.engagementLevel = Math.max(0, this.state.engagementLevel - 2);
-          console.log(`[StateEngine] 🚪 WANTS_QUIT → engagement -2 (now: ${this.state.engagementLevel.toFixed(1)})`);
+          logger.debug(`StateEngine: WANTS_QUIT → engagement -2 (now: ${this.state.engagementLevel.toFixed(1)})`);
           break;
         case SignalEnum.WANTS_BREAK:
           this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + 1);
-          console.log(`[StateEngine] 😴 WANTS_BREAK → fatigue +1 (now: ${this.state.fatigueLevel.toFixed(1)})`);
+          logger.debug(`StateEngine: WANTS_BREAK → fatigue +1 (now: ${this.state.fatigueLevel.toFixed(1)})`);
           break;
       }
     }

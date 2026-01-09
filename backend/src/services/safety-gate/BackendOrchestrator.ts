@@ -3,7 +3,7 @@
 // Main pipeline: Event → Signals → State → Level → Interventions → Config → LLM → Output
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { Level, Intervention } from './types.js';
+import { Level, Intervention } from '../../types/safety-gate.js';
 import type {
   State,
   Event,
@@ -11,8 +11,12 @@ import type {
   BackendResponse,
   UIPackage,
   TaskContext,
-  LLMGeneration
-} from './types.js';
+  LLMGeneration,
+  SessionState,
+  ResponseContext,
+  ResponseConstraints,
+  ResponseReasoning
+} from '../../types/safety-gate.js';
 import { StateEngine } from './StateEngine.js';
 import { SignalDetector } from './SignalDetector.js';
 import { LevelAssessor } from './LevelAssessor.js';
@@ -233,7 +237,7 @@ export class BackendOrchestrator {
     return 'CONTINUE_NORMAL';
   }
 
-  private getSessionState(event: Event, state: State): any {
+  private getSessionState(event: Event, state: State): SessionState {
     return {
       current_event: event.type,
       engagement: state.engagementLevel,
@@ -244,11 +248,13 @@ export class BackendOrchestrator {
     };
   }
 
-  private buildContext(event: Event, state: State): any {
-    const baseContext = {
-      what_happened: event.type === 'CHILD_RESPONSE'
-        ? (event.correct ? 'correct_response' : 'incorrect_response')
-        : event.type.toLowerCase(),
+  private buildContext(event: Event, state: State): ResponseContext {
+    const what_happened: ResponseContext['what_happened'] = event.type === 'CHILD_RESPONSE'
+      ? (event.correct ? 'correct_response' : 'incorrect_response')
+      : 'child_inactive';
+
+    const baseContext: ResponseContext = {
+      what_happened,
       child_said: event.response || '',
       target_was: this.currentTaskContext?.targetAnswer || '',
       attempt_number: state.consecutiveErrors + 1
@@ -256,22 +262,19 @@ export class BackendOrchestrator {
 
     // Add card-specific context if available
     if (this.currentTaskContext) {
-      return {
-        ...baseContext,
-        card_context: {
-          category: this.currentTaskContext.category,
-          card_type: this.currentTaskContext.cardType,
-          question: this.currentTaskContext.question,
-          expected_answer: this.currentTaskContext.targetAnswer,
-          visual_supports: this.currentTaskContext.imageLabels
-        }
+      baseContext.card_context = {
+        category: this.currentTaskContext.category,
+        card_type: this.currentTaskContext.cardType,
+        question: this.currentTaskContext.question,
+        expected_answer: this.currentTaskContext.targetAnswer,
+        visual_supports: this.currentTaskContext.imageLabels
       };
     }
 
     return baseContext;
   }
 
-  private buildConstraints(config: SessionConfig, level: Level): any {
+  private buildConstraints(config: SessionConfig, level: Level): ResponseConstraints {
     return {
       must_use_tone: config.avatarTone,
       must_be_brief: true,
@@ -291,7 +294,7 @@ export class BackendOrchestrator {
     level: Level,
     interventions: Intervention[],
     signals: string[]
-  ): any {
+  ): ResponseReasoning {
     return {
       safety_level_reason: `Level ${Level[level]} due to signals: ${signals.join(', ') || 'none'}`,
       interventions_reason: interventions.length > 0

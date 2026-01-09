@@ -122,6 +122,50 @@ export interface LLMValidation {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// 7b. BACKEND RESPONSE SUBSTRUCTURES
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface SessionState {
+  current_event: 'CHILD_RESPONSE' | 'CHILD_INACTIVE';
+  engagement: number;
+  dysregulation: number;
+  fatigue: number;
+  consecutive_errors: number;
+  time_in_session: number;
+}
+
+export interface ResponseContext {
+  what_happened: 'correct_response' | 'incorrect_response' | 'child_inactive';
+  child_said: string;
+  target_was: string;
+  attempt_number: number;
+  card_context?: {
+    category: string;
+    card_type: string;
+    question: string;
+    expected_answer: string;
+    visual_supports: string[];
+  };
+}
+
+export interface ResponseConstraints {
+  must_use_tone: 'calm' | 'warm';
+  must_be_brief: boolean;
+  must_not_judge: boolean;
+  must_not_pressure: boolean;
+  must_offer_choices: boolean;
+  must_validate_feelings: boolean;
+  max_sentences: number;
+  forbidden_words: string[];
+  required_approach: string;
+}
+
+export interface ResponseReasoning {
+  safety_level_reason: string;
+  interventions_reason: string;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // 8. OUTPUT - Final Results
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -171,9 +215,9 @@ export interface BackendResponse {
   sessionConfig: SessionConfig;
   // Decision & context
   decision: string;
-  sessionState: any;
-  context: any;
-  constraints: any;
-  reasoning: any;
+  sessionState: SessionState;
+  context: ResponseContext;
+  constraints: ResponseConstraints;
+  reasoning: ResponseReasoning;
   timestamp: Date;
 }

@@ -1,5 +1,9 @@
-import { Level, Signal } from './types.js';
-import type { State } from './types.js';
+import { Level, Signal } from '../../types/safety-gate.js';
+import type { State } from '../../types/safety-gate.js';
+import { config } from '../../config/index.js';
+
+// Extract threshold config for readability
+const { levels } = config.safetyGate;
 
 export class LevelAssessor {
 
@@ -30,8 +34,8 @@ export class LevelAssessor {
   // ============================================
 
   private isRedLevel(state: State, signals: Signal[]): boolean {
-    // State thresholds
-    const highDysregulation = state.dysregulationLevel >= 9;
+    // State thresholds (from config)
+    const highDysregulation = state.dysregulationLevel >= levels.red.dysregulation;
 
     // Signal checks
     const hasDistressSignals =
@@ -42,7 +46,7 @@ export class LevelAssessor {
     return (
       highDysregulation ||
       // Distress combined with elevated dysregulation = crisis
-      (hasDistressSignals && state.dysregulationLevel >= 7)
+      (hasDistressSignals && state.dysregulationLevel >= levels.red.dysregulationWithDistress)
     );
   }
 
@@ -52,10 +56,10 @@ export class LevelAssessor {
   // ============================================
 
   private isOrangeLevel(state: State, signals: Signal[]): boolean {
-    // State thresholds (read directly, not via signals)
-    const highDysregulation = state.dysregulationLevel >= 7;
-    const manyErrors = state.consecutiveErrors >= 5;
-    const highFatigue = state.fatigueLevel >= 8;
+    // State thresholds (from config)
+    const highDysregulation = state.dysregulationLevel >= levels.orange.dysregulation;
+    const manyErrors = state.consecutiveErrors >= levels.orange.consecutiveErrors;
+    const highFatigue = state.fatigueLevel >= levels.orange.fatigue;
 
     // Signal checks
     const hasDistressSignals =
@@ -78,11 +82,11 @@ export class LevelAssessor {
   // ============================================
 
   private isYellowLevel(state: State, signals: Signal[]): boolean {
-    // State thresholds (read directly, not via signals)
-    const lowEngagement = state.engagementLevel <= 3;
-    const moderateDysregulation = state.dysregulationLevel >= 5;
-    const someErrors = state.consecutiveErrors >= 3;
-    const moderateFatigue = state.fatigueLevel >= 6;
+    // State thresholds (from config)
+    const lowEngagement = state.engagementLevel <= levels.yellow.engagement;
+    const moderateDysregulation = state.dysregulationLevel >= levels.yellow.dysregulation;
+    const someErrors = state.consecutiveErrors >= levels.yellow.consecutiveErrors;
+    const moderateFatigue = state.fatigueLevel >= levels.yellow.fatigue;
 
     // Signal checks
     const hasMildDistress =

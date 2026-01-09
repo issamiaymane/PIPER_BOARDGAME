@@ -1,4 +1,4 @@
-import { State, Level, SessionConfig } from "./types.js";
+import { State, Level, SessionConfig } from "../../types/safety-gate.js";
 
 export class SessionPlanner {
 

@@ -1,7 +1,8 @@
 import OpenAI from 'openai';
 import { config } from '../../config/index.js';
-import { Signal } from './types.js';
-import type { Event } from './types.js';
+import { logger } from '../../utils/logger.js';
+import { Signal } from '../../types/safety-gate.js';
+import type { Event } from '../../types/safety-gate.js';
 
 interface LLMSignalClassification {
   break_request: boolean;
@@ -47,15 +48,15 @@ export class SignalDetector {
 
   private detectAudioSignals(event: Event, signals: Signal[]): void {
     if (event.signals?.screaming) {
-      console.log(`[SignalDetector] 🔴 Audio: SCREAMING`);
+      logger.debug('SignalDetector: Audio signal SCREAMING detected');
       signals.push(Signal.SCREAMING);
     }
     if (event.signals?.crying) {
-      console.log(`[SignalDetector] 🔴 Audio: CRYING`);
+      logger.debug('SignalDetector: Audio signal CRYING detected');
       signals.push(Signal.CRYING);
     }
     if (event.signals?.prolongedSilence) {
-      console.log(`[SignalDetector] 🟡 Audio: PROLONGED_SILENCE`);
+      logger.debug('SignalDetector: Audio signal PROLONGED_SILENCE detected');
       signals.push(Signal.PROLONGED_SILENCE);
     }
   }
@@ -86,29 +87,28 @@ export class SignalDetector {
     try {
       const classification = await this.classifyTextWithLLM(responseText);
 
-      // DEBUG: Log LLM classification result
-      console.log(`[SignalDetector] LLM classification for "${responseText}":`, classification);
+      logger.debug(`SignalDetector: LLM classification for "${responseText}": ${JSON.stringify(classification)}`);
 
       // Map classification to signals
       if (classification.break_request) {
-        console.log(`[SignalDetector] 🟡 LLM detected WANTS_BREAK in: "${responseText}"`);
+        logger.debug(`SignalDetector: LLM detected WANTS_BREAK in: "${responseText}"`);
         signals.push(Signal.WANTS_BREAK);
       }
       if (classification.quit_request) {
-        console.log(`[SignalDetector] 🟡 LLM detected WANTS_QUIT in: "${responseText}"`);
+        logger.debug(`SignalDetector: LLM detected WANTS_QUIT in: "${responseText}"`);
         signals.push(Signal.WANTS_QUIT);
       }
       if (classification.frustration) {
-        console.log(`[SignalDetector] 🟠 LLM detected FRUSTRATION in: "${responseText}"`);
+        logger.debug(`SignalDetector: LLM detected FRUSTRATION in: "${responseText}"`);
         signals.push(Signal.FRUSTRATION);
       }
       if (classification.distress) {
-        console.log(`[SignalDetector] 🔴 LLM detected DISTRESS in: "${responseText}"`);
+        logger.debug(`SignalDetector: LLM detected DISTRESS in: "${responseText}"`);
         signals.push(Signal.DISTRESS);
       }
     } catch (error) {
       // Fallback to keyword matching if LLM fails
-      console.warn('[SignalDetector] LLM classification failed, using keyword fallback:', error);
+      logger.warn('SignalDetector: LLM classification failed, using keyword fallback', error);
       this.detectTextSignalsKeywordFallback(responseText, signals);
     }
   }
