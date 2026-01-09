@@ -110,13 +110,10 @@ export class Session {
     }
 
     // Build the child event for the orchestrator
-    // If screaming was detected via audio amplitude, include it in the signal field
-    const screamingSignal = options?.screamingDetected ? 'screaming_detected_audio' : undefined;
-
-    // Debug: Log when audio-based screaming is detected
-    if (screamingSignal) {
-      console.log(`[Session] 🎤 Audio-based SCREAMING signal added to event`);
-    }
+    // Pass raw audio signals - SignalDetector will interpret them
+    const audioSignals = options?.screamingDetected
+      ? { screamingDetected: true }
+      : undefined;
 
     const event: Event = {
       type: 'CHILD_RESPONSE',
@@ -124,7 +121,7 @@ export class Session {
       response: transcription,
       previousResponse: this.responseHistory[this.responseHistory.length - 2],
       previousPreviousResponse: this.responseHistory[this.responseHistory.length - 3],
-      signal: screamingSignal
+      audioSignals
     };
 
     // Build task context for the orchestrator

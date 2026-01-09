@@ -205,14 +205,9 @@ A single word answer like "Sad" or "Slow" is almost certainly just an answer, no
   // ============================================
 
   private detectAudioSignals(event: Event, signals: Signal[]): void {
-    // DISTRESS from audio: high amplitude detection from frontend
-    // Frontend sends 'screaming_detected_audio' or 'AUDIO_SCREAMING'
-    const hasAudioDistress =
-      event.signal?.includes('screaming_detected_audio') ||
-      event.signal?.includes('AUDIO_SCREAMING') ||
-      false;
-    if (hasAudioDistress) {
-      console.log(`[SignalDetector] 🔴 AUDIO detected DISTRESS (signal: "${event.signal}")`);
+    // DISTRESS from audio: screaming detected via high amplitude
+    if (event.audioSignals?.screamingDetected) {
+      console.log(`[SignalDetector] 🔴 Audio signal: SCREAMING → DISTRESS`);
       signals.push(Signal.DISTRESS);
     }
   }

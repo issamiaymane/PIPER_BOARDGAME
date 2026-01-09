@@ -83,6 +83,12 @@ export class StateEngine {
       }
     }
 
+    // AUDIO SIGNALS: Screaming indicates high dysregulation
+    if (event.audioSignals?.screamingDetected) {
+      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 4);
+      console.log(`[StateEngine] 🔊 Audio signal: screaming → dysregulation +4 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+    }
+
     this.updateErrorFrequency();
   }
 

@@ -13,7 +13,9 @@ export interface Event {
   response?: string;
   previousResponse?: string;
   previousPreviousResponse?: string;
-  signal?: string; // Audio-based signals (e.g., 'screaming_detected_audio')
+  audioSignals?: {
+    screamingDetected?: boolean;
+  };
 }
 
 export interface CardContext {
