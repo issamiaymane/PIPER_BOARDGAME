@@ -466,8 +466,8 @@ export class VoiceService {
     this.sendMessage({
       type: 'audio_chunk',
       audio: data.audio,
-      amplitude: data.amplitude,
-      peak: data.peak
+      amplitude: Math.min(data.amplitude, 1),
+      peak: Math.min(data.peak, 1)
     });
   }
 
