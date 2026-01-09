@@ -11,7 +11,7 @@ import type {
   BackendResponse,
   UIPackage,
   TaskContext,
-  LLMResponse
+  LLMGeneration
 } from './types.js';
 import { StateEngine } from './StateEngine.js';
 import { SignalDetector } from './SignalDetector.js';
@@ -19,8 +19,8 @@ import { LevelAssessor } from './LevelAssessor.js';
 import { InterventionSelector } from './InterventionSelector.js';
 import { SessionPlanner } from './SessionPlanner.js';
 import { PromptBuilder } from './PromptBuilder.js';
-import { LLMClient } from './LLMClient.js';
-import { ResponseValidator } from './ResponseValidator.js';
+import { LLMResponseGenerator } from './LLMResponseGenerator.js';
+import { LLMResponseValidator } from './LLMResponseValidator.js';
 import { pipelineLogger } from '../../utils/logger.js';
 import type { PipelineFlowData } from '../../utils/logger.js';
 
@@ -35,8 +35,8 @@ export class BackendOrchestrator {
   private interventionSelector: InterventionSelector;
   private sessionPlanner: SessionPlanner;
   private promptBuilder: PromptBuilder;
-  private llmClient: LLMClient;
-  private validator: ResponseValidator;
+  private llmResponseGenerator: LLMResponseGenerator;
+  private llmResponseValidator: LLMResponseValidator;
   private currentTaskContext: TaskContext | null = null;
 
   constructor() {
@@ -46,8 +46,8 @@ export class BackendOrchestrator {
     this.interventionSelector = new InterventionSelector();
     this.sessionPlanner = new SessionPlanner();
     this.promptBuilder = new PromptBuilder();
-    this.llmClient = new LLMClient();
-    this.validator = new ResponseValidator();
+    this.llmResponseGenerator = new LLMResponseGenerator();
+    this.llmResponseValidator = new LLMResponseValidator();
   }
 
   // ─────────────────────────────────────────────────────────────────────────────
@@ -121,9 +121,7 @@ export class BackendOrchestrator {
       prompt_intensity: config.prompt_intensity,
       avatar_tone: config.avatar_tone,
       max_task_time: config.max_task_time,
-      inactivity_timeout: config.inactivity_timeout,
-      show_visual_cues: config.show_visual_cues,
-      enable_audio_support: config.enable_audio_support
+      inactivity_timeout: config.inactivity_timeout
     };
 
     // 6. Create backend response
@@ -166,7 +164,7 @@ export class BackendOrchestrator {
     }
 
     // 8. Build system prompt and get LLM response
-    const llmResponse = await this.llmClient.generateResponse(
+    const llmResponse = await this.llmResponseGenerator.generateResponse(
       this.promptBuilder.buildSystemPrompt(backendResponse),
       backendResponse.context
     );
@@ -176,7 +174,7 @@ export class BackendOrchestrator {
     };
 
     // 9. Validate LLM response
-    const validation = this.validator.validate(
+    const validation = this.llmResponseValidator.validate(
       llmResponse,
       backendResponse.constraints
     );
@@ -350,12 +348,6 @@ export class BackendOrchestrator {
       },
       choice_message: "What would you like to do?",
       interventions: backendResponse.interventions_active,
-      visual_cues: {
-        enabled: true
-      },
-      audio_support: {
-        available: backendResponse.parameters.enable_audio_support
-      },
       grownup_help: {
         available: backendResponse.interventions_active.includes(Intervention.CALL_GROWNUP)
       },
@@ -377,7 +369,7 @@ export class BackendOrchestrator {
 
   private buildUIPackage(
     backendResponse: BackendResponse,
-    llmResponse: LLMResponse,
+    llmResponse: LLMGeneration,
     state: State
   ): UIPackage {
     return {
@@ -393,12 +385,6 @@ export class BackendOrchestrator {
       },
       choice_message: llmResponse.choice_presentation,
       interventions: backendResponse.interventions_active,
-      visual_cues: {
-        enabled: backendResponse.parameters.show_visual_cues
-      },
-      audio_support: {
-        available: backendResponse.parameters.enable_audio_support
-      },
       grownup_help: {
         available: backendResponse.interventions_active.includes(Intervention.CALL_GROWNUP)
       },

@@ -104,20 +104,18 @@ export interface SessionConfig {
   avatar_tone: 'calm' | 'warm';
   max_task_time: number; // seconds (total time on card)
   inactivity_timeout: number; // seconds (time before "are you there?" prompt)
-  show_visual_cues: boolean;
-  enable_audio_support: boolean;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 7. LLM - Response Generation and Validation
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface LLMResponse {
+export interface LLMGeneration {
   coach_line: string;
   choice_presentation: string;
 }
 
-export interface ResponseValidationResult {
+export interface LLMValidation {
   valid: boolean;
   checks: Record<string, boolean>;
   reason: string | null;
@@ -140,12 +138,6 @@ export interface UIPackage {
   };
   choice_message: string;
   interventions: Intervention[];
-  visual_cues: {
-    enabled: boolean;
-  };
-  audio_support: {
-    available: boolean;
-  };
   grownup_help: {
     available: boolean;
   };

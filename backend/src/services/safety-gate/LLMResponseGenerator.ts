@@ -1,12 +1,12 @@
 import OpenAI from 'openai';
 import { config } from '../../config/index.js';
 import { logger } from '../../utils/logger.js';
-import type { LLMResponse } from './types.js';
+import type { LLMGeneration } from './types.js';
 
 // Re-export for backward compatibility
-export type { LLMResponse };
+export type { LLMGeneration };
 
-export class LLMClient {
+export class LLMResponseGenerator {
   private client: OpenAI;
 
   constructor() {
@@ -18,7 +18,7 @@ export class LLMClient {
   async generateResponse(
     systemPrompt: string,
     _context: any
-  ): Promise<LLMResponse> {
+  ): Promise<LLMGeneration> {
     try {
       const response = await this.client.chat.completions.create({
         model: 'gpt-4o',
@@ -55,7 +55,7 @@ export class LLMClient {
       };
 
     } catch (error) {
-      logger.error('LLMClient error:', error);
+      logger.error('LLMGenerationGenerator error:', error);
 
       // Return a safe fallback response (simple encouragement)
       return {

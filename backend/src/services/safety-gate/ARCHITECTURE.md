@@ -650,13 +650,13 @@ Validates LLM response against constraints.
 │  ┌─────────────────────────────────────────────────────────────┐    │
 │  │ 8. GENERATE LLM RESPONSE                                     │    │
 │  │    PromptBuilder.buildSystemPrompt(backendResponse)          │    │
-│  │    LLMClient.generateResponse(systemPrompt, context)         │    │
-│  │    → LLMResponse { coach_line, choice_presentation }         │    │
+│  │    LLMGenerationGenerator.generateResponse(prompt, context)    │    │
+│  │    → LLMGeneration { coach_line, choice_presentation }         │    │
 │  └─────────────────────────────────────────────────────────────┘    │
 │                              ↓                                       │
 │  ┌─────────────────────────────────────────────────────────────┐    │
 │  │ 9. VALIDATE RESPONSE                                         │    │
-│  │    ResponseValidator.validate(llmResponse, constraints)      │    │
+│  │    LLMGenerationValidator.validate(llmResponse, constraints)      │    │
 │  │    IF invalid: use fallback response                         │    │
 │  └─────────────────────────────────────────────────────────────┘    │
 │                              ↓                                       │

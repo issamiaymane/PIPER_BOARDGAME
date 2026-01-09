@@ -36,12 +36,6 @@ export interface UIPackage {
   };
   choice_message: string;
   interventions: string[];
-  visual_cues: {
-    enabled: boolean;
-  };
-  audio_support: {
-    available: boolean;
-  };
   grownup_help: {
     available: boolean;
   };

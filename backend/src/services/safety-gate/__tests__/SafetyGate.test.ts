@@ -708,7 +708,7 @@ class SafetyGateTestRunner {
   testConfig_Orange() {
     this.reset();
 
-    logTestHeader('CFG_ORANGE', 'ORANGE level config should have calm tone, 30s time, audio enabled');
+    logTestHeader('CFG_ORANGE', 'ORANGE level config should have calm tone, 30s time');
 
     const config = this.sessionPlanner.adaptSessionConfig(Level.ORANGE);
 
@@ -716,14 +716,12 @@ class SafetyGateTestRunner {
     console.log(`   prompt_intensity: ${config.prompt_intensity}`);
     console.log(`   avatar_tone: ${config.avatar_tone}`);
     console.log(`   max_task_time: ${config.max_task_time}s`);
-    console.log(`   enable_audio_support: ${config.enable_audio_support}`);
 
     const passed = config.avatar_tone === 'calm' &&
-                   config.max_task_time === 30 &&
-                   config.enable_audio_support;
+                   config.max_task_time === 30;
 
-    logResult(passed, 'calm, 30s, audio=true',
-              `${config.avatar_tone}, ${config.max_task_time}s, audio=${config.enable_audio_support}`);
+    logResult(passed, 'calm, 30s',
+              `${config.avatar_tone}, ${config.max_task_time}s`);
 
     this.results.push({ id: 'CFG_ORANGE', passed, description: 'ORANGE config is correct' });
     return passed;

@@ -1,14 +1,14 @@
-import type { LLMResponse, ResponseValidationResult } from './types.js';
+import type { LLMGeneration, LLMValidation } from './types.js';
 
 // Re-export for backward compatibility
-export type { ResponseValidationResult };
+export type { LLMValidation };
 
-export class ResponseValidator {
+export class LLMResponseValidator {
 
   validate(
-    response: LLMResponse,
+    response: LLMGeneration,
     constraints: any
-  ): ResponseValidationResult {
+  ): LLMValidation {
     const checks = {
       length_appropriate: this.checkLength(response),
       no_forbidden_words: this.checkForbiddenWords(response, constraints),
@@ -26,22 +26,22 @@ export class ResponseValidator {
     };
   }
 
-  private checkLength(response: LLMResponse): boolean {
+  private checkLength(response: LLMGeneration): boolean {
     const words = response.coach_line.split(/\s+/);
     return words.length <= 30; // Reasonable maximum
   }
 
-  private checkForbiddenWords(response: LLMResponse, constraints: any): boolean {
+  private checkForbiddenWords(response: LLMGeneration, constraints: any): boolean {
     const forbiddenWords = constraints.forbidden_words || [];
     const text = response.coach_line.toLowerCase();
     return !forbiddenWords.some((word: string) => text.includes(word.toLowerCase()));
   }
 
-  private checkChoices(response: LLMResponse): boolean {
+  private checkChoices(response: LLMGeneration): boolean {
     return !!response.choice_presentation && response.choice_presentation.length > 0;
   }
 
-  private checkJudgment(response: LLMResponse): boolean {
+  private checkJudgment(response: LLMGeneration): boolean {
     const judgmentalPatterns = [
       /you\s+(should|must|need\s+to)/i,
       /that'?s\s+(wrong|incorrect|bad)/i,
@@ -51,7 +51,7 @@ export class ResponseValidator {
     return !judgmentalPatterns.some(pattern => pattern.test(response.coach_line));
   }
 
-  private checkSentenceCount(response: LLMResponse, constraints: any): boolean {
+  private checkSentenceCount(response: LLMGeneration, constraints: any): boolean {
     const sentences = response.coach_line.split(/[.!?]+/).filter(s => s.trim());
     return sentences.length <= constraints.max_sentences;
   }

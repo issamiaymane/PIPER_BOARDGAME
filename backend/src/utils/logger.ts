@@ -54,8 +54,6 @@ export interface PipelineFlowData {
     avatar_tone: string;
     max_task_time: number;
     inactivity_timeout: number;
-    show_visual_cues: boolean;
-    enable_audio_support: boolean;
   };
 
   // 7. CONSTRAINTS
@@ -267,8 +265,6 @@ export const pipelineLogger = {
     console.log(`   avatar_tone:         ${cfg.avatar_tone}`);
     console.log(`   max_task_time:       ${cfg.max_task_time}s`);
     console.log(`   inactivity_timeout:  ${cfg.inactivity_timeout}s`);
-    console.log(`   show_visual_cues:    ${cfg.show_visual_cues}`);
-    console.log(`   enable_audio_support:${cfg.enable_audio_support}`);
 
     // ─────────────────────────────────────────────────────────────
     // 7. CONSTRAINTS

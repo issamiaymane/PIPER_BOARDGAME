@@ -12,9 +12,7 @@ export class SessionPlanner {
       prompt_intensity: 2,
       avatar_tone: 'warm',
       max_task_time: 60,
-      inactivity_timeout: 30, // 30 seconds before "are you there?" prompt
-      show_visual_cues: true,
-      enable_audio_support: false
+      inactivity_timeout: 30 // 30 seconds before "are you there?" prompt
     };
 
     // ============================================
@@ -56,14 +54,6 @@ export class SessionPlanner {
         // Why? Shorten from 60s to 30s
         // Reduce sustained attention demand
         // Make success more achievable
-
-        config.show_visual_cues = true;
-        // Why? Keep visual support on
-        // Maximum UDL supports
-
-        config.enable_audio_support = true;
-        // Why? Turn on audio help
-        // Multiple modalities = better chance of success
 
         config.inactivity_timeout = 20;
         // Why? Shorter timeout (20s) when struggling

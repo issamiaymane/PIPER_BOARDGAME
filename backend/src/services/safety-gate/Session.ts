@@ -7,14 +7,14 @@ import { BackendOrchestrator } from './BackendOrchestrator.js';
 import { Level } from './types.js';
 import type { Event, CardContext, SafetyGateResult } from './types.js';
 import { logger } from '../../utils/logger.js';
-import { AnswerValidator } from './AnswerValidator.js';
+import { ChildAnswerCheck } from './ChildAnswerCheck.js';
 
 // Re-export for backward compatibility
 export type { CardContext, SafetyGateResult };
 
 export class Session {
   private orchestrator: BackendOrchestrator;
-  private answerValidator: AnswerValidator;
+  private childAnswerCheck: ChildAnswerCheck;
   private currentCard: CardContext | null = null;
   private attemptCount: number = 0;
   private responseHistory: string[] = [];
@@ -36,7 +36,7 @@ export class Session {
 
   constructor() {
     this.orchestrator = new BackendOrchestrator();
-    this.answerValidator = new AnswerValidator();
+    this.childAnswerCheck = new ChildAnswerCheck();
     this.sessionStartTime = new Date();
   }
 
@@ -206,7 +206,7 @@ export class Session {
     if (context?.category && aiCategories.includes(context.category)) {
       console.log(`[Session] Sync match failed for "${transcription}", trying AI similarity...`);
       try {
-        const aiResult = await this.answerValidator.checkSimilarity(
+        const aiResult = await this.childAnswerCheck.checkSimilarity(
           transcription,
           targetAnswers[0],
           context
