@@ -7,11 +7,12 @@ import { Level, Intervention } from '../../types/safety-gate.js';
 import type {
   State,
   Event,
-  SessionConfig,
   BackendResponse,
   UIPackage,
   TaskContext,
-  LLMGeneration
+  LLMGeneration,
+  LLMConstraints,
+  ResponseContext
 } from '../../types/safety-gate.js';
 import { StateEngine } from './StateEngine.js';
 import { SignalDetector } from './SignalDetector.js';
@@ -131,12 +132,15 @@ export class BackendOrchestrator {
       signals: signals,
       interventions: interventions,
       sessionConfig: config,
-      // Decision & context
-      decision: this.determineDecision(safetyLevel, interventions),
-      sessionState: this.getSessionState(event, state),
+      // Source data references (no duplication)
+      event: event,
+      state: state,
+      taskContext: this.currentTaskContext,
+      // Derived context
       context: this.buildContext(event, state),
-      constraints: this.buildConstraints(config, safetyLevel),
+      constraints: this.buildConstraints(safetyLevel),
       reasoning: this.buildReasoning(safetyLevel, interventions, signals),
+      decision: this.determineDecision(safetyLevel, interventions),
       timestamp: new Date()
     };
 
@@ -233,46 +237,21 @@ export class BackendOrchestrator {
     return 'CONTINUE_NORMAL';
   }
 
-  private getSessionState(event: Event, state: State): BackendResponse['sessionState'] {
-    return {
-      current_event: event.type,
-      engagement: state.engagementLevel,
-      dysregulation: state.dysregulationLevel,
-      fatigue: state.fatigueLevel,
-      consecutive_errors: state.consecutiveErrors,
-      time_in_session: state.timeInSession
-    };
-  }
-
-  private buildContext(event: Event, state: State): BackendResponse['context'] {
-    const what_happened: BackendResponse['context']['what_happened'] = event.type === 'CHILD_RESPONSE'
+  private buildContext(event: Event, state: State): ResponseContext {
+    const what_happened: ResponseContext['what_happened'] = event.type === 'CHILD_RESPONSE'
       ? (event.correct ? 'correct_response' : 'incorrect_response')
       : 'child_inactive';
 
-    const baseContext: BackendResponse['context'] = {
+    return {
       what_happened,
       child_said: event.response || '',
       target_was: this.currentTaskContext?.targetAnswer || '',
       attempt_number: state.consecutiveErrors + 1
     };
-
-    // Add card-specific context if available
-    if (this.currentTaskContext) {
-      baseContext.card_context = {
-        category: this.currentTaskContext.category,
-        card_type: this.currentTaskContext.cardType,
-        question: this.currentTaskContext.question,
-        expected_answer: this.currentTaskContext.targetAnswer,
-        visual_supports: this.currentTaskContext.imageLabels
-      };
-    }
-
-    return baseContext;
   }
 
-  private buildConstraints(config: SessionConfig, level: Level): BackendResponse['constraints'] {
+  private buildConstraints(level: Level): LLMConstraints {
     return {
-      must_use_tone: config.avatarTone,
       must_be_brief: true,
       must_not_judge: true,
       must_not_pressure: true,

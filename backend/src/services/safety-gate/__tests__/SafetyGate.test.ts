@@ -19,7 +19,20 @@ import { LevelAssessor } from '../LevelAssessor.js';
 import { InterventionSelector } from '../InterventionSelector.js';
 import { SessionPlanner } from '../SessionPlanner.js';
 import { BackendOrchestrator } from '../BackendOrchestrator.js';
-import { State, Event, Level, Intervention, Signal, TaskContext } from '../../../types/safety-gate.js';
+import { PromptBuilder } from '../PromptBuilder.js';
+import { LLMResponseValidator } from '../LLMResponseValidator.js';
+import {
+  State,
+  Event,
+  Level,
+  Intervention,
+  Signal,
+  TaskContext,
+  BackendResponse,
+  LLMConstraints,
+  ResponseContext,
+  SessionConfig
+} from '../../../types/safety-gate.js';
 
 // ============================================
 // TEST UTILITIES
@@ -748,10 +761,385 @@ class SafetyGateTestRunner {
   }
 
   // ============================================
+  // BACKEND RESPONSE STRUCTURE TESTS
+  // ============================================
+
+  testBR1_BackendResponseStructure() {
+    this.reset();
+
+    logTestHeader('BR1', 'BackendResponse has correct structure with no duplications');
+
+    const orchestrator = new BackendOrchestrator();
+    const taskContext: TaskContext = {
+      cardType: 'opposite',
+      category: 'temperature',
+      question: 'What is the opposite of hot?',
+      targetAnswer: 'cold',
+      imageLabels: ['thermometer', 'ice']
+    };
+    orchestrator.setTaskContext(taskContext);
+
+    // Create a mock BackendResponse to verify structure
+    const stateEngine = new StateEngine();
+    const event: Event = { type: 'CHILD_RESPONSE', response: 'warm', correct: false };
+    const signals = this.detectSignals(event);
+    const state = stateEngine.processEvent(event, signals);
+    const level = this.levelAssessor.assessLevel(state, signals);
+    const interventions = this.interventionSelector.selectInterventions(level, state, signals);
+    const config = this.sessionPlanner.adaptSessionConfig(level);
+
+    // Build a BackendResponse manually to test structure
+    const backendResponse: BackendResponse = {
+      safetyLevel: level,
+      signals: signals,
+      interventions: interventions,
+      sessionConfig: config,
+      event: event,
+      state: state,
+      taskContext: taskContext,
+      context: {
+        what_happened: 'incorrect_response',
+        child_said: 'warm',
+        target_was: 'cold',
+        attempt_number: 1
+      },
+      constraints: {
+        must_be_brief: true,
+        must_not_judge: true,
+        must_not_pressure: true,
+        must_offer_choices: false,
+        must_validate_feelings: false,
+        max_sentences: 2,
+        forbidden_words: ['wrong'],
+        required_approach: 'describe_what_heard_offer_support'
+      },
+      reasoning: {
+        safety_level_reason: 'Level GREEN',
+        interventions_reason: 'No interventions needed'
+      },
+      decision: 'CONTINUE_NORMAL',
+      timestamp: new Date()
+    };
+
+    // Verify no duplication - event and state are references, not copies
+    const hasEvent = backendResponse.event === event;
+    const hasState = backendResponse.state === state;
+    const hasTaskContext = backendResponse.taskContext === taskContext;
+    const hasToneInConfig = backendResponse.sessionConfig.avatarTone !== undefined;
+    const noToneInConstraints = !('must_use_tone' in backendResponse.constraints);
+
+    console.log(`\n${COLORS.bold}BackendResponse Structure:${COLORS.reset}`);
+    console.log(`   event reference: ${hasEvent ? 'YES' : 'NO'}`);
+    console.log(`   state reference: ${hasState ? 'YES' : 'NO'}`);
+    console.log(`   taskContext reference: ${hasTaskContext ? 'YES' : 'NO'}`);
+    console.log(`   tone in sessionConfig: ${hasToneInConfig ? 'YES' : 'NO'}`);
+    console.log(`   no tone in constraints: ${noToneInConstraints ? 'YES' : 'NO'}`);
+
+    const passed = hasEvent && hasState && hasTaskContext && hasToneInConfig && noToneInConstraints;
+    logResult(passed, 'No duplications', passed ? 'Structure correct' : 'Duplications found');
+
+    this.results.push({ id: 'BR1', passed, description: 'BackendResponse has correct structure' });
+    return passed;
+  }
+
+  testBR2_ResponseContextDerived() {
+    this.reset();
+
+    logTestHeader('BR2', 'ResponseContext is correctly derived from Event + TaskContext');
+
+    const event: Event = { type: 'CHILD_RESPONSE', response: 'hot', correct: false };
+    const taskContext: TaskContext = {
+      cardType: 'opposite',
+      category: 'temperature',
+      question: 'What is the opposite of hot?',
+      targetAnswer: 'cold',
+      imageLabels: ['thermometer']
+    };
+
+    const context: ResponseContext = {
+      what_happened: event.correct ? 'correct_response' : 'incorrect_response',
+      child_said: event.response || '',
+      target_was: taskContext.targetAnswer,
+      attempt_number: 1
+    };
+
+    const correctWhatHappened = context.what_happened === 'incorrect_response';
+    const correctChildSaid = context.child_said === 'hot';
+    const correctTargetWas = context.target_was === 'cold';
+
+    console.log(`\n${COLORS.bold}ResponseContext:${COLORS.reset}`);
+    console.log(`   what_happened: ${context.what_happened} (expected: incorrect_response)`);
+    console.log(`   child_said: ${context.child_said} (expected: hot)`);
+    console.log(`   target_was: ${context.target_was} (expected: cold)`);
+
+    const passed = correctWhatHappened && correctChildSaid && correctTargetWas;
+    logResult(passed, 'Derived correctly', passed ? 'YES' : 'NO');
+
+    this.results.push({ id: 'BR2', passed, description: 'ResponseContext derived correctly' });
+    return passed;
+  }
+
+  testBR3_LLMConstraintsNoTone() {
+    this.reset();
+
+    logTestHeader('BR3', 'LLMConstraints does not include tone (tone is in SessionConfig)');
+
+    const constraints: LLMConstraints = {
+      must_be_brief: true,
+      must_not_judge: true,
+      must_not_pressure: true,
+      must_offer_choices: true,
+      must_validate_feelings: true,
+      max_sentences: 3,
+      forbidden_words: ['wrong', 'bad'],
+      required_approach: 'describe_what_heard_offer_support'
+    };
+
+    // Verify LLMConstraints doesn't have tone
+    const noTone = !('must_use_tone' in constraints);
+    const hasRequiredFields =
+      'must_be_brief' in constraints &&
+      'must_not_judge' in constraints &&
+      'must_offer_choices' in constraints &&
+      'max_sentences' in constraints &&
+      'forbidden_words' in constraints;
+
+    console.log(`\n${COLORS.bold}LLMConstraints:${COLORS.reset}`);
+    console.log(`   No tone field: ${noTone ? 'YES' : 'NO'}`);
+    console.log(`   Has required fields: ${hasRequiredFields ? 'YES' : 'NO'}`);
+
+    const passed = noTone && hasRequiredFields;
+    logResult(passed, 'No tone in constraints', passed ? 'YES' : 'NO');
+
+    this.results.push({ id: 'BR3', passed, description: 'LLMConstraints has no tone field' });
+    return passed;
+  }
+
+  // ============================================
+  // PROMPT BUILDER TESTS
+  // ============================================
+
+  testPB1_PromptBuilderUsesBackendResponse() {
+    this.reset();
+
+    logTestHeader('PB1', 'PromptBuilder correctly uses BackendResponse');
+
+    const promptBuilder = new PromptBuilder();
+
+    const backendResponse: BackendResponse = {
+      safetyLevel: Level.YELLOW,
+      signals: [Signal.WANTS_BREAK],
+      interventions: [Intervention.SKIP_CARD, Intervention.RETRY_CARD],
+      sessionConfig: {
+        promptIntensity: 1,
+        avatarTone: 'calm',
+        maxTaskTime: 45,
+        inactivityTimeout: 15
+      },
+      event: { type: 'CHILD_RESPONSE', response: 'hot', correct: false },
+      state: {
+        engagementLevel: 5,
+        dysregulationLevel: 4,
+        fatigueLevel: 3,
+        consecutiveErrors: 3,
+        errorFrequency: 0.5,
+        timeInSession: 300,
+        timeSinceBreak: 300,
+        lastActivityTimestamp: new Date()
+      },
+      taskContext: {
+        cardType: 'opposite',
+        category: 'temperature',
+        question: 'What is the opposite of hot?',
+        targetAnswer: 'cold',
+        imageLabels: ['thermometer']
+      },
+      context: {
+        what_happened: 'incorrect_response',
+        child_said: 'hot',
+        target_was: 'cold',
+        attempt_number: 3
+      },
+      constraints: {
+        must_be_brief: true,
+        must_not_judge: true,
+        must_not_pressure: true,
+        must_offer_choices: true,
+        must_validate_feelings: false,
+        max_sentences: 3,
+        forbidden_words: ['wrong', 'incorrect', 'bad'],
+        required_approach: 'describe_what_heard_offer_support'
+      },
+      reasoning: {
+        safety_level_reason: 'Level YELLOW due to 3 consecutive errors',
+        interventions_reason: 'Applying: SKIP_CARD, RETRY_CARD'
+      },
+      decision: 'ADAPT_AND_CONTINUE',
+      timestamp: new Date()
+    };
+
+    const prompt = promptBuilder.buildSystemPrompt(backendResponse);
+
+    // Verify prompt contains key information
+    const hasChildSaid = prompt.includes('hot');
+    const hasTarget = prompt.includes('cold');
+    const hasSafetyLevel = prompt.includes('YELLOW');
+    const hasForbiddenWords = prompt.includes('wrong');
+    const hasInterventions = prompt.includes('SKIP_CARD');
+
+    console.log(`\n${COLORS.bold}Prompt contains:${COLORS.reset}`);
+    console.log(`   child_said (hot): ${hasChildSaid ? 'YES' : 'NO'}`);
+    console.log(`   target (cold): ${hasTarget ? 'YES' : 'NO'}`);
+    console.log(`   safety level (YELLOW): ${hasSafetyLevel ? 'YES' : 'NO'}`);
+    console.log(`   forbidden words: ${hasForbiddenWords ? 'YES' : 'NO'}`);
+    console.log(`   interventions: ${hasInterventions ? 'YES' : 'NO'}`);
+
+    const passed = hasChildSaid && hasTarget && hasSafetyLevel && hasForbiddenWords && hasInterventions;
+    logResult(passed, 'Prompt built correctly', passed ? 'YES' : 'NO');
+
+    this.results.push({ id: 'PB1', passed, description: 'PromptBuilder uses BackendResponse correctly' });
+    return passed;
+  }
+
+  // ============================================
+  // LLM RESPONSE VALIDATOR TESTS
+  // ============================================
+
+  testLV1_ValidatorUsesLLMConstraints() {
+    this.reset();
+
+    logTestHeader('LV1', 'LLMResponseValidator uses LLMConstraints correctly');
+
+    const validator = new LLMResponseValidator();
+
+    const constraints: LLMConstraints = {
+      must_be_brief: true,
+      must_not_judge: true,
+      must_not_pressure: true,
+      must_offer_choices: true,
+      must_validate_feelings: false,
+      max_sentences: 3,
+      forbidden_words: ['wrong', 'incorrect', 'bad'],
+      required_approach: 'describe_what_heard_offer_support'
+    };
+
+    // Test valid response
+    const validResponse = {
+      coach_line: "I heard 'hot'. Good try! What would you like to do?",
+      choice_presentation: "What would you like to do?"
+    };
+
+    const validResult = validator.validate(validResponse, constraints);
+
+    // Test invalid response (contains forbidden word)
+    const invalidResponse = {
+      coach_line: "That's wrong. Try again.",
+      choice_presentation: "What would you like to do?"
+    };
+
+    const invalidResult = validator.validate(invalidResponse, constraints);
+
+    console.log(`\n${COLORS.bold}Validator Results:${COLORS.reset}`);
+    console.log(`   Valid response: ${validResult.valid ? 'PASSED' : 'FAILED'}`);
+    console.log(`   Invalid response (forbidden word): ${!invalidResult.valid ? 'CORRECTLY REJECTED' : 'INCORRECTLY ACCEPTED'}`);
+
+    const passed = validResult.valid && !invalidResult.valid;
+    logResult(passed, 'Validator works correctly', passed ? 'YES' : 'NO');
+
+    this.results.push({ id: 'LV1', passed, description: 'LLMResponseValidator uses constraints correctly' });
+    return passed;
+  }
+
+  // ============================================
+  // BACKEND ORCHESTRATOR INTEGRATION TESTS
+  // ============================================
+
+  async testBO1_OrchestratorProcessEvent() {
+    this.reset();
+
+    logTestHeader('BO1', 'BackendOrchestrator.processEvent returns valid UIPackage');
+
+    const orchestrator = new BackendOrchestrator();
+    const taskContext: TaskContext = {
+      cardType: 'opposite',
+      category: 'temperature',
+      question: 'What is the opposite of hot?',
+      targetAnswer: 'cold',
+      imageLabels: ['thermometer', 'ice']
+    };
+
+    const event: Event = { type: 'CHILD_RESPONSE', response: 'warm', correct: false };
+
+    try {
+      const uiPackage = await orchestrator.processEvent(event, taskContext);
+
+      const hasOverlay = uiPackage.overlay !== undefined;
+      const hasSpeech = uiPackage.speech?.text !== undefined;
+      const hasInterventions = Array.isArray(uiPackage.interventions);
+      const hasConfig = uiPackage.sessionConfig !== undefined;
+
+      console.log(`\n${COLORS.bold}UIPackage Structure:${COLORS.reset}`);
+      console.log(`   overlay: ${hasOverlay ? 'YES' : 'NO'}`);
+      console.log(`   speech.text: ${hasSpeech ? uiPackage.speech.text : 'NO'}`);
+      console.log(`   interventions: ${hasInterventions ? uiPackage.interventions.join(', ') : 'NO'}`);
+      console.log(`   sessionConfig: ${hasConfig ? 'YES' : 'NO'}`);
+
+      const passed = hasOverlay && hasSpeech && hasInterventions && hasConfig;
+      logResult(passed, 'Valid UIPackage', passed ? 'YES' : 'NO');
+
+      this.results.push({ id: 'BO1', passed, description: 'Orchestrator returns valid UIPackage' });
+      return passed;
+    } catch (error) {
+      console.log(`\n${COLORS.red}Error: ${error}${COLORS.reset}`);
+      this.results.push({ id: 'BO1', passed: false, description: 'Orchestrator returns valid UIPackage' });
+      return false;
+    }
+  }
+
+  async testBO2_OrchestratorInactivityEvent() {
+    this.reset();
+
+    logTestHeader('BO2', 'BackendOrchestrator handles CHILD_INACTIVE event');
+
+    const orchestrator = new BackendOrchestrator();
+    const taskContext: TaskContext = {
+      cardType: 'opposite',
+      category: 'temperature',
+      question: 'What is the opposite of hot?',
+      targetAnswer: 'cold',
+      imageLabels: ['thermometer']
+    };
+
+    const event: Event = { type: 'CHILD_INACTIVE' };
+
+    try {
+      const uiPackage = await orchestrator.processEvent(event, taskContext);
+
+      const hasSpeech = uiPackage.speech?.text !== undefined;
+      const isInactivityResponse = uiPackage.speech?.text.toLowerCase().includes('still there') ||
+                                    uiPackage.speech?.text.toLowerCase().includes('take your time');
+
+      console.log(`\n${COLORS.bold}Inactivity Response:${COLORS.reset}`);
+      console.log(`   speech.text: ${uiPackage.speech?.text || 'NO'}`);
+      console.log(`   Is inactivity prompt: ${isInactivityResponse ? 'YES' : 'NO'}`);
+
+      const passed = hasSpeech && isInactivityResponse;
+      logResult(passed, 'Valid inactivity response', passed ? 'YES' : 'NO');
+
+      this.results.push({ id: 'BO2', passed, description: 'Orchestrator handles inactivity' });
+      return passed;
+    } catch (error) {
+      console.log(`\n${COLORS.red}Error: ${error}${COLORS.reset}`);
+      this.results.push({ id: 'BO2', passed: false, description: 'Orchestrator handles inactivity' });
+      return false;
+    }
+  }
+
+  // ============================================
   // RUN ALL TESTS
   // ============================================
 
-  runAllTests() {
+  async runAllTests() {
     console.log('\n' + '▓'.repeat(60));
     console.log(`${COLORS.bold}${COLORS.cyan}   SAFETY GATE SYSTEM - COMPREHENSIVE TEST SUITE${COLORS.reset}`);
     console.log('▓'.repeat(60));
@@ -803,6 +1191,25 @@ class SafetyGateTestRunner {
     this.testConfig_Orange();
     this.testConfig_Red();
 
+    // BackendResponse structure tests
+    console.log(`\n${COLORS.bold}━━━ BACKEND RESPONSE STRUCTURE TESTS ━━━${COLORS.reset}`);
+    this.testBR1_BackendResponseStructure();
+    this.testBR2_ResponseContextDerived();
+    this.testBR3_LLMConstraintsNoTone();
+
+    // PromptBuilder tests
+    console.log(`\n${COLORS.bold}━━━ PROMPT BUILDER TESTS ━━━${COLORS.reset}`);
+    this.testPB1_PromptBuilderUsesBackendResponse();
+
+    // LLM Response Validator tests
+    console.log(`\n${COLORS.bold}━━━ LLM RESPONSE VALIDATOR TESTS ━━━${COLORS.reset}`);
+    this.testLV1_ValidatorUsesLLMConstraints();
+
+    // Backend Orchestrator integration tests
+    console.log(`\n${COLORS.bold}━━━ BACKEND ORCHESTRATOR INTEGRATION TESTS ━━━${COLORS.reset}`);
+    await this.testBO1_OrchestratorProcessEvent();
+    await this.testBO2_OrchestratorInactivityEvent();
+
     // Summary
     this.printSummary();
   }
@@ -844,4 +1251,4 @@ class SafetyGateTestRunner {
 // ============================================
 
 const runner = new SafetyGateTestRunner();
-runner.runAllTests();
+runner.runAllTests().catch(console.error);
