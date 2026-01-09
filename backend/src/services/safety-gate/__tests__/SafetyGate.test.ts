@@ -19,7 +19,7 @@ import { LevelAssessor } from '../LevelAssessor.js';
 import { InterventionSelector } from '../InterventionSelector.js';
 import { SessionPlanner } from '../SessionPlanner.js';
 import { BackendOrchestrator } from '../BackendOrchestrator.js';
-import { State, Event, Level, Intervention, Signal, TaskContext } from '../types.js';
+import { State, Event, Level, Intervention, Signal, TaskContext } from '../../../types/safety-gate.js';
 
 // ============================================
 // TEST UTILITIES

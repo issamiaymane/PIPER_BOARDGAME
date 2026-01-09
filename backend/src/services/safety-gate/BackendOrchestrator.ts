@@ -11,11 +11,7 @@ import type {
   BackendResponse,
   UIPackage,
   TaskContext,
-  LLMGeneration,
-  SessionState,
-  ResponseContext,
-  ResponseConstraints,
-  ResponseReasoning
+  LLMGeneration
 } from '../../types/safety-gate.js';
 import { StateEngine } from './StateEngine.js';
 import { SignalDetector } from './SignalDetector.js';
@@ -237,7 +233,7 @@ export class BackendOrchestrator {
     return 'CONTINUE_NORMAL';
   }
 
-  private getSessionState(event: Event, state: State): SessionState {
+  private getSessionState(event: Event, state: State): BackendResponse['sessionState'] {
     return {
       current_event: event.type,
       engagement: state.engagementLevel,
@@ -248,12 +244,12 @@ export class BackendOrchestrator {
     };
   }
 
-  private buildContext(event: Event, state: State): ResponseContext {
-    const what_happened: ResponseContext['what_happened'] = event.type === 'CHILD_RESPONSE'
+  private buildContext(event: Event, state: State): BackendResponse['context'] {
+    const what_happened: BackendResponse['context']['what_happened'] = event.type === 'CHILD_RESPONSE'
       ? (event.correct ? 'correct_response' : 'incorrect_response')
       : 'child_inactive';
 
-    const baseContext: ResponseContext = {
+    const baseContext: BackendResponse['context'] = {
       what_happened,
       child_said: event.response || '',
       target_was: this.currentTaskContext?.targetAnswer || '',
@@ -274,7 +270,7 @@ export class BackendOrchestrator {
     return baseContext;
   }
 
-  private buildConstraints(config: SessionConfig, level: Level): ResponseConstraints {
+  private buildConstraints(config: SessionConfig, level: Level): BackendResponse['constraints'] {
     return {
       must_use_tone: config.avatarTone,
       must_be_brief: true,
@@ -294,7 +290,7 @@ export class BackendOrchestrator {
     level: Level,
     interventions: Intervention[],
     signals: string[]
-  ): ResponseReasoning {
+  ): BackendResponse['reasoning'] {
     return {
       safety_level_reason: `Level ${Level[level]} due to signals: ${signals.join(', ') || 'none'}`,
       interventions_reason: interventions.length > 0
