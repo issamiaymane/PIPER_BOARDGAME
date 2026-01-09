@@ -16,11 +16,13 @@ import { logger } from '../../utils/logger.js';
 const SCREAMING_AMPLITUDE_THRESHOLD = 0.35;
 const SCREAMING_PEAK_THRESHOLD = 0.90;
 // Number of consecutive high-amplitude chunks to confirm screaming
-// RAISED from 3 to require more confirmation
-const SCREAMING_CONFIRMATION_CHUNKS = 4;
+// Lowered back to 3 - real screams have amplitude variation between chunks
+const SCREAMING_CONFIRMATION_CHUNKS = 3;
 // Time to wait for transcription AFTER speech stops before triggering screaming-only response (ms)
 // This ensures we give OpenAI enough time to transcribe before assuming pure screaming
 const SCREAMING_POST_SPEECH_WAIT_MS = 1500;
+// Cooldown period after screaming response to prevent duplicate responses from late-arriving transcriptions
+const SCREAMING_RESPONSE_COOLDOWN_MS = 2500;
 
 export interface VoiceSession {
   id: string;
@@ -39,6 +41,8 @@ export interface VoiceSession {
   screamingTimeoutId?: ReturnType<typeof setTimeout>;
   // Track if speech has stopped (to know when to start timeout)
   speechStopped: boolean;
+  // Timestamp of last screaming response for cooldown
+  lastScreamingResponseTime?: number;
 }
 
 export interface ClientMessage {
@@ -112,7 +116,8 @@ export class VoiceSessionManager {
       safetyGateSession: new Session(),
       recentAmplitudes: [],
       screamingDetected: false,
-      speechStopped: false
+      speechStopped: false,
+      lastScreamingResponseTime: undefined
     };
 
     // Set up inactivity callback
@@ -294,11 +299,16 @@ export class VoiceSessionManager {
 
       case 'audio_chunk':
         if (message.audio) {
-          session.realtimeService.sendAudio(message.audio);
-
-          // Track amplitude for screaming detection
+          // Track amplitude FIRST before sending to OpenAI
           if (typeof message.amplitude === 'number' && typeof message.peak === 'number') {
             this.trackAmplitude(session, message.amplitude, message.peak);
+          }
+
+          // Only send to OpenAI if NOT screaming (prevents scream transcription)
+          if (!session.screamingDetected) {
+            session.realtimeService.sendAudio(message.audio);
+          } else {
+            console.log('[VoiceSession] Audio chunk skipped - screaming detected');
           }
         }
         break;
@@ -344,6 +354,18 @@ export class VoiceSessionManager {
         session.screamingTimeoutId = undefined;
         if (session.screamingDetected) {
           console.log(`[VoiceSession] ✅ Transcription "${transcription}" arrived with screaming - STACKING!`);
+        }
+      }
+
+      // GUARD: Check if a screaming response was recently sent (cooldown)
+      // This prevents duplicate responses when transcription arrives AFTER screaming timeout fired
+      if (session.lastScreamingResponseTime) {
+        const elapsed = Date.now() - session.lastScreamingResponseTime;
+        if (elapsed < SCREAMING_RESPONSE_COOLDOWN_MS) {
+          console.log(`[VoiceSession] ⏸️ BLOCKED: Transcription "${transcription}" arrived ${elapsed}ms after screaming response - within ${SCREAMING_RESPONSE_COOLDOWN_MS}ms cooldown`);
+          // Reset screaming detection flag but don't process
+          session.screamingDetected = false;
+          return;
         }
       }
 
@@ -510,9 +532,23 @@ export class VoiceSessionManager {
         session.screamingDetected = true;
         console.log(`[VoiceSession] 🚨 SCREAMING DETECTED! (amplitude: ${amplitude.toFixed(3)}, peak: ${peak.toFixed(3)})`);
         logger.info(`Session ${session.id}: SCREAMING DETECTED (amplitude: ${amplitude.toFixed(3)}, peak: ${peak.toFixed(3)})`);
-        // Note: Timeout is NOT started here - it will start when speech_stopped event arrives
-        // This ensures we wait for transcription to arrive for proper stacking
+
+        // Start timeout to trigger screaming response immediately
+        // We can't wait for speech_stopped since we're blocking audio from reaching OpenAI
+        if (!session.screamingTimeoutId) {
+          console.log(`[VoiceSession] ⏱️ Starting screaming response timeout (${SCREAMING_POST_SPEECH_WAIT_MS}ms)`);
+          session.screamingTimeoutId = setTimeout(() => {
+            if (session.screamingDetected) {
+              console.log(`[VoiceSession] ⏰ Screaming timeout fired - triggering response`);
+              this.triggerScreamingResponse(session);
+            }
+          }, SCREAMING_POST_SPEECH_WAIT_MS);
+        }
       }
+    } else if (session.screamingDetected && recentHighAmplitude.length === 0) {
+      // Reset screaming flag when amplitude drops back to normal
+      session.screamingDetected = false;
+      console.log(`[VoiceSession] ✅ Screaming ended - resuming normal audio capture`);
     }
   }
 
@@ -523,7 +559,9 @@ export class VoiceSessionManager {
     // Clear the timeout ID since the timer has fired
     session.screamingTimeoutId = undefined;
 
-    console.log(`[VoiceSession] 🔥 IMMEDIATE screaming response triggered!`);
+    // Record timestamp for cooldown - prevents duplicate responses from late-arriving transcriptions
+    session.lastScreamingResponseTime = Date.now();
+    console.log(`[VoiceSession] 🔥 IMMEDIATE screaming response triggered! (cooldown started)`);
 
     try {
       // Process through safety-gate with screaming signal (no transcription needed)
@@ -577,6 +615,8 @@ export class VoiceSessionManager {
     session.recentAmplitudes = [];
     session.screamingDetected = false;
     session.speechStopped = false;
+    // Reset cooldown when starting fresh interaction
+    session.lastScreamingResponseTime = undefined;
   }
 }
 
