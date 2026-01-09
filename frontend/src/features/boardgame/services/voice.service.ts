@@ -61,7 +61,7 @@ export interface UIPackage {
       timeSinceBreak: number;
     };
   };
-  // Additional fields from SafetyGateSession for console logging
+  // Additional fields from Session for console logging
   childSaid?: string;
   targetAnswers?: string[];
   attemptNumber?: number;

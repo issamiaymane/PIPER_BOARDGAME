@@ -1,37 +1,19 @@
 /**
- * SafetyGateSession
+ * Session
  * Per-session wrapper around BackendOrchestrator that manages card context and response history
  */
 
-import { BackendOrchestrator, UIPackage } from './BackendOrchestrator.js';
-import { Event, Level } from './types.js';
+import { BackendOrchestrator } from './BackendOrchestrator.js';
+import { Event, Level, CardContext, SafetyGateResult } from './types.js';
 import { logger, safetyGateLogger, SafetyGateLogData } from '../../utils/logger.js';
-import { AdjectiveSimilarityService } from './AdjectiveSimilarityService.js';
+import { AnswerValidator } from './AnswerValidator.js';
 
-export interface CardContext {
-  category: string;
-  question: string;
-  targetAnswers: string[];
-  images: Array<{ image: string; label: string }>;
-}
+// Re-export for backward compatibility
+export { CardContext, SafetyGateResult };
 
-export interface SafetyGateResult {
-  uiPackage: UIPackage;
-  feedbackText: string;
-  choiceMessage: string;
-  shouldSpeak: boolean;
-  interventionRequired: boolean;
-  isCorrect: boolean;
-  // Additional data for frontend console logging
-  childSaid?: string;
-  targetAnswers?: string[];
-  attemptNumber?: number;
-  responseHistory?: string[];
-}
-
-export class SafetyGateSession {
+export class Session {
   private orchestrator: BackendOrchestrator;
-  private similarityService: AdjectiveSimilarityService;
+  private answerValidator: AnswerValidator;
   private currentCard: CardContext | null = null;
   private attemptCount: number = 0;
   private responseHistory: string[] = [];
@@ -45,7 +27,7 @@ export class SafetyGateSession {
 
   constructor() {
     this.orchestrator = new BackendOrchestrator();
-    this.similarityService = new AdjectiveSimilarityService();
+    this.answerValidator = new AnswerValidator();
     this.sessionStartTime = new Date();
   }
 
@@ -60,7 +42,7 @@ export class SafetyGateSession {
 
     // Start inactivity timer - we're now waiting for child to respond to this card
     this.startInactivityTimer();
-    console.log(`[SafetyGateSession] 📋 Card set: "${card.question}" - Timer STARTED`);
+    console.log(`[Session] 📋 Card set: "${card.question}" - Timer STARTED`);
   }
 
   /**
@@ -90,7 +72,7 @@ export class SafetyGateSession {
     this.resetInactivityTimer();
 
     if (!this.currentCard) {
-      logger.warn('SafetyGateSession: No card context set, using default processing');
+      logger.warn('Session: No card context set, using default processing');
       return this.generateDefaultResult(transcription);
     }
 
@@ -110,7 +92,7 @@ export class SafetyGateSession {
 
     // Debug: Log when audio-based screaming is detected
     if (screamingSignal) {
-      console.log(`[SafetyGateSession] 🎤 Audio-based SCREAMING signal added to event`);
+      console.log(`[Session] 🎤 Audio-based SCREAMING signal added to event`);
     }
 
     const event: Event = {
@@ -165,7 +147,7 @@ export class SafetyGateSession {
     // Stop timer when answer is correct - card will close and move to next step
     if (isCorrect) {
       this.stopInactivityTimer();
-      console.log(`[SafetyGateSession] ⏱️ Timer STOPPED - Correct answer, card closing`);
+      console.log(`[Session] ⏱️ Timer STOPPED - Correct answer, card closing`);
     } else if (safetyLevel >= Level.YELLOW) {
       // Check if feedback already ends with the choice prompt
       if (!feedbackText.toLowerCase().includes(choicePrompt.toLowerCase())) {
@@ -178,7 +160,7 @@ export class SafetyGateSession {
       // Stop inactivity timer when showing choices - child is not expected to answer the card
       // Timer should only restart when child selects "Try again" or a new card is shown
       this.stopInactivityTimer();
-      console.log(`[SafetyGateSession] ⏱️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
+      console.log(`[Session] ⏱️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
     }
 
     return {
@@ -222,19 +204,19 @@ export class SafetyGateSession {
     ];
 
     if (context?.category && aiCategories.includes(context.category)) {
-      console.log(`[SafetyGateSession] Sync match failed for "${transcription}", trying AI similarity...`);
+      console.log(`[Session] Sync match failed for "${transcription}", trying AI similarity...`);
       try {
-        const aiResult = await this.similarityService.checkSimilarity(
+        const aiResult = await this.answerValidator.checkSimilarity(
           transcription,
           targetAnswers[0],
           context
         );
         if (aiResult) {
-          console.log(`[SafetyGateSession] AI accepted "${transcription}" as equivalent to "${targetAnswers[0]}"`);
+          console.log(`[Session] AI accepted "${transcription}" as equivalent to "${targetAnswers[0]}"`);
           return true;
         }
       } catch (error) {
-        console.log(`[SafetyGateSession] AI similarity check failed, using sync result`);
+        console.log(`[Session] AI similarity check failed, using sync result`);
       }
     }
 
@@ -406,11 +388,11 @@ export class SafetyGateSession {
     this.isWaitingForResponse = true;
 
     const timeoutSeconds = this.inactivityTimeoutMs / 1000;
-    console.log(`\n[SafetyGateSession] ⏱️ ========================================`);
-    console.log(`[SafetyGateSession] ⏱️ INACTIVITY TIMER STARTED`);
-    console.log(`[SafetyGateSession] ⏱️ Timeout: ${timeoutSeconds} seconds`);
-    console.log(`[SafetyGateSession] ⏱️ Will fire at: ${new Date(Date.now() + this.inactivityTimeoutMs).toLocaleTimeString()}`);
-    console.log(`[SafetyGateSession] ⏱️ ========================================\n`);
+    console.log(`\n[Session] ⏱️ ========================================`);
+    console.log(`[Session] ⏱️ INACTIVITY TIMER STARTED`);
+    console.log(`[Session] ⏱️ Timeout: ${timeoutSeconds} seconds`);
+    console.log(`[Session] ⏱️ Will fire at: ${new Date(Date.now() + this.inactivityTimeoutMs).toLocaleTimeString()}`);
+    console.log(`[Session] ⏱️ ========================================\n`);
 
     this.inactivityTimer = setTimeout(() => {
       this.handleInactivity();
@@ -424,7 +406,7 @@ export class SafetyGateSession {
     if (this.inactivityTimer) {
       clearTimeout(this.inactivityTimer);
       this.inactivityTimer = null;
-      console.log(`[SafetyGateSession] ⏱️ TIMER STOPPED (was waiting: ${this.isWaitingForResponse})`);
+      console.log(`[Session] ⏱️ TIMER STOPPED (was waiting: ${this.isWaitingForResponse})`);
     }
     this.isWaitingForResponse = false;
   }
@@ -435,7 +417,7 @@ export class SafetyGateSession {
    */
   resetInactivityTimer(): void {
     if (this.isWaitingForResponse) {
-      console.log(`[SafetyGateSession] ⏱️ TIMER RESET - Child responded, restarting countdown`);
+      console.log(`[Session] ⏱️ TIMER RESET - Child responded, restarting countdown`);
       this.startInactivityTimer();
     }
   }
@@ -445,7 +427,7 @@ export class SafetyGateSession {
    * This restarts the inactivity timer after choices were dismissed
    */
   resumeWaitingForResponse(): void {
-    console.log(`[SafetyGateSession] ⏱️ RESUME - Child selected retry, waiting for card response again`);
+    console.log(`[Session] ⏱️ RESUME - Child selected retry, waiting for card response again`);
     this.startInactivityTimer();
   }
 
@@ -462,42 +444,42 @@ export class SafetyGateSession {
    * @param action The choice action string
    */
   handleChoiceSelection(action: string): void {
-    console.log(`[SafetyGateSession] 🎯 Choice selected: ${action}`);
+    console.log(`[Session] 🎯 Choice selected: ${action}`);
 
     switch (action) {
       case 'RETRY_CARD':
         // Child wants to try again - restart timer to wait for their answer
-        console.log(`[SafetyGateSession] ⏱️ RETRY_CARD - Restarting timer for card response`);
+        console.log(`[Session] ⏱️ RETRY_CARD - Restarting timer for card response`);
         this.startInactivityTimer();
         break;
 
       case 'START_BREAK':
         // Child is taking a break - timer stays stopped
-        console.log(`[SafetyGateSession] ⏱️ START_BREAK - Timer remains stopped (break time)`);
+        console.log(`[Session] ⏱️ START_BREAK - Timer remains stopped (break time)`);
         this.stopInactivityTimer();
         break;
 
       case 'SKIP_CARD':
         // Child wants to skip to next card - timer will restart when setCurrentCard() is called
-        console.log(`[SafetyGateSession] ⏱️ SKIP_CARD - Timer will restart when new card is shown`);
+        console.log(`[Session] ⏱️ SKIP_CARD - Timer will restart when new card is shown`);
         this.stopInactivityTimer();
         break;
 
       case 'BUBBLE_BREATHING':
         // Child is doing bubble breathing - timer stays stopped
-        console.log(`[SafetyGateSession] ⏱️ BUBBLE_BREATHING - Timer remains stopped (regulation activity)`);
+        console.log(`[Session] ⏱️ BUBBLE_BREATHING - Timer remains stopped (regulation activity)`);
         this.stopInactivityTimer();
         break;
 
       case 'CALL_GROWNUP':
         // Adult help requested - session paused, timer stops
-        console.log(`[SafetyGateSession] ⏱️ CALL_GROWNUP - Timer stopped (adult intervention)`);
+        console.log(`[Session] ⏱️ CALL_GROWNUP - Timer stopped (adult intervention)`);
         this.stopInactivityTimer();
         break;
 
       default:
         // Unknown action - stop timer to be safe
-        console.log(`[SafetyGateSession] ⏱️ Unknown action "${action}" - Timer stopped`);
+        console.log(`[Session] ⏱️ Unknown action "${action}" - Timer stopped`);
         this.stopInactivityTimer();
         break;
     }
@@ -513,12 +495,12 @@ export class SafetyGateSession {
    * This will restart the inactivity timer if there's an active card
    */
   resumeSession(): void {
-    console.log(`[SafetyGateSession] ▶️ Session resumed`);
+    console.log(`[Session] ▶️ Session resumed`);
     if (this.currentCard) {
-      console.log(`[SafetyGateSession] ⏱️ Active card exists - restarting timer`);
+      console.log(`[Session] ⏱️ Active card exists - restarting timer`);
       this.startInactivityTimer();
     } else {
-      console.log(`[SafetyGateSession] ⏱️ No active card - timer not started`);
+      console.log(`[Session] ⏱️ No active card - timer not started`);
     }
   }
 
@@ -527,15 +509,15 @@ export class SafetyGateSession {
    */
   private async handleInactivity(): Promise<void> {
     if (!this.isWaitingForResponse) {
-      console.log(`[SafetyGateSession] ⏱️ Timer fired but not waiting for response - ignoring`);
+      console.log(`[Session] ⏱️ Timer fired but not waiting for response - ignoring`);
       return; // Not waiting for response, ignore
     }
 
-    console.log(`\n[SafetyGateSession] ⚠️ ========================================`);
-    console.log(`[SafetyGateSession] ⚠️ 🚨 INACTIVITY DETECTED!`);
-    console.log(`[SafetyGateSession] ⚠️ Child has not responded for ${this.inactivityTimeoutMs / 1000} seconds`);
-    console.log(`[SafetyGateSession] ⚠️ Firing CHILD_INACTIVE event...`);
-    console.log(`[SafetyGateSession] ⚠️ ========================================\n`);
+    console.log(`\n[Session] ⚠️ ========================================`);
+    console.log(`[Session] ⚠️ 🚨 INACTIVITY DETECTED!`);
+    console.log(`[Session] ⚠️ Child has not responded for ${this.inactivityTimeoutMs / 1000} seconds`);
+    console.log(`[Session] ⚠️ Firing CHILD_INACTIVE event...`);
+    console.log(`[Session] ⚠️ ========================================\n`);
 
     // Build CHILD_INACTIVE event
     const event: Event = {
@@ -596,28 +578,28 @@ export class SafetyGateSession {
     };
 
     // Log the state changes from inactivity
-    console.log(`[SafetyGateSession] ⚠️ INACTIVITY RESULT:`);
-    console.log(`[SafetyGateSession] ⚠️   Engagement: ${result.uiPackage.admin_overlay.state_snapshot.engagementLevel.toFixed(1)}`);
-    console.log(`[SafetyGateSession] ⚠️   Safety Level: ${['GREEN', 'YELLOW', 'ORANGE', 'RED'][result.uiPackage.admin_overlay.safety_level]}`);
-    console.log(`[SafetyGateSession] ⚠️   Signals: ${result.uiPackage.admin_overlay.signals_detected.join(', ') || 'none'}`);
-    console.log(`[SafetyGateSession] ⚠️   Feedback: "${result.feedbackText}"`);
+    console.log(`[Session] ⚠️ INACTIVITY RESULT:`);
+    console.log(`[Session] ⚠️   Engagement: ${result.uiPackage.admin_overlay.state_snapshot.engagementLevel.toFixed(1)}`);
+    console.log(`[Session] ⚠️   Safety Level: ${['GREEN', 'YELLOW', 'ORANGE', 'RED'][result.uiPackage.admin_overlay.safety_level]}`);
+    console.log(`[Session] ⚠️   Signals: ${result.uiPackage.admin_overlay.signals_detected.join(', ') || 'none'}`);
+    console.log(`[Session] ⚠️   Feedback: "${result.feedbackText}"`);
 
     // Call the callback if registered
     if (this.onInactivityCallback) {
-      console.log(`[SafetyGateSession] ⚠️ Calling inactivity callback...`);
+      console.log(`[Session] ⚠️ Calling inactivity callback...`);
       this.onInactivityCallback(result);
     } else {
-      console.log(`[SafetyGateSession] ⚠️ No inactivity callback registered`);
+      console.log(`[Session] ⚠️ No inactivity callback registered`);
     }
 
     // Only restart timer if NOT showing choices (GREEN level)
     // If YELLOW+ level, choices are shown and child should interact with them, not answer the card
     const safetyLevel = result.uiPackage.admin_overlay.safety_level;
     if (safetyLevel >= Level.YELLOW) {
-      console.log(`[SafetyGateSession] ⚠️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
+      console.log(`[Session] ⚠️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
       this.stopInactivityTimer();
     } else {
-      console.log(`[SafetyGateSession] ⚠️ Restarting timer for next inactivity check (GREEN level)...`);
+      console.log(`[Session] ⚠️ Restarting timer for next inactivity check (GREEN level)...`);
       this.startInactivityTimer();
     }
   }

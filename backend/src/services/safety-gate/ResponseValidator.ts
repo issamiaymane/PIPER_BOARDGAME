@@ -1,10 +1,7 @@
-import { LLMResponse } from './LLMClient.js';
+import { LLMResponse, ResponseValidationResult } from './types.js';
 
-export interface ResponseValidationResult {
-  valid: boolean;
-  checks: Record<string, boolean>;
-  reason: string | null;
-}
+// Re-export for backward compatibility
+export { ResponseValidationResult };
 
 export class ResponseValidator {
 

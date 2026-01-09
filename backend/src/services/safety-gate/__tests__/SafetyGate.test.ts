@@ -1,7 +1,7 @@
 /**
  * Safety Gate System - Comprehensive Test Suite
  *
- * Run with: npx ts-node src/services/safety-gate/SafetyGateTests.ts
+ * Run with: npx ts-node src/services/safety-gate/__tests__/SafetyGate.test.ts
  *
  * Tests all scenarios:
  * - GREEN level (G1-G3)
@@ -13,13 +13,13 @@
  * - Choice actions (C1-C6)
  */
 
-import { StateEngine } from './StateEngine.js';
+import { StateEngine } from '../StateEngine.js';
 // Note: Tests use local deterministic signal detection instead of LLM-based SignalDetector
-import { LevelAssessor } from './LevelAssessor.js';
-import { InterventionSelector } from './InterventionSelector.js';
-import { SessionPlanner } from './SessionPlanner.js';
-import { BackendOrchestrator, TaskContext } from './BackendOrchestrator.js';
-import { State, Event, Level, Intervention, Signal } from './types.js';
+import { LevelAssessor } from '../LevelAssessor.js';
+import { InterventionSelector } from '../InterventionSelector.js';
+import { SessionPlanner } from '../SessionPlanner.js';
+import { BackendOrchestrator } from '../BackendOrchestrator.js';
+import { State, Event, Level, Intervention, Signal, TaskContext } from '../types.js';
 
 // ============================================
 // TEST UTILITIES

@@ -1,6 +1,6 @@
 /**
- * AdjectiveSimilarityService
- * AI-powered semantic similarity checking for adjective answers
+ * AnswerValidator
+ * AI-powered semantic similarity checking for answers
  * Uses GPT-4o-mini to determine if child's answer is semantically equivalent to target
  */
 
@@ -13,7 +13,7 @@ interface SimilarityContext {
   question: string;
 }
 
-export class AdjectiveSimilarityService {
+export class AnswerValidator {
   private client: OpenAI;
   private cache: Map<string, boolean> = new Map();
   private timeoutMs: number = 8000;
@@ -52,35 +52,35 @@ export class AdjectiveSimilarityService {
     const cacheKey = this.getCacheKey(normalizedChild, normalizedTarget);
     const cached = this.cache.get(cacheKey);
     if (cached !== undefined) {
-      console.log(`\n[AdjectiveSimilarity] ========================================`);
-      console.log(`[AdjectiveSimilarity] CACHE HIT`);
-      console.log(`[AdjectiveSimilarity]   Child said: "${normalizedChild}"`);
-      console.log(`[AdjectiveSimilarity]   Target: "${normalizedTarget}"`);
-      console.log(`[AdjectiveSimilarity]   Result: ${cached ? 'SIMILAR' : 'NOT SIMILAR'}`);
-      console.log(`[AdjectiveSimilarity] ========================================\n`);
+      console.log(`\n[AnswerValidator] ========================================`);
+      console.log(`[AnswerValidator] CACHE HIT`);
+      console.log(`[AnswerValidator]   Child said: "${normalizedChild}"`);
+      console.log(`[AnswerValidator]   Target: "${normalizedTarget}"`);
+      console.log(`[AnswerValidator]   Result: ${cached ? 'SIMILAR' : 'NOT SIMILAR'}`);
+      console.log(`[AnswerValidator] ========================================\n`);
       return cached;
     }
 
     // Call OpenAI API with timeout
-    console.log(`\n[AdjectiveSimilarity] ========================================`);
-    console.log(`[AdjectiveSimilarity] CALLING AI for similarity check`);
-    console.log(`[AdjectiveSimilarity]   Child said: "${normalizedChild}"`);
-    console.log(`[AdjectiveSimilarity]   Target: "${normalizedTarget}"`);
-    console.log(`[AdjectiveSimilarity]   Category: ${context.category}`);
+    console.log(`\n[AnswerValidator] ========================================`);
+    console.log(`[AnswerValidator] CALLING AI for similarity check`);
+    console.log(`[AnswerValidator]   Child said: "${normalizedChild}"`);
+    console.log(`[AnswerValidator]   Target: "${normalizedTarget}"`);
+    console.log(`[AnswerValidator]   Category: ${context.category}`);
 
     try {
       const result = await this.callOpenAI(normalizedChild, normalizedTarget, context);
 
       // Cache the result
       this.cache.set(cacheKey, result);
-      console.log(`[AdjectiveSimilarity]   AI Result: ${result ? 'SIMILAR - ACCEPTED!' : 'NOT SIMILAR - REJECTED'}`);
-      console.log(`[AdjectiveSimilarity] ========================================\n`);
+      console.log(`[AnswerValidator]   AI Result: ${result ? 'SIMILAR - ACCEPTED!' : 'NOT SIMILAR - REJECTED'}`);
+      console.log(`[AnswerValidator] ========================================\n`);
 
       return result;
     } catch (error) {
-      logger.error('[AdjectiveSimilarity] API error:', error);
-      console.log(`[AdjectiveSimilarity]   API ERROR - falling back to false`);
-      console.log(`[AdjectiveSimilarity] ========================================\n`);
+      logger.error('[AnswerValidator] API error:', error);
+      console.log(`[AnswerValidator]   API ERROR - falling back to false`);
+      console.log(`[AnswerValidator] ========================================\n`);
       return false;
     }
   }
@@ -123,7 +123,7 @@ Respond JSON only: {"similar": true} or {"similar": false}`;
     const timeoutId = setTimeout(() => controller.abort(), this.timeoutMs);
 
     try {
-      console.log(`[AdjectiveSimilarity] Calling OpenAI: "${childWord}" vs "${targetWord}"`);
+      console.log(`[AnswerValidator] Calling OpenAI: "${childWord}" vs "${targetWord}"`);
 
       const response = await this.client.chat.completions.create({
         model: 'gpt-4o-mini',
@@ -142,21 +142,21 @@ Respond JSON only: {"similar": true} or {"similar": false}`;
 
       const content = response.choices[0]?.message?.content;
       if (!content) {
-        console.log(`[AdjectiveSimilarity] Empty response from API`);
+        console.log(`[AnswerValidator] Empty response from API`);
         return false;
       }
 
       const parsed = JSON.parse(content);
       const isSimilar = parsed.similar === true;
 
-      console.log(`[AdjectiveSimilarity] API result: ${isSimilar} (raw: ${content})`);
+      console.log(`[AnswerValidator] API result: ${isSimilar} (raw: ${content})`);
       return isSimilar;
 
     } catch (error: unknown) {
       clearTimeout(timeoutId);
 
       if (error instanceof Error && error.name === 'AbortError') {
-        console.log(`[AdjectiveSimilarity] API timeout after ${this.timeoutMs}ms`);
+        console.log(`[AnswerValidator] API timeout after ${this.timeoutMs}ms`);
       }
       throw error;
     }
@@ -167,7 +167,7 @@ Respond JSON only: {"similar": true} or {"similar": false}`;
    */
   clearCache(): void {
     this.cache.clear();
-    console.log(`[AdjectiveSimilarity] Cache cleared`);
+    console.log(`[AnswerValidator] Cache cleared`);
   }
 
   /**

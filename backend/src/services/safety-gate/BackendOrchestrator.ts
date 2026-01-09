@@ -1,57 +1,27 @@
-import { State, Event, Level, Intervention, SessionConfig, BackendResponse, Signal } from './types.js';
+import {
+  State,
+  Event,
+  Level,
+  Intervention,
+  SessionConfig,
+  BackendResponse,
+  Signal,
+  UIPackage,
+  TaskContext,
+  LLMResponse,
+  ResponseValidationResult
+} from './types.js';
 import { StateEngine } from './StateEngine.js';
 import { SignalDetector } from './SignalDetector.js';
 import { LevelAssessor } from './LevelAssessor.js';
 import { InterventionSelector } from './InterventionSelector.js';
 import { SessionPlanner } from './SessionPlanner.js';
 import { PromptBuilder } from './PromptBuilder.js';
-import { LLMClient, LLMResponse } from './LLMClient.js';
-import { ResponseValidator, ResponseValidationResult } from './ResponseValidator.js';
+import { LLMClient } from './LLMClient.js';
+import { ResponseValidator } from './ResponseValidator.js';
 
-export interface TaskContext {
-  cardType: string;
-  category: string;
-  question: string;
-  targetAnswer: string;
-  imageLabels: string[];
-}
-
-export interface UIPackage {
-  avatar: {
-    animation: string;
-    expression: string;
-    position: string;
-  };
-  speech: {
-    text: string;
-    voice_tone: string;
-    speed: string;
-  };
-  choice_message: string;
-  interventions: Intervention[];
-  visual_cues: {
-    enabled: boolean;
-  };
-  audio_support: {
-    available: boolean;
-  };
-  grownup_help: {
-    available: boolean;
-  };
-  admin_overlay: {
-    safety_level: Level;
-    interventions_active: number;
-    interventions_list: Intervention[];
-    signals_detected: Signal[];
-    time_in_session: string;
-    state_snapshot: State;
-  };
-  // Optional fields for frontend console logging
-  childSaid?: string;
-  targetAnswers?: string[];
-  attemptNumber?: number;
-  responseHistory?: string[];
-}
+// Re-export for backward compatibility
+export { UIPackage, TaskContext };
 
 interface Logger {
   logStateUpdate(state: State, event: Event): void;
@@ -66,7 +36,7 @@ interface Logger {
   logForSOAP(data: any): Promise<void>;
 }
 
-// Silent logger - formatted output is handled by SafetyGateSession
+// Silent logger - formatted output is handled by Session
 class SilentLogger implements Logger {
   logStateUpdate(_state: State, _event: Event): void {}
   logSignals(_signals: Signal[]): void {}

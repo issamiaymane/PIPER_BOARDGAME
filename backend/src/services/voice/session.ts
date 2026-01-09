@@ -1,13 +1,13 @@
 /**
  * Voice Session Manager
  * Manages per-client voice sessions and coordinates between client WebSocket and OpenAI Realtime API
- * Integrates with SafetyGateSession for PIPER safety-gate processing
+ * Integrates with Session for PIPER safety-gate processing
  */
 
 import WebSocket from 'ws';
 import { RealtimeVoiceService, RealtimeServerEvent } from './realtime.service.js';
-import { SafetyGateSession, CardContext, SafetyGateResult } from '../safety-gate/SafetyGateSession.js';
-import { UIPackage } from '../safety-gate/BackendOrchestrator.js';
+import { Session } from '../safety-gate/Session.js';
+import { CardContext, SafetyGateResult, UIPackage } from '../safety-gate/types.js';
 import { logger } from '../../utils/logger.js';
 
 // Screaming detection threshold (RMS amplitude 0-1 scale)
@@ -30,7 +30,7 @@ export interface VoiceSession {
   currentCardText?: string;
   createdAt: Date;
   // Safety-gate integration
-  safetyGateSession: SafetyGateSession;
+  safetyGateSession: Session;
   currentCardContext?: CardContext;
   // Audio amplitude tracking for screaming detection
   recentAmplitudes: { amplitude: number; peak: number; timestamp: number }[];
@@ -109,7 +109,7 @@ export class VoiceSessionManager {
       realtimeService,
       isActive: true,
       createdAt: new Date(),
-      safetyGateSession: new SafetyGateSession(),
+      safetyGateSession: new Session(),
       recentAmplitudes: [],
       screamingDetected: false,
       speechStopped: false
@@ -386,7 +386,7 @@ export class VoiceSessionManager {
         isCorrect: result.isCorrect
       });
 
-      // Note: Detailed logging is handled by SafetyGateSession using safetyGateLogger
+      // Note: Detailed logging is handled by Session using safetyGateLogger
 
     } catch (error) {
       logger.error(`Safety-gate processing error:`, error);
@@ -400,7 +400,7 @@ export class VoiceSessionManager {
   }
 
   /**
-   * Handle inactivity detection result from SafetyGateSession
+   * Handle inactivity detection result from Session
    */
   private async handleInactivityResult(
     session: VoiceSession,

@@ -1,13 +1,10 @@
 import OpenAI from 'openai';
 import { config } from '../../config/index.js';
 import { logger } from '../../utils/logger.js';
+import { LLMResponse } from './types.js';
 
-export interface LLMResponse {
-  coach_line: string;
-  choice_presentation: string;
-  detected_signals: string[];
-  tone_used: string;
-}
+// Re-export for backward compatibility
+export { LLMResponse };
 
 export class LLMClient {
   private client: OpenAI;
