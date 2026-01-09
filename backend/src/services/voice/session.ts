@@ -377,7 +377,7 @@ export class VoiceSessionManager {
       // Process through safety-gate session with audio-based screaming detection
       const result: SafetyGateResult = await session.safetyGateSession.processChildResponse(
         transcription,
-        { screamingDetected: session.screamingDetected }
+        { screaming: session.screamingDetected }
       );
 
       // Reset screaming detection after processing
@@ -565,10 +565,10 @@ export class VoiceSessionManager {
 
     try {
       // Process through safety-gate with screaming signal (no transcription needed)
-      // Use empty placeholder - dysregulation is handled via the screamingDetected signal
+      // Use empty placeholder - dysregulation is handled via the screaming signal
       const result: SafetyGateResult = await session.safetyGateSession.processChildResponse(
         '', // Empty - audio signal handles dysregulation
-        { screamingDetected: true }
+        { screaming: true }
       );
 
       // Cancel any ongoing OpenAI response

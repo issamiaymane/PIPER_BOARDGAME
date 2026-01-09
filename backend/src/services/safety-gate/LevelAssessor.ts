@@ -30,10 +30,19 @@ export class LevelAssessor {
   // ============================================
 
   private isRedLevel(state: State, signals: Signal[]): boolean {
+    // State thresholds
+    const highDysregulation = state.dysregulationLevel >= 9;
+
+    // Signal checks
+    const hasDistressSignals =
+      signals.includes(Signal.DISTRESS) ||
+      signals.includes(Signal.SCREAMING) ||
+      signals.includes(Signal.CRYING);
+
     return (
-      state.dysregulationLevel >= 9 ||
+      highDysregulation ||
       // Distress combined with elevated dysregulation = crisis
-      (signals.includes(Signal.DISTRESS) && state.dysregulationLevel >= 7)
+      (hasDistressSignals && state.dysregulationLevel >= 7)
     );
   }
 
@@ -43,12 +52,23 @@ export class LevelAssessor {
   // ============================================
 
   private isOrangeLevel(state: State, signals: Signal[]): boolean {
-    return (
+    // State thresholds (read directly, not via signals)
+    const highDysregulation = state.dysregulationLevel >= 7;
+    const manyErrors = state.consecutiveErrors >= 5;
+    const highFatigue = state.fatigueLevel >= 8;
+
+    // Signal checks
+    const hasDistressSignals =
       signals.includes(Signal.DISTRESS) ||
+      signals.includes(Signal.SCREAMING) ||
+      signals.includes(Signal.CRYING);
+
+    return (
+      hasDistressSignals ||
       signals.includes(Signal.REPETITIVE_RESPONSE) ||
-      state.dysregulationLevel >= 7 ||
-      state.consecutiveErrors >= 5 ||
-      state.fatigueLevel >= 8
+      highDysregulation ||
+      manyErrors ||
+      highFatigue
     );
   }
 
@@ -58,16 +78,25 @@ export class LevelAssessor {
   // ============================================
 
   private isYellowLevel(state: State, signals: Signal[]): boolean {
-    return (
+    // State thresholds (read directly, not via signals)
+    const lowEngagement = state.engagementLevel <= 3;
+    const moderateDysregulation = state.dysregulationLevel >= 5;
+    const someErrors = state.consecutiveErrors >= 3;
+    const moderateFatigue = state.fatigueLevel >= 6;
+
+    // Signal checks
+    const hasMildDistress =
       signals.includes(Signal.WANTS_BREAK) ||
       signals.includes(Signal.WANTS_QUIT) ||
       signals.includes(Signal.FRUSTRATION) ||
-      signals.includes(Signal.CONSECUTIVE_ERRORS) ||
-      signals.includes(Signal.ENGAGEMENT_DROP) ||
-      state.engagementLevel <= 3 ||
-      state.dysregulationLevel >= 5 ||
-      state.consecutiveErrors >= 3 ||
-      state.fatigueLevel >= 6
+      signals.includes(Signal.PROLONGED_SILENCE);
+
+    return (
+      hasMildDistress ||
+      lowEngagement ||
+      moderateDysregulation ||
+      someErrors ||
+      moderateFatigue
     );
   }
 }

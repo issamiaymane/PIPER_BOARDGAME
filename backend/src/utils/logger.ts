@@ -7,16 +7,20 @@ export const logger = {
 
 // ============================================
 // PIPELINE FLOW LOGGER
-// Shows complete flow: Event → State → Signals → Level → Interventions → Config → LLM → UIPackage
+// Shows complete flow: Event → Signals → State → Level → Interventions → Config → LLM → UIPackage
 // ============================================
 
 export interface PipelineFlowData {
-  // 1. INPUT
+  // 1. EVENT (Input)
   event: {
     type: string;
     correct?: boolean;
     response?: string;
-    signal?: string;
+    inputSignals?: {
+      screaming?: boolean;
+      crying?: boolean;
+      prolongedSilence?: boolean;
+    };
   };
   taskContext?: {
     category: string;
@@ -24,7 +28,10 @@ export interface PipelineFlowData {
     targetAnswer: string;
   };
 
-  // 2. STATE
+  // 2. SIGNALS (Detected from Event - audio, text, patterns)
+  signals: string[];
+
+  // 3. STATE (Updated with Signal Effects applied)
   state: {
     engagementLevel: number;
     dysregulationLevel: number;
@@ -34,9 +41,6 @@ export interface PipelineFlowData {
     timeInSession: number;
     timeSinceBreak: number;
   };
-
-  // 3. SIGNALS
-  signals: string[];
 
   // 4. LEVEL
   safetyLevel: number;
@@ -91,7 +95,7 @@ export interface PipelineFlowData {
 export const pipelineLogger = {
   /**
    * Log the complete pipeline flow in order
-   * Shows all steps: Event → State → Signals → Level → Interventions → Config → LLM → UIPackage
+   * Shows all steps: Event → Signals → State → Level → Interventions → Config → LLM → UIPackage
    */
   logFlow(data: PipelineFlowData): void {
     const C = {
@@ -132,8 +136,14 @@ export const pipelineLogger = {
     console.log(`   Type:     ${C.cyan}${data.event.type}${C.reset}`);
     console.log(`   Response: ${C.white}"${data.event.response || '(none)'}${C.reset}"`);
     console.log(`   Correct:  ${data.event.correct ? `${C.green}true${C.reset}` : `${C.orange}false${C.reset}`}`);
-    if (data.event.signal) {
-      console.log(`   ${C.red}🎤 Audio Signal: ${data.event.signal}${C.reset}`);
+    if (data.event.inputSignals) {
+      const signals = [];
+      if (data.event.inputSignals.screaming) signals.push('screaming');
+      if (data.event.inputSignals.crying) signals.push('crying');
+      if (data.event.inputSignals.prolongedSilence) signals.push('prolongedSilence');
+      if (signals.length > 0) {
+        console.log(`   ${C.red}🎤 Input Signals: { ${signals.join(', ')} }${C.reset}`);
+      }
     }
 
     if (data.taskContext) {
@@ -144,25 +154,9 @@ export const pipelineLogger = {
     }
 
     // ─────────────────────────────────────────────────────────────
-    // 2. STATE
+    // 2. SIGNALS (Detected from Event)
     // ─────────────────────────────────────────────────────────────
-    console.log(`\n${C.bold}${C.white}2. STATE (Updated)${C.reset}`);
-    console.log(`${C.gray}${sectionDivider}${C.reset}`);
-    const engColor = data.state.engagementLevel >= 7 ? C.green : data.state.engagementLevel >= 4 ? C.yellow : C.red;
-    const dysColor = data.state.dysregulationLevel >= 6 ? C.red : data.state.dysregulationLevel >= 3 ? C.yellow : C.green;
-    const fatColor = data.state.fatigueLevel >= 7 ? C.red : data.state.fatigueLevel >= 4 ? C.yellow : C.green;
-    console.log(`   Engagement:        ${engColor}${data.state.engagementLevel.toFixed(1)}${C.reset}/10`);
-    console.log(`   Dysregulation:     ${dysColor}${data.state.dysregulationLevel.toFixed(1)}${C.reset}/10`);
-    console.log(`   Fatigue:           ${fatColor}${data.state.fatigueLevel.toFixed(1)}${C.reset}/10`);
-    console.log(`   ConsecutiveErrors: ${data.state.consecutiveErrors >= 3 ? C.red : C.white}${data.state.consecutiveErrors}${C.reset}`);
-    console.log(`   ErrorFrequency:    ${data.state.errorFrequency.toFixed(2)}/min`);
-    console.log(`   TimeInSession:     ${formatTimeShort(data.state.timeInSession)}`);
-    console.log(`   TimeSinceBreak:    ${formatTimeShort(data.state.timeSinceBreak)}`);
-
-    // ─────────────────────────────────────────────────────────────
-    // 3. SIGNALS
-    // ─────────────────────────────────────────────────────────────
-    console.log(`\n${C.bold}${C.white}3. SIGNALS (Detected)${C.reset}`);
+    console.log(`\n${C.bold}${C.white}2. SIGNALS (Detected from Event)${C.reset}`);
     console.log(`${C.gray}${sectionDivider}${C.reset}`);
     if (data.signals.length > 0) {
       data.signals.forEach(signal => {
@@ -173,9 +167,81 @@ export const pipelineLogger = {
     }
 
     // ─────────────────────────────────────────────────────────────
-    // 4. LEVEL
+    // 3. STATE (Updated with All Effects)
     // ─────────────────────────────────────────────────────────────
-    console.log(`\n${C.bold}${C.white}4. LEVEL (Assessed)${C.reset}`);
+    console.log(`\n${C.bold}${C.white}3. STATE (Updated)${C.reset}`);
+    console.log(`${C.gray}${sectionDivider}${C.reset}`);
+
+    // Calculate ALL effects (from Event + Signals)
+    const effects = {
+      dysregulation: [] as string[],
+      engagement: [] as string[],
+      fatigue: [] as string[],
+      errors: [] as string[],
+    };
+
+    // Event-based effects
+    if (data.event.type === 'CHILD_RESPONSE') {
+      if (data.event.correct) {
+        effects.engagement.push('+1 correct');
+        effects.dysregulation.push('-0.5 correct');
+        effects.errors.push('reset');
+      } else {
+        effects.engagement.push('-0.5 incorrect');
+        effects.errors.push('+1 incorrect');
+      }
+    } else if (data.event.type === 'CHILD_INACTIVE') {
+      effects.engagement.push('-2 inactive');
+    }
+
+    // Signal-based effects
+    for (const signal of data.signals) {
+      switch (signal) {
+        case 'SCREAMING':
+          effects.dysregulation.push('+4 SCREAMING');
+          break;
+        case 'CRYING':
+          effects.dysregulation.push('+3 CRYING');
+          break;
+        case 'DISTRESS':
+          effects.dysregulation.push('+2 DISTRESS');
+          break;
+        case 'FRUSTRATION':
+          effects.dysregulation.push('+1 FRUSTRATION');
+          break;
+        case 'WANTS_QUIT':
+          effects.engagement.push('-2 WANTS_QUIT');
+          break;
+        case 'WANTS_BREAK':
+          effects.fatigue.push('+1 WANTS_BREAK');
+          break;
+        case 'REPETITIVE_RESPONSE':
+          effects.dysregulation.push('+2 REPETITIVE');
+          break;
+      }
+    }
+
+    const engColor = data.state.engagementLevel >= 7 ? C.green : data.state.engagementLevel >= 4 ? C.yellow : C.red;
+    const dysColor = data.state.dysregulationLevel >= 6 ? C.red : data.state.dysregulationLevel >= 3 ? C.yellow : C.green;
+    const fatColor = data.state.fatigueLevel >= 7 ? C.red : data.state.fatigueLevel >= 4 ? C.yellow : C.green;
+
+    const engEffects = effects.engagement.length > 0 ? ` ${C.cyan}← ${effects.engagement.join(', ')}${C.reset}` : '';
+    const dysEffects = effects.dysregulation.length > 0 ? ` ${C.cyan}← ${effects.dysregulation.join(', ')}${C.reset}` : '';
+    const fatEffects = effects.fatigue.length > 0 ? ` ${C.cyan}← ${effects.fatigue.join(', ')}${C.reset}` : '';
+    const errEffects = effects.errors.length > 0 ? ` ${C.cyan}← ${effects.errors.join(', ')}${C.reset}` : '';
+
+    console.log(`   Engagement:        ${engColor}${data.state.engagementLevel.toFixed(1)}${C.reset}/10${engEffects}`);
+    console.log(`   Dysregulation:     ${dysColor}${data.state.dysregulationLevel.toFixed(1)}${C.reset}/10${dysEffects}`);
+    console.log(`   Fatigue:           ${fatColor}${data.state.fatigueLevel.toFixed(1)}${C.reset}/10${fatEffects}`);
+    console.log(`   ConsecutiveErrors: ${data.state.consecutiveErrors >= 3 ? C.red : C.white}${data.state.consecutiveErrors}${C.reset}${errEffects}`);
+    console.log(`   ErrorFrequency:    ${data.state.errorFrequency.toFixed(2)}/min`);
+    console.log(`   TimeInSession:     ${formatTimeShort(data.state.timeInSession)}`);
+    console.log(`   TimeSinceBreak:    ${formatTimeShort(data.state.timeSinceBreak)}`);
+
+    // ─────────────────────────────────────────────────────────────
+    // 4. LEVEL (Assessed from State + Signals)
+    // ─────────────────────────────────────────────────────────────
+    console.log(`\n${C.bold}${C.white}4. LEVEL (Assessed from State + Signals)${C.reset}`);
     console.log(`${C.gray}${sectionDivider}${C.reset}`);
     console.log(`   ${level.emoji} ${level.color}${C.bold}${level.name}${C.reset}`);
 

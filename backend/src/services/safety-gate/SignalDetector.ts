@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 import { config } from '../../config/index.js';
 import { Signal } from './types.js';
-import type { State, Event } from './types.js';
+import type { Event } from './types.js';
 
 interface LLMSignalClassification {
   break_request: boolean;
@@ -22,45 +22,41 @@ export class SignalDetector {
 
   // ============================================
   // MAIN DETECTION FUNCTION (ASYNC for LLM)
+  // Detects signals from Event only (not State)
+  // State thresholds are checked by LevelAssessor
   // ============================================
 
-  async detectSignals(state: State, event: Event): Promise<Signal[]> {
+  async detectSignals(event: Event): Promise<Signal[]> {
     const signals: Signal[] = [];
 
-    // 1. State-based signals (instant)
-    this.detectStateBasedSignals(state, signals);
+    // 1. Audio-based signals (from Event.signals)
+    this.detectAudioSignals(event, signals);
 
-    // 2. Event-based signals (instant)
+    // 2. Event-based signals (from Event pattern)
     this.detectEventBasedSignals(event, signals);
 
     // 3. Text-based signals (LLM-powered)
     await this.detectTextSignalsIntelligent(event, signals);
 
-    // 4. Audio-based signals (instant)
-    this.detectAudioSignals(event, signals);
-
     return signals;
   }
 
   // ============================================
-  // 1. STATE-BASED SIGNALS
+  // 1. AUDIO-BASED SIGNALS (from Event.signals)
   // ============================================
 
-  private detectStateBasedSignals(state: State, signals: Signal[]): void {
-    if (state.consecutiveErrors >= 3) {
-      signals.push(Signal.CONSECUTIVE_ERRORS);
+  private detectAudioSignals(event: Event, signals: Signal[]): void {
+    if (event.signals?.screaming) {
+      console.log(`[SignalDetector] 🔴 Audio: SCREAMING`);
+      signals.push(Signal.SCREAMING);
     }
-
-    if (state.engagementLevel <= 3) {
-      signals.push(Signal.ENGAGEMENT_DROP);
+    if (event.signals?.crying) {
+      console.log(`[SignalDetector] 🔴 Audio: CRYING`);
+      signals.push(Signal.CRYING);
     }
-
-    if (state.fatigueLevel >= 7) {
-      signals.push(Signal.FATIGUE_HIGH);
-    }
-
-    if (state.dysregulationLevel >= 6) {
-      signals.push(Signal.DYSREGULATION_DETECTED);
+    if (event.signals?.prolongedSilence) {
+      console.log(`[SignalDetector] 🟡 Audio: PROLONGED_SILENCE`);
+      signals.push(Signal.PROLONGED_SILENCE);
     }
   }
 
@@ -200,15 +196,4 @@ A single word answer like "Sad" or "Slow" is almost certainly just an answer, no
     }
   }
 
-  // ============================================
-  // 4. AUDIO-BASED SIGNALS
-  // ============================================
-
-  private detectAudioSignals(event: Event, signals: Signal[]): void {
-    // DISTRESS from audio: screaming detected via high amplitude
-    if (event.audioSignals?.screamingDetected) {
-      console.log(`[SignalDetector] 🔴 Audio signal: SCREAMING → DISTRESS`);
-      signals.push(Signal.DISTRESS);
-    }
-  }
 }

@@ -79,11 +79,11 @@ export class Session {
   /**
    * Process a child's spoken response through the safety-gate pipeline
    * @param transcription The child's transcribed speech
-   * @param options Additional options like audio-based screaming detection
+   * @param options Pre-detected signals from voice layer (screaming, crying, etc.)
    */
   async processChildResponse(
     transcription: string,
-    options?: { screamingDetected?: boolean }
+    options?: { screaming?: boolean; crying?: boolean; prolongedSilence?: boolean }
   ): Promise<SafetyGateResult> {
     // Reset inactivity timer - child responded
     this.resetInactivityTimer();
@@ -110,9 +110,13 @@ export class Session {
     }
 
     // Build the child event for the orchestrator
-    // Pass raw audio signals - SignalDetector will interpret them
-    const audioSignals = options?.screamingDetected
-      ? { screamingDetected: true }
+    // Pass pre-detected signals from voice layer
+    const signals = (options?.screaming || options?.crying || options?.prolongedSilence)
+      ? {
+          screaming: options?.screaming,
+          crying: options?.crying,
+          prolongedSilence: options?.prolongedSilence
+        }
       : undefined;
 
     const event: Event = {
@@ -121,7 +125,7 @@ export class Session {
       response: transcription,
       previousResponse: this.responseHistory[this.responseHistory.length - 2],
       previousPreviousResponse: this.responseHistory[this.responseHistory.length - 3],
-      audioSignals
+      signals
     };
 
     // Build task context for the orchestrator

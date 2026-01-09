@@ -146,9 +146,9 @@ class SafetyGateTestRunner {
       const event = events[i];
       console.log(`\n${COLORS.gray}Event ${i + 1}: ${event.type}${event.response ? ` - "${event.response}"` : ''}${event.correct !== undefined ? ` (${event.correct ? 'correct' : 'incorrect'})` : ''}${COLORS.reset}`);
 
-      state = this.stateEngine.processEvent(event);
-      // Use local deterministic signal detection for tests (not LLM-based)
-      signals = this.detectSignals(event, state);
+      // New flow: detect signals first, then process event with signals
+      signals = this.detectSignals(event);
+      state = this.stateEngine.processEvent(event, signals);
       level = this.levelAssessor.assessLevel(state, signals);
       interventions = this.interventionSelector.selectInterventions(level, state, signals);
     }
@@ -187,27 +187,42 @@ class SafetyGateTestRunner {
     return passed;
   }
 
-  private detectSignals(event: Event, state: State): Signal[] {
+  /**
+   * Deterministic signal detection for tests.
+   * Only detects event-based signals (audio, text, patterns).
+   * State thresholds are read directly by LevelAssessor, not as signals.
+   */
+  private detectSignals(event: Event): Signal[] {
     const signals: Signal[] = [];
 
-    if (state.consecutiveErrors >= 3) {
-      signals.push(Signal.CONSECUTIVE_ERRORS);
+    // Audio signals (from event.signals)
+    if (event.signals?.screaming) {
+      signals.push(Signal.SCREAMING);
+    }
+    if (event.signals?.crying) {
+      signals.push(Signal.CRYING);
+    }
+    if (event.signals?.prolongedSilence) {
+      signals.push(Signal.PROLONGED_SILENCE);
     }
 
-    if (event.type === 'CHILD_RESPONSE' && event.response === event.previousResponse) {
+    // Event pattern: repetitive response
+    if (event.type === 'CHILD_RESPONSE' &&
+        event.response === event.previousResponse &&
+        event.previousResponse === event.previousPreviousResponse) {
       signals.push(Signal.REPETITIVE_RESPONSE);
     }
 
-    if (state.engagementLevel <= 3) {
-      signals.push(Signal.ENGAGEMENT_DROP);
-    }
-
-    const responseText = (event.response || event.signal || '').toLowerCase();
+    // Text-based signals (simplified for tests - real uses LLM)
+    const responseText = (event.response || '').toLowerCase();
     if (responseText.includes('break') || responseText.includes('stop') || responseText.includes('tired')) {
       signals.push(Signal.WANTS_BREAK);
     }
     if (responseText.includes('done') || responseText.includes('quit') || responseText.includes('no more')) {
       signals.push(Signal.WANTS_QUIT);
+    }
+    if (responseText.includes('frustrat') || responseText.includes('mad') || responseText.includes('angry')) {
+      signals.push(Signal.FRUSTRATION);
     }
 
     // DISTRESS: screaming, "no no no", crying patterns
@@ -217,14 +232,6 @@ class SafetyGateTestRunner {
       responseText.includes('no no no');
     if (hasDistress) {
       signals.push(Signal.DISTRESS);
-    }
-
-    if (state.fatigueLevel >= 7) {
-      signals.push(Signal.FATIGUE_HIGH);
-    }
-
-    if (state.dysregulationLevel >= 6) {
-      signals.push(Signal.DYSREGULATION_DETECTED);
     }
 
     return signals;
@@ -275,14 +282,14 @@ class SafetyGateTestRunner {
     this.reset();
     return this.runScenario(
       'Y1',
-      'Three consecutive errors - should trigger YELLOW',
+      'Three consecutive errors - should trigger YELLOW (state.consecutiveErrors >= 3)',
       [
         this.createEvent('CHILD_RESPONSE', 'hot', false),
         this.createEvent('CHILD_RESPONSE', 'warm', false),
         this.createEvent('CHILD_RESPONSE', 'fire', false),
       ],
       Level.YELLOW,
-      [Signal.CONSECUTIVE_ERRORS],
+      [], // No signals - LevelAssessor reads consecutiveErrors directly from state
       [Intervention.SKIP_CARD]
     );
   }
@@ -301,7 +308,7 @@ class SafetyGateTestRunner {
       'Low engagement (engagement <= 3) - should trigger YELLOW or higher',
       events,
       Level.ORANGE, // Will be ORANGE due to error count >= 5
-      [Signal.ENGAGEMENT_DROP]
+      [] // No signals - LevelAssessor reads engagementLevel directly from state
     );
   }
 
@@ -379,7 +386,7 @@ class SafetyGateTestRunner {
     this.reset();
     return this.runScenario(
       'O1',
-      'Five consecutive errors - should trigger ORANGE',
+      'Five consecutive errors - should trigger ORANGE (state.consecutiveErrors >= 5)',
       [
         this.createEvent('CHILD_RESPONSE', 'a', false),
         this.createEvent('CHILD_RESPONSE', 'b', false),
@@ -388,7 +395,7 @@ class SafetyGateTestRunner {
         this.createEvent('CHILD_RESPONSE', 'e', false),
       ],
       Level.ORANGE,
-      [Signal.CONSECUTIVE_ERRORS],
+      [], // No signals - LevelAssessor reads consecutiveErrors directly from state
       [Intervention.SKIP_CARD]
     );
   }
@@ -404,7 +411,7 @@ class SafetyGateTestRunner {
         this.createEvent('CHILD_RESPONSE', 'hot', false, 'hot', 'hot'), // 3rd time with both previous responses
       ],
       Level.ORANGE,
-      [Signal.REPETITIVE_RESPONSE, Signal.CONSECUTIVE_ERRORS]
+      [Signal.REPETITIVE_RESPONSE] // CONSECUTIVE_ERRORS is now a state threshold, not a signal
     );
   }
 
@@ -439,7 +446,7 @@ class SafetyGateTestRunner {
       events.push(this.createEvent('CHILD_RESPONSE', 'wrong', false, 'wrong'));
     }
 
-    logTestHeader('O6', 'Bubble breathing triggered when dysreg >= 6 at ORANGE');
+    logTestHeader('O6', 'Bubble breathing triggered when dysreg >= 7 at ORANGE');
 
     let state: State = this.stateEngine.getState();
     let signals: Signal[] = [];
@@ -447,14 +454,15 @@ class SafetyGateTestRunner {
     let interventions: Intervention[] = [];
 
     for (const event of events) {
-      state = this.stateEngine.processEvent(event);
-      // Use local deterministic signal detection for tests (not LLM-based)
-      signals = this.detectSignals(event, state);
+      // New flow: detect signals first, then process event with signals
+      signals = this.detectSignals(event);
+      state = this.stateEngine.processEvent(event, signals);
     }
 
-    // Manually set dysregulation to 6 to test bubble breathing
-    (state as any).dysregulationLevel = 6;
-    signals.push(Signal.DYSREGULATION_DETECTED);
+    // Manually set dysregulation to 7 to test bubble breathing
+    // In the new architecture, LevelAssessor reads state thresholds directly
+    // ORANGE requires dysregulationLevel >= 7
+    (state as any).dysregulationLevel = 7;
     level = this.levelAssessor.assessLevel(state, signals);
     interventions = this.interventionSelector.selectInterventions(level, state, signals);
 
@@ -468,7 +476,7 @@ class SafetyGateTestRunner {
     const passed = hasBubbleBreathing;
     logResult(passed, 'BUBBLE_BREATHING intervention', hasBubbleBreathing ? 'present' : 'missing');
 
-    this.results.push({ id: 'O6', passed, description: 'Bubble breathing triggered when dysreg >= 6' });
+    this.results.push({ id: 'O6', passed, description: 'Bubble breathing triggered when dysreg >= 7' });
     return passed;
   }
 
@@ -485,7 +493,9 @@ class SafetyGateTestRunner {
     let state = this.stateEngine.getState();
     (state as any).dysregulationLevel = 9;
 
-    const signals = this.detectSignals(this.createEvent('CHILD_RESPONSE', 'ahhh', false), state);
+    // Detect signals from event only (new architecture)
+    const signals = this.detectSignals(this.createEvent('CHILD_RESPONSE', 'ahhh', false));
+    // LevelAssessor reads state.dysregulationLevel directly
     const level = this.levelAssessor.assessLevel(state, signals);
     const interventions = this.interventionSelector.selectInterventions(level, state, signals);
 
@@ -510,11 +520,13 @@ class SafetyGateTestRunner {
     const initialState = { ...this.stateEngine.getState() };
 
     // First add an error to have something to reset
-    this.stateEngine.processEvent(this.createEvent('CHILD_RESPONSE', 'wrong', false));
+    const errorEvent = this.createEvent('CHILD_RESPONSE', 'wrong', false);
+    this.stateEngine.processEvent(errorEvent, this.detectSignals(errorEvent));
     const afterError = { ...this.stateEngine.getState() };
 
     // Now correct answer
-    const finalState = this.stateEngine.processEvent(this.createEvent('CHILD_RESPONSE', 'cold', true));
+    const correctEvent = this.createEvent('CHILD_RESPONSE', 'cold', true);
+    const finalState = this.stateEngine.processEvent(correctEvent, this.detectSignals(correctEvent));
 
     console.log(`\n${COLORS.gray}Initial engagement: ${initialState.engagementLevel}${COLORS.reset}`);
     console.log(`${COLORS.gray}After error engagement: ${afterError.engagementLevel}, errors: ${afterError.consecutiveErrors}${COLORS.reset}`);
@@ -564,13 +576,16 @@ class SafetyGateTestRunner {
 
     logTestHeader('P5', 'Recovery from YELLOW after correct answer');
 
-    // Get to YELLOW
-    this.stateEngine.processEvent(this.createEvent('CHILD_RESPONSE', 'a', false));
-    this.stateEngine.processEvent(this.createEvent('CHILD_RESPONSE', 'b', false));
+    // Get to YELLOW - new flow: detect signals first, then process event
+    const event1 = this.createEvent('CHILD_RESPONSE', 'a', false);
+    this.stateEngine.processEvent(event1, this.detectSignals(event1));
+
+    const event2 = this.createEvent('CHILD_RESPONSE', 'b', false);
+    this.stateEngine.processEvent(event2, this.detectSignals(event2));
+
     const yellowEvent = this.createEvent('CHILD_RESPONSE', 'c', false);
-    const yellowState = this.stateEngine.processEvent(yellowEvent);
-    // Use local deterministic signal detection for tests (not LLM-based)
-    const yellowSignals = this.detectSignals(yellowEvent, yellowState);
+    const yellowSignals = this.detectSignals(yellowEvent);
+    const yellowState = this.stateEngine.processEvent(yellowEvent, yellowSignals);
 
     let level = this.levelAssessor.assessLevel(yellowState, yellowSignals);
 
@@ -578,9 +593,8 @@ class SafetyGateTestRunner {
 
     // Now recover with correct answer
     const correctEvent = this.createEvent('CHILD_RESPONSE', 'cold', true);
-    const recoveredState = this.stateEngine.processEvent(correctEvent);
-    // Use local deterministic signal detection for tests (not LLM-based)
-    const recoveredSignals = this.detectSignals(correctEvent, recoveredState);
+    const recoveredSignals = this.detectSignals(correctEvent);
+    const recoveredState = this.stateEngine.processEvent(correctEvent, recoveredSignals);
     level = this.levelAssessor.assessLevel(recoveredState, recoveredSignals);
 
     console.log(`${COLORS.gray}After correct: errors=${recoveredState.consecutiveErrors}, level=${levelName(level)}${COLORS.reset}`);

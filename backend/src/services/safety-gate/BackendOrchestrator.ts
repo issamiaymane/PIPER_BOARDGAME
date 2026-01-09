@@ -70,7 +70,7 @@ export class BackendOrchestrator {
         type: event.type,
         correct: event.correct,
         response: event.response,
-        signal: event.signal
+        inputSignals: event.signals
       },
       taskContext: this.currentTaskContext ? {
         category: this.currentTaskContext.category,
@@ -79,8 +79,12 @@ export class BackendOrchestrator {
       } : undefined
     };
 
-    // 1. Update state from event
-    const state = this.stateEngine.processEvent(event);
+    // 1. Detect signals from event (audio, text, patterns)
+    const signals = await this.signalDetector.detectSignals(event);
+    flowData.signals = signals.map(s => String(s));
+
+    // 2. Update state from event AND apply signal effects
+    const state = this.stateEngine.processEvent(event, signals);
     flowData.state = {
       engagementLevel: state.engagementLevel,
       dysregulationLevel: state.dysregulationLevel,
@@ -90,10 +94,6 @@ export class BackendOrchestrator {
       timeInSession: state.timeInSession,
       timeSinceBreak: state.timeSinceBreak
     };
-
-    // 2. Detect signals from state and event (async for LLM-based text classification)
-    const signals = await this.signalDetector.detectSignals(state, event);
-    flowData.signals = signals.map(s => String(s)); // Ensure strings for logging
 
     // 3. Assess safety level
     const safetyLevel = this.levelAssessor.assessLevel(state, signals);

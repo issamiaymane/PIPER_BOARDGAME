@@ -13,8 +13,11 @@ export interface Event {
   response?: string;
   previousResponse?: string;
   previousPreviousResponse?: string;
-  audioSignals?: {
-    screamingDetected?: boolean;
+  // Pre-detected signals from voice layer
+  signals?: {
+    screaming?: boolean;
+    crying?: boolean;
+    prolongedSilence?: boolean;
   };
 }
 
@@ -45,23 +48,26 @@ export interface State {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export enum Signal {
-  // STATE-BASED (derived from State)
-  CONSECUTIVE_ERRORS = 'CONSECUTIVE_ERRORS',       // consecutiveErrors >= 3
-  ENGAGEMENT_DROP = 'ENGAGEMENT_DROP',             // engagementLevel <= 3
-  FATIGUE_HIGH = 'FATIGUE_HIGH',                   // fatigueLevel >= 7
-  DYSREGULATION_DETECTED = 'DYSREGULATION_DETECTED', // dysregulationLevel >= 6
+  // AUDIO-BASED (from Event.signals - detected by voice layer)
+  SCREAMING = 'SCREAMING',
+  CRYING = 'CRYING',
+  PROLONGED_SILENCE = 'PROLONGED_SILENCE',
 
-  // EVENT-BASED (derived from Event)
-  REPETITIVE_RESPONSE = 'REPETITIVE_RESPONSE',     // response === previousResponse
+  // TEXT-BASED (from LLM analysis of response)
+  WANTS_BREAK = 'WANTS_BREAK',
+  WANTS_QUIT = 'WANTS_QUIT',
+  FRUSTRATION = 'FRUSTRATION',
+  DISTRESS = 'DISTRESS',  // verbal distress like "no no no"
 
-  // VERBAL INTENT (detected from response text)
-  WANTS_BREAK = 'WANTS_BREAK',         // "break", "stop", "tired"
-  WANTS_QUIT = 'WANTS_QUIT',           // "done", "quit", "no more"
-
-  // EMOTIONAL STATE (text or audio)
-  FRUSTRATION = 'FRUSTRATION',         // "ugh", "argh" - manageable
-  DISTRESS = 'DISTRESS'                // screaming, crying, "no no no", high amplitude
+  // EVENT PATTERN (from Event fields)
+  REPETITIVE_RESPONSE = 'REPETITIVE_RESPONSE'
 }
+
+// NOTE: State thresholds are checked directly by LevelAssessor:
+// - state.consecutiveErrors >= 3
+// - state.engagementLevel <= 3
+// - state.fatigueLevel >= 7
+// - state.dysregulationLevel >= 6
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 4. LEVEL - Safety assessment

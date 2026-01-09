@@ -1,4 +1,5 @@
-import type { State, Event } from './types.js';
+import type { State, Event, Signal } from './types.js';
+import { Signal as SignalEnum } from './types.js';
 
 export class StateEngine {
   private state: State;
@@ -27,12 +28,52 @@ export class StateEngine {
 
   // ============================================
   // MAIN PROCESS FUNCTION
-  // Updates state from event and returns updated state
+  // Updates state from event AND detected signals
   // ============================================
 
-  processEvent(event: Event): State {
+  processEvent(event: Event, signals: Signal[]): State {
+    // 1. Update state from event (correct/incorrect, time, etc.)
     this.updateStateFromEvent(event);
+
+    // 2. Apply signal effects to state
+    this.applySignalEffects(signals);
+
     return { ...this.state };
+  }
+
+  // ============================================
+  // APPLY SIGNAL EFFECTS TO STATE
+  // ============================================
+
+  private applySignalEffects(signals: Signal[]): void {
+    for (const signal of signals) {
+      switch (signal) {
+        case SignalEnum.SCREAMING:
+          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 4);
+          console.log(`[StateEngine] 🔊 SCREAMING → dysregulation +4 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          break;
+        case SignalEnum.CRYING:
+          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 3);
+          console.log(`[StateEngine] 😢 CRYING → dysregulation +3 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          break;
+        case SignalEnum.DISTRESS:
+          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 2);
+          console.log(`[StateEngine] 😰 DISTRESS → dysregulation +2 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          break;
+        case SignalEnum.FRUSTRATION:
+          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 1);
+          console.log(`[StateEngine] 😤 FRUSTRATION → dysregulation +1 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          break;
+        case SignalEnum.WANTS_QUIT:
+          this.state.engagementLevel = Math.max(0, this.state.engagementLevel - 2);
+          console.log(`[StateEngine] 🚪 WANTS_QUIT → engagement -2 (now: ${this.state.engagementLevel.toFixed(1)})`);
+          break;
+        case SignalEnum.WANTS_BREAK:
+          this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + 1);
+          console.log(`[StateEngine] 😴 WANTS_BREAK → fatigue +1 (now: ${this.state.fatigueLevel.toFixed(1)})`);
+          break;
+      }
+    }
   }
 
   // ============================================
@@ -83,11 +124,8 @@ export class StateEngine {
       }
     }
 
-    // AUDIO SIGNALS: Screaming indicates high dysregulation
-    if (event.audioSignals?.screamingDetected) {
-      this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 4);
-      console.log(`[StateEngine] 🔊 Audio signal: screaming → dysregulation +4 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
-    }
+    // NOTE: Signal effects (SCREAMING, CRYING, etc.) are applied separately
+    // via applySignalEffects() after signals are detected
 
     this.updateErrorFrequency();
   }
