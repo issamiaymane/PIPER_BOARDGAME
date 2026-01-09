@@ -193,7 +193,6 @@ export class Session {
     this.inactivityTimeoutMs = uiPackage.sessionConfig.inactivityTimeout * 1000;
 
     // Post-process feedback: ensure "What would you like to do?" is appended for YELLOW+ levels
-    let feedbackText = uiPackage.speech.text;
     const safetyLevel = uiPackage.overlay.safetyLevel;
     const choicePrompt = 'What would you like to do?';
 
@@ -204,11 +203,9 @@ export class Session {
       logger.debug('Session: Timers STOPPED - Correct answer');
     } else if (safetyLevel >= Level.YELLOW) {
       // Check if feedback already ends with the choice prompt
-      if (!feedbackText.toLowerCase().includes(choicePrompt.toLowerCase())) {
-        // Append the choice prompt to the feedback
-        feedbackText = feedbackText.trim();
-        // Remove trailing punctuation and add the choice prompt
-        feedbackText = feedbackText.replace(/[.!?]+$/, '') + '! ' + choicePrompt;
+      if (!uiPackage.speech.text.toLowerCase().includes(choicePrompt.toLowerCase())) {
+        // Append the choice prompt to the feedback (modify UIPackage directly)
+        uiPackage.speech.text = uiPackage.speech.text.trim().replace(/[.!?]+$/, '') + '! ' + choicePrompt;
       }
 
       // Stop BOTH timers when showing choices - child is not expected to answer the card
@@ -218,19 +215,17 @@ export class Session {
       logger.debug('Session: Timers STOPPED - Choices shown (YELLOW+ level)');
     }
 
+    // Populate logging data in UIPackage (single source of truth)
+    uiPackage.childSaid = transcription;
+    uiPackage.targetAnswers = this.currentCard.targetAnswers;
+    uiPackage.attemptNumber = this.attemptCount;
+    uiPackage.responseHistory = [...this.responseHistory];
+
     return {
       uiPackage,
-      feedbackText,
-      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true, // Always speak feedback
-      interventionRequired: uiPackage.interventions.length > 0,
       isCorrect,
-      taskTimeExceeded: false,
-      // Additional data for frontend console logging
-      childSaid: transcription,
-      targetAnswers: this.currentCard.targetAnswers,
-      attemptNumber: this.attemptCount,
-      responseHistory: [...this.responseHistory]
+      taskTimeExceeded: false
     };
   }
 
@@ -327,12 +322,12 @@ export class Session {
 
     const uiPackage = await this.orchestrator.processEvent(event);
 
+    // Populate logging data in UIPackage
+    uiPackage.childSaid = transcription;
+
     return {
       uiPackage,
-      feedbackText: uiPackage.speech.text,
-      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true,
-      interventionRequired: false,
       isCorrect: true,
       taskTimeExceeded: false
     };
@@ -535,19 +530,18 @@ export class Session {
     // Update inactivity timeout based on current safety level
     this.inactivityTimeoutMs = uiPackage.sessionConfig.inactivityTimeout * 1000;
 
+    // Populate logging data in UIPackage
+    uiPackage.childSaid = '[INACTIVE]';
+    uiPackage.targetAnswers = this.currentCard?.targetAnswers;
+    uiPackage.attemptNumber = this.attemptCount;
+    uiPackage.responseHistory = [...this.responseHistory];
+
     // Build result
     const result: SafetyGateResult = {
       uiPackage,
-      feedbackText: uiPackage.speech.text,
-      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true,
-      interventionRequired: uiPackage.interventions.length > 0,
       isCorrect: false,
-      taskTimeExceeded: false,
-      childSaid: '[INACTIVE]',
-      targetAnswers: this.currentCard?.targetAnswers,
-      attemptNumber: this.attemptCount,
-      responseHistory: [...this.responseHistory]
+      taskTimeExceeded: false
     };
 
     // Call the callback if registered
@@ -641,19 +635,21 @@ export class Session {
 
     const uiPackage = await this.orchestrator.processEvent(event, taskContext);
 
+    // Override speech text for task timeout (custom message)
+    uiPackage.speech.text = "Let's try a different one!";
+
+    // Populate logging data in UIPackage
+    uiPackage.childSaid = '[TASK_TIMEOUT]';
+    uiPackage.targetAnswers = this.currentCard?.targetAnswers;
+    uiPackage.attemptNumber = this.attemptCount;
+    uiPackage.responseHistory = [...this.responseHistory];
+
     // Build result with taskTimeExceeded flag
     const result: SafetyGateResult = {
       uiPackage,
-      feedbackText: "Let's try a different one!",
-      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true,
-      interventionRequired: true,
       isCorrect: false,
-      taskTimeExceeded: true,
-      childSaid: '[TASK_TIMEOUT]',
-      targetAnswers: this.currentCard?.targetAnswers,
-      attemptNumber: this.attemptCount,
-      responseHistory: [...this.responseHistory]
+      taskTimeExceeded: true
     };
 
     // Call the callback if registered

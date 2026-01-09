@@ -527,18 +527,15 @@ interface UIPackage {
 }
 
 // Complete safety gate result
+// Note: feedbackText, choiceMessage, interventionRequired, and logging data
+// are all accessible via uiPackage (no duplication)
 interface SafetyGateResult {
   uiPackage: UIPackage;
 
   // Response metadata
   isCorrect: boolean;
   shouldSpeak: boolean;
-  interventionRequired: boolean;
   taskTimeExceeded: boolean;
-
-  // Convenience extracts
-  feedbackText: string;
-  choiceMessage: string;
 }
 ```
 

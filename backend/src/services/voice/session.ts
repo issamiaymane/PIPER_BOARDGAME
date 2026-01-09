@@ -443,21 +443,14 @@ export class VoiceSessionManager {
       await new Promise(resolve => setTimeout(resolve, 100));
 
       // Speak the validated feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.feedbackText) {
-        session.realtimeService.speakFeedback(result.feedbackText);
+      if (result.shouldSpeak && result.uiPackage.speech.text) {
+        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
       }
 
-      // Send safety-gate response to frontend (include extra data for console logging)
+      // Send safety-gate response to frontend (logging data already in uiPackage)
       this.sendToClient(session, {
         type: 'safety_gate_response',
-        uiPackage: {
-          ...result.uiPackage,
-          // Add extra fields for frontend console logging
-          childSaid: result.childSaid,
-          targetAnswers: result.targetAnswers,
-          attemptNumber: result.attemptNumber,
-          responseHistory: result.responseHistory
-        },
+        uiPackage: result.uiPackage,
         isCorrect: result.isCorrect
       });
 
@@ -491,21 +484,15 @@ export class VoiceSessionManager {
       await new Promise(resolve => setTimeout(resolve, 100));
 
       // Speak the inactivity feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.feedbackText) {
+      if (result.shouldSpeak && result.uiPackage.speech.text) {
         logger.debug(`VoiceSession: Speaking inactivity feedback`);
-        session.realtimeService.speakFeedback(result.feedbackText);
+        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
       }
 
-      // Send safety-gate response to frontend
+      // Send safety-gate response to frontend (logging data already in uiPackage)
       this.sendToClient(session, {
         type: 'safety_gate_response',
-        uiPackage: {
-          ...result.uiPackage,
-          childSaid: '[INACTIVE - No response]',
-          targetAnswers: result.targetAnswers,
-          attemptNumber: result.attemptNumber,
-          responseHistory: result.responseHistory
-        },
+        uiPackage: result.uiPackage,
         isCorrect: false
       });
 
@@ -531,24 +518,18 @@ export class VoiceSessionManager {
       await new Promise(resolve => setTimeout(resolve, 100));
 
       // Speak the timeout feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.feedbackText) {
+      if (result.shouldSpeak && result.uiPackage.speech.text) {
         logger.debug('VoiceSession: Speaking timeout feedback');
-        session.realtimeService.speakFeedback(result.feedbackText);
+        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
       }
 
       // Send safety-gate response to frontend with taskTimeExceeded flag
-      // This tells the frontend to skip/close the current card
+      // This tells the frontend to skip/close the current card (logging data already in uiPackage)
       this.sendToClient(session, {
         type: 'safety_gate_response',
-        uiPackage: {
-          ...result.uiPackage,
-          childSaid: '[TASK_TIMEOUT]',
-          targetAnswers: result.targetAnswers,
-          attemptNumber: result.attemptNumber,
-          responseHistory: result.responseHistory
-        },
+        uiPackage: result.uiPackage,
         isCorrect: false,
-        taskTimeExceeded: true
+        taskTimeExceeded: result.taskTimeExceeded
       });
 
     } catch (error) {
@@ -672,20 +653,17 @@ export class VoiceSessionManager {
       await new Promise(resolve => setTimeout(resolve, 100));
 
       // Speak the calming feedback through OpenAI Realtime
-      if (result.shouldSpeak && result.feedbackText) {
-        session.realtimeService.speakFeedback(result.feedbackText);
+      if (result.shouldSpeak && result.uiPackage.speech.text) {
+        session.realtimeService.speakFeedback(result.uiPackage.speech.text);
       }
+
+      // Override childSaid for screaming detection (logging data already in uiPackage)
+      result.uiPackage.childSaid = '[screaming detected]';
 
       // Send safety-gate response to frontend
       this.sendToClient(session, {
         type: 'safety_gate_response',
-        uiPackage: {
-          ...result.uiPackage,
-          childSaid: '[screaming detected]',
-          targetAnswers: result.targetAnswers,
-          attemptNumber: result.attemptNumber,
-          responseHistory: result.responseHistory
-        },
+        uiPackage: result.uiPackage,
         isCorrect: false
       });
 
