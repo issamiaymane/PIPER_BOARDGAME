@@ -285,6 +285,17 @@ export class VoiceService {
   }
 
   /**
+   * Interrupt any ongoing speech and transition to ready state
+   * Call this when user selects an intervention during playback
+   */
+  interruptSpeech(): void {
+    this.audioPlayback.stop();
+    if (this.state === 'speaking') {
+      this.setState('ready');
+    }
+  }
+
+  /**
    * Notify backend about choice selection
    * This allows the backend to manage inactivity timer appropriately
    * @param action The choice action (retry, trigger_break, etc.)

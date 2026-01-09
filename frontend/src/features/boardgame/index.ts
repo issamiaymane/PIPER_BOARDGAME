@@ -558,8 +558,9 @@ function handleInterventionClick(e: Event) {
     // Log intervention selection with styled console output
     safetyGateLogger.logInterventionSelected(action);
 
-    // Notify backend about intervention selection (for inactivity timer management)
+    // Interrupt any ongoing speech so we can transition to ready state
     if (voiceService.isEnabled()) {
+        voiceService.interruptSpeech();
         voiceService.notifyChoiceSelected(action);
     }
 
