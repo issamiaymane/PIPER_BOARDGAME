@@ -50,10 +50,10 @@ export interface PipelineFlowData {
 
   // 6. SESSION CONFIG
   sessionConfig: {
-    prompt_intensity: number;
-    avatar_tone: string;
-    max_task_time: number;
-    inactivity_timeout: number;
+    promptIntensity: number;
+    avatarTone: string;
+    maxTaskTime: number;
+    inactivityTimeout: number;
   };
 
   // 7. CONSTRAINTS
@@ -82,8 +82,6 @@ export interface PipelineFlowData {
   // 10. OUTPUT
   uiPackage: {
     speechText: string;
-    voiceTone: string;
-    speed: string;
     choiceMessage: string;
   };
 }
@@ -261,10 +259,10 @@ export const pipelineLogger = {
     console.log(`${C.gray}${sectionDivider}${C.reset}`);
     const cfg = data.sessionConfig;
     const intensityLabels = ['Minimal', 'Low', 'Medium', 'High'];
-    console.log(`   prompt_intensity:    ${cfg.prompt_intensity} (${intensityLabels[cfg.prompt_intensity] || 'Unknown'})`);
-    console.log(`   avatar_tone:         ${cfg.avatar_tone}`);
-    console.log(`   max_task_time:       ${cfg.max_task_time}s`);
-    console.log(`   inactivity_timeout:  ${cfg.inactivity_timeout}s`);
+    console.log(`   promptIntensity:     ${cfg.promptIntensity} (${intensityLabels[cfg.promptIntensity] || 'Unknown'})`);
+    console.log(`   avatarTone:          ${cfg.avatarTone}`);
+    console.log(`   maxTaskTime:         ${cfg.maxTaskTime}s`);
+    console.log(`   inactivityTimeout:   ${cfg.inactivityTimeout}s`);
 
     // ─────────────────────────────────────────────────────────────
     // 7. CONSTRAINTS
@@ -320,8 +318,6 @@ export const pipelineLogger = {
     console.log(`\n${C.bold}${C.white}10. UI PACKAGE (Output)${C.reset}`);
     console.log(`${C.gray}${sectionDivider}${C.reset}`);
     console.log(`   ${C.bold}speech.text:${C.reset}     "${C.cyan}${data.uiPackage.speechText}${C.reset}"`);
-    console.log(`   voice_tone:       ${data.uiPackage.voiceTone}`);
-    console.log(`   speed:            ${data.uiPackage.speed}`);
     console.log(`   choice_message:   "${data.uiPackage.choiceMessage}"`);
 
     console.log(`\n${C.cyan}${divider}${C.reset}\n`);

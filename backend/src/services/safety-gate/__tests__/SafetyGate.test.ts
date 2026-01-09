@@ -691,15 +691,15 @@ class SafetyGateTestRunner {
     const config = this.sessionPlanner.adaptSessionConfig(Level.GREEN);
 
     console.log(`\n${COLORS.bold}Config at GREEN:${COLORS.reset}`);
-    console.log(`   prompt_intensity: ${config.prompt_intensity}`);
-    console.log(`   avatar_tone: ${config.avatar_tone}`);
-    console.log(`   max_task_time: ${config.max_task_time}s`);
+    console.log(`   prompt_intensity: ${config.promptIntensity}`);
+    console.log(`   avatar_tone: ${config.avatarTone}`);
+    console.log(`   max_task_time: ${config.maxTaskTime}s`);
 
-    const passed = config.avatar_tone === 'warm' &&
-                   config.max_task_time === 60;
+    const passed = config.avatarTone === 'warm' &&
+                   config.maxTaskTime === 60;
 
     logResult(passed, 'warm, 60s',
-              `${config.avatar_tone}, ${config.max_task_time}s`);
+              `${config.avatarTone}, ${config.maxTaskTime}s`);
 
     this.results.push({ id: 'CFG_GREEN', passed, description: 'GREEN config is correct' });
     return passed;
@@ -713,15 +713,15 @@ class SafetyGateTestRunner {
     const config = this.sessionPlanner.adaptSessionConfig(Level.ORANGE);
 
     console.log(`\n${COLORS.bold}Config at ORANGE:${COLORS.reset}`);
-    console.log(`   prompt_intensity: ${config.prompt_intensity}`);
-    console.log(`   avatar_tone: ${config.avatar_tone}`);
-    console.log(`   max_task_time: ${config.max_task_time}s`);
+    console.log(`   prompt_intensity: ${config.promptIntensity}`);
+    console.log(`   avatar_tone: ${config.avatarTone}`);
+    console.log(`   max_task_time: ${config.maxTaskTime}s`);
 
-    const passed = config.avatar_tone === 'calm' &&
-                   config.max_task_time === 30;
+    const passed = config.avatarTone === 'calm' &&
+                   config.maxTaskTime === 30;
 
     logResult(passed, 'calm, 30s',
-              `${config.avatar_tone}, ${config.max_task_time}s`);
+              `${config.avatarTone}, ${config.maxTaskTime}s`);
 
     this.results.push({ id: 'CFG_ORANGE', passed, description: 'ORANGE config is correct' });
     return passed;
@@ -735,13 +735,13 @@ class SafetyGateTestRunner {
     const config = this.sessionPlanner.adaptSessionConfig(Level.RED);
 
     console.log(`\n${COLORS.bold}Config at RED:${COLORS.reset}`);
-    console.log(`   prompt_intensity: ${config.prompt_intensity}`);
-    console.log(`   avatar_tone: ${config.avatar_tone}`);
+    console.log(`   prompt_intensity: ${config.promptIntensity}`);
+    console.log(`   avatar_tone: ${config.avatarTone}`);
 
-    const passed = config.avatar_tone === 'calm';
+    const passed = config.avatarTone === 'calm';
 
     logResult(passed, 'calm tone',
-              `${config.avatar_tone} tone`);
+              `${config.avatarTone} tone`);
 
     this.results.push({ id: 'CFG_RED', passed, description: 'RED config is correct' });
     return passed;

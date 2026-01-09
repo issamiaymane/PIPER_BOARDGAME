@@ -688,16 +688,10 @@ interface UIPackage {
   };
   choice_message: string; // "What would you like to do?"
   interventions: Intervention[];
-  visual_cues: { enabled: boolean };
-  audio_support: { available: boolean };
-  grownup_help: { available: boolean };
-  admin_overlay: {
+  overlay: {
     safety_level: Level;
-    interventions_active: number;
-    interventions_list: Intervention[];
-    signals_detected: Signal[];
-    time_in_session: string;
-    state_snapshot: State;
+    signals: Signal[];
+    state: State;
   };
   session_config: SessionConfig;
 }

@@ -100,10 +100,10 @@ export enum Intervention {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export interface SessionConfig {
-  prompt_intensity: number; // 0-3
-  avatar_tone: 'calm' | 'warm';
-  max_task_time: number; // seconds (total time on card)
-  inactivity_timeout: number; // seconds (time before "are you there?" prompt)
+  promptIntensity: number; // 0-3
+  avatarTone: 'calm' | 'warm';
+  maxTaskTime: number; // seconds (total time on card)
+  inactivityTimeout: number; // seconds (time before "are you there?" prompt)
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -126,32 +126,19 @@ export interface LLMValidation {
 // ─────────────────────────────────────────────────────────────────────────────
 
 export interface UIPackage {
-  avatar: {
-    animation: string;
-    expression: string;
-    position: string;
+  // Flow order
+  overlay: {
+    signals: Signal[];        // SIGNALS
+    state: State;             // STATE
+    safetyLevel: Level;       // LEVEL
   };
-  speech: {
+  interventions: Intervention[];  // INTERVENTIONS
+  sessionConfig: SessionConfig;   // CONFIG
+  speech: {                       // LLM OUTPUT
     text: string;
-    voice_tone: 'calm' | 'warm';
-    speed: string;
   };
-  choice_message: string;
-  interventions: Intervention[];
-  grownup_help: {
-    available: boolean;
-  };
-  admin_overlay: {
-    safety_level: Level;
-    interventions_active: number;
-    interventions_list: Intervention[];
-    signals_detected: Signal[];
-    time_in_session: string;
-    state_snapshot: State;
-  };
-  // Session config for timeout limits
-  session_config: SessionConfig;
-  // Optional fields for frontend console logging
+  choiceMessage: string;          // LLM OUTPUT
+  // Optional: logging data
   childSaid?: string;
   targetAnswers?: string[];
   attemptNumber?: number;
@@ -159,15 +146,17 @@ export interface UIPackage {
 }
 
 export interface SafetyGateResult {
+  // Main output
   uiPackage: UIPackage;
-  feedbackText: string;
-  choiceMessage: string;
+  // Response metadata
+  isCorrect: boolean;
   shouldSpeak: boolean;
   interventionRequired: boolean;
-  isCorrect: boolean;
-  // Per-card limit flag
   taskTimeExceeded: boolean;
-  // Additional data for frontend console logging
+  // Extracted for convenience
+  feedbackText: string;
+  choiceMessage: string;
+  // Optional: logging data
   childSaid?: string;
   targetAnswers?: string[];
   attemptNumber?: number;
@@ -175,14 +164,16 @@ export interface SafetyGateResult {
 }
 
 export interface BackendResponse {
+  // Flow order
+  safetyLevel: Level;
+  signals: Signal[];
+  interventions: Intervention[];
+  sessionConfig: SessionConfig;
+  // Decision & context
   decision: string;
-  safety_level: Level;
-  session_state: any;
-  parameters: SessionConfig;
+  sessionState: any;
   context: any;
   constraints: any;
-  signals_detected: Signal[];
-  interventions_active: Intervention[];
   reasoning: any;
   timestamp: Date;
 }

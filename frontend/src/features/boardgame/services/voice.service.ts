@@ -24,28 +24,10 @@ export interface CardData {
 }
 
 export interface UIPackage {
-  avatar: {
-    animation: string;
-    expression: string;
-    position: string;
-  };
-  speech: {
-    text: string;
-    voice_tone: string;
-    speed: string;
-  };
-  choice_message: string;
-  interventions: string[];
-  grownup_help: {
-    available: boolean;
-  };
-  admin_overlay: {
-    safety_level: number;
-    interventions_active: number;
-    interventions_list: string[];
-    signals_detected: string[];
-    time_in_session: string;
-    state_snapshot: {
+  // Flow order: Signals → State → Level → Interventions → Config → LLM Output
+  overlay: {
+    signals: string[];
+    state: {
       engagementLevel: number;
       dysregulationLevel: number;
       fatigueLevel: number;
@@ -54,8 +36,20 @@ export interface UIPackage {
       errorFrequency: number;
       timeSinceBreak: number;
     };
+    safetyLevel: number;
   };
-  // Additional fields from Session for console logging
+  interventions: string[];
+  sessionConfig: {
+    promptIntensity: number;
+    avatarTone: string;
+    maxTaskTime: number;
+    inactivityTimeout: number;
+  };
+  speech: {
+    text: string;
+  };
+  choiceMessage: string;
+  // Optional: logging data
   childSaid?: string;
   targetAnswers?: string[];
   attemptNumber?: number;

@@ -118,22 +118,24 @@ export class BackendOrchestrator {
     // 5. Adapt session config
     const config = this.sessionPlanner.adaptSessionConfig(safetyLevel);
     flowData.sessionConfig = {
-      prompt_intensity: config.prompt_intensity,
-      avatar_tone: config.avatar_tone,
-      max_task_time: config.max_task_time,
-      inactivity_timeout: config.inactivity_timeout
+      promptIntensity: config.promptIntensity,
+      avatarTone: config.avatarTone,
+      maxTaskTime: config.maxTaskTime,
+      inactivityTimeout: config.inactivityTimeout
     };
 
     // 6. Create backend response
     const backendResponse: BackendResponse = {
+      // Flow order
+      safetyLevel: safetyLevel,
+      signals: signals,
+      interventions: interventions,
+      sessionConfig: config,
+      // Decision & context
       decision: this.determineDecision(safetyLevel, interventions),
-      safety_level: safetyLevel,
-      session_state: this.getSessionState(event, state),
-      parameters: config,
+      sessionState: this.getSessionState(event, state),
       context: this.buildContext(event, state),
       constraints: this.buildConstraints(config, safetyLevel),
-      signals_detected: signals,
-      interventions_active: interventions,
       reasoning: this.buildReasoning(safetyLevel, interventions, signals),
       timestamp: new Date()
     };
@@ -153,9 +155,7 @@ export class BackendOrchestrator {
       const uiPackage = this.generateFallbackResponse(backendResponse, state);
       flowData.uiPackage = {
         speechText: uiPackage.speech.text,
-        voiceTone: uiPackage.speech.voice_tone,
-        speed: uiPackage.speech.speed,
-        choiceMessage: uiPackage.choice_message
+        choiceMessage: uiPackage.choiceMessage
       };
 
       // Log complete flow
@@ -189,9 +189,7 @@ export class BackendOrchestrator {
       const uiPackage = this.generateFallbackResponse(backendResponse, state);
       flowData.uiPackage = {
         speechText: uiPackage.speech.text,
-        voiceTone: uiPackage.speech.voice_tone,
-        speed: uiPackage.speech.speed,
-        choiceMessage: uiPackage.choice_message
+        choiceMessage: uiPackage.choiceMessage
       };
 
       // Log complete flow
@@ -203,9 +201,7 @@ export class BackendOrchestrator {
     const uiPackage = this.buildUIPackage(backendResponse, llmResponse, state);
     flowData.uiPackage = {
       speechText: uiPackage.speech.text,
-      voiceTone: uiPackage.speech.voice_tone,
-      speed: uiPackage.speech.speed,
-      choiceMessage: uiPackage.choice_message
+      choiceMessage: uiPackage.choiceMessage
     };
 
     // Log complete flow
@@ -277,7 +273,7 @@ export class BackendOrchestrator {
 
   private buildConstraints(config: SessionConfig, level: Level): any {
     return {
-      must_use_tone: config.avatar_tone,
+      must_use_tone: config.avatarTone,
       must_be_brief: true,
       must_not_judge: true,
       must_not_pressure: true,
@@ -310,7 +306,7 @@ export class BackendOrchestrator {
 
   private generateFallbackResponse(backendResponse: BackendResponse, state: State): UIPackage {
     // Generate level-appropriate fallback text
-    const level = backendResponse.safety_level;
+    const level = backendResponse.safetyLevel;
     let fallbackText: string;
 
     // Check if this is an inactivity event
@@ -336,30 +332,18 @@ export class BackendOrchestrator {
     }
 
     return {
-      avatar: {
-        animation: 'idle',
-        expression: 'neutral',
-        position: 'centered'
+      // Flow order: Signals → State → Level → Interventions → Config → LLM Output
+      overlay: {
+        signals: backendResponse.signals,
+        state: state,
+        safetyLevel: backendResponse.safetyLevel
       },
+      interventions: backendResponse.interventions,
+      sessionConfig: backendResponse.sessionConfig,
       speech: {
-        text: fallbackText,
-        voice_tone: backendResponse.parameters.avatar_tone,
-        speed: level >= Level.ORANGE ? 'slow' : 'normal'
+        text: fallbackText
       },
-      choice_message: "What would you like to do?",
-      interventions: backendResponse.interventions_active,
-      grownup_help: {
-        available: backendResponse.interventions_active.includes(Intervention.CALL_GROWNUP)
-      },
-      admin_overlay: {
-        safety_level: backendResponse.safety_level,
-        interventions_active: backendResponse.interventions_active.length,
-        interventions_list: backendResponse.interventions_active,
-        signals_detected: backendResponse.signals_detected,
-        time_in_session: this.formatTime(state.timeInSession),
-        state_snapshot: state
-      },
-      session_config: backendResponse.parameters
+      choiceMessage: "What would you like to do?"
     };
   }
 
@@ -373,40 +357,18 @@ export class BackendOrchestrator {
     state: State
   ): UIPackage {
     return {
-      avatar: {
-        animation: 'idle',
-        expression: 'neutral',
-        position: 'centered'
+      // Flow order: Signals → State → Level → Interventions → Config → LLM Output
+      overlay: {
+        signals: backendResponse.signals,
+        state: state,
+        safetyLevel: backendResponse.safetyLevel
       },
+      interventions: backendResponse.interventions,
+      sessionConfig: backendResponse.sessionConfig,
       speech: {
-        text: llmResponse.coach_line,
-        voice_tone: backendResponse.parameters.avatar_tone,
-        speed: backendResponse.safety_level >= Level.ORANGE ? 'slow' : 'normal'
+        text: llmResponse.coach_line
       },
-      choice_message: llmResponse.choice_presentation,
-      interventions: backendResponse.interventions_active,
-      grownup_help: {
-        available: backendResponse.interventions_active.includes(Intervention.CALL_GROWNUP)
-      },
-      admin_overlay: {
-        safety_level: backendResponse.safety_level,
-        interventions_active: backendResponse.interventions_active.length,
-        interventions_list: backendResponse.interventions_active,
-        signals_detected: backendResponse.signals_detected,
-        time_in_session: this.formatTime(state.timeInSession),
-        state_snapshot: state
-      },
-      session_config: backendResponse.parameters
+      choiceMessage: llmResponse.choice_presentation
     };
-  }
-
-  // ─────────────────────────────────────────────────────────────────────────────
-  // UTILITIES
-  // ─────────────────────────────────────────────────────────────────────────────
-
-  private formatTime(seconds: number): string {
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
   }
 }

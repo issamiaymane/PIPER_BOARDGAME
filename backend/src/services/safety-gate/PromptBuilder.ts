@@ -4,10 +4,10 @@ import type { BackendResponse } from './types.js';
 export class PromptBuilder {
 
   buildSystemPrompt(backendResponse: BackendResponse): string {
-    const { safety_level, parameters, context, constraints, interventions_active } = backendResponse;
+    const { safetyLevel, sessionConfig, context, constraints, interventions } = backendResponse;
 
     // Get prompt intensity instructions based on level (0-3)
-    const intensityInstructions = this.getPromptIntensityInstructions(parameters.prompt_intensity);
+    const intensityInstructions = this.getPromptIntensityInstructions(sessionConfig.promptIntensity);
 
     return `
 # PIPER - Speech Therapy Coach
@@ -19,14 +19,14 @@ You help children practice speech. ${intensityInstructions.style}
 - Expected: "${context.target_was}"
 - Result: ${context.what_happened === 'correct_response' ? 'CORRECT' : 'INCORRECT'}
 - Attempt: ${context.attempt_number}
-- Safety Level: ${this.getSafetyLevelName(safety_level)}
+- Safety Level: ${this.getSafetyLevelName(safetyLevel)}
 
 ## FEEDBACK STYLE
 ${intensityInstructions.guidance}
 
 ## FEEDBACK RULES (BASED ON SAFETY LEVEL)
 
-${this.getFeedbackRules(safety_level, context.attempt_number, context.child_said, parameters.prompt_intensity)}
+${this.getFeedbackRules(safetyLevel, context.attempt_number, context.child_said, sessionConfig.promptIntensity)}
 
 ### Never say:
 ${constraints.forbidden_words.join(', ')}
@@ -37,15 +37,15 @@ ${constraints.forbidden_words.join(', ')}
 - Sound disappointed
 
 ## AVAILABLE ACTIONS
-${interventions_active.map((intervention, i) => `${i + 1}. ${intervention}`).join('\n')}
+${interventions.map((intervention, i) => `${i + 1}. ${intervention}`).join('\n')}
 
 ## RESPONSE (JSON only)
 {
-  "coach_line": "${safety_level >= Level.YELLOW ? `"I heard '[child_word]'. [encouragement]! What would you like to do?"` : `"I heard '[child_word]'. [encouragement]!"`}",
+  "coach_line": "${safetyLevel >= Level.YELLOW ? `"I heard '[child_word]'. [encouragement]! What would you like to do?"` : `"I heard '[child_word]'. [encouragement]!"`}",
   "choice_presentation": "What would you like to do?"
 }
 
-${safety_level >= Level.YELLOW ? `⚠️ CRITICAL: Your coach_line MUST end with "What would you like to do?" because choices are being displayed!` : ''}
+${safetyLevel >= Level.YELLOW ? `⚠️ CRITICAL: Your coach_line MUST end with "What would you like to do?" because choices are being displayed!` : ''}
     `;
   }
 

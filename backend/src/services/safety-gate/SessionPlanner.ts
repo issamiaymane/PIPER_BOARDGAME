@@ -9,10 +9,10 @@ export class SessionPlanner {
   adaptSessionConfig(safetyLevel: Level): SessionConfig {
     // Start with baseline defaults (GREEN level settings)
     const config: SessionConfig = {
-      prompt_intensity: 2,
-      avatar_tone: 'warm',
-      max_task_time: 60,
-      inactivity_timeout: 30 // 30 seconds before "are you there?" prompt
+      promptIntensity: 2,
+      avatarTone: 'warm',
+      maxTaskTime: 60,
+      inactivityTimeout: 30 // 30 seconds before "are you there?" prompt
     };
 
     // ============================================
@@ -26,13 +26,13 @@ export class SessionPlanner {
       // ============================================
 
       case Level.RED:
-        config.prompt_intensity = 0;
+        config.promptIntensity = 0;
         // Why? Child in crisis - no prompting
 
-        config.avatar_tone = 'calm';
+        config.avatarTone = 'calm';
         // Why? Soothing tone only
 
-        config.inactivity_timeout = 15;
+        config.inactivityTimeout = 15;
         // Why? Check in quickly (15s) when child is in crisis
         // Faster check-ins show presence without being intrusive
         break;
@@ -42,23 +42,23 @@ export class SessionPlanner {
       // ============================================
 
       case Level.ORANGE:
-        config.prompt_intensity = 0;
+        config.promptIntensity = 0;
         // Why? Minimal prompting - don't add pressure
         // Child is struggling significantly
 
-        config.avatar_tone = 'calm';
+        config.avatarTone = 'calm';
         // Why? Extra calm, not just warm
         // Need soothing approach
 
-        config.max_task_time = 30;
+        config.maxTaskTime = 30;
         // Why? Shorten from 60s to 30s
         // Reduce sustained attention demand
         // Make success more achievable
 
-        config.inactivity_timeout = 20;
+        config.inactivityTimeout = 20;
         // Why? Shorter timeout (20s) when struggling
         // More frequent gentle check-ins without being pushy
-        // Avoids collision with max_task_time (30s)
+        // Avoids collision with maxTaskTime (30s)
         break;
 
       // ============================================
@@ -66,19 +66,19 @@ export class SessionPlanner {
       // ============================================
 
       case Level.YELLOW:
-        config.prompt_intensity = 1;
+        config.promptIntensity = 1;
         // Why? Reduced from 2, but not to 0
         // Gentle guidance still appropriate
 
-        config.avatar_tone = 'calm';
+        config.avatarTone = 'calm';
         // Why? Shift from 'warm' to 'calm'
         // Early intervention in tone
 
-        config.max_task_time = 45;
+        config.maxTaskTime = 45;
         // Why? Slightly shorter (60 -> 45)
         // Small adjustment, not drastic
 
-        config.inactivity_timeout = 25;
+        config.inactivityTimeout = 25;
         // Why? Slightly shorter (30 -> 25s)
         // Earlier check-in when showing signs of difficulty
         break;

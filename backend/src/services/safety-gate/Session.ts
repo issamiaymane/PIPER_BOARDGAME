@@ -134,11 +134,11 @@ export class Session {
 
     // Update inactivity timeout based on current safety level
     // This adapts the check-in frequency: GREEN=30s, YELLOW=25s, ORANGE=20s, RED=15s
-    this.inactivityTimeoutMs = uiPackage.session_config.inactivity_timeout * 1000;
+    this.inactivityTimeoutMs = uiPackage.sessionConfig.inactivityTimeout * 1000;
 
     // Post-process feedback: ensure "What would you like to do?" is appended for YELLOW+ levels
     let feedbackText = uiPackage.speech.text;
-    const safetyLevel = uiPackage.admin_overlay.safety_level;
+    const safetyLevel = uiPackage.overlay.safetyLevel;
     const choicePrompt = 'What would you like to do?';
 
     // Stop timers when answer is correct - card will close
@@ -165,9 +165,9 @@ export class Session {
     return {
       uiPackage,
       feedbackText,
-      choiceMessage: uiPackage.choice_message,
+      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true, // Always speak feedback
-      interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
+      interventionRequired: uiPackage.interventions.length > 0,
       isCorrect,
       taskTimeExceeded: false,
       // Additional data for frontend console logging
@@ -322,7 +322,7 @@ export class Session {
     return {
       uiPackage,
       feedbackText: uiPackage.speech.text,
-      choiceMessage: uiPackage.choice_message,
+      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true,
       interventionRequired: false,
       isCorrect: true,
@@ -542,15 +542,15 @@ export class Session {
     const uiPackage = await this.orchestrator.processEvent(event, taskContext);
 
     // Update inactivity timeout based on current safety level
-    this.inactivityTimeoutMs = uiPackage.session_config.inactivity_timeout * 1000;
+    this.inactivityTimeoutMs = uiPackage.sessionConfig.inactivityTimeout * 1000;
 
     // Build result
     const result: SafetyGateResult = {
       uiPackage,
       feedbackText: uiPackage.speech.text,
-      choiceMessage: uiPackage.choice_message,
+      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true,
-      interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
+      interventionRequired: uiPackage.interventions.length > 0,
       isCorrect: false,
       taskTimeExceeded: false,
       childSaid: '[INACTIVE]',
@@ -569,7 +569,7 @@ export class Session {
 
     // Only restart timer if NOT showing choices (GREEN level)
     // If YELLOW+ level, choices are shown and child should interact with them, not answer the card
-    const safetyLevel = result.uiPackage.admin_overlay.safety_level;
+    const safetyLevel = result.uiPackage.overlay.safetyLevel;
     if (safetyLevel >= Level.YELLOW) {
       console.log(`[Session] ⚠️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
       this.stopInactivityTimer();
@@ -660,7 +660,7 @@ export class Session {
     const result: SafetyGateResult = {
       uiPackage,
       feedbackText: "Let's try a different one!",
-      choiceMessage: uiPackage.choice_message,
+      choiceMessage: uiPackage.choiceMessage,
       shouldSpeak: true,
       interventionRequired: true,
       isCorrect: false,

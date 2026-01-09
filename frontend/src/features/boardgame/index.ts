@@ -398,22 +398,22 @@ function initSafetyGateUI() {
 }
 
 function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shouldSkipCard: boolean = false) {
-    currentSafetyLevel = uiPackage.admin_overlay.safety_level;
+    currentSafetyLevel = uiPackage.overlay.safetyLevel;
 
     // Log to Chrome console with same format as backend terminal
     const logData: SafetyGateLogData = {
         childSaid: uiPackage.childSaid || '[unknown]',
         targetAnswers: uiPackage.targetAnswers || [],
         isCorrect,
-        safetyLevel: uiPackage.admin_overlay.safety_level,
-        signals: uiPackage.admin_overlay.signals_detected || [],
+        safetyLevel: uiPackage.overlay.safetyLevel,
+        signals: uiPackage.overlay.signals || [],
         interventions: uiPackage.interventions || [],
         state: {
-            engagement: uiPackage.admin_overlay.state_snapshot?.engagementLevel || 0,
-            dysregulation: uiPackage.admin_overlay.state_snapshot?.dysregulationLevel || 0,
-            fatigue: uiPackage.admin_overlay.state_snapshot?.fatigueLevel || 0,
-            consecutiveErrors: uiPackage.admin_overlay.state_snapshot?.consecutiveErrors || 0,
-            timeInSession: uiPackage.admin_overlay.state_snapshot?.timeInSession || 0,
+            engagement: uiPackage.overlay.state?.engagementLevel || 0,
+            dysregulation: uiPackage.overlay.state?.dysregulationLevel || 0,
+            fatigue: uiPackage.overlay.state?.fatigueLevel || 0,
+            consecutiveErrors: uiPackage.overlay.state?.consecutiveErrors || 0,
+            timeInSession: uiPackage.overlay.state?.timeInSession || 0,
         },
         feedback: uiPackage.speech.text,
         attemptNumber: uiPackage.attemptNumber || 1,
@@ -465,7 +465,7 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shou
         if (voiceService.isEnabled()) {
             voiceService.pauseListening();
         }
-        renderInterventions(uiPackage.interventions, uiPackage.choice_message);
+        renderInterventions(uiPackage.interventions, uiPackage.choiceMessage);
     }
 }
 
