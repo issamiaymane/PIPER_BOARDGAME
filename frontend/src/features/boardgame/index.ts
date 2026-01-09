@@ -8,7 +8,7 @@
 import { CATEGORY_HANDLER_MAP } from '@shared/categories';
 import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../cards/index';
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
-import { voiceService, VoiceState, UIPackage, CardData } from './services/voice.service';
+import { voiceService, VoiceState, UIPackage, CardData } from './services/voice';
 import { pipelineVisualizer, PipelineLogData } from './services/pipeline-visualizer';
 import { gameLogger, voiceLogger } from './services/logger';
 

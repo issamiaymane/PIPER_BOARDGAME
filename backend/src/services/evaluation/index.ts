@@ -11,10 +11,10 @@ export {
   hasEvaluationPdf,
   deleteEvaluationPdf,
   readEvaluationPdf,
-} from './upload.service.js';
+} from './upload.js';
 
 export {
   extractEvaluationData,
   extractionResultToEvalData,
   PasswordRequiredError,
-} from './extraction.service.js';
+} from './extraction.js';

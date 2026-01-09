@@ -6,4 +6,4 @@ export {
   listStudentsByTherapist,
   updateStudent,
   deleteStudent,
-} from './student.service.js';
+} from './student.js';

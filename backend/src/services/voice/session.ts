@@ -5,50 +5,20 @@
  */
 
 import WebSocket from 'ws';
-import { z } from 'zod';
-import { RealtimeVoiceService, RealtimeServerEvent } from './realtime.service.js';
+import { RealtimeVoiceService } from './realtime.js';
 import { Session } from '../safety-gate/Session.js';
-import { CardContext, SafetyGateResult, UIPackage } from '../../types/safety-gate.js';
+import { CardContext, SafetyGateResult } from '../../types/safety-gate.js';
+import {
+  ClientMessageSchema,
+  type ClientMessage,
+  type ServerMessage,
+  type RealtimeServerEvent
+} from '../../types/voice.js';
 import { logger } from '../../utils/logger.js';
 import { config } from '../../config/index.js';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// INPUT VALIDATION SCHEMAS
-// ─────────────────────────────────────────────────────────────────────────────
-
-const CardContextSchema = z.object({
-  category: z.string(),
-  question: z.string(),
-  targetAnswers: z.array(z.string()),
-  images: z.array(z.object({
-    image: z.string(),
-    label: z.string()
-  }))
-});
-
-const ClientMessageSchema = z.object({
-  type: z.enum([
-    'start_session',
-    'speak_card',
-    'audio_chunk',
-    'commit_audio',
-    'end_session',
-    'set_card_context',
-    'choice_selected',
-    'activity_ended'
-  ]),
-  text: z.string().optional(),
-  category: z.string().optional(),
-  audio: z.string().optional(),
-  amplitude: z.number().min(0).max(1).optional(),
-  peak: z.number().min(0).max(1).optional(),
-  cardContext: CardContextSchema.optional(),
-  action: z.string().optional(),
-  activity: z.string().optional()
-});
-
-// Derive type from schema (single source of truth)
-export type ClientMessage = z.infer<typeof ClientMessageSchema>;
+// Re-export types for external use
+export type { ClientMessage, ServerMessage };
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SCREAMING DETECTION CONFIG (from centralized config)
@@ -82,19 +52,6 @@ export interface VoiceSession {
 }
 
 
-export interface ServerMessage {
-  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error' | 'safety_gate_response';
-  sessionId?: string;
-  audio?: string; // base64 encoded PCM16 audio
-  text?: string;
-  role?: 'assistant' | 'user';
-  message?: string;
-  // Safety-gate UI package
-  uiPackage?: UIPackage;
-  isCorrect?: boolean;
-  // Flag for card flow control
-  taskTimeExceeded?: boolean;
-}
 
 export class VoiceSessionManager {
   private sessions: Map<string, VoiceSession> = new Map();

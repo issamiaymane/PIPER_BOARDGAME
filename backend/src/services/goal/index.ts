@@ -10,12 +10,12 @@ export {
   getGoalsPdfPath,
   hasGoalsPdf,
   deleteGoalsPdf,
-} from './upload.service.js';
+} from './upload.js';
 
 export {
   extractGoalsData,
   PasswordRequiredError,
-} from './extraction.service.js';
+} from './extraction.js';
 
 export {
   createGoalsFromExtraction,
@@ -26,4 +26,4 @@ export {
   updateGoal,
   deleteGoal,
   deleteAllGoalsForStudent,
-} from './goal.service.js';
+} from './goal.js';

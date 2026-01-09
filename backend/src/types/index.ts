@@ -37,6 +37,18 @@ export type {
   GoalExtractionResult,
 } from './goal.js';
 
+// Voice types
+export type {
+  ClientMessage,
+  ServerMessage,
+  RealtimeServerEvent,
+  RealtimeClientEvent,
+  RealtimeEventHandler,
+} from './voice.js';
+
+// Voice validation schemas
+export { ClientMessageSchema, CardContextSchema } from './voice.js';
+
 // Express extensions
 declare global {
   namespace Express {

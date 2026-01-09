@@ -6,6 +6,11 @@
 import WebSocket from 'ws';
 import { config } from '../../config/index.js';
 import { logger } from '../../utils/logger.js';
+import type {
+  RealtimeEventHandler,
+  RealtimeServerEvent,
+  RealtimeClientEvent
+} from '../../types/voice.js';
 
 const OPENAI_REALTIME_URL = 'wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-12-17';
 
@@ -20,20 +25,6 @@ Your role:
 - Speak in a warm, child-friendly tone
 
 Remember: This is for practice, not testing. Be supportive and encouraging.`;
-
-export type RealtimeEventHandler = (event: RealtimeServerEvent) => void;
-
-export interface RealtimeServerEvent {
-  type: string;
-  event_id?: string;
-  [key: string]: unknown;
-}
-
-export interface RealtimeClientEvent {
-  type: string;
-  event_id?: string;
-  [key: string]: unknown;
-}
 
 export class RealtimeVoiceService {
   private ws: WebSocket | null = null;

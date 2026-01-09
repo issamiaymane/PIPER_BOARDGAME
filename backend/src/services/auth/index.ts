@@ -3,4 +3,4 @@ export {
   loginTherapist,
   getTherapistById,
   verifyToken,
-} from './auth.service.js';
+} from './auth.js';
