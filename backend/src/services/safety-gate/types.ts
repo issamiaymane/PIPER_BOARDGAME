@@ -91,8 +91,6 @@ export enum Intervention {
 export interface LLMResponse {
   coach_line: string;
   choice_presentation: string;
-  detected_signals: string[];
-  tone_used: string;
 }
 
 export interface ResponseValidationResult {
@@ -125,7 +123,7 @@ export interface UIPackage {
   };
   speech: {
     text: string;
-    voice_tone: string;
+    voice_tone: 'calm' | 'warm' | 'neutral';
     speed: string;
   };
   choice_message: string;
@@ -147,6 +145,8 @@ export interface UIPackage {
     time_in_session: string;
     state_snapshot: State;
   };
+  // Session config for retry/timeout limits
+  session_config: SessionConfig;
   // Optional fields for frontend console logging
   childSaid?: string;
   targetAnswers?: string[];
@@ -161,6 +161,9 @@ export interface SafetyGateResult {
   shouldSpeak: boolean;
   interventionRequired: boolean;
   isCorrect: boolean;
+  // Per-card limit flags
+  maxRetriesExceeded: boolean;
+  taskTimeExceeded: boolean;
   // Additional data for frontend console logging
   childSaid?: string;
   targetAnswers?: string[];
@@ -175,8 +178,9 @@ export interface SafetyGateResult {
 export interface SessionConfig {
   prompt_intensity: number; // 0-3
   avatar_tone: 'calm' | 'warm' | 'neutral';
-  max_retries: number; // 1-3
-  max_task_time: number; // seconds
+  max_retries: number; // 0-2
+  max_task_time: number; // seconds (total time on card)
+  inactivity_timeout: number; // seconds (time before "are you there?" prompt)
   show_visual_cues: boolean;
   enable_audio_support: boolean;
 }

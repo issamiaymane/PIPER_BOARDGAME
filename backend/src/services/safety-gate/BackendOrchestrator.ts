@@ -1,15 +1,12 @@
-import {
+import { Level, Intervention } from './types.js';
+import type {
   State,
   Event,
-  Level,
-  Intervention,
   SessionConfig,
   BackendResponse,
-  Signal,
   UIPackage,
   TaskContext,
-  LLMResponse,
-  ResponseValidationResult
+  LLMResponse
 } from './types.js';
 import { StateEngine } from './StateEngine.js';
 import { SignalDetector } from './SignalDetector.js';
@@ -19,70 +16,11 @@ import { SessionPlanner } from './SessionPlanner.js';
 import { PromptBuilder } from './PromptBuilder.js';
 import { LLMClient } from './LLMClient.js';
 import { ResponseValidator } from './ResponseValidator.js';
+import { pipelineLogger } from '../../utils/logger.js';
+import type { PipelineFlowData } from '../../utils/logger.js';
 
 // Re-export for backward compatibility
-export { UIPackage, TaskContext };
-
-interface Logger {
-  logStateUpdate(state: State, event: Event): void;
-  logSignals(signals: Signal[]): void;
-  logSafetyAssessment(level: Level, state: State, signals: Signal[]): void;
-  logInterventions(interventions: Intervention[]): void;
-  logConfigAdaptation(config: SessionConfig): void;
-  logBackendResponse(response: BackendResponse): void;
-  logLLMResponse(response: LLMResponse): void;
-  logValidationFailure(validation: ResponseValidationResult): void;
-  logValidationSuccess(validation: ResponseValidationResult): void;
-  logForSOAP(data: any): Promise<void>;
-}
-
-// Silent logger - formatted output is handled by Session
-class SilentLogger implements Logger {
-  logStateUpdate(_state: State, _event: Event): void {}
-  logSignals(_signals: Signal[]): void {}
-  logSafetyAssessment(_level: Level, _state: State, _signals: Signal[]): void {}
-  logInterventions(_interventions: Intervention[]): void {}
-  logConfigAdaptation(_config: SessionConfig): void {}
-  logBackendResponse(_response: BackendResponse): void {}
-  logLLMResponse(_response: LLMResponse): void {}
-  logValidationFailure(_validation: ResponseValidationResult): void {}
-  logValidationSuccess(_validation: ResponseValidationResult): void {}
-  async logForSOAP(_data: any): Promise<void> {}
-}
-
-// Verbose logger - for debugging (enable by using VerboseLogger in constructor)
-class VerboseLogger implements Logger {
-  logStateUpdate(state: State, event: Event): void {
-    console.log('[State Update]', { state, event });
-  }
-  logSignals(signals: Signal[]): void {
-    console.log('[Signals]', signals);
-  }
-  logSafetyAssessment(level: Level, state: State, signals: Signal[]): void {
-    console.log('[Safety Assessment]', { level, state, signals });
-  }
-  logInterventions(interventions: Intervention[]): void {
-    console.log('[Interventions]', interventions);
-  }
-  logConfigAdaptation(config: SessionConfig): void {
-    console.log('[Config Adaptation]', config);
-  }
-  logBackendResponse(response: BackendResponse): void {
-    console.log('[Backend Response]', response);
-  }
-  logLLMResponse(response: LLMResponse): void {
-    console.log('[LLM Response]', response);
-  }
-  logValidationFailure(validation: ResponseValidationResult): void {
-    console.log('[Validation Failure]', validation);
-  }
-  logValidationSuccess(validation: ResponseValidationResult): void {
-    console.log('[Validation Success]', validation);
-  }
-  async logForSOAP(data: any): Promise<void> {
-    console.log('[SOAP Log]', data);
-  }
-}
+export type { UIPackage, TaskContext };
 
 export class BackendOrchestrator {
   private stateEngine: StateEngine;
@@ -93,7 +31,6 @@ export class BackendOrchestrator {
   private promptBuilder: PromptBuilder;
   private llmClient: LLMClient;
   private validator: ResponseValidator;
-  private logger: Logger;
   private currentTaskContext: TaskContext | null = null;
 
   constructor() {
@@ -105,7 +42,6 @@ export class BackendOrchestrator {
     this.promptBuilder = new PromptBuilder();
     this.llmClient = new LLMClient();
     this.validator = new ResponseValidator();
-    this.logger = new SilentLogger(); // Use VerboseLogger for debugging
   }
 
   /**
@@ -128,17 +64,40 @@ export class BackendOrchestrator {
       this.currentTaskContext = taskContext;
     }
 
+    // Initialize flow data for logging
+    const flowData: Partial<PipelineFlowData> = {
+      event: {
+        type: event.type,
+        correct: event.correct,
+        response: event.response,
+        signal: event.signal
+      },
+      taskContext: this.currentTaskContext ? {
+        category: this.currentTaskContext.category,
+        question: this.currentTaskContext.question,
+        targetAnswer: this.currentTaskContext.targetAnswer
+      } : undefined
+    };
+
     // 1. Update state from event
     const state = this.stateEngine.processEvent(event);
-    this.logger.logStateUpdate(state, event);
+    flowData.state = {
+      engagementLevel: state.engagementLevel,
+      dysregulationLevel: state.dysregulationLevel,
+      fatigueLevel: state.fatigueLevel,
+      consecutiveErrors: state.consecutiveErrors,
+      errorFrequency: state.errorFrequency,
+      timeInSession: state.timeInSession,
+      timeSinceBreak: state.timeSinceBreak
+    };
 
     // 2. Detect signals from state and event (async for LLM-based text classification)
     const signals = await this.signalDetector.detectSignals(state, event);
-    this.logger.logSignals(signals);
+    flowData.signals = signals.map(s => String(s)); // Ensure strings for logging
 
     // 3. Assess safety level
     const safetyLevel = this.levelAssessor.assessLevel(state, signals);
-    this.logger.logSafetyAssessment(safetyLevel, state, signals);
+    flowData.safetyLevel = safetyLevel;
 
     // 4. Determine interventions
     const interventions = this.interventionSelector.selectInterventions(
@@ -146,11 +105,19 @@ export class BackendOrchestrator {
       state,
       signals
     );
-    this.logger.logInterventions(interventions);
+    flowData.interventions = interventions;
 
     // 5. Adapt session config
     const config = this.sessionPlanner.adaptSessionConfig(safetyLevel);
-    this.logger.logConfigAdaptation(config);
+    flowData.sessionConfig = {
+      prompt_intensity: config.prompt_intensity,
+      avatar_tone: config.avatar_tone,
+      max_retries: config.max_retries,
+      max_task_time: config.max_task_time,
+      inactivity_timeout: config.inactivity_timeout,
+      show_visual_cues: config.show_visual_cues,
+      enable_audio_support: config.enable_audio_support
+    };
 
     // 6. Create backend response
     const backendResponse: BackendResponse = {
@@ -165,47 +132,82 @@ export class BackendOrchestrator {
       reasoning: this.buildReasoning(safetyLevel, interventions, signals),
       timestamp: new Date()
     };
-    this.logger.logBackendResponse(backendResponse);
+
+    flowData.constraints = {
+      max_sentences: backendResponse.constraints.max_sentences,
+      must_offer_choices: backendResponse.constraints.must_offer_choices,
+      forbidden_words: backendResponse.constraints.forbidden_words
+    };
 
     // 7. For inactivity events, skip LLM and use fallback directly
     if (event.type === 'CHILD_INACTIVE') {
-      console.log('[BackendOrchestrator] Inactivity event - using fallback response (skipping LLM)');
-      return this.generateFallbackResponse(backendResponse, state);
+      flowData.llmSkipped = true;
+      flowData.llmSkipReason = 'CHILD_INACTIVE event';
+      flowData.usedFallback = true;
+
+      const uiPackage = this.generateFallbackResponse(backendResponse, state);
+      flowData.uiPackage = {
+        speechText: uiPackage.speech.text,
+        voiceTone: uiPackage.speech.voice_tone,
+        speed: uiPackage.speech.speed,
+        avatarAnimation: uiPackage.avatar.animation,
+        choiceMessage: uiPackage.choice_message
+      };
+
+      // Log complete flow
+      pipelineLogger.logFlow(flowData as PipelineFlowData);
+      return uiPackage;
     }
 
     // 8. Build system prompt and get LLM response
-    const systemPrompt = this.promptBuilder.buildSystemPrompt(backendResponse);
     const llmResponse = await this.llmClient.generateResponse(
-      systemPrompt,
+      this.promptBuilder.buildSystemPrompt(backendResponse),
       backendResponse.context
     );
-    this.logger.logLLMResponse(llmResponse);
+    flowData.llmResponse = {
+      coach_line: llmResponse.coach_line,
+      choice_presentation: llmResponse.choice_presentation
+    };
 
     // 9. Validate LLM response
     const validation = this.validator.validate(
       llmResponse,
       backendResponse.constraints
     );
+    flowData.validation = {
+      valid: validation.valid,
+      checks: validation.checks,
+      reason: validation.reason
+    };
 
     if (!validation.valid) {
-      this.logger.logValidationFailure(validation);
-      return this.generateFallbackResponse(backendResponse, state);
+      flowData.usedFallback = true;
+      const uiPackage = this.generateFallbackResponse(backendResponse, state);
+      flowData.uiPackage = {
+        speechText: uiPackage.speech.text,
+        voiceTone: uiPackage.speech.voice_tone,
+        speed: uiPackage.speech.speed,
+        avatarAnimation: uiPackage.avatar.animation,
+        choiceMessage: uiPackage.choice_message
+      };
+
+      // Log complete flow
+      pipelineLogger.logFlow(flowData as PipelineFlowData);
+      return uiPackage;
     }
-    this.logger.logValidationSuccess(validation);
 
-    // 10. Build UI package and log
+    // 10. Build UI package
     const uiPackage = this.buildUIPackage(backendResponse, llmResponse, state);
+    flowData.uiPackage = {
+      speechText: uiPackage.speech.text,
+      voiceTone: uiPackage.speech.voice_tone,
+      speed: uiPackage.speech.speed,
+      avatarAnimation: uiPackage.avatar.animation,
+      choiceMessage: uiPackage.choice_message
+    };
 
-    await this.logger.logForSOAP({
-      event,
-      state,
-      signals,
-      safetyLevel,
-      interventions,
-      backendResponse,
-      llmResponse,
-      validation
-    });
+    // Log complete flow
+    pipelineLogger.logFlow(flowData as PipelineFlowData);
 
     return uiPackage;
   }
@@ -352,7 +354,8 @@ export class BackendOrchestrator {
         signals_detected: backendResponse.signals_detected,
         time_in_session: this.formatTime(state.timeInSession),
         state_snapshot: state
-      }
+      },
+      session_config: backendResponse.parameters
     };
   }
 
@@ -390,7 +393,8 @@ export class BackendOrchestrator {
         signals_detected: backendResponse.signals_detected,
         time_in_session: this.formatTime(state.timeInSession),
         state_snapshot: state
-      }
+      },
+      session_config: backendResponse.parameters
     };
   }
 

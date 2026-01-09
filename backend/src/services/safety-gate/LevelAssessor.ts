@@ -1,4 +1,5 @@
-import { State, Level, Signal } from './types.js';
+import { Level, Signal } from './types.js';
+import type { State } from './types.js';
 
 export class LevelAssessor {
 

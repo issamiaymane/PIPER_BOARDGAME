@@ -1,4 +1,4 @@
-import { State, Event } from './types.js';
+import type { State, Event } from './types.js';
 
 export class StateEngine {
   private state: State;

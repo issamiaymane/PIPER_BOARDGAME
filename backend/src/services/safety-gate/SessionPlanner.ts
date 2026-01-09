@@ -13,6 +13,7 @@ export class SessionPlanner {
       avatar_tone: 'warm',
       max_retries: 2,
       max_task_time: 60,
+      inactivity_timeout: 30, // 30 seconds before "are you there?" prompt
       show_visual_cues: true,
       enable_audio_support: false
     };
@@ -36,6 +37,10 @@ export class SessionPlanner {
 
         config.max_retries = 0;
         // Why? Don't continue task at all
+
+        config.inactivity_timeout = 15;
+        // Why? Check in quickly (15s) when child is in crisis
+        // Faster check-ins show presence without being intrusive
         break;
 
       // ============================================
@@ -68,6 +73,11 @@ export class SessionPlanner {
         config.enable_audio_support = true;
         // Why? Turn on audio help
         // Multiple modalities = better chance of success
+
+        config.inactivity_timeout = 20;
+        // Why? Shorter timeout (20s) when struggling
+        // More frequent gentle check-ins without being pushy
+        // Avoids collision with max_task_time (30s)
         break;
 
       // ============================================
@@ -86,6 +96,10 @@ export class SessionPlanner {
         config.max_task_time = 45;
         // Why? Slightly shorter (60 -> 45)
         // Small adjustment, not drastic
+
+        config.inactivity_timeout = 25;
+        // Why? Slightly shorter (30 -> 25s)
+        // Earlier check-in when showing signs of difficulty
         break;
 
       // ============================================

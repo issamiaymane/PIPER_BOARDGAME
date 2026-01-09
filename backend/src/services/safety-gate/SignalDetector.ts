@@ -1,6 +1,7 @@
 import OpenAI from 'openai';
 import { config } from '../../config/index.js';
-import { State, Event, Signal } from './types.js';
+import { Signal } from './types.js';
+import type { State, Event } from './types.js';
 
 interface LLMSignalClassification {
   break_request: boolean;

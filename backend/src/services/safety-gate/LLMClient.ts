@@ -1,10 +1,10 @@
 import OpenAI from 'openai';
 import { config } from '../../config/index.js';
 import { logger } from '../../utils/logger.js';
-import { LLMResponse } from './types.js';
+import type { LLMResponse } from './types.js';
 
 // Re-export for backward compatibility
-export { LLMResponse };
+export type { LLMResponse };
 
 export class LLMClient {
   private client: OpenAI;
@@ -45,15 +45,13 @@ export class LLMClient {
       const parsed = JSON.parse(text);
 
       // Validate required fields
-      if (!parsed.coach_line || !parsed.tone_used) {
+      if (!parsed.coach_line) {
         throw new Error('LLM response missing required fields');
       }
 
       return {
         coach_line: parsed.coach_line || '',
-        choice_presentation: parsed.choice_presentation || '',
-        detected_signals: parsed.detected_signals || [],
-        tone_used: parsed.tone_used || 'calm'
+        choice_presentation: parsed.choice_presentation || ''
       };
 
     } catch (error) {
@@ -62,9 +60,7 @@ export class LLMClient {
       // Return a safe fallback response (simple encouragement)
       return {
         coach_line: "I heard you! Let's try again!",
-        choice_presentation: "What would you like to do?",
-        detected_signals: [],
-        tone_used: 'warm'
+        choice_presentation: "What would you like to do?"
       };
     }
   }

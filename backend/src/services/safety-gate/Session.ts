@@ -4,12 +4,13 @@
  */
 
 import { BackendOrchestrator } from './BackendOrchestrator.js';
-import { Event, Level, CardContext, SafetyGateResult } from './types.js';
-import { logger, safetyGateLogger, SafetyGateLogData } from '../../utils/logger.js';
+import { Level } from './types.js';
+import type { Event, CardContext, SafetyGateResult } from './types.js';
+import { logger } from '../../utils/logger.js';
 import { AnswerValidator } from './AnswerValidator.js';
 
 // Re-export for backward compatibility
-export { CardContext, SafetyGateResult };
+export type { CardContext, SafetyGateResult };
 
 export class Session {
   private orchestrator: BackendOrchestrator;
@@ -19,8 +20,17 @@ export class Session {
   private responseHistory: string[] = [];
   private sessionStartTime: Date;
 
-  // Inactivity detection
-  private inactivityTimeoutMs: number = 30000; // 30 seconds
+  // Per-card tracking (reset when card changes)
+  private cardRetryCount: number = 0;
+  private cardStartTime: Date | null = null;
+
+  // Task timeout (max_task_time)
+  private taskTimeoutTimer: ReturnType<typeof setTimeout> | null = null;
+  private onTaskTimeoutCallback: ((result: SafetyGateResult) => void) | null = null;
+
+  // Inactivity detection (adapts based on safety level)
+  // GREEN=30s, YELLOW=25s, ORANGE=20s, RED=15s
+  private inactivityTimeoutMs: number = 30000; // Default 30s (GREEN level)
   private inactivityTimer: ReturnType<typeof setTimeout> | null = null;
   private onInactivityCallback: ((result: SafetyGateResult) => void) | null = null;
   private isWaitingForResponse: boolean = false;
@@ -40,9 +50,16 @@ export class Session {
     this.currentCard = card;
     // Don't reset attemptCount or responseHistory - they persist across all cards
 
+    // Reset per-card tracking
+    this.cardRetryCount = 0;
+    this.cardStartTime = new Date();
+
+    // Start task timeout timer (default 60s, will be checked against actual config on response)
+    this.startTaskTimeoutTimer(60);
+
     // Start inactivity timer - we're now waiting for child to respond to this card
     this.startInactivityTimer();
-    console.log(`[Session] 📋 Card set: "${card.question}" - Timer STARTED`);
+    console.log(`[Session] 📋 Card set: "${card.question}" - Timers STARTED (retry: 0, task timeout: 60s)`);
   }
 
   /**
@@ -86,6 +103,12 @@ export class Session {
       { category: this.currentCard.category, question: this.currentCard.question }
     );
 
+    // Increment per-card retry count on incorrect responses
+    if (!isCorrect) {
+      this.cardRetryCount++;
+      console.log(`[Session] ❌ Incorrect - Card retry count: ${this.cardRetryCount}`);
+    }
+
     // Build the child event for the orchestrator
     // If screaming was detected via audio amplitude, include it in the signal field
     const screamingSignal = options?.screamingDetected ? 'screaming_detected_audio' : undefined;
@@ -116,38 +139,29 @@ export class Session {
     // Process through the full safety-gate pipeline with task context
     const uiPackage = await this.orchestrator.processEvent(event, taskContext);
 
+    // Update inactivity timeout based on current safety level
+    // This adapts the check-in frequency: GREEN=30s, YELLOW=25s, ORANGE=20s, RED=15s
+    this.inactivityTimeoutMs = uiPackage.session_config.inactivity_timeout * 1000;
+
     // Post-process feedback: ensure "What would you like to do?" is appended for YELLOW+ levels
     let feedbackText = uiPackage.speech.text;
     const safetyLevel = uiPackage.admin_overlay.safety_level;
     const choicePrompt = 'What would you like to do?';
 
-    // Log formatted safety-gate state
-    const logData: SafetyGateLogData = {
-      childSaid: transcription,
-      targetAnswers: this.currentCard.targetAnswers,
-      isCorrect,
-      safetyLevel: safetyLevel,
-      signals: uiPackage.admin_overlay.signals_detected,
-      interventions: uiPackage.admin_overlay.interventions_list,
-      state: {
-        engagement: uiPackage.admin_overlay.state_snapshot.engagementLevel,
-        dysregulation: uiPackage.admin_overlay.state_snapshot.dysregulationLevel,
-        fatigue: uiPackage.admin_overlay.state_snapshot.fatigueLevel,
-        consecutiveErrors: uiPackage.admin_overlay.state_snapshot.consecutiveErrors,
-        timeInSession: uiPackage.admin_overlay.state_snapshot.timeInSession
-      },
-      feedback: feedbackText,
-      attemptNumber: this.attemptCount,
-      responseHistory: this.responseHistory,
-      shouldSpeak: true // Always speak feedback
-    };
+    // Check if max_retries exceeded (based on current config from safety level)
+    const maxRetries = uiPackage.session_config.max_retries;
+    const maxRetriesExceeded = !isCorrect && this.cardRetryCount > maxRetries;
 
-    safetyGateLogger.logSessionState(logData);
+    if (maxRetriesExceeded) {
+      console.log(`[Session] 🚫 MAX RETRIES EXCEEDED: ${this.cardRetryCount} > ${maxRetries}`);
+      feedbackText = "Let's try a different one!";
+    }
 
-    // Stop timer when answer is correct - card will close and move to next step
-    if (isCorrect) {
+    // Stop timers when answer is correct or max retries exceeded - card will close
+    if (isCorrect || maxRetriesExceeded) {
       this.stopInactivityTimer();
-      console.log(`[Session] ⏱️ Timer STOPPED - Correct answer, card closing`);
+      this.stopTaskTimeoutTimer();
+      console.log(`[Session] ⏱️ Timers STOPPED - ${isCorrect ? 'Correct answer' : 'Max retries exceeded'}, card closing`);
     } else if (safetyLevel >= Level.YELLOW) {
       // Check if feedback already ends with the choice prompt
       if (!feedbackText.toLowerCase().includes(choicePrompt.toLowerCase())) {
@@ -157,10 +171,11 @@ export class Session {
         feedbackText = feedbackText.replace(/[.!?]+$/, '') + '! ' + choicePrompt;
       }
 
-      // Stop inactivity timer when showing choices - child is not expected to answer the card
-      // Timer should only restart when child selects "Try again" or a new card is shown
+      // Stop BOTH timers when showing choices - child is not expected to answer the card
+      // Timers should only restart when child selects "Try again" or a new card is shown
       this.stopInactivityTimer();
-      console.log(`[Session] ⏱️ Timer STOPPED - Choices are being shown (YELLOW+ level)`);
+      this.stopTaskTimeoutTimer();
+      console.log(`[Session] ⏱️ BOTH TIMERS STOPPED - Choices are being shown (YELLOW+ level)`);
     }
 
     return {
@@ -170,6 +185,8 @@ export class Session {
       shouldSpeak: true, // Always speak feedback
       interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
       isCorrect,
+      maxRetriesExceeded,
+      taskTimeExceeded: false,
       // Additional data for frontend console logging
       childSaid: transcription,
       targetAnswers: this.currentCard.targetAnswers,
@@ -325,7 +342,9 @@ export class Session {
       choiceMessage: uiPackage.choice_message,
       shouldSpeak: true,
       interventionRequired: false,
-      isCorrect: true
+      isCorrect: true,
+      maxRetriesExceeded: false,
+      taskTimeExceeded: false
     };
   }
 
@@ -540,28 +559,8 @@ export class Session {
     // Process through safety-gate pipeline
     const uiPackage = await this.orchestrator.processEvent(event, taskContext);
 
-    // Log the inactivity event
-    const logData: SafetyGateLogData = {
-      childSaid: '[NO RESPONSE - INACTIVE]',
-      targetAnswers: this.currentCard?.targetAnswers || [],
-      isCorrect: false,
-      safetyLevel: uiPackage.admin_overlay.safety_level,
-      signals: uiPackage.admin_overlay.signals_detected,
-      interventions: uiPackage.admin_overlay.interventions_list,
-      state: {
-        engagement: uiPackage.admin_overlay.state_snapshot.engagementLevel,
-        dysregulation: uiPackage.admin_overlay.state_snapshot.dysregulationLevel,
-        fatigue: uiPackage.admin_overlay.state_snapshot.fatigueLevel,
-        consecutiveErrors: uiPackage.admin_overlay.state_snapshot.consecutiveErrors,
-        timeInSession: uiPackage.admin_overlay.state_snapshot.timeInSession
-      },
-      feedback: uiPackage.speech.text,
-      attemptNumber: this.attemptCount,
-      responseHistory: this.responseHistory,
-      shouldSpeak: true
-    };
-
-    safetyGateLogger.logSessionState(logData);
+    // Update inactivity timeout based on current safety level
+    this.inactivityTimeoutMs = uiPackage.session_config.inactivity_timeout * 1000;
 
     // Build result
     const result: SafetyGateResult = {
@@ -571,18 +570,13 @@ export class Session {
       shouldSpeak: true,
       interventionRequired: uiPackage.admin_overlay.interventions_active > 0,
       isCorrect: false,
+      maxRetriesExceeded: false,
+      taskTimeExceeded: false,
       childSaid: '[INACTIVE]',
       targetAnswers: this.currentCard?.targetAnswers,
       attemptNumber: this.attemptCount,
       responseHistory: [...this.responseHistory]
     };
-
-    // Log the state changes from inactivity
-    console.log(`[Session] ⚠️ INACTIVITY RESULT:`);
-    console.log(`[Session] ⚠️   Engagement: ${result.uiPackage.admin_overlay.state_snapshot.engagementLevel.toFixed(1)}`);
-    console.log(`[Session] ⚠️   Safety Level: ${['GREEN', 'YELLOW', 'ORANGE', 'RED'][result.uiPackage.admin_overlay.safety_level]}`);
-    console.log(`[Session] ⚠️   Signals: ${result.uiPackage.admin_overlay.signals_detected.join(', ') || 'none'}`);
-    console.log(`[Session] ⚠️   Feedback: "${result.feedbackText}"`);
 
     // Call the callback if registered
     if (this.onInactivityCallback) {
@@ -609,5 +603,115 @@ export class Session {
    */
   isWaitingForChildResponse(): boolean {
     return this.isWaitingForResponse;
+  }
+
+  // ============================================
+  // TASK TIMEOUT (max_task_time)
+  // ============================================
+
+  /**
+   * Set the callback to be called when task timeout is reached
+   * @param callback Function to call with the SafetyGateResult when task times out
+   */
+  setTaskTimeoutCallback(callback: (result: SafetyGateResult) => void): void {
+    this.onTaskTimeoutCallback = callback;
+  }
+
+  /**
+   * Start the task timeout timer for the current card
+   * @param seconds Timeout in seconds (from SessionConfig.max_task_time)
+   */
+  private startTaskTimeoutTimer(seconds: number): void {
+    this.stopTaskTimeoutTimer(); // Clear any existing timer
+
+    const timeoutMs = seconds * 1000;
+    console.log(`[Session] ⏱️ TASK TIMEOUT TIMER STARTED: ${seconds}s`);
+
+    this.taskTimeoutTimer = setTimeout(() => {
+      this.handleTaskTimeout();
+    }, timeoutMs);
+  }
+
+  /**
+   * Stop the task timeout timer
+   */
+  private stopTaskTimeoutTimer(): void {
+    if (this.taskTimeoutTimer) {
+      clearTimeout(this.taskTimeoutTimer);
+      this.taskTimeoutTimer = null;
+      console.log(`[Session] ⏱️ TASK TIMEOUT TIMER STOPPED`);
+    }
+  }
+
+  /**
+   * Handle task timeout - fires when max_task_time is exceeded
+   */
+  private async handleTaskTimeout(): Promise<void> {
+    console.log(`\n[Session] ⚠️ ========================================`);
+    console.log(`[Session] ⚠️ 🚨 TASK TIMEOUT!`);
+    console.log(`[Session] ⚠️ Child has exceeded max_task_time for this card`);
+    console.log(`[Session] ⚠️ ========================================\n`);
+
+    // Stop inactivity timer as well
+    this.stopInactivityTimer();
+
+    // Build task context if we have a current card
+    const taskContext = this.currentCard ? {
+      cardType: 'single-answer',
+      category: this.currentCard.category,
+      question: this.currentCard.question,
+      targetAnswer: this.currentCard.targetAnswers.join(', '),
+      imageLabels: this.currentCard.images.map(img => img.label)
+    } : undefined;
+
+    // Process through safety-gate pipeline as an error event
+    const event: Event = {
+      type: 'CHILD_RESPONSE',
+      correct: false,
+      response: '[TASK_TIMEOUT]',
+      previousResponse: this.responseHistory[this.responseHistory.length - 1],
+      previousPreviousResponse: this.responseHistory[this.responseHistory.length - 2]
+    };
+
+    const uiPackage = await this.orchestrator.processEvent(event, taskContext);
+
+    // Build result with taskTimeExceeded flag
+    const result: SafetyGateResult = {
+      uiPackage,
+      feedbackText: "Let's try a different one!",
+      choiceMessage: uiPackage.choice_message,
+      shouldSpeak: true,
+      interventionRequired: true,
+      isCorrect: false,
+      maxRetriesExceeded: false,
+      taskTimeExceeded: true,
+      childSaid: '[TASK_TIMEOUT]',
+      targetAnswers: this.currentCard?.targetAnswers,
+      attemptNumber: this.attemptCount,
+      responseHistory: [...this.responseHistory]
+    };
+
+    console.log(`[Session] ⚠️ TASK TIMEOUT - Card should be skipped`);
+
+    // Call the callback if registered
+    if (this.onTaskTimeoutCallback) {
+      console.log(`[Session] ⚠️ Calling task timeout callback...`);
+      this.onTaskTimeoutCallback(result);
+    }
+  }
+
+  /**
+   * Get the current card retry count
+   */
+  getCardRetryCount(): number {
+    return this.cardRetryCount;
+  }
+
+  /**
+   * Get elapsed time on current card in seconds
+   */
+  getCardElapsedTime(): number {
+    if (!this.cardStartTime) return 0;
+    return Math.floor((Date.now() - this.cardStartTime.getTime()) / 1000);
   }
 }

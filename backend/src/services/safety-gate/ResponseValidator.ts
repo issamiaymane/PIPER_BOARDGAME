@@ -1,7 +1,7 @@
-import { LLMResponse, ResponseValidationResult } from './types.js';
+import type { LLMResponse, ResponseValidationResult } from './types.js';
 
 // Re-export for backward compatibility
-export { ResponseValidationResult };
+export type { ResponseValidationResult };
 
 export class ResponseValidator {
 
@@ -10,7 +10,6 @@ export class ResponseValidator {
     constraints: any
   ): ResponseValidationResult {
     const checks = {
-      tone_correct: this.checkTone(response, constraints),
       length_appropriate: this.checkLength(response),
       no_forbidden_words: this.checkForbiddenWords(response, constraints),
       choices_included: this.checkChoices(response),
@@ -25,12 +24,6 @@ export class ResponseValidator {
       checks,
       reason: allPassed ? null : this.getFailureReason(checks)
     };
-  }
-
-  private checkTone(response: LLMResponse, constraints: any): boolean {
-    // Accept any valid tone (calm, warm, neutral) - all are appropriate
-    const validTones = ['calm', 'warm', 'neutral'];
-    return validTones.includes(response.tone_used);
   }
 
   private checkLength(response: LLMResponse): boolean {

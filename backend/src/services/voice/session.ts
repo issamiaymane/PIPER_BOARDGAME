@@ -386,7 +386,7 @@ export class VoiceSessionManager {
         isCorrect: result.isCorrect
       });
 
-      // Note: Detailed logging is handled by Session using safetyGateLogger
+      // Note: Detailed logging is handled by Session using pipelineLogger
 
     } catch (error) {
       logger.error(`Safety-gate processing error:`, error);

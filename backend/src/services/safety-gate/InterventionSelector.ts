@@ -1,4 +1,5 @@
-import { State, Level, Intervention, Signal } from './types.js';
+import { Level, Intervention, Signal } from './types.js';
+import type { State } from './types.js';
 
 export class InterventionSelector {
 
