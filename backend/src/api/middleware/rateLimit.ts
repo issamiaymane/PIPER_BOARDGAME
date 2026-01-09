@@ -73,11 +73,18 @@ export function rateLimit(options: RateLimitOptions) {
  * Pre-configured rate limiters
  */
 
-// Strict rate limit for authentication endpoints (5 requests per 15 minutes)
+// Strict rate limit for login (5 requests per 15 minutes)
 export const authRateLimit = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   maxRequests: 5,
   message: 'Too many login attempts, please try again in 15 minutes',
+});
+
+// More lenient rate limit for registration (20 requests per 15 minutes)
+export const registerRateLimit = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  maxRequests: 20,
+  message: 'Too many registration attempts, please try again later',
 });
 
 // Moderate rate limit for API endpoints (100 requests per 15 minutes)

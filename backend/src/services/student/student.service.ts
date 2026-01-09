@@ -4,8 +4,8 @@
  */
 
 import bcrypt from 'bcryptjs';
-import { getDatabase } from './database.js';
-import type { Child, CreateChildRequest, UpdateChildRequest } from '../types/index.js';
+import { getDatabase } from '../database.js';
+import type { Child, CreateChildRequest, UpdateChildRequest } from '../../types/index.js';
 
 // Fields to select (excluding password_hash)
 const STUDENT_FIELDS = `id, therapist_id, username, first_name, last_name, date_of_birth,
@@ -144,13 +144,3 @@ export function deleteStudent(id: number, therapist_id: number): boolean {
   db.prepare('DELETE FROM children WHERE id = ?').run(id);
   return true;
 }
-
-export default {
-  isUsernameAvailable,
-  createStudent,
-  getStudentById,
-  getStudentForTherapist,
-  listStudentsByTherapist,
-  updateStudent,
-  deleteStudent,
-};

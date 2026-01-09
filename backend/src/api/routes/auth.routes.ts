@@ -4,11 +4,11 @@
  */
 
 import { Router, Request, Response, NextFunction } from 'express';
-import { registerTherapist, loginTherapist, getTherapistById } from '../../services/auth.service.js';
+import { registerTherapist, loginTherapist, getTherapistById } from '../../services/auth/index.js';
 import { authenticate } from '../middleware/auth.js';
 import { validate, registerSchema, loginSchema } from '../middleware/validate.js';
 import { ApiError } from '../middleware/errorHandler.js';
-import { authRateLimit } from '../middleware/rateLimit.js';
+import { authRateLimit, registerRateLimit } from '../middleware/rateLimit.js';
 
 const router = Router();
 
@@ -18,7 +18,7 @@ const router = Router();
  */
 router.post(
   '/register',
-  authRateLimit,
+  registerRateLimit,
   validate(registerSchema),
   async (req: Request, res: Response, next: NextFunction) => {
     try {

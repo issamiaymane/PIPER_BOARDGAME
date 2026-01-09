@@ -6,7 +6,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import multer from 'multer';
 import fs from 'fs';
-import { getStudentForTherapist } from '../../services/student.service.js';
+import { getStudentForTherapist } from '../../services/student/index.js';
 import {
   validatePdfFile,
   saveGoalsPdf,

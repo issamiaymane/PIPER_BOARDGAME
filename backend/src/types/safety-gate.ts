@@ -122,7 +122,7 @@ export interface LLMValidation {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 7b. BACKEND RESPONSE SUBSTRUCTURES
+// 6b. BACKEND RESPONSE - Internal pipeline data package (passed to LLM)
 // ─────────────────────────────────────────────────────────────────────────────
 
 export interface SessionState {
@@ -165,6 +165,21 @@ export interface ResponseReasoning {
   interventions_reason: string;
 }
 
+export interface BackendResponse {
+  // Flow order
+  safetyLevel: Level;
+  signals: Signal[];
+  interventions: Intervention[];
+  sessionConfig: SessionConfig;
+  // Decision & context
+  decision: string;
+  sessionState: SessionState;
+  context: ResponseContext;
+  constraints: ResponseConstraints;
+  reasoning: ResponseReasoning;
+  timestamp: Date;
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // 8. OUTPUT - Final Results
 // ─────────────────────────────────────────────────────────────────────────────
@@ -205,19 +220,4 @@ export interface SafetyGateResult {
   targetAnswers?: string[];
   attemptNumber?: number;
   responseHistory?: string[];
-}
-
-export interface BackendResponse {
-  // Flow order
-  safetyLevel: Level;
-  signals: Signal[];
-  interventions: Intervention[];
-  sessionConfig: SessionConfig;
-  // Decision & context
-  decision: string;
-  sessionState: SessionState;
-  context: ResponseContext;
-  constraints: ResponseConstraints;
-  reasoning: ResponseReasoning;
-  timestamp: Date;
 }

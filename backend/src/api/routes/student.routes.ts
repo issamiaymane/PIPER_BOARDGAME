@@ -10,7 +10,7 @@ import {
   getStudentForTherapist,
   updateStudent,
   deleteStudent,
-} from '../../services/student.service.js';
+} from '../../services/student/index.js';
 import { authenticate } from '../middleware/auth.js';
 import {
   validate,
