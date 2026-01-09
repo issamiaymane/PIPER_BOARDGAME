@@ -4,8 +4,10 @@
  * Manages WebSocket connection, audio capture, and playback
  */
 
+import { z } from 'zod';
 import { AudioCapture, AudioChunkData } from './audio-capture.js';
 import { AudioPlayback } from './audio-playback.js';
+import { voiceLogger } from './logger.js';
 
 export type VoiceState = 'idle' | 'connecting' | 'ready' | 'speaking' | 'listening';
 
@@ -56,18 +58,47 @@ export interface UIPackage {
   responseHistory?: string[];
 }
 
-interface ServerMessage {
-  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error' | 'safety_gate_response';
-  sessionId?: string;
-  audio?: string;
-  text?: string;
-  role?: 'assistant' | 'user';
-  message?: string;
-  uiPackage?: UIPackage;
-  isCorrect?: boolean;
-  // Flag for card flow control
-  taskTimeExceeded?: boolean;
-}
+// Runtime validation schema for server messages
+const ServerMessageSchema = z.object({
+  type: z.enum(['session_ready', 'audio_chunk', 'transcript', 'speaking_started', 'speaking_done', 'error', 'safety_gate_response']),
+  sessionId: z.string().optional(),
+  audio: z.string().optional(),
+  text: z.string().optional(),
+  role: z.enum(['assistant', 'user']).optional(),
+  message: z.string().optional(),
+  uiPackage: z.object({
+    overlay: z.object({
+      signals: z.array(z.string()),
+      state: z.object({
+        engagementLevel: z.number(),
+        dysregulationLevel: z.number(),
+        fatigueLevel: z.number(),
+        consecutiveErrors: z.number(),
+        timeInSession: z.number(),
+        errorFrequency: z.number(),
+        timeSinceBreak: z.number()
+      }),
+      safetyLevel: z.number()
+    }),
+    interventions: z.array(z.string()),
+    sessionConfig: z.object({
+      promptIntensity: z.number(),
+      avatarTone: z.string(),
+      maxTaskTime: z.number(),
+      inactivityTimeout: z.number()
+    }),
+    speech: z.object({ text: z.string() }),
+    choiceMessage: z.string(),
+    childSaid: z.string().optional(),
+    targetAnswers: z.array(z.string()).optional(),
+    attemptNumber: z.number().optional(),
+    responseHistory: z.array(z.string()).optional()
+  }).optional(),
+  isCorrect: z.boolean().optional(),
+  taskTimeExceeded: z.boolean().optional()
+});
+
+type ServerMessage = z.infer<typeof ServerMessageSchema>;
 
 interface CardContext {
   category: string;
@@ -174,7 +205,7 @@ export class VoiceService {
    */
   speakCard(card: CardData, category: string): void {
     if (this.state !== 'ready' && this.state !== 'listening') {
-      console.warn('Voice service not ready to speak');
+      voiceLogger.warn('Not ready to speak');
       return;
     }
 
@@ -301,7 +332,7 @@ export class VoiceService {
    * @param action The choice action (retry, trigger_break, etc.)
    */
   notifyChoiceSelected(action: string): void {
-    console.log(`[Voice] Notifying backend of choice: ${action}`);
+    voiceLogger.info(`Notifying backend of choice: ${action}`);
     this.sendMessage({
       type: 'choice_selected',
       action
@@ -314,7 +345,7 @@ export class VoiceService {
    * @param activity The activity that ended (for logging)
    */
   notifyActivityEnded(activity: string): void {
-    console.log(`[Voice] Activity ended: ${activity} - requesting session resume`);
+    voiceLogger.info(`Activity ended: ${activity} - requesting session resume`);
     this.sendMessage({
       type: 'activity_ended',
       activity
@@ -367,31 +398,36 @@ export class VoiceService {
           const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
           wsUrl = `${protocol}//${window.location.host}/api/voice`;
         }
-        console.log('[Voice] Connecting to:', wsUrl);
+        voiceLogger.info('Connecting to:', wsUrl);
 
         this.ws = new WebSocket(wsUrl);
 
         this.ws.onopen = () => {
-          console.log('Voice WebSocket connected');
+          voiceLogger.info('WebSocket connected');
         };
 
         this.ws.onmessage = (event) => {
           try {
-            const message = JSON.parse(event.data) as ServerMessage;
-            this.handleServerMessage(message, resolve);
+            const parsed = JSON.parse(event.data);
+            const result = ServerMessageSchema.safeParse(parsed);
+            if (!result.success) {
+              voiceLogger.error('Invalid server message:', result.error.issues);
+              return;
+            }
+            this.handleServerMessage(result.data, resolve);
           } catch (err) {
-            console.error('Failed to parse server message:', err);
+            voiceLogger.error('Failed to parse server message:', err);
           }
         };
 
         this.ws.onerror = (err) => {
-          console.error('Voice WebSocket error:', err);
+          voiceLogger.error('WebSocket error:', err);
           this.onError?.('Failed to connect to voice server');
           resolve(false);
         };
 
         this.ws.onclose = () => {
-          console.log('Voice WebSocket closed');
+          voiceLogger.info('WebSocket closed');
           if (this.state !== 'idle') {
             this.setState('idle');
             this.onError?.('Voice connection closed');
@@ -408,7 +444,7 @@ export class VoiceService {
         }, 10000);
 
       } catch (err) {
-        console.error('Failed to create WebSocket:', err);
+        voiceLogger.error('Failed to create WebSocket:', err);
         resolve(false);
       }
     });
@@ -446,7 +482,7 @@ export class VoiceService {
         break;
 
       case 'error':
-        console.error('Voice server error:', message.message);
+        voiceLogger.error('Server error:', message.message);
         this.onError?.(message.message || 'Unknown error');
         break;
 

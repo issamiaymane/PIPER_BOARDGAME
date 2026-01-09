@@ -1,5 +1,6 @@
 /**
- * Safety Gate Logger for Chrome Console
+ * Pipeline Visualizer
+ * Styled console output for safety-gate pipeline debugging
  * Mirrors the backend pipelineLogger format with CSS styling for browser
  */
 
@@ -26,7 +27,7 @@ const LEVEL_INFO: Record<number, { style: string; name: string; emoji: string }>
   3: { style: C.red, name: 'RED', emoji: '🔴' },
 };
 
-export interface SafetyGateLogData {
+export interface PipelineLogData {
   childSaid: string;
   targetAnswers: string[];
   isCorrect: boolean;
@@ -58,11 +59,11 @@ function formatTimeShort(seconds: number): string {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
-export const safetyGateLogger = {
+export const pipelineVisualizer = {
   /**
    * Log complete pipeline flow (matches backend pipelineLogger.logFlow)
    */
-  logSessionState(data: SafetyGateLogData): void {
+  logSessionState(data: PipelineLogData): void {
     const level = LEVEL_INFO[data.safetyLevel] || LEVEL_INFO[0];
     const divider = '═'.repeat(60);
     const sectionDivider = '─'.repeat(60);
@@ -179,7 +180,7 @@ export const safetyGateLogger = {
   /**
    * Log a quick summary (one line)
    */
-  logQuickSummary(data: Partial<SafetyGateLogData>): void {
+  logQuickSummary(data: Partial<PipelineLogData>): void {
     const level = LEVEL_INFO[data.safetyLevel ?? 0] || LEVEL_INFO[0];
     const result = data.isCorrect ? '✓' : '✗';
     const resultStyle = data.isCorrect ? C.green : C.orange;

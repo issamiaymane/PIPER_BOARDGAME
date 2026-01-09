@@ -3,6 +3,9 @@
  * Plays PCM16 audio from OpenAI Realtime API
  */
 
+import { AUDIO_SAMPLE_RATE, base64ToPCM16, pcm16ToFloat32 } from './audio-utils.js';
+import { audioLogger } from './logger.js';
+
 export class AudioPlayback {
   private audioContext: AudioContext | null = null;
   private audioQueue: AudioBuffer[] = [];
@@ -14,8 +17,8 @@ export class AudioPlayback {
   onStateChange?: (isPlaying: boolean) => void;
 
   constructor() {
-    // Create audio context on first user interaction
-    this.audioContext = new AudioContext({ sampleRate: 24000 });
+    // Create audio context at OpenAI Realtime API sample rate
+    this.audioContext = new AudioContext({ sampleRate: AUDIO_SAMPLE_RATE });
   }
 
   /**
@@ -26,7 +29,7 @@ export class AudioPlayback {
 
     try {
       // Decode base64 to PCM16
-      const pcm16 = this.base64ToPCM16(audioBase64);
+      const pcm16 = base64ToPCM16(audioBase64);
 
       // Convert PCM16 to AudioBuffer
       const audioBuffer = this.pcm16ToAudioBuffer(pcm16);
@@ -39,7 +42,7 @@ export class AudioPlayback {
         this.playNext();
       }
     } catch (err) {
-      console.error('Failed to enqueue audio:', err);
+      audioLogger.error('Failed to enqueue audio:', err);
     }
   }
 
@@ -125,18 +128,6 @@ export class AudioPlayback {
   }
 
   /**
-   * Decode base64 string to Int16Array (PCM16)
-   */
-  private base64ToPCM16(base64: string): Int16Array {
-    const binaryString = atob(base64);
-    const bytes = new Uint8Array(binaryString.length);
-    for (let i = 0; i < binaryString.length; i++) {
-      bytes[i] = binaryString.charCodeAt(i);
-    }
-    return new Int16Array(bytes.buffer);
-  }
-
-  /**
    * Convert Int16Array (PCM16) to AudioBuffer
    */
   private pcm16ToAudioBuffer(pcm16: Int16Array): AudioBuffer {
@@ -144,15 +135,11 @@ export class AudioPlayback {
       throw new Error('AudioContext not initialized');
     }
 
-    // Create AudioBuffer at 24kHz (OpenAI Realtime API sample rate)
-    const audioBuffer = this.audioContext.createBuffer(1, pcm16.length, 24000);
+    // Create AudioBuffer at OpenAI Realtime API sample rate
+    const audioBuffer = this.audioContext.createBuffer(1, pcm16.length, AUDIO_SAMPLE_RATE);
     const channelData = audioBuffer.getChannelData(0);
-
-    // Convert Int16 to Float32
-    for (let i = 0; i < pcm16.length; i++) {
-      // Scale from Int16 range to [-1, 1]
-      channelData[i] = pcm16[i] / (pcm16[i] < 0 ? 0x8000 : 0x7fff);
-    }
+    const float32 = pcm16ToFloat32(pcm16);
+    channelData.set(float32);
 
     return audioBuffer;
   }

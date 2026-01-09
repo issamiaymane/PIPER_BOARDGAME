@@ -3,7 +3,7 @@
  * Handles UI state and user interactions
  */
 
-import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from '../../services/api';
+import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from './services/api';
 // Categories imported from @shared/categories are defined in ORGANIZED_*_CATEGORIES below
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
 

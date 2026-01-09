@@ -8,20 +8,9 @@
 import { CATEGORY_HANDLER_MAP } from '@shared/categories';
 import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../cards/index';
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
-import { voiceService, VoiceState, UIPackage } from './services/voice.service';
-import { safetyGateLogger, SafetyGateLogData } from './utils/safety-gate-logger';
-
-// Types
-interface CardData {
-    question?: string;
-    images?: Array<string | { image?: string; label?: string }>;
-    choices?: string[];
-    words?: string[];
-    title?: string;
-    story?: string;
-    paragraph?: string;
-    [key: string]: unknown;
-}
+import { voiceService, VoiceState, UIPackage, CardData } from './services/voice.service';
+import { pipelineVisualizer, PipelineLogData } from './services/pipeline-visualizer';
+import { gameLogger, voiceLogger } from './services/logger';
 
 // Game state
 const state = {
@@ -167,7 +156,7 @@ function renderCategorySelection(dataType: 'language' | 'articulation') {
         cb.addEventListener('change', () => {
             const checked = categoryGrid.querySelectorAll('.category-checkbox:checked') as NodeListOf<HTMLInputElement>;
             state.selectedTargets = Array.from(checked).map(c => c.value);
-            console.log('[Game] Selected:', state.selectedTargets);
+            gameLogger.info('Selected:', state.selectedTargets);
         });
     });
 }
@@ -207,7 +196,7 @@ function generateBoard() {
     playerToken.innerHTML = `<span>${state.selectedCharacter}</span>`;
     playerToken.style.cssText = 'position: absolute; left: 10px; top: 520px; z-index: 10;';
     boardPath.appendChild(playerToken);
-    console.log('[Game] Board generated with theme:', state.selectedTheme);
+    gameLogger.info('Board generated with theme:', state.selectedTheme);
 }
 
 function updatePlayerPosition() {
@@ -289,7 +278,7 @@ function spin() {
     spinnerWheel.style.transition = 'transform 3s cubic-bezier(0.17, 0.67, 0.12, 0.99)';
     spinnerWheel.style.transform = `rotate(${rotation}deg)`;
 
-    console.log('[Game] Spinning, result:', result);
+    gameLogger.debug('Spinning, result:', result);
 
     setTimeout(() => {
         state.isSpinning = false;
@@ -333,7 +322,7 @@ function showRandomCard() {
 
     // Speak the card if voice mode is enabled
     if (voiceService.isReady()) {
-        voiceService.speakCard(card as any, state.currentCategory);
+        voiceService.speakCard(card, state.currentCategory);
     }
 }
 
@@ -394,13 +383,13 @@ function updateVoiceUI(voiceState: VoiceState) {
 async function toggleVoiceMode() {
     if (voiceService.isEnabled()) {
         voiceService.disable();
-        console.log('[Voice] Disabled');
+        voiceLogger.info('Disabled');
     } else {
         const success = await voiceService.enable();
         if (success) {
-            console.log('[Voice] Enabled');
+            voiceLogger.info('Enabled');
         } else {
-            console.error('[Voice] Failed to enable');
+            voiceLogger.error('Failed to enable');
         }
     }
 }
@@ -451,7 +440,7 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shou
     currentSafetyLevel = uiPackage.overlay.safetyLevel;
 
     // Log to Chrome console with same format as backend terminal
-    const logData: SafetyGateLogData = {
+    const logData: PipelineLogData = {
         childSaid: uiPackage.childSaid || '[unknown]',
         targetAnswers: uiPackage.targetAnswers || [],
         isCorrect,
@@ -470,7 +459,7 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shou
         responseHistory: uiPackage.responseHistory || [],
         shouldSpeak: true
     };
-    safetyGateLogger.logSessionState(logData);
+    pipelineVisualizer.logSessionState(logData);
 
     // Show feedback display
     if (uiPackage.speech.text) {
@@ -496,7 +485,7 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shou
 
     // If shouldSkipCard (taskTimeExceeded), skip to next card
     if (shouldSkipCard) {
-        console.log('[Boardgame] 🔄 Skipping card (taskTimeExceeded)');
+        gameLogger.info('Skipping card (taskTimeExceeded)');
         // Stop listening
         if (voiceService.isEnabled()) {
             voiceService.stopListening();
@@ -606,7 +595,7 @@ function handleInterventionClick(e: Event) {
     const action = target.dataset.action || '';
 
     // Log intervention selection with styled console output
-    safetyGateLogger.logInterventionSelected(action);
+    pipelineVisualizer.logInterventionSelected(action);
 
     // Interrupt any ongoing speech so we can transition to ready state
     if (voiceService.isEnabled()) {
@@ -619,7 +608,7 @@ function handleInterventionClick(e: Event) {
 
     switch (action) {
         case 'BUBBLE_BREATHING':
-            safetyGateLogger.logBubbleBreathingStart();
+            pipelineVisualizer.logBubbleBreathingStart();
             showBubbleBreathing();
             break;
 
@@ -644,7 +633,7 @@ function handleInterventionClick(e: Event) {
             break;
 
         default:
-            console.log('[SafetyGate] Unknown action:', action);
+            gameLogger.warn('Unknown SafetyGate action:', action);
     }
 }
 
@@ -758,7 +747,7 @@ function startBreak() {
 
 function handleGrownupHelp() {
     // Log with styled console output
-    safetyGateLogger.logGrownupHelp();
+    pipelineVisualizer.logGrownupHelp();
 
     // Hide choices modal if open
     hideChoices();
@@ -836,7 +825,7 @@ function updateThemeDecorations() {
 }
 
 async function startGame() {
-    console.log('[Game] Starting, targets:', state.selectedTargets);
+    gameLogger.info('Starting, targets:', state.selectedTargets);
     if (state.selectedTargets.length === 0) {
         alert('Please select at least one category!');
         return;
@@ -864,19 +853,19 @@ async function startGame() {
     positionValue.textContent = 'Start';
 
     // Auto-start voice mode
-    console.log('[Voice] Auto-starting voice mode...');
+    voiceLogger.info('Auto-starting voice mode...');
     const voiceEnabled = await voiceService.enable();
     if (voiceEnabled) {
-        console.log('[Voice] Voice mode started successfully');
+        voiceLogger.info('Voice mode started successfully');
     } else {
-        console.error('[Voice] Failed to auto-start voice mode');
+        voiceLogger.error('Failed to auto-start voice mode');
     }
 
-    console.log('[Game] Started!');
+    gameLogger.info('Started!');
 }
 
 function init() {
-    console.log('[Boardgame] Init...');
+    gameLogger.info('Init...');
 
     // Load saved theme from localStorage
     const savedTheme = localStorage.getItem('piper-theme');
@@ -921,7 +910,7 @@ function init() {
     listenIndicator = document.getElementById('listenIndicator')!;
 
     playButton.addEventListener('click', () => {
-        console.log('[Game] PLAY clicked');
+        gameLogger.debug('PLAY clicked');
         playOverlay.classList.add('hidden');
         targetModal.classList.remove('hidden');
         renderCategorySelection('language');
@@ -946,7 +935,7 @@ function init() {
             document.documentElement.className = `theme-${state.selectedTheme}`;
             localStorage.setItem('piper-theme', state.selectedTheme);
             updateThemeDecorations();
-            console.log('[Game] Selected theme:', state.selectedTheme);
+            gameLogger.info('Selected theme:', state.selectedTheme);
         });
     });
 
@@ -957,7 +946,7 @@ function init() {
             document.querySelectorAll('.character-option').forEach(o => o.classList.remove('selected'));
             target.classList.add('selected');
             state.selectedCharacter = target.dataset.character || '🧒';
-            console.log('[Game] Selected character:', state.selectedCharacter);
+            gameLogger.info('Selected character:', state.selectedCharacter);
         });
     });
 
@@ -980,7 +969,7 @@ function init() {
     // Set up voice service callbacks
     voiceService.onStateChange = updateVoiceUI;
     voiceService.onError = (message) => {
-        console.error('[Voice] Error:', message);
+        voiceLogger.error('Error:', message);
         voiceStatus.textContent = message;
         setTimeout(() => {
             if (voiceStatus.textContent === message) {
@@ -989,7 +978,7 @@ function init() {
         }, 3000);
     };
     voiceService.onTranscript = (text, role) => {
-        console.log(`[Voice] ${role}: ${text}`);
+        voiceLogger.debug(`${role}: ${text}`);
     };
 
     // Set up safety-gate callback
@@ -1001,7 +990,7 @@ function init() {
     // Hide loading screen using shared component
     hideLoadingScreen(500);
 
-    console.log('[Boardgame] Ready with', Object.keys(allCardData).length, 'categories');
+    gameLogger.info('Ready with', Object.keys(allCardData).length, 'categories');
 }
 
 // Initialize on DOM ready

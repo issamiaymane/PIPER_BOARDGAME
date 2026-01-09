@@ -3,6 +3,14 @@
  * Captures microphone audio and converts to PCM16 format for OpenAI Realtime API
  */
 
+import {
+  AUDIO_SAMPLE_RATE,
+  float32ToPCM16,
+  arrayBufferToBase64,
+  calculateAmplitude
+} from './audio-utils.js';
+import { audioLogger } from './logger.js';
+
 export interface AudioChunkData {
   audio: string;      // base64 encoded PCM16
   amplitude: number;  // RMS amplitude (0-1 scale)
@@ -29,12 +37,12 @@ export class AudioCapture {
         audio: {
           echoCancellation: true,
           noiseSuppression: true,
-          sampleRate: 24000 // OpenAI Realtime API expects 24kHz
+          sampleRate: AUDIO_SAMPLE_RATE
         }
       });
 
-      // Create audio context at 24kHz sample rate
-      this.audioContext = new AudioContext({ sampleRate: 24000 });
+      // Create audio context at OpenAI Realtime API sample rate
+      this.audioContext = new AudioContext({ sampleRate: AUDIO_SAMPLE_RATE });
 
       // Create source from microphone
       this.sourceNode = this.audioContext.createMediaStreamSource(this.mediaStream);
@@ -49,15 +57,15 @@ export class AudioCapture {
         const inputData = event.inputBuffer.getChannelData(0);
 
         // Calculate amplitude metrics
-        const { rms, peak } = this.calculateAmplitude(inputData);
+        const { rms, peak } = calculateAmplitude(inputData);
 
         // Debug: Log high amplitude (potential screaming)
         if (rms > 0.3 || peak > 0.6) {
-          console.log(`[AudioCapture] HIGH AMPLITUDE - RMS: ${rms.toFixed(3)}, Peak: ${peak.toFixed(3)}`);
+          audioLogger.debug(`HIGH AMPLITUDE - RMS: ${rms.toFixed(3)}, Peak: ${peak.toFixed(3)}`);
         }
 
-        const pcm16 = this.float32ToPCM16(inputData);
-        const base64 = this.arrayBufferToBase64(pcm16.buffer as ArrayBuffer);
+        const pcm16 = float32ToPCM16(inputData);
+        const base64 = arrayBufferToBase64(pcm16.buffer as ArrayBuffer);
 
         this.onAudioChunk({
           audio: base64,
@@ -68,7 +76,7 @@ export class AudioCapture {
 
       return true;
     } catch (err) {
-      console.error('Failed to initialize audio capture:', err);
+      audioLogger.error('Failed to initialize capture:', err);
       return false;
     }
   }
@@ -78,7 +86,7 @@ export class AudioCapture {
    */
   start(): void {
     if (!this.audioContext || !this.sourceNode || !this.processorNode) {
-      console.error('Audio capture not initialized');
+      audioLogger.error('Capture not initialized');
       return;
     }
 
@@ -131,48 +139,5 @@ export class AudioCapture {
 
     this.sourceNode = null;
     this.processorNode = null;
-  }
-
-  /**
-   * Calculate RMS (root mean square) and peak amplitude from audio samples
-   * Returns values in 0-1 range
-   */
-  private calculateAmplitude(samples: Float32Array): { rms: number; peak: number } {
-    let sumSquares = 0;
-    let peak = 0;
-
-    for (let i = 0; i < samples.length; i++) {
-      const abs = Math.abs(samples[i]);
-      sumSquares += samples[i] * samples[i];
-      if (abs > peak) peak = abs;
-    }
-
-    const rms = Math.sqrt(sumSquares / samples.length);
-    return { rms, peak };
-  }
-
-  /**
-   * Convert Float32Array to Int16Array (PCM16)
-   */
-  private float32ToPCM16(float32Array: Float32Array): Int16Array {
-    const pcm16 = new Int16Array(float32Array.length);
-    for (let i = 0; i < float32Array.length; i++) {
-      // Clamp to [-1, 1] and scale to Int16 range
-      const s = Math.max(-1, Math.min(1, float32Array[i]));
-      pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7fff;
-    }
-    return pcm16;
-  }
-
-  /**
-   * Convert ArrayBuffer to base64 string
-   */
-  private arrayBufferToBase64(buffer: ArrayBuffer): string {
-    const bytes = new Uint8Array(buffer);
-    let binary = '';
-    for (let i = 0; i < bytes.byteLength; i++) {
-      binary += String.fromCharCode(bytes[i]);
-    }
-    return btoa(binary);
   }
 }
