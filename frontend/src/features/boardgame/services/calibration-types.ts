@@ -50,6 +50,7 @@ export interface CalibrationPhaseConfig {
   instruction: string;
   icon: string;
   durationMs: number;
+  aiSpeakingMs: number;  // How long AI speaks before child's turn
 }
 
 export const CALIBRATION_PHASES: CalibrationPhaseConfig[] = [
@@ -58,28 +59,32 @@ export const CALIBRATION_PHASES: CalibrationPhaseConfig[] = [
     title: 'Stay Quiet',
     instruction: 'Stay quiet for just a moment...',
     icon: '🤫',
-    durationMs: 2000,
+    durationMs: 3000,
+    aiSpeakingMs: 2000,
   },
   {
     phase: 'normal',
     title: 'Normal Voice',
     instruction: 'Say: APPLE... SUNSHINE... RAINBOW',
     icon: '🗣️',
-    durationMs: 12000,
+    durationMs: 18000,
+    aiSpeakingMs: 5000,
   },
   {
     phase: 'excited',
     title: 'Excited Voice',
     instruction: 'Say: HOORAY!... WOOHOO!',
     icon: '🎉',
-    durationMs: 10000,
+    durationMs: 15000,
+    aiSpeakingMs: 4000,
   },
   {
     phase: 'loud',
     title: 'Loud Voice',
     instruction: 'Shout: YAAAY!',
     icon: '📢',
-    durationMs: 10000,
+    durationMs: 15000,
+    aiSpeakingMs: 4000,
   },
 ];
 

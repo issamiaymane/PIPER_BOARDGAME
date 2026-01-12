@@ -129,19 +129,25 @@ export interface CalibrationServerMessage {
 
 export interface CalibrationConfig {
   phases: {
-    silence: { durationMs: number };
+    silence: {
+      durationMs: number;
+      aiSpeakingMs: number;  // How long AI speaks before child's turn
+    };
     normal: {
       durationMs: number;
+      aiSpeakingMs: number;
       words: string[];
       minWordsRequired: number;
     };
     excited: {
       durationMs: number;
+      aiSpeakingMs: number;
       words: string[];
       minWordsRequired: number;
     };
     loud: {
       durationMs: number;
+      aiSpeakingMs: number;
       words: string[];
     };
   };

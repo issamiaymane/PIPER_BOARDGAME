@@ -7,28 +7,35 @@ import type { CalibrationConfig } from '../types/calibration.js';
 
 export const calibrationConfig: CalibrationConfig = {
   phases: {
-    // Phase 0: Measure background noise (2 seconds)
+    // Phase 0: Measure background noise (3 seconds)
     silence: {
-      durationMs: 2000,
+      durationMs: 3000,
+      aiSpeakingMs: 2000, // AI speaks for ~2s, then 1s of silence
     },
 
-    // Phase 1: Normal speech baseline (12 seconds)
+    // Phase 1: Normal speech baseline (18 seconds total)
+    // AI speaks prompt (~5s), child has ~13s to say words
     normal: {
-      durationMs: 12000,
+      durationMs: 18000,
+      aiSpeakingMs: 5000,
       words: ['apple', 'sunshine', 'rainbow'],
       minWordsRequired: 2,
     },
 
-    // Phase 2: Excited/happy speech (10 seconds)
+    // Phase 2: Excited/happy speech (15 seconds total)
+    // AI speaks prompt (~4s), child has ~11s to respond
     excited: {
-      durationMs: 10000,
+      durationMs: 15000,
+      aiSpeakingMs: 4000,
       words: ['hooray', 'woohoo', 'yay', 'yes', 'yeah'],
       minWordsRequired: 1,
     },
 
-    // Phase 3: Maximum volume (10 seconds)
+    // Phase 3: Maximum volume (15 seconds total)
+    // AI speaks prompt (~4s), child has ~11s to shout
     loud: {
-      durationMs: 10000,
+      durationMs: 15000,
+      aiSpeakingMs: 4000,
       words: ['yay', 'yeah', 'yaaay', 'wooo', 'ahhh'],
     },
   },

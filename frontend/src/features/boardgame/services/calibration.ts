@@ -13,6 +13,13 @@ import type {
 } from './calibration-types.js';
 import { getPhaseConfig, CALIBRATION_PHASES } from './calibration-types.js';
 
+// VAD configuration for early phase completion
+const VAD_CONFIG = {
+  speechThreshold: 0.05,      // Amplitude above this = speaking
+  silenceDuration: 1500,      // ms of silence after speech to complete phase
+  minSpeechDuration: 500,     // ms of speech required before silence detection kicks in
+};
+
 export class CalibrationService {
   private ws: WebSocket | null = null;
   private state: CalibrationState = 'idle';
@@ -23,6 +30,12 @@ export class CalibrationService {
   private phaseTimerId: ReturnType<typeof setTimeout> | null = null;
   private result: CalibrationResult | null = null;
   private error: string | null = null;
+
+  // VAD tracking for early phase completion
+  private isChildTurnActive = false;
+  private childHasSpoken = false;
+  private speechStartTime = 0;
+  private lastSpeechTime = 0;
 
   // Callbacks
   onStateChange?: (status: CalibrationStatus) => void;
@@ -162,6 +175,12 @@ export class CalibrationService {
     this.phasePrompt = prompt;
     this.phaseStartTime = Date.now();
 
+    // Reset VAD state for new phase
+    this.isChildTurnActive = false;
+    this.childHasSpoken = false;
+    this.speechStartTime = 0;
+    this.lastSpeechTime = 0;
+
     // Clear any existing timer
     if (this.phaseTimerId) {
       clearTimeout(this.phaseTimerId);
@@ -261,6 +280,62 @@ export class CalibrationService {
   }
 
   /**
+   * Called when it's the child's turn to speak
+   * Enables VAD detection for early phase completion
+   */
+  setChildTurnActive(): void {
+    this.isChildTurnActive = true;
+    this.childHasSpoken = false;
+    this.speechStartTime = 0;
+    this.lastSpeechTime = 0;
+    voiceLogger.info('CalibrationService: Child turn active, VAD enabled');
+  }
+
+  /**
+   * Process audio amplitude for VAD-based early phase completion
+   * Called for each audio chunk when it's child's turn
+   */
+  processAudioAmplitude(amplitude: number): void {
+    if (!this.isChildTurnActive || this.state !== 'calibrating') return;
+
+    const now = Date.now();
+
+    if (amplitude > VAD_CONFIG.speechThreshold) {
+      // Child is speaking
+      if (!this.childHasSpoken) {
+        this.childHasSpoken = true;
+        this.speechStartTime = now;
+        voiceLogger.debug('CalibrationService: Child started speaking');
+      }
+      this.lastSpeechTime = now;
+    } else if (this.childHasSpoken) {
+      // Silence detected after speech
+      const speechDuration = this.lastSpeechTime - this.speechStartTime;
+      const silenceDuration = now - this.lastSpeechTime;
+
+      // Check if child spoke long enough and silence is long enough
+      if (speechDuration >= VAD_CONFIG.minSpeechDuration &&
+          silenceDuration >= VAD_CONFIG.silenceDuration) {
+        voiceLogger.info(`CalibrationService: VAD detected end of speech (spoke ${speechDuration}ms, silent ${silenceDuration}ms)`);
+        this.completeCurrentPhaseEarly();
+      }
+    }
+  }
+
+  /**
+   * Complete current phase early (VAD detected end of speech)
+   */
+  private completeCurrentPhaseEarly(): void {
+    if (this.phaseTimerId) {
+      clearTimeout(this.phaseTimerId);
+      this.phaseTimerId = null;
+    }
+    this.isChildTurnActive = false;
+    voiceLogger.info(`CalibrationService: Phase ${this.currentPhase} completed early via VAD`);
+    this.completeCurrentPhase();
+  }
+
+  /**
    * Get the phase index for progress display
    */
   getPhaseIndex(): number {
@@ -298,6 +373,12 @@ export class CalibrationService {
     this.phaseStartTime = 0;
     this.result = null;
     this.error = null;
+
+    // Reset VAD state
+    this.isChildTurnActive = false;
+    this.childHasSpoken = false;
+    this.speechStartTime = 0;
+    this.lastSpeechTime = 0;
   }
 }
 

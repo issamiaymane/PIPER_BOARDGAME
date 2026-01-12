@@ -1,6 +1,7 @@
 /**
  * Calibration Overlay Component
  * Full-screen overlay for the pre-session voice calibration flow
+ * Simplified: Shows AI speaking vs Child's turn with voice activity indicator
  */
 
 import './calibration-overlay.css';
@@ -13,12 +14,13 @@ export interface CalibrationOverlayOptions {
 }
 
 let overlayElement: HTMLElement | null = null;
-let progressBar: HTMLElement | null = null;
+let turnIndicator: HTMLElement | null = null;
+let voiceActivityBars: HTMLElement[] = [];
 let phaseIcon: HTMLElement | null = null;
 let phaseTitle: HTMLElement | null = null;
 let phaseInstruction: HTMLElement | null = null;
-let timerDisplay: HTMLElement | null = null;
 let phaseDots: HTMLElement[] = [];
+let isChildTurn = false;
 
 /**
  * Create and show the calibration overlay
@@ -47,15 +49,19 @@ export function showCalibrationOverlay(options: CalibrationOverlayOptions = {}):
         <p class="calibration-phase-instruction" id="calibrationPhaseInstruction">Please wait</p>
       </div>
 
-      <div class="calibration-progress-bar-container">
-        <div class="calibration-progress-bar" id="calibrationProgressBar" style="width: 0%"></div>
+      <div class="calibration-turn-indicator ai-turn" id="calibrationTurnIndicator">
+        <span class="turn-icon">🔊</span>
+        <span class="turn-text">Listen...</span>
       </div>
 
-      <div class="calibration-timer" id="calibrationTimer"></div>
-
-      <div class="calibration-mic-indicator">
-        <span class="calibration-mic-icon">🎤</span>
-        <span>Listening...</span>
+      <div class="calibration-voice-activity hidden" id="calibrationVoiceActivity">
+        <div class="voice-bar" data-bar="0"></div>
+        <div class="voice-bar" data-bar="1"></div>
+        <div class="voice-bar" data-bar="2"></div>
+        <div class="voice-bar" data-bar="3"></div>
+        <div class="voice-bar" data-bar="4"></div>
+        <div class="voice-bar" data-bar="5"></div>
+        <div class="voice-bar" data-bar="6"></div>
       </div>
 
       <button class="calibration-skip-button" id="calibrationSkipButton">Skip Setup</button>
@@ -65,11 +71,11 @@ export function showCalibrationOverlay(options: CalibrationOverlayOptions = {}):
   container.appendChild(overlayElement);
 
   // Cache DOM references
-  progressBar = overlayElement.querySelector('#calibrationProgressBar');
+  turnIndicator = overlayElement.querySelector('#calibrationTurnIndicator');
+  voiceActivityBars = Array.from(overlayElement.querySelectorAll('.voice-bar'));
   phaseIcon = overlayElement.querySelector('#calibrationPhaseIcon');
   phaseTitle = overlayElement.querySelector('#calibrationPhaseTitle');
   phaseInstruction = overlayElement.querySelector('#calibrationPhaseInstruction');
-  timerDisplay = overlayElement.querySelector('#calibrationTimer');
   phaseDots = Array.from(overlayElement.querySelectorAll('.calibration-phase-dot'));
 
   // Set up skip button
@@ -107,29 +113,90 @@ export function updateCalibrationPhase(phase: CalibrationPhase): void {
     phaseInstruction.textContent = config.instruction;
   }
 
-  // Reset progress bar
-  if (progressBar) {
-    progressBar.style.width = '0%';
-  }
+  // Reset to AI speaking mode
+  setAiSpeaking();
 }
 
 /**
- * Update the progress bar (0-1)
+ * Set UI to show AI is speaking
+ */
+export function setAiSpeaking(): void {
+  isChildTurn = false;
+
+  if (!turnIndicator) return;
+  const icon = turnIndicator.querySelector('.turn-icon');
+  const text = turnIndicator.querySelector('.turn-text');
+
+  turnIndicator.classList.remove('child-turn');
+  turnIndicator.classList.add('ai-turn');
+  if (icon) icon.textContent = '🔊';
+  if (text) text.textContent = 'Listen...';
+
+  // Hide voice activity bars
+  const voiceActivity = overlayElement?.querySelector('#calibrationVoiceActivity');
+  if (voiceActivity) voiceActivity.classList.add('hidden');
+}
+
+/**
+ * Set UI to show it's the child's turn to speak
+ */
+export function setChildTurn(): void {
+  isChildTurn = true;
+
+  if (!turnIndicator) return;
+  const icon = turnIndicator.querySelector('.turn-icon');
+  const text = turnIndicator.querySelector('.turn-text');
+
+  turnIndicator.classList.remove('ai-turn');
+  turnIndicator.classList.add('child-turn');
+  if (icon) icon.textContent = '🎤';
+  if (text) text.textContent = 'Your Turn!';
+
+  // Show voice activity bars
+  const voiceActivity = overlayElement?.querySelector('#calibrationVoiceActivity');
+  if (voiceActivity) voiceActivity.classList.remove('hidden');
+}
+
+/**
+ * Update voice activity visualization (0-1 amplitude)
+ */
+export function updateVoiceActivity(amplitude: number): void {
+  if (!isChildTurn || voiceActivityBars.length === 0) return;
+
+  // Map amplitude (0-1) to bar heights
+  const numBars = voiceActivityBars.length;
+  const centerIndex = Math.floor(numBars / 2);
+
+  voiceActivityBars.forEach((bar, i) => {
+    // Create wave-like pattern centered in middle
+    const distFromCenter = Math.abs(i - centerIndex);
+    const heightFactor = 1 - (distFromCenter / centerIndex) * 0.5;
+    const randomFactor = 0.7 + Math.random() * 0.3;
+    const height = Math.max(10, amplitude * 100 * heightFactor * randomFactor);
+    bar.style.height = `${Math.min(height, 60)}px`;
+  });
+}
+
+/**
+ * Check if it's currently the child's turn
+ */
+export function isChildsTurn(): boolean {
+  return isChildTurn;
+}
+
+/**
+ * Legacy function - kept for compatibility but simplified
  */
 export function updateCalibrationProgress(progress: number): void {
-  if (progressBar) {
-    progressBar.style.width = `${Math.round(progress * 100)}%`;
-  }
+  // No-op - we no longer use progress bars
+  // Turn changes are now event-driven via setAiSpeaking/setChildTurn
 }
 
 /**
- * Update the timer display
+ * Legacy function - kept for compatibility
  */
 export function updateCalibrationTimer(remainingMs: number): void {
-  if (timerDisplay) {
-    const seconds = Math.ceil(remainingMs / 1000);
-    timerDisplay.textContent = `${seconds}s remaining`;
-  }
+  // No-op - we no longer show timer
 }
 
 /**
@@ -193,12 +260,13 @@ export function hideCalibrationOverlay(): void {
     setTimeout(() => {
       overlayElement?.remove();
       overlayElement = null;
-      progressBar = null;
+      turnIndicator = null;
+      voiceActivityBars = [];
       phaseIcon = null;
       phaseTitle = null;
       phaseInstruction = null;
-      timerDisplay = null;
       phaseDots = [];
+      isChildTurn = false;
     }, 300);
   }
 }

@@ -16,7 +16,11 @@ import {
   updateCalibrationPhase,
   updateCalibrationProgress,
   showCalibrationComplete,
-  showCalibrationFailed
+  showCalibrationFailed,
+  setAiSpeaking,
+  setChildTurn,
+  updateVoiceActivity,
+  isChildsTurn
 } from '../../../common/components/CalibrationOverlay/index.js';
 
 export type VoiceState = 'idle' | 'connecting' | 'ready' | 'speaking' | 'listening';
@@ -167,6 +171,9 @@ export class VoiceService {
   // Store original audio handler during calibration
   private originalAudioHandler?: (data: AudioChunkData) => void;
 
+  // Track if we're waiting for calibration audio to finish
+  private waitingForCalibrationPlayback = false;
+
   constructor() {
     this.audioCapture = new AudioCapture();
     this.audioPlayback = new AudioPlayback();
@@ -178,13 +185,24 @@ export class VoiceService {
 
     // Set up playback state callback
     this.audioPlayback.onStateChange = (isPlaying) => {
-      if (!isPlaying && this.state === 'speaking') {
-        // AI finished speaking, start listening
-        if (this.isListeningEnabled) {
-          this.setState('listening');
-          this.audioCapture.start();
-        } else {
-          this.setState('ready');
+      if (!isPlaying) {
+        // Check if this is calibration playback finishing
+        if (this.waitingForCalibrationPlayback && calibrationService.isCalibrating()) {
+          this.waitingForCalibrationPlayback = false;
+          setChildTurn();
+          calibrationService.setChildTurnActive(); // Enable VAD for early phase completion
+          voiceLogger.info('Calibration: Audio playback finished, child\'s turn now');
+          return;
+        }
+
+        // Normal flow - AI finished speaking
+        if (this.state === 'speaking') {
+          if (this.isListeningEnabled) {
+            this.setState('listening');
+            this.audioCapture.start();
+          } else {
+            this.setState('ready');
+          }
         }
       }
     };
@@ -211,6 +229,7 @@ export class VoiceService {
 
     calibrationService.onPhaseStart = (phase, duration, prompt) => {
       updateCalibrationPhase(phase);
+      setAiSpeaking(); // AI will speak the prompt first
       voiceLogger.info(`Calibration phase started: ${phase} (${duration}ms)`);
     };
 
@@ -352,6 +371,13 @@ export class VoiceService {
           amplitude: Math.min(data.amplitude, 1),
           peak: Math.min(data.peak, 1)
         });
+
+        // Update voice activity visualization when it's child's turn
+        if (isChildsTurn()) {
+          updateVoiceActivity(data.amplitude);
+          // Process amplitude for VAD-based early phase completion
+          calibrationService.processAudioAmplitude(data.amplitude);
+        }
       } else {
         // Normal audio handling
         this.originalAudioHandler?.(data);
@@ -386,14 +412,22 @@ export class VoiceService {
    * Speak a card's content via AI
    */
   speakCard(card: CardData, category: string): void {
-    if (this.state !== 'ready' && this.state !== 'listening') {
-      voiceLogger.warn('Not ready to speak');
+    // Only block if completely disconnected
+    if (this.state === 'idle' || this.state === 'connecting') {
+      voiceLogger.warn('Not ready to speak - not connected');
       return;
     }
 
-    // Stop any ongoing capture
+    // If still speaking previous response, interrupt it
+    if (this.state === 'speaking') {
+      voiceLogger.info('Interrupting previous speech to speak new card');
+      this.audioPlayback.stop();
+    }
+
+    // Stop any ongoing capture and commit pending audio
+    // This ensures old speech is processed before new card starts
     this.audioCapture.stop();
-    this.audioPlayback.stop();
+    this.sendMessage({ type: 'commit_audio' });
 
     // Enable listening after speaking
     this.isListeningEnabled = true;
@@ -654,7 +688,13 @@ export class VoiceService {
         break;
 
       case 'speaking_done':
-        // Playback state change will handle transition
+        // If calibrating, mark that we're waiting for playback to finish
+        // The actual switch to child's turn happens when audio playback completes
+        if (calibrationService.isCalibrating()) {
+          this.waitingForCalibrationPlayback = true;
+          voiceLogger.info('Calibration: AI finished generating, waiting for playback to complete');
+        }
+        // Playback state change will handle transition for normal flow
         break;
 
       case 'transcript':

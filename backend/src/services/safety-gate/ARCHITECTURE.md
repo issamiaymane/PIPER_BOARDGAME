@@ -66,7 +66,64 @@ Detects audio-based signals BEFORE transcription via amplitude tracking.
 │  • visibilitychange listener resumes AudioContext when tab visible  │
 │  • Prevents "speaking but no audio" after switching tabs            │
 │                                                                      │
+│  CARD TRANSITION HANDLING (voice.ts - frontend):                    │
+│  • speakCard() interrupts previous AI speech if still playing       │
+│  • Commits pending audio before sending new card context            │
+│  • Prevents responses from being attributed to wrong card           │
+│                                                                      │
 │  OUTPUT: { screaming: true, crying: true, prolongedSilence: true }  │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 0.1 CALIBRATION SYSTEM (Pre-Session)
+
+Dynamic threshold calibration runs before game starts to adapt to each child's device and voice.
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    VOICE CALIBRATION SYSTEM                          │
+│                                                                      │
+│  PURPOSE:                                                            │
+│  • Replace fixed screaming thresholds with device-specific values   │
+│  • Adapts to microphone sensitivity, room noise, child's voice      │
+│                                                                      │
+│  PHASES:                                                             │
+│  ┌────────────────────────────────────────────────────────────────┐ │
+│  │ 1. SILENCE (3s)   - Measure background noise                   │ │
+│  │ 2. NORMAL (18s)   - "Say: APPLE... SUNSHINE... RAINBOW"        │ │
+│  │ 3. EXCITED (15s)  - "Say: HOORAY!... WOOHOO!"                  │ │
+│  │ 4. LOUD (15s)     - "Shout: YAAAY!"                            │ │
+│  └────────────────────────────────────────────────────────────────┘ │
+│                                                                      │
+│  UI FLOW (CalibrationOverlay):                                       │
+│  ┌────────────────────────────────────────────────────────────────┐ │
+│  │ Phase starts → "Listen..." (AI speaking)                       │ │
+│  │       ↓                                                         │ │
+│  │ Audio playback finishes → "Your Turn!" (child's turn)          │ │
+│  │       ↓                                                         │ │
+│  │ Voice activity bars animate based on amplitude                 │ │
+│  │       ↓                                                         │ │
+│  │ VAD detects silence after speech → Phase completes early       │ │
+│  └────────────────────────────────────────────────────────────────┘ │
+│                                                                      │
+│  VAD (Voice Activity Detection) CONFIG:                              │
+│  • speechThreshold: 0.05 (amplitude above = speaking)               │
+│  • minSpeechDuration: 500ms (required before silence detection)     │
+│  • silenceDuration: 1500ms (silence after speech = phase complete)  │
+│                                                                      │
+│  THRESHOLD CALCULATION:                                              │
+│  ┌────────────────────────────────────────────────────────────────┐ │
+│  │ amplitudeThreshold = normal_ceiling + 0.8 * (excited - normal) │ │
+│  │ peakThreshold = loudest sample * 0.85                          │ │
+│  │                                                                 │ │
+│  │ Confidence levels: HIGH (>0.7), MEDIUM (0.4-0.7), LOW (<0.4)   │ │
+│  └────────────────────────────────────────────────────────────────┘ │
+│                                                                      │
+│  OUTPUT: CalibrationResult { amplitudeThreshold, peakThreshold,     │
+│          isValid, confidence, deviceGain }                          │
+│                                                                      │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -212,6 +269,21 @@ enum Signal {
 │  │ FRUSTRATION         │ dysregulationLevel += 1                   │
 │  │ WANTS_QUIT          │ engagementLevel -= 2                      │
 │  │ WANTS_BREAK         │ fatigueLevel += 1                         │
+│  │ REPETITIVE_WORDS    │ dysregulationLevel += 1.5, engagement -1  │
+│                                                                      │
+│  ═══════════════════════════════════════════════════════════════    │
+│  BASELINE DECAY (when child is calm):                                │
+│  ═══════════════════════════════════════════════════════════════    │
+│                                                                      │
+│  Applied after CHILD_RESPONSE if NO distress signals present:        │
+│  • Distress signals = SCREAMING, CRYING, DISTRESS, FRUSTRATION       │
+│  • If no distress AND dysregulationLevel > 1:                        │
+│    dysregulationLevel -= 0.5 (natural cooldown per calm response)   │
+│                                                                      │
+│  PURPOSE:                                                            │
+│  • Allows child to recover from RED level by responding calmly      │
+│  • Prevents dysregulation from staying "stuck" at high values       │
+│  • Each calm response reduces dysregulation by 0.5                  │
 │                                                                      │
 └─────────────────────────────────────────────────────────────────────┘
 ```
@@ -646,7 +718,9 @@ interface SafetyGateResult {
 | FRUSTRATION | `dysregulation+1` |
 | WANTS_QUIT | `engagement-2` |
 | WANTS_BREAK | `fatigue+1` |
+| REPETITIVE_WORDS | `dysregulation+1.5`, `engagement-1` |
 | Break taken | `dysregulation-2`, `fatigue-2`, `timeSinceBreak=0` |
+| **Baseline decay** | `dysregulation-0.5` (per calm response, no distress signals) |
 
 ### Level Thresholds
 
