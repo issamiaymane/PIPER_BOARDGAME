@@ -645,6 +645,13 @@ function hideChoices() {
 
 function showBubbleBreathing() {
     isBreathingActive = true;
+
+    // Stop AI voice and listening during bubble breathing
+    if (voiceService.isEnabled()) {
+        voiceService.interruptSpeech();
+        voiceService.stopListening();
+    }
+
     bubbleBreathingModal.classList.remove('hidden');
     startBreathingAnimation();
 }
