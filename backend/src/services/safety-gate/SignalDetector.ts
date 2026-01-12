@@ -66,10 +66,52 @@ export class SignalDetector {
   // ============================================
 
   private detectEventBasedSignals(event: Event, signals: Signal[]): void {
-    // Check for repetitive wrong response
+    // Check for repetitive wrong response (same answer across multiple turns)
     if (event.type === 'CHILD_RESPONSE' && event.response === event.previousResponse) {
       signals.push(Signal.REPETITIVE_RESPONSE);
     }
+
+    // Check for repetitive words within single response (e.g., "dog dog dog")
+    if (event.type === 'CHILD_RESPONSE' && event.response) {
+      if (this.hasRepetitiveWords(event.response)) {
+        logger.debug(`SignalDetector: REPETITIVE_WORDS detected in: "${event.response}"`);
+        signals.push(Signal.REPETITIVE_WORDS);
+      }
+    }
+  }
+
+  /**
+   * Detects if a response contains the same word repeated 3+ times
+   * Examples: "dog dog dog", "Dog, dog, dog.", "cat cat cat cat", "no no no no"
+   */
+  private hasRepetitiveWords(response: string): boolean {
+    // Normalize: lowercase, remove punctuation, split into words
+    const words = response
+      .toLowerCase()
+      .replace(/[.,!?;:'"]/g, '')  // Strip punctuation
+      .trim()
+      .split(/\s+/)
+      .filter(w => w.length > 0);  // Remove empty strings
+
+    // Need at least 3 words to have a repetitive pattern
+    if (words.length < 3) {
+      return false;
+    }
+
+    // Count consecutive repetitions
+    let consecutiveCount = 1;
+    for (let i = 1; i < words.length; i++) {
+      if (words[i] === words[i - 1]) {
+        consecutiveCount++;
+        if (consecutiveCount >= 3) {
+          return true;
+        }
+      } else {
+        consecutiveCount = 1;
+      }
+    }
+
+    return false;
   }
 
   // ============================================

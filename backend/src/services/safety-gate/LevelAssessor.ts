@@ -70,6 +70,7 @@ export class LevelAssessor {
     return (
       hasDistressSignals ||
       signals.includes(Signal.REPETITIVE_RESPONSE) ||
+      signals.includes(Signal.REPETITIVE_WORDS) ||  // "dog dog dog" - treat like consecutive error
       highDysregulation ||
       manyErrors ||
       highFatigue

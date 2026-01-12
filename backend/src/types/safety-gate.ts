@@ -73,7 +73,8 @@ export enum Signal {
   DISTRESS = 'DISTRESS',
 
   // Pattern-based (from Event fields)
-  REPETITIVE_RESPONSE = 'REPETITIVE_RESPONSE'
+  REPETITIVE_RESPONSE = 'REPETITIVE_RESPONSE',
+  REPETITIVE_WORDS = 'REPETITIVE_WORDS'  // Same word repeated multiple times in one response (e.g., "dog dog dog")
 }
 
 

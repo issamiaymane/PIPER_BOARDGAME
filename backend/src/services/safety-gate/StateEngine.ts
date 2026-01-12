@@ -73,6 +73,12 @@ export class StateEngine {
           this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + 1);
           logger.debug(`StateEngine: WANTS_BREAK → fatigue +1 (now: ${this.state.fatigueLevel.toFixed(1)})`);
           break;
+        case SignalEnum.REPETITIVE_WORDS:
+          // Same word repeated (e.g., "dog dog dog") - indicates disengagement
+          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 1.5);
+          this.state.engagementLevel = Math.max(0, this.state.engagementLevel - 1);
+          logger.debug(`StateEngine: REPETITIVE_WORDS → dysregulation +1.5, engagement -1 (now: dysreg=${this.state.dysregulationLevel.toFixed(1)}, eng=${this.state.engagementLevel.toFixed(1)})`);
+          break;
       }
     }
   }
