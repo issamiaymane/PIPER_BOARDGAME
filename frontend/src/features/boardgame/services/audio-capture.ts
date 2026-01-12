@@ -122,6 +122,26 @@ export class AudioCapture {
   }
 
   /**
+   * Resume audio context if suspended (e.g., after tab becomes visible)
+   * Returns true if context was resumed or already running
+   */
+  async resumeAudioContext(): Promise<boolean> {
+    if (!this.audioContext) return false;
+
+    if (this.audioContext.state === 'suspended') {
+      try {
+        await this.audioContext.resume();
+        audioLogger.info('AudioCapture: AudioContext resumed');
+        return true;
+      } catch (err) {
+        audioLogger.error('AudioCapture: Failed to resume AudioContext:', err);
+        return false;
+      }
+    }
+    return this.audioContext.state === 'running';
+  }
+
+  /**
    * Clean up all resources
    */
   dispose(): void {

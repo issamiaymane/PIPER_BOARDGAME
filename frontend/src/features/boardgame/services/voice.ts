@@ -149,6 +149,34 @@ export class VoiceService {
         }
       }
     };
+
+    // Handle browser tab visibility changes
+    // When user navigates away and back, AudioContext gets suspended
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && this.state !== 'idle') {
+        this.handleVisibilityRestore();
+      }
+    });
+  }
+
+  /**
+   * Handle when page becomes visible again after being hidden
+   * Resume AudioContexts and restore listening if needed
+   */
+  private async handleVisibilityRestore(): Promise<void> {
+    voiceLogger.info('VoiceService: Tab became visible, restoring audio...');
+
+    // Resume both audio contexts
+    await Promise.all([
+      this.audioPlayback.resumeAudioContext(),
+      this.audioCapture.resumeAudioContext()
+    ]);
+
+    // If we were in listening state, make sure capture is running
+    if (this.state === 'listening' && this.isListeningEnabled) {
+      this.audioCapture.start();
+      voiceLogger.info('VoiceService: Listening restored');
+    }
   }
 
   /**
