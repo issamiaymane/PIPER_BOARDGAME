@@ -47,7 +47,7 @@ let boardPath: HTMLElement;
 let leftPanel: HTMLElement;
 let playerToken: HTMLElement;
 let spinnerWheel: HTMLElement;
-let spinBtn: HTMLElement;
+let spinBtn: HTMLButtonElement;
 let resetBtn: HTMLElement;
 let gameControls: HTMLElement;
 let scoreDisplay: HTMLElement;
@@ -873,6 +873,32 @@ async function startGame() {
     const voiceEnabled = await voiceService.enable();
     if (voiceEnabled) {
         voiceLogger.info('Voice mode started successfully');
+
+        // Start calibration before allowing gameplay
+        voiceLogger.info('Starting voice calibration...');
+
+        // Disable spin button during calibration
+        spinBtn.disabled = true;
+        spinBtn.style.opacity = '0.5';
+
+        // Set up callback for when calibration completes
+        voiceService.onCalibrationComplete = (result) => {
+            voiceLogger.info(`Calibration complete: amp=${result.amplitudeThreshold.toFixed(3)}, peak=${result.peakThreshold.toFixed(3)}, confidence=${result.confidence}`);
+            // Re-enable spin button
+            spinBtn.disabled = false;
+            spinBtn.style.opacity = '1';
+        };
+
+        // Set up callback for when calibration fails or is skipped
+        voiceService.onCalibrationFailed = (error) => {
+            voiceLogger.warn(`Calibration failed/skipped: ${error}`);
+            // Re-enable spin button (will use default thresholds)
+            spinBtn.disabled = false;
+            spinBtn.style.opacity = '1';
+        };
+
+        // Start calibration
+        voiceService.startCalibration();
     } else {
         voiceLogger.error('Failed to auto-start voice mode');
     }
@@ -906,7 +932,7 @@ function init() {
     boardPath = document.getElementById('boardPath')!;
     leftPanel = document.getElementById('leftPanel')!;
     spinnerWheel = document.getElementById('spinnerWheel')!;
-    spinBtn = document.getElementById('spinBtn')!;
+    spinBtn = document.getElementById('spinBtn') as HTMLButtonElement;
     resetBtn = document.getElementById('resetBtn')!;
     gameControls = document.getElementById('gameControls')!;
     scoreDisplay = document.getElementById('scoreDisplay')!;

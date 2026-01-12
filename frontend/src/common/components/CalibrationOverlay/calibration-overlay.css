@@ -1,0 +1,217 @@
+/**
+ * Calibration Overlay Styles
+ */
+
+.calibration-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.calibration-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Container */
+.calibration-container {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+}
+
+/* Title */
+.calibration-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+/* Phase Progress */
+.calibration-progress {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.calibration-phase-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #444;
+  transition: all 0.3s ease;
+}
+
+.calibration-phase-dot.completed {
+  background: #4caf50;
+}
+
+.calibration-phase-dot.active {
+  background: #ffd700;
+  transform: scale(1.3);
+  box-shadow: 0 0 20px #ffd700;
+}
+
+/* Phase Display */
+.calibration-phase {
+  margin-bottom: 30px;
+}
+
+.calibration-phase-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.calibration-phase-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.calibration-phase-instruction {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* Progress Bar */
+.calibration-progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background: #333;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.calibration-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  transition: width 0.1s linear;
+  border-radius: 6px;
+}
+
+/* Timer */
+.calibration-timer {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+/* Skip Button */
+.calibration-skip-button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: transparent;
+  border: 2px solid #666;
+  color: #888;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calibration-skip-button:hover {
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+/* Complete State */
+.calibration-complete {
+  text-align: center;
+}
+
+.calibration-complete-icon {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.calibration-complete-title {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.calibration-complete-message {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* Failed State */
+.calibration-failed-icon {
+  color: #ff9800;
+}
+
+.calibration-failed-title {
+  color: #ff9800;
+}
+
+/* Microphone Indicator */
+.calibration-mic-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: #4caf50;
+  font-size: 1rem;
+}
+
+.calibration-mic-icon {
+  font-size: 1.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Volume Level Indicator */
+.calibration-volume-container {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.calibration-volume-bar {
+  width: 8px;
+  background: #333;
+  border-radius: 4px;
+  transition: height 0.1s ease;
+}
+
+.calibration-volume-bar.active {
+  background: linear-gradient(180deg, #4caf50, #8bc34a);
+}

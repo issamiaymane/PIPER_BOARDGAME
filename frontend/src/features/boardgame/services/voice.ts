@@ -8,6 +8,16 @@ import { z } from 'zod';
 import { AudioCapture, AudioChunkData } from './audio-capture.js';
 import { AudioPlayback } from './audio-playback.js';
 import { voiceLogger } from './logger.js';
+import { calibrationService } from './calibration.js';
+import type { CalibrationResult, CalibrationStatus } from './calibration-types.js';
+import {
+  showCalibrationOverlay,
+  hideCalibrationOverlay,
+  updateCalibrationPhase,
+  updateCalibrationProgress,
+  showCalibrationComplete,
+  showCalibrationFailed
+} from '../../../common/components/CalibrationOverlay/index.js';
 
 export type VoiceState = 'idle' | 'connecting' | 'ready' | 'speaking' | 'listening';
 
@@ -60,7 +70,11 @@ export interface UIPackage {
 
 // Runtime validation schema for server messages
 const ServerMessageSchema = z.object({
-  type: z.enum(['session_ready', 'audio_chunk', 'transcript', 'speaking_started', 'speaking_done', 'error', 'safety_gate_response']),
+  type: z.enum([
+    'session_ready', 'audio_chunk', 'transcript', 'speaking_started', 'speaking_done', 'error', 'safety_gate_response',
+    // Calibration messages
+    'calibration_started', 'calibration_phase_start', 'calibration_complete', 'calibration_failed', 'calibration_retry'
+  ]),
   sessionId: z.string().optional(),
   audio: z.string().optional(),
   text: z.string().optional(),
@@ -95,7 +109,20 @@ const ServerMessageSchema = z.object({
     responseHistory: z.array(z.string()).optional()
   }).optional(),
   isCorrect: z.boolean().optional(),
-  taskTimeExceeded: z.boolean().optional()
+  taskTimeExceeded: z.boolean().optional(),
+  // Calibration fields
+  calibrationPhase: z.string().optional(),
+  calibrationResult: z.object({
+    amplitudeThreshold: z.number(),
+    peakThreshold: z.number(),
+    isValid: z.boolean(),
+    confidence: z.enum(['high', 'medium', 'low']),
+    failureReason: z.string().optional(),
+    deviceGain: z.number(),
+    calibratedAt: z.string()
+  }).optional(),
+  phaseDuration: z.number().optional(),
+  retryReason: z.string().optional()
 });
 
 type ServerMessage = z.infer<typeof ServerMessageSchema>;
@@ -128,6 +155,18 @@ export class VoiceService {
   // shouldSkipCard is true when taskTimeExceeded
   onSafetyGateResponse?: (uiPackage: UIPackage, isCorrect: boolean, shouldSkipCard: boolean) => void;
 
+  // Callback for calibration complete
+  onCalibrationComplete?: (result: CalibrationResult) => void;
+
+  // Callback for calibration failed/skipped
+  onCalibrationFailed?: (error: string) => void;
+
+  // Callback for calibration status change
+  onCalibrationStatusChange?: (status: CalibrationStatus) => void;
+
+  // Store original audio handler during calibration
+  private originalAudioHandler?: (data: AudioChunkData) => void;
+
   constructor() {
     this.audioCapture = new AudioCapture();
     this.audioPlayback = new AudioPlayback();
@@ -157,6 +196,51 @@ export class VoiceService {
         this.handleVisibilityRestore();
       }
     });
+
+    // Set up calibration service callbacks
+    this.setupCalibrationCallbacks();
+  }
+
+  /**
+   * Set up calibration service callbacks
+   */
+  private setupCalibrationCallbacks(): void {
+    calibrationService.onStateChange = (status) => {
+      this.onCalibrationStatusChange?.(status);
+    };
+
+    calibrationService.onPhaseStart = (phase, duration, prompt) => {
+      updateCalibrationPhase(phase);
+      voiceLogger.info(`Calibration phase started: ${phase} (${duration}ms)`);
+    };
+
+    calibrationService.onPhaseProgress = (phase, progress) => {
+      updateCalibrationProgress(progress);
+    };
+
+    calibrationService.onComplete = (result) => {
+      this.restoreAudioHandler();
+      this.audioCapture.stop();
+      showCalibrationComplete(result);
+      this.onCalibrationComplete?.(result);
+    };
+
+    calibrationService.onFailed = (error) => {
+      this.restoreAudioHandler();
+      this.audioCapture.stop();
+      showCalibrationFailed(error);
+      this.onCalibrationFailed?.(error);
+    };
+  }
+
+  /**
+   * Restore original audio handler after calibration
+   */
+  private restoreAudioHandler(): void {
+    if (this.originalAudioHandler) {
+      this.audioCapture.onAudioChunk = this.originalAudioHandler;
+      this.originalAudioHandler = undefined;
+    }
   }
 
   /**
@@ -226,6 +310,76 @@ export class VoiceService {
     this.sessionId = null;
     this.isListeningEnabled = false;
     this.setState('idle');
+  }
+
+  /**
+   * Start the calibration process
+   * Should be called after enable() when voice is ready
+   */
+  startCalibration(): void {
+    if (this.state !== 'ready') {
+      voiceLogger.warn('Cannot start calibration - not in ready state');
+      return;
+    }
+
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN) {
+      voiceLogger.error('Cannot start calibration - WebSocket not connected');
+      return;
+    }
+
+    voiceLogger.info('Starting voice calibration');
+
+    // Pass WebSocket to calibration service
+    calibrationService.setWebSocket(this.ws);
+
+    // Show calibration overlay
+    showCalibrationOverlay({
+      onSkip: () => {
+        this.skipCalibration();
+      }
+    });
+
+    // Store original audio handler before replacing
+    this.originalAudioHandler = this.audioCapture.onAudioChunk;
+
+    // Set up audio chunk handler for calibration
+    this.audioCapture.onAudioChunk = (data) => {
+      if (calibrationService.isCalibrating()) {
+        // Send amplitude data to calibration service
+        this.sendMessage({
+          type: 'calibration_audio_chunk',
+          audio: data.audio,
+          amplitude: Math.min(data.amplitude, 1),
+          peak: Math.min(data.peak, 1)
+        });
+      } else {
+        // Normal audio handling
+        this.originalAudioHandler?.(data);
+      }
+    };
+
+    // Start capturing audio for calibration (but don't send to transcription)
+    this.audioCapture.start();
+
+    // Start calibration
+    calibrationService.start();
+  }
+
+  /**
+   * Skip calibration and use default thresholds
+   */
+  skipCalibration(): void {
+    voiceLogger.info('Skipping calibration');
+    calibrationService.abort();
+    this.audioCapture.stop();
+    hideCalibrationOverlay();
+  }
+
+  /**
+   * Check if calibration is in progress
+   */
+  isCalibrating(): boolean {
+    return calibrationService.isCalibrating();
   }
 
   /**
@@ -520,6 +674,27 @@ export class VoiceService {
           // shouldSkipCard = true when taskTimeExceeded
           const shouldSkipCard = message.taskTimeExceeded === true;
           this.onSafetyGateResponse?.(message.uiPackage, message.isCorrect ?? false, shouldSkipCard);
+        }
+        break;
+
+      // Calibration messages - delegate to calibration service
+      case 'calibration_started':
+      case 'calibration_phase_start':
+      case 'calibration_complete':
+      case 'calibration_failed':
+      case 'calibration_retry':
+        calibrationService.handleServerMessage({
+          type: message.type,
+          calibrationPhase: message.calibrationPhase as any,
+          phaseDuration: message.phaseDuration,
+          text: message.text,
+          calibrationResult: message.calibrationResult as any,
+          retryReason: message.retryReason,
+          message: message.message
+        });
+        // Stop audio capture when calibration completes or fails
+        if (message.type === 'calibration_complete' || message.type === 'calibration_failed') {
+          this.audioCapture.stop();
         }
         break;
     }

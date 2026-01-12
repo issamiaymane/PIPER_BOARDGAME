@@ -7,7 +7,9 @@
 import WebSocket from 'ws';
 import { RealtimeVoiceService } from './realtime.js';
 import { Session } from '../safety-gate/Session.js';
+import { CalibrationService } from '../calibration/CalibrationService.js';
 import { CardContext, SafetyGateResult } from '../../types/safety-gate.js';
+import type { CalibrationResult } from '../../types/calibration.js';
 import {
   ClientMessageSchema,
   type ClientMessage,
@@ -53,6 +55,12 @@ export interface VoiceSession {
   lastScreamingResponseTime?: number;
   // Flag to prevent duplicate responses from race conditions
   responseInProgress: boolean;
+  // Calibration
+  calibrationService: CalibrationService;
+  calibrationResult?: CalibrationResult;
+  // Dynamic thresholds (use calibrated values if available, fallback to config)
+  amplitudeThreshold: number;
+  peakThreshold: number;
 }
 
 
@@ -98,7 +106,11 @@ export class VoiceSessionManager {
       lowAmplitudeCount: 0,
       speechStopped: false,
       lastScreamingResponseTime: undefined,
-      responseInProgress: false
+      responseInProgress: false,
+      // Calibration - start with default thresholds, calibration will update them
+      calibrationService: new CalibrationService(),
+      amplitudeThreshold: SCREAMING_AMPLITUDE_THRESHOLD,
+      peakThreshold: SCREAMING_PEAK_THRESHOLD
     };
 
     // Set up inactivity callback
@@ -352,6 +364,28 @@ export class VoiceSessionManager {
         logger.info(`Session ${sessionId}: Activity ended - ${message.activity || 'unknown'}, session resumed`);
         break;
 
+      // ─────────────────────────────────────────────────────────────────────────
+      // CALIBRATION MESSAGES
+      // ─────────────────────────────────────────────────────────────────────────
+
+      case 'start_calibration':
+        this.handleStartCalibration(session);
+        break;
+
+      case 'calibration_audio_chunk':
+        if (message.audio && typeof message.amplitude === 'number' && typeof message.peak === 'number') {
+          this.handleCalibrationAudioChunk(session, message.amplitude, message.peak);
+        }
+        break;
+
+      case 'calibration_phase_complete':
+        this.handleCalibrationPhaseComplete(session);
+        break;
+
+      case 'abort_calibration':
+        this.handleAbortCalibration(session);
+        break;
+
       default:
         logger.warn(`Unknown message type from client: ${(message as any).type}`);
     }
@@ -494,13 +528,18 @@ export class VoiceSessionManager {
 
   /**
    * Track audio amplitude and detect screaming
+   * Uses session's calibrated thresholds (or defaults if not calibrated)
    */
   private trackAmplitude(session: VoiceSession, amplitude: number, peak: number): void {
     const now = Date.now();
 
+    // Use session's calibrated thresholds
+    const ampThreshold = session.amplitudeThreshold;
+    const peakThreshold = session.peakThreshold;
+
     // Debug: Log high amplitude chunks
     if (amplitude > 0.3 || peak > 0.6) {
-      logger.debug(`VoiceSession: HIGH AMPLITUDE - RMS: ${amplitude.toFixed(3)}, Peak: ${peak.toFixed(3)}`);
+      logger.debug(`VoiceSession: HIGH AMPLITUDE - RMS: ${amplitude.toFixed(3)}, Peak: ${peak.toFixed(3)} (thresholds: amp=${ampThreshold.toFixed(3)}, peak=${peakThreshold.toFixed(3)})`);
     }
 
     // Add new amplitude reading
@@ -510,9 +549,9 @@ export class VoiceSessionManager {
     const cutoff = now - 2000;
     session.recentAmplitudes = session.recentAmplitudes.filter(a => a.timestamp > cutoff);
 
-    // Check for screaming: consecutive high-amplitude chunks
+    // Check for screaming: consecutive high-amplitude chunks using calibrated thresholds
     const recentHighAmplitude = session.recentAmplitudes.filter(
-      a => a.amplitude > SCREAMING_AMPLITUDE_THRESHOLD || a.peak > SCREAMING_PEAK_THRESHOLD
+      a => a.amplitude > ampThreshold || a.peak > peakThreshold
     );
 
     // Debug: Log screaming detection progress
@@ -521,7 +560,7 @@ export class VoiceSessionManager {
     }
 
     // Check if CURRENT sample is high amplitude (screaming)
-    const isCurrentSampleHigh = amplitude > SCREAMING_AMPLITUDE_THRESHOLD || peak > SCREAMING_PEAK_THRESHOLD;
+    const isCurrentSampleHigh = amplitude > ampThreshold || peak > peakThreshold;
 
     if (recentHighAmplitude.length >= SCREAMING_CONFIRMATION_CHUNKS) {
       if (!session.screamingDetected) {
@@ -595,6 +634,163 @@ export class VoiceSessionManager {
       session.responseInProgress = false;
     }
   }
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // CALIBRATION HANDLERS
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  /**
+   * Start the calibration process
+   */
+  private handleStartCalibration(session: VoiceSession): void {
+    logger.info(`Starting calibration for session ${session.id}`);
+
+    session.calibrationService.startCalibration();
+
+    // Send calibration started message
+    this.sendToClient(session, {
+      type: 'calibration_started',
+      sessionId: session.id
+    });
+
+    // Start first phase (silence)
+    this.startCalibrationPhase(session);
+  }
+
+  /**
+   * Start the current calibration phase
+   */
+  private startCalibrationPhase(session: VoiceSession): void {
+    const phase = session.calibrationService.getCurrentPhase();
+    const duration = session.calibrationService.getPhaseDuration();
+    const prompt = session.calibrationService.getPhasePrompt();
+
+    logger.info(`Calibration phase ${phase} starting for session ${session.id} (${duration}ms)`);
+
+    // Send phase start to client
+    this.sendToClient(session, {
+      type: 'calibration_phase_start',
+      calibrationPhase: phase,
+      phaseDuration: duration,
+      text: prompt
+    });
+
+    // Speak the prompt using TTS
+    if (prompt) {
+      session.realtimeService.speakText(prompt);
+    }
+  }
+
+  /**
+   * Handle audio chunk during calibration
+   */
+  private handleCalibrationAudioChunk(session: VoiceSession, amplitude: number, peak: number): void {
+    if (!session.calibrationService.isCalibrating()) return;
+
+    // Add sample to calibration service
+    session.calibrationService.addSample(amplitude, peak);
+  }
+
+  /**
+   * Handle calibration phase completion
+   */
+  private handleCalibrationPhaseComplete(session: VoiceSession): void {
+    if (!session.calibrationService.isCalibrating()) return;
+
+    const { nextPhase, needsRetry, retryReason } = session.calibrationService.completePhase();
+
+    if (needsRetry) {
+      // Need to retry current phase
+      logger.info(`Calibration phase needs retry: ${retryReason}`);
+      this.sendToClient(session, {
+        type: 'calibration_retry',
+        calibrationPhase: nextPhase,
+        retryReason: retryReason
+      });
+      // Speak retry prompt
+      session.realtimeService.speakText(config.calibrationPrompts.retry);
+      // Restart the phase
+      setTimeout(() => this.startCalibrationPhase(session), 2000);
+      return;
+    }
+
+    if (nextPhase === 'complete') {
+      // Calibration complete - calculate and apply thresholds
+      this.finishCalibration(session);
+    } else if (nextPhase === 'failed') {
+      // Calibration failed - use fallback thresholds
+      this.failCalibration(session, 'Calibration failed');
+    } else {
+      // Move to next phase
+      this.startCalibrationPhase(session);
+    }
+  }
+
+  /**
+   * Finish calibration and apply thresholds
+   */
+  private finishCalibration(session: VoiceSession): void {
+    const result = session.calibrationService.calculateResult();
+    session.calibrationResult = result;
+
+    // Apply calibrated thresholds to session
+    session.amplitudeThreshold = result.amplitudeThreshold;
+    session.peakThreshold = result.peakThreshold;
+
+    logger.info(`Calibration complete for session ${session.id}: amplitude=${result.amplitudeThreshold.toFixed(3)}, peak=${result.peakThreshold.toFixed(3)}, confidence=${result.confidence}`);
+
+    // Speak completion message
+    session.realtimeService.speakText(config.calibrationPrompts.complete);
+
+    // Send result to client
+    this.sendToClient(session, {
+      type: 'calibration_complete',
+      calibrationResult: result
+    });
+  }
+
+  /**
+   * Handle calibration failure
+   */
+  private failCalibration(session: VoiceSession, reason: string): void {
+    logger.warn(`Calibration failed for session ${session.id}: ${reason}`);
+
+    // Use fallback thresholds
+    session.amplitudeThreshold = config.calibration.fallback.amplitudeThreshold;
+    session.peakThreshold = config.calibration.fallback.peakThreshold;
+
+    // Speak failure message
+    session.realtimeService.speakText(config.calibrationPrompts.failed);
+
+    // Send failure to client
+    this.sendToClient(session, {
+      type: 'calibration_failed',
+      message: reason
+    });
+  }
+
+  /**
+   * Abort calibration
+   */
+  private handleAbortCalibration(session: VoiceSession): void {
+    if (!session.calibrationService.isCalibrating()) return;
+
+    logger.info(`Calibration aborted for session ${session.id}`);
+    session.calibrationService.abort();
+
+    // Use fallback thresholds
+    session.amplitudeThreshold = config.calibration.fallback.amplitudeThreshold;
+    session.peakThreshold = config.calibration.fallback.peakThreshold;
+
+    this.sendToClient(session, {
+      type: 'calibration_failed',
+      message: 'Calibration aborted'
+    });
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // AMPLITUDE TRACKING HELPERS
+  // ─────────────────────────────────────────────────────────────────────────────
 
   /**
    * Reset amplitude tracking for a new interaction

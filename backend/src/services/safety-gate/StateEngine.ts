@@ -39,6 +39,12 @@ export class StateEngine {
     // 2. Apply signal effects to state
     this.applySignalEffects(signals);
 
+    // 3. Apply baseline decay when child is calm and engaging
+    // This ensures dysregulation recovers when child responds without distress
+    if (event.type === 'CHILD_RESPONSE') {
+      this.applyBaselineDecay(signals);
+    }
+
     return { ...this.state };
   }
 
@@ -80,6 +86,29 @@ export class StateEngine {
           logger.debug(`StateEngine: REPETITIVE_WORDS → dysregulation +1.5, engagement -1 (now: dysreg=${this.state.dysregulationLevel.toFixed(1)}, eng=${this.state.engagementLevel.toFixed(1)})`);
           break;
       }
+    }
+  }
+
+  // ============================================
+  // BASELINE DECAY (when child is calm)
+  // ============================================
+
+  private applyBaselineDecay(signals: Signal[]): void {
+    // Check if any distress signals are present
+    const hasDistressSignals = signals.some(s =>
+      s === SignalEnum.SCREAMING ||
+      s === SignalEnum.CRYING ||
+      s === SignalEnum.DISTRESS ||
+      s === SignalEnum.FRUSTRATION
+    );
+
+    // If child is engaging (responding) without distress, they're regulating
+    // Apply natural decay to dysregulation
+    if (!hasDistressSignals && this.state.dysregulationLevel > 1) {
+      const decayRate = 0.5; // Moderate cooldown per calm response
+      const oldLevel = this.state.dysregulationLevel;
+      this.state.dysregulationLevel = Math.max(1, this.state.dysregulationLevel - decayRate);
+      logger.debug(`StateEngine: Baseline decay -${decayRate} (${oldLevel.toFixed(1)} → ${this.state.dysregulationLevel.toFixed(1)})`);
     }
   }
 

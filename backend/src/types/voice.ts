@@ -5,6 +5,7 @@
 
 import { z } from 'zod';
 import type { UIPackage } from './safety-gate.js';
+import type { CalibrationPhase, CalibrationResult } from './calibration.js';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // INPUT VALIDATION SCHEMAS
@@ -29,7 +30,12 @@ export const ClientMessageSchema = z.object({
     'end_session',
     'set_card_context',
     'choice_selected',
-    'activity_ended'
+    'activity_ended',
+    // Calibration messages
+    'start_calibration',
+    'calibration_audio_chunk',
+    'calibration_phase_complete',
+    'abort_calibration'
   ]),
   text: z.string().optional(),
   category: z.string().optional(),
@@ -38,7 +44,9 @@ export const ClientMessageSchema = z.object({
   peak: z.number().min(0).max(1).optional(),
   cardContext: CardContextSchema.optional(),
   action: z.string().optional(),
-  activity: z.string().optional()
+  activity: z.string().optional(),
+  // Calibration fields
+  phase: z.string().optional()
 });
 
 // Derive type from schema (single source of truth)
@@ -49,7 +57,9 @@ export type ClientMessage = z.infer<typeof ClientMessageSchema>;
 // ─────────────────────────────────────────────────────────────────────────────
 
 export interface ServerMessage {
-  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error' | 'safety_gate_response';
+  type: 'session_ready' | 'audio_chunk' | 'transcript' | 'speaking_started' | 'speaking_done' | 'error' | 'safety_gate_response' |
+    // Calibration messages
+    'calibration_started' | 'calibration_phase_start' | 'calibration_phase_prompt' | 'calibration_complete' | 'calibration_failed' | 'calibration_retry';
   sessionId?: string;
   audio?: string; // base64 encoded PCM16 audio
   text?: string;
@@ -60,6 +70,11 @@ export interface ServerMessage {
   isCorrect?: boolean;
   // Flag for card flow control
   taskTimeExceeded?: boolean;
+  // Calibration fields
+  calibrationPhase?: CalibrationPhase;
+  calibrationResult?: CalibrationResult;
+  phaseDuration?: number;
+  retryReason?: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

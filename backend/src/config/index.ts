@@ -4,6 +4,7 @@
 
 import dotenv from 'dotenv';
 import { safetyGateConfig } from './safety-gate.js';
+import { calibrationConfig, calibrationPrompts } from './calibration.js';
 
 dotenv.config();
 
@@ -32,4 +33,8 @@ export const config = {
 
   // Safety-gate configuration (from separate module)
   safetyGate: safetyGateConfig,
+
+  // Calibration configuration
+  calibration: calibrationConfig,
+  calibrationPrompts: calibrationPrompts,
 };
