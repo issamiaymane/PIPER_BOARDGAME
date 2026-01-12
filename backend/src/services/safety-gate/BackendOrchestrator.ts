@@ -138,7 +138,7 @@ export class BackendOrchestrator {
       taskContext: this.currentTaskContext,
       // Derived context
       context: this.buildContext(event, state),
-      constraints: this.buildConstraints(safetyLevel),
+      constraints: this.buildConstraints(safetyLevel, event.correct),
       reasoning: this.buildReasoning(safetyLevel, interventions, signals),
       decision: this.determineDecision(safetyLevel, interventions),
       timestamp: new Date()
@@ -250,16 +250,18 @@ export class BackendOrchestrator {
     };
   }
 
-  private buildConstraints(level: Level): LLMConstraints {
+  private buildConstraints(level: Level, isCorrect?: boolean): LLMConstraints {
     return {
       must_be_brief: true,
       must_not_judge: true,
       must_not_pressure: true,
-      must_offer_choices: level >= Level.YELLOW,
-      must_validate_feelings: level >= Level.ORANGE,
-      // GREEN: 2 sentences ("I heard X. Let's try again!")
-      // YELLOW+: 3 sentences ("I heard X. Almost there! What would you like to do?")
-      max_sentences: level >= Level.YELLOW ? 3 : 2,
+      // Don't offer choices when answer is correct - card will close
+      must_offer_choices: !isCorrect && level >= Level.YELLOW,
+      must_validate_feelings: !isCorrect && level >= Level.ORANGE,
+      // Correct: 2 sentences max ("Great job! You got it!")
+      // GREEN incorrect: 2 sentences ("I heard X. Let's try again!")
+      // YELLOW+ incorrect: 3 sentences ("I heard X. Almost there! What would you like to do?")
+      max_sentences: isCorrect ? 2 : (level >= Level.YELLOW ? 3 : 2),
       forbidden_words: ['wrong', 'incorrect', 'bad', 'no', 'try harder', 'focus'],
       required_approach: 'describe_what_heard_offer_support'
     };
@@ -321,7 +323,8 @@ export class BackendOrchestrator {
       speech: {
         text: fallbackText
       },
-      choiceMessage: "What would you like to do?"
+      // Don't show choices for correct answers - card will close
+      choiceMessage: isCorrect ? "" : "What would you like to do?"
     };
   }
 
@@ -334,6 +337,8 @@ export class BackendOrchestrator {
     llmResponse: LLMGeneration,
     state: State
   ): UIPackage {
+    const isCorrect = backendResponse.context?.what_happened === 'correct_response';
+
     return {
       // Flow order: Signals → State → Level → Interventions → Config → LLM Output
       overlay: {
@@ -346,7 +351,8 @@ export class BackendOrchestrator {
       speech: {
         text: llmResponse.coach_line
       },
-      choiceMessage: llmResponse.choice_presentation
+      // Don't show choices for correct answers - card will close
+      choiceMessage: isCorrect ? "" : llmResponse.choice_presentation
     };
   }
 }

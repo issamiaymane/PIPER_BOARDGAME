@@ -498,8 +498,9 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shou
         return; // Don't show choices when skipping
     }
 
-    // Show choices if there are any interventions and safety level indicates need (for incorrect answers)
-    if (uiPackage.interventions.length > 0 && currentSafetyLevel >= 1) {
+    // Show choices if there are any interventions, safety level indicates need, AND choiceMessage is set
+    // (choiceMessage is empty for correct answers - don't show choices, card will close)
+    if (uiPackage.interventions.length > 0 && currentSafetyLevel >= 1 && uiPackage.choiceMessage) {
         // Pause listening when showing choices - let feedback continue speaking, just don't listen
         if (voiceService.isEnabled()) {
             voiceService.pauseListening();

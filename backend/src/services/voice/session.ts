@@ -45,10 +45,14 @@ export interface VoiceSession {
   screamingDetected: boolean;
   // Timer for delayed screaming response (starts AFTER speech stops)
   screamingTimeoutId?: ReturnType<typeof setTimeout>;
+  // Track consecutive low-amplitude chunks to detect when screaming stops
+  lowAmplitudeCount: number;
   // Track if speech has stopped (to know when to start timeout)
   speechStopped: boolean;
   // Timestamp of last screaming response for cooldown
   lastScreamingResponseTime?: number;
+  // Flag to prevent duplicate responses from race conditions
+  responseInProgress: boolean;
 }
 
 
@@ -91,8 +95,10 @@ export class VoiceSessionManager {
       safetyGateSession: new Session(),
       recentAmplitudes: [],
       screamingDetected: false,
+      lowAmplitudeCount: 0,
       speechStopped: false,
-      lastScreamingResponseTime: undefined
+      lastScreamingResponseTime: undefined,
+      responseInProgress: false
     };
 
     // Set up inactivity callback
@@ -317,12 +323,10 @@ export class VoiceSessionManager {
             this.trackAmplitude(session, message.amplitude, message.peak);
           }
 
-          // Only send to OpenAI if NOT screaming (prevents scream transcription)
-          if (!session.screamingDetected) {
-            session.realtimeService.sendAudio(message.audio);
-          } else {
-            logger.debug('VoiceSession: Audio chunk skipped - screaming detected');
-          }
+          // Always send audio to OpenAI - even when screaming, the child may be
+          // saying the correct answer loudly. The stacking logic in processWithSafetyGate
+          // will combine transcription with screaming signal for proper evaluation.
+          session.realtimeService.sendAudio(message.audio);
         }
         break;
 
@@ -360,6 +364,13 @@ export class VoiceSessionManager {
     session: VoiceSession,
     transcription: string
   ): Promise<void> {
+    // GUARD: Prevent race condition - only one response at a time
+    if (session.responseInProgress) {
+      logger.debug(`VoiceSession: BLOCKED - Response already in progress, ignoring transcription "${transcription}"`);
+      return;
+    }
+    session.responseInProgress = true;
+
     try {
       // Cancel screaming timeout if it's pending - transcription arrived, we can stack!
       if (session.screamingTimeoutId) {
@@ -376,8 +387,8 @@ export class VoiceSessionManager {
         const elapsed = Date.now() - session.lastScreamingResponseTime;
         if (elapsed < SCREAMING_RESPONSE_COOLDOWN_MS) {
           logger.debug(`VoiceSession: BLOCKED - Transcription within cooldown (${elapsed}ms)`);
-          // Reset screaming detection flag but don't process
           session.screamingDetected = false;
+          session.responseInProgress = false;
           return;
         }
       }
@@ -406,6 +417,8 @@ export class VoiceSessionManager {
         type: 'error',
         message: 'Safety gate processing failed'
       });
+    } finally {
+      session.responseInProgress = false;
     }
   }
 
@@ -507,27 +520,38 @@ export class VoiceSessionManager {
       logger.debug(`VoiceSession: High amplitude chunks: ${recentHighAmplitude.length}/${SCREAMING_CONFIRMATION_CHUNKS}`);
     }
 
+    // Check if CURRENT sample is high amplitude (screaming)
+    const isCurrentSampleHigh = amplitude > SCREAMING_AMPLITUDE_THRESHOLD || peak > SCREAMING_PEAK_THRESHOLD;
+
     if (recentHighAmplitude.length >= SCREAMING_CONFIRMATION_CHUNKS) {
       if (!session.screamingDetected) {
         session.screamingDetected = true;
+        session.lowAmplitudeCount = 0; // Reset low amplitude counter
         logger.info(`VoiceSession: SCREAMING DETECTED (amplitude: ${amplitude.toFixed(3)}, peak: ${peak.toFixed(3)})`);
+        // Don't start timeout yet - wait for child to stop screaming first
+        // This allows us to capture the full audio and get proper transcription
+      }
+    }
 
-        // Start timeout to trigger screaming response immediately
-        // We can't wait for speech_stopped since we're blocking audio from reaching OpenAI
-        if (!session.screamingTimeoutId) {
-          logger.debug(`VoiceSession: Starting screaming response timeout (${SCREAMING_POST_SPEECH_WAIT_MS}ms)`);
+    // Track consecutive low-amplitude chunks after screaming was detected
+    if (session.screamingDetected && !session.screamingTimeoutId) {
+      if (!isCurrentSampleHigh) {
+        session.lowAmplitudeCount = (session.lowAmplitudeCount || 0) + 1;
+        // After 3 consecutive low-amplitude chunks (~500ms), consider screaming stopped
+        if (session.lowAmplitudeCount >= 3) {
+          logger.debug(`VoiceSession: Screaming stopped - waiting ${SCREAMING_POST_SPEECH_WAIT_MS}ms for transcription`);
           session.screamingTimeoutId = setTimeout(() => {
+            // Only trigger if still waiting (transcription didn't arrive)
             if (session.screamingDetected) {
-              logger.debug('VoiceSession: Screaming timeout fired - triggering response');
+              logger.debug('VoiceSession: Transcription wait timeout - triggering screaming-only response');
               this.triggerScreamingResponse(session);
             }
           }, SCREAMING_POST_SPEECH_WAIT_MS);
         }
+      } else {
+        // Reset counter if still screaming
+        session.lowAmplitudeCount = 0;
       }
-    } else if (session.screamingDetected && recentHighAmplitude.length === 0) {
-      // Reset screaming flag when amplitude drops back to normal
-      session.screamingDetected = false;
-      logger.debug('VoiceSession: Screaming ended - resuming normal audio capture');
     }
   }
 
@@ -537,6 +561,14 @@ export class VoiceSessionManager {
   private async triggerScreamingResponse(session: VoiceSession): Promise<void> {
     // Clear the timeout ID since the timer has fired
     session.screamingTimeoutId = undefined;
+
+    // GUARD: Prevent race condition - only one response at a time
+    if (session.responseInProgress) {
+      logger.debug('VoiceSession: BLOCKED - Screaming response skipped, another response in progress');
+      session.screamingDetected = false;
+      return;
+    }
+    session.responseInProgress = true;
 
     // Record timestamp for cooldown - prevents duplicate responses from late-arriving transcriptions
     session.lastScreamingResponseTime = Date.now();
@@ -559,6 +591,8 @@ export class VoiceSessionManager {
 
     } catch (error) {
       logger.error(`Screaming response error:`, error);
+    } finally {
+      session.responseInProgress = false;
     }
   }
 
@@ -573,9 +607,11 @@ export class VoiceSessionManager {
     }
     session.recentAmplitudes = [];
     session.screamingDetected = false;
+    session.lowAmplitudeCount = 0;
     session.speechStopped = false;
-    // Reset cooldown when starting fresh interaction
+    // Reset cooldown and flags when starting fresh interaction
     session.lastScreamingResponseTime = undefined;
+    session.responseInProgress = false;
   }
 }
 

@@ -10,7 +10,9 @@ export const safetyGateConfig = {
     amplitudeThreshold: parseFloat(process.env.SCREAMING_AMPLITUDE_THRESHOLD || '0.35'),
     peakThreshold: parseFloat(process.env.SCREAMING_PEAK_THRESHOLD || '0.90'),
     confirmationChunks: parseInt(process.env.SCREAMING_CONFIRMATION_CHUNKS || '3', 10),
-    postSpeechWaitMs: parseInt(process.env.SCREAMING_POST_SPEECH_WAIT_MS || '1500', 10),
+    // Wait after child stops screaming for transcription to arrive
+    // Timeout only starts AFTER amplitude drops, so 2s is enough for Whisper
+    postSpeechWaitMs: parseInt(process.env.SCREAMING_POST_SPEECH_WAIT_MS || '2000', 10),
     responseCooldownMs: parseInt(process.env.SCREAMING_RESPONSE_COOLDOWN_MS || '2500', 10),
   },
 
