@@ -614,7 +614,7 @@ function handleInterventionClick(e: Event) {
 
         case 'SKIP_CARD':
             closeCard();
-            setTimeout(() => showRandomCard(), 500);
+            // Return to board game turn (spinner) - don't show another speech card
             break;
 
         case 'RETRY_CARD':
