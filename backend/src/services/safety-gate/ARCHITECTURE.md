@@ -38,11 +38,33 @@ Detects audio-based signals BEFORE transcription via amplitude tracking.
 │  │ Screaming:     >0.35 RMS                                       │ │
 │  └────────────────────────────────────────────────────────────────┘ │
 │                                                                      │
-│  SCREAMING DETECTION:                                                │
-│  • 3+ chunks above threshold → screamingDetected = true             │
-│  • Audio chunks BLOCKED from OpenAI when screaming detected         │
-│  • Timeout fires after SCREAMING_POST_SPEECH_WAIT_MS (1500ms)       │
-│  • Cooldown prevents duplicates: SCREAMING_RESPONSE_COOLDOWN_MS     │
+│  SCREAMING DETECTION FLOW:                                           │
+│  ┌────────────────────────────────────────────────────────────────┐ │
+│  │ Child screams "COLD!"                                          │ │
+│  │       ↓                                                         │ │
+│  │ Detect screaming (3+ high-amplitude chunks)                    │ │
+│  │       ↓                                                         │ │
+│  │ Keep sending audio to Whisper (NOT blocked!)                   │ │
+│  │       ↓                                                         │ │
+│  │ Track low amplitude (3 chunks = screaming stopped)             │ │
+│  │       ↓                                                         │ │
+│  │ Start 2s timeout for transcription                             │ │
+│  │       ↓                                                         │ │
+│  │ Transcription arrives → cancel timeout → process with flag     │ │
+│  │       ↓                                                         │ │
+│  │ responseInProgress prevents duplicate responses                │ │
+│  └────────────────────────────────────────────────────────────────┘ │
+│                                                                      │
+│  KEY BEHAVIORS:                                                      │
+│  • Audio ALWAYS sent to OpenAI (child may scream correct answer)    │
+│  • Timeout starts AFTER screaming stops (lowAmplitudeCount >= 3)    │
+│  • SCREAMING_POST_SPEECH_WAIT_MS = 2000ms (wait for transcription)  │
+│  • SCREAMING_RESPONSE_COOLDOWN_MS = 2500ms (prevent duplicates)     │
+│  • responseInProgress flag prevents race conditions                 │
+│                                                                      │
+│  BROWSER TAB HANDLING (voice.ts - frontend):                        │
+│  • visibilitychange listener resumes AudioContext when tab visible  │
+│  • Prevents "speaking but no audio" after switching tabs            │
 │                                                                      │
 │  OUTPUT: { screaming: true, crying: true, prolongedSilence: true }  │
 └─────────────────────────────────────────────────────────────────────┘
