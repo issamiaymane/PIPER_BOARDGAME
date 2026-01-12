@@ -658,10 +658,8 @@ function closeBubbleBreathing() {
         voiceService.notifyActivityEnded('BUBBLE_BREATHING');
     }
 
-    // Resume listening if voice is enabled
-    if (voiceService.isReady()) {
-        voiceService.startListening();
-    }
+    // Return to board game turn (spinner) - don't resume speech card
+    closeCard();
 }
 
 function startBreathingAnimation() {
