@@ -696,6 +696,11 @@ function startBreak() {
     // Close the card and show a break screen
     closeCard();
 
+    // Stop any ongoing AI speech during break
+    if (voiceService.isEnabled()) {
+        voiceService.interruptSpeech();
+    }
+
     const BREAK_DURATION = 45; // seconds
     let remainingTime = BREAK_DURATION;
 
@@ -754,6 +759,11 @@ function handleGrownupHelp() {
 
     // Close the card and show full-screen grownup help
     closeCard();
+
+    // Stop any ongoing AI speech during grownup help
+    if (voiceService.isEnabled()) {
+        voiceService.interruptSpeech();
+    }
 
     // Show full-screen grownup help modal
     const helpModal = document.createElement('div');
