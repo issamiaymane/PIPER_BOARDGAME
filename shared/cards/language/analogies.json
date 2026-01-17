@@ -4,12 +4,16 @@
       "question": "Dog is to bark as cat is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/dog_cat/dog.png",
-          "label": "dog"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/1_dog_cat/dog.png",
+          "label": "dog",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a friendly golden retriever dog sitting attentively, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/dog_cat/cat.png",
-          "label": "cat"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/1_dog_cat/cat.png",
+          "label": "cat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cute orange tabby cat sitting calmly, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -22,12 +26,16 @@
       "question": "Bird is to fly as fish is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/bird_fish/bird.png",
-          "label": "bird"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/2_bird_fish/bird.png",
+          "label": "bird",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful songbird with wings slightly spread as if about to fly, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/bird_fish/fish.png",
-          "label": "fish"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/2_bird_fish/fish.png",
+          "label": "fish",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bright orange goldfish swimming, on a pure white background, with natural soft lighting, realistic scale textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -40,12 +48,16 @@
       "question": "Eye is to see as ear is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/eye_ear/eye.png",
-          "label": "eye"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/3_eye_ear/eye.png",
+          "label": "eye",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a close-up of a human eye with visible iris and pupil, natural eye color, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/eye_ear/ear.png",
-          "label": "ear"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/3_eye_ear/ear.png",
+          "label": "ear",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a close-up of a human ear from the side, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -58,12 +70,16 @@
       "question": "Night is to dark as day is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/night_day/night.png",
-          "label": "night"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/4_night_day/night.png",
+          "label": "night",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a peaceful night sky scene with a crescent moon and twinkling stars over a sleeping village. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted dark blue colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/night_day/day.png",
-          "label": "day"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/4_night_day/day.png",
+          "label": "day",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a bright sunny daytime scene with a yellow sun in a blue sky over a cheerful landscape. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm bright colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -76,12 +92,16 @@
       "question": "Hand is to glove as foot is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/hand_foot/hand.png",
-          "label": "hand"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/5_hand_foot/hand.png",
+          "label": "hand",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an open human hand with palm facing forward, fingers spread naturally, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/hand_foot/foot.png",
-          "label": "foot"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/5_hand_foot/foot.png",
+          "label": "foot",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a human foot from the side, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -94,12 +114,16 @@
       "question": "Apple is to red as banana is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/apple_banana/apple.png",
-          "label": "apple"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/6_apple_banana/apple.png",
+          "label": "apple",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a shiny red apple with a small stem and leaf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/apple_banana/banana.png",
-          "label": "banana"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/6_apple_banana/banana.png",
+          "label": "banana",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a ripe yellow banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -112,12 +136,16 @@
       "question": "Fire is to hot as ice is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/fire_ice/fire.png",
-          "label": "fire"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/7_fire_ice/fire.png",
+          "label": "fire",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of bright orange and yellow flames burning, on a pure white background, with natural soft lighting, realistic fire textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/fire_ice/ice.png",
-          "label": "ice"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/7_fire_ice/ice.png",
+          "label": "ice",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of clear ice cubes stacked together, on a pure white background, with natural soft lighting, realistic transparent ice textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -130,12 +158,16 @@
       "question": "Cow is to moo as pig is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/cow_pig/cow.png",
-          "label": "cow"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/8_cow_pig/cow.png",
+          "label": "cow",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a friendly black and white dairy cow standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/cow_pig/pig.png",
-          "label": "pig"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/8_cow_pig/pig.png",
+          "label": "pig",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cute pink pig standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -148,12 +180,16 @@
       "question": "Hat is to head as shoe is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/hat_shoe/hat.png",
-          "label": "hat"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/9_hat_shoe/hat.png",
+          "label": "hat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful baseball cap or sun hat, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/hat_shoe/shoe.png",
-          "label": "shoe"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/9_hat_shoe/shoe.png",
+          "label": "shoe",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful child's sneaker shoe, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -166,12 +202,16 @@
       "question": "Baby is to crib as bird is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/baby_bird/baby.png",
-          "label": "baby"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/10_baby_bird/baby.png",
+          "label": "baby",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a cute baby lying in a cozy crib, peaceful expression, soft blanket. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted pastel colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/baby_bird/bird.png",
-          "label": "bird"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/10_baby_bird/bird.png",
+          "label": "bird",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small bird sitting in a nest made of twigs, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -184,12 +224,16 @@
       "question": "Rain is to wet as sun is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/rain_sun/rain.png",
-          "label": "rain"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/11_rain_sun/rain.png",
+          "label": "rain",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of raindrops falling from gray clouds, puddles forming below. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted blue and gray colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/rain_sun/sun.png",
-          "label": "sun"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/11_rain_sun/sun.png",
+          "label": "sun",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a bright warm sun with gentle rays shining in a blue sky. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm yellow and orange colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -202,12 +246,16 @@
       "question": "Nose is to smell as tongue is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/nose_toungue/nose.png",
-          "label": "nose"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/12_nose_toungue/nose.png",
+          "label": "nose",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a close-up of a human nose from the front, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/nose_toungue/toungue.png",
-          "label": "toungue"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/12_nose_toungue/toungue.png",
+          "label": "toungue",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an open mouth showing a healthy pink tongue sticking out slightly, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -220,12 +268,16 @@
       "question": "Puppy is to dog as kitten is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/puppy_kitten/puppy.png",
-          "label": "puppy"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/13_puppy_kitten/puppy.png",
+          "label": "puppy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an adorable fluffy puppy with big eyes, sitting playfully, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/puppy_kitten/kitten.png",
-          "label": "kitten"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/13_puppy_kitten/kitten.png",
+          "label": "kitten",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an adorable fluffy kitten with big eyes, sitting cutely, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -238,12 +290,16 @@
       "question": "Bed is to sleep as chair is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/bed_chair/bed.png",
-          "label": "bed"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/14_bed_chair/bed.png",
+          "label": "bed",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cozy single bed with pillow and blanket, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/bed_chair/chair.png",
-          "label": "chair"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/14_bed_chair/chair.png",
+          "label": "chair",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a simple wooden chair, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -256,12 +312,16 @@
       "question": "Pencil is to write as scissors is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/pencil_scissors/pencil.png",
-          "label": "pencil"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/15_pencil_scissors/pencil.png",
+          "label": "pencil",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a yellow wooden pencil with a sharpened tip, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/pencil_scissors/scissors.png",
-          "label": "scissors"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/15_pencil_scissors/scissors.png",
+          "label": "scissors",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a pair of child-safe scissors with colorful handles, on a pure white background, with natural soft lighting, realistic metal textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -274,12 +334,16 @@
       "question": "Up is to down as in is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/up_in/up.png",
-          "label": "up"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/16_up_in/up.png",
+          "label": "up",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a green arrow pointing straight up, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/up_in/in.png",
-          "label": "in"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/16_up_in/in.png",
+          "label": "in",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a ball inside an open box, clearly showing the concept of 'in'. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -292,12 +356,16 @@
       "question": "Milk is to drink as bread is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/milk_bread/milk.png",
-          "label": "milk"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/17_milk_bread/milk.png",
+          "label": "milk",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a glass of white milk, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/milk_bread/bread.png",
-          "label": "bread"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/17_milk_bread/bread.png",
+          "label": "bread",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a fresh loaf of bread with golden crust, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -310,12 +378,16 @@
       "question": "Tree is to tall as flower is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/tree_flower/tree.png",
-          "label": "tree"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/18_tree_flower/tree.png",
+          "label": "tree",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a tall green leafy tree, on a pure white background, with natural soft lighting, realistic bark and leaf textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/tree_flower/flower.png",
-          "label": "flower"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/18_tree_flower/flower.png",
+          "label": "flower",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small colorful flower with petals and green stem, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -328,12 +400,16 @@
       "question": "Frog is to hop as snake is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/frog_snake/frog.png",
-          "label": "frog"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/19_frog_snake/frog.png",
+          "label": "frog",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bright green frog in a hopping pose, on a pure white background, with natural soft lighting, realistic skin textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/frog_snake/snake.png",
-          "label": "snake"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/19_frog_snake/snake.png",
+          "label": "snake",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful non-threatening snake coiled gently, on a pure white background, with natural soft lighting, realistic scale textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -346,12 +422,16 @@
       "question": "Car is to road as boat is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/car_boat/car.png",
-          "label": "car"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/car.png",
+          "label": "car",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful toy car or small sedan, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/car_boat/boat.png",
-          "label": "boat"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/boat.png",
+          "label": "boat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small sailboat or rowboat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -364,12 +444,16 @@
       "question": "Happy is to smile as sad is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/happy_sad/happy.png",
-          "label": "happy"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/21_happy_sad/happy.png",
+          "label": "happy",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a young child with a big genuine smile, eyes bright with joy. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/happy_sad/sad.png",
-          "label": "sad"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/21_happy_sad/sad.png",
+          "label": "sad",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a young child with a sad expression, downturned mouth, looking down. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -382,12 +466,16 @@
       "question": "Soap is to clean as dirt is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/soap_dirt/soap.png",
-          "label": "soap"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/22_soap_dirt/soap.png",
+          "label": "soap",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful bar of soap with bubbles around it, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/soap_dirt/dirt.png",
-          "label": "dirt"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/22_soap_dirt/dirt.png",
+          "label": "dirt",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a pile of brown dirt or soil, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -400,12 +488,16 @@
       "question": "Lion is to roar as duck is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/lion_duck/lion.png",
-          "label": "lion"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/23_lion_duck/lion.png",
+          "label": "lion",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a majestic lion with a full mane, sitting proudly, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/lion_duck/duck.png",
-          "label": "duck"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/23_lion_duck/duck.png",
+          "label": "duck",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a yellow duck standing, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -418,12 +510,16 @@
       "question": "Door is to open as light is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/door_light/door.png",
-          "label": "door"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/24_door_light/door.png",
+          "label": "door",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a wooden door slightly ajar, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/door_light/light.png",
-          "label": "light"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/24_door_light/light.png",
+          "label": "light",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a glowing light bulb turned on, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -436,12 +532,16 @@
       "question": "Brother is to boy as sister is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/brother_sister/brother.png",
-          "label": "brother"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/25_brother_sister/brother.png",
+          "label": "brother",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a young boy standing with a friendly smile, casual clothes. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/brother_sister/sister.png",
-          "label": "sister"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/25_brother_sister/sister.png",
+          "label": "sister",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a young girl standing with a friendly smile, casual clothes. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -454,12 +554,16 @@
       "question": "Winter is to cold as summer is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/winter_summer/winter.png",
-          "label": "winter"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/26_winter_summer/winter.png",
+          "label": "winter",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a snowy winter scene with bare trees, snowflakes falling, and a child bundled up in warm clothes. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted blue and white colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/winter_summer/summer.png",
-          "label": "summer"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/26_winter_summer/summer.png",
+          "label": "summer",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a bright summer scene with a shining sun, green trees, and a child playing outside. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm yellow and green colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -472,12 +576,16 @@
       "question": "Teeth is to brush as hair is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/teeth_hair/teeth.png",
-          "label": "teeth"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/27_teeth_hair/teeth.png",
+          "label": "teeth",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a smiling mouth showing healthy white teeth, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/teeth_hair/hair.png",
-          "label": "hair"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/27_teeth_hair/hair.png",
+          "label": "hair",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of flowing healthy hair, natural color, on a pure white background, with natural soft lighting, realistic hair textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -490,12 +598,16 @@
       "question": "Moon is to night as sun is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/moon_sun/moon.png",
-          "label": "moon"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/moon.png",
+          "label": "moon",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a glowing crescent moon in a dark night sky with stars. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted dark blue colors with gentle yellow moon. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/moon_sun/sun.png",
-          "label": "sun"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/sun.png",
+          "label": "sun",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a bright warm sun with gentle rays in a blue sky. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm yellow and orange colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -508,12 +620,16 @@
       "question": "Pig is to farm as lion is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/pig_lion/pig.png",
-          "label": "pig"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/29_pig_lion/pig.png",
+          "label": "pig",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cute pink pig on a farm setting implied, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/pig_lion/lion.png",
-          "label": "lion"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/29_pig_lion/lion.png",
+          "label": "lion",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a majestic lion with a full mane, powerful stance, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -526,12 +642,16 @@
       "question": "Spoon is to soup as fork is to ___.",
       "images": [
         {
-          "image": "/images/cards/3_analogies_elementary/spoon_fork/spoon.png",
-          "label": "spoon"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/30_spoon_fork/spoon.png",
+          "label": "spoon",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a silver metal spoon, on a pure white background, with natural soft lighting, realistic metal textures and reflections. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/3_analogies_elementary/spoon_fork/fork.png",
-          "label": "fork"
+          "image": "/shared/images/analogies/1-Analogies_Elementary/30_spoon_fork/fork.png",
+          "label": "fork",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a silver metal fork, on a pure white background, with natural soft lighting, realistic metal textures and reflections. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -546,12 +666,16 @@
       "question": "architect : blueprint :: composer : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/architect_composer/architect.png",
-          "label": "architect"
+          "image": "/shared/images/analogies/2-Analogies_High/1_architect_composer/architect.png",
+          "label": "architect",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an architect working at a drafting table with blueprints and rulers. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/architect_composer/composer.png",
-          "label": "composer"
+          "image": "/shared/images/analogies/2-Analogies_High/1_architect_composer/composer.png",
+          "label": "composer",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a composer writing music at a piano with sheet music. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -564,12 +688,16 @@
       "question": "brush : painter :: calculator : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/brush_calculator/brush.png",
-          "label": "brush"
+          "image": "/shared/images/analogies/2-Analogies_High/2_brush_calculator/brush.png",
+          "label": "brush",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an artist's paintbrush with colorful paint on the bristles, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/brush_calculator/calculator.png",
-          "label": "calculator"
+          "image": "/shared/images/analogies/2-Analogies_High/2_brush_calculator/calculator.png",
+          "label": "calculator",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a scientific calculator with number buttons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -582,12 +710,16 @@
       "question": "drought : water :: famine : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/drought_famine/drought.png",
-          "label": "drought"
+          "image": "/shared/images/analogies/2-Analogies_High/3_drought_famine/drought.png",
+          "label": "drought",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a dry cracked earth landscape with a wilting plant, representing drought. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted brown and tan colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/drought_famine/famine.png",
-          "label": "famine"
+          "image": "/shared/images/analogies/2-Analogies_High/3_drought_famine/famine.png",
+          "label": "famine",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of empty plates and bowls on a table, representing lack of food. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -600,12 +732,16 @@
       "question": "conductor : orchestra :: director : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/conductor_director/conductor.png",
-          "label": "conductor"
+          "image": "/shared/images/analogies/2-Analogies_High/4_conductor_director/conductor.png",
+          "label": "conductor",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an orchestra conductor with a baton, leading musicians. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/conductor_director/director.png",
-          "label": "director"
+          "image": "/shared/images/analogies/2-Analogies_High/4_conductor_director/director.png",
+          "label": "director",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a film director sitting in a director's chair with a megaphone. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -618,12 +754,16 @@
       "question": "palette : painter :: keyboard : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/palette_keyboard/palette.png",
-          "label": "palette"
+          "image": "/shared/images/analogies/2-Analogies_High/5_palette_keyboard/palette.png",
+          "label": "palette",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an artist's wooden palette with colorful paint blobs, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/palette_keyboard/keyboard.png",
-          "label": "keyboard"
+          "image": "/shared/images/analogies/2-Analogies_High/5_palette_keyboard/keyboard.png",
+          "label": "keyboard",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a computer keyboard, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -636,12 +776,16 @@
       "question": "chronology : time :: geography : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/chronology_geography/chronology.png",
-          "label": "chronology"
+          "image": "/shared/images/analogies/2-Analogies_High/6_chronology_geography/chronology.png",
+          "label": "chronology",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a timeline with historical events marked along it. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/chronology_geography/geography.png",
-          "label": "geography"
+          "image": "/shared/images/analogies/2-Analogies_High/6_chronology_geography/geography.png",
+          "label": "geography",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful globe showing continents and oceans, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -654,12 +798,16 @@
       "question": "diagnosis : disease :: verdict : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/diagnosis_verdict/diagnosis.png",
-          "label": "diagnosis"
+          "image": "/shared/images/analogies/2-Analogies_High/7_diagnosis_verdict/diagnosis.png",
+          "label": "diagnosis",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a doctor examining a patient with a stethoscope. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/diagnosis_verdict/verdict.png",
-          "label": "verdict"
+          "image": "/shared/images/analogies/2-Analogies_High/7_diagnosis_verdict/verdict.png",
+          "label": "verdict",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a judge with a gavel in a courtroom setting. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -672,12 +820,16 @@
       "question": "submarine : underwater :: satellite : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/submarine_satellite/submarine.png",
-          "label": "submarine"
+          "image": "/shared/images/analogies/2-Analogies_High/8_submarine_satellite/submarine.png",
+          "label": "submarine",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a submarine vessel, on a pure white background, with natural soft lighting, realistic metal textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/submarine_satellite/satellite.png",
-          "label": "satellite"
+          "image": "/shared/images/analogies/2-Analogies_High/8_submarine_satellite/satellite.png",
+          "label": "satellite",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a space satellite with solar panels, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -690,12 +842,16 @@
       "question": "hypothesis : experiment :: question : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/hypothesis_question/hypothesis.png",
-          "label": "hypothesis"
+          "image": "/shared/images/analogies/2-Analogies_High/9_hypothesis_question/hypothesis.png",
+          "label": "hypothesis",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a scientist with a thought bubble containing a question mark and light bulb. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/hypothesis_question/question.png",
-          "label": "question"
+          "image": "/shared/images/analogies/2-Analogies_High/9_hypothesis_question/question.png",
+          "label": "question",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a large colorful question mark symbol, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -708,12 +864,16 @@
       "question": "legislature : laws :: court : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/legislature_court/legislature.png",
-          "label": "legislature"
+          "image": "/shared/images/analogies/2-Analogies_High/10_legislature_court/legislature.png",
+          "label": "legislature",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a government building with columns, representing a legislature. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/legislature_court/court.png",
-          "label": "court"
+          "image": "/shared/images/analogies/2-Analogies_High/10_legislature_court/court.png",
+          "label": "court",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a courthouse with scales of justice symbol. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -726,12 +886,16 @@
       "question": "telescope : distant :: microscope : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/telescope_microscope/telescope.png",
-          "label": "telescope"
+          "image": "/shared/images/analogies/2-Analogies_High/11_telescope_microscope/telescope.png",
+          "label": "telescope",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a telescope on a tripod, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/telescope_microscope/microscope.png",
-          "label": "microscope"
+          "image": "/shared/images/analogies/2-Analogies_High/11_telescope_microscope/microscope.png",
+          "label": "microscope",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a scientific microscope, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -744,12 +908,16 @@
       "question": "teacher : school :: nurse : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/teacher_nurse/teacher.png",
-          "label": "teacher"
+          "image": "/shared/images/analogies/2-Analogies_High/12_teacher_nurse/teacher.png",
+          "label": "teacher",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a friendly teacher standing at a blackboard with chalk. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/teacher_nurse/nurse.png",
-          "label": "nurse"
+          "image": "/shared/images/analogies/2-Analogies_High/12_teacher_nurse/nurse.png",
+          "label": "nurse",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a caring nurse in scrubs with a stethoscope. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -762,12 +930,16 @@
       "question": "hibernation : winter :: migration : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/hibernation_migration/hibernation.png",
-          "label": "hibernation"
+          "image": "/shared/images/analogies/2-Analogies_High/13_hibernation_migration/hibernation.png",
+          "label": "hibernation",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a bear sleeping peacefully in a cozy den during winter. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/hibernation_migration/migration.png",
-          "label": "migration"
+          "image": "/shared/images/analogies/2-Analogies_High/13_hibernation_migration/migration.png",
+          "label": "migration",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of birds flying in a V-formation across the sky. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -780,12 +952,16 @@
       "question": "vaccination : prevention :: medicine : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/vaccination_medicine/vaccination.png",
-          "label": "vaccination"
+          "image": "/shared/images/analogies/2-Analogies_High/14_vaccination_medicine/vaccination.png",
+          "label": "vaccination",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a medical syringe and vaccine vial, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/vaccination_medicine/medicine.png",
-          "label": "medicine"
+          "image": "/shared/images/analogies/2-Analogies_High/14_vaccination_medicine/medicine.png",
+          "label": "medicine",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of medicine bottles and pills, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -798,12 +974,16 @@
       "question": "constitution : country :: bylaws : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/constitution_bylaws/constitution.png",
-          "label": "constitution"
+          "image": "/shared/images/analogies/2-Analogies_High/15_constitution_bylaws/constitution.png",
+          "label": "constitution",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an old official document with a seal, representing a constitution. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/constitution_bylaws/bylaws.png",
-          "label": "bylaws"
+          "image": "/shared/images/analogies/2-Analogies_High/15_constitution_bylaws/bylaws.png",
+          "label": "bylaws",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a document folder labeled 'Bylaws', on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -816,12 +996,16 @@
       "question": "prologue : beginning :: epilogue : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/prologue_epilogue/prologue.png",
-          "label": "prologue"
+          "image": "/shared/images/analogies/2-Analogies_High/16_prologue_epilogue/prologue.png",
+          "label": "prologue",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an open book showing the first page with 'Prologue' written. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/prologue_epilogue/epilogue.png",
-          "label": "epilogue"
+          "image": "/shared/images/analogies/2-Analogies_High/16_prologue_epilogue/epilogue.png",
+          "label": "epilogue",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an open book showing the last page with 'The End' written. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -834,12 +1018,16 @@
       "question": "inflation : prices :: erosion : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/inflation_erosion/inflation.png",
-          "label": "inflation"
+          "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/inflation.png",
+          "label": "inflation",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of rising price tags and coins, representing inflation. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/inflation_erosion/erosion.png",
-          "label": "erosion"
+          "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/erosion.png",
+          "label": "erosion",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a cliff or hillside being worn away by water and wind, showing erosion. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft earth-tone muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -852,12 +1040,16 @@
       "question": "fiction : imaginary :: nonfiction : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/fiction_nonfiction/fiction.png",
-          "label": "fiction"
+          "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/fiction.png",
+          "label": "fiction",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a storybook with a dragon and castle on the cover, representing fiction. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/fiction_nonfiction/nonfiction.png",
-          "label": "nonfiction"
+          "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/nonfiction.png",
+          "label": "nonfiction",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an encyclopedia or textbook, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -870,12 +1062,16 @@
       "question": "peninsula : land :: bay : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/peninsula_bay/peninsula.png",
-          "label": "peninsula"
+          "image": "/shared/images/analogies/2-Analogies_High/19_peninsula_bay/peninsula.png",
+          "label": "peninsula",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a bird's eye view of a peninsula jutting into the ocean. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft blue and green muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/peninsula_bay/bay.png",
-          "label": "bay"
+          "image": "/shared/images/analogies/2-Analogies_High/19_peninsula_bay/bay.png",
+          "label": "bay",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a bird's eye view of a bay with water curving into the land. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft blue and green muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -888,12 +1084,16 @@
       "question": "renovation : building :: restoration : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/renovation_restoration/renovation.png",
-          "label": "renovation"
+          "image": "/shared/images/analogies/2-Analogies_High/20_renovation_restoration/renovation.png",
+          "label": "renovation",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of workers renovating a house with tools and paint. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/renovation_restoration/restoration.png",
-          "label": "restoration"
+          "image": "/shared/images/analogies/2-Analogies_High/20_renovation_restoration/restoration.png",
+          "label": "restoration",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an artist carefully restoring an old painting on an easel. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -906,12 +1106,16 @@
       "question": "equation : math :: sentence : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/equation_sentence/equation.png",
-          "label": "equation"
+          "image": "/shared/images/analogies/2-Analogies_High/21_equation_sentence/equation.png",
+          "label": "equation",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a chalkboard with a simple math equation written on it, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/equation_sentence/sentence.png",
-          "label": "sentence"
+          "image": "/shared/images/analogies/2-Analogies_High/21_equation_sentence/sentence.png",
+          "label": "sentence",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a piece of paper with a simple sentence written on it, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -924,12 +1128,16 @@
       "question": "lens : camera :: retina : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/lens_retina/lens.png",
-          "label": "lens"
+          "image": "/shared/images/analogies/2-Analogies_High/22_lens_retina/lens.png",
+          "label": "lens",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a camera lens, on a pure white background, with natural soft lighting, realistic glass textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/lens_retina/retina.png",
-          "label": "retina"
+          "image": "/shared/images/analogies/2-Analogies_High/22_lens_retina/retina.png",
+          "label": "retina",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a cross-section of a human eye showing the retina. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -942,12 +1150,16 @@
       "question": "practice : game :: studying : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/practice_studying/practice.png",
-          "label": "practice"
+          "image": "/shared/images/analogies/2-Analogies_High/23_practice_studying/practice.png",
+          "label": "practice",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of children practicing soccer on a field. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/practice_studying/studying.png",
-          "label": "studying"
+          "image": "/shared/images/analogies/2-Analogies_High/23_practice_studying/studying.png",
+          "label": "studying",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child studying at a desk with books and notebooks. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -960,12 +1172,16 @@
       "question": "monopoly : competition :: dictatorship : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/monopoly_dictatorship/monopoly.png",
-          "label": "monopoly"
+          "image": "/shared/images/analogies/2-Analogies_High/24_monopoly_dictatorship/monopoly.png",
+          "label": "monopoly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a single large store with smaller stores closed around it, representing monopoly. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/monopoly_dictatorship/dictatorship.png",
-          "label": "dictatorship"
+          "image": "/shared/images/analogies/2-Analogies_High/24_monopoly_dictatorship/dictatorship.png",
+          "label": "dictatorship",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a single figure on a podium addressing a crowd, representing leadership. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -978,12 +1194,16 @@
       "question": "apprentice : expert :: amateur : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/apprentice_amateur/apprentice.png",
-          "label": "apprentice"
+          "image": "/shared/images/analogies/2-Analogies_High/25_apprentice_amateur/apprentice.png",
+          "label": "apprentice",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a young person learning a craft from an older mentor. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/apprentice_amateur/amateur.png",
-          "label": "amateur"
+          "image": "/shared/images/analogies/2-Analogies_High/25_apprentice_amateur/amateur.png",
+          "label": "amateur",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a person just starting to learn to play guitar, looking uncertain. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -996,12 +1216,16 @@
       "question": "fossil : dinosaur :: artifact : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/fossil_artifact/fossil.png",
-          "label": "fossil"
+          "image": "/shared/images/analogies/2-Analogies_High/26_fossil_artifact/fossil.png",
+          "label": "fossil",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dinosaur fossil bone, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/fossil_artifact/artifact.png",
-          "label": "artifact"
+          "image": "/shared/images/analogies/2-Analogies_High/26_fossil_artifact/artifact.png",
+          "label": "artifact",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an ancient pottery artifact, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1014,12 +1238,16 @@
       "question": "exercise : strength :: reading : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/exercise_reading/exercise.png",
-          "label": "exercise"
+          "image": "/shared/images/analogies/2-Analogies_High/27_exercise_reading/exercise.png",
+          "label": "exercise",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a person doing stretching exercises. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/exercise_reading/reading.png",
-          "label": "reading"
+          "image": "/shared/images/analogies/2-Analogies_High/27_exercise_reading/reading.png",
+          "label": "reading",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child reading a book in a cozy chair. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1032,12 +1260,16 @@
       "question": "summit : mountain :: mouth : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/summit_mouth/summit.png",
-          "label": "summit"
+          "image": "/shared/images/analogies/2-Analogies_High/28_summit_mouth/summit.png",
+          "label": "summit",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a mountain peak with a flag at the top, representing the summit. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/summit_mouth/mouth.png",
-          "label": "mouth"
+          "image": "/shared/images/analogies/2-Analogies_High/28_summit_mouth/mouth.png",
+          "label": "mouth",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a river mouth where it meets the ocean. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft blue and green muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1050,12 +1282,16 @@
       "question": "diplomat : peace :: soldier : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/diplomat_soldier/diplomat.png",
-          "label": "diplomat"
+          "image": "/shared/images/analogies/2-Analogies_High/29_diplomat_soldier/diplomat.png",
+          "label": "diplomat",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of two people shaking hands in formal attire, representing diplomacy. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/diplomat_soldier/soldier.png",
-          "label": "soldier"
+          "image": "/shared/images/analogies/2-Analogies_High/29_diplomat_soldier/soldier.png",
+          "label": "soldier",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a soldier in uniform standing at attention. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1068,12 +1304,16 @@
       "question": "symptom : illness :: clue : ______",
       "images": [
         {
-          "image": "/images/cards/4_analogies_high/symptom_clue/symptom.png",
-          "label": "symptom"
+          "image": "/shared/images/analogies/2-Analogies_High/30_symptom_clue/symptom.png",
+          "label": "symptom",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a person with a thermometer and blanket, showing illness symptoms. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/4_analogies_high/symptom_clue/clue.png",
-          "label": "clue"
+          "image": "/shared/images/analogies/2-Analogies_High/30_symptom_clue/clue.png",
+          "label": "clue",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a magnifying glass over footprints, representing a clue. On a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1088,12 +1328,16 @@
       "question": "plane : air :: boat : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/plane_boat/plane.png",
-          "label": "plane"
+          "image": "/shared/images/analogies/3-Analogies_Middle/1_plane_boat/plane.png",
+          "label": "plane",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a passenger airplane in flight, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/plane_boat/boat.png",
-          "label": "boat"
+          "image": "/shared/images/analogies/3-Analogies_Middle/1_plane_boat/boat.png",
+          "label": "boat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a sailboat on water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1106,12 +1350,16 @@
       "question": "doctor : hospital :: teacher : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/doctor_teacher/doctor.png",
-          "label": "doctor"
+          "image": "/shared/images/analogies/3-Analogies_Middle/2_doctor_teacher/doctor.png",
+          "label": "doctor",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a friendly doctor in a white coat with a stethoscope. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/doctor_teacher/teacher.png",
-          "label": "teacher"
+          "image": "/shared/images/analogies/3-Analogies_Middle/2_doctor_teacher/teacher.png",
+          "label": "teacher",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a friendly teacher at a chalkboard. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1124,12 +1372,16 @@
       "question": "bee : hive :: spider : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/bee_spider/bee.png",
-          "label": "bee"
+          "image": "/shared/images/analogies/3-Analogies_Middle/3_bee_spider/bee.png",
+          "label": "bee",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a honeybee with visible wings and stripes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/bee_spider/spider.png",
-          "label": "spider"
+          "image": "/shared/images/analogies/3-Analogies_Middle/3_bee_spider/spider.png",
+          "label": "spider",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small harmless garden spider, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1142,12 +1394,16 @@
       "question": "author : book :: artist : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/author_artist/author.png",
-          "label": "author"
+          "image": "/shared/images/analogies/3-Analogies_Middle/4_author_artist/author.png",
+          "label": "author",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an author writing at a desk with papers and pen. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/author_artist/artist.png",
-          "label": "artist"
+          "image": "/shared/images/analogies/3-Analogies_Middle/4_author_artist/artist.png",
+          "label": "artist",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of an artist painting at an easel with a palette. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1160,12 +1416,16 @@
       "question": "calf : cow :: lamb : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/calf_lamb/calf.png",
-          "label": "calf"
+          "image": "/shared/images/analogies/3-Analogies_Middle/5_calf_lamb/calf.png",
+          "label": "calf",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cute baby calf standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/calf_lamb/lamb.png",
-          "label": "lamb"
+          "image": "/shared/images/analogies/3-Analogies_Middle/5_calf_lamb/lamb.png",
+          "label": "lamb",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a fluffy white lamb standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1178,12 +1438,16 @@
       "question": "finger : hand :: toe : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/finger_toe/finger.png",
-          "label": "finger"
+          "image": "/shared/images/analogies/3-Analogies_Middle/6_finger_toe/finger.png",
+          "label": "finger",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a human hand with one finger pointing, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/finger_toe/toe.png",
-          "label": "toe"
+          "image": "/shared/images/analogies/3-Analogies_Middle/6_finger_toe/toe.png",
+          "label": "toe",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of human toes on a foot, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1196,12 +1460,16 @@
       "question": "chef : kitchen :: pilot : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/chef_pilot/chef.png",
-          "label": "chef"
+          "image": "/shared/images/analogies/3-Analogies_Middle/7_chef_pilot/chef.png",
+          "label": "chef",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a chef in a white hat cooking in a kitchen. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/chef_pilot/pilot.png",
-          "label": "pilot"
+          "image": "/shared/images/analogies/3-Analogies_Middle/7_chef_pilot/pilot.png",
+          "label": "pilot",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a pilot in uniform with a captain's hat. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1214,12 +1482,16 @@
       "question": "peel : banana :: shell : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/peel_shell/peel.png",
-          "label": "peel"
+          "image": "/shared/images/analogies/3-Analogies_Middle/8_peel_shell/peel.png",
+          "label": "peel",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a banana peel next to a peeled banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/peel_shell/shell.png",
-          "label": "shell"
+          "image": "/shared/images/analogies/3-Analogies_Middle/8_peel_shell/shell.png",
+          "label": "shell",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cracked egg shell next to a whole egg, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1232,12 +1504,16 @@
       "question": "thermometer : temperature :: clock : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/thermometer_clock/thermometer.png",
-          "label": "thermometer"
+          "image": "/shared/images/analogies/3-Analogies_Middle/9_thermometer_clock/thermometer.png",
+          "label": "thermometer",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thermometer showing temperature, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/thermometer_clock/clock.png",
-          "label": "clock"
+          "image": "/shared/images/analogies/3-Analogies_Middle/9_thermometer_clock/clock.png",
+          "label": "clock",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an analog wall clock showing time, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1250,12 +1526,16 @@
       "question": "pages : book :: keys : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/pages_keys/pages.png",
-          "label": "pages"
+          "image": "/shared/images/analogies/3-Analogies_Middle/10_pages_keys/pages.png",
+          "label": "pages",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of book pages fanned open, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/pages_keys/keys.png",
-          "label": "keys"
+          "image": "/shared/images/analogies/3-Analogies_Middle/10_pages_keys/keys.png",
+          "label": "keys",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of piano keys in black and white, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1268,12 +1548,16 @@
       "question": "laugh : happy :: cry : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/laugh_cry/laugh.png",
-          "label": "laugh"
+          "image": "/shared/images/analogies/3-Analogies_Middle/11_laugh_cry/laugh.png",
+          "label": "laugh",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child laughing joyfully. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/laugh_cry/cry.png",
-          "label": "cry"
+          "image": "/shared/images/analogies/3-Analogies_Middle/11_laugh_cry/cry.png",
+          "label": "cry",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child crying with tears. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1286,12 +1570,16 @@
       "question": "ocean : whale :: forest : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/ocean_forest/ocean.png",
-          "label": "ocean"
+          "image": "/shared/images/analogies/3-Analogies_Middle/12_ocean_forest/ocean.png",
+          "label": "ocean",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a blue ocean with waves. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft blue muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/ocean_forest/forest.png",
-          "label": "forest"
+          "image": "/shared/images/analogies/3-Analogies_Middle/12_ocean_forest/forest.png",
+          "label": "forest",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a green forest with tall trees. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft green muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1304,12 +1592,16 @@
       "question": "brick : house :: log : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/brick_log/brick.png",
-          "label": "brick"
+          "image": "/shared/images/analogies/3-Analogies_Middle/13_brick_log/brick.png",
+          "label": "brick",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of red clay bricks stacked, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/brick_log/log.png",
-          "label": "log"
+          "image": "/shared/images/analogies/3-Analogies_Middle/13_brick_log/log.png",
+          "label": "log",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of wooden logs stacked, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1322,12 +1614,16 @@
       "question": "telescope : stars :: microscope : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/telescope_microscope/telescope.png",
-          "label": "telescope"
+          "image": "/shared/images/analogies/3-Analogies_Middle/14_telescope_microscope/telescope.png",
+          "label": "telescope",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a telescope pointed at the sky, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/telescope_microscope/microscope.png",
-          "label": "microscope"
+          "image": "/shared/images/analogies/3-Analogies_Middle/14_telescope_microscope/microscope.png",
+          "label": "microscope",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a scientific microscope, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1340,12 +1636,16 @@
       "question": "wool : sheep :: feathers : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/wool_feathers/wool.png",
-          "label": "wool"
+          "image": "/shared/images/analogies/3-Analogies_Middle/15_wool_feathers/wool.png",
+          "label": "wool",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a ball of soft wool yarn, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/wool_feathers/feathers.png",
-          "label": "feathers"
+          "image": "/shared/images/analogies/3-Analogies_Middle/15_wool_feathers/feathers.png",
+          "label": "feathers",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of colorful bird feathers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1358,12 +1658,16 @@
       "question": "seed : plant :: egg : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/seed_egg/seed.png",
-          "label": "seed"
+          "image": "/shared/images/analogies/3-Analogies_Middle/16_seed_egg/seed.png",
+          "label": "seed",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of plant seeds sprouting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/seed_egg/egg.png",
-          "label": "egg"
+          "image": "/shared/images/analogies/3-Analogies_Middle/16_seed_egg/egg.png",
+          "label": "egg",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a white chicken egg, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1376,12 +1680,16 @@
       "question": "desert : dry :: rainforest : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/desert_rainforest/desert.png",
-          "label": "desert"
+          "image": "/shared/images/analogies/3-Analogies_Middle/17_desert_rainforest/desert.png",
+          "label": "desert",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a sandy desert with cacti and sun. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm tan and yellow muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/desert_rainforest/rainforest.png",
-          "label": "rainforest"
+          "image": "/shared/images/analogies/3-Analogies_Middle/17_desert_rainforest/rainforest.png",
+          "label": "rainforest",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a lush green rainforest with tall trees and rain. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft green muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1394,12 +1702,16 @@
       "question": "dentist : teeth :: eye doctor : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/dentist_eyedoctor/dentist.png",
-          "label": "dentist"
+          "image": "/shared/images/analogies/3-Analogies_Middle/18_dentist_eyedoctor/dentist.png",
+          "label": "dentist",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a friendly dentist with dental tools. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/dentist_eyedoctor/eyedoctor.png",
-          "label": "eyedoctor"
+          "image": "/shared/images/analogies/3-Analogies_Middle/18_dentist_eyedoctor/eyedoctor.png",
+          "label": "eyedoctor",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a friendly eye doctor with glasses and an eye chart. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1412,12 +1724,16 @@
       "question": "envelope : letter :: box : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/envelope_box/envelope.png",
-          "label": "envelope"
+          "image": "/shared/images/analogies/3-Analogies_Middle/19_envelope_box/envelope.png",
+          "label": "envelope",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a white envelope with a letter inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/envelope_box/box.png",
-          "label": "box"
+          "image": "/shared/images/analogies/3-Analogies_Middle/19_envelope_box/box.png",
+          "label": "box",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cardboard shipping box, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1430,12 +1746,16 @@
       "question": "book : read :: song : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/book_song/book.png",
-          "label": "book"
+          "image": "/shared/images/analogies/3-Analogies_Middle/20_book_song/book.png",
+          "label": "book",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an open book with pages, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/book_song/song.png",
-          "label": "song"
+          "image": "/shared/images/analogies/3-Analogies_Middle/20_book_song/song.png",
+          "label": "song",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of musical notes floating from a radio or speaker. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1448,12 +1768,16 @@
       "question": "cow : farm :: frog : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/cow_frog/cow.png",
-          "label": "cow"
+          "image": "/shared/images/analogies/3-Analogies_Middle/21_cow_frog/cow.png",
+          "label": "cow",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dairy cow standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/cow_frog/frog.png",
-          "label": "frog"
+          "image": "/shared/images/analogies/3-Analogies_Middle/21_cow_frog/frog.png",
+          "label": "frog",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a green frog sitting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1466,12 +1790,16 @@
       "question": "brush : paint :: pen : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/brush_pen/brush.png",
-          "label": "brush"
+          "image": "/shared/images/analogies/3-Analogies_Middle/22_brush_pen/brush.png",
+          "label": "brush",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a paintbrush with paint on bristles, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/brush_pen/pen.png",
-          "label": "pen"
+          "image": "/shared/images/analogies/3-Analogies_Middle/22_brush_pen/pen.png",
+          "label": "pen",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a ballpoint pen, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1484,12 +1812,16 @@
       "question": "glove : hand :: sock : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/glove_sock/glove.png",
-          "label": "glove"
+          "image": "/shared/images/analogies/3-Analogies_Middle/23_glove_sock/glove.png",
+          "label": "glove",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a winter glove, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/glove_sock/sock.png",
-          "label": "sock"
+          "image": "/shared/images/analogies/3-Analogies_Middle/23_glove_sock/sock.png",
+          "label": "sock",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful sock, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1502,12 +1834,16 @@
       "question": "flour : bread :: oranges : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/flour_oranges/flour.png",
-          "label": "flour"
+          "image": "/shared/images/analogies/3-Analogies_Middle/24_flour_oranges/flour.png",
+          "label": "flour",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of white flour in a bowl, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/flour_oranges/oranges.png",
-          "label": "oranges"
+          "image": "/shared/images/analogies/3-Analogies_Middle/24_flour_oranges/oranges.png",
+          "label": "oranges",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of fresh oranges, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1520,12 +1856,16 @@
       "question": "tadpole : frog :: caterpillar : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/tadpole_caterpillar/tadpole.png",
-          "label": "tadpole"
+          "image": "/shared/images/analogies/3-Analogies_Middle/25_tadpole_caterpillar/tadpole.png",
+          "label": "tadpole",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a tadpole swimming, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/tadpole_caterpillar/caterpillar.png",
-          "label": "caterpillar"
+          "image": "/shared/images/analogies/3-Analogies_Middle/25_tadpole_caterpillar/caterpillar.png",
+          "label": "caterpillar",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful caterpillar on a leaf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1538,12 +1878,16 @@
       "question": "chapter : book :: episode : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/chapter_episode/chapter.png",
-          "label": "chapter"
+          "image": "/shared/images/analogies/3-Analogies_Middle/26_chapter_episode/chapter.png",
+          "label": "chapter",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an open book showing a chapter heading, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/chapter_episode/episode.png",
-          "label": "episode"
+          "image": "/shared/images/analogies/3-Analogies_Middle/26_chapter_episode/episode.png",
+          "label": "episode",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a TV screen showing a show episode, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1556,12 +1900,16 @@
       "question": "paw : dog :: hoof : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/paw_hoof/paw.png",
-          "label": "paw"
+          "image": "/shared/images/analogies/3-Analogies_Middle/27_paw_hoof/paw.png",
+          "label": "paw",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dog's paw, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/paw_hoof/hoof.png",
-          "label": "hoof"
+          "image": "/shared/images/analogies/3-Analogies_Middle/27_paw_hoof/hoof.png",
+          "label": "hoof",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a horse's hoof, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1574,12 +1922,16 @@
       "question": "scale : fish :: fur : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/scale_fur/scale.png",
-          "label": "scale"
+          "image": "/shared/images/analogies/3-Analogies_Middle/28_scale_fur/scale.png",
+          "label": "scale",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of fish scales close up, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/scale_fur/fur.png",
-          "label": "fur"
+          "image": "/shared/images/analogies/3-Analogies_Middle/28_scale_fur/fur.png",
+          "label": "fur",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of soft animal fur close up, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1592,12 +1944,16 @@
       "question": "oven : bake :: refrigerator : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/oven_refrigerator/oven.png",
-          "label": "oven"
+          "image": "/shared/images/analogies/3-Analogies_Middle/29_oven_refrigerator/oven.png",
+          "label": "oven",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a kitchen oven, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/oven_refrigerator/refrigerator.png",
-          "label": "refrigerator"
+          "image": "/shared/images/analogies/3-Analogies_Middle/29_oven_refrigerator/refrigerator.png",
+          "label": "refrigerator",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a kitchen refrigerator, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1610,12 +1966,16 @@
       "question": "map : places :: dictionary : ______",
       "images": [
         {
-          "image": "/images/cards/5_analogies_middle/map_dictionary/map.png",
-          "label": "map"
+          "image": "/shared/images/analogies/3-Analogies_Middle/30_map_dictionary/map.png",
+          "label": "map",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful folded map, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/5_analogies_middle/map_dictionary/dictionary.png",
-          "label": "dictionary"
+          "image": "/shared/images/analogies/3-Analogies_Middle/30_map_dictionary/dictionary.png",
+          "label": "dictionary",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thick dictionary book, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
