@@ -4,12 +4,16 @@
       "question": "What is the opposite of hot?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/hot_cold/hot.png",
-          "label": "hot"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/1_hot_cold/hot.png",
+          "label": "hot",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a steaming red cup of hot cocoa with visible steam rising, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/hot_cold/cold.png",
-          "label": "cold"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/1_hot_cold/cold.png",
+          "label": "cold",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a glass of ice water with ice cubes and condensation droplets on the glass, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -20,12 +24,16 @@
       "question": "What is the opposite of big?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/big_small/big.png",
-          "label": "big"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/2_big_small/big.png",
+          "label": "big",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a large red apple, on a pure white background, with natural soft lighting, realistic textures, and accurate proportions. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/big_small/small.png",
-          "label": "small"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/2_big_small/small.png",
+          "label": "small",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a tiny red cherry, on a pure white background, with natural soft lighting, realistic textures, and accurate proportions. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -36,12 +44,16 @@
       "question": "What is the opposite of fast?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/fast_slow/fast.png",
-          "label": "fast"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/3_fast_slow/fast.png",
+          "label": "fast",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cheetah in a running pose, on a pure white background, with natural soft lighting, realistic textures, and accurate proportions. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/fast_slow/slow.png",
-          "label": "slow"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/3_fast_slow/slow.png",
+          "label": "slow",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a turtle walking slowly, on a pure white background, with natural soft lighting, realistic textures, and accurate proportions. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -52,12 +64,16 @@
       "question": "What is the opposite of happy?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/happy_sad/happy.png",
-          "label": "happy"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/4_happy_sad/happy.png",
+          "label": "happy",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a big genuine smile, eyes bright with joy. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/happy_sad/sad.png",
-          "label": "sad"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/4_happy_sad/sad.png",
+          "label": "sad",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a sad expression, downturned mouth, looking down. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft cool muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -68,12 +84,16 @@
       "question": "What is the opposite of tall?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/tall_short/tall.png",
-          "label": "tall"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/5_tall_short/tall.png",
+          "label": "tall",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a tall giraffe standing upright, on a pure white background, with natural soft lighting, realistic textures, and accurate proportions. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/tall_short/short.png",
-          "label": "short"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/5_tall_short/short.png",
+          "label": "short",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small mouse standing, on a pure white background, with natural soft lighting, realistic textures, and accurate proportions. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -84,12 +104,16 @@
       "question": "What is the opposite of light?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/light_dark/light.png",
-          "label": "light"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/6_light_dark/light.png",
+          "label": "light",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bright glowing light bulb turned on, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/light_dark/dark.png",
-          "label": "dark"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/6_light_dark/dark.png",
+          "label": "dark",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a light bulb that is turned off and dark, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -100,12 +124,16 @@
       "question": "What is the opposite of hard?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/hard_soft/hard.png",
-          "label": "hard"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/7_hard_soft/hard.png",
+          "label": "hard",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a gray stone rock with rough texture, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/hard_soft/soft.png",
-          "label": "soft"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/7_hard_soft/soft.png",
+          "label": "soft",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a fluffy white pillow, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -116,12 +144,16 @@
       "question": "What is the opposite of clean?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/clean_dirty/clean.png",
-          "label": "clean"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/8_clean_dirty/clean.png",
+          "label": "clean",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a pair of brand new clean white sneakers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/clean_dirty/dirty.png",
-          "label": "dirty"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/8_clean_dirty/dirty.png",
+          "label": "dirty",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a pair of muddy dirty sneakers covered in brown mud, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -132,12 +164,16 @@
       "question": "What is the opposite of new?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/new_old/new.png",
-          "label": "new"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/9_new_old/new.png",
+          "label": "new",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a brand new hardcover book with crisp pages and pristine cover, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/new_old/old.png",
-          "label": "old"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/9_new_old/old.png",
+          "label": "old",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an old worn book with yellowed pages and tattered cover, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -148,12 +184,16 @@
       "question": "What is the opposite of wet?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/wet_dry/wet.png",
-          "label": "wet"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/10_wet_dry/wet.png",
+          "label": "wet",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a wet kitten with soaked fur and water droplets, looking drenched from rain, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/wet_dry/dry.png",
-          "label": "dry"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/10_wet_dry/dry.png",
+          "label": "dry",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dry fluffy kitten with soft fur, looking warm and sunny, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -164,12 +204,16 @@
       "question": "What is the opposite of full?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/full_empty/full.png",
-          "label": "full"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/11_full_empty/full.png",
+          "label": "full",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a clear glass completely full of orange juice, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/full_empty/empty.png",
-          "label": "empty"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/11_full_empty/empty.png",
+          "label": "empty",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an empty clear drinking glass, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -180,12 +224,16 @@
       "question": "What is the opposite of loud?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/loud_quiet/loud.png",
-          "label": "loud"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/12_loud_quiet/loud.png",
+          "label": "loud",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a large red drum with drumsticks, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/loud_quiet/quiet.png",
-          "label": "quiet"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/12_loud_quiet/quiet.png",
+          "label": "quiet",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a single soft white feather, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -196,12 +244,16 @@
       "question": "What is the opposite of heavy?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/heavy_light/heavy.png",
-          "label": "heavy"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/13_heavy_light/heavy.png",
+          "label": "heavy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a large black iron dumbbell weight, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/heavy_light/light.png",
-          "label": "light"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/13_heavy_light/light.png",
+          "label": "light",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a delicate butterfly with colorful wings, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -212,12 +264,16 @@
       "question": "What is the opposite of open?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/open_closed/open.png",
-          "label": "open"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/14_open_closed/open.png",
+          "label": "open",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an open wooden door, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/open_closed/closed.png",
-          "label": "closed"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/14_open_closed/closed.png",
+          "label": "closed",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a closed wooden door, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -228,12 +284,16 @@
       "question": "What is the opposite of up?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/up_down/up.png",
-          "label": "up"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/15_up_down/up.png",
+          "label": "up",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a green arrow pointing upward, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/up_down/down.png",
-          "label": "down"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/15_up_down/down.png",
+          "label": "down",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a red arrow pointing downward, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -244,12 +304,16 @@
       "question": "What is the opposite of good?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/good_bad/good.png",
-          "label": "good"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/16_good_bad/good.png",
+          "label": "good",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a well-behaved puppy sitting attentively with alert ears and bright eyes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/good_bad/bad.png",
-          "label": "bad"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/16_good_bad/bad.png",
+          "label": "bad",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a guilty-looking puppy in the middle of a messy kitchen with spilled food and knocked over containers around it, with natural soft lighting, realistic textures. Professional studio photography. Clear, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -260,12 +324,16 @@
       "question": "What is the opposite of rich?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/rich_poor/rich.png",
-          "label": "rich"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/17_rich_poor/rich.png",
+          "label": "rich",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A well-dressed person in fine clothing standing proudly. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/rich_poor/poor.png",
-          "label": "poor"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/17_rich_poor/poor.png",
+          "label": "poor",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A humble person in simple patched clothing. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -276,12 +344,16 @@
       "question": "What is the opposite of strong?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/strong_weak/strong.png",
-          "label": "strong"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/18_strong_weak/strong.png",
+          "label": "strong",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A person flexing their arm muscle with confident posture. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/strong_weak/weak.png",
-          "label": "weak"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/18_strong_weak/weak.png",
+          "label": "weak",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A tired person with drooping shoulders struggling to lift a small box. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -292,12 +364,16 @@
       "question": "What is the opposite of thick?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/thick_thin/thick.png",
-          "label": "thick"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/19_thick_thin/thick.png",
+          "label": "thick",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thick hardcover book with many pages, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/thick_thin/thin.png",
-          "label": "thin"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/19_thick_thin/thin.png",
+          "label": "thin",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thin magazine or pamphlet with few pages, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -308,12 +384,16 @@
       "question": "What is the opposite of long?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/long_short/long.png",
-          "label": "long"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/20_long_short/long.png",
+          "label": "long",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a long yellow pencil, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/long_short/short.png",
-          "label": "short"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/20_long_short/short.png",
+          "label": "short",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a short stubby pencil that has been sharpened down, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -324,12 +404,16 @@
       "question": "What is the opposite of smooth?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/smooth_rough/smooth.png",
-          "label": "smooth"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/21_smooth_rough/smooth.png",
+          "label": "smooth",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a smooth polished glass marble, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/smooth_rough/rough.png",
-          "label": "rough"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/21_smooth_rough/rough.png",
+          "label": "rough",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a piece of rough sandpaper showing its gritty texture, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -340,12 +424,16 @@
       "question": "What is the opposite of sweet?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/sweet_sour/sweet.png",
-          "label": "sweet"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/22_sweet_sour/sweet.png",
+          "label": "sweet",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of colorful wrapped candies and lollipops, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/sweet_sour/sour.png",
-          "label": "sour"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/22_sweet_sour/sour.png",
+          "label": "sour",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a yellow lemon cut in half showing the inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -356,12 +444,16 @@
       "question": "What is the opposite of deep?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/deep_shallow/deep.png",
-          "label": "deep"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/23_deep_shallow/deep.png",
+          "label": "deep",
+          "style": "photorealistic",
+          "prompt": "An elephant swimming in a deep river, only its head and trunk visible above the water surface, photorealistic, soft natural lighting, high resolution, clear composition for children"
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/deep_shallow/shallow.png",
-          "label": "shallow"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/23_deep_shallow/shallow.png",
+          "label": "shallow",
+          "style": "photorealistic",
+          "prompt": "An elephant walking through a shallow part of a river, water barely covering its feet, full body visible, forest river setting, photorealistic, soft natural lighting, high resolution, clear composition for children"
         }
       ],
       "answers": [
@@ -372,12 +464,16 @@
       "question": "What is the opposite of wide?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/wide_narrow/wide.png",
-          "label": "wide"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/24_wide_narrow/wide.png",
+          "label": "wide",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a wide red ribbon unrolled flat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/wide_narrow/narrow.png",
-          "label": "narrow"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/24_wide_narrow/narrow.png",
+          "label": "narrow",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thin narrow string or twine, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -388,12 +484,16 @@
       "question": "What is the opposite of bright?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/bright_dim/bright.png",
-          "label": "bright"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/25_bright_dim/bright.png",
+          "label": "bright",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a very bright LED flashlight beam shining, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/bright_dim/dim.png",
-          "label": "dim"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/25_bright_dim/dim.png",
+          "label": "dim",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small dim candle with weak flame, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -404,12 +504,16 @@
       "question": "What is the opposite of brave?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/brave_scared/brave.png",
-          "label": "brave"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/26_brave_scared/brave.png",
+          "label": "brave",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child standing tall with confident posture and determined expression, chin up. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/brave_scared/scared.png",
-          "label": "scared"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/26_brave_scared/scared.png",
+          "label": "scared",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking frightened with wide eyes, hunched shoulders, hands near face. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft cool muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -420,12 +524,16 @@
       "question": "What is the opposite of easy?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/easy_hard/easy.png",
-          "label": "easy"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/27_easy_hard/easy.png",
+          "label": "easy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a simple 4-piece jigsaw puzzle for toddlers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/easy_hard/hard.png",
-          "label": "hard"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/27_easy_hard/hard.png",
+          "label": "hard",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a complex Rubik's cube scrambled, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -436,12 +544,16 @@
       "question": "What is the opposite of early?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/early_late/early.png",
-          "label": "early"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/28_early_late/early.png",
+          "label": "early",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child waking up in bed with sunrise light coming through window, clock showing 6:00 AM. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm morning colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/early_late/late.png",
-          "label": "late"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/28_early_late/late.png",
+          "label": "late",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child rushing with messy hair, clock showing late time in background. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -452,12 +564,16 @@
       "question": "What is the opposite of warm?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/warm_cool/warm.png",
-          "label": "warm"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/30_warm_cool/warm.png",
+          "label": "warm",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cozy knitted wool sweater in orange/red tones, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/warm_cool/cool.png",
-          "label": "cool"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/30_warm_cool/cool.png",
+          "label": "cool",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a refreshing ice pop popsicle in blue color, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -468,12 +584,16 @@
       "question": "What is the opposite of asleep?",
       "images": [
         {
-          "image": "/images/cards/1_adjectives_opposites/asleep_awake/asleep.png",
-          "label": "asleep"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/29_asleep_awake/asleep.png",
+          "label": "asleep",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child peacefully sleeping in bed with eyes closed, relaxed expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft cool nighttime muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/images/cards/1_adjectives_opposites/asleep_awake/awake.png",
-          "label": "awake"
+          "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/29_asleep_awake/awake.png",
+          "label": "awake",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child sitting up in bed with eyes wide open, alert and bright expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm morning muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -486,8 +606,10 @@
       "question": "She walked ___ to the door.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/1_slowly_girl.png",
-          "label": "slowly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/1_slowly.png",
+          "label": "slowly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a young girl walking very slowly toward a door, taking small deliberate steps, body leaning slightly forward. Calm timeless style like Sergio Martinez or Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -500,8 +622,10 @@
       "question": "The dog barked ___ at the mailman.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/2_loudly_dog.png",
-          "label": "loudly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/2_loudly.png",
+          "label": "loudly",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a dog barking loudly, mouth wide open, energetic alert posture. Pure white background, natural soft studio lighting, realistic fur textures, professional camera quality."
         }
       ],
       "choices": [
@@ -514,8 +638,10 @@
       "question": "He ___ finished his homework.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/3_quickly_kid.png",
-          "label": "quickly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/3_quickly.png",
+          "label": "quickly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child rapidly finishing homework at a desk, pencil moving fast, eager focused expression. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -528,8 +654,10 @@
       "question": "The baby slept ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/4_peacefully.png",
-          "label": "peacefully"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/4_peacefully.png",
+          "label": "peacefully",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a baby sleeping peacefully in a crib, serene expression, soft blanket. Calm timeless style like Sergio Martinez. Soft pastel muted background, soothing atmosphere."
         }
       ],
       "choices": [
@@ -542,8 +670,10 @@
       "question": "She ___ opened the present.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/5_excitedly_openbox.png",
-          "label": "excitedly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/5_excitedly.png",
+          "label": "excitedly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child excitedly opening a wrapped present, eyes wide with joy, hands eagerly pulling at wrapping paper. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -556,8 +686,10 @@
       "question": "The turtle moved ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/6_slowly_turtle.png",
-          "label": "slowly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/6_slowly.png",
+          "label": "slowly",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a turtle moving slowly, deliberate plodding motion, one leg forward. Pure white background, natural soft studio lighting, realistic shell textures, professional camera quality."
         }
       ],
       "choices": [
@@ -570,8 +702,10 @@
       "question": "He spoke ___ during the movie.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/7_quietly.png",
-          "label": "quietly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/7_quietly.png",
+          "label": "quietly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child whispering quietly with finger near lips in a \"shh\" gesture. Calm timeless style like Sergio Martinez. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -584,8 +718,10 @@
       "question": "The bird sang ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/8_beautifully.png",
-          "label": "beautifully"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/8_beautifully.png",
+          "label": "beautifully",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a songbird singing with beak open, perched gracefully on a branch. Pure white background, natural soft studio lighting, realistic feather textures, professional camera quality."
         }
       ],
       "choices": [
@@ -598,8 +734,10 @@
       "question": "She ___ ate her vegetables.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/9_happily_eating.png",
-          "label": "happily"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/9_happily.png",
+          "label": "happily",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child happily eating vegetables with a big smile, enjoying the food with fork in hand. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -612,8 +750,10 @@
       "question": "The cat jumped ___ onto the bed.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/10_gracefully.png",
-          "label": "gracefully"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/10_gracefully.png",
+          "label": "gracefully",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a cat mid-jump landing gracefully, elegant arched body, paws extended. Pure white background, natural soft studio lighting, realistic fur textures, professional camera quality."
         }
       ],
       "choices": [
@@ -626,8 +766,10 @@
       "question": "He ___ cleaned his room.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/11_carefully.png",
-          "label": "carefully"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/11_carefully.png",
+          "label": "carefully",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child carefully cleaning their room, concentrating, placing items precisely. Calm timeless style like Sergio Martinez. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -640,8 +782,10 @@
       "question": "The rain fell ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/12_heavily.png",
-          "label": "heavily"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/12_heavily.png",
+          "label": "heavily",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of heavy rain falling intensely, thick visible raindrops, dramatic downpour. Pure white or soft grey background, natural lighting, realistic water textures, professional camera quality."
         }
       ],
       "choices": [
@@ -654,8 +798,10 @@
       "question": "She smiled ___ at her friend.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/13_warmly.png",
-          "label": "warmly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/13_warmly.png",
+          "label": "warmly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child smiling warmly at a friend, genuine kind expression, soft welcoming eyes. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -668,8 +814,10 @@
       "question": "The boy ran ___ to the park.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/14_eagerly.png",
-          "label": "eagerly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/14_eagerly.png",
+          "label": "eagerly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a boy running eagerly toward a park, excited expression, arms pumping, leaning forward with enthusiasm. Calm timeless style like Sergio Martinez. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -682,8 +830,10 @@
       "question": "He ___ shared his snack.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/15_generously.png",
-          "label": "generously"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/15_generously.png",
+          "label": "generously",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child generously sharing their snack with another child, offering food with open hand and kind smile. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -696,8 +846,10 @@
       "question": "The wind blew ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/16_strongly.png",
-          "label": "strongly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/16_strongly.png",
+          "label": "strongly",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph showing strong wind effects - leaves and tree branches bending dramatically. Pure white or soft background, natural lighting, realistic textures, professional camera quality."
         }
       ],
       "choices": [
@@ -710,8 +862,10 @@
       "question": "She answered the question ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/17_correctly.png",
-          "label": "correctly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/17_correctly.png",
+          "label": "correctly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child confidently answering a question with hand raised, satisfied proud expression. Calm timeless style like Sergio Martinez. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -724,8 +878,10 @@
       "question": "The puppy played ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/18_playfull.png",
-          "label": "playfully"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/18_playfully.png",
+          "label": "playfully",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a puppy playing playfully in a bouncy play-bow position, joyful expression. Pure white background, natural soft studio lighting, realistic fur textures, professional camera quality."
         }
       ],
       "choices": [
@@ -738,8 +894,10 @@
       "question": "He waited ___ for his turn.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/19_patiently.png",
-          "label": "patiently"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/19_patiently.png",
+          "label": "patiently",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child waiting patiently for their turn, sitting calmly with hands folded, composed expression. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -752,8 +910,10 @@
       "question": "She drew the picture ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/20_neatly.png",
-          "label": "neatly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/20_neatly.png",
+          "label": "neatly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child drawing a picture very neatly, careful precise strokes, focused concentration. Calm timeless style like Sergio Martinez. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -766,8 +926,10 @@
       "question": "The frog jumped ___ into the pond.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/21_quickly_frog.png",
-          "label": "quickly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/21_quickly.png",
+          "label": "quickly",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a frog jumping quickly, mid-leap with legs fully extended, dynamic motion. Pure white background, natural soft studio lighting, realistic skin textures, professional camera quality."
         }
       ],
       "choices": [
@@ -780,8 +942,10 @@
       "question": "She read the book ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/24_quietly.png",
-          "label": "quietly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/22_quietly.png",
+          "label": "quietly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child reading a book quietly, absorbed in the story, peaceful silent atmosphere. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -794,8 +958,10 @@
       "question": "He hugged his mom ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/23_tightly.png",
-          "label": "tightly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/23_tightly.png",
+          "label": "tightly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child hugging their mom tightly, arms wrapped around firmly, loving secure embrace. Calm timeless style like Sergio Martinez. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -808,8 +974,10 @@
       "question": "The snail crawled ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/24_slowly.png",
-          "label": "slowly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/24_slowly.png",
+          "label": "slowly",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a snail crawling slowly, leaving a slight trail, deliberate unhurried movement. Pure white background, natural soft studio lighting, realistic shell and body textures, professional camera quality."
         }
       ],
       "choices": [
@@ -822,8 +990,10 @@
       "question": "She listened ___ to the story.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/25_carefully.png",
-          "label": "carefully"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/25_carefully.png",
+          "label": "carefully",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child listening carefully to a story, leaning in attentively, hand cupped near ear, focused expression. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -836,8 +1006,10 @@
       "question": "The leaves fell ___ from the tree.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/26_roughly.png",
-          "label": "gently"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/26_gently.png",
+          "label": "gently",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of autumn leaves falling gently from a tree, floating softly in the air, delicate drifting motion. Pure white or soft cream background, natural lighting, realistic leaf textures, professional camera quality."
         }
       ],
       "choices": [
@@ -850,8 +1022,10 @@
       "question": "He closed the door ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/27_softly.png",
-          "label": "softly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/27_softly.png",
+          "label": "softly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child closing a door softly, hand gently on the handle, quiet careful motion. Calm timeless style like Sergio Martinez. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -864,8 +1038,10 @@
       "question": "The bunny hopped ___ across the yard.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/28_hapilly_bunny.png",
-          "label": "happily"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/28_happily.png",
+          "label": "happily",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of a bunny hopping happily, joyful energetic movement, ears up alert. Pure white background, natural soft studio lighting, realistic fur textures, professional camera quality."
         }
       ],
       "choices": [
@@ -878,8 +1054,10 @@
       "question": "She waved ___ to her grandma.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/29_excitedly_wave.png",
-          "label": "excitedly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/29_excitedly.png",
+          "label": "excitedly",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration of a child waving excitedly to grandma, big enthusiastic wave with arm raised high, beaming expression. Calm timeless style like Liz Bonham. Soft muted background colors, non-distracting."
         }
       ],
       "choices": [
@@ -892,8 +1070,10 @@
       "question": "The clock ticked ___.",
       "images": [
         {
-          "image": "/images/cards/2_adverbs/30_loudly_watch.png",
-          "label": "loudly"
+          "image": "/shared/images/adjectives-adverbs/2-Adverbs/30_loudly.png",
+          "label": "loudly",
+          "style": "photorealistic",
+          "prompt": "High-resolution photorealistic photograph of an analog clock or alarm clock, clear visible face and hands, prominent design. Pure white background, natural soft studio lighting, realistic metal/plastic textures, professional camera quality."
         }
       ],
       "choices": [
@@ -908,12 +1088,16 @@
       "question": "What is the opposite of patient?",
       "images": [
         {
-          "image": "",
-          "label": "patient"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/1_patient_impatient/patient.png",
+          "label": "patient",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child sitting calmly and peacefully waiting, relaxed posture, serene expression, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         },
         {
-          "image": "",
-          "label": "impatient"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/1_patient_impatient/impatient.png",
+          "label": "impatient",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child fidgeting restlessly while waiting, tapping foot, looking around anxiously, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         }
       ],
       "answers": [
@@ -924,12 +1108,16 @@
       "question": "What is the opposite of happy?",
       "images": [
         {
-          "image": "",
-          "label": "happy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/2_happy_sad/happy.png",
+          "label": "happy",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with a big genuine smile, eyes bright with joy, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         },
         {
-          "image": "",
-          "label": "sad"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/2_happy_sad/sad.png",
+          "label": "sad",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with a sad expression, downturned mouth, looking down, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         }
       ],
       "answers": [
@@ -940,12 +1128,16 @@
       "question": "What is the opposite of brave?",
       "images": [
         {
-          "image": "",
-          "label": "brave"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/3_brave_scared/brave.png",
+          "label": "brave",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child standing tall with confident posture and determined expression, chin up, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         },
         {
-          "image": "",
-          "label": "scared"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/3_brave_scared/scared.png",
+          "label": "scared",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child looking nervous and uncertain, shy expression, shoulders slightly hunched, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         }
       ],
       "answers": [
@@ -956,12 +1148,16 @@
       "question": "What is the opposite of awake?",
       "images": [
         {
-          "image": "",
-          "label": "awake"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/4_awake_asleep/awake.png",
+          "label": "awake",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an alert cat with wide open eyes, ears perked up, attentive posture, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "asleep"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/4_awake_asleep/asleep.png",
+          "label": "asleep",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a sleeping cat curled up peacefully with eyes closed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -972,12 +1168,16 @@
       "question": "What is the opposite of generous?",
       "images": [
         {
-          "image": "",
-          "label": "generous"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/5_generous_selfish/generous.png",
+          "label": "generous",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, two young children happily sharing toys together, warm smiles, kind expressions, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         },
         {
-          "image": "",
-          "label": "selfish"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/5_generous_selfish/selfish.png",
+          "label": "selfish",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child hugging a pile of toys tightly to their chest, unwilling to share, possessive expression, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         }
       ],
       "answers": [
@@ -988,12 +1188,16 @@
       "question": "What is the opposite of calm?",
       "images": [
         {
-          "image": "",
-          "label": "calm"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/6_calm_angry/calm.png",
+          "label": "calm",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with a peaceful serene expression, relaxed posture, gentle smile, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         },
         {
-          "image": "",
-          "label": "angry"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/6_calm_angry/angry.png",
+          "label": "angry",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with a frustrated expression, furrowed brows, arms crossed, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         }
       ],
       "answers": [
@@ -1004,12 +1208,16 @@
       "question": "What is the opposite of straight?",
       "images": [
         {
-          "image": "",
-          "label": "straight"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/7_straight_curvy/straight.png",
+          "label": "straight",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a perfectly straight ruler, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "curvy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/7_straight_curvy/curvy.png",
+          "label": "curvy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a curvy wavy ribbon, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1020,12 +1228,16 @@
       "question": "What is the opposite of round?",
       "images": [
         {
-          "image": "",
-          "label": "round"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/8_round_square/round.png",
+          "label": "round",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a round ball, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "square"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/8_round_square/square.png",
+          "label": "square",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a square wooden block, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1036,12 +1248,16 @@
       "question": "What is the opposite of flat?",
       "images": [
         {
-          "image": "",
-          "label": "flat"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/9_flat_bumpy/flat.png",
+          "label": "flat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a flat smooth piece of paper, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "bumpy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/9_flat_bumpy/bumpy.png",
+          "label": "bumpy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of bubble wrap with bumpy texture, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1052,12 +1268,16 @@
       "question": "What is the opposite of smooth?",
       "images": [
         {
-          "image": "",
-          "label": "smooth"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/10_smooth_rough/smooth.png",
+          "label": "smooth",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a smooth polished glass marble, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "rough"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/10_smooth_rough/rough.png",
+          "label": "rough",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a piece of rough sandpaper showing its gritty texture, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1068,12 +1288,16 @@
       "question": "What is the opposite of sharp?",
       "images": [
         {
-          "image": "",
-          "label": "sharp"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/11_sharp_dull/sharp.png",
+          "label": "sharp",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a brand new sharp pencil with a perfect point, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "dull"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/11_sharp_dull/dull.png",
+          "label": "dull",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a worn pencil with a flat dull tip, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1084,12 +1308,16 @@
       "question": "What is the opposite of thin?",
       "images": [
         {
-          "image": "",
-          "label": "thin"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/12_thin_thick/thin.png",
+          "label": "thin",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thin magazine or pamphlet with few pages, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "thick"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/12_thin_thick/thick.png",
+          "label": "thick",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thick hardcover book with many pages, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1100,12 +1328,16 @@
       "question": "What is the opposite of clean?",
       "images": [
         {
-          "image": "",
-          "label": "clean"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/13_clean_messy/clean.png",
+          "label": "clean",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a clean organized desk with neatly stacked papers and pencils in a cup, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "messy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/13_clean_messy/messy.png",
+          "label": "messy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a messy pile of scattered papers, crayons, and toys all jumbled together, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1116,12 +1348,16 @@
       "question": "What is the opposite of neat?",
       "images": [
         {
-          "image": "",
-          "label": "neat"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/14_neat_messy/neat.png",
+          "label": "neat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a neatly folded stack of colorful clothes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "messy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/14_neat_messy/messy.png",
+          "label": "messy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a messy pile of wrinkled unfolded clothes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1132,12 +1368,16 @@
       "question": "What is the opposite of tidy?",
       "images": [
         {
-          "image": "",
-          "label": "tidy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/15_tidy_untidy/tidy.png",
+          "label": "tidy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a tidy toy box with toys neatly organized inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "untidy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/15_tidy_untidy/untidy.png",
+          "label": "untidy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of toys scattered everywhere in a messy pile, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1148,12 +1388,16 @@
       "question": "What is the opposite of shiny?",
       "images": [
         {
-          "image": "",
-          "label": "shiny"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/16_shiny_dusty/shiny.png",
+          "label": "shiny",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a polished shiny red apple with light reflection, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "dusty"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/16_shiny_dusty/dusty.png",
+          "label": "dusty",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dusty old book covered in dust, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1164,12 +1408,16 @@
       "question": "What is the opposite of smooth?",
       "images": [
         {
-          "image": "",
-          "label": "smooth"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/17_smooth_wrinkled/smooth.png",
+          "label": "smooth",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a smooth flat sheet of paper, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "wrinkled"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/17_smooth_wrinkled/wrinkled.png",
+          "label": "wrinkled",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a crumpled wrinkled piece of paper, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1180,12 +1428,16 @@
       "question": "What is the opposite of clear?",
       "images": [
         {
-          "image": "",
-          "label": "clear"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/18_clear_murky/clear.png",
+          "label": "clear",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a glass of crystal clear water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "murky"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/18_clear_murky/murky.png",
+          "label": "murky",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a glass of murky muddy brown water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1196,12 +1448,16 @@
       "question": "What is the opposite of big?",
       "images": [
         {
-          "image": "",
-          "label": "big"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/19_big_small/big.png",
+          "label": "big",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a large red apple, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "small"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/19_big_small/small.png",
+          "label": "small",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a tiny red cherry, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1212,12 +1468,16 @@
       "question": "What is the opposite of tall?",
       "images": [
         {
-          "image": "",
-          "label": "tall"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/20_tall_short/tall.png",
+          "label": "tall",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a tall giraffe standing upright, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "short"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/20_tall_short/short.png",
+          "label": "short",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small mouse standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1228,12 +1488,16 @@
       "question": "What is the opposite of long?",
       "images": [
         {
-          "image": "",
-          "label": "long"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/21_long_short/long.png",
+          "label": "long",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a long yellow pencil, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "short"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/21_long_short/short.png",
+          "label": "short",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a short stubby pencil that has been sharpened down, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1244,12 +1508,16 @@
       "question": "What is the opposite of wide?",
       "images": [
         {
-          "image": "",
-          "label": "wide"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/22_wide_narrow/wide.png",
+          "label": "wide",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a wide red ribbon unrolled flat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "narrow"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/22_wide_narrow/narrow.png",
+          "label": "narrow",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a thin narrow string or twine, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1260,12 +1528,16 @@
       "question": "What is the opposite of heavy?",
       "images": [
         {
-          "image": "",
-          "label": "heavy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/23_heavy_light/heavy.png",
+          "label": "heavy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a large black iron dumbbell weight, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "light"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/23_heavy_light/light.png",
+          "label": "light",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a delicate butterfly with colorful wings, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1276,12 +1548,16 @@
       "question": "What is the opposite of deep?",
       "images": [
         {
-          "image": "",
-          "label": "deep"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/24_deep_shallow/deep.png",
+          "label": "deep",
+          "style": "photorealistic",
+          "prompt": "An elephant swimming in a deep river, only its head and trunk visible above the water surface, photorealistic, soft natural lighting, high resolution, clear composition for children"
         },
         {
-          "image": "",
-          "label": "shallow"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/24_deep_shallow/shallow.png",
+          "label": "shallow",
+          "style": "photorealistic",
+          "prompt": "An elephant walking through a shallow part of a river, water barely covering its feet, full body visible, forest river setting, photorealistic, soft natural lighting, high resolution, clear composition for children"
         }
       ],
       "answers": [
@@ -1292,12 +1568,16 @@
       "question": "What is the opposite of hot?",
       "images": [
         {
-          "image": "",
-          "label": "hot"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/25_hot_cold/hot.png",
+          "label": "hot",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a steaming red cup of hot cocoa with visible steam rising, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "cold"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/25_hot_cold/cold.png",
+          "label": "cold",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a glass of ice water with ice cubes and condensation droplets on the glass, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1308,12 +1588,16 @@
       "question": "What is the opposite of sunny?",
       "images": [
         {
-          "image": "",
-          "label": "sunny"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/26_sunny_rainy/sunny.png",
+          "label": "sunny",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of bright yellow sunglasses, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "rainy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/26_sunny_rainy/rainy.png",
+          "label": "rainy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a colorful rain umbrella with water droplets on it, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1321,31 +1605,39 @@
       ]
     },
     {
-      "question": "What is the opposite of dry?",
+      "question": "What is the opposite of wet?",
       "images": [
         {
-          "image": "",
-          "label": "dry"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/27_wet_dry/wet.png",
+          "label": "wet",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a wet towel dripping with water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "wet"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/27_wet_dry/dry.png",
+          "label": "dry",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dry fluffy towel neatly folded, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
-        "wet"
+        "dry"
       ]
     },
     {
       "question": "What is the opposite of warm?",
       "images": [
         {
-          "image": "",
-          "label": "warm"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/28_warm_cool/warm.png",
+          "label": "warm",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a cozy knitted wool sweater in orange/red tones, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "cool"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/28_warm_cool/cool.png",
+          "label": "cool",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a refreshing ice pop popsicle in blue color, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1356,28 +1648,36 @@
       "question": "What is the opposite of bright?",
       "images": [
         {
-          "image": "",
-          "label": "bright"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/29_bright_dim/bright.png",
+          "label": "bright",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a very bright LED flashlight beam shining, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "dark"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/29_bright_dim/dim.png",
+          "label": "dim",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a small dim candle with weak flame, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
-        "dark"
+        "dim"
       ]
     },
     {
       "question": "What is the opposite of calm?",
       "images": [
         {
-          "image": "",
-          "label": "calm"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/30_calm_windy/calm.png",
+          "label": "calm",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a still flag hanging straight down with no wind, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
-          "label": "windy"
+          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/30_calm_windy/windy.png",
+          "label": "windy",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a flag blowing strongly in the wind, stretched out horizontally, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
