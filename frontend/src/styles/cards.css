@@ -758,12 +758,30 @@ body {
     gap: var(--spacing-sm);
 }
 
+/* Image wrapper for loading state */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 .preview-image img {
     max-width: 220px;
     max-height: 180px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     border: 4px solid var(--color-border);
+    /* Start blurred, sharpen when loaded */
+    filter: blur(10px);
+    opacity: 0.6;
+    transform: scale(1.02);
+    transition: filter 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+/* Sharpen image when loaded */
+.image-wrapper.loaded img {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
 }
 
 .preview-image .image-label {
@@ -1069,6 +1087,10 @@ body {
     border: 4px solid var(--color-border);
 }
 
+.preview-image-selection-item .image-wrapper {
+    position: relative;
+}
+
 .preview-image-selection-item img {
     max-width: 220px;
     max-height: 180px;
@@ -1076,7 +1098,16 @@ body {
     border-radius: var(--radius-lg);
     background: white;
     border: 3px solid var(--color-highlight);
-    transition: var(--transition-normal);
+    filter: blur(10px);
+    opacity: 0.6;
+    transform: scale(1.02);
+    transition: filter 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.preview-image-selection-item .image-wrapper.loaded img {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
 }
 
 .image-selection-number {
@@ -1230,6 +1261,10 @@ body {
     border-color: var(--color-primary);
 }
 
+.sequence-image-btn .image-wrapper {
+    position: relative;
+}
+
 .sequence-image-btn img {
     max-width: 140px;
     max-height: 110px;
@@ -1237,6 +1272,16 @@ body {
     border-radius: 10px;
     background: white;
     border: 2px solid var(--color-highlight);
+    filter: blur(10px);
+    opacity: 0.6;
+    transform: scale(1.02);
+    transition: filter 0.4s ease-out, opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.sequence-image-btn .image-wrapper.loaded img {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
 }
 
 .seq-img-number {

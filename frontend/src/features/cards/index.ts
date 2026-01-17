@@ -269,7 +269,9 @@ const DEFAULT_IMAGE = '/images/default.png';
 function renderSingleImage(img: ImageItem): string {
     const imageSrc = img.image || DEFAULT_IMAGE;
     return `<div class="preview-image">
-        <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
+        <div class="image-wrapper">
+            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+        </div>
         ${img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
     </div>`;
 }
@@ -279,7 +281,9 @@ function renderImagesGrid(images: ImageItem[], showLabels = true): string {
     images.forEach((img, index) => {
         const imageSrc = img.image || DEFAULT_IMAGE;
         html += `<div class="preview-image" data-index="${index}">
-            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
+            <div class="image-wrapper">
+                <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+            </div>
             ${showLabels && img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
         </div>`;
     });
@@ -396,7 +400,9 @@ function renderImageSelection(card: CardData): string {
             const imageSrc = img.image || DEFAULT_IMAGE;
             html += `<div class="preview-image-selection-item" data-index="${index}">
                 <div class="image-selection-number">${index + 1}</div>
-                <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
+                <div class="image-wrapper">
+                    <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+                </div>
                 ${hasTextLabels ? `<div class="image-selection-label">${escapeHtml(img.label)}</div>` : ''}
             </div>`;
         });
@@ -426,7 +432,9 @@ function renderSequencing(card: CardData): string {
                     return `
                     <button class="sequence-image-btn" data-index="${idx}">
                         <span class="seq-img-number">${idx + 1}</span>
-                        <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
+                        <div class="image-wrapper">
+                            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+                        </div>
                         ${img.label ? `<span class="seq-img-label">${escapeHtml(img.label)}</span>` : ''}
                     </button>
                 `}).join('')}
