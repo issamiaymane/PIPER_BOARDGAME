@@ -270,7 +270,7 @@ function renderSingleImage(img: ImageItem): string {
     const imageSrc = img.image || DEFAULT_IMAGE;
     return `<div class="preview-image">
         <div class="image-wrapper">
-            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
         </div>
         ${img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
     </div>`;
@@ -282,7 +282,7 @@ function renderImagesGrid(images: ImageItem[], showLabels = true): string {
         const imageSrc = img.image || DEFAULT_IMAGE;
         html += `<div class="preview-image" data-index="${index}">
             <div class="image-wrapper">
-                <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+                <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
             </div>
             ${showLabels && img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
         </div>`;
@@ -401,7 +401,7 @@ function renderImageSelection(card: CardData): string {
             html += `<div class="preview-image-selection-item" data-index="${index}">
                 <div class="image-selection-number">${index + 1}</div>
                 <div class="image-wrapper">
-                    <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+                    <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
                 </div>
                 ${hasTextLabels ? `<div class="image-selection-label">${escapeHtml(img.label)}</div>` : ''}
             </div>`;
@@ -433,7 +433,7 @@ function renderSequencing(card: CardData): string {
                     <button class="sequence-image-btn" data-index="${idx}">
                         <span class="seq-img-number">${idx + 1}</span>
                         <div class="image-wrapper">
-                            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" loading="lazy" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
+                            <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onload="this.parentElement.classList.add('loaded')" onerror="this.src='${DEFAULT_IMAGE}'; this.parentElement.classList.add('loaded'); this.onerror=null;">
                         </div>
                         ${img.label ? `<span class="seq-img-label">${escapeHtml(img.label)}</span>` : ''}
                     </button>
