@@ -1084,20 +1084,20 @@
     }
   ],
   "Descriptive Words - Opposites": [
-    {
+   {
       "question": "What is the opposite of patient?",
       "images": [
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/1_patient_impatient/patient.png",
           "label": "patient",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child sitting calmly and peacefully waiting, relaxed posture, serene expression, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child sitting calmly and peacefully waiting, relaxed posture, serene expression, soft warm muted background filling entire frame, in the style of Sergio Martinez , calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/1_patient_impatient/impatient.png",
           "label": "impatient",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child fidgeting restlessly while waiting, tapping foot, looking around anxiously, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child fidgeting restlessly while waiting, tapping foot, looking around anxiously, soft cool muted background filling entire frame, in the style of Sergio Martinez , calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         }
       ],
       "answers": [
@@ -1124,26 +1124,26 @@
         "sad"
       ]
     },
-    {
-      "question": "What is the opposite of brave?",
-      "images": [
-        {
-          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/3_brave_scared/brave.png",
-          "label": "brave",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child standing tall with confident posture and determined expression, chin up, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
-        },
-        {
-          "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/3_brave_scared/scared.png",
-          "label": "scared",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child looking nervous and uncertain, shy expression, shoulders slightly hunched, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
-        }
-      ],
-      "answers": [
-        "scared"
-      ]
-    },
+     {
+    "question": "What is the opposite of brave?",
+    "images": [
+      {
+        "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/3_brave_scared/brave.png",
+        "label": "brave",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, focused on a brave firefighter in uniform climbing a ladder up to rescue a cat from a tree, confident determined expression, heroic posture reaching toward the cat, soft warm muted background with tree branches filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/3_brave_scared/scared.png",
+        "label": "scared",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, focused on a scared frightened cat clinging to a high tree branch, wide fearful eyes, fur standing up, trembling body language showing fear, firefighter visible in background but cat is the main focus, soft cool muted background with tree branches filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
+    ],
+    "answers": [
+      "scared"
+    ]
+  },
     {
       "question": "What is the opposite of awake?",
       "images": [
@@ -1151,13 +1151,13 @@
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/4_awake_asleep/awake.png",
           "label": "awake",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an alert cat with wide open eyes, ears perked up, attentive posture, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . A young child sitting up in bed with eyes wide open, alert and bright expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm morning muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/4_awake_asleep/asleep.png",
           "label": "asleep",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a sleeping cat curled up peacefully with eyes closed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . A young child peacefully sleeping in bed with eyes closed, relaxed expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft cool nighttime muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1171,13 +1171,13 @@
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/5_generous_selfish/generous.png",
           "label": "generous",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, two young children happily sharing toys together, warm smiles, kind expressions, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with proportionate head size generously giving away a red toy car to another child, extending arms forward offering the toy with open hands, kind warm smile, soft warm muted background filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, ensure head is proportionate to body, no text, no words, no labels, no border, no frame, no white edges. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/5_generous_selfish/selfish.png",
           "label": "selfish",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child hugging a pile of toys tightly to their chest, unwilling to share, possessive expression, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with proportionate head size selfishly grabbing and pulling a red toy car toward their own chest, hugging it close to their body with possessive grasping hands, determined greedy expression, the other child reaching out unsuccessfully in background, soft cool muted background filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, ensure head is proportionate to body, no text, no words, no labels, no border, no frame, no white edges. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         }
       ],
       "answers": [
@@ -1191,13 +1191,13 @@
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/6_calm_angry/calm.png",
           "label": "calm",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with a peaceful serene expression, relaxed posture, gentle smile, soft warm muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
+          "prompt": "Mid-century children's book iSllustration, full bleed edge to edge, a young child with a peaceful serene expression, relaxed posture, gentle smile, soft warm muted background filling entire frame, in the style of Sergio Martinez , calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/6_calm_angry/angry.png",
           "label": "angry",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration, full bleed edge to edge, a young child with a frustrated expression, furrowed brows, arms crossed, soft cool muted background filling entire frame, in the style of Sergio Martinez or Liz Bonham, calm timeless style, NOT modern cartoon, no text, no words, no labels, no border, no frame, no white edges"
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, the same young child with an angry frustrated expression, furrowed eyebrows, frowning mouth, tense posture with clenched fists at sides, soft cool muted background filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, ensure head is proportionate to body, no text, no words, no labels, no border, no frame, no white edges. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         }
       ],
       "answers": [
@@ -1297,7 +1297,7 @@
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/11_sharp_dull/dull.png",
           "label": "dull",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a worn pencil with a flat dull tip, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a heavily used worn pencil with a completely flat dull rounded tip showing no point at all, pencil shortened from extensive use, visible wear marks and smudges on the wood, eraser worn down, clearly cannot write properly, on a pure white background, with natural soft lighting, realistic wood and graphite textures showing heavy usage. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         }
       ],
       "answers": [
@@ -1671,13 +1671,13 @@
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/30_calm_windy/calm.png",
           "label": "calm",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a still flag hanging straight down with no wind, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a bright yellow sunflower standing tall and straight in a garden on a calm day, no wind, leaves and petals perfectly still, blue sky background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/30_calm_windy/windy.png",
           "label": "windy",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a flag blowing strongly in the wind, stretched out horizontally, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of the same bright yellow sunflower being blown by strong gusts of wind, leaning over dramatically, petals and leaves being swept sideways, visible motion blur on grass and plants around it, blue sky with wispy clouds, with natural lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [

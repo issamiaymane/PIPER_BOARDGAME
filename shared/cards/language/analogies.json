@@ -67,27 +67,27 @@
       "answerIndex": 0
     },
     {
-      "question": "Night is to dark as day is to ___.",
-      "images": [
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/4_night_day/night.png",
-          "label": "night",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a peaceful night sky scene with a crescent moon and twinkling stars over a sleeping village. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted dark blue colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/4_night_day/day.png",
-          "label": "day",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bright sunny daytime scene with a yellow sun in a blue sky over a cheerful landscape. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm bright colors. Clear and simple composition for speech therapy use with children."
-        }
-      ],
-      "choices": [
-        "light",
-        "dark"
-      ],
-      "answerIndex": 0
-    },
+    "question": "Night is to dark as day is to ___.",
+    "images": [
+      {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/4_night_day/night.png",
+        "label": "night",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a peaceful dark night sky scene with a bright white crescent moon and twinkling white stars scattered across the deep blue-purple sky, silhouette of a small sleeping village with houses below, soft cool muted dark blue and purple colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading and atmospheric depth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/4_night_day/day.png",
+        "label": "day",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a bright cheerful sunny daytime scene with a large bright yellow sun with rays shining in a clear light blue sky, green rolling hills and trees below with flowers, soft warm bright colors - yellows, light blues, greens - filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading and warm lighting. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
+    ],
+    "choices": [
+      "light",
+      "dark"
+    ],
+    "answerIndex": 0
+  },
     {
       "question": "Hand is to glove as foot is to ___.",
       "images": [
@@ -205,7 +205,7 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/10_baby_bird/baby.png",
           "label": "baby",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a cute baby lying in a cozy crib, peaceful expression, soft blanket. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted pastel colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a cute baby lying peacefully in a cozy white wooden crib, serene sleeping expression with closed eyes, gentle smile, wrapped in a soft pastel blanket with delicate patterns, small stuffed toy beside them, soft warm muted pastel colors - pale pinks, blues, creams - filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating cozy peaceful atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/10_baby_bird/bird.png",
@@ -221,27 +221,27 @@
       "answerIndex": 0
     },
     {
-      "question": "Rain is to wet as sun is to ___.",
-      "images": [
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/11_rain_sun/rain.png",
-          "label": "rain",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of raindrops falling from gray clouds, puddles forming below. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted blue and gray colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/11_rain_sun/sun.png",
-          "label": "sun",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bright warm sun with gentle rays shining in a blue sky. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm yellow and orange colors. Clear and simple composition for speech therapy use with children."
-        }
-      ],
-      "choices": [
-        "dry",
-        "wet"
-      ],
-      "answerIndex": 0
-    },
+    "question": "Rain is to wet as sun is to ___.",
+    "images": [
+      {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/11_rain_sun/rain.png",
+        "label": "rain",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of heavy raindrops falling from dark gray storm clouds, visible rain streaks coming down, puddles forming on the ground below with ripples, wet glistening surfaces, soft cool muted blue and gray colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading showing wetness and moisture. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/11_rain_sun/sun.png",
+        "label": "sun",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a large bright warm sun with golden rays radiating outward shining in a clear light blue sky, warm glowing light spreading across the scene, dry sunny landscape below with warm illumination, soft warm yellow, orange and golden colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading showing brightness and warmth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
+    ],
+    "choices": [
+      "dry",
+      "wet"
+    ],
+    "answerIndex": 0
+  },
     {
       "question": "Nose is to smell as tongue is to ___.",
       "images": [
@@ -293,7 +293,7 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/14_bed_chair/bed.png",
           "label": "bed",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cozy single bed with pillow and blanket, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograbbph of a cozy single bed with pillow and blanket, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/14_bed_chair/chair.png",
@@ -422,17 +422,17 @@
       "question": "Car is to road as boat is to ___.",
       "images": [
         {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/car.png",
-          "label": "car",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful toy car or small sedan, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/boat.png",
-          "label": "boat",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a small sailboat or rowboat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/car.png",
+        "label": "car",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of a real modern sedan car, red or blue color, full side view showing entire vehicle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic metal paint, glass windows, rubber tires and chrome details textures. Professional automotive studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/boat.png",
+        "label": "boat",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of a real fishing boat with cabin and equipment, white and blue hull colors, full side view showing entire vessel, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic painted hull, ropes, nets, fishing rods and maritime equipment details. Professional maritime photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "water",
@@ -444,16 +444,16 @@
       "question": "Happy is to smile as sad is to ___.",
       "images": [
         {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/21_happy_sad/happy.png",
+          "image": "/shared/images/adjectives-adverbs/1-Analogies_Elementary/21_happy_sad/happy (1).png",
           "label": "happy",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a young child with a big genuine smile, eyes bright with joy. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a big genuine smile, eyes bright with joy. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/21_happy_sad/sad.png",
+          "image": "/shared/images/adjectives-adverbs/1-Analogies_Elementary/21_happy_sad/sad (1).png",
           "label": "sad",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a young child with a sad expression, downturned mouth, looking down. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a sad expression, downturned mouth, looking down. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft cool muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -531,17 +531,17 @@
     {
       "question": "Brother is to boy as sister is to ___.",
       "images": [
-        {
+               {
           "image": "/shared/images/analogies/1-Analogies_Elementary/25_brother_sister/brother.png",
           "label": "brother",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a young boy standing with a friendly smile, casual clothes. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a young boy with short brown hair standing with a warm friendly smile, wearing casual clothes like a blue t-shirt and jeans, confident relaxed posture, hands at sides or in pockets, soft warm muted peachy background colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions and natural features, NOT modern cartoon, gentle shading on face and clothing for depth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/25_brother_sister/sister.png",
           "label": "sister",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a young girl standing with a friendly smile, casual clothes. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a young girl with longer brown hair standing with a warm friendly smile, wearing casual clothes like a pink or purple dress or shirt with pants, confident relaxed posture, hands at sides or clasped gently, soft warm muted peachy background colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions and natural features, NOT modern cartoon, gentle shading on face and clothing for depth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         }
       ],
       "choices": [
@@ -553,18 +553,18 @@
     {
       "question": "Winter is to cold as summer is to ___.",
       "images": [
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/26_winter_summer/winter.png",
-          "label": "winter",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a snowy winter scene with bare trees, snowflakes falling, and a child bundled up in warm clothes. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted blue and white colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/26_winter_summer/summer.png",
-          "label": "summer",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bright summer scene with a shining sun, green trees, and a child playing outside. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm yellow and green colors. Clear and simple composition for speech therapy use with children."
-        }
+          {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/26_winter_summer/winter.png",
+        "label": "winter",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a peaceful snowy winter scene with bare leafless trees covered in white snow, gentle snowflakes falling from gray-white sky, a young child bundled up in warm winter coat, hat, scarf and mittens standing or playing in the snow, soft cool muted blue, white and gray colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating cold winter atmosphere with depth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/26_winter_summer/summer.png",
+        "label": "summer",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a bright cheerful summer scene with a large shining yellow sun with rays in clear blue sky, lush green trees with full leaves, colorful flowers blooming, a young child playing outside in light summer clothes like t-shirt and shorts, soft warm yellow, green and bright colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating warm sunny atmosphere with depth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "hot",
@@ -598,17 +598,17 @@
       "question": "Moon is to night as sun is to ___.",
       "images": [
         {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/moon.png",
-          "label": "moon",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a glowing crescent moon in a dark night sky with stars. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted dark blue colors with gentle yellow moon. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/sun.png",
-          "label": "sun",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bright warm sun with gentle rays in a blue sky. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm yellow and orange colors. Clear and simple composition for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/moon.png",
+        "label": "moon",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of a glowing pale yellow crescent moon in a deep dark night sky, white twinkling stars scattered across the darkness, realistic moon surface texture with clearly visible craters and lunar details, soft ethereal glow around the moon's edge, deep blue-black night sky filling entire frame, natural astronomical lighting, realistic celestial textures and details. Professional astrophotography quality with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/sun.png",
+        "label": "sun",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of a large bright warm sun with realistic golden-yellow surface and dramatic rays radiating outward in a clear light blue daytime sky, realistic sun texture with subtle corona and surface details, warm glowing light emanating from the sun, bright yellow and orange tones with clear blue sky, natural astronomical lighting, realistic celestial textures. Professional astrophotography quality with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "night",
@@ -691,13 +691,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/2_brush_calculator/brush.png",
           "label": "brush",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an artist's paintbrush with colorful paint on the bristles, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a clean artist's paintbrush with no paint on the bristles, natural wooden handle, dry clean bristles ready to use, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/2_brush_calculator/calculator.png",
           "label": "calculator",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a scientific calculator with number buttons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a simple basic calculator displaying 3 + 5 on the screen, colorful number buttons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -779,7 +779,7 @@
           "image": "/shared/images/analogies/2-Analogies_High/6_chronology_geography/chronology.png",
           "label": "chronology",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a timeline with historical events marked along it. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration of an American history timeline showing key events like the Declaration of Independence, Liberty Bell, American flag, and founding fathers. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors with red, white and blue accents. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/6_chronology_geography/geography.png",
@@ -823,7 +823,7 @@
           "image": "/shared/images/analogies/2-Analogies_High/8_submarine_satellite/submarine.png",
           "label": "submarine",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a submarine vessel, on a pure white background, with natural soft lighting, realistic metal textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a submarine partially submerged in deep blue ocean water, conning tower and periscope visible above the surface, hull visible below the waterline, realistic metal textures and water reflections, with natural lighting. Professional photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/8_submarine_satellite/satellite.png",
@@ -976,8 +976,8 @@
         {
           "image": "/shared/images/analogies/2-Analogies_High/15_constitution_bylaws/constitution.png",
           "label": "constitution",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of an old official document with a seal, representing a constitution. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of the United States Constitution document, aged parchment paper with elegant calligraphy showing 'We the People' header, official seal visible, historical American founding document, on a pure white background, with natural soft lighting, realistic aged paper textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/15_constitution_bylaws/bylaws.png",
