@@ -1034,9 +1034,9 @@
         }
       ],
       "choices": [
-        "break",
-        "clamp",
+        "connect",
         "fasten",
+        "link",
         "detach"
       ],
       "answerIndex": 3
@@ -1052,10 +1052,10 @@
         }
       ],
       "choices": [
-        "design",
+        "build",
         "destroy",
-        "fix",
-        "create"
+        "create",
+        "make"
       ],
       "answerIndex": 1
     },
@@ -1071,9 +1071,9 @@
       ],
       "choices": [
         "vanish",
-        "arrive",
+        "show",
         "emerge",
-        "show"
+        "surface"
       ],
       "answerIndex": 0
     },
@@ -1431,9 +1431,9 @@
       ],
       "choices": [
         "borrow",
-        "share",
-        "give",
-        "loan"
+        "loan",
+        "provide",
+        "supply"
       ],
       "answerIndex": 0
     },
@@ -1503,9 +1503,9 @@
       ],
       "choices": [
         "unlock",
-        "reveal",
+        "uncover",
         "close",
-        "unwrap"
+        "expose"
       ],
       "answerIndex": 2
     },

@@ -665,18 +665,18 @@
     {
       "question": "architect : blueprint :: composer : ______",
       "images": [
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/1_architect_composer/architect.png",
-          "label": "architect",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of an architect working at a drafting table with blueprints and rulers. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/1_architect_composer/composer.png",
-          "label": "composer",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a composer writing music at a piano with sheet music. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        }
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/1_architect_composer/architect.png",
+        "label": "architect",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of the same adult professional with short brown hair wearing business casual attire, working as an architect at a wooden drafting table with architectural blueprints spread out, holding a ruler and pencil, focused concentrated expression, T-square and drawing tools visible on desk, soft warm muted peachy background colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions, NOT modern cartoon, gentle shading creating professional atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/1_architect_composer/composer.png",
+        "label": "composer",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of the same adult professional with short brown hair wearing business casual attire, now working as a composer sitting at a grand piano with sheet music on the music stand, holding a pencil to write musical notes, thoughtful creative expression, piano keys and music notation visible, soft warm muted peachy background colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions, NOT modern cartoon, gentle shading creating artistic atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "score",
@@ -710,17 +710,17 @@
       "question": "drought : water :: famine : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/3_drought_famine/drought.png",
-          "label": "drought",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a dry cracked earth landscape with a wilting plant, representing drought. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted brown and tan colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/3_drought_famine/famine.png",
-          "label": "famine",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of empty plates and bowls on a table, representing lack of food. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/2-Analogies_High/3_drought_famine/drought.png",
+        "label": "drought",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a dry cracked earth landscape with deep fissures in parched brown soil, a wilting drooping plant with dried leaves struggling to survive, barren desolate ground stretching across the scene, soft warm muted brown, tan and dusty orange colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating harsh dry atmosphere representing drought conditions. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/3_drought_famine/famine.png",
+        "label": "famine",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a simple wooden table with completely empty white plates and bowls, no food present anywhere, sparse bare table setting, representing lack of food and scarcity, soft cool muted gray and neutral colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating somber atmosphere representing famine conditions. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "rain",
@@ -735,13 +735,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/4_conductor_director/conductor.png",
           "label": "conductor",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of an orchestra conductor with a baton, leading musicians. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration of an orchestra conductor with a baton, leading musicians. Calm, timeless style like Sergio Martinez . Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/4_conductor_director/director.png",
           "label": "director",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a film director sitting in a director's chair with a megaphone. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a film director sitting in a classic director's chair, holding a megaphone in one hand and pointing forward with the other hand giving directions, wearing a beret hat and casual professional clothing, movie camera on tripod visible beside them, clapperboard prop nearby, confident directing posture and focused expression, soft warm muted peachy background colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions, NOT modern cartoon, gentle shading creating creative film set atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         }
       ],
       "choices": [
@@ -801,13 +801,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/7_diagnosis_verdict/diagnosis.png",
           "label": "diagnosis",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a doctor examining a patient with a stethoscope. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration of a doctor examining a patient with a stethoscope. Calm, timeless style like Sergio Martinez . Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/7_diagnosis_verdict/verdict.png",
           "label": "verdict",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a judge with a gavel in a courtroom setting. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration of a judge with a gavel in a courtroom setting. Calm, timeless style like Sergio Martinez . Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -845,14 +845,14 @@
           "image": "/shared/images/analogies/2-Analogies_High/9_hypothesis_question/hypothesis.png",
           "label": "hypothesis",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a scientist with a thought bubble containing a question mark and light bulb. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration of a scientist with a thought bubble containing a question mark and light bulb. Calm, timeless style like Sergio Martinez . Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/shared/images/analogies/2-Analogies_High/9_hypothesis_question/question.png",
-          "label": "question",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a large colorful question mark symbol, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/2-Analogies_High/9_hypothesis_question/question.png",
+        "label": "question",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a large colorful question mark symbol in bright blue or purple color, bold and clearly visible, soft warm muted background colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading around the question mark giving it dimension and depth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "answer",
@@ -864,17 +864,17 @@
       "question": "legislature : laws :: court : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/10_legislature_court/legislature.png",
-          "label": "legislature",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a government building with columns, representing a legislature. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/10_legislature_court/court.png",
-          "label": "court",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a courthouse with scales of justice symbol. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/2-Analogies_High/10_legislature_court/legislature.png",
+        "label": "legislature",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a grand government legislature building with white classical columns and steps leading to entrance, large dome on top, an American flag on a tall flagpole standing proudly beside the building waving in the breeze, soft warm muted peachy and cream colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating dignified governmental atmosphere. Clear and simple composition for speech therapy use with children. No text on buildings, no words, no labels in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/10_legislature_court/court.png",
+        "label": "court",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a stately courthouse building with white classical columns and triangular pediment, prominent golden scales of justice symbol displayed on or near the building entrance, steps leading to front doors, soft warm muted peachy and cream colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating dignified judicial atmosphere. Clear and simple composition for speech therapy use with children. No text on buildings, no words, no labels in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "justice",
@@ -911,7 +911,7 @@
           "image": "/shared/images/analogies/2-Analogies_High/12_teacher_nurse/teacher.png",
           "label": "teacher",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a friendly teacher standing at a blackboard with chalk. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a friendly teacher with short brown hair wearing professional attire (blouse or button-up shirt), standing at a green or black chalkboard holding chalk in one hand and pointing to the board with the other, warm welcoming smile, 3-4 young children sitting at desks in foreground raising hands eagerly or looking attentively at the teacher, books and apple on teacher's desk nearby, soft warm muted peachy background colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions, NOT modern cartoon, gentle shading creating warm classroom atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/12_teacher_nurse/nurse.png",
@@ -930,17 +930,17 @@
       "question": "hibernation : winter :: migration : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/13_hibernation_migration/hibernation.png",
-          "label": "hibernation",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bear sleeping peacefully in a cozy den during winter. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/13_hibernation_migration/migration.png",
-          "label": "migration",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of birds flying in a V-formation across the sky. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/2-Analogies_High/13_hibernation_migration/hibernation.png",
+        "label": "hibernation",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a brown bear sleeping peacefully curled up in a cozy dark den cave during winter, eyes closed, serene restful expression, surrounded by soft earth and rocks, snow visible at cave entrance, soft cool muted blue, gray and brown colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating quiet peaceful winter hibernation atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/13_hibernation_migration/migration.png",
+        "label": "migration",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a flock of birds (geese or ducks) flying in a clear V-formation pattern across an open sky, wings spread mid-flight showing movement and journey, autumn or warm sky colors suggesting seasonal travel, soft warm muted orange, yellow and blue colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating sense of movement and migration journey. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "birds",
@@ -995,18 +995,18 @@
     {
       "question": "prologue : beginning :: epilogue : ______",
       "images": [
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/16_prologue_epilogue/prologue.png",
-          "label": "prologue",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of an open book showing the first page with 'Prologue' written. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/16_prologue_epilogue/epilogue.png",
-          "label": "epilogue",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of an open book showing the last page with 'The End' written. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        }
+      {
+      "image": "/shared/images/analogies/2-Analogies_High/16_prologue_epilogue/prologue.png",
+      "label": "prologue",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of an open storybook showing the very first page with 'Chapter 1' or 'Once upon a time' text visible on the right page, left page blank or decorative, a wise owl character sitting beside the book looking at the beginning of the story with curious interested expression, pages appear fresh and new at the start of the book, morning sunrise colors suggesting a beginning, soft warm muted peachy and golden colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating sense of story beginning and anticipation. Clear and simple composition for speech therapy use with children. Text allowed on book pages only. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    },
+    {
+      "image": "/shared/images/analogies/2-Analogies_High/16_prologue_epilogue/epilogue.png",
+      "label": "epilogue",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of an open storybook showing the very last page with 'The End' text clearly visible on the right page, left page showing end of final chapter text, the same wise owl character sitting beside the book looking at the end of the story with satisfied peaceful expression, pages appear worn and read at the end of the book, evening sunset colors suggesting an ending, soft warm muted orange and purple twilight colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating sense of story conclusion and closure. Clear and simple composition for speech therapy use with children. Text allowed on book pages only. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    }
       ],
       "choices": [
         "ending",
@@ -1018,17 +1018,17 @@
       "question": "inflation : prices :: erosion : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/inflation.png",
-          "label": "inflation",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of rising price tags and coins, representing inflation. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/erosion.png",
-          "label": "erosion",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a cliff or hillside being worn away by water and wind, showing erosion. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft earth-tone muted colors. Clear and simple composition for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/inflation.png",
+        "label": "inflation",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of four stacks of gold or silver coins arranged in increasing height from left to right - short stack, taller stack, even taller stack, and tallest stack - showing progressive growth, with a bold red upward-pointing arrow positioned above the stacks indicating rising trend, on a pure white background, with natural soft studio lighting creating subtle shadows and realistic metallic coin textures with shine and detail. Professional studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/erosion.png",
+        "label": "erosion",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of a natural cliff or hillside showing clear signs of erosion - weathered rock face, exposed layers of earth and stone, visible water channels carved into the surface, crumbling soil being worn away, realistic geological textures showing the wearing away process, on a clean background, with natural outdoor lighting, realistic earth-tone colors - browns, tans, grays. Professional nature photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "rocks",
@@ -1040,17 +1040,17 @@
       "question": "fiction : imaginary :: nonfiction : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/fiction.png",
-          "label": "fiction",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a storybook with a dragon and castle on the cover, representing fiction. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/nonfiction.png",
-          "label": "nonfiction",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an encyclopedia or textbook, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/fiction.png",
+        "label": "fiction",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of a colorful storybook with imaginative illustration on the cover showing a fantasy dragon and magical castle scene, no text visible on cover or spine, vibrant colors suggesting fictional fantasy story, book displayed at slight angle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic book cover textures and glossy finish. Professional studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text on book, no pictures of people. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/nonfiction.png",
+        "label": "nonfiction",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of a thick encyclopedia or educational textbook with plain solid-colored cover (blue, green, or burgundy), no text visible on cover or spine, simple professional non-fiction book appearance, book displayed at slight angle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic book cover textures and matte finish. Professional studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text on book, no pictures of people. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "factual",
@@ -1061,18 +1061,18 @@
     {
       "question": "peninsula : land :: bay : ______",
       "images": [
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/19_peninsula_bay/peninsula.png",
-          "label": "peninsula",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bird's eye view of a peninsula jutting into the ocean. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft blue and green muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/19_peninsula_bay/bay.png",
-          "label": "bay",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bird's eye view of a bay with water curving into the land. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft blue and green muted colors. Clear and simple composition for speech therapy use with children."
-        }
+       {
+        "image": "/shared/images/analogies/2-Analogies_High/19_peninsula_bay/peninsula.png",
+        "label": "peninsula",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, bird's eye aerial view of a peninsula - a long strip of green land jutting out and extending into the blue ocean water, surrounded by water on three sides, land connected to mainland at one end, clear geographical shape showing land reaching into sea, soft blue ocean and green land muted colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading showing depth and terrain. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+        "image": "/shared/images/analogies/2-Analogies_High/19_peninsula_bay/bay.png",
+        "label": "bay",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration, full bleed edge to edge, bird's eye aerial view of a bay - blue ocean water curving inward into the green land forming a curved inlet, water surrounded by land on three sides creating a sheltered cove, clear geographical shape showing water reaching into land, soft blue water and green land muted colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading showing depth and terrain. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "water",
@@ -1084,17 +1084,17 @@
       "question": "renovation : building :: restoration : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/20_renovation_restoration/renovation.png",
-          "label": "renovation",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of workers renovating a house with tools and paint. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/20_renovation_restoration/restoration.png",
-          "label": "restoration",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of an artist carefully restoring an old painting on an easel. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        }
+      "image": "/shared/images/analogies/2-Analogies_High/20_renovation_restoration/renovation.png",
+      "label": "renovation",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of animal characters (beaver and squirrel) renovating a wooden house, beaver on a ladder painting the exterior wall with a paint roller, squirrel hammering or using tools on the roof, paint cans and construction tools scattered on the ground, house being updated and modernized with fresh paint and new materials, animals wearing simple work vests or tool belts, soft warm muted peachy and cream colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating cheerful active construction atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+      "image": "/shared/images/analogies/2-Analogies_High/20_renovation_restoration/restoration.png",
+      "label": "restoration",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of an owl character (symbolizing wisdom) carefully restoring an old classical painting displayed on an easel, wearing small reading glasses, using tiny delicate brushes with precise movements, magnifying glass on table nearby, working gently to preserve the original artwork, old ornate frame visible around the painting, soft warm muted peachy and golden colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating focused careful preservation atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "painting",
@@ -1127,18 +1127,18 @@
     {
       "question": "lens : camera :: retina : ______",
       "images": [
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/22_lens_retina/lens.png",
-          "label": "lens",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a camera lens, on a pure white background, with natural soft lighting, realistic glass textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/22_lens_retina/retina.png",
-          "label": "retina",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a cross-section of a human eye showing the retina. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
-        }
+      {
+      "image": "/shared/images/analogies/2-Analogies_High/22_lens_retina/lens.png",
+      "label": "lens",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a camera lens shown from the front view, circular glass lens with visible optical elements and rings, black or silver metal body, clear glass surface reflecting light, simple clear representation of photography equipment, soft muted gray and silver colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading creating depth and dimension. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      },
+      {
+      "image": "/shared/images/analogies/2-Analogies_High/22_lens_retina/retina.png",
+      "label": "retina",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a simplified cross-section diagram of a human eye showing the retina at the back of the eyeball, clear anatomical layers visible including cornea at front, lens in middle, and retina lining the back wall, labeled parts in different soft colors for clarity (blues, pinks, creams), educational but child-friendly medical illustration, soft muted anatomical colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading showing eye structure. Clear and simple composition for speech therapy use with children. Minimal text labels if needed. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+      }
       ],
       "choices": [
         "eye",
@@ -1150,17 +1150,17 @@
       "question": "practice : game :: studying : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/23_practice_studying/practice.png",
-          "label": "practice",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of children practicing soccer on a field. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/23_practice_studying/studying.png",
-          "label": "studying",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a child studying at a desk with books and notebooks. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        }
+      "image": "/shared/images/analogies/2-Analogies_High/23_practice_studying/practice.png",
+      "label": "practice",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of the same young child with blonde hair wearing an orange and white striped jersey with blue shorts and cleats, actively practicing soccer on a lush green field with grass texture, child in mid-kick motion with leg extended kicking a black and white soccer ball, energetic focused expression, arms out for balance, white soccer goal with net visible in background, 1-2 other children playing in soft background, small clouds in blue sky above, soft warm muted green grass and blue sky colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with rich details and expressive body language, NOT modern cartoon, gentle shading and brushwork creating outdoor active sports practice atmosphere with depth and movement. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    },
+    {
+      "image": "/shared/images/analogies/2-Analogies_High/23_practice_studying/studying.png",
+      "label": "studying",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of the same young child with blonde hair now wearing an orange and white striped shirt, sitting at a warm wooden desk with visible wood grain, surrounded by several open textbooks with illustrated pages visible, notebooks with written notes, colored pencils and pens in a cup holder, one hand holding a pencil actively writing in a notebook, other hand supporting chin in concentrated thought, small desk lamp with warm yellow glow illuminating the workspace, stack of additional books piled beside the desk, bookshelf visible in soft background, deeply focused serious expression with furrowed brow showing mental effort and concentration, soft warm muted peachy, cream and golden colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with rich interior details and thoughtful atmosphere, NOT modern cartoon, gentle shading and brushwork creating quiet focused study atmosphere with cozy academic feeling. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    }
       ],
       "choices": [
         "test",
@@ -1169,25 +1169,22 @@
       "answerIndex": 0
     },
     {
-      "question": "monopoly : competition :: dictatorship : ______",
+      "question": "Roots are to underground as branches are to ___.",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/24_monopoly_dictatorship/monopoly.png",
-          "label": "monopoly",
+          "image": "/shared/images/analogies/2-Analogies_High/24_roots_branches/roots.png",
+          "label": "roots",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a single large store with smaller stores closed around it, representing monopoly. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, of tree roots growing underground beneath brown soil, thick and thin root systems spreading downward and outward under the earth, cross-section view showing both above-ground tree trunk and below-ground root network, rich brown earth tones with darker roots visible, soft muted brown and tan colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading showing underground depth and root structure. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         },
         {
-          "image": "/shared/images/analogies/2-Analogies_High/24_monopoly_dictatorship/dictatorship.png",
-          "label": "dictatorship",
+          "image": "/shared/images/analogies/2-Analogies_High/24_roots_branches/branches.png",
+          "label": "branches",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a single figure on a podium addressing a crowd, representing leadership. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration, full bleed edge to edge, of tree branches spreading above ground in the air and sky, thick trunk transitioning into multiple branches extending upward and outward, green leaves on branches, birds or clouds in blue sky background, branches reaching toward sunlight, soft muted green leaves and blue sky colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style, NOT modern cartoon, gentle shading showing above-ground height and branch structure. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         }
       ],
-      "choices": [
-        "democracy",
-        "freedom"
-      ],
+      "choices": ["above ground", "underground"],
       "answerIndex": 0
     },
     {
@@ -1238,11 +1235,11 @@
       "question": "exercise : strength :: reading : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/27_exercise_reading/exercise.png",
-          "label": "exercise",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a person doing stretching exercises. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
+      "image": "/shared/images/analogies/2-Analogies_High/23_practice_studying/practice.png",
+      "label": "exercise",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of the same young child with blonde hair wearing an orange and white striped jersey with blue shorts and cleats, actively practicing soccer on a lush green field with grass texture, child in mid-kick motion with leg extended kicking a black and white soccer ball, energetic focused expression, arms out for balance, white soccer goal with net visible in background, 1-2 other children playing in soft background, small clouds in blue sky above, soft warm muted green grass and blue sky colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with rich details and expressive body language, NOT modern cartoon, gentle shading and brushwork creating outdoor active sports practice atmosphere with depth and movement. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    },
         {
           "image": "/shared/images/analogies/2-Analogies_High/27_exercise_reading/reading.png",
           "label": "reading",
@@ -1282,17 +1279,17 @@
       "question": "diplomat : peace :: soldier : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/29_diplomat_soldier/diplomat.png",
-          "label": "diplomat",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of two people shaking hands in formal attire, representing diplomacy. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/29_diplomat_soldier/soldier.png",
-          "label": "soldier",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a soldier in uniform standing at attention. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
-        }
+      "image": "/shared/images/analogies/2-Analogies_High/29_diplomat_soldier/diplomat.png",
+      "label": "diplomat",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of two professional adults in formal business attire (suits and ties) shaking hands warmly with friendly smiles, representing peaceful diplomacy and negotiation, standing facing each other, briefcases or documents visible nearby, flags or globe in soft background suggesting international relations, one person in dark navy suit, other in gray suit, soft warm muted peachy and cream colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions, NOT modern cartoon, gentle shading creating peaceful diplomatic atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    },
+    {
+      "image": "/shared/images/analogies/2-Analogies_High/29_diplomat_soldier/soldier.png",
+      "label": "soldier",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of a soldier standing at attention in a blue military dress uniform with medals and insignia, respectful saluting position with hand to forehead, proud dignified expression, cap or helmet on head, American flag visible in soft background, standing upright with formal military posture, soft muted blue uniform with golden buttons and patriotic colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with realistic proportions, NOT modern cartoon, gentle shading creating respectful military service atmosphere. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    }
       ],
       "choices": [
         "war",
@@ -1304,17 +1301,17 @@
       "question": "symptom : illness :: clue : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/2-Analogies_High/30_symptom_clue/symptom.png",
-          "label": "symptom",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a person with a thermometer and blanket, showing illness symptoms. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/2-Analogies_High/30_symptom_clue/clue.png",
-          "label": "clue",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a magnifying glass over footprints, representing a clue. On a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        }
+      "image": "/shared/images/analogies/2-Analogies_High/30_symptom_clue/symptom.png",
+      "label": "symptom",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of an adorable brown bear character wearing soft blue pajamas with small patterns, lying comfortably in a wooden bed with fluffy pillows and a cozy patchwork quilt blanket pulled up to chest, holding a thermometer in mouth showing temperature, slightly pink flushed cheeks indicating mild fever, small tissue box and glass of honey water with a spoon on wooden bedside table, window in background showing daylight, concerned but calm gentle expression with droopy tired eyes, perhaps a caring parent bear's paw reaching in from the side touching forehead lovingly, soft cool muted blue, peachy and cream colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with rich cozy bedroom details and gentle caring atmosphere, NOT modern cartoon, gentle shading and brushwork creating warm comforting sick day feeling with depth. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    },
+    {
+      "image": "/shared/images/analogies/2-Analogies_High/30_symptom_clue/clue.png",
+      "label": "clue",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration, full bleed edge to edge, of the same adorable brown bear character now wearing a tan detective vest with pockets and a small classic detective hat (deerstalker style), crouching down on a dirt forest path examining a large clear bear paw print pressed into the ground, holding a large magnifying glass with wooden handle over the footprint for close inspection, curious investigative expression with one eye squinted looking through the glass, surrounding forest with tall trees, green ferns, colorful wildflowers, autumn leaves scattered on the path, perhaps a small bluebird perched on a branch watching, mushrooms growing near the path, soft warm muted brown, green, golden and orange forest colors filling entire frame, in the style of Sergio Martinez, calm timeless vintage watercolor style with rich whimsical woodland details and charming detective atmosphere, NOT modern cartoon, gentle shading and brushwork creating playful mystery-solving feeling in the enchanted woods with depth and texture. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+    }
       ],
       "choices": [
         "mystery",
