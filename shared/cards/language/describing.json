@@ -372,34 +372,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "banana"
-          ]
+          "question": "What group is a banana in?",
+          "answers": []
         },
         {
-          "question": "What color is it?",
-          "answers": [
-            "Yellow"
-          ]
+          "question": "What does a banana do?",
+          "answers": []
         },
         {
-          "question": "Where does it grow?",
-          "answers": [
-            "On a tree"
-          ]
+          "question": "What does a banana look like?",
+          "answers": []
         },
         {
-          "question": "What animal eats it?",
-          "answers": [
-            "Monkeys"
-          ]
+          "question": "What is a banana made of?",
+          "answers": []
         },
         {
-          "question": "How does it taste?",
-          "answers": [
-            "Sweet"
-          ]
+          "question": "What parts does a banana have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a banana?",
+          "answers": []
         }
       ]
     },
@@ -413,34 +407,28 @@
       ],
       "questions": [
         {
-          "question": "This is an _______.",
-          "answers": [
-            "orange"
-          ]
+          "question": "What group is an orange in?",
+          "answers": []
         },
         {
-          "question": "What color is it?",
-          "answers": [
-            "Orange"
-          ]
+          "question": "What does an orange do?",
+          "answers": []
         },
         {
-          "question": "What shape is it?",
-          "answers": [
-            "Round"
-          ]
+          "question": "What does an orange look like?",
+          "answers": []
         },
         {
-          "question": "How does it taste?",
-          "answers": [
-            "Sweet and sour"
-          ]
+          "question": "What is an orange made of?",
+          "answers": []
         },
         {
-          "question": "What can you make from it?",
-          "answers": [
-            "Juice"
-          ]
+          "question": "What parts does an orange have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find an orange?",
+          "answers": []
         }
       ]
     },
@@ -454,34 +442,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "strawberry"
-          ]
+          "question": "What group is a strawberry in?",
+          "answers": []
         },
         {
-          "question": "What color is it?",
-          "answers": [
-            "Red"
-          ]
+          "question": "What does a strawberry do?",
+          "answers": []
         },
         {
-          "question": "What are the dots on it?",
-          "answers": [
-            "Seeds"
-          ]
+          "question": "What does a strawberry look like?",
+          "answers": []
         },
         {
-          "question": "How does it taste?",
-          "answers": [
-            "Sweet"
-          ]
+          "question": "What is a strawberry made of?",
+          "answers": []
         },
         {
-          "question": "Where does it grow?",
-          "answers": [
-            "On a plant"
-          ]
+          "question": "What parts does a strawberry have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a strawberry?",
+          "answers": []
         }
       ]
     },
@@ -495,34 +477,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "watermelon"
-          ]
+          "question": "What group is a watermelon in?",
+          "answers": []
         },
         {
-          "question": "What colors do you see?",
-          "answers": [
-            "Green and red"
-          ]
+          "question": "What does a watermelon do?",
+          "answers": []
         },
         {
-          "question": "Is it big or small?",
-          "answers": [
-            "Round or oval"
-          ]
+          "question": "What does a watermelon look like?",
+          "answers": []
         },
         {
-          "question": "How does it taste?",
-          "answers": [
-            "Sweet and juicy"
-          ]
+          "question": "What is a watermelon made of?",
+          "answers": []
         },
         {
-          "question": "When do people eat it?",
-          "answers": [
-            "In summer"
-          ]
+          "question": "What parts does a watermelon have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a watermelon?",
+          "answers": []
         }
       ]
     },
@@ -536,34 +512,28 @@
       ],
       "questions": [
         {
-          "question": "This is an _______.",
-          "answers": [
-            "apple"
-          ]
+          "question": "What group is an apple in?",
+          "answers": []
         },
         {
-          "question": "What color is it?",
-          "answers": [
-            "Red or green"
-          ]
+          "question": "What does an apple do?",
+          "answers": []
         },
         {
-          "question": "What shape is it?",
-          "answers": [
-            "Round"
-          ]
+          "question": "What does an apple look like?",
+          "answers": []
         },
         {
-          "question": "How does it taste?",
-          "answers": [
-            "Sweet or sour"
-          ]
+          "question": "What is an apple made of?",
+          "answers": []
         },
         {
-          "question": "What is in the middle?",
-          "answers": [
-            "On a tree"
-          ]
+          "question": "What parts does an apple have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find an apple?",
+          "answers": []
         }
       ]
     },
@@ -577,34 +547,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "bear"
-          ]
+          "question": "What group is a bear in?",
+          "answers": []
         },
         {
-          "question": "It likes to eat _______.",
-          "answers": [
-            "Brown or black"
-          ]
+          "question": "What does a bear do?",
+          "answers": []
         },
         {
-          "question": "Its fur is _______.",
-          "answers": [
-            "In the forest"
-          ]
+          "question": "What does a bear look like?",
+          "answers": []
         },
         {
-          "question": "It hibernates in the _______.",
-          "answers": [
-            "Fish and berries"
-          ]
+          "question": "What is a bear made of?",
+          "answers": []
         },
         {
-          "question": "It lives in the _______.",
-          "answers": [
-            "Fur"
-          ]
+          "question": "What parts does a bear have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a bear?",
+          "answers": []
         }
       ]
     },
@@ -618,34 +582,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "dolphin"
-          ]
+          "question": "What group is a dolphin in?",
+          "answers": []
         },
         {
-          "question": "It lives in the _______.",
-          "answers": [
-            "Gray"
-          ]
+          "question": "What does a dolphin do?",
+          "answers": []
         },
         {
-          "question": "Its skin is _______.",
-          "answers": [
-            "In the ocean"
-          ]
+          "question": "What does a dolphin look like?",
+          "answers": []
         },
         {
-          "question": "It breathes with its _______.",
-          "answers": [
-            "Fish"
-          ]
+          "question": "What is a dolphin made of?",
+          "answers": []
         },
         {
-          "question": "It swims with its _______.",
-          "answers": [
-            "Swim and jump"
-          ]
+          "question": "What parts does a dolphin have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a dolphin?",
+          "answers": []
         }
       ]
     },
@@ -659,34 +617,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "bunny"
-          ]
+          "question": "What group is a bunny in?",
+          "answers": []
         },
         {
-          "question": "Its ears are _______.",
-          "answers": [
-            "White or brown"
-          ]
+          "question": "What does a bunny do?",
+          "answers": []
         },
         {
-          "question": "Its fur is _______.",
-          "answers": [
-            "Long ears"
-          ]
+          "question": "What does a bunny look like?",
+          "answers": []
         },
         {
-          "question": "It likes to eat _______.",
-          "answers": [
-            "Carrots"
-          ]
+          "question": "What is a bunny made of?",
+          "answers": []
         },
         {
-          "question": "It moves by _______.",
-          "answers": [
-            "Hop"
-          ]
+          "question": "What parts does a bunny have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a bunny?",
+          "answers": []
         }
       ]
     },
@@ -700,34 +652,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "butterfly"
-          ]
+          "question": "What group is a butterfly in?",
+          "answers": []
         },
         {
-          "question": "Its wings are _______.",
-          "answers": [
-            "Colorful"
-          ]
+          "question": "What does a butterfly do?",
+          "answers": []
         },
         {
-          "question": "It starts life as a _______.",
-          "answers": [
-            "Wings"
-          ]
+          "question": "What does a butterfly look like?",
+          "answers": []
         },
         {
-          "question": "It lands on _______.",
-          "answers": [
-            "Nectar"
-          ]
+          "question": "What is a butterfly made of?",
+          "answers": []
         },
         {
-          "question": "It can _______.",
-          "answers": [
-            "Fly"
-          ]
+          "question": "What parts does a butterfly have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a butterfly?",
+          "answers": []
         }
       ]
     },
@@ -741,34 +687,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "dog"
-          ]
+          "question": "What group is a dog in?",
+          "answers": []
         },
         {
-          "question": "It has _______ legs.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a dog do?",
+          "answers": []
         },
         {
-          "question": "Its tail can _______.",
-          "answers": [
-            "Fur and tail"
-          ]
+          "question": "What does a dog look like?",
+          "answers": []
         },
         {
-          "question": "It says _______.",
-          "answers": [
-            "Dog food"
-          ]
+          "question": "What is a dog made of?",
+          "answers": []
         },
         {
-          "question": "It likes to _______.",
-          "answers": [
-            "Bark"
-          ]
+          "question": "What parts does a dog have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a dog?",
+          "answers": []
         }
       ]
     },
@@ -782,34 +722,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "refrigerator"
-          ]
+          "question": "What group is a refrigerator in?",
+          "answers": []
         },
         {
-          "question": "It is found in the _______.",
-          "answers": [
-            "White or silver"
-          ]
+          "question": "What does a refrigerator do?",
+          "answers": []
         },
         {
-          "question": "It keeps food _______.",
-          "answers": [
-            "In the kitchen"
-          ]
+          "question": "What does a refrigerator look like?",
+          "answers": []
         },
         {
-          "question": "Inside you find _______.",
-          "answers": [
-            "Keep food cold"
-          ]
+          "question": "What is a refrigerator made of?",
+          "answers": []
         },
         {
-          "question": "It has a _______ to open it.",
-          "answers": [
-            "Has a door"
-          ]
+          "question": "What parts does a refrigerator have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a refrigerator?",
+          "answers": []
         }
       ]
     },
@@ -823,34 +757,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "bed"
-          ]
+          "question": "What group is a bed in?",
+          "answers": []
         },
         {
-          "question": "You use it to _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a bed do?",
+          "answers": []
         },
         {
-          "question": "It has _______ on top.",
-          "answers": [
-            "In the bedroom"
-          ]
+          "question": "What does a bed look like?",
+          "answers": []
         },
         {
-          "question": "You find it in the _______.",
-          "answers": [
-            "For sleeping"
-          ]
+          "question": "What is a bed made of?",
+          "answers": []
         },
         {
-          "question": "It is soft and _______.",
-          "answers": [
-            "Has pillows"
-          ]
+          "question": "What parts does a bed have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a bed?",
+          "answers": []
         }
       ]
     },
@@ -864,34 +792,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "bathtub"
-          ]
+          "question": "What group is a bathtub in?",
+          "answers": []
         },
         {
-          "question": "You use it to get _______.",
-          "answers": [
-            "White"
-          ]
+          "question": "What does a bathtub do?",
+          "answers": []
         },
         {
-          "question": "You fill it with _______.",
-          "answers": [
-            "In the bathroom"
-          ]
+          "question": "What does a bathtub look like?",
+          "answers": []
         },
         {
-          "question": "It is in the _______.",
-          "answers": [
-            "For bathing"
-          ]
+          "question": "What is a bathtub made of?",
+          "answers": []
         },
         {
-          "question": "You use _______ to wash.",
-          "answers": [
-            "Holds water"
-          ]
+          "question": "What parts does a bathtub have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a bathtub?",
+          "answers": []
         }
       ]
     },
@@ -905,34 +827,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "couch"
-          ]
+          "question": "What group is a couch in?",
+          "answers": []
         },
         {
-          "question": "You use it to _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a couch do?",
+          "answers": []
         },
         {
-          "question": "It has _______ to sit on.",
-          "answers": [
-            "In the living room"
-          ]
+          "question": "What does a couch look like?",
+          "answers": []
         },
         {
-          "question": "It is in the _______.",
-          "answers": [
-            "For sitting"
-          ]
+          "question": "What is a couch made of?",
+          "answers": []
         },
         {
-          "question": "It is soft and _______.",
-          "answers": [
-            "Soft cushions"
-          ]
+          "question": "What parts does a couch have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a couch?",
+          "answers": []
         }
       ]
     },
@@ -946,34 +862,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "lamp"
-          ]
+          "question": "What group is a lamp in?",
+          "answers": []
         },
         {
-          "question": "It gives you _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a lamp do?",
+          "answers": []
         },
         {
-          "question": "You turn it on with a _______.",
-          "answers": [
-            "On a table"
-          ]
+          "question": "What does a lamp look like?",
+          "answers": []
         },
         {
-          "question": "It sits on a _______.",
-          "answers": [
-            "Gives light"
-          ]
+          "question": "What is a lamp made of?",
+          "answers": []
         },
         {
-          "question": "You use it when it is _______.",
-          "answers": [
-            "Has a bulb"
-          ]
+          "question": "What parts does a lamp have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a lamp?",
+          "answers": []
         }
       ]
     },
@@ -987,34 +897,28 @@
       ],
       "questions": [
         {
-          "question": "These are _______.",
-          "answers": [
-            "sneakers"
-          ]
+          "question": "What group is a sneakers in?",
+          "answers": []
         },
         {
-          "question": "You wear them on your _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a sneakers do?",
+          "answers": []
         },
         {
-          "question": "They have _______ to tie.",
-          "answers": [
-            "On your feet"
-          ]
+          "question": "What does a sneakers look like?",
+          "answers": []
         },
         {
-          "question": "You wear them with _______.",
-          "answers": [
-            "For running"
-          ]
+          "question": "What is a sneakers made of?",
+          "answers": []
         },
         {
-          "question": "They are for _______.",
-          "answers": [
-            "Have laces"
-          ]
+          "question": "What parts does a sneakers have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a sneakers?",
+          "answers": []
         }
       ]
     },
@@ -1028,34 +932,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "jacket"
-          ]
+          "question": "What group is a jacket in?",
+          "answers": []
         },
         {
-          "question": "You wear it when it is _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a jacket do?",
+          "answers": []
         },
         {
-          "question": "It has a _______ to close it.",
-          "answers": [
-            "On your body"
-          ]
+          "question": "What does a jacket look like?",
+          "answers": []
         },
         {
-          "question": "It keeps you _______.",
-          "answers": [
-            "Keeps you warm"
-          ]
+          "question": "What is a jacket made of?",
+          "answers": []
         },
         {
-          "question": "It has two _______ for arms.",
-          "answers": [
-            "Has a zipper"
-          ]
+          "question": "What parts does a jacket have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a jacket?",
+          "answers": []
         }
       ]
     },
@@ -1069,34 +967,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "sunhat"
-          ]
+          "question": "What group is a sunhat in?",
+          "answers": []
         },
         {
-          "question": "You wear it on your _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a sunhat do?",
+          "answers": []
         },
         {
-          "question": "It protects you from the _______.",
-          "answers": [
-            "On your head"
-          ]
+          "question": "What does a sunhat look like?",
+          "answers": []
         },
         {
-          "question": "It has a wide _______.",
-          "answers": [
-            "Blocks the sun"
-          ]
+          "question": "What is a sunhat made of?",
+          "answers": []
         },
         {
-          "question": "You wear it at the _______.",
-          "answers": [
-            "Has a brim"
-          ]
+          "question": "What parts does a sunhat have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a sunhat?",
+          "answers": []
         }
       ]
     },
@@ -1110,34 +1002,28 @@
       ],
       "questions": [
         {
-          "question": "These are _______.",
-          "answers": [
-            "flip flops"
-          ]
+          "question": "What group is a flip flops in?",
+          "answers": []
         },
         {
-          "question": "You wear them on your _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a flip flops do?",
+          "answers": []
         },
         {
-          "question": "You do NOT wear _______ with them.",
-          "answers": [
-            "On your feet"
-          ]
+          "question": "What does a flip flops look like?",
+          "answers": []
         },
         {
-          "question": "They are for the _______.",
-          "answers": [
-            "For the beach"
-          ]
+          "question": "What is a flip flops made of?",
+          "answers": []
         },
         {
-          "question": "They are easy to put _______.",
-          "answers": [
-            "Easy to put on"
-          ]
+          "question": "What parts does a flip flops have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a flip flops?",
+          "answers": []
         }
       ]
     },
@@ -1151,34 +1037,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "backpack"
-          ]
+          "question": "What group is a backpack in?",
+          "answers": []
         },
         {
-          "question": "You wear it on your _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a backpack do?",
+          "answers": []
         },
         {
-          "question": "It has _______ to hold things.",
-          "answers": [
-            "On your back"
-          ]
+          "question": "What does a backpack look like?",
+          "answers": []
         },
         {
-          "question": "It has _______ straps.",
-          "answers": [
-            "Carry things"
-          ]
+          "question": "What is a backpack made of?",
+          "answers": []
         },
         {
-          "question": "You carry your _______ in it.",
-          "answers": [
-            "Has straps"
-          ]
+          "question": "What parts does a backpack have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a backpack?",
+          "answers": []
         }
       ]
     },
@@ -1192,34 +1072,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "towel"
-          ]
+          "question": "What group is a towel in?",
+          "answers": []
         },
         {
-          "question": "You use it at the _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a towel do?",
+          "answers": []
         },
         {
-          "question": "It is soft and _______.",
-          "answers": [
-            "At the beach"
-          ]
+          "question": "What does a towel look like?",
+          "answers": []
         },
         {
-          "question": "You _______ on it.",
-          "answers": [
-            "Dry off"
-          ]
+          "question": "What is a towel made of?",
+          "answers": []
         },
         {
-          "question": "You use it to dry _______.",
-          "answers": [
-            "Soft and fluffy"
-          ]
+          "question": "What parts does a towel have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a towel?",
+          "answers": []
         }
       ]
     },
@@ -1233,34 +1107,28 @@
       ],
       "questions": [
         {
-          "question": "This is _______.",
-          "answers": [
-            "sunscreen"
-          ]
+          "question": "What group is a sunscreen in?",
+          "answers": []
         },
         {
-          "question": "You put it on your _______.",
-          "answers": [
-            "White"
-          ]
+          "question": "What does a sunscreen do?",
+          "answers": []
         },
         {
-          "question": "It protects you from the _______.",
-          "answers": [
-            "At the beach"
-          ]
+          "question": "What does a sunscreen look like?",
+          "answers": []
         },
         {
-          "question": "A grown-up helps you _______ it.",
-          "answers": [
-            "Protect skin"
-          ]
+          "question": "What is a sunscreen made of?",
+          "answers": []
         },
         {
-          "question": "You use it at the _______.",
-          "answers": [
-            "In a bottle"
-          ]
+          "question": "What parts does a sunscreen have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a sunscreen?",
+          "answers": []
         }
       ]
     },
@@ -1274,34 +1142,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "bucket"
-          ]
+          "question": "What group is a bucket in?",
+          "answers": []
         },
         {
-          "question": "You use it at the _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a bucket do?",
+          "answers": []
         },
         {
-          "question": "You fill it with _______.",
-          "answers": [
-            "At the beach"
-          ]
+          "question": "What does a bucket look like?",
+          "answers": []
         },
         {
-          "question": "It helps you build _______.",
-          "answers": [
-            "Hold sand"
-          ]
+          "question": "What is a bucket made of?",
+          "answers": []
         },
         {
-          "question": "It has a _______ to carry it.",
-          "answers": [
-            "Has a handle"
-          ]
+          "question": "What parts does a bucket have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a bucket?",
+          "answers": []
         }
       ]
     },
@@ -1315,34 +1177,28 @@
       ],
       "questions": [
         {
-          "question": "These are _______.",
-          "answers": [
-            "sunglasses"
-          ]
+          "question": "What group is a sunglasses in?",
+          "answers": []
         },
         {
-          "question": "You wear them on your _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a sunglasses do?",
+          "answers": []
         },
         {
-          "question": "They protect your _______.",
-          "answers": [
-            "On your face"
-          ]
+          "question": "What does a sunglasses look like?",
+          "answers": []
         },
         {
-          "question": "You wear them when it is _______.",
-          "answers": [
-            "Protect eyes"
-          ]
+          "question": "What is a sunglasses made of?",
+          "answers": []
         },
         {
-          "question": "They have two _______.",
-          "answers": [
-            "Block the sun"
-          ]
+          "question": "What parts does a sunglasses have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a sunglasses?",
+          "answers": []
         }
       ]
     },
@@ -1356,34 +1212,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "seashell"
-          ]
+          "question": "What group is a seashell in?",
+          "answers": []
         },
         {
-          "question": "You find it at the _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a seashell do?",
+          "answers": []
         },
         {
-          "question": "It comes from the _______.",
-          "answers": [
-            "At the beach"
-          ]
+          "question": "What does a seashell look like?",
+          "answers": []
         },
         {
-          "question": "It can be many _______.",
-          "answers": [
-            "From the ocean"
-          ]
+          "question": "What is a seashell made of?",
+          "answers": []
         },
         {
-          "question": "An animal lived _______ it.",
-          "answers": [
-            "Hard and smooth"
-          ]
+          "question": "What parts does a seashell have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a seashell?",
+          "answers": []
         }
       ]
     },
@@ -1397,34 +1247,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "car"
-          ]
+          "question": "What group is a car in?",
+          "answers": []
         },
         {
-          "question": "It has _______ wheels.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a car do?",
+          "answers": []
         },
         {
-          "question": "A grown-up _______ it.",
-          "answers": [
-            "On the road"
-          ]
+          "question": "What does a car look like?",
+          "answers": []
         },
         {
-          "question": "It takes you _______.",
-          "answers": [
-            "Drive places"
-          ]
+          "question": "What is a car made of?",
+          "answers": []
         },
         {
-          "question": "It uses _______ to move.",
-          "answers": [
-            "Has wheels"
-          ]
+          "question": "What parts does a car have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a car?",
+          "answers": []
         }
       ]
     },
@@ -1438,34 +1282,28 @@
       ],
       "questions": [
         {
-          "question": "This is an _______.",
-          "answers": [
-            "airplane"
-          ]
+          "question": "What group is an airplane in?",
+          "answers": []
         },
         {
-          "question": "It flies in the _______.",
-          "answers": [
-            "White or gray"
-          ]
+          "question": "What does an airplane do?",
+          "answers": []
         },
         {
-          "question": "It has two _______.",
-          "answers": [
-            "In the sky"
-          ]
+          "question": "What does an airplane look like?",
+          "answers": []
         },
         {
-          "question": "It takes people on _______.",
-          "answers": [
-            "Fly places"
-          ]
+          "question": "What is an airplane made of?",
+          "answers": []
         },
         {
-          "question": "A _______ flies it.",
-          "answers": [
-            "Has wings"
-          ]
+          "question": "What parts does an airplane have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find an airplane?",
+          "answers": []
         }
       ]
     },
@@ -1479,34 +1317,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "skateboard"
-          ]
+          "question": "What group is a skateboard in?",
+          "answers": []
         },
         {
-          "question": "It has _______ wheels.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a skateboard do?",
+          "answers": []
         },
         {
-          "question": "You stand on the _______.",
-          "answers": [
-            "On the ground"
-          ]
+          "question": "What does a skateboard look like?",
+          "answers": []
         },
         {
-          "question": "You use it to _______.",
-          "answers": [
-            "For riding"
-          ]
+          "question": "What is a skateboard made of?",
+          "answers": []
         },
         {
-          "question": "You should wear a _______.",
-          "answers": [
-            "Has wheels"
-          ]
+          "question": "What parts does a skateboard have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a skateboard?",
+          "answers": []
         }
       ]
     },
@@ -1520,34 +1352,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "surfboard"
-          ]
+          "question": "What group is a surfboard in?",
+          "answers": []
         },
         {
-          "question": "You use it in the _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a surfboard do?",
+          "answers": []
         },
         {
-          "question": "You _______ on the waves.",
-          "answers": [
-            "In the ocean"
-          ]
+          "question": "What does a surfboard look like?",
+          "answers": []
         },
         {
-          "question": "It is long and _______.",
-          "answers": [
-            "Ride waves"
-          ]
+          "question": "What is a surfboard made of?",
+          "answers": []
         },
         {
-          "question": "You use it at the _______.",
-          "answers": [
-            "Long and flat"
-          ]
+          "question": "What parts does a surfboard have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a surfboard?",
+          "answers": []
         }
       ]
     },
@@ -1561,34 +1387,28 @@
       ],
       "questions": [
         {
-          "question": "This is a _______.",
-          "answers": [
-            "boat"
-          ]
+          "question": "What group is a boat in?",
+          "answers": []
         },
         {
-          "question": "It floats on _______.",
-          "answers": [
-            "Many colors"
-          ]
+          "question": "What does a boat do?",
+          "answers": []
         },
         {
-          "question": "It can take you across the _______.",
-          "answers": [
-            "On the water"
-          ]
+          "question": "What does a boat look like?",
+          "answers": []
         },
         {
-          "question": "A _______ controls it.",
-          "answers": [
-            "Travel on water"
-          ]
+          "question": "What is a boat made of?",
+          "answers": []
         },
         {
-          "question": "You wear a life _______ on it.",
-          "answers": [
-            "Floats"
-          ]
+          "question": "What parts does a boat have?",
+          "answers": []
+        },
+        {
+          "question": "Where can you find a boat?",
+          "answers": []
         }
       ]
     }

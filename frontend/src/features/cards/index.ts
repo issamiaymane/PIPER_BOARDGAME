@@ -332,13 +332,23 @@ function renderMultipleAnswers(card: CardData): string {
     html += renderContextText(card);
 
     if (card.questions && Array.isArray(card.questions)) {
-        html += `<div class="preview-questions">`;
-        (card.questions as Array<{ question: string; answer?: string | string[]; answers?: string[] }>).forEach((q, i) => {
+        const questions = card.questions as Array<{ question: string; answer?: string | string[]; answers?: string[] }>;
+        const total = questions.length;
+
+        html += `<div class="preview-questions-carousel" data-total="${total}">`;
+        html += `<div class="question-nav-header">
+            <button class="question-nav-btn prev-question" disabled>&lt;</button>
+            <span class="question-counter">Q<span class="current-q">1</span> of ${total}</span>
+            <button class="question-nav-btn next-question">&gt;</button>
+        </div>`;
+
+        questions.forEach((q, i) => {
             const questionText = q.question.replace(/_+/g, '<span class="quiz-blank">______</span>');
-            html += `<div class="preview-question-item">
-                <strong>Q${i + 1}:</strong> ${questionText}
+            html += `<div class="preview-question-slide${i === 0 ? ' active' : ''}" data-index="${i}">
+                <div class="preview-question-item">
+                    <strong>Q${i + 1}:</strong> ${questionText}
+                </div>
             </div>`;
-            html += renderAnswerInput();
         });
         html += `</div>`;
     }
@@ -554,6 +564,36 @@ function setupPreviewEventListeners(): void {
         });
     });
 
+    // Question carousel navigation
+    const questionCarousel = previewCardContent.querySelector('.preview-questions-carousel');
+    if (questionCarousel) {
+        const slides = questionCarousel.querySelectorAll('.preview-question-slide');
+        const prevBtn = questionCarousel.querySelector('.prev-question') as HTMLButtonElement;
+        const nextBtn = questionCarousel.querySelector('.next-question') as HTMLButtonElement;
+        const currentQSpan = questionCarousel.querySelector('.current-q');
+        let currentQ = 0;
+
+        const updateSlide = () => {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === currentQ);
+            });
+            if (currentQSpan) currentQSpan.textContent = String(currentQ + 1);
+            if (prevBtn) prevBtn.disabled = currentQ === 0;
+            if (nextBtn) nextBtn.disabled = currentQ === slides.length - 1;
+        };
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentQ > 0) { currentQ--; updateSlide(); }
+            });
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (currentQ < slides.length - 1) { currentQ++; updateSlide(); }
+            });
+        }
+    }
+
     const seqContainer = previewCardContent.querySelector('.image-ordering-container');
     if (seqContainer) {
         const seqBuildArea = seqContainer.querySelector('.sequence-build-area') as HTMLElement;
@@ -739,6 +779,36 @@ export function setupCardEventListeners(container: HTMLElement): void {
             btn.classList.add('selected');
         });
     });
+
+    // Question carousel navigation
+    const questionCarousel = container.querySelector('.preview-questions-carousel');
+    if (questionCarousel) {
+        const slides = questionCarousel.querySelectorAll('.preview-question-slide');
+        const prevBtn = questionCarousel.querySelector('.prev-question') as HTMLButtonElement;
+        const nextBtn = questionCarousel.querySelector('.next-question') as HTMLButtonElement;
+        const currentQSpan = questionCarousel.querySelector('.current-q');
+        let currentQ = 0;
+
+        const updateSlide = () => {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === currentQ);
+            });
+            if (currentQSpan) currentQSpan.textContent = String(currentQ + 1);
+            if (prevBtn) prevBtn.disabled = currentQ === 0;
+            if (nextBtn) nextBtn.disabled = currentQ === slides.length - 1;
+        };
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentQ > 0) { currentQ--; updateSlide(); }
+            });
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (currentQ < slides.length - 1) { currentQ++; updateSlide(); }
+            });
+        }
+    }
 
     const seqContainer = container.querySelector('.image-ordering-container');
     if (seqContainer) {
