@@ -499,11 +499,11 @@
       "images": [
         {
           "image": "",
-          "label": "sea"
+          "label": "ocean sea"
         },
         {
           "image": "",
-          "label": "see"
+          "label": "see with your eyes"
         }
       ],
       "questions": [
@@ -752,11 +752,11 @@
       "images": [
         {
           "image": "",
-          "label": "deer"
+          "label": "deer animal"
         },
         {
           "image": "",
-          "label": "dear"
+          "label": "dear salutation"
         }
       ],
       "questions": [
@@ -914,11 +914,11 @@
       "images": [
         {
           "image": "",
-          "label": "meat"
+          "label": "steak meat"
         },
         {
           "image": "",
-          "label": "meet"
+          "label": "meet friends"
         }
       ],
       "questions": [
