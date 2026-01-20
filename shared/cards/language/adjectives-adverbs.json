@@ -245,15 +245,15 @@
       "images": [
         {
           "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/13_heavy_light/heavy.png",
-          "label": "heavy",
+          "label": "heavy rock",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a large black iron dumbbell weight, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a large heavy rock or boulder, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/13_heavy_light/light.png",
-          "label": "light",
+          "label": "light feather",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a delicate butterfly with colorful wings, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a light delicate feather floating, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -465,15 +465,15 @@
       "images": [
         {
           "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/24_wide_narrow/wide.png",
-          "label": "wide",
+          "label": "wide beach towel",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a wide red ribbon unrolled flat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a wide colorful beach towel spread out flat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/adjectives-adverbs/1-Adjectives - Opposites/24_wide_narrow/narrow.png",
-          "label": "narrow",
+          "label": "narrow hand towel",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a thin narrow string or twine, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a narrow hand towel or tea towel, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1215,9 +1215,9 @@
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/7_straight_curvy/curvy.png",
-          "label": "curvy",
+          "label": "curvy snake",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a curvy wavy ribbon, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a curvy snake slithering in an S-shape, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1329,15 +1329,15 @@
       "images": [
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/13_clean_messy/clean.png",
-          "label": "clean",
+          "label": "mop and bucket",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a clean organized desk with neatly stacked papers and pencils in a cup, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a mop and bucket ready for cleaning, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/13_clean_messy/messy.png",
-          "label": "messy",
+          "label": "dirt splatters on floor",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a messy pile of scattered papers, crayons, and toys all jumbled together, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of dirt splatters and muddy footprints on a floor, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1509,15 +1509,15 @@
       "images": [
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/22_wide_narrow/wide.png",
-          "label": "wide",
+          "label": "wide beach towel",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a wide red ribbon unrolled flat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a wide colorful beach towel spread out flat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/22_wide_narrow/narrow.png",
-          "label": "narrow",
+          "label": "narrow hand towel",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a thin narrow string or twine, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a narrow hand towel or tea towel, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1529,15 +1529,15 @@
       "images": [
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/23_heavy_light/heavy.png",
-          "label": "heavy",
+          "label": "heavy rock",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a large black iron dumbbell weight, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a large heavy rock or boulder, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/adjectives-adverbs/3-Descriptive Words - Opposites/23_heavy_light/light.png",
-          "label": "light",
+          "label": "light feather",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a delicate butterfly with colorful wings, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a light delicate feather floating, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
