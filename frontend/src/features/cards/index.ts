@@ -438,7 +438,7 @@ function renderSequencing(card: CardData): string {
     return html;
 }
 
-function renderBuilding(card: CardData): string {
+function renderBuilding(card: CardData, category?: string): string {
     let html = '';
 
     if (card.question) {
@@ -449,13 +449,27 @@ function renderBuilding(card: CardData): string {
 
     if (card.words && Array.isArray(card.words)) {
         const wordsArray = card.words as string[];
-        html += `<div class="word-ordering-container">
-            <div class="sentence-build-area" data-placeholder="Click words to build the sentence..."></div>
-            <div class="word-buttons">
-                ${wordsArray.map((word, idx) => `<button class="word-btn" data-word="${escapeHtml(word)}" data-index="${idx}">${escapeHtml(word)}</button>`).join('')}
-            </div>
-            <button class="clear-sentence-btn">Clear</button>
-        </div>`;
+
+        // Special display for Building Sentences Level 1 - Elementary
+        // Show blank rectangles and non-clickable words
+        if (category === 'Building Sentences Level 1 - Elementary') {
+            html += `<div class="word-ordering-container">
+                <div class="sentence-blanks">
+                    ${wordsArray.map(() => `<span class="sentence-blank"></span>`).join('')}
+                </div>
+                <div class="word-display">
+                    ${wordsArray.map((word) => `<span class="word-label">${escapeHtml(word)}</span>`).join('')}
+                </div>
+            </div>`;
+        } else {
+            html += `<div class="word-ordering-container">
+                <div class="sentence-build-area" data-placeholder="Click words to build the sentence..."></div>
+                <div class="word-buttons">
+                    ${wordsArray.map((word, idx) => `<button class="word-btn" data-word="${escapeHtml(word)}" data-index="${idx}">${escapeHtml(word)}</button>`).join('')}
+                </div>
+                <button class="clear-sentence-btn">Clear</button>
+            </div>`;
+        }
     }
 
     return html;
@@ -625,7 +639,7 @@ function renderPreviewCard(): void {
             bodyHtml += renderSequencing(card);
             break;
         case 'building':
-            bodyHtml += renderBuilding(card);
+            bodyHtml += renderBuilding(card, category);
             break;
         case 'conditional':
             bodyHtml += renderConditional(card);
@@ -796,7 +810,7 @@ export function renderCard(card: CardData, category: string, container: HTMLElem
             bodyHtml += renderSequencing(card);
             break;
         case 'building':
-            bodyHtml += renderBuilding(card);
+            bodyHtml += renderBuilding(card, category);
             break;
         case 'conditional':
             bodyHtml += renderConditional(card);

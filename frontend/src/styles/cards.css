@@ -1412,6 +1412,41 @@ body {
     box-shadow: 0 6px 12px rgba(229, 57, 53, 0.4);
 }
 
+/* Building Sentences Level 1 - Elementary: Blank rectangles display */
+.sentence-blanks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.sentence-blank {
+    width: 80px;
+    height: 50px;
+    background: white;
+    border: 3px solid var(--color-border);
+    border-radius: var(--radius-md);
+    display: inline-block;
+}
+
+.word-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+.word-label {
+    background: var(--color-cream-light);
+    color: var(--color-text);
+    padding: 0.75rem var(--spacing-lg);
+    border-radius: var(--radius-xl);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid var(--color-border);
+}
+
 
 /* --------------------------------------------------------------------------
    6.7 CONDITIONAL HANDLER
