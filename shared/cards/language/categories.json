@@ -95,7 +95,7 @@
         "coffee",
         "milk",
         "tea",
-        "soda"
+        "bottled soda"
       ]
     },
     {
@@ -175,10 +175,10 @@
           "prompt": "High resolution photorealistic photograph of a red bell pepper, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/shared/images/categories/1-Identifying_Members/4_vegetables/tomato.png",
-          "label": "tomato",
+          "image": "/shared/images/categories/1-Identifying_Members/4_vegetables/celery.png",
+          "label": "celery",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a ripe red tomato, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of fresh green celery stalks with leaves, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/categories/1-Identifying_Members/4_vegetables/lettuce.png",
@@ -303,11 +303,11 @@
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a colorful rubber ball, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
-        {
-          "image": "/shared/images/categories/1-Identifying_Members/7_toys/doll.png",
-          "label": "doll",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cute baby doll toy, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+       {
+          "image": "/shared/images/categories/1-Identifying_Members/7_toys/unicorn.png",
+          "label": "unicorn",
+          "style": "photorealistic", 
+          "prompt": "High resolution photorealistic photograph of a cute stuffed unicorn plush toy with horn and colorful mane, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/categories/1-Identifying_Members/7_toys/blocks.png",
@@ -1152,7 +1152,7 @@
           "image": "/shared/images/categories/1-Identifying_Members/23_cleaning/soap.png",
           "label": "soap",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a bar of soap, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a bar of soap with soap bubbles around it, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/categories/1-Identifying_Members/23_cleaning/bucket.png",
@@ -3011,16 +3011,16 @@
       "title": "Ocean Animals",
       "images": [
         {
-          "image": "/shared/images/categories/3-Naming_Categorizing/5_ocean_animals/dolphin.png",
-          "label": "dolphin",
+          "image": "/shared/images/categories/3-Naming_Categorizing/5_ocean_animals/clownfish.png",
+          "label": "clownfish",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a dolphin, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a clownfish with distinctive orange and white stripes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "/shared/images/categories/3-Naming_Categorizing/5_ocean_animals/shark.png",
-          "label": "shark",
+          "image": "/shared/images/categories/3-Naming_Categorizing/5_ocean_animals/sea_turtle.png",
+          "label": "sea turtle",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a shark, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a sea turtle swimming, showing detailed shell pattern and flippers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/categories/3-Naming_Categorizing/5_ocean_animals/whale.png",
@@ -3465,20 +3465,17 @@
           "image": "/shared/images/categories/3-Naming_Categorizing/16_weather/sun.png",
           "label": "sun",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bright yellow sun. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors on white background. Clear and simple composition for speech therapy use with children."
-        },
+          "prompt": "Mid-century children's book illustration of a bright yellow sun with rays. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors on white background. Clear and simple composition for speech therapy use with children."        },
         {
           "image": "/shared/images/categories/3-Naming_Categorizing/16_weather/rain.png",
           "label": "rain",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of rain falling from a cloud. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors on white background. Clear and simple composition for speech therapy use with children."
-        },
+          "prompt": "Mid-century children's book illustration of rain falling from a cloud. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors on white background. Clear and simple composition for speech therapy use with children."        },
         {
           "image": "/shared/images/categories/3-Naming_Categorizing/16_weather/snow.png",
           "label": "snow",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of snowflakes falling. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors on white background. Clear and simple composition for speech therapy use with children."
-        }
+          "prompt": "Mid-century children's book illustration of snowflakes falling. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors on white background. Clear and simple composition for speech therapy use with children."        }
       ],
       "questions": [
         {
@@ -3503,23 +3500,23 @@
       "title": "Seasons",
       "images": [
         {
-          "image": "/shared/images/categories/3-Naming_Categorizing/17_seasons/spring.png",
-          "label": "spring",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a spring scene with flowers blooming and birds. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/categories/3-Naming_Categorizing/17_seasons/summer.png",
-          "label": "summer",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a summer scene with bright sun and beach. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/categories/3-Naming_Categorizing/17_seasons/winter.png",
-          "label": "winter",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a winter scene with snow and bare trees. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
-        }
+      "image": "/shared/images/categories/3-Naming_Categorizing/17_seasons/spring.png",
+      "label": "spring",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a spring scene with flowers blooming and birds in trees, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining flowers and birds, soft natural light, garden or outdoor setting with potted plants and warm spring details from edge to edge, muted vintage color palette of warm beiges, soft pinks, gentle greens and pastel yellows, peaceful calm atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+      },
+      {
+      "image": "/shared/images/categories/3-Naming_Categorizing/17_seasons/summer.png",
+      "label": "summer",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a summer scene with bright sun and beach, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining beach elements and sun, soft warm natural light, beach or outdoor setting with warm summer details from edge to edge, muted vintage color palette of warm beiges, soft blues, gentle sandy tones and golden yellows, peaceful calm sunny atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+      },
+      {
+      "image": "/shared/images/categories/3-Naming_Categorizing/17_seasons/winter.png",
+      "label": "winter",
+      "style": "illustrated",
+      "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a winter scene with snow and bare trees, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining trees and snow, soft cool natural light, outdoor winter setting with snow-covered landscape from edge to edge, muted vintage color palette of cool beiges, soft grays, gentle blues and white snow tones, peaceful calm winter atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+     } 
       ],
       "questions": [
         {
@@ -3995,23 +3992,23 @@
       "title": "Rooms",
       "images": [
         {
-          "image": "/shared/images/categories/3-Naming_Categorizing/29_rooms/bedroom.png",
-          "label": "bedroom",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a cozy bedroom with bed and window. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/categories/3-Naming_Categorizing/29_rooms/kitchen.png",
-          "label": "kitchen",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a kitchen with stove and table. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/categories/3-Naming_Categorizing/29_rooms/bathroom.png",
-          "label": "bathroom",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a bathroom with sink and tub. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
-        }
+        "image": "/shared/images/categories/3-Naming_Categorizing/29_rooms/bedroom.png",
+        "label": "bedroom",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a cozy bedroom with bed and window, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining bed, window, and furniture, soft natural light streaming through window, potted plants and warm homey details like books and pillows from edge to edge, muted vintage color palette of warm beiges, soft creams, gentle greens and terracotta, peaceful calm atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+      },
+      {
+        "image": "/shared/images/categories/3-Naming_Categorizing/29_rooms/kitchen.png",
+        "label": "kitchen",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a kitchen with stove and table, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining stove, table, and kitchen elements, soft natural light from window, potted plants and warm homey details like utensils and dishes from edge to edge, muted vintage color palette of warm beiges, soft whites, gentle greens and terracotta, peaceful calm atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+      },
+      {
+        "image": "/shared/images/categories/3-Naming_Categorizing/29_rooms/bathroom.png",
+        "label": "bathroom",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a bathroom with sink and tub, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining sink, tub, and bathroom elements, soft natural light, potted plants and warm homey details like towels and soap from edge to edge, muted vintage color palette of cool beiges, soft whites, gentle blues and grays, peaceful calm atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+      }
       ],
       "questions": [
         {
@@ -4039,19 +4036,19 @@
           "image": "/shared/images/categories/3-Naming_Categorizing/30_feelings/happy.png",
           "label": "happy",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a child with a happy smiling face. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a big genuine smile, eyes bright with joy. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/categories/3-Naming_Categorizing/30_feelings/sad.png",
           "label": "sad",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a child with a sad face. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft cool muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a sad expression, downturned mouth, looking down. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft cool muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/categories/3-Naming_Categorizing/30_feelings/angry.png",
           "label": "angry",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a child with an angry face. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with an angry expression, furrowed eyebrows, frowning mouth, tense posture. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [

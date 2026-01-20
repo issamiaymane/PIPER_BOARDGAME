@@ -497,7 +497,7 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/23_lion_duck/duck.png",
           "label": "duck",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a yellow duck standing, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a full-grown male mallard duck standing, showing distinctive green head, white neck ring, brown chest, and gray body plumage, on a pure white background, with natural soft lighting, realistic feather textures and details. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1350,7 +1350,7 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/2_doctor_teacher/doctor.png",
           "label": "doctor",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a friendly doctor in a white coat with a stethoscope. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration of a friendly doctor in a white coat with stethoscope. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/2_doctor_teacher/teacher.png",
@@ -1378,7 +1378,7 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/3_bee_spider/spider.png",
           "label": "spider",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a small harmless garden spider, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a small harmless garden spider on its spider web, showing detailed web structure with radial and spiral silk strands, on a pure white background, with natural soft lighting highlighting the web's delicate threads, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1457,17 +1457,17 @@
       "question": "chef : kitchen :: pilot : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/3-Analogies_Middle/7_chef_pilot/chef.png",
-          "label": "chef",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a chef in a white hat cooking in a kitchen. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/analogies/3-Analogies_Middle/7_chef_pilot/pilot.png",
-          "label": "pilot",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a pilot in uniform with a captain's hat. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
-        }
+        "image": "/shared/images/analogies/3-Analogies_Middle/7_chef_pilot/chef.png",
+        "label": "chef",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a chef in a white hat cooking in a cozy kitchen, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining features and clothing, warm kitchen setting with soft natural light from window, potted plants and homey cooking details like utensils and ingredients in background from edge to edge, muted vintage color palette of warm beiges, soft whites, gentle greens and terracotta, peaceful calm atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, natural human proportions with realistic head-to-body ratio, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+      },
+      {
+        "image": "/shared/images/analogies/3-Analogies_Middle/7_chef_pilot/pilot.png",
+        "label": "pilot",
+        "style": "illustrated",
+        "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, a pilot in uniform with a captain's hat, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining features and clothing, cozy cockpit or airport setting with soft natural light, warm aviation details in background from edge to edge, muted vintage color palette of warm beiges, soft blues, gentle grays and navy tones, peaceful calm atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, natural human proportions with realistic head-to-body ratio, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
+      }
       ],
       "choices": [
         "airport",
@@ -1642,7 +1642,7 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/15_wool_feathers/feathers.png",
           "label": "feathers",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of colorful bird feathers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of realistic duck feathers showing natural mallard duck plumage with brown speckled patterns and iridescent green-blue feathers, on a pure white background, with natural soft lighting, realistic textures and detailed barb structure. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1699,16 +1699,16 @@
       "question": "dentist : teeth :: eye doctor : ______",
       "images": [
         {
-          "image": "/shared/images/analogies/3-Analogies_Middle/18_dentist_eyedoctor/dentist.png",
+          "image": "/shared/images/analogies/3-Analogies_Middle/18_dentist_ophthalmologist/dentist.png",
           "label": "dentist",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration of a friendly dentist with dental tools. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "/shared/images/analogies/3-Analogies_Middle/18_dentist_eyedoctor/eyedoctor.png",
-          "label": "eyedoctor",
+          "image": "/shared/images/analogies/3-Analogies_Middle/18_dentist_ophthalmologist/ophthalmologist.png",
+          "label": "ophthalmologist",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of a friendly eye doctor with glasses and an eye chart. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration of a friendly ophthalmologist with glasses and an eye chart. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1724,7 +1724,7 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/19_envelope_box/envelope.png",
           "label": "envelope",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a white envelope with a letter inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a light brown kraft paper envelope with a letter inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/19_envelope_box/box.png",
@@ -1752,7 +1752,7 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/20_book_song/song.png",
           "label": "song",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration of musical notes floating from a radio or speaker. Calm, timeless style like Sergio Martinez or Liz Bonham. Soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration with warm watercolor and soft pencil linework in the style of Sergio Martinez, full bleed edge to edge, musical notes floating from a vintage radio or speaker, gentle earth-toned watercolor washes with visible brushstrokes and paper texture extending to all edges, delicate pencil details defining the radio and musical notes, cozy indoor setting with soft natural light, potted plants and warm homey details in background from edge to edge, muted vintage color palette of warm beiges, soft browns, gentle greens and terracotta, peaceful calm atmosphere, authentic hand-drawn illustration quality, calm timeless vintage watercolor style, background fills entire image with no empty space, NOT digital, NOT modern cartoon, NOT white background, NOT rounded corners, NOT border frame, clear and simple composition for speech therapy use with children, no text, no words, no labels, no border, no frame, no white edges."
         }
       ],
       "choices": [
