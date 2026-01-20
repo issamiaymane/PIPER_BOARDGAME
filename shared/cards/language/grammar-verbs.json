@@ -457,10 +457,10 @@
       "images": [
         {
           "image": "",
-          "label": "Cat with collar"
+          "label": "Dog with collar"
         }
       ],
-      "paragraph": "The cat _______ a blue collar.",
+      "paragraph": "The dog _______ a blue collar.",
       "choices": [
         "has",
         "have"
@@ -787,10 +787,10 @@
       "images": [
         {
           "image": "",
-          "label": "Dolphin with fin"
+          "label": "Dolphin with dorsal fin"
         }
       ],
-      "paragraph": "The dolphin _______ a curved fin.",
+      "paragraph": "The dolphin _______ a dorsal fin.",
       "choices": [
         "has",
         "have"
