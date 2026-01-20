@@ -676,15 +676,30 @@
       ],
       "questions": [
         {
-          "question": "How are a towel and a blanket the same?",
+          "question": "How are a towel and a blanket the <b>same</b>?",
           "answers": [
             "They are both made of soft fabric.",
             "They both keep you warm or dry.",
             "They are both used in the home."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Towel and Blanket",
+      "images": [
+        {
+          "image": "",
+          "label": "Towel"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Blanket"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A towel is used to dry off after a bath.",
             "A blanket is used to keep warm in bed.",
@@ -707,15 +722,30 @@
       ],
       "questions": [
         {
-          "question": "How are a cup and a bowl the same?",
+          "question": "How are a cup and a bowl the <b>same</b>?",
           "answers": [
             "They are both containers for food or drinks.",
             "They can both hold liquids.",
             "They are both used at the table."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Cup and Bowl",
+      "images": [
+        {
+          "image": "",
+          "label": "Cup"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Bowl"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A cup is tall and has a handle.",
             "A bowl is wide and shallow.",
@@ -738,15 +768,30 @@
       ],
       "questions": [
         {
-          "question": "How are a chair and a couch the same?",
+          "question": "How are a chair and a couch the <b>same</b>?",
           "answers": [
             "They are both furniture for sitting.",
             "They both have seats and backs.",
             "They are both found in homes."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Chair and Couch",
+      "images": [
+        {
+          "image": "",
+          "label": "Chair"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Couch"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A chair is for one person.",
             "A couch can seat multiple people.",
@@ -769,15 +814,30 @@
       ],
       "questions": [
         {
-          "question": "How are a lamp and a flashlight the same?",
+          "question": "How are a lamp and a flashlight the <b>same</b>?",
           "answers": [
             "They both produce light.",
             "They both help you see in the dark.",
             "They both use electricity."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Lamp and Flashlight",
+      "images": [
+        {
+          "image": "",
+          "label": "Lamp"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Flashlight"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A lamp stays in one place.",
             "A flashlight is portable.",
@@ -800,15 +860,30 @@
       ],
       "questions": [
         {
-          "question": "How are a pillow and a cushion the same?",
+          "question": "How are a pillow and a cushion the <b>same</b>?",
           "answers": [
             "They are both soft and filled with stuffing.",
             "They both provide comfort.",
             "They are both used on furniture."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Pillow and Cushion",
+      "images": [
+        {
+          "image": "",
+          "label": "Pillow"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Cushion"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A pillow is used for sleeping.",
             "A cushion is used for sitting.",
@@ -831,15 +906,30 @@
       ],
       "questions": [
         {
-          "question": "How are a broom and a mop the same?",
+          "question": "How are a broom and a mop the <b>same</b>?",
           "answers": [
             "They are both cleaning tools.",
             "They both have long handles.",
             "They are both used to clean floors."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Broom and Mop",
+      "images": [
+        {
+          "image": "",
+          "label": "Broom"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Mop"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A broom is used for sweeping dry dirt.",
             "A mop is used for wet cleaning.",
@@ -862,15 +952,30 @@
       ],
       "questions": [
         {
-          "question": "How are a refrigerator and a freezer the same?",
+          "question": "How are a refrigerator and a freezer the <b>same</b>?",
           "answers": [
             "They both keep food cold.",
             "They are both kitchen appliances.",
             "They both use electricity."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Refrigerator and Freezer",
+      "images": [
+        {
+          "image": "",
+          "label": "Refrigerator"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Freezer"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A refrigerator keeps food cool.",
             "A freezer keeps food frozen.",
@@ -893,15 +998,30 @@
       ],
       "questions": [
         {
-          "question": "How are a bathtub and a shower the same?",
+          "question": "How are a bathtub and a shower the <b>same</b>?",
           "answers": [
             "They are both used for bathing.",
             "They both use water to get clean.",
             "They are both found in bathrooms."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Bathtub and Shower",
+      "images": [
+        {
+          "image": "",
+          "label": "Bathtub"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Shower"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A bathtub holds water to soak in.",
             "A shower sprays water from above.",
@@ -924,15 +1044,30 @@
       ],
       "questions": [
         {
-          "question": "How are socks and shoes the same?",
+          "question": "How are socks and shoes the <b>same</b>?",
           "answers": [
             "They are both worn on feet.",
             "They both protect your feet.",
             "They are both clothing items."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Socks and Shoes",
+      "images": [
+        {
+          "image": "",
+          "label": "Socks"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Shoes"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Socks are soft and worn inside shoes.",
             "Shoes are hard and worn outside.",
@@ -955,15 +1090,30 @@
       ],
       "questions": [
         {
-          "question": "How are a hat and a helmet the same?",
+          "question": "How are a hat and a helmet the <b>same</b>?",
           "answers": [
             "They are both worn on the head.",
             "They both cover your head.",
             "They both come in different styles."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Hat and Helmet",
+      "images": [
+        {
+          "image": "",
+          "label": "Hat"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Helmet"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A hat is soft and for fashion or sun protection.",
             "A helmet is hard and protects from injury.",
@@ -986,15 +1136,30 @@
       ],
       "questions": [
         {
-          "question": "How are a jacket and a sweater the same?",
+          "question": "How are a jacket and a sweater the <b>same</b>?",
           "answers": [
             "They are both worn on the upper body.",
             "They both keep you warm.",
             "They are both types of outerwear."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Jacket and Sweater",
+      "images": [
+        {
+          "image": "",
+          "label": "Jacket"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Sweater"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A jacket has a zipper or buttons in front.",
             "A sweater is pulled over the head.",
@@ -1017,15 +1182,30 @@
       ],
       "questions": [
         {
-          "question": "How are flip flops and sandals the same?",
+          "question": "How are flip flops and sandals the <b>same</b>?",
           "answers": [
             "They are both open shoes.",
             "They are both worn in warm weather.",
             "They both leave parts of your feet exposed."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Flip Flops and Sandals",
+      "images": [
+        {
+          "image": "",
+          "label": "Flip Flops"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Sandals"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Flip flops have a strap between the toes.",
             "Sandals have straps around the foot.",
@@ -1048,15 +1228,30 @@
       ],
       "questions": [
         {
-          "question": "How are a backpack and a tote bag the same?",
+          "question": "How are a backpack and a tote bag the <b>same</b>?",
           "answers": [
             "They are both bags for carrying things.",
             "They both have handles or straps.",
             "They both store personal items."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Backpack and Tote Bag",
+      "images": [
+        {
+          "image": "",
+          "label": "Backpack"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Tote Bag"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A backpack is worn on your back.",
             "A tote bag is carried by hand or shoulder.",
@@ -1079,15 +1274,30 @@
       ],
       "questions": [
         {
-          "question": "How are an orange and an apple the same?",
+          "question": "How are an orange and an apple the <b>same</b>?",
           "answers": [
             "They are both fruits.",
             "They are both round in shape.",
             "They are both healthy snacks."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Orange and Apple",
+      "images": [
+        {
+          "image": "",
+          "label": "Orange"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Apple"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "An orange has a peel you remove.",
             "An apple has edible skin.",
@@ -1110,15 +1320,30 @@
       ],
       "questions": [
         {
-          "question": "How are bread and a tortilla the same?",
+          "question": "How are bread and a tortilla the <b>same</b>?",
           "answers": [
             "They are both made from flour.",
             "They are both used to eat with other foods.",
             "They are both baked or cooked."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Bread and Tortilla",
+      "images": [
+        {
+          "image": "",
+          "label": "Bread"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Tortilla"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Bread is thick and fluffy.",
             "A tortilla is thin and flat.",
@@ -1141,15 +1366,30 @@
       ],
       "questions": [
         {
-          "question": "How are juice and a smoothie the same?",
+          "question": "How are juice and a smoothie the <b>same</b>?",
           "answers": [
             "They are both drinks made from fruits.",
             "They are both healthy beverages.",
             "They can both be served cold."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Juice and Smoothie",
+      "images": [
+        {
+          "image": "",
+          "label": "Juice"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Smoothie"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Juice is thin and clear.",
             "A smoothie is thick and creamy.",
@@ -1172,15 +1412,30 @@
       ],
       "questions": [
         {
-          "question": "How are rice and pasta the same?",
+          "question": "How are rice and pasta the <b>same</b>?",
           "answers": [
             "They are both carbohydrates.",
             "They are both cooked in boiling water.",
             "They are both served as side dishes."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Rice and Pasta",
+      "images": [
+        {
+          "image": "",
+          "label": "Rice"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Pasta"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Rice is a grain that grows in paddies.",
             "Pasta is made from wheat flour.",
@@ -1203,15 +1458,30 @@
       ],
       "questions": [
         {
-          "question": "How are a cucumber and a bell pepper the same?",
+          "question": "How are a cucumber and a bell pepper the <b>same</b>?",
           "answers": [
             "They are both vegetables.",
             "They can both be eaten raw.",
             "They are both crunchy."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Cucumber and Bell Pepper",
+      "images": [
+        {
+          "image": "",
+          "label": "Cucumber"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Bell Pepper"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A cucumber is long and green.",
             "A bell pepper is round and can be many colors.",
@@ -1234,15 +1504,30 @@
       ],
       "questions": [
         {
-          "question": "How are a cat and a dog the same?",
+          "question": "How are a cat and a dog the <b>same</b>?",
           "answers": [
             "They are both pets.",
             "They are both furry animals.",
             "They both have four legs."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Cat and Dog",
+      "images": [
+        {
+          "image": "",
+          "label": "Cat"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Dog"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A cat meows and a dog barks.",
             "Cats are more independent, dogs need more attention.",
@@ -1265,15 +1550,30 @@
       ],
       "questions": [
         {
-          "question": "How are a bunny and a hamster the same?",
+          "question": "How are a bunny and a hamster the <b>same</b>?",
           "answers": [
             "They are both small furry pets.",
             "They both have soft fur.",
             "They both eat vegetables."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Bunny and Hamster",
+      "images": [
+        {
+          "image": "",
+          "label": "Bunny"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Hamster"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A bunny has long ears.",
             "A hamster has small round ears.",
@@ -1296,15 +1596,30 @@
       ],
       "questions": [
         {
-          "question": "How are a dolphin and a whale the same?",
+          "question": "How are a dolphin and a whale the <b>same</b>?",
           "answers": [
             "They are both marine mammals.",
             "They both live in the ocean.",
             "They both breathe air through blowholes."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Dolphin and Whale",
+      "images": [
+        {
+          "image": "",
+          "label": "Dolphin"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Whale"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A dolphin is much smaller than a whale.",
             "Dolphins have pointed snouts.",
@@ -1327,15 +1642,30 @@
       ],
       "questions": [
         {
-          "question": "How are a butterfly and a bird the same?",
+          "question": "How are a butterfly and a bird the <b>same</b>?",
           "answers": [
             "They both have wings.",
             "They can both fly.",
             "They are both colorful."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Butterfly and Bird",
+      "images": [
+        {
+          "image": "",
+          "label": "Butterfly"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Bird"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A butterfly is an insect.",
             "A bird has feathers and a beak.",
@@ -1358,15 +1688,30 @@
       ],
       "questions": [
         {
-          "question": "How are sand and water the same?",
+          "question": "How are sand and water the <b>same</b>?",
           "answers": [
             "They are both found at the beach.",
             "They both feel nice to play in.",
             "They are both part of nature."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Sand and Water",
+      "images": [
+        {
+          "image": "",
+          "label": "Sand"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Water"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Sand is solid and dry.",
             "Water is liquid and wet.",
@@ -1389,15 +1734,30 @@
       ],
       "questions": [
         {
-          "question": "How are a surfboard and a boogie board the same?",
+          "question": "How are a surfboard and a boogie board the <b>same</b>?",
           "answers": [
             "They are both used in the ocean.",
             "They both help you ride waves.",
             "They both float on water."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Surfboard and Boogie Board",
+      "images": [
+        {
+          "image": "",
+          "label": "Surfboard"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Boogie Board"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A surfboard is longer and you stand on it.",
             "A boogie board is shorter and you lie on it.",
@@ -1420,15 +1780,30 @@
       ],
       "questions": [
         {
-          "question": "How are a seashell and a starfish the same?",
+          "question": "How are a seashell and a starfish the <b>same</b>?",
           "answers": [
             "They are both found at the beach.",
             "They both come from the ocean.",
             "They are both collected as souvenirs."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Seashell and Starfish",
+      "images": [
+        {
+          "image": "",
+          "label": "Seashell"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Starfish"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A seashell is a hard shell from a mollusk.",
             "A starfish is a living sea creature.",
@@ -1451,15 +1826,30 @@
       ],
       "questions": [
         {
-          "question": "How are a beach towel and a beach umbrella the same?",
+          "question": "How are a beach towel and a beach umbrella the <b>same</b>?",
           "answers": [
             "They are both used at the beach.",
             "They both help you stay comfortable.",
             "They are both brought for beach trips."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Beach Towel and Beach Umbrella",
+      "images": [
+        {
+          "image": "",
+          "label": "Beach Towel"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Beach Umbrella"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A beach towel is for lying on or drying off.",
             "A beach umbrella provides shade from the sun.",
@@ -1482,15 +1872,30 @@
       ],
       "questions": [
         {
-          "question": "How are crayons and markers the same?",
+          "question": "How are crayons and markers the <b>same</b>?",
           "answers": [
             "They are both used for coloring.",
             "They both come in many colors.",
             "They are both art supplies."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Crayons and Markers",
+      "images": [
+        {
+          "image": "",
+          "label": "Crayons"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Markers"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Crayons are made of wax.",
             "Markers use ink.",
@@ -1513,15 +1918,30 @@
       ],
       "questions": [
         {
-          "question": "How are paint and glue the same?",
+          "question": "How are paint and glue the <b>same</b>?",
           "answers": [
             "They are both used in art projects.",
             "They both come in bottles.",
             "They both start wet and dry."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Paint and Glue",
+      "images": [
+        {
+          "image": "",
+          "label": "Paint"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Glue"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Paint adds color to things.",
             "Glue sticks things together.",
@@ -1544,15 +1964,30 @@
       ],
       "questions": [
         {
-          "question": "How are a puzzle and building blocks the same?",
+          "question": "How are a puzzle and building blocks the <b>same</b>?",
           "answers": [
             "They are both toys with many pieces.",
             "They both require thinking to use.",
             "They are both fun to play with."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Puzzle and Building Blocks",
+      "images": [
+        {
+          "image": "",
+          "label": "Puzzle"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Building Blocks"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "A puzzle pieces fit together to make a picture.",
             "Building blocks stack to make structures.",
@@ -1575,15 +2010,30 @@
       ],
       "questions": [
         {
-          "question": "How are sewing and knitting the same?",
+          "question": "How are sewing and knitting the <b>same</b>?",
           "answers": [
             "They are both crafts that use thread or yarn.",
             "They both create fabric items.",
             "They both require practice and skill."
           ]
+        }
+      ]
+    },
+    {
+      "title": "Sewing and Knitting",
+      "images": [
+        {
+          "image": "",
+          "label": "Sewing"
         },
         {
-          "question": "How are they different?",
+          "image": "",
+          "label": "Knitting"
+        }
+      ],
+      "questions": [
+        {
+          "question": "How are they <b>different</b>?",
           "answers": [
             "Sewing uses a needle and thread.",
             "Knitting uses two needles and yarn.",

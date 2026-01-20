@@ -242,7 +242,7 @@ function renderQuestion(question: string): string {
     const hasBlank = question.includes('___');
     const questionHtml = hasBlank
         ? question.replace(/_+/g, '<span class="quiz-blank">______</span>')
-        : escapeHtml(question);
+        : question;
     return `<div class="preview-question">${questionHtml}</div>`;
 }
 
