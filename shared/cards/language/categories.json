@@ -84,9 +84,9 @@
         },
         {
           "image": "/shared/images/categories/1-Identifying_Members/2_beverages/soda.png",
-          "label": "soda",
+          "label": "bottled soda",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a glass of bubbly soda with ice, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a plastic bottle of soda, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
@@ -1507,9 +1507,9 @@
         },
         {
           "image": "/shared/images/categories/2-Label_Category/2_beverages/soda.png",
-          "label": "soda",
+          "label": "bottled soda",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a glass of soda with ice, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a plastic bottle of soda, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
