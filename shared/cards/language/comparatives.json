@@ -682,22 +682,7 @@
             "They both keep you warm or dry.",
             "They are both used in the home."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Towel and Blanket",
-      "images": [
-        {
-          "image": "",
-          "label": "Towel"
         },
-        {
-          "image": "",
-          "label": "Blanket"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -728,22 +713,7 @@
             "They can both hold liquids.",
             "They are both used at the table."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Cup and Bowl",
-      "images": [
-        {
-          "image": "",
-          "label": "Cup"
         },
-        {
-          "image": "",
-          "label": "Bowl"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -774,22 +744,7 @@
             "They both have seats and backs.",
             "They are both found in homes."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Chair and Couch",
-      "images": [
-        {
-          "image": "",
-          "label": "Chair"
         },
-        {
-          "image": "",
-          "label": "Couch"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -820,22 +775,7 @@
             "They both help you see in the dark.",
             "They both use electricity."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Lamp and Flashlight",
-      "images": [
-        {
-          "image": "",
-          "label": "Lamp"
         },
-        {
-          "image": "",
-          "label": "Flashlight"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -866,22 +806,7 @@
             "They both provide comfort.",
             "They are both used on furniture."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Pillow and Cushion",
-      "images": [
-        {
-          "image": "",
-          "label": "Pillow"
         },
-        {
-          "image": "",
-          "label": "Cushion"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -912,22 +837,7 @@
             "They both have long handles.",
             "They are both used to clean floors."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Broom and Mop",
-      "images": [
-        {
-          "image": "",
-          "label": "Broom"
         },
-        {
-          "image": "",
-          "label": "Mop"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -958,22 +868,7 @@
             "They are both kitchen appliances.",
             "They both use electricity."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Refrigerator and Freezer",
-      "images": [
-        {
-          "image": "",
-          "label": "Refrigerator"
         },
-        {
-          "image": "",
-          "label": "Freezer"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1004,22 +899,7 @@
             "They both use water to get clean.",
             "They are both found in bathrooms."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Bathtub and Shower",
-      "images": [
-        {
-          "image": "",
-          "label": "Bathtub"
         },
-        {
-          "image": "",
-          "label": "Shower"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1050,22 +930,7 @@
             "They both protect your feet.",
             "They are both clothing items."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Socks and Shoes",
-      "images": [
-        {
-          "image": "",
-          "label": "Socks"
         },
-        {
-          "image": "",
-          "label": "Shoes"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1096,22 +961,7 @@
             "They both cover your head.",
             "They both come in different styles."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Hat and Helmet",
-      "images": [
-        {
-          "image": "",
-          "label": "Hat"
         },
-        {
-          "image": "",
-          "label": "Helmet"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1142,22 +992,7 @@
             "They both keep you warm.",
             "They are both types of outerwear."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Jacket and Sweater",
-      "images": [
-        {
-          "image": "",
-          "label": "Jacket"
         },
-        {
-          "image": "",
-          "label": "Sweater"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1188,22 +1023,7 @@
             "They are both worn in warm weather.",
             "They both leave parts of your feet exposed."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Flip Flops and Sandals",
-      "images": [
-        {
-          "image": "",
-          "label": "Flip Flops"
         },
-        {
-          "image": "",
-          "label": "Sandals"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1234,22 +1054,7 @@
             "They both have handles or straps.",
             "They both store personal items."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Backpack and Tote Bag",
-      "images": [
-        {
-          "image": "",
-          "label": "Backpack"
         },
-        {
-          "image": "",
-          "label": "Tote Bag"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1280,22 +1085,7 @@
             "They are both round in shape.",
             "They are both healthy snacks."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Orange and Apple",
-      "images": [
-        {
-          "image": "",
-          "label": "Orange"
         },
-        {
-          "image": "",
-          "label": "Apple"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1326,22 +1116,7 @@
             "They are both used to eat with other foods.",
             "They are both baked or cooked."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Bread and Tortilla",
-      "images": [
-        {
-          "image": "",
-          "label": "Bread"
         },
-        {
-          "image": "",
-          "label": "Tortilla"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1372,22 +1147,7 @@
             "They are both healthy beverages.",
             "They can both be served cold."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Juice and Smoothie",
-      "images": [
-        {
-          "image": "",
-          "label": "Juice"
         },
-        {
-          "image": "",
-          "label": "Smoothie"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1418,22 +1178,7 @@
             "They are both cooked in boiling water.",
             "They are both served as side dishes."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Rice and Pasta",
-      "images": [
-        {
-          "image": "",
-          "label": "Rice"
         },
-        {
-          "image": "",
-          "label": "Pasta"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1464,22 +1209,7 @@
             "They can both be eaten raw.",
             "They are both crunchy."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Cucumber and Bell Pepper",
-      "images": [
-        {
-          "image": "",
-          "label": "Cucumber"
         },
-        {
-          "image": "",
-          "label": "Bell Pepper"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1510,22 +1240,7 @@
             "They are both furry animals.",
             "They both have four legs."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Cat and Dog",
-      "images": [
-        {
-          "image": "",
-          "label": "Cat"
         },
-        {
-          "image": "",
-          "label": "Dog"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1556,22 +1271,7 @@
             "They both have soft fur.",
             "They both eat vegetables."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Bunny and Hamster",
-      "images": [
-        {
-          "image": "",
-          "label": "Bunny"
         },
-        {
-          "image": "",
-          "label": "Hamster"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1602,22 +1302,7 @@
             "They both live in the ocean.",
             "They both breathe air through blowholes."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Dolphin and Whale",
-      "images": [
-        {
-          "image": "",
-          "label": "Dolphin"
         },
-        {
-          "image": "",
-          "label": "Whale"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1648,22 +1333,7 @@
             "They can both fly.",
             "They are both colorful."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Butterfly and Bird",
-      "images": [
-        {
-          "image": "",
-          "label": "Butterfly"
         },
-        {
-          "image": "",
-          "label": "Bird"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1694,22 +1364,7 @@
             "They both feel nice to play in.",
             "They are both part of nature."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Sand and Water",
-      "images": [
-        {
-          "image": "",
-          "label": "Sand"
         },
-        {
-          "image": "",
-          "label": "Water"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1740,22 +1395,7 @@
             "They both help you ride waves.",
             "They both float on water."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Surfboard and Boogie Board",
-      "images": [
-        {
-          "image": "",
-          "label": "Surfboard"
         },
-        {
-          "image": "",
-          "label": "Boogie Board"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1786,22 +1426,7 @@
             "They both come from the ocean.",
             "They are both collected as souvenirs."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Seashell and Starfish",
-      "images": [
-        {
-          "image": "",
-          "label": "Seashell"
         },
-        {
-          "image": "",
-          "label": "Starfish"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1832,22 +1457,7 @@
             "They both help you stay comfortable.",
             "They are both brought for beach trips."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Beach Towel and Beach Umbrella",
-      "images": [
-        {
-          "image": "",
-          "label": "Beach Towel"
         },
-        {
-          "image": "",
-          "label": "Beach Umbrella"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1878,22 +1488,7 @@
             "They both come in many colors.",
             "They are both art supplies."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Crayons and Markers",
-      "images": [
-        {
-          "image": "",
-          "label": "Crayons"
         },
-        {
-          "image": "",
-          "label": "Markers"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1924,22 +1519,7 @@
             "They both come in bottles.",
             "They both start wet and dry."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Paint and Glue",
-      "images": [
-        {
-          "image": "",
-          "label": "Paint"
         },
-        {
-          "image": "",
-          "label": "Glue"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -1970,22 +1550,7 @@
             "They both require thinking to use.",
             "They are both fun to play with."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Puzzle and Building Blocks",
-      "images": [
-        {
-          "image": "",
-          "label": "Puzzle"
         },
-        {
-          "image": "",
-          "label": "Building Blocks"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
@@ -2016,22 +1581,7 @@
             "They both create fabric items.",
             "They both require practice and skill."
           ]
-        }
-      ]
-    },
-    {
-      "title": "Sewing and Knitting",
-      "images": [
-        {
-          "image": "",
-          "label": "Sewing"
         },
-        {
-          "image": "",
-          "label": "Knitting"
-        }
-      ],
-      "questions": [
         {
           "question": "How are they <b>different</b>?",
           "answers": [
