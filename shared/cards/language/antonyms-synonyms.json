@@ -4,7 +4,7 @@
       "question": "Name an antonym for tall",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/7_tall_short/short.png",
           "label": "short",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a small mouse standing next to a ruler showing its tiny height, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -18,7 +18,7 @@
       "question": "Name an antonym for full",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/13_full_empty/empty.png",
           "label": "empty",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of an empty clear glass jar with nothing inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -102,7 +102,7 @@
       "question": "Name an antonym for smooth",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/1_Antonym Name One - Middle/24_rough.png",
           "label": "rough",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a rough tree bark with bumpy, uneven texture clearly visible, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -354,7 +354,7 @@
       "question": "Name an antonym for wet",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/10_wet_dry/dry.png",
           "label": "dry",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a dry fluffy folded towel, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -399,7 +399,8 @@
           "image": "",
           "label": "fake",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of cheap plastic toy fake apple with extremely shiny surface, unnaturally bright red color, visible seam lines, and fake appearance that children can easily recognize as not real, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."        }
+          "prompt": "High resolution photorealistic photograph of cheap plastic toy fake apple with extremely shiny surface, unnaturally bright red color, visible seam lines, and fake appearance that children can easily recognize as not real, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+        }
       ],
       "answers": [
         "fake"
@@ -409,7 +410,7 @@
       "question": "Name an antonym for up",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/5_up_down/down.png",
           "label": "down",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a red arrow pointing downward, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -722,24 +723,24 @@
       ]
     },
     {
-    "question": "What is the opposite of sit?",
-    "images": [
-      {
-        "image": "/images/cards/7_antonyms/sit_stand/sit.png",
-        "label": "sit",
-        "style": "illustrated",
-        "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child sitting down on a chair with good posture, relaxed and comfortable. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
-      },
-      {
-        "image": "/images/cards/7_antonyms/sit_stand/stand.png",
-        "label": "stand",
-        "style": "illustrated",
-        "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child standing upright with good posture, feet firmly on ground, confident stance. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
-      }
-    ],
-    "answers": [
-      "stand"
-    ]
+      "question": "What is the opposite of sit?",
+      "images": [
+        {
+          "image": "/images/cards/7_antonyms/sit_stand/sit.png",
+          "label": "sit",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child sitting down on a chair with good posture, relaxed and comfortable. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        },
+        {
+          "image": "/images/cards/7_antonyms/sit_stand/stand.png",
+          "label": "stand",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child standing upright with good posture, feet firmly on ground, confident stance. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        }
+      ],
+      "answers": [
+        "stand"
+      ]
     },
     {
       "question": "What is the opposite of pull?",
@@ -902,45 +903,45 @@
       ]
     },
     {
-    "question": "What is the opposite of all?",
-    "images": [
-      {
-        "image": "/images/cards/7_antonyms/all-none/all.png",
-        "label": "all",
-        "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a white ceramic plate completely filled with golden brown cookies studded with dark black chocolate chips, approximately 8-10 cookies arranged on the plate, all cookies fresh and intact showing realistic texture with visible black chocolate chip pieces throughout, golden baked appearance contrasting with dark black chocolate, on a pure white background, with natural soft studio lighting creating subtle shadows and highlights on cookies, realistic ceramic plate texture with slight reflection. Professional studio photography with crisp focus and depth. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
-      },
-      {
-        "image": "/images/cards/7_antonyms/all-none/none.png",
-        "label": "none",
-        "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of the same white ceramic plate completely empty with only a few scattered cookie crumbs and small black chocolate chip pieces remaining, no whole cookies present, showing clean ceramic surface with realistic crumb details and dark chocolate fragments, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic ceramic plate texture with slight reflection. Professional studio photography with crisp focus and depth. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
-      }
-    ],
-    "answers": [
-      "none"
-    ]
-   },
+      "question": "What is the opposite of all?",
+      "images": [
+        {
+          "image": "/images/cards/7_antonyms/all-none/all.png",
+          "label": "all",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a white ceramic plate completely filled with golden brown cookies studded with dark black chocolate chips, approximately 8-10 cookies arranged on the plate, all cookies fresh and intact showing realistic texture with visible black chocolate chip pieces throughout, golden baked appearance contrasting with dark black chocolate, on a pure white background, with natural soft studio lighting creating subtle shadows and highlights on cookies, realistic ceramic plate texture with slight reflection. Professional studio photography with crisp focus and depth. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        },
+        {
+          "image": "/images/cards/7_antonyms/all-none/none.png",
+          "label": "none",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of the same white ceramic plate completely empty with only a few scattered cookie crumbs and small black chocolate chip pieces remaining, no whole cookies present, showing clean ceramic surface with realistic crumb details and dark chocolate fragments, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic ceramic plate texture with slight reflection. Professional studio photography with crisp focus and depth. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        }
+      ],
+      "answers": [
+        "none"
+      ]
+    },
     {
-    "question": "What is the opposite of play?",
-    "images": [
-      {
-        "image": "/images/cards/7_antonyms/play_work/play.png",
-        "label": "play",
-        "style": "illustrated",
-        "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. A young child with blonde hair wearing an orange and white striped shirt with teal overalls, playing happily on the floor with colorful toy blocks and a red toy car, big joyful smile, eyes bright with excitement, having fun building and creating, relaxed playful posture sitting cross-legged. Calm, timeless vintage watercolor style, NOT modern cartoon or AI style. Non-distracting background with soft warm peachy muted colors and gentle shading. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
-      },
-      {
-        "image": "/images/cards/7_antonyms/play_work/work.png",
-        "label": "work",
-        "style": "illustrated",
-        "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. The same young child with blonde hair wearing an orange and white striped shirt with teal overalls, sitting at a wooden desk doing homework with open books and pencils in front of them, focused concentrated expression with furrowed brow, hand holding pencil writing, serious studious posture sitting upright in chair. Calm, timeless vintage watercolor style, NOT modern cartoon or AI style. Non-distracting background with soft cooler muted colors and gentle shading. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
-      }
-    ],
-    "answers": [
-      "work"
-    ]
-  },
+      "question": "What is the opposite of play?",
+      "images": [
+        {
+          "image": "/images/cards/7_antonyms/play_work/play.png",
+          "label": "play",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. A young child with blonde hair wearing an orange and white striped shirt with teal overalls, playing happily on the floor with colorful toy blocks and a red toy car, big joyful smile, eyes bright with excitement, having fun building and creating, relaxed playful posture sitting cross-legged. Calm, timeless vintage watercolor style, NOT modern cartoon or AI style. Non-distracting background with soft warm peachy muted colors and gentle shading. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        },
+        {
+          "image": "/images/cards/7_antonyms/play_work/work.png",
+          "label": "work",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. The same young child with blonde hair wearing an orange and white striped shirt with teal overalls, sitting at a wooden desk doing homework with open books and pencils in front of them, focused concentrated expression with furrowed brow, hand holding pencil writing, serious studious posture sitting upright in chair. Calm, timeless vintage watercolor style, NOT modern cartoon or AI style. Non-distracting background with soft cooler muted colors and gentle shading. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        }
+      ],
+      "answers": [
+        "work"
+      ]
+    },
     {
       "question": "What is the opposite of wrong?",
       "images": [
@@ -961,7 +962,7 @@
         "correct"
       ]
     },
-      {
+    {
       "question": "What is the opposite of top?",
       "images": [
         {
@@ -1027,7 +1028,7 @@
       "question": "Choose the best antonym for: attach",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/1_detach.png",
           "label": "detach",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child detaching two pieces of paper, separating them apart. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1045,7 +1046,7 @@
       "question": "Choose the best antonym for: construct",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/20_destroy.png",
           "label": "destroy",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child knocking down a tower of wooden building blocks. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1063,7 +1064,7 @@
       "question": "Choose the best antonym for: appear",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/3_vanish.png",
           "label": "vanish",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child vanishing behind a curtain, disappearing from view. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1081,7 +1082,7 @@
       "question": "Choose the best antonym for: accept",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/4_reject.png",
           "label": "reject",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child rejecting something, pushing it away with hands and shaking head no. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1099,7 +1100,7 @@
       "question": "Choose the best antonym for: accelerate",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/5_decelerate.png",
           "label": "decelerate",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child slowing down from running, coming to a gradual stop. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1117,7 +1118,7 @@
       "question": "Choose the best antonym for: include",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/6_exclude.png",
           "label": "exclude",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child being left out of a group game, standing alone to the side. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1135,7 +1136,7 @@
       "question": "Choose the best antonym for: ascend",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/7_descend.png",
           "label": "descend",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child descending stairs, walking downward step by step. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1153,7 +1154,7 @@
       "question": "Choose the best antonym for: begin",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/8_end.png",
           "label": "end",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child crossing the finish line, ending a race with arms raised. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1171,7 +1172,7 @@
       "question": "Choose the best antonym for: capture",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/9_release.png",
           "label": "release",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child releasing a butterfly from a jar, letting it fly free. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1189,7 +1190,7 @@
       "question": "Choose the best antonym for: mix",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/10_separate.png",
           "label": "separate",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child separating colored blocks into different piles. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1207,7 +1208,7 @@
       "question": "Choose the best antonym for: expand",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/11_shrink.png",
           "label": "shrink",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child curling up small, making themselves tiny. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1225,7 +1226,7 @@
       "question": "Choose the best antonym for: increase",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/12_decrease.png",
           "label": "decrease",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child removing blocks from a tower to decrease its height. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1261,7 +1262,7 @@
       "question": "Choose the best antonym for: defend",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/14_attack.png",
           "label": "attack",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child playfully attacking a piñata with a stick. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1279,7 +1280,7 @@
       "question": "Choose the best antonym for: permit",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/15_forbid.png",
           "label": "forbid",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child forbidding something, holding up hand in a stop gesture and shaking head no. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1297,7 +1298,7 @@
       "question": "Choose the best antonym for: advance",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/16_retreat.png",
           "label": "retreat",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child retreating backwards, stepping back cautiously. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1315,7 +1316,7 @@
       "question": "Choose the best antonym for: collect",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/17_scatter.png",
           "label": "scatter",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child scattering seeds on the ground, spreading them around. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1333,7 +1334,7 @@
       "question": "Choose the best antonym for: conceal",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/18_reveal.png",
           "label": "reveal",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child revealing a hidden toy, showing it proudly with a smile. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1351,7 +1352,7 @@
       "question": "Choose the best antonym for: praise",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/19_criticize.png",
           "label": "criticize",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child pointing out a mistake on a drawing, giving constructive feedback. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1369,7 +1370,7 @@
       "question": "Choose the best antonym for: create",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/20_destroy.png",
           "label": "destroy",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child crumpling up a piece of paper, destroying it. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1387,7 +1388,7 @@
       "question": "Choose the best antonym for: enter",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/21_exit.png",
           "label": "exit",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child exiting through a doorway, stepping outside. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1405,7 +1406,7 @@
       "question": "Choose the best antonym for: raise",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/22_lower.png",
           "label": "lower",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child lowering their hand down slowly. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1423,7 +1424,7 @@
       "question": "Choose the best antonym for: lend",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/23_borrow.png",
           "label": "borrow",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child borrowing a book from a friend, receiving it gratefully. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1441,7 +1442,7 @@
       "question": "Choose the best antonym for: arrive",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/24_depart.png",
           "label": "depart",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child departing, waving goodbye as they leave. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1459,7 +1460,7 @@
       "question": "Choose the best antonym for: push",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/17_pull_push/pull.png",
           "label": "pull",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child pulling a toy wagon behind them. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1477,7 +1478,7 @@
       "question": "Choose the best antonym for: succeed",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/26_fail.png",
           "label": "fail",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking disappointed after failing to stack blocks, with blocks fallen over. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1495,7 +1496,7 @@
       "question": "Choose the best antonym for: open",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/27_close.png",
           "label": "close",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child closing a door, pulling it shut. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1513,7 +1514,7 @@
       "question": "Choose the best antonym for: save",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/28_spend.png",
           "label": "spend",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child spending coins at a store, handing money to a shopkeeper. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1531,7 +1532,7 @@
       "question": "Choose the best antonym for: tighten",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/29_loosen.png",
           "label": "loosen",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child loosening a lid on a jar, twisting it open. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1549,7 +1550,7 @@
       "question": "Choose the best antonym for: reward",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/30_punish.png",
           "label": "punish",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child in timeout sitting on a chair, looking remorseful. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1569,7 +1570,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/1_amazement.png",
           "label": "amazement",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with an amazed expression, eyes wide and mouth open in wonder. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1587,7 +1588,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/2_joyful.png",
           "label": "joyful",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking joyful, jumping with arms raised and a big smile. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1604,7 +1605,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/3_frightened.png",
           "label": "frightened",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking frightened, hiding behind their hands with wide scared eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
@@ -1621,7 +1622,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/4_furious.png",
           "label": "furious",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking furious, with furrowed brows and clenched fists, very angry expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
@@ -1638,7 +1639,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/5_unhappy.png",
           "label": "unhappy",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking unhappy, with a sad frown and downcast eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft cool muted colors. Clear and simple composition for speech therapy use with children."
@@ -1655,7 +1656,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/6_quick.png",
           "label": "quick",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a cheetah running fast with motion blur showing speed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1672,7 +1673,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/7_huge.png",
           "label": "huge",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a huge elephant standing tall and massive, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1690,7 +1691,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/1_Antonym Name One - Middle/9_tiny.png",
           "label": "tiny",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a tiny ladybug on a leaf, very small, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1707,7 +1708,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/9_exhausted.png",
           "label": "exhausted",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking exhausted, yawning with droopy eyes and slumped shoulders. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
@@ -1724,7 +1725,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/1_Antonym Name One - Middle/16_bright.png",
           "label": "bright",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a bright shining sun with rays of light, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1741,7 +1742,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/11_puzzled.png",
           "label": "puzzled",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking puzzled, scratching their head with a confused expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
@@ -1758,7 +1759,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/12_beautiful.png",
           "label": "beautiful",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a beautiful colorful butterfly with intricate wing patterns, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1775,7 +1776,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/13_courageous.png",
           "label": "courageous",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child standing tall with a brave, courageous expression, chest out and confident pose. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1792,7 +1793,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/14_silent.png",
           "label": "silent",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with finger on lips making a silent shh gesture. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
@@ -1809,7 +1810,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/15_noisy.png",
           "label": "noisy",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a ringing alarm clock with bells on top, suggesting noise and sound, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
@@ -1826,7 +1827,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/16_hilarious.png",
           "label": "hilarious",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child laughing hysterically with mouth wide open, eyes squeezed shut with joy, holding belly, doubled over with laughter, extremely amused expression. Calm, timeless style, NOT modern cartoon or AI style. Soft warm muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
@@ -1843,7 +1844,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/17_freezing.png",
           "label": "freezing",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of ice cubes and frost crystals showing freezing cold, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1860,7 +1861,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/18_boiling.png",
           "label": "boiling",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a pot of boiling water with steam and bubbles rising, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1877,7 +1878,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/19_delicious.png",
           "label": "delicious",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a delicious slice of chocolate cake with frosting, looking appetizing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1894,7 +1895,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/20_kind.png",
           "label": "kind",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child being kind, helping another child who fell down, offering a hand. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1911,7 +1912,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/21_cruel.png",
           "label": "cruel",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a mean, cruel expression, arms crossed with an unkind look. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
@@ -1928,7 +1929,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/22_anxious.png",
           "label": "anxious",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking anxious, biting their nails with a worried expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft muted colors. Clear and simple composition for speech therapy use with children."
@@ -1945,7 +1946,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/23_wealthy.png",
           "label": "wealthy",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a treasure chest overflowing with gold coins and jewels, showing wealth, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1962,12 +1963,12 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/24_intelligent.png",
           "label": "intelligent",
           "style": "illustrated",
-          "prompt":"Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child concentrating deeply while solving a complex puzzle or math problem, thoughtful focused expression, finger on chin in thinking pose, books or educational materials nearby, showing intelligence and mental effort. Calm, timeless style, NOT modern cartoon or AI style. Soft warm muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child concentrating deeply while solving a complex puzzle or math problem, thoughtful focused expression, finger on chin in thinking pose, books or educational materials nearby, showing intelligence and mental effort. Calm, timeless style, NOT modern cartoon or AI style. Soft warm muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
         }
-        ],
+      ],
       "answers": [
         "smart",
         "clever",
@@ -1979,7 +1980,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/25_simple.png",
           "label": "simple",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a simple wooden block, plain and basic, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1996,7 +1997,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/26_difficult.png",
           "label": "difficult",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child struggling with a difficult homework problem, confused frustrated expression, scratching head, papers with complex work in front of them, showing challenge and difficulty. Calm, timeless style, NOT modern cartoon or AI style. Soft muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
@@ -2013,7 +2014,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/27_begin.png",
           "label": "begin",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child at the starting line ready to begin a race, crouched in starting position, excited anticipatory expression, just about to start running. Calm, timeless style, NOT modern cartoon or AI style. Soft warm muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
@@ -2030,7 +2031,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/28_finish.png",
           "label": "finish",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child crossing the finish line of a race with arms raised in triumph, exhausted but happy expression, completing the race, sense of accomplishment and ending. Calm, timeless style, NOT modern cartoon or AI style. Soft warm muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
@@ -2047,7 +2048,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/29_speak.png",
           "label": "speak",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child standing and speaking confidently, perhaps presenting or sharing ideas, mouth open talking, expressive hand gestures, active communication. Calm, timeless style, NOT modern cartoon or AI style. Soft warm muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
@@ -2064,7 +2065,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/30_observe.png",
           "label": "observe",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child observing something carefully, leaning in with focused attention, hand shading eyes or using magnifying glass, concentrated watchful expression, actively looking and studying. Calm, timeless style, NOT modern cartoon or AI style. Soft muted background colors. Clear and simple composition for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
@@ -2084,7 +2085,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/2_hot_cold/cold.png",
           "label": "cold",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a frozen winter scene with ice crystals and frost, representing the concept of cold, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2102,7 +2103,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/4_happy_sad/happy.png",
           "label": "happy",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a happy, joyful expression, smiling brightly. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2119,7 +2120,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/4_happy_sad/sad.png",
           "label": "sad",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a sad expression, looking downcast with drooping shoulders. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2136,7 +2137,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/3_big_small/big.png",
           "label": "big",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a large elephant next to a tiny mouse, showing size contrast for the concept of big, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2153,7 +2154,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/3_big_small/small.png",
           "label": "small",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a tiny ladybug on a leaf, representing the concept of small, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2170,7 +2171,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/1_fast_slow/fast.png",
           "label": "fast",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a cheetah running at full speed, representing the concept of fast, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2187,7 +2188,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/1_fast_slow/slow.png",
           "label": "slow",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a slow-moving turtle, representing the concept of slow, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2204,7 +2205,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/2_hot_cold/hot.png",
           "label": "hot",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a steaming cup of hot cocoa with visible steam rising, representing the concept of hot, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2221,7 +2222,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/9_funny.png",
           "label": "funny",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child laughing at something funny, with a silly grin. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2238,7 +2239,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/10_nice.png",
           "label": "nice",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child being nice and kind, sharing with another child. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2255,7 +2256,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/11_scared.png",
           "label": "scared",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a scared expression, eyes wide and looking frightened. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2272,7 +2273,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/12_mad.png",
           "label": "mad",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with an angry expression, frowning with arms crossed. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2323,7 +2324,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/12_clean_dirty/clean.png",
           "label": "clean",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a tidy, clean room with everything in its place, representing the concept of clean, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2340,7 +2341,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/11_loud_quiet/loud.png",
           "label": "loud",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a large drum with drumsticks, representing the concept of loud, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2357,7 +2358,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/11_loud_quiet/quiet.png",
           "label": "quiet",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with finger to lips in a 'shh' gesture, being quiet. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2374,7 +2375,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/18_tired.png",
           "label": "tired",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking tired and sleepy, yawning with droopy eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2391,7 +2392,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/19_surprised.png",
           "label": "surprised",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with a surprised expression, eyes wide and mouth open in amazement. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2425,7 +2426,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/21_yucky.png",
           "label": "yucky",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child making a disgusted face at something yucky, nose wrinkled. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2459,7 +2460,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/14_hard_soft/hard.png",
           "label": "hard",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a complex jigsaw puzzle with many tiny pieces, representing the concept of hard, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2476,7 +2477,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/24_start.png",
           "label": "start",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child at the starting line of a race, ready to begin running. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2493,7 +2494,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/3_Antonyms Level 2/8_end.png",
           "label": "end",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child crossing the finish line of a race, arms raised in victory. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2510,7 +2511,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/26_walk.png",
           "label": "walk",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child walking along a path, taking steady steps. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2527,7 +2528,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/27_talk.png",
           "label": "talk",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Two young children talking to each other, having a conversation. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2544,7 +2545,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/28_look.png",
           "label": "look",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking at something with curious eyes, gazing intently. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2561,7 +2562,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/29_jump.png",
           "label": "jump",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child jumping in the air with joy, feet off the ground. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2578,7 +2579,7 @@
       "question": "Name a synonym.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/17_pull_push/pull.png",
           "label": "pull",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child pulling a wagon or toy behind them. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2597,7 +2598,7 @@
       "question": "What means the same as watch?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/2_Synonym Name One - Elementary/28_look.png",
           "label": "look",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking at something with curiosity, eyes focused. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2615,7 +2616,7 @@
       "question": "What means the same as happy?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/2_glad.png",
           "label": "glad",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking glad, with a pleased smile on their face. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2633,7 +2634,7 @@
       "question": "What means the same as fast?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/6_quick.png",
           "label": "quick",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child moving quickly, running fast with motion blur. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2687,7 +2688,7 @@
       "question": "What means the same as sad?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/5_unhappy.png",
           "label": "unhappy",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking unhappy, with a frown and downcast eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2705,7 +2706,7 @@
       "question": "What means the same as mad?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/7_angry.png",
           "label": "angry",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking angry, with furrowed brows and arms crossed. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2723,7 +2724,7 @@
       "question": "What means the same as scared?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/8_afraid.png",
           "label": "afraid",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking afraid, hiding behind their hands with wide scared eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2777,7 +2778,7 @@
       "question": "What means the same as funny?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/11_silly.png",
           "label": "silly",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child being silly, making a funny face with tongue sticking out. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2795,7 +2796,7 @@
       "question": "What means the same as pretty?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/12_beautiful.png",
           "label": "beautiful",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a beautiful colorful butterfly with wings spread, representing the concept of beautiful, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2813,7 +2814,7 @@
       "question": "What means the same as loud?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/15_noisy.png",
           "label": "noisy",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a noisy drum set, representing the concept of noisy, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2831,7 +2832,7 @@
       "question": "What means the same as quiet?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/14_silent.png",
           "label": "silent",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child being silent, finger to lips in a shush gesture. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2849,7 +2850,7 @@
       "question": "What means the same as nice?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/20_kind.png",
           "label": "kind",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child being kind, sharing a toy with a friend. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2867,7 +2868,7 @@
       "question": "What means the same as tired?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/16_sleepy.png",
           "label": "sleepy",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking sleepy, yawning with droopy eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2885,7 +2886,7 @@
       "question": "What means the same as start?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/27_begin.png",
           "label": "begin",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child at the starting line, ready to begin a race. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2903,7 +2904,7 @@
       "question": "What means the same as end?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/28_finish.png",
           "label": "finish",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child crossing the finish line of a race with arms raised. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2957,7 +2958,7 @@
       "question": "What means the same as clean?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/antonyms/2_Antonyms/1_Antonym Name One - Middle/3_neat.png",
           "label": "neat",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a neat and tidy desk with organized items, representing the concept of neat, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -2975,7 +2976,7 @@
       "question": "What means the same as talk?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/29_speak.png",
           "label": "speak",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child speaking, mouth open as if talking to someone. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2993,7 +2994,7 @@
       "question": "What means the same as jump?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/23_leap.png",
           "label": "leap",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child leaping through the air with joy. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3011,7 +3012,7 @@
       "question": "What means the same as walk?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/24_stroll.png",
           "label": "stroll",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child strolling leisurely in a park. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3029,7 +3030,7 @@
       "question": "What means the same as pull?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/25_tug.png",
           "label": "tug",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child tugging on a rope in a tug of war game. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3047,7 +3048,7 @@
       "question": "What means the same as easy?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/25_simple.png",
           "label": "simple",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a simple 4-piece puzzle for toddlers, representing the concept of simple, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -3065,7 +3066,7 @@
       "question": "What means the same as hard?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/26_difficult.png",
           "label": "difficult",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a difficult 1000-piece puzzle with many pieces, representing the concept of difficult, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -3101,7 +3102,7 @@
       "question": "What means the same as brave?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/13_courageous.png",
           "label": "courageous",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child standing courageous and tall, chest out with a confident pose. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3119,7 +3120,7 @@
       "question": "What means the same as smart?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/30_clever.png",
           "label": "clever",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking clever, thinking with a finger on chin and a lightbulb moment expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3139,7 +3140,7 @@
       "question": "Choose the best synonym for: meeting",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/1_encounter.png",
           "label": "encounter",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Two children encountering each other, meeting unexpectedly with friendly waves. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3157,7 +3158,7 @@
       "question": "Choose the best synonym for: curious",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/2_inquisitive.png",
           "label": "inquisitive",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking inquisitive, peering closely at something with curious wide eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3193,7 +3194,7 @@
       "question": "Choose the best synonym for: determined",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/4_resolved.png",
           "label": "resolved",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking resolved, with a determined expression and clenched fist showing determination. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3229,7 +3230,7 @@
       "question": "Choose the best synonym for: exhausted",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/6_fatigued.png",
           "label": "fatigued",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking fatigued, slumped over with droopy eyes and yawning. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3283,7 +3284,7 @@
       "question": "Choose the best synonym for: terrified",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/9_petrified.png",
           "label": "petrified",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking petrified, frozen with fear with wide eyes and tense posture. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3319,7 +3320,7 @@
       "question": "Choose the best synonym for: furious",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/11_enraged.png",
           "label": "enraged",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking enraged, with a very angry red face and clenched fists. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3337,7 +3338,7 @@
       "question": "Choose the best synonym for: assist",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/12_aid.png",
           "label": "aid",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child aiding a friend, helping them up after a fall. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3355,7 +3356,7 @@
       "question": "Choose the best synonym for: confident",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/13_self-assured.png",
           "label": "self-assured",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking self-assured, standing tall with hands on hips and a confident smile. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3391,7 +3392,7 @@
       "question": "Choose the best synonym for: declare",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/15_announce.png",
           "label": "announce",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child announcing something loudly, cupping hands around mouth to project voice. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3409,7 +3410,7 @@
       "question": "Choose the best synonym for: disappointed",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/16_letdown.png",
           "label": "letdown",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child feeling let down, with slumped shoulders and a sad disappointed expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3463,7 +3464,7 @@
       "question": "Choose the best synonym for: delectable",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/1_Synonym-Name One - Middle/19_delicious.png",
           "label": "delicious",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of a delicious gourmet cupcake with colorful frosting, representing the concept of delicious, on a pure white background. Studio photography style with soft even lighting. Clear and simple composition for speech therapy use with children."
@@ -3481,7 +3482,7 @@
       "question": "Choose the best synonym for: genuine",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/20_authentic.png",
           "label": "authentic",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child with an authentic genuine smile, sincere and heartfelt expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3499,7 +3500,7 @@
       "question": "Choose the best synonym for: intelligent",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/3_Synonyms/30_clever.png",
           "label": "clever",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking clever, with a thoughtful expression and a lightbulb moment. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3517,7 +3518,7 @@
       "question": "Choose the best synonym for: astonished",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/22_amazed.png",
           "label": "amazed",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking amazed, with wide eyes and mouth open in wonder. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3553,7 +3554,7 @@
       "question": "Choose the best synonym for: courageous",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/24_valiant.png",
           "label": "valiant",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking valiant, standing bravely with chest out and determined expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3571,7 +3572,7 @@
       "question": "Choose the best synonym for: perplexed",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/25_baffled.png",
           "label": "baffled",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking baffled, scratching head with a confused puzzled expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3589,7 +3590,7 @@
       "question": "Choose the best synonym for: content",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/26_satisfied.png",
           "label": "satisfied",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking satisfied, with a content peaceful smile after finishing a task. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3607,7 +3608,7 @@
       "question": "Choose the best synonym for: examine",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/27_inspect.png",
           "label": "inspect",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child inspecting something closely with a magnifying glass. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3643,7 +3644,7 @@
       "question": "Choose the best synonym for: anxious",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/29_worried.png",
           "label": "worried",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child looking worried, biting lip with furrowed brows and anxious expression. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -3661,7 +3662,7 @@
       "question": "Choose the best synonym for: demonstrate",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/antonyms-synonyms/synonyms/4_Synonyms Level 2/30_exhibit.png",
           "label": "exhibit",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A young child exhibiting their artwork, proudly holding up a drawing to show others. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
