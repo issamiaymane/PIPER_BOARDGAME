@@ -1658,38 +1658,38 @@
       ]
     },
     {
-      "title": "Worker on Roof",
+      "title": "Policeman",
       "images": [
         {
           "image": "",
-          "label": "Worker on a roof"
+          "label": "A policeman"
         }
       ],
       "questions": [
         {
           "question": "Who?",
           "answers": [
-            "A worker",
-            "The worker",
-            "A roofer",
-            "A construction worker"
+            "A policeman",
+            "The policeman",
+            "A police officer",
+            "A cop"
           ]
         },
         {
           "question": "What?",
           "answers": [
-            "working",
-            "fixing the roof",
-            "building",
-            "repairing"
+            "helping people",
+            "keeping us safe",
+            "protecting the community",
+            "directing traffic"
           ]
         },
         {
           "question": "Where?",
           "answers": [
-            "on a roof",
-            "on top of a house",
-            "outside"
+            "in the neighborhood",
+            "on the street",
+            "in the community"
           ]
         }
       ]
