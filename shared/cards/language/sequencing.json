@@ -5,7 +5,7 @@
       "images": [
         {
           "image": "",
-          "label": "Empty pot"
+          "label": "Putting soil in pot"
         },
         {
           "image": "",
@@ -13,18 +13,18 @@
         },
         {
           "image": "",
-          "label": "Putting soil in pot"
+          "label": "Small sprout growing"
         },
         {
           "image": "",
-          "label": "Small sprout growing"
+          "label": "Empty pot"
         }
       ],
       "answerSequence": [
-        1,
         3,
         2,
-        4
+        4,
+        1
       ]
     },
     {
@@ -32,53 +32,26 @@
       "images": [
         {
           "image": "",
-          "label": "Full bloom flower"
-        },
-        {
-          "image": "",
           "label": "Seed in ground"
         },
         {
           "image": "",
-          "label": "Small sprout"
+          "label": "Bud forming"
         },
         {
           "image": "",
-          "label": "Bud forming"
+          "label": "Full bloom flower"
+        },
+        {
+          "image": "",
+          "label": "Small sprout"
         }
       ],
       "answerSequence": [
+        2,
         4,
         1,
-        2,
         3
-      ]
-    },
-    {
-      "question": "Put these steps in order: Planting in Garden",
-      "images": [
-        {
-          "image": "",
-          "label": "Watering can watering"
-        },
-        {
-          "image": "",
-          "label": "Empty pots"
-        },
-        {
-          "image": "",
-          "label": "Soil in pot"
-        },
-        {
-          "image": "",
-          "label": "Plants sprouting"
-        }
-      ],
-      "answerSequence": [
-        3,
-        1,
-        2,
-        4
       ]
     },
     {
@@ -94,17 +67,17 @@
         },
         {
           "image": "",
-          "label": "Small seedling"
+          "label": "Medium plant"
         },
         {
           "image": "",
-          "label": "Medium plant"
+          "label": "Small seedling"
         }
       ],
       "answerSequence": [
-        4,
         1,
         2,
+        4,
         3
       ]
     },
@@ -113,11 +86,11 @@
       "images": [
         {
           "image": "",
-          "label": "Harvesting vegetables"
+          "label": "Seeds"
         },
         {
           "image": "",
-          "label": "Seeds"
+          "label": "Small plants"
         },
         {
           "image": "",
@@ -125,14 +98,14 @@
         },
         {
           "image": "",
-          "label": "Small plants"
+          "label": "Harvesting vegetables"
         }
       ],
       "answerSequence": [
-        4,
-        1,
         2,
-        3
+        4,
+        3,
+        1
       ]
     },
     {
@@ -140,7 +113,7 @@
       "images": [
         {
           "image": "",
-          "label": "Finished treehouse"
+          "label": "Grown-up hammering"
         },
         {
           "image": "",
@@ -148,17 +121,17 @@
         },
         {
           "image": "",
-          "label": "Grown-up using saw"
+          "label": "Finished treehouse"
         },
         {
           "image": "",
-          "label": "Grown-up hammering"
+          "label": "Grown-up using saw"
         }
       ],
       "answerSequence": [
         4,
-        1,
         2,
+        1,
         3
       ]
     },
@@ -167,26 +140,26 @@
       "images": [
         {
           "image": "",
-          "label": "Finished castle"
-        },
-        {
-          "image": "",
-          "label": "Empty beach"
-        },
-        {
-          "image": "",
           "label": "Filling bucket"
         },
         {
           "image": "",
+          "label": "Finished castle"
+        },
+        {
+          "image": "",
           "label": "Stacking sand"
+        },
+        {
+          "image": "",
+          "label": "Empty beach"
         }
       ],
       "answerSequence": [
-        4,
+        3,
         1,
-        2,
-        3
+        4,
+        2
       ]
     },
     {
@@ -202,17 +175,17 @@
         },
         {
           "image": "",
-          "label": "First few blocks"
+          "label": "Half-built tower"
         },
         {
           "image": "",
-          "label": "Half-built tower"
+          "label": "First few blocks"
         }
       ],
       "answerSequence": [
-        4,
         1,
         2,
+        4,
         3
       ]
     },
@@ -221,7 +194,7 @@
       "images": [
         {
           "image": "",
-          "label": "Completed puzzle"
+          "label": "Most pieces done"
         },
         {
           "image": "",
@@ -229,17 +202,17 @@
         },
         {
           "image": "",
-          "label": "Edge pieces connected"
+          "label": "Completed puzzle"
         },
         {
           "image": "",
-          "label": "Most pieces done"
+          "label": "Edge pieces connected"
         }
       ],
       "answerSequence": [
         4,
-        1,
         2,
+        1,
         3
       ]
     },
@@ -248,11 +221,11 @@
       "images": [
         {
           "image": "",
-          "label": "Blank paper"
+          "label": "Finished painting"
         },
         {
           "image": "",
-          "label": "Finished painting"
+          "label": "Blank paper"
         },
         {
           "image": "",
@@ -264,10 +237,10 @@
         }
       ],
       "answerSequence": [
-        1,
-        4,
         2,
-        3
+        1,
+        3,
+        4
       ]
     },
     {
@@ -275,26 +248,26 @@
       "images": [
         {
           "image": "",
-          "label": "Eating breakfast"
-        },
-        {
-          "image": "",
-          "label": "Waking up in bed"
-        },
-        {
-          "image": "",
           "label": "Getting dressed"
         },
         {
           "image": "",
           "label": "Leaving house"
+        },
+        {
+          "image": "",
+          "label": "Eating breakfast"
+        },
+        {
+          "image": "",
+          "label": "Waking up in bed"
         }
       ],
       "answerSequence": [
         3,
+        4,
         1,
-        2,
-        4
+        2
       ]
     },
     {
@@ -306,7 +279,7 @@
         },
         {
           "image": "",
-          "label": "Getting toothbrush"
+          "label": "Brushing teeth"
         },
         {
           "image": "",
@@ -314,14 +287,14 @@
         },
         {
           "image": "",
-          "label": "Brushing teeth"
+          "label": "Getting toothbrush"
         }
       ],
       "answerSequence": [
-        4,
         1,
-        2,
-        3
+        4,
+        3,
+        2
       ]
     },
     {
@@ -329,11 +302,7 @@
       "images": [
         {
           "image": "",
-          "label": "Messy bed"
-        },
-        {
-          "image": "",
-          "label": "Putting on pillow"
+          "label": "Neat finished bed"
         },
         {
           "image": "",
@@ -341,14 +310,18 @@
         },
         {
           "image": "",
-          "label": "Neat finished bed"
+          "label": "Messy bed"
+        },
+        {
+          "image": "",
+          "label": "Putting on pillow"
         }
       ],
       "answerSequence": [
-        1,
+        4,
         3,
-        2,
-        4
+        1,
+        2
       ]
     },
     {
@@ -356,11 +329,11 @@
       "images": [
         {
           "image": "",
-          "label": "In pajamas"
+          "label": "Putting on shoes"
         },
         {
           "image": "",
-          "label": "Putting on shirt"
+          "label": "In pajamas"
         },
         {
           "image": "",
@@ -368,22 +341,19 @@
         },
         {
           "image": "",
-          "label": "Putting on shoes"
+          "label": "Putting on shirt"
         }
       ],
-      "answerSequence": [[1, 2, 3, 4], [1, 3, 2, 4]]
+      "answerSequence": [
+        4,
+        1,
+        3,
+        2
+      ]
     },
     {
       "question": "Put these steps in order: Eating Breakfast",
       "images": [
-        {
-          "image": "",
-          "label": "Sitting at table"
-        },
-        {
-          "image": "",
-          "label": "Pouring cereal"
-        },
         {
           "image": "",
           "label": "Eating"
@@ -391,13 +361,21 @@
         {
           "image": "",
           "label": "Empty bowl finished"
+        },
+        {
+          "image": "",
+          "label": "Pouring cereal"
+        },
+        {
+          "image": "",
+          "label": "Sitting at table"
         }
       ],
       "answerSequence": [
-        1,
-        2,
         3,
-        4
+        4,
+        2,
+        1
       ]
     },
     {
@@ -409,7 +387,7 @@
         },
         {
           "image": "",
-          "label": "Putting on pajamas"
+          "label": "Sleeping"
         },
         {
           "image": "",
@@ -417,14 +395,14 @@
         },
         {
           "image": "",
-          "label": "Sleeping"
+          "label": "Putting on pajamas"
         }
       ],
       "answerSequence": [
         1,
-        2,
+        4,
         3,
-        4
+        2
       ]
     },
     {
@@ -440,18 +418,18 @@
         },
         {
           "image": "",
-          "label": "Washing with soap"
+          "label": "Drying with towel"
         },
         {
           "image": "",
-          "label": "Drying with towel"
+          "label": "Washing with soap"
         }
       ],
       "answerSequence": [
         1,
         2,
-        3,
-        4
+        4,
+        3
       ]
     },
     {
@@ -459,42 +437,42 @@
       "images": [
         {
           "image": "",
-          "label": "Turning on water"
-        },
-        {
-          "image": "",
           "label": "Adding soap"
         },
         {
           "image": "",
-          "label": "Scrubbing hands"
+          "label": "Turning on water"
         },
         {
           "image": "",
           "label": "Drying with towel"
+        },
+        {
+          "image": "",
+          "label": "Scrubbing hands"
         }
       ],
       "answerSequence": [
-        1,
         2,
-        3,
-        4
+        1,
+        4,
+        3
       ]
     },
     {
-      "question": "Put these steps in order: Bedtime Story",
+      "question": "Put these steps in order: Reading a Story with a Parent",
       "images": [
+        {
+          "image": "",
+          "label": "Reading book together"
+        },
         {
           "image": "",
           "label": "Picking a book"
         },
         {
           "image": "",
-          "label": "Sitting on bed"
-        },
-        {
-          "image": "",
-          "label": "Reading book"
+          "label": "Sitting with parent"
         },
         {
           "image": "",
@@ -502,9 +480,9 @@
         }
       ],
       "answerSequence": [
+        3,
         1,
         2,
-        3,
         4
       ]
     },
@@ -517,11 +495,11 @@
         },
         {
           "image": "",
-          "label": "Picking up toys"
+          "label": "Putting in toy box"
         },
         {
           "image": "",
-          "label": "Putting in toy box"
+          "label": "Picking up toys"
         },
         {
           "image": "",
@@ -530,8 +508,8 @@
       ],
       "answerSequence": [
         1,
-        2,
         3,
+        2,
         4
       ]
     },
@@ -540,11 +518,11 @@
       "images": [
         {
           "image": "",
-          "label": "Packing bag"
+          "label": "Arriving at beach"
         },
         {
           "image": "",
-          "label": "Arriving at beach"
+          "label": "Packing bag"
         },
         {
           "image": "",
@@ -556,8 +534,8 @@
         }
       ],
       "answerSequence": [
-        1,
         2,
+        1,
         3,
         4
       ]
@@ -567,26 +545,26 @@
       "images": [
         {
           "image": "",
-          "label": "Getting sunscreen bottle"
-        },
-        {
-          "image": "",
-          "label": "Squeezing into hand"
-        },
-        {
-          "image": "",
           "label": "Rubbing on skin"
         },
         {
           "image": "",
+          "label": "Getting sunscreen bottle"
+        },
+        {
+          "image": "",
           "label": "Playing in sun safely"
+        },
+        {
+          "image": "",
+          "label": "Squeezing into hand"
         }
       ],
       "answerSequence": [
-        1,
-        2,
         3,
-        4
+        1,
+        4,
+        2
       ]
     },
     {
@@ -594,7 +572,7 @@
       "images": [
         {
           "image": "",
-          "label": "Getting bucket and shovel"
+          "label": "Decorated castle"
         },
         {
           "image": "",
@@ -602,23 +580,27 @@
         },
         {
           "image": "",
-          "label": "Flipping bucket over"
+          "label": "Getting bucket and shovel"
         },
         {
           "image": "",
-          "label": "Decorated castle"
+          "label": "Flipping bucket over"
         }
       ],
       "answerSequence": [
-        1,
+        4,
         2,
-        3,
-        4
+        1,
+        3
       ]
     },
     {
       "question": "Put these steps in order: Collecting Seashells",
       "images": [
+        {
+          "image": "",
+          "label": "Putting in bucket"
+        },
         {
           "image": "",
           "label": "Walking on beach"
@@ -629,27 +611,19 @@
         },
         {
           "image": "",
-          "label": "Putting in bucket"
-        },
-        {
-          "image": "",
           "label": "Full bucket of shells"
         }
       ],
       "answerSequence": [
+        3,
         1,
         2,
-        3,
         4
       ]
     },
     {
       "question": "Put these steps in order: Drying Off After Swimming",
       "images": [
-        {
-          "image": "",
-          "label": "Getting out of water"
-        },
         {
           "image": "",
           "label": "Walking to towel"
@@ -661,13 +635,17 @@
         {
           "image": "",
           "label": "Dry and warm"
+        },
+        {
+          "image": "",
+          "label": "Getting out of water"
         }
       ],
       "answerSequence": [
-        1,
         2,
         3,
-        4
+        4,
+        1
       ]
     },
     {
@@ -675,7 +653,7 @@
       "images": [
         {
           "image": "",
-          "label": "Getting fruit"
+          "label": "Grown-up blending"
         },
         {
           "image": "",
@@ -683,7 +661,7 @@
         },
         {
           "image": "",
-          "label": "Grown-up blending"
+          "label": "Getting fruit"
         },
         {
           "image": "",
@@ -691,9 +669,9 @@
         }
       ],
       "answerSequence": [
-        1,
-        2,
         3,
+        2,
+        1,
         4
       ]
     },
@@ -702,26 +680,26 @@
       "images": [
         {
           "image": "",
-          "label": "Getting bread"
-        },
-        {
-          "image": "",
           "label": "Spreading peanut butter"
         },
         {
           "image": "",
-          "label": "Adding jelly"
+          "label": "Putting bread together"
         },
         {
           "image": "",
-          "label": "Putting bread together"
+          "label": "Getting bread"
+        },
+        {
+          "image": "",
+          "label": "Adding jelly"
         }
       ],
       "answerSequence": [
-        1,
         2,
-        3,
-        4
+        4,
+        1,
+        3
       ]
     },
     {
@@ -737,18 +715,18 @@
         },
         {
           "image": "",
-          "label": "Peel coming off"
+          "label": "Eating orange segments"
         },
         {
           "image": "",
-          "label": "Eating orange segments"
+          "label": "Peel coming off"
         }
       ],
       "answerSequence": [
         1,
         2,
-        3,
-        4
+        4,
+        3
       ]
     },
     {
@@ -756,7 +734,7 @@
       "images": [
         {
           "image": "",
-          "label": "Empty table"
+          "label": "Adding cups"
         },
         {
           "image": "",
@@ -764,18 +742,18 @@
         },
         {
           "image": "",
-          "label": "Adding cups"
+          "label": "Adding utensils"
         },
         {
           "image": "",
-          "label": "Adding utensils"
+          "label": "Empty table"
         }
       ],
       "answerSequence": [
-        1,
-        2,
         3,
-        4
+        2,
+        4,
+        1
       ]
     },
     {
@@ -783,7 +761,11 @@
       "images": [
         {
           "image": "",
-          "label": "Empty lunch box"
+          "label": "Adding fruit"
+        },
+        {
+          "image": "",
+          "label": "Closing lunch box"
         },
         {
           "image": "",
@@ -791,18 +773,41 @@
         },
         {
           "image": "",
-          "label": "Adding fruit"
-        },
-        {
-          "image": "",
-          "label": "Closing lunch box"
+          "label": "Empty lunch box"
         }
       ],
       "answerSequence": [
-        1,
-        2,
         3,
-        4
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "question": "Put these steps in order: Feeding a Pet",
+      "images": [
+        {
+          "image": "",
+          "label": "Putting bowl down for pet"
+        },
+        {
+          "image": "",
+          "label": "Getting the pet food"
+        },
+        {
+          "image": "",
+          "label": "Pet eating happily"
+        },
+        {
+          "image": "",
+          "label": "Pouring food into bowl"
+        }
+      ],
+      "answerSequence": [
+        3,
+        1,
+        4,
+        2
       ]
     }
   ],
