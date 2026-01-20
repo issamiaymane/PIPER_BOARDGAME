@@ -371,12 +371,7 @@
           "label": "Putting on shoes"
         }
       ],
-      "answerSequence": [
-        1,
-        2,
-        3,
-        4
-      ]
+      "answerSequence": [[1, 2, 3, 4], [1, 3, 2, 4]]
     },
     {
       "question": "Put these steps in order: Eating Breakfast",
