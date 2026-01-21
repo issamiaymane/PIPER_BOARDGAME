@@ -4,7 +4,7 @@
       "question": "The cat is ___ the table.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/1_cat_sitting_on_the_table/cat_sitting_on_the_table.png",
           "label": "Cat sitting on the table",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Cat sitting on the table. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -18,7 +18,7 @@
       "question": "The dog is ___ the bed.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/2_dog_hiding_under_the_bed/dog_hiding_under_the_bed.png",
           "label": "Dog hiding under the bed",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of dog hiding under the bed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -32,7 +32,7 @@
       "question": "The bird is ___ the tree.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/3_bird_perched_in_the_tree/bird_perched_in_the_tree.png",
           "label": "Bird perched in the tree",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bird perched in the tree, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -46,7 +46,7 @@
       "question": "The ball is ___ the box.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/4_ball_behind_the_box/ball_behind_the_box.png",
           "label": "Ball behind the box",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of ball behind the box, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -60,7 +60,7 @@
       "question": "The book is ___ the lamp.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/5_book_next_to_the_lamp/book_next_to_the_lamp.png",
           "label": "Book next to the lamp",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of book next to the lamp, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -74,7 +74,7 @@
       "question": "The fish is ___ the bowl.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/6_fish_swimming_in_the_bowl/fish_swimming_in_the_bowl.png",
           "label": "Fish swimming in the bowl",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of fish swimming in the bowl, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -88,7 +88,7 @@
       "question": "The plane is ___ the clouds.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/7_plane_flying_above_the_clouds/plane_flying_above_the_clouds.png",
           "label": "Plane flying above the clouds",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of plane flying above the clouds, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -102,7 +102,7 @@
       "question": "The shoes are ___ the chair.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/8_shoes_placed_below_the_chair/shoes_placed_below_the_chair.png",
           "label": "Shoes placed below the chair",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of shoes placed below the chair, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -116,7 +116,7 @@
       "question": "The toy is ___ the TV.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/9_toy_in_front_of_the_tv/toy_in_front_of_the_tv.png",
           "label": "Toy in front of the TV",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of toy in front of the tv, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -130,7 +130,7 @@
       "question": "The lamp is ___ the desk.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/10_lamp_on_the_desk/lamp_on_the_desk.png",
           "label": "Lamp on the desk",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of lamp on the desk, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -144,7 +144,7 @@
       "question": "The mouse is ___ the boxes.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/11_mouse_between_the_boxes/mouse_between_the_boxes.png",
           "label": "Mouse between the boxes",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of mouse between the boxes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -158,7 +158,7 @@
       "question": "The bee is ___ the flower.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/12_bee_near_the_flower/bee_near_the_flower.png",
           "label": "Bee near the flower",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bee near the flower, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -172,7 +172,7 @@
       "question": "The cup is ___ the plate.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/13_cup_beside_the_plate/cup_beside_the_plate.png",
           "label": "Cup beside the plate",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of cup beside the plate, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -186,7 +186,7 @@
       "question": "The car is ___ the garage.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/14_car_parked_outside_the_garage/car_parked_outside_the_garage.png",
           "label": "Car parked outside the garage",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of car parked outside the garage, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -200,7 +200,7 @@
       "question": "The bear is ___ the cave.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/15_bear_inside_the_cave/bear_inside_the_cave.png",
           "label": "Bear inside the cave",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bear inside the cave, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -214,7 +214,7 @@
       "question": "The spider is ___ the door.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/16_spider_above_the_door/spider_above_the_door.png",
           "label": "Spider above the door",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of spider above the door, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -228,7 +228,7 @@
       "question": "The frog is ___ the rock.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/17_frog_sitting_on_the_rock/frog_sitting_on_the_rock.png",
           "label": "Frog sitting on the rock",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Frog sitting on the rock. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -242,7 +242,7 @@
       "question": "The rabbit is ___ the bush.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/18_rabbit_hiding_under_the_bush/rabbit_hiding_under_the_bush.png",
           "label": "Rabbit hiding under the bush",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of rabbit hiding under the bush, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -256,7 +256,7 @@
       "question": "The star is ___ the moon.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/19_star_over_the_moon/star_over_the_moon.png",
           "label": "Star over the moon",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of star over the moon, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -270,7 +270,7 @@
       "question": "The socks are ___ the drawer.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/20_socks_in_the_drawer/socks_in_the_drawer.png",
           "label": "Socks in the drawer",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of socks in the drawer, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -284,7 +284,7 @@
       "question": "The apple is ___ the banana.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/21_apple_next_to_the_banana/apple_next_to_the_banana.png",
           "label": "Apple next to the banana",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of apple next to the banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -298,7 +298,7 @@
       "question": "The butterfly is ___ the flowers.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/22_butterfly_flying_around_the_flowers/butterfly_flying_around_the_flowers.png",
           "label": "Butterfly flying around the flowers",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of butterfly flying around the flowers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -312,7 +312,7 @@
       "question": "The duck is ___ the pond.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/23_duck_floating_on_the_pond/duck_floating_on_the_pond.png",
           "label": "Duck floating on the pond",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of duck floating on the pond, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -326,7 +326,7 @@
       "question": "The remote is ___ the couch.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/24_remote_under_the_couch/remote_under_the_couch.png",
           "label": "Remote under the couch",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of remote under the couch, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -340,7 +340,7 @@
       "question": "The balloon is ___ the house.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/25_balloon_floating_above_the_house/balloon_floating_above_the_house.png",
           "label": "Balloon floating above the house",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of balloon floating above the house, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -354,7 +354,7 @@
       "question": "The cat is ___ the curtain.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/26_cat_hiding_behind_the_curtain/cat_hiding_behind_the_curtain.png",
           "label": "Cat hiding behind the curtain",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of cat hiding behind the curtain, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -368,7 +368,7 @@
       "question": "The snail is ___ the leaf.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/27_snail_crawling_on_the_leaf/snail_crawling_on_the_leaf.png",
           "label": "Snail crawling on the leaf",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of snail crawling on the leaf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -382,7 +382,7 @@
       "question": "The cookie is ___ the jar.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/28_cookie_in_the_jar/cookie_in_the_jar.png",
           "label": "Cookie in the jar",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of cookie in the jar, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -396,7 +396,7 @@
       "question": "The pillow is ___ the bed.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/29_pillow_on_the_bed/pillow_on_the_bed.png",
           "label": "Pillow on the bed",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of pillow on the bed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -410,7 +410,7 @@
       "question": "The toy box is ___ the bed.",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/30_toy_box_beside_the_bed/toy_box_beside_the_bed.png",
           "label": "Toy box beside the bed",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of toy box beside the bed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -426,7 +426,7 @@
       "question": "What do you do after your clothes are dry?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/1_folding_clothes/folding_clothes.png",
           "label": "Folding clothes",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Folding clothes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -440,7 +440,7 @@
       "question": "What do you do before you go to bed?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/2_brushing_teeth/brushing_teeth.png",
           "label": "Brushing teeth",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Brushing teeth. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -454,7 +454,7 @@
       "question": "What do you do after you put on socks?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/3_putting_on_shoes/putting_on_shoes.png",
           "label": "Putting on shoes",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting on shoes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -468,7 +468,7 @@
       "question": "What do you do before you eat?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/4_washing_hands/washing_hands.png",
           "label": "Washing hands",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Washing hands. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -482,7 +482,7 @@
       "question": "What do you do before you get out of bed?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/5_stretching_in_bed/stretching_in_bed.png",
           "label": "Stretching in bed",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Stretching in bed. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -496,7 +496,7 @@
       "question": "What do you do after you take a bath?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/6_drying_off_with_towel/drying_off_with_towel.png",
           "label": "Drying off with towel",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Drying off with towel. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -510,7 +510,7 @@
       "question": "What do you do after you get out the milk?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/7_eating_cereal/eating_cereal.png",
           "label": "Eating cereal",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Eating cereal. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -524,7 +524,7 @@
       "question": "What do you do before you put on running shoes?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/8_putting_on_socks/putting_on_socks.png",
           "label": "Putting on socks",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting on socks. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -538,7 +538,7 @@
       "question": "What do you do before you send a thank you card?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/9_writing_a_message/writing_a_message.png",
           "label": "Writing a message",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Writing a message. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -552,7 +552,7 @@
       "question": "What do you do after people sing Happy Birthday?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/10_blowing_out_candles/blowing_out_candles.png",
           "label": "Blowing out candles",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Blowing out candles. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -566,7 +566,7 @@
       "question": "What do you do before you go outside in winter?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/11_putting_on_coat/putting_on_coat.png",
           "label": "Putting on coat",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting on coat. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -580,7 +580,7 @@
       "question": "What do you do after you get in the car?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/12_buckling_seatbelt/buckling_seatbelt.png",
           "label": "Buckling seatbelt",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Buckling seatbelt. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -594,7 +594,7 @@
       "question": "What do you do before you fall asleep?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/13_yawning_and_closing_eyes/yawning_and_closing_eyes.png",
           "label": "Yawning and closing eyes",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Yawning and closing eyes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -608,7 +608,7 @@
       "question": "What do you do before you bake a cake?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/14_mixing_batter/mixing_batter.png",
           "label": "Mixing batter",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Mixing batter. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -622,7 +622,7 @@
       "question": "What do you do after you draw a picture?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/15_hanging_artwork/hanging_artwork.png",
           "label": "Hanging artwork",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Hanging artwork. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -636,7 +636,7 @@
       "question": "What do you do after you plant a seed?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/16_watering_a_plant/watering_a_plant.png",
           "label": "Watering a plant",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Watering a plant. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -650,7 +650,7 @@
       "question": "What do you do after you put on shoes?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/17_tying_shoes/tying_shoes.png",
           "label": "Tying shoes",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Tying shoes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -664,7 +664,7 @@
       "question": "What do grown-ups do before they cook an egg?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/18_cracking_an_egg/cracking_an_egg.png",
           "label": "Cracking an egg",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Cracking an egg. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -678,7 +678,7 @@
       "question": "What do you do before you go on a trip?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/19_packing_a_bag/packing_a_bag.png",
           "label": "Packing a bag",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Packing a bag. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -692,7 +692,7 @@
       "question": "What do you do after your pet is hungry?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/20_feeding_a_pet/feeding_a_pet.png",
           "label": "Feeding a pet",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Feeding a pet. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -706,7 +706,7 @@
       "question": "What do you do before you go swimming?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/21_applying_sunscreen/applying_sunscreen.png",
           "label": "Applying sunscreen",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Applying sunscreen. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -720,7 +720,7 @@
       "question": "What do you do after you finish playing?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/22_cleaning_up_toys/cleaning_up_toys.png",
           "label": "Cleaning up toys",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Cleaning up toys. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -734,7 +734,7 @@
       "question": "What do you do before the battery dies?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/23_charging_tablet/charging_tablet.png",
           "label": "Charging tablet",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Charging tablet. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -748,7 +748,7 @@
       "question": "What do you do after you wash your hair?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/24_combing_hair/combing_hair.png",
           "label": "Combing hair",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Combing hair. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -762,7 +762,7 @@
       "question": "What do you do before someone leaves?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/25_saying_goodbye/saying_goodbye.png",
           "label": "Saying goodbye",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Saying goodbye. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -776,7 +776,7 @@
       "question": "What do you do before you order food?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/26_reading_a_menu/reading_a_menu.png",
           "label": "Reading a menu",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Reading a menu. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -790,7 +790,7 @@
       "question": "What do you do after you scan items at the self-checkout?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/27_bagging_groceries/bagging_groceries.png",
           "label": "Bagging groceries",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Bagging groceries. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -804,7 +804,7 @@
       "question": "What do you do before dinner is served?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/28_setting_the_table/setting_the_table.png",
           "label": "Setting the table",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Setting the table. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -818,7 +818,7 @@
       "question": "What do you do after you get out of bed?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/29_making_the_bed/making_the_bed.png",
           "label": "Making the bed",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Making the bed. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -832,7 +832,7 @@
       "question": "What do you do before you eat an orange?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/2-Basic_Temporal_Concepts_Before_And_After/30_peeling_an_orange/peeling_an_orange.png",
           "label": "Peeling an orange",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Peeling an orange. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -848,19 +848,19 @@
       "question": "Put these steps in order: Making a Sandwich",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/1_putting_bread_slices_on_plate/putting_bread_slices_on_plate.png",
           "label": "Putting bread slices on plate",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting bread slices on plate. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/1_adding_peanut_butter_and_jelly/adding_peanut_butter_and_jelly.png",
           "label": "Adding peanut butter and jelly",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of adding peanut butter and jelly, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/1_completed_sandwich_cut_in_half/completed_sandwich_cut_in_half.png",
           "label": "Completed sandwich cut in half",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of completed sandwich cut in half, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -876,19 +876,19 @@
       "question": "Put these steps in order: Getting Dressed",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/2_putting_on_shirt/putting_on_shirt.png",
           "label": "Putting on shirt",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting on shirt. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/2_putting_on_pants/putting_on_pants.png",
           "label": "Putting on pants",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting on pants. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/2_tying_shoes/tying_shoes.png",
           "label": "Tying shoes",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Tying shoes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -911,19 +911,19 @@
       "question": "Put these steps in order: Brushing Teeth",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/3_putting_toothpaste_on_brush/putting_toothpaste_on_brush.png",
           "label": "Putting toothpaste on brush",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting toothpaste on brush. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/3_brushing_teeth/brushing_teeth.png",
           "label": "Brushing teeth",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Brushing teeth. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/3_rinsing_mouth/rinsing_mouth.png",
           "label": "Rinsing mouth",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of rinsing mouth, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -939,19 +939,19 @@
       "question": "Put these steps in order: Making Orange Juice",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/4_cutting_oranges_in_half/cutting_oranges_in_half.png",
           "label": "Cutting oranges in half",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of cutting oranges in half, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/4_squeezing_oranges/squeezing_oranges.png",
           "label": "Squeezing oranges",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of squeezing oranges, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/4_pouring_juice_into_glass/pouring_juice_into_glass.png",
           "label": "Pouring juice into glass",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Pouring juice into glass. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -967,19 +967,19 @@
       "question": "Put these steps in order: Planting a Flower",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/5_digging_a_hole_in_soil/digging_a_hole_in_soil.png",
           "label": "Digging a hole in soil",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Digging a hole in soil. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/5_placing_seed_in_hole/placing_seed_in_hole.png",
           "label": "Placing seed in hole",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Placing seed in hole. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/5_watering_the_planted_seed/watering_the_planted_seed.png",
           "label": "Watering the planted seed",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Watering the planted seed. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -995,19 +995,19 @@
       "question": "Put these steps in order: Washing Hands",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/6_turning_on_water/turning_on_water.png",
           "label": "Turning on water",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of turning on water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/6_scrubbing_with_soap/scrubbing_with_soap.png",
           "label": "Scrubbing with soap",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Scrubbing with soap. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/6_drying_with_towel/drying_with_towel.png",
           "label": "Drying with towel",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Drying with towel. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1023,19 +1023,19 @@
       "question": "Put these steps in order: Making Cereal",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/7_getting_bowl_from_cabinet/getting_bowl_from_cabinet.png",
           "label": "Getting bowl from cabinet",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of getting bowl from cabinet, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/7_pouring_cereal_and_milk_into_bowl/pouring_cereal_and_milk_into_bowl.png",
           "label": "Pouring cereal and milk into bowl",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Pouring cereal and milk into bowl. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/7_eating_at_the_table/eating_at_the_table.png",
           "label": "Eating at the table",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Eating at the table. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1051,19 +1051,19 @@
       "question": "Put these steps in order: Drawing a Picture",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/8_blank_paper_and_crayons/blank_paper_and_crayons.png",
           "label": "Blank paper and crayons",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of blank paper and crayons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/8_drawing_shapes_and_lines/drawing_shapes_and_lines.png",
           "label": "Drawing shapes and lines",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Drawing shapes and lines. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/8_completed_colorful_picture/completed_colorful_picture.png",
           "label": "Completed colorful picture",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of completed colorful picture, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1079,19 +1079,19 @@
       "question": "Put these steps in order: Building a Snowman",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/9_rolling_large_snowball_for_body/rolling_large_snowball_for_body.png",
           "label": "Rolling large snowball for body",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of rolling large snowball for body, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/9_stacking_snowballs/stacking_snowballs.png",
           "label": "Stacking snowballs",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Stacking snowballs. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/9_adding_face_and_scarf/adding_face_and_scarf.png",
           "label": "Adding face and scarf",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of adding face and scarf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1107,19 +1107,19 @@
       "question": "Put these steps in order: Baking Cookies",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/10_mixing_dough_in_bowl/mixing_dough_in_bowl.png",
           "label": "Mixing dough in bowl",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Mixing dough in bowl. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/10_cookies_on_baking_sheet/cookies_on_baking_sheet.png",
           "label": "Cookies on baking sheet",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of cookies on baking sheet, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/10_finished_cookies_on_plate/finished_cookies_on_plate.png",
           "label": "Finished cookies on plate",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of finished cookies on plate, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1135,19 +1135,19 @@
       "question": "Put these steps in order: Wrapping a Gift",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/11_gift_box_and_wrapping_paper/gift_box_and_wrapping_paper.png",
           "label": "Gift box and wrapping paper",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of gift box and wrapping paper, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/11_wrapping_paper_around_box/wrapping_paper_around_box.png",
           "label": "Wrapping paper around box",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of wrapping paper around box, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/11_finished_gift_with_bow/finished_gift_with_bow.png",
           "label": "Finished gift with bow",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of finished gift with bow, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1163,19 +1163,19 @@
       "question": "Put these steps in order: Making the Bed",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/12_messy_unmade_bed/messy_unmade_bed.png",
           "label": "Messy unmade bed",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of messy unmade bed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/12_pulling_up_blanket/pulling_up_blanket.png",
           "label": "Pulling up blanket",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of pulling up blanket, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/12_bed_made_with_pillow_in_place/bed_made_with_pillow_in_place.png",
           "label": "Bed made with pillow in place",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bed made with pillow in place, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1191,19 +1191,19 @@
       "question": "Put these steps in order: Feeding the Dog",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/13_getting_dog_food_bag/getting_dog_food_bag.png",
           "label": "Getting dog food bag",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of getting dog food bag, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/13_pouring_food_in_bowl/pouring_food_in_bowl.png",
           "label": "Pouring food in bowl",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Pouring food in bowl. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/13_dog_eating_from_bowl/dog_eating_from_bowl.png",
           "label": "Dog eating from bowl",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Dog eating from bowl. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1219,19 +1219,19 @@
       "question": "Put these steps in order: Taking a Bath",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/14_filling_tub_with_water/filling_tub_with_water.png",
           "label": "Filling tub with water",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of filling tub with water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/14_washing_with_soap/washing_with_soap.png",
           "label": "Washing with soap",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Washing with soap. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/14_drying_off_with_towel/drying_off_with_towel.png",
           "label": "Drying off with towel",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Drying off with towel. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1247,19 +1247,19 @@
       "question": "Put these steps in order: Making a Phone Call",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/15_picking_up_phone/picking_up_phone.png",
           "label": "Picking up phone",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of picking up phone, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/15_dialing_numbers/dialing_numbers.png",
           "label": "Dialing numbers",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of dialing numbers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/15_talking_on_phone/talking_on_phone.png",
           "label": "Talking on phone",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Talking on phone. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1275,19 +1275,19 @@
       "question": "Put these steps in order: Cooking an Egg",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/16_cracking_egg_into_pan/cracking_egg_into_pan.png",
           "label": "Cracking egg into pan",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Cracking egg into pan. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/16_egg_cooking_in_pan/egg_cooking_in_pan.png",
           "label": "Egg cooking in pan",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Egg cooking in pan. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/16_egg_on_plate/egg_on_plate.png",
           "label": "Egg on plate",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of egg on plate, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1303,19 +1303,19 @@
       "question": "Put these steps in order: Building a Sandcastle",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/17_filling_bucket_with_wet_sand/filling_bucket_with_wet_sand.png",
           "label": "Filling bucket with wet sand",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of filling bucket with wet sand, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/17_flipping_bucket_over/flipping_bucket_over.png",
           "label": "Flipping bucket over",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of flipping bucket over, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/17_decorated_sandcastle_with_shells/decorated_sandcastle_with_shells.png",
           "label": "Decorated sandcastle with shells",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of decorated sandcastle with shells, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1331,19 +1331,19 @@
       "question": "Put these steps in order: Making Lemonade",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/18_squeezing_lemons/squeezing_lemons.png",
           "label": "Squeezing lemons",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of squeezing lemons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/18_adding_sugar_and_water/adding_sugar_and_water.png",
           "label": "Adding sugar and water",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of adding sugar and water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/18_stirring_and_serving/stirring_and_serving.png",
           "label": "Stirring and serving",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of stirring and serving, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1359,19 +1359,19 @@
       "question": "Put these steps in order: Mailing a Letter",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/19_writing_the_letter/writing_the_letter.png",
           "label": "Writing the letter",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Writing the letter. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/19_putting_letter_in_envelope/putting_letter_in_envelope.png",
           "label": "Putting letter in envelope",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting letter in envelope. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/19_dropping_in_mailbox/dropping_in_mailbox.png",
           "label": "Dropping in mailbox",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of dropping in mailbox, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1387,19 +1387,19 @@
       "question": "Put these steps in order: Building with Blocks",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/20_blocks_scattered_on_floor/blocks_scattered_on_floor.png",
           "label": "Blocks scattered on floor",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of blocks scattered on floor, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/20_stacking_blocks_up/stacking_blocks_up.png",
           "label": "Stacking blocks up",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Stacking blocks up. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/20_completed_tower/completed_tower.png",
           "label": "Completed tower",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of completed tower, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1415,19 +1415,19 @@
       "question": "Put these steps in order: Eating an Apple",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/21_whole_apple/whole_apple.png",
           "label": "Whole apple",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of whole apple, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/21_apple_with_bite_taken/apple_with_bite_taken.png",
           "label": "Apple with bite taken",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of apple with bite taken, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/21_just_the_apple_core_left/just_the_apple_core_left.png",
           "label": "Just the apple core left",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of just the apple core left, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1443,19 +1443,19 @@
       "question": "Put these steps in order: Putting on a Band-Aid",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/22_scraped_knee/scraped_knee.png",
           "label": "Scraped knee",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of scraped knee, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/22_opening_band_aid_wrapper/opening_band_aid_wrapper.png",
           "label": "Opening band-aid wrapper",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of opening band-aid wrapper, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/22_band_aid_on_knee/band_aid_on_knee.png",
           "label": "Band-aid on knee",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of band-aid on knee, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1471,19 +1471,19 @@
       "question": "Put these steps in order: Watering Plants",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/23_filling_watering_can/filling_watering_can.png",
           "label": "Filling watering can",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Filling watering can. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/23_carrying_watering_can_to_plant/carrying_watering_can_to_plant.png",
           "label": "Carrying watering can to plant",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Carrying watering can to plant. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/23_pouring_water_on_plant/pouring_water_on_plant.png",
           "label": "Pouring water on plant",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Pouring water on plant. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1499,19 +1499,19 @@
       "question": "Put these steps in order: Coding a Simple Game",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/24_kid_sitting_at_computer_with_blank_screen/kid_sitting_at_computer_with_blank_screen.png",
           "label": "Kid sitting at computer with blank screen",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Kid sitting at computer with blank screen. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/24_kid_typing_code/kid_typing_code.png",
           "label": "Kid typing code",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Kid typing code. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/24_game_running_on_screen/game_running_on_screen.png",
           "label": "Game running on screen",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Game running on screen. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1527,19 +1527,19 @@
       "question": "Put these steps in order: Blowing Up a Balloon",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/25_flat_balloon/flat_balloon.png",
           "label": "Flat balloon",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of flat balloon, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/25_blowing_air_into_balloon/blowing_air_into_balloon.png",
           "label": "Blowing air into balloon",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Blowing air into balloon. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/25_tied_balloon_floating/tied_balloon_floating.png",
           "label": "Tied balloon floating",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of tied balloon floating, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1555,19 +1555,19 @@
       "question": "Put these steps in order: Making Toast",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/26_asking_adult_to_help_make_toast/asking_adult_to_help_make_toast.png",
           "label": "Asking adult to help make toast",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Asking adult to help make toast. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/26_adult_putting_bread_in_toaster_oven/adult_putting_bread_in_toaster_oven.png",
           "label": "Adult putting bread in toaster oven",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Adult putting bread in toaster oven. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/26_eating_toast_at_table/eating_toast_at_table.png",
           "label": "Eating toast at table",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Eating toast at table. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1583,19 +1583,19 @@
       "question": "Put these steps in order: Putting on Shoes",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/27_bare_feet/bare_feet.png",
           "label": "Bare feet",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bare feet, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/27_putting_on_socks/putting_on_socks.png",
           "label": "Putting on socks",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting on socks. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/27_shoes_on_and_tied/shoes_on_and_tied.png",
           "label": "Shoes on and tied",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of shoes on and tied, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1611,19 +1611,19 @@
       "question": "Put these steps in order: Opening a Present",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/28_wrapped_gift_box/wrapped_gift_box.png",
           "label": "Wrapped gift box",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of wrapped gift box, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/28_tearing_off_wrapping_paper/tearing_off_wrapping_paper.png",
           "label": "Tearing off wrapping paper",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Tearing off wrapping paper. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/28_holding_toy_from_inside/holding_toy_from_inside.png",
           "label": "Holding toy from inside",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of holding toy from inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -1639,19 +1639,19 @@
       "question": "Put these steps in order: Going Surfing",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/29_putting_on_wetsuit/putting_on_wetsuit.png",
           "label": "Putting on wetsuit",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Putting on wetsuit. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/29_carrying_surfboard_to_water/carrying_surfboard_to_water.png",
           "label": "Carrying surfboard to water",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Carrying surfboard to water. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/29_riding_a_wave/riding_a_wave.png",
           "label": "Riding a wave",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Riding a wave. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1667,19 +1667,19 @@
       "question": "Put these steps in order: Lighting a Candle",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/30_candle_on_birthday_cake/candle_on_birthday_cake.png",
           "label": "Candle on birthday cake",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of candle on birthday cake, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/30_adult_lighting_candle/adult_lighting_candle.png",
           "label": "Adult lighting candle",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Adult lighting candle. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/3-Basic_Temporal_Concepts_First_Second_Third/30_blowing_out_candle/blowing_out_candle.png",
           "label": "Blowing out candle",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Blowing out candle. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1697,13 +1697,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/1_before_blank_canvas_with_paint_brush_and_palette/before_blank_canvas_with_paint_brush_and_palette.png",
           "label": "Before: Blank canvas with paint brush and palette",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Blank canvas with paint brush and palette. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/1_after_colorful_painted_artwork/after_colorful_painted_artwork.png",
           "label": "After: Colorful painted artwork",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Colorful painted artwork. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1717,13 +1717,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/2_before_whole_cookie_on_plate/before_whole_cookie_on_plate.png",
           "label": "Before: Whole cookie on plate",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Whole cookie on plate. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/2_after_cookie_with_bite_taken_out/after_cookie_with_bite_taken_out.png",
           "label": "After: Cookie with bite taken out",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Cookie with bite taken out. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1737,13 +1737,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/3_before_flat_deflated_balloon/before_flat_deflated_balloon.png",
           "label": "Before: Flat deflated balloon",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Flat deflated balloon. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/3_after_big_round_inflated_balloon/after_big_round_inflated_balloon.png",
           "label": "After: Big round inflated balloon",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Big round inflated balloon. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1757,13 +1757,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/4_before_flat_pile_of_sand/before_flat_pile_of_sand.png",
           "label": "Before: Flat pile of sand",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Flat pile of sand. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/4_after_sandcastle_with_towers/after_sandcastle_with_towers.png",
           "label": "After: Sandcastle with towers",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Sandcastle with towers. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1777,13 +1777,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/5_before_messy_unmade_bed/before_messy_unmade_bed.png",
           "label": "Before: Messy unmade bed",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Messy unmade bed. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/5_after_neat_bed_with_pillow/after_neat_bed_with_pillow.png",
           "label": "After: Neat bed with pillow",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Neat bed with pillow. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1797,13 +1797,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/6_before_small_puppy/before_small_puppy.png",
           "label": "Before: Small puppy",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Small puppy. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/6_after_grown_up_dog/after_grown_up_dog.png",
           "label": "After: Grown-up dog",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Grown-up dog. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1817,13 +1817,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/7_before_unwrapped_box/before_unwrapped_box.png",
           "label": "Before: Unwrapped box",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Unwrapped box. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/7_after_wrapped_present_with_bow/after_wrapped_present_with_bow.png",
           "label": "After: Wrapped present with bow",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Wrapped present with bow. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1837,13 +1837,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/8_before_bowl_of_batter/before_bowl_of_batter.png",
           "label": "Before: Bowl of batter",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Bowl of batter. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/8_after_decorated_birthday_cake/after_decorated_birthday_cake.png",
           "label": "After: Decorated birthday cake",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Decorated birthday cake. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1857,13 +1857,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/9_before_empty_pot_with_soil/before_empty_pot_with_soil.png",
           "label": "Before: Empty pot with soil",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Empty pot with soil. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/9_after_pot_with_flower_growing/after_pot_with_flower_growing.png",
           "label": "After: Pot with flower growing",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Pot with flower growing. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1877,13 +1877,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/10_before_sink_full_of_dirty_dishes/before_sink_full_of_dirty_dishes.png",
           "label": "Before: Sink full of dirty dishes",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Sink full of dirty dishes. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/10_after_clean_dishes_in_rack/after_clean_dishes_in_rack.png",
           "label": "After: Clean dishes in rack",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Clean dishes in rack. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1897,13 +1897,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/11_before_dirty_muddy_child/before_dirty_muddy_child.png",
           "label": "Before: Dirty muddy child",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Dirty muddy child. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/11_after_clean_child_in_towel/after_clean_child_in_towel.png",
           "label": "After: Clean child in towel",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Clean child in towel. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1917,13 +1917,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/12_before_ice_cream_cone_with_scoops/before_ice_cream_cone_with_scoops.png",
           "label": "Before: Ice cream cone with scoops",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Ice cream cone with scoops. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/12_after_melted_ice_cream_dripping/after_melted_ice_cream_dripping.png",
           "label": "After: Melted ice cream dripping",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Melted ice cream dripping. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1937,13 +1937,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/13_before_bag_of_kernels/before_bag_of_kernels.png",
           "label": "Before: Bag of kernels",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Bag of kernels. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/13_after_bowl_of_fluffy_popcorn/after_bowl_of_fluffy_popcorn.png",
           "label": "After: Bowl of fluffy popcorn",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Bowl of fluffy popcorn. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1957,13 +1957,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/14_before_blocks_scattered_on_floor/before_blocks_scattered_on_floor.png",
           "label": "Before: Blocks scattered on floor",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Blocks scattered on floor. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/14_after_tall_tower_built/after_tall_tower_built.png",
           "label": "After: Tall tower built",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Tall tower built. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1977,13 +1977,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/15_before_putting_on_sunscreen_indoors/before_putting_on_sunscreen_indoors.png",
           "label": "Before: Putting on sunscreen indoors",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Putting on sunscreen indoors. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/15_after_playing_in_the_ocean_waves/after_playing_in_the_ocean_waves.png",
           "label": "After: Playing in the ocean waves",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Playing in the ocean waves. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -1997,13 +1997,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/16_before_empty_piggy_bank/before_empty_piggy_bank.png",
           "label": "Before: Empty piggy bank",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Empty piggy bank. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/16_after_kid_holding_new_video_game/after_kid_holding_new_video_game.png",
           "label": "After: Kid holding new video game",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Kid holding new video game. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2017,13 +2017,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/17_before_wrapped_gift_box/before_wrapped_gift_box.png",
           "label": "Before: Wrapped gift box",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Wrapped gift box. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/17_after_opened_box_with_toy_inside/after_opened_box_with_toy_inside.png",
           "label": "After: Opened box with toy inside",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Opened box with toy inside. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2037,13 +2037,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/18_before_blank_worksheet/before_blank_worksheet.png",
           "label": "Before: Blank worksheet",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Blank worksheet. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/18_after_completed_worksheet_with_answers/after_completed_worksheet_with_answers.png",
           "label": "After: Completed worksheet with answers",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Completed worksheet with answers. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2057,13 +2057,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/19_before_whole_pizza/before_whole_pizza.png",
           "label": "Before: Whole pizza",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Whole pizza. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/19_after_empty_box_with_crumbs/after_empty_box_with_crumbs.png",
           "label": "After: Empty box with crumbs",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Empty box with crumbs. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2077,13 +2077,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/20_before_messy_room_with_toys_everywhere/before_messy_room_with_toys_everywhere.png",
           "label": "Before: Messy room with toys everywhere",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Messy room with toys everywhere. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/20_after_tidy_room_with_toys_put_away/after_tidy_room_with_toys_put_away.png",
           "label": "After: Tidy room with toys put away",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Tidy room with toys put away. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2097,13 +2097,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/21_before_raw_eggs_in_shell/before_raw_eggs_in_shell.png",
           "label": "Before: Raw eggs in shell",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Raw eggs in shell. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/21_after_scrambled_eggs_on_plate/after_scrambled_eggs_on_plate.png",
           "label": "After: Scrambled eggs on plate",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Scrambled eggs on plate. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2117,13 +2117,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/22_before_little_boy_with_bare_feet/before_little_boy_with_bare_feet.png",
           "label": "Before: Little boy with bare feet",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Little boy with bare feet. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/22_after_little_boy_wearing_flip_flops/after_little_boy_wearing_flip_flops.png",
           "label": "After: Little boy wearing flip flops",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Little boy wearing flip flops. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2137,13 +2137,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/23_before_blank_circle/before_blank_circle.png",
           "label": "Before: Blank circle",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Blank circle. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/23_after_face_with_eyes_nose_mouth/after_face_with_eyes_nose_mouth.png",
           "label": "After: Face with eyes, nose, mouth",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Face with eyes, nose, mouth. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2157,13 +2157,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/24_before_little_girl_with_unbrushed_teeth/before_little_girl_with_unbrushed_teeth.png",
           "label": "Before: Little girl with unbrushed teeth",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Little girl with unbrushed teeth. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/24_after_little_girl_with_clean_shiny_teeth/after_little_girl_with_clean_shiny_teeth.png",
           "label": "After: Little girl with clean shiny teeth",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Little girl with clean shiny teeth. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2177,13 +2177,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/25_before_droopy_wilted_plant/before_droopy_wilted_plant.png",
           "label": "Before: Droopy wilted plant",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Droopy wilted plant. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/25_after_perky_healthy_plant/after_perky_healthy_plant.png",
           "label": "After: Perky healthy plant",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Perky healthy plant. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2197,13 +2197,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/26_before_empty_table/before_empty_table.png",
           "label": "Before: Empty table",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Empty table. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/26_after_table_with_plates_and_cups/after_table_with_plates_and_cups.png",
           "label": "After: Table with plates and cups",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Table with plates and cups. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2217,13 +2217,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/27_before_plain_snow_on_ground/before_plain_snow_on_ground.png",
           "label": "Before: Plain snow on ground",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Plain snow on ground. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/27_after_snowman_with_hat_and_scarf/after_snowman_with_hat_and_scarf.png",
           "label": "After: Snowman with hat and scarf",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Snowman with hat and scarf. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2237,13 +2237,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/28_before_empty_glass/before_empty_glass.png",
           "label": "Before: Empty glass",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Empty glass. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/28_after_glass_full_of_juice/after_glass_full_of_juice.png",
           "label": "After: Glass full of juice",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Glass full of juice. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2257,13 +2257,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/29_before_black_and_white_outline/before_black_and_white_outline.png",
           "label": "Before: Black and white outline",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Black and white outline. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/29_after_colorful_filled_in_picture/after_colorful_filled_in_picture.png",
           "label": "After: Colorful filled-in picture",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Colorful filled-in picture. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2277,13 +2277,13 @@
       "question": "What happened?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/30_before_unlit_candle/before_unlit_candle.png",
           "label": "Before: Unlit candle",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Before: Unlit candle. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
-          "image": "",
+          "image": "/shared/images/concepts/4-Before_After/30_after_candle_with_flame_glowing/after_candle_with_flame_glowing.png",
           "label": "After: Candle with flame glowing",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. After: Candle with flame glowing. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2299,7 +2299,7 @@
       "question": "How many pieces of fruit are oranges?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/1_bowl_of_mixed_fruit/bowl_of_mixed_fruit.png",
           "label": "Bowl of mixed fruit",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bowl of mixed fruit, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2316,7 +2316,7 @@
       "question": "How many pieces of fruit are bananas?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/2_plate_of_bananas/plate_of_bananas.png",
           "label": "Plate of bananas",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of plate of bananas, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2333,7 +2333,7 @@
       "question": "How many apples are green?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/3_basket_of_red_apples/basket_of_red_apples.png",
           "label": "Basket of red apples",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of basket of red apples, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2350,7 +2350,7 @@
       "question": "How many umbrellas are blue?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/4_beach_umbrellas/beach_umbrellas.png",
           "label": "Beach umbrellas",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of beach umbrellas, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2367,7 +2367,7 @@
       "question": "How many shells are in the jar?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/5_jar_full_of_seashells/jar_full_of_seashells.png",
           "label": "Jar full of seashells",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of jar full of seashells, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2384,7 +2384,7 @@
       "question": "How many cookies are on the plate?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/6_plate_with_one_cookie/plate_with_one_cookie.png",
           "label": "Plate with one cookie",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of plate with one cookie, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2401,7 +2401,7 @@
       "question": "How many children are wearing hats?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/7_children_wearing_hats/children_wearing_hats.png",
           "label": "Children wearing hats",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Children wearing hats. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2418,7 +2418,7 @@
       "question": "How many cars are in the parking lot?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/8_parking_lot_with_a_few_cars/parking_lot_with_a_few_cars.png",
           "label": "Parking lot with a few cars",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of parking lot with a few cars, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2435,7 +2435,7 @@
       "question": "How many seashells are in the bucket?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/9_empty_bucket/empty_bucket.png",
           "label": "Empty bucket",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of empty bucket, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2452,7 +2452,7 @@
       "question": "How many crayons are broken?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/10_broken_crayons/broken_crayons.png",
           "label": "Broken crayons",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of broken crayons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2469,7 +2469,7 @@
       "question": "How many grapes are purple?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/11_bowl_of_purple_grapes/bowl_of_purple_grapes.png",
           "label": "Bowl of purple grapes",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bowl of purple grapes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2486,7 +2486,7 @@
       "question": "How many balloons are red?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/12_balloons_half_are_red/balloons_half_are_red.png",
           "label": "Balloons, half are red",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of balloons, half are red, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2503,7 +2503,7 @@
       "question": "How many towels have stripes?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/13_beach_towels_with_stripes/beach_towels_with_stripes.png",
           "label": "Beach towels with stripes",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of beach towels with stripes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2520,7 +2520,7 @@
       "question": "How many books are open?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/14_stack_of_closed_books/stack_of_closed_books.png",
           "label": "Stack of closed books",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of stack of closed books, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2537,7 +2537,7 @@
       "question": "How many oranges are in the bag?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/15_bag_with_many_oranges/bag_with_many_oranges.png",
           "label": "Bag with many oranges",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Bag with many oranges. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2554,7 +2554,7 @@
       "question": "How many fish are in the tank?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/16_fish_tank_with_several_fish/fish_tank_with_several_fish.png",
           "label": "Fish tank with several fish",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of fish tank with several fish, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2571,7 +2571,7 @@
       "question": "How many vegetables are green?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/17_plate_of_green_vegetables/plate_of_green_vegetables.png",
           "label": "Plate of green vegetables",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of plate of green vegetables, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2588,7 +2588,7 @@
       "question": "How many flip flops are colorful?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/18_colorful_flip_flops/colorful_flip_flops.png",
           "label": "Colorful flip flops",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of colorful flip flops, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2605,7 +2605,7 @@
       "question": "How many items in the bowl are nuts?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/19_bowl_of_mixed_nuts/bowl_of_mixed_nuts.png",
           "label": "Bowl of mixed nuts",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bowl of mixed nuts, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2622,7 +2622,7 @@
       "question": "How many sandcastles are there?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/20_beach_with_sandcastles/beach_with_sandcastles.png",
           "label": "Beach with sandcastles",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of beach with sandcastles, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2639,7 +2639,7 @@
       "question": "How many pencils are in the cup?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/21_cup_with_many_pencils/cup_with_many_pencils.png",
           "label": "Cup with many pencils",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Cup with many pencils. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2656,7 +2656,7 @@
       "question": "How many books are standing up?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/22_shelf_with_books_standing/shelf_with_books_standing.png",
           "label": "Shelf with books standing",
           "style": "illustrated",
           "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. Shelf with books standing. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
@@ -2673,7 +2673,7 @@
       "question": "How full is the glass?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/23_glass_almost_full/glass_almost_full.png",
           "label": "Glass almost full",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of glass almost full, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2690,7 +2690,7 @@
       "question": "How many strawberries are red?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/24_box_of_red_strawberries/box_of_red_strawberries.png",
           "label": "Box of red strawberries",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of box of red strawberries, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2707,7 +2707,7 @@
       "question": "How many dogs are spotted?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/25_dogs_with_one_spotted/dogs_with_one_spotted.png",
           "label": "Dogs with one spotted",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of dogs with one spotted, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2724,7 +2724,7 @@
       "question": "How many cupcakes have frosting?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/26_cupcakes_half_with_frosting/cupcakes_half_with_frosting.png",
           "label": "Cupcakes, half with frosting",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of cupcakes, half with frosting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2741,7 +2741,7 @@
       "question": "How many people are at the beach?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/27_empty_beach/empty_beach.png",
           "label": "Empty beach",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of empty beach, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2758,7 +2758,7 @@
       "question": "How much fruit is in the bowl?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/28_bowl_of_fruit_salad/bowl_of_fruit_salad.png",
           "label": "Bowl of fruit salad",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of bowl of fruit salad, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2775,7 +2775,7 @@
       "question": "How many shells are in the sand?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/29_sand_with_a_few_shells/sand_with_a_few_shells.png",
           "label": "Sand with a few shells",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of sand with a few shells, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
@@ -2792,7 +2792,7 @@
       "question": "How many cookies are left?",
       "images": [
         {
-          "image": "",
+          "image": "/shared/images/concepts/5-Understanding_Quantitative_Concepts/30_cookie_jar_with_one_cookie_left/cookie_jar_with_one_cookie_left.png",
           "label": "Cookie jar with one cookie left",
           "style": "photorealistic",
           "prompt": "High resolution photorealistic photograph of cookie jar with one cookie left, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
