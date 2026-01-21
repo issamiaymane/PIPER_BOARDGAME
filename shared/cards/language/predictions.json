@@ -299,13 +299,14 @@
       "images": [
         {
           "image": "",
-          "label": "Towel on a line in the wind"
+          "label": "coffee cup on top of a car"
         }
       ],
       "answers": [
-        "towel will blow away",
-        "it will fly",
-        "wind will take it"
+        "cup will fall",
+        "it will spill",
+        "coffee will spill",
+        "cup will fall off"
       ]
     },
     {
@@ -355,12 +356,12 @@
       "images": [
         {
           "image": "",
-          "label": "Butter in a warm room"
+          "label": "ice cream on a park bench in the sun"
         }
       ],
       "answers": [
-        "butter will melt",
-        "it will get soft",
+        "ice cream will melt",
+        "it will melt",
         "going to melt"
       ]
     },

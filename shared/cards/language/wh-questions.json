@@ -1663,7 +1663,7 @@
       ]
     },
     {
-      "question": "What is the child eating?",
+      "question": "What is the kid eating?",
       "images": [
         {
           "image": "",
@@ -1764,7 +1764,7 @@
       "images": [
         {
           "image": "",
-          "label": "girl juice"
+          "label": "girl drinking orange juice"
         }
       ],
       "answers": [
@@ -2650,7 +2650,7 @@
       "images": [
         {
           "image": "",
-          "label": "towel chair"
+          "label": "towel draped over back of beach lounge chair"
         }
       ],
       "answers": [
@@ -2664,7 +2664,7 @@
       "images": [
         {
           "image": "",
-          "label": "child pool"
+          "label": "boy swimming in community pool"
         }
       ],
       "answers": [
@@ -2706,7 +2706,7 @@
       "images": [
         {
           "image": "",
-          "label": "crab rock"
+          "label": "common crab under a rock in tidepools"
         }
       ],
       "answers": [
@@ -2733,7 +2733,7 @@
       "images": [
         {
           "image": "",
-          "label": "cookies jar"
+          "label": "chocolate chip cookies in a jar"
         }
       ],
       "answers": [
@@ -2747,7 +2747,7 @@
       "images": [
         {
           "image": "",
-          "label": "car parking"
+          "label": "car in a parking lot"
         }
       ],
       "answers": [
@@ -2761,7 +2761,7 @@
       "images": [
         {
           "image": "",
-          "label": "pencil cup"
+          "label": "pencil in a cup"
         }
       ],
       "answers": [
@@ -2771,17 +2771,24 @@
       ]
     },
     {
-      "question": "Where does the dolphin live?",
+      "question": "Where do dolphins live?",
       "images": [
         {
           "image": "",
-          "label": "dolphin ocean"
+          "label": "dolphin leaping out of the ocean"
         }
       ],
       "answers": [
+        "ocean",
+        "the ocean",
         "in the ocean",
+        "sea",
+        "the sea",
         "in the sea",
-        "ocean"
+        "Pacific",
+        "Atlantic",
+        "Indian Ocean",
+        "Arctic Ocean"
       ]
     },
     {
@@ -2951,7 +2958,9 @@
         "doctor",
         "a doctor",
         "the doctor",
-        "nurse"
+        "nurse",
+        "mommy",
+        "daddy"
       ]
     },
     {
@@ -2995,7 +3004,10 @@
         "mail carrier",
         "mailman",
         "postman",
-        "postal worker"
+        "postal worker",
+        "UPS",
+        "USPS",
+        "Amazon"
       ]
     },
     {
@@ -3024,7 +3036,8 @@
       "answers": [
         "dentist",
         "a dentist",
-        "the dentist"
+        "the dentist",
+        "dental hygienist"
       ]
     },
     {

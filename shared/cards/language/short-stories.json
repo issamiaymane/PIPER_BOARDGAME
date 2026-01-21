@@ -369,7 +369,7 @@
           "label": "Two friends having a disagreement"
         }
       ],
-      "paragraph": "Jasmine and her best friend Keyla had an argument about what game to play. Jasmine wanted to play video games, but Keyla wanted to do an art project. They both got upset and didn't talk for an hour. Later, Jasmine thought about it and realized they could do both. She apologized to Keyla and suggested they do art first, then play video games. Keyla agreed, and they had a great time doing both activities.",
+      "paragraph": "Jasmine and her best friend Keyla got into an argument about what game to play. Jasmine wanted to play video games, but Keyla wanted to do an art project. They both got upset and didn't talk for an hour. Later, Jasmine thought about it and realized they could do both. She apologized to Keyla and suggested they do art first, then play video games. Keyla agreed, and they had a great time doing both activities.",
       "questions": [
         {
           "question": "Retell the story in your own words.",
@@ -468,7 +468,7 @@
           "label": "Family cleaning up the beach"
         }
       ],
-      "paragraph": "The Chen family joined a beach cleanup event on Saturday morning. They wore gloves and carried trash bags. Ethan was surprised by how much litter they found—water bottles, wrappers, and even an old flip flop. His mom explained that trash can hurt ocean animals. By the end of the morning, they had filled four bags! Ethan felt proud that he helped protect the beach and the animals that live there.",
+      "paragraph": "The Chen family joined a beach cleanup event on Saturday morning. They wore gloves and carried trash bags. Ethan was surprised by how much litter they found—water bottles, wrappers, and even an old flip flop. His mom explained that trash can hurt ocean animals. By the end of the morning, they had filled four bags! Ethan felt proud that he helped protect the beach and the marine life.",
       "questions": [
         {
           "question": "Retell the story in your own words.",
@@ -994,7 +994,7 @@
           "label": "Grocery store"
         }
       ],
-      "paragraph": "Tim went to the grocery store and bought everything he needed. When he got home, he realized he forgot to get eggs. So, he quickly went back to the store again.",
+      "paragraph": "Tim went to the grocery store and bought everything he needed. When he got home, he realized he forgot to get eggs. He needed them to make cookies tonight, so he made an online order to have some eggs delivered to his home.",
       "questions": [
         {
           "question": "Retell the story in your own words.",
@@ -1663,7 +1663,7 @@
           "label": "Dog waiting at the door"
         }
       ],
-      "paragraph": "The dog wanted to go outside. It sat by the door. It wagged its tail. Dad opened the door for the dog.",
+      "paragraph": "The dog wanted to go outside. It sat by the door. It wagged its tail. Dad put the dog on a leash and took it outside.",
       "questions": [
         {
           "question": "Retell the story in your own words.",
@@ -1725,7 +1725,7 @@
           "label": "Girl looking out window at rain"
         }
       ],
-      "paragraph": "Grace wanted to play outside. But it was raining. She watched the rain from the window. She will play outside later.",
+      "paragraph": "Grace wanted to play outside, but it was raining. She watched the rain from the window. She will play outside later.",
       "questions": [
         {
           "question": "Retell the story in your own words.",
@@ -1787,7 +1787,7 @@
           "label": "Girl combing her hair"
         }
       ],
-      "paragraph": "Bella woke up with messy hair. She got her comb. She combed her hair until it was smooth. Now it looks nice.",
+      "paragraph": "Bella woke up with messy hair. She got her brush. She brushed her hair until it was smooth. Now Bella is ready for the day.",
       "questions": [
         {
           "question": "Retell the story in your own words.",
@@ -2839,12 +2839,12 @@
           "label": "Family cleaning up the beach"
         }
       ],
-      "paragraph": "After a fun day at the beach, the Garcia family packed up their things. They shook the sand off their towels and folded them neatly. They made sure to pick up all their trash and throw it away.\n\nDad said it's important to leave the beach clean for other people and for the animals that live there. The kids helped carry everything back to the car. Even though they were tired, they felt good about cleaning up.",
+      "paragraph": "After a fun day at the beach, the Smith family packed up their things. They shook the sand off their towels and folded them neatly. They made sure to pick up all their trash and throw it away.\n\nDad said it's important to leave the beach clean for other people and for the animals that live there. The kids helped carry everything back to the car. Even though they were tired, they felt good about cleaning up.",
       "questions": [
         {
           "question": "Retell the story in your own words.",
           "answers": [
-            "Garcia",
+            "Smith",
             "family",
             "beach",
             "packed",
@@ -2857,7 +2857,7 @@
         {
           "question": "What was the main idea of the text?",
           "answers": [
-            "The Garcia family cleaned up after their beach day to keep the beach nice",
+            "The Smith family cleaned up after their beach day to keep the beach nice",
             "It's important to leave the beach clean for others and for animals"
           ]
         }

@@ -1831,12 +1831,12 @@
       "images": [
         {
           "image": "",
-          "label": "boy with lacrosse stick"
+          "label": "girl with a tennis racket"
         }
       ],
-      "paragraph": "Who is holding a lacrosse stick?",
+      "paragraph": "Who is holding a tennis racket?",
       "answers": [
-        "He"
+        "She"
       ]
     },
     {

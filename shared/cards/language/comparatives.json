@@ -480,23 +480,23 @@
       "question": "Compare these items.",
       "images": [
         {
-          "image": "/shared/images/comparatives/1-Comparatives_Superlatives/18_muddy_shoes_dusty_shoes_sparkling_shoes/muddy_shoes.png",
-          "label": "muddy shoes",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of muddy shoes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/comparatives/1-Comparatives_Superlatives/18_muddy_shoes_dusty_shoes_sparkling_shoes/dusty_shoes.png",
-          "label": "dusty shoes",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of dusty shoes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        },
-        {
-          "image": "/shared/images/comparatives/1-Comparatives_Superlatives/18_muddy_shoes_dusty_shoes_sparkling_shoes/sparkling_shoes.png",
-          "label": "sparkling shoes",
-          "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of sparkling shoes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
-        }
+        "image": "/shared/images/comparatives/1-Comparatives_Superlatives/18_muddy_shoes_dusty_shoes_sparkling_shoes/muddy_shoes.png",
+        "label": "muddy shoes",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of children's shoes covered in wet, dark brown mud - thick mud splatters and dirt covering most of the shoe surface, wet and messy appearance showing they've been walked through puddles or wet soil, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+      },
+      {
+        "image": "/shared/images/comparatives/1-Comparatives_Superlatives/18_muddy_shoes_dusty_shoes_sparkling_shoes/dusty_shoes.png",
+        "label": "dusty shoes",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of children's shoes with a light layer of dry dust - fine gray or tan dust particles coating the surface, slightly faded appearance, showing signs of walking on dry dirt paths or dusty ground but not heavily soiled, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+      },
+      {
+        "image": "/shared/images/comparatives/1-Comparatives_Superlatives/18_muddy_shoes_dusty_shoes_sparkling_shoes/sparkling_shoes.png",
+        "label": "sparkling shoes",
+        "style": "photorealistic",
+        "prompt": "High resolution photorealistic photograph of pristine, perfectly clean and shiny children's shoes - gleaming surface with visible light reflections, looking brand new or freshly polished, spotless and sparkling appearance with highlights catching the light, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+      }
       ],
       "answers": [
         "The muddy shoes are clean.",
@@ -623,19 +623,19 @@
           "image": "/shared/images/comparatives/1-Comparatives_Superlatives/23_whisper_talking_shouting/whisper.png",
           "label": "whisper",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. whisper. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A person whispering - speaking very, very quietly with a soft and gentle voice, hand cupped near mouth, showing quiet communication like in a library or when someone is sleeping. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/comparatives/1-Comparatives_Superlatives/23_whisper_talking_shouting/talking.png",
           "label": "talking",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. talking. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A person talking in a normal, everyday voice - not too loud and not too quiet, just right. Clear and comfortable conversation voice used with friends, family, or teachers. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         },
         {
           "image": "/shared/images/comparatives/1-Comparatives_Superlatives/23_whisper_talking_shouting/shouting.png",
           "label": "shouting",
           "style": "illustrated",
-          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. shouting. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. A person shouting with a very loud, powerful voice - mouth wide open, hands cupped around mouth or gesturing big, showing energetic vocal projection to be heard far away like calling across a playground or cheering at a game. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -830,8 +830,8 @@
         {
           "image": "/shared/images/comparatives/1-Comparatives_Superlatives/30_lemon_apple_mango/mango.png",
           "label": "mango",
-          "style": "illustrated",
-          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez or Liz Bonham. mango. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
+          "style": "realistic",
+          "prompt": "High resolution photorealistic photograph of mango, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "answers": [
