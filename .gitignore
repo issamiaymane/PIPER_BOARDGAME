@@ -66,3 +66,4 @@ backend/piper.db
 
 # Uploaded files (may contain sensitive PDFs)
 backend/data/uploads/
+shared/images/
