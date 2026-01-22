@@ -1625,7 +1625,7 @@
           "image": "/shared/images/comparatives/2-Compare_And_Contrast/23_sand_water/water.png",
           "label": "Water",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a glass of water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1901,7 +1901,7 @@
           "image": "/shared/images/comparatives/3-Semantic_Relationships/1_bunny_birdhouse_and_rocking_horse/bunny_birdhouse_and_rocking_horse.png",
           "label": "Bunny, birdhouse, and rocking horse",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of bunny, birdhouse, and rocking horse, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a cute stuffed bunny toy positioned clearly above a birdhouse and a rocking horse, with the stuffed bunny elevated on a high shelf or floating above the other two toys which sit on the ground. Pure white background, natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
         }
       ],
       "choices": [
@@ -1912,7 +1912,7 @@
       "answerIndex": 2
     },
     {
-      "question": "The bucket is:",
+      "question": "The boy is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/2_beach_scene_with_bucket_and_sandcastle/beach_scene_with_bucket_and_sandcastle.png",
@@ -1922,7 +1922,7 @@
         }
       ],
       "choices": [
-        "next to the sandcastle",
+        "next to the bucket",
         "under the umbrella",
         "on the towel"
       ],
@@ -1940,13 +1940,13 @@
       ],
       "choices": [
         "behind the cup",
-        "in front of the cup",
+        "in on top of the placemat",
         "under the spoon"
       ],
       "answerIndex": 1
     },
     {
-      "question": "The bed is:",
+      "question": "The clock is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/4_bedroom_with_bed_and_clock/bedroom_with_bed_and_clock.png",
@@ -1956,7 +1956,7 @@
         }
       ],
       "choices": [
-        "below the clock",
+        "next to the bed",
         "above the clock",
         "next to the clock"
       ],
@@ -1977,10 +1977,10 @@
         "in the middle",
         "on the right"
       ],
-      "answerIndex": 2
+      "answerIndex": 1
     },
     {
-      "question": "The bowl is:",
+      "question": "The apple is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/6_bowl_with_banana_and_apple/bowl_with_banana_and_apple.png",
@@ -1990,14 +1990,14 @@
         }
       ],
       "choices": [
-        "empty",
-        "holding the banana",
-        "under the apple"
+        "next to the bowl",
+        "in the bowl",
+        "under the banana"
       ],
       "answerIndex": 1
     },
     {
-      "question": "The boat is:",
+      "question": "The sun is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/7_ocean_scene_with_boat_sun_and_dolphin/ocean_scene_with_boat_sun_and_dolphin.png",
@@ -2007,9 +2007,9 @@
         }
       ],
       "choices": [
-        "under the sun",
-        "below the dolphin",
-        "above the dolphin"
+        "above the ocean",
+        "next to the dolphin",
+        "under the boat"
       ],
       "answerIndex": 0
     },
@@ -2048,7 +2048,7 @@
       "answerIndex": 1
     },
     {
-      "question": "The rock is:",
+      "question": "The blue fish is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/10_aquarium_with_fish_rock_and_plant/aquarium_with_fish_rock_and_plant.png",
@@ -2058,11 +2058,11 @@
         }
       ],
       "choices": [
-        "above the fish",
-        "below the fish",
-        "on top of the plant"
+        "above the rock",
+        "below the red fish",
+        "in the plant"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The book is:",
@@ -2099,7 +2099,7 @@
       "answerIndex": 2
     },
     {
-      "question": "Where is the banana?",
+      "question": "The banana is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/13_fruits_with_banana_position/fruits_with_banana_position.png",
@@ -2113,7 +2113,7 @@
         "on the left",
         "in the middle"
       ],
-      "answerIndex": 0
+      "answerIndex": 2
     },
     {
       "question": "The cup is:",
@@ -2133,7 +2133,7 @@
       "answerIndex": 0
     },
     {
-      "question": "The cloud is:",
+      "question": "The pilot is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/15_sky_scene_with_cloud_airplane_and_bird/sky_scene_with_cloud_airplane_and_bird.png",
@@ -2143,8 +2143,8 @@
         }
       ],
       "choices": [
-        "above the airplane",
-        "next to the bird",
+        "in the airplane",
+        "under the bird",
         "below the airplane"
       ],
       "answerIndex": 0
@@ -2160,11 +2160,11 @@
         }
       ],
       "choices": [
-        "in the middle",
-        "on the right",
-        "on the left"
+        "above the flower",
+        "below the cup",
+        "next to the cup"
       ],
-      "answerIndex": 1
+      "answerIndex": 2
     },
     {
       "question": "The bucket is:",
@@ -2195,13 +2195,13 @@
       ],
       "choices": [
         "next to the couch",
-        "on top of everything",
+        "on top of couch",
         "under the blanket"
       ],
-      "answerIndex": 0
+      "answerIndex": 1
     },
     {
-      "question": "The flower is:",
+      "question": "The butterfly is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/19_garden_scene_with_flower_butterfly_and_bee/garden_scene_with_flower_butterfly_and_bee.png",
@@ -2212,10 +2212,10 @@
       ],
       "choices": [
         "next to the bee",
-        "under the butterfly",
-        "above the butterfly"
+        "under the flower",
+        "above the bee"
       ],
-      "answerIndex": 1
+      "answerIndex": 0
     },
     {
       "question": "The house is:",
@@ -2249,7 +2249,7 @@
         "on the left",
         "on the right"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "The shirt is:",
@@ -2269,7 +2269,7 @@
       "answerIndex": 2
     },
     {
-      "question": "The wave is:",
+      "question": "The boy is:",
       "images": [
         {
           "image": "/shared/images/comparatives/3-Semantic_Relationships/23_beach_scene_with_wave_seagull_and_surfer/beach_scene_with_wave_seagull_and_surfer.png",
@@ -2279,9 +2279,9 @@
         }
       ],
       "choices": [
-        "next to the seagull",
-        "below the seagull",
-        "above the surfer"
+        "under the ocean",
+        "under the seagull",
+        "above the sun"
       ],
       "answerIndex": 1
     },
@@ -2298,7 +2298,7 @@
       "choices": [
         "under the bottle",
         "next to the napkin",
-        "on the napkin"
+        "in the middle"
       ],
       "answerIndex": 2
     },
@@ -2334,7 +2334,7 @@
         "in the middle",
         "on the left"
       ],
-      "answerIndex": 0
+      "answerIndex": 2
     },
     {
       "question": "The pencil case is:",
@@ -2347,11 +2347,11 @@
         }
       ],
       "choices": [
-        "outside the backpack",
+        "next to the backpack",
         "on top of the backpack",
-        "next to the notebook"
+        "under the notebook"
       ],
-      "answerIndex": 2
+      "answerIndex": 0
     },
     {
       "question": "The towel is:",

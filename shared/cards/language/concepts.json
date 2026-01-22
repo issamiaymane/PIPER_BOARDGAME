@@ -15,7 +15,7 @@
       ]
     },
     {
-      "question": "The dog is ___ the bed.",
+      "question": "The dog is ___ the covers.",
       "images": [
         {
           "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/2_dog_hiding_under_the_bed/dog_hiding_under_the_bed.png",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "question": "The bird is ___ the tree.",
+      "question": "The bird is ___ the branch.",
       "images": [
         {
           "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/3_bird_perched_in_the_tree/bird_perched_in_the_tree.png",
@@ -39,7 +39,7 @@
         }
       ],
       "answers": [
-        "in"
+        "on"
       ]
     },
     {
@@ -53,11 +53,11 @@
         }
       ],
       "answers": [
-        "behind"
+        "on top of"
       ]
     },
     {
-      "question": "The book is ___ the lamp.",
+      "question": "The books are ___ the lamp.",
       "images": [
         {
           "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/5_book_next_to_the_lamp/book_next_to_the_lamp.png",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "question": "The toy is ___ the TV.",
+      "question": "The robot is ___ the TV.",
       "images": [
         {
           "image": "/shared/images/concepts/1-Basic_Spatial_Concepts/9_toy_in_front_of_the_tv/toy_in_front_of_the_tv.png",
