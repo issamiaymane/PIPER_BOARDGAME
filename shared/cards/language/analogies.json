@@ -7,13 +7,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/1_dog_cat/dog.png",
           "label": "dog",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a friendly golden retriever dog sitting attentively, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a friendly golden retriever dog sitting attentively, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/1_dog_cat/cat.png",
           "label": "cat",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cute orange tabby cat sitting calmly, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a cute orange tabby cat sitting calmly, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -29,13 +29,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/2_bird_fish/bird.png",
           "label": "bird",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful songbird with wings slightly spread as if about to fly, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful songbird with wings slightly spread as if about to fly, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/2_bird_fish/fish.png",
           "label": "fish",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a bright orange goldfish swimming, on a pure white background, with natural soft lighting, realistic scale textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a bright orange goldfish swimming, on a pure white background, with natural soft lighting, realistic scale textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -51,13 +51,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/3_eye_ear/eye.png",
           "label": "eye",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a close-up of a human eye with visible iris and pupil, natural eye color, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a close-up of a human eye with visible iris and pupil, natural eye color, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/3_eye_ear/ear.png",
           "label": "ear",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a close-up of a human ear from the side, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a close-up of a human ear from the side, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -95,13 +95,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/5_hand_foot/hand.png",
           "label": "hand",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an open human hand with palm facing forward, fingers spread naturally, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an open human hand with palm facing forward, fingers spread naturally, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/5_hand_foot/foot.png",
           "label": "foot",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a human foot from the side, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a human foot from the side, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -117,17 +117,17 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/6_apple_banana/apple.png",
           "label": "apple",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a shiny red apple with a small stem and leaf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a shiny red apple with a small stem and leaf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/6_apple_banana/banana.png",
           "label": "banana",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a ripe yellow banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a ripe yellow banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
-        "green",
+        "orange",
         "yellow"
       ],
       "answerIndex": 1
@@ -139,13 +139,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/7_fire_ice/fire.png",
           "label": "fire",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of bright orange and yellow flames burning, on a pure white background, with natural soft lighting, realistic fire textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of bright orange and yellow flames burning, on a pure white background, with natural soft lighting, realistic fire textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/7_fire_ice/ice.png",
           "label": "ice",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of clear ice cubes stacked together, on a pure white background, with natural soft lighting, realistic transparent ice textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of clear ice cubes stacked together, on a pure white background, with natural soft lighting, realistic transparent ice textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -161,13 +161,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/8_cow_pig/cow.png",
           "label": "cow",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a friendly black and white dairy cow standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a friendly black and white dairy cow standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/8_cow_pig/pig.png",
           "label": "pig",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cute pink pig standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a cute pink pig standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -183,13 +183,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/9_hat_shoe/hat.png",
           "label": "hat",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful baseball cap or sun hat, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful baseball cap or sun hat, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/9_hat_shoe/shoe.png",
           "label": "shoe",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful child's sneaker shoe, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful child's sneaker shoe, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -211,7 +211,7 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/10_baby_bird/bird.png",
           "label": "bird",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a small bird sitting in a nest made of twigs, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a small bird sitting in a nest made of twigs, on a pure white background, with natural soft lighting, realistic feather textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -249,13 +249,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/12_nose_toungue/nose.png",
           "label": "nose",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a close-up of a human nose from the front, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a close-up of a human nose from the front, natural skin tone, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/12_nose_toungue/toungue.png",
           "label": "toungue",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an open mouth showing a healthy pink tongue sticking out slightly, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an open mouth showing a healthy pink tongue sticking out slightly, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -271,13 +271,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/13_puppy_kitten/puppy.png",
           "label": "puppy",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an adorable fluffy puppy with big eyes, sitting playfully, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an adorable fluffy puppy with big eyes, sitting playfully, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/13_puppy_kitten/kitten.png",
           "label": "kitten",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an adorable fluffy kitten with big eyes, sitting cutely, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an adorable fluffy kitten with big eyes, sitting cutely, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -293,13 +293,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/14_bed_chair/bed.png",
           "label": "bed",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograbbph of a cozy single bed with pillow and blanket, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograbbph of a cozy single bed with pillow and blanket, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/14_bed_chair/chair.png",
           "label": "chair",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a simple wooden chair, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a simple wooden chair, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -315,13 +315,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/15_pencil_scissors/pencil.png",
           "label": "pencil",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a yellow wooden pencil with a sharpened tip, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a yellow wooden pencil with a sharpened tip, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/15_pencil_scissors/scissors.png",
           "label": "scissors",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a pair of child-safe scissors with colorful handles, on a pure white background, with natural soft lighting, realistic metal textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a pair of child-safe scissors with colorful handles, on a pure white background, with natural soft lighting, realistic metal textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -337,7 +337,7 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/16_up_in/up.png",
           "label": "up",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a green arrow pointing straight up, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a green arrow pointing straight up, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/16_up_in/in.png",
@@ -359,13 +359,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/17_milk_bread/milk.png",
           "label": "milk",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a glass of white milk, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a glass of white milk, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/17_milk_bread/bread.png",
           "label": "bread",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a fresh loaf of bread with golden crust, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a fresh loaf of bread with golden crust, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -381,13 +381,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/18_tree_flower/tree.png",
           "label": "tree",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a tall green leafy tree, on a pure white background, with natural soft lighting, realistic bark and leaf textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a tall green leafy tree, on a pure white background, with natural soft lighting, realistic bark and leaf textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/18_tree_flower/flower.png",
           "label": "flower",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a small colorful flower with petals and green stem, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a small colorful flower with petals and green stem, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -403,13 +403,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/19_frog_snake/frog.png",
           "label": "frog",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a bright green frog in a hopping pose, on a pure white background, with natural soft lighting, realistic skin textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a bright green frog in a hopping pose, on a pure white background, with natural soft lighting, realistic skin textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/19_frog_snake/snake.png",
           "label": "snake",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful non-threatening snake coiled gently, on a pure white background, with natural soft lighting, realistic scale textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful non-threatening snake coiled gently, on a pure white background, with natural soft lighting, realistic scale textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -425,13 +425,13 @@
         "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/car.png",
         "label": "car",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a real modern sedan car, red or blue color, full side view showing entire vehicle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic metal paint, glass windows, rubber tires and chrome details textures. Professional automotive studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of a real modern sedan car, red or blue color, full side view showing entire vehicle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic metal paint, glass windows, rubber tires and chrome details textures. Professional automotive studio photography with crisp focus. Clear, distraction-free. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       },
       {
         "image": "/shared/images/analogies/1-Analogies_Elementary/20_car_boat/boat.png",
         "label": "boat",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a real fishing boat with cabin and equipment, white and blue hull colors, full side view showing entire vessel, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic painted hull, ropes, nets, fishing rods and maritime equipment details. Professional maritime photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of a real fishing boat with cabin and equipment, white and blue hull colors, full side view showing entire vessel, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic painted hull, ropes, nets, fishing rods and maritime equipment details. Professional maritime photography with crisp focus. Clear, distraction-free. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       }
       ],
       "choices": [
@@ -469,13 +469,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/22_soap_dirt/soap.png",
           "label": "soap",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful bar of soap with bubbles around it, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful bar of soap with bubbles around it, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/22_soap_dirt/dirt.png",
           "label": "dirt",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a pile of brown dirt or soil, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a pile of brown dirt or soil, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -491,13 +491,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/23_lion_duck/lion.png",
           "label": "lion",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a majestic lion with a full mane, sitting proudly, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a majestic lion with a full mane, sitting proudly, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/23_lion_duck/duck.png",
           "label": "duck",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a full-grown male mallard duck standing, showing distinctive green head, white neck ring, brown chest, and gray body plumage, on a pure white background, with natural soft lighting, realistic feather textures and details. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a full-grown male mallard duck standing, showing distinctive green head, white neck ring, brown chest, and gray body plumage, on a pure white background, with natural soft lighting, realistic feather textures and details. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -513,13 +513,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/24_door_light/door.png",
           "label": "door",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a wooden door slightly ajar, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a wooden door slightly ajar, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/24_door_light/light.png",
           "label": "light",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a glowing light bulb turned on, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a glowing light bulb turned on, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -579,13 +579,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/27_teeth_hair/teeth.png",
           "label": "teeth",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a smiling mouth showing healthy white teeth, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a smiling mouth showing healthy white teeth, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/27_teeth_hair/hair.png",
           "label": "hair",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of flowing healthy hair, natural color, on a pure white background, with natural soft lighting, realistic hair textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of flowing healthy hair, natural color, on a pure white background, with natural soft lighting, realistic hair textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -601,13 +601,13 @@
         "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/moon.png",
         "label": "moon",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a glowing pale yellow crescent moon in a deep dark night sky, white twinkling stars scattered across the darkness, realistic moon surface texture with clearly visible craters and lunar details, soft ethereal glow around the moon's edge, deep blue-black night sky filling entire frame, natural astronomical lighting, realistic celestial textures and details. Professional astrophotography quality with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of a glowing pale yellow crescent moon in a deep dark night sky, white twinkling stars scattered across the darkness, realistic moon surface texture with clearly visible craters and lunar details, soft ethereal glow around the moon's edge, deep blue-black night sky filling entire frame, natural astronomical lighting, realistic celestial textures and details. Professional astrophotography quality with crisp focus. Clear, distraction-free. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       },
       {
         "image": "/shared/images/analogies/1-Analogies_Elementary/28_moon_sun/sun.png",
         "label": "sun",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a large bright warm sun with realistic golden-yellow surface and dramatic rays radiating outward in a clear light blue daytime sky, realistic sun texture with subtle corona and surface details, warm glowing light emanating from the sun, bright yellow and orange tones with clear blue sky, natural astronomical lighting, realistic celestial textures. Professional astrophotography quality with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of a large bright warm sun with realistic golden-yellow surface and dramatic rays radiating outward in a clear light blue daytime sky, realistic sun texture with subtle corona and surface details, warm glowing light emanating from the sun, bright yellow and orange tones with clear blue sky, natural astronomical lighting, realistic celestial textures. Professional astrophotography quality with crisp focus. Clear, distraction-free. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       }
       ],
       "choices": [
@@ -623,13 +623,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/29_pig_lion/pig.png",
           "label": "pig",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cute pink pig on a farm setting implied, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a cute pink pig on a farm setting implied, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/29_pig_lion/lion.png",
           "label": "lion",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a majestic lion with a full mane, powerful stance, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a majestic lion with a full mane, powerful stance, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -645,13 +645,13 @@
           "image": "/shared/images/analogies/1-Analogies_Elementary/30_spoon_fork/spoon.png",
           "label": "spoon",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a silver metal spoon, on a pure white background, with natural soft lighting, realistic metal textures and reflections. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a silver metal spoon, on a pure white background, with natural soft lighting, realistic metal textures and reflections. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/1-Analogies_Elementary/30_spoon_fork/fork.png",
           "label": "fork",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a silver metal fork, on a pure white background, with natural soft lighting, realistic metal textures and reflections. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a silver metal fork, on a pure white background, with natural soft lighting, realistic metal textures and reflections. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -691,13 +691,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/2_brush_calculator/brush.png",
           "label": "brush",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a clean artist's paintbrush with no paint on the bristles, natural wooden handle, dry clean bristles ready to use, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a clean artist's paintbrush with no paint on the bristles, natural wooden handle, dry clean bristles ready to use, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/2_brush_calculator/calculator.png",
           "label": "calculator",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a simple basic calculator displaying 3 + 5 on the screen, colorful number buttons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a simple basic calculator displaying 3 + 5 on the screen, colorful number buttons, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -757,13 +757,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/5_palette_keyboard/palette.png",
           "label": "palette",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an artist's wooden palette with colorful paint blobs, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an artist's wooden palette with colorful paint blobs, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/5_palette_keyboard/keyboard.png",
           "label": "keyboard",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a computer keyboard, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a computer keyboard, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -785,7 +785,7 @@
           "image": "/shared/images/analogies/2-Analogies_High/6_chronology_geography/geography.png",
           "label": "geography",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful globe showing continents and oceans, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful globe showing continents and oceans, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -823,13 +823,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/8_submarine_satellite/submarine.png",
           "label": "submarine",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a submarine partially submerged in deep blue ocean water, conning tower and periscope visible above the surface, hull visible below the waterline, realistic metal textures and water reflections, with natural lighting. Professional photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a submarine partially submerged in deep blue ocean water, conning tower and periscope visible above the surface, hull visible below the waterline, realistic metal textures and water reflections, with natural lighting. Professional photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/8_submarine_satellite/satellite.png",
           "label": "satellite",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a space satellite with solar panels, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a space satellite with solar panels, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -889,13 +889,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/11_telescope_microscope/telescope.png",
           "label": "telescope",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a telescope on a tripod, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a telescope on a tripod, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/11_telescope_microscope/microscope.png",
           "label": "microscope",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a scientific microscope, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a scientific microscope, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -955,13 +955,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/14_vaccination_medicine/vaccination.png",
           "label": "vaccination",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a medical syringe and vaccine vial, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a medical syringe and vaccine vial, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/14_vaccination_medicine/medicine.png",
           "label": "medicine",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of medicine bottles and pills, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of medicine bottles and pills, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -977,13 +977,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/15_constitution_bylaws/constitution.png",
           "label": "constitution",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of the United States Constitution document, aged parchment paper with elegant calligraphy showing 'We the People' header, official seal visible, historical American founding document, on a pure white background, with natural soft lighting, realistic aged paper textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of the United States Constitution document, aged parchment paper with elegant calligraphy showing 'We the People' header, official seal visible, historical American founding document, on a pure white background, with natural soft lighting, realistic aged paper textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/15_constitution_bylaws/bylaws.png",
           "label": "bylaws",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a document folder labeled 'Bylaws', on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a document folder labeled 'Bylaws', on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1021,13 +1021,13 @@
         "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/inflation.png",
         "label": "inflation",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of four stacks of gold or silver coins arranged in increasing height from left to right - short stack, taller stack, even taller stack, and tallest stack - showing progressive growth, with a bold red upward-pointing arrow positioned above the stacks indicating rising trend, on a pure white background, with natural soft studio lighting creating subtle shadows and realistic metallic coin textures with shine and detail. Professional studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of four stacks of gold or silver coins arranged in increasing height from left to right - short stack, taller stack, even taller stack, and tallest stack - showing progressive growth, with a bold red upward-pointing arrow positioned above the stacks indicating rising trend, on a pure white background, with natural soft studio lighting creating subtle shadows and realistic metallic coin textures with shine and detail. Professional studio photography with crisp focus. Clear, distraction-free. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       },
       {
         "image": "/shared/images/analogies/2-Analogies_High/17_inflation_erosion/erosion.png",
         "label": "erosion",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a natural cliff or hillside showing clear signs of erosion - weathered rock face, exposed layers of earth and stone, visible water channels carved into the surface, crumbling soil being worn away, realistic geological textures showing the wearing away process, on a clean background, with natural outdoor lighting, realistic earth-tone colors - browns, tans, grays. Professional nature photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of a natural cliff or hillside showing clear signs of erosion - weathered rock face, exposed layers of earth and stone, visible water channels carved into the surface, crumbling soil being worn away, realistic geological textures showing the wearing away process, on a clean background, with natural outdoor lighting, realistic earth-tone colors - browns, tans, grays. Professional nature photography with crisp focus. Clear, distraction-free. No text in image. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       }
       ],
       "choices": [
@@ -1043,13 +1043,13 @@
         "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/fiction.png",
         "label": "fiction",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a colorful storybook with imaginative illustration on the cover showing a fantasy dragon and magical castle scene, no text visible on cover or spine, vibrant colors suggesting fictional fantasy story, book displayed at slight angle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic book cover textures and glossy finish. Professional studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text on book, no pictures of people. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of a colorful storybook with imaginative illustration on the cover showing a fantasy dragon and magical castle scene, no text visible on cover or spine, vibrant colors suggesting fictional fantasy story, book displayed at slight angle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic book cover textures and glossy finish. Professional studio photography with crisp focus. Clear, distraction-free. No text on book, no pictures of people. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       },
       {
         "image": "/shared/images/analogies/2-Analogies_High/18_fiction_nonfiction/nonfiction.png",
         "label": "nonfiction",
         "style": "photorealistic",
-        "prompt": "High resolution photorealistic photograph of a thick encyclopedia or educational textbook with plain solid-colored cover (blue, green, or burgundy), no text visible on cover or spine, simple professional non-fiction book appearance, book displayed at slight angle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic book cover textures and matte finish. Professional studio photography with crisp focus. Clear, distraction-free, designed for speech therapy use with children. No text on book, no pictures of people. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
+        "prompt": "High resolution photorealistic photograph of a thick encyclopedia or educational textbook with plain solid-colored cover (blue, green, or burgundy), no text visible on cover or spine, simple professional non-fiction book appearance, book displayed at slight angle, on a pure white background, with natural soft studio lighting creating subtle shadows, realistic book cover textures and matte finish. Professional studio photography with crisp focus. Clear, distraction-free. No text on book, no pictures of people. Image dimensions 1490 x 785 pixels, aspect ratio 1.9:1, horizontal landscape orientation."
       }
       ],
       "choices": [
@@ -1109,13 +1109,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/21_equation_sentence/equation.png",
           "label": "equation",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a chalkboard with a simple math equation written on it, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a chalkboard with a simple math equation written on it, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/21_equation_sentence/sentence.png",
           "label": "sentence",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a piece of paper with a simple sentence written on it, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a piece of paper with a simple sentence written on it, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1216,13 +1216,13 @@
           "image": "/shared/images/analogies/2-Analogies_High/26_fossil_artifact/fossil.png",
           "label": "fossil",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a dinosaur fossil bone, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a dinosaur fossil bone, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/2-Analogies_High/26_fossil_artifact/artifact.png",
           "label": "artifact",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an ancient pottery artifact, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an ancient pottery artifact, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1328,13 +1328,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/1_plane_boat/plane.png",
           "label": "plane",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a passenger airplane in flight, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a passenger airplane in flight, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/1_plane_boat/boat.png",
           "label": "boat",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a sailboat on water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a sailboat on water, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1372,13 +1372,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/3_bee_spider/bee.png",
           "label": "bee",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a honeybee with visible wings and stripes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a honeybee with visible wings and stripes, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/3_bee_spider/spider.png",
           "label": "spider",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a small harmless garden spider on its spider web, showing detailed web structure with radial and spiral silk strands, on a pure white background, with natural soft lighting highlighting the web's delicate threads, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a small harmless garden spider on its spider web, showing detailed web structure with radial and spiral silk strands, on a pure white background, with natural soft lighting highlighting the web's delicate threads, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1416,13 +1416,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/5_calf_lamb/calf.png",
           "label": "calf",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cute baby calf standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a cute baby calf standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/5_calf_lamb/lamb.png",
           "label": "lamb",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a fluffy white lamb standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a fluffy white lamb standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1438,13 +1438,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/6_finger_toe/finger.png",
           "label": "finger",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a human hand with one finger pointing, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a human hand with one finger pointing, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/6_finger_toe/toe.png",
           "label": "toe",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of human toes on a foot, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of human toes on a foot, on a pure white background, with natural soft lighting. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1482,13 +1482,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/8_peel_shell/peel.png",
           "label": "peel",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a banana peel next to a peeled banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a banana peel next to a peeled banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/8_peel_shell/shell.png",
           "label": "shell",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cracked egg shell next to a whole egg, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a cracked egg shell next to a whole egg, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1504,13 +1504,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/9_thermometer_clock/thermometer.png",
           "label": "thermometer",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a thermometer showing temperature, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a thermometer showing temperature, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/9_thermometer_clock/clock.png",
           "label": "clock",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an analog wall clock showing time, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an analog wall clock showing time, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1526,13 +1526,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/10_pages_keys/pages.png",
           "label": "pages",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of book pages fanned open, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of book pages fanned open, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/10_pages_keys/keys.png",
           "label": "keys",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of piano keys in black and white, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of piano keys in black and white, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1592,13 +1592,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/13_brick_log/brick.png",
           "label": "brick",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of red clay bricks stacked, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of red clay bricks stacked, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/13_brick_log/log.png",
           "label": "log",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of wooden logs stacked, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of wooden logs stacked, on a pure white background, with natural soft lighting, realistic wood textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1614,13 +1614,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/14_telescope_microscope/telescope.png",
           "label": "telescope",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a telescope pointed at the sky, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a telescope pointed at the sky, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/14_telescope_microscope/microscope.png",
           "label": "microscope",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a scientific microscope, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a scientific microscope, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1636,13 +1636,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/15_wool_feathers/wool.png",
           "label": "wool",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a ball of soft wool yarn, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a ball of soft wool yarn, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/15_wool_feathers/feathers.png",
           "label": "feathers",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of realistic duck feathers showing natural mallard duck plumage with brown speckled patterns and iridescent green-blue feathers, on a pure white background, with natural soft lighting, realistic textures and detailed barb structure. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of realistic duck feathers showing natural mallard duck plumage with brown speckled patterns and iridescent green-blue feathers, on a pure white background, with natural soft lighting, realistic textures and detailed barb structure. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1658,13 +1658,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/16_seed_egg/seed.png",
           "label": "seed",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of plant seeds sprouting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of plant seeds sprouting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/16_seed_egg/egg.png",
           "label": "egg",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a white chicken egg, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a white chicken egg, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1724,13 +1724,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/19_envelope_box/envelope.png",
           "label": "envelope",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a light brown kraft paper envelope with a letter inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a light brown kraft paper envelope with a letter inside, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/19_envelope_box/box.png",
           "label": "box",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a cardboard shipping box, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a cardboard shipping box, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1746,7 +1746,7 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/20_book_song/book.png",
           "label": "book",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an open book with pages, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an open book with pages, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/20_book_song/song.png",
@@ -1768,13 +1768,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/21_cow_frog/cow.png",
           "label": "cow",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a dairy cow standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a dairy cow standing, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/21_cow_frog/frog.png",
           "label": "frog",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a green frog sitting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a green frog sitting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1790,13 +1790,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/22_brush_pen/brush.png",
           "label": "brush",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a paintbrush with paint on bristles, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a paintbrush with paint on bristles, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/22_brush_pen/pen.png",
           "label": "pen",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a ballpoint pen, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a ballpoint pen, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1812,13 +1812,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/23_glove_sock/glove.png",
           "label": "glove",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a winter glove, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a winter glove, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/23_glove_sock/sock.png",
           "label": "sock",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful sock, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful sock, on a pure white background, with natural soft lighting, realistic fabric textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1834,13 +1834,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/24_flour_oranges/flour.png",
           "label": "flour",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of white flour in a bowl, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of white flour in a bowl, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/24_flour_oranges/oranges.png",
           "label": "oranges",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of fresh oranges, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of fresh oranges, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1856,13 +1856,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/25_tadpole_caterpillar/tadpole.png",
           "label": "tadpole",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a tadpole swimming, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a tadpole swimming, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/25_tadpole_caterpillar/caterpillar.png",
           "label": "caterpillar",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful caterpillar on a leaf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful caterpillar on a leaf, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1878,13 +1878,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/26_chapter_episode/chapter.png",
           "label": "chapter",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of an open book showing a chapter heading, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of an open book showing a chapter heading, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/26_chapter_episode/episode.png",
           "label": "episode",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a TV screen showing a show episode, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a TV screen showing a show episode, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1900,13 +1900,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/27_paw_hoof/paw.png",
           "label": "paw",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a dog's paw, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a dog's paw, on a pure white background, with natural soft lighting, realistic fur textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/27_paw_hoof/hoof.png",
           "label": "hoof",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a horse's hoof, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a horse's hoof, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1922,13 +1922,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/28_scale_fur/scale.png",
           "label": "scale",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of fish scales close up, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of fish scales close up, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/28_scale_fur/fur.png",
           "label": "fur",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of soft animal fur close up, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of soft animal fur close up, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1944,13 +1944,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/29_oven_refrigerator/oven.png",
           "label": "oven",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a kitchen oven, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a kitchen oven, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/29_oven_refrigerator/refrigerator.png",
           "label": "refrigerator",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a kitchen refrigerator, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a kitchen refrigerator, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
@@ -1966,13 +1966,13 @@
           "image": "/shared/images/analogies/3-Analogies_Middle/30_map_dictionary/map.png",
           "label": "map",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a colorful folded map, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a colorful folded map, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         },
         {
           "image": "/shared/images/analogies/3-Analogies_Middle/30_map_dictionary/dictionary.png",
           "label": "dictionary",
           "style": "photorealistic",
-          "prompt": "High resolution photorealistic photograph of a thick dictionary book, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free, designed for speech therapy use with children."
+          "prompt": "High resolution photorealistic photograph of a thick dictionary book, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "choices": [
