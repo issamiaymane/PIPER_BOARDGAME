@@ -4,8 +4,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Child building sandcastle on beach"
+          "image": "/shared/images/describing/1-Describe_The_Scene/1_child_building_sandcastle_on_beach/child_building_sandcastle_on_beach.png",
+          "label": "Child building sandcastle on beach",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Child building sandcastle on beach. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -16,8 +18,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Family walking along the shoreline"
+          "image": "/shared/images/describing/1-Describe_The_Scene/2_family_walking_along_the_shoreline/family_walking_along_the_shoreline.png",
+          "label": "Family walking along the shoreline",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Family walking along the shoreline. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -28,8 +32,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Person applying sunscreen at beach"
+          "image": "/shared/images/describing/1-Describe_The_Scene/3_person_applying_sunscreen_at_beach/person_applying_sunscreen_at_beach.png",
+          "label": "Person applying sunscreen at beach",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person applying sunscreen at beach. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -40,8 +46,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "People splashing in ocean waves"
+          "image": "/shared/images/describing/1-Describe_The_Scene/4_people_splashing_in_ocean_waves/people_splashing_in_ocean_waves.png",
+          "label": "People splashing in ocean waves",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. People splashing in ocean waves. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -52,8 +60,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Seagulls flying over the beach"
+          "image": "/shared/images/describing/1-Describe_The_Scene/5_seagulls_flying_over_the_beach/seagulls_flying_over_the_beach.png",
+          "label": "Seagulls flying over the beach",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Seagulls flying over the beach. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -64,8 +74,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Seashells scattered on the sand"
+          "image": "/shared/images/describing/1-Describe_The_Scene/6_seashells_scattered_on_the_sand/seashells_scattered_on_the_sand.png",
+          "label": "Seashells scattered on the sand",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of seashells scattered on the sand, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "answers": [
@@ -76,8 +88,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Person reading a book on grass"
+          "image": "/shared/images/describing/1-Describe_The_Scene/7_person_reading_a_book_on_grass/person_reading_a_book_on_grass.png",
+          "label": "Person reading a book on grass",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person reading a book on grass. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -88,8 +102,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Children playing on playground"
+          "image": "/shared/images/describing/1-Describe_The_Scene/8_children_playing_on_playground/children_playing_on_playground.png",
+          "label": "Children playing on playground",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Children playing on playground. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -100,8 +116,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Family having a picnic in park"
+          "image": "/shared/images/describing/1-Describe_The_Scene/9_family_having_a_picnic_in_park/family_having_a_picnic_in_park.png",
+          "label": "Family having a picnic in park",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Family having a picnic in park. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -112,8 +130,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Dog catching a frisbee"
+          "image": "/shared/images/describing/1-Describe_The_Scene/10_dog_catching_a_frisbee/dog_catching_a_frisbee.png",
+          "label": "Dog catching a frisbee",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Dog catching a frisbee. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -124,8 +144,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Child blowing bubbles outside"
+          "image": "/shared/images/describing/1-Describe_The_Scene/11_child_blowing_bubbles_outside/child_blowing_bubbles_outside.png",
+          "label": "Child blowing bubbles outside",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Child blowing bubbles outside. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -136,8 +158,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "People walking on a nature trail"
+          "image": "/shared/images/describing/1-Describe_The_Scene/12_people_walking_on_a_nature_trail/people_walking_on_a_nature_trail.png",
+          "label": "People walking on a nature trail",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. People walking on a nature trail. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -148,8 +172,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Person cooking in the kitchen"
+          "image": "/shared/images/describing/1-Describe_The_Scene/13_person_cooking_in_the_kitchen/person_cooking_in_the_kitchen.png",
+          "label": "Person cooking in the kitchen",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person cooking in the kitchen. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -160,8 +186,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Child doing homework at desk"
+          "image": "/shared/images/describing/1-Describe_The_Scene/14_child_doing_homework_at_desk/child_doing_homework_at_desk.png",
+          "label": "Child doing homework at desk",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Child doing homework at desk. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -172,8 +200,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Family watching a movie together"
+          "image": "/shared/images/describing/1-Describe_The_Scene/15_family_watching_a_movie_together/family_watching_a_movie_together.png",
+          "label": "Family watching a movie together",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Family watching a movie together. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -184,8 +214,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Person doing laundry at home"
+          "image": "/shared/images/describing/1-Describe_The_Scene/16_person_doing_laundry_at_home/person_doing_laundry_at_home.png",
+          "label": "Person doing laundry at home",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person doing laundry at home. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -196,8 +228,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Person watering plants"
+          "image": "/shared/images/describing/1-Describe_The_Scene/17_person_watering_plants/person_watering_plants.png",
+          "label": "Person watering plants",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person watering plants. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -208,8 +242,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Child making their bed"
+          "image": "/shared/images/describing/1-Describe_The_Scene/18_child_making_their_bed/child_making_their_bed.png",
+          "label": "Child making their bed",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Child making their bed. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -220,8 +256,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Person riding a horse"
+          "image": "/shared/images/describing/1-Describe_The_Scene/19_person_riding_a_horse/person_riding_a_horse.png",
+          "label": "Person riding a horse",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person riding a horse. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -232,8 +270,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Kids playing soccer on field"
+          "image": "/shared/images/describing/1-Describe_The_Scene/20_kids_playing_soccer_on_field/kids_playing_soccer_on_field.png",
+          "label": "Kids playing soccer on field",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Kids playing soccer on field. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -244,8 +284,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Child painting a picture"
+          "image": "/shared/images/describing/1-Describe_The_Scene/21_child_painting_a_picture/child_painting_a_picture.png",
+          "label": "Child painting a picture",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Child painting a picture. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -256,8 +298,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Kids doing science experiment"
+          "image": "/shared/images/describing/1-Describe_The_Scene/22_kids_doing_science_experiment/kids_doing_science_experiment.png",
+          "label": "Kids doing science experiment",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Kids doing science experiment. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -268,8 +312,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Person surfing in the ocean"
+          "image": "/shared/images/describing/1-Describe_The_Scene/23_person_surfing_in_the_ocean/person_surfing_in_the_ocean.png",
+          "label": "Person surfing in the ocean",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person surfing in the ocean. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -280,8 +326,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "People playing a board game"
+          "image": "/shared/images/describing/1-Describe_The_Scene/24_people_playing_a_board_game/people_playing_a_board_game.png",
+          "label": "People playing a board game",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. People playing a board game. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "answers": [
@@ -292,8 +340,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Rainbow in the sky"
+          "image": "/shared/images/describing/1-Describe_The_Scene/25_rainbow_in_the_sky/rainbow_in_the_sky.png",
+          "label": "Rainbow in the sky",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of rainbow in the sky, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "answers": [
@@ -304,8 +354,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Sun setting over the horizon"
+          "image": "/shared/images/describing/1-Describe_The_Scene/26_sun_setting_over_the_horizon/sun_setting_over_the_horizon.png",
+          "label": "Sun setting over the horizon",
+          "style": "illustration",
+          "prompt": "Cute, colorful children's book illustration of sun setting over the horizon, on a pure white background, with soft pastel colors, friendly cartoon style. Simple, clean design suitable for kids. Clear, distraction-free."
         }
       ],
       "answers": [
@@ -316,8 +368,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Butterfly sitting on a flower"
+          "image": "/shared/images/describing/1-Describe_The_Scene/27_butterfly_sitting_on_a_flower/butterfly_sitting_on_a_flower.png",
+          "label": "Butterfly sitting on a flower",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of butterfly sitting on a flower, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "answers": [
@@ -328,8 +382,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Ducks swimming in a pond"
+          "image": "/shared/images/describing/1-Describe_The_Scene/28_ducks_swimming_in_a_pond/ducks_swimming_in_a_pond.png",
+          "label": "Ducks swimming in a pond",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of ducks swimming in a pond, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "answers": [
@@ -340,8 +396,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Fluffy clouds in the sky"
+          "image": "/shared/images/describing/1-Describe_The_Scene/29_fluffy_clouds_in_the_sky/fluffy_clouds_in_the_sky.png",
+          "label": "Fluffy clouds in the sky",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of fluffy clouds in the sky, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "answers": [
@@ -352,8 +410,10 @@
       "question": "Describe what you see in this picture.",
       "images": [
         {
-          "image": "",
-          "label": "Waves crashing against rocks"
+          "image": "/shared/images/describing/1-Describe_The_Scene/30_waves_crashing_against_rocks/waves_crashing_against_rocks.png",
+          "label": "Waves crashing against rocks",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of waves crashing against rocks, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "answers": [
@@ -366,8 +426,10 @@
       "title": "Banana",
       "images": [
         {
-          "image": "",
-          "label": "A banana"
+          "image": "/shared/images/describing/2-Describing/1_banana/banana.png",
+          "label": "A banana",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a banana, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -401,8 +463,10 @@
       "title": "Orange",
       "images": [
         {
-          "image": "",
-          "label": "An orange"
+          "image": "/shared/images/describing/2-Describing/2_orange/orange.png",
+          "label": "An orange",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an orange, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -436,8 +500,10 @@
       "title": "Strawberry",
       "images": [
         {
-          "image": "",
-          "label": "A strawberry"
+          "image": "/shared/images/describing/2-Describing/3_strawberry/strawberry.png",
+          "label": "A strawberry",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a strawberry, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -471,8 +537,10 @@
       "title": "Watermelon",
       "images": [
         {
-          "image": "",
-          "label": "A watermelon"
+          "image": "/shared/images/describing/2-Describing/4_watermelon/watermelon.png",
+          "label": "A watermelon",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a watermelon, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -506,8 +574,10 @@
       "title": "Apple",
       "images": [
         {
-          "image": "",
-          "label": "An apple"
+          "image": "/shared/images/describing/2-Describing/5_apple/apple.png",
+          "label": "An apple",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an apple, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -541,8 +611,10 @@
       "title": "Bear",
       "images": [
         {
-          "image": "",
-          "label": "A bear"
+          "image": "/shared/images/describing/2-Describing/6_bear/bear.png",
+          "label": "A bear",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bear, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -576,8 +648,10 @@
       "title": "Dolphin",
       "images": [
         {
-          "image": "",
-          "label": "A dolphin"
+          "image": "/shared/images/describing/2-Describing/7_dolphin/dolphin.png",
+          "label": "A dolphin",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dolphin, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -611,8 +685,10 @@
       "title": "Bunny",
       "images": [
         {
-          "image": "",
-          "label": "A bunny"
+          "image": "/shared/images/describing/2-Describing/8_bunny/bunny.png",
+          "label": "A bunny",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bunny, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -646,8 +722,10 @@
       "title": "Butterfly",
       "images": [
         {
-          "image": "",
-          "label": "A butterfly"
+          "image": "/shared/images/describing/2-Describing/9_butterfly/butterfly.png",
+          "label": "A butterfly",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a butterfly, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -681,8 +759,10 @@
       "title": "Dog",
       "images": [
         {
-          "image": "",
-          "label": "A dog"
+          "image": "/shared/images/describing/2-Describing/10_dog/dog.png",
+          "label": "A dog",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a dog, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -716,8 +796,10 @@
       "title": "Refrigerator",
       "images": [
         {
-          "image": "",
-          "label": "A refrigerator"
+          "image": "/shared/images/describing/2-Describing/11_refrigerator/refrigerator.png",
+          "label": "A refrigerator",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a refrigerator, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -751,8 +833,10 @@
       "title": "Bed",
       "images": [
         {
-          "image": "",
-          "label": "A bed"
+          "image": "/shared/images/describing/2-Describing/12_bed/bed.png",
+          "label": "A bed",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bed, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -786,8 +870,10 @@
       "title": "Bathtub",
       "images": [
         {
-          "image": "",
-          "label": "A bathtub"
+          "image": "/shared/images/describing/2-Describing/13_bathtub/bathtub.png",
+          "label": "A bathtub",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bathtub, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -821,8 +907,10 @@
       "title": "Couch",
       "images": [
         {
-          "image": "",
-          "label": "A couch"
+          "image": "/shared/images/describing/2-Describing/14_couch/couch.png",
+          "label": "A couch",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a couch, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -856,8 +944,10 @@
       "title": "Lamp",
       "images": [
         {
-          "image": "",
-          "label": "A lamp"
+          "image": "/shared/images/describing/2-Describing/15_lamp/lamp.png",
+          "label": "A lamp",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a lamp, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -891,8 +981,10 @@
       "title": "Sneakers",
       "images": [
         {
-          "image": "",
-          "label": "Sneakers"
+          "image": "/shared/images/describing/2-Describing/16_sneakers/sneakers.png",
+          "label": "Sneakers",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of sneakers, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -926,8 +1018,10 @@
       "title": "Jacket",
       "images": [
         {
-          "image": "",
-          "label": "A jacket"
+          "image": "/shared/images/describing/2-Describing/17_jacket/jacket.png",
+          "label": "A jacket",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a jacket, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -961,8 +1055,10 @@
       "title": "Sunhat",
       "images": [
         {
-          "image": "",
-          "label": "A sunhat"
+          "image": "/shared/images/describing/2-Describing/18_sunhat/sunhat.png",
+          "label": "A sunhat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a sunhat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -996,8 +1092,10 @@
       "title": "Flip Flops",
       "images": [
         {
-          "image": "",
-          "label": "Flip flops"
+          "image": "/shared/images/describing/2-Describing/19_flip_flops/flip_flops.png",
+          "label": "Flip flops",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of flip flops, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1031,8 +1129,10 @@
       "title": "Backpack",
       "images": [
         {
-          "image": "",
-          "label": "A backpack"
+          "image": "/shared/images/describing/2-Describing/20_backpack/backpack.png",
+          "label": "A backpack",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a backpack, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1066,8 +1166,10 @@
       "title": "Towel",
       "images": [
         {
-          "image": "",
-          "label": "A towel"
+          "image": "/shared/images/describing/2-Describing/21_towel/towel.png",
+          "label": "A towel",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a towel, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1101,8 +1203,10 @@
       "title": "Sunscreen",
       "images": [
         {
-          "image": "",
-          "label": "Sunscreen"
+          "image": "/shared/images/describing/2-Describing/22_sunscreen/sunscreen.png",
+          "label": "Sunscreen",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of sunscreen, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1136,8 +1240,10 @@
       "title": "Bucket",
       "images": [
         {
-          "image": "",
-          "label": "A bucket"
+          "image": "/shared/images/describing/2-Describing/23_bucket/bucket.png",
+          "label": "A bucket",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a bucket, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1171,8 +1277,10 @@
       "title": "Sunglasses",
       "images": [
         {
-          "image": "",
-          "label": "Sunglasses"
+          "image": "/shared/images/describing/2-Describing/24_sunglasses/sunglasses.png",
+          "label": "Sunglasses",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of sunglasses, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1206,8 +1314,10 @@
       "title": "Seashell",
       "images": [
         {
-          "image": "",
-          "label": "A seashell"
+          "image": "/shared/images/describing/2-Describing/25_seashell/seashell.png",
+          "label": "A seashell",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a seashell, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1241,8 +1351,10 @@
       "title": "Car",
       "images": [
         {
-          "image": "",
-          "label": "A car"
+          "image": "/shared/images/describing/2-Describing/26_car/car.png",
+          "label": "A car",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a car, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1276,8 +1388,10 @@
       "title": "Airplane",
       "images": [
         {
-          "image": "",
-          "label": "An airplane"
+          "image": "/shared/images/describing/2-Describing/27_airplane/airplane.png",
+          "label": "An airplane",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of an airplane, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1311,8 +1425,10 @@
       "title": "Skateboard",
       "images": [
         {
-          "image": "",
-          "label": "A skateboard"
+          "image": "/shared/images/describing/2-Describing/28_skateboard/skateboard.png",
+          "label": "A skateboard",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a skateboard, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1346,8 +1462,10 @@
       "title": "Surfboard",
       "images": [
         {
-          "image": "",
-          "label": "A surfboard"
+          "image": "/shared/images/describing/2-Describing/29_surfboard/surfboard.png",
+          "label": "A surfboard",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a surfboard, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1381,8 +1499,10 @@
       "title": "Boat",
       "images": [
         {
-          "image": "",
-          "label": "A boat"
+          "image": "/shared/images/describing/2-Describing/30_boat/boat.png",
+          "label": "A boat",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of a boat, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -1418,8 +1538,10 @@
       "title": "Family Playing in Waves",
       "images": [
         {
-          "image": "",
-          "label": "Family playing in waves"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/1_family_playing_in_waves/family_playing_in_waves.png",
+          "label": "Family playing in waves",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Family playing in waves. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1459,8 +1581,10 @@
       "title": "Person at Ocean with Sunglasses",
       "images": [
         {
-          "image": "",
-          "label": "Person at ocean with sunglasses"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/2_person_at_ocean_with_sunglasses/person_at_ocean_with_sunglasses.png",
+          "label": "Person at ocean with sunglasses",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Person at ocean with sunglasses. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1500,8 +1624,10 @@
       "title": "Child Building Sandcastle",
       "images": [
         {
-          "image": "",
-          "label": "Child building sandcastle"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/3_child_building_sandcastle/child_building_sandcastle.png",
+          "label": "Child building sandcastle",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Child building sandcastle. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1541,8 +1667,10 @@
       "title": "Surfer Riding a Wave",
       "images": [
         {
-          "image": "",
-          "label": "Surfer riding a wave"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/4_surfer_riding_a_wave/surfer_riding_a_wave.png",
+          "label": "Surfer riding a wave",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Surfer riding a wave. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1582,8 +1710,10 @@
       "title": "Family Collecting Seashells",
       "images": [
         {
-          "image": "",
-          "label": "Family collecting seashells"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/5_family_collecting_seashells/family_collecting_seashells.png",
+          "label": "Family collecting seashells",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Family collecting seashells. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1623,8 +1753,10 @@
       "title": "Children at Playground",
       "images": [
         {
-          "image": "",
-          "label": "Children at playground"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/6_children_at_playground/children_at_playground.png",
+          "label": "Children at playground",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Children at playground. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1664,8 +1796,10 @@
       "title": "Family Having a Picnic",
       "images": [
         {
-          "image": "",
-          "label": "Family having a picnic"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/7_family_having_a_picnic/family_having_a_picnic.png",
+          "label": "Family having a picnic",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Family having a picnic. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1705,8 +1839,10 @@
       "title": "Child Playing with Dog",
       "images": [
         {
-          "image": "",
-          "label": "Child playing with dog"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/8_child_playing_with_dog/child_playing_with_dog.png",
+          "label": "Child playing with dog",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Child playing with dog. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1746,8 +1882,10 @@
       "title": "People Watching Sunset",
       "images": [
         {
-          "image": "",
-          "label": "People watching sunset"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/9_people_watching_sunset/people_watching_sunset.png",
+          "label": "People watching sunset",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . People watching sunset. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1787,8 +1925,10 @@
       "title": "Kids Playing in Sprinklers",
       "images": [
         {
-          "image": "",
-          "label": "Kids playing in sprinklers"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/10_kids_playing_in_sprinklers/kids_playing_in_sprinklers.png",
+          "label": "Kids playing in sprinklers",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Kids playing in sprinklers. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1828,8 +1968,10 @@
       "title": "Family Cooking Together",
       "images": [
         {
-          "image": "",
-          "label": "Family cooking together"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/11_family_cooking_together/family_cooking_together.png",
+          "label": "Family cooking together",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Family cooking together. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1869,8 +2011,10 @@
       "title": "Friends by Fire Pit",
       "images": [
         {
-          "image": "",
-          "label": "Friends by fire pit"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/12_friends_by_fire_pit/friends_by_fire_pit.png",
+          "label": "Friends by fire pit",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Friends by fire pit. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1910,8 +2054,10 @@
       "title": "Child Reading on Couch",
       "images": [
         {
-          "image": "",
-          "label": "Child reading on couch"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/13_child_reading_on_couch/child_reading_on_couch.png",
+          "label": "Child reading on couch",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Child reading on couch. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1951,8 +2097,10 @@
       "title": "Family Game Night",
       "images": [
         {
-          "image": "",
-          "label": "Family game night"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/14_family_game_night/family_game_night.png",
+          "label": "Family game night",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Family game night. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -1992,8 +2140,10 @@
       "title": "Child Washing Dishes",
       "images": [
         {
-          "image": "",
-          "label": "Child washing dishes"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/15_child_washing_dishes/child_washing_dishes.png",
+          "label": "Child washing dishes",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Child washing dishes. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2033,8 +2183,10 @@
       "title": "Kids Riding Bikes with Helmets",
       "images": [
         {
-          "image": "",
-          "label": "Kids riding bikes with helmets"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/16_kids_riding_bikes_with_helmets/kids_riding_bikes_with_helmets.png",
+          "label": "Kids riding bikes with helmets",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Kids riding bikes with helmets. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2074,8 +2226,10 @@
       "title": "Students Doing Science Experiment",
       "images": [
         {
-          "image": "",
-          "label": "Students doing science experiment"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/17_students_doing_science_experiment/students_doing_science_experiment.png",
+          "label": "Students doing science experiment",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Students doing science experiment. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2115,8 +2269,10 @@
       "title": "Person Riding a Horse",
       "images": [
         {
-          "image": "",
-          "label": "Person riding a horse"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/18_person_riding_a_horse/person_riding_a_horse.png",
+          "label": "Person riding a horse",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Person riding a horse. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2156,8 +2312,10 @@
       "title": "Kids Playing Soccer",
       "images": [
         {
-          "image": "",
-          "label": "Kids playing soccer"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/19_kids_playing_soccer/kids_playing_soccer.png",
+          "label": "Kids playing soccer",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Kids playing soccer. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2197,8 +2355,10 @@
       "title": "Child Painting a Picture",
       "images": [
         {
-          "image": "",
-          "label": "Child painting a picture"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/20_child_painting_a_picture/child_painting_a_picture.png",
+          "label": "Child painting a picture",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez. Child painting a picture. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2238,8 +2398,10 @@
       "title": "Rainbow Over the Beach",
       "images": [
         {
-          "image": "",
-          "label": "Rainbow over the beach"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/21_rainbow_over_the_beach/rainbow_over_the_beach.png",
+          "label": "Rainbow over the beach",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of rainbow over the beach, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -2279,8 +2441,10 @@
       "title": "Birds Flying Over Ocean",
       "images": [
         {
-          "image": "",
-          "label": "Birds flying over ocean"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/22_birds_flying_over_ocean/birds_flying_over_ocean.png",
+          "label": "Birds flying over ocean",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of birds flying over ocean, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -2320,8 +2484,10 @@
       "title": "Tide Pools at the Shore",
       "images": [
         {
-          "image": "",
-          "label": "Tide pools at the shore"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/23_tide_pools_at_the_shore/tide_pools_at_the_shore.png",
+          "label": "Tide pools at the shore",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of tide pools at the shore, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -2361,8 +2527,10 @@
       "title": "Flowers in a Garden",
       "images": [
         {
-          "image": "",
-          "label": "Flowers in a garden"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/24_flowers_in_a_garden/flowers_in_a_garden.png",
+          "label": "Flowers in a garden",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of flowers in a garden, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -2402,8 +2570,10 @@
       "title": "Clouds in the Sky",
       "images": [
         {
-          "image": "",
-          "label": "Clouds in the sky"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/25_clouds_in_the_sky/clouds_in_the_sky.png",
+          "label": "Clouds in the sky",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of clouds in the sky, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -2443,8 +2613,10 @@
       "title": "Family Eating Dinner",
       "images": [
         {
-          "image": "",
-          "label": "Family eating dinner"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/26_family_eating_dinner/family_eating_dinner.png",
+          "label": "Family eating dinner",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Family eating dinner. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2484,8 +2656,10 @@
       "title": "Child Making Fruit Salad",
       "images": [
         {
-          "image": "",
-          "label": "Child making fruit salad"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/27_child_making_fruit_salad/child_making_fruit_salad.png",
+          "label": "Child making fruit salad",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Child making fruit salad. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2525,8 +2699,10 @@
       "title": "Adult and Child Making Smoothie",
       "images": [
         {
-          "image": "",
-          "label": "Adult and child making smoothie"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/28_adult_and_child_making_smoothie/adult_and_child_making_smoothie.png",
+          "label": "Adult and child making smoothie",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Adult and child making smoothie. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [
@@ -2566,8 +2742,10 @@
       "title": "Breakfast Table Setting",
       "images": [
         {
-          "image": "",
-          "label": "Breakfast table setting"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/29_breakfast_table_setting/breakfast_table_setting.png",
+          "label": "Breakfast table setting",
+          "style": "photorealistic",
+          "prompt": "High resolution photorealistic photograph of breakfast table setting, on a pure white background, with natural soft lighting, realistic textures. Professional studio photography. Clear, distraction-free."
         }
       ],
       "questions": [
@@ -2607,8 +2785,10 @@
       "title": "Farmers Market Scene",
       "images": [
         {
-          "image": "",
-          "label": "Farmers market scene"
+          "image": "/shared/images/describing/3-Describing_More_Advanced/30_farmers_market_scene/farmers_market_scene.png",
+          "label": "Farmers market scene",
+          "style": "illustrated",
+          "prompt": "Mid-century children's book illustration in the style of Sergio Martinez . Farmers market scene. Full edge to edge full background image, no text. Calm, timeless style, NOT modern cartoon or AI style. Non-distracting background with soft warm muted colors. Clear and simple composition for speech therapy use with children."
         }
       ],
       "questions": [

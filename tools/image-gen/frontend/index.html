@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-autumn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIPER Image Generator</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body class="theme-autumn">
+  <!-- Decorative falling elements -->
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍁</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍁</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍁</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍁</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍁</div>
+  </div>
+
+  <header class="app-header">
+    <h1>PIPER Image Generator</h1>
+    <p class="header-subtitle">Create beautiful card images</p>
+  </header>
+
+  <!-- Navigation Menu Bar -->
+  <nav class="menu-bar">
+    <button id="nav-files" class="menu-item active" data-step="files">
+      <span class="menu-number">1</span>
+      <span class="menu-label">Files</span>
+    </button>
+    <span class="menu-separator"></span>
+    <button id="nav-categories" class="menu-item" data-step="categories" disabled>
+      <span class="menu-number">2</span>
+      <span class="menu-label">Category</span>
+    </button>
+    <span class="menu-separator"></span>
+    <button id="nav-viewer" class="menu-item" data-step="viewer" disabled>
+      <span class="menu-number">3</span>
+      <span class="menu-label">Generate</span>
+    </button>
+  </nav>
+
+  <main class="app-main">
+    <!-- Step 1: File Selection -->
+    <section id="step-files" class="step-panel active">
+      <h2>Select JSON File</h2>
+      <p class="step-description">Choose a card category to work with</p>
+      <div id="file-list" class="file-list"></div>
+    </section>
+
+    <!-- Step 2: Category Selection -->
+    <section id="step-categories" class="step-panel">
+      <h2>Select Category</h2>
+      <p id="selected-file-info" class="info-text"></p>
+      <div id="category-list" class="category-list"></div>
+    </section>
+
+    <!-- Step 3: Card Viewer -->
+    <section id="step-viewer" class="step-panel">
+      <h2>Generate Images</h2>
+
+      <div class="card-nav">
+        <button id="btn-prev" class="btn-nav" disabled>
+          <span>←</span>
+          <span>Prev</span>
+        </button>
+        <div id="card-progress" class="card-progress"></div>
+        <button id="btn-next" class="btn-nav">
+          <span>Next</span>
+          <span>→</span>
+        </button>
+      </div>
+
+      <div class="card-content">
+        <div class="card-info">
+          <div class="info-pill label-row">
+            <span class="label-tag">Label</span>
+            <span id="card-label" class="label-value"></span>
+          </div>
+          <div class="info-pill style-row">
+            <span class="label-tag">Style</span>
+            <span id="card-style" class="label-value"></span>
+          </div>
+        </div>
+
+        <div class="image-area">
+          <div class="image-box">
+            <h4>Current Image</h4>
+            <div id="current-image" class="image-preview">
+              <span class="placeholder">No image</span>
+            </div>
+          </div>
+          <div class="image-box">
+            <h4>Generated Image</h4>
+            <div id="generated-image" class="image-preview">
+              <span class="placeholder">Click Generate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="prompt-section">
+          <div class="prompt-header">
+            <h4>Prompt</h4>
+            <button id="btn-edit-prompt" class="btn-edit">Edit</button>
+          </div>
+          <div id="prompt-display" class="prompt-text"></div>
+          <textarea id="prompt-edit" class="prompt-edit hidden" rows="5"></textarea>
+          <div id="prompt-edit-controls" class="prompt-edit-controls hidden">
+            <button id="btn-save-prompt" class="btn btn-success btn-small">Save to JSON</button>
+            <button id="btn-cancel-edit" class="btn btn-secondary btn-small">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="controls" class="controls">
+        <button id="btn-generate" class="btn btn-primary">Generate Image</button>
+        <button id="btn-accept" class="btn btn-success" disabled>Accept & Save</button>
+        <button id="btn-regenerate" class="btn btn-warning" disabled>Regenerate</button>
+        <button id="btn-skip" class="btn btn-secondary">Skip</button>
+      </div>
+
+      <div id="status-message" class="status-message"></div>
+    </section>
+  </main>
+
+  <!-- Theme Selector -->
+  <div class="theme-selector-floating">
+    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Change theme">
+      🎨
+    </button>
+    <div class="theme-selector-panel hidden" id="theme-panel">
+      <div class="theme-selector-title">Choose Theme</div>
+      <div class="theme-grid">
+        <button class="theme-btn" data-theme="spring">
+          <span class="theme-icon">🌸</span>
+          <span class="theme-text">Spring</span>
+        </button>
+        <button class="theme-btn" data-theme="summer">
+          <span class="theme-icon">☀️</span>
+          <span class="theme-text">Summer</span>
+        </button>
+        <button class="theme-btn active" data-theme="autumn">
+          <span class="theme-icon">🍂</span>
+          <span class="theme-text">Autumn</span>
+        </button>
+        <button class="theme-btn" data-theme="winter">
+          <span class="theme-icon">❄️</span>
+          <span class="theme-text">Winter</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
