@@ -1,7 +1,10 @@
 import Database from 'better-sqlite3';
 import fs from 'fs';
 import path from 'path';
+import bcrypt from 'bcryptjs';
 import { logger } from '../utils/logger.js';
+
+const SALT_ROUNDS = 10;
 
 // Use process.cwd() for consistent path resolution in both dev and production
 const DATA_DIR = path.join(process.cwd(), 'data');
@@ -149,6 +152,9 @@ export function initializeDatabase(): void {
   // Run migrations for existing tables
   runMigrations(db);
 
+  // Seed default data
+  seedDefaultData(db);
+
   logger.info('Database initialized successfully');
 }
 
@@ -244,6 +250,46 @@ function runMigrations(db: Database.Database): void {
   if (!responseColumnNames.includes('intervention_chosen')) {
     db.exec('ALTER TABLE session_responses ADD COLUMN intervention_chosen TEXT');
     logger.info('Migration: Added intervention_chosen column to session_responses');
+  }
+}
+
+/**
+ * Seed default therapist and student data
+ */
+async function seedDefaultData(db: Database.Database): Promise<void> {
+  // Check if default therapist exists
+  const existingTherapist = db.prepare(
+    'SELECT id FROM therapists WHERE email = ?'
+  ).get('hailey@piperspeech.com') as { id: number } | undefined;
+
+  let therapistId: number;
+
+  if (!existingTherapist) {
+    // Create default therapist
+    const passwordHash = bcrypt.hashSync('Piper1234', SALT_ROUNDS);
+    const result = db.prepare(`
+      INSERT INTO therapists (email, password_hash, first_name, last_name)
+      VALUES (?, ?, ?, ?)
+    `).run('hailey@piperspeech.com', passwordHash, 'Hailey', 'Elias');
+    therapistId = result.lastInsertRowid as number;
+    logger.info('Seeded default therapist: hailey@piperspeech.com');
+  } else {
+    therapistId = existingTherapist.id;
+  }
+
+  // Check if default student exists
+  const existingStudent = db.prepare(
+    'SELECT id FROM children WHERE username = ?'
+  ).get('student@piperspeech.com') as { id: number } | undefined;
+
+  if (!existingStudent) {
+    // Create default student
+    const passwordHash = bcrypt.hashSync('Piper1234', SALT_ROUNDS);
+    db.prepare(`
+      INSERT INTO children (therapist_id, username, password_hash, first_name, last_name, problem_type)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `).run(therapistId, 'student@piperspeech.com', passwordHash, 'Student', 'One', 'both');
+    logger.info('Seeded default student: student@piperspeech.com');
   }
 }
 
