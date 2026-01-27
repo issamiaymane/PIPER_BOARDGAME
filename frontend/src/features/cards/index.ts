@@ -8,6 +8,21 @@
 import { CATEGORY_HANDLER_MAP, type HandlerType } from '@shared/categories';
 import { hideLoadingScreen } from '@common/components/LoadingScreen/LoadingScreen';
 
+// Supabase storage URL for images (production)
+const STORAGE_BASE_URL = import.meta.env.VITE_STORAGE_URL || '';
+
+/**
+ * Resolve image path - converts local /shared/images/ paths to Supabase URLs in production
+ */
+function resolveImagePath(path: string): string {
+    if (!path) return path;
+    if (STORAGE_BASE_URL && path.startsWith('/shared/images/')) {
+        // Convert /shared/images/... to Supabase URL
+        return STORAGE_BASE_URL + path.replace('/shared/images/', 'images/');
+    }
+    return path;
+}
+
 // Type definitions
 interface CardData {
     [key: string]: unknown;
@@ -267,7 +282,7 @@ function normalizeImages(images: Array<string | { image?: string; label?: string
 const DEFAULT_IMAGE = '/images/default.png';
 
 function renderSingleImage(img: ImageItem): string {
-    const imageSrc = img.image || DEFAULT_IMAGE;
+    const imageSrc = resolveImagePath(img.image) || DEFAULT_IMAGE;
     return `<div class="preview-image">
         <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
         ${img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
@@ -277,7 +292,7 @@ function renderSingleImage(img: ImageItem): string {
 function renderImagesGrid(images: ImageItem[], showLabels = true): string {
     let html = `<div class="preview-images-grid">`;
     images.forEach((img, index) => {
-        const imageSrc = img.image || DEFAULT_IMAGE;
+        const imageSrc = resolveImagePath(img.image) || DEFAULT_IMAGE;
         html += `<div class="preview-image" data-index="${index}">
             <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(img.label)}" onerror="this.src='${DEFAULT_IMAGE}'; this.onerror=null;">
             ${showLabels && img.label ? `<span class="image-label">${escapeHtml(img.label)}</span>` : ''}
