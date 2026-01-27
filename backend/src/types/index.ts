@@ -37,6 +37,23 @@ export type {
   GoalExtractionResult,
 } from './goal.js';
 
+// Session types
+export type {
+  SessionStatus,
+  GameplaySession,
+  SessionResponse,
+  CreateSessionRequest,
+  EndSessionRequest,
+  RecordResponseRequest,
+  LiveSessionInfo,
+  LiveCardEvent,
+  LiveResponseEvent,
+  LiveSafetyAlert,
+  SessionSummary,
+  TherapistLiveMessage,
+  TherapistLiveClientMessage,
+} from './session.js';
+
 // Voice types
 export type {
   ClientMessage,

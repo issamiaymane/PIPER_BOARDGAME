@@ -409,6 +409,29 @@ export class VoiceService {
   }
 
   /**
+   * Apply saved calibration from database (skip calibration process)
+   * Call this when a child has existing calibration data
+   */
+  applyCalibration(calibration: {
+    amplitudeThreshold: number;
+    peakThreshold: number;
+    confidence?: string;
+  }): void {
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN) {
+      voiceLogger.warn('Cannot apply calibration - WebSocket not connected');
+      return;
+    }
+
+    voiceLogger.info(`Applying saved calibration: amp=${calibration.amplitudeThreshold}, peak=${calibration.peakThreshold}`);
+
+    this.sendMessage({
+      type: 'apply_calibration',
+      amplitudeThreshold: calibration.amplitudeThreshold,
+      peakThreshold: calibration.peakThreshold
+    });
+  }
+
+  /**
    * Speak a card's content via AI
    */
   speakCard(card: CardData, category: string): void {
@@ -590,6 +613,13 @@ export class VoiceService {
   }
 
   /**
+   * Get current voice session ID (for linking to gameplay session)
+   */
+  getSessionId(): string | null {
+    return this.sessionId;
+  }
+
+  /**
    * Connect to backend WebSocket
    */
   private connectWebSocket(): Promise<boolean> {
@@ -597,12 +627,12 @@ export class VoiceService {
       try {
         // Determine WebSocket URL:
         // - In production (deployed): use current page origin (same host)
-        // - In development: use VITE_API_URL or default to localhost:3000
+        // - In development: connect directly to backend (bypass Vite proxy for WebSocket)
         const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
         let wsUrl: string;
         if (isLocalhost) {
-          // Local development - use env variable or default
+          // Local development - connect directly to backend
           const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
           const url = new URL(apiUrl);
           const protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';

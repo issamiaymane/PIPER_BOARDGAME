@@ -199,14 +199,29 @@
                             </div>
 
                             <!-- Sessions Card -->
-                            <div class="profile-card">
+                            <div class="profile-card sessions-card">
                                 <div class="card-header">
                                     <div class="card-title">
                                         <h3>Sessions</h3>
+                                        <span class="live-indicator hidden" id="live-indicator">
+                                            <span class="live-dot"></span>
+                                            LIVE
+                                        </span>
                                     </div>
                                 </div>
-                                <div id="sessions-list" class="card-content">
-                                    <p class="empty-state">No sessions yet</p>
+                                <div class="card-content">
+                                    <!-- Live Sessions Section -->
+                                    <div id="live-sessions-section" class="hidden">
+                                        <h4 class="sessions-section-title">Active Now</h4>
+                                        <div id="live-sessions-list" class="live-sessions-list"></div>
+                                    </div>
+                                    <!-- Session History -->
+                                    <div id="session-history-section">
+                                        <h4 class="sessions-section-title">History</h4>
+                                        <div id="sessions-list" class="sessions-list">
+                                            <p class="empty-state">No sessions yet</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -603,6 +618,48 @@
 
             <div class="form-actions">
                 <button type="button" class="btn btn-secondary cancel-modal" data-modal="goal-details-modal">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Session Details Modal -->
+    <div id="session-details-modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content modal-wide">
+            <button class="modal-close" data-modal="session-details-modal">&times;</button>
+            <h2>Session Details</h2>
+
+            <div class="session-details-header">
+                <div class="session-detail-stat">
+                    <span class="stat-label">Duration</span>
+                    <span class="stat-value" id="session-detail-duration">--</span>
+                </div>
+                <div class="session-detail-stat">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value" id="session-detail-score">0</span>
+                </div>
+                <div class="session-detail-stat">
+                    <span class="stat-label">Accuracy</span>
+                    <span class="stat-value" id="session-detail-accuracy">--%</span>
+                </div>
+                <div class="session-detail-stat">
+                    <span class="stat-label">Status</span>
+                    <span class="stat-value" id="session-detail-status">--</span>
+                </div>
+            </div>
+
+            <div class="session-details-scroll">
+                <h4>Categories</h4>
+                <div id="session-detail-categories" class="session-categories"></div>
+
+                <h4>Card Responses</h4>
+                <div id="session-detail-responses" class="session-responses-list">
+                    <p class="empty-state">No responses recorded</p>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary cancel-modal" data-modal="session-details-modal">CLOSE</button>
             </div>
         </div>
     </div>

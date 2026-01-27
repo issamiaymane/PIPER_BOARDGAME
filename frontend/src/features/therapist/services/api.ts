@@ -420,6 +420,99 @@ class ApiService {
       { method: 'DELETE' }
     );
   }
+
+  // Session methods
+  async getActiveSessions(): Promise<{ sessions: LiveSessionInfo[] }> {
+    const response = await fetch('/api/session/therapist/active', {
+      headers: this.getHeaders(),
+    });
+    if (!response.ok) {
+      throw new ApiError('Failed to load active sessions', response.status);
+    }
+    return response.json();
+  }
+
+  async getSessionHistory(childId?: number, limit?: number): Promise<{ sessions: GameplaySession[] }> {
+    const params = new URLSearchParams();
+    if (childId) params.append('childId', String(childId));
+    if (limit) params.append('limit', String(limit));
+    const query = params.toString() ? `?${params.toString()}` : '';
+
+    const response = await fetch(`/api/session/therapist/history${query}`, {
+      headers: this.getHeaders(),
+    });
+    if (!response.ok) {
+      throw new ApiError('Failed to load session history', response.status);
+    }
+    return response.json();
+  }
+
+  async getSessionDetails(sessionId: number): Promise<{ session: SessionWithResponses }> {
+    const response = await fetch(`/api/session/therapist/${sessionId}`, {
+      headers: this.getHeaders(),
+    });
+    if (!response.ok) {
+      throw new ApiError('Failed to load session details', response.status);
+    }
+    return response.json();
+  }
+
+  getToken(): string | null {
+    return this.token;
+  }
+}
+
+// Session types
+export interface GameplaySession {
+  id: number;
+  child_id: number;
+  therapist_id: number;
+  started_at: string;
+  ended_at: string | null;
+  duration_seconds: number | null;
+  categories_selected: string; // JSON array string
+  theme: string | null;
+  character: string | null;
+  status: 'in_progress' | 'completed' | 'abandoned';
+  final_score: number;
+  final_board_position: number;
+  total_cards_played: number;
+  correct_responses: number;
+}
+
+export interface SessionResponse {
+  id: number;
+  session_id: number;
+  card_category: string;
+  card_question: string;
+  child_response: string | null;
+  is_correct: number; // 0 or 1 (SQLite boolean)
+  attempt_number: number;
+  card_shown_at: string;
+  response_at: string | null;
+  time_spent_seconds: number | null;
+  safety_level: number;
+  signals_detected: string | null; // JSON array string
+  intervention_chosen: string | null; // e.g., 'SKIP_CARD', 'RETRY_CARD'
+}
+
+export interface SessionWithResponses extends GameplaySession {
+  responses: SessionResponse[];
+  child_name?: string;
+}
+
+export interface LiveSessionInfo {
+  sessionId: number;
+  childId: number;
+  childName: string;
+  startedAt: string;
+  categoriesSelected: string[];
+  theme: string | null;
+  currentScore: number;
+  currentPosition: number;
+  cardsPlayed: number;
+  correctResponses: number;
+  status: 'in_progress' | 'completed' | 'abandoned';
 }
 
 // Export singleton instance

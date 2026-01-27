@@ -5,8 +5,11 @@ import { config } from './config/index.js';
 import { initializeDatabase, closeDatabase } from './services/database.js';
 import { logger } from './utils/logger.js';
 import routes from './api/routes/index.js';
+import childAuthRoutes from './api/routes/child-auth.routes.js';
+import sessionRoutes from './api/routes/session.routes.js';
 import { globalErrorHandler, notFoundHandler } from './api/middleware/errorHandler.js';
 import { setupVoiceWebSocket } from './api/routes/voice.routes.js';
+import { setupTherapistLiveWebSocket } from './api/routes/therapist-live.routes.js';
 import { voiceSessionManager } from './services/voice/index.js';
 
 // Frontend path (relative to backend in Docker: /app/backend -> /app/frontend/dist)
@@ -30,6 +33,8 @@ app.get('/api/health', (_req, res) => {
 
 // API Routes
 app.use('/api/therapist', routes);
+app.use('/api/child', childAuthRoutes);
+app.use('/api/session', sessionRoutes);
 
 // Serve static frontend files (in production)
 if (process.env.NODE_ENV === 'production') {
@@ -60,6 +65,9 @@ const server = app.listen(config.port, () => {
 
 // Setup Voice WebSocket server
 setupVoiceWebSocket(server);
+
+// Setup Therapist Live WebSocket server
+setupTherapistLiveWebSocket(server);
 
 // Graceful shutdown
 process.on('SIGINT', () => {

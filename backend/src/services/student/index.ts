@@ -6,4 +6,6 @@ export {
   listStudentsByTherapist,
   updateStudent,
   deleteStudent,
+  loginChild,
+  verifyChildToken,
 } from './student.js';

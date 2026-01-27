@@ -35,7 +35,8 @@ export const ClientMessageSchema = z.object({
     'start_calibration',
     'calibration_audio_chunk',
     'calibration_phase_complete',
-    'abort_calibration'
+    'abort_calibration',
+    'apply_calibration'
   ]),
   text: z.string().optional(),
   category: z.string().optional(),
@@ -46,7 +47,9 @@ export const ClientMessageSchema = z.object({
   action: z.string().optional(),
   activity: z.string().optional(),
   // Calibration fields
-  phase: z.string().optional()
+  phase: z.string().optional(),
+  amplitudeThreshold: z.number().optional(),
+  peakThreshold: z.number().optional()
 });
 
 // Derive type from schema (single source of truth)

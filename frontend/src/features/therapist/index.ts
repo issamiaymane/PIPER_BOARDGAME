@@ -3,7 +3,8 @@
  * Handles UI state and user interactions
  */
 
-import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal } from './services/api';
+import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal, type GameplaySession, type SessionWithResponses, type LiveSessionInfo } from './services/api';
+import { therapistLiveService, type LiveCardEvent, type LiveResponseEvent, type SessionSummary } from './services/live';
 // Categories imported from @shared/categories are defined in ORGANIZED_*_CATEGORIES below
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
 
@@ -258,6 +259,11 @@ let extractedGoals: ExtractedGoal[] = [];
 let currentGoalsPdfUrl: string | null = null;
 let studentGoals: IEPGoal[] = [];
 
+// Sessions state
+let liveSessions: LiveSessionInfo[] = [];
+let sessionHistory: GameplaySession[] = [];
+let currentLiveCard: { sessionId: number; cardQuestion: string } | null = null;
+
 // Screens
 function showAuthScreen(): void {
   show($('auth-screen'));
@@ -275,6 +281,9 @@ function showDashboard(): void {
 
   // Load students
   loadStudents();
+
+  // Initialize live WebSocket for real-time session monitoring
+  initLiveWebSocket();
 }
 
 // Modal helpers
@@ -355,6 +364,10 @@ function selectStudent(id: number): void {
 
   // Load and render goals
   loadStudentGoals(student.id);
+
+  // Load and render sessions
+  loadSessionHistory(student.id);
+  renderLiveSessions(); // Update live sessions to show only this student's sessions
 }
 
 function renderEvalData(student: Student): void {
@@ -1353,6 +1366,324 @@ async function confirmGoalsData(): Promise<void> {
   }
 }
 
+// ============================================
+// Session Management Functions
+// ============================================
+
+function initLiveWebSocket(): void {
+  const token = api.getToken();
+  if (!token) return;
+
+  therapistLiveService.setCallbacks({
+    onConnected: () => {
+      console.log('[Therapist] Live WebSocket connected');
+    },
+    onDisconnected: () => {
+      console.log('[Therapist] Live WebSocket disconnected');
+    },
+    onActiveSessions: (sessions) => {
+      liveSessions = sessions;
+      renderLiveSessions();
+    },
+    onSessionStarted: (session) => {
+      // Add to live sessions if it's for one of our students
+      const student = students.find(s => s.id === session.childId);
+      if (student) {
+        const existingIdx = liveSessions.findIndex(s => s.sessionId === session.sessionId);
+        if (existingIdx === -1) {
+          liveSessions.push(session);
+        } else {
+          liveSessions[existingIdx] = session;
+        }
+        renderLiveSessions();
+      }
+    },
+    onCardShown: (data: LiveCardEvent) => {
+      currentLiveCard = { sessionId: data.sessionId, cardQuestion: data.cardQuestion };
+      // Update the live session display
+      const liveSession = liveSessions.find(s => s.sessionId === data.sessionId);
+      if (liveSession) {
+        liveSession.cardsPlayed++;
+        renderLiveSessions();
+      }
+    },
+    onChildResponse: (data: LiveResponseEvent) => {
+      // Update live session stats
+      const liveSession = liveSessions.find(s => s.sessionId === data.sessionId);
+      if (liveSession) {
+        if (data.isCorrect) {
+          liveSession.correctResponses++;
+        }
+        renderLiveSessions();
+      }
+    },
+    onSessionEnded: (data: SessionSummary) => {
+      // Remove from live sessions
+      liveSessions = liveSessions.filter(s => s.sessionId !== data.sessionId);
+      currentLiveCard = null;
+      renderLiveSessions();
+      // Refresh session history for the selected student
+      if (selectedStudentId) {
+        loadSessionHistory(selectedStudentId);
+      }
+    },
+    onError: (message) => {
+      console.error('[Therapist] Live error:', message);
+    },
+  });
+
+  therapistLiveService.connect(token);
+}
+
+function renderLiveSessions(): void {
+  const section = document.getElementById('live-sessions-section');
+  const list = document.getElementById('live-sessions-list');
+  const indicator = document.getElementById('live-indicator');
+
+  if (!section || !list || !indicator) return;
+
+  // Filter sessions for selected student if applicable
+  const sessionsToShow = selectedStudentId
+    ? liveSessions.filter(s => s.childId === selectedStudentId)
+    : liveSessions;
+
+  if (sessionsToShow.length === 0) {
+    hide(section);
+    hide(indicator);
+    return;
+  }
+
+  show(section);
+  show(indicator);
+
+  list.innerHTML = sessionsToShow.map(session => {
+    const duration = Math.floor((Date.now() - new Date(session.startedAt).getTime()) / 1000);
+    const durationStr = formatDuration(duration);
+    const accuracy = session.cardsPlayed > 0
+      ? Math.round((session.correctResponses / session.cardsPlayed) * 100)
+      : 0;
+
+    const currentCard = currentLiveCard?.sessionId === session.sessionId
+      ? currentLiveCard.cardQuestion
+      : null;
+
+    return `
+      <div class="live-session-item" data-session-id="${session.sessionId}">
+        <div class="live-session-header">
+          <span class="live-session-child">${escapeHtml(session.childName)}</span>
+          <span class="live-session-time">${durationStr}</span>
+        </div>
+        <div class="live-session-stats">
+          <div class="live-stat">
+            <span>Score:</span>
+            <span class="live-stat-value">${session.currentScore}</span>
+          </div>
+          <div class="live-stat">
+            <span>Cards:</span>
+            <span class="live-stat-value">${session.cardsPlayed}</span>
+          </div>
+          <div class="live-stat">
+            <span>Accuracy:</span>
+            <span class="live-stat-value">${accuracy}%</span>
+          </div>
+        </div>
+        ${currentCard ? `
+          <div class="live-session-current">
+            <span>Current card:</span>
+            <div class="live-session-card">${escapeHtml(currentCard)}</div>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+async function loadSessionHistory(studentId: number): Promise<void> {
+  const list = document.getElementById('sessions-list');
+  if (!list) return;
+
+  try {
+    const result = await api.getSessionHistory(studentId, 10);
+    sessionHistory = result.sessions;
+    renderSessionHistory();
+  } catch (err) {
+    console.error('Failed to load session history:', err);
+    list.innerHTML = '<p class="empty-state">Failed to load sessions</p>';
+  }
+}
+
+function renderSessionHistory(): void {
+  const list = document.getElementById('sessions-list');
+  if (!list) return;
+
+  if (sessionHistory.length === 0) {
+    list.innerHTML = '<p class="empty-state">No sessions yet</p>';
+    return;
+  }
+
+  list.innerHTML = sessionHistory.map(session => {
+    const date = new Date(session.started_at);
+    const dateStr = date.toLocaleDateString();
+    const timeStr = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const durationStr = session.duration_seconds ? formatDuration(session.duration_seconds) : '--';
+    const accuracy = session.total_cards_played > 0
+      ? Math.round((session.correct_responses / session.total_cards_played) * 100)
+      : 0;
+
+    const statusClass = session.status;
+    const statusLabel = session.status === 'completed' ? 'Completed' :
+                        session.status === 'abandoned' ? 'Abandoned' : 'In Progress';
+
+    return `
+      <div class="session-history-item" data-session-id="${session.id}">
+        <div class="session-history-header">
+          <span class="session-date">${dateStr} ${timeStr}</span>
+          <span class="session-status ${statusClass}">${statusLabel}</span>
+        </div>
+        <div class="session-history-stats">
+          <div class="session-stat">
+            <span>Duration:</span>
+            <span class="session-stat-value">${durationStr}</span>
+          </div>
+          <div class="session-stat">
+            <span>Score:</span>
+            <span class="session-stat-value">${session.final_score}</span>
+          </div>
+          <div class="session-stat">
+            <span>Accuracy:</span>
+            <span class="session-stat-value">${accuracy}%</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Add click handlers
+  list.querySelectorAll('.session-history-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const sessionId = parseInt(item.getAttribute('data-session-id') || '0');
+      if (sessionId) showSessionDetails(sessionId);
+    });
+  });
+}
+
+async function showSessionDetails(sessionId: number): Promise<void> {
+  try {
+    const result = await api.getSessionDetails(sessionId);
+    const session = result.session;
+
+    // Populate header stats
+    const durationEl = document.getElementById('session-detail-duration');
+    const scoreEl = document.getElementById('session-detail-score');
+    const accuracyEl = document.getElementById('session-detail-accuracy');
+    const statusEl = document.getElementById('session-detail-status');
+
+    if (durationEl) {
+      durationEl.textContent = session.duration_seconds
+        ? formatDuration(session.duration_seconds)
+        : '--';
+    }
+    if (scoreEl) {
+      scoreEl.textContent = String(session.final_score);
+    }
+    if (accuracyEl) {
+      const accuracy = session.total_cards_played > 0
+        ? Math.round((session.correct_responses / session.total_cards_played) * 100)
+        : 0;
+      accuracyEl.textContent = `${accuracy}%`;
+    }
+    if (statusEl) {
+      const statusLabel = session.status === 'completed' ? 'Completed' :
+                          session.status === 'abandoned' ? 'Abandoned' : 'In Progress';
+      statusEl.textContent = statusLabel;
+    }
+
+    // Populate categories (already parsed by backend)
+    const categoriesEl = document.getElementById('session-detail-categories');
+    if (categoriesEl) {
+      const categories = Array.isArray(session.categories_selected)
+        ? session.categories_selected
+        : [];
+      if (categories.length > 0) {
+        categoriesEl.innerHTML = categories.map(cat =>
+          `<span class="session-category-badge">${escapeHtml(cat)}</span>`
+        ).join('');
+      } else {
+        categoriesEl.innerHTML = '<span class="empty-state">No categories</span>';
+      }
+    }
+
+    // Populate responses
+    const responsesEl = document.getElementById('session-detail-responses');
+    if (responsesEl) {
+      if (!session.responses || session.responses.length === 0) {
+        responsesEl.innerHTML = '<p class="empty-state">No responses recorded</p>';
+      } else {
+        responsesEl.innerHTML = session.responses.map(response => {
+          const isCorrect = Boolean(response.is_correct);
+          const resultClass = isCorrect ? 'correct' : 'incorrect';
+          const resultLabel = isCorrect ? 'Correct' : 'Incorrect';
+          const timeStr = response.time_spent_seconds
+            ? `${response.time_spent_seconds}s`
+            : '--';
+
+          // Safety level labels and colors
+          const safetyLevelNames = ['Green', 'Yellow', 'Orange', 'Red'];
+          const safetyLevel = response.safety_level || 0;
+          const safetyLevelName = safetyLevelNames[safetyLevel] || 'Green';
+
+          // Intervention display
+          const interventionLabels: Record<string, string> = {
+            'SKIP_CARD': '⏭️ Skipped',
+            'RETRY_CARD': '🔄 Retry',
+            'BUBBLE_BREATHING': '🫧 Breathing',
+            'START_BREAK': '☕ Break',
+            'CALL_GROWNUP': '👨‍👩‍👧 Grownup'
+          };
+          const intervention = response.intervention_chosen;
+          const interventionHtml = intervention
+            ? `<span class="intervention-chosen">${interventionLabels[intervention] || intervention}</span>`
+            : '';
+
+          return `
+            <div class="session-response-item ${resultClass}">
+              <div class="response-category">${escapeHtml(response.card_category)}</div>
+              <div class="response-question">${escapeHtml(response.card_question)}</div>
+              <div class="response-answer">
+                <span class="response-child-answer">"${escapeHtml(response.child_response || '(no response)')}"</span>
+                <span class="response-result ${resultClass}">${resultLabel}</span>
+                ${interventionHtml}
+              </div>
+              <div class="response-meta">
+                <span>Time: ${timeStr}</span>
+                <span class="safety-level level-${safetyLevel}">${safetyLevelName}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    }
+
+    openModal('session-details-modal');
+  } catch (err) {
+    console.error('Failed to load session details:', err);
+    alert('Failed to load session details');
+  }
+}
+
+function formatDuration(seconds: number): string {
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  if (mins === 0) return `${secs}s`;
+  return `${mins}m ${secs}s`;
+}
+
+function escapeHtml(text: string): string {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
 // Auth handlers
 async function handleLogin(e: Event): Promise<void> {
   e.preventDefault();
@@ -1400,6 +1731,7 @@ async function handleRegister(e: Event): Promise<void> {
 }
 
 function handleLogout(): void {
+  therapistLiveService.disconnect();
   api.logout();
   currentTherapist = null;
   showAuthScreen();

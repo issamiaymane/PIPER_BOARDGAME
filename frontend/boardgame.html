@@ -69,6 +69,35 @@
             <button class="play-button" id="playButton">PLAY</button>
         </div>
 
+        <!-- Login Modal -->
+        <div class="modal-overlay hidden" id="loginModal">
+            <div class="modal-content login-modal-content">
+                <div class="modal-header">
+                    <h2>WELCOME!</h2>
+                    <p>Enter your login to start playing</p>
+                </div>
+
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required autocomplete="username" placeholder="Enter your username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required autocomplete="current-password" placeholder="Enter your password">
+                    </div>
+
+                    <div class="login-error hidden" id="loginError"></div>
+
+                    <button type="submit" class="login-button" id="loginButton">
+                        <span class="login-text">LOGIN</span>
+                        <span class="login-loading hidden">Logging in...</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
         <!-- Target Selection Modal -->
         <div class="modal-overlay hidden" id="targetModal">
             <div class="modal-content">

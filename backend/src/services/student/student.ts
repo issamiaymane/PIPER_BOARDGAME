@@ -1,11 +1,13 @@
 /**
  * Student Service
- * Handles student/child CRUD operations
+ * Handles student/child CRUD operations and authentication
  */
 
 import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 import { getDatabase } from '../database.js';
-import type { Child, CreateChildRequest, UpdateChildRequest } from '../../types/index.js';
+import { config } from '../../config/index.js';
+import type { Child, CreateChildRequest, UpdateChildRequest, ChildLoginRequest, ChildAuthResult } from '../../types/index.js';
 
 // Fields to select (excluding password_hash)
 const STUDENT_FIELDS = `id, therapist_id, username, first_name, last_name, date_of_birth,
@@ -143,4 +145,51 @@ export function deleteStudent(id: number, therapist_id: number): boolean {
   }
   db.prepare('DELETE FROM children WHERE id = ?').run(id);
   return true;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Child Authentication
+// ─────────────────────────────────────────────────────────────────────────────
+
+function generateChildToken(childId: number): string {
+  return jwt.sign({ child_id: childId }, config.jwtSecret, {
+    expiresIn: '24h',
+  });
+}
+
+export async function loginChild(data: ChildLoginRequest): Promise<ChildAuthResult> {
+  const db = getDatabase();
+
+  // Find child by username
+  const row = db
+    .prepare('SELECT id, password_hash FROM children WHERE username = ?')
+    .get(data.username) as { id: number; password_hash: string } | undefined;
+
+  if (!row) {
+    throw new Error('Invalid username or password');
+  }
+
+  // Verify password
+  const valid = await bcrypt.compare(data.password, row.password_hash);
+  if (!valid) {
+    throw new Error('Invalid username or password');
+  }
+
+  const child = getStudentById(row.id)!;
+  const token = generateChildToken(row.id);
+
+  return { child, token };
+}
+
+export function verifyChildToken(token: string): { child_id: number } | null {
+  try {
+    const decoded = jwt.verify(token, config.jwtSecret) as { child_id: number };
+    // Make sure it's a child token (has child_id, not therapist_id)
+    if (typeof decoded.child_id === 'number') {
+      return decoded;
+    }
+    return null;
+  } catch {
+    return null;
+  }
 }

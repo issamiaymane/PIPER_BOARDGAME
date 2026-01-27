@@ -78,6 +78,74 @@ export function initializeDatabase(): void {
     )
   `);
 
+  // Create gameplay sessions table
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS gameplay_sessions (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      child_id INTEGER NOT NULL,
+      therapist_id INTEGER NOT NULL,
+      started_at TEXT DEFAULT CURRENT_TIMESTAMP,
+      ended_at TEXT,
+      duration_seconds INTEGER,
+      categories_selected TEXT NOT NULL,
+      theme TEXT,
+      character TEXT,
+      status TEXT DEFAULT 'in_progress' CHECK(status IN ('in_progress', 'completed', 'abandoned')),
+      final_score INTEGER DEFAULT 0,
+      final_board_position INTEGER DEFAULT 0,
+      total_cards_played INTEGER DEFAULT 0,
+      correct_responses INTEGER DEFAULT 0,
+      FOREIGN KEY (child_id) REFERENCES children(id) ON DELETE CASCADE,
+      FOREIGN KEY (therapist_id) REFERENCES therapists(id) ON DELETE CASCADE
+    )
+  `);
+
+  // Create session responses table
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS session_responses (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      session_id INTEGER NOT NULL,
+      card_category TEXT NOT NULL,
+      card_question TEXT NOT NULL,
+      child_response TEXT,
+      is_correct INTEGER NOT NULL,
+      attempt_number INTEGER DEFAULT 1,
+      card_shown_at TEXT DEFAULT CURRENT_TIMESTAMP,
+      response_at TEXT,
+      time_spent_seconds INTEGER,
+      safety_level INTEGER DEFAULT 0,
+      signals_detected TEXT,
+      FOREIGN KEY (session_id) REFERENCES gameplay_sessions(id) ON DELETE CASCADE
+    )
+  `);
+
+  // Create indexes for session tables
+  db.exec(`
+    CREATE INDEX IF NOT EXISTS idx_sessions_therapist ON gameplay_sessions(therapist_id, started_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_sessions_child ON gameplay_sessions(child_id, started_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_sessions_status ON gameplay_sessions(status);
+    CREATE INDEX IF NOT EXISTS idx_responses_session ON session_responses(session_id, card_shown_at);
+  `);
+
+  // Create voice calibration table (stores calibration results per child)
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS voice_calibrations (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      child_id INTEGER NOT NULL UNIQUE,
+      amplitude_threshold REAL NOT NULL,
+      peak_threshold REAL NOT NULL,
+      baseline_amplitude REAL,
+      baseline_peak REAL,
+      excited_amplitude REAL,
+      excited_peak REAL,
+      loud_amplitude REAL,
+      loud_peak REAL,
+      confidence TEXT CHECK(confidence IN ('high', 'medium', 'low')),
+      calibrated_at TEXT DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (child_id) REFERENCES children(id) ON DELETE CASCADE
+    )
+  `);
+
   // Run migrations for existing tables
   runMigrations(db);
 
@@ -164,6 +232,18 @@ function runMigrations(db: Database.Database): void {
   if (!goalColumnNames.includes('boardgame_categories')) {
     db.exec('ALTER TABLE iep_goals ADD COLUMN boardgame_categories TEXT');
     logger.info('Migration: Added boardgame_categories column to iep_goals');
+  }
+
+  // Get existing columns in session_responses table
+  const responseColumns = db
+    .prepare("PRAGMA table_info(session_responses)")
+    .all() as { name: string }[];
+  const responseColumnNames = responseColumns.map((c) => c.name);
+
+  // Add intervention_chosen if missing
+  if (!responseColumnNames.includes('intervention_chosen')) {
+    db.exec('ALTER TABLE session_responses ADD COLUMN intervention_chosen TEXT');
+    logger.info('Migration: Added intervention_chosen column to session_responses');
   }
 }
 

@@ -18,6 +18,7 @@ import {
 } from '../../types/voice.js';
 import { logger } from '../../utils/logger.js';
 import { config } from '../../config/index.js';
+import { gameplaySessionManager } from '../session/index.js';
 
 // Re-export types for external use
 export type { ClientMessage, ServerMessage };
@@ -82,17 +83,18 @@ export class VoiceSessionManager {
     const sessionId = this.generateSessionId();
     const realtimeService = new RealtimeVoiceService();
 
-    // Connect to OpenAI Realtime API
+    // CRITICAL: Set up event handler BEFORE connecting to prevent race condition
+    // Events from OpenAI can arrive immediately after connection opens
+    realtimeService.onEvent((event) => {
+      this.handleRealtimeEvent(sessionId, event);
+    });
+
+    // Now connect to OpenAI Realtime API (events will be handled immediately)
     const connected = await realtimeService.connect();
     if (!connected) {
       logger.error(`Failed to create voice session ${sessionId}: could not connect to Realtime API`);
       return null;
     }
-
-    // Set up event handler to forward events to client
-    realtimeService.onEvent((event) => {
-      this.handleRealtimeEvent(sessionId, event);
-    });
 
     const session: VoiceSession = {
       id: sessionId,
@@ -314,6 +316,9 @@ export class VoiceSessionManager {
 
             // Start inactivity timer - waiting for child's response
             session.safetyGateSession.startInactivityTimer();
+
+            // Notify gameplay session manager (for live tracking)
+            gameplaySessionManager.onCardShown(sessionId, message.cardContext);
           }
 
           session.realtimeService.speakText(message.text);
@@ -355,6 +360,9 @@ export class VoiceSessionManager {
           // Handle choice selection - manages inactivity timer appropriately
           session.safetyGateSession.handleChoiceSelection(message.action);
           logger.info(`Session ${sessionId}: Choice selected - ${message.action}`);
+
+          // Record the intervention in the gameplay session
+          gameplaySessionManager.onInterventionChosen(sessionId, message.action);
         }
         break;
 
@@ -384,6 +392,15 @@ export class VoiceSessionManager {
 
       case 'abort_calibration':
         this.handleAbortCalibration(session);
+        break;
+
+      case 'apply_calibration':
+        // Apply saved calibration from database (skip calibration process)
+        if (typeof message.amplitudeThreshold === 'number' && typeof message.peakThreshold === 'number') {
+          session.amplitudeThreshold = message.amplitudeThreshold;
+          session.peakThreshold = message.peakThreshold;
+          logger.info(`Applied saved calibration for session ${sessionId}: amp=${message.amplitudeThreshold}, peak=${message.peakThreshold}`);
+        }
         break;
 
       default:
@@ -440,6 +457,9 @@ export class VoiceSessionManager {
 
       // Reset screaming detection after processing
       session.screamingDetected = false;
+
+      // Notify gameplay session manager (for live tracking and recording)
+      gameplaySessionManager.onResponseProcessed(session.id, transcription, result);
 
       await this.speakAndSendResult(session, result);
 
@@ -506,6 +526,10 @@ export class VoiceSessionManager {
       session.safetyGateSession.stopInactivityTimer();
       session.realtimeService.disconnect();
       this.sessions.delete(sessionId);
+
+      // Notify gameplay session manager (for session cleanup)
+      gameplaySessionManager.onVoiceSessionDisconnect(sessionId);
+
       logger.info(`Voice session ended: ${sessionId}`);
     }
   }

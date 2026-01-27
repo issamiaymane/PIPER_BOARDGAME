@@ -12,6 +12,18 @@ import { voiceService, VoiceState, UIPackage, CardData } from './services/voice'
 import { pipelineVisualizer, PipelineLogData } from './services/pipeline-visualizer';
 import { gameLogger, voiceLogger } from './services/logger';
 
+// API base URL
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
+// Auth state
+const authState = {
+    isLoggedIn: false,
+    childId: null as number | null,
+    childName: '',
+    token: null as string | null,
+    sessionId: null as number | null,
+};
+
 // Game state
 const state = {
     isPlaying: false,
@@ -39,6 +51,12 @@ const state = {
 // DOM elements
 let playOverlay: HTMLElement;
 let playButton: HTMLElement;
+let loginModal: HTMLElement;
+let loginForm: HTMLFormElement;
+let loginButton: HTMLButtonElement;
+let loginError: HTMLElement;
+let usernameInput: HTMLInputElement;
+let passwordInput: HTMLInputElement;
 let targetModal: HTMLElement;
 let categoryTabs: HTMLElement;
 let categoryGrid: HTMLElement;
@@ -799,13 +817,21 @@ function handleGrownupHelp() {
     }
 }
 
-function showWinScreen() {
+async function showWinScreen() {
     finalScore.textContent = String(state.score);
     winScreen.classList.remove('hidden');
     gameControls.classList.add('hidden');
+
+    // End gameplay session as completed
+    await endGameplaySession('completed');
 }
 
-function resetGame() {
+async function resetGame() {
+    // End session as abandoned if still active
+    if (authState.sessionId) {
+        await endGameplaySession('abandoned');
+    }
+
     state.reset();
     winScreen.classList.add('hidden');
     gameControls.classList.add('hidden');
@@ -840,6 +866,201 @@ function updateThemeDecorations() {
     });
 }
 
+/**
+ * Handle login form submission
+ */
+async function handleLogin() {
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value;
+
+    if (!username || !password) {
+        showLoginError('Please enter username and password');
+        return;
+    }
+
+    // Disable form during login
+    loginButton.disabled = true;
+    loginError.classList.add('hidden');
+
+    try {
+        const response = await fetch(`${API_BASE}/api/child/login`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password }),
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.error || 'Login failed');
+        }
+
+        // Store auth info
+        authState.isLoggedIn = true;
+        authState.childId = data.child.id;
+        authState.childName = `${data.child.first_name} ${data.child.last_name}`;
+        authState.token = data.token;
+
+        // Store token in sessionStorage for API calls
+        sessionStorage.setItem('childToken', data.token);
+
+        gameLogger.info(`Logged in as ${authState.childName} (ID: ${authState.childId})`);
+
+        // Hide login modal, show target selection
+        loginModal.classList.add('hidden');
+        targetModal.classList.remove('hidden');
+        renderCategorySelection('language');
+
+    } catch (error) {
+        const message = error instanceof Error ? error.message : 'Login failed';
+        showLoginError(message);
+        gameLogger.error('Login error:', message);
+    } finally {
+        loginButton.disabled = false;
+    }
+}
+
+function showLoginError(message: string) {
+    loginError.textContent = message;
+    loginError.classList.remove('hidden');
+}
+
+/**
+ * Start a gameplay session via API
+ */
+async function startGameplaySession(): Promise<number | null> {
+    if (!authState.token) {
+        gameLogger.error('No auth token for session start');
+        return null;
+    }
+
+    try {
+        // Get voice session ID to link gameplay session with voice session
+        const voiceSessionId = voiceService.getSessionId();
+
+        const response = await fetch(`${API_BASE}/api/session/start`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${authState.token}`,
+            },
+            body: JSON.stringify({
+                categories: state.selectedTargets,
+                theme: state.selectedTheme,
+                character: state.selectedCharacter,
+                voiceSessionId,
+            }),
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(data.error || 'Failed to start session');
+        }
+
+        gameLogger.info(`Started gameplay session ${data.sessionId}, linked to voice session ${voiceSessionId}`);
+        return data.sessionId;
+
+    } catch (error) {
+        gameLogger.error('Failed to start gameplay session:', error);
+        return null;
+    }
+}
+
+/**
+ * Check if child has existing calibration
+ */
+async function getExistingCalibration(): Promise<{
+    hasCalibration: boolean;
+    calibration?: {
+        amplitudeThreshold: number;
+        peakThreshold: number;
+        confidence: string;
+    };
+} | null> {
+    if (!authState.token) return null;
+
+    try {
+        const response = await fetch(`${API_BASE}/api/child/calibration`, {
+            headers: {
+                'Authorization': `Bearer ${authState.token}`,
+            },
+        });
+
+        if (!response.ok) return null;
+        return await response.json();
+    } catch (error) {
+        gameLogger.error('Failed to check calibration:', error);
+        return null;
+    }
+}
+
+/**
+ * Save calibration results to database
+ */
+async function saveCalibration(result: {
+    amplitudeThreshold: number;
+    peakThreshold: number;
+    confidence: string;
+}): Promise<boolean> {
+    if (!authState.token) return false;
+
+    try {
+        const response = await fetch(`${API_BASE}/api/child/calibration`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${authState.token}`,
+            },
+            body: JSON.stringify(result),
+        });
+
+        if (!response.ok) {
+            gameLogger.error('Failed to save calibration');
+            return false;
+        }
+
+        gameLogger.info('Calibration saved to database');
+        return true;
+    } catch (error) {
+        gameLogger.error('Failed to save calibration:', error);
+        return false;
+    }
+}
+
+/**
+ * End a gameplay session via API
+ */
+async function endGameplaySession(status: 'completed' | 'abandoned' = 'completed') {
+    if (!authState.token || !authState.sessionId) {
+        return;
+    }
+
+    try {
+        const voiceSessionId = voiceService.getSessionId();
+
+        await fetch(`${API_BASE}/api/session/${authState.sessionId}/end`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${authState.token}`,
+            },
+            body: JSON.stringify({
+                finalScore: state.score,
+                boardPosition: state.currentPosition,
+                status,
+                voiceSessionId,
+            }),
+        });
+
+        gameLogger.info(`Ended gameplay session ${authState.sessionId} with status ${status}`);
+        authState.sessionId = null;
+
+    } catch (error) {
+        gameLogger.error('Failed to end gameplay session:', error);
+    }
+}
+
 async function startGame() {
     gameLogger.info('Starting, targets:', state.selectedTargets);
     if (state.selectedTargets.length === 0) {
@@ -868,39 +1089,88 @@ async function startGame() {
     scoreValue.textContent = '0';
     positionValue.textContent = 'Start';
 
-    // Auto-start voice mode
+    // Auto-start voice mode FIRST (so we have session ID for gameplay session)
     voiceLogger.info('Auto-starting voice mode...');
     const voiceEnabled = await voiceService.enable();
     if (voiceEnabled) {
         voiceLogger.info('Voice mode started successfully');
 
-        // Start calibration before allowing gameplay
-        voiceLogger.info('Starting voice calibration...');
+        // Now start gameplay session (after voice session is established)
+        if (authState.isLoggedIn) {
+            const sessionId = await startGameplaySession();
+            if (sessionId) {
+                authState.sessionId = sessionId;
+            }
+        }
 
-        // Disable spin button during calibration
-        spinBtn.disabled = true;
-        spinBtn.style.opacity = '0.5';
+        // Check for existing calibration before starting
+        if (authState.isLoggedIn) {
+            const existingCalibration = await getExistingCalibration();
 
-        // Set up callback for when calibration completes
-        voiceService.onCalibrationComplete = (result) => {
-            voiceLogger.info(`Calibration complete: amp=${result.amplitudeThreshold.toFixed(3)}, peak=${result.peakThreshold.toFixed(3)}, confidence=${result.confidence}`);
-            // Re-enable spin button
-            spinBtn.disabled = false;
-            spinBtn.style.opacity = '1';
-        };
+            if (existingCalibration?.hasCalibration && existingCalibration.calibration) {
+                // Use saved calibration - skip calibration process
+                voiceLogger.info(`Using saved calibration: amp=${existingCalibration.calibration.amplitudeThreshold.toFixed(3)}, peak=${existingCalibration.calibration.peakThreshold.toFixed(3)}`);
+                voiceService.applyCalibration(existingCalibration.calibration);
+                // Spin button stays enabled - no calibration needed
+            } else {
+                // No saved calibration - run calibration
+                voiceLogger.info('No saved calibration found, starting voice calibration...');
 
-        // Set up callback for when calibration fails or is skipped
-        voiceService.onCalibrationFailed = (error) => {
-            voiceLogger.warn(`Calibration failed/skipped: ${error}`);
-            // Re-enable spin button (will use default thresholds)
-            spinBtn.disabled = false;
-            spinBtn.style.opacity = '1';
-        };
+                // Disable spin button during calibration
+                spinBtn.disabled = true;
+                spinBtn.style.opacity = '0.5';
 
-        // Start calibration
-        voiceService.startCalibration();
+                // Set up callback for when calibration completes
+                voiceService.onCalibrationComplete = async (result) => {
+                    voiceLogger.info(`Calibration complete: amp=${result.amplitudeThreshold.toFixed(3)}, peak=${result.peakThreshold.toFixed(3)}, confidence=${result.confidence}`);
+
+                    // Save calibration to database
+                    await saveCalibration(result);
+
+                    // Re-enable spin button
+                    spinBtn.disabled = false;
+                    spinBtn.style.opacity = '1';
+                };
+
+                // Set up callback for when calibration fails or is skipped
+                voiceService.onCalibrationFailed = (error) => {
+                    voiceLogger.warn(`Calibration failed/skipped: ${error}`);
+                    // Re-enable spin button (will use default thresholds)
+                    spinBtn.disabled = false;
+                    spinBtn.style.opacity = '1';
+                };
+
+                // Start calibration
+                voiceService.startCalibration();
+            }
+        } else {
+            // Not logged in - run calibration without saving
+            voiceLogger.info('Not logged in, starting calibration without saving...');
+            spinBtn.disabled = true;
+            spinBtn.style.opacity = '0.5';
+
+            voiceService.onCalibrationComplete = (result) => {
+                voiceLogger.info(`Calibration complete: amp=${result.amplitudeThreshold.toFixed(3)}, peak=${result.peakThreshold.toFixed(3)}`);
+                spinBtn.disabled = false;
+                spinBtn.style.opacity = '1';
+            };
+
+            voiceService.onCalibrationFailed = () => {
+                spinBtn.disabled = false;
+                spinBtn.style.opacity = '1';
+            };
+
+            voiceService.startCalibration();
+        }
     } else {
         voiceLogger.error('Failed to auto-start voice mode');
+        // Still start gameplay session even if voice fails
+        if (authState.isLoggedIn) {
+            const sessionId = await startGameplaySession();
+            if (sessionId) {
+                authState.sessionId = sessionId;
+            }
+        }
     }
 
     gameLogger.info('Started!');
@@ -925,6 +1195,12 @@ function init() {
 
     playOverlay = document.getElementById('playOverlay')!
     playButton = document.getElementById('playButton')!;
+    loginModal = document.getElementById('loginModal')!;
+    loginForm = document.getElementById('loginForm') as HTMLFormElement;
+    loginButton = document.getElementById('loginButton') as HTMLButtonElement;
+    loginError = document.getElementById('loginError')!;
+    usernameInput = document.getElementById('username') as HTMLInputElement;
+    passwordInput = document.getElementById('password') as HTMLInputElement;
     targetModal = document.getElementById('targetModal')!;
     categoryTabs = document.querySelector('.category-tabs')!;
     categoryGrid = document.getElementById('targetList')!;
@@ -954,8 +1230,15 @@ function init() {
     playButton.addEventListener('click', () => {
         gameLogger.debug('PLAY clicked');
         playOverlay.classList.add('hidden');
-        targetModal.classList.remove('hidden');
-        renderCategorySelection('language');
+        // Show login modal instead of target modal
+        loginModal.classList.remove('hidden');
+        usernameInput.focus();
+    });
+
+    // Login form submission
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        await handleLogin();
     });
 
     categoryTabs?.querySelectorAll('.category-tab').forEach(tab => {

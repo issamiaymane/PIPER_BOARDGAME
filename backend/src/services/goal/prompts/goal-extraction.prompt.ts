@@ -47,29 +47,37 @@ For LANGUAGE goals (comprehension, expression, vocabulary):
 ${LANGUAGE_CATEGORIES.map(c => `- "${c}"`).join('\n')}
 
 Skill mapping guide:
-- Comparing/contrasting, same/different → "Semantic Relationships"
-- Describing objects, functions → "Describing"
-- Who/what/when/where/why questions → "Wh- Questions Mixed" or specific types
-- Naming categories → "Categories - Label The Category"
-- Sentence structure → "Building Sentences Level 1 - Elementary"
-- Verb tenses → "Past Tense Verbs Regular" or "Future Tense"
-- Pronouns → "Pronouns (He She They)" or "Pronouns Mixed"
-- Making inferences → "Inferencing Level 1" or "Inferencing Level 2"
-- Following directions → "Following 1-Step Directions" or "Following 2-Step Directions"
-- Sequencing → "First Next Then Last" or "Sequencing Images - Set Of 3 Or 4"
-- Prepositions → "Prepositions"
-- Idioms/metaphors → "Idioms" or "Metaphors Elementary"
+- Comparing/contrasting, same/different → "Semantic Relationships", "Compare And Contrast (Same And Different)"
+- Describing objects, functions, attributes → "Describing", "Describing - More Advanced", "Function Labeling"
+- Semantic mapping, semantic relations, word associations → "Semantic Relationships", "Describing", "Categories - Label The Category"
+- Who/what/when/where/why questions → "Wh- Questions Mixed" or specific types like "Wh- Questions (What)", "Wh- Questions (Why)"
+- Naming categories, categorization → "Categories - Label The Category", "Categories - Identifying Members Of A Category", "Naming And Categorizing"
+- Sentence structure, syntax, verbal formulation → "Building Sentences Level 1 - Elementary", "Building Sentences Level 2 - Elementary", "Expanding Sentences - Images With Who What Where"
+- Verb tenses → "Past Tense Verbs Regular", "Past Tense Verbs Irregular", "Future Tense", "Irregular Past Tense Verbs"
+- Pronouns → "Pronouns (He She They)", "Pronouns Mixed", "Pronouns - His Hers Him Her Their", "Reflexive Pronouns"
+- Making inferences → "Inferencing Level 1", "Inferencing Level 2", "Inferencing Based On Images"
+- Following directions → "Following 1-Step Directions", "Following 2-Step Directions", "Following Multistep Directions Level 2", "Conditional Following Directions"
+- Sequencing, first/next/then/last → "First Next Then Last", "Sequencing Images - Set Of 3 Or 4", "Short Stories Sequencing", "How To"
+- Story retelling, narratives → "Short Stories Level 1", "Short Stories Level 2", "Short Stories - High", "Short Stories Sequencing", "Wh- Questions Short Stories"
+- Prepositions, spatial concepts → "Prepositions", "Prepositions Simple Images", "Basic Spatial Concepts Fill In Word Or Phrase"
+- Idioms/metaphors/figurative language → "Idioms", "Metaphors Elementary", "Metaphors Middle", "Similes", "Figurative Language - Identify The Meaning"
+- Vocabulary, word knowledge → "Vocabulary General", "Vocabulary - Basic Vocab", relevant domain-specific vocabulary categories
+- Parts of whole, attributes, appearance → "Identifying Parts Of A Whole", "Identify What Is Missing"
+- Grammar, subject-verb agreement → "Is Vs Are", "Was Vs Were", "Has Vs Have", "Do Vs Does", "Third Person Singular"
 
 CLASSIFICATION EXAMPLES:
 - "articulate the /r/ phoneme" → "R Sound"
 - "produce /s/ sound in words" → "S Sound"
-- "answer wh-questions about a story" → "Wh- Questions Mixed"
+- "answer wh-questions about a story" → "Wh- Questions Mixed", "Short Stories Level 1"
 - "follow 2-step directions" → "Following 2-Step Directions"
 - "identify categories" → "Categories - Label The Category"
-- "describe objects" → "Describing"
+- "describe objects" → "Describing", "Function Labeling"
 - "make inferences from text" → "Inferencing Level 2"
 - "use correct verb tenses" → "Past Tense Verbs Regular"
-- "sequence story events" → "Sequencing Images - Set Of 3 Or 4"
+- "sequence story events" → "Sequencing Images - Set Of 3 Or 4", "Short Stories Sequencing"
+- "retell a story using first/next/last" → "First Next Then Last", "Short Stories Level 1", "Short Stories Level 2", "Short Stories Sequencing"
+- "describe using semantic relations (category, function, appearance)" → "Describing", "Describing - More Advanced", "Semantic Relationships", "Categories - Label The Category", "Function Labeling", "Identifying Parts Of A Whole"
+- "use age-appropriate grammar and complete utterances" → "Building Sentences Level 1 - Elementary", "Building Sentences Level 2 - Elementary"
 </GOAL_TYPE_CLASSIFICATION>
 
 <EXTRACTION_GUIDELINES>
@@ -87,9 +95,45 @@ CLASSIFICATION EXAMPLES:
    - target_percentage: The percentage target (e.g., 80 for "80% accuracy")
    - sessions_to_confirm: Number of sessions needed (default to 3 if not stated)
    - comments: Any additional notes, rationale, or context
-   - boardgame_categories: Array of matching category names from the lists above
+   - boardgame_categories: Array of ALL matching category names from the lists above
 
-3. CONFIDENCE SCORING (0.0 to 1.0):
+3. MULTI-SKILL GOAL HANDLING (CRITICAL):
+   IEP goals typically target multiple skills. You MUST extract 6-12 categories per complex goal.
+
+   For EACH goal, go through this checklist:
+   □ Does it involve SEQUENCING? → Add: "First Next Then Last", "Sequencing Images - Set Of 3 Or 4", "Short Stories Sequencing"
+   □ Does it involve STORIES/NARRATIVES? → Add: "Short Stories Level 1", "Short Stories Level 2", "Short Stories - High", "Wh- Questions Short Stories"
+   □ Does it involve DESCRIBING? → Add: "Describing", "Describing - More Advanced"
+   □ Does it involve CATEGORIES/CLASSIFICATION? → Add: "Categories - Label The Category", "Categories - Identifying Members Of A Category", "Naming And Categorizing"
+   □ Does it involve FUNCTIONS? → Add: "Function Labeling"
+   □ Does it involve SEMANTIC KNOWLEDGE? → Add: "Semantic Relationships", "Compare And Contrast (Same And Different)"
+   □ Does it involve SENTENCE STRUCTURE/GRAMMAR? → Add: "Building Sentences Level 1 - Elementary", "Building Sentences Level 2 - Elementary", "Expanding Sentences - Images With Who What Where"
+   □ Does it involve PARTS/ATTRIBUTES? → Add: "Identifying Parts Of A Whole", "Identify What Is Missing"
+   □ Does it involve WH-QUESTIONS? → Add relevant "Wh- Questions" categories
+
+   EXAMPLE - "retell a story using first/next/last and correct syntactic structures":
+   → "First Next Then Last" (sequencing vocabulary)
+   → "Short Stories Level 1" (story retelling)
+   → "Short Stories Level 2" (story retelling)
+   → "Short Stories Sequencing" (sequencing in stories)
+   → "Sequencing Images - Set Of 3 Or 4" (visual sequencing)
+   → "Building Sentences Level 1 - Elementary" (syntax)
+   → "Wh- Questions Short Stories" (comprehension)
+   = 7 categories minimum
+
+   EXAMPLE - "describe using semantic relations (category, function, appearance)":
+   → "Describing" (basic describing)
+   → "Describing - More Advanced" (detailed describing)
+   → "Semantic Relationships" (semantic knowledge)
+   → "Categories - Label The Category" (categorization)
+   → "Categories - Identifying Members Of A Category" (categorization)
+   → "Naming And Categorizing" (categorization)
+   → "Function Labeling" (function knowledge)
+   → "Identifying Parts Of A Whole" (parts/appearance)
+   → "Expanding Sentences - Images With Who What Where" (complete utterances)
+   = 9 categories minimum
+
+4. CONFIDENCE SCORING (0.0 to 1.0):
    - 0.9-1.0: Information clearly stated, unambiguous
    - 0.7-0.89: Information present but requires interpretation
    - 0.5-0.69: Information implied or partially stated
@@ -138,9 +182,9 @@ Return ONLY valid JSON with this exact structure:
         "source_hint": "where found"
       },
       "boardgame_categories": {
-        "value": ["array", "of", "matching", "category", "names"] or null,
+        "value": ["First Next Then Last", "Short Stories Level 1", "Short Stories Level 2", "Short Stories Sequencing", "Sequencing Images - Set Of 3 Or 4", "Building Sentences Level 1 - Elementary", "Wh- Questions Short Stories"],
         "confidence": 0.0-1.0,
-        "reasoning": "why these categories match"
+        "reasoning": "Goal involves story retelling (Short Stories categories), sequencing with first/next/last (sequencing categories), and syntactic structures (Building Sentences)"
       }
     }
   ],
@@ -155,8 +199,16 @@ Return ONLY valid JSON with this exact structure:
 - If a field is not found, set value to null and confidence to 0
 - sessions_to_confirm defaults to 3 if not explicitly stated
 - goal_type MUST be an EXACT match from the category lists
-- boardgame_categories should be an array of 1-5 most relevant category names
 - deadline MUST be in ISO format YYYY-MM-DD
+
+CRITICAL - BOARDGAME CATEGORIES:
+- You MUST extract 6-12 categories per goal for complex multi-skill goals
+- DO NOT limit yourself to 3-4 categories - that is TOO FEW
+- Use the checklist in MULTI-SKILL GOAL HANDLING to ensure you capture ALL relevant skills
+- When in doubt, INCLUDE the category rather than exclude it
+- A story retelling goal should have AT LEAST 6 categories
+- A describing/semantic goal should have AT LEAST 7 categories
+- Err on the side of MORE categories, not fewer
 </IMPORTANT>
 `;
 

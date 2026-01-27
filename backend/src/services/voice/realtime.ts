@@ -55,7 +55,8 @@ export class RealtimeVoiceService {
           headers: {
             'Authorization': `Bearer ${config.openai.apiKey}`,
             'OpenAI-Beta': 'realtime=v1'
-          }
+          },
+          perMessageDeflate: false  // Prevent compression-related frame issues
         });
 
         this.ws.on('open', () => {

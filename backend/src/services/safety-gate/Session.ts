@@ -244,8 +244,12 @@ export class Session {
     targetAnswers: string[],
     context?: { category: string; question: string }
   ): Promise<boolean> {
+    logger.info(`[DEBUG] evaluateAnswer: transcription="${transcription}", targets=[${targetAnswers.join(', ')}], category=${context?.category}`);
+
     // Step 1: Try sync checks first (fast path)
-    if (this.evaluateAnswerSync(transcription, targetAnswers)) {
+    const syncResult = this.evaluateAnswerSync(transcription, targetAnswers);
+    logger.info(`[DEBUG] evaluateAnswerSync result: ${syncResult}`);
+    if (syncResult) {
       return true;
     }
 

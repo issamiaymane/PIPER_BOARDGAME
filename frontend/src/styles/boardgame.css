@@ -1562,6 +1562,114 @@ button:focus:not(:focus-visible),
 }
 
 /* ===========================================
+   LOGIN MODAL STYLES
+   =========================================== */
+
+.login-modal-content {
+    max-width: 400px;
+    padding-bottom: 30px;
+}
+
+.login-form {
+    padding: 20px 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Fredoka One', cursive;
+    font-size: 14px;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    border: 3px solid var(--theme-primary);
+    border-radius: 10px;
+    background: white;
+    color: var(--text-dark);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--theme-primary-dark);
+    box-shadow: 0 0 0 3px rgba(var(--theme-primary-rgb), 0.2);
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.login-error {
+    background: #ffe6e6;
+    border: 2px solid #ff4444;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #cc0000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-error.hidden {
+    display: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 16px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 0 var(--theme-primary-dark);
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 var(--theme-primary-dark);
+}
+
+.login-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 var(--theme-primary-dark);
+}
+
+.login-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.login-loading.hidden {
+    display: none;
+}
+
+.login-button:disabled .login-text {
+    display: none;
+}
+
+.login-button:disabled .login-loading {
+    display: inline;
+}
+
+/* ===========================================
    VOICE MODE STYLES
    =========================================== */
 
