@@ -8,17 +8,17 @@
 import { CATEGORY_HANDLER_MAP, type HandlerType } from '@shared/categories';
 import { hideLoadingScreen } from '@common/components/LoadingScreen/LoadingScreen';
 
-// Supabase storage URL for images (production)
-const STORAGE_BASE_URL = import.meta.env.VITE_STORAGE_URL || '';
+// Supabase storage URL for images
+const SUPABASE_STORAGE_URL = 'https://ofpdgocgupxzazzuzkub.supabase.co/storage/v1/object/public/piper-cards/';
 
 /**
- * Resolve image path - converts local /shared/images/ paths to Supabase URLs in production
+ * Resolve image path - converts local /shared/images/ paths to Supabase URLs
  */
 function resolveImagePath(path: string): string {
     if (!path) return path;
-    if (STORAGE_BASE_URL && path.startsWith('/shared/images/')) {
+    if (path.startsWith('/shared/images/')) {
         // Convert /shared/images/... to Supabase URL
-        return STORAGE_BASE_URL + path.replace('/shared/images/', 'images/');
+        return SUPABASE_STORAGE_URL + path.replace('/shared/images/', 'images/');
     }
     return path;
 }
