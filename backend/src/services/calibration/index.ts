@@ -1,6 +1,7 @@
 /**
- * Calibration Services Module
- * Exports calibration-related services
+ * Calibration Service
+ * Exports for voice calibration data management
  */
 
-export { CalibrationService } from './CalibrationService.js';
+export * from './repository.js';
+export { default as calibrationRepository } from './repository.js';

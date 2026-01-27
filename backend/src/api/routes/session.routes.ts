@@ -16,6 +16,7 @@ import {
   getActiveSessionsForTherapist,
 } from '../../services/session/index.js';
 import { ApiError } from '../middleware/errorHandler.js';
+import { validateBody, CreateSessionSchema, EndSessionSchema } from '../validation/index.js';
 
 const router = Router();
 
@@ -27,17 +28,17 @@ const router = Router();
  * POST /api/session/start
  * Start a new gameplay session
  */
-router.post('/start', authenticateChild, async (req: Request, res: Response, next: NextFunction) => {
-  try {
-    const childId = req.child!.child_id;
-    const { categories, theme, character, voiceSessionId } = req.body;
+router.post(
+  '/start',
+  authenticateChild,
+  validateBody(CreateSessionSchema),
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const childId = req.child!.child_id;
+      const { categories, theme, character, voiceSessionId } = req.body;
 
-    if (!categories || !Array.isArray(categories) || categories.length === 0) {
-      throw ApiError.badRequest('Categories are required');
-    }
-
-    // Start gameplay session
-    const session = await gameplaySessionManager.startGameplaySession(
+      // Start gameplay session
+      const session = await gameplaySessionManager.startGameplaySession(
       voiceSessionId || `http_${Date.now()}`,
       childId,
       categories,
@@ -45,61 +46,67 @@ router.post('/start', authenticateChild, async (req: Request, res: Response, nex
       character
     );
 
-    res.json({
-      success: true,
-      sessionId: session.id,
-      session: {
-        id: session.id,
-        started_at: session.started_at,
-        categories_selected: JSON.parse(session.categories_selected),
-        theme: session.theme,
-        character: session.character,
-        status: session.status,
-      },
-    });
-  } catch (error) {
-    next(error);
+      res.json({
+        success: true,
+        sessionId: session.id,
+        session: {
+          id: session.id,
+          started_at: session.started_at,
+          categories_selected: JSON.parse(session.categories_selected),
+          theme: session.theme,
+          character: session.character,
+          status: session.status,
+        },
+      });
+    } catch (error) {
+      next(error);
+    }
   }
-});
+);
 
 /**
  * POST /api/session/:id/end
  * End a gameplay session
  */
-router.post('/:id/end', authenticateChild, async (req: Request, res: Response, next: NextFunction) => {
-  try {
-    const sessionId = parseInt(req.params.id);
-    const childId = req.child!.child_id;
-    const { finalScore, boardPosition, status, voiceSessionId } = req.body;
+router.post(
+  '/:id/end',
+  authenticateChild,
+  validateBody(EndSessionSchema),
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const sessionId = parseInt(req.params.id);
+      const childId = req.child!.child_id;
+      const { finalScore, boardPosition, status, voiceSessionId } = req.body;
 
-    // Verify session belongs to this child
-    const session = getSessionById(sessionId);
-    if (!session) {
-      throw ApiError.notFound('Session not found');
+      // Verify session belongs to this child
+      const session = getSessionById(sessionId);
+      if (!session) {
+        throw ApiError.notFound('Session not found');
+      }
+      if (session.child_id !== childId) {
+        throw ApiError.forbidden('Not authorized to end this session');
+      }
+
+      // End the session
+      gameplaySessionManager.endGameplaySession(
+        voiceSessionId || `http_${sessionId}`,
+        finalScore ?? session.final_score,
+        boardPosition ?? session.final_board_position,
+        status ?? 'completed'
+      );
+
+      // Get updated session
+      const updatedSession = getSessionById(sessionId);
+
+      res.json({
+        success: true,
+        session: updatedSession,
+      });
+    } catch (error) {
+      next(error);
     }
-    if (session.child_id !== childId) {
-      throw ApiError.forbidden('Not authorized to end this session');
-    }
-
-    // End the session
-    gameplaySessionManager.endGameplaySession(
-      voiceSessionId || `http_${sessionId}`,
-      finalScore || session.final_score,
-      boardPosition || session.final_board_position,
-      status || 'completed'
-    );
-
-    // Get updated session
-    const updatedSession = getSessionById(sessionId);
-
-    res.json({
-      success: true,
-      session: updatedSession,
-    });
-  } catch (error) {
-    next(error);
   }
-});
+);
 
 /**
  * GET /api/session/active

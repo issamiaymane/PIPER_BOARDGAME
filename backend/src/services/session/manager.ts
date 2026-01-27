@@ -11,9 +11,10 @@ import type {
   RecordResponseRequest,
 } from '../../types/index.js';
 import type { Child } from '../../types/student.js';
-import type { CardContext, SafetyGateResult, Signal } from '../../types/safety-gate.js';
+import { Intervention, type CardContext, type SafetyGateResult, type Signal } from '../../types/safety-gate.js';
 import { getStudentById } from '../student/student.js';
 import { logger } from '../../utils/logger.js';
+import { SAFETY_ALERT_THRESHOLD } from '../../constants/game.js';
 
 interface ActiveSessionLink {
   gameplaySessionId: number;
@@ -163,7 +164,7 @@ class GameplaySessionManager {
     );
 
     // If safety level is elevated, also send safety alert
-    if (safetyLevel >= 2 || signals.length > 0) {
+    if (safetyLevel >= SAFETY_ALERT_THRESHOLD || signals.length > 0) {
       liveSessionBroadcaster.broadcastSafetyAlert(
         link.therapistId,
         link.gameplaySessionId,
@@ -174,7 +175,7 @@ class GameplaySessionManager {
 
     // Only clear card tracking when moving to next card (correct answer or skip)
     // Keep card context on retries so subsequent attempts are recorded correctly
-    const isSkipping = result.uiPackage.interventions.includes('SKIP_CARD');
+    const isSkipping = result.uiPackage.interventions.includes(Intervention.SKIP_CARD);
     if (result.isCorrect || isSkipping) {
       link.currentCardCategory = undefined;
       link.currentCardQuestion = undefined;
