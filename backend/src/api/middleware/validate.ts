@@ -207,6 +207,9 @@ export const confirmGoalsSchema = z.object({
       }).optional(),
     })
   ),
+  // Session time from IEP document (document-level)
+  session_duration_minutes: z.number().min(1).max(180).nullable().optional(),
+  session_frequency: z.string().nullable().optional(),
 });
 
 // Export types inferred from schemas

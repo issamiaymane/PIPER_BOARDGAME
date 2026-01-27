@@ -35,6 +35,8 @@ export interface Child {
   goals_pdf_path?: string;
   goals_pdf_uploaded_at?: string;
   goals_pdf_original_name?: string;
+  session_duration_minutes?: number; // IEP service time: duration per session
+  session_frequency?: string; // IEP service time: e.g., "2x weekly"
   created_at: string;
 }
 
@@ -65,4 +67,6 @@ export interface UpdateChildRequest {
   grade_level?: string;
   problem_type?: 'language' | 'articulation' | 'both';
   eval_data?: EvalData;
+  session_duration_minutes?: number;
+  session_frequency?: string;
 }

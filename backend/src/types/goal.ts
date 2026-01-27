@@ -51,4 +51,7 @@ export interface GoalExtractionResult {
     boardgame_categories?: { value: string[] | null; confidence: number };
   }>;
   extraction_notes: string;
+  // Session time from IEP document (document-level, applies to student)
+  session_duration_minutes?: { value: number | null; confidence: number; source_hint?: string };
+  session_frequency?: { value: string | null; confidence: number; source_hint?: string };
 }

@@ -5,6 +5,7 @@ export {
   getStudentForTherapist,
   listStudentsByTherapist,
   updateStudent,
+  updateStudentSessionTime,
   deleteStudent,
   loginChild,
   verifyChildToken,

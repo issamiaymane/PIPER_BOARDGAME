@@ -258,6 +258,8 @@ let pendingGoalsFile: File | null = null;
 let extractedGoals: ExtractedGoal[] = [];
 let currentGoalsPdfUrl: string | null = null;
 let studentGoals: IEPGoal[] = [];
+let extractedSessionDurationMinutes: number | null = null;
+let extractedSessionFrequency: string | null = null;
 
 // Sessions state
 let liveSessions: LiveSessionInfo[] = [];
@@ -1005,6 +1007,19 @@ function showGoalDetailsModal(goal: IEPGoal): void {
     updatedEl.textContent = new Date(goal.updated_at).toLocaleDateString();
   }
 
+  // Populate session time (from student data)
+  const student = students.find(s => s.id === selectedStudentId);
+  const durationEl = document.getElementById('goal-detail-duration');
+  if (durationEl) {
+    durationEl.textContent = student?.session_duration_minutes
+      ? `${student.session_duration_minutes} minutes`
+      : 'Not specified';
+  }
+  const frequencyEl = document.getElementById('goal-detail-frequency');
+  if (frequencyEl) {
+    frequencyEl.textContent = student?.session_frequency || 'Not specified';
+  }
+
   // Show modal
   openModal('goal-details-modal');
 }
@@ -1017,6 +1032,8 @@ function resetGoalsUploadModal(): void {
   pendingGoalsFile = null;
   extractedGoals = [];
   currentGoalsPdfUrl = null;
+  extractedSessionDurationMinutes = null;
+  extractedSessionFrequency = null;
 
   const pdfFrame = document.getElementById('goals-pdf-frame') as HTMLIFrameElement | null;
   if (pdfFrame) pdfFrame.src = '';
@@ -1032,6 +1049,12 @@ function resetGoalsUploadModal(): void {
   hide($('goals-upload-error'));
   const passwordInput = document.getElementById('goals-pdf-password') as HTMLInputElement | null;
   if (passwordInput) passwordInput.value = '';
+
+  // Reset session time inputs
+  const durationInput = document.getElementById('session-duration-input') as HTMLInputElement | null;
+  const frequencyInput = document.getElementById('session-frequency-input') as HTMLInputElement | null;
+  if (durationInput) durationInput.value = '';
+  if (frequencyInput) frequencyInput.value = '';
 }
 
 function showGoalsLoading(): void {
@@ -1300,6 +1323,47 @@ async function uploadGoalsFile(password?: string): Promise<void> {
     extractedGoals = result.extracted_data.goals;
     console.log('🎯 EXTRACTED GOALS FROM AI:', JSON.stringify(extractedGoals, null, 2));
 
+    // Store and populate session time from extraction
+    const sessionDuration = result.extracted_data.session_duration_minutes;
+    const sessionFreq = result.extracted_data.session_frequency;
+    extractedSessionDurationMinutes = sessionDuration?.value ?? null;
+    extractedSessionFrequency = sessionFreq?.value ?? null;
+
+    // Populate session time inputs
+    const durationInput = document.getElementById('session-duration-input') as HTMLInputElement | null;
+    const frequencyInput = document.getElementById('session-frequency-input') as HTMLInputElement | null;
+    const durationHint = document.getElementById('session-duration-hint');
+    const frequencyHint = document.getElementById('session-frequency-hint');
+    const durationField = document.getElementById('field-session_duration');
+    const frequencyField = document.getElementById('field-session_frequency');
+
+    if (durationInput) {
+      durationInput.value = extractedSessionDurationMinutes?.toString() ?? '';
+      // Apply low-confidence styling if value is missing or confidence is low
+      if (durationField) {
+        durationField.classList.remove('low-confidence');
+        if (!extractedSessionDurationMinutes || (sessionDuration?.confidence ?? 0) < 0.7) {
+          durationField.classList.add('low-confidence');
+        }
+      }
+      if (durationHint && sessionDuration?.source_hint) {
+        durationHint.textContent = sessionDuration.source_hint;
+      }
+    }
+    if (frequencyInput) {
+      frequencyInput.value = extractedSessionFrequency ?? '';
+      // Apply low-confidence styling if value is missing or confidence is low
+      if (frequencyField) {
+        frequencyField.classList.remove('low-confidence');
+        if (!extractedSessionFrequency || (sessionFreq?.confidence ?? 0) < 0.7) {
+          frequencyField.classList.add('low-confidence');
+        }
+      }
+      if (frequencyHint && sessionFreq?.source_hint) {
+        frequencyHint.textContent = sessionFreq.source_hint;
+      }
+    }
+
     populateGoalsForm(extractedGoals);
 
     try {
@@ -1347,18 +1411,34 @@ async function confirmGoalsData(): Promise<void> {
 
   const goals = getFormGoalsData();
 
-  console.log('📤 SENDING GOALS TO BACKEND:', JSON.stringify(goals, null, 2));
+  // Read session time from inputs
+  const durationInput = document.getElementById('session-duration-input') as HTMLInputElement | null;
+  const frequencyInput = document.getElementById('session-frequency-input') as HTMLInputElement | null;
+  const sessionDuration = durationInput?.value ? parseInt(durationInput.value) : null;
+  const sessionFrequency = frequencyInput?.value || null;
+
+  console.log('📤 SENDING GOALS TO BACKEND:', JSON.stringify({
+    goals,
+    session_duration_minutes: sessionDuration,
+    session_frequency: sessionFrequency
+  }, null, 2));
 
   try {
     hide($('goals-confirm-error'));
 
-    await api.confirmGoals(selectedStudentId, goals);
+    await api.confirmGoals(selectedStudentId, goals, sessionDuration, sessionFrequency);
 
     resetGoalsUploadModal();
     closeModal('goals-upload-modal');
 
-    // Reload goals
+    // Reload goals and student data to reflect session time changes
     await loadStudentGoals(selectedStudentId);
+
+    // Also refresh student list to update any cached data
+    await loadStudents();
+    if (selectedStudentId) {
+      selectStudent(selectedStudentId);
+    }
   } catch (err) {
     const errorEl = $('goals-confirm-error');
     errorEl.textContent = (err as ApiError).message;

@@ -210,6 +210,18 @@ function runMigrations(db: Database.Database): void {
     logger.info('Migration: Added goals_pdf_original_name column');
   }
 
+  // Add session_duration_minutes if missing (IEP service time)
+  if (!columnNames.includes('session_duration_minutes')) {
+    db.exec('ALTER TABLE children ADD COLUMN session_duration_minutes INTEGER');
+    logger.info('Migration: Added session_duration_minutes column');
+  }
+
+  // Add session_frequency if missing (IEP service time)
+  if (!columnNames.includes('session_frequency')) {
+    db.exec('ALTER TABLE children ADD COLUMN session_frequency TEXT');
+    logger.info('Migration: Added session_frequency column');
+  }
+
   // Get existing columns in iep_goals table
   const goalColumns = db
     .prepare("PRAGMA table_info(iep_goals)")
@@ -320,8 +332,9 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
         therapist_id, username, password_hash, first_name, last_name,
         date_of_birth, grade_level, problem_type, eval_data,
         eval_pdf_path, eval_pdf_uploaded_at, eval_pdf_original_name,
-        goals_pdf_path, goals_pdf_uploaded_at, goals_pdf_original_name
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        goals_pdf_path, goals_pdf_uploaded_at, goals_pdf_original_name,
+        session_duration_minutes, session_frequency
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `).run(
       therapistId,
       'student@piperspeech.com',
@@ -337,7 +350,9 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
       'Piper_Elias_Speech_Evaluation_2024.pdf',
       '/uploads/goals/piper_elias_iep.pdf',
       now,
-      'Piper_Elias_IEP_Goals_2024.pdf'
+      'Piper_Elias_IEP_Goals_2024.pdf',
+      30,           // session_duration_minutes: 30 minutes per session
+      '2x weekly'   // session_frequency: twice per week
     );
 
     // Get the student ID for adding goals

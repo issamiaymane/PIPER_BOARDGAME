@@ -43,6 +43,8 @@ export interface Student {
   eval_pdf_original_name?: string;
   goals_pdf_path?: string;
   goals_pdf_original_name?: string;
+  session_duration_minutes?: number; // IEP service time: duration per session
+  session_frequency?: string; // IEP service time: e.g., "2x weekly"
   created_at: string;
 }
 
@@ -81,6 +83,8 @@ export interface GoalsUploadResponse {
   extracted_data: {
     goals: ExtractedGoal[];
     extraction_notes: string;
+    session_duration_minutes?: { value: number | null; confidence: number; source_hint?: string };
+    session_frequency?: { value: string | null; confidence: number; source_hint?: string };
   };
   extraction_notes?: string;
 }
@@ -385,13 +389,19 @@ class ApiService {
 
   async confirmGoals(
     studentId: number,
-    goals: ExtractedGoal[]
+    goals: ExtractedGoal[],
+    sessionDurationMinutes?: number | null,
+    sessionFrequency?: string | null
   ): Promise<GoalsConfirmResponse> {
     return this.request<GoalsConfirmResponse>(
       `/students/${studentId}/goals/confirm`,
       {
         method: 'POST',
-        body: JSON.stringify({ goals }),
+        body: JSON.stringify({
+          goals,
+          session_duration_minutes: sessionDurationMinutes,
+          session_frequency: sessionFrequency,
+        }),
       }
     );
   }

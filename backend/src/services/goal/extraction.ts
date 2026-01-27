@@ -76,6 +76,10 @@ function normalizeGoalType(value: unknown): GoalType | null {
 function normalizeExtractionResult(data: Record<string, unknown>): GoalExtractionResult {
   const goals = Array.isArray(data.goals) ? data.goals : [];
 
+  // Extract session time fields (document-level)
+  const sessionDuration = data.session_duration_minutes as Record<string, unknown> | undefined;
+  const sessionFrequency = data.session_frequency as Record<string, unknown> | undefined;
+
   const normalizedGoals = goals.map((goal: Record<string, unknown>) => {
     const goalType = goal.goal_type as Record<string, unknown> | undefined;
     const goalDesc = goal.goal_description as Record<string, unknown> | undefined;
@@ -144,6 +148,16 @@ function normalizeExtractionResult(data: Record<string, unknown>): GoalExtractio
       typeof data.extraction_notes === 'string'
         ? data.extraction_notes
         : 'Extraction completed',
+    session_duration_minutes: {
+      value: typeof sessionDuration?.value === 'number' ? sessionDuration.value : null,
+      confidence: typeof sessionDuration?.confidence === 'number' ? sessionDuration.confidence : 0,
+      source_hint: typeof sessionDuration?.source_hint === 'string' ? sessionDuration.source_hint : undefined,
+    },
+    session_frequency: {
+      value: typeof sessionFrequency?.value === 'string' ? sessionFrequency.value : null,
+      confidence: typeof sessionFrequency?.confidence === 'number' ? sessionFrequency.confidence : 0,
+      source_hint: typeof sessionFrequency?.source_hint === 'string' ? sessionFrequency.source_hint : undefined,
+    },
   };
 }
 

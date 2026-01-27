@@ -138,6 +138,13 @@ CLASSIFICATION EXAMPLES:
    - 0.7-0.89: Information present but requires interpretation
    - 0.5-0.69: Information implied or partially stated
    - 0.0-0.49: Information not found or highly uncertain
+
+5. SERVICE TIME EXTRACTION (document-level, NOT per-goal):
+   - Look for "Service Time", "Session Duration", "Frequency", "Minutes per session", "Service Delivery"
+   - Common patterns: "30 minutes per session", "2x weekly", "3 sessions per week", "45 min/session"
+   - session_duration_minutes: Duration in minutes as a number (e.g., 30, 45, 60)
+   - session_frequency: Frequency as a string (e.g., "2x weekly", "3 times per week", "twice weekly")
+   - This is typically found in the IEP Services section or Service Delivery Model
 </EXTRACTION_GUIDELINES>
 
 <RESPONSE_FORMAT>
@@ -188,7 +195,17 @@ Return ONLY valid JSON with this exact structure:
       }
     }
   ],
-  "extraction_notes": "Overall notes about extraction quality"
+  "extraction_notes": "Overall notes about extraction quality",
+  "session_duration_minutes": {
+    "value": 30,
+    "confidence": 0.9,
+    "source_hint": "IEP Services section or null if not found"
+  },
+  "session_frequency": {
+    "value": "2x weekly",
+    "confidence": 0.9,
+    "source_hint": "IEP Services section or null if not found"
+  }
 }
 </RESPONSE_FORMAT>
 
@@ -200,6 +217,7 @@ Return ONLY valid JSON with this exact structure:
 - sessions_to_confirm defaults to 3 if not explicitly stated
 - goal_type MUST be an EXACT match from the category lists
 - deadline MUST be in ISO format YYYY-MM-DD
+- session_duration_minutes and session_frequency are document-level (not per-goal) - extract from IEP Services section
 
 CRITICAL - BOARDGAME CATEGORIES:
 - You MUST extract 6-12 categories per goal for complex multi-skill goals

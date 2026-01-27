@@ -12,7 +12,8 @@ import type { Child, CreateChildRequest, UpdateChildRequest, ChildLoginRequest, 
 // Fields to select (excluding password_hash)
 const STUDENT_FIELDS = `id, therapist_id, username, first_name, last_name, date_of_birth,
   grade_level, problem_type, eval_data, eval_pdf_path, eval_pdf_uploaded_at,
-  eval_pdf_original_name, created_at`;
+  eval_pdf_original_name, goals_pdf_path, goals_pdf_uploaded_at, goals_pdf_original_name,
+  session_duration_minutes, session_frequency, created_at`;
 
 const SALT_ROUNDS = 10;
 
@@ -126,6 +127,14 @@ export function updateStudent(
     const jsonData = JSON.stringify(data.eval_data);
     values.push(jsonData);
   }
+  if (data.session_duration_minutes !== undefined) {
+    updates.push('session_duration_minutes = ?');
+    values.push(data.session_duration_minutes);
+  }
+  if (data.session_frequency !== undefined) {
+    updates.push('session_frequency = ?');
+    values.push(data.session_frequency);
+  }
 
   if (updates.length === 0) {
     return existing;
@@ -192,4 +201,18 @@ export function verifyChildToken(token: string): { child_id: number } | null {
   } catch {
     return null;
   }
+}
+
+/**
+ * Update student's session time settings (from IEP goals extraction)
+ */
+export function updateStudentSessionTime(
+  studentId: number,
+  sessionDurationMinutes: number | null,
+  sessionFrequency: string | null
+): void {
+  const db = getDatabase();
+  db.prepare(
+    'UPDATE children SET session_duration_minutes = ?, session_frequency = ? WHERE id = ?'
+  ).run(sessionDurationMinutes, sessionFrequency, studentId);
 }

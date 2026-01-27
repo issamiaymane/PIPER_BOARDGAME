@@ -6,7 +6,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import multer from 'multer';
 import fs from 'fs';
-import { getStudentForTherapist } from '../../services/student/index.js';
+import { getStudentForTherapist, updateStudentSessionTime } from '../../services/student/index.js';
 import {
   validatePdfFile,
   saveGoalsPdf,
@@ -142,7 +142,7 @@ router.get(
 
 /**
  * POST /students/:id/goals/confirm
- * Save confirmed/edited goals
+ * Save confirmed/edited goals and session time
  */
 router.post(
   '/:id/goals/confirm',
@@ -151,13 +151,22 @@ router.post(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const studentId = parseInt(req.params.id);
-      const { goals } = req.body;
+      const { goals, session_duration_minutes, session_frequency } = req.body;
 
       getVerifiedStudent(studentId, req.therapist!.therapist_id);
 
       // Delete existing goals and create new ones from extraction
       deleteAllGoalsForStudent(studentId);
       const createdGoals = createGoalsFromExtraction(studentId, goals);
+
+      // Update student's session time if provided
+      if (session_duration_minutes !== undefined || session_frequency !== undefined) {
+        updateStudentSessionTime(
+          studentId,
+          session_duration_minutes ?? null,
+          session_frequency ?? null
+        );
+      }
 
       res.json({
         success: true,
