@@ -26,27 +26,27 @@ export const CalibrationSchema = z.object({
 // Session Schemas
 export const CreateSessionSchema = z.object({
   categories: z.array(z.string()).min(1, 'At least one category is required'),
-  theme: z.string().optional(),
-  character: z.string().optional(),
-  voiceSessionId: z.string().optional(),
+  theme: z.string().nullish(),
+  character: z.string().nullish(),
+  voiceSessionId: z.string().nullish(),
 });
 
 export const EndSessionSchema = z.object({
-  finalScore: z.number().int().min(0).optional(),
-  boardPosition: z.number().int().min(0).optional(),
-  status: z.enum(['completed', 'abandoned']).optional(),
-  voiceSessionId: z.string().optional(),
+  finalScore: z.number().int().min(0).nullish(),
+  boardPosition: z.number().int().min(0).nullish(),
+  status: z.enum(['completed', 'abandoned']).nullish(),
+  voiceSessionId: z.string().nullish(),
 });
 
 export const RecordResponseSchema = z.object({
   cardCategory: z.string().min(1),
   cardQuestion: z.string().min(1),
-  childResponse: z.string().nullable(),
+  childResponse: z.string().nullish(),
   isCorrect: z.boolean(),
-  attemptNumber: z.number().int().positive().optional(),
-  timeSpentSeconds: z.number().int().min(0).optional(),
-  safetyLevel: z.number().int().min(0).max(10).optional(),
-  signalsDetected: z.array(z.string()).optional(),
+  attemptNumber: z.number().int().positive().nullish(),
+  timeSpentSeconds: z.number().int().min(0).nullish(),
+  safetyLevel: z.number().int().min(0).max(10).nullish(),
+  signalsDetected: z.array(z.string()).nullish(),
 });
 
 // Types derived from schemas

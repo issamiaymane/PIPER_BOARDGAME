@@ -283,13 +283,131 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
   ).get('student@piperspeech.com') as { id: number } | undefined;
 
   if (!existingStudent) {
-    // Create default student
+    // Create default student with real extracted eval data
     const passwordHash = bcrypt.hashSync('Piper1234', SALT_ROUNDS);
+    const evalData = JSON.stringify({
+      service_type: { value: 'both', confidence: 0.9 },
+      languages_spoken: { value: 'English', confidence: 1 },
+      family_religion: { value: null, confidence: 0 },
+      medical_history: {
+        value: 'Prenatal exposure to psychiatric medications and drugs/alcohol, many seizures during first weeks of life, adopted at 2 weeks old.',
+        confidence: 0.9
+      },
+      other_diagnoses: { value: 'Autism Spectrum Disorder', confidence: 1 },
+      speech_diagnoses: { value: 'Moderate/severe language delay', confidence: 0.9 },
+      prior_therapy: { value: 'less-1', confidence: 0.8 },
+      baseline_accuracy: { value: null, confidence: 0 },
+      goals_benchmarks: {
+        value: 'Formulate sentences or questions when provided a word or statement.',
+        confidence: 0.8
+      },
+      strengths: {
+        value: 'Adequate pragmatic and social skills, average articulation abilities.',
+        confidence: 0.8
+      },
+      weaknesses: {
+        value: 'Misuse of age-appropriate syntactic structures, difficulty with expressive language/syntax.',
+        confidence: 0.9
+      },
+      target_sounds: { value: ['w/r', 'l/r'], confidence: 0.8 },
+      teachers: { value: 'Pam Gandy', confidence: 0.9 },
+      notes: { value: 'Student is in a home-based independent-study program.', confidence: 0.8 }
+    });
+    const now = new Date().toISOString();
+
     db.prepare(`
-      INSERT INTO children (therapist_id, username, password_hash, first_name, last_name, problem_type)
-      VALUES (?, ?, ?, ?, ?, ?)
-    `).run(therapistId, 'student@piperspeech.com', passwordHash, 'Student', 'One', 'both');
-    logger.info('Seeded default student: student@piperspeech.com');
+      INSERT INTO children (
+        therapist_id, username, password_hash, first_name, last_name,
+        date_of_birth, grade_level, problem_type, eval_data,
+        eval_pdf_path, eval_pdf_uploaded_at, eval_pdf_original_name,
+        goals_pdf_path, goals_pdf_uploaded_at, goals_pdf_original_name
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).run(
+      therapistId,
+      'student@piperspeech.com',
+      passwordHash,
+      'Piper',
+      'Elias',
+      '2018-05-12',
+      '1st Grade',
+      'both',
+      evalData,
+      '/uploads/evaluations/piper_elias_eval.pdf',
+      now,
+      'Piper_Elias_Speech_Evaluation_2024.pdf',
+      '/uploads/goals/piper_elias_iep.pdf',
+      now,
+      'Piper_Elias_IEP_Goals_2024.pdf'
+    );
+
+    // Get the student ID for adding goals
+    const studentResult = db.prepare('SELECT id FROM children WHERE username = ?').get('student@piperspeech.com') as { id: number };
+    const studentId = studentResult.id;
+
+    // Seed IEP goals
+    const goals = [
+      {
+        goal_type: 'language',
+        goal_description: 'By February 2026, Piper will retell a ability-appropriate story using first/next/last vocabulary and correct syntactic structures, given minimal supports and a visual cue, with 80% accuracy over the course of 3 trials, as determined by SLP/A observation and tally.',
+        target_percentage: 80,
+        baseline: '60% accuracy retell with complete grammar and age-appropriate syntactic structures',
+        target_date: '2026-02-01',
+        sessions_to_confirm: 3,
+        comments: 'Syntax/verbal formulation goal',
+        boardgame_categories: JSON.stringify([
+          'Wh- Questions Short Stories',
+          'First Next Then Last',
+          'Sequencing Images - Set Of 3 Or 4',
+          'Short Stories Sequencing',
+          'Short Stories Level 1',
+          'Short Stories Level 2',
+          'Building Sentences Level 1 - Elementary'
+        ])
+      },
+      {
+        goal_type: 'language',
+        goal_description: 'By February 2026, when provided a visual aid and asked to describe a target picture/object, Piper will improve expressive semantic knowledge by accurately verbalizing the items on a semantic relations map (e.g., category, function, appearance, etc.), using age-appropriate grammar and complete utterances, with 80% accuracy given minimal support.',
+        target_percentage: 80,
+        baseline: '50% accuracy',
+        target_date: '2026-02-01',
+        sessions_to_confirm: 3,
+        comments: 'Semantic and expressive language goal',
+        boardgame_categories: JSON.stringify([
+          'Function Labeling',
+          'Semantic Relationships',
+          'Categories - Label The Category',
+          'Categories - Identifying Members Of A Category',
+          'Identifying Parts Of A Whole',
+          'Describing',
+          'Describing - More Advanced',
+          'Expanding Sentences - Images With Who What Where',
+          'Naming And Categorizing'
+        ])
+      }
+    ];
+
+    const insertGoal = db.prepare(`
+      INSERT INTO iep_goals (
+        student_id, goal_type, goal_description, target_percentage,
+        baseline, target_date, sessions_to_confirm, comments, boardgame_categories
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+
+    for (const goal of goals) {
+      insertGoal.run(
+        studentId,
+        goal.goal_type,
+        goal.goal_description,
+        goal.target_percentage,
+        goal.baseline,
+        goal.target_date,
+        goal.sessions_to_confirm,
+        goal.comments,
+        goal.boardgame_categories
+      );
+    }
+
+    logger.info('Seeded default student: student@piperspeech.com (Piper Elias) with eval data and 2 IEP goals');
   }
 }
 
