@@ -12,8 +12,10 @@ import { voiceService, VoiceState, UIPackage, CardData } from './services/voice'
 import { pipelineVisualizer, PipelineLogData } from './services/pipeline-visualizer';
 import { gameLogger, voiceLogger } from './services/logger';
 
-// API base URL
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+// API base URL - use env var, or fallback to localhost (dev) or same-origin (prod)
+const isLocalhost = typeof window !== 'undefined' &&
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+const API_BASE = import.meta.env.VITE_API_URL || (isLocalhost ? 'http://localhost:3000' : '');
 
 // Auth state
 const authState = {

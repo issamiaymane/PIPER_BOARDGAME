@@ -58,12 +58,5 @@ coverage/
 # Claude Code (keep local settings only)
 .claude/
 
-# Database files (contain sensitive user data)
-backend/data/*.db
-backend/data/*.db-shm
-backend/data/*.db-wal
-backend/piper.db
-
-# Uploaded files (may contain sensitive PDFs)
-backend/data/uploads/
+# Shared images
 shared/images/

@@ -14,7 +14,7 @@ import type { Child } from '../../types/student.js';
 import { Intervention, type CardContext, type SafetyGateResult, type Signal } from '../../types/safety-gate.js';
 import { getStudentById } from '../student/student.js';
 import { logger } from '../../utils/logger.js';
-import { SAFETY_ALERT_THRESHOLD } from '../../constants/game.js';
+import { config } from '../../config/index.js';
 
 interface ActiveSessionLink {
   gameplaySessionId: number;
@@ -164,7 +164,7 @@ class GameplaySessionManager {
     );
 
     // If safety level is elevated, also send safety alert
-    if (safetyLevel >= SAFETY_ALERT_THRESHOLD || signals.length > 0) {
+    if (safetyLevel >= config.safetyGate.alertThreshold || signals.length > 0) {
       liveSessionBroadcaster.broadcastSafetyAlert(
         link.therapistId,
         link.gameplaySessionId,

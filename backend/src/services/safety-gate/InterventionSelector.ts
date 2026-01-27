@@ -1,5 +1,9 @@
 import { Level, Intervention, Signal } from '../../types/safety-gate.js';
 import type { State } from '../../types/safety-gate.js';
+import { config } from '../../config/index.js';
+
+// Extract config for readability
+const { interventions: interventionThresholds } = config.safetyGate;
 
 export class InterventionSelector {
 
@@ -55,13 +59,13 @@ export class InterventionSelector {
   ): Intervention[] {
     const interventions: Intervention[] = [];
 
-    // CONDITIONAL: If dysregulated (threshold 4 for earlier intervention)
-    if (state.dysregulationLevel >= 4) {
+    // CONDITIONAL: If dysregulated (threshold for earlier intervention)
+    if (state.dysregulationLevel >= interventionThresholds.bubbleBreathingDysregulation) {
       interventions.push(Intervention.BUBBLE_BREATHING);
     }
 
     // CONDITIONAL: If error streak
-    if (state.consecutiveErrors >= 3) {
+    if (state.consecutiveErrors >= interventionThresholds.skipCardConsecutiveErrors) {
       interventions.push(Intervention.SKIP_CARD);
     }
 

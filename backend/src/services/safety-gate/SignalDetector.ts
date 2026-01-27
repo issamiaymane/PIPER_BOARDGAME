@@ -103,7 +103,7 @@ export class SignalDetector {
     for (let i = 1; i < words.length; i++) {
       if (words[i] === words[i - 1]) {
         consecutiveCount++;
-        if (consecutiveCount >= 3) {
+        if (consecutiveCount >= config.safetyGate.signalDetection.repetitiveWordsThreshold) {
           return true;
         }
       } else {

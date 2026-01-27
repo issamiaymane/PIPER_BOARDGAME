@@ -1,6 +1,11 @@
 import type { State, Event, Signal } from '../../types/safety-gate.js';
 import { Signal as SignalEnum } from '../../types/safety-gate.js';
 import { logger } from '../../utils/logger.js';
+import { config } from '../../config/index.js';
+
+// Extract config for readability
+const { stateModifiers } = config.safetyGate;
+const { bounds } = stateModifiers;
 
 export class StateEngine {
   private state: State;
@@ -53,37 +58,39 @@ export class StateEngine {
   // ============================================
 
   private applySignalEffects(signals: Signal[]): void {
+    const { signals: signalMods } = stateModifiers;
+
     for (const signal of signals) {
       switch (signal) {
         case SignalEnum.SCREAMING:
-          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 4);
-          logger.debug(`StateEngine: SCREAMING → dysregulation +4 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          this.state.dysregulationLevel = Math.min(bounds.max, this.state.dysregulationLevel + signalMods.screaming.dysregulation);
+          logger.debug(`StateEngine: SCREAMING → dysregulation +${signalMods.screaming.dysregulation} (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.CRYING:
-          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 3);
-          logger.debug(`StateEngine: CRYING → dysregulation +3 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          this.state.dysregulationLevel = Math.min(bounds.max, this.state.dysregulationLevel + signalMods.crying.dysregulation);
+          logger.debug(`StateEngine: CRYING → dysregulation +${signalMods.crying.dysregulation} (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.DISTRESS:
-          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 2);
-          logger.debug(`StateEngine: DISTRESS → dysregulation +2 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          this.state.dysregulationLevel = Math.min(bounds.max, this.state.dysregulationLevel + signalMods.distress.dysregulation);
+          logger.debug(`StateEngine: DISTRESS → dysregulation +${signalMods.distress.dysregulation} (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.FRUSTRATION:
-          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 1);
-          logger.debug(`StateEngine: FRUSTRATION → dysregulation +1 (now: ${this.state.dysregulationLevel.toFixed(1)})`);
+          this.state.dysregulationLevel = Math.min(bounds.max, this.state.dysregulationLevel + signalMods.frustration.dysregulation);
+          logger.debug(`StateEngine: FRUSTRATION → dysregulation +${signalMods.frustration.dysregulation} (now: ${this.state.dysregulationLevel.toFixed(1)})`);
           break;
         case SignalEnum.WANTS_QUIT:
-          this.state.engagementLevel = Math.max(0, this.state.engagementLevel - 2);
-          logger.debug(`StateEngine: WANTS_QUIT → engagement -2 (now: ${this.state.engagementLevel.toFixed(1)})`);
+          this.state.engagementLevel = Math.max(bounds.min, this.state.engagementLevel + signalMods.wantsQuit.engagement);
+          logger.debug(`StateEngine: WANTS_QUIT → engagement ${signalMods.wantsQuit.engagement} (now: ${this.state.engagementLevel.toFixed(1)})`);
           break;
         case SignalEnum.WANTS_BREAK:
-          this.state.fatigueLevel = Math.min(10, this.state.fatigueLevel + 1);
-          logger.debug(`StateEngine: WANTS_BREAK → fatigue +1 (now: ${this.state.fatigueLevel.toFixed(1)})`);
+          this.state.fatigueLevel = Math.min(bounds.max, this.state.fatigueLevel + signalMods.wantsBreak.fatigue);
+          logger.debug(`StateEngine: WANTS_BREAK → fatigue +${signalMods.wantsBreak.fatigue} (now: ${this.state.fatigueLevel.toFixed(1)})`);
           break;
         case SignalEnum.REPETITIVE_WORDS:
           // Same word repeated (e.g., "dog dog dog") - indicates disengagement
-          this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 1.5);
-          this.state.engagementLevel = Math.max(0, this.state.engagementLevel - 1);
-          logger.debug(`StateEngine: REPETITIVE_WORDS → dysregulation +1.5, engagement -1 (now: dysreg=${this.state.dysregulationLevel.toFixed(1)}, eng=${this.state.engagementLevel.toFixed(1)})`);
+          this.state.dysregulationLevel = Math.min(bounds.max, this.state.dysregulationLevel + signalMods.repetitiveWords.dysregulation);
+          this.state.engagementLevel = Math.max(bounds.min, this.state.engagementLevel + signalMods.repetitiveWords.engagement);
+          logger.debug(`StateEngine: REPETITIVE_WORDS → dysregulation +${signalMods.repetitiveWords.dysregulation}, engagement ${signalMods.repetitiveWords.engagement} (now: dysreg=${this.state.dysregulationLevel.toFixed(1)}, eng=${this.state.engagementLevel.toFixed(1)})`);
           break;
       }
     }
@@ -144,19 +151,21 @@ export class StateEngine {
   // ============================================
 
   private handleResponse(event: Event): void {
+    const { responses } = stateModifiers;
+
     if (event.correct) {
       this.state.consecutiveErrors = 0;
-      this.state.engagementLevel = Math.min(10, this.state.engagementLevel + 1);
-      this.state.dysregulationLevel = Math.max(0, this.state.dysregulationLevel - 0.5);
+      this.state.engagementLevel = Math.min(bounds.max, this.state.engagementLevel + responses.correct.engagement);
+      this.state.dysregulationLevel = Math.max(bounds.min, this.state.dysregulationLevel + responses.correct.dysregulation);
     } else {
       this.state.consecutiveErrors++;
       this.errorHistory.push({ timestamp: Date.now() });
-      this.state.engagementLevel = Math.max(0, this.state.engagementLevel - 0.5);
+      this.state.engagementLevel = Math.max(bounds.min, this.state.engagementLevel + responses.incorrect.engagement);
 
       // CHECK FOR REPETITIVE WRONG RESPONSE
       if (event.response === event.previousResponse &&
           event.previousResponse === event.previousPreviousResponse) {
-        this.state.dysregulationLevel = Math.min(10, this.state.dysregulationLevel + 2);
+        this.state.dysregulationLevel = Math.min(bounds.max, this.state.dysregulationLevel + responses.tripleRepetition.dysregulation);
       }
     }
 
@@ -171,7 +180,8 @@ export class StateEngine {
   // ============================================
 
   private handleInactivity(): void {
-    this.state.engagementLevel = Math.max(0, this.state.engagementLevel - 2);
+    const { responses } = stateModifiers;
+    this.state.engagementLevel = Math.max(bounds.min, this.state.engagementLevel + responses.inactive.engagement);
   }
 
   // ============================================
@@ -180,9 +190,9 @@ export class StateEngine {
 
   private updateFatigue(): void {
     const minutes = this.state.timeInSession / 60;
-    const baselineFatigue = Math.min(10, minutes / 2);
+    const baselineFatigue = Math.min(bounds.max, minutes / 2);
     const dysregulationModifier = this.state.dysregulationLevel * 0.1;
-    this.state.fatigueLevel = Math.min(10, baselineFatigue + dysregulationModifier);
+    this.state.fatigueLevel = Math.min(bounds.max, baselineFatigue + dysregulationModifier);
   }
 
   // ============================================
@@ -190,8 +200,9 @@ export class StateEngine {
   // ============================================
 
   private updateErrorFrequency(): void {
+    const windowMs = stateModifiers.errorFrequencyWindowMs;
     const recentErrors = this.errorHistory.filter(e =>
-      e.timestamp > (Date.now() - 60000)
+      e.timestamp > (Date.now() - windowMs)
     );
     this.state.errorFrequency = recentErrors.length;
   }
@@ -205,8 +216,9 @@ export class StateEngine {
   }
 
   resetForBreak(): void {
+    const { breakTaken } = stateModifiers;
     this.state.timeSinceBreak = 0;
-    this.state.dysregulationLevel = Math.max(0, this.state.dysregulationLevel - 2);
-    this.state.fatigueLevel = Math.max(0, this.state.fatigueLevel - 2);
+    this.state.dysregulationLevel = Math.max(bounds.min, this.state.dysregulationLevel + breakTaken.dysregulation);
+    this.state.fatigueLevel = Math.max(bounds.min, this.state.fatigueLevel + breakTaken.fatigue);
   }
 }

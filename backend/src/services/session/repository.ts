@@ -11,7 +11,7 @@ import type {
   RecordResponseRequest,
 } from '../../types/index.js';
 import { logger } from '../../utils/logger.js';
-import { SCORE_CORRECT_ANSWER } from '../../constants/game.js';
+import { config } from '../../config/index.js';
 
 /**
  * Create a new gameplay session
@@ -223,7 +223,7 @@ export function recordResponse(
   if (session) {
     updateSessionProgress(
       sessionId,
-      session.final_score + (data.isCorrect ? SCORE_CORRECT_ANSWER : 0),
+      session.final_score + (data.isCorrect ? config.game.scoring.correctAnswer : 0),
       session.final_board_position,
       session.total_cards_played + 1,
       session.correct_responses + (data.isCorrect ? 1 : 0)

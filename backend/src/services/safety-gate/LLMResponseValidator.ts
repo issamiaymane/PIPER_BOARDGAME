@@ -1,4 +1,5 @@
 import type { LLMGeneration, LLMValidation } from '../../types/safety-gate.js';
+import { config } from '../../config/index.js';
 
 // Re-export for backward compatibility
 export type { LLMValidation };
@@ -28,7 +29,7 @@ export class LLMResponseValidator {
 
   private checkLength(response: LLMGeneration): boolean {
     const words = response.coach_line.split(/\s+/);
-    return words.length <= 30; // Reasonable maximum
+    return words.length <= config.safetyGate.llmResponse.maxCoachLineWords;
   }
 
   private checkForbiddenWords(response: LLMGeneration, constraints: any): boolean {

@@ -77,17 +77,19 @@ class TherapistLiveService {
 
     this.token = token;
 
-    // Determine WebSocket URL:
-    // - In production: use current page origin (same host)
-    // - In development: connect directly to backend (bypass Vite proxy for WebSocket)
-    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    // Build WebSocket URL from VITE_API_URL or fall back to same-origin
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     let wsUrl: string;
-    if (isLocalhost) {
-      // Local development - connect directly to backend
-      wsUrl = `ws://localhost:3000/api/therapist/live?token=${encodeURIComponent(token)}`;
+    if (apiUrl) {
+      // Use configured API URL (works for both dev and production)
+      const url = new URL(apiUrl);
+      const protocol = url.protocol === 'https:' ? 'wss:' : 'ws:';
+      const host = url.hostname;
+      const portPart = url.port ? `:${url.port}` : '';
+      wsUrl = `${protocol}//${host}${portPart}/api/therapist/live?token=${encodeURIComponent(token)}`;
     } else {
-      // Production - use same origin as the page
+      // Fallback: use same origin as the page
       const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
       wsUrl = `${protocol}//${window.location.host}/api/therapist/live?token=${encodeURIComponent(token)}`;
     }

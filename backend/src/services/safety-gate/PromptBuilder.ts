@@ -1,5 +1,6 @@
 import { Level } from '../../types/safety-gate.js';
 import type { BackendResponse } from '../../types/safety-gate.js';
+import { config } from '../../config/index.js';
 
 export class PromptBuilder {
 
@@ -113,7 +114,7 @@ ${safetyLevel >= Level.YELLOW ? `⚠️ CRITICAL: Your coach_line MUST end with 
     const word = childSaid || '[child_word]';
 
     // Adjust examples based on prompt intensity
-    const isMinimal = promptIntensity <= 1;
+    const isMinimal = promptIntensity <= config.safetyGate.llmResponse.minimalIntensityThreshold;
 
     // CORRECT response - always celebrate (but adjust verbosity)
     const correctExamples = isMinimal

@@ -43,4 +43,51 @@ export const safetyGateConfig = {
     inactivity: 30,
     maxTaskTime: 60,
   },
+
+  // State modification values (used by StateEngine)
+  stateModifiers: {
+    // Signal-based modifications
+    signals: {
+      screaming: { dysregulation: 4 },
+      crying: { dysregulation: 3 },
+      distress: { dysregulation: 2 },
+      frustration: { dysregulation: 1 },
+      wantsQuit: { engagement: -2 },
+      wantsBreak: { fatigue: 1 },
+      repetitiveWords: { dysregulation: 1.5, engagement: -1 },
+    },
+    // Response-based modifications
+    responses: {
+      correct: { engagement: 1, dysregulation: -0.5 },
+      incorrect: { engagement: -0.5 },
+      tripleRepetition: { dysregulation: 2 },
+      inactive: { engagement: -2 },
+    },
+    // Break effect
+    breakTaken: { dysregulation: -2, fatigue: -2 },
+    // State bounds
+    bounds: { min: 0, max: 10 },
+    // Error frequency calculation window (ms)
+    errorFrequencyWindowMs: 60000,
+  },
+
+  // Intervention selection thresholds
+  interventions: {
+    bubbleBreathingDysregulation: 4,
+    skipCardConsecutiveErrors: 3,
+  },
+
+  // Signal detection thresholds
+  signalDetection: {
+    repetitiveWordsThreshold: 3,
+  },
+
+  // LLM response validation limits
+  llmResponse: {
+    maxCoachLineWords: 30,
+    minimalIntensityThreshold: 1,
+  },
+
+  // Safety alert threshold (broadcasts alert to therapist when safetyLevel >= this)
+  alertThreshold: 2,
 };
