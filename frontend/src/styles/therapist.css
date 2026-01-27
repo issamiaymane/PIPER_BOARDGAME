@@ -2071,17 +2071,19 @@ textarea:focus:not(:focus-visible) {
 
 /* Session History Item */
 .session-history-item {
-    background: var(--bg-white);
-    border: 1px solid var(--border-color);
+    background: var(--bg-cream);
+    border-left: 4px solid var(--color-primary);
     border-radius: var(--radius-sm);
-    padding: 12px;
+    padding: var(--spacing-md);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .session-history-item:hover {
-    border-color: var(--color-primary);
+    background: var(--bg-warm);
+    border-left-color: var(--color-primary-dark);
     box-shadow: var(--shadow-sm);
+    transform: translateX(2px);
 }
 
 .session-history-header {
@@ -2105,18 +2107,18 @@ textarea:focus:not(:focus-visible) {
 }
 
 .session-status.completed {
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: var(--bg-cream);
+    color: var(--color-secondary-dark);
 }
 
 .session-status.abandoned {
-    background: #FFEBEE;
-    color: #C62828;
+    background: var(--bg-cream);
+    color: var(--color-danger);
 }
 
 .session-status.in_progress {
-    background: #FFF3E0;
-    color: #E65100;
+    background: var(--bg-cream);
+    color: var(--color-primary-dark);
 }
 
 .session-history-stats {

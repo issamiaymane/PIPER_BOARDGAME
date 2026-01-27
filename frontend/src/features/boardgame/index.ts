@@ -359,6 +359,11 @@ function closeCard() {
 
     // Hide safety-gate UI
     hideChoices();
+
+    // AI prompts to spin for next turn (skip during calibration)
+    if (voiceService.isReady() && !voiceService.isCalibrating()) {
+        voiceService.speakPrompt("Spin the wheel to take your turn!");
+    }
 }
 
 // Voice mode functions
@@ -1114,6 +1119,8 @@ async function startGame() {
                 voiceLogger.info(`Using saved calibration: amp=${existingCalibration.calibration.amplitudeThreshold.toFixed(3)}, peak=${existingCalibration.calibration.peakThreshold.toFixed(3)}`);
                 voiceService.applyCalibration(existingCalibration.calibration);
                 // Spin button stays enabled - no calibration needed
+                // Prompt to spin
+                voiceService.speakPrompt("Spin the wheel to take your turn!");
             } else {
                 // No saved calibration - run calibration
                 voiceLogger.info('No saved calibration found, starting voice calibration...');
@@ -1132,6 +1139,9 @@ async function startGame() {
                     // Re-enable spin button
                     spinBtn.disabled = false;
                     spinBtn.style.opacity = '1';
+
+                    // Prompt to spin
+                    voiceService.speakPrompt("Spin the wheel to take your turn!");
                 };
 
                 // Set up callback for when calibration fails or is skipped
@@ -1155,6 +1165,9 @@ async function startGame() {
                 voiceLogger.info(`Calibration complete: amp=${result.amplitudeThreshold.toFixed(3)}, peak=${result.peakThreshold.toFixed(3)}`);
                 spinBtn.disabled = false;
                 spinBtn.style.opacity = '1';
+
+                // Prompt to spin
+                voiceService.speakPrompt("Spin the wheel to take your turn!");
             };
 
             voiceService.onCalibrationFailed = () => {

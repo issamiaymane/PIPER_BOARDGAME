@@ -542,6 +542,26 @@ export class VoiceService {
   }
 
   /**
+   * Speak a simple prompt (no card context, no listening)
+   */
+  speakPrompt(text: string): void {
+    if (this.state === 'idle' || this.state === 'connecting') {
+      voiceLogger.warn('Not ready to speak prompt');
+      return;
+    }
+
+    // Disable listening for simple prompts
+    this.isListeningEnabled = false;
+
+    this.sendMessage({
+      type: 'speak_card',
+      text
+    });
+
+    this.setState('speaking');
+  }
+
+  /**
    * Pause listening without committing audio (for when choices are shown)
    * This allows the AI to continue speaking while we wait for user action
    */
