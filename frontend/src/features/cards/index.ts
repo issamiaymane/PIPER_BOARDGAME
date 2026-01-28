@@ -5,10 +5,10 @@
 
 /// <reference types="vite/client" />
 
-import { CATEGORY_HANDLER_MAP, type HandlerType } from '@shared/categories';
+import { CATEGORY_HANDLER_MAP, LANGUAGE_FILES, ARTICULATION_FILES, type HandlerType } from '@shared/categories';
 import { hideLoadingScreen } from '@common/components/LoadingScreen/LoadingScreen';
 
-// Supabase storage URL for images
+// Supabase storage URL for cards and images
 const SUPABASE_STORAGE_URL = 'https://ofpdgocgupxzazzuzkub.supabase.co/storage/v1/object/public/piper-cards/';
 
 /**
@@ -53,38 +53,76 @@ export const HANDLERS: Record<HandlerType, HandlerConfig> = {
 const categorySourceFiles: Record<string, string> = {};
 
 // Track language vs articulation files
-const languageFiles: Set<string> = new Set();
-const articulationFiles: Set<string> = new Set();
+const languageFilesSet: Set<string> = new Set();
+const articulationFilesSet: Set<string> = new Set();
 
-// Import all JSON files using Vite's glob import
-const languageModules = import.meta.glob('@shared/cards/language/*.json', { eager: true });
-const articulationModules = import.meta.glob('@shared/cards/articulation/*.json', { eager: true });
+// Card data storage (populated by async fetch)
+let languageData: CategoryData = {};
+let articulationData: CategoryData = {};
+let allCardData: CategoryData = {};
+let dataLoaded = false;
 
-// Build the data object from imported JSON files
-function loadJsonModules(modules: Record<string, unknown>, fileSet: Set<string>): CategoryData {
-    const data: CategoryData = {};
-    for (const path in modules) {
-        const module = modules[path] as { default?: CategoryData } | CategoryData;
-        const content = 'default' in module ? module.default : module;
-        const filename = path.split('/').pop() || 'unknown.json';
-        fileSet.add(filename);
-        if (content && typeof content === 'object') {
-            for (const category in content) {
-                categorySourceFiles[category] = filename;
-            }
-            Object.assign(data, content);
+/**
+ * Fetch a JSON file from Supabase storage
+ */
+async function fetchCardJson(folder: string, filename: string): Promise<CategoryData> {
+    const url = `${SUPABASE_STORAGE_URL}cards/${folder}/${filename}`;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            console.warn(`Failed to fetch ${filename}: ${response.status}`);
+            return {};
         }
+        return await response.json();
+    } catch (error) {
+        console.warn(`Error fetching ${filename}:`, error);
+        return {};
     }
-    return data;
 }
 
-// Load all card data
-const languageData = loadJsonModules(languageModules, languageFiles);
-const articulationData = loadJsonModules(articulationModules, articulationFiles);
+/**
+ * Load all card data from Supabase
+ */
+async function loadAllCardData(): Promise<void> {
+    if (dataLoaded) return;
 
-// Export combined data for use by other modules
-export const allCardData = { ...languageData, ...articulationData };
-export { languageData, articulationData };
+    console.log('Loading card data from Supabase...');
+
+    // Fetch language files
+    const languagePromises = LANGUAGE_FILES.map(async (filename) => {
+        const content = await fetchCardJson('language', filename);
+        languageFilesSet.add(filename);
+        for (const category in content) {
+            categorySourceFiles[category] = filename;
+        }
+        return content;
+    });
+
+    // Fetch articulation files
+    const articulationPromises = ARTICULATION_FILES.map(async (filename) => {
+        const content = await fetchCardJson('articulation', filename);
+        articulationFilesSet.add(filename);
+        for (const category in content) {
+            categorySourceFiles[category] = filename;
+        }
+        return content;
+    });
+
+    // Wait for all fetches
+    const languageResults = await Promise.all(languagePromises);
+    const articulationResults = await Promise.all(articulationPromises);
+
+    // Merge results
+    languageData = languageResults.reduce((acc, data) => ({ ...acc, ...data }), {});
+    articulationData = articulationResults.reduce((acc, data) => ({ ...acc, ...data }), {});
+    allCardData = { ...languageData, ...articulationData };
+
+    dataLoaded = true;
+    console.log(`Loaded ${Object.keys(languageData).length} language categories and ${Object.keys(articulationData).length} articulation categories`);
+}
+
+// Export for use by other modules
+export { allCardData, languageData, articulationData, loadAllCardData };
 
 // State
 let currentFilter = 'all';
@@ -924,7 +962,10 @@ export function renderCard(card: CardData, category: string, container: HTMLElem
 // INITIALIZATION
 // ============================================================
 
-function init() {
+async function init() {
+    // Load card data from Supabase first
+    await loadAllCardData();
+
     handlerSections = document.getElementById('handlerSections')!;
     handlerFilter = document.getElementById('handlerFilter') as HTMLSelectElement;
     dataTypeFilter = document.getElementById('dataTypeFilter') as HTMLSelectElement;
@@ -940,7 +981,7 @@ function init() {
 
     const langGroup = document.createElement('optgroup');
     langGroup.label = '📚 Language Files';
-    [...languageFiles].sort().forEach(file => {
+    [...languageFilesSet].sort().forEach(file => {
         const option = document.createElement('option');
         option.value = file;
         option.textContent = file;
@@ -950,7 +991,7 @@ function init() {
 
     const articGroup = document.createElement('optgroup');
     articGroup.label = '🗣️ Articulation Files';
-    [...articulationFiles].sort().forEach(file => {
+    [...articulationFilesSet].sort().forEach(file => {
         const option = document.createElement('option');
         option.value = file;
         option.textContent = file;

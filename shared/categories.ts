@@ -254,3 +254,30 @@ export const CATEGORY_HANDLER_MAP: Record<string, HandlerType> = {
 
 /** All language category names - derived from CATEGORY_HANDLER_MAP keys */
 export const LANGUAGE_CATEGORIES: string[] = Object.keys(CATEGORY_HANDLER_MAP);
+
+// =============================================================================
+// CARD JSON FILES (for Supabase fetch)
+// =============================================================================
+
+/** Language card JSON filenames */
+export const LANGUAGE_FILES: string[] = [
+    'adjectives-adverbs.json', 'analogies.json', 'antonyms-synonyms.json', 'categories.json',
+    'comparatives.json', 'concepts.json', 'conjunctions.json', 'context-clues.json',
+    'describing.json', 'directions.json', 'figurative.json', 'grammar-verbs.json',
+    'inferencing.json', 'negation.json', 'nouns-pronouns.json', 'plurals.json',
+    'predictions.json', 'prepositions.json', 'problem-solving.json', 'questions.json',
+    'rhyming.json', 'safety.json', 'sentences.json', 'sequencing.json',
+    'short-stories.json', 'sight-words.json', 'tenses.json', 'verbs.json',
+    'vocabulary.json', 'wh-questions.json'
+];
+
+/** Articulation card JSON filenames */
+export const ARTICULATION_FILES: string[] = [
+    'b-sound.json', 'ch-sound.json', 'consonant-clusters.json', 'd-sound.json',
+    'f-sound.json', 'g-sound.json', 'h-sound.json', 'j-sound.json', 'k-sound.json',
+    'l-blends-sound.json', 'l-sound.json', 'm-sound.json', 'n-sound.json', 'ng-sound.json',
+    'p-sound.json', 'phonology.json', 'r-blends-sound.json', 'r-sound.json',
+    's-blends-sound.json', 's-sound.json', 'sh-sound.json', 'syllable-shapes.json',
+    't-sound.json', 'th-voiced-sound.json', 'th-voiceless-sound.json', 'v-sound.json',
+    'vowels.json', 'w-sound.json', 'y-sound.json', 'z-sound.json'
+];
