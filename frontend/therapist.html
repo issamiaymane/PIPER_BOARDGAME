@@ -235,7 +235,10 @@
                                         <div class="card-title">
                                             <h3>IEP Goals</h3>
                                         </div>
-                                        <button id="upload-goals-btn" class="btn btn-small">UPLOAD</button>
+                                        <div class="card-actions">
+                                            <button id="add-goal-btn" class="btn btn-small btn-secondary">ADD</button>
+                                            <button id="upload-goals-btn" class="btn btn-small">UPLOAD</button>
+                                        </div>
                                     </div>
                                     <div id="goals-data-display" class="card-content">
                                         <p class="empty-state">No goals yet</p>
@@ -446,36 +449,30 @@
 
             <!-- Review State -->
             <div id="goals-review-state" class="hidden">
-                <h2>Extracted Goals</h2>
-                <p class="review-hint">Review and edit extracted goals before saving. Yellow fields indicate missing or uncertain information</p>
+                <div class="goals-review-header">
+                    <div class="goals-review-title">
+                        <h2>Extracted Goals</h2>
+                        <span class="goals-counter" id="goals-counter">Goal 1 of 1</span>
+                    </div>
+                    <p class="review-hint">Review and edit extracted goals before saving. Yellow fields indicate missing or uncertain information</p>
+                </div>
 
                 <div id="goals-extraction-notes-display"></div>
 
                 <div class="goals-form-scroll">
-                    <!-- Session Time Section -->
-                    <div class="session-time-section">
-                        <h4>Recommended Session Time</h4>
-                        <div class="session-time-fields">
-                            <div class="eval-field" id="field-session_duration">
-                                <label for="session-duration-input">Duration (minutes)</label>
-                                <input type="number" id="session-duration-input" min="15" max="180" step="5" placeholder="e.g., 30">
-                                <span class="field-hint" id="session-duration-hint"></span>
-                            </div>
-                            <div class="eval-field" id="field-session_frequency">
-                                <label for="session-frequency-input">Frequency</label>
-                                <input type="text" id="session-frequency-input" placeholder="e.g., 2x weekly">
-                                <span class="field-hint" id="session-frequency-hint"></span>
-                            </div>
-                        </div>
-                    </div>
-
                     <div id="extracted-goals-list" class="extracted-goals-container"></div>
                 </div>
 
                 <div class="form-error hidden" id="goals-confirm-error"></div>
-                <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" id="goals-cancel-btn">CANCEL</button>
-                    <button type="button" class="btn btn-primary" id="goals-confirm-btn">SAVE GOALS</button>
+                <div class="goals-form-actions">
+                    <div class="goals-nav-buttons">
+                        <button type="button" class="btn btn-secondary" id="goals-prev-btn" disabled>PREVIOUS</button>
+                        <button type="button" class="btn btn-secondary" id="goals-next-btn">NEXT</button>
+                    </div>
+                    <div class="goals-save-buttons">
+                        <button type="button" class="btn btn-secondary" id="goals-cancel-btn">CANCEL</button>
+                        <button type="button" class="btn btn-primary" id="goals-confirm-btn">SAVE ALL GOALS</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -742,6 +739,98 @@
 
             <div class="form-actions">
                 <button type="button" class="btn btn-secondary cancel-modal" data-modal="goal-details-modal">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Goal Modal -->
+    <div id="add-goal-modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content modal-wide">
+            <button class="modal-close" data-modal="add-goal-modal">&times;</button>
+            <h2>Add New Goal</h2>
+
+            <div class="goal-details-scroll">
+                <!-- Measurable Baseline -->
+                <div class="goal-detail-section">
+                    <h4>Measurable Baseline</h4>
+                    <div class="goal-detail-field">
+                        <label for="add-goal-baseline">Baseline Performance:</label>
+                        <input type="text" id="add-goal-baseline" class="goal-input" placeholder="e.g., 60% accuracy at word level">
+                    </div>
+                </div>
+
+                <!-- Proposed Goal -->
+                <div class="goal-detail-section">
+                    <h4>Proposed Goal</h4>
+                    <div class="goal-detail-field">
+                        <label for="add-goal-deadline">Deadline:</label>
+                        <input type="text" id="add-goal-deadline" class="goal-input" placeholder="e.g., By February 2026">
+                    </div>
+                    <div class="goal-detail-field">
+                        <label for="add-goal-description">Description:</label>
+                        <textarea id="add-goal-description" class="goal-input" rows="3" placeholder="Full goal description..."></textarea>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Goal Type:</label>
+                        <div class="goal-type-toggle">
+                            <button type="button" class="goal-type-btn active" data-type="language">Language</button>
+                            <button type="button" class="goal-type-btn" data-type="articulation">Articulation</button>
+                        </div>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label>Boardgame Categories:</label>
+                        <div id="add-goal-categories" class="goal-categories-select"></div>
+                    </div>
+                    <div class="goal-detail-row">
+                        <div class="goal-detail-field">
+                            <label for="add-goal-target">Target Accuracy:</label>
+                            <select id="add-goal-target" class="goal-input">
+                                <option value="50">50%</option>
+                                <option value="60">60%</option>
+                                <option value="70">70%</option>
+                                <option value="75">75%</option>
+                                <option value="80" selected>80%</option>
+                                <option value="85">85%</option>
+                                <option value="90">90%</option>
+                            </select>
+                        </div>
+                        <div class="goal-detail-field">
+                            <label for="add-goal-sessions">Sessions to Confirm:</label>
+                            <select id="add-goal-sessions" class="goal-input">
+                                <option value="2">2</option>
+                                <option value="3" selected>3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="goal-detail-field">
+                        <label for="add-goal-comments">Comments:</label>
+                        <textarea id="add-goal-comments" class="goal-input" rows="2" placeholder="Optional comments..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Session Time -->
+                <div class="goal-detail-section">
+                    <h4>Recommended Session Time</h4>
+                    <div class="goal-detail-row">
+                        <div class="goal-detail-field">
+                            <label for="add-goal-duration">Duration (minutes):</label>
+                            <input type="number" id="add-goal-duration" class="goal-input" min="15" max="180" step="5" placeholder="e.g., 30">
+                        </div>
+                        <div class="goal-detail-field">
+                            <label for="add-goal-frequency">Frequency:</label>
+                            <input type="text" id="add-goal-frequency" class="goal-input" placeholder="e.g., 2x weekly">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-error hidden" id="add-goal-error"></div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary cancel-modal" data-modal="add-goal-modal">CANCEL</button>
+                <button type="button" class="btn btn-primary" id="save-new-goal-btn">SAVE GOAL</button>
             </div>
         </div>
     </div>

@@ -17,6 +17,8 @@ export interface IEPGoal {
   sessions_to_confirm?: number;
   comments?: string;
   boardgame_categories?: string; // JSON string of array
+  session_duration_minutes?: number;
+  session_frequency?: string;
   status: 'active' | 'achieved' | 'discontinued';
   created_at: string;
   updated_at: string;
@@ -49,9 +51,11 @@ export interface GoalExtractionResult {
     sessions_to_confirm?: { value: number | null; confidence: number };
     comments?: { value: string | null; confidence: number };
     boardgame_categories?: { value: string[] | null; confidence: number };
+    session_duration_minutes?: { value: number | null; confidence: number; source_hint?: string };
+    session_frequency?: { value: string | null; confidence: number; source_hint?: string };
   }>;
   extraction_notes: string;
-  // Session time from IEP document (document-level, applies to student)
+  // Document-level session time (legacy, kept for backwards compatibility during extraction)
   session_duration_minutes?: { value: number | null; confidence: number; source_hint?: string };
   session_frequency?: { value: string | null; confidence: number; source_hint?: string };
 }

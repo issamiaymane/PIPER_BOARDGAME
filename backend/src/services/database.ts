@@ -288,6 +288,18 @@ function runMigrations(db: Database.Database): void {
     logger.info('Migration: Added boardgame_categories column to iep_goals');
   }
 
+  // Add session_duration_minutes if missing (per-goal session time)
+  if (!goalColumnNames.includes('session_duration_minutes')) {
+    db.exec('ALTER TABLE iep_goals ADD COLUMN session_duration_minutes INTEGER');
+    logger.info('Migration: Added session_duration_minutes column to iep_goals');
+  }
+
+  // Add session_frequency if missing (per-goal session frequency)
+  if (!goalColumnNames.includes('session_frequency')) {
+    db.exec('ALTER TABLE iep_goals ADD COLUMN session_frequency TEXT');
+    logger.info('Migration: Added session_frequency column to iep_goals');
+  }
+
   // Get existing columns in session_responses table
   const responseColumns = db
     .prepare("PRAGMA table_info(session_responses)")
@@ -437,7 +449,9 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
           'Short Stories Level 1',
           'Short Stories Level 2',
           'Building Sentences Level 1 - Elementary'
-        ])
+        ]),
+        session_duration_minutes: 30,
+        session_frequency: '2x weekly'
       },
       {
         goal_type: 'language',
@@ -457,15 +471,18 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
           'Describing - More Advanced',
           'Expanding Sentences - Images With Who What Where',
           'Naming And Categorizing'
-        ])
+        ]),
+        session_duration_minutes: 30,
+        session_frequency: '2x weekly'
       }
     ];
 
     const insertGoal = db.prepare(`
       INSERT INTO iep_goals (
         student_id, goal_type, goal_description, target_percentage,
-        baseline, target_date, sessions_to_confirm, comments, boardgame_categories
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        baseline, target_date, sessions_to_confirm, comments, boardgame_categories,
+        session_duration_minutes, session_frequency
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
 
     for (const goal of goals) {
@@ -478,7 +495,9 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
         goal.target_date,
         goal.sessions_to_confirm,
         goal.comments,
-        goal.boardgame_categories
+        goal.boardgame_categories,
+        goal.session_duration_minutes,
+        goal.session_frequency
       );
     }
 

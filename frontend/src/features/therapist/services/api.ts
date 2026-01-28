@@ -62,6 +62,8 @@ export interface IEPGoal {
   sessions_to_confirm?: number;
   comments?: string;
   boardgame_categories?: string; // JSON string of array
+  session_duration_minutes?: number;
+  session_frequency?: string;
   status: 'active' | 'achieved' | 'discontinued';
   created_at: string;
   updated_at: string;
@@ -77,6 +79,8 @@ export interface ExtractedGoal {
   sessions_to_confirm?: { value: number | null; confidence: number; source_hint?: string };
   comments?: { value: string | null; confidence: number; source_hint?: string };
   boardgame_categories?: { value: string[] | null; confidence: number; reasoning?: string };
+  session_duration_minutes?: { value: number | null; confidence: number; source_hint?: string };
+  session_frequency?: { value: string | null; confidence: number; source_hint?: string };
 }
 
 export interface GoalsUploadResponse {
@@ -393,19 +397,26 @@ class ApiService {
 
   async confirmGoals(
     studentId: number,
-    goals: ExtractedGoal[],
-    sessionDurationMinutes?: number | null,
-    sessionFrequency?: string | null
+    goals: ExtractedGoal[]
   ): Promise<GoalsConfirmResponse> {
     return this.request<GoalsConfirmResponse>(
       `/students/${studentId}/goals/confirm`,
       {
         method: 'POST',
-        body: JSON.stringify({
-          goals,
-          session_duration_minutes: sessionDurationMinutes,
-          session_frequency: sessionFrequency,
-        }),
+        body: JSON.stringify({ goals }),
+      }
+    );
+  }
+
+  async addGoals(
+    studentId: number,
+    goals: ExtractedGoal[]
+  ): Promise<GoalsConfirmResponse> {
+    return this.request<GoalsConfirmResponse>(
+      `/students/${studentId}/goals/add`,
+      {
+        method: 'POST',
+        body: JSON.stringify({ goals }),
       }
     );
   }

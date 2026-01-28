@@ -263,8 +263,7 @@ let pendingGoalsFile: File | null = null;
 let extractedGoals: ExtractedGoal[] = [];
 let currentGoalsPdfUrl: string | null = null;
 let studentGoals: IEPGoal[] = [];
-let extractedSessionDurationMinutes: number | null = null;
-let extractedSessionFrequency: string | null = null;
+let currentGoalIndex = 0;
 
 // Sessions state
 let liveSessions: LiveSessionInfo[] = [];
@@ -1020,7 +1019,7 @@ async function handleDeleteStudent(): Promise<void> {
     hide($('student-profile'));
     show($('no-student-selected'));
 
-    renderStudentList();
+    renderStudentModalList();
   } catch (err) {
     alert((err as ApiError).message);
   }
@@ -1502,17 +1501,16 @@ function showGoalDetailsModal(goal: IEPGoal): void {
     updatedEl.textContent = new Date(goal.updated_at).toLocaleDateString();
   }
 
-  // Populate session time (from student data)
-  const student = students.find(s => s.id === selectedStudentId);
+  // Populate session time (from goal data)
   const durationEl = document.getElementById('goal-detail-duration');
   if (durationEl) {
-    durationEl.textContent = student?.session_duration_minutes
-      ? `${student.session_duration_minutes} minutes`
+    durationEl.textContent = goal.session_duration_minutes
+      ? `${goal.session_duration_minutes} minutes`
       : 'Not specified';
   }
   const frequencyEl = document.getElementById('goal-detail-frequency');
   if (frequencyEl) {
-    frequencyEl.textContent = student?.session_frequency || 'Not specified';
+    frequencyEl.textContent = goal.session_frequency || 'Not specified';
   }
 
   // Show modal
@@ -1527,8 +1525,7 @@ function resetGoalsUploadModal(): void {
   pendingGoalsFile = null;
   extractedGoals = [];
   currentGoalsPdfUrl = null;
-  extractedSessionDurationMinutes = null;
-  extractedSessionFrequency = null;
+  currentGoalIndex = 0;
 
   const pdfFrame = document.getElementById('goals-pdf-frame') as HTMLIFrameElement | null;
   if (pdfFrame) pdfFrame.src = '';
@@ -1544,12 +1541,48 @@ function resetGoalsUploadModal(): void {
   hide($('goals-upload-error'));
   const passwordInput = document.getElementById('goals-pdf-password') as HTMLInputElement | null;
   if (passwordInput) passwordInput.value = '';
+}
 
-  // Reset session time inputs
-  const durationInput = document.getElementById('session-duration-input') as HTMLInputElement | null;
-  const frequencyInput = document.getElementById('session-frequency-input') as HTMLInputElement | null;
-  if (durationInput) durationInput.value = '';
-  if (frequencyInput) frequencyInput.value = '';
+// Goal navigation functions
+function showGoalAtIndex(index: number): void {
+  const container = $('extracted-goals-list');
+  const goalItems = container.querySelectorAll('.extracted-goal-item');
+  const totalGoals = goalItems.length;
+
+  if (totalGoals === 0) return;
+
+  // Clamp index
+  currentGoalIndex = Math.max(0, Math.min(index, totalGoals - 1));
+
+  // Hide all goals, show current
+  goalItems.forEach((item, i) => {
+    (item as HTMLElement).style.display = i === currentGoalIndex ? 'block' : 'none';
+  });
+
+  // Update counter
+  const counter = document.getElementById('goals-counter');
+  if (counter) {
+    counter.textContent = `Goal ${currentGoalIndex + 1} of ${totalGoals}`;
+  }
+
+  // Update button states
+  const prevBtn = document.getElementById('goals-prev-btn') as HTMLButtonElement;
+  const nextBtn = document.getElementById('goals-next-btn') as HTMLButtonElement;
+
+  if (prevBtn) {
+    prevBtn.disabled = currentGoalIndex === 0;
+  }
+  if (nextBtn) {
+    nextBtn.disabled = currentGoalIndex === totalGoals - 1;
+  }
+}
+
+function showNextGoal(): void {
+  showGoalAtIndex(currentGoalIndex + 1);
+}
+
+function showPrevGoal(): void {
+  showGoalAtIndex(currentGoalIndex - 1);
 }
 
 function showGoalsLoading(): void {
@@ -1568,6 +1601,121 @@ function showGoalsError(message: string): void {
   const errorEl = $('goals-upload-error');
   errorEl.textContent = message;
   show(errorEl);
+}
+
+// ============================================
+// Add Goal Modal Functions
+// ============================================
+
+function openAddGoalModal(): void {
+  const student = students.find(s => s.id === selectedStudentId);
+
+  // Reset form fields
+  const baselineInput = document.getElementById('add-goal-baseline') as HTMLInputElement;
+  const deadlineInput = document.getElementById('add-goal-deadline') as HTMLInputElement;
+  const descriptionInput = document.getElementById('add-goal-description') as HTMLTextAreaElement;
+  const targetSelect = document.getElementById('add-goal-target') as HTMLSelectElement;
+  const sessionsSelect = document.getElementById('add-goal-sessions') as HTMLSelectElement;
+  const commentsInput = document.getElementById('add-goal-comments') as HTMLTextAreaElement;
+  const durationInput = document.getElementById('add-goal-duration') as HTMLInputElement;
+  const frequencyInput = document.getElementById('add-goal-frequency') as HTMLInputElement;
+
+  if (baselineInput) baselineInput.value = '';
+  if (deadlineInput) deadlineInput.value = '';
+  if (descriptionInput) descriptionInput.value = '';
+  if (targetSelect) targetSelect.value = '80';
+  if (sessionsSelect) sessionsSelect.value = '3';
+  if (commentsInput) commentsInput.value = '';
+  if (durationInput) durationInput.value = student?.session_duration_minutes?.toString() || '';
+  if (frequencyInput) frequencyInput.value = student?.session_frequency || '';
+
+  // Reset goal type toggle to Language
+  const goalTypeBtns = document.querySelectorAll('.goal-type-btn');
+  goalTypeBtns.forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.getAttribute('data-type') === 'language') {
+      btn.classList.add('active');
+    }
+  });
+
+  // Populate categories for Language type
+  populateAddGoalCategories('language');
+
+  // Hide error
+  hide($('add-goal-error'));
+
+  openModal('add-goal-modal');
+}
+
+function populateAddGoalCategories(goalType: 'language' | 'articulation'): void {
+  const container = document.getElementById('add-goal-categories');
+  if (!container) return;
+
+  const categories = goalType === 'articulation' ? ORGANIZED_ARTICULATION_CATEGORIES : ORGANIZED_LANGUAGE_CATEGORIES;
+  container.innerHTML = generateCategoryCheckboxes(categories, 0, []);
+}
+
+async function saveNewGoal(): Promise<void> {
+  if (!selectedStudentId) return;
+
+  const baselineInput = document.getElementById('add-goal-baseline') as HTMLInputElement;
+  const deadlineInput = document.getElementById('add-goal-deadline') as HTMLInputElement;
+  const descriptionInput = document.getElementById('add-goal-description') as HTMLTextAreaElement;
+  const targetSelect = document.getElementById('add-goal-target') as HTMLSelectElement;
+  const sessionsSelect = document.getElementById('add-goal-sessions') as HTMLSelectElement;
+  const commentsInput = document.getElementById('add-goal-comments') as HTMLTextAreaElement;
+  const durationInput = document.getElementById('add-goal-duration') as HTMLInputElement;
+  const frequencyInput = document.getElementById('add-goal-frequency') as HTMLInputElement;
+
+  const description = descriptionInput?.value.trim() || '';
+  if (!description) {
+    const errorEl = $('add-goal-error');
+    errorEl.textContent = 'Please enter a goal description';
+    show(errorEl);
+    return;
+  }
+
+  // Get selected goal type
+  const activeTypeBtn = document.querySelector('.goal-type-btn.active');
+  const goalType = (activeTypeBtn?.getAttribute('data-type') as 'language' | 'articulation') || 'language';
+
+  // Get selected categories
+  const categoryContainer = document.getElementById('add-goal-categories');
+  const checkedBoxes = categoryContainer?.querySelectorAll('input[type="checkbox"]:checked') || [];
+  const selectedCategories: string[] = [];
+  checkedBoxes.forEach(cb => {
+    const label = cb.nextElementSibling?.textContent;
+    if (label) selectedCategories.push(label);
+  });
+
+  // Build the goal data with session time included
+  const sessionDuration = durationInput?.value ? parseInt(durationInput.value) : null;
+  const sessionFrequency = frequencyInput?.value || null;
+
+  const goal: ExtractedGoal = {
+    goal_type: { value: goalType, confidence: 1 },
+    goal_description: { value: description, confidence: 1 },
+    target_percentage: { value: parseInt(targetSelect?.value || '80'), confidence: 1 },
+    target_date: { value: deadlineInput?.value || '', confidence: 1 },
+    baseline: { value: baselineInput?.value || '', confidence: 1 },
+    deadline: { value: deadlineInput?.value || '', confidence: 1 },
+    sessions_to_confirm: { value: parseInt(sessionsSelect?.value || '3'), confidence: 1 },
+    comments: { value: commentsInput?.value || '', confidence: 1 },
+    boardgame_categories: { value: selectedCategories, confidence: 1 },
+    session_duration_minutes: { value: sessionDuration, confidence: 1 },
+    session_frequency: { value: sessionFrequency, confidence: 1 }
+  };
+
+  try {
+    await api.addGoals(selectedStudentId, [goal]);
+
+    closeModal('add-goal-modal');
+    selectStudent(selectedStudentId);
+  } catch (err) {
+    const errorEl = $('add-goal-error');
+    errorEl.textContent = (err as ApiError).message || 'Failed to save goal';
+    show(errorEl);
+  }
 }
 
 /**
@@ -1631,6 +1779,8 @@ function populateGoalsForm(goals: ExtractedGoal[]): void {
     const sessions = goal.sessions_to_confirm?.value || 3;
     const comments = goal.comments?.value || '';
     const boardgameCategories = goal.boardgame_categories?.value || [];
+    const sessionDuration = goal.session_duration_minutes?.value || null;
+    const sessionFrequency = goal.session_frequency?.value || '';
 
     // Extract source hints
     const baselineHint = goal.baseline?.source_hint || '';
@@ -1640,6 +1790,8 @@ function populateGoalsForm(goals: ExtractedGoal[]): void {
     const sessionsHint = goal.sessions_to_confirm?.source_hint || '';
     const commentsHint = goal.comments?.source_hint || '';
     const categoriesReasoning = goal.boardgame_categories?.reasoning || goal.goal_type?.reasoning || '';
+    const sessionDurationHint = goal.session_duration_minutes?.source_hint || '';
+    const sessionFrequencyHint = goal.session_frequency?.source_hint || '';
 
     // Determine low-confidence classes (yellow highlighting for missing/uncertain)
     const baselineConfidence = goal.baseline?.confidence ?? 0;
@@ -1656,6 +1808,10 @@ function populateGoalsForm(goals: ExtractedGoal[]): void {
     const commentsLowConf = !comments || commentsConfidence < 0.7 ? 'low-confidence' : '';
     const categoriesConfidence = goal.boardgame_categories?.confidence ?? 0;
     const categoriesLowConf = boardgameCategories.length === 0 || categoriesConfidence < 0.7 ? 'low-confidence' : '';
+    const sessionDurationConfidence = goal.session_duration_minutes?.confidence ?? 0;
+    const sessionDurationLowConf = !sessionDuration || sessionDurationConfidence < 0.7 ? 'low-confidence' : '';
+    const sessionFrequencyConfidence = goal.session_frequency?.confidence ?? 0;
+    const sessionFrequencyLowConf = !sessionFrequency || sessionFrequencyConfidence < 0.7 ? 'low-confidence' : '';
 
     // Determine which categories to show based on goal type
     const categoriesToShow = goalType === 'articulation' ? ORGANIZED_ARTICULATION_CATEGORIES : ORGANIZED_LANGUAGE_CATEGORIES;
@@ -1731,12 +1887,32 @@ function populateGoalsForm(goals: ExtractedGoal[]): void {
             <textarea class="goal-comments-input" rows="2" placeholder="e.g., Based on assessment results...">${comments}</textarea>
             ${commentsHint ? `<span class="field-hint">${commentsHint}</span>` : ''}
           </div>
+
+          <!-- Session Time Section -->
+          <div class="goal-session-time-section">
+            <h5>Recommended Session Time</h5>
+            <div class="goal-form-row-split">
+              <div class="goal-form-row ${sessionDurationLowConf}">
+                <label>Duration (minutes):</label>
+                <input type="number" class="goal-duration-input" min="15" max="180" step="5" value="${sessionDuration || ''}" placeholder="e.g., 30">
+                ${sessionDurationHint ? `<span class="field-hint">${sessionDurationHint}</span>` : ''}
+              </div>
+              <div class="goal-form-row ${sessionFrequencyLowConf}">
+                <label>Frequency:</label>
+                <input type="text" class="goal-frequency-input" value="${sessionFrequency}" placeholder="e.g., 2x weekly">
+                ${sessionFrequencyHint ? `<span class="field-hint">${sessionFrequencyHint}</span>` : ''}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     `;
   });
 
   container.innerHTML = html;
+
+  // Show first goal and update navigation
+  showGoalAtIndex(0);
 }
 
 function getFormGoalsData(): ExtractedGoal[] {
@@ -1751,6 +1927,8 @@ function getFormGoalsData(): ExtractedGoal[] {
     const deadlineInput = item.querySelector('.goal-deadline-input') as HTMLInputElement;
     const sessionsInput = item.querySelector('.goal-sessions-input') as HTMLSelectElement;
     const commentsInput = item.querySelector('.goal-comments-input') as HTMLTextAreaElement;
+    const durationInput = item.querySelector('.goal-duration-input') as HTMLInputElement;
+    const frequencyInput = item.querySelector('.goal-frequency-input') as HTMLInputElement;
 
     // Collect selected boardgame categories from checkboxes
     const categoryCheckboxes = item.querySelectorAll('.goal-types-multiselect input[type="checkbox"]:checked');
@@ -1779,6 +1957,8 @@ function getFormGoalsData(): ExtractedGoal[] {
       sessions_to_confirm: { value: parseInt(sessionsInput.value) || 3, confidence: 0.9 },
       comments: { value: commentsInput.value || null, confidence: 0.9 },
       boardgame_categories: { value: selectedCategories.length > 0 ? selectedCategories : null, confidence: 0.9 },
+      session_duration_minutes: { value: durationInput?.value ? parseInt(durationInput.value) : null, confidence: 0.9 },
+      session_frequency: { value: frequencyInput?.value || null, confidence: 0.9 },
     });
   });
 
@@ -1815,49 +1995,18 @@ async function uploadGoalsFile(password?: string): Promise<void> {
   try {
     const result = await api.uploadGoals(selectedStudentId, pendingGoalsFile, password);
 
-    extractedGoals = result.extracted_data.goals;
-    console.log('🎯 EXTRACTED GOALS FROM AI:', JSON.stringify(extractedGoals, null, 2));
-
-    // Store and populate session time from extraction
+    // Get document-level session time from extraction
     const sessionDuration = result.extracted_data.session_duration_minutes;
     const sessionFreq = result.extracted_data.session_frequency;
-    extractedSessionDurationMinutes = sessionDuration?.value ?? null;
-    extractedSessionFrequency = sessionFreq?.value ?? null;
 
-    // Populate session time inputs
-    const durationInput = document.getElementById('session-duration-input') as HTMLInputElement | null;
-    const frequencyInput = document.getElementById('session-frequency-input') as HTMLInputElement | null;
-    const durationHint = document.getElementById('session-duration-hint');
-    const frequencyHint = document.getElementById('session-frequency-hint');
-    const durationField = document.getElementById('field-session_duration');
-    const frequencyField = document.getElementById('field-session_frequency');
+    // Apply document-level session time to each goal (since AI extracts it at document level)
+    extractedGoals = result.extracted_data.goals.map(goal => ({
+      ...goal,
+      session_duration_minutes: goal.session_duration_minutes || sessionDuration,
+      session_frequency: goal.session_frequency || sessionFreq,
+    }));
 
-    if (durationInput) {
-      durationInput.value = extractedSessionDurationMinutes?.toString() ?? '';
-      // Apply low-confidence styling if value is missing or confidence is low
-      if (durationField) {
-        durationField.classList.remove('low-confidence');
-        if (!extractedSessionDurationMinutes || (sessionDuration?.confidence ?? 0) < 0.7) {
-          durationField.classList.add('low-confidence');
-        }
-      }
-      if (durationHint && sessionDuration?.source_hint) {
-        durationHint.textContent = sessionDuration.source_hint;
-      }
-    }
-    if (frequencyInput) {
-      frequencyInput.value = extractedSessionFrequency ?? '';
-      // Apply low-confidence styling if value is missing or confidence is low
-      if (frequencyField) {
-        frequencyField.classList.remove('low-confidence');
-        if (!extractedSessionFrequency || (sessionFreq?.confidence ?? 0) < 0.7) {
-          frequencyField.classList.add('low-confidence');
-        }
-      }
-      if (frequencyHint && sessionFreq?.source_hint) {
-        frequencyHint.textContent = sessionFreq.source_hint;
-      }
-    }
+    console.log('🎯 EXTRACTED GOALS FROM AI:', JSON.stringify(extractedGoals, null, 2));
 
     populateGoalsForm(extractedGoals);
 
@@ -1906,31 +2055,17 @@ async function confirmGoalsData(): Promise<void> {
 
   const goals = getFormGoalsData();
 
-  // Read session time from inputs
-  const durationInput = document.getElementById('session-duration-input') as HTMLInputElement | null;
-  const frequencyInput = document.getElementById('session-frequency-input') as HTMLInputElement | null;
-  const sessionDuration = durationInput?.value ? parseInt(durationInput.value) : null;
-  const sessionFrequency = frequencyInput?.value || null;
-
-  console.log('📤 SENDING GOALS TO BACKEND:', JSON.stringify({
-    goals,
-    session_duration_minutes: sessionDuration,
-    session_frequency: sessionFrequency
-  }, null, 2));
-
   try {
     hide($('goals-confirm-error'));
 
-    await api.confirmGoals(selectedStudentId, goals, sessionDuration, sessionFrequency);
+    await api.confirmGoals(selectedStudentId, goals);
 
     resetGoalsUploadModal();
     closeModal('goals-upload-modal');
 
-    // Reload goals and student data to reflect session time changes
+    // Reload goals
     await loadStudentGoals(selectedStudentId);
 
-    // Also refresh student list to update any cached data
-    await loadStudents();
     if (selectedStudentId) {
       selectStudent(selectedStudentId);
     }
@@ -2501,6 +2636,35 @@ function bindEvents(): void {
     });
   }
 
+  // Add Goal manually button
+  const addGoalBtn = document.getElementById('add-goal-btn');
+  if (addGoalBtn) {
+    addGoalBtn.addEventListener('click', () => {
+      if (!selectedStudentId) {
+        alert('Please select a student first');
+        return;
+      }
+      openAddGoalModal();
+    });
+  }
+
+  // Goal type toggle buttons in add-goal-modal
+  const goalTypeBtns = document.querySelectorAll('.goal-type-btn');
+  goalTypeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      goalTypeBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const goalType = btn.getAttribute('data-type') as 'language' | 'articulation';
+      populateAddGoalCategories(goalType);
+    });
+  });
+
+  // Save new goal button
+  const saveNewGoalBtn = document.getElementById('save-new-goal-btn');
+  if (saveNewGoalBtn) {
+    saveNewGoalBtn.addEventListener('click', saveNewGoal);
+  }
+
   // Goals dropzone
   const goalsDropzone = document.getElementById('goals-dropzone');
   const goalsFileInput = document.getElementById('goals-file-input') as HTMLInputElement | null;
@@ -2600,6 +2764,17 @@ function bindEvents(): void {
   const goalsConfirmBtn = document.getElementById('goals-confirm-btn');
   if (goalsConfirmBtn) {
     goalsConfirmBtn.addEventListener('click', confirmGoalsData);
+  }
+
+  // Goals navigation buttons
+  const goalsPrevBtn = document.getElementById('goals-prev-btn');
+  if (goalsPrevBtn) {
+    goalsPrevBtn.addEventListener('click', showPrevGoal);
+  }
+
+  const goalsNextBtn = document.getElementById('goals-next-btn');
+  if (goalsNextBtn) {
+    goalsNextBtn.addEventListener('click', showNextGoal);
   }
 }
 

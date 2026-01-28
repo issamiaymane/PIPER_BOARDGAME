@@ -6,7 +6,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import multer from 'multer';
 import fs from 'fs';
-import { getStudentForTherapist, updateStudentSessionTime } from '../../services/student/index.js';
+import { getStudentForTherapist } from '../../services/student/index.js';
 import {
   validatePdfFile,
   saveGoalsPdf,
@@ -142,7 +142,7 @@ router.get(
 
 /**
  * POST /students/:id/goals/confirm
- * Save confirmed/edited goals and session time
+ * Save confirmed/edited goals (session time is now per goal)
  */
 router.post(
   '/:id/goals/confirm',
@@ -151,7 +151,7 @@ router.post(
   async (req: Request, res: Response, next: NextFunction) => {
     try {
       const studentId = parseInt(req.params.id);
-      const { goals, session_duration_minutes, session_frequency } = req.body;
+      const { goals } = req.body;
 
       getVerifiedStudent(studentId, req.therapist!.therapist_id);
 
@@ -159,14 +159,33 @@ router.post(
       deleteAllGoalsForStudent(studentId);
       const createdGoals = createGoalsFromExtraction(studentId, goals);
 
-      // Update student's session time if provided
-      if (session_duration_minutes !== undefined || session_frequency !== undefined) {
-        updateStudentSessionTime(
-          studentId,
-          session_duration_minutes ?? null,
-          session_frequency ?? null
-        );
-      }
+      res.json({
+        success: true,
+        goals: createdGoals,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+);
+
+/**
+ * POST /students/:id/goals/add
+ * Add new goals without deleting existing ones (for manual goal entry)
+ */
+router.post(
+  '/:id/goals/add',
+  validateParams(idParamSchema),
+  validate(confirmGoalsSchema),
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const studentId = parseInt(req.params.id);
+      const { goals } = req.body;
+
+      getVerifiedStudent(studentId, req.therapist!.therapist_id);
+
+      // Add new goals without deleting existing ones
+      const createdGoals = createGoalsFromExtraction(studentId, goals);
 
       res.json({
         success: true,
