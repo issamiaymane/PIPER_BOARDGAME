@@ -58,6 +58,8 @@ export interface CreateChildRequest {
   date_of_birth?: string;
   grade_level?: string;
   problem_type?: 'language' | 'articulation' | 'both';
+  slp_id?: number;
+  school_id?: number;
 }
 
 export interface UpdateChildRequest {

@@ -13,9 +13,7 @@ import type { Child, CreateChildRequest, UpdateChildRequest, ChildLoginRequest, 
 const STUDENT_FIELDS = `id, therapist_id, username, first_name, last_name, date_of_birth,
   grade_level, problem_type, eval_data, eval_pdf_path, eval_pdf_uploaded_at,
   eval_pdf_original_name, goals_pdf_path, goals_pdf_uploaded_at, goals_pdf_original_name,
-  session_duration_minutes, session_frequency, created_at`;
-
-const SALT_ROUNDS = 10;
+  session_duration_minutes, session_frequency, slp_id, school_id, created_at`;
 
 export function isUsernameAvailable(username: string): boolean {
   const db = getDatabase();
@@ -35,14 +33,14 @@ export async function createStudent(
     throw new Error('Username already taken');
   }
 
-  const password_hash = await bcrypt.hash(data.password, SALT_ROUNDS);
+  const password_hash = await bcrypt.hash(data.password, config.auth.saltRounds);
 
   const result = db
     .prepare(
       `INSERT INTO children (
         therapist_id, username, password_hash, first_name, last_name,
-        date_of_birth, grade_level, problem_type
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+        date_of_birth, grade_level, problem_type, slp_id, school_id
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
     )
     .run(
       therapist_id,
@@ -52,7 +50,9 @@ export async function createStudent(
       data.last_name,
       data.date_of_birth || null,
       data.grade_level || null,
-      data.problem_type || null
+      data.problem_type || null,
+      data.slp_id || null,
+      data.school_id || null
     );
 
   const student = getStudentById(result.lastInsertRowid as number);

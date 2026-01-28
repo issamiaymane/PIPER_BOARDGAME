@@ -3,7 +3,7 @@
  * Handles UI state and user interactions
  */
 
-import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal, type GameplaySession, type SessionWithResponses, type LiveSessionInfo } from './services/api';
+import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal, type GameplaySession, type SessionWithResponses, type LiveSessionInfo, type School, type Member } from './services/api';
 import { therapistLiveService, type LiveCardEvent, type LiveResponseEvent, type SessionSummary } from './services/live';
 // Categories imported from @shared/categories are defined in ORGANIZED_*_CATEGORIES below
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
@@ -248,6 +248,11 @@ let currentTherapist: Therapist | null = null;
 let students: Student[] = [];
 let selectedStudentId: number | null = null;
 
+// Navigation state
+let currentPage = 'dashboard';
+let schools: School[] = [];
+let members: Member[] = [];
+
 // Evaluation upload state
 let pendingEvalFile: File | null = null;
 let extractedEvalData: EvalData | null = null;
@@ -279,13 +284,440 @@ function showDashboard(): void {
   if (currentTherapist) {
     $('therapist-name').textContent =
       `${currentTherapist.first_name} ${currentTherapist.last_name}`;
+    // Update sidebar therapist info
+    const sidebarName = document.getElementById('sidebar-therapist-name');
+    if (sidebarName) {
+      sidebarName.textContent = `${currentTherapist.first_name} ${currentTherapist.last_name}`;
+    }
+    const sidebarEmail = document.getElementById('sidebar-therapist-email');
+    if (sidebarEmail) {
+      sidebarEmail.textContent = currentTherapist.email;
+    }
   }
 
-  // Load students
-  loadStudents();
+  // Initialize navigation to dashboard page
+  navigate('dashboard');
 
   // Initialize live WebSocket for real-time session monitoring
   initLiveWebSocket();
+}
+
+// ============================================
+// Navigation Functions
+// ============================================
+
+function navigate(page: string): void {
+  currentPage = page;
+
+  // Update nav item active states
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.classList.toggle('active', item.getAttribute('data-page') === page);
+  });
+
+  // Show/hide pages
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const pageEl = document.getElementById(`page-${page}`);
+  if (pageEl) pageEl.classList.add('active');
+
+  // Load data for the page
+  if (page === 'dashboard') {
+    loadDashboardStats();
+  } else if (page === 'schools') {
+    loadSchools();
+  } else if (page === 'members') {
+    loadMembers();
+  } else if (page === 'students') {
+    loadStudentsPage();
+  }
+}
+
+async function loadStudentsPage(): Promise<void> {
+  // Load students list
+  try {
+    students = await api.listStudents();
+  } catch (err) {
+    console.error('Failed to load students:', err);
+  }
+
+  // If no student selected, show empty state and open modal
+  if (!selectedStudentId) {
+    show($('no-student-selected'));
+    hide($('student-profile'));
+    // Open the select student modal
+    openSelectStudentModal();
+  } else {
+    // Refresh the selected student's data
+    const student = students.find(s => s.id === selectedStudentId);
+    if (student) {
+      selectStudent(student.id);
+    } else {
+      // Student no longer exists
+      selectedStudentId = null;
+      show($('no-student-selected'));
+      hide($('student-profile'));
+    }
+  }
+}
+
+function openSelectStudentModal(): void {
+  renderStudentModalList();
+  openModal('select-student-modal');
+}
+
+function renderStudentModalList(filter = ''): void {
+  const listEl = document.getElementById('student-modal-list');
+  if (!listEl) return;
+
+  const filteredStudents = filter
+    ? students.filter(s =>
+        `${s.first_name} ${s.last_name}`.toLowerCase().includes(filter.toLowerCase())
+      )
+    : students;
+
+  if (filteredStudents.length === 0) {
+    listEl.innerHTML = filter
+      ? '<p class="empty-state">No students match your search</p>'
+      : '<p class="empty-state">No students yet. Click "+ ADD NEW" to create one.</p>';
+    return;
+  }
+
+  listEl.innerHTML = filteredStudents
+    .map(s => `
+      <div class="student-item" data-id="${s.id}">
+        <div class="student-avatar">${s.first_name.charAt(0)}${s.last_name.charAt(0)}</div>
+        <div class="student-info">
+          <span class="student-name">${escapeHtml(s.first_name)} ${escapeHtml(s.last_name)}</span>
+          <span class="student-grade">${s.grade_level || 'No grade'}</span>
+        </div>
+      </div>
+    `)
+    .join('');
+
+  // Add click handlers
+  listEl.querySelectorAll('.student-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = parseInt(el.getAttribute('data-id') || '0');
+      selectStudent(id);
+      closeModal('select-student-modal');
+    });
+  });
+}
+
+async function loadDashboardStats(): Promise<void> {
+  // Load all data for stats
+  try {
+    const [schoolsData, membersData, studentsData] = await Promise.all([
+      api.listSchools(),
+      api.listMembers(),
+      api.listStudents()
+    ]);
+
+    schools = schoolsData;
+    members = membersData;
+    students = studentsData;
+
+    // Update stats display
+    const statsSchools = document.getElementById('stats-schools');
+    const statsMembers = document.getElementById('stats-members');
+    const statsStudents = document.getElementById('stats-students');
+
+    if (statsSchools) statsSchools.textContent = String(schools.length);
+    if (statsMembers) statsMembers.textContent = String(members.length);
+    if (statsStudents) statsStudents.textContent = String(students.length);
+  } catch (err) {
+    console.error('Failed to load dashboard stats:', err);
+  }
+}
+
+// ============================================
+// Schools Management Functions
+// ============================================
+
+async function loadSchools(): Promise<void> {
+  const listEl = document.getElementById('schools-list');
+  if (!listEl) return;
+
+  try {
+    schools = await api.listSchools();
+    renderSchoolsList();
+  } catch (err) {
+    listEl.innerHTML = '<p class="empty-state">Failed to load schools</p>';
+  }
+}
+
+function renderSchoolsList(): void {
+  const listEl = document.getElementById('schools-list');
+  if (!listEl) return;
+
+  if (schools.length === 0) {
+    listEl.innerHTML = '<p class="empty-state">No schools yet. Click "+ ADD SCHOOL" to create one.</p>';
+    return;
+  }
+
+  listEl.innerHTML = schools.map(school => `
+    <div class="data-list-item" data-id="${school.id}">
+      <div class="data-list-item-info">
+        <div class="data-list-item-name">${escapeHtml(school.name)}</div>
+        <div class="data-list-item-detail">
+          ${school.contact_name ? escapeHtml(school.contact_name) : 'No contact'}
+          ${school.contact_email ? ` • ${escapeHtml(school.contact_email)}` : ''}
+        </div>
+      </div>
+      <div class="data-list-item-actions">
+        <span class="data-list-item-meta">${school.member_count || 0} members</span>
+        <button class="btn-delete-small" data-delete-school="${school.id}">Delete</button>
+      </div>
+    </div>
+  `).join('');
+
+  // Add delete handlers
+  listEl.querySelectorAll('[data-delete-school]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const id = parseInt(btn.getAttribute('data-delete-school') || '0');
+      if (id) handleDeleteSchool(id);
+    });
+  });
+}
+
+function populateSchoolModal(): void {
+  // Populate admin dropdown with members who have admin roles
+  const adminSelect = document.getElementById('school-admin') as HTMLSelectElement | null;
+  if (adminSelect) {
+    adminSelect.innerHTML = '<option value="">Select an admin</option>';
+    const admins = members.filter(m =>
+      m.roles.includes('School Admin') || m.roles.includes('SLP')
+    );
+    admins.forEach(member => {
+      const option = document.createElement('option');
+      option.value = String(member.id);
+      option.textContent = `${member.name} (${member.email})`;
+      adminSelect.appendChild(option);
+    });
+  }
+
+  // Populate members list with checkboxes
+  const membersListEl = document.getElementById('school-members-list');
+  if (membersListEl) {
+    if (members.length === 0) {
+      membersListEl.innerHTML = '<p class="empty-state-small">No members available</p>';
+    } else {
+      membersListEl.innerHTML = members.map(member => `
+        <label class="member-checkbox-item">
+          <input type="checkbox" name="school-members" value="${member.id}">
+          <div class="member-info">
+            <div class="member-name">${escapeHtml(member.name)}</div>
+            <div class="member-email">${escapeHtml(member.email)}</div>
+          </div>
+        </label>
+      `).join('');
+    }
+  }
+}
+
+async function handleCreateSchool(e: Event): Promise<void> {
+  e.preventDefault();
+
+  const nameInput = document.getElementById('school-name') as HTMLInputElement;
+  const contactNameInput = document.getElementById('school-contact-name') as HTMLInputElement;
+  const contactEmailInput = document.getElementById('school-contact-email') as HTMLInputElement;
+  const contactPhoneInput = document.getElementById('school-contact-phone') as HTMLInputElement;
+  const adminSelect = document.getElementById('school-admin') as HTMLSelectElement;
+  const errorEl = document.getElementById('create-school-error');
+
+  if (errorEl) hide(errorEl);
+
+  // Get selected members
+  const memberCheckboxes = document.querySelectorAll('input[name="school-members"]:checked');
+  const selectedMemberIds: number[] = [];
+  memberCheckboxes.forEach(checkbox => {
+    selectedMemberIds.push(parseInt((checkbox as HTMLInputElement).value));
+  });
+
+  try {
+    const school = await api.createSchool({
+      name: nameInput.value,
+      contact_name: contactNameInput.value || undefined,
+      contact_email: contactEmailInput.value || undefined,
+      contact_phone: contactPhoneInput.value || undefined,
+      admin_id: adminSelect.value ? parseInt(adminSelect.value) : undefined,
+      member_ids: selectedMemberIds.length > 0 ? selectedMemberIds : undefined,
+    });
+
+    schools.push(school);
+    renderSchoolsList();
+
+    // Update member school dropdown
+    updateMemberSchoolDropdown();
+
+    // Reload members to reflect school assignments
+    await loadMembers();
+
+    // Close modal and reset form
+    closeModal('create-school-modal');
+    (document.getElementById('create-school-form') as HTMLFormElement).reset();
+  } catch (err) {
+    if (errorEl) {
+      errorEl.textContent = (err as ApiError).message;
+      show(errorEl);
+    }
+  }
+}
+
+async function handleDeleteSchool(id: number): Promise<void> {
+  const school = schools.find(s => s.id === id);
+  if (!school) return;
+
+  const confirmed = confirm(`Delete "${school.name}"? This cannot be undone.`);
+  if (!confirmed) return;
+
+  try {
+    await api.deleteSchool(id);
+    schools = schools.filter(s => s.id !== id);
+    renderSchoolsList();
+    updateMemberSchoolDropdown();
+  } catch (err) {
+    alert((err as ApiError).message);
+  }
+}
+
+// ============================================
+// Members Management Functions
+// ============================================
+
+async function loadMembers(): Promise<void> {
+  const listEl = document.getElementById('members-list');
+  if (!listEl) return;
+
+  try {
+    members = await api.listMembers();
+    renderMembersList();
+  } catch (err) {
+    listEl.innerHTML = '<p class="empty-state">Failed to load members</p>';
+  }
+}
+
+function renderMembersList(): void {
+  const listEl = document.getElementById('members-list');
+  if (!listEl) return;
+
+  if (members.length === 0) {
+    listEl.innerHTML = '<p class="empty-state">No members yet. Click "+ INVITE MEMBER" to add one.</p>';
+    return;
+  }
+
+  listEl.innerHTML = members.map(member => {
+    const roleBadges = member.roles.map(role => {
+      const roleClass = role.toLowerCase().replace(/\s+/g, '-');
+      return `<span class="role-badge ${roleClass}">${escapeHtml(role)}</span>`;
+    }).join('');
+
+    return `
+      <div class="data-list-item" data-id="${member.id}">
+        <div class="data-list-item-info">
+          <div class="data-list-item-name">${escapeHtml(member.name)}</div>
+          <div class="data-list-item-detail">${escapeHtml(member.email)}</div>
+          <div class="role-badges">${roleBadges}</div>
+        </div>
+        <div class="data-list-item-actions">
+          ${member.school_name ? `<span class="data-list-item-meta">${escapeHtml(member.school_name)}</span>` : ''}
+          <button class="btn-delete-small" data-delete-member="${member.id}">Delete</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Add delete handlers
+  listEl.querySelectorAll('[data-delete-member]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const id = parseInt(btn.getAttribute('data-delete-member') || '0');
+      if (id) handleDeleteMember(id);
+    });
+  });
+}
+
+async function handleInviteMember(e: Event): Promise<void> {
+  e.preventDefault();
+
+  const nameInput = document.getElementById('member-name') as HTMLInputElement;
+  const emailInput = document.getElementById('member-email') as HTMLInputElement;
+  const passwordInput = document.getElementById('member-password') as HTMLInputElement;
+  const schoolSelect = document.getElementById('member-school') as HTMLSelectElement;
+  const errorEl = document.getElementById('invite-member-error');
+
+  // Get selected roles
+  const roleCheckboxes = document.querySelectorAll('input[name="member-roles"]:checked');
+  const selectedRoles: string[] = [];
+  roleCheckboxes.forEach(checkbox => {
+    selectedRoles.push((checkbox as HTMLInputElement).value);
+  });
+
+  if (selectedRoles.length === 0) {
+    if (errorEl) {
+      errorEl.textContent = 'Please select at least one role';
+      show(errorEl);
+    }
+    return;
+  }
+
+  if (errorEl) hide(errorEl);
+
+  try {
+    const member = await api.inviteMember({
+      name: nameInput.value,
+      email: emailInput.value,
+      password: passwordInput.value,
+      roles: selectedRoles,
+      school_id: schoolSelect.value ? parseInt(schoolSelect.value) : undefined,
+    });
+
+    members.push(member);
+    renderMembersList();
+
+    // Close modal and reset form
+    closeModal('invite-member-modal');
+    (document.getElementById('invite-member-form') as HTMLFormElement).reset();
+  } catch (err) {
+    if (errorEl) {
+      errorEl.textContent = (err as ApiError).message;
+      show(errorEl);
+    }
+  }
+}
+
+async function handleDeleteMember(id: number): Promise<void> {
+  const member = members.find(m => m.id === id);
+  if (!member) return;
+
+  const confirmed = confirm(`Remove "${member.name}"? This cannot be undone.`);
+  if (!confirmed) return;
+
+  try {
+    await api.deleteMember(id);
+    members = members.filter(m => m.id !== id);
+    renderMembersList();
+  } catch (err) {
+    alert((err as ApiError).message);
+  }
+}
+
+function updateMemberSchoolDropdown(): void {
+  const select = document.getElementById('member-school') as HTMLSelectElement | null;
+  if (!select) return;
+
+  // Keep the first "No school" option
+  const firstOption = select.options[0];
+  select.innerHTML = '';
+  select.appendChild(firstOption);
+
+  // Add school options
+  schools.forEach(school => {
+    const option = document.createElement('option');
+    option.value = String(school.id);
+    option.textContent = school.name;
+    select.appendChild(option);
+  });
 }
 
 // Modal helpers
@@ -299,47 +731,13 @@ function closeModal(modalId: string): void {
 
 // Modal close functionality is now handled via event listeners
 
-// Student list
+// Student list - now loaded via loadStudentsPage
 async function loadStudents(): Promise<void> {
-  const listEl = $('student-list');
-
   try {
     students = await api.listStudents();
-    renderStudentList();
   } catch (err) {
-    listEl.innerHTML = '<p class="empty-state">Failed to load students</p>';
+    console.error('Failed to load students:', err);
   }
-}
-
-function renderStudentList(): void {
-  const listEl = $('student-list');
-
-  if (students.length === 0) {
-    listEl.innerHTML = '<p class="empty-state">No students yet. Click "+ Add" to create one.</p>';
-    return;
-  }
-
-  listEl.innerHTML = students
-    .map(
-      (s) => `
-      <div class="student-item ${s.id === selectedStudentId ? 'selected' : ''}" data-id="${s.id}">
-        <div class="student-avatar">${s.first_name.charAt(0)}${s.last_name.charAt(0)}</div>
-        <div class="student-info">
-          <span class="student-name">${s.first_name} ${s.last_name}</span>
-          <span class="student-grade">${s.grade_level || 'No grade'}</span>
-        </div>
-      </div>
-    `
-    )
-    .join('');
-
-  // Add click handlers
-  listEl.querySelectorAll('.student-item').forEach((el) => {
-    el.addEventListener('click', () => {
-      const id = parseInt(el.getAttribute('data-id') || '0');
-      selectStudent(id);
-    });
-  });
 }
 
 function selectStudent(id: number): void {
@@ -347,9 +745,6 @@ function selectStudent(id: number): void {
   const student = students.find((s) => s.id === id);
 
   if (!student) return;
-
-  // Update selection in list
-  renderStudentList();
 
   // Show profile
   hide($('no-student-selected'));
@@ -359,7 +754,24 @@ function selectStudent(id: number): void {
   $('profile-avatar').textContent = `${student.first_name.charAt(0)}${student.last_name.charAt(0)}`;
   $('profile-name').textContent = `${student.first_name} ${student.last_name}`;
   $('profile-details').textContent = student.grade_level || 'No grade level set';
-  $('child-username').textContent = student.username;
+
+  // Populate student info card
+  $('child-first-name').textContent = student.first_name || '—';
+  $('child-last-name').textContent = student.last_name || '—';
+  $('child-grade').textContent = student.grade_level || '—';
+  $('child-dob').textContent = student.date_of_birth
+    ? new Date(student.date_of_birth).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+    : '—';
+
+  // Look up SLP name from members list
+  const slp = student.slp_id ? members.find(m => m.id === student.slp_id) : null;
+  $('child-slp').textContent = slp?.name || '—';
+
+  // Look up School name from schools list
+  const school = student.school_id ? schools.find(s => s.id === student.school_id) : null;
+  $('child-school').textContent = school?.name || '—';
+
+  $('child-username').textContent = student.username || '—';
 
   // Render evaluation data
   renderEvalData(student);
@@ -394,39 +806,68 @@ function renderEvalData(student: Student): void {
     return;
   }
 
-  // Build display HTML with categorized fields
-  const fieldCategories = {
-    basic: {
-      service_type: 'Service Type',
-      languages_spoken: 'Languages Spoken',
-      family_religion: 'Cultural/Religious Notes',
+  // Build display HTML with categorized sections
+  const sections = [
+    {
+      id: 'basic',
+      title: 'Basic Information',
+      icon: '📋',
+      fields: {
+        service_type: 'Service Type',
+        languages_spoken: 'Languages Spoken',
+        family_religion: 'Cultural/Religious Notes',
+      },
     },
-    medical: {
-      medical_history: 'Medical History',
-      other_diagnoses: 'Other Diagnoses',
-      speech_diagnoses: 'Speech/Language Diagnoses',
-      prior_therapy: 'Prior Therapy',
+    {
+      id: 'medical',
+      title: 'Medical & Diagnoses',
+      icon: '🏥',
+      fields: {
+        medical_history: 'Medical History',
+        other_diagnoses: 'Other Diagnoses',
+        speech_diagnoses: 'Speech/Language Diagnoses',
+        prior_therapy: 'Prior Therapy',
+      },
     },
-    performance: {
-      baseline_accuracy: 'Baseline Accuracy',
-      goals_benchmarks: 'Goals & Benchmarks',
-      target_sounds: 'Target Sounds',
+    {
+      id: 'performance',
+      title: 'Performance & Goals',
+      icon: '🎯',
+      fields: {
+        baseline_accuracy: 'Baseline Accuracy',
+        goals_benchmarks: 'Goals & Benchmarks',
+        target_sounds: 'Target Sounds',
+      },
     },
-    assessment: {
-      strengths: 'Strengths',
-      weaknesses: 'Weaknesses',
+    {
+      id: 'assessment',
+      title: 'Assessment',
+      icon: '📊',
+      fields: {
+        strengths: 'Strengths',
+        weaknesses: 'Weaknesses',
+      },
     },
-    other: {
-      teachers: 'Teachers/Contacts',
-      notes: 'Additional Notes',
+    {
+      id: 'other',
+      title: 'Other Information',
+      icon: '📝',
+      fields: {
+        teachers: 'Teachers/Contacts',
+        notes: 'Additional Notes',
+      },
     },
-  };
+  ];
 
-  let html = '<div class="eval-data-grid">';
+  let html = '<div class="eval-sections">';
 
-  // Render fields by category
-  for (const [category, fields] of Object.entries(fieldCategories)) {
-    for (const [key, label] of Object.entries(fields)) {
+  // Render each section as collapsible accordion
+  for (const section of sections) {
+    // Check if section has any non-empty values
+    let hasValues = false;
+    const fieldsHtml: string[] = [];
+
+    for (const [key, label] of Object.entries(section.fields)) {
       const field = evalData[key as keyof EvalData];
 
       let value: string | number | string[] | null = null;
@@ -438,7 +879,6 @@ function renderEvalData(student: Student): void {
         }
       }
 
-      // Show all fields, even if empty
       let displayValue: string;
       let isEmpty = false;
 
@@ -454,19 +894,70 @@ function renderEvalData(student: Student): void {
         }
       } else {
         displayValue = String(value);
+        hasValues = true;
       }
 
-      html += `
-        <div class="eval-data-item${isEmpty ? ' eval-data-empty' : ''}">
-          <span class="eval-data-label">${label}</span>
-          <span class="eval-data-value">${displayValue}</span>
+      if (!isEmpty) hasValues = true;
+
+      // Show all fields, including empty ones
+      fieldsHtml.push(`
+        <div class="eval-field-item${isEmpty ? ' empty' : ''}">
+          <span class="eval-field-label">${label}</span>
+          <span class="eval-field-value${isEmpty ? ' empty-value' : ''}">${escapeHtml(displayValue)}</span>
         </div>
+      `);
+    }
+
+    // Always render sections (show all fields)
+    if (fieldsHtml.length > 0) {
+      html += `
+        <details class="eval-section-accordion">
+          <summary class="eval-section-header">
+            <span class="eval-section-icon">${section.icon}</span>
+            <span class="eval-section-title">${section.title}</span>
+            <span class="eval-section-count">${fieldsHtml.length}</span>
+            <svg class="eval-section-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </summary>
+          <div class="eval-section-content">
+            ${fieldsHtml.join('')}
+          </div>
+        </details>
       `;
     }
   }
 
   html += '</div>';
   container.innerHTML = html;
+}
+
+// Populate Add Student modal dropdowns
+function populateStudentModal(): void {
+  // Populate SLP dropdown with members who have SLP role
+  const slpSelect = document.getElementById('student-slp') as HTMLSelectElement | null;
+  if (slpSelect) {
+    slpSelect.innerHTML = '<option value="">Select an SLP</option>';
+    const slps = members.filter(m => m.roles.includes('SLP'));
+    slps.forEach(member => {
+      const option = document.createElement('option');
+      option.value = String(member.id);
+      option.textContent = `${member.name} (${member.email})`;
+      slpSelect.appendChild(option);
+    });
+  }
+
+  // Populate School dropdown
+  const schoolSelect = document.getElementById('student-school') as HTMLSelectElement | null;
+  if (schoolSelect) {
+    schoolSelect.innerHTML = '<option value="">Select a school</option>';
+    schools.forEach(school => {
+      const option = document.createElement('option');
+      option.value = String(school.id);
+      option.textContent = school.name;
+      schoolSelect.appendChild(option);
+    });
+  }
 }
 
 // Add student
@@ -479,6 +970,8 @@ async function handleAddStudent(e: Event): Promise<void> {
   const password = ($('student-password') as HTMLInputElement).value;
   const grade = ($('student-grade') as HTMLSelectElement).value;
   const dob = ($('student-dob') as HTMLInputElement).value;
+  const slpSelect = document.getElementById('student-slp') as HTMLSelectElement;
+  const schoolSelect = document.getElementById('student-school') as HTMLSelectElement;
   const errorEl = $('add-student-error');
 
   hide(errorEl);
@@ -491,6 +984,8 @@ async function handleAddStudent(e: Event): Promise<void> {
       password,
       grade_level: grade || undefined,
       date_of_birth: dob || undefined,
+      slp_id: slpSelect.value ? parseInt(slpSelect.value) : undefined,
+      school_id: schoolSelect.value ? parseInt(schoolSelect.value) : undefined,
     });
 
     // Add to list and select
@@ -1853,18 +2348,99 @@ function bindEvents(): void {
     show($('login-form'));
   });
 
-  // Logout
+  // Logout (both header and sidebar buttons)
   $('logout-btn').addEventListener('click', handleLogout);
+  const sidebarLogoutBtn = document.getElementById('sidebar-logout-btn');
+  if (sidebarLogoutBtn) {
+    sidebarLogoutBtn.addEventListener('click', handleLogout);
+  }
 
-  // Add student
-  $('add-student-btn').addEventListener('click', () => {
-    openModal('add-student-modal');
+  // Navigation items
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const page = item.getAttribute('data-page');
+      if (page) navigate(page);
+    });
   });
+
+  // Add school button
+  const addSchoolBtn = document.getElementById('add-school-btn');
+  if (addSchoolBtn) {
+    addSchoolBtn.addEventListener('click', async () => {
+      // Load members for admin dropdown and member selection
+      await loadMembers();
+      populateSchoolModal();
+      openModal('create-school-modal');
+    });
+  }
+
+  // Create school form
+  const createSchoolForm = document.getElementById('create-school-form');
+  if (createSchoolForm) {
+    createSchoolForm.addEventListener('submit', handleCreateSchool);
+  }
+
+  // Invite member button
+  const inviteMemberBtn = document.getElementById('invite-member-btn');
+  if (inviteMemberBtn) {
+    inviteMemberBtn.addEventListener('click', () => {
+      // Load schools for dropdown before opening modal
+      loadSchools().then(() => {
+        updateMemberSchoolDropdown();
+        openModal('invite-member-modal');
+      });
+    });
+  }
+
+  // Invite member form
+  const inviteMemberForm = document.getElementById('invite-member-form');
+  if (inviteMemberForm) {
+    inviteMemberForm.addEventListener('submit', handleInviteMember);
+  }
+
+  // Add student (legacy button - may not exist in new modal-based flow)
+  const addStudentBtn = document.getElementById('add-student-btn');
+  if (addStudentBtn) {
+    addStudentBtn.addEventListener('click', async () => {
+      // Load members and schools for dropdowns
+      await Promise.all([loadMembers(), loadSchools()]);
+      populateStudentModal();
+      openModal('add-student-modal');
+    });
+  }
 
   $('add-student-form').addEventListener('submit', handleAddStudent);
 
   // Delete student
   $('delete-student-btn').addEventListener('click', handleDeleteStudent);
+
+  // Select student modal buttons
+  const selectStudentBtn = document.getElementById('select-student-btn');
+  if (selectStudentBtn) {
+    selectStudentBtn.addEventListener('click', openSelectStudentModal);
+  }
+
+  const changeStudentBtn = document.getElementById('change-student-btn');
+  if (changeStudentBtn) {
+    changeStudentBtn.addEventListener('click', openSelectStudentModal);
+  }
+
+  const addStudentFromModalBtn = document.getElementById('add-student-from-modal-btn');
+  if (addStudentFromModalBtn) {
+    addStudentFromModalBtn.addEventListener('click', async () => {
+      closeModal('select-student-modal');
+      await Promise.all([loadMembers(), loadSchools()]);
+      populateStudentModal();
+      openModal('add-student-modal');
+    });
+  }
+
+  const studentSearchInput = document.getElementById('student-search') as HTMLInputElement;
+  if (studentSearchInput) {
+    studentSearchInput.addEventListener('input', () => {
+      renderStudentModalList(studentSearchInput.value);
+    });
+  }
 
   // Upload PDF button
   $('upload-eval-btn').addEventListener('click', () => {
@@ -2027,84 +2603,10 @@ function bindEvents(): void {
   }
 }
 
-// Theme switching
-function initThemeSelector(): void {
-  const themeToggleBtn = document.getElementById('themeToggleBtn');
-  const themeSelectorPanel = document.getElementById('themeSelectorPanel');
-  const themeButtons = document.querySelectorAll('.theme-btn');
-
-  // Load saved theme from localStorage
-  let currentTheme = localStorage.getItem('piper-theme') || 'autumn';
-  document.body.classList.add(`theme-${currentTheme}`);
-
-  // Pre-select the saved theme button
-  themeButtons.forEach(btn => {
-    btn.classList.toggle('active', (btn as HTMLElement).dataset.theme === currentTheme);
-  });
-
-  // Toggle theme panel
-  themeToggleBtn?.addEventListener('click', () => {
-    themeSelectorPanel?.classList.toggle('hidden');
-  });
-
-  // Close panel when clicking outside
-  document.addEventListener('click', (e) => {
-    const target = e.target as HTMLElement;
-    if (!target.closest('.theme-selector-floating')) {
-      themeSelectorPanel?.classList.add('hidden');
-    }
-  });
-
-  // Update theme decorations
-  function updateThemeDecorations(theme: string) {
-    const decorations: Record<string, string[]> = {
-      spring: ['🌸', '🌷'],
-      summer: ['☀️', '🌻'],
-      autumn: ['🍂', '🍁'],
-      winter: ['❄', '🌨️']
-    };
-
-    const decorationIcon = decorations[theme] || decorations.autumn;
-    const snowflakes = document.querySelectorAll('.snowflake');
-    snowflakes.forEach((flake, index) => {
-      flake.textContent = decorationIcon[index % 2];
-    });
-  }
-
-  // Initialize decorations with saved theme
-  updateThemeDecorations(currentTheme);
-
-  // Theme button click handlers
-  themeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const theme = (btn as HTMLElement).dataset.theme || 'autumn';
-
-      // Remove previous theme class
-      document.body.classList.remove(`theme-${currentTheme}`);
-      document.documentElement.classList.remove(`theme-${currentTheme}`);
-      currentTheme = theme;
-      document.body.classList.add(`theme-${theme}`);
-      document.documentElement.classList.add(`theme-${theme}`);
-      localStorage.setItem('piper-theme', theme);
-
-      // Update active state
-      themeButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      // Update decorations
-      updateThemeDecorations(theme);
-    });
-  });
-
-  // Initialize decorations
-  updateThemeDecorations(currentTheme);
-}
-
 // Initialize
 export async function init(): Promise<void> {
   bindEvents();
   await checkAuth();
-  initThemeSelector();
   // Hide loading screen using shared component
   hideLoadingScreen(300);
 }

@@ -111,6 +111,8 @@ export const createStudentSchema = z.object({
   last_name: z.string().min(1, 'Last name is required'),
   date_of_birth: z.string().optional(),
   grade_level: z.string().optional(),
+  slp_id: z.number().optional(),
+  school_id: z.number().optional(),
 });
 
 export const updateStudentSchema = z.object({

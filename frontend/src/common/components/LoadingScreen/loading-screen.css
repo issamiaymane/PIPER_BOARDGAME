@@ -1,16 +1,15 @@
 /**
  * Shared Loading Screen Component
- * Used across boardgame.html and therapist.html for consistency
+ * Supports both game-style (snowflake) and admin-style (spinner)
  */
 
-/* Loading Screen Container */
+/* Loading Screen Container - Base */
 .loading-screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, var(--color-cream-light, #FFF9E6) 0%, var(--bg-warm, #FFE4B5) 50%, var(--color-cream, #FFDAB9) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +25,20 @@
 /* Loading Content */
 .loading-content {
     text-align: center;
+}
+
+/* ==========================================================================
+   GAME STYLE (default for game pages with snowflake)
+   ========================================================================== */
+/* Game pages use warm themed gradient background */
+.loading-screen {
+    background: linear-gradient(180deg,
+        var(--color-cream-light, #FFF9E6) 0%,
+        var(--bg-warm, #FFE4B5) 50%,
+        var(--color-cream, #FFDAB9) 100%);
+}
+
+.loading-content {
     color: var(--color-primary-dark, #5D4037);
 }
 
@@ -47,4 +60,40 @@
     font-size: 36px;
     margin: 0 0 30px 0;
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================================================================
+   ADMIN STYLE (for therapist dashboard with spinner)
+   ========================================================================== */
+/* When spinner is present, use admin portal styling */
+.loading-spinner {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #E2E8F0;
+    border-top-color: #1E293B;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 24px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Admin pages: when spinner is present, override to admin style */
+.loading-screen:has(.loading-spinner) {
+    background: #F1F5F9;
+}
+
+.loading-screen:has(.loading-spinner) .loading-content {
+    color: #1E293B;
+}
+
+.loading-screen:has(.loading-spinner) .loading-title {
+    font-family: 'OpenDyslexic', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E293B;
+    text-shadow: none;
+    margin: 0;
 }

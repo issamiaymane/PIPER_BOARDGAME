@@ -45,6 +45,8 @@ export interface Student {
   goals_pdf_original_name?: string;
   session_duration_minutes?: number; // IEP service time: duration per session
   session_frequency?: string; // IEP service time: e.g., "2x weekly"
+  slp_id?: number;
+  school_id?: number;
   created_at: string;
 }
 
@@ -101,6 +103,8 @@ export interface CreateStudentData {
   last_name: string;
   date_of_birth?: string;
   grade_level?: string;
+  slp_id?: number;
+  school_id?: number;
 }
 
 export interface ExtractedField {
@@ -470,6 +474,42 @@ class ApiService {
   getToken(): string | null {
     return this.token;
   }
+
+  // School methods
+  async listSchools(): Promise<School[]> {
+    return this.request<School[]>('/schools');
+  }
+
+  async createSchool(data: CreateSchoolData): Promise<School> {
+    return this.request<School>('/schools', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async deleteSchool(id: number): Promise<{ success: boolean }> {
+    return this.request<{ success: boolean }>(`/schools/${id}`, {
+      method: 'DELETE',
+    });
+  }
+
+  // Member methods
+  async listMembers(): Promise<Member[]> {
+    return this.request<Member[]>('/members');
+  }
+
+  async inviteMember(data: InviteMemberData): Promise<Member> {
+    return this.request<Member>('/members', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async deleteMember(id: number): Promise<{ success: boolean }> {
+    return this.request<{ success: boolean }>(`/members/${id}`, {
+      method: 'DELETE',
+    });
+  }
 }
 
 // Session types
@@ -523,6 +563,45 @@ export interface LiveSessionInfo {
   cardsPlayed: number;
   correctResponses: number;
   status: 'in_progress' | 'completed' | 'abandoned';
+}
+
+// School types
+export interface School {
+  id: number;
+  name: string;
+  contact_name: string | null;
+  contact_email: string | null;
+  contact_phone: string | null;
+  created_at: string;
+  member_count: number;
+}
+
+export interface CreateSchoolData {
+  name: string;
+  contact_name?: string;
+  contact_email?: string;
+  contact_phone?: string;
+  admin_id?: number;
+  member_ids?: number[];
+}
+
+// Member types
+export interface Member {
+  id: number;
+  name: string;
+  email: string;
+  roles: string[];
+  school_id: number | null;
+  school_name: string | null;
+  created_at: string;
+}
+
+export interface InviteMemberData {
+  name: string;
+  email: string;
+  password: string;
+  roles: string[];
+  school_id?: number;
 }
 
 // Export singleton instance

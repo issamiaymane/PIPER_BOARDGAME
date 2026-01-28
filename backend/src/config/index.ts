@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import { safetyGateConfig } from './safety-gate.js';
 import { calibrationConfig, calibrationPrompts } from './calibration.js';
 import { gameConfig } from './game.js';
+import { authConfig } from './auth.js';
 
 dotenv.config();
 
@@ -41,4 +42,7 @@ export const config = {
 
   // Game configuration
   game: gameConfig,
+
+  // Auth configuration
+  auth: authConfig,
 };

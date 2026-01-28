@@ -66,7 +66,7 @@ router.get('/me', authenticate, (req: Request, res: Response, next: NextFunction
     if (!therapist) {
       throw ApiError.notFound('Therapist not found');
     }
-    res.json(therapist);
+    res.json({ therapist });
   } catch (error) {
     next(error);
   }

@@ -66,6 +66,17 @@ export type {
 // Voice validation schemas
 export { ClientMessageSchema, CardContextSchema } from './voice.js';
 
+// Member and School types
+export type {
+  Member,
+  MemberResponse,
+  CreateMemberRequest,
+  UpdateMemberRequest,
+  School,
+  CreateSchoolRequest,
+  UpdateSchoolRequest,
+} from './member.js';
+
 // Express extensions
 declare global {
   namespace Express {

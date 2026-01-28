@@ -13,6 +13,8 @@
     "test:safety-gate": "tsx src/services/safety-gate/SafetyGateTests.ts"
   },
   "dependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "bcrypt": "^6.0.0",
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "^11.6.0",
     "cors": "^2.8.5",

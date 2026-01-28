@@ -59,8 +59,12 @@ export function initializeDatabase(): void {
       eval_pdf_path TEXT,
       eval_pdf_uploaded_at TEXT,
       eval_pdf_original_name TEXT,
+      slp_id INTEGER,
+      school_id INTEGER,
       created_at TEXT DEFAULT CURRENT_TIMESTAMP,
-      FOREIGN KEY (therapist_id) REFERENCES therapists(id) ON DELETE CASCADE
+      FOREIGN KEY (therapist_id) REFERENCES therapists(id) ON DELETE CASCADE,
+      FOREIGN KEY (slp_id) REFERENCES therapist_members(id) ON DELETE SET NULL,
+      FOREIGN KEY (school_id) REFERENCES therapist_schools(id) ON DELETE SET NULL
     )
   `);
 
@@ -147,6 +151,38 @@ export function initializeDatabase(): void {
       calibrated_at TEXT DEFAULT CURRENT_TIMESTAMP,
       FOREIGN KEY (child_id) REFERENCES children(id) ON DELETE CASCADE
     )
+  `);
+
+  // Create schools table (for therapist dashboard management)
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS therapist_schools (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      contact_name TEXT,
+      contact_email TEXT,
+      contact_phone TEXT,
+      created_at TEXT DEFAULT CURRENT_TIMESTAMP
+    )
+  `);
+
+  // Create members table (for therapist dashboard management)
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS therapist_members (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      email TEXT NOT NULL UNIQUE,
+      password_hash TEXT NOT NULL,
+      roles TEXT NOT NULL,
+      school_id INTEGER,
+      created_at TEXT DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (school_id) REFERENCES therapist_schools(id) ON DELETE SET NULL
+    )
+  `);
+
+  // Create indexes for schools and members
+  db.exec(`
+    CREATE INDEX IF NOT EXISTS idx_members_school ON therapist_members(school_id);
+    CREATE INDEX IF NOT EXISTS idx_members_email ON therapist_members(email);
   `);
 
   // Run migrations for existing tables
@@ -262,6 +298,30 @@ function runMigrations(db: Database.Database): void {
   if (!responseColumnNames.includes('intervention_chosen')) {
     db.exec('ALTER TABLE session_responses ADD COLUMN intervention_chosen TEXT');
     logger.info('Migration: Added intervention_chosen column to session_responses');
+  }
+
+  // Get existing columns in therapist_members table
+  const memberColumns = db
+    .prepare("PRAGMA table_info(therapist_members)")
+    .all() as { name: string }[];
+  const memberColumnNames = memberColumns.map((c) => c.name);
+
+  // Add password_hash if missing
+  if (memberColumnNames.length > 0 && !memberColumnNames.includes('password_hash')) {
+    db.exec("ALTER TABLE therapist_members ADD COLUMN password_hash TEXT DEFAULT ''");
+    logger.info('Migration: Added password_hash column to therapist_members');
+  }
+
+  // Add slp_id to children table if missing
+  if (!columnNames.includes('slp_id')) {
+    db.exec('ALTER TABLE children ADD COLUMN slp_id INTEGER');
+    logger.info('Migration: Added slp_id column to children');
+  }
+
+  // Add school_id to children table if missing
+  if (!columnNames.includes('school_id')) {
+    db.exec('ALTER TABLE children ADD COLUMN school_id INTEGER');
+    logger.info('Migration: Added school_id column to children');
   }
 }
 
