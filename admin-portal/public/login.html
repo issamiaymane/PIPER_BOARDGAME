@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Piper</title>
+    <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'OpenDyslexic', -apple-system, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 48px 32px;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #64748B;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 24px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #1E293B;
+        }
+
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #64748B;
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1E293B;
+            margin-bottom: 12px;
+        }
+
+        input {
+            width: 100%;
+            padding: 20px 24px;
+            font-size: 24px;
+            font-family: 'OpenDyslexic', sans-serif;
+            border: 3px solid #E2E8F0;
+            border-radius: 16px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus {
+            border-color: #667eea;
+        }
+
+        input::placeholder {
+            color: #CBD5E1;
+        }
+
+        input[type="text"] {
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            text-align: center;
+        }
+
+        input[type="date"] {
+            text-align: center;
+        }
+
+        .login-btn {
+            display: block;
+            width: 100%;
+            padding: 24px 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'OpenDyslexic', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.4);
+            margin-top: 16px;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px -5px rgba(102, 126, 234, 0.5);
+        }
+
+        .login-btn:active {
+            transform: translateY(-2px);
+        }
+
+        .login-btn:disabled {
+            background: #CBD5E1;
+            box-shadow: none;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .error-message {
+            background: #FEE2E2;
+            color: #DC2626;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            margin-bottom: 24px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .help-text {
+            margin-top: 24px;
+            font-size: 14px;
+            color: #94A3B8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+        </a>
+
+        <h1>My Therapy</h1>
+        <p class="subtitle">Enter your initials and birthday</p>
+
+        <div id="error-message" class="error-message"></div>
+
+        <form id="login-form">
+            <div class="form-group">
+                <label for="initials">Your Initials</label>
+                <input
+                    type="text"
+                    id="initials"
+                    name="initials"
+                    placeholder="JD"
+                    maxlength="4"
+                    required
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">Your Birthday</label>
+                <input
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="login-btn" id="login-btn">
+                Let's Go!
+            </button>
+        </form>
+
+        <p class="help-text">Ask your parent or therapist if you need help!</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('login-form');
+        const initialsInput = document.getElementById('initials');
+        const birthdateInput = document.getElementById('birthdate');
+        const loginBtn = document.getElementById('login-btn');
+        const errorMessage = document.getElementById('error-message');
+
+        // Auto-uppercase initials
+        initialsInput.addEventListener('input', (e) => {
+            e.target.value = e.target.value.toUpperCase();
+        });
+
+        // Handle form submission
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const initials = initialsInput.value.trim().toUpperCase();
+            const birthdate = birthdateInput.value;
+
+            if (!initials || !birthdate) {
+                showError('Please fill in both fields!');
+                return;
+            }
+
+            loginBtn.disabled = true;
+            loginBtn.textContent = 'Checking...';
+            hideError();
+
+            try {
+                const response = await fetch('/api/student-login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ initials, birthdate })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Login failed');
+                }
+
+                // Store student data in sessionStorage
+                sessionStorage.setItem('student', JSON.stringify(data));
+
+                // Redirect to SPEECHMAP therapy app
+                window.location.href = 'http://69.62.106.83:3000';
+
+            } catch (error) {
+                showError('Oops! Check your initials and birthday.');
+                loginBtn.disabled = false;
+                loginBtn.textContent = "Let's Go!";
+            }
+        });
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.classList.add('show');
+        }
+
+        function hideError() {
+            errorMessage.classList.remove('show');
+        }
+    </script>
+</body>
+</html>

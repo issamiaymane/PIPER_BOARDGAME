@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piper Admin</title>
+    <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
+    <script
+        async
+        crossorigin="anonymous"
+        data-clerk-publishable-key="pk_test_Z29sZGVuLXdyZW4tNzQuY2xlcmsuYWNjb3VudHMuZGV2JA"
+        src="https://golden-wren-74.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+        type="text/javascript">
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'OpenDyslexic', 'Open Dyslexic', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #F1F5F9;
+            min-height: 100vh;
+        }
+
+        /* Login container */
+        .login-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            color: #64748B;
+        }
+
+        /* Dashboard layout */
+        .dashboard-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 240px;
+            background: white;
+            border-right: 1px solid #E2E8F0;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+        }
+
+        .sidebar-header {
+            padding: 24px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .sidebar-header h1 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1E293B;
+        }
+
+        .sidebar-nav {
+            flex: 1;
+            padding: 16px 0;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 24px;
+            color: #64748B;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .nav-item:hover {
+            background: #F1F5F9;
+            color: #1E293B;
+        }
+
+        .nav-item.active {
+            background: #F1F5F9;
+            color: #1E293B;
+            font-weight: 600;
+        }
+
+        .nav-item svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .sidebar-footer {
+            padding: 16px 24px;
+            border-top: 1px solid #E2E8F0;
+        }
+
+        .user-info {
+            margin-bottom: 12px;
+        }
+
+        .user-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1E293B;
+        }
+
+        .user-email {
+            font-size: 12px;
+            color: #64748B;
+        }
+
+        .sign-out-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: none;
+            border: none;
+            color: #64748B;
+            font-size: 14px;
+            font-family: 'OpenDyslexic', 'Open Dyslexic', -apple-system, BlinkMacSystemFont, sans-serif;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .sign-out-btn:hover {
+            color: #1E293B;
+        }
+
+        .sign-out-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            margin-left: 240px;
+            padding: 32px;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+
+        .page-header-text h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1E293B;
+            margin-bottom: 4px;
+        }
+
+        .page-header-text p {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: 'OpenDyslexic', 'Open Dyslexic', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #1E293B;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #334155;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #1E293B;
+            border: 1px solid #E2E8F0;
+        }
+
+        .btn-secondary:hover {
+            background: #F8FAFC;
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Stat cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .stat-card-title {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        .stat-card-icon {
+            color: #94A3B8;
+        }
+
+        .stat-card-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .stat-card-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1E293B;
+        }
+
+        /* Table */
+        .table-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #64748B;
+            border-bottom: 1px solid #E2E8F0;
+            background: #F8FAFC;
+        }
+
+        .data-table td {
+            padding: 16px 24px;
+            font-size: 14px;
+            color: #1E293B;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table .empty-state {
+            text-align: center;
+            color: #64748B;
+            padding: 48px 24px;
+        }
+
+        .action-btn {
+            background: none;
+            border: none;
+            color: #64748B;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .action-btn:hover {
+            color: #1E293B;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 560px;
+            max-height: 90vh;
+            overflow-y: auto;
+            transform: scale(0.95);
+            transition: all 0.2s;
+        }
+
+        .modal-overlay.active .modal {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .modal-header h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1E293B;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: #64748B;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .modal-close:hover {
+            color: #1E293B;
+        }
+
+        .modal-close svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            padding: 24px;
+            border-top: 1px solid #E2E8F0;
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1E293B;
+            margin-bottom: 8px;
+        }
+
+        .form-group label .required {
+            color: #EF4444;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: 'OpenDyslexic', 'Open Dyslexic', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #1E293B;
+            transition: all 0.2s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #1E293B;
+            box-shadow: 0 0 0 3px rgba(30, 41, 59, 0.1);
+        }
+
+        .form-control::placeholder {
+            color: #94A3B8;
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394A3B8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 20px;
+            padding-right: 40px;
+        }
+
+        .form-hint {
+            font-size: 12px;
+            color: #64748B;
+            margin-top: 6px;
+        }
+
+        /* Checkboxes */
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #E2E8F0;
+            border-radius: 4px;
+            cursor: pointer;
+            accent-color: #1E293B;
+        }
+
+        .checkbox-item span {
+            font-size: 14px;
+            color: #1E293B;
+        }
+
+        /* Role badges */
+        .role-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #F1F5F9;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #64748B;
+            margin-right: 4px;
+            margin-bottom: 4px;
+        }
+
+        /* Page containers (hidden by default) */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+            .dashboard-wrapper {
+                flex-direction: column;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            .page-header {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="login-wrapper">
+            <div class="loading">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Create School Modal -->
+    <div id="create-school-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Create School</h3>
+                <button class="modal-close" onclick="closeModal('create-school-modal')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="create-school-form">
+                    <div class="form-group">
+                        <label>School Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="schoolName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Person's Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Person's Email <span class="required">*</span></label>
+                        <input type="email" class="form-control" name="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Person's Phone <span class="required">*</span></label>
+                        <input type="tel" class="form-control" name="contactPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Admin/Moderator <span class="required">*</span></label>
+                        <select class="form-control" name="adminId" required>
+                            <option value="">Select an admin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Members</label>
+                        <div class="form-control" style="color: #94A3B8; background: #F8FAFC;">No members available</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('create-school-modal')">Cancel</button>
+                <button class="btn btn-primary" onclick="createSchool()">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Invite Member Modal -->
+    <div id="invite-member-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Invite Member</h3>
+                <button class="modal-close" onclick="closeModal('invite-member-modal')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="invite-member-form">
+                    <div class="form-group">
+                        <label>Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="memberName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" class="form-control" name="memberEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password <span class="required">*</span></label>
+                        <input type="password" class="form-control" name="memberPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Roles <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="roles" value="School Admin/Moderator">
+                                <span>School Admin/Moderator</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="roles" value="SLP/A">
+                                <span>SLP/A</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="roles" value="Learning Coach/Parent">
+                                <span>Learning Coach/Parent</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="roles" value="Student">
+                                <span>Student</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('invite-member-modal')">Cancel</button>
+                <button class="btn btn-primary" onclick="inviteMember()">Invite</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Student Modal -->
+    <div id="create-student-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Add Student</h3>
+                <button class="modal-close" onclick="closeModal('create-student-modal')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="create-student-form">
+                    <div class="form-group">
+                        <label>Student Name <span class="required">*</span></label>
+                        <input type="text" class="form-control" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Birthdate <span class="required">*</span></label>
+                        <input type="date" class="form-control" name="birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Assigned SLP <span class="required">*</span></label>
+                        <select class="form-control" name="slpId" required>
+                            <option value="">Select an SLP</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>School <span class="required">*</span></label>
+                        <select class="form-control" name="schoolId" required>
+                            <option value="">Select a school</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('create-student-modal')">Cancel</button>
+                <button class="btn btn-primary" onclick="createStudent()">Add Student</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Session Modal -->
+    <div id="create-session-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>New Session</h3>
+                <button class="modal-close" onclick="closeModal('create-session-modal')">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="create-session-form">
+                    <div class="form-group">
+                        <label>Student <span class="required">*</span></label>
+                        <select class="form-control" name="studentId" required>
+                            <option value="">Select a student</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>SLP <span class="required">*</span></label>
+                        <select class="form-control" name="slpId" required>
+                            <option value="">Select an SLP</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>School <span class="required">*</span></label>
+                        <select class="form-control" name="schoolId" required>
+                            <option value="">Select a school</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Date & Time <span class="required">*</span></label>
+                        <input type="datetime-local" class="form-control" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Notes</label>
+                        <textarea class="form-control" name="notes" rows="3" placeholder="Optional session notes..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('create-session-modal')">Cancel</button>
+                <button class="btn btn-primary" onclick="createSession()">Create Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // API Configuration
+        const API_URL = 'http://69.62.106.83:3001/api';
+        let schools = [];
+        let members = [];
+        let students = [];
+        let sessions = [];
+
+        // Helper function for API calls with Clerk token
+        async function apiCall(endpoint, options = {}) {
+            console.log('[API] 1. Starting call to:', endpoint);
+
+            try {
+                console.log('[API] 2. Getting token...');
+                const token = await Clerk.session.getToken({ template: 'api-auth' });
+                console.log('[API] 3. Token obtained:', token ? 'YES' : 'NO');
+
+                const url = `${API_URL}${endpoint}`;
+                console.log('[API] 4. Full URL:', url);
+
+                const config = {
+                    method: options.method || 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    }
+                };
+                if (options.body) config.body = options.body;
+
+                console.log('[API] 5. About to fetch...');
+                const response = await fetch(url, config);
+                console.log('[API] 6. Response received:', response.status);
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error || 'API Error');
+                }
+
+                const data = await response.json();
+                console.log('[API] 7. Data:', data);
+                return data;
+            } catch (error) {
+                console.error('[API] ERROR:', error);
+                throw error;
+            }
+        }
+
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        // Load initial data
+        async function loadData() {
+            try {
+                [schools, members, students, sessions] = await Promise.all([
+                    apiCall('/schools'),
+                    apiCall('/members'),
+                    apiCall('/students'),
+                    apiCall('/sessions')
+                ]);
+                renderSchoolsTable();
+                renderMembersTable();
+                renderStudentsTable();
+                renderSessionsTable();
+                updateAdminDropdown();
+                updateDropdowns();
+                await loadStats();
+            } catch (error) {
+                console.error('Failed to load data:', error);
+            }
+        }
+
+        async function loadStats() {
+            try {
+                const stats = await apiCall('/stats');
+                document.getElementById('stat-schools').textContent = stats.schools;
+                document.getElementById('stat-members').textContent = stats.members;
+                document.getElementById('stat-sessions').textContent = stats.sessions;
+            } catch (error) {
+                console.error('Failed to load stats:', error);
+            }
+        }
+
+        // School functions
+        async function createSchool() {
+            const form = document.getElementById('create-school-form');
+            const formData = new FormData(form);
+
+            try {
+                const school = await apiCall('/schools', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        name: formData.get('schoolName'),
+                        contactName: formData.get('contactName'),
+                        contactEmail: formData.get('contactEmail'),
+                        contactPhone: formData.get('contactPhone'),
+                        adminId: formData.get('adminId') || null
+                    })
+                });
+                schools.unshift({ ...school, member_count: 0 });
+                renderSchoolsTable();
+                await loadStats();
+                closeModal('create-school-modal');
+                form.reset();
+            } catch (error) {
+                alert('Failed to create school: ' + error.message);
+            }
+        }
+
+        async function deleteSchool(id) {
+            if (confirm('Are you sure you want to delete this school?')) {
+                try {
+                    await apiCall(`/schools/${id}`, { method: 'DELETE' });
+                    schools = schools.filter(s => s.id !== id);
+                    renderSchoolsTable();
+                    await loadStats();
+                } catch (error) {
+                    alert('Failed to delete school: ' + error.message);
+                }
+            }
+        }
+
+        function renderSchoolsTable() {
+            const tbody = document.getElementById('schools-tbody');
+            if (!tbody) return;
+
+            if (schools.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="empty-state">No schools yet. Create your first school.</td>
+                    </tr>
+                `;
+            } else {
+                tbody.innerHTML = schools.map(school => `
+                    <tr>
+                        <td>${school.name}</td>
+                        <td>${school.contact_name}</td>
+                        <td>${school.contact_email}</td>
+                        <td>${school.contact_phone}</td>
+                        <td>${school.member_count || 0}</td>
+                        <td>
+                            <button class="action-btn" onclick="deleteSchool(${school.id})" title="Delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        // Member functions
+        async function inviteMember() {
+            const form = document.getElementById('invite-member-form');
+            const formData = new FormData(form);
+
+            const selectedRoles = [];
+            form.querySelectorAll('input[name="roles"]:checked').forEach(cb => {
+                selectedRoles.push(cb.value);
+            });
+
+            if (selectedRoles.length === 0) {
+                alert('Please select at least one role');
+                return;
+            }
+
+            try {
+                const member = await apiCall('/members', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        name: formData.get('memberName'),
+                        email: formData.get('memberEmail'),
+                        roles: selectedRoles
+                    })
+                });
+                members.unshift(member);
+                renderMembersTable();
+                updateAdminDropdown();
+                await loadStats();
+                closeModal('invite-member-modal');
+                form.reset();
+            } catch (error) {
+                alert('Failed to invite member: ' + error.message);
+            }
+        }
+
+        async function deleteMember(id) {
+            if (confirm('Are you sure you want to delete this member?')) {
+                try {
+                    await apiCall(`/members/${id}`, { method: 'DELETE' });
+                    members = members.filter(m => m.id !== id);
+                    renderMembersTable();
+                    updateAdminDropdown();
+                    await loadStats();
+                } catch (error) {
+                    alert('Failed to delete member: ' + error.message);
+                }
+            }
+        }
+
+        function renderMembersTable() {
+            const tbody = document.getElementById('members-tbody');
+            if (!tbody) return;
+
+            if (members.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="4" class="empty-state">No members yet. Invite your first member.</td>
+                    </tr>
+                `;
+            } else {
+                tbody.innerHTML = members.map(member => `
+                    <tr>
+                        <td>${member.name}</td>
+                        <td>${member.email}</td>
+                        <td>${member.roles.map(r => `<span class="role-badge">${r}</span>`).join('')}</td>
+                        <td>
+                            <button class="action-btn" onclick="deleteMember(${member.id})" title="Delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        function updateAdminDropdown() {
+            const adminSelect = document.querySelector('select[name="adminId"]');
+            if (!adminSelect) return;
+
+            const admins = members.filter(m => m.roles.includes('School Admin/Moderator'));
+            adminSelect.innerHTML = '<option value="">Select an admin</option>' +
+                admins.map(a => `<option value="${a.id}">${a.name}</option>`).join('');
+        }
+
+        // Update all dropdowns for students and sessions
+        function updateDropdowns() {
+            // SLP dropdowns
+            const slps = members.filter(m => m.roles.includes('SLP/A'));
+            document.querySelectorAll('select[name="slpId"]').forEach(select => {
+                select.innerHTML = '<option value="">Select an SLP</option>' +
+                    slps.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
+            });
+
+            // School dropdowns
+            document.querySelectorAll('select[name="schoolId"]').forEach(select => {
+                select.innerHTML = '<option value="">Select a school</option>' +
+                    schools.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
+            });
+
+            // Student dropdown (for sessions)
+            const studentSelect = document.querySelector('#create-session-form select[name="studentId"]');
+            if (studentSelect) {
+                studentSelect.innerHTML = '<option value="">Select a student</option>' +
+                    students.map(s => `<option value="${s.id}">${s.name} (${s.initials})</option>`).join('');
+            }
+        }
+
+        // Student functions
+        async function createStudent() {
+            const form = document.getElementById('create-student-form');
+            const formData = new FormData(form);
+
+            try {
+                const student = await apiCall('/students', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        name: formData.get('studentName'),
+                        birthdate: formData.get('birthdate'),
+                        slpId: formData.get('slpId'),
+                        schoolId: formData.get('schoolId')
+                    })
+                });
+                students.unshift(student);
+                renderStudentsTable();
+                updateDropdowns();
+                await loadStats();
+                closeModal('create-student-modal');
+                form.reset();
+            } catch (error) {
+                alert('Failed to create student: ' + error.message);
+            }
+        }
+
+        async function deleteStudent(id) {
+            if (confirm('Are you sure you want to delete this student?')) {
+                try {
+                    await apiCall(`/students/${id}`, { method: 'DELETE' });
+                    students = students.filter(s => s.id !== id);
+                    renderStudentsTable();
+                    updateDropdowns();
+                    await loadStats();
+                } catch (error) {
+                    alert('Failed to delete student: ' + error.message);
+                }
+            }
+        }
+
+        function renderStudentsTable() {
+            const tbody = document.getElementById('students-tbody');
+            if (!tbody) return;
+
+            if (students.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="empty-state">No students yet. Add your first student.</td>
+                    </tr>
+                `;
+            } else {
+                tbody.innerHTML = students.map(student => `
+                    <tr>
+                        <td>${student.name}</td>
+                        <td>${student.initials}</td>
+                        <td>${student.birthdate}</td>
+                        <td>${student.slp_name || '-'}</td>
+                        <td>${student.school_name || '-'}</td>
+                        <td>
+                            <button class="action-btn" onclick="deleteStudent(${student.id})" title="Delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        // Session functions
+        async function createSession() {
+            const form = document.getElementById('create-session-form');
+            const formData = new FormData(form);
+
+            try {
+                const session = await apiCall('/sessions', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        studentId: formData.get('studentId'),
+                        slpId: formData.get('slpId'),
+                        schoolId: formData.get('schoolId'),
+                        date: formData.get('date'),
+                        notes: formData.get('notes')
+                    })
+                });
+                sessions.unshift(session);
+                renderSessionsTable();
+                await loadStats();
+                closeModal('create-session-modal');
+                form.reset();
+            } catch (error) {
+                alert('Failed to create session: ' + error.message);
+            }
+        }
+
+        async function deleteSession(id) {
+            if (confirm('Are you sure you want to delete this session?')) {
+                try {
+                    await apiCall(`/sessions/${id}`, { method: 'DELETE' });
+                    sessions = sessions.filter(s => s.id !== id);
+                    renderSessionsTable();
+                    await loadStats();
+                } catch (error) {
+                    alert('Failed to delete session: ' + error.message);
+                }
+            }
+        }
+
+        function renderSessionsTable() {
+            const tbody = document.getElementById('sessions-tbody');
+            if (!tbody) return;
+
+            if (sessions.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="7" class="empty-state">No sessions yet.</td>
+                    </tr>
+                `;
+            } else {
+                tbody.innerHTML = sessions.map(session => `
+                    <tr>
+                        <td>${session.student_name || '-'} ${session.student_initials ? '(' + session.student_initials + ')' : ''}</td>
+                        <td>${session.slp_name || '-'}</td>
+                        <td>${session.school_name || '-'}</td>
+                        <td>${new Date(session.date).toLocaleString()}</td>
+                        <td><span class="role-badge">${session.status}</span></td>
+                        <td>${session.notes || '-'}</td>
+                        <td>
+                            <button class="action-btn" onclick="deleteSession(${session.id})" title="Delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        // Simple router state
+        let currentPage = 'dashboard';
+
+        function navigate(page) {
+            currentPage = page;
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+
+            document.getElementById(`page-${page}`)?.classList.add('active');
+            document.querySelector(`[data-page="${page}"]`)?.classList.add('active');
+        }
+
+        window.addEventListener('load', async () => {
+            await Clerk.load();
+
+            const appDiv = document.getElementById('app');
+
+            // Clean up URL hash after SSO callback (removes #/sso-callback)
+            if (window.location.hash && window.location.hash.includes('sso-callback')) {
+                window.history.replaceState(null, '', window.location.pathname);
+            }
+
+            if (Clerk.user) {
+                const userName = Clerk.user.fullName || Clerk.user.firstName || 'Admin';
+                const userEmail = Clerk.user.primaryEmailAddress?.emailAddress || '';
+
+                appDiv.innerHTML = `
+                    <div class="dashboard-wrapper">
+                        <!-- Sidebar -->
+                        <aside class="sidebar">
+                            <div class="sidebar-header">
+                                <h1>Piper Admin</h1>
+                            </div>
+                            <nav class="sidebar-nav">
+                                <a class="nav-item active" data-page="dashboard" onclick="navigate('dashboard')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                    </svg>
+                                    Dashboard
+                                </a>
+                                <a class="nav-item" data-page="schools" onclick="navigate('schools')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                    Schools
+                                </a>
+                                <a class="nav-item" data-page="members" onclick="navigate('members')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                    Members
+                                </a>
+                                <a class="nav-item" data-page="students" onclick="navigate('students')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                    </svg>
+                                    Students
+                                </a>
+                                <a class="nav-item" data-page="sessions" onclick="navigate('sessions')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    Sessions
+                                </a>
+                            </nav>
+                            <div class="sidebar-footer">
+                                <div class="user-info">
+                                    <div class="user-name">${userName}</div>
+                                    <div class="user-email">${userEmail}</div>
+                                </div>
+                                <button class="sign-out-btn" onclick="Clerk.signOut()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                                    </svg>
+                                    Sign out
+                                </button>
+                            </div>
+                        </aside>
+
+                        <!-- Main Content -->
+                        <main class="main-content">
+                            <!-- Dashboard Page -->
+                            <div id="page-dashboard" class="page active">
+                                <div class="page-header">
+                                    <div class="page-header-text">
+                                        <h2>Dashboard</h2>
+                                        <p>Welcome back, ${userName}</p>
+                                    </div>
+                                </div>
+                                <div class="stats-grid">
+                                    <div class="stat-card">
+                                        <div class="stat-card-header">
+                                            <span class="stat-card-title">Total Schools</span>
+                                            <span class="stat-card-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="stat-card-value" id="stat-schools">0</div>
+                                    </div>
+                                    <div class="stat-card">
+                                        <div class="stat-card-header">
+                                            <span class="stat-card-title">Total Members</span>
+                                            <span class="stat-card-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="stat-card-value" id="stat-members">0</div>
+                                    </div>
+                                    <div class="stat-card">
+                                        <div class="stat-card-header">
+                                            <span class="stat-card-title">Total Sessions</span>
+                                            <span class="stat-card-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="stat-card-value" id="stat-sessions">0</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Schools Page -->
+                            <div id="page-schools" class="page">
+                                <div class="page-header">
+                                    <div class="page-header-text">
+                                        <h2>Schools</h2>
+                                        <p>Manage schools in the system</p>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="openModal('create-school-modal')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        Add School
+                                    </button>
+                                </div>
+                                <div class="table-container">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>School Name</th>
+                                                <th>Contact Person</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Members</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="schools-tbody">
+                                            <tr>
+                                                <td colspan="6" class="empty-state">No schools yet. Create your first school.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Members Page -->
+                            <div id="page-members" class="page">
+                                <div class="page-header">
+                                    <div class="page-header-text">
+                                        <h2>Members</h2>
+                                        <p>Manage members and their roles</p>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="openModal('invite-member-modal')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        Invite Member
+                                    </button>
+                                </div>
+                                <div class="table-container">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Roles</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="members-tbody">
+                                            <tr>
+                                                <td colspan="4" class="empty-state">No members yet. Invite your first member.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Students Page -->
+                            <div id="page-students" class="page">
+                                <div class="page-header">
+                                    <div class="page-header-text">
+                                        <h2>Students</h2>
+                                        <p>Manage students in the system</p>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="openModal('create-student-modal')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        Add Student
+                                    </button>
+                                </div>
+                                <div class="table-container">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Initials</th>
+                                                <th>Birthdate</th>
+                                                <th>SLP</th>
+                                                <th>School</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="students-tbody">
+                                            <tr>
+                                                <td colspan="6" class="empty-state">No students yet. Add your first student.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Sessions Page -->
+                            <div id="page-sessions" class="page">
+                                <div class="page-header">
+                                    <div class="page-header-text">
+                                        <h2>Sessions</h2>
+                                        <p>View and manage therapy sessions</p>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="openModal('create-session-modal')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                        New Session
+                                    </button>
+                                </div>
+                                <div class="table-container">
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Student</th>
+                                                <th>SLP</th>
+                                                <th>School</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Notes</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="sessions-tbody">
+                                            <tr>
+                                                <td colspan="7" class="empty-state">No sessions yet.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                `;
+
+                // Load data from API
+                loadData();
+            } else {
+                appDiv.innerHTML = `
+                    <div class="login-wrapper">
+                        <div id="sign-in-container"></div>
+                    </div>
+                `;
+                Clerk.mountSignIn(document.getElementById('sign-in-container'));
+            }
+        });
+    </script>
+</body>
+</html>
