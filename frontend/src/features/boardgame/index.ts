@@ -6,7 +6,7 @@
 /// <reference types="vite/client" />
 
 import { CATEGORY_HANDLER_MAP } from '@shared/categories';
-import { HANDLERS, renderCard, allCardData, languageData, articulationData } from '../cards/index';
+import { HANDLERS, renderCard, allCardData, languageData, articulationData, loadAllCardData } from '../cards/index';
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
 import { voiceService, VoiceState, UIPackage, CardData } from './services/voice';
 import { pipelineVisualizer, PipelineLogData } from './services/pipeline-visualizer';
@@ -1191,8 +1191,12 @@ async function startGame() {
     gameLogger.info('Started!');
 }
 
-function init() {
+async function init() {
     gameLogger.info('Init...');
+
+    // Load card data from Supabase
+    await loadAllCardData();
+    gameLogger.info('Card data loaded');
 
     // Load saved theme from localStorage
     const savedTheme = localStorage.getItem('piper-theme');
