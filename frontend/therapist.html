@@ -6,6 +6,7 @@
     <title>PIPER Admin</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./src/common/components/LoadingScreen/loading-screen.css">
+    <link rel="stylesheet" href="./src/styles/shared-themes.css">
     <link rel="stylesheet" href="./src/styles/therapist.css">
     <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
 </head>
@@ -988,6 +989,39 @@
             </form>
         </div>
     </div>
+
+    <!-- Theme Selector Floating UI -->
+    <div class="theme-selector-floating">
+        <button class="theme-toggle-btn" id="theme-toggle-btn">🎨</button>
+        <div class="theme-selector-panel hidden" id="theme-selector-panel">
+            <div class="theme-selector-title">Choose Theme</div>
+            <div class="theme-grid">
+                <button class="theme-btn active" data-theme="default">
+                    <span class="theme-icon">🖥️</span>
+                    <span class="theme-text">Default</span>
+                </button>
+                <button class="theme-btn" data-theme="spring">
+                    <span class="theme-icon">🌸</span>
+                    <span class="theme-text">Spring</span>
+                </button>
+                <button class="theme-btn" data-theme="summer">
+                    <span class="theme-icon">☀️</span>
+                    <span class="theme-text">Summer</span>
+                </button>
+                <button class="theme-btn" data-theme="autumn">
+                    <span class="theme-icon">🍂</span>
+                    <span class="theme-text">Autumn</span>
+                </button>
+                <button class="theme-btn" data-theme="winter">
+                    <span class="theme-icon">❄️</span>
+                    <span class="theme-text">Winter</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decorative Snowflakes Container -->
+    <div class="snowflakes" id="snowflakes-container"></div>
 
     <script type="module" src="./src/features/therapist/index.ts"></script>
 </body>

@@ -3131,6 +3131,433 @@ select.goal-input {
 }
 
 /* ==========================================================================
+   SEASONAL THEME OVERRIDES
+   When a theme class is applied to body, override the admin portal colors
+   ========================================================================== */
+
+/* Theme-aware backgrounds */
+body.theme-spring,
+body.theme-summer,
+body.theme-autumn,
+body.theme-winter {
+    --bg-main: var(--bg-cream);
+    --bg-hover: var(--bg-warm);
+    --border-color: var(--color-border);
+    --shadow: 0 1px 3px var(--shadow-color-light);
+    --shadow-focus: 0 0 0 3px var(--shadow-color-light);
+}
+
+/* Sidebar theming */
+body.theme-spring .sidebar,
+body.theme-summer .sidebar,
+body.theme-autumn .sidebar,
+body.theme-winter .sidebar {
+    background: var(--bg-warm);
+    border-right-color: var(--color-border);
+}
+
+body.theme-spring .sidebar-header,
+body.theme-summer .sidebar-header,
+body.theme-autumn .sidebar-header,
+body.theme-winter .sidebar-header {
+    border-bottom-color: var(--color-border);
+}
+
+body.theme-spring .sidebar-header h1,
+body.theme-summer .sidebar-header h1,
+body.theme-autumn .sidebar-header h1,
+body.theme-winter .sidebar-header h1 {
+    color: var(--color-primary-dark);
+}
+
+body.theme-spring .nav-item:hover,
+body.theme-summer .nav-item:hover,
+body.theme-autumn .nav-item:hover,
+body.theme-winter .nav-item:hover,
+body.theme-spring .nav-item.active,
+body.theme-summer .nav-item.active,
+body.theme-autumn .nav-item.active,
+body.theme-winter .nav-item.active {
+    background: var(--color-cream);
+    color: var(--color-primary-dark);
+}
+
+body.theme-spring .sidebar-footer,
+body.theme-summer .sidebar-footer,
+body.theme-autumn .sidebar-footer,
+body.theme-winter .sidebar-footer {
+    border-top-color: var(--color-border);
+}
+
+/* Primary button theming */
+body.theme-spring .btn-primary,
+body.theme-summer .btn-primary,
+body.theme-autumn .btn-primary,
+body.theme-winter .btn-primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+body.theme-spring .btn-primary:hover,
+body.theme-summer .btn-primary:hover,
+body.theme-autumn .btn-primary:hover,
+body.theme-winter .btn-primary:hover {
+    background: var(--color-primary-dark);
+}
+
+/* Secondary button theming */
+body.theme-spring .btn-secondary,
+body.theme-summer .btn-secondary,
+body.theme-autumn .btn-secondary,
+body.theme-winter .btn-secondary {
+    background: var(--bg-warm);
+    border-color: var(--color-border);
+    color: var(--color-primary-dark);
+}
+
+body.theme-spring .btn-secondary:hover,
+body.theme-summer .btn-secondary:hover,
+body.theme-autumn .btn-secondary:hover,
+body.theme-winter .btn-secondary:hover {
+    background: var(--color-cream);
+}
+
+/* Cards and panels theming */
+body.theme-spring .profile-card,
+body.theme-summer .profile-card,
+body.theme-autumn .profile-card,
+body.theme-winter .profile-card,
+body.theme-spring .stat-card,
+body.theme-summer .stat-card,
+body.theme-autumn .stat-card,
+body.theme-winter .stat-card,
+body.theme-spring .data-list,
+body.theme-summer .data-list,
+body.theme-autumn .data-list,
+body.theme-winter .data-list,
+body.theme-spring .profile-header,
+body.theme-summer .profile-header,
+body.theme-autumn .profile-header,
+body.theme-winter .profile-header {
+    background: var(--bg-warm);
+    box-shadow: 0 2px 8px var(--shadow-color-light);
+}
+
+body.theme-spring .card-header,
+body.theme-summer .card-header,
+body.theme-autumn .card-header,
+body.theme-winter .card-header {
+    border-bottom-color: var(--color-border);
+}
+
+body.theme-spring .card-title h3,
+body.theme-summer .card-title h3,
+body.theme-autumn .card-title h3,
+body.theme-winter .card-title h3 {
+    color: var(--color-primary-dark);
+}
+
+/* Page headers theming */
+body.theme-spring .page-header h2,
+body.theme-summer .page-header h2,
+body.theme-autumn .page-header h2,
+body.theme-winter .page-header h2 {
+    color: var(--color-primary-dark);
+}
+
+/* Stat cards theming */
+body.theme-spring .stat-card-value,
+body.theme-summer .stat-card-value,
+body.theme-autumn .stat-card-value,
+body.theme-winter .stat-card-value {
+    color: var(--color-primary-dark);
+}
+
+/* Avatar theming */
+body.theme-spring .profile-avatar,
+body.theme-summer .profile-avatar,
+body.theme-autumn .profile-avatar,
+body.theme-winter .profile-avatar,
+body.theme-spring .student-avatar,
+body.theme-summer .student-avatar,
+body.theme-autumn .student-avatar,
+body.theme-winter .student-avatar {
+    background: var(--color-primary);
+}
+
+/* Modal theming */
+body.theme-spring .modal-content,
+body.theme-summer .modal-content,
+body.theme-autumn .modal-content,
+body.theme-winter .modal-content {
+    background: var(--bg-warm);
+}
+
+body.theme-spring .modal-content h2,
+body.theme-summer .modal-content h2,
+body.theme-autumn .modal-content h2,
+body.theme-winter .modal-content h2 {
+    color: var(--color-primary-dark);
+    border-bottom-color: var(--color-border);
+}
+
+/* Form elements theming */
+body.theme-spring .form-group input,
+body.theme-spring .form-group select,
+body.theme-spring .form-group textarea,
+body.theme-summer .form-group input,
+body.theme-summer .form-group select,
+body.theme-summer .form-group textarea,
+body.theme-autumn .form-group input,
+body.theme-autumn .form-group select,
+body.theme-autumn .form-group textarea,
+body.theme-winter .form-group input,
+body.theme-winter .form-group select,
+body.theme-winter .form-group textarea {
+    background: white;
+    border-color: var(--color-border);
+}
+
+body.theme-spring .form-group input:focus,
+body.theme-spring .form-group select:focus,
+body.theme-spring .form-group textarea:focus,
+body.theme-summer .form-group input:focus,
+body.theme-summer .form-group select:focus,
+body.theme-summer .form-group textarea:focus,
+body.theme-autumn .form-group input:focus,
+body.theme-autumn .form-group select:focus,
+body.theme-autumn .form-group textarea:focus,
+body.theme-winter .form-group input:focus,
+body.theme-winter .form-group select:focus,
+body.theme-winter .form-group textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--shadow-color-light);
+}
+
+/* Auth form theming */
+body.theme-spring .auth-form,
+body.theme-summer .auth-form,
+body.theme-autumn .auth-form,
+body.theme-winter .auth-form {
+    background: var(--bg-warm);
+    box-shadow: 0 4px 16px var(--shadow-color-medium);
+}
+
+body.theme-spring .auth-header h1,
+body.theme-summer .auth-header h1,
+body.theme-autumn .auth-header h1,
+body.theme-winter .auth-header h1 {
+    color: var(--color-primary-dark);
+}
+
+/* Loading screen theming */
+body.theme-spring .loading-screen,
+body.theme-summer .loading-screen,
+body.theme-autumn .loading-screen,
+body.theme-winter .loading-screen {
+    background: var(--bg-cream);
+}
+
+body.theme-spring .loading-spinner,
+body.theme-summer .loading-spinner,
+body.theme-autumn .loading-spinner,
+body.theme-winter .loading-spinner {
+    border-color: var(--color-border);
+    border-top-color: var(--color-primary);
+}
+
+body.theme-spring .loading-title,
+body.theme-summer .loading-title,
+body.theme-autumn .loading-title,
+body.theme-winter .loading-title {
+    color: var(--color-primary-dark);
+}
+
+/* Goal items theming */
+body.theme-spring .goal-item,
+body.theme-summer .goal-item,
+body.theme-autumn .goal-item,
+body.theme-winter .goal-item {
+    background: white;
+    border-color: var(--color-border);
+    border-left-color: var(--color-primary);
+}
+
+body.theme-spring .goal-item:hover,
+body.theme-summer .goal-item:hover,
+body.theme-autumn .goal-item:hover,
+body.theme-winter .goal-item:hover {
+    background: var(--color-cream);
+}
+
+body.theme-spring .goal-type-badge,
+body.theme-summer .goal-type-badge,
+body.theme-autumn .goal-type-badge,
+body.theme-winter .goal-type-badge {
+    background: var(--color-primary);
+}
+
+/* Session items theming */
+body.theme-spring .session-history-item,
+body.theme-summer .session-history-item,
+body.theme-autumn .session-history-item,
+body.theme-winter .session-history-item {
+    background: white;
+    border-color: var(--color-border);
+    border-left-color: var(--color-primary);
+}
+
+body.theme-spring .session-history-item:hover,
+body.theme-summer .session-history-item:hover,
+body.theme-autumn .session-history-item:hover,
+body.theme-winter .session-history-item:hover {
+    background: var(--color-cream);
+}
+
+/* Data list items theming */
+body.theme-spring .data-list-item:hover,
+body.theme-summer .data-list-item:hover,
+body.theme-autumn .data-list-item:hover,
+body.theme-winter .data-list-item:hover {
+    background: var(--color-cream);
+}
+
+body.theme-spring .data-list-item,
+body.theme-summer .data-list-item,
+body.theme-autumn .data-list-item,
+body.theme-winter .data-list-item {
+    border-bottom-color: var(--color-border);
+}
+
+/* Eval sections theming */
+body.theme-spring .eval-section,
+body.theme-summer .eval-section,
+body.theme-autumn .eval-section,
+body.theme-winter .eval-section {
+    background: var(--color-cream);
+    border-color: var(--color-border);
+}
+
+body.theme-spring .eval-section h4,
+body.theme-summer .eval-section h4,
+body.theme-autumn .eval-section h4,
+body.theme-winter .eval-section h4 {
+    color: var(--color-primary-dark);
+    border-bottom-color: var(--color-border);
+}
+
+/* Goal detail sections theming */
+body.theme-spring .goal-detail-section,
+body.theme-summer .goal-detail-section,
+body.theme-autumn .goal-detail-section,
+body.theme-winter .goal-detail-section {
+    background: white;
+    border-color: var(--color-border);
+}
+
+body.theme-spring .goal-detail-section h4,
+body.theme-summer .goal-detail-section h4,
+body.theme-autumn .goal-detail-section h4,
+body.theme-winter .goal-detail-section h4 {
+    color: var(--color-primary-dark);
+    border-bottom-color: var(--color-border);
+}
+
+body.theme-spring .goal-detail-value,
+body.theme-summer .goal-detail-value,
+body.theme-autumn .goal-detail-value,
+body.theme-winter .goal-detail-value {
+    background: var(--color-cream);
+    border-color: var(--color-border);
+}
+
+/* Goal type toggle theming */
+body.theme-spring .goal-type-btn.active,
+body.theme-summer .goal-type-btn.active,
+body.theme-autumn .goal-type-btn.active,
+body.theme-winter .goal-type-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Upload dropzone theming */
+body.theme-spring .upload-dropzone,
+body.theme-summer .upload-dropzone,
+body.theme-autumn .upload-dropzone,
+body.theme-winter .upload-dropzone {
+    background: var(--color-cream);
+    border-color: var(--color-border);
+}
+
+body.theme-spring .upload-dropzone:hover,
+body.theme-summer .upload-dropzone:hover,
+body.theme-autumn .upload-dropzone:hover,
+body.theme-winter .upload-dropzone:hover {
+    border-color: var(--color-primary);
+    background: white;
+}
+
+/* Info rows theming */
+body.theme-spring .info-row,
+body.theme-summer .info-row,
+body.theme-autumn .info-row,
+body.theme-winter .info-row {
+    border-bottom-color: var(--color-border);
+}
+
+/* Category badges theming */
+body.theme-spring .goal-detail-category-badge,
+body.theme-summer .goal-detail-category-badge,
+body.theme-autumn .goal-detail-category-badge,
+body.theme-winter .goal-detail-category-badge {
+    background: var(--color-primary);
+}
+
+/* Session category badges theming */
+body.theme-spring .session-category-badge,
+body.theme-summer .session-category-badge,
+body.theme-autumn .session-category-badge,
+body.theme-winter .session-category-badge {
+    background: var(--color-cream);
+    color: var(--color-primary-dark);
+}
+
+/* Scrollbar theming */
+body.theme-spring ::-webkit-scrollbar-thumb,
+body.theme-summer ::-webkit-scrollbar-thumb,
+body.theme-autumn ::-webkit-scrollbar-thumb,
+body.theme-winter ::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+}
+
+body.theme-spring ::-webkit-scrollbar-thumb:hover,
+body.theme-summer ::-webkit-scrollbar-thumb:hover,
+body.theme-autumn ::-webkit-scrollbar-thumb:hover,
+body.theme-winter ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
+/* Focus ring theming */
+body.theme-spring button:focus-visible,
+body.theme-spring input:focus-visible,
+body.theme-spring select:focus-visible,
+body.theme-spring textarea:focus-visible,
+body.theme-summer button:focus-visible,
+body.theme-summer input:focus-visible,
+body.theme-summer select:focus-visible,
+body.theme-summer textarea:focus-visible,
+body.theme-autumn button:focus-visible,
+body.theme-autumn input:focus-visible,
+body.theme-autumn select:focus-visible,
+body.theme-autumn textarea:focus-visible,
+body.theme-winter button:focus-visible,
+body.theme-winter input:focus-visible,
+body.theme-winter select:focus-visible,
+body.theme-winter textarea:focus-visible {
+    outline-color: var(--color-primary);
+}
+
+/* ==========================================================================
    ACCESSIBILITY
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {

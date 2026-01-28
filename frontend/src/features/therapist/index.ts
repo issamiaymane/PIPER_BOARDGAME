@@ -2634,6 +2634,133 @@ async function checkAuth(): Promise<void> {
   }
 }
 
+// ==========================================================================
+// THEME MANAGEMENT
+// ==========================================================================
+type ThemeName = 'default' | 'spring' | 'summer' | 'autumn' | 'winter';
+
+const THEME_STORAGE_KEY = 'piper-theme';
+const SEASONAL_THEMES: ThemeName[] = ['spring', 'summer', 'autumn', 'winter'];
+const ALL_THEMES: ThemeName[] = ['default', ...SEASONAL_THEMES];
+const THEME_ICONS: Record<ThemeName, string> = {
+  default: '🖥️',
+  spring: '🌸',
+  summer: '☀️',
+  autumn: '🍂',
+  winter: '❄️'
+};
+const THEME_DECORATIONS: Record<string, string> = {
+  spring: '🌸',
+  summer: '☀️',
+  autumn: '🍂',
+  winter: '❄️'
+};
+
+let currentTheme: ThemeName = 'default';
+
+function initTheme(): void {
+  const saved = localStorage.getItem(THEME_STORAGE_KEY);
+  if (saved && ALL_THEMES.includes(saved as ThemeName)) {
+    currentTheme = saved as ThemeName;
+  } else {
+    currentTheme = 'default';
+  }
+  applyTheme(currentTheme);
+  updateThemeButtonIcon();
+  updateThemePanelSelection();
+}
+
+function applyTheme(theme: ThemeName): void {
+  // Remove all seasonal theme classes
+  document.body.classList.remove('theme-spring', 'theme-summer', 'theme-autumn', 'theme-winter');
+  document.documentElement.classList.remove('theme-spring', 'theme-summer', 'theme-autumn', 'theme-winter');
+
+  // Apply seasonal theme class if not default
+  if (theme !== 'default') {
+    document.body.classList.add(`theme-${theme}`);
+    document.documentElement.classList.add(`theme-${theme}`);
+  }
+
+  generateSnowflakes(theme);
+}
+
+function updateThemeButtonIcon(): void {
+  const btn = document.getElementById('theme-toggle-btn');
+  if (btn) {
+    btn.textContent = THEME_ICONS[currentTheme];
+  }
+}
+
+function updateThemePanelSelection(): void {
+  document.querySelectorAll('.theme-btn').forEach(btn => {
+    const btnTheme = btn.getAttribute('data-theme');
+    btn.classList.toggle('active', btnTheme === currentTheme);
+  });
+}
+
+function generateSnowflakes(theme: ThemeName): void {
+  const container = document.getElementById('snowflakes-container');
+  if (!container) return;
+
+  // Clear existing snowflakes
+  container.innerHTML = '';
+
+  // Only show decorations for seasonal themes (not default)
+  if (theme === 'default' || !THEME_DECORATIONS[theme]) return;
+
+  const decoration = THEME_DECORATIONS[theme];
+
+  // Generate 10 snowflakes/decorations
+  for (let i = 0; i < 10; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.className = 'snowflake';
+    snowflake.textContent = decoration;
+    container.appendChild(snowflake);
+  }
+}
+
+function bindThemeEvents(): void {
+  // Theme toggle button
+  const toggleBtn = document.getElementById('theme-toggle-btn');
+  const panel = document.getElementById('theme-selector-panel');
+
+  if (toggleBtn && panel) {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      panel.classList.toggle('hidden');
+    });
+
+    // Close panel when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!panel.contains(e.target as Node) && e.target !== toggleBtn) {
+        panel.classList.add('hidden');
+      }
+    });
+  }
+
+  // Theme selection buttons
+  document.querySelectorAll('.theme-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const theme = btn.getAttribute('data-theme') as ThemeName;
+
+      currentTheme = theme;
+      if (theme === 'default') {
+        localStorage.removeItem(THEME_STORAGE_KEY);
+      } else {
+        localStorage.setItem(THEME_STORAGE_KEY, theme);
+      }
+
+      applyTheme(currentTheme);
+      updateThemeButtonIcon();
+      updateThemePanelSelection();
+
+      // Close panel
+      const panel = document.getElementById('theme-selector-panel');
+      if (panel) panel.classList.add('hidden');
+    });
+  });
+}
+
 // Event binding
 function bindEvents(): void {
   // Auth forms
@@ -2954,11 +3081,15 @@ function bindEvents(): void {
   if (goalsNextBtn) {
     goalsNextBtn.addEventListener('click', showNextGoal);
   }
+
+  // Theme selector events
+  bindThemeEvents();
 }
 
 // Initialize
 export async function init(): Promise<void> {
   bindEvents();
+  initTheme();
   await checkAuth();
   // Hide loading screen using shared component
   hideLoadingScreen(300);
