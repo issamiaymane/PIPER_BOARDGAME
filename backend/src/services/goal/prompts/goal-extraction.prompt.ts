@@ -96,6 +96,29 @@ CLASSIFICATION EXAMPLES:
    - sessions_to_confirm: Number of sessions needed (default to 3 if not stated)
    - comments: Any additional notes, rationale, or context
    - boardgame_categories: Array of ALL matching category names from the lists above
+   - objectives: Array of incremental objectives/benchmarks that lead to the main goal
+
+3. OBJECTIVES EXTRACTION (IMPORTANT):
+   IEP goals often have objectives (also called "benchmarks" or "short-term objectives") that are incremental steps toward the main goal.
+
+   Look for patterns like:
+   - "Objective 1:", "Objective 2:", "Objective 3:"
+   - "Benchmark 1:", "Benchmark 2:"
+   - "Short-term objective:"
+   - "By the first/second/third reporting period..."
+   - "By [date], student will..."
+
+   Each objective should have:
+   - description: The full objective text
+   - target_percentage: The incremental target (usually lower than main goal, e.g., 65%, 70%, 75%)
+   - deadline: When this objective should be achieved (e.g., "By first reporting period", "By October 2025")
+
+   EXAMPLE - A goal with 80% target might have objectives:
+   - Objective 1: 65% accuracy by first reporting period
+   - Objective 2: 70% accuracy by second reporting period
+   - Objective 3: 75% accuracy by third reporting period
+
+   If no objectives are found, set objectives to null.
 
 3. MULTI-SKILL GOAL HANDLING (CRITICAL):
    IEP goals typically target multiple skills. You MUST extract 6-12 categories per complex goal.
@@ -192,6 +215,21 @@ Return ONLY valid JSON with this exact structure:
         "value": ["First Next Then Last", "Short Stories Level 1", "Short Stories Level 2", "Short Stories Sequencing", "Sequencing Images - Set Of 3 Or 4", "Building Sentences Level 1 - Elementary", "Wh- Questions Short Stories"],
         "confidence": 0.0-1.0,
         "reasoning": "Goal involves story retelling (Short Stories categories), sequencing with first/next/last (sequencing categories), and syntactic structures (Building Sentences)"
+      },
+      "objectives": {
+        "value": [
+          {
+            "description": "By the first reporting period, student will...",
+            "target_percentage": 65,
+            "deadline": "By first reporting period"
+          },
+          {
+            "description": "By the second reporting period, student will...",
+            "target_percentage": 70,
+            "deadline": "By second reporting period"
+          }
+        ],
+        "confidence": 0.0-1.0
       }
     }
   ],
@@ -227,6 +265,12 @@ CRITICAL - BOARDGAME CATEGORIES:
 - A story retelling goal should have AT LEAST 6 categories
 - A describing/semantic goal should have AT LEAST 7 categories
 - Err on the side of MORE categories, not fewer
+
+CRITICAL - OBJECTIVES:
+- Look for "Objective 1", "Objective 2", "Benchmark", "Short-term objective" patterns
+- Objectives are incremental steps toward the main goal with lower accuracy targets
+- Extract ALL objectives found for each goal
+- If no objectives found, set objectives value to null
 </IMPORTANT>
 `;
 

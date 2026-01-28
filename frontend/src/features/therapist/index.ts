@@ -3,7 +3,7 @@
  * Handles UI state and user interactions
  */
 
-import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal, type GameplaySession, type SessionWithResponses, type LiveSessionInfo, type School, type Member } from './services/api';
+import { api, type Therapist, type Student, type ApiError, type EvalData, type ExtractedGoal, type IEPGoal, type GameplaySession, type SessionWithResponses, type LiveSessionInfo, type School, type Member, type Objective } from './services/api';
 import { therapistLiveService, type LiveCardEvent, type LiveResponseEvent, type SessionSummary } from './services/live';
 // Categories imported from @shared/categories are defined in ORGANIZED_*_CATEGORIES below
 import { hideLoadingScreen } from '@common/components/LoadingScreen';
@@ -1513,6 +1513,41 @@ function showGoalDetailsModal(goal: IEPGoal): void {
     frequencyEl.textContent = goal.session_frequency || 'Not specified';
   }
 
+  // Populate objectives
+  const objectivesList = document.getElementById('goal-detail-objectives-list');
+  if (objectivesList) {
+    objectivesList.innerHTML = '';
+    let hasObjectives = false;
+
+    if (goal.objectives) {
+      try {
+        const objectives = JSON.parse(goal.objectives) as Objective[];
+        if (objectives && objectives.length > 0) {
+          hasObjectives = true;
+          objectives.forEach((obj, index) => {
+            const objEl = document.createElement('div');
+            objEl.className = 'goal-detail-objective-item';
+            objEl.innerHTML = `
+              <div class="objective-item-header">
+                <span class="objective-item-number">Objective ${index + 1}</span>
+                <span class="objective-item-target">${obj.target_percentage}%</span>
+              </div>
+              <p class="objective-item-description">${obj.description}</p>
+              ${obj.deadline ? `<p class="objective-item-deadline">Deadline: ${obj.deadline}</p>` : ''}
+            `;
+            objectivesList.appendChild(objEl);
+          });
+        }
+      } catch {
+        // Invalid JSON, show empty state
+      }
+    }
+
+    if (!hasObjectives) {
+      objectivesList.innerHTML = '<p class="empty-objectives">No objectives specified</p>';
+    }
+  }
+
   // Show modal
   openModal('goal-details-modal');
 }
@@ -1641,6 +1676,9 @@ function openAddGoalModal(): void {
   // Populate categories for Language type
   populateAddGoalCategories('language');
 
+  // Clear objectives list
+  clearObjectives('add-goal-objectives-list');
+
   // Hide error
   hide($('add-goal-error'));
 
@@ -1653,6 +1691,107 @@ function populateAddGoalCategories(goalType: 'language' | 'articulation'): void 
 
   const categories = goalType === 'articulation' ? ORGANIZED_ARTICULATION_CATEGORIES : ORGANIZED_LANGUAGE_CATEGORIES;
   container.innerHTML = generateCategoryCheckboxes(categories, 0, []);
+}
+
+// ============================================
+// Objectives Handling Functions
+// ============================================
+
+let objectiveCounter = 0;
+
+function addObjectiveRow(containerId: string, objective?: Objective): void {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  objectiveCounter++;
+  const objId = objectiveCounter;
+
+  const row = document.createElement('div');
+  row.className = 'objective-row';
+  row.dataset.objId = objId.toString();
+  row.innerHTML = `
+    <div class="objective-number">Objective ${container.children.length + 1}</div>
+    <div class="objective-fields">
+      <div class="objective-field objective-field-description">
+        <label>Description:</label>
+        <textarea class="obj-description" rows="2" placeholder="Objective description...">${objective?.description || ''}</textarea>
+      </div>
+      <div class="objective-field-row">
+        <div class="objective-field">
+          <label>Target %:</label>
+          <select class="obj-target">
+            <option value="50" ${objective?.target_percentage === 50 ? 'selected' : ''}>50%</option>
+            <option value="55" ${objective?.target_percentage === 55 ? 'selected' : ''}>55%</option>
+            <option value="60" ${objective?.target_percentage === 60 ? 'selected' : ''}>60%</option>
+            <option value="65" ${objective?.target_percentage === 65 ? 'selected' : ''}>65%</option>
+            <option value="70" ${objective?.target_percentage === 70 ? 'selected' : ''}>70%</option>
+            <option value="75" ${objective?.target_percentage === 75 ? 'selected' : ''}>75%</option>
+            <option value="80" ${objective?.target_percentage === 80 ? 'selected' : ''}>80%</option>
+          </select>
+        </div>
+        <div class="objective-field">
+          <label>Deadline:</label>
+          <input type="text" class="obj-deadline" value="${objective?.deadline || ''}" placeholder="e.g., By first reporting period">
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn-remove-objective" title="Remove objective">&times;</button>
+  `;
+
+  // Add remove handler
+  const removeBtn = row.querySelector('.btn-remove-objective');
+  removeBtn?.addEventListener('click', () => {
+    row.remove();
+    renumberObjectives(containerId);
+  });
+
+  container.appendChild(row);
+}
+
+function renumberObjectives(containerId: string): void {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const rows = container.querySelectorAll('.objective-row');
+  rows.forEach((row, index) => {
+    const numberEl = row.querySelector('.objective-number');
+    if (numberEl) {
+      numberEl.textContent = `Objective ${index + 1}`;
+    }
+  });
+}
+
+function clearObjectives(containerId: string): void {
+  const container = document.getElementById(containerId);
+  if (container) {
+    container.innerHTML = '';
+  }
+  objectiveCounter = 0;
+}
+
+function getObjectivesFromContainer(containerId: string): Objective[] {
+  const container = document.getElementById(containerId);
+  if (!container) return [];
+
+  const objectives: Objective[] = [];
+  const rows = container.querySelectorAll('.objective-row');
+
+  rows.forEach(row => {
+    const descriptionEl = row.querySelector('.obj-description') as HTMLTextAreaElement;
+    const targetEl = row.querySelector('.obj-target') as HTMLSelectElement;
+    const deadlineEl = row.querySelector('.obj-deadline') as HTMLInputElement;
+
+    const description = descriptionEl?.value.trim();
+    if (description) {
+      objectives.push({
+        description,
+        target_percentage: parseInt(targetEl?.value || '70'),
+        deadline: deadlineEl?.value.trim() || undefined
+      });
+    }
+  });
+
+  return objectives;
 }
 
 async function saveNewGoal(): Promise<void> {
@@ -1692,6 +1831,9 @@ async function saveNewGoal(): Promise<void> {
   const sessionDuration = durationInput?.value ? parseInt(durationInput.value) : null;
   const sessionFrequency = frequencyInput?.value || null;
 
+  // Get objectives
+  const objectives = getObjectivesFromContainer('add-goal-objectives-list');
+
   const goal: ExtractedGoal = {
     goal_type: { value: goalType, confidence: 1 },
     goal_description: { value: description, confidence: 1 },
@@ -1703,7 +1845,8 @@ async function saveNewGoal(): Promise<void> {
     comments: { value: commentsInput?.value || '', confidence: 1 },
     boardgame_categories: { value: selectedCategories, confidence: 1 },
     session_duration_minutes: { value: sessionDuration, confidence: 1 },
-    session_frequency: { value: sessionFrequency, confidence: 1 }
+    session_frequency: { value: sessionFrequency, confidence: 1 },
+    objectives: { value: objectives.length > 0 ? objectives : null, confidence: 1 }
   };
 
   try {
@@ -1904,12 +2047,35 @@ function populateGoalsForm(goals: ExtractedGoal[]): void {
               </div>
             </div>
           </div>
+
+          <!-- Objectives Section -->
+          <div class="goal-objectives-section">
+            <h5>Objectives <span class="section-hint">(Optional incremental targets)</span></h5>
+            <div class="objectives-list" id="extracted-goal-objectives-${index}"></div>
+            <button type="button" class="btn btn-secondary btn-small add-extracted-objective-btn" data-goal-index="${index}">+ Add Objective</button>
+          </div>
         </div>
       </div>
     `;
   });
 
   container.innerHTML = html;
+
+  // Populate objectives for each goal
+  goals.forEach((goal, index) => {
+    const objectives = goal.objectives?.value || [];
+    objectives.forEach(obj => {
+      addObjectiveRow(`extracted-goal-objectives-${index}`, obj);
+    });
+  });
+
+  // Add event listeners for add objective buttons
+  container.querySelectorAll('.add-extracted-objective-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const goalIndex = btn.getAttribute('data-goal-index');
+      addObjectiveRow(`extracted-goal-objectives-${goalIndex}`);
+    });
+  });
 
   // Show first goal and update navigation
   showGoalAtIndex(0);
@@ -1947,6 +2113,9 @@ function getFormGoalsData(): ExtractedGoal[] {
       goalType = hasArticulation ? 'articulation' : 'language';
     }
 
+    // Get objectives for this goal
+    const objectives = getObjectivesFromContainer(`extracted-goal-objectives-${index}`);
+
     goals.push({
       goal_type: { value: goalType, confidence: 0.9 },
       goal_description: { value: descInput.value || null, confidence: 0.9 },
@@ -1959,6 +2128,7 @@ function getFormGoalsData(): ExtractedGoal[] {
       boardgame_categories: { value: selectedCategories.length > 0 ? selectedCategories : null, confidence: 0.9 },
       session_duration_minutes: { value: durationInput?.value ? parseInt(durationInput.value) : null, confidence: 0.9 },
       session_frequency: { value: frequencyInput?.value || null, confidence: 0.9 },
+      objectives: { value: objectives.length > 0 ? objectives : null, confidence: 0.9 },
     });
   });
 
@@ -2663,6 +2833,14 @@ function bindEvents(): void {
   const saveNewGoalBtn = document.getElementById('save-new-goal-btn');
   if (saveNewGoalBtn) {
     saveNewGoalBtn.addEventListener('click', saveNewGoal);
+  }
+
+  // Add objective button
+  const addObjectiveBtn = document.getElementById('add-objective-btn');
+  if (addObjectiveBtn) {
+    addObjectiveBtn.addEventListener('click', () => {
+      addObjectiveRow('add-goal-objectives-list');
+    });
   }
 
   // Goals dropzone

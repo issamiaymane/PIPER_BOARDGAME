@@ -90,6 +90,19 @@ function normalizeExtractionResult(data: Record<string, unknown>): GoalExtractio
     const sessions = goal.sessions_to_confirm as Record<string, unknown> | undefined;
     const comments = goal.comments as Record<string, unknown> | undefined;
     const boardgameCategories = goal.boardgame_categories as Record<string, unknown> | undefined;
+    const objectives = goal.objectives as Record<string, unknown> | undefined;
+
+    // Normalize objectives array
+    const normalizedObjectives = Array.isArray(objectives?.value)
+      ? objectives.value
+          .filter((obj): obj is Record<string, unknown> => obj !== null && typeof obj === 'object')
+          .map(obj => ({
+            description: typeof obj.description === 'string' ? obj.description : '',
+            target_percentage: typeof obj.target_percentage === 'number' ? obj.target_percentage : 70,
+            deadline: typeof obj.deadline === 'string' ? obj.deadline : undefined,
+          }))
+          .filter(obj => obj.description) // Only keep objectives with descriptions
+      : null;
 
     return {
       goal_type: {
@@ -138,6 +151,10 @@ function normalizeExtractionResult(data: Record<string, unknown>): GoalExtractio
           : null,
         confidence: typeof boardgameCategories?.confidence === 'number' ? boardgameCategories.confidence : 0,
         reasoning: typeof boardgameCategories?.reasoning === 'string' ? boardgameCategories.reasoning : undefined,
+      },
+      objectives: {
+        value: normalizedObjectives && normalizedObjectives.length > 0 ? normalizedObjectives : null,
+        confidence: typeof objectives?.confidence === 'number' ? objectives.confidence : 0,
       },
     };
   });

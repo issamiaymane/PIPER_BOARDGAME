@@ -31,6 +31,7 @@ export type {
 // Goal types
 export type {
   GoalType,
+  Objective,
   IEPGoal,
   CreateGoalRequest,
   UpdateGoalRequest,

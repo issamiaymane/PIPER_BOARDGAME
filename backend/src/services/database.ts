@@ -300,6 +300,12 @@ function runMigrations(db: Database.Database): void {
     logger.info('Migration: Added session_frequency column to iep_goals');
   }
 
+  // Add objectives if missing (JSON array of objectives)
+  if (!goalColumnNames.includes('objectives')) {
+    db.exec('ALTER TABLE iep_goals ADD COLUMN objectives TEXT');
+    logger.info('Migration: Added objectives column to iep_goals');
+  }
+
   // Get existing columns in session_responses table
   const responseColumns = db
     .prepare("PRAGMA table_info(session_responses)")
@@ -451,7 +457,24 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
           'Building Sentences Level 1 - Elementary'
         ]),
         session_duration_minutes: 30,
-        session_frequency: '2x weekly'
+        session_frequency: '2x weekly',
+        objectives: JSON.stringify([
+          {
+            description: 'By the first reporting period, Piper will retell a ability-appropriate story using first/next/last vocabulary and correct syntactic structures, given moderate supports and a visual cue, with 65% accuracy over the course of 3 trials.',
+            target_percentage: 65,
+            deadline: '2025-06-01'
+          },
+          {
+            description: 'By the second reporting period, Piper will retell a ability-appropriate story using first/next/last vocabulary and correct syntactic structures, given moderate supports and a visual cue, with 70% accuracy over the course of 3 trials.',
+            target_percentage: 70,
+            deadline: '2025-10-01'
+          },
+          {
+            description: 'By the third reporting period, Piper will retell a ability-appropriate story using first/next/last vocabulary and correct syntactic structures, given minimal supports and a visual cue, with 75% accuracy over the course of 3 trials.',
+            target_percentage: 75,
+            deadline: '2026-02-01'
+          }
+        ])
       },
       {
         goal_type: 'language',
@@ -473,7 +496,8 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
           'Naming And Categorizing'
         ]),
         session_duration_minutes: 30,
-        session_frequency: '2x weekly'
+        session_frequency: '2x weekly',
+        objectives: null
       }
     ];
 
@@ -481,8 +505,8 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
       INSERT INTO iep_goals (
         student_id, goal_type, goal_description, target_percentage,
         baseline, target_date, sessions_to_confirm, comments, boardgame_categories,
-        session_duration_minutes, session_frequency
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        session_duration_minutes, session_frequency, objectives
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
 
     for (const goal of goals) {
@@ -497,7 +521,8 @@ async function seedDefaultData(db: Database.Database): Promise<void> {
         goal.comments,
         goal.boardgame_categories,
         goal.session_duration_minutes,
-        goal.session_frequency
+        goal.session_frequency,
+        goal.objectives
       );
     }
 

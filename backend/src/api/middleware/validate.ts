@@ -216,6 +216,15 @@ export const confirmGoalsSchema = z.object({
         value: z.string().nullable(),
         confidence: z.number().optional(),
       }).optional(),
+      // Objectives (sub-goals with incremental targets)
+      objectives: z.object({
+        value: z.array(z.object({
+          description: z.string(),
+          target_percentage: z.number().min(0).max(100),
+          deadline: z.string().optional(),
+        })).nullable(),
+        confidence: z.number().optional(),
+      }).optional(),
     })
   ),
 });

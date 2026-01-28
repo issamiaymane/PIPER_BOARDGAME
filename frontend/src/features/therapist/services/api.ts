@@ -50,6 +50,12 @@ export interface Student {
   created_at: string;
 }
 
+export interface Objective {
+  description: string;
+  target_percentage: number;
+  deadline?: string;
+}
+
 export interface IEPGoal {
   id: number;
   student_id: number;
@@ -64,6 +70,7 @@ export interface IEPGoal {
   boardgame_categories?: string; // JSON string of array
   session_duration_minutes?: number;
   session_frequency?: string;
+  objectives?: string; // JSON string of Objective array
   status: 'active' | 'achieved' | 'discontinued';
   created_at: string;
   updated_at: string;
@@ -81,6 +88,7 @@ export interface ExtractedGoal {
   boardgame_categories?: { value: string[] | null; confidence: number; reasoning?: string };
   session_duration_minutes?: { value: number | null; confidence: number; source_hint?: string };
   session_frequency?: { value: string | null; confidence: number; source_hint?: string };
+  objectives?: { value: Objective[] | null; confidence: number };
 }
 
 export interface GoalsUploadResponse {

@@ -4,7 +4,7 @@
  */
 
 import { getDatabase } from '../database.js';
-import type { IEPGoal, CreateGoalRequest, UpdateGoalRequest } from '../../types/index.js';
+import type { IEPGoal, CreateGoalRequest, UpdateGoalRequest, Objective } from '../../types/index.js';
 
 function createGoal(studentId: number, data: CreateGoalRequest & {
   baseline?: string;
@@ -13,6 +13,7 @@ function createGoal(studentId: number, data: CreateGoalRequest & {
   boardgame_categories?: string[];
   session_duration_minutes?: number;
   session_frequency?: string;
+  objectives?: Objective[];
 }): IEPGoal {
   const db = getDatabase();
   const now = new Date().toISOString();
@@ -23,8 +24,8 @@ function createGoal(studentId: number, data: CreateGoalRequest & {
         student_id, goal_type, goal_description, target_percentage,
         current_percentage, target_date, baseline, sessions_to_confirm,
         comments, boardgame_categories, session_duration_minutes, session_frequency,
-        status, created_at, updated_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'active', ?, ?)`
+        objectives, status, created_at, updated_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'active', ?, ?)`
     )
     .run(
       studentId,
@@ -39,6 +40,7 @@ function createGoal(studentId: number, data: CreateGoalRequest & {
       data.boardgame_categories ? JSON.stringify(data.boardgame_categories) : null,
       data.session_duration_minutes || null,
       data.session_frequency || null,
+      data.objectives ? JSON.stringify(data.objectives) : null,
       now,
       now
     );
@@ -72,6 +74,7 @@ export function createGoalsFromExtraction(
     boardgame_categories?: { value: string[] | null };
     session_duration_minutes?: { value: number | null };
     session_frequency?: { value: string | null };
+    objectives?: { value: Objective[] | null };
   }>
 ): IEPGoal[] {
   const createdGoals: IEPGoal[] = [];
@@ -105,6 +108,7 @@ export function createGoalsFromExtraction(
       boardgame_categories: goal.boardgame_categories?.value || undefined,
       session_duration_minutes: goal.session_duration_minutes?.value || undefined,
       session_frequency: goal.session_frequency?.value || undefined,
+      objectives: goal.objectives?.value || undefined,
     };
 
     const created = createGoal(studentId, goalData);

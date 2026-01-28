@@ -1855,6 +1855,68 @@ body {
     font-style: italic;
 }
 
+/* Goal Detail Objectives */
+.goal-detail-objectives-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.goal-detail-objective-item {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 12px 16px;
+}
+
+.objective-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.objective-item-number {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-primary);
+    background: var(--bg-main);
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+}
+
+.objective-item-target {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.objective-item-description {
+    font-size: 13px;
+    color: var(--color-primary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.objective-item-deadline {
+    font-size: 12px;
+    color: var(--color-tertiary);
+    margin: 8px 0 0 0;
+    font-style: italic;
+}
+
+.empty-objectives {
+    color: var(--color-tertiary);
+    font-style: italic;
+    font-size: 13px;
+    margin: 0;
+    padding: 12px;
+    background: var(--bg-white);
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
 .goal-detail-category-badge {
     display: inline-block;
     background: var(--color-primary);
@@ -1991,6 +2053,118 @@ select.goal-input {
     background: var(--color-tertiary);
     border: 2px solid transparent;
     background-clip: padding-box;
+}
+
+/* ==========================================================================
+   OBJECTIVES
+   ========================================================================== */
+.section-hint {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-tertiary);
+}
+
+.objectives-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.objective-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--bg-main);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    position: relative;
+}
+
+.objective-number {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-primary);
+    background: var(--bg-white);
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-color);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.objective-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.objective-field label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 4px;
+}
+
+.objective-field textarea,
+.objective-field input,
+.objective-field select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-family: var(--font-family);
+    color: var(--color-primary);
+    background: var(--bg-white);
+}
+
+.objective-field textarea:focus,
+.objective-field input:focus,
+.objective-field select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.objective-field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.objective-field-description {
+    width: 100%;
+}
+
+.btn-remove-objective {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    color: var(--color-tertiary);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s;
+}
+
+.btn-remove-objective:hover {
+    color: var(--color-danger);
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 12px;
 }
 
 /* ==========================================================================
@@ -2666,6 +2840,19 @@ select.goal-input {
 }
 
 .goal-session-time-section h5 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 12px;
+}
+
+.goal-objectives-section {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.goal-objectives-section h5 {
     font-size: 13px;
     font-weight: 600;
     color: var(--color-secondary);
