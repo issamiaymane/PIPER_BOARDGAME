@@ -7,7 +7,8 @@ import {
   AUDIO_SAMPLE_RATE,
   float32ToPCM16,
   arrayBufferToBase64,
-  calculateAmplitude
+  calculateAmplitude,
+  normalizeGain
 } from './audio-utils.js';
 import { audioLogger } from './logger.js';
 
@@ -32,11 +33,12 @@ export class AudioCapture {
    */
   async initialize(): Promise<boolean> {
     try {
-      // Request microphone access
+      // Request microphone access with AGC for consistent volume levels
       this.mediaStream = await navigator.mediaDevices.getUserMedia({
         audio: {
           echoCancellation: true,
           noiseSuppression: true,
+          autoGainControl: true, // Normalize microphone levels across devices
           sampleRate: AUDIO_SAMPLE_RATE
         }
       });
@@ -56,7 +58,7 @@ export class AudioCapture {
 
         const inputData = event.inputBuffer.getChannelData(0);
 
-        // Calculate amplitude metrics
+        // Calculate amplitude metrics from ORIGINAL audio (for safety-gate detection)
         const { rms, peak } = calculateAmplitude(inputData);
 
         // Debug: Log high amplitude (potential screaming)
@@ -64,13 +66,17 @@ export class AudioCapture {
           audioLogger.debug(`HIGH AMPLITUDE - RMS: ${rms.toFixed(3)}, Peak: ${peak.toFixed(3)}`);
         }
 
-        const pcm16 = float32ToPCM16(inputData);
+        // Normalize gain for transcription API (boost quiet speech)
+        // This helps with transcription accuracy while preserving original amplitude for safety-gate
+        const normalizedData = normalizeGain(inputData);
+
+        const pcm16 = float32ToPCM16(normalizedData);
         const base64 = arrayBufferToBase64(pcm16.buffer as ArrayBuffer);
 
         this.onAudioChunk({
           audio: base64,
-          amplitude: rms,
-          peak: peak
+          amplitude: rms,  // Send ORIGINAL amplitude for safety-gate
+          peak: peak       // Send ORIGINAL peak for safety-gate
         });
       };
 

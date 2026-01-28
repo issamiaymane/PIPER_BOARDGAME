@@ -145,6 +145,7 @@ export class VoiceService {
   private sessionId: string | null = null;
   private state: VoiceState = 'idle';
   private isListeningEnabled = false;
+  private currentCardContext: CardContext | null = null;
 
   // Callback when state changes
   onStateChange?: (state: VoiceState) => void;
@@ -395,7 +396,10 @@ export class VoiceService {
    * Skip calibration and use default thresholds
    */
   skipCalibration(): void {
-    voiceLogger.info('Skipping calibration');
+    // Prominent warning in console when calibration is skipped
+    console.warn('⚠️ CALIBRATION SKIPPED - Using conservative fallback thresholds (amp=0.60, peak=0.95)');
+    console.warn('⚠️ For best results, complete calibration to personalize screaming detection');
+    voiceLogger.info('Skipping calibration - using conservative fallback thresholds');
     calibrationService.abort();
     this.audioCapture.stop();
     hideCalibrationOverlay();
@@ -460,6 +464,9 @@ export class VoiceService {
 
     // Extract card context for safety-gate
     const cardContext = this.extractCardContext(card, category);
+
+    // Store card context for potential re-use (e.g., RETRY_CARD)
+    this.currentCardContext = cardContext;
 
     // Send to backend with card context
     this.sendMessage({
@@ -571,6 +578,33 @@ export class VoiceService {
     // Don't commit audio - just pause
     if (this.state === 'listening') {
       this.setState('ready');
+    }
+  }
+
+  /**
+   * Clear card context to ignore pending transcriptions during card transition
+   * Call this when a card is completed (correct answer) to prevent late transcriptions
+   * from being processed for the next card
+   */
+  clearCardContext(): void {
+    this.currentCardContext = null;
+    this.sendMessage({ type: 'clear_card_context' });
+  }
+
+  /**
+   * Reset card context for retry - clears pending transcriptions then re-sets context
+   * Call this when RETRY_CARD is selected to ignore stale responses but keep the card active
+   */
+  resetCardContextForRetry(): void {
+    // First clear to ignore any pending transcriptions
+    this.sendMessage({ type: 'clear_card_context' });
+
+    // Then re-set the card context so new responses are processed
+    if (this.currentCardContext) {
+      this.sendMessage({
+        type: 'set_card_context',
+        cardContext: this.currentCardContext
+      });
     }
   }
 

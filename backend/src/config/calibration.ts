@@ -50,16 +50,18 @@ export const calibrationConfig: CalibrationConfig = {
     peakFactor: 0.85,
 
     // Clamp ranges to prevent extreme values
-    amplitudeMin: 0.15,
-    amplitudeMax: 0.60,
-    peakMin: 0.50,
+    // Minimum raised to 0.40 to prevent overly sensitive calibration for children with speech issues
+    amplitudeMin: 0.40,
+    amplitudeMax: 0.65,
+    peakMin: 0.70,
     peakMax: 0.95,
   },
 
-  // Fallback values if calibration fails (current hardcoded defaults)
+  // Fallback values if calibration is skipped or fails
+  // Using conservative thresholds (0.60+) to reduce false positives for children with speech issues
   fallback: {
-    amplitudeThreshold: parseFloat(process.env.SCREAMING_AMPLITUDE_THRESHOLD || '0.35'),
-    peakThreshold: parseFloat(process.env.SCREAMING_PEAK_THRESHOLD || '0.90'),
+    amplitudeThreshold: parseFloat(process.env.CALIBRATION_FALLBACK_AMPLITUDE || '0.60'),
+    peakThreshold: parseFloat(process.env.CALIBRATION_FALLBACK_PEAK || '0.95'),
   },
 
   // Validation thresholds

@@ -29,6 +29,7 @@ export const ClientMessageSchema = z.object({
     'commit_audio',
     'end_session',
     'set_card_context',
+    'clear_card_context',
     'choice_selected',
     'activity_ended',
     // Calibration messages

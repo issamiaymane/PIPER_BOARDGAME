@@ -333,6 +333,13 @@ export class VoiceSessionManager {
         }
         break;
 
+      case 'clear_card_context':
+        // Clear card context to ignore any pending transcriptions during card transition
+        // Note: safetyGateSession is NOT cleared - it keeps full session history
+        session.currentCardContext = undefined;
+        logger.info(`Card context cleared for session ${sessionId} - ignoring pending transcriptions`);
+        break;
+
       case 'audio_chunk':
         if (message.audio) {
           // Track amplitude FIRST before sending to OpenAI
@@ -397,9 +404,21 @@ export class VoiceSessionManager {
       case 'apply_calibration':
         // Apply saved calibration from database (skip calibration process)
         if (typeof message.amplitudeThreshold === 'number' && typeof message.peakThreshold === 'number') {
-          session.amplitudeThreshold = message.amplitudeThreshold;
-          session.peakThreshold = message.peakThreshold;
-          logger.info(`Applied saved calibration for session ${sessionId}: amp=${message.amplitudeThreshold}, peak=${message.peakThreshold}`);
+          // Enforce minimum thresholds to prevent overly sensitive detection
+          const minAmp = config.calibration.thresholds.amplitudeMin;
+          const minPeak = config.calibration.thresholds.peakMin;
+
+          const ampThreshold = Math.max(message.amplitudeThreshold, minAmp);
+          const peakThreshold = Math.max(message.peakThreshold, minPeak);
+
+          session.amplitudeThreshold = ampThreshold;
+          session.peakThreshold = peakThreshold;
+
+          if (ampThreshold !== message.amplitudeThreshold || peakThreshold !== message.peakThreshold) {
+            logger.warn(`⚠️ Saved calibration was too sensitive, raised to minimums: amp=${ampThreshold} (was ${message.amplitudeThreshold}), peak=${peakThreshold} (was ${message.peakThreshold})`);
+          } else {
+            logger.info(`Applied saved calibration for session ${sessionId}: amp=${ampThreshold}, peak=${peakThreshold}`);
+          }
         }
         break;
 
@@ -799,12 +818,14 @@ export class VoiceSessionManager {
   private handleAbortCalibration(session: VoiceSession): void {
     if (!session.calibrationService.isCalibrating()) return;
 
-    logger.info(`Calibration aborted for session ${session.id}`);
-    session.calibrationService.abort();
-
-    // Use fallback thresholds
+    // Use conservative fallback thresholds when calibration is skipped
     session.amplitudeThreshold = config.calibration.fallback.amplitudeThreshold;
     session.peakThreshold = config.calibration.fallback.peakThreshold;
+
+    logger.warn(`⚠️ CALIBRATION SKIPPED for session ${session.id}`);
+    logger.warn(`⚠️ Using conservative fallback thresholds: amp=${session.amplitudeThreshold}, peak=${session.peakThreshold}`);
+
+    session.calibrationService.abort();
 
     this.sendToClient(session, {
       type: 'calibration_failed',

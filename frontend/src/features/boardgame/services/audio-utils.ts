@@ -79,3 +79,49 @@ export function calculateAmplitude(samples: Float32Array): { rms: number; peak: 
   const rms = Math.sqrt(sumSquares / samples.length);
   return { rms, peak };
 }
+
+/**
+ * Normalize audio gain to boost quiet speech while not over-amplifying loud speech
+ * Uses soft knee compression to avoid clipping
+ * @param samples Input audio samples
+ * @param targetRms Target RMS level (default 0.15 for comfortable speech)
+ * @param maxGain Maximum gain to apply (default 3x to avoid amplifying noise too much)
+ * @returns Normalized audio samples
+ */
+export function normalizeGain(
+  samples: Float32Array,
+  targetRms: number = 0.15,
+  maxGain: number = 3.0
+): Float32Array {
+  const { rms, peak } = calculateAmplitude(samples);
+
+  // Don't amplify silence or near-silence (noise floor)
+  if (rms < 0.01) {
+    return samples;
+  }
+
+  // Calculate gain needed to reach target RMS
+  let gain = targetRms / rms;
+
+  // Limit maximum gain to avoid amplifying noise
+  gain = Math.min(gain, maxGain);
+
+  // Don't amplify if already loud enough
+  if (gain <= 1.0) {
+    return samples;
+  }
+
+  // Check if gain would cause clipping
+  if (peak * gain > 0.95) {
+    // Reduce gain to avoid clipping
+    gain = 0.95 / peak;
+  }
+
+  // Apply gain
+  const normalized = new Float32Array(samples.length);
+  for (let i = 0; i < samples.length; i++) {
+    normalized[i] = samples[i] * gain;
+  }
+
+  return normalized;
+}

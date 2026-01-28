@@ -289,6 +289,13 @@ function spin() {
     state.isSpinning = true;
     spinBtn.classList.add('disabled');
 
+    // Interrupt any ongoing AI speech (e.g., "Spin the wheel to take your turn!")
+    // and clear any pending transcriptions to prevent sync issues
+    if (voiceService.isEnabled()) {
+        voiceService.interruptSpeech();
+        voiceService.clearCardContext();
+    }
+
     // Play tick-tick spin sound
     playSpinSound(3000);
 
@@ -493,10 +500,14 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shou
 
     // If answer is correct, auto-progress after feedback is spoken
     if (isCorrect) {
-        // Stop listening - we got the right answer!
+        // Stop listening and clear card context to ignore any pending transcriptions
         if (voiceService.isEnabled()) {
             voiceService.stopListening();
+            voiceService.clearCardContext();
         }
+
+        // Hide any safety interventions that might be showing
+        hideChoices();
 
         // Show celebration
         showCelebration();
@@ -511,9 +522,10 @@ function handleSafetyGateResponse(uiPackage: UIPackage, isCorrect: boolean, shou
     // If shouldSkipCard (taskTimeExceeded), skip to next card
     if (shouldSkipCard) {
         gameLogger.info('Skipping card (taskTimeExceeded)');
-        // Stop listening
+        // Stop listening and clear card context to ignore any pending transcriptions
         if (voiceService.isEnabled()) {
             voiceService.stopListening();
+            voiceService.clearCardContext();
         }
 
         // Wait for feedback to be spoken, then close card
@@ -548,6 +560,9 @@ function showFeedback(text: string, isCorrect: boolean) {
 }
 
 function showCelebration() {
+    // Remove any existing celebration overlays to prevent duplicates
+    document.querySelectorAll('.celebration-overlay').forEach(el => el.remove());
+
     // Create celebration overlay
     const celebration = document.createElement('div');
     celebration.className = 'celebration-overlay';
@@ -582,6 +597,9 @@ function showCelebration() {
 }
 
 function renderInterventions(interventions: string[], message: string) {
+    // Remove any celebration overlay when showing interventions (they shouldn't coexist)
+    document.querySelectorAll('.celebration-overlay').forEach(el => el.remove());
+
     // Map intervention strings to display objects and sort by priority
     const displayChoices = interventions
         .map(intervention => {
@@ -634,27 +652,44 @@ function handleInterventionClick(e: Event) {
 
     switch (action) {
         case 'BUBBLE_BREATHING':
+            // Clear card context to ignore pending transcriptions
+            if (voiceService.isEnabled()) {
+                voiceService.clearCardContext();
+            }
             pipelineVisualizer.logBubbleBreathingStart();
             showBubbleBreathing();
             break;
 
         case 'SKIP_CARD':
+            // Clear card context to ignore pending transcriptions
+            if (voiceService.isEnabled()) {
+                voiceService.clearCardContext();
+            }
             closeCard();
             // Return to board game turn (spinner) - don't show another speech card
             break;
 
         case 'RETRY_CARD':
-            // Start listening again
+            // Reset card context to ignore pending transcriptions, then start listening
             if (voiceService.isReady()) {
+                voiceService.resetCardContextForRetry();
                 voiceService.startListening();
             }
             break;
 
         case 'START_BREAK':
+            // Clear card context to ignore pending transcriptions
+            if (voiceService.isEnabled()) {
+                voiceService.clearCardContext();
+            }
             startBreak();
             break;
 
         case 'CALL_GROWNUP':
+            // Clear card context to ignore pending transcriptions
+            if (voiceService.isEnabled()) {
+                voiceService.clearCardContext();
+            }
             handleGrownupHelp();
             break;
 

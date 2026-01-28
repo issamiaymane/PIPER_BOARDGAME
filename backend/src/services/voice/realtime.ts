@@ -172,6 +172,7 @@ export class RealtimeVoiceService {
    */
   speakText(text: string): void {
     // Create a conversation item with the text
+    // Use clear instruction to avoid AI repeating previous cards
     this.sendEvent({
       type: 'conversation.item.create',
       item: {
@@ -180,7 +181,7 @@ export class RealtimeVoiceService {
         content: [
           {
             type: 'input_text',
-            text: `Say exactly this to the student (nothing more, nothing less): "${text}"`
+            text: `[NEW CARD] Read this text aloud to the student, word for word: "${text}". Do not add anything else or repeat previous cards.`
           }
         ]
       }

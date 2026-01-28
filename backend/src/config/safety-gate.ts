@@ -5,11 +5,12 @@
 
 export const safetyGateConfig = {
   // Screaming detection thresholds (RMS amplitude 0-1 scale)
-  // Normal speech: ~0.05-0.15, Loud speech: ~0.15-0.30, Screaming/Yelling: >0.35
+  // Normal speech: ~0.05-0.15, Loud speech: ~0.15-0.35, Excited speech: ~0.35-0.50, Screaming/Yelling: >0.55
+  // Children with speech issues often hit 0.30-0.50 during normal excited speech
   screaming: {
-    amplitudeThreshold: parseFloat(process.env.SCREAMING_AMPLITUDE_THRESHOLD || '0.35'),
+    amplitudeThreshold: parseFloat(process.env.SCREAMING_AMPLITUDE_THRESHOLD || '0.55'),
     peakThreshold: parseFloat(process.env.SCREAMING_PEAK_THRESHOLD || '0.90'),
-    confirmationChunks: parseInt(process.env.SCREAMING_CONFIRMATION_CHUNKS || '3', 10),
+    confirmationChunks: parseInt(process.env.SCREAMING_CONFIRMATION_CHUNKS || '5', 10),
     // Wait after child stops screaming for transcription to arrive
     // Timeout only starts AFTER amplitude drops, so 2s is enough for Whisper
     postSpeechWaitMs: parseInt(process.env.SCREAMING_POST_SPEECH_WAIT_MS || '2000', 10),

@@ -223,17 +223,27 @@ export class CalibrationService {
   }
 
   private analyzeSilencePhase(samples: AmplitudeSample[]): { valid: boolean; reason?: string } {
-    const amplitudes = samples.map(s => s.amplitude);
-    const peaks = samples.map(s => s.peak);
+    // Only measure noise floor AFTER AI finishes speaking
+    // This prevents AI speech energy from contaminating the noise floor measurement
+    const aiSpeakingMs = this.cfg.phases.silence.aiSpeakingMs;
+    const phaseStartTime = this.state.phaseStartTime ?? 0;
+
+    // Filter to only include samples from after AI finishes speaking (the actual silence period)
+    const silenceSamples = samples.filter(s => s.timestamp - phaseStartTime > aiSpeakingMs);
+
+    // Use filtered samples if available, otherwise fall back to all samples
+    const samplesToUse = silenceSamples.length > 0 ? silenceSamples : samples;
+    const amplitudes = samplesToUse.map(s => s.amplitude);
+    const peaks = samplesToUse.map(s => s.peak);
 
     this.state.silenceResult = {
       noiseFloor: mean(amplitudes),
       noiseFloorPeak: mean(peaks),
-      samples: [...samples],
+      samples: [...samplesToUse],
     };
 
     // Silence phase is always valid - we just want to measure background noise
-    logger.debug(`CalibrationService: Silence phase - noise floor: ${this.state.silenceResult.noiseFloor.toFixed(4)}`);
+    logger.debug(`CalibrationService: Silence phase - noise floor: ${this.state.silenceResult.noiseFloor.toFixed(4)} (from ${silenceSamples.length} samples after AI speech)`);
     return { valid: true };
   }
 
